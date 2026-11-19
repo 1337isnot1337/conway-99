@@ -16,14 +16,14 @@ MISSING = (0, 1)  # Number the two missing cells first in each layout.
 GRID = tuple(range(2, 10))
 
 
-def partial_assignments(neighbors):
+def partial_assignments(neighbors, grid=GRID):
     full = local_states()
-    states = {i: sorted({(r[0],)+tuple(p if j in GRID else -1
+    states = {i: sorted({(r[0],)+tuple(p if j in grid else -1
                                         for p, j in zip(r[1:], neighbors[i])) for r in full})
-              for i in GRID}
+              for i in grid}
     table = {(i, j, p): sum(1 << k for k, r in enumerate(states[i])
                             if r[1+neighbors[i].index(j)] == p)
-             for i in GRID for j in neighbors[i] if j in GRID for p in range(24)}
+             for i in grid for j in neighbors[i] if j in grid for p in range(24)}
 
     def extend(assigned, remaining):
         if not remaining:
@@ -45,20 +45,20 @@ def partial_assignments(neighbors):
             else:
                 yield from extend(assigned | {i: row}, new)
 
-    return extend({}, {i: (1 << len(states[i]))-1 for i in GRID})
+    return extend({}, {i: (1 << len(states[i]))-1 for i in grid})
 
 
-def representatives(pairs, neighbors, expected):
-    pool = set(partial_assignments(neighbors))
+def representatives(pairs, neighbors, expected, missing=MISSING):
+    grid = tuple(range(len(missing), 10))
+    pool = set(partial_assignments(neighbors, grid))
     assert len(pool) == expected
-    actions = [t for t in transformations(pairs, neighbors) if set(t[0][:2]) == set(MISSING)]
-    assert len(actions) == (32 if set(pairs[0]) & set(pairs[1]) else 64)
+    actions = [t for t in transformations(pairs, neighbors) if set(t[0][:len(missing)]) == set(missing)]
     for case in sorted(pool):
         if case not in pool:
             continue
         for order, slots, perm, colors in actions:
             image = [None]*10
-            for i in GRID:
+            for i in grid:
                 known = [case[i][1+k] for k in slots[i]]
                 image[order[i]] = (colors[case[i][0]],)+tuple(perm[p] if p >= 0 else -1 for p in known)
             pool.discard(tuple(image))
@@ -182,20 +182,20 @@ def signed_axes(cells, colors):
     return cells, choices
 
 
-def near_completions(case, matrix, quota, pairs):
+def near_completions(case, matrix, quota, pairs, missing_count=2, gram_test=gram_possible):
     central = np.zeros((44, 4), dtype=int)
     for a in range(2):
         for x, sign in enumerate(CHARACTERS[a+1]):
             central[40+x, 2*a+int(sign < 0)] = 1
     remaining = quota-central@central.T
-    if not gram_possible(remaining):
+    if not gram_test(remaining):
         return
     domains = []
     for a in range(5):
         cells = tuple(i for i, pair in enumerate(pairs) if a in pair)
-        colors = tuple(case[i][0] if i in GRID else -1 for i in cells)
+        colors = tuple(case[i][0] if i >= missing_count else -1 for i in cells)
         cells, choices = signed_axes(cells, colors)
-        allowed = [option for option in choices if gram_possible(remaining-option[2])]
+        allowed = [option for option in choices if gram_test(remaining-option[2])]
         if not allowed:
             return
         domains.append((a, cells, allowed))
@@ -219,7 +219,7 @@ def near_completions(case, matrix, quota, pairs):
             if any(characters.get(i) == c for i, c in zip(cells, choice)):
                 continue
             reduced = residual-gram
-            if gram_possible(reduced):
+            if gram_test(reduced):
                 yield from extend(k+1, reduced, characters | dict(zip(cells, choice)),
                                   selected+[(axis, incidence)])
 

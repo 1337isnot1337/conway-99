@@ -105,3 +105,11 @@ verify-central-grid-neighborhood:
 .PHONY: verify-twelve-grid-bound
 verify-twelve-grid-bound:
 	cd $(WORKSPACE) && "$(PYTHON)" two_missing_grid_neighbors.py
+
+.PHONY: verify-eleven-grid-bound
+verify-eleven-grid-bound:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -rf "$$build_dir"' EXIT; \
+	"$(CXX)" -std=c++20 -O3 "$(WORKSPACE)/three_missing_grid_fill.cpp" -o "$$build_dir/three-missing"; \
+	OPENBLAS_NUM_THREADS=1 "$(PYTHON)" "$(WORKSPACE)/three_missing_grid_neighbors.py" "$$build_dir/three-missing"
