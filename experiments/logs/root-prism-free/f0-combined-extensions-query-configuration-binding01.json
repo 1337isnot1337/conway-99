@@ -1,0 +1,234 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-actual-configuration-binding.v1",
+  "status": "PASS_ACCEPTED_NATIVE_RECEIPTS_AND_ACTUAL_QUERY_CONFIGURATION_BINDINGS",
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration01.json",
+    "bytes": 6112,
+    "sha256": "3211efaf7c13917b36c3e47eedf3fc42e761f74b39ce8fcb4330d47a7072f2af",
+    "git_blob": "4fdd5c09bbc7416a850ed265597e5dfac89bb236",
+    "mode": "100644"
+  },
+  "query_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "query_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-independent-source-review01.json",
+    "bytes": 5869,
+    "sha256": "5051e866228b138e6b26ab454d4d24f335d874ba11bf6992fbf17cd46be56468",
+    "git_blob": "68587d5fda74adca5bac006cb69139f70f7e1775"
+  },
+  "independent_terminal_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query_replay.py",
+    "bytes": 35012,
+    "sha256": "a1db1e18c96e3d674d795900ed2011302d266eb26f67332fcb286804f1d84ef8",
+    "git_blob": "dd46bac35f833c578f477a2c8345f43382bec4f8",
+    "lines": 572
+  },
+  "source_only_contract": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration-contract01.json",
+    "bytes": 8344,
+    "sha256": "72610cc705f14582386d23cd11a58b9aa77cd285e34db6237dc32d826123fa51",
+    "git_blob": "717db27e75106138746c262196a7d4d54bdfb67c"
+  },
+  "actual_inputs": {
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/model.pb.gz",
+      "bytes": 5632144,
+      "sha256": "afeadb94ffa6fba0465a3dbe0094f4c7f7c156de8d7aa5f24a8fcfa38d275542",
+      "git_blob": "a2fce7642eb1d155b0e658e3a612d1007c0bf653",
+      "mode": "100644"
+    },
+    "model_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+      "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+      "bytes": 33063,
+      "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+      "mode": "100644"
+    },
+    "model_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/report.json",
+      "bytes": 25026,
+      "sha256": "a1ddff45ae8a0a535154d6c9d433c6d3ce9eb9d8c3d7453ba024f9896ed08a1f",
+      "git_blob": "2e847f9b2513cfac977cb7929abf75454852a9a6",
+      "mode": "100644"
+    },
+    "model_preparation_owner": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/owner.json",
+      "bytes": 1322,
+      "sha256": "c323ba1b8f77d23ae9af7496e48a92baa8b804153e1ae99e7a488c7155197037",
+      "git_blob": "530973430ba1618e89117138ccce4db7bbec2c35",
+      "mode": "100644"
+    },
+    "model_cold": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold/report.json",
+      "bytes": 20320,
+      "sha256": "d160fdf100b09557616c74a3380d9dac09d1076c8244536af23198da2be6a089",
+      "git_blob": "3a9739b3d19a5684accd6424e50027440e2e91d1",
+      "mode": "100644"
+    },
+    "model_cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold-owner/owner.json",
+      "bytes": 1949,
+      "sha256": "652e2f20d8087342790464e6500065fbf277decb07d6f03a40a45eb3ea7f8dd7",
+      "git_blob": "fe60a0cf7b8018956969d1cfc10694cbc62f0026",
+      "mode": "100644"
+    },
+    "model_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+      "bytes": 9294,
+      "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+      "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd"
+    }
+  },
+  "helper_sources": {
+    "base": {
+      "bytes": 15210,
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+    },
+    "supervisor": {
+      "bytes": 26760,
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+    },
+    "model_producer": {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+      "bytes": 38102,
+      "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+      "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b"
+    },
+    "model_cold": {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+      "bytes": 70788,
+      "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+      "git_blob": "be51ef6deca257d57b018c989d994804994004c1"
+    },
+    "model_ci": {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+      "bytes": 16246,
+      "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+      "git_blob": "06166151155be8a6cd46ec7a0b3e5989ed408dff"
+    }
+  },
+  "actual_receipt_validation": {
+    "all_five_small_preparation_cold_owner_and_root_records_fetched_and_exact_bytes_sha256_git_verified": true,
+    "frozen_native_configuration_reused_with_exact_hash": true,
+    "reference_and_structured_equality_comparisons": 42,
+    "comparisons": [
+      "actual model configuration equals frozen source input",
+      "conway99.f0.combined-extensions-native-preparation.v1 source",
+      "conway99.f0.combined-extensions-native-preparation.v1 configuration",
+      "conway99.f0.combined-extensions-native-owner.v1 source",
+      "conway99.f0.combined-extensions-native-owner.v1 configuration",
+      "conway99.f0.combined-extensions-independent-cold.v1 source",
+      "conway99.f0.combined-extensions-independent-cold.v1 configuration",
+      "conway99.f0.combined-extensions-independent-ci-owner.v1 source",
+      "conway99.f0.combined-extensions-independent-ci-owner.v1 configuration",
+      "preparation owner report",
+      "cold owner report",
+      "cold preparation report",
+      "cold preparation owner",
+      "cold preparation source",
+      "native config checker source",
+      "native config base source",
+      "native config supervisor source",
+      "prep inputs",
+      "cold inputs",
+      "prep authorities",
+      "cold authorities",
+      "prep layout",
+      "cold layout",
+      "root family order",
+      "root family counts",
+      "root family terms",
+      "root family keys",
+      "prep family order",
+      "prep family counts",
+      "prep family terms",
+      "prep family keys",
+      "cold family order",
+      "cold family counts",
+      "cold family terms",
+      "cold family keys",
+      "prep actual archive",
+      "cold actual archive",
+      "root native runtime cp_model_sha256",
+      "root native runtime native_helper_sha256",
+      "root native runtime model_schema_sha256",
+      "exact seven query input aliases",
+      "exact five helper aliases"
+    ],
+    "both_loaders_actual_schema_status_and_required_metadata_fields_match": true,
+    "preparation_and_cold_owners_exit_zero_reaped_and_group_stopped": true,
+    "both_owner_seconds_below135_and_worker_limit120": true,
+    "both_preparation_and_cold_optimizer_calls_zero": true,
+    "all_original_parent_preservation_flags_and_declared_extension_counts_match": true,
+    "exact_family_row_hash_maps_match": true,
+    "complete_native_source_configuration_and_receipt_crosslinks_match": true,
+    "all_five_helper_descriptors_and_seven_input_descriptors_complete": true
+  },
+  "accepted_model": {
+    "variables": 80730,
+    "rows": 297470,
+    "raw_sha256": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6",
+    "raw_bytes": 39306083,
+    "archive": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/model.pb.gz",
+      "bytes": 5632144,
+      "sha256": "afeadb94ffa6fba0465a3dbe0094f4c7f7c156de8d7aa5f24a8fcfa38d275542",
+      "git_blob": "a2fce7642eb1d155b0e658e3a612d1007c0bf653",
+      "mode": "100644"
+    },
+    "original_edge_slice": [
+      540,
+      68934
+    ]
+  },
+  "parameters": {
+    "num_search_workers": 4,
+    "random_seed": 0,
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "symmetry_level": 0,
+    "max_time_in_seconds": 600,
+    "log_search_progress": true,
+    "log_to_stdout": true,
+    "log_to_response": true
+  },
+  "limits": {
+    "solver_seconds": 600,
+    "native_allowance_seconds": 610,
+    "owner_seconds": 720,
+    "preparation_seconds": 60,
+    "preparation_owner_seconds": 75,
+    "finalization_reserve_seconds": 60
+  },
+  "maximum_native_calls": 1,
+  "automatic_retries": 0,
+  "execution_scope": {
+    "check_language": "V8 metadata-only comparisons on exact accepted JSON bytes",
+    "full_model_archive_refetched_or_decoded": false,
+    "archive_and_raw_identities_authority": "Separate exact root acceptance20fef49c and agreeing accepted preparation/independent cold; frozen future preflight/checker must rehash actual archive/raw bytes.",
+    "Python_imports": 0,
+    "Python_compilations": 0,
+    "controls_calls": 0,
+    "model_builds": 0,
+    "preflight_calls": 0,
+    "query_calls": 0,
+    "terminal_replay_calls": 0,
+    "native_query_authorized_by_this_record": false,
+    "next_step_requires_separate_root_gated_zero_solve_preflight": true,
+    "production_requires_accepted_preflight_and_separate_query_gate": true
+  },
+  "no_placeholder_runtime_bindings": true,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

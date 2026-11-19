@@ -2,13 +2,19 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+Checkpoint 90 accepts the [complete combined native model](experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json). [Run 44639233433](https://github.com/1337isnot1337/conway-99/actions/runs/44639233433) executes checkpoint 89 once: 80,730 variables, 297,470 rows and 3,310,380 linear terms. The separate checker reconstructs every replaced/appended constraint and restores every original parent byte. Preparation and cold owners take 12.697 and 7.332 seconds; the full driver takes 20.456 seconds. All four owners reap and stop their process groups without overrun, and zero optimizer calls occur.
+
+The complete model archive, patch, suffix and all 39 original small outputs are preserved. Root verifies the compressed and full 39,306,083-byte model hashes, all terminal hashes and 178 cross-references, without rounding the original large integer controls. The [native result note](research/root_prism_free_f0_combined_extensions_native_preparation.md) records exact scope and timings.
+
+The fresh combined-query runner and its actual configuration pass source and immutable-receipt review. This checkpoint authorizes one [zero-solve preflight](experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-root-gate01.json) to check the new model/native transport, four-worker parameters and exact response/integer controls. The phase and owner bounds are 60 and 75 seconds. Actual preflight acceptance and a separate production gate are still required before the proposed 600-second query. The independent query checker and production CI templates are published as preparation; no production execution is authorized here. General exterior pair caps, a compatible second component and unrestricted existence remain open.
+
+## Earlier checkpoints
+
 Checkpoint 89 accepts the [complete independent literal forest replay](experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-root-acceptance01.json) and freezes the [combined native preparation](research/root_prism_free_f0_combined_extensions_native_preparation.md). The forest checker reconstructs every original eligible edge and all 23,040 candidate dispositions for the 48 cap-one pairs. All 3,984 new variables, 15,888 rows and six complete normalized hashes match. Its outer time is 11.489 seconds inside the 30-second bound, with no native or optimizer call.
 
 The combined configuration binds all 34 actual inputs, 30 authority statuses and 67 cross-reference links. It has 80,730 variables and 297,470 rows. The active producer and independent checker are their preserved v2 sources. The producer replaces exactly 23,010 original rows, preserves all other original messages and appends 39,876 rows. The checker must reconstruct every change and restore the entire previous model byte for byte.
 
 The [one-build gate](experiments/logs/root-prism-free/f0-combined-extensions-native-ci-root-gate01.json) authorizes one native preparation, separate synthetic controls and complete independent protobuf replay. It authorizes zero optimizer calls and no automatic retry. All phase owners require complete terminal evidence, child reaping and process-group cleanup. Actual execution is pending at this publication; no new model acceptance, graph, component exclusion or unrestricted contradiction is claimed. Fresh query sources are being prepared separately and are not authorized to execute by this gate.
-
-## Earlier checkpoints
 
 Checkpoint 88 publishes the [combined formulation plan](research/root_prism_free_f0_combined_exterior_model_plan.md) and its complete finite inventories. The exact star reformulation replaces 401,874 coefficient occurrences by 91,410 using 2,448 channels. The source-reviewed inventory passes in 34.336 seconds through serialization. Root checks all channel identities, 46,020 origin links and reported quota-one support inclusions. This reformulation alone adds no mathematical exclusion.
 

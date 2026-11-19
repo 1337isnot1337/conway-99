@@ -1,0 +1,125 @@
+# NON-ACTIVE TEMPLATE. Root must fill both tokens from actual accepted configuration/gate dependencies.
+# Publish only as .github/workflows/conway99-combined-extensions-query-preflight.yml after a separate zero-solve gate.
+name: Conway 99 combined extensions query preflight
+
+on:
+  push:
+    branches: [research/global-constraints-ab2f]
+    paths:
+      - .github/workflows/conway99-combined-extensions-query-preflight.yml
+      - experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-request01.json
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: conway99-combined-extensions-native-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  one-zero-solve-preflight:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out the frozen query source and accepted model
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            @@SPARSE_CHECKOUT_PATHS@@
+      - name: Verify the one-run zero-solve gate and compile pinned sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, sys
+          assert sys.version_info[:2] == (3, 12)
+          assert os.environ['GITHUB_RUN_ATTEMPT'] == '1'
+          request = json.loads(pathlib.Path('experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-request01.json').read_bytes())
+          gate_raw = pathlib.Path(request['gate']['path']).read_bytes()
+          assert hashlib.sha256(gate_raw).hexdigest() == request['gate']['sha256']
+          assert len(gate_raw) == request['gate']['bytes']
+          gate = json.loads(gate_raw)
+          event = json.loads(pathlib.Path(os.environ['GITHUB_EVENT_PATH']).read_bytes())
+          assert event['before'] == gate['expected_parent']
+          assert event['ref'] == 'refs/heads/research/global-constraints-ab2f'
+          assert gate['status'] == 'AUTHORIZE_ONE_COMBINED_EXTENSIONS_QUERY_PREFLIGHT'
+          assert request['schema'] == 'conway99.f0.combined-extensions-query-preflight-request.v1'
+          assert request['mode'] == 'one-zero-solve-preflight'
+          assert request['maximum_preflight_calls'] == gate['maximum_preflight_calls'] == 1
+          assert request['optimizer_calls_allowed'] == gate['optimizer_calls_allowed'] == 0
+          assert request['native_query_allowed'] is False and gate['native_query_allowed'] is False
+          for name in ('source', 'configuration', 'workflow', 'independent_source_review'):
+              assert request[name] == gate[name]
+          assert gate['limits'] == {'preparation_seconds': 60, 'preparation_owner_seconds': 75}
+          for entry in gate['dependencies']:
+              path = pathlib.Path(entry['path'])
+              raw = path.read_bytes()
+              assert hashlib.sha256(raw).hexdigest() == entry['sha256'], str(path)
+              assert len(raw) == entry['bytes'], str(path)
+              if path.suffix == '.py':
+                  compile(raw.decode('utf-8'), str(path), 'exec')
+          cfg = json.loads(pathlib.Path(request['configuration']['path']).read_bytes())
+          assert cfg['schema'] == 'conway99.f0.combined-extensions-query-configuration.v1'
+          assert cfg['variables'] == 80730 and cfg['rows'] == 297470
+          assert cfg['native_query_authorized_by_configuration_alone'] is False
+          assert cfg['limits']['preparation_seconds'] == 60 and cfg['limits']['preparation_owner_seconds'] == 75
+          assert cfg['source_sha256'] == request['source']['sha256']
+          for ref in list(cfg['inputs'].values()) + list(cfg['sources'].values()):
+              raw = pathlib.Path(ref['path']).read_bytes()
+              assert hashlib.sha256(raw).hexdigest() == ref['sha256'] and len(raw) == ref['bytes']
+          assert gate['independent_source_review_accepted'] is True
+          print(json.dumps({'gate': 'PASS', 'maximum_preflight_calls': 1, 'optimizer_calls_allowed': 0}))
+          PY
+      - name: Install the pinned native and protobuf runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv .ci-combined-extensions-query-venv
+          .ci-combined-extensions-query-venv/bin/python -m pip install --disable-pip-version-check --only-binary=:all: ortools==9.15.6755 protobuf==6.33.6
+          .ci-combined-extensions-query-venv/bin/python -m pip freeze > experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01-runtime-packages.txt
+      - name: Run one owned preflight with zero optimizer calls
+        shell: bash
+        run: |
+          set -euo pipefail
+          .ci-combined-extensions-query-venv/bin/python experiments/workspace/root_prism_free_f0_combined_extensions_query.py prepare --configuration @@QUERY_CONFIGURATION_PATH@@ --directory experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01
+      - name: Export exact preflight and control records
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, gzip, hashlib, json, pathlib
+          root = pathlib.Path('experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01')
+          selected = []
+          if root.is_dir():
+              selected = [p for p in root.rglob('*') if p.is_file() and (p.suffix in ('.json', '.log', '.pbtxt') or p.name in ('parameters.pb', 'parameter-schema.pb'))]
+          selected.append(pathlib.Path('experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01-runtime-packages.txt'))
+          files, total = [], 0
+          for path in sorted(set(selected)):
+              if not path.is_file():
+                  continue
+              raw = path.read_bytes()
+              total += len(raw)
+              assert total <= 8 << 20
+              files.append({'path': str(path), 'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest(), 'base64': base64.b64encode(raw).decode('ascii')})
+          bundle = {'schema': 'conway99.public_query_preflight_bundle.v1', 'files': files, 'optimizer_calls_allowed': 0}
+          raw = json.dumps(bundle, sort_keys=True, separators=(',', ':')).encode()
+          encoded = base64.b64encode(gzip.compress(raw, mtime=0)).decode('ascii')
+          assert len(encoded) <= 8 << 20
+          print('CONWAY99_QUERY_PREFLIGHT_BUNDLE_BEGIN')
+          for offset in range(0, len(encoded), 4096):
+              print(encoded[offset:offset+4096])
+          print('CONWAY99_QUERY_PREFLIGHT_BUNDLE_END')
+          PY
+      - name: Retain every preflight output including the exact transported model
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: conway99-combined-extensions-query-preflight-${{ github.sha }}
+          path: |
+            experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01/
+            experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01-runtime-packages.txt
+          if-no-files-found: error
+          retention-days: 30

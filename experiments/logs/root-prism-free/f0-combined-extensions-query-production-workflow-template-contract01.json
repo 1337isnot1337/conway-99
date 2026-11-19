@@ -1,0 +1,90 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-production-workflow-template-contract.v1",
+  "status": "SOURCE_TEMPLATE_ONLY_NO_EXECUTION_AUTHORIZATION",
+  "source_template": {
+    "path": "experiments/workspace/conway99-combined-extensions-query.template.yml",
+    "bytes": 13281,
+    "sha256": "33c99afda2aaa30a840f04de4d5e628058d42acf74c26f49a169fc2617bf2a0b",
+    "git_blob": "12a918c0d68f4ec01c89b027dcbe3bf4fccb118f"
+  },
+  "reuse": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-production-workflow-explicit-source-reuse01.json",
+    "bytes": 14042,
+    "sha256": "87530fa30a7b9d6b850750badf594d28b714cf6c61aba86f48a07254b2fcf588",
+    "git_blob": "3d58c246e94cc92ffaff61f9c060172663428300"
+  },
+  "target_workflow_path": ".github/workflows/conway99-combined-extensions-query.yml",
+  "finalization_by_root": {
+    "remove_exact_first_two_template_comment_lines": true,
+    "required_token_substitutions": {
+      "@@SPARSE_CHECKOUT_PATHS@@": "Complete pinned checkout input paths, each line indented12 spaces. Include exact request, gate, workflow, CI driver, query, checker, supervisor, configuration, accepted model and receipt/proof dependencies, and actual preflight outputs.",
+      "@@EXPECTED_PATHS_JSON@@": "Python-valid JSON array of the complete exact gate dependency paths together with request and gate paths. The workflow asserts full set equality.",
+      "@@QUERY_CONFIGURATION_PATH@@": "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration01.json",
+      "@@MODEL_RAW_SHA256@@": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6",
+      "@@QUERY_CONFIGURATION_SHA256@@": "3211efaf7c13917b36c3e47eedf3fc42e761f74b39ce8fcb4330d47a7072f2af"
+    },
+    "known_configuration": {
+      "git_blob": "4fdd5c09bbc7416a850ed265597e5dfac89bb236",
+      "sha256": "3211efaf7c13917b36c3e47eedf3fc42e761f74b39ce8fcb4330d47a7072f2af",
+      "bytes": 6112,
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration01.json"
+    },
+    "known_native_root_acceptance": {
+      "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd",
+      "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+      "bytes": 9294,
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json"
+    },
+    "actual_preflight_and_gate_and_request_pending": true,
+    "no_placeholders_allowed_in_final_active_workflow": true
+  },
+  "expected_preflight_root_receipt": {
+    "schema": "conway99.f0.combined-extensions-query-preflight-root-acceptance.v1",
+    "status": "ROOT_ACCEPTS_EXACT_ZERO_SOLVE_COMBINED_EXTENSIONS_QUERY_PREFLIGHT",
+    "references": [
+      "source",
+      "configuration",
+      "report",
+      "owner"
+    ],
+    "fields": [
+      "model_raw_sha256",
+      "parameters"
+    ],
+    "optimizer_calls": 0,
+    "CpSolver_constructed": false,
+    "production_query_authorized_by_this_receipt": false
+  },
+  "production_contract": {
+    "maximum_native_calls": 1,
+    "automatic_retries": 0,
+    "solver_seconds": 600,
+    "native_allowance_seconds": 610,
+    "query_owner_seconds": 720,
+    "finalization_reserve_seconds": 60,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 900,
+    "job_timeout_minutes": 20,
+    "independent_cold_required": true,
+    "all_returned_vectors_and_original_response_bytes_preserved": true
+  },
+  "transport": {
+    "runtime_versions": {
+      "ortools": "9.15.6755",
+      "protobuf": "6.33.6",
+      "python": "3.12"
+    },
+    "log_bundle_raw_limit_bytes": 16777216,
+    "log_bundle_base64_limit_bytes": 20971520,
+    "legacy_bundle_schema_retained": true,
+    "always_upload_complete_artifact_including_model": true,
+    "log_bundle_overflow_does_not_erase_complete_artifact": true
+  },
+  "scope": {
+    "template_not_under_active_workflow_directory": true,
+    "only_exact_source_text_reconstruction_executed": true,
+    "no_YAML_parse_Python_import_native_model_or_query": true,
+    "no_root_gate_created": true
+  }
+}

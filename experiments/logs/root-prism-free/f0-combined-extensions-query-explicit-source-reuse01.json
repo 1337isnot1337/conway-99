@@ -1,0 +1,237 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-explicit-source-reuse.v1",
+  "status": "PASS_COMPLETE_TEXT_RECONSTRUCTION_SOURCE_ONLY",
+  "parent_source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query.py",
+    "bytes": 33132,
+    "sha256": "b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288",
+    "git_blob": "ec845beeca4e499b72367e0a81f4c43e97be8663"
+  },
+  "new_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "complete_explicit_substitutions": [
+    {
+      "label": "query scope docstring",
+      "before": "\"\"\"One gated bounded query of the independently accepted strengthened model.\n\nPreserve every model byte. Make one solver call with a 175-second clock inside\na 180-second declared native allowance and a 300-second process-group owner.\nSave exact native response text and native vectors before parsing. A native\nanswer never proves an SRG completion or a whole-component exclusion.\n\"\"\"",
+      "after": "\"\"\"One gated query of the independently accepted combined-extensions model.\n\nPreserve every model byte. Use four workers, one 600-second solver clock,\na 610-second measured native allowance and a 720-second process-group owner.\nSave exact native response text and every native vector before parsing.\nA native answer is not a graph completion or a component exclusion.\n\"\"\"",
+      "occurrences": 1
+    },
+    {
+      "label": "producer source pin",
+      "before": "\"9879d5ad46b58ab8e4e2eb58fb302e7c140a06bd3f7b3bf3cb47f82e25e99716\"",
+      "after": "\"18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b\"",
+      "occurrences": 1
+    },
+    {
+      "label": "model cold source pin",
+      "before": "\"8745e9eb5d7a9ced7658f4d052d7fc28c24d58a04e9f9b94514316b12e12a4d6\"",
+      "after": "\"d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2\"",
+      "occurrences": 1
+    },
+    {
+      "label": "replace pending model config pin with CI source pin",
+      "before": "MODEL_CONFIGURATION_SHA = \"796e79978b113e49603b9cb60ddcda6bd829725eb4384d10640d74feb959ca0c\"",
+      "after": "MODEL_CI_SHA = \"484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb\"",
+      "occurrences": 1
+    },
+    {
+      "label": "old raw model becomes accepted base restoration pin",
+      "before": "MODEL_RAW_SHA = \"4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2\"\nVARIABLES, ROWS = 68934, 257594",
+      "after": "BASE_RAW_SHA = \"4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2\"\nBASE_RAW_BYTES, BASE_VARIABLES, BASE_ROWS = 38374405, 68934, 257594\nVARIABLES, ROWS = 80730, 297470\nFAMILY_ORDER = [\"star_replacement\", \"star_definition\", \"triangle_and\", \"triangle_target\", \"forest\"]\nFAMILY_COUNTS = dict(zip(FAMILY_ORDER, [23010, 2448, 21456, 84, 15888]))\nFAMILY_TERMS = dict(zip(FAMILY_ORDER, [69030, 22380, 53640, 5448, 59280]))",
+      "occurrences": 1
+    },
+    {
+      "label": "one bounded four worker query limits",
+      "before": "\"solver_seconds\": 175, \"native_allowance_seconds\": 180, \"owner_seconds\": 300",
+      "after": "\"solver_seconds\": 600, \"native_allowance_seconds\": 610, \"owner_seconds\": 720",
+      "occurrences": 1
+    },
+    {
+      "label": "four worker parameters",
+      "before": "\"num_search_workers\": 1",
+      "after": "\"num_search_workers\": 4",
+      "occurrences": 1
+    },
+    {
+      "label": "solver clock parameter",
+      "before": "\"max_time_in_seconds\": 175.0",
+      "after": "\"max_time_in_seconds\": 600.0",
+      "occurrences": 1
+    },
+    {
+      "label": "complete configuration contract adaptation",
+      "before": "def configuration(path):\n    cfg = json.loads(Path(path).read_bytes())\n    assert cfg[\"schema\"] == \"conway99.f0.strengthened-boolean-query-configuration.v1\"\n    assert cfg[\"source_sha256\"] == digest(__file__)\n    assert cfg[\"parameters\"] == PARAMETERS and cfg[\"limits\"] == LIMITS\n    assert cfg[\"maximum_native_calls\"] == 1 and cfg[\"automatic_retries\"] == 0\n    assert cfg[\"native_query_authorized_by_configuration_alone\"] is False\n    assert cfg[\"sources\"][\"base\"][\"sha256\"] == BASE_SHA\n    assert cfg[\"sources\"][\"supervisor\"][\"sha256\"] == SUPERVISOR_SHA\n    assert cfg[\"model_raw_sha256\"] == MODEL_RAW_SHA and cfg[\"model_raw_bytes\"] == 38374405\n    assert cfg[\"sources\"][\"model_producer\"][\"sha256\"] == MODEL_SOURCE_SHA\n    assert cfg[\"sources\"][\"model_cold\"][\"sha256\"] == MODEL_COLD_SHA\n    assert cfg[\"inputs\"][\"model_configuration\"][\"sha256\"] == MODEL_CONFIGURATION_SHA\n    for ref in cfg[\"sources\"].values():\n        read_bytes(ref)\n    return cfg\n\n",
+      "after": "def configuration(path):\n    cfg = json.loads(Path(path).read_bytes())\n    assert cfg[\"schema\"] == \"conway99.f0.combined-extensions-query-configuration.v1\"\n    assert cfg[\"source_sha256\"] == digest(__file__)\n    assert cfg[\"parameters\"] == PARAMETERS and cfg[\"limits\"] == LIMITS\n    assert cfg[\"maximum_native_calls\"] == 1 and cfg[\"automatic_retries\"] == 0\n    assert cfg[\"native_query_authorized_by_configuration_alone\"] is False\n    assert cfg[\"variables\"] == VARIABLES and cfg[\"rows\"] == ROWS\n    assert set(cfg[\"inputs\"]) == {\"model\", \"model_configuration\", \"model_preparation\",\n                                 \"model_preparation_owner\", \"model_cold\", \"model_cold_owner\",\n                                 \"model_root_acceptance\"}\n    assert set(cfg[\"sources\"]) == {\"base\", \"supervisor\", \"model_producer\", \"model_cold\", \"model_ci\"}\n    assert cfg[\"sources\"][\"base\"][\"sha256\"] == BASE_SHA\n    assert cfg[\"sources\"][\"supervisor\"][\"sha256\"] == SUPERVISOR_SHA\n    assert cfg[\"sources\"][\"model_producer\"][\"sha256\"] == MODEL_SOURCE_SHA\n    assert cfg[\"sources\"][\"model_cold\"][\"sha256\"] == MODEL_COLD_SHA\n    assert cfg[\"sources\"][\"model_ci\"][\"sha256\"] == MODEL_CI_SHA\n    # These are actual accepted output identities, filled only after native cold.\n    assert type(cfg[\"model_raw_sha256\"]) is str and len(cfg[\"model_raw_sha256\"]) == 64\n    assert all(c in \"0123456789abcdef\" for c in cfg[\"model_raw_sha256\"])\n    assert type(cfg[\"model_raw_bytes\"]) is int and cfg[\"model_raw_bytes\"] > 0\n    for ref in list(cfg[\"sources\"].values()) + list(cfg[\"inputs\"].values()):\n        assert type(ref[\"path\"]) is str and type(ref[\"bytes\"]) is int and ref[\"bytes\"] > 0\n        assert type(ref[\"sha256\"]) is str and len(ref[\"sha256\"]) == 64\n    for ref in cfg[\"sources\"].values():\n        read_bytes(ref)\n    return cfg\n\n",
+      "occurrences": 1
+    },
+    {
+      "label": "complete accepted combined-model receipt adapter",
+      "before": "def accepted_model(cfg):\n    from ortools.sat import cp_model_pb2 as pb\n    records = {name: read_json(ref) for name, ref in cfg[\"inputs\"].items() if name != \"model\"}\n    preparation, owner, cold, cold_owner = [records[name] for name in\n                                           (\"model_preparation\", \"model_preparation_owner\", \"model_cold\", \"model_cold_owner\")]\n    root_acceptance = records[\"model_root_acceptance\"]\n    assert root_acceptance[\"status\"] == \"ROOT_ACCEPTS_COMPLETE_STRENGTHENED_NATIVE_MODEL_AND_INDEPENDENT_COLD\"\n    same_reference(root_acceptance[\"configuration\"], cfg[\"inputs\"][\"model_configuration\"])\n    same_reference(root_acceptance[\"preparation\"], cfg[\"inputs\"][\"model_preparation\"])\n    same_reference(root_acceptance[\"independent_cold\"], cfg[\"inputs\"][\"model_cold\"])\n    same_reference(root_acceptance[\"model_archive\"], cfg[\"inputs\"][\"model\"])\n    assert root_acceptance[\"model_raw_sha256\"] == MODEL_RAW_SHA and root_acceptance[\"model_raw_bytes\"] == cfg[\"model_raw_bytes\"]\n    assert root_acceptance[\"variables\"] == VARIABLES and root_acceptance[\"rows\"] == ROWS\n    assert root_acceptance[\"optimizer_calls\"] == 0 and root_acceptance[\"native_query_authorized_by_this_receipt\"] is False\n    assert preparation[\"status\"] == owner[\"status\"] == \"PASS_COMPLETE_STRENGTHENED_LITERAL_NATIVE_PREPARATION\"\n    assert preparation[\"source\"][\"sha256\"] == owner[\"source\"][\"sha256\"] == MODEL_SOURCE_SHA\n    same_reference(preparation[\"configuration\"], cfg[\"inputs\"][\"model_configuration\"])\n    same_reference(owner[\"configuration\"], cfg[\"inputs\"][\"model_configuration\"])\n    same_reference(owner[\"report\"], cfg[\"inputs\"][\"model_preparation\"])\n    assert owner[\"report_accepted\"] is True and owner[\"deadline_overrun_seconds\"] == 0\n    assert owner[\"seconds\"] <= owner[\"maximum_seconds\"] == 135\n    assert cold[\"status\"] == cold_owner[\"status\"] == \"PASS_INDEPENDENT_COMPLETE_STRENGTHENED_LITERAL_NATIVE_APPEND\"\n    assert cold[\"source\"][\"sha256\"] == cold_owner[\"source\"][\"sha256\"] == MODEL_COLD_SHA\n    same_reference(cold[\"configuration\"], cfg[\"inputs\"][\"model_configuration\"])\n    same_reference(cold_owner[\"configuration\"], cfg[\"inputs\"][\"model_configuration\"])\n    same_reference(cold_owner[\"report\"], cfg[\"inputs\"][\"model_cold\"])\n    same_reference(cold[\"producer_report\"], cfg[\"inputs\"][\"model_preparation\"])\n    same_reference(cold[\"producer_owner\"], cfg[\"inputs\"][\"model_preparation_owner\"])\n    assert cold_owner[\"report_accepted\"] is True and cold_owner[\"seconds\"] <= cold_owner[\"maximum_seconds\"] == 105\n    for receipt in (owner, cold_owner):\n        supervision = receipt[\"supervision\"]\n        assert supervision[\"status\"] == \"CHILD_EXITED\" and supervision[\"returncode\"] == 0\n        assert supervision[\"child_reaped\"] is True and supervision[\"owned_process_group_stopped\"] is True\n        assert receipt[\"optimizer_calls\"] == 0 and receipt[\"CpSolver_constructed\"] is False\n    assert cold[\"complete_parent_bytes_checked\"] is True and cold[\"all_appended_rows_compared_exactly\"] == 89544\n    assert cold[\"all_appended_terms_checked\"] == 600360 and cold[\"producer_imports\"] == 0\n    assert cold[\"optimizer_calls\"] == 0 and cold[\"CpModel_constructed\"] is False and cold[\"CpSolver_constructed\"] is False\n    same_reference(cold[\"model_archive\"], cfg[\"inputs\"][\"model\"])\n    archive = read_bytes(cfg[\"inputs\"][\"model\"])\n    assert sha(archive) == preparation[\"model\"][\"archive_sha256\"] and len(archive) == preparation[\"model\"][\"archive_bytes\"]\n    raw = gzip.decompress(archive)\n    assert len(raw) == cfg[\"model_raw_bytes\"] == preparation[\"model\"][\"raw_bytes\"] == cold[\"model_raw_bytes\"]\n    assert sha(raw) == cfg[\"model_raw_sha256\"] == preparation[\"model\"][\"raw_sha256\"] == cold[\"model_raw_sha256\"]\n    assert preparation[\"variables\"] == cold[\"variables\"] == VARIABLES and preparation[\"rows\"] == cold[\"rows\"] == ROWS\n    assert sha(pb.DESCRIPTOR.serialized_pb) == cfg[\"runtime\"][\"model_schema_sha256\"] == preparation[\"runtime\"][\"model_schema_sha256\"] == cold[\"runtime\"][\"model_schema_sha256\"]\n    model = pb.CpModelProto()\n    model.ParseFromString(raw)\n    assert model.SerializeToString() == raw and len(model.variables) == VARIABLES and len(model.constraints) == ROWS\n    assert {field.name for field, value in model.ListFields()} <= {\"name\", \"variables\", \"constraints\"}\n    assert all(row.WhichOneof(\"constraint\") == \"linear\" and not row.enforcement_literal for row in model.constraints)\n    edges = []\n    for variable in model.variables[540:]:\n        prefix, word, left, right = variable.name.split(\"_\")\n        a, b = int(left), int(right)\n        assert (prefix, word) == (\"shared\", \"edge\") and 0 <= a < b < 480\n        assert variable.name == \"shared_edge_%03d_%03d\" % (a, b) and list(variable.domain) == [0, 1]\n        edges.append([a, b])\n    assert len(edges) == 68394 and sha(canonical(edges)) == EDGE_SHA\n    assert all(list(v.domain) == [0, 1] for v in model.variables[:480])\n    return model, edges\n\n",
+      "after": "def accepted_model(cfg):\n    from ortools.sat import cp_model_pb2 as pb\n    records = {name: read_json(ref) for name, ref in cfg[\"inputs\"].items() if name != \"model\"}\n    preparation, owner, cold, cold_owner = [records[name] for name in\n                                           (\"model_preparation\", \"model_preparation_owner\", \"model_cold\", \"model_cold_owner\")]\n    model_cfg, root_acceptance = records[\"model_configuration\"], records[\"model_root_acceptance\"]\n    assert model_cfg[\"schema\"] == \"conway99.f0.combined-extensions-native-configuration.v1\"\n    assert model_cfg[\"source_sha256\"] == MODEL_SOURCE_SHA\n    same_reference(model_cfg[\"sources\"][\"checker\"], cfg[\"sources\"][\"model_cold\"])\n    for key in (\"base\", \"supervisor\"):\n        same_reference(model_cfg[\"sources\"][key], cfg[\"sources\"][key])\n    assert model_cfg[\"native_query_authorized\"] is False and model_cfg[\"optimizer_calls\"] == 0\n    assert model_cfg[\"independent_complete_protobuf_replay_required\"] is True\n    assert root_acceptance[\"status\"] == \"ROOT_ACCEPTS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_MODEL_AND_INDEPENDENT_COLD\"\n    same_reference(root_acceptance[\"configuration\"], cfg[\"inputs\"][\"model_configuration\"])\n    same_reference(root_acceptance[\"preparation\"], cfg[\"inputs\"][\"model_preparation\"])\n    same_reference(root_acceptance[\"independent_cold\"], cfg[\"inputs\"][\"model_cold\"])\n    same_reference(root_acceptance[\"model_archive\"], cfg[\"inputs\"][\"model\"])\n    assert root_acceptance[\"model_raw_sha256\"] == cfg[\"model_raw_sha256\"]\n    assert root_acceptance[\"model_raw_bytes\"] == cfg[\"model_raw_bytes\"]\n    assert root_acceptance[\"variables\"] == VARIABLES and root_acceptance[\"rows\"] == ROWS\n    assert root_acceptance[\"optimizer_calls\"] == 0 and root_acceptance[\"native_query_authorized_by_this_receipt\"] is False\n    assert preparation[\"schema\"] == \"conway99.f0.combined-extensions-native-preparation.v1\"\n    assert owner[\"schema\"] == \"conway99.f0.combined-extensions-native-owner.v1\"\n    assert preparation[\"status\"] == owner[\"status\"] == \"PASS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_PREPARATION\"\n    assert preparation[\"source\"][\"sha256\"] == owner[\"source\"][\"sha256\"] == MODEL_SOURCE_SHA\n    assert owner[\"mode\"] == \"prepare\" and preparation[\"maximum_seconds\"] == 120\n    assert owner[\"seconds\"] <= owner[\"maximum_seconds\"] == 135\n    assert cold[\"schema\"] == \"conway99.f0.combined-extensions-independent-cold.v1\"\n    assert cold[\"status\"] == \"PASS_INDEPENDENT_COMPLETE_COMBINED_EXTENSIONS_NATIVE_MODEL\"\n    assert cold_owner[\"schema\"] == \"conway99.f0.combined-extensions-independent-ci-owner.v1\"\n    assert cold_owner[\"status\"] == \"OWNED_COMPLETE_COMBINED_EXTENSIONS_NATIVE_COLD_ACCEPTED\"\n    assert cold[\"source\"][\"sha256\"] == cold_owner[\"source\"][\"sha256\"] == MODEL_COLD_SHA\n    assert cold_owner[\"mode\"] == \"replay\" and cold[\"maximum_seconds\"] == 120\n    assert cold_owner[\"seconds\"] <= cold_owner[\"maximum_seconds\"] == 135\n    for record in (preparation, owner, cold, cold_owner):\n        same_reference(record[\"configuration\"], cfg[\"inputs\"][\"model_configuration\"])\n        assert record[\"optimizer_calls\"] == 0 and record[\"CpSolver_constructed\"] is False\n    for receipt, name in ((owner, \"model_preparation\"), (cold_owner, \"model_cold\")):\n        same_reference(receipt[\"report\"], cfg[\"inputs\"][name])\n        assert receipt[\"report_accepted\"] is True and receipt[\"deadline_overrun_seconds\"] == 0\n        supervision = receipt[\"supervision\"]\n        assert supervision[\"status\"] == \"CHILD_EXITED\" and supervision[\"returncode\"] == 0\n        assert supervision[\"child_reaped\"] is True and supervision[\"owned_process_group_stopped\"] is True\n    same_reference(cold[\"preparation_report\"], cfg[\"inputs\"][\"model_preparation\"])\n    same_reference(cold[\"preparation_owner\"], cfg[\"inputs\"][\"model_preparation_owner\"])\n    same_reference(cold[\"preparation_source\"], cfg[\"sources\"][\"model_producer\"])\n    assert preparation[\"inputs\"] == cold[\"inputs\"] == model_cfg[\"inputs\"]\n    assert preparation[\"authorities\"] == cold[\"authorities\"] == model_cfg[\"authorities\"]\n    assert preparation[\"layout\"] == cold[\"layout\"] == model_cfg[\"layout\"]\n    assert preparation[\"family_order\"] == cold[\"family_order\"] == FAMILY_ORDER\n    assert preparation[\"family_counts\"] == cold[\"family_counts\"] == FAMILY_COUNTS\n    assert preparation[\"family_terms\"] == cold[\"family_terms\"] == FAMILY_TERMS\n    assert preparation[\"family_row_jsonl_sha256\"] == cold[\"family_row_jsonl_sha256\"]\n    assert preparation[\"model_raw_sha256\"] == cold[\"model_raw_sha256\"] == cfg[\"model_raw_sha256\"]\n    assert preparation[\"model_raw_bytes\"] == cold[\"model_raw_bytes\"] == cfg[\"model_raw_bytes\"]\n    assert preparation[\"CpModel_constructed\"] is True and preparation[\"native_model_builds\"] == 1\n    assert preparation[\"native_optimizer_constructed\"] is False and preparation[\"native_query_run\"] is False\n    assert cold[\"producer_imports\"] == cold[\"native_imports\"] == cold[\"native_model_builds\"] == 0\n    assert cold[\"CpModel_constructed\"] is False and cold[\"native_optimizer_constructed\"] is False\n    assert cold[\"protobuf_decoder_only\"] is True\n    assert cold[\"base_restoration_sha256\"] == BASE_RAW_SHA and cold[\"base_restoration_bytes\"] == BASE_RAW_BYTES\n    assert cold[\"unchanged_original_variables_checked\"] == BASE_VARIABLES\n    assert cold[\"unchanged_original_rows_checked\"] == BASE_ROWS - 23010\n    assert cold[\"replacement_rows_checked\"] == 23010 and cold[\"appended_rows_checked\"] == 39876\n    assert cold[\"added_variables_checked\"] == 11796 and cold[\"new_and_replacement_terms_checked\"] == sum(FAMILY_TERMS.values())\n    assert cold[\"net_term_change\"] == preparation[\"term_change\"] == -192096\n    for flag in (\"complete_original_parent_bytes_recovered\", \"all_original_variable_messages_preserved\",\n                 \"all_unreplaced_parent_constraint_messages_preserved\", \"only_declared_replacement_span_changed\",\n                 \"all_replacement_and_appended_rows_compared_as_complete_protobuf_messages\",\n                 \"all_new_variable_domains_names_and_metadata_checked\", \"complete_native_artifacts_and_manifest_checked\"):\n        assert cold[flag] is True\n    assert cold[\"parent_is_complete_raw_prefix\"] is False and cold[\"edited_prefix_is_complete_raw_prefix\"] is True\n    assert cold[\"complete_original_signature_and_edge_namespace_reconstructed\"] is True\n    assert cold[\"original_neighbor_rows_checked\"] == 480 and cold[\"original_eligible_edges\"] == 68394\n    assert cold[\"accepted_zero_union\"] == 1956\n    assert cold[\"star_unique_Boolean_extension_and_continuous_projection_identity_checked\"] is True\n    assert cold[\"triangle_all_target_equalities_checked\"] == 84\n    assert cold[\"forest_complete_candidate_dispositions_checked\"] == 23040\n    assert cold[\"forest_live_wedges_checked\"] == 3936 and cold[\"forest_pairs_checked\"] == 48\n    same_reference(preparation[\"artifacts\"][\"model_archive\"], cfg[\"inputs\"][\"model\"])\n    same_reference(cold[\"artifacts\"][\"model_archive\"], cfg[\"inputs\"][\"model\"])\n    archive = read_bytes(cfg[\"inputs\"][\"model\"])\n    assert sha(archive) == preparation[\"model\"][\"archive_sha256\"] and len(archive) == preparation[\"model\"][\"archive_bytes\"]\n    raw = gzip.decompress(archive)\n    assert len(raw) == cfg[\"model_raw_bytes\"] == preparation[\"model\"][\"raw_bytes\"] == cold[\"model_raw_bytes\"]\n    assert sha(raw) == cfg[\"model_raw_sha256\"] == preparation[\"model\"][\"raw_sha256\"] == cold[\"model_raw_sha256\"]\n    assert preparation[\"variables\"] == cold[\"variables\"] == VARIABLES and preparation[\"rows\"] == cold[\"rows\"] == ROWS\n    assert sha(pb.DESCRIPTOR.serialized_pb) == cfg[\"runtime\"][\"model_schema_sha256\"] == preparation[\"runtime\"][\"model_schema_sha256\"] == cold[\"runtime\"][\"model_schema_sha256\"]\n    model = pb.CpModelProto()\n    model.ParseFromString(raw)\n    assert model.SerializeToString() == raw and len(model.variables) == VARIABLES and len(model.constraints) == ROWS\n    assert {field.name for field, value in model.ListFields()} <= {\"name\", \"variables\", \"constraints\"}\n    assert all(row.WhichOneof(\"constraint\") == \"linear\" and not row.enforcement_literal for row in model.constraints)\n    edges = []\n    # Only the inherited edge slice has shared_edge names. New auxiliaries follow it.\n    for variable in model.variables[540:BASE_VARIABLES]:\n        prefix, word, left, right = variable.name.split(\"_\")\n        a, b = int(left), int(right)\n        assert (prefix, word) == (\"shared\", \"edge\") and 0 <= a < b < 480\n        assert variable.name == \"shared_edge_%03d_%03d\" % (a, b) and list(variable.domain) == [0, 1]\n        edges.append([a, b])\n    assert len(edges) == 68394 and sha(canonical(edges)) == EDGE_SHA\n    assert all(list(v.domain) == [0, 1] for v in model.variables[:480])\n    return model, edges\n\n",
+      "occurrences": 1
+    },
+    {
+      "label": "all remaining query model hashes come from bound accepted configuration",
+      "before": "MODEL_RAW_SHA",
+      "after": "cfg[\"model_raw_sha256\"]",
+      "occurrences": 6
+    },
+    {
+      "label": "combined scope timeout text",
+      "before": "strengthened query phase deadline",
+      "after": "combined extensions query phase deadline",
+      "occurrences": 1
+    },
+    {
+      "label": "preflight status",
+      "before": "PASS_STRENGTHENED_BOOLEAN_QUERY_PREFLIGHT",
+      "after": "PASS_COMBINED_EXTENSIONS_QUERY_PREFLIGHT",
+      "occurrences": 3
+    },
+    {
+      "label": "production gate status",
+      "before": "AUTHORIZE_ONE_STRENGTHENED_BOOLEAN_MODEL_QUERY",
+      "after": "AUTHORIZE_ONE_COMBINED_EXTENSIONS_MODEL_QUERY",
+      "occurrences": 1
+    },
+    {
+      "label": "UNKNOWN scope status",
+      "before": "UNKNOWN_STRENGTHENED_BOOLEAN_NATIVE",
+      "after": "UNKNOWN_COMBINED_EXTENSIONS_NATIVE",
+      "occurrences": 2
+    },
+    {
+      "label": "worker terminal schema",
+      "before": "conway99.f0.strengthened-boolean-query-terminal.v1",
+      "after": "conway99.f0.combined-extensions-query-terminal.v1",
+      "occurrences": 1
+    },
+    {
+      "label": "owner schema",
+      "before": "conway99.f0.strengthened-boolean-query-owner.v1",
+      "after": "conway99.f0.combined-extensions-query-owner.v1",
+      "occurrences": 1
+    }
+  ],
+  "exact_unchanged_top_level_functions": [
+    {
+      "name": "canonical",
+      "parent_text_sha256": "43cf15500ba5fb7bd96ac7f0426159b09fa880eb04a326cdfc77007265ef1bfe",
+      "new_text_sha256": "43cf15500ba5fb7bd96ac7f0426159b09fa880eb04a326cdfc77007265ef1bfe"
+    },
+    {
+      "name": "sha",
+      "parent_text_sha256": "d41609d967cf1415af635774d407295df5f352d32b53d6a926cd38dfdab7c74d",
+      "new_text_sha256": "d41609d967cf1415af635774d407295df5f352d32b53d6a926cd38dfdab7c74d"
+    },
+    {
+      "name": "digest",
+      "parent_text_sha256": "a62011dc9781bbe74e9ff723f5d78946021b40683dc6ae9b28a7eec1a0f01cfb",
+      "new_text_sha256": "a62011dc9781bbe74e9ff723f5d78946021b40683dc6ae9b28a7eec1a0f01cfb"
+    },
+    {
+      "name": "binding",
+      "parent_text_sha256": "259b22efafad62793c726c33be820ffe74670462be079129afa869e719b761eb",
+      "new_text_sha256": "259b22efafad62793c726c33be820ffe74670462be079129afa869e719b761eb"
+    },
+    {
+      "name": "read_bytes",
+      "parent_text_sha256": "57cd4feb618d065850d9ee5fb8a6d6fbb7373b6087ab9a32dc1d2fd9b2d30ff1",
+      "new_text_sha256": "57cd4feb618d065850d9ee5fb8a6d6fbb7373b6087ab9a32dc1d2fd9b2d30ff1"
+    },
+    {
+      "name": "read_json",
+      "parent_text_sha256": "650e895453d2995dc0dcfd1e50fb14c7ddca50f66149215af7ffa196c8640643",
+      "new_text_sha256": "650e895453d2995dc0dcfd1e50fb14c7ddca50f66149215af7ffa196c8640643"
+    },
+    {
+      "name": "same_reference",
+      "parent_text_sha256": "eaee674385eea4b98a8116625af43f7e429674865bb88400c02452da9aa59fbb",
+      "new_text_sha256": "eaee674385eea4b98a8116625af43f7e429674865bb88400c02452da9aa59fbb"
+    },
+    {
+      "name": "save",
+      "parent_text_sha256": "792adf3766bc243d496bb8db90af6211fb2ae1ef3b09eee0c9e809f7d8c81683",
+      "new_text_sha256": "792adf3766bc243d496bb8db90af6211fb2ae1ef3b09eee0c9e809f7d8c81683"
+    },
+    {
+      "name": "bound_module",
+      "parent_text_sha256": "a98cc3c5c6198bec29a948161ef8a60bee206271e61dc6d60090dd80f933e7ce",
+      "new_text_sha256": "a98cc3c5c6198bec29a948161ef8a60bee206271e61dc6d60090dd80f933e7ce"
+    },
+    {
+      "name": "parameters",
+      "parent_text_sha256": "e2c7f56b32c898d00323eb60fe9ece8645f52e3f13784db5ccaed72315421915",
+      "new_text_sha256": "e2c7f56b32c898d00323eb60fe9ece8645f52e3f13784db5ccaed72315421915"
+    },
+    {
+      "name": "inspect_vector",
+      "parent_text_sha256": "a71a556fd6a6e1a55f36bac7f33fcfabbb303d06f1cf49be46e8d8e27ab7e053",
+      "new_text_sha256": "a71a556fd6a6e1a55f36bac7f33fcfabbb303d06f1cf49be46e8d8e27ab7e053"
+    }
+  ],
+  "changed_top_level_functions": [
+    {
+      "name": "check_time",
+      "parent_text_sha256": "6942a3f0ced00bc5f58890e7c1abaf93ed7f67f180b680f90b39bd9719495d95",
+      "new_text_sha256": "20751b33e30b75b6800f0909ca61fd536e9cd52eab40de1746fc6cb5cbedc044"
+    },
+    {
+      "name": "configuration",
+      "parent_text_sha256": "446bba9c772084e8327007e3506b1129c6f926cb6a35114d77917baaa712627f",
+      "new_text_sha256": "e8aa7c6dd53a385fb09db1766224f978e911437ea96085840a411ebe90171b84"
+    },
+    {
+      "name": "accepted_model",
+      "parent_text_sha256": "05bbd7e9f4320f5baee57bec6a29c208566f3fd628e21b240f18a34c854bfaef",
+      "new_text_sha256": "16f9c86bdda9ee7325cd50a3c7a4eb293efee94b70f6840bc0ff8ae528122841"
+    },
+    {
+      "name": "controls",
+      "parent_text_sha256": "0595dbcbf439d7f38c40b908d48a7937744fc22ec70cc787ce38061cdc559bd8",
+      "new_text_sha256": "631ecacfa0908c1403a8f85721adb70a0cb0c4ad7a2d317c41359433bd63a09b"
+    },
+    {
+      "name": "prepare",
+      "parent_text_sha256": "eb3293362f2227fe50e59c2d57e7cf26be67747c5de78a1be31d8919bb6bb3f6",
+      "new_text_sha256": "32a1ad797bdc29eb4c9d703fc9e4ac7f0d1a894d62c97434e01efd8d914bb1ef"
+    },
+    {
+      "name": "query_authority",
+      "parent_text_sha256": "1375f3ba12c928a671a9e7986a554320536d6d3b4585bb5804c1b7f8b4145579",
+      "new_text_sha256": "d65c2b8cccc53f6e1910d6a215a80c905b4507faf27abe81dbf7136b43e537e1"
+    },
+    {
+      "name": "classification",
+      "parent_text_sha256": "28ca1ed18e103752448405900f6033bb24b6775efecc73660be8c500900af068",
+      "new_text_sha256": "48a2194a3fbcf8305d86c117e6d72adf7af8265ea7b2da58b6f23f8aba0f2863"
+    },
+    {
+      "name": "run",
+      "parent_text_sha256": "2dcc877aa12a70f8b5cfee4a13e49854cab184498886c3b9c551fb39b0d13449",
+      "new_text_sha256": "44e562a2f2f23b2f3d720eb5215b825e5ce5deb0a41c861a3cbfb2391a4f1c5d"
+    },
+    {
+      "name": "worker",
+      "parent_text_sha256": "42a476556d91f039ce37963fa16c7a4dcb951f1df91aff40ed28f8ba032a7a5c",
+      "new_text_sha256": "a3735067304b3fa752c45ab7bdd0c572fb6d43262f2bc87c0bf7068458f63936"
+    },
+    {
+      "name": "owned",
+      "parent_text_sha256": "f7b9d8af284b4dd840c6392ec2a5896eb950dc4783b926ce452a13aa4fe2334b",
+      "new_text_sha256": "17ced11505156f4285f85998195cef0137404fd5c186f5e4451e2c414618ad3a"
+    }
+  ],
+  "complete_parent_and_new_query_source_read": true,
+  "model_byte_or_receipt_hashes_invented": false,
+  "pending_actual_model_bindings": true,
+  "Python_imports": 0,
+  "Python_syntax_runs": 0,
+  "control_runs": 0,
+  "preflight_calls": 0,
+  "solver_calls": 0
+}

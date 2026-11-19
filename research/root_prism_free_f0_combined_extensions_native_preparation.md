@@ -2,6 +2,23 @@
 
 The frozen formulation has 80,730 variables and 297,470 rows. It combines the exact star-channel replacement with the complete triangle-support and cap-one forest extensions. This is a necessary-condition model for the globally prism-free F0 split-18+18 case. It does not supply the other component or prove unrestricted existence or nonexistence.
 
+## Completed native run
+
+[Run 44639233433](https://github.com/1337isnot1337/conway-99/actions/runs/44639233433), source commit `2f074cdeb65731a1a638c29e46f980ebecb964b7`, completes one native build and one complete independent replay on its first attempt. The [root acceptance](../experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json) binds every actual report and owner. No solver was constructed or called.
+
+| Phase | Owner seconds | Owner limit |
+| --- | ---: | ---: |
+| Producer controls | 0.118 | 15 |
+| Native preparation | 12.697 | 135 |
+| Independent controls | 0.115 | 15 |
+| Full independent replay | 7.332 | 135 |
+
+The complete driver takes 20.456 seconds within its 420-second bound. All four owners report successful child exit, child reaping, stopped process groups and zero overrun. The final model has 3,310,380 linear terms, compared with 3,502,476 in its parent.
+
+The recovered compressed model has 5,632,144 bytes and SHA-256 `afeadb94ffa6fba0465a3dbe0094f4c7f7c156de8d7aa5f24a8fcfa38d275542`. Decompression produces 39,306,083 bytes with SHA-256 `2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6`, matching preparation and cold replay. The raw model is stored losslessly in that archive. All 39 small outputs are preserved in their original bytes, including the large integer controls; root verifies 178 cross-references.
+
+The checker compares all 68,934 original variables, 234,584 unreplaced rows, 23,010 replacement rows and 39,876 appended rows. It reconstructs all original eligible edges and neighbor lists, every affected star/triangle/forest support and every new variable message. Removing additions and restoring the replaced rows reproduces all 38,374,405 parent bytes. This accepts the necessary-condition model; general exterior pair caps, a compatible second component and unrestricted existence remain unresolved.
+
 ## Exact changes
 
 | Family | Variables | Rows | Linear terms |
@@ -26,4 +43,4 @@ The one-run workflow has four separately owned phases. Producer controls and che
 
 Reports, ownership records, logs, the patch and suffix are exported as exact original bytes. The full raw model and compressed model are retained in the workflow artifact; the compressed model is also exported in bounded chunks. Large control integers must not be rounded by republishing parsed JSON.
 
-At this preparation checkpoint, no new native build, checker main or solver call has run. The root must accept the actual build and independent replay before any separate query preflight or query authorization. The previous model's query remains UNKNOWN with no vector.
+At checkpoint 89 publication, no new native build, checker main or solver call had run. The root must accept the actual build and independent replay before any separate query preflight or query authorization. The previous model's query remains UNKNOWN with no vector.

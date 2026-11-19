@@ -1,0 +1,308 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-ci-source-reuse.v1",
+  "status": "PASS_COMPLETE_EXPLICIT_TEXT_RECONSTRUCTION_NO_EXECUTION",
+  "parent_driver": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query_ci.py",
+    "git_blob": "9a698de577a4f132a8e8af3e9c818b7f7b01c391",
+    "bytes": 17129,
+    "sha256": "1d9f29fad341c4736cb75e91b8a5b98791606112055dcca65503abd51a12440e"
+  },
+  "new_driver": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query_ci.py",
+    "bytes": 17023,
+    "sha256": "22d20e4a931b5ae069bdead464399b4f5f9773c441f3ed0f9829df6403f80a90",
+    "git_blob": "0bcbc9db71ff64ba9b440990c52e3f87ba0b7daf"
+  },
+  "parent_workflow": {
+    "path": ".github/workflows/conway99-strengthened-query-preflight.yml",
+    "git_blob": "f0477394c2629b775a673d3d2b67f1ebfc61d65d",
+    "bytes": 8068,
+    "sha256": "b18e74b599705b961f1e26cff99fbfa3d08fbbdac843ebc73d725f063cf44be9"
+  },
+  "new_workflow_template": {
+    "path": "experiments/workspace/conway99-combined-extensions-query-preflight.template.yml",
+    "bytes": 7173,
+    "sha256": "0a6882055c55f31a8f3bbc3ddf638e97f82317ced88b303b51224254eb70bfd1",
+    "git_blob": "259fecfea606673887a0e8bd632dd8b3a935a1c0"
+  },
+  "driver_substitutions": [
+    {
+      "label": "driver scope",
+      "before": "strengthened-model query",
+      "after": "combined-model query",
+      "occurrences": 1
+    },
+    {
+      "label": "query owner docstring",
+      "before": "300-second worker process group",
+      "after": "720-second worker process group",
+      "occurrences": 1
+    },
+    {
+      "label": "new query source pin",
+      "before": "\"b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288\"",
+      "after": "\"bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a\"",
+      "occurrences": 1
+    },
+    {
+      "label": "remove unavailable future cold constant",
+      "before": "COLD_SHA = \"44d8bbba6f61fae1a27faa9fa516353b02dbcc53c9cbedd39c5574adb48a5ee3\"\n",
+      "after": "",
+      "occurrences": 1
+    },
+    {
+      "label": "remove unavailable future config constant",
+      "before": "CONFIGURATION_SHA = \"4dedc66ded53ed813a0eef7a0ad366afe1093f5f5120b0d24ff5276497df3077\"\n",
+      "after": "",
+      "occurrences": 1
+    },
+    {
+      "label": "replace old model constant by fixed dimensions",
+      "before": "MODEL_SHA = \"4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2\"",
+      "after": "VARIABLES, ROWS = 80730, 297470",
+      "occurrences": 1
+    },
+    {
+      "label": "query owner limit",
+      "before": "\"query_owner_seconds\": 300",
+      "after": "\"query_owner_seconds\": 720",
+      "occurrences": 1
+    },
+    {
+      "label": "complete pipeline limit",
+      "before": "\"driver_seconds\": 480",
+      "after": "\"driver_seconds\": 900",
+      "occurrences": 1
+    },
+    {
+      "label": "cold owner schema",
+      "before": "conway99.f0.strengthened-query-independent-ci-owner.v1",
+      "after": "conway99.f0.combined-extensions-query-independent-ci-owner.v1",
+      "occurrences": 1
+    },
+    {
+      "label": "request schema",
+      "before": "conway99.f0.strengthened-boolean-query-ci-request.v1",
+      "after": "conway99.f0.combined-extensions-query-ci-request.v1",
+      "occurrences": 1
+    },
+    {
+      "label": "CI result schema",
+      "before": "conway99.f0.strengthened-boolean-query-ci-result.v1",
+      "after": "conway99.f0.combined-extensions-query-ci-result.v1",
+      "occurrences": 1
+    },
+    {
+      "label": "defer raw model binding until actual config read",
+      "before": "        assert request[\"limits\"] == LIMITS and request[\"model_raw_sha256\"] == MODEL_SHA",
+      "after": "        assert request[\"limits\"] == LIMITS",
+      "occurrences": 1
+    },
+    {
+      "label": "bind actual cold and config through gate, without fabricated constants",
+      "before": "        assert request[\"terminal_cold_source\"][\"sha256\"] == COLD_SHA\n        assert request[\"query_configuration\"][\"sha256\"] == CONFIGURATION_SHA\n",
+      "after": "        # The exact future cold/configuration are bound by the root gate below.\n",
+      "occurrences": 1
+    },
+    {
+      "label": "require actual combined config and dimensions before any native phase",
+      "before": "        assert cfg[\"source_sha256\"] == QUERY_SHA and cfg[\"maximum_native_calls\"] == 1 and cfg[\"automatic_retries\"] == 0",
+      "after": "        assert cfg[\"schema\"] == \"conway99.f0.combined-extensions-query-configuration.v1\"\n        assert cfg[\"variables\"] == VARIABLES and cfg[\"rows\"] == ROWS\n        assert cfg[\"source_sha256\"] == QUERY_SHA and cfg[\"maximum_native_calls\"] == 1 and cfg[\"automatic_retries\"] == 0",
+      "occurrences": 1
+    },
+    {
+      "label": "all actual model identity links",
+      "before": "MODEL_SHA",
+      "after": "request[\"model_raw_sha256\"]",
+      "occurrences": 3
+    },
+    {
+      "label": "combined production gate",
+      "before": "AUTHORIZE_ONE_STRENGTHENED_BOOLEAN_MODEL_QUERY",
+      "after": "AUTHORIZE_ONE_COMBINED_EXTENSIONS_MODEL_QUERY",
+      "occurrences": 1
+    },
+    {
+      "label": "combined preflight receipt",
+      "before": "PASS_STRENGTHENED_BOOLEAN_QUERY_PREFLIGHT",
+      "after": "PASS_COMBINED_EXTENSIONS_QUERY_PREFLIGHT",
+      "occurrences": 1
+    },
+    {
+      "label": "owned query comment",
+      "before": "its own 300-second process-group",
+      "after": "its own 720-second process-group",
+      "occurrences": 1
+    },
+    {
+      "label": "actual query owner bound",
+      "before": "owner_pass(query_owner, 300)",
+      "after": "owner_pass(query_owner, 720)",
+      "occurrences": 1
+    },
+    {
+      "label": "independent cold controls status",
+      "before": "PASS_STRENGTHENED_QUERY_INDEPENDENT_INTEGER_AND_RESPONSE_CONTROLS",
+      "after": "PASS_COMBINED_EXTENSIONS_QUERY_INDEPENDENT_INTEGER_AND_RESPONSE_CONTROLS",
+      "occurrences": 1
+    },
+    {
+      "label": "independent cold main status",
+      "before": "PASS_INDEPENDENT_STRENGTHENED_BOOLEAN_QUERY_TERMINAL_REPLAY",
+      "after": "PASS_INDEPENDENT_COMBINED_EXTENSIONS_QUERY_TERMINAL_REPLAY",
+      "occurrences": 1
+    }
+  ],
+  "workflow_substitutions": [
+    {
+      "label": "new workflow title",
+      "before": "name: Conway 99 strengthened query preflight",
+      "after": "name: Conway 99 combined extensions query preflight",
+      "occurrences": 1
+    },
+    {
+      "label": "new workflow target path",
+      "before": ".github/workflows/conway99-strengthened-query-preflight.yml",
+      "after": ".github/workflows/conway99-combined-extensions-query-preflight.yml",
+      "occurrences": 2
+    },
+    {
+      "label": "new preflight request path",
+      "before": "experiments/logs/root-prism-free/f0-strengthened-query-preflight-request01.json",
+      "after": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-request01.json",
+      "occurrences": 3
+    },
+    {
+      "label": "combined native concurrency group",
+      "before": "conway99-strengthened-native-",
+      "after": "conway99-combined-extensions-native-",
+      "occurrences": 1
+    },
+    {
+      "label": "defer exact sparse input list until actual model receipts exist",
+      "before": "          sparse-checkout: |\n            /.github/workflows/conway99-combined-extensions-query-preflight.yml\n            /experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json\n            /experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json\n            /experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json\n            /experiments/logs/root-prism-free/f0-strengthened-native-ci01/model.pb.gz\n            /experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json\n            /experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json\n            /experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json\n            /experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json\n            /experiments/logs/root-prism-free/f0-strengthened-query-independent-source-review01.json\n            /experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-request01.json\n            /experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-gate01.json\n            /experiments/workspace/root_prism_free_f0_boolean_shared_model.py\n            /experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py\n            /experiments/workspace/root_prism_free_f0_strengthened_append.py\n            /experiments/workspace/root_prism_free_f0_strengthened_append_replay.py\n            /experiments/workspace/root_prism_free_f0_strengthened_query.py\n",
+      "after": "          sparse-checkout: |\n            @@SPARSE_CHECKOUT_PATHS@@\n",
+      "occurrences": 1
+    },
+    {
+      "label": "new preflight gate status",
+      "before": "AUTHORIZE_ONE_STRENGTHENED_QUERY_PREFLIGHT",
+      "after": "AUTHORIZE_ONE_COMBINED_EXTENSIONS_QUERY_PREFLIGHT",
+      "occurrences": 1
+    },
+    {
+      "label": "new request schema check",
+      "before": "          assert request['mode'] == 'one-zero-solve-preflight'",
+      "after": "          assert request['schema'] == 'conway99.f0.combined-extensions-query-preflight-request.v1'\n          assert request['mode'] == 'one-zero-solve-preflight'",
+      "occurrences": 1
+    },
+    {
+      "label": "combined config schema and dimensions",
+      "before": "          assert cfg['native_query_authorized_by_configuration_alone'] is False",
+      "after": "          assert cfg['schema'] == 'conway99.f0.combined-extensions-query-configuration.v1'\n          assert cfg['variables'] == 80730 and cfg['rows'] == 297470\n          assert cfg['native_query_authorized_by_configuration_alone'] is False",
+      "occurrences": 1
+    },
+    {
+      "label": "isolated fresh preflight venv",
+      "before": ".ci-strengthened-query-venv",
+      "after": ".ci-combined-extensions-query-venv",
+      "occurrences": 4
+    },
+    {
+      "label": "new preflight output namespace",
+      "before": "f0-strengthened-query-preflight01",
+      "after": "f0-combined-extensions-query-preflight01",
+      "occurrences": 6
+    },
+    {
+      "label": "new query runner path",
+      "before": "experiments/workspace/root_prism_free_f0_strengthened_query.py",
+      "after": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+      "occurrences": 1
+    },
+    {
+      "label": "actual configuration pathname pending",
+      "before": "experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json",
+      "after": "@@QUERY_CONFIGURATION_PATH@@",
+      "occurrences": 1
+    },
+    {
+      "label": "new artifact namespace",
+      "before": "conway99-strengthened-query-preflight-",
+      "after": "conway99-combined-extensions-query-preflight-",
+      "occurrences": 1
+    },
+    {
+      "label": "mark staging template",
+      "before": "",
+      "after": "# NON-ACTIVE TEMPLATE. Root must fill both tokens from actual accepted configuration/gate dependencies.\n# Publish only as .github/workflows/conway99-combined-extensions-query-preflight.yml after a separate zero-solve gate.\n",
+      "operation": "prepend",
+      "occurrences": 1
+    }
+  ],
+  "exact_unchanged_driver_functions": [
+    {
+      "name": "sha",
+      "parent_sha256": "413ac7f645e109b3a54f00409138433758a58647d566bbb941c6d3b95bbd3c33",
+      "new_sha256": "413ac7f645e109b3a54f00409138433758a58647d566bbb941c6d3b95bbd3c33"
+    },
+    {
+      "name": "canonical",
+      "parent_sha256": "e34322fd63f6b2f3e6395895f92194be59373a1d30466a74342609674d01713f",
+      "new_sha256": "e34322fd63f6b2f3e6395895f92194be59373a1d30466a74342609674d01713f"
+    },
+    {
+      "name": "resolve",
+      "parent_sha256": "298e856a135f53a14db8a31fa20a527cfe767db30fecde8fc2952496cad64d31",
+      "new_sha256": "298e856a135f53a14db8a31fa20a527cfe767db30fecde8fc2952496cad64d31"
+    },
+    {
+      "name": "read",
+      "parent_sha256": "39be3e655139ede6354e4366002381d01e4d97f3eb645e5351618cca8b0a2574",
+      "new_sha256": "39be3e655139ede6354e4366002381d01e4d97f3eb645e5351618cca8b0a2574"
+    },
+    {
+      "name": "binding",
+      "parent_sha256": "a12fb533c08c3ff3de4e7c755cb456c340c2ebaebed9200ce60442a61a57a77a",
+      "new_sha256": "a12fb533c08c3ff3de4e7c755cb456c340c2ebaebed9200ce60442a61a57a77a"
+    },
+    {
+      "name": "same_ref",
+      "parent_sha256": "b9d839ad137644326209d2c44a7dd960179640b79b80d01db873a2e699028104",
+      "new_sha256": "b9d839ad137644326209d2c44a7dd960179640b79b80d01db873a2e699028104"
+    },
+    {
+      "name": "save",
+      "parent_sha256": "bee24cca8d8730b031ec45a2d39239d1b2ad8fd2fae653f951c451b0a9cd8530",
+      "new_sha256": "bee24cca8d8730b031ec45a2d39239d1b2ad8fd2fae653f951c451b0a9cd8530"
+    },
+    {
+      "name": "owner_pass",
+      "parent_sha256": "d6e3bc85a8a5400fa943ae4be85d5743d2b77b2b404b7af4c38e8fa3d020d318",
+      "new_sha256": "d6e3bc85a8a5400fa943ae4be85d5743d2b77b2b404b7af4c38e8fa3d020d318"
+    },
+    {
+      "name": "supervisor_module",
+      "parent_sha256": "b5b9887fcbeab6fd73293be4a0926a77c89e1a8743b7ec1166a3d28e7051d41e",
+      "new_sha256": "b5b9887fcbeab6fd73293be4a0926a77c89e1a8743b7ec1166a3d28e7051d41e"
+    }
+  ],
+  "changed_driver_functions": [
+    {
+      "name": "owned_cold",
+      "parent_sha256": "4b37c8897c61481401201b2ed6930cabf7c7ce72b2583a8a5af65d627b6a021d",
+      "new_sha256": "13821aea45015b6a1da7161f4b9d7bd09ff5bf2917d5d7414a87f3b9d69d935c"
+    },
+    {
+      "name": "run",
+      "parent_sha256": "7e2cea53ae45a544dcc438b6bb64a7fcc038515668820280aee37cd3927f12d3",
+      "new_sha256": "3880386deb3d495329bfbf512a9eecfd3ed2de646fa16e1bbb08790eeed2f946"
+    }
+  ],
+  "Python_imports": 0,
+  "Python_or_YAML_parse_calls": 0,
+  "control_calls": 0,
+  "native_calls": 0,
+  "workflow_runs": 0,
+  "old_sources_changed": false
+}

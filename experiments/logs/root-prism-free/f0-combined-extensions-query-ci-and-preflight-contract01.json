@@ -1,0 +1,119 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-ci-and-preflight-contract.v1",
+  "status": "SOURCE_ONLY_TEMPLATES_PENDING_ACTUAL_CONFIGURATION_AND_GATES",
+  "driver_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query_ci.py",
+    "bytes": 17023,
+    "sha256": "22d20e4a931b5ae069bdead464399b4f5f9773c441f3ed0f9829df6403f80a90",
+    "git_blob": "0bcbc9db71ff64ba9b440990c52e3f87ba0b7daf"
+  },
+  "preflight_workflow_template": {
+    "path": "experiments/workspace/conway99-combined-extensions-query-preflight.template.yml",
+    "bytes": 7173,
+    "sha256": "0a6882055c55f31a8f3bbc3ddf638e97f82317ced88b303b51224254eb70bfd1",
+    "git_blob": "259fecfea606673887a0e8bd632dd8b3a935a1c0"
+  },
+  "source_reuse": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-ci-explicit-source-reuse01.json",
+    "bytes": 13991,
+    "sha256": "a96006d8260e13fd6101aa48dabc6488f5ec980583fbc951764b63d0139d6dc4",
+    "git_blob": "22bb3fc3eac2544250d8f1215d9cc5d2187fd86c"
+  },
+  "query_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "actual_query_configuration_created": false,
+  "actual_root_requests_created": false,
+  "actual_gates_created": false,
+  "production_request": {
+    "schema": "conway99.f0.combined-extensions-query-ci-request.v1",
+    "limits": {
+      "query_owner_seconds": 720,
+      "cold_controls_owner_seconds": 15,
+      "cold_main_owner_seconds": 135,
+      "driver_seconds": 900
+    },
+    "maximum_native_calls": 1,
+    "automatic_retries": 0,
+    "required_exact_refs": [
+      "source",
+      "query_source",
+      "terminal_cold_source",
+      "query_configuration",
+      "query_gate",
+      "preflight_report",
+      "preflight_owner",
+      "supervisor_source"
+    ],
+    "required_paths": [
+      "driver_report",
+      "query_directory",
+      "cold_directory",
+      "preflight_directory"
+    ],
+    "model_raw_sha256": null,
+    "query_configuration": null,
+    "query_gate": null,
+    "preflight_report": null,
+    "preflight_owner": null,
+    "terminal_cold_source": null,
+    "model_configuration_and_cold_hashes_bound_by_exact_request_and_production_gate": true,
+    "new_output_directories_required": true,
+    "all_query_and_cold_directories_disjoint": true,
+    "required_gate_status": "AUTHORIZE_ONE_COMBINED_EXTENSIONS_MODEL_QUERY",
+    "required_preflight_status": "PASS_COMBINED_EXTENSIONS_QUERY_PREFLIGHT",
+    "independent_cold_controls_status": "PASS_COMBINED_EXTENSIONS_QUERY_INDEPENDENT_INTEGER_AND_RESPONSE_CONTROLS",
+    "independent_cold_main_status": "PASS_INDEPENDENT_COMBINED_EXTENSIONS_QUERY_TERMINAL_REPLAY",
+    "cold_owner_schema": "conway99.f0.combined-extensions-query-independent-ci-owner.v1",
+    "driver_result_schema": "conway99.f0.combined-extensions-query-ci-result.v1",
+    "driver_pass_status": "PASS_ONE_BOUNDED_QUERY_AND_INDEPENDENT_TERMINAL_REPLAY",
+    "cold_cli": "controls --output FILE; run --configuration FILE --configuration-sha256 SHA --directory QUERYDIR --result-sha256 SHA --owner-sha256 SHA --gate FILE --gate-sha256 SHA --output FILE"
+  },
+  "zero_solve_preflight": {
+    "final_workflow_path": ".github/workflows/conway99-combined-extensions-query-preflight.yml",
+    "request_path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-request01.json",
+    "request_schema": "conway99.f0.combined-extensions-query-preflight-request.v1",
+    "required_gate_status": "AUTHORIZE_ONE_COMBINED_EXTENSIONS_QUERY_PREFLIGHT",
+    "mode": "one-zero-solve-preflight",
+    "maximum_preflight_calls": 1,
+    "optimizer_calls_allowed": 0,
+    "native_query_allowed": false,
+    "automatic_retries": 0,
+    "limits": {
+      "preparation_seconds": 60,
+      "preparation_owner_seconds": 75
+    },
+    "workflow_timeout_minutes": 5,
+    "source_only_template_not_a_registered_workflow": true,
+    "requires_first_workflow_attempt": true,
+    "requires_exact_push_parent_in_gate": true,
+    "actual_gate_request_and_workflow_hashes_owned_by_root": true
+  },
+  "finalization_rules": [
+    "Preserve this template and all consumed sources unchanged.",
+    "Remove the two leading template-only comment lines when creating the fresh .github/workflows target.",
+    "Replace @@QUERY_CONFIGURATION_PATH@@ with the actual accepted query configuration path, restricted to repository-relative ASCII letters/digits/underscore/dot/slash/hyphen.",
+    "Replace @@SPARSE_CHECKOUT_PATHS@@ with the sorted unique complete actual gate dependency paths plus workflow/request/gate paths, each prefixed by / and joined by newline plus twelve spaces.",
+    "Require that no @@ token remains. Freeze the resulting workflow bytes and bind them in the actual root-owned zero-solve request/gate.",
+    "Only a later separately reviewed production request/gate may invoke the driver after actual preflight acceptance."
+  ],
+  "inherited_preservation": {
+    "one_native_call": true,
+    "separate_process_group_owners": true,
+    "raw_native_response_and_every_vector": true,
+    "all_complete_activity_archives": true,
+    "no_native_INFEASIBLE_certificate_claim": true,
+    "complete_output_directories_must_be_uploaded": true
+  },
+  "execution_counts": {
+    "Python_imports": 0,
+    "native_preflights": 0,
+    "solves": 0,
+    "independent_colds": 0,
+    "CI_runs": 0
+  },
+  "refs_changed": false
+}
