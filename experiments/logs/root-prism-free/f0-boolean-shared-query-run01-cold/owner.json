@@ -1,0 +1,93 @@
+{
+  "CpSolver_constructed": false,
+  "automatic_retries": 0,
+  "cooperative_seconds": 120,
+  "optimizer_calls": 0,
+  "owner_seconds": 135,
+  "preliminary_receipt": {
+    "bytes": 1548,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01-cold/owned-start.json",
+    "sha256": "fb24f57a9f4ceeed5529544810f7867f35fc1c5f27ae3434ab7ef23719b19af3"
+  },
+  "production_owner": {
+    "bytes": 554,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01/owner.json",
+    "sha256": "564c9c930adb8e123dc0fdd6611f931f37f011b207045f45b2a33e6031edafa4"
+  },
+  "production_result": {
+    "bytes": 2351,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01/result.json",
+    "sha256": "b4029e65079849917b21c61a0120f79d129634d20f39e88ae0523b11b1fce796"
+  },
+  "report": {
+    "bytes": 2485,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01-cold/report.json",
+    "sha256": "2cafeeeff150a0ca6a11310cf014522c60bd8af699b0ab9322b796c4721ba4a0"
+  },
+  "report_accepted": true,
+  "root_gate": {
+    "bytes": 1600,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-cold-root-gate01.json",
+    "sha256": "79feaded3521c5db743c6d9dee134822b1714bc7abe6814273ef72c5f3ad8b75"
+  },
+  "schema": "conway99.f0.boolean-shared-query-independent-cold-owner.v1",
+  "source": {
+    "bytes": 20996,
+    "path": "experiments/workspace/root_prism_free_f0_boolean_shared_query_replay.py",
+    "sha256": "6dfea9bff6b169d44d633154b8ceb1a57b5f4cf71be104b7973205f7dfa49683"
+  },
+  "status": "OWNED_BOOLEAN_SHARED_QUERY_COLD_ACCEPTED",
+  "supervision": {
+    "artifacts": [
+      {
+        "bytes": 0,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01-cold/cold.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 99,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01-cold/cold.stdout.log",
+        "sha256": "b9708e7b1ef6f2d63b30db8a7002f63d65e9a896bdd26e6f7ecc9a5ecd535689"
+      },
+      {
+        "bytes": 1548,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01-cold/owned-start.json",
+        "sha256": "fb24f57a9f4ceeed5529544810f7867f35fc1c5f27ae3434ab7ef23719b19af3"
+      },
+      {
+        "bytes": 2485,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01-cold/report.json",
+        "sha256": "2cafeeeff150a0ca6a11310cf014522c60bd8af699b0ab9322b796c4721ba4a0"
+      }
+    ],
+    "child_reaped": true,
+    "command": [
+      "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_boolean_shared_query_replay.py",
+      "run",
+      "--directory",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/logs/root-prism-free/f0-boolean-shared-query-run01",
+      "--result-sha256",
+      "b4029e65079849917b21c61a0120f79d129634d20f39e88ae0523b11b1fce796",
+      "--owner-sha256",
+      "564c9c930adb8e123dc0fdd6611f931f37f011b207045f45b2a33e6031edafa4",
+      "--output",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/logs/root-prism-free/f0-boolean-shared-query-run01-cold/report.json"
+    ],
+    "exit_code": 0,
+    "hard_seconds": 135,
+    "hard_timeout": false,
+    "new_process_group": true,
+    "seconds": 1.7744778959895484
+  },
+  "supervisor_helper": {
+    "bytes": 25758,
+    "path": "experiments/workspace/rook_case4_box_hull_membership.py",
+    "sha256": "54330f430c0c4dae03a0298533121ce43482ceb295f54df715ad2f2180d3503c"
+  },
+  "supervisor_source": {
+    "bytes": 25552,
+    "path": "experiments/workspace/rook_case4_box_hull_membership_query.py",
+    "sha256": "aa557c7b99ec3de71e9ecde3f6f7dfa3ca71066a835086cdd3b3f2eb7be558e5"
+  }
+}

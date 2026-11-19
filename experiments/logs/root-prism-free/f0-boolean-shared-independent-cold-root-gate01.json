@@ -1,0 +1,43 @@
+{
+  "all_484_source_lines_read": true,
+  "all_exterior_pair_caps_claimed": false,
+  "bindings": {
+    "controls": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-independent-controls01.json",
+      "sha256": "56c356240c2a19dc3e01c36b5cebaa713bf809aeca163bb8dcfdae142975a7e6"
+    },
+    "overlay_peer_review": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-overlay-independent-source-review01.json",
+      "sha256": "d0cd4393af9e5122332d15b1306e598c9b1b3a53acdae98385af1e19361a0356"
+    },
+    "preparation_owner": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/owner.json",
+      "sha256": "1235205d26e3df428e83b666a5f7145db6c66f8c40677ec41a0ba9a86e601b5f"
+    },
+    "preparation_report": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/report.json",
+      "sha256": "ecdc3405f803d8e5815dba2555f4c9884018de69aff0b756a132e26c0a0a8471"
+    },
+    "source": {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model_replay.py",
+      "sha256": "81a2ce4b5ccf72e0e169cd4d3c371341aa2fea448bb407e0069f0783e217ef18"
+    }
+  },
+  "limits": {
+    "automatic_retries": 0,
+    "cold_seconds": 120,
+    "optimizer_calls": 0,
+    "owner_seconds": 135
+  },
+  "native_query_authorized": false,
+  "review": [
+    "Reconstruct all480 signatures and68394 eligible edges from the fixed core and check exact domain equality.",
+    "Compare complete parent protobuf bytes and every appended variable and constraint including empty mixed equations.",
+    "Recheck every induced prism witness, all73440 core-pair buckets, every258-by12 provenance mapping and the complete overlay/inventory.",
+    "Only the protobuf decoder is imported; no producer, CpModel or CpSolver is used.",
+    "Tiny controls check the full endpoint truth table, large integer and empty row, and reject six independent row/domain mutations."
+  ],
+  "schema": "conway99.f0.boolean-shared-independent-cold-root-gate.v1",
+  "status": "AUTHORIZED_ONE_COMPLETE_INDEPENDENT_MODEL_REPLAY",
+  "whole_component_excluded": false
+}

@@ -1,0 +1,63 @@
+{
+  "acceptance": [
+    "Preserve all native responses, vectors, parameter settings, runtime hashes and owner records.",
+    "Inspect every returned integer vector against all domains and all168050 original model rows.",
+    "Require separate terminal replay before treating any vector as accepted.",
+    "A returned incidence/edge assignment still requires all exterior pair caps and second-component residual obligations.",
+    "Native INFEASIBLE is unproved; UNKNOWN or overrun gives no exclusion. No unchanged-prefix retry."
+  ],
+  "actual_preflight_report_and_owner_read": true,
+  "all_344_query_source_lines_read": true,
+  "bindings": {
+    "configuration": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-configuration01.json",
+      "sha256": "dcd8e3f99c8773e5150deb2542600a34e56058f5ca3144f7f537b7c1e64ac693"
+    },
+    "model_cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owner.json",
+      "sha256": "ccd6e7ffa5d46d35ab4d65efdfd2fb87922ebcddfa6fbe03d326c98f0784edd2"
+    },
+    "model_cold_report": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/report.json",
+      "sha256": "a907d1c0f51f893166f32b1aab136d885b412cf0aecbdfed2a938fdaaf373efb"
+    },
+    "preflight_owner": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/owner.json",
+      "sha256": "cec3baf75378a2f8a40be96a45d64ce1d187f5bd4e7540dbff5831cb69c0f674"
+    },
+    "preflight_report": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/report.json",
+      "sha256": "2a40d71a0ea8ac7030fdd598df89d9bd8f9bd17355d6b0c27d5e07490573bff5"
+    },
+    "source": {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_query.py",
+      "sha256": "d4f08d6eb893b88ec33dcbef50ddae90799cbca5d49f8d6b5bd7332f0ad09999"
+    }
+  },
+  "complete_model_independent_cold_accepted": true,
+  "graph_constructed": false,
+  "limits": {
+    "automatic_retries": 0,
+    "finalization_reserve_seconds": 60,
+    "hard_owner_seconds": 300,
+    "maximum_native_calls": 1,
+    "native_seconds": 180,
+    "threads": 1
+  },
+  "model_raw_sha256": "4505234d13039159c3191918f7db729819ad6ed25f46e538d91975466d660e83",
+  "query_parameters": {
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "log_search_progress": true,
+    "log_to_response": true,
+    "log_to_stdout": true,
+    "max_time_in_seconds": 180.0,
+    "num_search_workers": 1,
+    "random_seed": 0
+  },
+  "rows": 168050,
+  "schema": "conway99.f0.boolean-shared-one-call-root-gate.v1",
+  "status": "AUTHORIZED_ONE_FULL_BOOLEAN_SHARED_NATIVE_QUERY",
+  "variables": 68934,
+  "whole_component_excluded": false
+}

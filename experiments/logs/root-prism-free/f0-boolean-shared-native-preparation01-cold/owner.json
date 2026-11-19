@@ -1,0 +1,65 @@
+{
+  "CpSolver_constructed": false,
+  "automatic_retries": 0,
+  "optimizer_calls": 0,
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/report.json",
+    "sha256": "a907d1c0f51f893166f32b1aab136d885b412cf0aecbdfed2a938fdaaf373efb"
+  },
+  "report_accepted": true,
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-independent-cold-root-gate01.json",
+    "sha256": "515bae037b4cb22aa09c9a677cc4a4898a77574e48d95fd3b9685f0471adb166"
+  },
+  "schema": "conway99.f0.boolean-shared-independent-cold-owner.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model_replay.py",
+    "sha256": "81a2ce4b5ccf72e0e169cd4d3c371341aa2fea448bb407e0069f0783e217ef18"
+  },
+  "status": "OWNED_COMPLETE_BOOLEAN_SHARED_MODEL_COLD_ACCEPTED",
+  "supervision": {
+    "artifacts": [
+      {
+        "bytes": 0,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/cold.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 91,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/cold.stdout.log",
+        "sha256": "df38fbf4fa32edda57ea282569f7ba2c264490c8b8dcae3492788c53ccb1cff4"
+      },
+      {
+        "bytes": 978,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owner.json",
+        "sha256": "1f31e0fb8a395c757e3f9f75af3623ba630965f433c40b934cca70adb0da852e"
+      },
+      {
+        "bytes": 2974,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/report.json",
+        "sha256": "a907d1c0f51f893166f32b1aab136d885b412cf0aecbdfed2a938fdaaf373efb"
+      }
+    ],
+    "child_reaped": true,
+    "command": [
+      "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_boolean_shared_model_replay.py",
+      "run",
+      "--output",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/report.json"
+    ],
+    "exit_code": 0,
+    "hard_seconds": 135,
+    "hard_timeout": false,
+    "new_process_group": true,
+    "seconds": 6.574040307998075
+  },
+  "supervisor_helper": {
+    "path": "experiments/workspace/rook_case4_box_hull_membership.py",
+    "sha256": "54330f430c0c4dae03a0298533121ce43482ceb295f54df715ad2f2180d3503c"
+  },
+  "supervisor_source": {
+    "path": "experiments/workspace/rook_case4_box_hull_membership_query.py",
+    "sha256": "aa557c7b99ec3de71e9ecde3f6f7dfa3ca71066a835086cdd3b3f2eb7be558e5"
+  }
+}

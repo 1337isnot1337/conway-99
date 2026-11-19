@@ -1,0 +1,31 @@
+{
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-pair-cap-controls01/report.json",
+    "sha256": "5bf0c8f0f64c0ffdafc6d600ce88f883fffe9bd062eb3a54199f7d6d8aa937dd"
+  },
+  "controls_owner": {
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-pair-cap-controls01/owner.json",
+    "sha256": "0e9c6ce07c1563e86935d7d33453b73ba135ede81e7502525fed4a7cf24f9469"
+  },
+  "controls_repeated": false,
+  "mathematical_checks": [
+    "For selected a,b, the SRG cap is common_D(a,b)+y_ab <= 2-|h_a intersection h_b|, since future common neighbors can only increase the total.",
+    "A witness takes k distinct common vertices and optionally the pair edge, with k+include+overlap=3. Its 2k+include distinct positive edge literals force a violation regardless of other edge assignments.",
+    "The universal cover sum(y_e for e in witness) <= number_of_witness_edges-1 therefore follows. Endpoint activation supplies selection of every witness vertex, so no additional selector guard is needed.",
+    "Enumerating both available choices of pair-edge inclusion and every required common-vertex subset retains every minimal positive witness for each designated violated pair. Minimality is for that pair cap, not for the entire graph constraint system.",
+    "Deduplication by exact sorted edge-ID sets preserves all pair witnesses. The independent verifier reconstructs the full expected edge set of every circuit.",
+    "Production eligible edges cannot join signatures with overlap two, which rules out the one-edge circuit that is allowed in the general five-vertex controls. Production circuits consequently have two through six edges.",
+    "The vector inspector exactly checks population, all degree/mixed equations, original Gram entries, and all 1770 selected pairs. Its explicit scope does not claim verification of every parent auxiliary/linear row or a complete graph."
+  ],
+  "no_mathematical_blocker_found": true,
+  "optimizer_calls": 0,
+  "production_candidate_evaluations": 0,
+  "reviewer": "master_review",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_boolean_shared_pair_caps.py",
+    "sha256": "15d5c3ee685fe4f026f4521814c7796694702ea5b8f15af4f237b93285b7f6d2"
+  },
+  "source_imports": 0,
+  "source_lines_read": 229,
+  "status": "PASS_INDEPENDENT_BOOLEAN_SHARED_PAIR_CAP_SOURCE_REVIEW"
+}
