@@ -35,5 +35,18 @@ their hypotheses permit them; computational exclusions require exact replay.
 
 - Inspected the research ledger, public claims, and existing issue ownership.
 - Started separate spectral, independent-set, and completion investigations.
-- Replaying the repository's existing exact certificate checks before adding
-  constraints to the baseline.
+- Replayed `make verify` successfully: the seven-axis inequalities, all twelve
+  root-cover cases, three rational theta certificates, and support enumeration
+  passed. The output is in `experiments/logs/session-ab2f/baseline-verify.log`.
+- Added a fixed-transversal core formulation. At size twenty the exact degree
+  budget leaves 134,085 labeled patterns in 56 orbits. Both small projector
+  matrices are positive semidefinite in every orbit; this test adds no
+  exclusion. Exterior-signature tests are in progress.
+- Added core-incidence enumeration and exact integer triple packing. The rook
+  and Golay controls and an exact Farkas orientation control pass. Initial
+  time-limited packing searches on the eight incomplete-grid cores are
+  inconclusive.
+- Reconstructed the existing norm-16 exterior templates independently. The
+  4,985 templates and 8/64/11 exterior partition already occur in
+  `signed_eight_heavy.py`; they are not new exclusions. The current work adds
+  an algebraic even-cycle proof and full incidence-orbit classification.
