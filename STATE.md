@@ -27,7 +27,7 @@ The [Fano-plane square-pairing exclusion](research/involutions/fano-square-pairi
 
 The [distinct-endpoint theorem](research/involutions/distinct-endpoint-squares.md) removes the Fano-plane assumption. If all 21 squares have one shared axis, at least one pair of endpoints must occur twice or more. The signed-root representation in rank seven violates an orbit degree bound, and the balanced representation violates a squared-norm congruence modulo 16.
 
-With repeated endpoint pairs allowed, the [endpoint graph must be disconnected](research/involutions/connected-endpoint-squares.md) whenever every square has one shared axis. Its possible component sizes are $6+1$, $4+3$, and $3+3+1$.
+With repeated endpoint pairs allowed, the [endpoint graph must be disconnected](research/involutions/connected-endpoint-squares.md) whenever every square has one shared axis. A three-axis component would need three exceptional tip orbits to pair among themselves. Thus only component sizes $6+1$ remain.
 
 ## Sources and replay
 

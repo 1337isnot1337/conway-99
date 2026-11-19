@@ -1,6 +1,6 @@
 # The endpoint graph must be disconnected
 
-Suppose all 21 squares of a one-fixed-point involution have one shared axis. Make a graph on the seven axes by joining the two endpoints of each square, retaining only one edge for each distinct pair. **This graph must be disconnected. Its component sizes can only be $6+1$, $4+3$, or $3+3+1$.** Repeated endpoint pairs are allowed throughout.
+Suppose all 21 squares of a one-fixed-point involution have one shared axis. Make a graph on the seven axes by joining the two endpoints of each square, retaining only one edge for each distinct pair. **This graph must have components of sizes six and one.** Repeated endpoint pairs are allowed throughout.
 
 Use the integer vectors $Z_s$ and the matrix $B$ from the [distinct-endpoint proof](distinct-endpoint-squares.md). Put $r_s=Z_s/\sqrt{14}$; their Gram matrix is $K$ and each has squared norm two. Their integer lifts $Z_s$ have parity equal to the sum modulo two of the two axis-incidence columns for the endpoints.
 
@@ -19,3 +19,15 @@ We have obtained seven orthogonal unit directions indexed by the original axes, 
 All repeats are now signed copies of their representatives. The balanced representation of the representatives extends to all squares. Orient the columns as coordinate differences. For *every* pair of axes $a,b$, even if missing among the endpoints, take its virtual column given by the image of $e_a-e_b$ under the same scaled isometry. A path in the connected endpoint graph expresses it as an integer signed sum of actual columns. Thus it has the required parity mask, squared norm 28 and eigenvalue $-4$. The own-label argument applies to these virtual columns: the potential at an orbit labeled $ab$ has equal values at $a,b$. The square-sum identity for the two row potentials extends by linearity from the actual columns to every virtual difference. Counting the squared entries of the 21 virtual columns by square pairs of rows and then by columns now gives exactly the same contradiction modulo 16. This proves disconnectedness.
 
 Two isolated axes $a,b$ are impossible, since every far orbit labeled $ab$ uses one of them as an endpoint. A component consisting only of $a,b$ is also impossible: a far orbit labeled $ab$ has one of these as its center and the other as its endpoint, and its second endpoint must be a third distinct axis in the same component. The stated three partitions are the only remaining disconnected possibilities.
+
+## A three-axis component is impossible
+
+Let $C=\{a,b,c\}$ be an endpoint component. Both occurrences of label $ab$ must be centered at $a$ or $b$, with the remaining endpoint $c$. If $n_a$ counts the squares centered at $a$ with endpoints $b,c$, this gives $n_a+n_b=2$, and likewise for the other two pairs. Thus $n_a=n_b=n_c=1$. Call these three squares internal. Their mutual Gram products are $-1$: the corresponding label-sum columns have dot product five and $K_{st}=4-2N_{st}-5$. The endpoint pairs are distinct, so $|K_{st}|\le1$. Their three norm-two roots sum to zero.
+
+Summing the formula for $Z$ over the three internal squares, whose $m$ columns sum to $4\mathbf1_C$, shows that a point in an exterior far orbit $t$ has $3-2|u_t\cap C|$ neighbors in their union (here $u_t$ denotes the label as a set). Every exterior orbit with one axis in $C$ therefore sees only one point. The twelve orbits with neither axis in $C$ each see three.
+
+Each internal square needs exactly one exterior far orbit whose points see two of its vertices. Indeed its four edges need their triangle tips. Its unique shared axis supplies the tips on one opposite-edge pair; the other pair of tips forms a far orbit. No other exterior point can see two square vertices, because the diagonals already have two common neighbors. Only the twelve orbits disjoint from $C$ can supply such a tip. Since each of these sees a total of three points, exactly three of them have counts $(2,1,0)$ in some order on the internal squares; the others have counts $(1,1,1)$.
+
+An orbit whose label is disjoint from $C$ has a square mate also disjoint from $C$: the center is outside $C$, and the two endpoints belong to the same endpoint component. For any such square and any internal square the endpoint masks are disjoint and different. Their Gram product vanishes, as does the dot product of their $m$ columns. Hence $N_{st}=2$. The two mate orbits consequently have counts summing to two on **each** internal square. An orbit with a zero in its counts must pair with another orbit of the $(2,1,0)$ type. There are three of them, a contradiction.
+
+It follows that **the only possible endpoint component sizes are $6+1$**. In particular one axis must center all six squares containing its twelve labeled far orbits.
