@@ -1,0 +1,64 @@
+name: Conway 99 recovery certificate checks
+
+on:
+  push:
+    branches: [research/global-constraints-ab2f]
+    paths:
+      - .github/workflows/conway99-recovery-checks.yml
+      - experiments/workspace/replay_recovered_certificates.js
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: conway99-recovery-checks-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  exact-replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out the exact research commit
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/workspace/high_graph_core16_recovery_check.js
+            /experiments/workspace/root_prism_free_f0_gram_interior_recovery.js
+            /experiments/workspace/root_prism_free_f0_fractional_structural_recovery.js
+            /experiments/workspace/root_prism_free_f0_fractional_baseline_recovery.js
+            /experiments/workspace/root49_packing_moment_recovery_check.js
+            /experiments/workspace/root49_packing_moment_recovery_replay.js
+            /experiments/workspace/rook_case4_gram_support_reconstruction.js
+            /experiments/workspace/rook_case4_maxmin_certificate_controls.js
+            /experiments/workspace/replay_recovered_certificates.js
+            /experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz
+            /experiments/logs/root-prism-free/f0-quadratic-allocation-preparation.json.gz
+            /experiments/logs/root-prism-free/f0-gram-interior-recovery-certificate.json
+            /experiments/logs/root-prism-free/f0-fractional-structural-recovery-input.json
+            /experiments/logs/root-prism-free/f0-fractional-motif-recovery-input.json
+            /experiments/logs/root-prism-free/f0-fractional-structural-recovery.json
+            /experiments/logs/root-prism-free/f0-fractional-baseline-recovery.json
+            /experiments/logs/moments-and-counts/order10-root49-public-recovery-inputs.json
+            /experiments/logs/moments-and-counts/order10-high-mask-packing-other-roots-scope01.json
+            /experiments/logs/moments-and-counts/order10-root49-packing-moment-recovery-preparation.json
+            /experiments/logs/moments-and-counts/order10-root49-packing-moment-recovery-result.json
+            /experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json
+            /experiments/logs/session-ab2f/rook-case4-gram-support-input.json
+            /experiments/logs/session-ab2f/rook-case4-gram-support-result.json
+      - name: Run the eight finite certificate checks
+        shell: bash
+        run: |
+          set -euo pipefail
+          node experiments/workspace/replay_recovered_certificates.js "$RUNNER_TEMP/conway99-recovery"
+      - name: Retain exact replay reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: conway99-recovery-${{ github.sha }}
+          path: ${{ runner.temp }}/conway99-recovery/
+          if-no-files-found: error
+          retention-days: 7

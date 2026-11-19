@@ -897,3 +897,7 @@ The next owned lanes are the complete rook selector LP, the other sixty-one root
 - Exact finite-box max-min algebra is prepared for future forced-selector discovery. Its complete small controls pass, but no case-four max-min driver or query is included here.
 
 All new files were frozen as Git blobs and independently reviewed before this commit. The unavailable local checkpoint-43 outputs remain unavailable; this publication does not silently reconstruct or replace their reported results. Native bounded queries will be separate continuations with their own gates and outcomes.
+
+## Checkpoint 45: bounded native recovery replay preparation
+
+The next commit adds a branch-limited CI workflow for the eight already-reviewed finite checkers. It resolves the remaining untested Node filesystem wrappers during the local workspace outage. The workflow has read-only repository permission, pinned actions, sparse checkout and explicit job/child deadlines. It runs no optimizer. Its first execution result will be recorded separately. The exact public-input extraction source for root 49 is also preserved.

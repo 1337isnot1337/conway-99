@@ -788,3 +788,7 @@ node experiments/workspace/rook_case4_maxmin_certificate_controls.js
 ```
 
 All pure JavaScript checks were executed and independently replayed in V8 before publication. The Node filesystem entry points were read but have not been executed during the workspace outage. The F0 baseline omits the unavailable terminal 4,404-cut registry and the twelve earlier weighted rows. It is a prepared necessary relaxation, with no solver outcome.
+
+## Bounded native recovery replay
+
+The branch-limited workflow `.github/workflows/conway99-recovery-checks.yml` runs the eight recovered finite checkers in fresh Node processes. Each checker has a 30-second deadline; the job has a five-minute deadline. The runner uses a sparse checkout of the exact commit, read-only repository permission, no persisted checkout credentials, and pinned action commits. It invokes no optimizer. Reports are retained as a workflow artifact for seven days and the summary is also printed in the job log. The first native run is pending at this preparation commit.
