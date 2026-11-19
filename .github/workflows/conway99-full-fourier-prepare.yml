@@ -1,0 +1,121 @@
+name: Conway 99 exact full Fourier preparation
+
+on:
+  push:
+    branches: [research/global-constraints-ab2f]
+    paths:
+      - .github/workflows/conway99-full-fourier-prepare.yml
+      - experiments/logs/root-prism-free/f0-full-fourier-specification-ci-request01.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: conway99-full-fourier-prepare-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  exact-preparation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out the complete explicit mathematical inputs
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/workspace/root_prism_free_f0_full_fourier_specification.py
+            /experiments/workspace/root_prism_free_f0_nonabelian_pair_factorization.py
+            /experiments/workspace/root_prism_free_f0_character_literal_lift.py
+            /experiments/workspace/root_prism_free_f0_character_y_domain_overlay.py
+            /experiments/workspace/root_prism_free_f0_local_neighbors_batch.py
+            /experiments/logs/root-prism-free/f0-nonabelian-pair-factorization01.json.gz
+            /experiments/logs/root-prism-free/f0-nonabelian-pair-factorization-literature-review.json
+            /experiments/logs/root-prism-free/f0-nonabelian-pair-factorization-note-literature-review.json
+            /experiments/logs/root-prism-free/f0-two-dimensional-moments-scope01.json
+            /experiments/logs/root-prism-free/f0-character-literal-lift-preparation01.json.gz
+            /experiments/logs/root-prism-free/f0-character-literal-lift-preparation01-cold.json
+            /experiments/logs/root-prism-free/f0-character-populations01.json.gz
+            /experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz
+            /experiments/logs/root-prism-free/f0-character-phase-normalization01.json
+            /experiments/logs/root-prism-free/f0-character-phase-normalization01-cold.json
+            /experiments/logs/root-prism-free/f0-character-y-domain-overlay01/plan.json.gz
+            /experiments/logs/root-prism-free/f0-character-y-domain-overlay01/report.json
+            /experiments/logs/root-prism-free/f0-character-y-domain-overlay01-cold/report.json
+            /experiments/logs/root-prism-free/f0-full-fourier-specification-root-gate01.json
+            /experiments/logs/root-prism-free/f0-full-fourier-specification-ci-request01.json
+      - name: Check the frozen source gate and dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          request = json.loads(pathlib.Path("experiments/logs/root-prism-free/f0-full-fourier-specification-ci-request01.json").read_text())
+          gate_path = pathlib.Path(request["gate"]["path"])
+          assert hashlib.sha256(gate_path.read_bytes()).hexdigest() == request["gate"]["sha256"]
+          gate = json.loads(gate_path.read_text())
+          assert request["mode"] == "exact-specification-and-cold-reconstruction"
+          assert request["optimizer_calls"] == gate["optimizer_calls_allowed"] == 0
+          assert not request["native_model_build_allowed"] and not gate["native_model_build_allowed"]
+          assert request["source"] == gate["subject"]
+          for entry in [gate["subject"]] + gate["dependencies"]:
+              path = pathlib.Path(entry["path"])
+              assert hashlib.sha256(path.read_bytes()).hexdigest() == entry["sha256"], str(path)
+              if path.suffix == ".py":
+                  compile(path.read_text(), str(path), "exec")
+          PY
+      - name: Run one exact preparation and separate cold reconstruction
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 experiments/workspace/root_prism_free_f0_full_fourier_specification.py prepare --directory experiments/logs/root-prism-free/f0-full-fourier-specification-ci01
+          python3 - <<'PY'
+          import json, pathlib
+          owner = json.loads(pathlib.Path("experiments/logs/root-prism-free/f0-full-fourier-specification-ci01/owner-result.json").read_text())
+          assert owner["report_accepted"] and owner["optimizer_calls"] == 0, owner
+          PY
+          python3 experiments/workspace/root_prism_free_f0_full_fourier_specification.py cold --directory experiments/logs/root-prism-free/f0-full-fourier-specification-ci01-cold --saved-directory experiments/logs/root-prism-free/f0-full-fourier-specification-ci01
+          python3 - <<'PY'
+          import json, pathlib
+          owner = json.loads(pathlib.Path("experiments/logs/root-prism-free/f0-full-fourier-specification-ci01-cold/owner-result.json").read_text())
+          assert owner["report_accepted"] and owner["optimizer_calls"] == 0, owner
+          PY
+      - name: Export the complete bounded result bundle
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, gzip, hashlib, json, pathlib
+          files = []
+          roots = ("experiments/logs/root-prism-free/f0-full-fourier-specification-ci01", "experiments/logs/root-prism-free/f0-full-fourier-specification-ci01-cold")
+          names = ("report.json", "owner-result.json", "supervisor.json", "stages.json", "error.json", "child.stdout.log", "child.stderr.log", "specification.json.gz")
+          total = 0
+          for root in roots:
+              for name in names:
+                  path = pathlib.Path(root) / name
+                  if path.is_file():
+                      raw = path.read_bytes()
+                      total += len(raw)
+                      assert total <= 64 << 20
+                      files.append({"path": str(path), "sha256": hashlib.sha256(raw).hexdigest(), "bytes": len(raw), "base64": base64.b64encode(raw).decode("ascii")})
+          bundle = {"schema": "conway99.public_ci_bundle.v1", "files": files, "optimizer_calls_allowed": 0}
+          raw = json.dumps(bundle, sort_keys=True, separators=(",", ":")).encode()
+          encoded = base64.b64encode(gzip.compress(raw, mtime=0)).decode("ascii")
+          assert len(encoded) <= 24 << 20
+          print("CONWAY99_FULL_FOURIER_BUNDLE_BEGIN")
+          for offset in range(0, len(encoded), 4096):
+              print(encoded[offset:offset+4096])
+          print("CONWAY99_FULL_FOURIER_BUNDLE_END")
+          PY
+      - name: Retain all preparation and cold files
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: conway99-full-fourier-preparation-${{ github.sha }}
+          path: |
+            experiments/logs/root-prism-free/f0-full-fourier-specification-ci01/
+            experiments/logs/root-prism-free/f0-full-fourier-specification-ci01-cold/
+          if-no-files-found: error
+          retention-days: 7
