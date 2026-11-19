@@ -1,0 +1,42 @@
+{
+  "status": "PASS: exact Schur/prism model prepared",
+  "source_sha256": "077e371e399346ab513ac41a717b181a3e11285ccda38600f12586f61b4375f5",
+  "model_file_sha256": "5f039eb2864f838cf15df987ca7eebef1600eb4085afb3083538dc5514fdb889",
+  "model_sha256": "92d6a65bcfffd3f5c6f2518b5fe4d1ebefb874eb6e72e15229a690ee9198ae19",
+  "matrix_sha256": "74a83420ac5585a0fa840092aa64d5b7c6732a0f42a32a10adb6af4df504c364",
+  "numerical_row_scales_sha256": "6874a86bbb22f1ad383de3622374776774d42b56ea31e39d6e1022a57babf4ef",
+  "counts": {
+    "variables": 15200,
+    "equalities": 6135,
+    "inequalities": 16505,
+    "rows": 22640,
+    "nonzeros": 889906,
+    "full_selector_domain": 480,
+    "full_eligible_edges": 68394,
+    "new_Y_zero_orbits": 162,
+    "new_literal_Y_zeros": 1884,
+    "inherited_selector_PSD_cuts": 32,
+    "old18_Schur_proof_inputs": 17,
+    "full21_Schur_proof_inputs": 22,
+    "new_distinct_Schur_rows": 39,
+    "three_exterior_prism_proof_inputs": 715,
+    "new_distinct_three_exterior_rows": 715,
+    "new_nonzeros": 509854,
+    "maximum_mathematical_coefficient_bits": 31,
+    "maximum_numerical_row_scale": 1073741824,
+    "original_full_acceptance_rows": 650350,
+    "original_full_acceptance_bounds": 183834
+  },
+  "controls": {
+    "status": "PASS: proof-preserving deduplication, scale and combined-index controls",
+    "exact_large_integer_scaling_controls": 21,
+    "optimizer_calls": 0
+  },
+  "inherited_equality_and_inequality_prefixes_unchanged": true,
+  "all39_full480_Schur_rows_rederived": true,
+  "all1884_prism_edge_witnesses_checked": true,
+  "all715_three_exterior_rows_rederived": true,
+  "optimizer_calls": 0,
+  "eigendecompositions": 0,
+  "seconds": 40.204684468997584
+}

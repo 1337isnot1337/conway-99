@@ -1,0 +1,95 @@
+{
+  "status": "PASS: certificate-bearing modular audit prepared; no case4 elimination",
+  "bindings": {
+    "source_sha256": "c09b76ed3570ca0fec17c2446a8222cb9c556ad5664f665adf38a5f473b188db",
+    "inventory_source_sha256": "aff911d07c002d621933ef5371520a5d9c13842a278ab7ac4874279137d93207",
+    "inventory_dependency_source_hashes": {
+      "rook_case4_complete_lp_recovery.py": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+      "rook_case4_transportation_seed.py": "9eedacb4b62db8ad7058e291d04f83141fca306971ed278a58548ead4cd1e8a1"
+    },
+    "inventory_gzip_sha256": "61288003fb0b4dae4e37d936cd9c6343e4cbfaec75076c14ea05fa4ede290929",
+    "inventory_raw_sha256": "06024df62d4723f287cce4abf6b3a6d26ae8a3e93e991e994c8843620af20528",
+    "inventory_cold_sha256": "96f8a1f6e5f09a6a5978bf6ffd1ac06dd1e59a8d8d34fb104337ab25fc8dbc6f"
+  },
+  "limits": {
+    "production_batch_seconds": 60,
+    "cold_replay_seconds": 60,
+    "maximum_prime_calls": 7,
+    "maximum_certificate_bytes": 20971520,
+    "automatic_retries": 0,
+    "optimizer_calls": 0,
+    "solver_calls": 0
+  },
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy_version": "2.3.5",
+    "numpy_native_module_sha256": "ba96467ae494babaf7c3458b09cc03c4200c2e10010860d80e452ffb8b01c8cd",
+    "runtime_installed_or_modified": false
+  },
+  "prime_order": [
+    19,
+    601,
+    145463,
+    2,
+    3,
+    5,
+    7
+  ],
+  "rows": 396,
+  "variables": 1115,
+  "all_native_equalities": 632,
+  "known_zeros": 99,
+  "arithmetic_bounds": {
+    "HNF_or_SNF_not_prepared_or_run": true,
+    "all_proposed_int64_arithmetic_bounds_below_2pow63": true,
+    "augmented_minor_Hadamard_absolute_bit_bound": 945,
+    "conservative_entry_updates_per_prime": 237105792,
+    "dense_augmented_matrix_shape": [
+      396,
+      1116
+    ],
+    "dense_row_combination_witness_shape": [
+      396,
+      396
+    ],
+    "elimination_started": false,
+    "int64_matrix_plus_witness_bytes": 4790016,
+    "maximum_augmented_row_norm_squared": 331,
+    "maximum_planned_prime": 145463,
+    "modular_dense_dot_absolute_bound": 8379040603824,
+    "modular_vector_update_absolute_bound": 21159338906,
+    "planned_prime_order": [
+      19,
+      601,
+      145463,
+      2,
+      3,
+      5,
+      7
+    ],
+    "priority_inconsistency_primes": [
+      19,
+      601,
+      145463
+    ],
+    "proposed_modular_phase_seconds": 60,
+    "rational_rowspace_phase_requires_separate_gate": true,
+    "small_primes_already_proved_consistent": [
+      2,
+      3,
+      5,
+      7
+    ]
+  },
+  "controls": {
+    "complete_two_equation_binary_matrix_controls": 512,
+    "field_assignments_enumerated": 8960,
+    "large_prime_signed_and_empty_controls": 42,
+    "forged_certificate_rejected": true,
+    "case4_eliminations": 0
+  },
+  "case4_eliminations": 0,
+  "no_new_zero_assumptions": true,
+  "rational_rowspace_HNF_and_optimizer_not_run": true,
+  "seconds": 0.2943175580003299
+}

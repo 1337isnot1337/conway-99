@@ -1,0 +1,60 @@
+{
+  "preparation": {
+    "status": "PREPARED_TWO_EDGE_PRISM_LITERAL_CENSUS_NO_PRODUCTION_CENSUS",
+    "source_sha256": "b332326f90a428565d12d58fefa230bcfb3c5ac4b1e86983115cbc73979c339b",
+    "inventory_source_sha256": "0d722525b142d6c4c23476540e368950e265c7efe99a654d24bb7fbb1b441960",
+    "inputs": {
+      "domain": {
+        "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+        "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+      },
+      "edge_zeros": {
+        "path": "experiments/logs/root-prism-free/f0-edge-motif-census01.json.gz",
+        "sha256": "397e8bf110e03a5accb5e6c1f27b2fb5525100acb67427c66669e188e74159d1"
+      },
+      "inventory": {
+        "path": "experiments/logs/root-prism-free/f0-path-prism-inventory01.json.gz",
+        "sha256": "52a618d43128001625b337578bcd3ae4beb4fc0e2552031ab9013a77a32711db"
+      },
+      "moments": {
+        "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+        "sha256": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+      },
+      "actions": {
+        "path": "experiments/logs/root-prism-free/f0-graph-schur-kernels01.json.gz",
+        "sha256": "65f1ad0d0015a6eff3d97c676fb0e188f57f9dee00e9245758a28bab2069b40d"
+      },
+      "reduction": {
+        "path": "experiments/logs/root-prism-free/f0-second-moments-reduced-model.json.gz",
+        "sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf"
+      }
+    },
+    "limits": {
+      "census_seconds": 30,
+      "cold_replay_seconds": 30,
+      "workers": 1,
+      "production_invocations": 1
+    },
+    "expected_literal_configurations": 107520,
+    "expected_retained_literal_configurations": 61512,
+    "known_zero_edge_orbits": 162,
+    "known_zero_literal_edges": 1884,
+    "actual_core_actions": 12,
+    "exact_group_compositions_checked": 144,
+    "selector_orbits_checked": 42,
+    "edge_orbits_checked": 5805,
+    "edge_domain_size": 68394,
+    "selector_domain_size": 480,
+    "joint_reduced_variable_count": 15200,
+    "all_original_x_and_Y_coordinates_retained_with_same_index": true,
+    "coincident_Y_orbit_columns_will_be_combined_by_addition": true,
+    "all_literal_dispositions_and_row_transports_will_be_saved": true,
+    "canonical_20_split_and_13_activation_controls_reused_from_frozen_inventory": true,
+    "production_literal_paths_enumerated": 0,
+    "point_loaded": false,
+    "optimizer_calls": 0,
+    "production_source_gate_required": true,
+    "seconds": 3.9546789239975624
+  },
+  "preparation_sha256": "707345991a33dbf6320db123abcc7846ec737f083705b3634c07796314d17142"
+}

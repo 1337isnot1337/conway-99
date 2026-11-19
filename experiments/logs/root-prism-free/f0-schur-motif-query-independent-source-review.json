@@ -1,0 +1,31 @@
+{
+  "status": "PASS: source-only finite-box ray adapter and terminal replay review",
+  "review_scope": "Read complete exact helper and standalone replay; read the complete changed driver diff and the numerical, child-process, and production acceptance paths. No subject import, model build, controls rerun, optimizer, or proof replay.",
+  "subjects": {
+    "experiments/workspace/root_prism_free_f0_schur_motif_exact.py": "1ed513c9164282de0a70c197f1a9fbfcf6f9e964e3506b3af521e2f7ea800c1b",
+    "experiments/workspace/root_prism_free_f0_schur_motif_query.py": "4ab761312051920674e891f00cd7e2806e0a953bddda6075950becf9bf9fa34b",
+    "experiments/workspace/root_prism_free_f0_schur_motif_replay.py": "50cb518152001f581a903e3d9c8df30d08e96e8a4a78e42f88a56fc3cbff33c5",
+    "experiments/logs/root-prism-free/f0-schur-motif-query-preparation01.json": "3b4b14b939c7c80148d86556f94f03f8ade2049f37d725b7a657d58d2b913560"
+  },
+  "mathematical_matrix_sha256": "74a83420ac5585a0fa840092aa64d5b7c6732a0f42a32a10adb6af4df504c364",
+  "checked_counts": {
+    "variables": 15200,
+    "equalities": 6135,
+    "inequalities": 16505,
+    "nonzeros": 889906
+  },
+  "checks": [
+    "Checked source/model/scaling hashes and the exact parent equality and inequality prefixes; the 162 new equalities shift only the combined inequality-row offset.",
+    "Positive dyadic row scaling is exact. A scaled-row ray multiplier pulls back by division by its row scale using Fraction, including subnormal floating ray entries.",
+    "For arbitrary equality multipliers and nonnegative upper-inequality multipliers, the independent checker compares the combined RHS against sum_j min(c_j,0) over the full unit box. Strict negative difference is a valid contradiction.",
+    "The driver makes at most one Highs.run call, disables crossover, requests no basis, and obtains a dual ray only after getDualRayExist confirms an existing ray.",
+    "A numerical point, numerical infeasibility without an exact accepted ray, timeout, or failed exact reconstruction remains UNKNOWN. No primal or active-face recovery is claimed.",
+    "The standalone replay cold-reconstructs the mathematical model and verifies the integer certificate independently of the numerical helper and driver.",
+    "Owned subprocess timeout handling reaps the child; no automatic retry or hidden ray-generating optimization is introduced."
+  ],
+  "limitations": [
+    "This report does not repeat the 39 Schur-cut or 715 prism derivations; their builder review is separately frozen.",
+    "The package is prepared and unrun. A later two-edge-prism overlay requires its own bindings and source gate.",
+    "No model feasibility or infeasibility is established by this review."
+  ]
+}
