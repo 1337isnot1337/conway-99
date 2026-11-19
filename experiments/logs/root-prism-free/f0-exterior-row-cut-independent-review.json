@@ -1,0 +1,49 @@
+{
+  "status": "independent exact row-cut transport, Boolean guard and unchanged-prefix audit PASS",
+  "source_sha256": "d732f7b0eed877798c2bfe0c352321980f58eb5cd5456783ec1221a20bd7ac2c",
+  "reviewed_source_hashes": {
+    "root_prism_free_f0_first_design_exterior_row_audit.py": "d9e70f8d0f979505b0c5f264969e3b72f300d1f2da0491b41b760301c9e666df",
+    "root_prism_free_f0_exterior_row_cut_overlay.py": "0a1739251220c3b27564cc9ea0d2e64bad4c9aa8db9a93182fc7cc91ea7c0353"
+  },
+  "checked_artifact_hashes": {
+    "f0-exterior-row-cut-overlay-model.json": "15d924357d89ab74f554ffa58a8da7559f7f5684711bf57e49f2eb23dcbccb7b",
+    "f0-incidence-case00-model.json": "16deda266149f5123a1db3833cfebf22d6bdfe4426b1424fcc51ccbfdc38f0a1",
+    "f0-first-design-exterior-row-certificate.json.gz": "3b5c302f9a9e3bfce6175de7c73cb835cc89f88e63148de15d59085b1da974c0",
+    "f0-pair-gram-certificate.json.gz": "edb85ff422222961e6bc9b36322b74bcfce455bca262d6e189d7768f9ac91c98"
+  },
+  "complete_signature_domain": 480,
+  "cut_targets": [
+    336,
+    337,
+    360,
+    390,
+    404,
+    405,
+    427,
+    445,
+    454,
+    455,
+    467,
+    479
+  ],
+  "actual_core_relabelings_checked": 12,
+  "group_compositions_checked": 144,
+  "universal_neighbors_per_target": 232,
+  "positive_terms_per_cut": 55,
+  "integer_demand": 6,
+  "weight_divisor": 3,
+  "capped_threshold": 2,
+  "guard_truth_assignments": 1922,
+  "unchanged_base_clause_lines": 56550,
+  "exact_added_primary_clauses": 444,
+  "new_auxiliaries": 0,
+  "base_CNF_sha256": "80550d618fb253c3a5a5646477e17e06c81c8f4d17d6cddcc0db1ee0d28ee315",
+  "overlay_CNF_sha256": "419a570047e7c1fd61cc2ddbeb6eade45af0a2570518c5fe1ea78954ad9142b0",
+  "necessity": "Multiply the actual selected target row by v; discard nonpositive products; use neighbor activation y_b<=x_b. Divide positive weights by3 and cap at2. Each guarded cut is necessary for every completion in the stated component case.",
+  "scope": "globally prism-free SRG(99,14,1,2), x521=0, split18+18 triangle shell, one indexed component",
+  "base_builder_imported": false,
+  "CNF_rebuilt": false,
+  "solver_or_optimizer_called": false,
+  "retained_DRAT_or_attribution_replayed": false,
+  "source_review": "The inspector checks the original incidence plus all cuts and claims only partial incidence. Cold proof replay binds the complete formula and retained input inclusion. No fixed incidence or graph automorphism is imposed."
+}

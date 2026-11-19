@@ -1,0 +1,691 @@
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0004-model.json",
+  "model_sha256": "b73f9a54f2da4c596e6a4d7169f0cae5f997a6563af715f5b20ea66de3444a00",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 4,
+  "cnf_sha256": "ce3ff730d7eefe9487ec844683899afca80e5372e0a5cc76f322dea520d8b803",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 87748,
+  "bootstrap_seconds": 0.24346713699924294,
+  "solve_return_seconds": 60.33303171100124,
+  "solver_statistics": {
+    "restarts": 500,
+    "conflicts": 105323,
+    "decisions": 202746,
+    "propagations": 298345949
+  },
+  "elapsed_seconds": 60.359502892999444
+}
+{"completed_case": {"case_index": 4, "model_sha256": "b73f9a54f2da4c596e6a4d7169f0cae5f997a6563af715f5b20ea66de3444a00", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0004/result.json", "result_sha256": "c9b47ffd390306f24182d3e656bbad5d19356e48c72edbe0b813a820642051ee", "observed_solver_seconds_including_bootstrap": 60.33303171100124, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0005-model.json",
+  "model_sha256": "88810286b0b0289f84a99465d4f1d73994ad58ed09c4056c84b7f6aa5c076345",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 5,
+  "cnf_sha256": "672017acdbc7423a055269a1866e0810a073e1802f0481abc65fea0d705a0cc5",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 91288,
+  "bootstrap_seconds": 0.144533237998985,
+  "solve_return_seconds": 70.72341394199975,
+  "solver_statistics": {
+    "restarts": 219,
+    "conflicts": 50614,
+    "decisions": 97892,
+    "propagations": 133063120
+  },
+  "elapsed_seconds": 70.74975698799972
+}
+{"completed_case": {"case_index": 5, "model_sha256": "88810286b0b0289f84a99465d4f1d73994ad58ed09c4056c84b7f6aa5c076345", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0005/result.json", "result_sha256": "86895eaecbb165e4a9cdaaebb866f4ffa766069e4521ed7ce77c6365c9c4fe55", "observed_solver_seconds_including_bootstrap": 70.72341394199975, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNSAT with direct DRAT; cold domain/formula rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0006-model.json",
+  "model_sha256": "997749c08a2aaf4a95113e86506333e4c6dd5922f50c507b854dd249a23a4f90",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 6,
+  "cnf_sha256": "b1fe34e87e5423273eb67465bdbc24dc7c417f146fa9be000d7eaa60fa328eeb",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 149664,
+  "bootstrap_seconds": 1.5304302990007272,
+  "solve_return_seconds": 40.79807470800006,
+  "solver_statistics": {
+    "restarts": 217,
+    "conflicts": 53716,
+    "decisions": 107506,
+    "propagations": 145771241
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/raw.drat",
+  "raw_proof_sha256": "8564996c955f36901fc3d69753104d4e59604142d5cbcaf3b7c008cffe766f8b",
+  "raw_proof_lines": 105758,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/retained.cnf",
+    "cnf_sha256": "08a966f75fc141002b5b8f32d62128c7eff5760a697e16ec22326e0758b0031f",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/retained.drat",
+    "proof_sha256": "597b4119a717610f766c5fc49c78ca49782987057a868a8f8631ac7e996dcf29",
+    "input_clauses": 27075,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/direct-drat.log",
+    "checker_log_sha256": "30304009e7933421ce150693b18ee57a44e62ee6f2c405f8719cfcc456bd8787"
+  },
+  "elapsed_seconds": 53.00710658200114
+}
+{
+  "status": "cold original/overlay rebuild, direct cut certificates, retained inclusion and DRAT passed",
+  "model_sha256": "997749c08a2aaf4a95113e86506333e4c6dd5922f50c507b854dd249a23a4f90",
+  "base_cnf_sha256": "feb11347eb462a59caad68caec016ce9c1de4bd8a6cdf9bbc50e4d9ac3dd4cd0",
+  "cnf_sha256": "b1fe34e87e5423273eb67465bdbc24dc7c417f146fa9be000d7eaa60fa328eeb",
+  "case_index": 6,
+  "whole_local_set_excluded": false,
+  "full_graph": false,
+  "retained_input_clauses": 27075,
+  "retained_distinct_inputs_outside_original_formula": 0,
+  "original_only_proof_binding_verified": true,
+  "excluded_indexed_core": 6,
+  "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/cold-replay.drat.log",
+  "checker_log_sha256": "148e15cdf0ab289199a8ba4a9ceb6f7b147815d5b7ba16c98a73c18d6473b6e4"
+}
+{"completed_case": {"case_index": 6, "model_sha256": "997749c08a2aaf4a95113e86506333e4c6dd5922f50c507b854dd249a23a4f90", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/result.json", "result_sha256": "5be2bf1eeb516e3c0b6ac8a80b39debd2a3f5a39e68cfc4f774463a38d2f492c", "observed_solver_seconds_including_bootstrap": 40.79807470800006, "status": "certified UNSAT: direct and cold proof checks passed", "cold_replay": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/cold-replay.json", "cold_replay_sha256": "1043c652d148c19cb9237714206d1fe28b2d231f7f3b6fa5e6d56658cb174830", "retained_nonoriginal_Gram_inputs": 0, "original_only_proof_binding_verified": true}}
+{
+  "status": "UNSAT with direct DRAT; cold domain/formula rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0007-model.json",
+  "model_sha256": "d5bae84b0716399f1a10c04d409da544df66a5eb33bcc1dd36f6d8a53889f523",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 7,
+  "cnf_sha256": "d7cca5336022e935bab4bb09c048d8be3ae9949b8cc3e9673bd4e2ec6091455a",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 150852,
+  "bootstrap_seconds": 0.23641481600134284,
+  "solve_return_seconds": 19.387813758999982,
+  "solver_statistics": {
+    "restarts": 198,
+    "conflicts": 46085,
+    "decisions": 91852,
+    "propagations": 121803780
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/raw.drat",
+  "raw_proof_sha256": "d6f1196124447d1c60ec2c836055d17644bc6c1afde61dfb08ed07c1d61fc7dc",
+  "raw_proof_lines": 93514,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/retained.cnf",
+    "cnf_sha256": "958d247f8b442a5dcc3a0c01764d17cb7d0a297248f222fb6d13b1e4750cf8c7",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/retained.drat",
+    "proof_sha256": "fd4c7b14caf10a619ba53a9f12d6564283ce469617ab4c670307f74466904ebe",
+    "input_clauses": 26306,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/direct-drat.log",
+    "checker_log_sha256": "e85a0bf4a98dcda5c3d542f109b6690577ed340e40472b2befeb8cc3c9ce7839"
+  },
+  "elapsed_seconds": 29.2383641919987
+}
+{
+  "status": "cold original/overlay rebuild, direct cut certificates, retained inclusion and DRAT passed",
+  "model_sha256": "d5bae84b0716399f1a10c04d409da544df66a5eb33bcc1dd36f6d8a53889f523",
+  "base_cnf_sha256": "7a305be5da7ff5cbe8a37866723d76866b5c4ac01abea3e8d2e9b164ee1bad3b",
+  "cnf_sha256": "d7cca5336022e935bab4bb09c048d8be3ae9949b8cc3e9673bd4e2ec6091455a",
+  "case_index": 7,
+  "whole_local_set_excluded": false,
+  "full_graph": false,
+  "retained_input_clauses": 26306,
+  "retained_distinct_inputs_outside_original_formula": 0,
+  "original_only_proof_binding_verified": true,
+  "excluded_indexed_core": 7,
+  "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/cold-replay.drat.log",
+  "checker_log_sha256": "033c4a9bbb6f4735f772922ef301c9802165980b5b7bfa67f63ac9d822ba4922"
+}
+{"completed_case": {"case_index": 7, "model_sha256": "d5bae84b0716399f1a10c04d409da544df66a5eb33bcc1dd36f6d8a53889f523", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/result.json", "result_sha256": "08193397f2176538a423fa35f7a82141d1dd04e63087be7f636af798c8cd4d66", "observed_solver_seconds_including_bootstrap": 19.387813758999982, "status": "certified UNSAT: direct and cold proof checks passed", "cold_replay": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/cold-replay.json", "cold_replay_sha256": "6ff71bda4add030d4ca517870dc7a73be0f83d15667e490a52f12e11e46e133b", "retained_nonoriginal_Gram_inputs": 0, "original_only_proof_binding_verified": true}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0011-model.json",
+  "model_sha256": "c02c53e4a281327ccdd74449617f6fe33315b5aed1c53670a822ae6561e1da10",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 11,
+  "cnf_sha256": "f1a16aec4b23772e0624494aeb392f54834d6b48c95d7acfd89443f08bffdac5",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 150852,
+  "bootstrap_seconds": 0.23157608700057608,
+  "solve_return_seconds": 63.217777628000476,
+  "solver_statistics": {
+    "restarts": 300,
+    "conflicts": 62645,
+    "decisions": 134279,
+    "propagations": 178447795
+  },
+  "elapsed_seconds": 63.29158061799899
+}
+{"completed_case": {"case_index": 11, "model_sha256": "c02c53e4a281327ccdd74449617f6fe33315b5aed1c53670a822ae6561e1da10", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0011/result.json", "result_sha256": "d793eba09728991acb2ee6ac33ddd561bb66cdd478edcf4096639a33bd7227e6", "observed_solver_seconds_including_bootstrap": 63.217777628000476, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0012-model.json",
+  "model_sha256": "6f29579ff24f49e6621a4d76441d2e533420473ede28d9e921062d5ac113ef96",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 12,
+  "cnf_sha256": "c8e32781ce79c4804f0106b11149e855a40070d6ca5fee0b21ecb21d2b122d04",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 150852,
+  "bootstrap_seconds": 0.20670539200000349,
+  "solve_return_seconds": 63.699648550002166,
+  "solver_statistics": {
+    "restarts": 152,
+    "conflicts": 36007,
+    "decisions": 76085,
+    "propagations": 99423737
+  },
+  "elapsed_seconds": 63.73553671800255
+}
+{"completed_case": {"case_index": 12, "model_sha256": "6f29579ff24f49e6621a4d76441d2e533420473ede28d9e921062d5ac113ef96", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0012/result.json", "result_sha256": "2ea865913991fefaeb2b6c2b48ebd32409ca2f02fda7bf3c6ab023265cb792e3", "observed_solver_seconds_including_bootstrap": 63.699648550002166, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0013-model.json",
+  "model_sha256": "e9baf17a3da37f0407f0823e23c419fe613f1bda88323ae75a856741d40498d9",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 13,
+  "cnf_sha256": "6cfb807b87686a681450c168c15a5a303ac174f4910ee32d6cff63ebbd99b297",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 150852,
+  "bootstrap_seconds": 3.621515766997618,
+  "solve_return_seconds": 60.15717410599973,
+  "solver_statistics": {
+    "restarts": 57,
+    "conflicts": 11049,
+    "decisions": 30930,
+    "propagations": 27364467
+  },
+  "elapsed_seconds": 60.29086531299981
+}
+{"completed_case": {"case_index": 13, "model_sha256": "e9baf17a3da37f0407f0823e23c419fe613f1bda88323ae75a856741d40498d9", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0013/result.json", "result_sha256": "6b6dde01ae8c91aafb821372673083066e6a6a0fcf2d8755fb4526617f3d4038", "observed_solver_seconds_including_bootstrap": 60.15717410599973, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNSAT with direct DRAT; cold domain/formula rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0014-model.json",
+  "model_sha256": "4461bfd09c97be7868dc06160924609a5b5b3bee3928b29219d708dcc1970295",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 14,
+  "cnf_sha256": "6b9e792325a5b078aed6d30d5d40fe65eb8b503c50b37a6f4fb5bebc9501d076",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 150852,
+  "bootstrap_seconds": 0.3393500819984183,
+  "solve_return_seconds": 19.67174264499772,
+  "solver_statistics": {
+    "restarts": 124,
+    "conflicts": 31279,
+    "decisions": 65742,
+    "propagations": 89807466
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/raw.drat",
+  "raw_proof_sha256": "fd7ecbc2c185e48eb34d73797bd239bff7c518d358036cc9c4e9ff275c297427",
+  "raw_proof_lines": 70321,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/retained.cnf",
+    "cnf_sha256": "4b5054f3b2110fd7bb28f37e366466a9ebeee5a64d3e63aa97d20093f75b3b79",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/retained.drat",
+    "proof_sha256": "dab40c4846cf6c915aaf71669f56daa4bd0514611a474eb4d23d06aa8b6f77e5",
+    "input_clauses": 26030,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/direct-drat.log",
+    "checker_log_sha256": "0666c0b3156ddf2126c138d19c78a96c7bd6d749a16aa6a9f133c386a77b75f5"
+  },
+  "elapsed_seconds": 27.493246931000613
+}
+{
+  "status": "cold original/overlay rebuild, direct cut certificates, retained inclusion and DRAT passed",
+  "model_sha256": "4461bfd09c97be7868dc06160924609a5b5b3bee3928b29219d708dcc1970295",
+  "base_cnf_sha256": "aa75765d105442e566e877115fe5bb46a6b5ce8e4a1c46b61bd8d5494504af2e",
+  "cnf_sha256": "6b9e792325a5b078aed6d30d5d40fe65eb8b503c50b37a6f4fb5bebc9501d076",
+  "case_index": 14,
+  "whole_local_set_excluded": false,
+  "full_graph": false,
+  "retained_input_clauses": 26030,
+  "retained_distinct_inputs_outside_original_formula": 0,
+  "original_only_proof_binding_verified": true,
+  "excluded_indexed_core": 14,
+  "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/cold-replay.drat.log",
+  "checker_log_sha256": "1aedd0267d56bfabcf2bb6e145fd6308fb8335d3ee8d70f94c8fcbe2fb865152"
+}
+{"completed_case": {"case_index": 14, "model_sha256": "4461bfd09c97be7868dc06160924609a5b5b3bee3928b29219d708dcc1970295", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/result.json", "result_sha256": "50f62406e1f72ba45ff3d52ba9751c615e94abb552d9f74d18d1333876cc842c", "observed_solver_seconds_including_bootstrap": 19.67174264499772, "status": "certified UNSAT: direct and cold proof checks passed", "cold_replay": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/cold-replay.json", "cold_replay_sha256": "534126c9d00bc6b79be17d22267c18874c3dfda0337268d031472cd1ce75b509", "retained_nonoriginal_Gram_inputs": 0, "original_only_proof_binding_verified": true}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0015-model.json",
+  "model_sha256": "8ea0bdde93d11c7103e5f17b9245e9073983b6d89531cc28f95700c35e8209e5",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 15,
+  "cnf_sha256": "a7b0c2ffb2400ece83e2c9d2b02e71f461df79856df60cd3ae12e3caa5d666d8",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.19030462700175121,
+  "solve_return_seconds": 60.186175291000836,
+  "solver_statistics": {
+    "restarts": 264,
+    "conflicts": 58315,
+    "decisions": 147801,
+    "propagations": 152745115
+  },
+  "elapsed_seconds": 60.30079100399962
+}
+{"completed_case": {"case_index": 15, "model_sha256": "8ea0bdde93d11c7103e5f17b9245e9073983b6d89531cc28f95700c35e8209e5", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0015/result.json", "result_sha256": "dcd25db2fe935af98ccd2c5bf2186f309c5e01bd2c258943798db14a6222f01f", "observed_solver_seconds_including_bootstrap": 60.186175291000836, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0016-model.json",
+  "model_sha256": "33967aa4955acf625274d592080850f6ad7629699e4bedaf0c8748acff43d256",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 16,
+  "cnf_sha256": "ae334024470206f276f355df1638c0b0af36aa13303cce1cc85f4a4634f24aba",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.37682982699698186,
+  "solve_return_seconds": 60.024598109997896,
+  "solver_statistics": {
+    "restarts": 485,
+    "conflicts": 86631,
+    "decisions": 189876,
+    "propagations": 229685170
+  },
+  "elapsed_seconds": 60.06658920499831
+}
+{"completed_case": {"case_index": 16, "model_sha256": "33967aa4955acf625274d592080850f6ad7629699e4bedaf0c8748acff43d256", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0016/result.json", "result_sha256": "d981fb97951b9bc547c5323d5c4c017bccffda0b1487c217521139e93aaa4e1d", "observed_solver_seconds_including_bootstrap": 60.024598109997896, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0017-model.json",
+  "model_sha256": "2538057e8b5b484114fd28f0c8ded71aa4356edbe800dc904dd68780579ff59e",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 17,
+  "cnf_sha256": "2b5c1591619b569da594e8c97162b4dcf4d128d67ee0bd51d30837418db3e1c7",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.5381655090022832,
+  "solve_return_seconds": 60.362694960000226,
+  "solver_statistics": {
+    "restarts": 394,
+    "conflicts": 73341,
+    "decisions": 201934,
+    "propagations": 197425734
+  },
+  "elapsed_seconds": 60.446605688001
+}
+{"completed_case": {"case_index": 17, "model_sha256": "2538057e8b5b484114fd28f0c8ded71aa4356edbe800dc904dd68780579ff59e", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0017/result.json", "result_sha256": "3b48c7f71cda6c9c8027a7df491b0bf424e326e3644f2878a7cd94d503d03ce2", "observed_solver_seconds_including_bootstrap": 60.362694960000226, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0018-model.json",
+  "model_sha256": "e2eb265bf23c529daa4414f9ade99f4c0c68701bbd54b0fc3843a6d5d9c41352",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 18,
+  "cnf_sha256": "5add26e4d5ff6436aa51c92b2a8d4a857985fa6a32a38094207baba3868a7c63",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.23313290500300354,
+  "solve_return_seconds": 60.049540205000085,
+  "solver_statistics": {
+    "restarts": 401,
+    "conflicts": 79053,
+    "decisions": 177965,
+    "propagations": 208133390
+  },
+  "elapsed_seconds": 60.09179472100004
+}
+{"completed_case": {"case_index": 18, "model_sha256": "e2eb265bf23c529daa4414f9ade99f4c0c68701bbd54b0fc3843a6d5d9c41352", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0018/result.json", "result_sha256": "cc3a126aa107a9b9e4be96063e08af7964f35f1e2bc68cba79562f9618d91a35", "observed_solver_seconds_including_bootstrap": 60.049540205000085, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0019-model.json",
+  "model_sha256": "0c25c89827ea8516dee69a88e1be7668c90c95363979217fd71f2e06c949de61",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 19,
+  "cnf_sha256": "e0cfe2f12ffa2fc8879949fba5c791e59f76a5233813361c1a2b75a00d559949",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.5098565480002435,
+  "solve_return_seconds": 60.04055897299986,
+  "solver_statistics": {
+    "restarts": 627,
+    "conflicts": 103412,
+    "decisions": 251209,
+    "propagations": 278249294
+  },
+  "elapsed_seconds": 60.076500136001414
+}
+{"completed_case": {"case_index": 19, "model_sha256": "0c25c89827ea8516dee69a88e1be7668c90c95363979217fd71f2e06c949de61", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0019/result.json", "result_sha256": "6e55e9bcd07cb7f6ca28c2c8b9919d34b5ea2277197303c6419928cf68d33933", "observed_solver_seconds_including_bootstrap": 60.04055897299986, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0020-model.json",
+  "model_sha256": "8be95ab0d578cac3d4c1f9febeaf4babfee1bb3ca4dda2af70fe879dad82ded8",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 20,
+  "cnf_sha256": "8aa5fda84e41e226b892dd6417354686b526adac3363f8c3b51557c1b5b4aa33",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.20160363700051676,
+  "solve_return_seconds": 60.06589913599964,
+  "solver_statistics": {
+    "restarts": 588,
+    "conflicts": 98408,
+    "decisions": 245416,
+    "propagations": 259981023
+  },
+  "elapsed_seconds": 60.137811396998586
+}
+{"completed_case": {"case_index": 20, "model_sha256": "8be95ab0d578cac3d4c1f9febeaf4babfee1bb3ca4dda2af70fe879dad82ded8", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0020/result.json", "result_sha256": "6177ceeafce8c14a20916811ef27702682e067b9cba9b16b7b49ea3751b2d0a0", "observed_solver_seconds_including_bootstrap": 60.06589913599964, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0022-model.json",
+  "model_sha256": "e0a6e828c2da272dadd729aa7006824c24801ca924ce4fd85c6656e7b968563e",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 22,
+  "cnf_sha256": "c5dd7691dfb26d14a28c90b56dd6bbf79879e6b817cc4638063a79ff23415802",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.4500895219971426,
+  "solve_return_seconds": 60.01550695499827,
+  "solver_statistics": {
+    "restarts": 521,
+    "conflicts": 93049,
+    "decisions": 212098,
+    "propagations": 252914676
+  },
+  "elapsed_seconds": 60.06303562999892
+}
+{"completed_case": {"case_index": 22, "model_sha256": "e0a6e828c2da272dadd729aa7006824c24801ca924ce4fd85c6656e7b968563e", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0022/result.json", "result_sha256": "4e87b7f7d2680f16bf0b0463cc4d2e26a16b4995fb2f3c5eded70a7aa55455e8", "observed_solver_seconds_including_bootstrap": 60.01550695499827, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0023-model.json",
+  "model_sha256": "f4f1c878f3f700d022c834488420181bb5c402d1d83dbb441d8c9cbe523733a1",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 23,
+  "cnf_sha256": "3bfddeb09376c8e04d9f945eef07088d18ab54df01bdebce1702f46348e7c5d8",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.40867612100191764,
+  "solve_return_seconds": 60.27810272700299,
+  "solver_statistics": {
+    "restarts": 622,
+    "conflicts": 100451,
+    "decisions": 230590,
+    "propagations": 269903001
+  },
+  "elapsed_seconds": 60.406201655001496
+}
+{"completed_case": {"case_index": 23, "model_sha256": "f4f1c878f3f700d022c834488420181bb5c402d1d83dbb441d8c9cbe523733a1", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0023/result.json", "result_sha256": "310c8a68f935598fc166365e332e9af5405e83fc1fb68093f0c92c77eea870e6", "observed_solver_seconds_including_bootstrap": 60.27810272700299, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0024-model.json",
+  "model_sha256": "9c5fd1923f8a927fdca9fe887441e7c22ebde08b46cb2b6a9a56538887b588c1",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 24,
+  "cnf_sha256": "49d0c65e743288bcc54a6706333462139c2aa32a18187fa00eb03fe5ee42047e",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.2502785489996313,
+  "solve_return_seconds": 60.35488009999972,
+  "solver_statistics": {
+    "restarts": 581,
+    "conflicts": 98848,
+    "decisions": 247932,
+    "propagations": 271468001
+  },
+  "elapsed_seconds": 60.40489769800115
+}
+{"completed_case": {"case_index": 24, "model_sha256": "9c5fd1923f8a927fdca9fe887441e7c22ebde08b46cb2b6a9a56538887b588c1", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0024/result.json", "result_sha256": "5ed66f07ccc827e4e6988f8e3115f0e3ac14bd97c3618b70ef44740801a5331b", "observed_solver_seconds_including_bootstrap": 60.35488009999972, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0025-model.json",
+  "model_sha256": "09b85f1f8509d01aa509bfc58e0a66dff9dcf70dbb74bbfa443363f323c6a46b",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 25,
+  "cnf_sha256": "ab0e6073c893e41aee48f6e890a86fad6bc20b00d0e943e6e69e97acf20aa486",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.4238633570021193,
+  "solve_return_seconds": 60.037753291002446,
+  "solver_statistics": {
+    "restarts": 550,
+    "conflicts": 84502,
+    "decisions": 195698,
+    "propagations": 226360687
+  },
+  "elapsed_seconds": 60.176087428000756
+}
+{"completed_case": {"case_index": 25, "model_sha256": "09b85f1f8509d01aa509bfc58e0a66dff9dcf70dbb74bbfa443363f323c6a46b", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0025/result.json", "result_sha256": "4298389618165ebb1d5f9f7c567525237279f09246f38a6c3f111ebacb1f5e66", "observed_solver_seconds_including_bootstrap": 60.037753291002446, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0026-model.json",
+  "model_sha256": "d63d31b052de47848a2a98ddd8f2d9cd77f9b755e57f4336685919f66e6d6e45",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 26,
+  "cnf_sha256": "08d4b7a2d6563f5dc409d40c8a8e7fedfd1ee3b13e76792a6ff941db4b490c0a",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.35667706899766927,
+  "solve_return_seconds": 60.046357930998056,
+  "solver_statistics": {
+    "restarts": 418,
+    "conflicts": 75333,
+    "decisions": 206476,
+    "propagations": 209564694
+  },
+  "elapsed_seconds": 60.082127391997346
+}
+{"completed_case": {"case_index": 26, "model_sha256": "d63d31b052de47848a2a98ddd8f2d9cd77f9b755e57f4336685919f66e6d6e45", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0026/result.json", "result_sha256": "00cc63deb0d055bc8766b941640169f9d76cfd2cbf246a8afef40f714c81267d", "observed_solver_seconds_including_bootstrap": 60.046357930998056, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0027-model.json",
+  "model_sha256": "9f35c7a4863557f4c5d3f4b6dd379f520fa22b0795baf822984b09d76329328d",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 27,
+  "cnf_sha256": "67fda172db1f2a2c249a53619f80a0ebff8f7021b9b43a388a0ae8e80ff704c1",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 157336,
+  "bootstrap_seconds": 0.29037678399981814,
+  "solve_return_seconds": 60.11868677199891,
+  "solver_statistics": {
+    "restarts": 618,
+    "conflicts": 89182,
+    "decisions": 246703,
+    "propagations": 244996248
+  },
+  "elapsed_seconds": 60.14886852199925
+}
+{"completed_case": {"case_index": 27, "model_sha256": "9f35c7a4863557f4c5d3f4b6dd379f520fa22b0795baf822984b09d76329328d", "result": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0027/result.json", "result_sha256": "74f91fb3ff941ee8aad8dc1097faa830a8ac904be73a65a9504be9c14814c60f", "observed_solver_seconds_including_bootstrap": 60.11868677199891, "status": "UNKNOWN; indexed core remains open"}}
+{
+  "status": "all20 bounded queries completed; every UNKNOWN remains open",
+  "preparation_terminal": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/terminal.json",
+  "preparation_terminal_sha256": "ee319b468a77ce7783dedcaf5828ad31331de99902aa8ad9c648ffbdd7dc35a2",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "requested_cases": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "prior_excluded_cases": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    21
+  ],
+  "started_cases": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "completed_cases": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "certified_unsat_cases": [
+    6,
+    7,
+    14
+  ],
+  "unknown_cases": [
+    4,
+    5,
+    11,
+    12,
+    13,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "sat_incidence_case": null,
+  "unstarted_cases": [],
+  "solver_seconds_including_bootstrap_per_case": 60.0,
+  "direct_checker_seconds_per_unsat_case": 60,
+  "cold_checker_seconds_per_unsat_case": 60,
+  "maximum_queries": 20,
+  "retries": 0,
+  "complete_requested_queries": true,
+  "all_requested_cases_certified_unsat": false,
+  "whole_complementary_core_excluded": false,
+  "full_graph_found": false,
+  "elapsed_seconds": 1179.3991961419997
+}

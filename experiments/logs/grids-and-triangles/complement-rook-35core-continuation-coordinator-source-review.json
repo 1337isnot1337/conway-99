@@ -1,0 +1,24 @@
+{
+  "status": "coordinator complete diff and new batch-controller review PASS",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da"
+  },
+  "comparison_sources": [
+    "complement_rook_35core_downdate_cases09_10.py",
+    "complement_rook_35core_downdate_cases09_10_direct_audit.py"
+  ],
+  "checks": [
+    "unchanged exact overlay/domain/direct-vector logic from reviewed pilots",
+    "complete20-case complement of eight certified exclusions",
+    "all source, old model, exact fragment and actual CNF hashes bound",
+    "all prepared models require exact direct audit",
+    "one query per case, no retries or assumptions",
+    "60second query and separate60second direct/cold checks",
+    "incremental atomic progress and honest UNKNOWN handling",
+    "stop at first checked SAT incidence or any unverified proof/error",
+    "SAT JSON-key normalization preserves exact witness comparison"
+  ],
+  "solver_called": false,
+  "actual_model_checks": "recorded separately in coordinator audit directory"
+}

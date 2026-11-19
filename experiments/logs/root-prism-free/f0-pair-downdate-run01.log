@@ -1,0 +1,41 @@
+{
+  "status": "complete exact two-column classification with all retained predicates replayed",
+  "source_sha256": "a17b7c8f8a7526398fc0da6ead18da2228e27e89a85b759ff0c3b6076da9b979",
+  "native_source_sha256": "b4cc2fc3d2a9c363d9d14c719741d725da8e9337f40bbe1fcbfbf1e79e2fa802",
+  "preparation": "experiments/logs/root-prism-free/f0-pair-downdate-preparation.json",
+  "preparation_sha256": "1cf490a554e7c90157c9b9b01ffaa0946b1352b64c676862c653e72a15e4a562",
+  "budget_seconds": 120.0,
+  "classification_flags": [
+    "same_component_selector",
+    "intersection_at_least_three",
+    "quota_one_local_pair",
+    "quota_one_cross_pair",
+    "existing_component_motif"
+  ],
+  "no_SAT_query": true,
+  "full_column_pair_exported": false,
+  "whole_component_pair_excluded": false,
+  "predicate_file": "experiments/logs/root-prism-free/f0-pair-downdate-run01/new-type-predicates.bin.gz",
+  "predicate_file_sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64",
+  "predicate_replay": {
+    "canonical_predicates_checked": 0,
+    "expanded_ordered_type_predicates": 0,
+    "represented_unordered_full_column_conflicts": 0,
+    "raw_predicate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "raw_predicate_bytes": 0,
+    "all_retained_predicates_have_mask0_and_negative_exact_determinant": true,
+    "sample_type_pairs": []
+  },
+  "disjoint_first_reason_negative_pair_counts": {
+    "new beyond all listed immediate conflicts": 0,
+    "same_component_selector": 515232,
+    "intersection_at_least_three": 351216,
+    "quota_one_local_pair": 0,
+    "quota_one_cross_pair": 0,
+    "existing_component_motif": 0
+  },
+  "all_negative_unordered_pairs": 866448,
+  "new_negative_unordered_pairs": 0,
+  "no_independence_from_full_Gram_equations_claimed": true,
+  "elapsed_seconds": 8.559431113000755
+}

@@ -1,0 +1,24 @@
+{
+  "status": "coordinator complete source and mathematical review PASS",
+  "source_path": "experiments/workspace/grid_free_order10_complement_visible_domains.py",
+  "source_sha256": "d89248dce73849059afa12cf1c731f31dcafa8a0769ccde3b25574c67ec4c54a",
+  "checks": [
+    "Both visible incompatibility obstructions are necessary; their absence permits the mutual-nonedge literal extension.",
+    "Every high-mask pair is checked with both mutual-edge choices.",
+    "Bron-Kerbosch and independent incremental maximal-clique enumeration are complete and agree.",
+    "Added residual-quota-one incompatibilities force empty conditional rows.",
+    "All5215 individual selected-row identities reuse the bound coefficientwise certificate.",
+    "The full root groups and explicit transports cover all3821 remaining cliques with811 representatives.",
+    "No graph symmetry or count-point pruning is imposed."
+  ],
+  "authorized_scan": {
+    "representatives": 811,
+    "covered_remaining_cliques": 3821,
+    "maximum_scan_seconds": 120,
+    "integer_witness_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+    "freeze_driver_and_preparation_first": true,
+    "exact_selected_row_checks": true,
+    "fresh_literal_replay_required_for_negative_forms": true
+  },
+  "PSD_feasibility_claimed": false
+}

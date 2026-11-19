@@ -66,6 +66,10 @@ gives 576 transported conditional clauses. A [complete additional downdate censu
 prepares all 22 then-unresolved cores. Later [case-nine and case-ten proofs](research/grids-and-triangles/complement_rook_35core_cases09_10_exclusion.md)
 raise the excluded count to eight, leaving twenty unresolved. Their
 retained proofs require five compact integer Gram certificates.
+A [fixed continuation](research/grids-and-triangles/complement_rook_35core_continuation_terminal.md)
+excludes cases six, seven and fourteen with proofs
+using only original incidence inputs. Eleven matchings are now excluded;
+seventeen remain unresolved after UNKNOWN outcomes.
 A complete four-case cover forbids one conditional edge, with 144 exact
 clause transports. The [Gram-only control](research/grids-and-triangles/complement_rook_35core_local_incidence_control.md)
 remains feasible.
@@ -89,6 +93,8 @@ remains feasible.
 - [Prism-free, F-free triangle-shell components](research/root_prism_free_f0_components.md) reduce the split case to 66 eighteen-vertex representatives. The [first binary incidence query](research/root_prism_free_f0_incidence.md) has an exact sixty-triple SAT witness and excludes no component. A [connected all-33 control](research/root_prism_free_f0_connected_control.md) prevents treating the central edge types as a split theorem.
 - [Coupling the two components](research/root_prism_free_f0_coupling.md) gives the exact cross Gram equations and a fractional control with one incidence fixed. A smaller model fixing both saved designs has a checked UNSAT proof under the identity fiber alignment. This excludes that design pair only.
 - [The complete component-zero pair](research/root_prism_free_f0_pair_gram.md) retains all 39,168 columns and has an exact Gram factorization. Its [full unfixed model](research/root_prism_free_f0_pair_gram_model.md) covers all Gram and packing constraints. The [single 180-second pilot](research/root_prism_free_f0_pair_gram_run01.md) returns UNKNOWN, with no point or exclusion.
+- [The full two-column downdate census](research/root_prism_free_f0_pair_downdate.md) gives no new conflict beyond triple packing. Independent integer implementations cover all 767,046,528 distinct column pairs.
+- [The saved first incidence cannot extend](research/root_prism_free_f0_first_design_exterior.md): a checked exterior proof and a short integer potential exclude it with all second components unspecified. The potential gives twelve transported necessary cuts for other incidences.
 
 - [The unrestricted rooted complete-cap model](research/root_full_caps.md) retains all 3,486 exterior edge variables and every pair cap. Eleven anchor-matching cases cover every hypothetical graph. [Independent coverage](research/root_full_caps_matching_audit.md), [closed-form orbit and local-cell checks](research/grids-and-triangles/root_full_caps_matching_orbit_audit.md), and [the builder audit](research/root_full_caps_builder_independent_audit.md) establish the model's scope; bounded outcomes are recorded separately.
 - [A separate lexicographic overlay](research/root_full_caps_lex.md) uses each matching stabilizer to retain at least one labeling per graph. Complete group enumeration, edge lifts, and independent Boolean controls pass. The preparation certificate does not exclude a rooted case.
@@ -116,5 +122,9 @@ remains feasible.
 - [The complete eight-root projector family](research/grids-and-triangles/grid_free_order10_projector_full_scan.md) retains all 3,664 blocks and finds no separator at the latest integer point. Its [domain package](research/grids-and-triangles/grid_free_order10_projector_domains.md) and [literal controls](research/grids-and-triangles/grid_free_order10_projector_probe.md) bind the construction. The numerical scan does not certify PSD.
 - [Exact integer class-size inequalities](research/grids-and-triangles/grid_free_order10_projector_integer_classes.md) test all shifts for all 68,176 outside classes and find no cut.
 - [Seven-root Boolean complements](research/grids-and-triangles/grid_free_order10_complement_domains.md) reduce 5,215 absence-conditioned matrices to 737 new candidates by explicit residual-pair identities and sparse child lifts. This is a complete domain preparation, with no point scan.
+- [The single-complement scan](research/grids-and-triangles/grid_free_order10_complement_scan.md) tests all 737 candidates and all 916 scalar child blocks at the latest integer point without finding a separator. It does not certify PSD.
+- [Clique complements](research/grids-and-triangles/grid_free_order10_complement_cliques.md) strengthen the single-flag conditions. Complete clique and root-automorphism censuses reduce the remaining 3,939 cases to 711 representatives, with exact selected-row checks and explicit coverage.
+- [The complete clique scan](research/grids-and-triangles/grid_free_order10_complement_clique_scan.md) finds no separator at any of those 711 representatives. Congruence covers all 3,939 remaining cases, without certifying PSD.
+- [Complete visible pair incompatibility](research/grids-and-triangles/grid_free_order10_complement_visible_domains.md) adds all residual-quota-one obstructions. Literal extension checks and two complete clique algorithms prepare 3,821 remaining localizers in 811 root orbits.
 - [Construction searches](experiments/logs/construction-searches/) includes rooted searches, quotient cases, and checks of sampled partial graphs.
 - [Experiment guide](experiments/README.md) gives the workspace layout, replay commands, and limits of the archived runs.

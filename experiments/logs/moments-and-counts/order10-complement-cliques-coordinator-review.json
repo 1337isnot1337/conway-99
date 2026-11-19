@@ -1,0 +1,39 @@
+{
+  "status": "coordinator complete source and mathematical review PASS",
+  "sources": [
+    {
+      "path": "experiments/workspace/grid_free_order10_complement_cliques.py",
+      "sha256": "765f0ca7ca7ffcb16e6c518d80c70ffca99ba2c0c46d682077f1027ae47fe912"
+    },
+    {
+      "path": "experiments/workspace/grid_free_order10_complement_clique_lifts.py",
+      "sha256": "24e1e2dba05de424098d92fd173a3987d2f97f84c038653aac2ad3a3d555eb37"
+    },
+    {
+      "path": "experiments/workspace/grid_free_order10_complement_clique_orbits.py",
+      "sha256": "5569a81838301fa54dc2401b98592a91fb302b7ed7a3110983a6f475a1107130"
+    }
+  ],
+  "checks": [
+    "Independent Bron-Kerbosch and explicit477-family descriptions agree, with all maximality checks.",
+    "Every maximal clique in each induced high-mask graph is a maximal intersection with a universal maximal clique.",
+    "High-mask flags are binary, and any two masks intersecting in at least3 root vertices cannot coexist.",
+    "A clique sum is binary, so M minus the sum of its conditional congruences is PSD.",
+    "Quota-one reductions include every other allowed mask, including degree2 classes.",
+    "All selected rows vanish coefficientwise through the selected-row identities and empty incompatible lift rows.",
+    "Complete degree-preserving permutation enumeration and explicit generator closures give exact root automorphism groups.",
+    "Explicit orbit transports cover all3939 remaining cliques using711 representatives.",
+    "Congruence follows from relabeling labelled root embeddings; no automorphism of a hypothetical graph is assumed.",
+    "Representative sizing and per-root caches are bounded before any point scan."
+  ],
+  "authorized_scan": {
+    "maximum_scan_seconds": 120,
+    "representatives": 711,
+    "covered_cliques": 3939,
+    "target_integer_witness_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+    "freeze_driver_and_preparation_first": true,
+    "exact_selected_rows_required": true,
+    "negative_forms_require_independent_literal_replay_before_optimizer": true
+  },
+  "no_exact_PSD_certificate_claimed": true
+}

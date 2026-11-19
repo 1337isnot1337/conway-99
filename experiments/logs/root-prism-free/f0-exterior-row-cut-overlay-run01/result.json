@@ -1,0 +1,533 @@
+{
+  "status": "SAT; exact necessary incidence and twelve row cuts checked, no graph completion",
+  "model": "experiments/logs/root-prism-free/f0-exterior-row-cut-overlay-model.json",
+  "model_sha256": "15d924357d89ab74f554ffa58a8da7559f7f5684711bf57e49f2eb23dcbccb7b",
+  "source_sha256": "0a1739251220c3b27564cc9ea0d2e64bad4c9aa8db9a93182fc7cc91ea7c0353",
+  "cnf_sha256": "419a570047e7c1fd61cc2ddbeb6eade45af0a2570518c5fe1ea78954ad9142b0",
+  "seconds_including_bootstrap": 60.0,
+  "checker_seconds": 60,
+  "assumptions": [],
+  "fixed_incidence_design": false,
+  "all66_components_excluded": false,
+  "full_graph_completion": false,
+  "bootstrap_seconds": 0.09476811599961366,
+  "solver_return_seconds": 0.10656897199805826,
+  "cooperative_budget_overrun_seconds": 0,
+  "solver_statistics": {
+    "restarts": 1,
+    "conflicts": 65,
+    "decisions": 451,
+    "propagations": 93688
+  },
+  "incidence_candidate": {
+    "base_incidence_witness": {
+      "selected_columns": [
+        4,
+        11,
+        17,
+        29,
+        38,
+        50,
+        51,
+        57,
+        58,
+        61,
+        79,
+        81,
+        89,
+        99,
+        110,
+        112,
+        120,
+        132,
+        139,
+        142,
+        149,
+        157,
+        167,
+        169,
+        173,
+        179,
+        181,
+        184,
+        207,
+        209,
+        216,
+        223,
+        238,
+        240,
+        248,
+        253,
+        261,
+        262,
+        268,
+        278,
+        279,
+        289,
+        297,
+        301,
+        310,
+        314,
+        315,
+        330,
+        349,
+        354,
+        375,
+        379,
+        392,
+        407,
+        414,
+        428,
+        447,
+        460,
+        473,
+        479
+      ],
+      "selected_triples": [
+        [
+          0,
+          2,
+          12
+        ],
+        [
+          0,
+          3,
+          11
+        ],
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          0,
+          5,
+          14
+        ],
+        [
+          0,
+          6,
+          17
+        ],
+        [
+          0,
+          9,
+          15
+        ],
+        [
+          0,
+          9,
+          16
+        ],
+        [
+          0,
+          10,
+          16
+        ],
+        [
+          0,
+          10,
+          17
+        ],
+        [
+          0,
+          11,
+          15
+        ],
+        [
+          1,
+          2,
+          17
+        ],
+        [
+          1,
+          3,
+          9
+        ],
+        [
+          1,
+          4,
+          8
+        ],
+        [
+          1,
+          5,
+          11
+        ],
+        [
+          1,
+          7,
+          17
+        ],
+        [
+          1,
+          8,
+          10
+        ],
+        [
+          1,
+          9,
+          13
+        ],
+        [
+          1,
+          11,
+          14
+        ],
+        [
+          1,
+          14,
+          15
+        ],
+        [
+          1,
+          15,
+          16
+        ],
+        [
+          2,
+          4,
+          13
+        ],
+        [
+          2,
+          5,
+          13
+        ],
+        [
+          2,
+          6,
+          17
+        ],
+        [
+          2,
+          7,
+          11
+        ],
+        [
+          2,
+          7,
+          16
+        ],
+        [
+          2,
+          8,
+          16
+        ],
+        [
+          2,
+          10,
+          11
+        ],
+        [
+          2,
+          10,
+          14
+        ],
+        [
+          3,
+          4,
+          16
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          3,
+          6,
+          16
+        ],
+        [
+          3,
+          10,
+          12
+        ],
+        [
+          3,
+          10,
+          15
+        ],
+        [
+          3,
+          12,
+          13
+        ],
+        [
+          3,
+          13,
+          17
+        ],
+        [
+          4,
+          6,
+          14
+        ],
+        [
+          4,
+          6,
+          15
+        ],
+        [
+          4,
+          7,
+          14
+        ],
+        [
+          4,
+          9,
+          10
+        ],
+        [
+          4,
+          9,
+          12
+        ],
+        [
+          4,
+          12,
+          15
+        ],
+        [
+          5,
+          6,
+          9
+        ],
+        [
+          5,
+          6,
+          14
+        ],
+        [
+          5,
+          7,
+          15
+        ],
+        [
+          5,
+          8,
+          12
+        ],
+        [
+          5,
+          8,
+          13
+        ],
+        [
+          5,
+          12,
+          17
+        ],
+        [
+          6,
+          10,
+          13
+        ],
+        [
+          6,
+          11,
+          12
+        ],
+        [
+          7,
+          8,
+          15
+        ],
+        [
+          7,
+          9,
+          13
+        ],
+        [
+          7,
+          12,
+          16
+        ],
+        [
+          8,
+          9,
+          17
+        ],
+        [
+          8,
+          11,
+          12
+        ],
+        [
+          8,
+          14,
+          16
+        ],
+        [
+          9,
+          14,
+          17
+        ],
+        [
+          10,
+          13,
+          14
+        ],
+        [
+          11,
+          13,
+          15
+        ],
+        [
+          11,
+          16,
+          17
+        ]
+      ],
+      "unique_triples": 60,
+      "Gram_positions_checked": 171,
+      "profile_counts": [
+        [
+          [
+            0,
+            1,
+            2
+          ],
+          6
+        ],
+        [
+          [
+            0,
+            2,
+            1
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            0,
+            2
+          ],
+          6
+        ],
+        [
+          [
+            1,
+            1,
+            1
+          ],
+          24
+        ],
+        [
+          [
+            1,
+            2,
+            0
+          ],
+          6
+        ],
+        [
+          [
+            2,
+            0,
+            1
+          ],
+          6
+        ],
+        [
+          [
+            2,
+            1,
+            0
+          ],
+          6
+        ]
+      ],
+      "F_conflicts_checked": 78,
+      "prism_conflicts_checked": 12,
+      "second_component_and_exterior_edges_unspecified": true,
+      "full_graph_completion": false
+    },
+    "all12_exterior_row_cut_outcomes": [
+      {
+        "target_signature": 336,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 337,
+        "left": 4,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 360,
+        "left": 8,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 390,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 404,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 405,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 427,
+        "left": 8,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 445,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 454,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 455,
+        "left": 7,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 467,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 479,
+        "left": 2,
+        "right": 2,
+        "holds": true
+      }
+    ],
+    "all444_guarded_clauses_checked": true,
+    "actual_exterior_rows_found": false,
+    "full_graph_completion": false
+  },
+  "elapsed_seconds": 1.1774736510014918,
+  "peak_rss_kib": 59656
+}

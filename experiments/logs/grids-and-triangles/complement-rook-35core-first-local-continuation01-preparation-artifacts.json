@@ -1,0 +1,318 @@
+{
+  "status": "frozen complete20-case exact preparation and coordinator source/input gate; no solver at this checkpoint",
+  "cases": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "prior_excluded_cases": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    21
+  ],
+  "preparation_terminal": {
+    "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/terminal.json",
+    "sha256": "ee319b468a77ce7783dedcaf5828ad31331de99902aa8ad9c648ffbdd7dc35a2",
+    "bytes": 18623
+  },
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "author_direct_audits_passed": 20,
+  "coordinator_direct_case_audits": [
+    4,
+    5
+  ],
+  "new_solver_queries": 0,
+  "new_variables_added": 0,
+  "total_added_certified_binary_clauses": 534,
+  "materialized_CNF_bytes": 77567281,
+  "artifacts": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-continuation-case0004-coordinator-audit.json",
+      "sha256": "f3f33e4186016b0a8817031ee0af55c5824dd2004ea932e1eb96760d655bb3f5",
+      "bytes": 2228
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-continuation-case0004-coordinator-audit.log",
+      "sha256": "f3f33e4186016b0a8817031ee0af55c5824dd2004ea932e1eb96760d655bb3f5",
+      "bytes": 2228
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-continuation-case0005-coordinator-audit.json",
+      "sha256": "bcd5a786c3bf2e5f7cca570d93db0738eac25bd7445a0e268b30a7575796ea9a",
+      "bytes": 2229
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-continuation-case0005-coordinator-audit.log",
+      "sha256": "bcd5a786c3bf2e5f7cca570d93db0738eac25bd7445a0e268b30a7575796ea9a",
+      "bytes": 2229
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-continuation-coordinator-source-review.json",
+      "sha256": "c760b43f4575bf3fa72f2482d0312543c7eeba67e861fe89e06b2fae588ba796",
+      "bytes": 1220
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0004-author-direct-audit.json",
+      "sha256": "974185fe9ad5e6e509ece978afda461ebc2fb7063dc26f5b66840892aaace24a",
+      "bytes": 2187
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0004-model.json",
+      "sha256": "b73f9a54f2da4c596e6a4d7169f0cae5f997a6563af715f5b20ea66de3444a00",
+      "bytes": 4126
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0005-author-direct-audit.json",
+      "sha256": "7964b749f1f77423535c775d0d48e4d97776cc5f1197c35485976dc183a3d76c",
+      "bytes": 2187
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0005-model.json",
+      "sha256": "88810286b0b0289f84a99465d4f1d73994ad58ed09c4056c84b7f6aa5c076345",
+      "bytes": 4127
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0006-author-direct-audit.json",
+      "sha256": "58237b394b98af552b0e0785355258a05978e478e64ed4c7b7dc5025b6398cfc",
+      "bytes": 2187
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0006-model.json",
+      "sha256": "997749c08a2aaf4a95113e86506333e4c6dd5922f50c507b854dd249a23a4f90",
+      "bytes": 4127
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0007-author-direct-audit.json",
+      "sha256": "3b52d6584bcc20d4f00527e177ae384ab1ed05f2dbc9494d15c79621f0807c64",
+      "bytes": 2187
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0007-model.json",
+      "sha256": "d5bae84b0716399f1a10c04d409da544df66a5eb33bcc1dd36f6d8a53889f523",
+      "bytes": 4127
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0011-author-direct-audit.json",
+      "sha256": "9b7037fe775d5146f402ca489cda2698f17a6b5b0480637d5dd40e61ff0ee311",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0011-model.json",
+      "sha256": "c02c53e4a281327ccdd74449617f6fe33315b5aed1c53670a822ae6561e1da10",
+      "bytes": 4130
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0012-author-direct-audit.json",
+      "sha256": "b2d2f246fbbcdc2d23f6c5dec3508cd829744493a16a20d583633fe47ac681fc",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0012-model.json",
+      "sha256": "6f29579ff24f49e6621a4d76441d2e533420473ede28d9e921062d5ac113ef96",
+      "bytes": 4128
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0013-author-direct-audit.json",
+      "sha256": "02788c74613058e1c78512d3236c4c91000ba53c55cf2e98080a1e36afb0b0da",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0013-model.json",
+      "sha256": "e9baf17a3da37f0407f0823e23c419fe613f1bda88323ae75a856741d40498d9",
+      "bytes": 4129
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0014-author-direct-audit.json",
+      "sha256": "dfa7635924b8df03f35204f0ddc88fabd9efd6f3720448fba061390459cee530",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0014-model.json",
+      "sha256": "4461bfd09c97be7868dc06160924609a5b5b3bee3928b29219d708dcc1970295",
+      "bytes": 4130
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0015-author-direct-audit.json",
+      "sha256": "941f6ee7ac29d81ec42fafc64477417b1fca15f07adc9d540af2458763d26740",
+      "bytes": 2186
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0015-model.json",
+      "sha256": "8ea0bdde93d11c7103e5f17b9245e9073983b6d89531cc28f95700c35e8209e5",
+      "bytes": 4128
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0016-author-direct-audit.json",
+      "sha256": "8d88f0353f24334702c4272397eb315875af95d79b2d98e01f8a39f9b62e7fb7",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0016-model.json",
+      "sha256": "33967aa4955acf625274d592080850f6ad7629699e4bedaf0c8748acff43d256",
+      "bytes": 4129
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0017-author-direct-audit.json",
+      "sha256": "963e6ab78143d8e3852aa271efd539a9ad3152801e327a6093d2c3b49fd1bf67",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0017-model.json",
+      "sha256": "2538057e8b5b484114fd28f0c8ded71aa4356edbe800dc904dd68780579ff59e",
+      "bytes": 4129
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0018-author-direct-audit.json",
+      "sha256": "1c6c88e89df66d3703c3355fb631f517b89256c6d3efa71c93461d7b5439b50f",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0018-model.json",
+      "sha256": "e2eb265bf23c529daa4414f9ade99f4c0c68701bbd54b0fc3843a6d5d9c41352",
+      "bytes": 4129
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0019-author-direct-audit.json",
+      "sha256": "3e124527f73f4d8ba98d78afed1dc376797f95b0a19f0a3da141292543ab7e7f",
+      "bytes": 2186
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0019-model.json",
+      "sha256": "0c25c89827ea8516dee69a88e1be7668c90c95363979217fd71f2e06c949de61",
+      "bytes": 4129
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0020-author-direct-audit.json",
+      "sha256": "93d39d5eb8e3e9fac9a7617c3676fa05a5d96f96a32d1b8a42ef734c0d82c17d",
+      "bytes": 2186
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0020-model.json",
+      "sha256": "8be95ab0d578cac3d4c1f9febeaf4babfee1bb3ca4dda2af70fe879dad82ded8",
+      "bytes": 4128
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0022-author-direct-audit.json",
+      "sha256": "4aecddca32a2fad994b146e36abfb2bc75d4bea4d2d0b410012cf2b26458f84e",
+      "bytes": 2186
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0022-model.json",
+      "sha256": "e0a6e828c2da272dadd729aa7006824c24801ca924ce4fd85c6656e7b968563e",
+      "bytes": 4128
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0023-author-direct-audit.json",
+      "sha256": "d1087a68f15c1d5d409b40a5c263e8e6822a35c9bf2c58ac48c040c32d4fca96",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0023-model.json",
+      "sha256": "f4f1c878f3f700d022c834488420181bb5c402d1d83dbb441d8c9cbe523733a1",
+      "bytes": 4129
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0024-author-direct-audit.json",
+      "sha256": "3d6f847fc47004ae0ffa9544f2e2af4aaef422e7d07c8dad85181fdcc8c1a23a",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0024-model.json",
+      "sha256": "9c5fd1923f8a927fdca9fe887441e7c22ebde08b46cb2b6a9a56538887b588c1",
+      "bytes": 4129
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0025-author-direct-audit.json",
+      "sha256": "b43c373d49a77442039e63654aba42dbebafcbb0ae173c01702fb1cdb71083da",
+      "bytes": 2188
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0025-model.json",
+      "sha256": "09b85f1f8509d01aa509bfc58e0a66dff9dcf70dbb74bbfa443363f323c6a46b",
+      "bytes": 4130
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0026-author-direct-audit.json",
+      "sha256": "45a34724437292131632f3e264dab6b5e12b021593ee09cfcb44ba7f70d86a57",
+      "bytes": 2186
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0026-model.json",
+      "sha256": "d63d31b052de47848a2a98ddd8f2d9cd77f9b755e57f4336685919f66e6d6e45",
+      "bytes": 4128
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0027-author-direct-audit.json",
+      "sha256": "97597247e9919c8b3170a724d2f2ca424d9f75c93676d8db4f048b5b68362b05",
+      "bytes": 2186
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0027-model.json",
+      "sha256": "9f35c7a4863557f4c5d3f4b6dd379f520fa22b0795baf822984b09d76329328d",
+      "bytes": 4128
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/progress.json",
+      "sha256": "ee319b468a77ce7783dedcaf5828ad31331de99902aa8ad9c648ffbdd7dc35a2",
+      "bytes": 18623
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/terminal.json",
+      "sha256": "ee319b468a77ce7783dedcaf5828ad31331de99902aa8ad9c648ffbdd7dc35a2",
+      "bytes": 18623
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation.log",
+      "sha256": "b5f393ea986be9626b319cda5b565aa3f6be4106faae075d6b15570bc0c878b7",
+      "bytes": 99407
+    },
+    {
+      "path": "experiments/workspace/complement_rook_35core_downdate_continuation.py",
+      "sha256": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+      "bytes": 24839
+    },
+    {
+      "path": "experiments/workspace/complement_rook_35core_downdate_continuation_audit.py",
+      "sha256": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+      "bytes": 7753
+    },
+    {
+      "path": "research/grids-and-triangles/complement_rook_35core_continuation_preparation.md",
+      "sha256": "afc005e108986304b64ff569c6851c58f69a640ff25a95a2a407c2e115334b76",
+      "bytes": 5644
+    }
+  ],
+  "artifact_count": 51,
+  "total_bytes": 311335
+}

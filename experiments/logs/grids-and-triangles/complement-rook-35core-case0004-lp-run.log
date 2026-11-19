@@ -1,0 +1,36 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "variant": "unaugmented_real_cone",
+  "numerical_status": "HighsModelStatus.kOptimal",
+  "requested_seconds": 8.0,
+  "solve_seconds": 0.6619796599989058,
+  "threads": 1,
+  "matrix_shape_including_slacks": [
+    1809,
+    2626
+  ],
+  "matrix_nonzeros": 19018,
+  "exact_infeasibility_claimed": false,
+  "exact_feasibility_claimed": false,
+  "maximum_equality_residual": 7.815970093361102e-14,
+  "maximum_capacity_violation": 4.884981308350689e-15,
+  "status": "numerically feasible relaxation; rational reconstruction not yet verified"
+}
+{
+  "variant": "with30_binary_no_good_rows",
+  "numerical_status": "HighsModelStatus.kOptimal",
+  "requested_seconds": 8.0,
+  "solve_seconds": 0.5977201339992462,
+  "threads": 1,
+  "matrix_shape_including_slacks": [
+    1839,
+    2656
+  ],
+  "matrix_nonzeros": 19108,
+  "exact_infeasibility_claimed": false,
+  "exact_feasibility_claimed": false,
+  "maximum_equality_residual": 9.525713551283843e-14,
+  "maximum_capacity_violation": 0.0,
+  "status": "numerically feasible relaxation; rational reconstruction not yet verified"
+}

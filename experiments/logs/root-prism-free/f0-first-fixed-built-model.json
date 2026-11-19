@@ -1,0 +1,105 @@
+{
+  "status": "fixed-first/full-second incidence CNF built; no solver",
+  "source_hashes": {
+    "root_prism_free_f0_first_fixed.py": "15b090cbe90e7973796cf624894af753687e714c38abf4288eb09b4cdb4055de",
+    "root_prism_free_f0_pair_gram_model.py": "1849ce2106d7903f9826372a3d3e73e9878b48e22337df00a7ef0953e18cce53",
+    "root_prism_free_f0_pair_gram_build.py": "071a6118501cf2ba6306c94ea3cf481b1949dcfdabcc66322d2f6ba4d2d4accc",
+    "root_prism_free_f0_pair_gram.py": "187feef008f6b0f5b1718a9d5d856e4a1b0820a3f1a023445090b691494d3aef",
+    "root_prism_free_f0_coupling.py": "5bb3ec13893aee488272dcb7372c12bddf68d28ae4a199cd170be9342d47df50",
+    "root_prism_free_f0_components.py": "f1c3b49cd084dde9df8f421a79dfbf2233d58c07f03ebb53ef2b58449fed54f4",
+    "root_prism_free_f0_pair_clauses.py": "367b7f850d087067b547653d31bf4b25743f30934583252de1199cffb358daac"
+  },
+  "preparation": "experiments/logs/root-prism-free/f0-first-fixed-preparation.json.gz",
+  "preparation_sha256": "aab044b6ddcc0e8a2326140fc4b9fc34ee68fb6cda7273936d2eb4f09a389526",
+  "scope": "component0 paired with component0, identity fibers; only first saved60-triple design fixed",
+  "formula": {
+    "variables": 223740,
+    "clauses": 480126,
+    "literal_occurrences": 1117380,
+    "cnf_sha256": "65683cfd4c60654b20eebf4261079833a4bd9f4ebf2d5babe446983e209a469a",
+    "cnf_bytes": 8321269,
+    "clause_blocks": [
+      {
+        "kind": "fixed first row",
+        "first_clause_number": 1,
+        "counter_rows": 60,
+        "clauses": 16236,
+        "literal_occurrences": 37824,
+        "first_new_auxiliary_variable": 5953,
+        "body_sha256": "d5cfdba8478ff69c26cc1371617510b9c1128ce17d2e42cc5fb70b5399791200",
+        "last_auxiliary_variable": 11364
+      },
+      {
+        "kind": "second component link",
+        "first_clause_number": 16237,
+        "counter_rows": 480,
+        "clauses": 16416,
+        "literal_occurrences": 37824,
+        "first_new_auxiliary_variable": 11365,
+        "body_sha256": "1db2e72bbca129be8934177f47f3ac3ca5ef9871ea7ec9e5f47e974e93a60b28",
+        "last_auxiliary_variable": 16836
+      },
+      {
+        "kind": "second component Gram",
+        "first_clause_number": 32653,
+        "counter_rows": 150,
+        "clauses": 56460,
+        "literal_occurrences": 138672,
+        "first_new_auxiliary_variable": 16837,
+        "body_sha256": "6ce325a80ab26303338b40b48ad9f165421432b6ec47cea4d0bb9c98c34dd0a2",
+        "last_auxiliary_variable": 44664
+      },
+      {
+        "kind": "cross Gram",
+        "first_clause_number": 89113,
+        "counter_rows": 324,
+        "clauses": 328284,
+        "literal_occurrences": 777600,
+        "first_new_auxiliary_variable": 44665,
+        "body_sha256": "c55e18e2c6d4f22d88f592087fce8cd1f71d8ea3856e137668d90e6de9705c1f",
+        "last_auxiliary_variable": 202668
+      },
+      {
+        "kind": "mixed triple packing",
+        "first_clause_number": 417397,
+        "counter_rows": 576,
+        "clauses": 62640,
+        "literal_occurrences": 125280,
+        "first_new_auxiliary_variable": 202669,
+        "body_sha256": "b0e9ba7d5f4c5bded0bbb0dd19a56973fad5671d7bcfff0f0207b9d6c78b2d6b",
+        "last_auxiliary_variable": 223740
+      },
+      {
+        "kind": "component motif",
+        "first_clause_number": 480037,
+        "counter_rows": 0,
+        "clauses": 90,
+        "literal_occurrences": 180,
+        "first_new_auxiliary_variable": 223741,
+        "body_sha256": "5fe3998c850e9f932646b89e73c5d5f406d9e36ded09338fe2dc835abb329f4e",
+        "last_auxiliary_variable": 223740
+      }
+    ],
+    "counter_rows": 1590,
+    "direct_clauses": 90,
+    "initial_primary_and_derived_variables": 5952,
+    "all_auxiliaries_allocated_by_one_IDPool": true,
+    "formula_streamed_one_counter_at_a_time": true,
+    "full_formula_list_kept_in_memory": false
+  },
+  "cnf": "/tmp/conway99-f0-first-fixed.cnf",
+  "cnf_sha256": "65683cfd4c60654b20eebf4261079833a4bd9f4ebf2d5babe446983e209a469a",
+  "full_specification_sha256": "b3fdd6674e24e66c228432ce7906696bbccf45b476ba4f40d2598f13498fd96d",
+  "column_order_sha256": "0c65b7295f93da7d832b289be8749cbe41ee017129b8d2b293da044d09e15205",
+  "pair_order_sha256": "bd16effc67504a90b6904563cb70c56fac608295cfcfd18f4fe77eb826062deb",
+  "core_rows_sha256": "6558a92a672719df54c9a04d9903d96c378ce8e094908c7283a73d6a79af7784",
+  "Gram_sha256": "1c1dff34c338cb1e2f1f0e4bcca7bb6471c16f0b5ed27727be6473cb23953244",
+  "only_first_saved_incidence_fixed": true,
+  "second_incidence_fixed": false,
+  "graph_symmetry_constraints": false,
+  "full_primary_assignment_inspector": true,
+  "SAT_scope": "sixty-column incidence candidate with all exterior adjacency still unspecified",
+  "UNSAT_scope": "only the specified first60-triple design with component0 partner and identity alignment",
+  "solver_called": false,
+  "elapsed_seconds": 8.702338638999208
+}

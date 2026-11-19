@@ -1,0 +1,106 @@
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0007-model.json",
+  "base_model_sha256": "542eab4ce16bb3fe569617758bb8c0209bf578ba2ce59142a00239476c6570ba",
+  "base_cnf_sha256": "7a305be5da7ff5cbe8a37866723d76866b5c4ac01abea3e8d2e9b164ee1bad3b",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0007.json.gz",
+  "certificate_sha256": "f0ef05ea0b5537ad4dfc81da95a78326a158ea135a6cfc6c52caf991ed91c4dc",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0007-clauses.cnf",
+  "binary_fragment_sha256": "db2ac73a6e6565f754c7dfc780486dd1de22e81c21cfc807315a5702fedfe6c6",
+  "case": {
+    "index": 7,
+    "local_set_orbit": 0,
+    "matching_index": 7,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "matching_orbit_representative": 7,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "fd490e2d8f4ade66341b1fc0c5ec8b0f94cbf46fde891fbee56309313d2a20d7",
+  "column_domain_sha256": "b27d98f73213d1b1a8cbe8494cd9f78cfde16ed398cb87907c781f1fef11cd0e",
+  "Gram_sha256": "a6b3a7a53c26654d9dece4dd415ebd1c007f54c816b1b84741dcbaead2c49fd1",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0007.cnf",
+  "cnf_sha256": "d7cca5336022e935bab4bb09c048d8be3ae9949b8cc3e9673bd4e2ec6091455a",
+  "formula": {
+    "primary_columns": 1230,
+    "variables": 108967,
+    "original_clauses": 222491,
+    "additional_binary_clauses": 86,
+    "clauses": 222577
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 2.8249972430021444
+}

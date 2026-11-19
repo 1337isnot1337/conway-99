@@ -498,3 +498,29 @@ has its own complete regeneration and sparse-lift replay. It depends on
 the scalar seven-root and eight-root caches, not on a numerical PSD claim.
 Its 737 remaining cases are a prepared domain, not an exclusion.
 
+The [single-complement scan](../research/grids-and-triangles/grid_free_order10_complement_scan.md)
+now records its complete numerical separation outcome. The later
+[clique package](../research/grids-and-triangles/grid_free_order10_complement_cliques.md)
+has separate complete domain, coefficientwise lift and orbit replays.
+Root relabelings give congruent matrices without imposing graph symmetry.
+The [complete representative scan](../research/grids-and-triangles/grid_free_order10_complement_clique_scan.md)
+records all 711 direct checks and their 3,939-case coverage. It finds no
+separator and makes no exact PSD claim.
+
+## The saved split-shell incidence
+
+The [exterior exclusion](../research/root_prism_free_f0_first_design_exterior.md)
+gives the full cold formula/proof command. The retained proof has 120
+inputs, and an independently checked integer potential supplies a
+shorter row contradiction. This excludes only the saved first incidence,
+with the second component and incidence left free.
+
+The [two-column Gram classification](../research/root_prism_free_f0_pair_downdate.md)
+has a separate complete integer replay. Its empty set of new conflicts
+is a finished finite result, not a timeout or a whole-core exclusion.
+
+The [twenty-case rook continuation](../research/grids-and-triangles/complement_rook_35core_continuation_terminal.md)
+has a standalone compressed original-only proof replay. It rebuilds each
+original formula and checks decompressed retained inputs and proofs.
+No downdate or overlay source is imported by that verifier.
+

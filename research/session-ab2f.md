@@ -628,3 +628,35 @@ their hypotheses permit them; computational exclusions require exact replay.
   of child matrices. The complete remaining domain has 737 cases over
   82 roots, with 48,785 coefficientwise selected-row checks and a literal
   control that includes a size-two child class. A bounded scan is prepared.
+- The fixed twenty-case rook continuation finishes with three new
+  exclusions, cases six, seven and fourteen. Their retained proofs use
+  only original incidence inputs, with separate cold replays. Seventeen
+  other queries return UNKNOWN. Eleven of the first local set's
+  twenty-eight matchings are now excluded; no whole local set is closed.
+- A complete two-column screen for the component-zero pair has no new
+  conflict. All negative pairs already violate triple packing, and every
+  pair with intersection at most two has a strictly positive determinant.
+  Independent native and vectorized integer censuses agree on all counts.
+- The complete fixed-first exterior model is UNSAT after forty-four
+  conflicts. Its direct and cold proof checks retain only 120 inputs.
+  Independent attribution places them in one exterior row. An integer
+  potential gives a nonnegative-real counting contradiction for that row,
+  then a necessary 55-term incidence inequality with twelve transports.
+  An explicit eight-neighbor full-domain control prevents incorrectly
+  excluding the target signature. The unused first-fixed coupling query
+  is superseded; no second component was needed for this proof.
+- All 737 single-flag complements and all 916 scalar child blocks are
+  scanned at the integer point without a separator. Stronger clique
+  localizers use a complete 477-clique universal census. Root restrictions
+  and quota-one reductions leave 3,939 cases. Verified root automorphisms
+  cover them by 711 representatives. All selected rows vanish exactly;
+  the preparation supplies no exact PSD certificate.
+- The complete 711-representative clique scan finishes without an exact
+  or unconfirmed numerical negative. It covers all 3,939 remaining cases
+  by the saved congruences. This closes that proposed separation family
+  at the current point, without certifying exact PSD.
+- The twelve exact exterior-row cuts reject the old component incidence.
+  A fresh free-selector query gives a different sixty-triple incidence,
+  sharing fifty-two triples with the old one. Every new inequality and
+  original constraint passes an exact check and a cold replay. Exterior
+  row-capacity separation is the next test; this is not a graph.

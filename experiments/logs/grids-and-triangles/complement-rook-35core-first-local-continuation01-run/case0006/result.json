@@ -1,0 +1,36 @@
+{
+  "status": "UNSAT with direct DRAT; cold domain/formula rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0006-model.json",
+  "model_sha256": "997749c08a2aaf4a95113e86506333e4c6dd5922f50c507b854dd249a23a4f90",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 6,
+  "cnf_sha256": "b1fe34e87e5423273eb67465bdbc24dc7c417f146fa9be000d7eaa60fa328eeb",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 149664,
+  "bootstrap_seconds": 1.5304302990007272,
+  "solve_return_seconds": 40.79807470800006,
+  "solver_statistics": {
+    "restarts": 217,
+    "conflicts": 53716,
+    "decisions": 107506,
+    "propagations": 145771241
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/raw.drat",
+  "raw_proof_sha256": "8564996c955f36901fc3d69753104d4e59604142d5cbcaf3b7c008cffe766f8b",
+  "raw_proof_lines": 105758,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/retained.cnf",
+    "cnf_sha256": "08a966f75fc141002b5b8f32d62128c7eff5760a697e16ec22326e0758b0031f",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/retained.drat",
+    "proof_sha256": "597b4119a717610f766c5fc49c78ca49782987057a868a8f8631ac7e996dcf29",
+    "input_clauses": 27075,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0006/direct-drat.log",
+    "checker_log_sha256": "30304009e7933421ce150693b18ee57a44e62ee6f2c405f8719cfcc456bd8787"
+  },
+  "elapsed_seconds": 53.00710658200114
+}

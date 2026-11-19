@@ -1,0 +1,22 @@
+{
+  "status": "PASS: independent read-only mathematical and coverage-algorithm review",
+  "source": "experiments/workspace/grid_free_order10_complement_cliques.py",
+  "source_sha256": "765f0ca7ca7ffcb16e6c518d80c70ffca99ba2c0c46d682077f1027ae47fe912",
+  "reviewed_claims": [
+    "Bron-Kerbosch pivot, possible/excluded updates, and maximality base case",
+    "explicit477-family construction and independent equality with the enumeration",
+    "maximal cliques of an induced allowed-mask graph are maximal intersections with universal maximal cliques",
+    "saved maximality and universal-cover checks prevent a missing projected clique",
+    "empty high-mask domains and triple-superset subfamilies have the stated coverage",
+    "intersection of at least3 forces at most one selected outside vertex across a clique",
+    "(1-sum X_a)XX^T is positive semidefinite pointwise and clique-selected rows vanish",
+    "quota-one omission uses the SRG pair-count identity plus the full child PSD family, including the size-two class",
+    "the appended eighth root is a specified labelled vertex, with no stabilizer division"
+  ],
+  "quota_one_identity": "1-sum_{a in C} X_a = sum_{allowed b containing the shared pair, b not in C} N_b",
+  "scope": "intersection-at-least-three clique domain and stated exact localizer mathematics; other incompatibility edges are not claimed included",
+  "full_clique_census_rerun": false,
+  "sparse_lifts_reconstructed": false,
+  "point_scanned": false,
+  "optimizer_called": false
+}

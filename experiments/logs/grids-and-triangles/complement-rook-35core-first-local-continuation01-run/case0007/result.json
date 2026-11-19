@@ -1,0 +1,36 @@
+{
+  "status": "UNSAT with direct DRAT; cold domain/formula rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0007-model.json",
+  "model_sha256": "d5bae84b0716399f1a10c04d409da544df66a5eb33bcc1dd36f6d8a53889f523",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 7,
+  "cnf_sha256": "d7cca5336022e935bab4bb09c048d8be3ae9949b8cc3e9673bd4e2ec6091455a",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 150852,
+  "bootstrap_seconds": 0.23641481600134284,
+  "solve_return_seconds": 19.387813758999982,
+  "solver_statistics": {
+    "restarts": 198,
+    "conflicts": 46085,
+    "decisions": 91852,
+    "propagations": 121803780
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/raw.drat",
+  "raw_proof_sha256": "d6f1196124447d1c60ec2c836055d17644bc6c1afde61dfb08ed07c1d61fc7dc",
+  "raw_proof_lines": 93514,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/retained.cnf",
+    "cnf_sha256": "958d247f8b442a5dcc3a0c01764d17cb7d0a297248f222fb6d13b1e4750cf8c7",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/retained.drat",
+    "proof_sha256": "fd4c7b14caf10a619ba53a9f12d6564283ce469617ab4c670307f74466904ebe",
+    "input_clauses": 26306,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0007/direct-drat.log",
+    "checker_log_sha256": "e85a0bf4a98dcda5c3d542f109b6690577ed340e40472b2befeb8cc3c9ce7839"
+  },
+  "elapsed_seconds": 29.2383641919987
+}

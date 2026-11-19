@@ -160,6 +160,24 @@ parent and child blocks. Residual-pair identities make 4,478 of 5,215
 cases positive sums of child blocks. The remaining 737 cases over 82
 roots have complete sparse lifts and coefficientwise zero-row checks.
 This preparation makes no point-feasibility or exclusion claim.
+Its [bounded point scan](research/grids-and-triangles/grid_free_order10_complement_scan.md)
+now covers all 737 complements and separately checks all 916 scalar child
+blocks at the same integer point. It finds no separator and gives no
+exact PSD certificate. The stronger
+[clique-complement preparation](research/grids-and-triangles/grid_free_order10_complement_cliques.md)
+uses mutually incompatible flags. Two independent constructions give
+477 universal maximal cliques. Their complete restrictions to the roots
+leave 3,939 nonredundant cases under the stated quota-one reduction.
+Exact root relabelings reduce these to 711 representatives. Every selected
+zero row and every orbit transport is checked before the
+[complete scan](research/grids-and-triangles/grid_free_order10_complement_clique_scan.md).
+That scan finds no separator in any representative, covering all 3,939
+cases by congruence. It is not an exact PSD certificate.
+A [complete visible-pair graph](research/grids-and-triangles/grid_free_order10_complement_visible_domains.md)
+adds incompatibilities from root pairs with only one residual common
+neighbor. Literal checks of both mutual-edge choices and two independent
+clique censuses give 3,821 remaining cases in 811 root orbits. This
+stronger family is prepared separately; its domain record is not a scan.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -286,8 +304,13 @@ checks 17,612,727 column pairs and gives 1,863 new binary conflicts.
 Two subsequent [case-nine and case-ten proofs](research/grids-and-triangles/complement_rook_35core_cases09_10_exclusion.md)
 pass direct and cold checks. Their retained proofs need only five of
 the extra Gram clauses, each with a small integer negative vector.
-Eight matchings are now excluded: `0,1,2,3,8,9,10,21`. Twenty remain
-unresolved; the whole first local set is still open.
+At that stage eight matchings are excluded: `0,1,2,3,8,9,10,21`.
+A [fixed continuation](research/grids-and-triangles/complement_rook_35core_continuation_terminal.md)
+of the other twenty gives three more checked
+exclusions, cases `6,7,14`. Every retained input of those three proofs
+belongs to its original incidence formula; none needs the downdate
+overlay. The other seventeen runs return UNKNOWN. The current excluded
+set is `0,1,2,3,6,7,8,9,10,14,21`; the first local set remains open.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -319,6 +342,24 @@ uses 1,478,076 variables and 3,173,640 clauses, with complete Gram and
 triple-packing coverage. Its single [180-second query](research/root_prism_free_f0_pair_gram_run01.md)
 returns UNKNOWN after 181.332 seconds to cooperative return. It gives
 no incidence point, proof, or component-pair exclusion.
+The [complete two-column downdate classification](research/root_prism_free_f0_pair_downdate.md)
+covers 767,046,528 unordered distinct column pairs. Every negative pair
+already violates triple packing. All 721,041,624 pairs with intersection
+at most two have strictly positive determinants. A separate integer
+implementation reproduces the census, so this family gives no new cut.
+The [saved first incidence is now excluded](research/root_prism_free_f0_first_design_exterior.md)
+by its exterior equations, with every second component and alignment
+left unspecified. A complete exterior formula has a checked proof with
+120 retained inputs. A separate integer potential contradicts one mixed
+row even over nonnegative real neighbor weights. It also gives a
+55-term necessary incidence inequality and twelve verified transports.
+The full-domain control for that row is feasible, so the target signature
+itself is not excluded. A separately prepared model with only the first
+incidence fixed was not queried because this exterior proof supersedes it.
+Adding the twelve transported row inequalities to the original free
+480-selector component model gives another exact incidence witness.
+All Gram, profile, motif and new-cut checks pass, as does a separate cold
+replay. Its exterior rows and the second component are still unspecified.
 
 ## Scope of the unrestricted computations
 

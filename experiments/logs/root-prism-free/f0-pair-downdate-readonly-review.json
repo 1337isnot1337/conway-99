@@ -1,0 +1,41 @@
+{
+  "status": "PASS: read-only source review and cheap exact coverage/overflow/witness checks",
+  "review_source_sha256": "3bda3c0206e9f019c5009f30136a4e7e193997b8210e6c12635965f0b146defc",
+  "checked_hashes": {
+    "experiments/workspace/root_prism_free_f0_pair_downdate.py": "a17b7c8f8a7526398fc0da6ead18da2228e27e89a85b759ff0c3b6076da9b979",
+    "experiments/workspace/root_prism_free_f0_pair_downdate.cpp": "b4cc2fc3d2a9c363d9d14c719741d725da8e9337f40bbe1fcbfbf1e79e2fa802",
+    "experiments/workspace/root_prism_free_f0_pair_downdate_independent_audit.py": "58b4ed968093153817b849621f97a50b838753cb6e9f8dbd30df8d7192ab0065",
+    "experiments/logs/root-prism-free/f0-pair-gram-model-preparation.json.gz": "7b870a9df98c855f75fcd0191b5fe03589d9458ad1e3f985ba77edb066be0c59",
+    "experiments/logs/root-prism-free/f0-pair-downdate-bounds.json": "443c87ca561fa28c343d0446afa6d65ad87ad7d1f754a54a1756e5fcca7b6dfb",
+    "experiments/logs/root-prism-free/f0-pair-downdate-run01/certificate.json": "fe09cb1f9a6544006f05646599258e6b806e2b8156cd6a8d8e4d43695b8826b6"
+  },
+  "independent_census_report_sha256": "aa8b84f98d7dd2b12a9f9036bc49a89f0ec0bce25b6b731b6dab23d049a40fcd",
+  "component_types": 36134,
+  "component_ordered_pairs": 230400,
+  "complementary_profile_groups": 49,
+  "type_combinations_recounted": 33578176,
+  "represented_full_ordered_pairs": 1534132224,
+  "self_columns": 39168,
+  "represented_distinct_unordered_pairs": 767046528,
+  "signed_int64_determinant_absolute_bound": 18499955409440,
+  "recorded_allowed_minimum_witness_type_ids": [
+    5017,
+    33498
+  ],
+  "recorded_witness_exact_determinant_numerator": 613323123456,
+  "source_review": [
+    "all full-column pairs correspond exactly to products of complementary component-pair types",
+    "component overlap3 means equal triples; self columns are removed before division by2",
+    "centered and homogeneous bilinear formulas agree because every profile sums to3",
+    "intersection-profile dot product detects same-fiber cross quota-one pairs",
+    "native and NumPy loops use bounded exact integer products and weighted reductions",
+    "NumPy allowed means full intersection at most2, so its positive minimum is stronger than mask0 positivity",
+    "empty new predicate archive yields no new constraints or component exclusion"
+  ],
+  "full_type_classification_rerun": false,
+  "global_minimum_independently_recomputed": false,
+  "native_executable_called": false,
+  "CNF_rebuilt": false,
+  "solver_called": false,
+  "scope": "review of the saved component0+component0 identity-alignment census only"
+}
