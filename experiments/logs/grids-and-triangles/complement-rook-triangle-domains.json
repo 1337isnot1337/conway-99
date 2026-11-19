@@ -1,0 +1,414 @@
+{
+  "status": "exact triangle domain and prospective clause census; no solver or large CNF",
+  "source_sha256": "44898471bb9d41003fb2140faf8126e50db1cf7d141670a9b8ae510c1642ebda",
+  "base_manifest_sha256": "b24ccb4fec17f267cbb28bf507ea55b8ab7ca3b8c70d25cf9adca11ddf01444e",
+  "base_domain_sha256": "0d1c7f6333adf459988db46d6cb02fb086b7aa135121a9650df30b891235554d",
+  "candidate_signatures": 252,
+  "eligible_edges": 20934,
+  "overlap_zero_edges": 14652,
+  "overlap_one_edges": 6282,
+  "all_eligible_graph_triangles": 750708,
+  "allowed_disjoint_triangles": 209952,
+  "forbidden_overlap_triangles": 540756,
+  "triangles_by_number_of_overlap_one_edges": [
+    [
+      0,
+      209952
+    ],
+    [
+      1,
+      379368
+    ],
+    [
+      2,
+      132912
+    ],
+    [
+      3,
+      28476
+    ]
+  ],
+  "allowed_triangle_domain_sha256": "258173db738f4806b086f0a0420a8e0496ec452569df766c1d3a80e2e1527657",
+  "forbidden_triangle_domain_sha256": "20f7cc661857394600cea621f726cf63e40168002e412691df9850bd29cec081",
+  "triangle_counts_per_zero_overlap_edge": [
+    [
+      24,
+      72
+    ],
+    [
+      28,
+      36
+    ],
+    [
+      29,
+      72
+    ],
+    [
+      30,
+      360
+    ],
+    [
+      32,
+      144
+    ],
+    [
+      33,
+      72
+    ],
+    [
+      34,
+      72
+    ],
+    [
+      35,
+      360
+    ],
+    [
+      36,
+      396
+    ],
+    [
+      37,
+      288
+    ],
+    [
+      38,
+      648
+    ],
+    [
+      39,
+      1008
+    ],
+    [
+      40,
+      1116
+    ],
+    [
+      41,
+      1296
+    ],
+    [
+      42,
+      1368
+    ],
+    [
+      43,
+      936
+    ],
+    [
+      44,
+      792
+    ],
+    [
+      45,
+      1224
+    ],
+    [
+      46,
+      612
+    ],
+    [
+      47,
+      504
+    ],
+    [
+      48,
+      1080
+    ],
+    [
+      49,
+      504
+    ],
+    [
+      50,
+      684
+    ],
+    [
+      51,
+      216
+    ],
+    [
+      52,
+      216
+    ],
+    [
+      54,
+      216
+    ],
+    [
+      58,
+      144
+    ],
+    [
+      59,
+      144
+    ],
+    [
+      64,
+      72
+    ]
+  ],
+  "addition": {
+    "triangle_variables": 209952,
+    "triangle_conjunction_clauses": 839808,
+    "zero_overlap_edge_atleast_clauses": 14652,
+    "zero_overlap_edge_atmost_clauses": 1830960,
+    "zero_overlap_edge_atmost_auxiliaries": 615204,
+    "all_forbidden_triangle_clauses": 540756,
+    "forbidden_triangles_already_excluded_by_one_mixed_row": 344340,
+    "forbidden_triangles_without_that_direct_redundancy": 196416
+  },
+  "prospective_full_model_variables": 1981638,
+  "prospective_full_model_clauses_all_forbidden": 5801904,
+  "prospective_full_model_clauses_omit_direct_redundancies": 5457564,
+  "split_case_additional_units": 2,
+  "small_counter_size_controls": [
+    {
+      "input_length": 24,
+      "occurrences": 72,
+      "auxiliaries": 23,
+      "clauses": 68
+    },
+    {
+      "input_length": 28,
+      "occurrences": 36,
+      "auxiliaries": 27,
+      "clauses": 80
+    },
+    {
+      "input_length": 29,
+      "occurrences": 72,
+      "auxiliaries": 28,
+      "clauses": 83
+    },
+    {
+      "input_length": 30,
+      "occurrences": 360,
+      "auxiliaries": 29,
+      "clauses": 86
+    },
+    {
+      "input_length": 32,
+      "occurrences": 144,
+      "auxiliaries": 31,
+      "clauses": 92
+    },
+    {
+      "input_length": 33,
+      "occurrences": 72,
+      "auxiliaries": 32,
+      "clauses": 95
+    },
+    {
+      "input_length": 34,
+      "occurrences": 72,
+      "auxiliaries": 33,
+      "clauses": 98
+    },
+    {
+      "input_length": 35,
+      "occurrences": 360,
+      "auxiliaries": 34,
+      "clauses": 101
+    },
+    {
+      "input_length": 36,
+      "occurrences": 396,
+      "auxiliaries": 35,
+      "clauses": 104
+    },
+    {
+      "input_length": 37,
+      "occurrences": 288,
+      "auxiliaries": 36,
+      "clauses": 107
+    },
+    {
+      "input_length": 38,
+      "occurrences": 648,
+      "auxiliaries": 37,
+      "clauses": 110
+    },
+    {
+      "input_length": 39,
+      "occurrences": 1008,
+      "auxiliaries": 38,
+      "clauses": 113
+    },
+    {
+      "input_length": 40,
+      "occurrences": 1116,
+      "auxiliaries": 39,
+      "clauses": 116
+    },
+    {
+      "input_length": 41,
+      "occurrences": 1296,
+      "auxiliaries": 40,
+      "clauses": 119
+    },
+    {
+      "input_length": 42,
+      "occurrences": 1368,
+      "auxiliaries": 41,
+      "clauses": 122
+    },
+    {
+      "input_length": 43,
+      "occurrences": 936,
+      "auxiliaries": 42,
+      "clauses": 125
+    },
+    {
+      "input_length": 44,
+      "occurrences": 792,
+      "auxiliaries": 43,
+      "clauses": 128
+    },
+    {
+      "input_length": 45,
+      "occurrences": 1224,
+      "auxiliaries": 44,
+      "clauses": 131
+    },
+    {
+      "input_length": 46,
+      "occurrences": 612,
+      "auxiliaries": 45,
+      "clauses": 134
+    },
+    {
+      "input_length": 47,
+      "occurrences": 504,
+      "auxiliaries": 46,
+      "clauses": 137
+    },
+    {
+      "input_length": 48,
+      "occurrences": 1080,
+      "auxiliaries": 47,
+      "clauses": 140
+    },
+    {
+      "input_length": 49,
+      "occurrences": 504,
+      "auxiliaries": 48,
+      "clauses": 143
+    },
+    {
+      "input_length": 50,
+      "occurrences": 684,
+      "auxiliaries": 49,
+      "clauses": 146
+    },
+    {
+      "input_length": 51,
+      "occurrences": 216,
+      "auxiliaries": 50,
+      "clauses": 149
+    },
+    {
+      "input_length": 52,
+      "occurrences": 216,
+      "auxiliaries": 51,
+      "clauses": 152
+    },
+    {
+      "input_length": 54,
+      "occurrences": 216,
+      "auxiliaries": 53,
+      "clauses": 158
+    },
+    {
+      "input_length": 58,
+      "occurrences": 144,
+      "auxiliaries": 57,
+      "clauses": 170
+    },
+    {
+      "input_length": 59,
+      "occurrences": 144,
+      "auxiliaries": 58,
+      "clauses": 173
+    },
+    {
+      "input_length": 64,
+      "occurrences": 72,
+      "auxiliaries": 63,
+      "clauses": 188
+    }
+  ],
+  "conjunction_control": {
+    "status": "exact octahedral counterexample to omitted reverse implication",
+    "vertices": 6,
+    "edges": 12,
+    "actual_triangles": 8,
+    "selected_edge_partition_triangles": 4,
+    "reverse_implication_is_required": true
+  },
+  "examples": {
+    "direct_mixed_redundancy": {
+      "signature_indices": [
+        0,
+        8,
+        16
+      ],
+      "coordinate_triples": [
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          0,
+          7,
+          3
+        ]
+      ],
+      "mixed_row_witnesses": [
+        [
+          16,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    },
+    "no_direct_two_edge_mixed_obstruction": {
+      "signature_indices": [
+        0,
+        8,
+        127
+      ],
+      "coordinate_triples": [
+        [
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          5,
+          2
+        ],
+        [
+          4,
+          6,
+          1
+        ]
+      ]
+    }
+  },
+  "scope": "necessary adjacent-exterior-pair equations; nonadjacent exterior common-neighbor caps remain absent"
+}

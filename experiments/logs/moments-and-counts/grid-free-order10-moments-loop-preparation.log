@@ -1,0 +1,66 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+{
+  "status": "bounded cutting-plane model prepared; no optimization run",
+  "source_sha256": "549233611473b1c3558bb19a26d6dbeb532463123684e023963f05dab58ed4f4",
+  "dependency_hashes": {
+    "grid_free_order10_scaled.py": "12409f5ea1932d549cb69d9ca83e8cd4bd53d173b1a6ef136f9cdee6c095fc16",
+    "grid_free_order10_moments.py": "4c6886bd8d5dffa711aa20991af3bb87495262bd01d8227d2f64caac0040bbae",
+    "grid_free_order10_scaled_cut.py": "d656c4b104c683aa2b313c41f44a7e3f83b071632b772c8163c5523882ac243c"
+  },
+  "inputs": {
+    "reduced_cache": "/tmp/conway99-order10-reduced.pickle",
+    "base_preparation": "experiments/logs/moments-and-counts/grid-free-order10-scaled-preparation.json",
+    "moment_certificate": "experiments/logs/moments-and-counts/grid-free-order10-moments.json",
+    "universal_certificate": "experiments/logs/moments-and-counts/grid-free-order10-scaled-fixed-cut.json"
+  },
+  "input_hashes": {
+    "reduced_cache": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+    "base_preparation": "b469897acd15b6078664625191005454e8bac56ae76318d57fd804089bcf8e50",
+    "moment_certificate": "757e7464b06e168e9f2d906c018b905e62a176e0ebba9a34dc9e008c189ed324",
+    "universal_certificate": "6530e30b111c2b0dbad4dfc3bfdb48990558de3622157af3d62a275179910c03"
+  },
+  "base_rows": 47620,
+  "variables": 547,
+  "base_nonzeros": 5427663,
+  "additional_rows": 5,
+  "additional_nonzeros": 129,
+  "smallest_added_normalized_coefficient": 0.00031887755102040814,
+  "initial_total_rows": 47625,
+  "initial_total_nonzeros": 5427792,
+  "fixed_coordinates": [
+    [
+      0,
+      1
+    ],
+    [
+      56,
+      0
+    ],
+    [
+      57,
+      0
+    ]
+  ],
+  "maximum_rounds": 6,
+  "maximum_solver_seconds_per_round": 30,
+  "threads": 1,
+  "objective": "pure feasibility",
+  "basis_reuse": "same highspy instance; append exact necessary cuts between rounds",
+  "dual_extraction": false,
+  "preparation_seconds": 9.442378277999524,
+  "peak_process_rss_kib": 1194964
+}

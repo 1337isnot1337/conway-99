@@ -1,0 +1,198 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 9,
+  "unique_integer_cuts": 9,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "prism-zero IPM model prepared; no optimization run",
+  "source_sha256": "ec972814b45828107d9c97f7c94e9760fef7973b360f3af7da8c8a33bc4e1ab3",
+  "inputs": {
+    "loop_preparation": "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-preparation.json",
+    "loop_result": "experiments/logs/moments-and-counts/grid-free-order10-moments-loop.json",
+    "reduction_audit": "experiments/logs/moments-and-counts/order10-reduction-audit.json"
+  },
+  "input_hashes": {
+    "loop_preparation": "bc52efaa911054ef463a16b3043f9a30921664cb1414c60847a84b775b219c97",
+    "loop_result": "5030c57981c1d32e05c1c867082135e8706bb235a3f82253b552ebb682fc34fb",
+    "reduction_audit": "dae01f55448e217e1a999215685f05444507354eb5a4f5e12864dd758b955fb0"
+  },
+  "dependency_hashes": {
+    "grid_free_order10_moments_loop.py": "549233611473b1c3558bb19a26d6dbeb532463123684e023963f05dab58ed4f4",
+    "grid_free_order10_scaled.py": "12409f5ea1932d549cb69d9ca83e8cd4bd53d173b1a6ef136f9cdee6c095fc16",
+    "grid_free_order10_moments.py": "4c6886bd8d5dffa711aa20991af3bb87495262bd01d8227d2f64caac0040bbae",
+    "grid_free_order10_scaled_cut.py": "d656c4b104c683aa2b313c41f44a7e3f83b071632b772c8163c5523882ac243c"
+  },
+  "highs_version": "1.16.0",
+  "supported_options": {
+    "output_flag": false,
+    "threads": 1,
+    "presolve": "on",
+    "solver": "ipm",
+    "run_crossover": "off",
+    "time_limit": 120.0
+  },
+  "maximum_solver_seconds": 120,
+  "maximum_solver_calls": 1,
+  "dual_extraction": false,
+  "preparation_seconds": 14.131995372999882,
+  "peak_process_rss_kib": 1198536
+}
+{
+  "rows": 47634,
+  "stored_columns": 547,
+  "free_columns": 546,
+  "nonzeros": 5427993,
+  "base_fixed_coordinates": [
+    [
+      0,
+      1
+    ],
+    [
+      56,
+      0
+    ],
+    [
+      57,
+      0
+    ]
+  ],
+  "effective_fixed_coordinates": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      56,
+      0
+    ],
+    [
+      57,
+      0
+    ]
+  ],
+  "prism_column_zero_based": 0,
+  "prism_numerical_bounds": [
+    0,
+    0
+  ],
+  "prism_scaling": 3234,
+  "additional_count_cuts": 1,
+  "additional_PSD_cuts": 13,
+  "cut_coefficients_sha256": "b133c05d00297e6786d71d348ddaf02342f23ce43e1e77bb41d3376df47f80dd",
+  "numerical_model_sha256": "cd09cf494efafa04cd850ffa593d8d55679fb39393118d0d06189ee5a3a0e596",
+  "coordinate_control": {
+    "coordinate": 1,
+    "catalogue_type": 99,
+    "rows": [
+      28,
+      56,
+      49,
+      35,
+      7,
+      14
+    ],
+    "count_kind": "ordinary unlabeled prism copies",
+    "automorphisms": 12,
+    "ordinary_count_upper_bound": 3234,
+    "standard_prism_rows": [
+      14,
+      21,
+      35,
+      49,
+      42,
+      28
+    ],
+    "isomorphism_to_standard_prism": [
+      0,
+      4,
+      2,
+      3,
+      1,
+      5
+    ],
+    "prism_containment_in_zeroed_nine_vertex_patterns": [
+      {
+        "coordinate": 56,
+        "catalogue_type": 6533,
+        "host_rows": [
+          408,
+          240,
+          352,
+          193,
+          323,
+          390,
+          30,
+          43,
+          53
+        ],
+        "ordinary_prism_embedding": [
+          0,
+          1,
+          3,
+          4,
+          7,
+          6
+        ]
+      },
+      {
+        "coordinate": 57,
+        "catalogue_type": 6534,
+        "host_rows": [
+          312,
+          216,
+          480,
+          99,
+          387,
+          141,
+          270,
+          54,
+          85
+        ],
+        "ordinary_prism_embedding": [
+          0,
+          1,
+          5,
+          4,
+          3,
+          7
+        ]
+      }
+    ]
+  },
+  "base_input_hashes": {
+    "reduced_cache": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+    "base_preparation": "b469897acd15b6078664625191005454e8bac56ae76318d57fd804089bcf8e50",
+    "moment_certificate": "757e7464b06e168e9f2d906c018b905e62a176e0ebba9a34dc9e008c189ed324",
+    "universal_certificate": "6530e30b111c2b0dbad4dfc3bfdb48990558de3622157af3d62a275179910c03"
+  },
+  "additional_separator_certificate_hashes": {
+    "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-separation.json": "e37f6e9609c805121b412321015881c4c69c7a1f53a67d9ccf2b956fc3885ad4"
+  },
+  "objective": "zero; pure feasibility",
+  "new_zero_propagation": false,
+  "row_scaling": "unchanged frozen base scaling plus frozen cut normalization"
+}

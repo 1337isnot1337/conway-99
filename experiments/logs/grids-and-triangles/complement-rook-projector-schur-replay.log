@@ -1,0 +1,391 @@
+{
+  "status": "exact pair and disjoint-triangle projector census PASS",
+  "scope": "1296 necessary triangle exclusions; no whole-core or graph-existence conclusion",
+  "source_sha256": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+  "base_manifest_sha256": "b24ccb4fec17f267cbb28bf507ea55b8ab7ca3b8c70d25cf9adca11ddf01444e",
+  "triangle_domain_certificate_sha256": "bbf6d6985631a4772095ccf59825c729d4392f7d477660155cb383a8f240a93f",
+  "base_domain_sha256": "0d1c7f6333adf459988db46d6cb02fb086b7aa135121a9650df30b891235554d",
+  "normalizations": {
+    "minus": "27I-9A+J=63E_minus4",
+    "plus": "44I+11A-2J=77E_3"
+  },
+  "group_order": 144,
+  "candidate_signatures": 252,
+  "eligible_edges": 20934,
+  "pairs_checked": 31626,
+  "pair_class_counts": [
+    {
+      "incidence_compatible": false,
+      "eligible_edge": false,
+      "count": 648
+    },
+    {
+      "incidence_compatible": true,
+      "eligible_edge": false,
+      "count": 10044
+    },
+    {
+      "incidence_compatible": true,
+      "eligible_edge": true,
+      "count": 20934
+    }
+  ],
+  "all_pair_edge_states_strictly_positive": true,
+  "minimum_pair_determinants_for_edge_0_and_1": {
+    "minus": [
+      [
+        230,
+        1
+      ],
+      [
+        32,
+        1
+      ]
+    ],
+    "plus": [
+      [
+        592174,
+        845
+      ],
+      [
+        5197797,
+        8450
+      ]
+    ]
+  },
+  "allowed_triangle_domain_sha256": "258173db738f4806b086f0a0420a8e0496ec452569df766c1d3a80e2e1527657",
+  "allowed_disjoint_triangles": 209952,
+  "triangle_status_counts": {
+    "minus": {
+      "positive": 208656,
+      "negative": 1296
+    },
+    "plus": {
+      "positive": 209952
+    }
+  },
+  "minimum_triangle_determinants": {
+    "minus": [
+      -8135,
+      32
+    ],
+    "plus": [
+      103762458701,
+      7030400
+    ]
+  },
+  "source_type_definitions": [
+    "both p,t and q,t are R-adjacent",
+    "exactly one is R-adjacent",
+    "neither is R-adjacent"
+  ],
+  "triangle_support_by_source_type": [
+    {
+      "type": 0,
+      "name": "both_R_near",
+      "signatures": 72,
+      "representative_index": 0,
+      "coordinate_triple": [
+        0,
+        4,
+        1
+      ],
+      "triangle_supports": [
+        {
+          "before": 2226,
+          "removed": 0,
+          "after": 2226,
+          "signatures": 72
+        }
+      ]
+    },
+    {
+      "type": 1,
+      "name": "one_R_near",
+      "signatures": 144,
+      "representative_index": 1,
+      "coordinate_triple": [
+        0,
+        4,
+        2
+      ],
+      "triangle_supports": [
+        {
+          "before": 2583,
+          "removed": 27,
+          "after": 2556,
+          "signatures": 144
+        }
+      ]
+    },
+    {
+      "type": 2,
+      "name": "both_R_far",
+      "signatures": 36,
+      "representative_index": 6,
+      "coordinate_triple": [
+        0,
+        4,
+        8
+      ],
+      "triangle_supports": [
+        {
+          "before": 2712,
+          "removed": 0,
+          "after": 2712,
+          "signatures": 36
+        }
+      ]
+    }
+  ],
+  "triangle_support_by_eligible_disjoint_edge": [
+    {
+      "before": 24,
+      "removed": 0,
+      "after": 24,
+      "edges": 72
+    },
+    {
+      "before": 28,
+      "removed": 0,
+      "after": 28,
+      "edges": 36
+    },
+    {
+      "before": 29,
+      "removed": 0,
+      "after": 29,
+      "edges": 72
+    },
+    {
+      "before": 30,
+      "removed": 0,
+      "after": 30,
+      "edges": 360
+    },
+    {
+      "before": 32,
+      "removed": 0,
+      "after": 32,
+      "edges": 144
+    },
+    {
+      "before": 33,
+      "removed": 0,
+      "after": 33,
+      "edges": 72
+    },
+    {
+      "before": 34,
+      "removed": 0,
+      "after": 34,
+      "edges": 72
+    },
+    {
+      "before": 35,
+      "removed": 0,
+      "after": 35,
+      "edges": 360
+    },
+    {
+      "before": 36,
+      "removed": 0,
+      "after": 36,
+      "edges": 396
+    },
+    {
+      "before": 37,
+      "removed": 0,
+      "after": 37,
+      "edges": 288
+    },
+    {
+      "before": 38,
+      "removed": 0,
+      "after": 38,
+      "edges": 648
+    },
+    {
+      "before": 39,
+      "removed": 0,
+      "after": 39,
+      "edges": 1008
+    },
+    {
+      "before": 40,
+      "removed": 0,
+      "after": 40,
+      "edges": 972
+    },
+    {
+      "before": 40,
+      "removed": 4,
+      "after": 36,
+      "edges": 72
+    },
+    {
+      "before": 40,
+      "removed": 6,
+      "after": 34,
+      "edges": 72
+    },
+    {
+      "before": 41,
+      "removed": 0,
+      "after": 41,
+      "edges": 1296
+    },
+    {
+      "before": 42,
+      "removed": 0,
+      "after": 42,
+      "edges": 1296
+    },
+    {
+      "before": 42,
+      "removed": 4,
+      "after": 38,
+      "edges": 72
+    },
+    {
+      "before": 43,
+      "removed": 0,
+      "after": 43,
+      "edges": 792
+    },
+    {
+      "before": 43,
+      "removed": 1,
+      "after": 42,
+      "edges": 144
+    },
+    {
+      "before": 44,
+      "removed": 0,
+      "after": 44,
+      "edges": 792
+    },
+    {
+      "before": 45,
+      "removed": 0,
+      "after": 45,
+      "edges": 1224
+    },
+    {
+      "before": 46,
+      "removed": 0,
+      "after": 46,
+      "edges": 612
+    },
+    {
+      "before": 47,
+      "removed": 0,
+      "after": 47,
+      "edges": 288
+    },
+    {
+      "before": 47,
+      "removed": 2,
+      "after": 45,
+      "edges": 72
+    },
+    {
+      "before": 47,
+      "removed": 5,
+      "after": 42,
+      "edges": 144
+    },
+    {
+      "before": 48,
+      "removed": 0,
+      "after": 48,
+      "edges": 864
+    },
+    {
+      "before": 48,
+      "removed": 1,
+      "after": 47,
+      "edges": 144
+    },
+    {
+      "before": 48,
+      "removed": 4,
+      "after": 44,
+      "edges": 72
+    },
+    {
+      "before": 49,
+      "removed": 0,
+      "after": 49,
+      "edges": 360
+    },
+    {
+      "before": 49,
+      "removed": 5,
+      "after": 44,
+      "edges": 144
+    },
+    {
+      "before": 50,
+      "removed": 0,
+      "after": 50,
+      "edges": 684
+    },
+    {
+      "before": 51,
+      "removed": 0,
+      "after": 51,
+      "edges": 144
+    },
+    {
+      "before": 51,
+      "removed": 4,
+      "after": 47,
+      "edges": 72
+    },
+    {
+      "before": 52,
+      "removed": 0,
+      "after": 52,
+      "edges": 216
+    },
+    {
+      "before": 54,
+      "removed": 0,
+      "after": 54,
+      "edges": 216
+    },
+    {
+      "before": 58,
+      "removed": 0,
+      "after": 58,
+      "edges": 144
+    },
+    {
+      "before": 59,
+      "removed": 0,
+      "after": 59,
+      "edges": 144
+    },
+    {
+      "before": 64,
+      "removed": 6,
+      "after": 58,
+      "edges": 72
+    }
+  ],
+  "any_source_or_eligible_disjoint_edge_loses_all_triangle_support": false,
+  "forbidden_triangle_list_sha256": "f9824c8125bc8c04c6be974dcbb3dec9789ecd0c80e97b4ed5df3f10d3d1ccdf",
+  "local_cap_controls": {
+    "representatives": 9,
+    "pairs_per_representative": 435,
+    "all_passed": true
+  },
+  "all_arithmetic_exact": true,
+  "solver_called": false,
+  "large_cnf_built": false,
+  "pair_orbit_count": 264,
+  "triangle_orbit_count": 1500,
+  "forbidden_triangle_orbit_count": 9,
+  "forbidden_triangles": 1296
+}

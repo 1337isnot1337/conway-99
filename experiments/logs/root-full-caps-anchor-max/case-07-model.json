@@ -1,0 +1,236 @@
+{
+  "status": "maximum-anchor case CNF built; no solve",
+  "analysis": "experiments/logs/root-full-caps-lex/analysis.json",
+  "analysis_sha256": "1abd9986f9d9a44743f4d56d58e876d24aa2b7a6f8a98ed34a92698a7a191bb8",
+  "source_hashes": {
+    "root_full_caps_lex.py": "736ccdd9060144eded621dc409a7ebd8ff4f3c3fb081ba606994c05a3f24a848",
+    "root_full_caps_lex_coverage.py": "9f5ca4aed852b5fbf29a65dd02244bc83a5ceab99254e4d66c831da6ac16c27a"
+  },
+  "case": {
+    "index": 7,
+    "partition": [
+      2,
+      2,
+      2
+    ],
+    "stabilizer_order": 384,
+    "generator_count": 8,
+    "generators": [
+      {
+        "kind": "rotation",
+        "component": 0,
+        "image": [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "moved_primary_coordinates": 2604,
+        "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+        "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+        "added_variables": 2603,
+        "added_clauses": 7810
+      },
+      {
+        "kind": "reflection",
+        "component": 0,
+        "image": [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "moved_primary_coordinates": 2684,
+        "edge_image_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+        "lex_right_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+        "added_variables": 2683,
+        "added_clauses": 8050
+      },
+      {
+        "kind": "rotation",
+        "component": 1,
+        "image": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          4,
+          5,
+          8,
+          9,
+          10,
+          11
+        ],
+        "moved_primary_coordinates": 2604,
+        "edge_image_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+        "lex_right_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+        "added_variables": 2603,
+        "added_clauses": 7810
+      },
+      {
+        "kind": "reflection",
+        "component": 1,
+        "image": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          7,
+          6,
+          8,
+          9,
+          10,
+          11
+        ],
+        "moved_primary_coordinates": 2684,
+        "edge_image_sha256": "0f47f66a21235a751144e88410592adbd5a8879d576eb08f65c8b71de67bf2f2",
+        "lex_right_sha256": "0f47f66a21235a751144e88410592adbd5a8879d576eb08f65c8b71de67bf2f2",
+        "added_variables": 2683,
+        "added_clauses": 8050
+      },
+      {
+        "kind": "rotation",
+        "component": 2,
+        "image": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          10,
+          11,
+          8,
+          9
+        ],
+        "moved_primary_coordinates": 2604,
+        "edge_image_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+        "lex_right_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+        "added_variables": 2603,
+        "added_clauses": 7810
+      },
+      {
+        "kind": "reflection",
+        "component": 2,
+        "image": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          9,
+          8,
+          11,
+          10
+        ],
+        "moved_primary_coordinates": 2684,
+        "edge_image_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+        "lex_right_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+        "added_variables": 2683,
+        "added_clauses": 8050
+      },
+      {
+        "kind": "component interchange",
+        "components": [
+          0,
+          1
+        ],
+        "image": [
+          4,
+          5,
+          6,
+          7,
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          11
+        ],
+        "moved_primary_coordinates": 3332,
+        "edge_image_sha256": "d573cb10c1b0d7760efbf43a2f836dc10237869663e399152b4482c48cca8848",
+        "lex_right_sha256": "d573cb10c1b0d7760efbf43a2f836dc10237869663e399152b4482c48cca8848",
+        "added_variables": 3331,
+        "added_clauses": 9994
+      },
+      {
+        "kind": "component interchange",
+        "components": [
+          1,
+          2
+        ],
+        "image": [
+          0,
+          1,
+          2,
+          3,
+          8,
+          9,
+          10,
+          11,
+          4,
+          5,
+          6,
+          7
+        ],
+        "moved_primary_coordinates": 3332,
+        "edge_image_sha256": "25aed8f1d5183b713656530ae1a2f113c4acdacd82e814eda0da4dbaed8e0bd2",
+        "lex_right_sha256": "25aed8f1d5183b713656530ae1a2f113c4acdacd82e814eda0da4dbaed8e0bd2",
+        "added_variables": 3331,
+        "added_clauses": 9994
+      }
+    ],
+    "base_cnf_sha256": "8f1eae908b3dd6a122fd95b7caec4f1de2e0bc35cf9246d4e90e3de2b8ccc4da",
+    "base_variables": 960414,
+    "base_clauses": 1908864,
+    "added_variables": 22520,
+    "added_clauses": 67568,
+    "total_variables": 982934,
+    "total_clauses": 1976432
+  },
+  "cnf": "/tmp/conway-root-full-caps-anchor-max/case-07.cnf",
+  "cnf_sha256": "d3158630bd82c517dd8f76175a0dd34438d20c104497b874c8fc576c754ed073",
+  "original_batch": "experiments/logs/root-full-caps/run-01/batch.json",
+  "original_batch_sha256": "5a475b70655e057060884639ab304de372d21cadbd47a3fce61d7ec8c6e9c549",
+  "lex_pilot_batch": "experiments/logs/root-full-caps-lex/run-01/batch.json",
+  "lex_pilot_batch_sha256": "15310657ad2efab7c6762a1242f6978abe00e06e5b004c1715e7bafba46734b1",
+  "maximum_anchor_certificate": "experiments/logs/root-full-caps-anchor-max/anchor-max-certificate.json",
+  "maximum_anchor_certificate_sha256": "fb69de72737a2fa0e5ec8dc3d86d76ba4de55b97ec6661455e81953f00ba8737",
+  "scope": "new maximum-anchor normalization case; not the entire old same-index case",
+  "maximum_near_count": 0,
+  "maximum_anchor_clauses": 84,
+  "variables": 982934,
+  "clauses": 1976516,
+  "lex_cnf_sha256": "34ad5d7a2665b1cd7c51bd1eb9f6e07624e5da80d3c1d7398009ecd0b832ef33",
+  "run_support_source_hashes": {
+    "root_full_caps_anchor_max_solve.py": "9328695b5ee14bc48a1dd270f7a3a65299a2d1d870d01e9f5337b22102a7256d",
+    "root_full_caps_anchor_max_certificate.py": "4781a0c87f4d12c94b63847c912303959fc1416d5a64a889630a3829648cb1d9"
+  }
+}

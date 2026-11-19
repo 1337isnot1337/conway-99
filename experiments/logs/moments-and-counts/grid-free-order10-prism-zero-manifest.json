@@ -1,0 +1,123 @@
+{
+  "status": "frozen prism-zero numerical proposal; exact feasibility unresolved",
+  "files": {
+    "experiments/workspace/grid_free_order10_prism_zero.py": {
+      "sha256": "88f0510c0eb9c5898c2c3e0631c92cdcf17830048e98b6fe45707108f211498a",
+      "bytes": 18647
+    },
+    "experiments/workspace/grid_free_order10_prism_zero_v2.py": {
+      "sha256": "ec972814b45828107d9c97f7c94e9760fef7973b360f3af7da8c8a33bc4e1ab3",
+      "bytes": 18672
+    },
+    "research/grids-and-triangles/grid_free_order10_prism_zero.md": {
+      "sha256": "1a05cff464b5a80a1733388a46e572b70414da5b94757eaa07960e098b43d780",
+      "bytes": 6351
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-preparation.json": {
+      "sha256": "30fb5fa290e4c7a7e1852ee21faaf176722ba3e63eac2c12a25ed3b0c12e17c6",
+      "bytes": 10590
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-preparation.log": {
+      "sha256": "0430a86bce2f074c2699a5b1eababdda62643dad8164eb4c2b66f371c1c7c28a",
+      "bytes": 5245
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-run.log": {
+      "sha256": "5eb4199faead4a256be54d5197ac024024924460c52336df04cdc35193ccbbcf",
+      "bytes": 722
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-launch-failure.json": {
+      "sha256": "7806c6bfa5a45b3a3e4e467fad8042117323f32a45d012230d57b00080ea557e",
+      "bytes": 1085
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-preparation.json": {
+      "sha256": "2fed8e077cc715c36ebfedca1c687bb11e116a613f11cf8ded11e85d02ee0913",
+      "bytes": 10590
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-preparation.log": {
+      "sha256": "0d0f0d3ba0050650b031c199d54353030820e737a9e65e378736c5ee5d1a153e",
+      "bytes": 5245
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-result.json": {
+      "sha256": "70ef204a1cc015b3c2a67c200f6a25daa7332d126864b87236af8317717e8b08",
+      "bytes": 3712
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-run.log": {
+      "sha256": "1ea3fec64bfc534d6f493e711da38a6c1879eb42f8dabd99cc5e094c3c26ea35",
+      "bytes": 8202
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-solver-data.json": {
+      "sha256": "8447a1833f0b3b89d80e5dc2e0419fc3efef43abdf039fa3b22ee6c30d4462fd",
+      "bytes": 2327523
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-proposal.json": {
+      "sha256": "946806c7754b9b595f7c54536e332a185deed60da0a895d12742b69aa3447305",
+      "bytes": 34014
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-separation.json": {
+      "sha256": "34de33268d81ef1f9b836df30eee808cf7b0886a9e348085e4b8d37a9b487587",
+      "bytes": 8179
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-rounded-counts.json": {
+      "sha256": "639c079d9ef35b36a1681b7ff124d2326af35013c7f2fd808b4721c51aeb30d2",
+      "bytes": 5929
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-separation-replay.log": {
+      "sha256": "337b9d9a435686eab5aa96f6d410e455c16ae8e93ebf5f6628dd8c3ca7ca6cfb",
+      "bytes": 220
+    }
+  },
+  "failed_launch_solver_calls": 0,
+  "completed_run_solver_calls": 1,
+  "solver_seconds": 16.924709685999915,
+  "ipm_iterations": 12,
+  "crossover_iterations": 0,
+  "rows": 47634,
+  "stored_columns": 547,
+  "free_columns": 546,
+  "nonzeros": 5427993,
+  "numerical_model_sha256": "cd09cf494efafa04cd850ffa593d8d55679fb39393118d0d06189ee5a3a0e596",
+  "effective_fixed_coordinates": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      56,
+      0
+    ],
+    [
+      57,
+      0
+    ]
+  ],
+  "count_witness": false,
+  "PSD_feasibility_certified": false,
+  "infeasibility_certificate": false,
+  "dual_extraction_performed": false,
+  "additional_solve_performed": false,
+  "exact_negative_PSD_blocks": 0,
+  "cached_PSD_blocks_examined": 1416,
+  "negative_rounded_induced_counts": [
+    [
+      48301,
+      -1
+    ],
+    [
+      48915,
+      -1
+    ]
+  ],
+  "rounded_induced_count_divisibility_failures": 0,
+  "fourteen_held_cuts_strictly_positive": true,
+  "unconfirmed_numerical_PSD_negatives": [
+    {
+      "cache_file": "induced-schur-7.pickle",
+      "block_index": 415,
+      "normalized_numeric_eigenvalue": -5.960464477539062e-07
+    }
+  ]
+}

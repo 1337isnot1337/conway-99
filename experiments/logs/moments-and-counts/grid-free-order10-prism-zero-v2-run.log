@@ -1,0 +1,141 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 9,
+  "unique_integer_cuts": 9,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "numerical_status": "HighsModelStatus.kOptimal",
+  "solver_seconds": 16.924709685999915,
+  "returned_value_valid": true,
+  "returned_dual_valid": true
+}
+{"file": "moments-3-3-512.pickle", "sha256": "74d5a043cb92ccdeb0c91e15d8f44de814a40196e761b550caace40201b89e53", "embedding_form": "ordinary", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-4-2-512.pickle", "sha256": "74b9c284950fd317f895aa75afda15d531ceeef8d1daba7572c7f26eef68ce79", "embedding_form": "ordinary", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-5-2-512.pickle", "sha256": "9af8134d9ab637c22da04614928bf25ba227c3b812a2a21a10ab0e06b482aa73", "embedding_form": "ordinary", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.669004467108331e-16}
+{"file": "moments-6-1-512.pickle", "sha256": "e1adfc383da37e534a873a022d2f439816676e748dc917e4a6d8fa3e4ffb18d7", "embedding_form": "ordinary", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.51225523386922e-18}
+{"file": "moments-7-1-512.pickle", "sha256": "725a1cda8796555cf7ee3ee174b2593b610731111ef3cc4f472355d3055eeab0", "embedding_form": "ordinary", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -6.007462855929427e-16}
+{"file": "induced-moments-3-3-512.pickle", "sha256": "d68282554d55346ae09d30d1a2d495ac15ed325f900e4a0185bd54073180cd38", "embedding_form": "induced", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-4-2-512.pickle", "sha256": "f2f8b43e64b08edfed79021aaa63b6bce4d57fe127d382a7fa6c5728bff16d5a", "embedding_form": "induced", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-5-2-512.pickle", "sha256": "f35f9d2c709d869924fac026ffb036e310f0967b933b36578ec0e1a53463feac", "embedding_form": "induced", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -4.489391373847126e-16}
+{"file": "induced-moments-6-1-512.pickle", "sha256": "13808003e8f24bd47b8da6169c65a1eccc205b2bc9c3be1c8b57b588a2ba37c5", "embedding_form": "induced", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -5.294710444945011e-19}
+{"file": "induced-moments-7-1-512.pickle", "sha256": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc", "embedding_form": "induced", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.035952990626842e-16}
+{"file": "induced-spectral-7.pickle", "sha256": "b38ced60f1632d8368f2b20e358ab3f43d2ecfedc90bbaac9c446ce0af14c502", "embedding_form": "induced", "blocks": 416, "largest_order": 135, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.040290601201405e-15}
+{"file": "induced-schur-7.pickle", "sha256": "67cc16e42d9529c2155e5f80e73ea23a5defacaccac28150498218ae296058aa", "embedding_form": "induced", "blocks": 416, "largest_order": 128, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -5.960464477539062e-07}
+{"status": "no exact violation found; PSD not certified", "blocks_examined": 1416, "exact_negative_block_count": 0, "unique_integer_cut_count": 0, "seconds": 0.8771479650004039, "peak_process_rss_kib": 1191556}
+{
+  "status": "bounded numerical result recorded; no exact infeasibility conclusion",
+  "source_sha256": "ec972814b45828107d9c97f7c94e9760fef7973b360f3af7da8c8a33bc4e1ab3",
+  "preparation_sha256": "2fed8e077cc715c36ebfedca1c687bb11e116a613f11cf8ded11e85d02ee0913",
+  "numerical_model_sha256": "cd09cf494efafa04cd850ffa593d8d55679fb39393118d0d06189ee5a3a0e596",
+  "options": {
+    "output_flag": false,
+    "threads": 1,
+    "presolve": "on",
+    "solver": "ipm",
+    "run_crossover": "off",
+    "time_limit": 120.0
+  },
+  "fixed_order_nine_point": false,
+  "effective_fixed_coordinates": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      56,
+      0
+    ],
+    [
+      57,
+      0
+    ]
+  ],
+  "solver_calls": 1,
+  "dual_extraction_performed": false,
+  "exact_count_witness": false,
+  "PSD_feasibility_certified": false,
+  "exact_infeasibility_certificate": false,
+  "solver_seconds": 16.924709685999915,
+  "highs_run_status": "HighsStatus.kOk",
+  "numerical_status": "HighsModelStatus.kOptimal",
+  "returned_data_path": "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-solver-data.json",
+  "returned_data_sha256": "8447a1833f0b3b89d80e5dc2e0419fc3efef43abdf039fa3b22ee6c30d4462fd",
+  "returned_value_valid": true,
+  "returned_dual_valid": true,
+  "solver_info": {
+    "active_bound_norm": 0.0,
+    "active_cost_norm": 0.0,
+    "basis_validity": 0,
+    "centring_status": 0,
+    "crossover_iteration_count": 0,
+    "dual_solution_status": 2,
+    "ipm_iteration_count": 12,
+    "max_complementarity_violation": 7.643731880159676e-17,
+    "max_dual_infeasibility": 2.7777792203258724e-14,
+    "max_dual_residual_error": 1.6097508373895078e-15,
+    "max_integrality_violation": "inf",
+    "max_primal_infeasibility": 0.0,
+    "max_primal_residual_error": 2.7755575615628914e-17,
+    "max_relative_dual_infeasibility": 2.7777792203258724e-14,
+    "max_relative_dual_residual_error": 1.6097508373895078e-15,
+    "max_relative_primal_infeasibility": 0.0,
+    "max_relative_primal_residual_error": 2.7755575615628914e-17,
+    "mip_dual_bound": 0.0,
+    "mip_gap": "inf",
+    "mip_node_count": -1,
+    "num_complementarity_violations": 0,
+    "num_dual_infeasibilities": 0,
+    "num_dual_residual_errors": 0,
+    "num_primal_infeasibilities": 0,
+    "num_primal_residual_errors": 0,
+    "num_relative_dual_infeasibilities": 0,
+    "num_relative_dual_residual_errors": 0,
+    "num_relative_primal_infeasibilities": 0,
+    "num_relative_primal_residual_errors": 0,
+    "objective_function_value": 0.0,
+    "pdlp_iteration_count": 0,
+    "primal_dual_integral": "-inf",
+    "primal_dual_objective_error": 3.6312858494659213e-13,
+    "primal_solution_status": 2,
+    "qp_iteration_count": 0,
+    "simplex_iteration_count": 0,
+    "sum_dual_infeasibilities": 1.1091569454640683e-13,
+    "sum_primal_infeasibilities": 0.0,
+    "valid": true
+  },
+  "proposal_path": "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-proposal.json",
+  "proposal_sha256": "946806c7754b9b595f7c54536e332a185deed60da0a895d12742b69aa3447305",
+  "separator_path": "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-separation.json",
+  "separator_sha256": "34de33268d81ef1f9b836df30eee808cf7b0886a9e348085e4b8d37a9b487587",
+  "rounded_counts_path": "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-v2-rounded-counts.json",
+  "rounded_counts_sha256": "639c079d9ef35b36a1681b7ff124d2326af35013c7f2fd808b4721c51aeb30d2",
+  "exact_negative_PSD_blocks": 0,
+  "exact_separator_count": 0,
+  "rounded_count_status": "rounded point fails exact induced-count checks; real proposal retained",
+  "rounded_negative_held_cuts": 0,
+  "peak_process_rss_kib": 1191556
+}

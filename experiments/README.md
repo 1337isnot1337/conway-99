@@ -201,6 +201,27 @@ and its cardinality clauses. Neither command starts a large solver.
 The [run tables](../research/root_full_caps_runs_01.md) record eleven
 original UNKNOWN cases and two UNKNOWN lex pilots.
 
+The subsequent exact moment cuts and complementary-rook triangle
+restrictions have separate replays:
+
+```sh
+make verify-order-ten-moment-cuts
+make verify-complement-rook-schur
+```
+
+The first target reconstructs all thirteen moment inequalities from
+their integer vectors and cached block forms. It starts no optimization.
+The second regenerates the exact projector census, then independently
+checks the nine full thirty-vertex negative quadratic witnesses and
+all 1,296 forbidden-triangle clauses. These clauses do not exclude
+the complementary-rook core.
+
+The [prism-zero probe](../research/grids-and-triangles/grid_free_order10_prism_zero.md)
+preserves its numerical proposal and exact rounding failures. Two induced
+counts become minus one; no exact feasible point follows from the run.
+The [maximum-anchor run table](../research/root_full_caps_anchor_max_runs_01.md)
+records four further UNKNOWN cases under its separate coverage convention.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh

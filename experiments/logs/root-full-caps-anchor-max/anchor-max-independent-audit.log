@@ -1,0 +1,146 @@
+{
+  "status": "independent read-only mathematical and exact domain audit PASS",
+  "scope": "exhaustive union of maximum-anchor cases, not preservation of each old case",
+  "source_sha256": "4bece4beff33280f0c19ab4bcbd68c7519895e03dd2e58d21642df55640d3249",
+  "note_sha256": "3764fc2069d380d7cc2f3df11647ecb5f8aec4e7924c4d052122286dfced77f2",
+  "certificate_sha256": "fb69de72737a2fa0e5ec8dc3d86d76ba4de55b97ec6661455e81953f00ba8737",
+  "base_manifest_sha256": "f17e25d386dd56890b2028bec7de4fec53d0dbe61b24ac5d46958e876cbe32ab",
+  "audit_source_sha256": "75682afa65ad24a1dd79a4b35b7ce10922ee39f0cc7df90f4c5f8d99994c6922",
+  "domain_sha256": "ad142f8c091bb61cddd34c982f22f3363875489c05adca5d3517f3d37e106904",
+  "reference_matching_counts_by_inclusion_exclusion": {
+    "0": 6040,
+    "1": 3264,
+    "2": 900,
+    "3": 160,
+    "4": 30,
+    "6": 1
+  },
+  "distinct_side_variables": 84,
+  "unconstrained_cell_diagonals": 42,
+  "signed_axis_generators_checked": 13,
+  "boolean_assignments_checked": 384,
+  "cases": [
+    {
+      "index": 0,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "bound": 6,
+      "clauses": 0
+    },
+    {
+      "index": 1,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "bound": 4,
+      "clauses": 84
+    },
+    {
+      "index": 2,
+      "partition": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "bound": 3,
+      "clauses": 210
+    },
+    {
+      "index": 3,
+      "partition": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "bound": 2,
+      "clauses": 280
+    },
+    {
+      "index": 4,
+      "partition": [
+        1,
+        1,
+        4
+      ],
+      "bound": 2,
+      "clauses": 280
+    },
+    {
+      "index": 5,
+      "partition": [
+        1,
+        2,
+        3
+      ],
+      "bound": 1,
+      "clauses": 210
+    },
+    {
+      "index": 6,
+      "partition": [
+        1,
+        5
+      ],
+      "bound": 1,
+      "clauses": 210
+    },
+    {
+      "index": 7,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "bound": 0,
+      "clauses": 84
+    },
+    {
+      "index": 8,
+      "partition": [
+        2,
+        4
+      ],
+      "bound": 0,
+      "clauses": 84
+    },
+    {
+      "index": 9,
+      "partition": [
+        3,
+        3
+      ],
+      "bound": 0,
+      "clauses": 84
+    },
+    {
+      "index": 10,
+      "partition": [
+        6
+      ],
+      "bound": 0,
+      "clauses": 84
+    }
+  ],
+  "solver_called": false,
+  "full_cnf_built": false,
+  "mathematical_checks": [
+    "Every near fiber induces a perfect matching by the adjacent mixed equation.",
+    "Reference-matching edges are exactly the size-one alternating components.",
+    "Choose a maximizing near anchor, move it to zero, and normalize its matching.",
+    "Signed-axis relabeling permutes all fourteen counts without changing their values.",
+    "The matching stabilizer fixes the zero count and permutes the remaining supports.",
+    "The maximizing convention preserves the union and needs no graph automorphism."
+  ]
+}

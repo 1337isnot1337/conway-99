@@ -412,3 +412,37 @@ their hypotheses permit them; computational exclusions require exact replay.
   eight-triangle exclusion leaves only pencil full-triangle components,
   bounds full triangles by 21, and gives at least 1,215 two-edge
   disjoint triangle pairs. Their total grid bound remains 112.
+- All four maximum-anchor zero-count cases finished UNKNOWN. This
+  separate normalization preserves an eleven-case union, not each
+  original same-index case. The run took 246.918 seconds in total.
+  Case nine's delayed interruption is retained in its actual time.
+- Scanned the first free order-ten proposal against all 1,416 cached
+  moment blocks. Four exact integer vectors reject it. A separate
+  bounded loop added those inequalities and the universal count cut,
+  found a new proposal, and rejected it with nine more exact vectors.
+  The next LP round hit its thirty-second limit. No feasibility or
+  infeasibility conclusion follows from these numerical searches.
+- Audited all 180,445 original order-ten extension equations after
+  exact reduction. Every equation vanishes coefficientwise, every
+  induced form has integer coefficients, and ordinary forms have the
+  required automorphism divisibility. No extra equality or congruence
+  is missing from the reduced model.
+- The complementary-rook Schur census excludes 1,296 eligible exterior
+  triangles in nine size-144 orbits. All single signatures and pairs
+  pass both projector tests. Root replayed the exact census and also
+  independently checked the nine full thirty-vertex integer witnesses
+  and all exported clauses without using an inverse. All forbidden
+  triangles use three mixed-type signatures; every source and eligible
+  disjoint edge retains triangle support.
+- The separate prism-zero order-ten IPM run returned a numerical proposal
+  in 16.925 seconds. It keeps all fourteen certified inequalities. Exact
+  rounding gives two induced counts equal to minus one, with no
+  divisibility failures. No integer-vector separator was found among
+  the 1,416 cached PSD blocks, which does not certify their PSD status.
+  The initial metadata failure made zero solver calls and is preserved.
+- Read the parallel `f494f2f` six-grid exclusion and integer checker.
+  That branch now reports at most 105 grids and twenty full triangles,
+  at least 2,268 percolating nonedges, and at least 21 triangles on at
+  most two grids. Its full 919,143-core replay remains separate from
+  this branch's checks. Its generic crossing and transitive 60-point
+  exterior investigations remain reserved to the external worker.

@@ -23,6 +23,10 @@ The later eight-triangle exclusion at `b611eb7` leaves only pencil
 components and gives at most 21 full triangles. Checkpoint `a39ef45`
 also raises the lower bound on disjoint triangle pairs with two
 cross-edges to 1,215. These are results on the parallel branch.
+Its later six-grid exclusion at `f494f2f` gives at most 105 grids,
+at most twenty full triangles, and at least 2,268 percolating nonedges.
+The coordinator has read its argument and checker source; its complete
+919,143-core run has not been independently replayed on this branch.
 Its earlier checkpoint
 `2e2d7ed` also bounds the number through a point by thirteen. The historical
 bounds and count witnesses below are retained with their original scope.
@@ -51,6 +55,18 @@ for this simplified identity. An independent integer replay checks all
 52 source forms against the exact reduction and reconstructs the cut.
 This excludes the fixed prefix, not all zero-grid count assignments.
 The free-prefix numerical proposal still fails exact count verification.
+The [complete reduction audit](research/grids-and-triangles/order10_reduction_audit.md)
+checks all 180,445 original identities coefficientwise and finds no
+additional reduced equality or congruence. Exact moment separation gives
+four cuts against the first free proposal and nine against a subsequent
+proposal. The [bounded count/moment loop](research/grids-and-triangles/grid_free_order10_moments_loop.md)
+then reached its time limit with fourteen added inequalities. It gives
+neither an exact feasible point nor an infeasibility certificate.
+The separate [prism-zero probe](research/grids-and-triangles/grid_free_order10_prism_zero.md)
+retains all fourteen inequalities and returns a numerical proposal.
+Only two induced counts become negative after rounding, each minus one.
+The moment scan finds no exact separator, but it does not certify PSD.
+This run gives neither an exact count witness nor a prism-free exclusion.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -114,6 +130,13 @@ also returned UNKNOWN at their thirty-second budgets. The split coverage
 is complete, but no split has an exclusion certificate. This necessary
 model has all mixed and packing constraints and omits general exterior
 pair caps.
+An [exact projector-Schur census](research/grids-and-triangles/complement_rook_projector_schur.md)
+forbids 1,296 eligible exterior triangles in nine relabeling orbits.
+Direct integer quadratic witnesses certify all nine representatives,
+and an independent clause audit checks the complete orbit expansion.
+All rejected triangles use three mixed-type signatures. No signature
+or eligible edge loses all triangle support, so this is not a core
+exclusion.
 
 ## Scope of the unrestricted computations
 
@@ -141,7 +164,12 @@ The [completed run tables](research/root_full_caps_runs_01.md) record
 all thirteen outcomes and their exact bindings. A separate
 [maximum-anchor convention](research/root_full_caps_anchor_max.md)
 also preserves coverage of an eleven-case union; it can move a graph
-between the original partition cases and has not yet been solved.
+between the original partition cases. Its [four zero-count cases](research/root_full_caps_anchor_max_runs_01.md)
+also returned UNKNOWN in a separate sixty-second-per-case batch.
+The [prism interpretation](research/root_full_caps_prisms.md) identifies
+the anchor statistic with prism copies through the chosen root. Its
+zero cases make that root prism-free. A global choice of root would
+be a further normalization and was not imposed in those four runs.
 
 The [general 39-point triangle identities](research/grids-and-triangles/triangle_root_constraints.md)
 show that both principal projector tests are automatic. The visible caps

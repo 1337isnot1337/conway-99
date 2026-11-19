@@ -4,6 +4,7 @@ CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.jso
 
 .PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-rook-tip-boundary verify-complement-rook-incidence verify-complement-rook-a2-completion verify-root-matching-coverage verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 .PHONY: verify-order-ten-count-cut verify-root-anchor-max
+.PHONY: verify-order-ten-moment-cuts verify-complement-rook-schur
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -38,6 +39,17 @@ verify-grid-free-projectors:
 
 verify-order-ten-count-cut:
 	"$(PYTHON)" $(WORKSPACE)/grid_free_order10_scaled_cut.py replay experiments/logs/moments-and-counts/grid-free-order10-scaled-fixed-cut.json
+
+verify-order-ten-moment-cuts:
+	"$(PYTHON)" $(WORKSPACE)/grid_free_order10_moments.py replay experiments/logs/moments-and-counts/grid-free-order10-moments.json
+	"$(PYTHON)" $(WORKSPACE)/grid_free_order10_moments.py replay experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-separation.json
+
+verify-complement-rook-schur:
+	"$(PYTHON)" $(WORKSPACE)/complement_rook_projector_schur.py --certificate experiments/logs/grids-and-triangles/complement-rook-projector-schur.json
+	@set -eu; \
+	audit_file=$$(mktemp); \
+	trap 'rm -f "$$audit_file"' EXIT; \
+	"$(PYTHON)" $(WORKSPACE)/audit_complement_rook_schur_clauses.py --certificate experiments/logs/grids-and-triangles/complement-rook-projector-schur.json --output "$$audit_file"
 
 verify-root-anchor-max:
 	"$(PYTHON)" $(WORKSPACE)/root_full_caps_anchor_max.py --certificate experiments/logs/root-full-caps-anchor-max/anchor-max-certificate.json
