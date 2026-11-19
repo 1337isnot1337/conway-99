@@ -112,6 +112,8 @@ For any rooted grid, [at least five of the ten disjoint axis pairs must be nongr
 
 The [ten-grid bound](research/grids-and-triangles/ten-grid-bound.md) excludes the last eleven-grid support. Two missing pairs have the same defect vector; its squared norm and its signed-axis equations on three square cells are incompatible. Thus every vertex lies on **at most ten grids** and has at least **44 percolating nonneighbors**. At ten grids the cone, cell-sum and shared-block tests leave four possible rooted incidence patterns. Their axis degrees are $(1,1,2,3,3,4,6)$, $(0,2,2,4,4,4,4)$, $(1,1,3,3,3,3,6)$ and $(2,2,2,2,4,4,4)$.
 
+A [triangle on four grids](research/grids-and-triangles/four-grid-triangle.md) has fourteen possible residual cores up to isomorphism. Each determines the sixty-by-twelve incidence matrix of its exterior vertices with the residual neighbors and gives a rank-twelve Schur complement.
+
 The [parallel deficit inequality](research/grids-and-triangles/parallel-triangle-deficits.md) implies that two parallel full triangles force a partition into 33 triangles. There are 35 marked cores for the third parallel line.
 
 The [five-grid branching contradiction](research/grids-and-triangles/branching-full-triangles.md) gives at least three grids having exactly one full triangle per full triangle on average. The global bounds become 113 grids, 2,124 percolating nonedges, 1,206 two-edge triangle pairs, and five triangles on at most two grids.

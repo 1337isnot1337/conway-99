@@ -129,3 +129,7 @@ verify-ten-grid-bound: verify-four-missing-grid-cones
 	cd $(WORKSPACE) && "$(PYTHON)" ten_grid_cell_sums.py
 	cd $(WORKSPACE) && "$(PYTHON)" ten_grid_shared_blocks.py
 	cd $(WORKSPACE) && "$(PYTHON)" ten_grid_supports.py
+
+.PHONY: verify-four-grid-triangle
+verify-four-grid-triangle:
+	cd $(WORKSPACE) && "$(PYTHON)" four_grid_triangle.py
