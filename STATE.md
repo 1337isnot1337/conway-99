@@ -93,3 +93,5 @@ The [parallel deficit inequality](research/grids-and-triangles/parallel-triangle
 The [five-grid branching contradiction](research/grids-and-triangles/branching-full-triangles.md) gives at least three grids having exactly one full triangle per full triangle on average. The global bounds become 113 grids, 2,124 percolating nonedges, 1,206 two-edge triangle pairs, and five triangles on at most two grids.
 
 The [full-component census](research/grids-and-triangles/full-triangle-components.md) reduces 200 candidate components to 48. It gives 24 full triangles and 112 grids as upper bounds, and 2,142 percolating pairs and seven triangles of degree at most two as lower bounds.
+
+The [nine-triangle rook cover exclusion](research/grids-and-triangles/nine-triangle-cover.md) rules out the 27-point cover for every flat row and column transport. Of 1,296 normalizations, five cores admit exterior attachments. All 86 resulting adjacency CNFs have independently verified DRAT refutations.

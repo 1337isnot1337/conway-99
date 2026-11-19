@@ -25,6 +25,8 @@ make verify
 
 The full proof that two triangles on six grids cannot intersect is an additional computation. Run `make verify-full-axes` for the complete interface enumeration. Its [reference output](logs/grids-and-triangles/two-full-exhaustion.log) lists every even support size.
 
+The [nine-triangle cover exclusion](../research/grids-and-triangles/nine-triangle-cover.md) has a separate SAT replay. Install `python-sat` in the verification environment and place CaDiCaL and DRAT-trim on the executable path or set `CADICAL` and `DRAT_TRIM`. Run `make verify-nine-triangle-cover`. The complete replay used CaDiCaL 3.1.0 at `6b3d70b` and DRAT-trim at `2e3b2dc`.
+
 ## Explore the archive
 
 Run the individual research scripts from [`experiments/workspace/`](workspace/). The Python and C++ sources, certificate JSON, candidate arrays, and cached moment data share this directory because the scripts use sibling paths.
