@@ -108,6 +108,6 @@ The same [exterior argument](research/grids-and-triangles/triangle-exterior.md) 
 
 Any nonidentity automorphism of a triangle exterior moves at least 36 points. All prime divisors of the automorphism group lie in $\{2,3,5\}$, and an element of order five must move all sixty points. When the exterior splits into twenty triangles, its full automorphism group acts faithfully on these blocks even without transitivity. See the [fixed-point argument and its mod-five shell constraint](research/grids-and-triangles/triangle-exterior.md).
 
-The [incomplete eight-point grid](research/grids-and-triangles/incomplete_grid.md) has 661 marked profiles on fourteen points and their 85 exterior incidence rows. Three of the eight larger 27-point cores admit explicit integral incidence allocations. Each supplied allocation fails an exterior adjacency quota.
+The [incomplete eight-point grid](research/grids-and-triangles/incomplete_grid.md) has 661 marked profiles on fourteen points and their 85 exterior incidence rows. All eight larger 27-point cores admit explicit integral incidence allocations. Each supplied allocation fails an exterior adjacency quota.
 
 The [triangle-exterior spectral exclusion](research/grids-and-triangles/triangle-exterior.md) extends to every vertex-transitive simple graph with the same spectrum. Dropping the candidate nonedge common-neighbor bound leaves 314 possible orbital unions after the triangle and square tests; all fail at both primes.

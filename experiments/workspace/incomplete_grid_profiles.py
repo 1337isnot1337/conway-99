@@ -77,6 +77,7 @@ def verify_example(core, record):
 def main():
     path = Path(__file__).with_name('incomplete-grid-incidences.json')
     examples = json.loads(path.read_text())
+    assert set(examples) == {str(i) for i in range(8)}
     counts = []
     for i, (_, _, core) in enumerate(canonical_cases()):
         seen = set()
@@ -85,8 +86,7 @@ def main():
             total += 1
             seen.add(profile_key(core, b))
         counts.append((total, len(seen)))
-        if str(i) in examples:
-            verify_example(core, examples[str(i)])
+        verify_example(core, examples[str(i)])
     assert counts == [(157, 157), (224, 120), (90, 27), (219, 116),
                       (256, 76), (225, 36), (340, 90), (256, 39)]
     print('Incomplete-grid profiles by core:', counts)
