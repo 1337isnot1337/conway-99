@@ -153,3 +153,23 @@ their hypotheses permit them; computational exclusions require exact replay.
   proves at most three all-red grids. A separate five-base census has 564
   local assignments; 552 have exact Gram exclusions and the twelve others
   reduce to an independently excluded Petersen core.
+- Excluded three disjoint rook grids whose matching interfaces are all
+  rook isomorphisms. The eleven maps reduce to identity, reflection, and
+  translation. They fail respectively by 36 available signatures for 72
+  vertices, six available neighbors where eight are required, and the
+  exact incidence identity `0=54`. The translation case also forces 81
+  distinct signatures for 72 outside vertices. Independent dense and
+  bit-mask constructions agree on all matrices and signatures.
+- Proved an elementary closure: an all-red grid and any disjoint grid
+  joined to it by a rook isomorphism force a forbidden third rook grid.
+  Hence there is at most one all-red grid by this independent argument.
+  An integer weighted sum of global flags gives `29g-4b<=3465`, verified
+  on all 2,097,152 labeled root graphs and 1,596 grid profiles. This gives
+  at most 119 grids and at least 2,016 percolating nonedges.
+- Read the latest parallel work in issue 1 and PR 3. Its separate
+  intersecting-red-triangle exclusion already gives the stronger bounds
+  `b=0` and `g<=114`; its later `2e2d7ed` gives at most thirteen grids
+  through any point. Our independent weaker bounds are retained as such.
+  Workers stopped the all-red followup to avoid duplicating that work.
+  The new active lane is the completion of two isomorphically matched
+  rook grids and more general three-grid interface obstructions.

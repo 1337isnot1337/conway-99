@@ -2,6 +2,18 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+The current interface result on this branch excludes three disjoint rook
+grids with pairwise rook-isomorphic matching interfaces, without any red
+assumption. The [exact boundary proof](research/grids-and-triangles/three_red_boundary.md)
+also independently gives at most one all-red grid. A separate
+[integer flag certificate](research/grids-and-triangles/grid_count_119.md)
+proves `29g-4b<=3465`, hence at most 119 grids from that bound.
+The parallel [root-grid branch, PR 3](https://github.com/1337isnot1337/conway-99/pull/3)
+has stronger global restrictions: its intersecting-red-triangle exclusion
+gives no all-red grid and at most 114 grids in total. Its later checkpoint
+`2e2d7ed` also bounds the number through a point by thirteen. The historical
+bounds and count witnesses below are retained with their original scope.
+
 ## Scope of the unrestricted computations
 
 - [`subgraph_counts.py`](experiments/workspace/subgraph_counts.py) enumerates all induced graph types through a specified order that avoid a diamond and a (non-induced) K₂,₃. Integer extension equations count outside vertices, neighbors of a marked vertex, and common neighbors of a marked pair. It found no contradiction modulo 2 through order ten (180,445 equations, rank 46,268). [`inspect_counts.py`](experiments/workspace/inspect_counts.py) checks the original equations on all subsets of the 3-by-3 rook graph. Its floating LP reported infeasibility on both 99 and the known 243 parameters. That solver status was spurious on 99.
@@ -86,7 +98,8 @@ The coordinated work in [issue 2](https://github.com/1337isnot1337/conway-99/iss
 is recorded in [the session log](research/session-ab2f.md). It adds necessary
 conditions and exact exclusions, but does not decide existence.
 
-The strongest current [all-red bound is three](research/grids-and-triangles/red_grid_three_bound.md).
+The earlier [all-red bound of three](research/grids-and-triangles/red_grid_three_bound.md)
+has now been strengthened by the three-base result linked above.
 The complete four-base matching census has 136 assignments. Exact integer
 negative Gram vectors exclude 124; explicit isomorphisms identify the
 other twelve with one core. That core permits only 27 distinct outside
@@ -109,7 +122,9 @@ normalized three-covers are checked exactly. The
 uses a double covering and an elementary complementary-neighborhood proof.
 A separate
 [aggregate grid-line model](research/grids-and-triangles/grid_flag_relaxation.md)
-still has an exactly checked integral count assignment at 120 grids.
+has an exactly checked integral count assignment at 120 grids using the old
+bound of seven all-red grids. It fails the stronger all-red restriction and
+is retained only as a witness for that earlier relaxation.
 
 [Transversal coclique constraints](research/independent-sets/transversal_constraints.md)
 show that a size-twenty coclique containing seven neighbors of a root has

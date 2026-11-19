@@ -40,7 +40,21 @@ not start a new SAT or mixed-integer search. These certificates prove the
 stated local exclusions or feasibility of finite relaxations; none is a
 solution of the existence problem.
 
-The current bound of three all-red grids has a separate replay target:
+The three-base obstruction and the independent bounds of one all-red grid
+and 119 total grids have a standard-library replay target:
+
+```sh
+make verify-current-grid-bounds
+```
+
+It exhausts all three interface classes, reconstructs the translation
+incidence identity in two implementations, and checks the aggregate
+integer inequality on all 2,097,152 labeled root graphs and all 1,596 grid
+profiles. The parallel [root-grid branch](https://github.com/1337isnot1337/conway-99/pull/3)
+proves stronger global bounds using a separate intersecting-triangle
+exclusion. Those results are not premises of this replay.
+
+The earlier bound of three all-red grids retains its replay target:
 
 ```sh
 make verify-rook-interfaces
@@ -57,7 +71,7 @@ make verify-rook-interfaces-drat DRAT_TRIM=/absolute/path/to/drat-trim
 ```
 
 The earlier bound of seven retains its replay target, which also depends
-on the current interface replay:
+on both interface replays above:
 
 ```sh
 make verify-red-grid-bound
@@ -87,8 +101,9 @@ states the initial resulting counts 18, 27, and 36. The same target now
 also regenerates all 331,776 normalized four-covers, verifies the three
 surviving projection-graph colorings in two implementations, and checks
 the negative rook-space polynomial contradiction. These checks exclude
-the count 36. Only 18 and 27 remain, and seven all-red grids remain
-unresolved. This replay is also part of `make verify-global-constraints`.
+the count 36. The counts 18 and 27 were unresolved by this remainder
+argument; the later interface obstruction excludes the whole seven-grid
+case. This historical replay is also part of `make verify-global-constraints`.
 
 The fourteen additional norm-16 exclusions have saved CNF cores and DRAT
 proofs. Build [drat-trim](https://github.com/marijnheule/drat-trim) at revision

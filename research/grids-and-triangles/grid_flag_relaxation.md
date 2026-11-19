@@ -1,5 +1,11 @@
 # A limit of aggregate grid-line constraints
 
+This note records the earlier relaxation with at most seven all-red grids.
+The [later exact certificate](grid_count_119.md) proves `29g-4b<=3465` from
+the same flag inequalities. Combined with the improved all-red restriction,
+it gives at most 119 grids. The saved 120-grid assignment below is therefore
+a witness only for the earlier relaxation, not for the current conditions.
+
 `global_grid_flags.py` couples the seven-axis graph at each vertex to the
 six triangle multiplicities in each grid. It retains the signless-incidence
 support criterion, the pointwise fifteen-grid bound, the excluded sole
@@ -29,5 +35,5 @@ running an optimizer:
 .venv/bin/python experiments/workspace/global_grid_flags.py --verify experiments/logs/session-ab2f/global-grid-flags-integral.json
 ```
 
-Any improvement from this approach must add information beyond these
-aggregate line-multiplicity and root-edge flags.
+Improving this earlier relaxation requires a stronger restriction. The
+later all-red bound supplies one without changing its aggregate flags.

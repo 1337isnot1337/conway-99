@@ -1,5 +1,8 @@
 # At most seven all-red grids
 
+The later [three-base boundary proof](three_red_boundary.md) strengthens
+this independent intermediate result to at most one all-red grid.
+
 A hypothetical strongly regular graph with parameters `(99,14,1,2)` has
 at most seven all-red grids. Here a triangle is red if it belongs to six
 induced three-by-three rook grids, and a grid is all-red if all six of its
@@ -13,7 +16,8 @@ calculations are fully specified below. There is no SAT assumption or
 floating-point sign decision in this proof.
 
 This is an unconditional restriction on such a graph, not a proof of its
-nonexistence. The total-grid bound remains 120.
+nonexistence. The later [aggregate certificate](grid_count_119.md) gives
+the independent total-grid bound of 119.
 
 The later [cubic trace proof](red_grid_cubic_trace.md) gives a shorter
 completion: after the cycle census below, its extra trace identity rejects

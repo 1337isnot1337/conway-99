@@ -1,5 +1,9 @@
 # At most five all-red grids from their matching interfaces
 
+The later [three-base boundary proof](three_red_boundary.md) gives a
+stronger obstruction and at most one all-red grid. This note retains the
+independent six-base SAT and direct-backtracking certificates.
+
 A hypothetical `srg(99,14,1,2)` contains at most five all-red grids.
 The finite obstruction uses only the matching interfaces of six grids
 and common-neighbor upper bounds on their 54 vertices. It does not use a

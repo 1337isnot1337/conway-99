@@ -1,5 +1,8 @@
 # At most three all-red grids
 
+The later [three-base boundary proof](three_red_boundary.md) strengthens
+this independent intermediate result to at most one all-red grid.
+
 A hypothetical strongly regular graph with parameters `(99,14,1,2)`
 contains at most three all-red grids. A triangle is red if it belongs
 to six induced rook grids; a grid is all-red if its six triangles

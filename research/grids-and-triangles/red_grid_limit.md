@@ -1,13 +1,14 @@
 # At most eight grids whose six lines have multiplicity six
 
-The stronger bound of seven is proved in
-[`eight_red_exclusion.md`](eight_red_exclusion.md). This preliminary note
-establishes the grid facts and nine-grid exclusion used there.
+The [later three-base boundary proof](three_red_boundary.md) gives at most
+one all-red grid. This preliminary note establishes the grid facts and
+nine-grid exclusion used by the subsequent independent arguments.
 
 Call a triangle red when it belongs to six induced rook grids. Call a grid
 all-red when all six of its lines are red. A hypothetical srg(99,14,1,2)
 contains at most eight all-red grids. This restricts a particular kind of
-grid; it does not replace the bound of 120 on all grids.
+grid. The later [aggregate certificate](grid_count_119.md) independently
+bounds the total number of grids by 119.
 
 The argument uses the grid intersection and crossing-square facts proved in
 [`grid_intersections.md`](grid_intersections.md). The proof below is

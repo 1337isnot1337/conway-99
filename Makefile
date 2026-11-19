@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-current-grid-bounds verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -29,7 +29,12 @@ verify-global-constraints: verify-red-grid-bound verify-seven-red-residual
 	"$(PYTHON)" $(WORKSPACE)/completion_constraints_propagation.py --replay $(WORKSPACE)/completion-propagation-certificate.json
 	"$(PYTHON)" $(WORKSPACE)/global_grid_flags.py --verify experiments/logs/session-ab2f/global-grid-flags-integral.json
 
-verify-red-grid-bound: verify-rook-interfaces
+verify-current-grid-bounds:
+	"$(PYTHON)" $(WORKSPACE)/three_red_boundary.py --verify experiments/logs/grids-and-triangles/three-red-boundary.json --translation-certificate experiments/logs/grids-and-triangles/three-red-translation-incidence.json
+	"$(PYTHON)" $(WORKSPACE)/three_red_translation_incidence.py --verify experiments/logs/grids-and-triangles/three-red-translation-incidence.json
+	"$(PYTHON)" $(WORKSPACE)/global_grid_flag_certificate.py --verify experiments/logs/grids-and-triangles/global-grid-flag-certificate.json
+
+verify-red-grid-bound: verify-current-grid-bounds verify-rook-interfaces
 	@set -eu; \
 	build_dir=$$(mktemp -d); \
 	trap 'rm -f "$$build_dir/"*.json "$$build_dir/"*.log; rmdir "$$build_dir"' EXIT; \
