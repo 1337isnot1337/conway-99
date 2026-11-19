@@ -75,3 +75,11 @@ verify-incomplete-corners:
 	cd "$$build_dir"; \
 	"$(GAP)" -q -b --quitonbreak "$(CURDIR)/$(WORKSPACE)/incomplete_corner_groups.g"; \
 	"$(PYTHON)" "$(CURDIR)/$(WORKSPACE)/incomplete_corner_check.py" corner-groups.txt
+
+.PHONY: verify-grid-diagonals
+verify-grid-diagonals:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/diagonal-cuts"; rmdir "$$build_dir"' EXIT; \
+	"$(CXX)" -std=c++20 -O3 "$(WORKSPACE)/grid_diagonal_cuts.cpp" -o "$$build_dir/diagonal-cuts"; \
+	"$(PYTHON)" "$(WORKSPACE)/grid_diagonal_halves.py" "$$build_dir/diagonal-cuts"

@@ -16,6 +16,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [Nine-vertex grid partitions](research/grids-and-triangles/affine_grids.md) studies a construction using eleven disjoint grids and an obstruction to a particular affine matching assignment.
 - [A grid with its center missing](research/grids-and-triangles/incomplete_grid.md) derives an exterior-incidence reduction for an eight-vertex core.
 - [Corner fibers of every induced square](research/grids-and-triangles/incomplete-corner-fibers.md) excludes transitivity on each ten-point fiber and gives a square determinant test when both opposite-tip edges are present.
+- [Diagonally opposite grid corners](research/grids-and-triangles/grid-diagonal-halves.md) classifies 3,978 connected marked cubic graphs and excludes 41 of them in a complete grid by counting intersections with seven ten-point fibers.
 - [Complete triangle stars](research/grids-and-triangles/triangle_star.md) derives a 48-vertex shell from an independent exterior signature.
 
 - [The 60-vertex triangle exterior](research/grids-and-triangles/triangle-exterior.md) determines its spectrum from the cubic shell and rules out every transitive automorphism group of the exterior.
