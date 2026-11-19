@@ -1,0 +1,81 @@
+{
+  "check_seconds": 30,
+  "expected_following_rows": 227270,
+  "expected_new_nonzeros": 176436,
+  "expected_one_edge_rows": 1224,
+  "expected_path_rows": 57996,
+  "expected_total_rows": 59220,
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4"
+    },
+    "literal_plan": {
+      "path": "experiments/logs/root-prism-free/f0-direct-literal-model01/plan.json.gz",
+      "sha256": "bd921d7d8f16c64bd866e0ec319b1cc3db37450cf5a6c884a37a9f40044c48d7"
+    },
+    "mathematical_review": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-mathematical-review01.json",
+      "sha256": "c95c630290b8ede61fdb5d46c5ee2b4963b255aaf86414bc3fd08f018b18f880"
+    },
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/model.pb.gz",
+      "sha256": "5d2e705f10f5a04f593a486ca271f0a6e06dc981c95ffc977054c6fdce906036"
+    },
+    "model_cold": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/report.json",
+      "sha256": "a907d1c0f51f893166f32b1aab136d885b412cf0aecbdfed2a938fdaaf373efb"
+    },
+    "model_cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owner.json",
+      "sha256": "ccd6e7ffa5d46d35ab4d65efdfd2fb87922ebcddfa6fbe03d326c98f0784edd2"
+    },
+    "one_edge": {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01.json.gz",
+      "sha256": "b445ad3268cb7016a7a5df07cef9c6fda1a0c7d96fa5a560f897c9449814b194"
+    },
+    "one_edge_cold": {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01-replay.json",
+      "sha256": "342ea3bf2453c60b819ab66b0f63883bd3e4261730bba0fb8f06cf3a9e3ca5aa"
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183"
+    },
+    "paths": {
+      "path": "experiments/logs/root-prism-free/f0-path-prism-cuts01.json.gz",
+      "sha256": "d7ce1862d52cb4c9011efe73deb438db2b4e33a3fade1d5b803569005f2d7886"
+    },
+    "paths_cold": {
+      "path": "experiments/logs/root-prism-free/f0-path-prism-cuts01-replay.json",
+      "sha256": "690613ccd1fd9cdf6e7c67988d9d1fac50cd751793dec53ebbadf2c5337b038f"
+    }
+  },
+  "model_raw_sha256": "4505234d13039159c3191918f7db729819ad6ed25f46e538d91975466d660e83",
+  "native_build_authorized": false,
+  "native_query_authorized": false,
+  "old_censuses_reenumerated": false,
+  "owner_seconds": 45,
+  "schema": "conway99.f0.boolean-prism-transfer-inventory-configuration.v1",
+  "source_sha256": "ca8b9ab7f6593c93ecdcf23ab700f34619acb53752a330f11358192a1a24b54c",
+  "sources": {
+    "literal_plan": {
+      "path": "experiments/workspace/root_prism_free_f0_direct_literal_model.py",
+      "sha256": "b500336db29820777afb59076384a48382fa54453fce5b232a072719893cea40"
+    },
+    "model_cold": {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model_replay.py",
+      "sha256": "81a2ce4b5ccf72e0e169cd4d3c371341aa2fea448bb407e0069f0783e217ef18"
+    },
+    "one_edge": {
+      "path": "experiments/workspace/root_prism_free_f0_three_vertex_prism_cuts.py",
+      "sha256": "8f468ed033b66b61a9c9452ead079f41b6e738d3b9dfaadee476ced49104ce22"
+    },
+    "paths": {
+      "path": "experiments/workspace/root_prism_free_f0_path_prism_cuts.py",
+      "sha256": "b332326f90a428565d12d58fefa230bcfb3c5ac4b1e86983115cbc73979c339b"
+    }
+  },
+  "unchanged_variables": 68934,
+  "unmatched_rows_not_claimed_independent": true
+}

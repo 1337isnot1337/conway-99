@@ -1,0 +1,636 @@
+{
+  "all_objective_coefficients": 0,
+  "bound_resets": 50,
+  "disk_and_memory_plan": {
+    "actual_native_internal_RSS_requires_measurement": true,
+    "archive_atomic_rename_creates_no_second_complete_copy": true,
+    "future_total_additional_disk_requirement_including_reserve": 356598268,
+    "largest_native_float64_coefficient_argument_RAM_bytes": 86158880,
+    "maximum_row_getter_payload_bytes": 3393540,
+    "native_matrix_copies_written_to_disk": false,
+    "new_compressed_archive_ceiling_bytes": 134300156,
+    "nominal_native_value_and_index_payload_RAM_bytes": 129238320,
+    "one_input_base_coefficient_RAM_bytes": 86138336,
+    "preflight_additional_disk_requirement_including_reserve": 209797628,
+    "primary_integer_array_RAM_bytes": 133251580,
+    "uncompressed_matrix_written_to_disk": false
+  },
+  "future_query_requires_distinct_driver_configuration_and_root_gate": true,
+  "inputs": {
+    "old_archive": {
+      "bytes": 5347974,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/arrays.npz",
+      "sha256": "59a06470793e6959a67ae30dfb29ecf0de4c8aa74661e1335d7676aa612c1e7e"
+    },
+    "old_model": {
+      "bytes": 610969,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+      "sha256": "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+    },
+    "old_model_cold": {
+      "bytes": 2052,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01-cold-replay.json",
+      "sha256": "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+    },
+    "old_native_configuration": {
+      "bytes": 3160,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-query-configuration01.json",
+      "sha256": "a0ac53ac6969ceeaaeedd2fabfa38d8944dd856c85bb461113a70cd92784c272"
+    },
+    "old_point": {
+      "bytes": 41391,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/exact/candidate.json",
+      "sha256": "7fda72c6a212a6ebe504c03a17f66c05c8545d33e4aebc651f42f817cc3a4bd9"
+    },
+    "old_point_cold": {
+      "bytes": 1126,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/exact/cold.json",
+      "sha256": "b69a3a38aeb911c45657871544f21897bc4f9bb6201675c1eab5f45ca8a5c317"
+    },
+    "old_state": {
+      "bytes": 133089,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/state-numeric.json",
+      "sha256": "0d9427431e87f4a9c1f02030e3a80c23d0f3d53faacbe3ff7767d5dc6f3d6a14"
+    },
+    "scope": {
+      "bytes": 32457,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low50-full-row-scope01.json",
+      "sha256": "2e04787dc089be866fa25d766e7c55f965411941a7d1cce94caa0d0aacf98e84"
+    },
+    "small_analysis": {
+      "bytes": 5640,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01-analysis.json",
+      "sha256": "0e1cc245793cd1174699bd831355b92f72f7476570c083b1146515995dd6eaa6"
+    },
+    "small_cold": {
+      "bytes": 2820,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.json",
+      "sha256": "ea492ec530c512759b93d25afc6900a2468d1f221f75aac2eb39092bd8af73f3"
+    },
+    "small_spec": {
+      "bytes": 160835,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preparation02/specification.json.gz",
+      "sha256": "b037035bb6756bcb259cc06fc6ae22781f343fedeb38c8ec923dcb19fdb50164"
+    },
+    "tiny_native_controls": {
+      "bytes": 1597,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-native-transport-controls02.json",
+      "sha256": "e45d07c9547c7995c9d4700aee4cf7af47cdfe72a844c72001013a26eb8dd800"
+    }
+  },
+  "limits": {
+    "future_branch_temporary_bytes": 4194304,
+    "future_metadata_bytes": 16777216,
+    "future_transcript_bytes": 134217728,
+    "metadata_bytes": 8388608,
+    "native_solver_calls": 0,
+    "preflight_owner_seconds": 90,
+    "preflight_seconds": 60,
+    "safety_disk_reserve_bytes": 67108864
+  },
+  "native_solver_calls_permitted": 0,
+  "new_original_rows": [
+    {
+      "family": "proved_H42_upper_five",
+      "lower": 0,
+      "source_small_row": 2285,
+      "terms": [
+        [
+          28,
+          1
+        ],
+        [
+          47,
+          1
+        ],
+        [
+          48,
+          1
+        ],
+        [
+          50,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          130,
+          1
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          179,
+          1
+        ],
+        [
+          180,
+          1
+        ],
+        [
+          182,
+          1
+        ],
+        [
+          230,
+          1
+        ],
+        [
+          266,
+          1
+        ],
+        [
+          344,
+          1
+        ],
+        [
+          407,
+          1
+        ],
+        [
+          466,
+          1
+        ],
+        [
+          545,
+          1
+        ],
+        [
+          597,
+          1
+        ],
+        [
+          598,
+          1
+        ],
+        [
+          602,
+          1
+        ],
+        [
+          605,
+          1
+        ],
+        [
+          664,
+          1
+        ],
+        [
+          665,
+          1
+        ],
+        [
+          668,
+          1
+        ],
+        [
+          669,
+          1
+        ],
+        [
+          670,
+          1
+        ],
+        [
+          736,
+          1
+        ],
+        [
+          769,
+          1
+        ],
+        [
+          807,
+          1
+        ],
+        [
+          851,
+          1
+        ],
+        [
+          918,
+          1
+        ],
+        [
+          919,
+          1
+        ],
+        [
+          967,
+          1
+        ],
+        [
+          971,
+          1
+        ],
+        [
+          972,
+          1
+        ],
+        [
+          974,
+          1
+        ],
+        [
+          976,
+          1
+        ],
+        [
+          978,
+          1
+        ],
+        [
+          980,
+          1
+        ],
+        [
+          1016,
+          1
+        ],
+        [
+          1017,
+          1
+        ]
+      ],
+      "upper": 5
+    },
+    {
+      "family": "proved_strengthened_H",
+      "lower": 0,
+      "source_small_row": 2286,
+      "terms": [
+        [
+          28,
+          1
+        ],
+        [
+          47,
+          1
+        ],
+        [
+          48,
+          1
+        ],
+        [
+          50,
+          1
+        ],
+        [
+          80,
+          1
+        ],
+        [
+          127,
+          1
+        ],
+        [
+          129,
+          1
+        ],
+        [
+          130,
+          1
+        ],
+        [
+          131,
+          1
+        ],
+        [
+          179,
+          1
+        ],
+        [
+          180,
+          1
+        ],
+        [
+          182,
+          1
+        ],
+        [
+          230,
+          1
+        ],
+        [
+          266,
+          1
+        ],
+        [
+          344,
+          1
+        ],
+        [
+          407,
+          1
+        ],
+        [
+          466,
+          1
+        ],
+        [
+          545,
+          1
+        ],
+        [
+          597,
+          1
+        ],
+        [
+          598,
+          1
+        ],
+        [
+          600,
+          2
+        ],
+        [
+          602,
+          1
+        ],
+        [
+          605,
+          1
+        ],
+        [
+          664,
+          1
+        ],
+        [
+          665,
+          1
+        ],
+        [
+          668,
+          1
+        ],
+        [
+          669,
+          1
+        ],
+        [
+          670,
+          1
+        ],
+        [
+          736,
+          1
+        ],
+        [
+          769,
+          1
+        ],
+        [
+          807,
+          1
+        ],
+        [
+          851,
+          1
+        ],
+        [
+          918,
+          1
+        ],
+        [
+          919,
+          1
+        ],
+        [
+          922,
+          2
+        ],
+        [
+          967,
+          1
+        ],
+        [
+          971,
+          1
+        ],
+        [
+          972,
+          1
+        ],
+        [
+          974,
+          1
+        ],
+        [
+          976,
+          1
+        ],
+        [
+          978,
+          1
+        ],
+        [
+          980,
+          1
+        ],
+        [
+          1016,
+          1
+        ],
+        [
+          1017,
+          1
+        ]
+      ],
+      "upper": 5
+    },
+    {
+      "certificate": {
+        "bytes": 13543,
+        "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-10.json",
+        "sha256": "6c1754f861a6c705b3ad19fe06e5937622d85b64a4fe04fc709b19259a1bfe86"
+      },
+      "family": "exact_low54_pair_nogood",
+      "lower": 0,
+      "terms": [
+        [
+          261,
+          1
+        ],
+        [
+          803,
+          1
+        ]
+      ],
+      "upper": 1,
+      "whole_cover_box_index": 10
+    },
+    {
+      "certificate": {
+        "bytes": 11871,
+        "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-11.json",
+        "sha256": "139072a1d7db4bbf2e8f4e549c5d944c1544ae1a452a4c6c3b3e82b144c01222"
+      },
+      "family": "exact_low54_pair_nogood",
+      "lower": 0,
+      "terms": [
+        [
+          262,
+          1
+        ],
+        [
+          803,
+          1
+        ]
+      ],
+      "upper": 1,
+      "whole_cover_box_index": 11
+    },
+    {
+      "certificate": {
+        "bytes": 13110,
+        "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-15.json",
+        "sha256": "672708e7c407a5dee461c6492f83fc20a494cf2ac3d110904c8dbb2870fa913d"
+      },
+      "family": "exact_low54_pair_nogood",
+      "lower": 0,
+      "terms": [
+        [
+          339,
+          1
+        ],
+        [
+          765,
+          1
+        ]
+      ],
+      "upper": 1,
+      "whole_cover_box_index": 15
+    },
+    {
+      "certificate": {
+        "bytes": 14322,
+        "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-53.json",
+        "sha256": "4d985aeb9dce1b061fa0a6156482e3d0fef15acfb626c7cad61302ea1efd56d6"
+      },
+      "family": "exact_low54_pair_nogood",
+      "lower": 0,
+      "terms": [
+        [
+          761,
+          1
+        ],
+        [
+          1183,
+          1
+        ]
+      ],
+      "upper": 1,
+      "whole_cover_box_index": 64
+    }
+  ],
+  "nonzeros": 10769860,
+  "observed_free_disk_bytes": 866500608,
+  "old_prefix_nonzeros": 10769766,
+  "old_prefix_rows": 167121,
+  "rows": 167127,
+  "runtime": {
+    "highs_version": "1.16.0",
+    "highspy": "1.16.0",
+    "native_extension_sha256": "70da2435537fba263414987fa7289649e74551981edf5d57df1f727a110e27c3",
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "python_executable": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python"
+  },
+  "selected_whole_cover_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    57,
+    60
+  ],
+  "source_bindings": {
+    "owner": {
+      "bytes": 25552,
+      "path": "experiments/workspace/rook_case4_box_hull_membership_query.py",
+      "sha256": "aa557c7b99ec3de71e9ecde3f6f7dfa3ca71066a835086cdd3b3f2eb7be558e5"
+    },
+    "owner_helper": {
+      "bytes": 25758,
+      "path": "experiments/workspace/rook_case4_box_hull_membership.py",
+      "sha256": "54330f430c0c4dae03a0298533121ce43482ceb295f54df715ad2f2180d3503c"
+    },
+    "preflight": {
+      "bytes": 22652,
+      "path": "experiments/workspace/rook_case4_low50_full_row_preflight.py",
+      "sha256": "f994cf266882974325dd64c5516e639a5f54827f0a74f1813095661e84b80193"
+    },
+    "transport": {
+      "bytes": 11533,
+      "path": "experiments/workspace/rook_case4_full_native_transport.py",
+      "sha256": "70b08007e9d9cfc527731cb79ae4d35b6c634880c8096047246a4f056dcb4b86"
+    }
+  },
+  "status": "PREPARED_ZERO_SOLVE_FULL50_NATIVE_PREFLIGHT_NO_FULL_MATRIX_LOADED",
+  "suffix_controls": {
+    "bytes": 806,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low50-full-row-stitch-controls01/report.json",
+    "sha256": "70417a0ad88afb536591600be79571d339482791cdbcfc352eac809f0811a086"
+  },
+  "t_bounds": [
+    0,
+    0
+  ],
+  "variables": 1103
+}

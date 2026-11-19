@@ -1,0 +1,1578 @@
+{
+  "additional_float64_coefficient_copy_bytes": 86158880,
+  "cached_archive": {
+    "bytes": 5347974,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/arrays.npz",
+    "sha256": "59a06470793e6959a67ae30dfb29ecf0de4c8aa74661e1335d7676aa612c1e7e"
+  },
+  "case4_excluded": false,
+  "estimated_large_getter_list_bytes": {
+    "indices_without_small_integer_reuse": 387715016,
+    "values": 344635576
+  },
+  "exact_acceptance": "Any signed integer combination of finite row endpoints whose full-box minimum exceeds its combined upper endpoint; t contributes0 and112 global zeros remain explicit.",
+  "fifty_dense_float64_row_ray_bytes": 66850800,
+  "full_pool_feasible_or_UNKNOWN_native_branches_remain_unresolved": true,
+  "input_bindings": {
+    "point": {
+      "bytes": 41391,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/exact/candidate.json",
+      "sha256": "7fda72c6a212a6ebe504c03a17f66c05c8545d33e4aebc651f42f817cc3a4bd9"
+    },
+    "point_cold": {
+      "bytes": 1126,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/exact/cold.json",
+      "sha256": "b69a3a38aeb911c45657871544f21897bc4f9bb6201675c1eab5f45ca8a5c317"
+    },
+    "six_cut_numeric": {
+      "bytes": 3052,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/numeric/result.json",
+      "sha256": "ed9be814df53efdfcda2201f591ced1caf5af5438c9c08a469997b8c73baabef"
+    },
+    "six_cut_preflight": {
+      "bytes": 13812,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-preflight01.json",
+      "sha256": "05fe7ac3f17b0dfe9329251aa017022db75e335538959e13033701fc9d1062a2"
+    },
+    "six_cut_preparation": {
+      "bytes": 130447,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-preparation01.json",
+      "sha256": "99dc881f2c7139eb336e6792f0acba6ba6499fecbed12b5fc92d746142d6eaf0"
+    },
+    "six_cut_state": {
+      "bytes": 133089,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/state-numeric.json",
+      "sha256": "0d9427431e87f4a9c1f02030e3a80c23d0f3d53faacbe3ff7767d5dc6f3d6a14"
+    },
+    "small_analysis": {
+      "bytes": 5640,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01-analysis.json",
+      "sha256": "0e1cc245793cd1174699bd831355b92f72f7476570c083b1146515995dd6eaa6"
+    },
+    "small_cold": {
+      "bytes": 2820,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.json",
+      "sha256": "ea492ec530c512759b93d25afc6900a2468d1f221f75aac2eb39092bd8af73f3"
+    },
+    "small_specification": {
+      "bytes": 160835,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preparation02/specification.json.gz",
+      "sha256": "b037035bb6756bcb259cc06fc6ae22781f343fedeb38c8ec923dcb19fdb50164"
+    }
+  },
+  "matrix_builds": 0,
+  "native_RSS_not_measured_or_predicted_as_a_bound": true,
+  "native_imports": 0,
+  "old_trace_replays": 0,
+  "one_dense_float64_row_ray_bytes": 1337016,
+  "only_archive_headers_decompressed": [
+    {
+      "compressed_bytes": 492721,
+      "dtype": "<i8",
+      "entry": "coefficients.npy",
+      "fortran_order": false,
+      "shape": [
+        10767292
+      ],
+      "uncompressed_file_bytes": 86138464
+    },
+    {
+      "compressed_bytes": 3668305,
+      "dtype": "<i4",
+      "entry": "column_indices.npy",
+      "fortran_order": false,
+      "shape": [
+        10767292
+      ],
+      "uncompressed_file_bytes": 43069296
+    },
+    {
+      "compressed_bytes": 313422,
+      "dtype": "<i8",
+      "entry": "row_pointers.npy",
+      "fortran_order": false,
+      "shape": [
+        166014
+      ],
+      "uncompressed_file_bytes": 1328240
+    },
+    {
+      "compressed_bytes": 1539,
+      "dtype": "<i8",
+      "entry": "row_lower.npy",
+      "fortran_order": false,
+      "shape": [
+        166013
+      ],
+      "uncompressed_file_bytes": 1328232
+    },
+    {
+      "compressed_bytes": 179159,
+      "dtype": "<i8",
+      "entry": "row_upper.npy",
+      "fortran_order": false,
+      "shape": [
+        166013
+      ],
+      "uncompressed_file_bytes": 1328232
+    },
+    {
+      "compressed_bytes": 272,
+      "dtype": "|u1",
+      "entry": "row_origin_kind.npy",
+      "fortran_order": false,
+      "shape": [
+        166013
+      ],
+      "uncompressed_file_bytes": 166141
+    },
+    {
+      "compressed_bytes": 227949,
+      "dtype": "<i4",
+      "entry": "row_origin_index.npy",
+      "fortran_order": false,
+      "shape": [
+        166013
+      ],
+      "uncompressed_file_bytes": 664180
+    },
+    {
+      "compressed_bytes": 1814,
+      "dtype": "<u2",
+      "entry": "original_column_ids.npy",
+      "fortran_order": false,
+      "shape": [
+        1102
+      ],
+      "uncompressed_file_bytes": 2332
+    },
+    {
+      "compressed_bytes": 1678,
+      "dtype": "<i4",
+      "entry": "previous_column_to_current.npy",
+      "fortran_order": false,
+      "shape": [
+        1115
+      ],
+      "uncompressed_file_bytes": 4588
+    },
+    {
+      "compressed_bytes": 229842,
+      "dtype": "<i4",
+      "entry": "previous_row_to_current.npy",
+      "fortran_order": false,
+      "shape": [
+        167937
+      ],
+      "uncompressed_file_bytes": 671876
+    },
+    {
+      "compressed_bytes": 229751,
+      "dtype": "<i4",
+      "entry": "current_row_to_previous.npy",
+      "fortran_order": false,
+      "shape": [
+        166013
+      ],
+      "uncompressed_file_bytes": 664180
+    }
+  ],
+  "optimizer_calls": 0,
+  "previous_six_cut_native_evidence": {
+    "full_pool_was_only_scanned_afterward": true,
+    "native_nonzeros": 28337,
+    "native_rows": 3077,
+    "native_seconds": 1.112495752007817,
+    "not_a_full_native_matrix_timing_benchmark": true
+  },
+  "proposed_matrix": {
+    "all_objective_coefficients": 0,
+    "artificial_t_bounds": [
+      0,
+      0
+    ],
+    "live_original_selectors": 1102,
+    "new_rows": [
+      {
+        "family": "proved_H42_upper_five",
+        "lower": 0,
+        "original_terms": [
+          [
+            28,
+            1
+          ],
+          [
+            47,
+            1
+          ],
+          [
+            48,
+            1
+          ],
+          [
+            50,
+            1
+          ],
+          [
+            80,
+            1
+          ],
+          [
+            127,
+            1
+          ],
+          [
+            129,
+            1
+          ],
+          [
+            130,
+            1
+          ],
+          [
+            131,
+            1
+          ],
+          [
+            179,
+            1
+          ],
+          [
+            180,
+            1
+          ],
+          [
+            182,
+            1
+          ],
+          [
+            230,
+            1
+          ],
+          [
+            266,
+            1
+          ],
+          [
+            344,
+            1
+          ],
+          [
+            407,
+            1
+          ],
+          [
+            466,
+            1
+          ],
+          [
+            545,
+            1
+          ],
+          [
+            597,
+            1
+          ],
+          [
+            598,
+            1
+          ],
+          [
+            602,
+            1
+          ],
+          [
+            605,
+            1
+          ],
+          [
+            664,
+            1
+          ],
+          [
+            665,
+            1
+          ],
+          [
+            668,
+            1
+          ],
+          [
+            669,
+            1
+          ],
+          [
+            670,
+            1
+          ],
+          [
+            736,
+            1
+          ],
+          [
+            769,
+            1
+          ],
+          [
+            807,
+            1
+          ],
+          [
+            851,
+            1
+          ],
+          [
+            918,
+            1
+          ],
+          [
+            919,
+            1
+          ],
+          [
+            967,
+            1
+          ],
+          [
+            971,
+            1
+          ],
+          [
+            972,
+            1
+          ],
+          [
+            974,
+            1
+          ],
+          [
+            976,
+            1
+          ],
+          [
+            978,
+            1
+          ],
+          [
+            980,
+            1
+          ],
+          [
+            1016,
+            1
+          ],
+          [
+            1017,
+            1
+          ]
+        ],
+        "source_small_row_id": 2285,
+        "terms": [
+          [
+            28,
+            1
+          ],
+          [
+            47,
+            1
+          ],
+          [
+            48,
+            1
+          ],
+          [
+            50,
+            1
+          ],
+          [
+            80,
+            1
+          ],
+          [
+            123,
+            1
+          ],
+          [
+            125,
+            1
+          ],
+          [
+            126,
+            1
+          ],
+          [
+            127,
+            1
+          ],
+          [
+            171,
+            1
+          ],
+          [
+            172,
+            1
+          ],
+          [
+            174,
+            1
+          ],
+          [
+            222,
+            1
+          ],
+          [
+            253,
+            1
+          ],
+          [
+            325,
+            1
+          ],
+          [
+            367,
+            1
+          ],
+          [
+            409,
+            1
+          ],
+          [
+            488,
+            1
+          ],
+          [
+            538,
+            1
+          ],
+          [
+            539,
+            1
+          ],
+          [
+            543,
+            1
+          ],
+          [
+            546,
+            1
+          ],
+          [
+            603,
+            1
+          ],
+          [
+            604,
+            1
+          ],
+          [
+            607,
+            1
+          ],
+          [
+            608,
+            1
+          ],
+          [
+            609,
+            1
+          ],
+          [
+            675,
+            1
+          ],
+          [
+            708,
+            1
+          ],
+          [
+            739,
+            1
+          ],
+          [
+            777,
+            1
+          ],
+          [
+            842,
+            1
+          ],
+          [
+            843,
+            1
+          ],
+          [
+            879,
+            1
+          ],
+          [
+            882,
+            1
+          ],
+          [
+            883,
+            1
+          ],
+          [
+            884,
+            1
+          ],
+          [
+            886,
+            1
+          ],
+          [
+            887,
+            1
+          ],
+          [
+            889,
+            1
+          ],
+          [
+            925,
+            1
+          ],
+          [
+            926,
+            1
+          ]
+        ],
+        "upper": 5
+      },
+      {
+        "family": "proved_strengthened_H",
+        "lower": 0,
+        "original_terms": [
+          [
+            28,
+            1
+          ],
+          [
+            47,
+            1
+          ],
+          [
+            48,
+            1
+          ],
+          [
+            50,
+            1
+          ],
+          [
+            80,
+            1
+          ],
+          [
+            127,
+            1
+          ],
+          [
+            129,
+            1
+          ],
+          [
+            130,
+            1
+          ],
+          [
+            131,
+            1
+          ],
+          [
+            179,
+            1
+          ],
+          [
+            180,
+            1
+          ],
+          [
+            182,
+            1
+          ],
+          [
+            230,
+            1
+          ],
+          [
+            266,
+            1
+          ],
+          [
+            344,
+            1
+          ],
+          [
+            407,
+            1
+          ],
+          [
+            466,
+            1
+          ],
+          [
+            545,
+            1
+          ],
+          [
+            597,
+            1
+          ],
+          [
+            598,
+            1
+          ],
+          [
+            600,
+            2
+          ],
+          [
+            602,
+            1
+          ],
+          [
+            605,
+            1
+          ],
+          [
+            664,
+            1
+          ],
+          [
+            665,
+            1
+          ],
+          [
+            668,
+            1
+          ],
+          [
+            669,
+            1
+          ],
+          [
+            670,
+            1
+          ],
+          [
+            736,
+            1
+          ],
+          [
+            769,
+            1
+          ],
+          [
+            807,
+            1
+          ],
+          [
+            851,
+            1
+          ],
+          [
+            918,
+            1
+          ],
+          [
+            919,
+            1
+          ],
+          [
+            922,
+            2
+          ],
+          [
+            967,
+            1
+          ],
+          [
+            971,
+            1
+          ],
+          [
+            972,
+            1
+          ],
+          [
+            974,
+            1
+          ],
+          [
+            976,
+            1
+          ],
+          [
+            978,
+            1
+          ],
+          [
+            980,
+            1
+          ],
+          [
+            1016,
+            1
+          ],
+          [
+            1017,
+            1
+          ]
+        ],
+        "source_small_row_id": 2286,
+        "terms": [
+          [
+            28,
+            1
+          ],
+          [
+            47,
+            1
+          ],
+          [
+            48,
+            1
+          ],
+          [
+            50,
+            1
+          ],
+          [
+            80,
+            1
+          ],
+          [
+            123,
+            1
+          ],
+          [
+            125,
+            1
+          ],
+          [
+            126,
+            1
+          ],
+          [
+            127,
+            1
+          ],
+          [
+            171,
+            1
+          ],
+          [
+            172,
+            1
+          ],
+          [
+            174,
+            1
+          ],
+          [
+            222,
+            1
+          ],
+          [
+            253,
+            1
+          ],
+          [
+            325,
+            1
+          ],
+          [
+            367,
+            1
+          ],
+          [
+            409,
+            1
+          ],
+          [
+            488,
+            1
+          ],
+          [
+            538,
+            1
+          ],
+          [
+            539,
+            1
+          ],
+          [
+            541,
+            2
+          ],
+          [
+            543,
+            1
+          ],
+          [
+            546,
+            1
+          ],
+          [
+            603,
+            1
+          ],
+          [
+            604,
+            1
+          ],
+          [
+            607,
+            1
+          ],
+          [
+            608,
+            1
+          ],
+          [
+            609,
+            1
+          ],
+          [
+            675,
+            1
+          ],
+          [
+            708,
+            1
+          ],
+          [
+            739,
+            1
+          ],
+          [
+            777,
+            1
+          ],
+          [
+            842,
+            1
+          ],
+          [
+            843,
+            1
+          ],
+          [
+            846,
+            2
+          ],
+          [
+            879,
+            1
+          ],
+          [
+            882,
+            1
+          ],
+          [
+            883,
+            1
+          ],
+          [
+            884,
+            1
+          ],
+          [
+            886,
+            1
+          ],
+          [
+            887,
+            1
+          ],
+          [
+            889,
+            1
+          ],
+          [
+            925,
+            1
+          ],
+          [
+            926,
+            1
+          ]
+        ],
+        "upper": 5
+      },
+      {
+        "certificate": {
+          "bytes": 13543,
+          "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-10.json",
+          "sha256": "6c1754f861a6c705b3ad19fe06e5937622d85b64a4fe04fc709b19259a1bfe86"
+        },
+        "family": "new_exact_pair_nogood",
+        "lower": 0,
+        "original_terms": [
+          [
+            261,
+            1
+          ],
+          [
+            803,
+            1
+          ]
+        ],
+        "upper": 1,
+        "whole_cover_box_index": 10
+      },
+      {
+        "certificate": {
+          "bytes": 11871,
+          "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-11.json",
+          "sha256": "139072a1d7db4bbf2e8f4e549c5d944c1544ae1a452a4c6c3b3e82b144c01222"
+        },
+        "family": "new_exact_pair_nogood",
+        "lower": 0,
+        "original_terms": [
+          [
+            262,
+            1
+          ],
+          [
+            803,
+            1
+          ]
+        ],
+        "upper": 1,
+        "whole_cover_box_index": 11
+      },
+      {
+        "certificate": {
+          "bytes": 13110,
+          "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-15.json",
+          "sha256": "672708e7c407a5dee461c6492f83fc20a494cf2ac3d110904c8dbb2870fa913d"
+        },
+        "family": "new_exact_pair_nogood",
+        "lower": 0,
+        "original_terms": [
+          [
+            339,
+            1
+          ],
+          [
+            765,
+            1
+          ]
+        ],
+        "upper": 1,
+        "whole_cover_box_index": 15
+      },
+      {
+        "certificate": {
+          "bytes": 14322,
+          "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-53.json",
+          "sha256": "4d985aeb9dce1b061fa0a6156482e3d0fef15acfb626c7cad61302ea1efd56d6"
+        },
+        "family": "new_exact_pair_nogood",
+        "lower": 0,
+        "original_terms": [
+          [
+            761,
+            1
+          ],
+          [
+            1183,
+            1
+          ]
+        ],
+        "upper": 1,
+        "whole_cover_box_index": 64
+      }
+    ],
+    "no_positive_floor_or_new_global_zero_premise": true,
+    "nonzeros": 10769860,
+    "old_nonzeros_preserved": 10769766,
+    "old_rows_preserved": 167121,
+    "original_coordinate_covers_covered_by_frozen_model": 178533,
+    "proved_global_zeros": 112,
+    "retained_cover_rows": 164044,
+    "rows": 167127,
+    "variables": 1103
+  },
+  "proposed_resource_contract_not_authorized": {
+    "automatic_retries": 0,
+    "branches": 50,
+    "calls_per_branch": 1,
+    "cold_owner_seconds": 150,
+    "cold_seconds": 120,
+    "cumulative_native_seconds": 120,
+    "extra_ray_solves": 0,
+    "forward_owner_seconds": 300,
+    "forward_seconds": 240,
+    "requested_native_seconds_per_branch": 2,
+    "transcript_bytes": 134217728,
+    "zero_solve_preflight_owner_seconds": 90,
+    "zero_solve_preflight_seconds": 60
+  },
+  "proposed_transport": [
+    "Reuse the hash-bound frozen matrix loader once; check exact full-prefix equality.",
+    "Append the two accepted H42 rows and four exact pair nogoods; retain every old row.",
+    "Use bounded getRows/getRowsEntries NumPy blocks for full native transport auditing; verify API layout on a tiny signed control first.",
+    "Reset all1103 bounds including t=0 at every branch and read them back without full-matrix Python getters.",
+    "Keep complete ray and basis arrays in lossless compressed binary records; sparse original-row multipliers decide exact acceptance."
+  ],
+  "raw_array_storage_bytes": {
+    "coefficient_int64": 86158880,
+    "indices_int32": 43079440,
+    "original_ids_uint16": 2204,
+    "row_pointers_int64": 1337024,
+    "two_row_endpoints_int64": 2674032
+  },
+  "remaining_complete_case_boxes": 187,
+  "reuse_source_bindings": {
+    "adapter": {
+      "bytes": 33316,
+      "path": "experiments/workspace/rook_case4_box_cut_lp_adapter.py",
+      "sha256": "7f574542d4fef61915337696bd6061d98ee4bdc3eb57709b7a698b3f4cb1ed07"
+    },
+    "generation": {
+      "bytes": 37239,
+      "path": "experiments/workspace/rook_case4_face112_weighted_parity_generation.py",
+      "sha256": "fb4c4b853708740e1a1726cb4455a5c82a7ae3659439407f4a00a33c67c71ec7"
+    },
+    "small_cold": {
+      "bytes": 15386,
+      "path": "experiments/workspace/rook_case4_low54_native_lp_replay.py",
+      "sha256": "12906b10154ea48871ee659fb4553a7aa9c5d28846d2a5e124c152d557dfb144"
+    },
+    "small_helper": {
+      "bytes": 21877,
+      "path": "experiments/workspace/rook_case4_low54_native_lp.py",
+      "sha256": "174c084dc9df3e3e0eed5e028ad18b6c89957c51b4ddfe7c0e4bbeaaa70d5380"
+    },
+    "small_query": {
+      "bytes": 21236,
+      "path": "experiments/workspace/rook_case4_low54_native_lp_query.py",
+      "sha256": "2ab88406370bb1f0a695fd3d191aee411e35bec0f3ced13758266811958dbefe"
+    }
+  },
+  "selected_low_boxes": 50,
+  "selected_states": [
+    {
+      "free_selectors": 1025,
+      "index": 0,
+      "positive_guard": [
+        764
+      ],
+      "state_sha256": "d3f349654d3f5ffe52b5cea83bde4847e8ee8b51097ef8eaddaf6c124fe40d4c"
+    },
+    {
+      "free_selectors": 1022,
+      "index": 1,
+      "positive_guard": [
+        45,
+        761
+      ],
+      "state_sha256": "1782b26085c35f639f34bd40222b4d3a9c00cf8f92f2850f67c7d131d2b33a77"
+    },
+    {
+      "free_selectors": 961,
+      "index": 2,
+      "positive_guard": [
+        45,
+        762
+      ],
+      "state_sha256": "60e3be895d69ae51a08861c7b81d3c3be8b2163c716a88a15d86857b76640604"
+    },
+    {
+      "free_selectors": 957,
+      "index": 3,
+      "positive_guard": [
+        45,
+        763
+      ],
+      "state_sha256": "c2030f81d35e35076129374d905f5ad810f0a33b9e8499cc26e8b29874bfc2d3"
+    },
+    {
+      "free_selectors": 955,
+      "index": 4,
+      "positive_guard": [
+        45,
+        765
+      ],
+      "state_sha256": "58b547f48ee20a0d7f94df796392fdcd458b36a25cebc5929d7b04ec5fa72465"
+    },
+    {
+      "free_selectors": 1027,
+      "index": 5,
+      "positive_guard": [
+        123,
+        761
+      ],
+      "state_sha256": "354a3d959363db77164e1413884dbce4c078160b27ec79c24aae23c7120d9f33"
+    },
+    {
+      "free_selectors": 968,
+      "index": 6,
+      "positive_guard": [
+        123,
+        762
+      ],
+      "state_sha256": "32efdbf8adf77141e37529e79a8e39f2b5ac806f9aaa97acdb84683ff17d40eb"
+    },
+    {
+      "free_selectors": 965,
+      "index": 7,
+      "positive_guard": [
+        123,
+        763
+      ],
+      "state_sha256": "9cc678832adc3c2d43fa0ba5fe154361fd1e8a48a833606ff0b25e75c6a517ef"
+    },
+    {
+      "free_selectors": 965,
+      "index": 8,
+      "positive_guard": [
+        123,
+        765
+      ],
+      "state_sha256": "1d4a228152763307803099f66f2942fdfa65331dfcb67ff3dc70210dc37fb582"
+    },
+    {
+      "free_selectors": 958,
+      "index": 9,
+      "positive_guard": [
+        259,
+        803
+      ],
+      "state_sha256": "e8ffa7fc4b327293c42ef0ed4b8bd12bdd3e4c6663804c438b91092229284d31"
+    },
+    {
+      "free_selectors": 1028,
+      "index": 12,
+      "positive_guard": [
+        339,
+        761
+      ],
+      "state_sha256": "e85a24b32593223b133b08acf3bf65d7355d084c5e391f38ff220d4d30f4f3ba"
+    },
+    {
+      "free_selectors": 970,
+      "index": 13,
+      "positive_guard": [
+        339,
+        762
+      ],
+      "state_sha256": "2f0af81028019972f7203b72000023e813451ba993b0945d61163ccc9a5e4132"
+    },
+    {
+      "free_selectors": 964,
+      "index": 14,
+      "positive_guard": [
+        339,
+        763
+      ],
+      "state_sha256": "8255b624f3c8ca406a0627356a2fc18439afa15b5f8ccbdf2d367cf1e55be1e9"
+    },
+    {
+      "free_selectors": 937,
+      "index": 16,
+      "positive_guard": [
+        401,
+        803
+      ],
+      "state_sha256": "281c7732cf550f5a4ff60b328c4cd229ed1dba20d35d59d07aeff1c8b39a7387"
+    },
+    {
+      "free_selectors": 920,
+      "index": 17,
+      "positive_guard": [
+        402,
+        803
+      ],
+      "state_sha256": "65c91572efdd7d5e16bc2b82e13bc584b20562349ec1a29cc6858053ef199769"
+    },
+    {
+      "free_selectors": 924,
+      "index": 18,
+      "positive_guard": [
+        405,
+        803
+      ],
+      "state_sha256": "1f509edc4aaf870cea510519eaab5f91ec278d7957134e9fd9d3792d2aa76764"
+    },
+    {
+      "free_selectors": 1006,
+      "index": 19,
+      "positive_guard": [
+        539,
+        761
+      ],
+      "state_sha256": "1171bece6107e7f89a5c7f53453ebfd932f756c879f72b2026b68b432c2ae4f7"
+    },
+    {
+      "free_selectors": 971,
+      "index": 23,
+      "positive_guard": [
+        260,
+        730
+      ],
+      "state_sha256": "b09c2b2d3b2810f40f0d14f217dbd2975cb81c765f39f9533ec721cc0d0323d8"
+    },
+    {
+      "free_selectors": 1003,
+      "index": 24,
+      "positive_guard": [
+        260,
+        731
+      ],
+      "state_sha256": "d576fd886ff613afd3a91fa85743b678d4dc6d048f91ab1509c280653104c7ea"
+    },
+    {
+      "free_selectors": 1001,
+      "index": 25,
+      "positive_guard": [
+        260,
+        732
+      ],
+      "state_sha256": "f8e633f5167c2da6f70a8b231a5713569fcf95eb7a7ffd3c1f5cfa079092bf6f"
+    },
+    {
+      "free_selectors": 999,
+      "index": 26,
+      "positive_guard": [
+        260,
+        733
+      ],
+      "state_sha256": "48f98ff3fe917702ed08ebd7e9409024085f417154ed27b39183273430abfdc5"
+    },
+    {
+      "free_selectors": 993,
+      "index": 27,
+      "positive_guard": [
+        260,
+        780
+      ],
+      "state_sha256": "1a1597b8d8bf9b03af97494272ceab74100be5bf73f70ca9f907e9c48608c6ff"
+    },
+    {
+      "free_selectors": 929,
+      "index": 28,
+      "positive_guard": [
+        399,
+        780
+      ],
+      "state_sha256": "76c438b69278758b9c1f5fc98e3333511e8090e532b39c8e51dbebb2fd65831e"
+    },
+    {
+      "free_selectors": 954,
+      "index": 29,
+      "positive_guard": [
+        403,
+        780
+      ],
+      "state_sha256": "44f8536f52c7f94a89bdeb124a27fce43e701a4203a87b444c3d2b34ef3f5f1a"
+    },
+    {
+      "free_selectors": 949,
+      "index": 30,
+      "positive_guard": [
+        406,
+        780
+      ],
+      "state_sha256": "f0772cb00c2443ae6d1f7a9a90cd7a91591fca12ed98cff9287eb31fd56d6210"
+    },
+    {
+      "free_selectors": 992,
+      "index": 31,
+      "positive_guard": [
+        260,
+        781
+      ],
+      "state_sha256": "df46a0c499043439abc60cb8a10b4879ef22b96869939c1cf814d06356313d26"
+    },
+    {
+      "free_selectors": 928,
+      "index": 32,
+      "positive_guard": [
+        399,
+        781
+      ],
+      "state_sha256": "5878ce90a69f51ae5c88893126f46d58f5574e17106293cc231466bf09fd8a2c"
+    },
+    {
+      "free_selectors": 956,
+      "index": 33,
+      "positive_guard": [
+        403,
+        781
+      ],
+      "state_sha256": "3f054c96fd97c78193a94e4474d1df8618c63c8dbe7b4ad3b2df44d9a2e13e19"
+    },
+    {
+      "free_selectors": 949,
+      "index": 34,
+      "positive_guard": [
+        406,
+        781
+      ],
+      "state_sha256": "fd3105894032a9395c38863fc7cd2dd088ebf55fabb53fe8c5c61f7928d27d41"
+    },
+    {
+      "free_selectors": 999,
+      "index": 35,
+      "positive_guard": [
+        260,
+        782
+      ],
+      "state_sha256": "35b600fa75018e417f665646c44592c5d77c76c879b09b23ead112bb4c50a579"
+    },
+    {
+      "free_selectors": 875,
+      "index": 36,
+      "positive_guard": [
+        399,
+        782
+      ],
+      "state_sha256": "864b4c8457c591548bf9d0e842d2a97739666d5870a161378bbc5563f2023356"
+    },
+    {
+      "free_selectors": 961,
+      "index": 37,
+      "positive_guard": [
+        403,
+        782
+      ],
+      "state_sha256": "ac50c5d5c89b37573554c1e636df0a4f747a4567d85cfc5c9e6812f19f20c576"
+    },
+    {
+      "free_selectors": 988,
+      "index": 38,
+      "positive_guard": [
+        260,
+        800
+      ],
+      "state_sha256": "2dd7d8a9c186235d11db9ae5986fa75403721c6634750fa4811521e3126ba55e"
+    },
+    {
+      "free_selectors": 927,
+      "index": 39,
+      "positive_guard": [
+        399,
+        800
+      ],
+      "state_sha256": "9c3d8d4eab8d4ba56c57ea3ebf6a27c35ef98ba4022bb8a8ad7870f04714e005"
+    },
+    {
+      "free_selectors": 951,
+      "index": 40,
+      "positive_guard": [
+        403,
+        800
+      ],
+      "state_sha256": "a6169e18b38ee2247bff22c6c7c97718f979cf2372a4bf043f41a65dedaf3b9b"
+    },
+    {
+      "free_selectors": 943,
+      "index": 41,
+      "positive_guard": [
+        406,
+        800
+      ],
+      "state_sha256": "41a07bc35512d8412a17c52525c9cfba396cd7308c872665ffe37e12c8b7be07"
+    },
+    {
+      "free_selectors": 992,
+      "index": 42,
+      "positive_guard": [
+        260,
+        801
+      ],
+      "state_sha256": "e71db17026a6868b3b8e546472f572add7cdb84ba80796b2e18a92b8e4091b84"
+    },
+    {
+      "free_selectors": 930,
+      "index": 43,
+      "positive_guard": [
+        399,
+        801
+      ],
+      "state_sha256": "c46c15fa45b8652989b8360ae8809c5c59723c3956cf3b8e88124a81640accbc"
+    },
+    {
+      "free_selectors": 957,
+      "index": 44,
+      "positive_guard": [
+        403,
+        801
+      ],
+      "state_sha256": "686b9eaa639e2cc989d3534ce21296389c86112478d140be767e78d7f6e3edf5"
+    },
+    {
+      "free_selectors": 947,
+      "index": 45,
+      "positive_guard": [
+        406,
+        801
+      ],
+      "state_sha256": "6157769c9f733113cffacaba01069c8ae31f6b4401481e5bfc4896d771f159b9"
+    },
+    {
+      "free_selectors": 984,
+      "index": 46,
+      "positive_guard": [
+        260,
+        802
+      ],
+      "state_sha256": "dd0b61f0600bfe95af602a3f9d072bedaa346f5ce789b4191484e80964647eba"
+    },
+    {
+      "free_selectors": 948,
+      "index": 47,
+      "positive_guard": [
+        403,
+        802
+      ],
+      "state_sha256": "89c12405641074bd1e3387d9dd8eb834653da922cadc444f27882073b19b6b9b"
+    },
+    {
+      "free_selectors": 936,
+      "index": 48,
+      "positive_guard": [
+        406,
+        802
+      ],
+      "state_sha256": "75bf58524f2115308e97fba73e971cc9c245ebbfb60a3e90c2ff02bbd4ec5980"
+    },
+    {
+      "free_selectors": 987,
+      "index": 49,
+      "positive_guard": [
+        761,
+        1175
+      ],
+      "state_sha256": "378890751cb3ae961ceefd0889c4cd34ee044c7c19723fccba3d4f8fdf90f495"
+    },
+    {
+      "free_selectors": 934,
+      "index": 50,
+      "positive_guard": [
+        762,
+        1175
+      ],
+      "state_sha256": "ddcf2cdd6b4c2134993ff8534d9145612f181a98352128b460d3c6d10baaad32"
+    },
+    {
+      "free_selectors": 931,
+      "index": 51,
+      "positive_guard": [
+        763,
+        1175
+      ],
+      "state_sha256": "9affa22d8993cbd20681679affa28ca898b70fc0015122dd0ba739e5a4865744"
+    },
+    {
+      "free_selectors": 931,
+      "index": 52,
+      "positive_guard": [
+        765,
+        1175
+      ],
+      "state_sha256": "a777134b81390a27ac033e05bc68d2bc587e47a07e73dad3b7e400e252fd5f9a"
+    },
+    {
+      "free_selectors": 942,
+      "index": 53,
+      "positive_guard": [
+        761,
+        1176
+      ],
+      "state_sha256": "7c2263f03612dc9b9c3854815fa2dc60ffd65fef698783750371a02805cecde1"
+    },
+    {
+      "free_selectors": 930,
+      "index": 57,
+      "positive_guard": [
+        761,
+        1177
+      ],
+      "state_sha256": "91c06b250abd99b476b6b19022f0f5dd3607c21e34c8a1d2695a88e184f22d4b"
+    },
+    {
+      "free_selectors": 942,
+      "index": 60,
+      "positive_guard": [
+        761,
+        1180
+      ],
+      "state_sha256": "ff65bb28dbde6b18b00bd808242846808ad80d3625edaf8f68b8d1a8674b50ed"
+    }
+  ],
+  "selected_whole_cover_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    57,
+    60
+  ],
+  "small_pilot_numeric_storage_observation": {
+    "gzip_bytes": 298287,
+    "nonzero_ray_entries": [
+      351,
+      473,
+      354,
+      352
+    ],
+    "raw_bytes": 7288509
+  },
+  "source": {
+    "bytes": 11030,
+    "path": "experiments/workspace/rook_case4_low50_full_row_scope.py",
+    "sha256": "ed362f29d8417f19cf8a7e51deb7a7c9427659014ab224e2c2a0fe2556f41f64"
+  },
+  "status": "READ_ONLY_FULL50_SCOPE_ASSESSMENT_NO_MODEL_OR_QUERY",
+  "total_primary_integer_CSR_bytes": 133251580,
+  "unselected_high_boxes": 137
+}

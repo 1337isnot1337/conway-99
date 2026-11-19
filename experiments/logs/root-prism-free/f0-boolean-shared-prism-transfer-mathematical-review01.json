@@ -1,0 +1,99 @@
+{
+  "expected_unmatched_rows_under_these_criteria": 59220,
+  "full_old_source_lines_read": {
+    "one_edge": 181,
+    "path": 345
+  },
+  "inputs": {
+    "current_model_cold": {
+      "bytes": 2974,
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/report.json",
+      "sha256": "a907d1c0f51f893166f32b1aab136d885b412cf0aecbdfed2a938fdaaf373efb"
+    },
+    "current_overlay": {
+      "bytes": 219390,
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183"
+    },
+    "domain": {
+      "bytes": 52094,
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4"
+    },
+    "literal_plan": {
+      "bytes": 1422843,
+      "path": "experiments/logs/root-prism-free/f0-direct-literal-model01/plan.json.gz",
+      "sha256": "bd921d7d8f16c64bd866e0ec319b1cc3db37450cf5a6c884a37a9f40044c48d7"
+    },
+    "one_edge_census": {
+      "bytes": 166449,
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01.json.gz",
+      "sha256": "b445ad3268cb7016a7a5df07cef9c6fda1a0c7d96fa5a560f897c9449814b194"
+    },
+    "one_edge_cold": {
+      "bytes": 838,
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01-replay.json",
+      "sha256": "342ea3bf2453c60b819ab66b0f63883bd3e4261730bba0fb8f06cf3a9e3ca5aa"
+    },
+    "one_edge_source": {
+      "bytes": 9073,
+      "path": "experiments/workspace/root_prism_free_f0_three_vertex_prism_cuts.py",
+      "sha256": "8f468ed033b66b61a9c9452ead079f41b6e738d3b9dfaadee476ced49104ce22"
+    },
+    "path_census": {
+      "bytes": 1959900,
+      "path": "experiments/logs/root-prism-free/f0-path-prism-cuts01.json.gz",
+      "sha256": "d7ce1862d52cb4c9011efe73deb438db2b4e33a3fade1d5b803569005f2d7886"
+    },
+    "path_cold": {
+      "bytes": 1186,
+      "path": "experiments/logs/root-prism-free/f0-path-prism-cuts01-replay.json",
+      "sha256": "690613ccd1fd9cdf6e7c67988d9d1fac50cd751793dec53ebbadf2c5337b038f"
+    },
+    "path_source": {
+      "bytes": 18060,
+      "path": "experiments/workspace/root_prism_free_f0_path_prism_cuts.py",
+      "sha256": "b332326f90a428565d12d58fefa230bcfb3c5ac4b1e86983115cbc73979c339b"
+    }
+  },
+  "native_model_builds": 0,
+  "native_model_decodes": 0,
+  "one_edge_case_counts_from_saved_dispositions": {
+    "all_cases": 9360,
+    "at_least_one_inherited_selector_pair_after_edge_zero": 7908,
+    "edge_zero_first": 228,
+    "exactly_one_zero_pair_disposition": 6132,
+    "neither_reason": 1224,
+    "two_zero_pair_dispositions": 1776
+  },
+  "optimizer_calls": 0,
+  "previously_retained_path_counts_from_literal_plan_and_current_overlay": {
+    "all_paths": 61476,
+    "both": 0,
+    "current_core_pair_clique_only": 1368,
+    "endpoint_core_overlap_one": 57996,
+    "endpoint_core_overlap_two": 3480,
+    "inherited_selector_pair_only": 2112,
+    "neither": 57996
+  },
+  "producer_source_review_pending": true,
+  "proofs": [
+    "For a one-edge witness, y_ab=1 and x_c=1 activate all three exterior signatures. The saved two triangles and perfect cross matching form an induced prism: the exterior chords ac and bc are forbidden because each pair has two distinct common core neighbors. Hence y_ab+x_c<=1 holds for every actual Boolean graph in the globally prism-free F0 branch.",
+    "For a path witness, y_ab=y_bc=1 activates a,b,c. The six fixed vertices have the saved prism pattern. The remaining chord ac cannot occur because it would have two distinct common neighbors b and the shared core site z. Thus the two edges cannot both occur. Activation and the binary center selector give y_ab+y_bc<=x_b.",
+    "These graph implications do not require the relaxation to have already installed general exterior common-neighbor cap rows. They use the exact graph premises to derive valid additional necessary inequalities.",
+    "An existing y_ab=0 row makes the one-edge cut automatic. An inherited selector conflict x_a+x_c<=1 or x_b+x_c<=1 also makes it automatic through edge activation.",
+    "A path row follows from an existing zero edge or a quota-one mixed row containing both edges. A current core-pair clique containing both edges also implies it. Any forbidden selector pair among a,b,c excludes selecting both path edges; the center=0/1 case split proves the homogeneous path inequality for Boolean variables.",
+    "The direct literal plan accounts for all 4410 inherited forbidden selector pairs: 4320 from quota-one original Gram equalities and 90 explicit motif conflicts. The old quotient zero-pair counts must be converted to literal case counts; quotient coefficients are not native Boolean variable IDs."
+  ],
+  "qualifications": [
+    "The 57996 path remainder agrees with the previously published local conflict inventory. This is a literal Boolean transfer and recheck, not a new prism census or cut discovery.",
+    "The table recount used hash-bound literal plan and current overlay records. It did not decode the current native model. The forthcoming inventory must bind each implication receipt to an actual current native row.",
+    "Not proved redundant by the listed sufficient criteria does not mean independent of all existing constraints.",
+    "The inherited 107520 path witnesses and 9360 one-edge witnesses are accepted finite families. No full three-exterior census was rerun here.",
+    "This review does not authorize a model build or query, nor claim a graph construction or exclusion."
+  ],
+  "reviewer": "master_review",
+  "schema": "conway99.f0.literal-three-exterior-prism-transfer-mathematical-review.v1",
+  "source_imports": 0,
+  "status": "PASS_MATHEMATICAL_TRANSFER_AND_READ_ONLY_TABLE_COUNTS"
+}

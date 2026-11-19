@@ -1,0 +1,44 @@
+{
+  "actual_native_premise_receipts_required": true,
+  "complete_old_origins_required": true,
+  "complete_source_lines_read": 373,
+  "configuration": {
+    "bytes": 3726,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory-configuration01.json",
+    "sha256": "2df2acdb2421c487af82821b1ae00ac7a1dbe50a650dea62c439bf0ef5f35586"
+  },
+  "expected_following_rows_if_later_appended": 227270,
+  "expected_new_terms": 176436,
+  "expected_proposed_rows": 59220,
+  "graph_constructed": false,
+  "independent_six_site_and_native_receipt_replay_required_before_use": true,
+  "independent_source_review": {
+    "bytes": 3747,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory-independent-source-review01.json",
+    "sha256": "c101b6dcfecbc7769750e08e7b8c893a7b09b98c8968fd93ff40992bdc121d45"
+  },
+  "input_source_bindings_rehashed": 15,
+  "mathematical_review": {
+    "bytes": 5843,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-mathematical-review01.json",
+    "sha256": "c95c630290b8ede61fdb5d46c5ee2b4963b255aaf86414bc3fd08f018b18f880"
+  },
+  "maximum_check_seconds": 30,
+  "maximum_owner_seconds": 45,
+  "native_model_builds_authorized": 0,
+  "optimizer_calls_authorized": 0,
+  "qualification": "This transfers accepted finite prism families; unmatched by tested sufficient implication criteria does not mean independent of the full model.",
+  "release_required_from_root": true,
+  "retries_authorized": 0,
+  "reviewer": "root",
+  "runs_authorized": 1,
+  "schema": "conway99.f0.boolean-prism-transfer-inventory-root-gate.v1",
+  "single_heavy_slot_owner_before_release": "independent_sets",
+  "source": {
+    "bytes": 20968,
+    "path": "experiments/workspace/root_prism_free_f0_boolean_shared_prism_transfer_inventory.py",
+    "sha256": "ca8b9ab7f6593c93ecdcf23ab700f34619acb53752a330f11358192a1a24b54c"
+  },
+  "status": "AUTHORIZED_ONCE_QUEUED_AFTER_ROOK_FULL50_RELEASE",
+  "whole_component_excluded": false
+}

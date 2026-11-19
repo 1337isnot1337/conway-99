@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_full_native_transport.py", line 227, in <module>
+    print(json.dumps(controls(args.controls)),flush=True)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_full_native_transport.py", line 183, in controls
+    checks.append(audit_block(arrays,first,last,h.getRows(len(ids),ids),h.getRowsEntries(len(ids),ids)))
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_full_native_transport.py", line 110, in audit_block
+    assert int(nnz) == len(columns) == len(values) == end-begin
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

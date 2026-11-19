@@ -1,0 +1,47 @@
+{
+  "all_configuration_inputs_rehashed": true,
+  "all_preflight_and_transport_source_read": true,
+  "automatic_retries": 0,
+  "configuration": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low50-full-row-preflight-configuration01.json",
+    "sha256": "4b54ba63622e1a5d5121071983585707af6d6bae58fbb5b1158d6e7f22730b3a"
+  },
+  "disk_and_memory_plan": {
+    "actual_native_internal_RSS_requires_measurement": true,
+    "archive_atomic_rename_creates_no_second_complete_copy": true,
+    "future_total_additional_disk_requirement_including_reserve": 356598268,
+    "largest_native_float64_coefficient_argument_RAM_bytes": 86158880,
+    "maximum_row_getter_payload_bytes": 3393540,
+    "native_matrix_copies_written_to_disk": false,
+    "new_compressed_archive_ceiling_bytes": 134300156,
+    "nominal_native_value_and_index_payload_RAM_bytes": 129238320,
+    "one_input_base_coefficient_RAM_bytes": 86138336,
+    "preflight_additional_disk_requirement_including_reserve": 209797628,
+    "primary_integer_array_RAM_bytes": 133251580,
+    "uncompressed_matrix_written_to_disk": false
+  },
+  "future_native_query_authorized": false,
+  "limits": {
+    "future_branch_temporary_bytes": 4194304,
+    "future_metadata_bytes": 16777216,
+    "future_transcript_bytes": 134217728,
+    "metadata_bytes": 8388608,
+    "native_solver_calls": 0,
+    "preflight_owner_seconds": 90,
+    "preflight_seconds": 60,
+    "safety_disk_reserve_bytes": 67108864
+  },
+  "observed_free_disk_bytes": 799428608,
+  "optimizer_calls_authorized": 0,
+  "requires_heavy_slot_release_message_before_launch": true,
+  "review": [
+    "The full167121-row accepted prefix remains exact in all six array bindings. Only two accepted H42 rows and four independently certified pair capacities are appended.",
+    "All50 branches are exactly the low54 set minus the four accepted exclusions; all1103 bounds reset each time with artificial t fixed0.",
+    "The source stitches one frozen array at a time and supports signed and coefficient-two suffixes. Tiny controls compare six hand-specified complete arrays and reject five invalid inputs.",
+    "Direct native array loading avoids giant Python-list getters. All10769860 coefficients and both endpoints are checked in at most256-row NumPy blocks.",
+    "The observed empty-row zero placeholder is accepted only when both native row metadata and expected exact data give zero entries; a nonzero placeholder is rejected.",
+    "No original cover-support reconstruction is claimed. Their accepted frozen matrix prefix is retained and checked."
+  ],
+  "schema": "conway99.rook-case4.low50-full-row-preflight-root-gate.v1",
+  "status": "AUTHORIZED_AFTER_BOOLEAN_QUERY_RELEASES_HEAVY_SLOT"
+}
