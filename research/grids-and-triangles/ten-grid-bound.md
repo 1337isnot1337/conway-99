@@ -69,7 +69,7 @@ Suppose a root lies on ten grids and put their ten edges on the seven axes. Ther
 | $1,1,3,3,3,3,6$ | $01,02,04,12,13,23,24,25,26,34$ |
 | $2,2,2,2,4,4,4$ | $01,02,12,15,16,23,24,34,45,46$ |
 
-In particular, if the root lies on a full triangle, exactly two of its other six axes occur in just one grid. After deleting the full axis and these two leaves, the four remaining axes induce a four-cycle or a triangle with a pendant edge.
+In particular, if the root lies on a full triangle, exactly two of its other six axes occur in just one grid. After deleting the full axis and these two leaves, the four remaining axes induce a four-cycle or a triangle with a pendant edge. In the pattern of degrees $2,2,2,2,4,4,4$, a [28-point signed-support count](ten-grid-signed-support.md) forces six sites on three axes to span at most one edge.
 
 ### The degree pattern $0,3,3,3,3,4,4$
 
