@@ -1,0 +1,28 @@
+{
+  "status": "PASS: independent complete source and mathematical review",
+  "source_sha256": "d26499a0eec07c2c80a28818f0a40319fc0b14f54140a28253c820eb00d44f2a",
+  "base_source_sha256": "1e7a8b7380314d6dfd8ff05954a13662bc011378f5759ad675ec1bc281fa19e9",
+  "preparation_sha256": "48a3788a0ca55dd445971f71dba46be49f4291b0ddd6b920beebb5de87e66fb7",
+  "model_raw_sha256": "819aa1954ce038865404433995eb401ad7111cad0a21992f4ba8c42e3e04687c",
+  "model_gzip_sha256": "9305dffa83a024f574321dd5843244724d3cd82b569c0749d2ed135ccdc01938",
+  "reported_classes": 574,
+  "reported_tensor_nonzeros": 135819,
+  "reported_controls": 29,
+  "checked": [
+    "The full domain enumerates every root-intersection mask of size0..3 and every multiset of outside root masks. Literal triangle membership and all visible caps validate every class.",
+    "For a triangle pair with union U in an induced n-vertex graph, each four-root covering the host with U is exactly(V\\U) union an extra subset of U of size4+|U|-n. Positive extra size enumerates precisely the entries missing from the old root-disjoint tensor; n ranges4..9.",
+    "Unordered triangle pairs, all labelled root maps, and factor2 only for a distinct same-class pair give the correct induced-subset normalization. No extra automorphism or triangle factorial is needed.",
+    "Appending classes preserves the lower-triangle indices of every old entry; the exact coefficient comparison prevents changing the previous principal tensors.",
+    "The reused exact characteristic-polynomial criterion and rational negative-vector checker are valid for every symmetric contracted block. The count-form expansion doubles off-diagonal terms and verifies its full negative value.",
+    "Including all triangle classes makes the constant and four root-incidence vectors exact kernel vectors in an actual graph, since Q1=0 and QB^T=0. The query checks these rather than assuming them."
+  ],
+  "reporting_qualification": "The terminal PSD label describes the PSD tests only. If any saved null check fails, the full projector conditions fail even when all blocks are PSD; the source records the null booleans and matrices but does not separately export their linear count forms.",
+  "scope": {
+    "source_imported": false,
+    "enumeration_repeated": false,
+    "tensor_rebuilt": false,
+    "controls_rerun": false,
+    "count_point_loaded": false,
+    "optimizer_called": false
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "status": "FROZEN_EXACT_FULL_COLUMN_LATTICE_AUDIT",
+  "files": [
+    {
+      "path": "experiments/workspace/high_graph_feature_lattice_audit.py",
+      "git_blob": "7c26c46fa4e79f2f2671b280bf5c5c35f4b581e3",
+      "sha256": "9c77d286cdd6ee138e01479be286476e5ce76a8e68e43c860e075a27454c7390"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-feature-lattice-audit.json",
+      "git_blob": "9e1ab9fd494b528940456d9dcff5b2ea8dfbca59",
+      "sha256": "37e427e4f3da986faafcdf0234e609807edb5a9ff8d46d8edd8cea6c99b3c18b"
+    },
+    {
+      "path": "research/grids-and-triangles/high_graph_feature_lattice.md",
+      "git_blob": "7665d7928d4dbd4104aac873cf5e1d4ab493f16d",
+      "sha256": "399a94f9f0418b5cf7693cee454607db026d28606a6baafecb3a348bd3e34dd0"
+    }
+  ],
+  "input_bindings": {
+    "refined_arrays": [
+      "order10-high-graph-refined-query-arrays.npz",
+      "db71229051f4ddce3423fad017e9788fd18549312f537e7fbcb8e406df360272"
+    ],
+    "original_arrays": [
+      "order10-high-mask-graph-features-arrays.npz",
+      "bd2971d442d8fb0a0059f946b93e4e11046c211bf77b6f1a128694f8792cc68e"
+    ],
+    "moments": [
+      "order10-high-mask-graph-moments01.json",
+      "43bde72fa777410a73732d418530a6a853a39740a1b7bcfc591d78977ad4cc3d"
+    ],
+    "point": [
+      "prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json",
+      "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+    ]
+  },
+  "model_shape": [
+    200,
+    17920
+  ],
+  "exact_root_orbit_mass_unit": 720,
+  "result": {
+    "column_lattice_index": 1,
+    "determinant_of_retained_minor": 1,
+    "new_modular_obstruction": false,
+    "nonnegative_integer_feasibility_claimed": false
+  },
+  "execution": {
+    "optimizer_called": false,
+    "query_source_imported": false,
+    "feature_or_domain_rebuilt": false,
+    "observed_elapsed_seconds": 0.557
+  },
+  "proof_scope": "The complete retained column lattice is Z^200 and each direct induced RHS coefficient is divisible by 720. This does not decide the nonnegative integer semigroup.",
+  "local_checkout_changed": false,
+  "publication": "Git blobs only; parent integrates the tree and commit."
+}

@@ -6,10 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Complete the compressed complementary-rook case-four max-min query, certify any forced selector face, and propagate its exact consequences. Owned by the independent-set worker.
-2. Test joint F0 selector moments after the current exact point passed all 4,416 Boolean-normalized cuts. Owned by the completion worker.
-3. Finish the decorated root-42 two-parameter certificate and review stronger triangle-incidence constraints. Owned by the literature worker.
-4. Evaluate the complete four-root triangle-incidence projector family, integrate results, and publish reviewed checkpoints. Owned by the coordinating worker.
+1. Query the complete complementary-rook case-four relaxation on its proved 81-zero face, preserving every original row for exact acceptance. Owned by the independent-set worker.
+2. Query the joint F0 selector-moment linear model after separate native-source preparation. Its spectral matrices require separate exact checks. Owned by the completion worker.
+3. Prepare and test the triangle-incidence projector after per-embedding conditioning on a fixed root triangle. Owned by the literature worker.
+4. Review exact outcomes, develop further necessary constraints, and publish reviewed checkpoints. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -29,6 +29,11 @@ not meet that target. New reductions will be checked on known graphs when
 their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
+
+- Checkpoint 50: exact cover compression preserves the complete rook case-four real relaxation. One bounded row-generation call exposed a zero-maxmin certificate. Its four native Gram rows give 24 additional Gram-only zeros; one was already a cover unit, so 23 are new overall. The short proof is independent of numerical optimization. All 81 known zeros pass complete original-row propagation and cold replay, with no new assignments and no integrality-dependent step.
+- The saved F0 point passes all 4,416 Boolean-normalized cuts exactly. The full 480-selector/68,394-edge baseline remains intact. Root's independent integer replay verifies the new coefficient-sum quotient and every full cut. No repeated LP was launched. The new joint-moment preparation has 9,742 pair orbits, 15,589 variables, 7,165 equalities and 46,122 inequalities. Its 389 zero-pair-orbit equalities have direct nonnegative lifted-row or motif certificates. PSD conditions are recorded separately.
+- The four-root triangle projector has a complete 352-class disjoint preparation and a complete 574-class extension. Both nine-block families pass exact characteristic-polynomial tests. The full family also passes 189 incidence-kernel checks. Direct ordered-pair host controls and independent tensor contractions fix the normalization. Per-embedding fixed-triangle conditioning is a separate stronger query.
+- The decorated root-42 distribution has two even fifth moments. Every pair in [0,8764] times [0,966] is feasible, and no other pair is: explicit atom rows prove the upper bounds, and all four corners pass the original moment equations, nonnegativity and divisibility. The full refined high-graph feature lattice is Z^200 after the correct orbit-total factor720; no extra congruence follows from that lattice alone.
 
 - Checkpoint 49 publishes the recovered 363-member F0 transcript. Its 4,404 proved cuts, 94 checked candidates, 64 full or partial row passes, 3,701 exact row boxes and 14 exact shared-edge obstructions pass a fresh optimizer-disabled replay. The original bounded run remains UNKNOWN. The misleadingly named terminal-registry seed contains only 2,928 cuts; the final registry is in the archived run directory.
 - The recovered refined high-graph measure has 200 positive rational masses of denominator 988761395399693539 and total mass 72,926,995,680. A portable audit checks all 200 original moments, 400 exact projector characteristic polynomials and 200 shifted integer-incidence inequalities on its support. It does not claim a new replay of every removed domain column.

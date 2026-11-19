@@ -1,0 +1,14 @@
+{
+  "status": "PREPARATION WRAPPER ERROR after exact mathematical artifact was written",
+  "source_sha256": "256029c3030867b750583e0f4f9e10313bcce42449ba2827cb3238525c878e04",
+  "preserved_source": "experiments/workspace/root_prism_free_f0_second_moments_v1.py",
+  "artifact_sha256": "d51942b72b1645830724ac92727e0da7ec5667a81ceb83d148e9f6195215bd5c",
+  "artifact": "experiments/logs/root-prism-free/f0-second-moments-preparation.json.gz",
+  "error_type": "ValueError",
+  "cause": "Relative output path passed to Path.relative_to with an absolute repository root.",
+  "mathematical_controls_completed": true,
+  "optimizer_called": false,
+  "change": "Only output path reporting now resolves the path before making it repository-relative. The mathematical calculation is unchanged.",
+  "superseded_by": "f0-second-moments-preparation02.json.gz",
+  "replacement_source_sha256": "29b1c26550ecc858c0cf35b8f527d61bcfba8a4078b14ff6ca90d914d300df18"
+}

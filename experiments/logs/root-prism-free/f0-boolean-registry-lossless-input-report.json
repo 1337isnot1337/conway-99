@@ -1,0 +1,31 @@
+{
+  "status": "PASS: lossless final registry serialization; no mathematical model/query",
+  "source_sha256": "795836b0bff4e9ad55e1e2c44954d719058fcaec81e0a84dbd9fb668dafdcff2",
+  "output": "experiments/logs/root-prism-free/f0-boolean-registry-lossless-input.json.gz",
+  "output_sha256": "c990af1c45cd9683110ee293cb0f13f741a4ed96c16641dae18f3d521708b5a3",
+  "output_bytes": 1935123,
+  "canonical_sha256": "83ccc910174dd21af29bb3c0a32076ad82114c1517c1df52c22add621558542d",
+  "records": {
+    "individual": 3948,
+    "shared": 456,
+    "quadratic": 38
+  },
+  "integer_statistics": {
+    "individual": {
+      "integer_values": 688272,
+      "tagged_large_integers": 0,
+      "maximum_integer_bits": 9
+    },
+    "shared": {
+      "integer_values": 278736,
+      "tagged_large_integers": 5748,
+      "maximum_integer_bits": 80
+    },
+    "quadratic": {
+      "integer_values": 387559,
+      "tagged_large_integers": 8668,
+      "maximum_integer_bits": 81
+    }
+  },
+  "optimizer_called": false
+}

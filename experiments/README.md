@@ -1,5 +1,13 @@
 # Computations and replay
 
+## Checkpoint 50 exact faces and stronger preparations
+
+The [four-Gram-row certificate](../research/grids-and-triangles/rook_case4_four_gram_face.md) forces 23 additional case-four selector zeros. The [full propagation trace](../research/grids-and-triangles/rook_case4_four_gram_face_closure.md) checks every original row and cover on the resulting 81-zero face. The numerical discovery is separate from the short exact proof and cold replay.
+
+The [Boolean F0 augmentation](../research/root_prism_free_f0_boolean_fractional_result.md) has an exact rational point, including all 4,416 normalized cuts. The independent Python augmentation replay preserves the baseline certificate and reconstructs all full-to-quotient coefficient sums. The [second-moment preparation](../research/root_prism_free_f0_second_moments.md) adds all selector pairs, lifted Gram equations, and separate PSD formulas; it does not yet claim a linear or PSD feasible point.
+
+The [triangle-projector package](../research/grids-and-triangles/triangle_projector_order_ten.md) has exact PSD certificates for both disjoint and full triangle-class models. Independent replay checks every tensor entry and every recorded incidence-kernel identity. The [decorated root-42 replay](../research/grids-and-triangles/root42_decorated_interval_result.md) verifies the complete even-parameter rectangle. No optimizer is required to check any of these saved terminal certificates.
+
 ## Checkpoint 49 recovery and moment replays
 
 The [checkpoint record](../research/checkpoint49_recovered_moment_certificates.md) describes the restored 4,404-cut F0 transcript, the refined 200-row rational measure, all 33 decorated small-root distributions and the root-42 presence interval. These are exact finite certificates. The F0 search remains UNKNOWN; the moment tests pass at the recorded count point.

@@ -1,0 +1,66 @@
+{
+  "status": "FROZEN_EXACT_ROOT42_DECORATED_DISTRIBUTION",
+  "files": [
+    {
+      "path": "experiments/workspace/root42_decorated_interval_query.js",
+      "git_blob": "3b7e0de82ea3f0c713edbc33a5576ee1edb9623a",
+      "sha256": "80a6234c63ea9f4a3331943554d72ac8feb6ef6ecfbfffa68749dc3b8030025c"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-decorated-interval-query-controls.json",
+      "git_blob": "d6d55b3e3c380b20dd08a0449c31dd5b48d0e30a",
+      "sha256": "92f069112fe78b3f3714a641c5a487c353fca14dedf3f8e3bb4f023cfb013dcb"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-decorated-interval-query-result.json",
+      "git_blob": "56c805dfc075c824c68fdb160dfacee533c9f29a",
+      "sha256": "879c138ba0c47b6ccaa6a1df895ce909414b25e9030994ab65379db841d9d322"
+    },
+    {
+      "path": "experiments/workspace/root42_decorated_interval_replay.js",
+      "git_blob": "c860403baf8e6bc37449fc96a6fa0c80d879f027",
+      "sha256": "dd38395fb0e571f45dcc36a839880b241dd28b1f2f33ebcb2e5ea1bf0f2c5518"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-decorated-interval-replay.json",
+      "git_blob": "dcf3906391ca1270f85f727f1ca1e7ba024add9c",
+      "sha256": "6b46736b8191746bde0f13687db72bf4e6005b8d3ac777644d21cc1c824e7310"
+    },
+    {
+      "path": "research/grids-and-triangles/root42_decorated_interval_result.md",
+      "git_blob": "30070af30c789b5de02e45fc424c33510f1553d2",
+      "sha256": "a981bdd7bd54631589ae173c8b1b5b75e0627fdb022bb78e9735935f9fa95c29"
+    }
+  ],
+  "preparation_manifest_git_blob": "ec8a13a4537486d8854808b2e61dcf562d43969f",
+  "immutable_point_git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+  "immutable_point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "query_invocations": 1,
+  "query_observed_ms": 29,
+  "separate_replay_observed_ms": 170,
+  "exact_parameter_rectangle": [
+    {
+      "parameter": "u0",
+      "lower": 0,
+      "upper": 8764,
+      "modulus": 2
+    },
+    {
+      "parameter": "u1",
+      "lower": 0,
+      "upper": 966,
+      "modulus": 2
+    }
+  ],
+  "feasible_even_pairs": 2121372,
+  "chosen_parameters": [
+    0,
+    0
+  ],
+  "positive_atoms": 319,
+  "zero_atoms": 24,
+  "labelled_root_mass": 55883520,
+  "optimizer_called": false,
+  "graph_existence_resolved": false,
+  "scope": "Complete decorated local state distribution for root42 at the fixed count point, including all known induced moments and all root-stabilizer divisibilities."
+}

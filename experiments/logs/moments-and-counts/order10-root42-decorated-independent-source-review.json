@@ -1,0 +1,32 @@
+{
+  "status": "PASS: independent complete read-only source and mathematical review",
+  "source_git_blob": "22fc45985c4637a1c984fbc8e59640a5e72bc63f",
+  "source_sha256": "204e855ab80d548894b91e58716a8f8788103c683fce539d2504c4215f52ecb2",
+  "preparation_git_blob": "4a9b464efe9beaa097e0a8f19621f064b44b7502",
+  "preparation_sha256": "5a40ee1b8a1c5fce55882204f4c35ef3230e78fe94b5f03e3111c6c0bdc431d9",
+  "note_git_blob": "0dd940a8aca1ac6562ce5975b8ef63e5b939a968",
+  "reported_dimensions": {
+    "decorated_states": 343,
+    "orbits": 33,
+    "known_states": 319,
+    "known_orbits": 31,
+    "unknown_orbits": 2
+  },
+  "checked": [
+    "The complete presence inequalities force population at most five; a five-set has a Hamiltonian A-path and its two B endpoints.",
+    "Only disjoint complementary A pairs can be high edges. The source checks all internal graphs, and every admissible edge set is a subgraph of those three disjoint pairs.",
+    "Induced restriction fixes all internal edges on the smaller mask set; each interval below a fixed upper state is Boolean. Its inversion coefficient is the sign of the population difference, without another graph multiplicity.",
+    "Distinct high masks give uniqueness of each high vertex. The literal moment is the full unrooted automorphism order times the induced graph count, with no rooted or orbit divisor.",
+    "The two fifth-state orbits share one mass per labelled state, not one orbit-total mass. Their stabilizer order two forces each parameter to be even.",
+    "The population-triangular unit minor gives rank31 for the31 known orbit equations. Full symbolic inversion leaves exactly the two fifth-state parameters.",
+    "Coefficientwise divisibility and coarsening use the correct convention u=u0+u1. The preparation itself evaluates no count point."
+  ],
+  "scope": {
+    "source_run": false,
+    "domain_census_repeated": false,
+    "symbolic_ledger_replayed": false,
+    "count_point_loaded": false,
+    "optimizer_called": false
+  },
+  "qualification": "This source/math gate does not evaluate the future two-dimensional integer feasibility problem or assert graph existence."
+}

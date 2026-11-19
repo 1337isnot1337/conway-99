@@ -1,0 +1,34 @@
+{
+  "status": "PASS_READ_ONLY_SOURCE_AND_MATHEMATICAL_REVIEW",
+  "subject_source": "experiments/workspace/rook_case4_cover_compression.py",
+  "source_sha256": "293787214bb7ad4c20a60ef03d8d2c0eee8f1142d3b015f80d285cc6a9ad1164",
+  "preparation_path": "experiments/logs/grids-and-triangles/rook-case4-cover-compression01/preparation.json",
+  "preparation_sha256": "083f9a85d48a96e3a5fc5fd0f2e1bd37fdfc6ef068142de4ee4a43437a733a0a",
+  "saved_owner_cold_replay_sha256": "3a8981201b85f53b7d88314df2991695ca048eee5d67709efd470adb215320d8",
+  "certificate_sha256": "ecd80cb44cfc6464bab1e8c711229bef2a7da9d9334900f24d422d6a46841834",
+  "entire_source_read": true,
+  "original_native_rows_retained": 1992,
+  "reported_original_rows": 174208,
+  "reported_retained_rows": 127421,
+  "reported_retained_nonzeros": 8483109,
+  "mathematical_checks": [
+    "A same-guard subset cover implies a larger-support cover over nonnegative real coordinates.",
+    "A retained equality sum_E x=q and |E minus S|<=q-1 imply sum_S x>=1>=x_guard using only the unchanged unit box.",
+    "A retained same-guard weighted row sum_T w_b x_b>=d x_guard with 0<w_b<=d and T subset S implies sum_S x>=x_guard over real nonnegative coordinates.",
+    "Every omitted upper bound follows directly from the unchanged unit box.",
+    "When an intermediate subset cover is removed, its native witness is substituted and directly rechecked against the final original cover; no omitted-row dependency is retained.",
+    "The certificate verifier partitions every cover into retained or exactly one omitted record and verifies every witness against a final retained original row.",
+    "Projection copies all native rows, every selected cover, all bounds and original-column identifiers without changing coefficients.",
+    "The source uses no Boolean integrality assumption, Boolean capping, optimizer, or new graph necessity."
+  ],
+  "controls_scope": "The 27 same-guard control vectors are integer multiples of one half; homogeneity makes them valid fractional unit-box controls. The general native-row implications were reviewed algebraically.",
+  "limitations": [
+    "This audit read and checked the source and hashes; it did not rerun the 174208-row certificate, matrix projection, or optimizer.",
+    "Reported row counts are bound to the saved owner preparation and cold replay, not independently recounted here.",
+    "The real unit-box feasible set is unchanged. No case4 exclusion is claimed."
+  ],
+  "mathematical_gate": true,
+  "source_gate": true,
+  "matrix_rebuilt": false,
+  "solver_called": false
+}

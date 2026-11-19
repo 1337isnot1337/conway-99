@@ -1,0 +1,94 @@
+{
+  "status": "exact original-row bound found; independent cold replay required",
+  "source_bindings": {
+    "driver_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_maxmin_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "frozen_compression_sha256": "293787214bb7ad4c20a60ef03d8d2c0eee8f1142d3b015f80d285cc6a9ad1164"
+  },
+  "preparation_sha256": "39e31c08a0a4aaa1bb9174653056f5ce1db3b6f13c6bb7d0feb4167fb506f861",
+  "limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096,
+    "preparation_compression_decode_seconds": 60
+  },
+  "iterations": [
+    {
+      "call_index": 0,
+      "active_rows": 3148,
+      "numeric_artifact": {
+        "path": "iteration-00-numeric.json.gz",
+        "sha256": "e8bd3f403480297ef4c64780d1f515c31a3f616019eee4c43b1040f768687f15",
+        "decompressed_sha256": "8a9e25596dbab3d89a3affb0217108e560d167c9448a213b6dc1b2059aa6262d",
+        "decompressed_bytes": 102369
+      },
+      "added_after_call": [],
+      "scan": {
+        "all_original_and_extension_rows_scanned": 175364,
+        "full_matrix_nonzeros_scanned": 11871194,
+        "retained_cover_rows_scanned": 125429,
+        "active_rows_scanned": 3148,
+        "full_row_violation_count": 0,
+        "maximum_full_row_violation": 3.375077994860476e-14,
+        "maximum_active_row_violation": 3.375077994860476e-14,
+        "maximum_retained_cover_violation": 0.0,
+        "maximum_variable_bound_violation": 0.0,
+        "violated_unseen_retained_covers": 0,
+        "selected_new_cover_rows": [],
+        "selection_rule": "descending floating violation, then ascending original row ID",
+        "exact_feasibility_claimed": false
+      },
+      "scan_seconds": 0.05261459800385637
+    }
+  ],
+  "automatic_retry": false,
+  "production_run_calls": 1,
+  "solver_and_existing_ray_seconds": 1.7164628879982047,
+  "added_cover_rows": 0,
+  "exact_infeasibility_certificate_found": false,
+  "exact_zero_face_certificate_found": true,
+  "exact_rational_point_found": false,
+  "case4_exclusion_verified": false,
+  "whole_graph_problem_resolved": false,
+  "definition_sha256": "02132919c8fe0e7f07e5a780ef4a8128fac8a7e96e0b5cd187199496fc47456c",
+  "input_replay_seconds": 10.99694434399862,
+  "native_bootstrap_seconds": 0.12435213800199563,
+  "numerical_stop_reason": "no unseen retained cover violated; full exact acceptance still required",
+  "numerical_phase_seconds": 1.9222607090050587,
+  "bound_reconstruction_attempts": [
+    {
+      "method": "scale",
+      "parameter": 1,
+      "orientation": -1,
+      "gamma": "1",
+      "nonzero_rows": 0,
+      "exact_bound": "1"
+    },
+    {
+      "method": "scale",
+      "parameter": 8,
+      "orientation": -1,
+      "gamma": "8",
+      "nonzero_rows": 15,
+      "exact_bound": "0"
+    }
+  ],
+  "exact_certificate": {
+    "path": "exact-bound-certificate.json.gz",
+    "sha256": "3af7036700d27d89d977dd605d70158f975393e7e35bac80b3eb87b326feb4e3",
+    "decompressed_sha256": "23888b3bc64835327c02483e17e131301693905298042a2a921e944853e03a64",
+    "decompressed_bytes": 12048
+  },
+  "exact_stage_seconds": 0.029273184001795016,
+  "elapsed_seconds": 12.94953352399898,
+  "peak_rss_kib": 473160
+}

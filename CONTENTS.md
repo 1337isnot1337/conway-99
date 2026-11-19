@@ -1,6 +1,6 @@
 # Research catalog
 
-Checkpoint 49 publishes [complete recovered transcripts and exact finite moment certificates](research/checkpoint49_recovered_moment_certificates.md). It adds the 4,404-cut F0 search record with a fresh exact replay, the refined 200-row rational measure, all 33 decorated small-root distributions, and the root-42 even moment interval. None resolves graph existence.
+Checkpoint 50 adds [23 proved selector zeros in rook case four](research/grids-and-triangles/rook_case4_four_gram_face.md), [exact feasibility of all 4,416 Boolean F0 cuts](research/root_prism_free_f0_boolean_fractional_result.md), and a [complete second selector-moment preparation](research/root_prism_free_f0_second_moments.md). The [triangle-projector tests](research/grids-and-triangles/triangle_projector_order_ten.md) and [decorated root-42 test](research/grids-and-triangles/root42_decorated_interval_result.md) both pass at the count vector. Graph existence remains unresolved.
 
 Every structural result below concerns a hypothetical strongly regular graph with parameters $(99,14,1,2)$. The ledger gives the assumptions and stopping points of the construction and solver runs. [Research ledger](STATE.md)
 
