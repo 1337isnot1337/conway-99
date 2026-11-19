@@ -1,0 +1,131 @@
+{
+  "status": "exact35-core binary incidence formula prepared; main model not solved",
+  "source_hashes": {
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992"
+  },
+  "prefix_certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-domains-prefix01/certificate.json",
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "root_census_sha256": "832440adb66015b27d1d58dbd0cee5079f735f07553b24a789aeacbf994fe394",
+  "complete_index_cases": 2521,
+  "case": {
+    "index": 9,
+    "local_set_orbit": 0,
+    "matching_index": 9,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 9,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "86ef3e535cbe74749e9694cffd4580d2d57bd9f36dbbbeeadb8f098601527aa4",
+  "column_domain_sha256": "3364e66531d867866a550ffe53ce71fa0826c70d1dc37be0f112ff0c263d80f1",
+  "Gram_sha256": "39fb028ff5ae00c33bb9fdf00beefbb3c7269c064ca401c2c03c04ad50c758d4",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-case0009.cnf",
+  "cnf_sha256": "3d0abc9c9427793eb5d6ec03a40bd2fed0b77c022d7dbf51eb85f19b595e2db7",
+  "controls": {
+    "small_counter_truth_assignments": 896,
+    "rook9_core_vertices": [
+      0,
+      1,
+      3,
+      4,
+      8
+    ],
+    "rook9_outside_vertices": [
+      2,
+      5,
+      6,
+      7
+    ],
+    "rook9_candidate_columns": 17,
+    "rook9_exact_incidence_positive_control": true,
+    "rook9_deleted_column_negative_control": true,
+    "main35core_solver_called": false
+  },
+  "population_and_attachment_counts_are_derived": [
+    64,
+    4,
+    40,
+    20
+  ],
+  "remaining_exterior_edge_variables": 0,
+  "graph_automorphism_assumptions": 0,
+  "additional_a_or_spectral_constraints": 0,
+  "selected_incidence_design_fixed": false,
+  "SAT_scope": "binary necessary incidence witness for one35-core; no exterior completion",
+  "UNSAT_scope": "one indexed35-core and its verified relabelings only",
+  "build_seconds": 5.700909235998552
+}
+{
+  "primary_columns": 1284,
+  "variables": 114173,
+  "clauses": 233228,
+  "clause_counts": {
+    "Gram_equalities": 229487,
+    "original_signature_at_most_one": 3060,
+    "additional_core_triple_at_most_one": 681
+  },
+  "all_Gram_rows": 630,
+  "distinct_Gram_equations_including_empty_zero": 397,
+  "nontrivial_triple_capacity_rows": 1386,
+  "auxiliary_variables_begin_at": 1285
+}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0009-model.json",
+  "model_sha256": "ed7ea0ad72e414fea7cd51cd7ae7a2610f0d4501c171e67b3eead9391d57f0ee",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 9,
+  "cnf_sha256": "3d0abc9c9427793eb5d6ec03a40bd2fed0b77c022d7dbf51eb85f19b595e2db7",
+  "requested_solver_seconds_including_bootstrap": 10,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 99168,
+  "bootstrap_seconds": 0.6217157179999049,
+  "solve_return_seconds": 10.004346697998699,
+  "solver_statistics": {
+    "restarts": 28,
+    "conflicts": 6231,
+    "decisions": 20154,
+    "propagations": 15598184
+  },
+  "elapsed_seconds": 10.04418344000078
+}
+{
+  "status": "cold formula rebuild and UNKNOWN binding checked; no exclusion",
+  "model_sha256": "ed7ea0ad72e414fea7cd51cd7ae7a2610f0d4501c171e67b3eead9391d57f0ee",
+  "cnf_sha256": "3d0abc9c9427793eb5d6ec03a40bd2fed0b77c022d7dbf51eb85f19b595e2db7",
+  "case_index": 9,
+  "whole_complementary_core_excluded": false
+}

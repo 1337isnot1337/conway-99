@@ -1,0 +1,61 @@
+{
+  "status": "PASS: complete raw coverage, explicit isomorphisms, triple domains and controls",
+  "retained_shells": 8992,
+  "representatives": 66,
+  "standard_library_only": true,
+  "optimizer_called": false,
+  "elapsed_seconds": 1.917531693001365
+}
+{
+  "status": "one necessary component incidence model prepared; main model not solved",
+  "source_hashes": {
+    "root_prism_free_f0_incidence.py": "00cd6e683a8bfb602cfd29f8dbb3481be0f87df55f2963ae98613f2af9146971",
+    "root_prism_free_f0_components.py": "f1c3b49cd084dde9df8f421a79dfbf2233d58c07f03ebb53ef2b58449fed54f4",
+    "root_prism_free_f0_pair_clauses.py": "367b7f850d087067b547653d31bf4b25743f30934583252de1199cffb358daac"
+  },
+  "domain_certificate": "experiments/logs/root-prism-free/f0-components-certificate.json.gz",
+  "domain_certificate_sha256": "dc8aad926550cef6a8ee39aa8f4efbd056773950183b9e0ac86b195e8057c3fd",
+  "pair_certificate": "experiments/logs/root-prism-free/f0-pair-clauses.json.gz",
+  "pair_certificate_sha256": "47e9d8f518fab10aee604f33df1f22c97b0d201a1af4180e4307553e4857672f",
+  "case": 0,
+  "complete_component_cover_size": 66,
+  "scope": "globally prism-free SRG(99,14,1,2), x521=0, split18+18 triangle shell, one indexed component",
+  "domain_record_sha256": "37f17cc23d8a81a4b6b7b70b25002474921704638f5656c228dd7df8f2883bb1",
+  "pair_record_sha256": "a5c38a7e63310dcd0159573437801b523670ea171420346860912e3b338cc7ab",
+  "cnf": "/tmp/conway99-f0-incidence-case00.cnf",
+  "cnf_sha256": "80550d618fb253c3a5a5646477e17e06c81c8f4d17d6cddcc0db1ee0d28ee315",
+  "controls": {
+    "elementary_truth_assignments": 773,
+    "rook9_known_incidence_positive_control": true,
+    "rook9_deleted_column_negative_control": true,
+    "main_component_model_solved": false
+  },
+  "complete_cover_and_motif_replay_passed": true,
+  "population60_and_profile24_36_are_derived": true,
+  "graph_automorphism_assumptions": 0,
+  "fixed_incidence_witness": false,
+  "SAT_scope": "exact necessary one-component incidence witness, no graph completion",
+  "UNSAT_scope": "this component representative and its verified relabelings only",
+  "elapsed_seconds": 2.6407837769984326
+}
+{
+  "primary_variables": 480,
+  "variables": 28308,
+  "clauses": 56550,
+  "Gram_cardinality_clauses": 56460,
+  "distinct_Gram_equations_including_empty_zero": 151,
+  "motif_conflict_clauses": 90,
+  "auxiliary_variables_begin_at": 481,
+  "F_conflicts": 78,
+  "prism_conflicts": 12,
+  "conflicts_in_both_families": 0,
+  "F_conflict_family_counts": {
+    "central-shell edge": 60,
+    "cross-shell edge, first chord": 12,
+    "cross-shell edge, third-fiber mate": 6
+  },
+  "primary_domain_sha256": "c10de8bc9484041dcc4a2bae86a80d00a52bed7199f5cfbf6de2f9563192a8f1",
+  "all66_domain_coverage_available": true,
+  "additional_orbit_or_incidence_equalities": 0,
+  "exterior_edge_variables": 0
+}

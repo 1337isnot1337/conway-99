@@ -305,6 +305,19 @@ full-baseline/reduced-formula reconstruction and DRAT commands for its
 two transported conditional proofs. The free reduced-star pilot remains
 UNKNOWN.
 
+The [35-core matching-cover note](../research/grids-and-triangles/complement_rook_35core_first_local_sweep.md)
+gives the complete replay for the five checked exclusions and 144
+conditional edge clauses. Its ordinary replay checks matching coverage
+and transports. Adding `--verify-proofs` rebuilds every required domain
+and CNF, checks retained-input membership, and runs DRAT verification.
+The 23 UNKNOWN cases remain unresolved.
+
+The [split-component package](../research/root_prism_free_f0_incidence.md)
+contains a complete 66-component cover and a SAT witness for one
+component's sixty exterior-neighbor triples. Its manifest records the
+independent domain/motif audit and cold formula/witness replay. The
+witness supplies neither the second component nor exterior adjacency.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh
@@ -399,12 +412,24 @@ The [six-root moment package](../research/grids-and-triangles/grid_free_order10_
 has eighteen exact quadratic cuts and a separate direct-graph reconstruction
 of every product used in those cuts. Its saved-tensor replay checks exact
 contractions against the bound cache; the fresh reconstruction does not
-use those tensors to generate coefficients. The note gives both commands.
+use those tensors to generate coefficients. With the preparation's bound
+catalogue and input paths available, the two checks are:
+
+```sh
+.venv/bin/python experiments/workspace/grid_free_order10_r6s2_scan.py replay \
+  --certificate experiments/logs/moments-and-counts/prism-zero-order10-r6s2-scan.json \
+  --output /tmp/conway99-r6s2-cache-replay-new.json
+.venv/bin/python experiments/workspace/grid_free_order10_r6s2_fresh_replay.py run \
+  --preparation experiments/logs/moments-and-counts/prism-zero-order10-r6s2-fresh-preparation.json \
+  --output /tmp/conway99-r6s2-fresh-replay-new.json \
+  --seconds 300
+```
+
+Use a new output path for the fresh reconstruction.
 The [full cache and scanner note](../research/grids-and-triangles/grid_free_order10_r6s2_full_cache.md)
 records all 62 roots, the seven-block continuation, and controls for the
 nonbinary flags. Its manifests bind the source and data files. A complete
 scan with no detected separator does not certify positive semidefiniteness.
-
 
 Run the individual research scripts from [`experiments/workspace/`](workspace/). The Python and C++ sources, certificate JSON, candidate arrays, and cached moment data share this directory because the scripts use sibling paths.
 

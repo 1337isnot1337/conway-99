@@ -221,6 +221,29 @@ matching choices on those representatives. All resulting 35-vertex cores
 pass visible pair caps and both exact principal-projector tests. This
 census supplies complete local cases for stronger incidence models; it
 does not establish extension of any case to 99 vertices.
+The [35-core attachment model](research/grids-and-triangles/complement_rook_35core_incidence.md)
+adds complete Gram quotas, signature uniqueness, and core-triple packing.
+A [bounded sweep of the first local set](research/grids-and-triangles/complement_rook_35core_first_local_sweep.md)
+checks all 28 matching descriptions: five have full-domain DRAT exclusions
+and 23 remain UNKNOWN. Four exclusions cover every matching containing
+one specified edge. This gives a conditional forbidden edge and 144
+explicitly transported seven-literal clauses. The original local set
+still has a [27-core Gram witness](research/grids-and-triangles/complement_rook_35core_local_incidence_control.md);
+neither the local set nor the complementary-rook case is excluded.
+
+On the globally prism-free `x521=0` face, a triangle's cubic shell is
+connected on 36 vertices or splits into two eighteen-vertex components.
+The [complete split-component census](research/root_prism_free_f0_components.md)
+has 66 representatives, with explicit coverage of all 8,992 retained
+normalized descriptions. Every exterior vertex must have three neighbors
+in each component. A [binary incidence model](research/root_prism_free_f0_incidence.md)
+for representative zero has an exact sixty-triple witness satisfying
+all 171 Gram positions and 90 additional visible-motif conflicts.
+The other 65 representatives were not queried. This witness does not
+provide the other component or the exterior graph. A
+[connected shell control](research/root_prism_free_f0_connected_control.md)
+also has all three central edge types equal to 33, so those types alone
+do not force the split.
 
 ## Scope of the unrestricted computations
 

@@ -6,17 +6,18 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Coupled short-vector constraints in the negative eigenlattice, beyond the
-   existing scalar theta tests. Owned by the eigenlattice worker.
-2. Exact spectral constraints on a coclique containing seven neighbors of a
-   root. Owned by the independent-set worker.
-3. Unrestricted completion of a square with its four triangle tips. Owned by
-   the completion worker.
-4. Global counts and compatibility of triangles, grids, and small cores.
-   Owned by the coordinating worker.
+1. Complementary-rook incidence and local 35-vertex cores. Owned by the
+   independent-set worker.
+2. Complete order-ten flag families and exact moment separators. Owned by
+   the literature/obstructions worker.
+3. Prism-free triangle shells and their component incidences. Owned by the
+   completion worker.
+4. Count-loop integration, independent checks, and publication. Owned by
+   the coordinating worker.
 
-The joint-cell Gram analysis for roots in fifteen grids is reserved to the
-separate worker in issue 1. This session does not claim that case.
+The separate worker in issue 1 owns the incomplete-grid corner graph,
+arbitrary-square extensions, complete-grid corners, and twenty-point
+diagonal cubic graphs. This session does not duplicate those domains.
 
 ## Starting boundary
 
@@ -549,3 +550,23 @@ their hypotheses permit them; computational exclusions require exact replay.
   cubic graphs. Our count, complementary-rook, and prism-free shell
   work remains separate. The external new classifications have not
   been independently replayed on this branch.
+- The first 35-core binary incidence query is UNSAT with a fresh proof,
+  independent attachment/row audit, full cold formula rebuild, and DRAT
+  replay. The same local eight-signature set still has a 27-core Gram
+  witness with parameter a=10, so the stronger attachment constraints
+  supply information absent from those Gram rows.
+- The full first-local-set pilot covers 28 matching descriptions. Cases
+  0, 1, 3, 8, and 21 have checked exclusion proofs; the other 23 are
+  UNKNOWN. Cases 0, 1, 8, and 21 cover every matching containing one
+  specified edge. Exact matching coverage and endpoint activation give
+  a seven-literal conditional edge clause. All 144 core relabelings
+  produce distinct clauses with explicit transports. The local set
+  itself remains open.
+- On the globally prism-free x521-zero face, the triangle shell is
+  connected or splits into two eighteen-vertex components. A complete
+  census covers 8,992 retained descriptions by 66 representatives.
+  Every exterior vertex has three neighbors in each component. The
+  first component's binary incidence model is SAT with sixty distinct
+  triples, all 171 Gram positions, and 90 visible-motif conflicts checked.
+  Its cold formula/witness replay passes. A connected shell with all
+  three central edge types 33 prevents an invalid split inference.

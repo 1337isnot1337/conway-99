@@ -54,6 +54,12 @@ A [complete local-star census](research/grids-and-triangles/complement_rook_loca
 covers 864 signature sets, 118 set orbits, and 2,521 matching choices on
 the representatives. All pass both exact projector tests; no core is
 excluded by this census.
+The [35-core attachment domains](research/grids-and-triangles/complement_rook_35core_domains.md)
+lead to a [checked bounded matching sweep](research/grids-and-triangles/complement_rook_35core_first_local_sweep.md).
+Five of the first local set's 28 matchings are excluded; 23 are UNKNOWN.
+A complete four-case cover forbids one conditional edge, with 144 exact
+clause transports. The [Gram-only control](research/grids-and-triangles/complement_rook_35core_local_incidence_control.md)
+remains feasible.
 
 ## Eigenlattices
 
@@ -70,6 +76,8 @@ excluded by this census.
 - [The positive eigenspace](research/eigenlattices/positive_lattice.md) gives a companion construction in the $3$ eigenspace.
 
 ## Other computations
+
+- [Prism-free, F-free triangle-shell components](research/root_prism_free_f0_components.md) reduce the split case to 66 eighteen-vertex representatives. The [first binary incidence query](research/root_prism_free_f0_incidence.md) has an exact sixty-triple SAT witness and excludes no component. A [connected all-33 control](research/root_prism_free_f0_connected_control.md) prevents treating the central edge types as a split theorem.
 
 - [The unrestricted rooted complete-cap model](research/root_full_caps.md) retains all 3,486 exterior edge variables and every pair cap. Eleven anchor-matching cases cover every hypothetical graph. [Independent coverage](research/root_full_caps_matching_audit.md), [closed-form orbit and local-cell checks](research/grids-and-triangles/root_full_caps_matching_orbit_audit.md), and [the builder audit](research/root_full_caps_builder_independent_audit.md) establish the model's scope; bounded outcomes are recorded separately.
 - [A separate lexicographic overlay](research/root_full_caps_lex.md) uses each matching stabilizer to retain at least one labeling per graph. Complete group enumeration, edge lifts, and independent Boolean controls pass. The preparation certificate does not exclude a rooted case.
