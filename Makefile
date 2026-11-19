@@ -122,3 +122,7 @@ verify-four-missing-grid-cones:
 	"$(CXX)" -std=c++20 -O3 $(CXXFLAGS) "$(WORKSPACE)/central_grid_fill.cpp" -o "$$build_dir/central-grid"; \
 	OPENBLAS_NUM_THREADS=1 "$(PYTHON)" "$(WORKSPACE)/sparse_grid_cones.py" "$$build_dir/central-grid"
 	cd $(WORKSPACE) && "$(PYTHON)" eleven_grid_supports.py
+
+.PHONY: verify-ten-grid-bound
+verify-ten-grid-bound: verify-four-missing-grid-cones
+	cd $(WORKSPACE) && "$(PYTHON)" last_eleven_grid.py

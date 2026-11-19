@@ -110,6 +110,8 @@ Each rooted grid [has at least four nongrid pairs disjoint from its axis pair](r
 
 With exactly four missing pairs opposite a rooted grid, [the four pairs form a cycle](research/grids-and-triangles/four-missing-cones.md). The other five shapes yield 2,550 signed neighborhoods, all excluded. The only eleven-grid support is a full six-edge star together with five edges on four leaves. A vertex outside full triangles lies in **at most ten grids** and has at least **44 percolating nonneighbors**.
 
+The [ten-grid bound](research/grids-and-triangles/ten-grid-bound.md) excludes the last eleven-grid support. Two missing pairs have the same defect vector; its squared norm and its signed-axis equations on three square cells are incompatible. Thus every vertex lies on **at most ten grids** and has at least **44 percolating nonneighbors**.
+
 The [parallel deficit inequality](research/grids-and-triangles/parallel-triangle-deficits.md) implies that two parallel full triangles force a partition into 33 triangles. There are 35 marked cores for the third parallel line.
 
 The [five-grid branching contradiction](research/grids-and-triangles/branching-full-triangles.md) gives at least three grids having exactly one full triangle per full triangle on average. The global bounds become 113 grids, 2,124 percolating nonedges, 1,206 two-edge triangle pairs, and five triangles on at most two grids.
