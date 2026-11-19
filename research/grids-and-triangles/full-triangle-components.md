@@ -39,3 +39,17 @@ over the remaining component types. At $t=24,25,26,27,28$ the upper bounds are $
 Finally suppose $g=113$. The inequality $21g\le2277+4t$ forces $t=24$ and equality at every preceding step. In particular every triangle of positive grid degree $d$ has $s_T=12-2d$: the [capacity bound](disjoint-full-bounds.md) replaces $s_T$ by this upper bound with strictly positive coefficient $\min(2,d)$. A grid with exactly two full lines would have a saturated third parallel line of degree one to four and deficit zero, contradicting equality. Thus $b_2=0$. Repeating the recurrence using only components with $a=0$ gives $2b_3\le28$ at $t=24$, requiring $g\ge144-28=116$. This excludes 113.
 
 Consequently there are at most **112 grids** and at least **2,142 percolating nonedges**. At least seven triangles have grid degree at most two, since the total degree is at most $672$, at least 21 short of $3\cdot231$.
+
+## After the nine-triangle cover exclusion
+
+Three disjoint triangles in a forced graph can be the three rows of the [forbidden nine-triangle cover](nine-triangle-cover.md). The checker enumerates triples of disjoint triangles and compares their induced graphs with the nine-vertex rook graph by canonical labeling. This leaves 30 of the 48 candidates. In 28, every block passes through a common full triangle (including the singleton). The other two are the complete bipartite graphs $K_{2,2}$ and $K_{2,3}$, with an additional saturated nonfull triangle forced by each edge. The checker verifies that each such extra triangle is matched to exactly two of the original full triangles.
+
+There are **at most 22 full triangles**. For $t=24$ the new maximum of $b_2+2b_3$ is 28, requiring at least 116 grids. For $t=23$ the maximum is 26, requiring $g=112$ and savings exactly 26. A pencil on $m$ full triangles saves $m-1$ grids, a four-cycle saves four, and $K_{2,3}$ saves six. Thus savings at least $t+3$ requires at least three components of type $K_{2,3}$.
+
+Retain the unused capacity in the [weighted witness inequality](disjoint-full-bounds.md). With $q_T=\min(2,d_T)$ it gives
+$$
+84g+\sum_T q_T(12-2d_T-s_T)\le 9108+16t.
+$$
+Indeed $2\sum_p C_p\le-3\sum_T q_T(12-2d_T-s_T)$, and the root enumeration gives $\sum_p C_p\ge126g-138\cdot99-24t$. All terms in the capacity sum are nonnegative. A forced saturated nonfull triangle has $s_T=0$ and $1\le d_T\le4$, so it contributes at least eight.
+
+The six extra triangles of each $K_{2,3}$ are distinct even from those forced in a different component. Each extra vector is the negative sum of the endpoints of its generating edge. Its inner product varies across the originals of its own component, since it is matched to exactly two. Any vector generated from a different component has constant inner product across those same originals, because the original cross-component products are constant. The three required components would therefore contribute at least $3\cdot6\cdot8=144$, exceeding the available $9108+16\cdot23-84\cdot112=68$.

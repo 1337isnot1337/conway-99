@@ -128,6 +128,18 @@ def forced_triangles(h):
     return (gram == -2).astype(int)
 
 
+def contains_rook(h, rook):
+    triangles = [tri for tri in combinations(range(len(h)), 3)
+                 if all(h[i, j] for i, j in combinations(tri, 2))]
+    for rows in combinations(triangles, 3):
+        vertices = sum(rows, ())
+        if len(set(vertices)) == 9:
+            subgraph = h[np.ix_(vertices, vertices)]
+            if np.all(subgraph.sum(axis=1) == 4) and certificate(subgraph) == rook:
+                return True
+    return False
+
+
 def best_savings(options, limit):
     table = [0]
     for t in range(1, limit+1):
@@ -138,7 +150,10 @@ def best_savings(options, limit):
 def main():
     pairs = list(combinations(range(6), 2))
     forbidden = certificate(np.array([[int(set(e).isdisjoint(f)) for f in pairs] for e in pairs]))
+    rook = certificate(np.array([[int(i != j and (i//3 == j//3 or i%3 == j%3))
+                                 for i in range(9)] for j in range(9)]))
     options = set()
+    after_rook = set()
     no_double = set()
     census = Counter()
     for h in candidates():
@@ -154,12 +169,34 @@ def main():
         doubles = int(h.sum()) // 2 - 3*triples
         entry = len(h), doubles + 2*triples
         options.add(entry)
+        if not contains_rook(forced, rook):
+            census['after rook'] += 1
+            after_rook.add(entry)
+            degrees = h.sum(axis=1)
+            if len(h) == 1 or np.max(degrees) == len(h)-1:
+                if len(h) > 1:
+                    center = int(np.argmax(degrees))
+                    assert np.all(np.delete(degrees, center) <= 2)
+                census['pencils'] += 1
+            else:
+                # The two remaining graphs are the complete bipartite K2,2 and K2,3.
+                n = len(h)-2
+                assert n in (2, 3)
+                bipartite = np.zeros_like(h)
+                bipartite[:2, 2:] = bipartite[2:, :2] = 1
+                assert certificate(h) == certificate(bipartite)
+                assert len(forced) == len(h) + 2*n
+                assert np.all(forced[len(h):, :len(h)].sum(axis=1) == 2)
         if doubles == 0:
             no_double.add(entry)
     best = best_savings(options, 28)
     isolated = best_savings(no_double, 24)[24]
-    assert census == {'candidates': 200, 'consistent': 150, 'remaining': 48}
+    assert census == {'candidates': 200, 'consistent': 150, 'remaining': 48, 'after rook': 30, 'pencils': 28}
     assert best[24:] == [36, 36, 37, 38, 40] and isolated == 28
+    new = best_savings(after_rook, 24)
+    assert new[23:] == [26, 28]
+    print('After the 27-point exclusion: 28 pencils, K2,2, and K2,3.')
+    print('Maximum savings at 23 and 24 full triangles:', new[23:])
     print('Full components: 200 candidates, 150 pass closure, 48 remain after the 45-point exclusion.')
     print('Maximum double plus twice triple grids at 24 to 28 full triangles:', best[24:])
     print('With 24 full triangles and no double grids:', isolated)

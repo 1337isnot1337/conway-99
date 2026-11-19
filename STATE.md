@@ -95,3 +95,5 @@ The [five-grid branching contradiction](research/grids-and-triangles/branching-f
 The [full-component census](research/grids-and-triangles/full-triangle-components.md) reduces 200 candidate components to 48. It gives 24 full triangles and 112 grids as upper bounds, and 2,142 percolating pairs and seven triangles of degree at most two as lower bounds.
 
 The [nine-triangle rook cover exclusion](research/grids-and-triangles/nine-triangle-cover.md) rules out the 27-point cover for every flat row and column transport. Of 1,296 normalizations, five cores admit exterior attachments. All 86 resulting adjacency CNFs have independently verified DRAT refutations.
+
+Applying that exclusion to the induced subgraphs of every forced component leaves 28 pencils, a four-cycle, and $K_{2,3}$. Counting the distinct forced saturated lines gives [at most 22 full triangles](research/grids-and-triangles/full-triangle-components.md#after-the-nine-triangle-cover-exclusion).
