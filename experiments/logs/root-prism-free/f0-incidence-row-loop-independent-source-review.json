@@ -1,0 +1,15 @@
+{
+  "status": "read-only complete loop source, exact acceptance and prefix replay review PASS",
+  "reviewed_source": "experiments/workspace/root_prism_free_f0_incidence_row_loop.py",
+  "reviewed_source_sha256": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+  "cut_necessity": "Every full weighted cut is recomputed directly from its integer vector, target mixed quotas, and complete eligible neighbor list. Positive demand and all positive coefficients are checked before encoding; discovery or transport provenance does not replace this direct check.",
+  "predicate_deduplication": "Target selector, capped/gcd-normalized positive terms, and ceiling demand bind the Boolean predicate. An existing equivalent predicate is reused without adding incidence restrictions.",
+  "prefix_and_auxiliary_review": "Each encoding starts above the exact current CNF maximum ID. The registry, encoding order, clause-start offsets and suffix hashes are preserved. Resource refusal occurs before adding a partial cut.",
+  "candidate_and_stop_review": "Each SAT assignment is checked against all old incidence rows and weighted cuts. New cuts arise only from exactly verified row obstructions. No visitation blocks or fixed design are imposed. UNKNOWN, row failure, empty obstruction pass, resource refusal and overall bounds stop the loop.",
+  "partial_pass_scope": "Exactly verified cuts from an incomplete row pass may be retained, then the loop stops. Missing rows remain open. Exact rational boxes are separate row witnesses, not a joint exterior graph.",
+  "cold_reconstruction": "Rebuilds initial formula, each exact cut in order, each candidate against its current prefix, explicit aliases and partial transport coverage, final registry and encoding records, then binds the full final CNF hash.",
+  "UNSAT_scope": "Incremental UNSAT remains uncertified. The separate fresh-proof wrapper is required before a component exclusion. That wrapper was not independently reviewed in this artifact.",
+  "optimizer_or_solver_called": false,
+  "CNF_or_certificate_reconstructed": false,
+  "reported_control_counts_rerun": false
+}

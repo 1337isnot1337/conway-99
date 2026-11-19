@@ -6,14 +6,14 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Remaining twenty first-local complementary-rook matchings and exact
-   Gram cuts. Owned by the independent-set worker.
-2. Seven-root absence moment matrices, after the complete eight-root
-   projector and integer-class scans. Owned by the literature worker.
-3. Exact two-column Gram cuts for the full split-component pair. Owned
-   by the completion worker.
-4. Count-loop integration, independent checks, and publication. Owned by
-   the coordinating worker.
+1. Boolean encoding of sixty proved exterior-row cuts for complementary-
+   rook matching case four. Owned by the independent-set worker.
+2. Products of clique-absence moment matrices. Owned by the literature
+   worker.
+3. Free-selector incidence separation by individual rows and shared
+   symmetric edges. Owned by the completion worker.
+4. Four-variable Boolean atom tests, independent checks, and publication.
+   Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -683,3 +683,25 @@ their hypotheses permit them; computational exclusions require exact replay.
   embedded replay is documented; a separate wrapper cold-replays the
   unchanged domain successfully. The complete point scan finds no exact
   or unconfirmed negative and does not certify PSD.
+- The free 480-selector loop finds a third component-zero incidence.
+  All sixty rows have exact rational box witnesses. An independent
+  arithmetic audit checks them; they certify individual rows only.
+- The third incidence fails the shared symmetric edge equations. An
+  exact Farkas ray has fifty-eight nonzero multipliers, maximum absolute
+  multiplier five, and right-hand side minus two. Every standard-form
+  column is nonnegative, including all upper-bound slacks. The cold replay
+  passes. Nine supported row potentials lift this contradiction to a
+  universal selector cut and twelve core transports over all 68,394 edges.
+  The normalized cut has five positive and 163 negative coefficients.
+  Its value at the saved incidence is two; the incidence is not assumed
+  in the cut's proof. Component zero remains open.
+- The full symmetric real-edge case-four model has 276,792 variables and
+  590,165 rows. Its single sixty-second LP query returns UNKNOWN. All
+  integer matrix arrays cold-replay, but no feasible point or Farkas ray
+  is available. The next test encodes the sixty proved cuts in the
+  original Boolean incidence formula.
+- The prism-free clique scan finishes all 1,225 representatives without
+  an exact or unconfirmed negative. Six-root products of two clique
+  absences have a complete 3,283-case preparation with 347 root orbits.
+  Exact primitive identities certify all 41,413 union rows. Their point
+  scan is separate from this preparation.

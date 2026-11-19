@@ -550,3 +550,24 @@ zero rows. Each term lies in the proved prism-containing zero support.
 The separate path-on-four-vertices replay reconstructs every genuine new
 pair incompatibility without using the catalogue or child transports.
 
+The [complete prism-free clique scan](../research/grids-and-triangles/grid_free_order10_complement_prism_scan.md)
+tests all 1,225 representatives without a separator. The
+[six-root clique-pair package](../research/grids-and-triangles/grid_free_order10_clique_pairs.md)
+prepares products of two clique absences. Its cold replay checks both
+complete clique enumerations, full root orbits, and exact coefficient
+identities for every selected union row.
+
+The [free-selector row loop](../research/root_prism_free_f0_incidence_row_loop_run01.md)
+has a saved incidence with sixty rational row witnesses. Its
+[shared-edge certificate](../research/root_prism_free_f0_symmetric_selector_cut.md)
+then rejects extension using an exact integer Farkas ray. The separate
+standard-library verifier rebuilds all 480 signatures and 68,394 eligible
+edges, checks all ray columns, and verifies twelve universal selector
+cuts. The [general proof](../research/symmetric_exterior_row_cuts.md)
+states why the saved incidence is not a hypothesis of those inequalities.
+
+The [case-four symmetric LP result](../research/grids-and-triangles/complement_rook_35core_case0004_symmetric_lp_run01.md)
+is UNKNOWN after one sixty-second query. Its cold replay regenerates
+every integer matrix array without invoking an optimizer. The temporary
+compressed matrix cache is reproducible and is omitted from the package.
+

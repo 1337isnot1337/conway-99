@@ -1,0 +1,29 @@
+{
+  "status": "complete weighted encoder, loop, reconstruction and fresh-proof source review PASS",
+  "checked_hashes": {
+    "loop": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+    "encoder": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144",
+    "certificate": "dc990d8dfeeeffc45ddbf56635e098b5eb840187b1574a4c4eb18f873550f89a",
+    "preparation": "5cbd2258dda48edb400e4aad12c21f727c747041fc7f8e88f01d8f548a759248"
+  },
+  "reviewed": [
+    "All480 selectors and original Gram/motif constraints remain free, with the prior12cuts retained.",
+    "Every new potential is checked over the complete eligible signature domain and all12explicit core relabelings.",
+    "Capping positive weights at the threshold and dividing their gcd with a ceiling RHS preserve Boolean semantics.",
+    "Forward decision-DAG implications give exact existential threshold semantics; Boolean constants are distinguished from variable1.",
+    "All new auxiliary IDs follow the complete existing variable range; source limits refuse an incomplete cut.",
+    "Every saved SAT candidate and every exact integer obstruction or rational box is checked before continuing.",
+    "No visitation clauses, fixed candidate or second-component assumptions enter the search.",
+    "Replay reconstructs the exact initial and final CNFs, each cut prefix and every candidate/row certificate.",
+    "Incremental UNSAT alone makes no exclusion claim; the separate fresh formula and direct/cold DRAT path is necessary."
+  ],
+  "authorized_scope": {
+    "maximum_incidences": 20,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "overall_seconds": 180,
+    "if_terminal_UNSAT": "one fresh proof query<=60seconds, direct DRAT<=60seconds, separate cold DRAT<=60seconds"
+  },
+  "whole_problem_claim": false,
+  "optimizer_or_solver_called_in_review": false
+}

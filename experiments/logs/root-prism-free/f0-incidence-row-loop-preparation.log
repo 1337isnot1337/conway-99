@@ -1,0 +1,183 @@
+{
+  "status": "bounded free480 incidence/row loop prepared; no incidence query or LP",
+  "source_sha256": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_exterior_row_box_separation.py": "60366da662c74ee8d3ca367dc532c16b652952101fa5725a3248fc5a53a773bd",
+    "root_prism_free_f0_exterior_row_cut_overlay.py": "0a1739251220c3b27564cc9ea0d2e64bad4c9aa8db9a93182fc7cc91ea7c0353",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "base_model_source_hashes": {
+    "root_prism_free_f0_incidence.py": "00cd6e683a8bfb602cfd29f8dbb3481be0f87df55f2963ae98613f2af9146971",
+    "root_prism_free_f0_components.py": "f1c3b49cd084dde9df8f421a79dfbf2233d58c07f03ebb53ef2b58449fed54f4",
+    "root_prism_free_f0_pair_clauses.py": "367b7f850d087067b547653d31bf4b25743f30934583252de1199cffb358daac"
+  },
+  "old_overlay_model_sha256": "15d924357d89ab74f554ffa58a8da7559f7f5684711bf57e49f2eb23dcbccb7b",
+  "box_result_sha256": "328fddcc22b7ee2bfdd2a5c93189cef12240a56eee5804073a0848e64e7a749f",
+  "box_preparation_sha256": "4ef94dc28a84fea3c236aac46ec7e5f2fa471cb6831014954bb0ba53b3fa43a0",
+  "encoder_controls_sha256": "665e0d2841b177771c5a29b8860472076b5155cd615e543a1613c49a0ccca38a",
+  "encoder_controls": {
+    "status": "exact guarded weighted-threshold existential controls PASS",
+    "source_sha256": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144",
+    "weight_vectors": 125,
+    "threshold_formulas": 1149,
+    "complete_primary_and_guard_assignments": 31582,
+    "largest_auxiliary_count_in_controls": 8,
+    "capping_and_gcd_threshold_equivalence_checked": true,
+    "forward_only_auxiliary_existential_equivalence_checked": true,
+    "resource_guard_refuses_formula": true,
+    "tiny_boolean_solvers_only": true,
+    "incidence_query_called": false
+  },
+  "formula": {
+    "primary_variables": 480,
+    "variables": 40932,
+    "clauses": 78222,
+    "literal_occurrences": 227208,
+    "old_overlay_formula": {
+      "primary_variables": 480,
+      "variables": 28308,
+      "clauses": 56994,
+      "literal_occurrences": 163716,
+      "base_clauses": 56550,
+      "added_guarded_clauses": 444,
+      "added_literal_occurrences": 24864,
+      "new_auxiliary_variables": 0,
+      "cut_count": 12,
+      "old_witness_cut_outcomes": [
+        {
+          "target_signature": 336,
+          "left": 5,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 337,
+          "left": 4,
+          "right": 2,
+          "holds": true
+        },
+        {
+          "target_signature": 360,
+          "left": 6,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 390,
+          "left": 6,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 404,
+          "left": 7,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 405,
+          "left": 5,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 427,
+          "left": 8,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 445,
+          "left": 6,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 454,
+          "left": 7,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 455,
+          "left": 7,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 467,
+          "left": 6,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 479,
+          "left": 0,
+          "right": 2,
+          "holds": false
+        }
+      ],
+      "old_witness_failed_guarded_clause_count": 1,
+      "old_witness_rejected": true,
+      "old_witness_or_its_complement_fixed": false,
+      "all480_original_selectors_free": true,
+      "exterior_edge_variables": 0
+    },
+    "initial_full_weighted_cuts": 36,
+    "initial_added_clauses": 21228,
+    "initial_added_auxiliary_variables": 12624,
+    "frozen_replacement_incidence_failed_cut_outcomes": [
+      {
+        "cut_index": 0,
+        "target": 110,
+        "left": 4,
+        "right": 5
+      },
+      {
+        "cut_index": 12,
+        "target": 349,
+        "left": 0,
+        "right": 3
+      },
+      {
+        "cut_index": 24,
+        "target": 479,
+        "left": 7,
+        "right": 10
+      }
+    ],
+    "fixed_incidence_or_second_component": false,
+    "visitation_blocks": false
+  },
+  "limits": {
+    "maximum_incidences": 20,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_threshold_states_per_cut": 250000,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000
+  },
+  "cnf": "/tmp/conway99-f0-incidence-row-loop.cnf",
+  "cnf_sha256": "14a4d6774f1691c1000405c2e30b50f9c83463eb7ae559510415d94a38cc849e",
+  "cnf_bytes": 1411145,
+  "scope": "component0 in globallyP=F=0 split18+18; no first incidence or second component fixed",
+  "incidence_SAT_scope": "necessary incidence only, even if all separate row boxes are feasible",
+  "UNSAT_scope": "only after fresh complete formula proof and cold replay; conditional component0 only",
+  "no_visitation_blocks": true,
+  "all480_primary_selectors_free": true,
+  "initial_full_weighted_inequalities_instead_of_cover_clauses": true,
+  "additional_constraints_only_from_replayed_integer_row_potentials": true,
+  "PB_support": "pysat.pb unavailable; pure guarded-threshold decision DAG used",
+  "loop_stop_conditions": [
+    "UNSAT",
+    "UNKNOWN",
+    "no retained row obstruction",
+    "error",
+    "incidence budget",
+    "overall budget",
+    "encoding resource limit"
+  ],
+  "incidence_solver_or_optimizer_called": false,
+  "seconds": 2.608590059000562
+}

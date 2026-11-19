@@ -1,0 +1,47 @@
+{
+  "status": "PASS: complete raw coverage, explicit isomorphisms, triple domains and controls",
+  "retained_shells": 8992,
+  "representatives": 66,
+  "standard_library_only": true,
+  "optimizer_called": false,
+  "elapsed_seconds": 2.0753768350004975
+}
+{
+  "status": "cold complete incidence domain,1220 shared edges,1140 linear rows and1770-cap CNF replay PASS",
+  "source_sha256": "ee064ece3bde366809e23837b75a5aaa8c480421532004049e90671d8e5fd6cf",
+  "model_sha256": "1a75d60173991252b55892a911a5470e4e5074992916ead7ffc8d9df0c298b79",
+  "cnf_sha256": "9934d68eb3205bdc69c6e24b81fa98fbeefe4b180919fef85995a7341f66648a",
+  "primary_edges": 1220,
+  "formula": {
+    "primary_variables": 1220,
+    "variables": 164939,
+    "clauses": 423130,
+    "literals": 957704,
+    "constraints": {
+      "degree_rows": 60,
+      "degree_clauses": 62720,
+      "mixed_Gram_rows": 1080,
+      "mixed_Gram_clauses": 29980,
+      "common_neighbor_variables": 47437,
+      "positive_capacity_pair_clauses": 328784,
+      "outside_pair_caps": 1770,
+      "zero_capacity_pair_clauses": 1646
+    }
+  },
+  "LP_inventory": {
+    "degree_equations": 60,
+    "equation_nonzeros": 9760,
+    "equations": 1140,
+    "explicit_upper_slack_standard_form_nonzeros": 12200,
+    "explicit_upper_slack_standard_form_rows": 2360,
+    "explicit_upper_slack_standard_form_variables": 2440,
+    "mixed_equations": 1080,
+    "pair_caps_in_linear_relaxation": false,
+    "primary_lower_bound": 0,
+    "primary_upper_bound": 1,
+    "rows_sha256": "dcb3a9455a507cda9c6576f0ca7a282e5248f1017ce1eec3977c1a82ca75d7cf",
+    "undirected_primary_variables": 1220
+  },
+  "optimizer_or_solver_called": false,
+  "full_graph_constructed": false
+}

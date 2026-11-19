@@ -1,0 +1,41 @@
+{
+  "status": "PASS: independent read-only mathematical and source review",
+  "scope": "The current complete source and note were read; their mathematical construction and coverage logic were reviewed. The finite census, primitive coefficient expansions, literal controls, and replay were not rerun.",
+  "bindings": {
+    "experiments/workspace/grid_free_order10_clique_pair_domains.py": "0cde57ec1213c49b66f85c5a27a638883f7d0851bf9cb265632e3d82240de33c",
+    "research/grids-and-triangles/grid_free_order10_clique_pairs.md": "53ecdde04abe1e89856bffe2377be0f3d14f5f0190289039cdf37cc1cce014dc",
+    "experiments/logs/moments-and-counts/order10-clique-pair-domains-manifest.json": "2f5f3d0e5b0507d844a2e3d5984285746939f95c32c7ffabf53d81f4a872c9ad",
+    "experiments/logs/moments-and-counts/order10-clique-pair-domains.json.gz": "1812d7faa0dc865d21d970e7bff97e903693277804b341272145abc365bfcb51"
+  },
+  "dependency_source_hashes_checked": {
+    "grid_free_order10_double_complement_domains.py": "1283b15c44f408e0baf2cb1f9abd1c59b4ebee8717ca099c39e52b55c56ea935",
+    "grid_free_order10_complement_cliques.py": "765f0ca7ca7ffcb16e6c518d80c70ffca99ba2c0c46d682077f1027ae47fe912",
+    "grid_free_order10_complement_clique_orbits.py": "5569a81838301fa54dc2401b98592a91fb302b7ed7a3110983a6f475a1107130",
+    "grid_free_order10_complement_visible_domains.py": "d89248dce73849059afa12cf1c731f31dcafa8a0769ccde3b25574c67ec4c54a",
+    "grid_free_order10_complement_domains.py": "4961411ec0f7671abb7e34c5dbd4ec257ac98f9bffcb745a408e979751179ed8",
+    "grid_free_order10_r8s1.py": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469"
+  },
+  "checks": {
+    "binary_class_indicators": "Each high mask has at least three root neighbors, so at most one exterior vertex has that mask.",
+    "absence_product": "For distinct cliques C,D the product equals 1 minus all union indicators plus compatible pairs across C minus D and D minus C, once each. Intersection self-products cancel one subtraction; all other terms touching the intersection vanish.",
+    "complete_visible_graph": "The criterion combines at least three common root neighbors with a shared residual-quota-one root pair. The code independently compares both literal edge choices for every high-mask pair.",
+    "maximal_clique_coverage": "Both enumerators cover maximal cliques; the incremental construction retains old maximal cliques and v joined to their intersections with N(v), then takes inclusion-maximal candidates. This covers every new maximal clique.",
+    "labelled_lifts": "Distinct selected binary mask classes specify selected vertices uniquely. Fixed child-root transports preserve labelled embedding counts, without a factorial or automorphism divisor. Admissible mutual-edge children are disjoint events.",
+    "union_zero_rows": "The source checks selected single rows against the parent and selected double rows against partner singles coefficientwise. Each saved cancellation pairs precisely the remaining compatible singles and doubles. All other terms have an explicitly empty lift row; intersection rows leave only the parent/self cancellation.",
+    "quotient": "Deleting identically zero union rows and columns preserves positive semidefiniteness exactly; this is independent of the count point.",
+    "quota_one_redundancy": "The positive child decomposition includes the size-two neighborhood class and uses SRG common-neighbor identities. Multiplication by the second absence condition requires child clique-absence localizers and conditional scalar matrices, not scalar PSD alone.",
+    "root_action": "Full root automorphisms preserve adjacency, mask compatibility, clique classifications and pair indices; explicit representative transports cover each orbit. No symmetry of the hypothetical 99-vertex graph is assumed.",
+    "scope": "The claimed family is pairs of distinct maximal-clique absence conditions after the stated reduction. No particular count point, PSD outcome, prism-free condition, or graph exclusion is asserted."
+  },
+  "reported_author_counts_not_recomputed": {
+    "six_vertex_roots": 62,
+    "maximal_cliques": 541,
+    "remaining_nonempty_cliques": 262,
+    "candidate_pairs": 3283,
+    "pair_orbits": 347
+  },
+  "optimizer_called": false,
+  "solver_called": false,
+  "complete_enumeration_rerun": false,
+  "product_expansion_rerun": false
+}

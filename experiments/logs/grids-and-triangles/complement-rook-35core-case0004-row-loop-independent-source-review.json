@@ -1,0 +1,16 @@
+{
+  "status": "read-only complete-source sign, prefix, exact acceptance and Farkas gate review PASS",
+  "reviewed_source": "experiments/workspace/complement_rook_35core_case0004_row_loop.py",
+  "reviewed_source_sha256": "b8992691bf5e56bfdc84450de64c36f43dbd3c0927973f334e00ce2d50f0c16a",
+  "cut_sign": "Each verified necessary inequality sum(c_b*x_b)>=d*x_target becomes d*x_target-sum(c_b*x_b)<=0. The standard-form slack is positive.",
+  "base_preservation": "all_rows begins with original_lp.rows(original,True), then appends only verified potential cuts. No bound, original margin/capacity row, or prior binary no-good is removed by the loop.",
+  "cut_acceptance": "Every added potential is passed through checked_integer_cut on the complete frozen row domain. Numerical violation selects useful valid cuts but does not establish feasibility or infeasibility.",
+  "normalization": "The key divides coefficients and demand by their common gcd only. It does not binary-cap coefficients in the continuous LP.",
+  "prefix_provenance": "Each global inventory binds exactly cuts[:next_cut]. Replay advances next_cut only through sequential saved new-cut indices, and requires every final cut to be accounted for.",
+  "Farkas_orientation": "For E*x=b with nonnegative primaries and explicit nonnegative inequality slacks, E^T*ray>=0 and b^T*ray<0 are contradictory. The verifier checks every primary coefficient, each slack coefficient, and the exact RHS.",
+  "status_scope": "Nonoptimal queries and partial positive supports remain unresolved. Sanitized floating points and their gaps remain numerical. Exact exclusion is tied to an independently replayed integer ray, not solver status.",
+  "optimizer_or_solver_called": false,
+  "subject_imported": false,
+  "model_or_CNF_rebuilt": false,
+  "run_or_all_cuts_independently_replayed": false
+}

@@ -1,0 +1,14 @@
+{
+  "status": "read-only mathematical and complete-source weighted-threshold review PASS",
+  "source": "experiments/workspace/root_prism_free_f0_weighted_threshold.py",
+  "source_sha256": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144",
+  "normalization": "For Boolean primary variables, capping positive weights at the demand preserves the threshold. Dividing all capped weights by their gcd and taking the ceiling demand is exact.",
+  "necessity": "When a suffix node is forced true, the clause for the actual current primary bit forces its chosen child. Descending the acyclic suffix DAG reaches a true terminal, proving the weighted threshold.",
+  "sufficiency": "Assign each auxiliary node its actual suffix-threshold truth value. These values satisfy both forward branch implications, and a valid guarded primary assignment satisfies the final target-to-root clause.",
+  "alias_and_constant_controls": "The primary shortcut for false/true children is correct. Same-child aliasing is exact. type-sensitive comparisons prevent primary variable1 from being treated as True; False terminals produce only valid negated guard units.",
+  "ID_and_stack_review": "All input IDs are bounded by the supplied top. Every new auxiliary increments top. State indices strictly increase down edges; the explicit stack completes both children before a parent and cache reuse is sound.",
+  "resource_guard": "Exceeding the state budget raises without returning a partial formula. It imposes no mathematical restriction.",
+  "control_assignments_independently_rerun": false,
+  "optimizer_or_solver_called": false,
+  "incidence_query_or_CNF_rebuild": false
+}

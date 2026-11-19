@@ -1,0 +1,40 @@
+{
+  "status": "one symmetric1220-edge LP prepared; no query",
+  "source_sha256": "c0d9e70f98e94176bf78bc518b41270940b930ab69cf34b26f42b71ff31a0871",
+  "exterior_source_sha256": "ee064ece3bde366809e23837b75a5aaa8c480421532004049e90671d8e5fd6cf",
+  "model": "experiments/logs/root-prism-free/f0-row-box-design-exterior-model.json.gz",
+  "model_sha256": "1a75d60173991252b55892a911a5470e4e5074992916ead7ffc8d9df0c298b79",
+  "candidate_sha256": "9e38e41273ad247021854236a56a4e9dd0cdc74b7156867904b7d19fe2d64e46",
+  "LP_inventory": {
+    "degree_equations": 60,
+    "equation_nonzeros": 9760,
+    "equations": 1140,
+    "explicit_upper_slack_standard_form_nonzeros": 12200,
+    "explicit_upper_slack_standard_form_rows": 2360,
+    "explicit_upper_slack_standard_form_variables": 2440,
+    "mixed_equations": 1080,
+    "pair_caps_in_linear_relaxation": false,
+    "primary_lower_bound": 0,
+    "primary_upper_bound": 1,
+    "rows_sha256": "dcb3a9455a507cda9c6576f0ca7a282e5248f1017ce1eec3977c1a82ca75d7cf",
+    "undirected_primary_variables": 1220
+  },
+  "maximum_total_seconds": 60,
+  "maximum_optimizer_calls": 1,
+  "solver": "HiGHS simplex",
+  "threads": 1,
+  "objective": "zero feasibility objective",
+  "standard_form": "original1140 equations; x_e+s_e=1 for all1220 edges; every variable nonnegative",
+  "point_acceptance": "all1220 rational bounds and1140 exact equations",
+  "ray_acceptance": "all2440 exact coefficient signs and strictly negative RHS",
+  "pair_caps_in_LP": false,
+  "binary_or_graph_feasibility_claimed": false,
+  "scope": "one saved first incidence, second component and alignment/incidence free",
+  "controls": {
+    "positive_integer_Farkas_control": true,
+    "invalid_rays_rejected": 4,
+    "exact_fractional_capacity_control": true,
+    "optimizer_or_solver_called": false
+  },
+  "optimizer_or_SAT_called": false
+}

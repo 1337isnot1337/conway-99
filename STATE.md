@@ -186,10 +186,18 @@ adds 1,155 genuine pair incompatibilities, each with an induced-P4
 witness. Its complete preparation has 4,584 remaining cliques in
 1,225 root orbits. New zero rows are proved only modulo the established
 prism-containing count zeros; the complete domains remain present.
+The [complete prism-free clique scan](research/grids-and-triangles/grid_free_order10_complement_prism_scan.md)
+now checks all 1,225 representatives and all 1,443 required prism zeros.
+It finds no exact or unconfirmed negative and does not certify PSD.
 A [six-root double-complement family](research/grids-and-triangles/grid_free_order10_double_complements.md)
 conditions on two absent high classes. Exact identities reduce 9,118
 pairs to 1,112 candidates in 84 root orbits. The completed scan at the
 same integer point finds no separator and supplies no PSD certificate.
+A [six-root clique-pair preparation](research/grids-and-triangles/grid_free_order10_clique_pairs.md)
+extends this to products of two clique absences. Complete censuses give
+3,283 candidates in 347 root orbits. Exact primitive identities and
+cancellation maps certify all 41,413 union rows. Its cold replay passes;
+the preparation alone makes no claim about the count point.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -330,6 +338,11 @@ remain feasible at their respective cut prefixes. The 60-second limit
 leaves nineteen positive rows unvisited in the final proposal; its last
 twenty cuts have not been reoptimized. There is no Farkas certificate,
 new matching exclusion, or exact real-feasibility claim from this loop.
+A [symmetric real-edge model](research/grids-and-triangles/complement_rook_35core_case0004_symmetric_lp_run01.md)
+retains every incidence selector, every eligible shared edge, and all
+sixty cuts. Its one sixty-second query reaches the time limit. A cold
+replay reconstructs all 590,165 rows and 4,121,379 nonzeros, but there is
+no primal or dual certificate. Case four remains unresolved.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -385,8 +398,19 @@ potentials give strict capacity deficits; the other fifty-seven rows
 have separately checked rational box witnesses. Independent arithmetic
 reconstructs the full domain and verifies all twelve relabelings of
 each cut. Neither saved incidence can extend, but component zero remains
-open. A new free-selector loop with the full weighted cuts is separate
-work; no outcome for that loop is included here.
+open. A [free-selector weighted-cut loop](research/root_prism_free_f0_incidence_row_loop_run01.md)
+then finds a third incidence. Every one of its sixty rows has an exact
+rational box witness. Thus no single-row potential inequality rejects
+this point, although those separate witnesses need not share edges.
+Its [shared-edge equations are infeasible](research/root_prism_free_f0_symmetric_selector_cut.md):
+an integer Farkas certificate has 58 nonzero multipliers and right-hand
+side minus two. Exact replay checks every column. Nine supported row
+potentials then give twelve transported inequalities for all 480 free
+selectors. The saved incidence violates the normalized inequality by two.
+The [general endpoint-allocation argument](research/symmetric_exterior_row_cuts.md)
+proves these cuts without fixing the incidence used to find them.
+This excludes the third incidence with every second component and
+alignment free; it still does not exclude component zero.
 
 ## Scope of the unrestricted computations
 

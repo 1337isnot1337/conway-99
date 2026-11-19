@@ -1,0 +1,34 @@
+{"iteration": 0, "status": "SAT incidence; no new weighted cut retained", "row_status": "COMPLETE: all60 exact row outcomes", "obstructions": 0, "new_cuts": 0, "total_cuts": 36, "elapsed_seconds": 2.5460463389972574}
+{
+  "status": "STOP: no retained row obstruction; necessary incidence only",
+  "source_sha256": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+  "preparation": "experiments/logs/root-prism-free/f0-incidence-row-loop-preparation.json.gz",
+  "preparation_sha256": "5cbd2258dda48edb400e4aad12c21f727c747041fc7f8e88f01d8f548a759248",
+  "limits": {
+    "maximum_incidences": 20,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_threshold_states_per_cut": 250000,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000
+  },
+  "fixed_incidence_or_second_component": false,
+  "visitation_blocks": false,
+  "whole_component_excluded": false,
+  "full_graph_completion": false,
+  "initial_cnf_sha256": "14a4d6774f1691c1000405c2e30b50f9c83463eb7ae559510415d94a38cc849e",
+  "bootstrap_and_input_checks_seconds": 1.1494003709995013,
+  "final_cnf": "experiments/logs/root-prism-free/f0-incidence-row-loop-run01/final.cnf",
+  "final_cnf_sha256": "14a4d6774f1691c1000405c2e30b50f9c83463eb7ae559510415d94a38cc849e",
+  "final_variables": 40932,
+  "final_clauses": 78222,
+  "cut_registry": "experiments/logs/root-prism-free/f0-incidence-row-loop-run01/cut-registry.json",
+  "cut_registry_sha256": "3c844958334b7b8921d2cead47cbc9e09a091a68b3f87612fa3b31252fcd27dc",
+  "cut_encodings": "experiments/logs/root-prism-free/f0-incidence-row-loop-run01/cut-encodings.json",
+  "cut_encodings_sha256": "d243d0f3e3134288b96a58f56fe23105de432de9f927844f93baddf45ffac789",
+  "final_weighted_cut_count": 36,
+  "elapsed_seconds": 2.660569043997384,
+  "cooperative_overall_overrun_seconds": 0,
+  "peak_rss_kib": 97016
+}

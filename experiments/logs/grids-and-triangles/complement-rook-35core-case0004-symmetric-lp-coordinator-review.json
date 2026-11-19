@@ -1,0 +1,46 @@
+{
+  "status": "coordinator mathematical and full source review PASS; one bounded query authorized",
+  "files": [
+    {
+      "path": "experiments/workspace/complement_rook_35core_case0004_symmetric_lp.py",
+      "sha256": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52"
+    },
+    {
+      "path": "experiments/workspace/complement_rook_35core_case0004_symmetric_lp_query.py",
+      "sha256": "8baeb16c2a280101b94309ccec4900b8be8fe1a1909bac585f92bee114d28d09"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-symmetric-lp-query-model.json",
+      "sha256": "4d9d765c41cd93ff86c7b00a9149e5c2964b38198e584b62cb4f9cfdd8015e98"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-symmetric-lp-query-preflight.json",
+      "sha256": "b40fde8a975d19aa46c05541ff060c759a2ccbad957cf43f342f2e4e0c4639b6"
+    }
+  ],
+  "scope": "first local matching case0004 only; no whole local set or graph exclusion",
+  "model": {
+    "selectors": 1214,
+    "shared_edge_variables": 275578,
+    "variables": 276792,
+    "rows": 590165,
+    "nonzeros": 4121379
+  },
+  "review": [
+    "complete optional-column domain and exact row-stream binding",
+    "shared unordered y_ab with nonnegative bounds and both endpoint selector caps",
+    "all nontrivial mixed and degree rows with omitted identities only",
+    "original Gram/signature/triple/upper/no-good rows and all 60 proved cuts retained",
+    "signed equality multipliers and nonnegative upper-row multipliers; exact rhs contradiction and all physical columns plus virtual slacks checked",
+    "numerical points never promoted to exact feasible graph; cold exact matrix replay required for Farkas exclusion"
+  ],
+  "authorized": {
+    "queries": 1,
+    "solve_seconds": 60,
+    "threads": 1,
+    "ray_construction_seconds": 15,
+    "combined_exact_ray_check_seconds": 60,
+    "cold_replay_check_seconds": 60
+  },
+  "SAT_queries_authorized": 0
+}
