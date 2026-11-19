@@ -15,7 +15,7 @@ int main(){
     }
     static unsigned char bip[full+1];int minima[22],num[22]{};
     fill(minima,minima+22,999);
-    int min_weight = 999;
+    int min_weight = 999, min_weight_no_full = 999;
     int no_full_margin = 999, one_full_margin = 999;
     for(int m=0;m<=full;m++){
         int adj[7]{};
@@ -55,11 +55,14 @@ int main(){
             int j = countr_zero(h);
             charge += max(capped_degree[a[j]], capped_degree[b[j]]);
         }
-        min_weight = min(min_weight, 8 * (21 - e) + 2 * t - charge);
+        int weight = 8 * (21 - e) + 2 * t - charge;
+        min_weight = min(min_weight, weight);
+        if (full_axes == 0) min_weight_no_full = min(min_weight_no_full, weight);
     }
     assert(no_full_margin == -138 && one_full_margin == -146);
     cout << "Local capacity margins: " << no_full_margin << ' ' << one_full_margin << '\n';
-    assert(min_weight == 97);
+    assert(min_weight == 97 && min_weight_no_full == 98);
+    cout << "Minimum weighted expression outside full triangles: " << min_weight_no_full << '\n';
     cout << "Minimum weighted root expression: " << min_weight << '\n';
     for(int i=0;i<22;i++)cout<<i<<" "<<minima[i]<<" "<<num[i]<<'\n';
 }
