@@ -1,0 +1,186 @@
+{
+  "schema": "conway99.f0-direct-incidence-matching-exterior-model-artifacts.v1",
+  "scope": "Root-owned local matching result/cold and fixed-selection exterior model/build/cold. Uploaded without changing source or running a new check or solver.",
+  "source_owner": "root",
+  "selection_sha256": "6c1434b1dbb5a28f19707a3048cb43d64f14370856d03ef7496a3a58fabf4aaa",
+  "candidate_model_sha256": "ec482e37e989a4657a0f7efb801c875062575fa2786efea72ba37c111974b3a9",
+  "model_formula": {
+    "clauses": 423682,
+    "constraints": {
+      "common_neighbor_variables": 47506,
+      "degree_clauses": 62656,
+      "degree_rows": 60,
+      "mixed_Gram_clauses": 29982,
+      "mixed_Gram_rows": 1080,
+      "outside_pair_caps": 1770,
+      "positive_capacity_pair_clauses": 329393,
+      "zero_capacity_pair_clauses": 1651
+    },
+    "literals": 958948,
+    "primary_variables": 1219,
+    "variables": 165148
+  },
+  "no_exterior_SAT_query_in_package": true,
+  "raw_CNF_omission": {
+    "archive": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/model.cnf.gz",
+    "archive_bytes": 1789070,
+    "archive_sha256": "73b897b993b651fdc691d9138356faf97f4dc36eb1eea630cbf5700e1e76dfdd",
+    "method": "gzip decompression; exact byte identity checked against both original paths",
+    "raw_bytes": 6947024,
+    "raw_duplicate_paths_omitted_from_git": true,
+    "raw_local_files_preserved": true,
+    "raw_sha256": "d5bb8807367519fc32e7a4d05305533154d7ecf134483cde2d9ee2c96a1532a6",
+    "restorable_paths": [
+      "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/model.cnf",
+      "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01-cold/model.cnf"
+    ],
+    "schema": "conway99.lossless-duplicate-CNF-restoration.v1",
+    "status": "PASS: both complete raw CNFs equal the lossless archive"
+  },
+  "files": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/cold-owner.json",
+      "bytes": 766,
+      "sha256": "5035109aa10ec3836fc84e982ce654ec7b46d8220eb6866eb55822004b74b6ec",
+      "git_blob_sha": "a76d0235cda815bb746e543dd9de58c28c4ae905"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/cold.json",
+      "bytes": 999,
+      "sha256": "c01c592c3fa15986e721e8cf96fe954d03bc150c604f76f387d7919f172a1e98",
+      "git_blob_sha": "884f63cd13d8302aa54b110859ff40002c3f9fc4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/cold.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/cold.stdout.log",
+      "bytes": 166,
+      "sha256": "ee66bc574abc7895eeec2a9b3fd4a7514bb301b5bf01b8756b55fb0f4ceafe78",
+      "git_blob_sha": "8c928f45ba7a4737d2ce378a9c18e46b3d0544ad"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/intake.json",
+      "bytes": 346,
+      "sha256": "55175acfe8ad8ebb5f3543eee0379fe319564dbf24f0818169279b9ef158054e",
+      "git_blob_sha": "2ebdff630d70827e0c68822c706a8b6a3ae344b1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/owner.json",
+      "bytes": 619,
+      "sha256": "5713cf08bc117758ea15b2ebfcb613e8641d7d6ec8db6dbcb5f92cf6e9c9c378",
+      "git_blob_sha": "3847e60b873824f709fc3701cf7aff8f3a7d487b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/result.json",
+      "bytes": 3631,
+      "sha256": "a9e2d3410ddf880f4d21f12ac4a5c6cae7d8c200bb2a440792d88a2614fc353d",
+      "git_blob_sha": "1404846c9ff3ce4167aae8ee7cd1339f6636881a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-direct-incidence01/stdout.log",
+      "bytes": 151,
+      "sha256": "5c9f1398149a37da53dd0e8ae2e32d98dcd1784f4735e44e86004e7a22137cf5",
+      "git_blob_sha": "4bafec8246d63fbb5914356664ce59ac0721f7c0"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01-cnf-restoration.json",
+      "bytes": 842,
+      "sha256": "f8fbb4dd5245210ff3894f9169c39f04d775ca691165669977d8df2111b01833",
+      "git_blob_sha": "d403d29f2520933f5d037b7898b138fd5a04898c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01-cold/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01-cold/child.stdout.log",
+      "bytes": 200,
+      "sha256": "bc9f008fec25d8d0ce7e6a1aa9d86c1402f463d6a0ea363fe65f7d5788258ced",
+      "git_blob_sha": "071281f56bad0ea7bd809fa5658f838a43203880"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01-cold/initial-owner.json",
+      "bytes": 123,
+      "sha256": "1b0ecf0a5377716f40aaf51e673ee0dee81a00a1b5771f80a74deef7d5b3689a",
+      "git_blob_sha": "a70159ab644bf58952113b7ffce2313bc3e9dce0"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01-cold/owner.json",
+      "bytes": 331,
+      "sha256": "cb0089716ae6b0c745324766f874846dc61e308746fd8dc783267d12e795fbf8",
+      "git_blob_sha": "c58e17d5b41ea25beef80585abb76b62c06063a8"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01-cold/report.json",
+      "bytes": 2425,
+      "sha256": "5ecca87a70352fb5c8f618fc33d7858ed6c72b6068b5bc128040c56079b7c108",
+      "git_blob_sha": "39656800b2532a4297a6a57bf86ff324ae11ac03"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01-cold/supervisor.json",
+      "bytes": 147,
+      "sha256": "5d284fca9be0a40f7baa9ca003ea8c911fa33177be83f721a870e55ee60a2b7c",
+      "git_blob_sha": "5f160c7fc4be57bd480adb1f53d2cf9c2a35daf4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/child.stdout.log",
+      "bytes": 180,
+      "sha256": "95a4077626ceaca6dbc309ef2abf8ef0151f78e8e10b83d1a0475947479e7e2d",
+      "git_blob_sha": "a7eee905ffcca63993a534063a6f182fe2ee6ba5"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/initial-owner.json",
+      "bytes": 123,
+      "sha256": "1b0ecf0a5377716f40aaf51e673ee0dee81a00a1b5771f80a74deef7d5b3689a",
+      "git_blob_sha": "a70159ab644bf58952113b7ffce2313bc3e9dce0"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/model.cnf.gz",
+      "bytes": 1789070,
+      "sha256": "73b897b993b651fdc691d9138356faf97f4dc36eb1eea630cbf5700e1e76dfdd",
+      "git_blob_sha": "3d34bdee25fb09c736582b6cfb69f133064f85a1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/model.json",
+      "bytes": 23361,
+      "sha256": "ec482e37e989a4657a0f7efb801c875062575fa2786efea72ba37c111974b3a9",
+      "git_blob_sha": "a91b71da19baab9d607caab5047ac03a3c01390f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/owner.json",
+      "bytes": 330,
+      "sha256": "6a6749a6d797f50629f7b367f17bd32d64e24daf2462f2166758dcdf4e62a7e3",
+      "git_blob_sha": "8af0773873a142202d1cb4c9fa24ecacb5a9d12a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/report.json",
+      "bytes": 23390,
+      "sha256": "f9829f3766daf71d8b46cc0a97b28dd8e1642c44927726d08842a2373accc722",
+      "git_blob_sha": "40cad071980f31ee505fa9febb6c66b1fe819548"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-direct01/supervisor.json",
+      "bytes": 146,
+      "sha256": "751549705fd2bb7542586079cf69c343e7f8369a130afef8e2706b34c524da71",
+      "git_blob_sha": "b37bdb72ce6bea6a0c39979c82325fca4952c650"
+    }
+  ]
+}

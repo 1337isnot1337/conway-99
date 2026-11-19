@@ -1,0 +1,161 @@
+{
+  "schema": "conway99.f0-core-matching-blossom-query-terminal-artifacts.v1",
+  "scope": "One frozen count query and its separate exact terminal cold replay; no candidate, no retry and no exclusion.",
+  "status": "UNKNOWN_NATIVE_BUDGET_OVERRUN",
+  "query_preparation_map_git_blob": "6d6178c827531edada635939d99d41430391bb1c",
+  "query_preparation_map_sha256": "385fa6ee4a1d6b49d5c44483e64d17072b99b71a05f402ed3e04306347dcfc0b",
+  "source_review_map_git_blob": "0811b97381ee52f5d44175713f4c2aaa91617fbd",
+  "root_gate_sha256": "43d1235b238612965f5f763bfd1b4a81c22d0ec9b224a21a96f5c35238f53adb",
+  "cold_report_sha256": "4f02b48c97b52186b96ab0181a7b7aa1cc6169cf1d2431ec0e43e8b13dd4e433",
+  "outcome": {
+    "production_native_calls": 1,
+    "native_reported_status": "UNKNOWN",
+    "candidate_files": 0,
+    "provisional_full_target_calls": 0,
+    "appended_pool_rows": 0,
+    "cumulative_native_wall_seconds": 180.19452018599986,
+    "native_wall_limit_seconds": 180,
+    "native_budget_overrun_seconds": 0.19452018599986332,
+    "owner_seconds": 188.0800421840031,
+    "owner_limit_seconds": 300,
+    "owner_deadline_overrun_seconds": 0,
+    "cold_owner_seconds": 5.388631346999318,
+    "both_children_reaped": true,
+    "automatic_retry": false
+  },
+  "exact_scope": {
+    "all_native_records_and_complete_initial_prefix_cold_checked": true,
+    "terminal_status_preserved": true,
+    "count_feasibility_claimed": false,
+    "F0_excluded": false,
+    "literal_incidence_found": false,
+    "exterior_graph_found": false,
+    "no_production_vector_to_decode": true
+  },
+  "raw_duplicate_omission": {
+    "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/call000/model.pb",
+    "bytes": 16955261,
+    "sha256": "940e34316ed30532aee8c192947a7d69e54ccd7e9ebf8d85a3c4ada912a7331a",
+    "retained_locally": true,
+    "archive_path": "experiments/logs/root-prism-free/f0-core-matching-blossom-native-overlay02/initial.pb.gz",
+    "archive_sha256": "1f633c70a669badb8d151a7696d744c194b8ed649b4a6f90a0ea7b8142efb7ee",
+    "archive_publication_map_git_blob": "513ee62dcfd67bf3f13bc138d14ff1b53e002bdb",
+    "lossless_restoration": "Decompress the already-published initial.pb.gz archive to the call000/model.pb path; the raw SHA-256 must match."
+  },
+  "files": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01-cold/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01-cold/child.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01-cold/owner-result.json",
+      "bytes": 745,
+      "sha256": "5aec6bbf0b125de5598ef572b36f6433aca6903c3796fd3ddbad68962d21f8a5",
+      "git_blob_sha": "4e763ba271069498b2c31e26ace1751716a05893"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01-cold/report.json",
+      "bytes": 2522,
+      "sha256": "4f02b48c97b52186b96ab0181a7b7aa1cc6169cf1d2431ec0e43e8b13dd4e433",
+      "git_blob_sha": "f26e11e00bbecc6458ab0a20deff6348bf75e3e5"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01-cold/stages.json",
+      "bytes": 1510,
+      "sha256": "20613343285573bd78ad7df79088e64bf7dda21d766db326053d5cb9350a0a01",
+      "git_blob_sha": "69ef6b8fe6d1ff0958284ddb11165509b25f1d6f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01-cold/supervisor.json",
+      "bytes": 146,
+      "sha256": "91566028ac6b47411b3edbe50e99ffcf019468ca25b8508cb1eef0b282529de0",
+      "git_blob_sha": "e9ea4983ae92184b521c7463fc02cb96388c26fa"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01-terminal-summary.json",
+      "bytes": 2822,
+      "sha256": "e765f343fe28f2b08b1aac3ec533137b899682e5881ad451bfb434520211f361",
+      "git_blob_sha": "c7db8e8da71854673050b6afbccb71937b752e77"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/call000/parameters.pbtxt",
+      "bytes": 156,
+      "sha256": "d147c8c3de46aee908b2e7b649bc1bb4425038f7acbe4ec71ad303659f0c9acb",
+      "git_blob_sha": "8b46d98290154f8d8a2c04774a86bf9049f774e8"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/call000/prefix.json",
+      "bytes": 641,
+      "sha256": "102e9be18d73e2f5f5c15a1ead85573bf7844e8cb13656cf543fe4b4551813e1",
+      "git_blob_sha": "d3b145570b2f6f15765a79e0e3e3d6faffd1d6b4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/call000/record.json",
+      "bytes": 794,
+      "sha256": "264cf8b291af24bdc13b1222b5617de135c03f339fc92c570630022291bff51a",
+      "git_blob_sha": "83e4fae47fc727a5e54ef9fa791d9d208ad794da"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/call000/response.pbtxt",
+      "bytes": 283,
+      "sha256": "f90bdeb2c91092f6c54fd16f3b43a876075092d269d210486f4264db28a7c9f5",
+      "git_blob_sha": "7b9b0fbc03e6a07fd92b4a52ac71e19749a77452"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/child-result.json",
+      "bytes": 1065,
+      "sha256": "1308b2f218067e5429e938895497b2a33fc3910e2b8d731169196c746c1a6f95",
+      "git_blob_sha": "a13fe9f6be7022ad2b947baceacce019df10c32d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/child.stdout.log",
+      "bytes": 16411,
+      "sha256": "47cb47c10ab1b5fd7c7b394aac43c72b107bfcc0e1f93f835f80f0cf8a3cca03",
+      "git_blob_sha": "1b3ac7e7bd8cb37ee62443728a343869db276734"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/progress.json",
+      "bytes": 843,
+      "sha256": "ddde3be8c18654a1438b2d21b96c092fdb1d1a15cf0093ebdee37e4d5de83963",
+      "git_blob_sha": "7fdde8a5577df47e127fb0bdfd76e505e5cd742a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/result.json",
+      "bytes": 1087,
+      "sha256": "c7eebf3e0f2a64dbf6d9c69bfc6fccebdb063e9586327572506a74d2ce58d0f2",
+      "git_blob_sha": "2952d91613f2d553de12e124e44f28ae61977a0e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/stages.json",
+      "bytes": 5122,
+      "sha256": "4867a6899f551b687f6a2913e35f3e05fcb9124875d8e0e1d82593bbae2f249b",
+      "git_blob_sha": "a30eb43a7b33a5c81105d86787dfba5b000ad34e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/supervisor.json",
+      "bytes": 147,
+      "sha256": "11e356ba815c58bd62cda16484715e1b1e2b523d89dd3fef442e813df2d2c437",
+      "git_blob_sha": "d9a28c63f48ef8b55319afb4b61ef5b9e98a748b"
+    },
+    {
+      "path": "research/root_prism_free_f0_core_matching_blossom_query_run01.md",
+      "bytes": 3956,
+      "sha256": "2726e5d33de529535c635f23d8a0822a6a4cfb9c44f5ec2e197918490e41a47b",
+      "git_blob_sha": "1d76a9b817cd65e1dc603f9356051a8de1034708"
+    }
+  ]
+}
