@@ -1,0 +1,35 @@
+{
+  "status": "UNSAT with direct DRAT; cold full rebuild and proof replay required",
+  "model": "experiments/logs/root-prism-free/f0-fixed-pair-model.json",
+  "model_sha256": "db1765af0096c13a050c2817c0a367153a3fdec9ab4ae319cede8e8b6be234d3",
+  "source_sha256": "1fa7c4427539c89543fdf4994b267979d77bfc6a0e2e368bf84762cdf4b614c9",
+  "cnf_sha256": "af2adcaffbcca28aa0013405b9627a0e5bedf1cac3a6f4c0a83c18f17e899615",
+  "seconds_including_bootstrap": 60.0,
+  "direct_checker_seconds": 30,
+  "assumptions": [],
+  "whole_component_or_split_case_excluded": false,
+  "full_graph_completion": false,
+  "peak_process_rss_kib": 33224,
+  "bootstrap_seconds": 0.08909024199965643,
+  "solver_return_seconds": 0.29994882000028156,
+  "solver_statistics": {
+    "restarts": 6,
+    "conflicts": 2797,
+    "decisions": 4371,
+    "propagations": 1651484
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/root-prism-free/f0-fixed-pair-run01/raw.drat",
+  "raw_proof_sha256": "ffb9e501de5606a6f9df56f9eb4ce7cb3c6300416b06e8137d468d0f36f4a5d4",
+  "raw_proof_lines": 7586,
+  "retained_certificate": {
+    "cnf": "experiments/logs/root-prism-free/f0-fixed-pair-run01/retained.cnf",
+    "cnf_sha256": "6eb3ef91b627156c3de7cefc678e0388ada4007339ecce54607c08ab9d77caee",
+    "proof": "experiments/logs/root-prism-free/f0-fixed-pair-run01/retained.drat",
+    "proof_sha256": "dc733cceeb42811a42995eadcf5cde2a5f95d5de7a1885ffff35fd8adb2056bd",
+    "input_clauses": 7447,
+    "checker_log": "experiments/logs/root-prism-free/f0-fixed-pair-run01/direct-drat.log",
+    "checker_log_sha256": "288535a77191f0f61751ff0149e6ab7065d26eeeeb1a4edea805158c9732cbc8"
+  },
+  "elapsed_seconds": 0.9780873300005624
+}

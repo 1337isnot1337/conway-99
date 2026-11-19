@@ -453,3 +453,15 @@ give their own replay commands. The complete 2,405-block discovery scan
 uses the unrounded proposal. Only the C4 block has a separate exact PSD
 certificate at the latest integer point.
 
+## Later 35-core and split-shell proofs
+
+The [case-two note](../research/grids-and-triangles/complement_rook_35core_case0002_exclusion.md)
+gives the original-formula replay for the sixth excluded first-local
+matching. This proof needs none of the discovery overlay's 886 additional
+Gram-downdate clauses. Both the retained CNF and proof are archived.
+
+The [split-shell coupling note](../research/root_prism_free_f0_coupling.md)
+gives the full-formula and DRAT replay for one fixed pair of incidence
+designs. Its broader fractional control has a different domain. Neither
+certificate excludes the complete split-shell case.
+

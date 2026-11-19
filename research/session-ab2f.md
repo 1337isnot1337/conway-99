@@ -586,3 +586,15 @@ their hypotheses permit them; computational exclusions require exact replay.
   blocks are scanned at the unrounded proposal without a separator.
   At the integer point, the C4 block separately has an exact rank-13
   PSD certificate. The full selected family is not certified PSD there.
+- An exact case-two Gram downdate census gives 886 new pair conflicts.
+  A non-author audit reconstructs every column and checks each full
+  integer negative vector. The overlay query is UNSAT. Its retained
+  proof uses zero downdate clauses, and a separate cold original-only
+  formula/proof replay passes. Six first-local matchings are now excluded;
+  the other 22 remain unresolved. The old UNKNOWN record is preserved.
+- The split-shell cross Gram matrix is `2J-diag(J6,J6,J6)`. An exact
+  fractional control fixes one saved component incidence and averages
+  the other over six actual core automorphisms. A separate binary model
+  fixing both incidences has 792 assignments and is UNSAT with direct
+  and cold DRAT checks. This excludes one fixed design pair and alignment;
+  it does not exclude either component or the complete split-shell case.

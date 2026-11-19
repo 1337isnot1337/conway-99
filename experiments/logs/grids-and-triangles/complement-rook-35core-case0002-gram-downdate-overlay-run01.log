@@ -1,0 +1,37 @@
+{
+  "status": "UNSAT with direct DRAT; cold full rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-overlay-model.json",
+  "model_sha256": "ee602e06e7b94f91e210bccaa3636fbad746b5ab5098e9929cf9eae778194e32",
+  "source_sha256": "361815c8748c1a138581fafd43f85a101e444e4bfc7e0fddc85cd300069d7476",
+  "cnf_sha256": "f23dba5ab0cbb266dad36d99d4f7b8e226b2ee1e6bbe181b025612b9845b8db3",
+  "case_index": 2,
+  "seconds_including_bootstrap": 60.0,
+  "direct_checker_seconds": 60,
+  "assumptions": [],
+  "scope": "one indexed35-core; no other matching cases",
+  "whole_local_set_or_complementary_rook_core_excluded": false,
+  "full_graph_completion": false,
+  "peak_process_rss_kib": 95608,
+  "bootstrap_seconds": 0.3290609460018459,
+  "solver_return_seconds": 11.009011281999847,
+  "solver_statistics": {
+    "restarts": 110,
+    "conflicts": 25098,
+    "decisions": 55517,
+    "propagations": 66567404
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-overlay-run01/raw.drat",
+  "raw_proof_sha256": "5d1ee67d3be2b04397d8a60058061b3ac16690f47545b28a909735fb6c84011e",
+  "raw_proof_lines": 78760,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-overlay-run01/retained.cnf",
+    "cnf_sha256": "a8c4127d12996380d0ccfe54d9ceacdba0331897a8cc99e48cb636dfcdcd2ec2",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-overlay-run01/retained.drat",
+    "proof_sha256": "e852639b89d5768a28625176c7107c46f114b36c9d3417042f11966d78978f06",
+    "input_clauses": 23913,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-overlay-run01/direct-drat.log",
+    "checker_log_sha256": "cf45fa4c5ca6cae74c93a9fdfc6d390c4afa504f908bf7e6eabc95d573af588c"
+  },
+  "elapsed_seconds": 15.307698922999407
+}

@@ -247,6 +247,14 @@ one specified edge. This gives a conditional forbidden edge and 144
 explicitly transported seven-literal clauses. The original local set
 still has a [27-core Gram witness](research/grids-and-triangles/complement_rook_35core_local_incidence_control.md);
 neither the local set nor the complementary-rook case is excluded.
+A separate [case-two continuation](research/grids-and-triangles/complement_rook_35core_case0002_exclusion.md)
+now excludes a sixth matching. Exact Gram downdates give 886 additional
+pair conflicts, each checked by a full integer negative vector. The
+resulting run has a checked UNSAT proof. Its retained inputs use none
+of those extra conflicts, so a separate cold replay verifies the proof
+directly against the original case-two formula. The excluded matching
+indices are now `0,1,2,3,8,21`; the other 22 remain unresolved. The
+historical sweep records remain unchanged.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -261,6 +269,14 @@ provide the other component or the exterior graph. A
 [connected shell control](research/root_prism_free_f0_connected_control.md)
 also has all three central edge types equal to 33, so those types alone
 do not force the split.
+The [two-component coupling](research/root_prism_free_f0_coupling.md)
+has cross Gram block `2J-diag(J6,J6,J6)`. An exact fractional control
+uses the first saved incidence and the second component's full domain.
+A smaller binary model fixes both sides to the saved sixty-triple
+design and has 792 possible assignments. That fixed pair, under the
+identity fiber alignment, is UNSAT with a direct proof check, a cold
+complete formula rebuild, and retained-proof replay. It excludes only
+that fixed pair of designs. The component and the split case remain open.
 
 ## Scope of the unrestricted computations
 
