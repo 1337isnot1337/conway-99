@@ -66,3 +66,12 @@ verify-triangle-exterior:
 	cd "$$build_dir"; \
 	"$(GAP)" -q -b --quitonbreak "$(CURDIR)/$(WORKSPACE)/triangle_exterior_actions.g"; \
 	"$(PYTHON)" "$(CURDIR)/$(WORKSPACE)/triangle_exterior_transitive.py" triangle-exterior.actions
+
+.PHONY: verify-incomplete-corners
+verify-incomplete-corners:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/corner-groups.txt"; rmdir "$$build_dir"' EXIT; \
+	cd "$$build_dir"; \
+	"$(GAP)" -q -b --quitonbreak "$(CURDIR)/$(WORKSPACE)/incomplete_corner_groups.g"; \
+	"$(PYTHON)" "$(CURDIR)/$(WORKSPACE)/incomplete_corner_check.py" corner-groups.txt

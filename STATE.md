@@ -111,3 +111,5 @@ Any nonidentity automorphism of a triangle exterior moves at least 36 points. Al
 The [incomplete eight-point grid](research/grids-and-triangles/incomplete_grid.md) has 661 marked profiles on fourteen points and their 85 exterior incidence rows. All eight larger 27-point cores admit explicit integral incidence allocations. Each supplied allocation fails an exterior adjacency quota.
 
 The [triangle-exterior spectral exclusion](research/grids-and-triangles/triangle-exterior.md) extends to every vertex-transitive simple graph with the same spectrum. Dropping the candidate nonedge common-neighbor bound leaves 314 possible orbital unions after the triangle and square tests; all fail at both primes.
+
+The [48-point incomplete-grid corner graph](research/grids-and-triangles/incomplete-corner-fibers.md) has connected cubic graphs on each pair of opposite fibers. Across all 45 transitive degree-ten groups, no action preserving the four fibers can be transitive on any one of them. Exact spectral, square-determinant and attachment tests exhaust 6,593 marked cores. Replay with `make verify-incomplete-corners`.
