@@ -5,6 +5,9 @@ If seven all-red grids exist, their 36-vertex complement U must have
 the number lying in three U triangles is 18, 9, or zero.
 
 This is a necessary condition, not an exclusion of seven all-red grids.
+The later [four-cover argument](seven_red_four_cover_reduction.md) excludes
+the count 36, leaving only 18 and 27. This note records the earlier
+spectral reduction and its independent replay.
 The nine-vertex case below uses a complete finite residual-core catalogue
 and exact rational spectra. The larger remaining cases have not been
 enumerated.

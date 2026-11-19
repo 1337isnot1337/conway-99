@@ -132,3 +132,15 @@ their hypotheses permit them; computational exclusions require exact replay.
   norm-16 search in six models fixing the three proved zero forests for
   each of two doubled-edge support templates, with the old zero-label
   ordering removed. Time-limited runs are recorded as undecided.
+- Completed all six fixed-forest incidence runs. Each reached its
+  sixty-second limit with status UNKNOWN. No candidate or proof was
+  produced, and the 447 unresolved incidence classes remain unchanged.
+- Excluded the common triangle system in the seven-grid remainder. Its
+  24 triangles give a four-sheeted cover of K3,3. All 331,776 normalized
+  covers were enumerated. Connected covers fail an edge-fiber bound or
+  one of three verified coloring certificates; disconnected covers reduce
+  to four rook grids. A separate negative rook-space polynomial then has
+  trace at most -8 despite being nonnegative on the required spectrum.
+  Two workers independently checked the final algebra. The cover audit
+  verifies all 2,736 surviving assignments by explicit isomorphisms. This
+  leaves counts 18 and 27, without excluding seven all-red grids.

@@ -45,6 +45,18 @@ verify-red-grid-bound:
 
 verify-seven-red-residual:
 	"$(PYTHON)" $(WORKSPACE)/seven_red_nine_audit.py
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/"*; rmdir "$$build_dir"' EXIT; \
+	$(CXX) -O3 -std=c++20 $(WORKSPACE)/seven_red_four_cover_scout.cpp -o "$$build_dir/covers"; \
+	"$$build_dir/covers" 3 > "$$build_dir/three.json" 2> "$$build_dir/three.log"; \
+	"$$build_dir/covers" 4 > "$$build_dir/four.json" 2> "$$build_dir/four.log"; \
+	cmp "$$build_dir/three.json" experiments/logs/grids-and-triangles/seven-red-four-cover-control.json; \
+	cmp "$$build_dir/four.json" experiments/logs/grids-and-triangles/seven-red-four-cover-scout.json; \
+	"$(PYTHON)" $(WORKSPACE)/seven_red_four_cover_projections.py --source "$$build_dir/four.json" --verify-colorings $(WORKSPACE)/seven-red-four-cover-colorings.json; \
+	"$(PYTHON)" $(WORKSPACE)/seven_red_four_cover_independent_audit.py --source "$$build_dir/four.json"; \
+	"$(PYTHON)" $(WORKSPACE)/seven_red_four_rook_exclusion.py --output "$$build_dir/rook.json"; \
+	cmp "$$build_dir/rook.json" experiments/logs/grids-and-triangles/seven-red-four-rook-exclusion.json
 
 # Supply the path to the separately built, pinned drat-trim executable.
 verify-coupled-shells:

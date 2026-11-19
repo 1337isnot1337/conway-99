@@ -1,0 +1,481 @@
+{
+  "connected_surviving_assignments": 2736,
+  "underlying_graph_classes": 3,
+  "classes": [
+    {
+      "representative": {
+        "voltages": [
+          0,
+          1,
+          8,
+          14
+        ],
+        "fiber_bound": 8,
+        "left_partitions": 8,
+        "right_partitions": 8,
+        "edge": [
+          8,
+          12
+        ]
+      },
+      "count": 864,
+      "adjacency": [
+        [
+          12,
+          16,
+          20
+        ],
+        [
+          13,
+          17,
+          21
+        ],
+        [
+          14,
+          18,
+          22
+        ],
+        [
+          15,
+          19,
+          23
+        ],
+        [
+          12,
+          16,
+          20
+        ],
+        [
+          13,
+          17,
+          21
+        ],
+        [
+          14,
+          18,
+          23
+        ],
+        [
+          15,
+          19,
+          22
+        ],
+        [
+          12,
+          17,
+          22
+        ],
+        [
+          13,
+          18,
+          21
+        ],
+        [
+          14,
+          16,
+          20
+        ],
+        [
+          15,
+          19,
+          23
+        ],
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          3,
+          7,
+          11
+        ],
+        [
+          0,
+          4,
+          10
+        ],
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          3,
+          7,
+          11
+        ],
+        [
+          0,
+          4,
+          10
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          3,
+          6,
+          11
+        ]
+      ],
+      "projection_search": {
+        "left_partitions": 8,
+        "right_partitions": 8,
+        "projections": 64,
+        "visits_by_depth": {
+          "0": 1,
+          "1": 64,
+          "2": 68
+        },
+        "prunes": {
+          "not_enough_projections": 112,
+          "partial_residual_degree": 84
+        },
+        "status": "excluded_by_necessary_projection_constraints",
+        "exhaustive": true,
+        "witness": null,
+        "seconds": 0.003360959999554325
+      }
+    },
+    {
+      "representative": {
+        "voltages": [
+          0,
+          1,
+          16,
+          0
+        ],
+        "fiber_bound": 9,
+        "left_partitions": 8,
+        "right_partitions": 8,
+        "edge": [
+          8,
+          18
+        ]
+      },
+      "count": 1728,
+      "adjacency": [
+        [
+          12,
+          16,
+          20
+        ],
+        [
+          13,
+          17,
+          21
+        ],
+        [
+          14,
+          18,
+          22
+        ],
+        [
+          15,
+          19,
+          23
+        ],
+        [
+          12,
+          16,
+          20
+        ],
+        [
+          13,
+          17,
+          21
+        ],
+        [
+          14,
+          18,
+          23
+        ],
+        [
+          15,
+          19,
+          22
+        ],
+        [
+          12,
+          18,
+          20
+        ],
+        [
+          13,
+          19,
+          21
+        ],
+        [
+          14,
+          16,
+          22
+        ],
+        [
+          15,
+          17,
+          23
+        ],
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          3,
+          7,
+          11
+        ],
+        [
+          0,
+          4,
+          10
+        ],
+        [
+          1,
+          5,
+          11
+        ],
+        [
+          2,
+          6,
+          8
+        ],
+        [
+          3,
+          7,
+          9
+        ],
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          2,
+          7,
+          10
+        ],
+        [
+          3,
+          6,
+          11
+        ]
+      ],
+      "projection_search": {
+        "left_partitions": 8,
+        "right_partitions": 8,
+        "projections": 64,
+        "visits_by_depth": {
+          "0": 1,
+          "1": 64,
+          "2": 492
+        },
+        "prunes": {
+          "three_common_base_neighbors": 172,
+          "not_enough_projections": 492
+        },
+        "status": "excluded_by_necessary_projection_constraints",
+        "exhaustive": true,
+        "witness": null,
+        "seconds": 0.011033527000108734
+      }
+    },
+    {
+      "representative": {
+        "voltages": [
+          1,
+          2,
+          14,
+          8
+        ],
+        "fiber_bound": 16,
+        "left_partitions": 8,
+        "right_partitions": 8,
+        "edge": [
+          0,
+          12
+        ]
+      },
+      "count": 144,
+      "adjacency": [
+        [
+          12,
+          16,
+          20
+        ],
+        [
+          13,
+          17,
+          21
+        ],
+        [
+          14,
+          18,
+          22
+        ],
+        [
+          15,
+          19,
+          23
+        ],
+        [
+          12,
+          16,
+          20
+        ],
+        [
+          13,
+          17,
+          22
+        ],
+        [
+          14,
+          19,
+          21
+        ],
+        [
+          15,
+          18,
+          23
+        ],
+        [
+          12,
+          18,
+          21
+        ],
+        [
+          13,
+          17,
+          22
+        ],
+        [
+          14,
+          16,
+          20
+        ],
+        [
+          15,
+          19,
+          23
+        ],
+        [
+          0,
+          4,
+          8
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          3,
+          7,
+          11
+        ],
+        [
+          0,
+          4,
+          10
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          3,
+          6,
+          11
+        ],
+        [
+          0,
+          4,
+          10
+        ],
+        [
+          1,
+          6,
+          8
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          3,
+          7,
+          11
+        ]
+      ],
+      "projection_search": {
+        "left_partitions": 8,
+        "right_partitions": 8,
+        "projections": 64,
+        "visits_by_depth": {
+          "0": 1,
+          "1": 64,
+          "2": 80
+        },
+        "prunes": {
+          "three_common_base_neighbors": 128,
+          "partial_residual_degree": 336,
+          "not_enough_projections": 96
+        },
+        "status": "excluded_by_necessary_projection_constraints",
+        "exhaustive": true,
+        "witness": null,
+        "seconds": 0.013219896000009612
+      }
+    }
+  ]
+}

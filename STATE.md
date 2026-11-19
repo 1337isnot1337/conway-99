@@ -177,3 +177,12 @@ polynomials, then checks all 1,695,332 factor-multiplicity tuples. None passes
 the cubic identity. The remaining counts are 18, 27, and 36; seven all-red
 grids have not been excluded. `make verify-seven-red-residual` replays this
 exclusion and is included in the global-certificate target.
+
+The subsequent [four-cover reduction](research/grids-and-triangles/seven_red_four_cover_reduction.md)
+excludes the count 36. A complete census of 331,776 normalized covers of
+K3,3 removes the connected case through edge-fiber counts and three small
+coloring certificates. The disconnected cases reduce to four rook grids.
+A [negative rook-space compression](research/grids-and-triangles/seven_red_four_rook_exclusion.md)
+then contradicts a nonnegative polynomial trace. Independent explicit
+isomorphisms and coloring checks cover every surviving connected assignment.
+Only the counts 18 and 27 remain in this seven-grid reduction.

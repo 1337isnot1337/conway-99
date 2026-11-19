@@ -66,7 +66,11 @@ their characteristic polynomials by a second method, and checks every
 factor-multiplicity tuple against the quadratic and cubic trace conditions.
 It excludes the nine-vertex case. The
 [remainder note](../research/grids-and-triangles/seven_red_residual_reduction.md)
-states the resulting counts 18, 27, and 36. Seven all-red grids remain
+states the initial resulting counts 18, 27, and 36. The same target now
+also regenerates all 331,776 normalized four-covers, verifies the three
+surviving projection-graph colorings in two implementations, and checks
+the negative rook-space polynomial contradiction. These checks exclude
+the count 36. Only 18 and 27 remain, and seven all-red grids remain
 unresolved. This replay is also part of `make verify-global-constraints`.
 
 The fourteen additional norm-16 exclusions have saved CNF cores and DRAT
