@@ -36,6 +36,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 
 ## Involutions
 
+- [Disconnected endpoint graph](research/involutions/connected-endpoint-squares.md) allows repeated endpoint pairs and leaves just three component-size partitions when all 21 squares have one shared axis.
 - [Distinct endpoint pairs](research/involutions/distinct-endpoint-squares.md) rules out every assignment of centers when all 21 squares have one shared axis and their endpoint pairs are distinct. The proof uses two exact norm counts.
 - [The Fano-plane square pairing](research/involutions/fano-square-pairing.md) excludes all 104 interface classes at a one-fixed-point involution, allowing the interfaces to break all Fano-plane symmetries.
 
