@@ -19,6 +19,11 @@ The complement-rook case survives, as does one orbit with 18 labelled
 members. Survival of propagation alone does not assert incidence
 feasibility or a full graph completion.
 
+The later [joint integer proof](two_rook_tip_boundary_joint_integer.md)
+excludes the eighteen-member surviving orbit. Only the complementary
+rook graph remains at this boundary. The census below retains its
+original propagation result and supplies the proof's complete domain.
+
 ## Why eighteen edges force a rook graph
 
 Let `Z` be any graph on nine vertices satisfying

@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-rook-tip-boundary verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -68,6 +68,12 @@ verify-rook-partner-bound:
 	"$(PYTHON)" $(WORKSPACE)/two_rook_interfaces.py --verify experiments/logs/grids-and-triangles/two-rook-interfaces.json
 	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_joint_integer_independent_audit.py --verify experiments/logs/grids-and-triangles/two-rook-iso-joint-integer-independent-audit.json
 	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_joint_integer_certificate.py $(WORKSPACE)/two-rook-iso-joint-integer-certificate.json --drat-trim "$(DRAT_TRIM)"
+
+verify-rook-tip-boundary:
+	@test -x "$(DRAT_TRIM)" || { echo 'Set DRAT_TRIM to the drat-trim executable path.' >&2; exit 1; }
+	"$(PYTHON)" $(WORKSPACE)/two_rook_tip_boundary_joint_certificate.py $(WORKSPACE)/two-rook-tip-boundary-joint-3679836361-certificate.json --drat-trim "$(DRAT_TRIM)"
+	"$(PYTHON)" $(WORKSPACE)/two_rook_tip_edge_bound.py --boundary-proof $(WORKSPACE)/two-rook-tip-boundary-joint-3679836361-certificate.json --certificate experiments/logs/grids-and-triangles/two-rook-tip-edge-bound-certificate.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_a0_fixed_certificate.py $(WORKSPACE)/two-rook-a0-fixed-certificate.json --drat-trim "$(DRAT_TRIM)"
 
 verify-red-grid-bound: verify-current-grid-bounds verify-general-rook-interfaces verify-rook-interfaces
 	@set -eu; \

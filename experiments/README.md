@@ -118,6 +118,20 @@ incidence domains. The separate complete-cap search is documented in
 [its model note](../research/grids-and-triangles/two_rook_iso_pair_full_caps.md);
 the replay target does not start its timed solve.
 
+The two later binary boundary exclusions have a proof-replay target:
+
+```sh
+make verify-rook-tip-boundary DRAT_TRIM=/absolute/path/to/drat-trim
+```
+
+It rebuilds the complete 188-signature model and verifies its retained
+DRAT proof, reconstructs the high-edge nine-vertex catalogue, and replays
+the complete complementary-rook `a=0` census and its final binary proof.
+Both wrappers check source and input hashes, full formula hashes, and
+membership of every retained input clause. The coordinating worker ran
+both full rebuilds and proof replays successfully. The unrestricted
+two-grid case and the complementary-rook case with `a>=1` remain open.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh

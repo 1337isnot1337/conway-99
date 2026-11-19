@@ -269,3 +269,27 @@ their hypotheses permit them; computational exclusions require exact replay.
   remaining orbit has a rational mixed-edge and packing witness, with
   21 of its 33 edge-orbit weights fractional. No whole-core exclusion or
   positive lower bound on `a` follows from this linear test.
+- Excluded the eighteen-member rook-tip boundary orbit by a joint binary
+  model retaining all 188 possible signatures and 12,010 eligible edges.
+  No incidence witness or orbit equality was fixed. The coordinator rebuilt
+  its 1,424,532-clause CNF, matched the hash, checked all 3,667 retained
+  input clauses, and verified the trimmed DRAT proof. The complementary
+  252-signature case returned UNKNOWN after 205.562 seconds on a requested
+  200-second budget. The independent real-LP attempt on the first case
+  also returned UNKNOWN and is not an additional proof.
+- Rebuilt all 5,311 cap-compatible nine-vertex types. There is one
+  seventeen-edge type, the broken rook, and one eighteen-edge type, the
+  rook. The norm-fourteen argument excludes the former. Combining the
+  new boundary proof with this catalogue gives `e(Z)<=16` or `Z=J-I-R`.
+  The Hall inequality then gives the weighted bound `4e(Z)+t<=72`.
+- Excluded the last complementary-rook `a=0` incidence orbit with a
+  complete binary-edge model: all 1,764 possible edges and all 2,556
+  exterior caps. Its 593,820-clause formula returned UNSAT. The coordinator
+  replayed the complete sixteen-design census and the earlier fourteen
+  Farkas exclusions, rebuilt the full formula, checked retained inclusion,
+  and verified the DRAT proof. Thus `a>=1` in this boundary case. The
+  complementary-rook case with positive `a` remains unresolved.
+- Read the parallel branch's `9c58d1d` result, which improves its global
+  total to 112 grids and bounds full triangles by 24. Our next computation
+  returns to an unrestricted mandatory-root model. Its anchor-matching
+  normalization and positive control are being audited before any batch.

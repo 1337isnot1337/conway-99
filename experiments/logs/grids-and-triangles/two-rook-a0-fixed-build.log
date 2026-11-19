@@ -1,0 +1,29 @@
+{
+  "candidate_signatures": 252,
+  "positive_incidence_columns": 72,
+  "a0_designs": 16,
+  "a0_orbits": 3,
+  "checks": [
+    {
+      "orbit_size": 12,
+      "right_side": -12,
+      "minimum_coefficient": 0,
+      "nonzero_weights": 91
+    },
+    {
+      "orbit_size": 2,
+      "right_side": -3,
+      "minimum_coefficient": 0,
+      "nonzero_weights": 19
+    },
+    {
+      "orbit_size": 2,
+      "status": "exact real edge relaxation feasible",
+      "fractional_edge_orbits": 21
+    }
+  ],
+  "exactly_excluded_a0_designs": 14,
+  "a0_fully_excluded": false,
+  "whole_complementary_rook_case_excluded": false
+}
+{"status": "complete fixed-incidence CNF built and audited; not yet solved", "core_vertices": 27, "outside_vertices": 72, "incidence_case_index": 2, "equivalent_incidence_designs": 2, "selected_signature_sha256": "7d66efd0001a6debfae045fe4cce71c6f9af7ca875167123b7188defa95890f0", "structural_certificate": "experiments/logs/grids-and-triangles/two-rook-pair-structural-certificate.json", "structural_certificate_sha256": "2842d990148ed3968804d8355bcc0284e81ad66c298e02dfbedf373deff9d0ec", "cnf_path": "/tmp/conway-two-rook-a0-fixed.cnf", "cnf_sha256": "7aee21fe380453f3d961740e740b27ec4e2918a4884352043bb0413c18b0a3d4", "domain_sha256": "5095a1a930ccdbdceb17532fc7f4fb486985448eafda718d97d4986e005e8968", "edge_variables": 1764, "distinct_mixed_and_degree_counts": 1873, "base_variables": 77940, "base_clauses": 157968, "outside_pairs": 2556, "path_variables": 83376, "duplicate_zero_caps": 36, "packing_clauses": 1296, "variables": 298692, "clauses": 593820, "orbit_equalities": 0, "symmetry_clauses": 0, "lazy_cuts": 0, "full_outside_caps": true, "controls": {"status": "exact pass", "forward_path_cardinality_cases": 3069}, "exact_domain_checks": "all Gram entries, dense mixed needs, all2556 path domains", "build_seconds": 2.5347343499997805}

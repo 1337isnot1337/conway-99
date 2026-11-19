@@ -27,6 +27,10 @@ The source and certificate therefore give both negative and positive
 controls. They do not prove `a>=1`, exclude `Z=J-I-R`, or exclude the
 18-vertex core. They impose no automorphism on a hypothetical graph.
 
+The later [complete binary test](two_rook_a0_fixed_completion.md) excludes
+the remaining two designs and proves `a>=1`. The rational control here
+continues to show feasibility of the weaker real relaxation.
+
 The forced 81-column incidence used here is established in
 [two_rook_iso_pair_integer.md](two_rook_iso_pair_integer.md). The
 local Hall inequalities and the matrix `H` below are proved in

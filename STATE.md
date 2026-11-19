@@ -15,6 +15,8 @@ The parallel [root-grid branch, PR 3](https://github.com/1337isnot1337/conway-99
 has stronger global restrictions: its intersecting-red-triangle exclusion
 gives no all-red grid and at most 114 grids in total. Checkpoint `006cce9`
 further improves the total bound to 113 using a five-grid branching exclusion.
+Its full-component census at `9c58d1d` improves this to 112 and bounds
+the number of full triangles by 24.
 Its earlier checkpoint
 `2e2d7ed` also bounds the number through a point by thirteen. The historical
 bounds and count witnesses below are retained with their original scope.
@@ -59,8 +61,19 @@ only rook-nonadjacent labels.
 At the [eighteen-edge tip boundary](research/grids-and-triangles/two_rook_tip_rook_boundary.md),
 the tips must form a rook graph. Complete coverage of all 5,040 labelled
 rook graphs, Hall filtering, Gram kernels, and exact binary propagation
-leave 19 labelled cases in two core orbits. This census records complete
-domains for subsequent joint incidence/edge models.
+leave 19 labelled cases in two core orbits. A [joint integer proof](research/grids-and-triangles/two_rook_tip_boundary_joint_integer.md)
+excludes the eighteen-member orbit without fixing any incidence witness.
+The coordinator rebuilt the complete formula, checked retained-clause
+membership, and replayed its DRAT proof. Only the complementary-rook
+tip graph remains at eighteen edges. Together with the independent
+seventeen-edge exclusion, this proves
+[`e(Z)<=16` or `Z=J-I-R`, and `4e(Z)+t<=72`](research/grids-and-triangles/two_rook_tip_edge_bound.md),
+where `t` counts edges shared by the tip and original rook graphs.
+The complementary-rook joint run remains UNKNOWN. Within that case,
+the [complete `a=0` incidence class is now excluded](research/grids-and-triangles/two_rook_a0_fixed_completion.md):
+fourteen designs have integer Farkas proofs and the two equivalent
+remaining designs have a checked binary-completion proof. Hence `a>=1`.
+None of these statements excludes a single isomorphic pair.
 
 ## Scope of the unrestricted computations
 

@@ -1,0 +1,18 @@
+{"status": "joint integer model built and audited; not yet solved", "representative": 3679836361, "labelled_orbit_size": 18, "cnf_path": "/tmp/rook-tip-boundary-replay-zq6yy4to/full.cnf", "cnf_sha256": "f4a19557844bb29eb643791f818fb505263beac7c61ec570a01682e27e863cd4", "domain_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/grids-and-triangles/two-rook-tip-rook-boundary-domains.json", "domain_file_sha256": "ceada008c0d03c91a6805074f6022ae48777b805b5a0e8752be442e02929a072", "boundary_certificate": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/grids-and-triangles/two-rook-tip-rook-boundary-certificate.json", "boundary_sha256": "419c90e8076da5ee7fb030c266ca5261fbc4045be3641bf4169ae355efd1bd43", "hall_certificate": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/two-rook-tip-hall-certificate.json", "hall_sha256": "a130641a297863237a8cd8fa683466ca3d13067665651afb098e475354a18144", "domain_sha256": "7fe05b690e355218d561dffaa53ba01495f4424dff1425ef7588d18d41b89678", "core_vertices": 27, "selected_outside_vertices": 72, "signature_variables": 188, "edge_variables": 12010, "variables": 649302, "clauses": 1424532, "activation_clauses": 24020, "distinct_gram_counts": 192, "population_count": 1, "mixed_and_degree_counts": 5116, "packing_clauses": 81904, "derived_positive_units": 16, "derived_negative_units": 32, "orbit_equalities": 0, "fixed_incidence_witnesses": 0, "full_outside_caps_imposed": false, "conditional_control": {"status": "exact pass", "conditional_cardinality_assignments": 14840, "quotas_tested": [0, 1, 2, 11]}, "build_seconds": 7.201321096999891}
+
+c parsing input formula with 649302 variables and 3667 clauses
+
+c finished parsing
+
+c detected empty clause; start verification via backward checking
+
+c 3629 of 3667 clauses in core                            
+
+c 463 of 468 lemmas in core using 47117 resolution steps
+
+c 0 RAT lemmas in core; 506 redundant literals in core lemmas
+
+s VERIFIED
+
+c verification time: 0.264 seconds
+{"status": "full domain and CNF rebuilt; retained inclusion and DRAT verified", "representative": 3679836361, "signature_variables": 188, "edge_variables": 12010, "full_cnf_sha256": "f4a19557844bb29eb643791f818fb505263beac7c61ec570a01682e27e863cd4", "variables": 649302, "clauses": 1424532, "retained_clauses": 3667}
