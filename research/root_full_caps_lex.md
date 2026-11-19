@@ -2,9 +2,10 @@
 
 This is a separate overlay for the complete rooted model in
 `root_full_caps.md`. The original model, its eleven normalized cases, and
-the running first batch are unchanged. The overlay has exact group and
-Boolean controls. At this checkpoint no large overlay CNF has been built
-and no 99-vertex overlay case has been solved.
+the first batch are unchanged. The overlay has exact group and Boolean
+controls. After that batch finished, separate sixty-second pilots on
+cases zero and ten both returned UNKNOWN. The
+[run record](root_full_caps_runs_01.md) gives all sizes, hashes, and outcomes.
 
 ## Coverage by coordinate relabeling
 
@@ -82,8 +83,9 @@ and closure; it does not trust the stored counts.
 | 9 | 3+3 | 72 | 5 | 16,111 | 48,338 | 976,525 | 1,957,202 |
 | 10 | 6 | 12 | 2 | 6,924 | 20,774 | 967,338 | 1,929,638 |
 
-These are exact prospective formula sizes, computed without constructing
-any large overlay CNF. The original normalized formula has 960,414
+These exact formula sizes were first computed without constructing
+large overlay CNFs; cases zero and ten were subsequently built and run.
+The original normalized formula has 960,414
 variables and 1,908,864 clauses in every case.
 
 ## Edge-coordinate lift and lex encoding

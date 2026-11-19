@@ -372,3 +372,43 @@ their hypotheses permit them; computational exclusions require exact replay.
   solver-based Boolean controls, the nine-rook controls, and 784 direct
   independent existential controls pass. No large overlay solve was
   started during the original batch.
+- The original unrestricted rooted batch finished all eleven cases.
+  Every case returned UNKNOWN at its 180-second budget; no graph or
+  UNSAT proof was found. Total batch time was 1,993.537 seconds.
+  The separately audited lex pilot then started cases zero and ten
+  at sixty seconds each. Its result is recorded separately.
+- Both lex pilots also finished UNKNOWN, in 60.248 and 60.425 seconds.
+  The separate maximum-anchor convention preserves the union of its
+  eleven new cases, but it may change an original partition case.
+  Its controls pass; no maximum-anchor solve is included in this checkpoint.
+- All eight complementary-rook full joint two-tip splits returned UNKNOWN.
+  The independent audit checks complete tip-pair coverage and exact
+  assembly of the unchanged base plus two positive selector units.
+  No incidence witness or symmetry of the completed graph was imposed.
+  Full exterior pair caps remain absent from this necessary model.
+- Scaled order-ten feasibility separates the published order-nine point.
+  An exact nonnegative integer combination of 52 induced inequalities,
+  fifteen proved upper bounds, and 31 nonnegativity bounds gives
+  `-67377959`. Root independently reconstructs all rows and bounds,
+  including separate automorphism-order checks. This excludes only
+  that frozen prefix. A free-prefix numerical proposal fails exact
+  count verification and remains a proposal.
+- Simplified the 52-row count certificate by recognizing denominator-36
+  weights. Every positive new-coordinate coefficient disappears.
+  The resulting universal inequality is an integer sum of 52 induced
+  counts and 21 ordinary counts; no upper bounds remain. Its value at
+  the frozen point is `-2564720`. Root independently checks all embedded
+  source forms against the exact cache and reconstructs this identity.
+- Exact principal-projector tests on all 48,965 induced types through
+  order ten exclude only the rook graph plus an isolated vertex.
+  The explicit integer quadratic witness has value -8. The only
+  singular passing types are the rook graph and the rook graph with
+  one pendant vertex. This test adds no zero-grid restriction.
+- Read the current four-page arXiv2610.16266v2 PDF. Its revised title
+  is *A Spanning Subgraph of Conway's 99-graph* and it does not claim
+  nonexistence. Its mandatory rooted reduction agrees with the model
+  already in use. The older indexed sum-of-squares title is superseded.
+- Read the parallel `b611eb7` and `a39ef45` checkpoints. Their new
+  eight-triangle exclusion leaves only pencil full-triangle components,
+  bounds full triangles by 21, and gives at least 1,215 two-edge
+  disjoint triangle pairs. Their total grid bound remains 112.

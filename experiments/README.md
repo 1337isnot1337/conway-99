@@ -184,6 +184,23 @@ gives the separate large count-reduction recipe and its bounded UNKNOWN
 outcomes. The [lex overlay note](../research/root_full_caps_lex.md) gives
 its small coverage and Boolean replays without starting a large solve.
 
+The subsequent [order-ten count cut](../research/grids-and-triangles/grid_free_order10_scaled.md)
+excludes extension of the published order-nine point. Its saved integer
+identity has a short replay:
+
+```sh
+make verify-order-ten-count-cut
+make verify-root-anchor-max
+```
+
+The first command checks the 52 positive induced-count terms, 21
+ordinary-count terms, and the negative value at the old point. The
+separate root audit also checks every saved form against the large exact
+reduction. The second command checks the new maximum-anchor coverage
+and its cardinality clauses. Neither command starts a large solver.
+The [run tables](../research/root_full_caps_runs_01.md) record eleven
+original UNKNOWN cases and two UNKNOWN lex pilots.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh

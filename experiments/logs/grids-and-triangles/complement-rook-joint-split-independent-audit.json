@@ -1,0 +1,131 @@
+{
+  "status": "independent full joint-model split audit PASS",
+  "source_sha256": "4de968aab5ff6ab5248a56a7bcf484a60493ddfc5ec855a47657c749db4b637b",
+  "wrapper_sha256": "dfc036c80ece4f317b30098c0817294b64fc81a846fb8a56d527090c6077c43f",
+  "prior_coverage_audit_sha256": "57d7db0a4367a918eae657d671aa812003c415ae78c745278526df21eb334b4b",
+  "base_cnf_sha256": "4beaccae679e2014ab0a3cf105ca1f65f326b6453ed6502d7e2d65cbede2a162",
+  "independent_domain_sha256": "0d1c7f6333adf459988db46d6cb02fb086b7aa135121a9650df30b891235554d",
+  "shared_selectors": 252,
+  "independent_edge_variables": 20934,
+  "cases": [
+    {
+      "case": 0,
+      "tips": [
+        1,
+        2
+      ],
+      "covered_pairs": 4,
+      "selector_units": [
+        1,
+        2
+      ],
+      "split_sha256": "404e75ea24914aacb6f2ba8a4028de33080f90a1ea095764d9593a5eae69708e",
+      "independent_split_hash_match": true
+    },
+    {
+      "case": 1,
+      "tips": [
+        1,
+        3
+      ],
+      "covered_pairs": 1,
+      "selector_units": [
+        1,
+        3
+      ],
+      "split_sha256": "aa43c07fd1de342a6e35f4b0d9173ffbf3f86e21ab8f9e799e2498dfa208d923",
+      "independent_split_hash_match": true
+    },
+    {
+      "case": 2,
+      "tips": [
+        1,
+        5
+      ],
+      "covered_pairs": 4,
+      "selector_units": [
+        1,
+        4
+      ],
+      "split_sha256": "2522c42f28ff86a3e9931546101afccb107f59c614d3a832ff1e4eb86629a628",
+      "independent_split_hash_match": true
+    },
+    {
+      "case": 3,
+      "tips": [
+        1,
+        8
+      ],
+      "covered_pairs": 2,
+      "selector_units": [
+        1,
+        7
+      ],
+      "split_sha256": "275c072b9cd5ade63f3b3a00e49849f9826b495f553527e2b17b421e7b155a93",
+      "independent_split_hash_match": true
+    },
+    {
+      "case": 4,
+      "tips": [
+        2,
+        5
+      ],
+      "covered_pairs": 2,
+      "selector_units": [
+        2,
+        4
+      ],
+      "split_sha256": "8d169afb2de3dd3a1c8cf71431a8875cbfe3f176dbb2ef253e986363b9756b48",
+      "independent_split_hash_match": true
+    },
+    {
+      "case": 5,
+      "tips": [
+        2,
+        6
+      ],
+      "covered_pairs": 2,
+      "selector_units": [
+        2,
+        5
+      ],
+      "split_sha256": "e18cfd5e0f1686caf6b992763112a22eca645bf62428f1e317335fcaa1c75015",
+      "independent_split_hash_match": true
+    },
+    {
+      "case": 6,
+      "tips": [
+        2,
+        7
+      ],
+      "covered_pairs": 2,
+      "selector_units": [
+        2,
+        6
+      ],
+      "split_sha256": "7d82dc2d03bb200d7d59a2c84ffefa0dbf5ecd4f2dfc5df2fc61c69f7dc75f61",
+      "independent_split_hash_match": true
+    },
+    {
+      "case": 7,
+      "tips": [
+        2,
+        8
+      ],
+      "covered_pairs": 4,
+      "selector_units": [
+        2,
+        7
+      ],
+      "split_sha256": "d727f35f137eee1a84618f82d6c6b2ad519bc2f9f220c942a2a223912ed8f3d1",
+      "independent_split_hash_match": true
+    }
+  ],
+  "additional_constraints": "Exactly two positive selector units; no other added constraint.",
+  "scope": "Necessary full incidence/edge model with mixed, degree and packing constraints; full exterior pair caps are absent.",
+  "certificate_review": "Rebuilds frozen base and exact split hash, checks every retained clause belongs to the split, and verifies retained DRAT proof.",
+  "solver_called": false,
+  "CNF_parsed": false,
+  "CNF_rebuilt": false,
+  "proof_rebuilt": false
+}

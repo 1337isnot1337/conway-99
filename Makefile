@@ -3,6 +3,7 @@ PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
 .PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-rook-tip-boundary verify-complement-rook-incidence verify-complement-rook-a2-completion verify-root-matching-coverage verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
+.PHONY: verify-order-ten-count-cut verify-root-anchor-max
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -15,7 +16,7 @@ verify: $(CERTIFICATES)
 
 # Exact certificate replay for the global-constraints research branch.
 # This target performs no new SAT or mixed-integer search.
-verify-global-constraints: verify-red-grid-bound verify-seven-red-residual verify-grid-free-relaxation verify-grid-free-projectors verify-rook-pair-completion
+verify-global-constraints: verify-red-grid-bound verify-seven-red-residual verify-grid-free-relaxation verify-grid-free-projectors verify-rook-pair-completion verify-order-ten-count-cut
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_certificates.py
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_hemisphere_verify.py
 	"$(PYTHON)" $(WORKSPACE)/verify_coupled_counting.py
@@ -34,6 +35,12 @@ verify-grid-free-relaxation:
 
 verify-grid-free-projectors:
 	"$(PYTHON)" $(WORKSPACE)/grid_free_projector_certificate.py --certificate experiments/logs/moments-and-counts/grid-free-projector-certificate.json.gz
+
+verify-order-ten-count-cut:
+	"$(PYTHON)" $(WORKSPACE)/grid_free_order10_scaled_cut.py replay experiments/logs/moments-and-counts/grid-free-order10-scaled-fixed-cut.json
+
+verify-root-anchor-max:
+	"$(PYTHON)" $(WORKSPACE)/root_full_caps_anchor_max.py --certificate experiments/logs/root-full-caps-anchor-max/anchor-max-certificate.json
 
 verify-root-matching-coverage:
 	"$(PYTHON)" $(WORKSPACE)/root_full_caps_coverage.py --certificate experiments/logs/root-full-caps/matching-coverage.json

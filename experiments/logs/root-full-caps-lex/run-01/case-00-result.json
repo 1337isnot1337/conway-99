@@ -1,0 +1,33 @@
+{
+  "status": "unknown at wall budget; this normalization case remains open",
+  "case_index": 0,
+  "partition": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "model": "experiments/logs/root-full-caps-lex/case-00-model.json",
+  "model_sha256": "c34744c19760741abea6d1629db360f001ea705f9100e5abb9e4d81ac63973d5",
+  "cnf_path": "/tmp/conway-root-full-caps-lex/case-00.cnf",
+  "cnf_sha256": "09db5a40adb876277fe69a3fb0e037e08bda96c1c8c3cbab4290f8653d5ff625",
+  "solver": "glucose4",
+  "proof_enabled": true,
+  "requested_wall_budget_seconds": 60.0,
+  "budget_includes_cnf_parse_and_solver_bootstrap": true,
+  "full_outside_caps": true,
+  "lex_generators": 11,
+  "graph_automorphism_assumptions": 0,
+  "lazy_cuts": 0,
+  "completed_witness": null,
+  "solve_return_seconds": 60.04224891499871,
+  "solver_statistics": {
+    "restarts": 613,
+    "conflicts": 116258,
+    "decisions": 525598,
+    "propagations": 376157039
+  },
+  "total_seconds": 60.247728712000026
+}

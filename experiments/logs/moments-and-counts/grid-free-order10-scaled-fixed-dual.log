@@ -1,0 +1,29 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "exact fixed-substitution box Farkas contradiction",
+  "source_sha256": "7f3a68376b979256714a4765e4ce847e97d673b508ea8bac14ba350bd1a0156b",
+  "finder_sha256": "12409f5ea1932d549cb69d9ca83e8cd4bd53d173b1a6ef136f9cdee6c095fc16",
+  "preparation_sha256": "b469897acd15b6078664625191005454e8bac56ae76318d57fd804089bcf8e50",
+  "reduced_cache_sha256": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+  "case_index": 0,
+  "fixed_order_nine_point": true,
+  "requested_seconds_including_ray_request": 30.0,
+  "threads": 1,
+  "numerical_rows": 38070,
+  "numerical_columns": 492,
+  "numerical_nonzeros": 4182740,
+  "exact_exclusion": true,
+  "numerical_status": "HighsModelStatus.kInfeasible",
+  "initial_solve_seconds": 2.104152007999801,
+  "ray_request_status": "HighsStatus.kOk",
+  "solver_and_ray_seconds": 7.297014620000482,
+  "ray_exists": true,
+  "exact_replay": {
+    "status": "integer-only Farkas replay PASS",
+    "induced_inequalities_used": 52,
+    "upper_bounds_used": 15,
+    "lower_bounds_used": 31,
+    "negative_constant": -67377959
+  }
+}

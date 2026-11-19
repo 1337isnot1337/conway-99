@@ -1,0 +1,58 @@
+{
+  "status": "rounded point fails exact induced-count checks; real proposal retained",
+  "source_sha256": "12409f5ea1932d549cb69d9ca83e8cd4bd53d173b1a6ef136f9cdee6c095fc16",
+  "preparation_sha256": "b469897acd15b6078664625191005454e8bac56ae76318d57fd804089bcf8e50",
+  "case_index": 1,
+  "fixed_order_nine_point": false,
+  "requested_solver_seconds": 30.0,
+  "single_thread_requested": true,
+  "objective": "pure feasibility",
+  "exact_count_witness": false,
+  "solver_seconds": 25.107568572000673,
+  "numerical_status": 0,
+  "numerical_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "numerical_warnings": [
+    "Unrecognized options detected: {'threads': 1}. These will be passed to HiGHS verbatim."
+  ],
+  "peak_process_rss_kib": 1352020
+}
+{
+  "negative_induced_rows": 114,
+  "nonintegral_induced_rows": 0,
+  "first_negative_rows": [
+    [
+      6175,
+      -21772800
+    ],
+    [
+      6473,
+      -3628800
+    ],
+    [
+      6511,
+      -3628800
+    ],
+    [
+      29600,
+      -482630400
+    ],
+    [
+      29606,
+      -152409600
+    ],
+    [
+      29663,
+      -43545600
+    ],
+    [
+      30669,
+      -54432000
+    ],
+    [
+      30687,
+      -29030400
+    ]
+  ],
+  "first_nonintegral_rows": [],
+  "status": "rounded point fails exact induced-count checks; real proposal retained"
+}

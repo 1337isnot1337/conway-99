@@ -19,6 +19,10 @@ Its full-component census at `9c58d1d` improves this to 112 and bounds
 the number of full triangles by 24. Its later nine-triangle-cover
 exclusion and component update at `51329e0` reduce the full-triangle
 bound to 22; the total grid bound remains 112.
+The later eight-triangle exclusion at `b611eb7` leaves only pencil
+components and gives at most 21 full triangles. Checkpoint `a39ef45`
+also raises the lower bound on disjoint triangle pairs with two
+cross-edges to 1,215. These are results on the parallel branch.
 Its earlier checkpoint
 `2e2d7ed` also bounds the number through a point by thirteen. The historical
 bounds and count witnesses below are retained with their original scope.
@@ -38,6 +42,18 @@ kernels and a positive definite principal quotient.
 The next [order-ten count probes](research/grids-and-triangles/grid_free_order10_probe.md)
 use 48,965 graph types and 549 core coordinates. Both initial 30-second
 linear searches ended UNKNOWN. No order-ten witness or exclusion follows.
+The subsequent [scaled calculation](research/grids-and-triangles/grid_free_order10_scaled.md)
+gives an exact contradiction for extending this particular order-nine
+point. A positive integer combination of 52 induced order-ten counts
+and 21 ordinary core counts gives a universal inequality on the old
+coordinates, with value `-2564720` at the point. No upper bound is needed
+for this simplified identity. An independent integer replay checks all
+52 source forms against the exact reduction and reconstructs the cut.
+This excludes the fixed prefix, not all zero-grid count assignments.
+The free-prefix numerical proposal still fails exact count verification.
+The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
+excludes only the rook graph plus an isolated vertex among all types
+through order ten. It adds no new zero-grid restriction.
 
 The [single isomorphic pair](research/grids-and-triangles/two_rook_iso_pair_integer.md)
 remains unresolved. Its forced 81-vertex exterior has nine singleton tips
@@ -93,6 +109,11 @@ signature orbits and all eight duplicate-tip orbits have exact partial
 neighborhood witnesses. The latter orbits cover all 21 tip pairs, so this
 particular projection excludes no choice. A separate full-domain real
 projection has an exact feasible point at `a=36` and no smaller upper bound.
+All eight [full joint two-tip splits](research/grids-and-triangles/complement_rook_joint_split.md)
+also returned UNKNOWN at their thirty-second budgets. The split coverage
+is complete, but no split has an exclusion certificate. This necessary
+model has all mixed and packing constraints and omits general exterior
+pair caps.
 
 ## Scope of the unrestricted computations
 
@@ -108,13 +129,19 @@ checks the full domain and encoding, including the 84 necessary
 broken-rook implications. A direct nine-rook assignment and 3,069
 Boolean controls pass. Each case has 960,414 variables and 1,908,864
 clauses. The sequential batch uses 180 seconds per case and records
-each outcome separately. Its first eight cases returned UNKNOWN. The
+each outcome separately. All eleven cases returned UNKNOWN, with a total
+batch elapsed time of 1,993.537 seconds. No graph or UNSAT proof was found. The
 model and coverage proofs are not
 nonexistence proofs; every UNKNOWN case remains open.
 The [separate lexicographic overlay](research/root_full_caps_lex.md) is
 audited and has complete stabilizer coverage and small Boolean controls.
 It preserves a labeling of every possible graph by finite-orbit minima.
-It has not yet produced a 99-vertex solve outcome.
+Its sixty-second pilots on cases zero and ten both returned UNKNOWN.
+The [completed run tables](research/root_full_caps_runs_01.md) record
+all thirteen outcomes and their exact bindings. A separate
+[maximum-anchor convention](research/root_full_caps_anchor_max.md)
+also preserves coverage of an eleven-case union; it can move a graph
+between the original partition cases and has not yet been solved.
 
 The [general 39-point triangle identities](research/grids-and-triangles/triangle_root_constraints.md)
 show that both principal projector tests are automatic. The visible caps
@@ -157,6 +184,11 @@ Signed permutations of the fourteen neighbors of a chosen root act by relabeling
 A J-STAGE workshop paper, Theorem 28, claims nonexistence: https://www.jstage.jst.go.jp/article/jsaisigtwo/2022/AGI-021/2022_01/_pdf/-char/ja . Its equation (88) counts two common neighbors in the outer graph for every non-neighbor there. In fact the outer graph is connected: two labels from distinct components could share at most one original root neighbor, violating mu=2. For a given label {a,b}, the other outer labels sharing a or b number 22; exactly one per endpoint is adjacent to {a,b}. Each of the other 20 has precisely one common neighbor in the outer graph, as the endpoint already supplies the other common neighbor. The remaining 51 non-neighbors have both common neighbors in the outer graph. The right side of (88) thus overcounts by 20, and its stated contradiction fails.
 
 The November 9 revision of Thakkar and Severini (arXiv:2608.11211v3) still states that the existence question is unresolved.
+The current PDF of [Natal and Al-saadi, arXiv:2610.16266v2](https://arxiv.org/abs/2610.16266v2),
+dated October 24, is titled *A Spanning Subgraph of Conway's 99-graph*.
+It gives the mandatory rooted spanning graph and the 84-vertex exterior
+spectrum. It does not claim nonexistence. An older indexed title claiming
+a sum-of-squares proof should not be confused with this revised paper.
 
 ## Four-cycle neighborhoods and lattice restrictions
 

@@ -11,6 +11,9 @@ Conversely, every hypothetical graph can be labelled to satisfy one of
 eleven explicit normalization cases. A timeout in any case leaves that
 case open.
 
+The [first batch](root_full_caps_runs_01.md) finished all eleven cases
+as UNKNOWN at 180 seconds each. No graph or UNSAT certificate was found.
+
 ## The mandatory fifteen-point core
 
 Fix a root `r`. Its fourteen neighbors each have exactly one neighbor

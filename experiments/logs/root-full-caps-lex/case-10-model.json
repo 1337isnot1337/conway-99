@@ -1,0 +1,80 @@
+{
+  "status": "complete overlay CNF built; no solve",
+  "analysis": "experiments/logs/root-full-caps-lex/analysis.json",
+  "analysis_sha256": "1abd9986f9d9a44743f4d56d58e876d24aa2b7a6f8a98ed34a92698a7a191bb8",
+  "source_hashes": {
+    "root_full_caps_lex.py": "736ccdd9060144eded621dc409a7ebd8ff4f3c3fb081ba606994c05a3f24a848",
+    "root_full_caps_lex_coverage.py": "9f5ca4aed852b5fbf29a65dd02244bc83a5ceab99254e4d66c831da6ac16c27a"
+  },
+  "case": {
+    "index": 10,
+    "partition": [
+      6
+    ],
+    "stabilizer_order": 12,
+    "generator_count": 2,
+    "generators": [
+      {
+        "kind": "rotation",
+        "component": 0,
+        "image": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          0,
+          1
+        ],
+        "moved_primary_coordinates": 3486,
+        "edge_image_sha256": "39d2fb1bcc8ffcf218abffa2bf524375004ca6049614dd418005de26ceaf299d",
+        "lex_right_sha256": "255ae5cc6f87fb40931d54183c6c8ff623a7119b4a3d2a806907385c2bf568bb",
+        "added_variables": 3485,
+        "added_clauses": 10456
+      },
+      {
+        "kind": "reflection",
+        "component": 0,
+        "image": [
+          1,
+          0,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6,
+          5,
+          4,
+          3,
+          2
+        ],
+        "moved_primary_coordinates": 3440,
+        "edge_image_sha256": "818e652ae7ef7d20e62a070d3048382349916f2b55a92b4a88ec77a8c1a0a48b",
+        "lex_right_sha256": "818e652ae7ef7d20e62a070d3048382349916f2b55a92b4a88ec77a8c1a0a48b",
+        "added_variables": 3439,
+        "added_clauses": 10318
+      }
+    ],
+    "base_cnf_sha256": "2cce50890461fa6b649d45cacf8d47b8b907326c4cd1fcf7dd86d8f602e06588",
+    "base_variables": 960414,
+    "base_clauses": 1908864,
+    "added_variables": 6924,
+    "added_clauses": 20774,
+    "total_variables": 967338,
+    "total_clauses": 1929638
+  },
+  "cnf": "/tmp/conway-root-full-caps-lex/case-10.cnf",
+  "cnf_sha256": "1b0c0d202fd349174098fbbceb4accfeff5a4eb749fc4df8b4c3a56091e90631",
+  "original_batch": "experiments/logs/root-full-caps/run-01/batch.json",
+  "original_batch_sha256": "5a475b70655e057060884639ab304de372d21cadbd47a3fce61d7ec8c6e9c549",
+  "run_support_source_hashes": {
+    "root_full_caps_lex_solve.py": "02f995772c464edbfd52ce0f0cec84426cff9fbf4e7e4437c55ce6ce3efe5572",
+    "root_full_caps_lex_certificate.py": "7c366c2bd6b4eca1f607cddf1b448346fe527fde484bcbd854d98d0a5a19e12c"
+  }
+}
