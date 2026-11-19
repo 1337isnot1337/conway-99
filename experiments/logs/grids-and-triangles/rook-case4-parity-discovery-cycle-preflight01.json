@@ -1,0 +1,733 @@
+{
+  "status": "PASS: immutable cached167115-row prefix plus two certified cuts",
+  "preparation": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-preparation01.json",
+    "sha256": "049f6a466ae3aff21900b1e16c7efe58f564d3cfdc592d9d465a1616714acc3c"
+  },
+  "bindings": {
+    "controller_sha256": "e697242576e83721481b171826a32bf57506e1204ff09659b8faefd2d6da261e",
+    "sources": {
+      "previous": {
+        "path": "experiments/workspace/rook_case4_parity_cycle_v4.py",
+        "sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e"
+      },
+      "discovery": {
+        "path": "experiments/workspace/rook_case4_parity_discovery.py",
+        "sha256": "672c5b5916ad823d7c89d566a68a49e3cf42f3a75e76d9144542cf4fe8a63bd7"
+      },
+      "saved_cut_checker": {
+        "path": "experiments/workspace/rook_case4_parity_cycle_saved_cuts_direct.py",
+        "sha256": "faf49add2ee84402f2efdb5a050f0ac62612db118219738f4831c59e61e66c42"
+      }
+    },
+    "reused_v4_bindings": {
+      "cycle_source_sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e",
+      "helpers": {
+        "exact": {
+          "path": "experiments/workspace/rook_case4_parity_cycle_exact.py",
+          "sha256": "2f10a42f546623cb1840d228101537e6f4f4bc584776407140ae0c36b08c99b7"
+        },
+        "weighted": {
+          "path": "experiments/workspace/rook_case4_face112_h3_weighted_parity.py",
+          "sha256": "c38a4ec1d95eca5382e34c7182af38c980bf61785585207dd314a1a6546b5756"
+        },
+        "basis": {
+          "path": "experiments/workspace/rook_case4_weighted_parity_basis.py",
+          "sha256": "bb507d8d97a064bd8c56aac763b44e026c50598048b213db9399662eaaec7415"
+        },
+        "parity": {
+          "path": "experiments/workspace/rook_case4_parity_polytope.py",
+          "sha256": "048df509b05601f15d6cb4230750b36d221276cce66e625b0cf9c720ecb89062"
+        },
+        "generation": {
+          "path": "experiments/workspace/rook_case4_face112_weighted_parity_generation.py",
+          "sha256": "fb4c4b853708740e1a1726cb4455a5c82a7ae3659439407f4a00a33c67c71ec7"
+        },
+        "finite_box": {
+          "path": "experiments/workspace/rook_case4_finite_box_certificates.py",
+          "sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7"
+        }
+      },
+      "input_bindings": {
+        "native": [
+          "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+          "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+        ],
+        "old_basis": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-parity-preparation01/basis.json.gz",
+          "ad03018a2bb30dfb79fb126b76aa9863b16217eeb42f0b1e78fdaabde610c00d"
+        ],
+        "old_span_cold": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-h3-weighted-parity-run01-replay.json",
+          "1cc5086c7d1b5102c9df8825127e8dfd06317c03517402cb85fdf49678069544"
+        ],
+        "model": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+          "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+        ],
+        "arrays": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/arrays.npz",
+          "59a06470793e6959a67ae30dfb29ecf0de4c8aa74661e1335d7676aa612c1e7e"
+        ],
+        "model_cold": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01-cold-replay.json",
+          "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+        ],
+        "point": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-run01/candidate.json",
+          "3cd4d391e5b372f6ff0d2df11ebd16fccec1b7122527864fef76e33eae72312b"
+        ],
+        "point_cold": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-run01-replay.json",
+          "e6b8cacf16a38b4529f73d96aa7212ac6f71244846f8d0f38973cd865667c0d4"
+        ],
+        "known_numeric_control": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-generation-run01/iteration-00-numeric.json.gz",
+          "b024197a41afb7412b5010deafcf136cbf1bf3ca1b08aed2ffd1965e4cb9ee00"
+        ],
+        "known_basis_control": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-preparation01/proposal.json.gz",
+          "ddf80d0fc6c9061ce0b76fb92bdc6e0a7143a50e2f3c615145d8dc5d40177dcc"
+        ]
+      }
+    },
+    "inputs": {
+      "saved_cuts": [
+        "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-run01/scan-00/cuts.jsonl",
+        "9cba12a6030d06de531107cf0e28010cd81011319e0e98d363d4146349e85cd1"
+      ],
+      "direct_proof": [
+        "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-saved-cuts-direct-replay01.json",
+        "c47c22e6dc438efba2be7695892c63b33f9c7afa45c42394bf0585c350947cd6"
+      ],
+      "direct_gate": [
+        "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-saved-cuts-root-review.json",
+        "64e01ac79de7026cf0dc93874a9003da4f61c5f1e4db05c7f9c81d138b36a595"
+      ],
+      "native_preflight": [
+        "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight04.json",
+        "d3827408d08dd443093cba2d0c19e250391c142c6e97a4f04f316567c04bf264"
+      ]
+    },
+    "numeric_exact_cold_functions_imported_unchanged": [
+      "numeric_stage",
+      "numeric_records",
+      "finite_bound",
+      "inspect_point",
+      "exact_stage",
+      "replay_numeric",
+      "exact_cold",
+      "load_matrix"
+    ]
+  },
+  "definition_sha256": "5ab9659cdd08cc4a1b6e6bf2f02841ae52e0f3ed3b5aef21a923436fdc05b989",
+  "matrix_binding": {
+    "coefficients": {
+      "dtype": "int64",
+      "shape": [
+        10769628
+      ],
+      "sha256": "8c34ed02b31eebb5c79ac0281a4a731771a897bba865415fed9f2ec4c938780d"
+    },
+    "column_indices": {
+      "dtype": "int32",
+      "shape": [
+        10769628
+      ],
+      "sha256": "9403756fbefe53cfa82c8b2be8c3ac8e8535715fac3015caef0289360d665a5f"
+    },
+    "original_column_ids": {
+      "dtype": "uint16",
+      "shape": [
+        1102
+      ],
+      "sha256": "31cdcac78e71aff4d6cbbf9c89bca245035c123525a2fb8e7435b7a637dc5e38"
+    },
+    "row_lower": {
+      "dtype": "int64",
+      "shape": [
+        167117
+      ],
+      "sha256": "5b56d7493f15f745631fadddebdb6ae1160ca824b0faac74140892c8d146b8cd"
+    },
+    "row_pointers": {
+      "dtype": "int64",
+      "shape": [
+        167118
+      ],
+      "sha256": "d0b6280f1e4b91e157088336dcfc3ae0e2f1bda9360db0d73f70a75cebbc81c6"
+    },
+    "row_upper": {
+      "dtype": "int64",
+      "shape": [
+        167117
+      ],
+      "sha256": "6a0312c5942602a3e0e1766b3d4ca1391a0e7fcbf8e07cbb53c2bb4a862e4c05"
+    }
+  },
+  "rows": 167117,
+  "nonzeros": 10769628,
+  "appended_rows": [
+    {
+      "row": 167115,
+      "terms": [
+        [
+          187,
+          -1
+        ],
+        [
+          191,
+          -1
+        ],
+        [
+          196,
+          -1
+        ],
+        [
+          201,
+          -1
+        ],
+        [
+          288,
+          -1
+        ],
+        [
+          296,
+          -1
+        ],
+        [
+          300,
+          -1
+        ],
+        [
+          468,
+          -1
+        ],
+        [
+          469,
+          -1
+        ],
+        [
+          472,
+          -1
+        ],
+        [
+          476,
+          -1
+        ],
+        [
+          477,
+          -1
+        ],
+        [
+          479,
+          -1
+        ],
+        [
+          480,
+          -1
+        ],
+        [
+          481,
+          -1
+        ],
+        [
+          483,
+          -1
+        ],
+        [
+          484,
+          -1
+        ],
+        [
+          485,
+          -1
+        ],
+        [
+          487,
+          -1
+        ],
+        [
+          488,
+          -1
+        ],
+        [
+          489,
+          -1
+        ],
+        [
+          494,
+          -1
+        ],
+        [
+          495,
+          -1
+        ],
+        [
+          496,
+          -1
+        ],
+        [
+          497,
+          -1
+        ],
+        [
+          499,
+          -1
+        ],
+        [
+          500,
+          -1
+        ],
+        [
+          814,
+          -1
+        ],
+        [
+          827,
+          -1
+        ],
+        [
+          833,
+          -1
+        ],
+        [
+          840,
+          -1
+        ],
+        [
+          846,
+          -1
+        ],
+        [
+          853,
+          -1
+        ],
+        [
+          858,
+          -1
+        ],
+        [
+          867,
+          -1
+        ],
+        [
+          868,
+          -1
+        ],
+        [
+          879,
+          -1
+        ],
+        [
+          880,
+          -1
+        ],
+        [
+          881,
+          -1
+        ],
+        [
+          889,
+          -1
+        ],
+        [
+          890,
+          -1
+        ],
+        [
+          891,
+          -1
+        ],
+        [
+          892,
+          -1
+        ],
+        [
+          899,
+          -1
+        ],
+        [
+          900,
+          -1
+        ],
+        [
+          908,
+          -1
+        ],
+        [
+          909,
+          -1
+        ],
+        [
+          910,
+          -1
+        ],
+        [
+          911,
+          -1
+        ],
+        [
+          992,
+          -1
+        ],
+        [
+          1010,
+          -1
+        ],
+        [
+          1133,
+          -1
+        ],
+        [
+          1137,
+          -1
+        ],
+        [
+          1152,
+          -1
+        ],
+        [
+          1153,
+          -1
+        ],
+        [
+          1157,
+          -1
+        ],
+        [
+          1158,
+          -1
+        ],
+        [
+          1168,
+          -1
+        ],
+        [
+          1169,
+          -1
+        ],
+        [
+          1179,
+          -1
+        ],
+        [
+          1180,
+          -1
+        ],
+        [
+          1187,
+          -1
+        ],
+        [
+          1191,
+          -1
+        ],
+        [
+          1196,
+          -1
+        ],
+        [
+          1202,
+          -1
+        ],
+        [
+          1203,
+          -1
+        ],
+        [
+          1210,
+          -1
+        ]
+      ],
+      "lower": -67,
+      "upper": -1
+    },
+    {
+      "row": 167116,
+      "terms": [
+        [
+          236,
+          -1
+        ],
+        [
+          237,
+          -1
+        ],
+        [
+          238,
+          -1
+        ],
+        [
+          239,
+          -1
+        ],
+        [
+          246,
+          -1
+        ],
+        [
+          251,
+          -1
+        ],
+        [
+          257,
+          -1
+        ],
+        [
+          262,
+          -1
+        ],
+        [
+          357,
+          -1
+        ],
+        [
+          358,
+          -1
+        ],
+        [
+          360,
+          -1
+        ],
+        [
+          361,
+          -1
+        ],
+        [
+          362,
+          -1
+        ],
+        [
+          376,
+          -1
+        ],
+        [
+          382,
+          -1
+        ],
+        [
+          384,
+          -1
+        ],
+        [
+          393,
+          -1
+        ],
+        [
+          395,
+          -1
+        ],
+        [
+          405,
+          -1
+        ],
+        [
+          406,
+          -1
+        ],
+        [
+          433,
+          -1
+        ],
+        [
+          445,
+          -1
+        ],
+        [
+          455,
+          -1
+        ],
+        [
+          485,
+          -1
+        ],
+        [
+          496,
+          -1
+        ],
+        [
+          500,
+          -1
+        ],
+        [
+          561,
+          -1
+        ],
+        [
+          573,
+          -1
+        ],
+        [
+          582,
+          -1
+        ],
+        [
+          605,
+          -1
+        ],
+        [
+          634,
+          -1
+        ],
+        [
+          646,
+          -1
+        ],
+        [
+          655,
+          -1
+        ],
+        [
+          745,
+          -1
+        ],
+        [
+          750,
+          -1
+        ],
+        [
+          756,
+          -1
+        ],
+        [
+          760,
+          -1
+        ],
+        [
+          765,
+          -1
+        ],
+        [
+          810,
+          -1
+        ],
+        [
+          811,
+          -1
+        ],
+        [
+          812,
+          -1
+        ],
+        [
+          813,
+          -1
+        ],
+        [
+          814,
+          -1
+        ],
+        [
+          834,
+          -1
+        ],
+        [
+          847,
+          -1
+        ],
+        [
+          854,
+          -1
+        ],
+        [
+          895,
+          -1
+        ],
+        [
+          914,
+          -1
+        ],
+        [
+          927,
+          -1
+        ],
+        [
+          929,
+          -1
+        ],
+        [
+          930,
+          -1
+        ],
+        [
+          932,
+          -1
+        ],
+        [
+          933,
+          -1
+        ],
+        [
+          950,
+          -1
+        ],
+        [
+          965,
+          -1
+        ],
+        [
+          978,
+          -1
+        ],
+        [
+          980,
+          -1
+        ],
+        [
+          1092,
+          -1
+        ],
+        [
+          1099,
+          -1
+        ],
+        [
+          1113,
+          -1
+        ],
+        [
+          1123,
+          -1
+        ],
+        [
+          1149,
+          -1
+        ],
+        [
+          1154,
+          -1
+        ],
+        [
+          1160,
+          -1
+        ],
+        [
+          1171,
+          -1
+        ]
+      ],
+      "lower": -65,
+      "upper": -1
+    }
+  ],
+  "runtime_binding": {
+    "empty_existing_ray_check": true,
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy_version": "2.3.5",
+    "highspy_package_version": "1.16.0",
+    "native_HiGHS_version": "1.16.0",
+    "highspy_init_sha256": "38e439b7aba304fb9ee78c3c732bc0b16e79bb864c841a1f95471330cdb47865",
+    "highspy_native_binary_name": "_core.cpython-312-x86_64-linux-gnu.so",
+    "highspy_native_binary_sha256": "70da2435537fba263414987fa7289649e74551981edf5d57df1f727a110e27c3",
+    "scipy_version": "1.17.0"
+  },
+  "reused_native_preflight": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight04.json",
+    "sha256": "d3827408d08dd443093cba2d0c19e250391c142c6e97a4f04f316567c04bf264"
+  },
+  "optimizer_calls": 0,
+  "new_native_model_transport_calls": 0,
+  "original_cover_supports_reconstructed": false,
+  "seconds": 5.296679414997925
+}

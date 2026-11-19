@@ -1,0 +1,91 @@
+{
+  "status": "owned cycle child terminated",
+  "source_bindings": {
+    "cycle_source_sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e",
+    "helpers": {
+      "exact": {
+        "path": "experiments/workspace/rook_case4_parity_cycle_exact.py",
+        "sha256": "2f10a42f546623cb1840d228101537e6f4f4bc584776407140ae0c36b08c99b7"
+      },
+      "weighted": {
+        "path": "experiments/workspace/rook_case4_face112_h3_weighted_parity.py",
+        "sha256": "c38a4ec1d95eca5382e34c7182af38c980bf61785585207dd314a1a6546b5756"
+      },
+      "basis": {
+        "path": "experiments/workspace/rook_case4_weighted_parity_basis.py",
+        "sha256": "bb507d8d97a064bd8c56aac763b44e026c50598048b213db9399662eaaec7415"
+      },
+      "parity": {
+        "path": "experiments/workspace/rook_case4_parity_polytope.py",
+        "sha256": "048df509b05601f15d6cb4230750b36d221276cce66e625b0cf9c720ecb89062"
+      },
+      "generation": {
+        "path": "experiments/workspace/rook_case4_face112_weighted_parity_generation.py",
+        "sha256": "fb4c4b853708740e1a1726cb4455a5c82a7ae3659439407f4a00a33c67c71ec7"
+      },
+      "finite_box": {
+        "path": "experiments/workspace/rook_case4_finite_box_certificates.py",
+        "sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7"
+      }
+    },
+    "input_bindings": {
+      "native": [
+        "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+        "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+      ],
+      "old_basis": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-parity-preparation01/basis.json.gz",
+        "ad03018a2bb30dfb79fb126b76aa9863b16217eeb42f0b1e78fdaabde610c00d"
+      ],
+      "old_span_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-h3-weighted-parity-run01-replay.json",
+        "1cc5086c7d1b5102c9df8825127e8dfd06317c03517402cb85fdf49678069544"
+      ],
+      "model": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+        "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+      ],
+      "arrays": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/arrays.npz",
+        "59a06470793e6959a67ae30dfb29ecf0de4c8aa74661e1335d7676aa612c1e7e"
+      ],
+      "model_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01-cold-replay.json",
+        "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+      ],
+      "point": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-run01/candidate.json",
+        "3cd4d391e5b372f6ff0d2df11ebd16fccec1b7122527864fef76e33eae72312b"
+      ],
+      "point_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-run01-replay.json",
+        "e6b8cacf16a38b4529f73d96aa7212ac6f71244846f8d0f38973cd865667c0d4"
+      ],
+      "known_numeric_control": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-generation-run01/iteration-00-numeric.json.gz",
+        "b024197a41afb7412b5010deafcf136cbf1bf3ca1b08aed2ffd1965e4cb9ee00"
+      ],
+      "known_basis_control": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-preparation01/proposal.json.gz",
+        "ddf80d0fc6c9061ce0b76fb92bdc6e0a7143a50e2f3c615145d8dc5d40177dcc"
+      ]
+    }
+  },
+  "preparation": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation04.json",
+    "sha256": "61c56185b99adba1b56728b96b34e3c3ec9a25e1708c9e5e53bf4413b9f1e5f0"
+  },
+  "preflight": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight04.json",
+    "sha256": "d3827408d08dd443093cba2d0c19e250391c142c6e97a4f04f316567c04bf264"
+  },
+  "hard_seconds": 1080,
+  "hard_timeout": false,
+  "exit_code": 0,
+  "retries": 0,
+  "seconds": 64.23964579300082,
+  "result": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-run01/result.json",
+    "sha256": "56fd0e4dc684dc39ff11c969608596145f865f61c3c8b17d13c546663646c735"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS: complete domain-overlay source review",
+  "source": "experiments/workspace/root_prism_free_f0_character_z_domain_overlay.py",
+  "source_sha256": "723841fafdfc151ef68e5b3877479361d38b84a06b86b83d9a7f69e0aed3460d",
+  "reviewer": "root",
+  "new_optimizer_calls": 0,
+  "source_review_only": true,
+  "checks": [
+    "Every one of9353 retained pair-orbit bounds is bound to the saved complete census and its passed cold replay.",
+    "Interval intersection preserves holes and cannot remove a value at or below the certified upper bound. The helper has217 small signed-domain controls.",
+    "All8251 changed columns are Z count variables;1102 other Z domains and9091 non-Z domains are unchanged.",
+    "Constraint digests are unchanged and restoring old domains reproduces both entire original protobuf hashes.",
+    "All old plan fields, row maps, variable IDs and external pool entries remain unchanged apart from the explicitly identified domain/source metadata.",
+    "Native public-constructor transport checks exact initial-model bytes without constructing a solver.",
+    "A timed-out or failed cold owner cannot mark the overlay accepted. Its failure is preserved; a separate direct protobuf/domain checker may bind the successful preparation without repeating native construction."
+  ],
+  "scope": "Necessary domain restrictions for the fixed F0 count model. No count feasibility, incidence or graph conclusion."
+}

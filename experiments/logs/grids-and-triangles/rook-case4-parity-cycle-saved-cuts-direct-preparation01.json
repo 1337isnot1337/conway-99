@@ -1,0 +1,100 @@
+{
+  "case_RREF_or_scan_or_optimizer": false,
+  "controls": {
+    "Boolean_inequality_assignments": 682,
+    "literal_Gram_point_control": 1,
+    "production_records_checked": 0,
+    "tampered_record_rejections": 4
+  },
+  "inputs": {
+    "bindings_audit": [
+      "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-run01-bindings.json",
+      "e861f181aaf82602fe3ab65586c83b9caea3ec77c53bfb9866f3eeb2e1d7a93c"
+    ],
+    "cuts": [
+      "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-run01/scan-00/cuts.jsonl",
+      "9cba12a6030d06de531107cf0e28010cd81011319e0e98d363d4146349e85cd1"
+    ],
+    "model": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+      "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+    ],
+    "model_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01-cold-replay.json",
+      "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+    ],
+    "native": [
+      "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    ],
+    "partial_terminal": [
+      "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-run01/result.json",
+      "56fd0e4dc684dc39ff11c969608596145f865f61c3c8b17d13c546663646c735"
+    ],
+    "point": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-run01/candidate.json",
+      "3cd4d391e5b372f6ff0d2df11ebd16fccec1b7122527864fef76e33eae72312b"
+    ],
+    "point_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-run01-replay.json",
+      "e6b8cacf16a38b4529f73d96aa7212ac6f71244846f8d0f38973cd865667c0d4"
+    ]
+  },
+  "limits": {
+    "original_Gram_rows": 630,
+    "original_columns": 1214,
+    "records": 2,
+    "seconds": 10
+  },
+  "saved_proposals": [
+    {
+      "original_Gram_row_ids": [
+        67,
+        100,
+        147,
+        157,
+        250,
+        375,
+        397,
+        418,
+        475,
+        600
+      ],
+      "raw_candidate_id": 73296,
+      "saved_deficit_numerator": 41397422,
+      "saved_rhs": 13,
+      "saved_support_size": 67
+    },
+    {
+      "original_Gram_row_ids": [
+        161,
+        191,
+        208,
+        236,
+        248,
+        251,
+        275,
+        301,
+        338,
+        353,
+        399,
+        403,
+        405,
+        409,
+        410,
+        411,
+        605,
+        611,
+        616,
+        622
+      ],
+      "raw_candidate_id": 76530,
+      "saved_deficit_numerator": 38044002,
+      "saved_rhs": 27,
+      "saved_support_size": 65
+    }
+  ],
+  "search_exhaustion_claimed": false,
+  "source_sha256": "faf49add2ee84402f2efdb5a050f0ac62612db118219738f4831c59e61e66c42",
+  "status": "PREPARED: two-record direct proof replay, case arithmetic unrun"
+}

@@ -1,0 +1,36 @@
+{
+  "status": "PASS: full query and terminal-replay source review; one bounded production owner permitted",
+  "reviewer": "root",
+  "bindings": {
+    "query": {
+      "path": "experiments/workspace/root_prism_free_f0_character_packing_light_query.py",
+      "sha256": "255cc48bb3f5e8bbbcb8180b9cb024c5e92ce171dc29befbf35d0657ec196a69"
+    },
+    "replay": {
+      "path": "experiments/workspace/root_prism_free_f0_character_packing_light_replay.py",
+      "sha256": "2f233b33d551d90c7af3db17aba9a43f1b564f812f4211b42418550a4730ebf8"
+    },
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-character-packing-light-query-preparation01/preparation.json",
+      "sha256": "b8bce3bd80f42417df1fc360fc8663eb8f3f9a3c1066606c864c3ac4e24d5cb4"
+    },
+    "preflight": {
+      "path": "experiments/logs/root-prism-free/f0-character-packing-light-query-preflight01/report.json",
+      "sha256": "b090b7836ba0e24d3e914bb183495d03da239da406fe7494164f139759760fe2"
+    }
+  },
+  "checks": [
+    "Search loads only the frozen final plan and target/initial protobufs; mathematical builders and large specifications are not imported.",
+    "The initial34281 constraints are exactly embedded in the full34398 target. All117 dense rows are retained, hash-checked and evaluated with Python integer arithmetic.",
+    "All18444 variable IDs/domains, row maps and table/product constraints preserve their checked model meanings.",
+    "Four parameter, arithmetic and row-selection helpers are AST-identical to frozen reviewed sources; old prefix controls are bound.",
+    "Every returned integer vector is saved before response parsing, complete prefix evaluation or external-row scans.",
+    "A later call requires at least one previously absent exactly violated target row. There is no unchanged-prefix retry.",
+    "Each native prefix, parameter set, response, integer candidate, pool scan and appended-row list is durable and independently replayed.",
+    "A full-target-passing vector remains provisional. This driver never claims restored-parent count feasibility, selector incidence or graph feasibility.",
+    "Native infeasibility remains unproved without an independent certificate. Partial/error outcomes retain their status.",
+    "The external owner has180 seconds,12 calls,16 selected rows per candidate, one worker, seed0 and probing0. The cold preflight passed without a solver."
+  ],
+  "new_optimizer_calls": 0,
+  "scope": "One native candidate search in the fixed F0 count relaxation. Separate exact restored-parent acceptance is required before any count witness claim; a literal lift and exterior completion remain further obligations."
+}

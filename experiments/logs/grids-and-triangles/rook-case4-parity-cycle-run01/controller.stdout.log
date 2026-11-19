@@ -1,0 +1,52 @@
+{
+  "status": "UNRESOLVED: scan child incomplete; durable prefix retained",
+  "preparation": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation04.json",
+    "sha256": "61c56185b99adba1b56728b96b34e3c3ec9a25e1708c9e5e53bf4413b9f1e5f0"
+  },
+  "preflight": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight04.json",
+    "sha256": "d3827408d08dd443093cba2d0c19e250391c142c6e97a4f04f316567c04bf264"
+  },
+  "limits": {
+    "fresh_point_scans": 3,
+    "new_LP_rounds": 2,
+    "total_native_calls": 60,
+    "native_calls_per_round": 30,
+    "cumulative_native_seconds": 120,
+    "numerical_phase_seconds": 180,
+    "total_numerical_phase_seconds": 360,
+    "scan_seconds": 60,
+    "scan_cold_seconds": 60,
+    "exact_seconds": 60,
+    "exact_cold_seconds": 60,
+    "maximum_declared_stage_seconds": 960,
+    "whole_cycle_hard_seconds": 1080,
+    "maximum_new_cuts": 64,
+    "maximum_scan_transcript_bytes": 67108864,
+    "scan_result_reserve_bytes": 1048576,
+    "raw_words_per_scan": 123123,
+    "covers_per_native_call": 512,
+    "added_covers_per_round": 14848,
+    "violation_tolerance": 1e-07,
+    "threads": 1,
+    "maximum_dynamic_exact_dimension": 512,
+    "maximum_exact_output_bits": 4096,
+    "automatic_retries": 0
+  },
+  "LP_rounds": 0,
+  "native_calls": 0,
+  "native_seconds": 0.0,
+  "scan_transcript_bytes": 0,
+  "scan_byte_accounting": "exact basis/evaluation/cut bytes plus one MiB result reserve per completed scan",
+  "case4_exclusion_verified": false,
+  "exact_zero_face_found": false,
+  "whole_graph_problem_resolved": false,
+  "seconds": 60.750715991001925,
+  "source_and_state_artifacts": [
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-run01/state-scan-00.json",
+      "sha256": "ad1f34c81d7395ddc069d3efe9a653f1cea2339755d23f6d895f2645b8baec48"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "status": "PASS: complete standalone source and direct parity-proof review",
+  "source": "experiments/workspace/rook_case4_parity_cycle_saved_cuts_direct.py",
+  "source_sha256": "faf49add2ee84402f2efdb5a050f0ac62612db118219738f4831c59e61e66c42",
+  "reviewer": "root",
+  "checks": [
+    "All630 original Gram equations are checked at the previously accepted point; zero and point premises bind their full cold replays.",
+    "Each saved row is rebuilt as a sum of original Gram rows in all1214 coordinates.",
+    "Modulo two, the reconstructed odd support excludes the asserted Boolean vertex. Its unit-box distance inequality is checked directly.",
+    "Both saved exact point deficits are positive; they are not inferred from floating values or search status.",
+    "For these two all-zero forbidden vertices, H+2F=b gives H>=1 and the equivalent integer capacity F<=(b-1)/2.",
+    "The checker does not inspect or trust an unfinished RREF or evaluation scan and does not claim finite-family exhaustion."
+  ],
+  "authorized_arithmetic_records": 2,
+  "seconds": 10,
+  "new_optimizer_calls": 0,
+  "source_review_only": true,
+  "scope": "Two necessary Boolean inequalities on the proved112-zero face; no case exclusion."
+}
