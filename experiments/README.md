@@ -395,6 +395,17 @@ states the labeling restriction and the limits of the other solver runs.
 
 ## Explore the archive
 
+The [six-root moment package](../research/grids-and-triangles/grid_free_order10_r6s2_results.md)
+has eighteen exact quadratic cuts and a separate direct-graph reconstruction
+of every product used in those cuts. Its saved-tensor replay checks exact
+contractions against the bound cache; the fresh reconstruction does not
+use those tensors to generate coefficients. The note gives both commands.
+The [full cache and scanner note](../research/grids-and-triangles/grid_free_order10_r6s2_full_cache.md)
+records all 62 roots, the seven-block continuation, and controls for the
+nonbinary flags. Its manifests bind the source and data files. A complete
+scan with no detected separator does not certify positive semidefiniteness.
+
+
 Run the individual research scripts from [`experiments/workspace/`](workspace/). The Python and C++ sources, certificate JSON, candidate arrays, and cached moment data share this directory because the scripts use sibling paths.
 
 The archived logs cover [grids and triangles](logs/grids-and-triangles/), [independent sets](logs/independent-sets/), [eigenlattices](logs/eigenlattices/), [moments and counts](logs/moments-and-counts/), and [construction searches](logs/construction-searches/). The [research ledger](../STATE.md) explains which runs concern relaxations or particular construction families.

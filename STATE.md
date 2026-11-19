@@ -106,6 +106,20 @@ certificate. Separate [binary flag triangle inequalities](research/grids-and-tri
 give no cut against either the earlier repaired point or the new
 positive-x521 rounded point, after 170,183,860 exact inequalities per point.
 These finite witnesses leave graph existence unresolved.
+The next [six-root, two-vertex flag family](research/grids-and-triangles/grid_free_order10_r6s2_results.md)
+rejects both saved count witnesses. Eighteen exact quadratic inequalities
+reject the positive-x521 point; sixteen of them reject the x521-zero point.
+A separate graph constructor reproduces all 374,505 product entries used
+by these eighteen certificates. This excludes the two points, not their
+entire count faces. Their earlier finite-scope certificates remain valid.
+The [complete reusable family](research/grids-and-triangles/grid_free_order10_r6s2_full_cache.md)
+now contains all 62 roots, 14,348 flags, and 3,913,479 lower-triangle
+matrix entries. Some flags take values zero, one, or two, so the product
+construction retains overlapping and disjoint copies. An
+[exact range scan](research/grids-and-triangles/grid_free_order10_r6s2_ranges.md)
+checks 7,812,610 inequalities at each saved point and finds no further cut.
+All diagonal range inequalities follow from existing count equations;
+general cross-range redundancy has not been proved.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.

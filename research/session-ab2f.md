@@ -532,3 +532,20 @@ their hypotheses permit them; computational exclusions require exact replay.
   original-equation audits. The edge-component checker completed its
   mathematical checks, then its report rejected a relative certificate
   path. The Makefile now supplies the absolute path; the target passes.
+- Six-root flags with up to two free vertices produce eighteen exact
+  order-ten moment cuts against the positive-x521 count witness. Sixteen
+  also reject the x521-zero witness. A separate graph constructor
+  reproduces all 374,505 product entries used by the eighteen forms.
+  These are exclusions of saved points, not either entire count face.
+- The reusable six-root family now includes all 62 roots and 14,348
+  flags, with 3,913,479 lower-triangle entries. The seven larger blocks
+  complete the earlier 55-block scan. Independent domain and product
+  controls include flags whose value can be two; no binary diagonal
+  shortcut is used. All 7,812,610 exact flag-range inequalities pass
+  at each of the two saved points, yielding no further separator.
+- Read the latest issue-one coordination: the external worker now owns
+  the 48-point incomplete-grid corner graph, its fiber-transitive
+  classification, arbitrary-square extensions, and 20-point diagonal
+  cubic graphs. Our count, complementary-rook, and prism-free shell
+  work remains separate. The external new classifications have not
+  been independently replayed on this branch.
