@@ -1,0 +1,129 @@
+{
+  "status": "PASS: independent generic source/mathematics gate and all 24 saved pilot clause certificates",
+  "audit_source_sha256": "75d80c4eaeba35b16557159c9234fc8b86e623cc728e5bcbf87d87770b8f88a5",
+  "generic_source_sha256": "f57d51b8be3fefd7a5d1035c52cc5758c719adb6a79d16a0909f1a54fdaa59f3",
+  "pilot_source_sha256": "b6f701949f31a09892d8b2211e9fc64d1fb7d1fa9a2ed6775185542980c350c4",
+  "pilot_certificate_sha256": "f06b7658ea4447bd785bab8fe2b4df87472c97944b85703ef7491dc54460b455",
+  "generic_owner_controls_bound_but_not_rerun": {
+    "status": "PASS: exact independent/cardinality clause controls",
+    "independent_explanations": 7000,
+    "cardinality_explanations": 7000,
+    "explicit_boolean_semantic_checks": 112000,
+    "arbitrary_precision_and_repeated_coefficients_checked": true,
+    "zero_coefficient_universe_control": true,
+    "invalid_clauses_rejected": 2,
+    "optimizer_or_solver_called": false,
+    "source_sha256": "f57d51b8be3fefd7a5d1035c52cc5758c719adb6a79d16a0909f1a54fdaa59f3"
+  },
+  "exact_clause_certificates_checked": 24,
+  "all_12_core_actions_checked": true,
+  "complete_population_premise_rederived": true,
+  "full_free_universe_includes_zero_coefficients": true,
+  "counts": {
+    "plain_literals": 5352,
+    "population_literals": 720,
+    "deletion_bounds_checked": 720
+  },
+  "clause_outcomes": [
+    {
+      "core_action_index": 0,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 1,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 2,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 3,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 4,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 5,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 6,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 7,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 8,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 9,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 10,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    },
+    {
+      "core_action_index": 11,
+      "plain_width": 446,
+      "plain_strict_margin": 1,
+      "population_width": 60,
+      "population_strict_margin": 26
+    }
+  ],
+  "generic_source_review": [
+    "Duplicate coefficients are combined before selecting gains or calculating bounds.",
+    "Literal falsifying values are correctly fixed to one for negative literals and zero for positive literals.",
+    "The independent rule chooses the largest helpful gains and proves minimum literal count with the k-1 bound.",
+    "The cardinality rule uses every variable in the complete universe, including absent zero coefficients.",
+    "Greedy cardinality deletion is exactly rechecked and asserts single-deletion irredundancy, without claiming minimum width.",
+    "Strict inequalities and arbitrary-precision integer arithmetic are retained; zero-width contradictions are valid only after the same exact gate."
+  ],
+  "pilot_scope": "Twelve exact consequences of the proved repaired-ray inequalities; no formula is changed.",
+  "all_population_clauses_still_fix_the_full_60_selected_variables": true,
+  "no_stronger_population_subclause_found_by_the_pilot": true,
+  "subject_modules_imported": false,
+  "solver_or_optimizer_called": false,
+  "CNF_rebuilt": false,
+  "component_excluded": false,
+  "seconds": 0.17562108199854265
+}

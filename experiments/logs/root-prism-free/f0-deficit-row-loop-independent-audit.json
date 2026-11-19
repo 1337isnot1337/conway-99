@@ -1,0 +1,102 @@
+{
+  "status": "PASS: independent 384-cut provenance and deficit-helper/loop/proof source gate",
+  "audit_source_sha256": "e2b46ebbbf9577e3c06fe32958cab6006dd62f90aa3bdda742661ce315ec12b7",
+  "source_sha256": "27b10330125ca5586512e2a4d3f8a297cf203dbb05e246bda4820240d03e940e",
+  "helper_sha256": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf",
+  "proof_wrapper_sha256": "f023da2322053bd15c844f6c8c3c63d54feb3e5ed8ed51b1df0f6cb18319d419",
+  "preparation_sha256": "8884d196447a51e6104e473794a402cd2c0ab54465207355face9f20041faa08",
+  "inherited_individual_cuts": 348,
+  "inherited_signed_cuts": 24,
+  "separate_exact_repair_transports_added": 12,
+  "total_weighted_cuts": 384,
+  "individual_potential_forms_recomputed": 348,
+  "encoding_input_and_normalization_records_checked": 384,
+  "fresh_auxiliary_interval_records_checked": 384,
+  "parent_candidates_rejected": [
+    {
+      "parent_iteration": 0,
+      "violated_individual_cut_count": 2,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 1,
+      "violated_individual_cut_count": 1,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 2,
+      "violated_individual_cut_count": 1,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 3,
+      "violated_individual_cut_count": 5,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 4,
+      "violated_individual_cut_count": 4,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 5,
+      "violated_individual_cut_count": 2,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 6,
+      "violated_individual_cut_count": 2,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 7,
+      "violated_individual_cut_count": 1,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 8,
+      "violated_individual_cut_count": 0,
+      "violated_signed_cut_count": 1
+    }
+  ],
+  "variables": 208836,
+  "clauses": 1476450,
+  "existing_CNF_sha256_checked": "2c528bfce40ea18b82949fbb45dcb05f683096c8c9ab2dd94583e238ab458cb3",
+  "unchanged_loop_functions_after_explicit_status_string_changes": [
+    "add_individual",
+    "signed_cut",
+    "add_signed",
+    "signed_outcomes",
+    "inspect",
+    "checked_preparation",
+    "counters",
+    "append_individual",
+    "symmetric_candidates",
+    "run",
+    "reconstruct"
+  ],
+  "unchanged_shared_helper_functions": [
+    "save",
+    "domain",
+    "inventory",
+    "lift",
+    "seed_control"
+  ],
+  "all_four_proof_wrapper_functions_AST_unchanged": true,
+  "source_review": [
+    "Only free equality multipliers are rounded; exact upper deficits give both nonnegative dual column blocks.",
+    "Each accepted ray passes the unchanged complete integer sign and strict RHS verifier.",
+    "The last proposal scales by the largest dyadic denominator, a common denominator for every finite binary float.",
+    "Replay reconstructs the exact recorded orientation/scale recipe before checking the ray and potentials.",
+    "The parent UNKNOWN and every actual candidate prefix are preserved; the repair remains a separate proof artifact.",
+    "Universal allocation and all 12 transports use the unchanged reviewed lift function.",
+    "Candidate handling, stop conditions, partial terminal prefixes and fresh proof gates are unchanged."
+  ],
+  "subject_modules_imported": false,
+  "nested_reconstruction_called": false,
+  "CNF_regenerated": false,
+  "new_solver_or_optimizer_called": false,
+  "DRAT_checked": false,
+  "whole_component_excluded": false,
+  "seconds": 0.7609157859988045
+}

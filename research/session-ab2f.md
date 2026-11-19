@@ -8,12 +8,12 @@ Branch: `research/global-constraints-ab2f`.
 
 1. Complete coordinate-difference incidence covers for complementary-
    rook matching case four. Owned by the independent-set worker.
-2. Products of clique-absence moment matrices. Owned by the literature
-   worker.
+2. Exact five-variable Boolean marginal extensions. Owned by the
+   literature worker.
 3. Compact free-selector incidence separation by individual rows and
    shared symmetric edges. Owned by the completion worker.
-4. Exact count inequalities, independent checks, and publication. Owned
-   by the coordinating worker.
+4. Exact clause explanations, Gram-equality shifts, independent checks,
+   and publication. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -733,3 +733,42 @@ their hypotheses permit them; computational exclusions require exact replay.
   root orbits. Its conditional preparation checks all 171 selected union
   rows on complete coefficient supports and retains four impossible
   triples as zero contributions. The point scan is a separate step.
+
+
+- The compact F0 loop records nine further SAT incidences. Fifteen exact
+  individual obstructions reject eight; the ninth passes all sixty row
+  boxes. Its numerical shared LP ray initially failed exact recovery,
+  so the parent run remains frozen UNKNOWN. A separate arithmetic repair
+  rounds only equality multipliers and recomputes exact upper deficits.
+  The repaired right-hand side is minus 26. Its universal cut has gap 26
+  and twelve verified transports. Independent arithmetic replay passes.
+- The next preparation retains 348 individual and 36 signed inequalities.
+  Its 208,836-variable, 1,476,450-clause formula cold-replays. The new helper
+  records and replays every exact-deficit reconstruction recipe.
+- A separate clause pilot derives twelve 446-literal consequences using
+  Boolean bounds and twelve 60-literal consequences using the exact
+  population. It adds no auxiliaries and changes no existing formula.
+  Complete small Boolean controls, cold replay, and independent literal
+  arithmetic checks pass. The shorter clauses retain all sixty selected
+  variables, so their scope is explicit.
+- The case-four coordinate census covers 476,766 positive differences.
+  Exact deduplication and same-target implications leave 178,533 clauses,
+  including all fourteen units. The full streamed formula preserves its
+  complete previous clause body and passes cold reconstruction.
+- The triple-clique point scan completes 23 representatives covering 236
+  cases, with no exact or unconfirmed numerical negative. The next count
+  family asks whether all known degree-at-most-four moments on five
+  binary flags extend to a nonnegative 32-atom distribution. Its missing
+  fifth moment is one scalar, giving an exact interval feasibility test.
+
+- The deficit continuation then rejects fourteen more incidences with
+  26 exact individual obstructions and three shared rays. It reaches
+  1,999,803 clauses. Thirteen proved transports do not fit. The complete
+  registry has 660 individual and 72 signed inequalities. Its 39 raw
+  transcript records are preserved in a checked lossless archive, and
+  the exact final formula cold-replays. A later lazy continuation will
+  retain all 732 cuts and justify every added clause arithmetically.
+- The one coordinate-cover query returns UNKNOWN after sixty seconds,
+  including its streamed bootstrap. Full cold reconstruction passes.
+  The independent-set worker now checks forced-absence closure using
+  the original coordinate demands and the degree capacities.

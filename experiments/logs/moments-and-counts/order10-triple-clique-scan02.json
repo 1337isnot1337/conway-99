@@ -1,0 +1,2474 @@
+{
+  "source_sha256": "180a6699e7b8a1e174737ea327b030f181369e981d75b337d766b995a7fe79bc",
+  "preparation_sha256": "042196dc933deb828842af49e1cdc764d494a2aabf27ea4f8631e3b037b3c663",
+  "preparation": {
+    "source_sha256": "180a6699e7b8a1e174737ea327b030f181369e981d75b337d766b995a7fe79bc",
+    "lift_source_sha256": "d70999d19f1a49284a211edcbeb7d68e03025935523fed78c7a798ad6060ea66",
+    "lift_certificate_sha256": "a6f5315d82c74fb3432fb357f247ef11c1aabbdae85df3ca22f0d86ed74db8b8",
+    "lift_cold_replay_sha256": "6f9a25dd7c5e8825ace995bf324240674dbd79f10bec745c502619a0b44f3133",
+    "scope_source_sha256": "a751481867973862cd2bbbe8d0d4dab164dbbe8df733df172402ee4491fa6fec",
+    "scope_certificate_sha256": "7e1c352fcdfccfc2879b4cb451590173fe0d8e56d3a66db5cb28e3cb75f7573e",
+    "parent_cache_sha256": "f35f9d2c709d869924fac026ffb036e310f0967b933b36578ec0e1a53463feac",
+    "parent_true_support_order": 7,
+    "parent_padded_tensor_columns": 6535,
+    "parent_nonzero_support_exclusive_limit": 308,
+    "six_root_cache_sha256": "13808003e8f24bd47b8da6169c65a1eccc205b2bc9c3be1c8b57b588a2ba37c5",
+    "seven_root_cache_sha256": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc",
+    "eight_root_cache_sha256": "aecf7411230f718c8c3879c38ad39dcdb041ed07c58a799f8b044ebd0ab5028d",
+    "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+    "exact_form_helper_sha256": "806aea35eedde9f09eda5c5b0b5113b62e0c37e218a46c6ad727ea6950ca74a7",
+    "negative_direction_helper_sha256": "71f06ef752adff6d49f88136b9e82f054f6485a2b2867c2cd4ef9f7ef7f82887",
+    "integer_witness_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+    "root_domains_retained": 21,
+    "root_types_with_direct_representatives": 5,
+    "direct_representatives_to_scan": 23,
+    "candidate_triples_covered_by_congruence": 236,
+    "quota_one_redundant_triples_directly_scanned": 0,
+    "quota_one_redundant_triples": 155,
+    "quota_one_redundancy_requires_child_localizers_and_count_identities": true,
+    "quota_one_redundancy_is_not_a_point_PSD_certificate": true,
+    "representative_union_rows_to_check": 171,
+    "representative_quotient_lower_entries": 958,
+    "largest_representative_quotient_order": 10,
+    "conditional_registry_entries_by_selected_size": [
+      45,
+      83,
+      38
+    ],
+    "admissible_children_by_selected_size": [
+      45,
+      93,
+      49
+    ],
+    "collectively_impossible_selected_triples": 4,
+    "sparse_lower_lift_products_upper_bound": 12677,
+    "largest_per_root_matrix_cells": 32482,
+    "maximum_scan_seconds": 60,
+    "threads": 1,
+    "all_count_contractions_use_Python_integers": true,
+    "all_union_rows_checked_exactly_before_deletion": true,
+    "conditional_matrices_cached_per_root": true,
+    "no_root_or_flag_removed_from_domain_by_point_value": true,
+    "additional_zero_rows_removed_only_after_exact_entry_checks": true,
+    "independent_supported_product_replay_deferred": true,
+    "new_product_tensors_generated": false,
+    "dense_reduction_loaded": false,
+    "optimizer_called": false
+  },
+  "representative_records": [
+    {
+      "root_type": 17,
+      "representative_candidate_index": 0,
+      "clique_indices": [
+        0,
+        1,
+        2
+      ],
+      "union_masks": [
+        7,
+        11,
+        15,
+        19,
+        23,
+        27,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        5,
+        6,
+        9,
+        12,
+        16
+      ],
+      "orbit_size": 10,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          41,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 10,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.1070143656348406,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 17,
+      "representative_candidate_index": 1,
+      "clique_indices": [
+        0,
+        1,
+        3
+      ],
+      "union_masks": [
+        7,
+        11,
+        13,
+        15,
+        23,
+        27,
+        29,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        3,
+        5,
+        9,
+        12,
+        14,
+        16
+      ],
+      "orbit_size": 20,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          27,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          30,
+          1
+        ],
+        [
+          40,
+          -1
+        ],
+        [
+          44,
+          -1
+        ],
+        [
+          46,
+          -1
+        ],
+        [
+          50,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.10994967668844545,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 17,
+      "representative_candidate_index": 2,
+      "clique_indices": [
+        0,
+        1,
+        4
+      ],
+      "union_masks": [
+        7,
+        11,
+        15,
+        21,
+        23,
+        27,
+        29,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        5,
+        7,
+        9,
+        12,
+        14,
+        16
+      ],
+      "orbit_size": 60,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          24,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          27,
+          1
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          42,
+          -1
+        ],
+        [
+          44,
+          -1
+        ],
+        [
+          47,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.10955725788743191,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 17,
+      "representative_candidate_index": 7,
+      "clique_indices": [
+        0,
+        1,
+        9
+      ],
+      "union_masks": [
+        7,
+        11,
+        15,
+        23,
+        27,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        5,
+        9,
+        12,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 30,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          27,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          44,
+          -1
+        ],
+        [
+          45,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.10654600758671759,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 17,
+      "representative_candidate_index": 8,
+      "clique_indices": [
+        0,
+        1,
+        10
+      ],
+      "union_masks": [
+        7,
+        11,
+        15,
+        23,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        5,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 30,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          9,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          26,
+          1
+        ],
+        [
+          27,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          39,
+          1
+        ],
+        [
+          43,
+          -1
+        ],
+        [
+          44,
+          -1
+        ],
+        [
+          45,
+          -1
+        ],
+        [
+          49,
+          -1
+        ],
+        [
+          51,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 8,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.11358732073514755,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 17,
+      "representative_candidate_index": 33,
+      "clique_indices": [
+        0,
+        5,
+        9
+      ],
+      "union_masks": [
+        7,
+        15,
+        23,
+        25,
+        27,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        5,
+        9,
+        10,
+        12,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 15,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          7,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          33,
+          1
+        ],
+        [
+          36,
+          1
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          48,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.10615809196457553,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 0,
+      "clique_indices": [
+        0,
+        1,
+        2
+      ],
+      "union_masks": [
+        7,
+        11,
+        13,
+        15,
+        23,
+        27,
+        29,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        3,
+        5,
+        9,
+        12,
+        14,
+        16
+      ],
+      "orbit_size": 2,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          27,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          30,
+          1
+        ],
+        [
+          45,
+          -1
+        ],
+        [
+          49,
+          -1
+        ],
+        [
+          51,
+          -1
+        ],
+        [
+          60,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.12007280615534208,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 1,
+      "clique_indices": [
+        0,
+        1,
+        4
+      ],
+      "union_masks": [
+        7,
+        11,
+        14,
+        15,
+        23,
+        27,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        4,
+        5,
+        9,
+        12,
+        15,
+        16
+      ],
+      "orbit_size": 6,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          46,
+          -1
+        ],
+        [
+          50,
+          -1
+        ],
+        [
+          54,
+          -1
+        ],
+        [
+          61,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.12284407206336037,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 2,
+      "clique_indices": [
+        0,
+        1,
+        5
+      ],
+      "union_masks": [
+        7,
+        11,
+        15,
+        22,
+        23,
+        27,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        5,
+        8,
+        9,
+        12,
+        15,
+        16
+      ],
+      "orbit_size": 12,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          24,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          36,
+          1
+        ],
+        [
+          39,
+          1
+        ],
+        [
+          47,
+          -1
+        ],
+        [
+          50,
+          -1
+        ],
+        [
+          56,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.12190798228499035,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 4,
+      "clique_indices": [
+        0,
+        1,
+        7
+      ],
+      "union_masks": [
+        7,
+        11,
+        15,
+        23,
+        27,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        5,
+        9,
+        12,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 6,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          27,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          49,
+          -1
+        ],
+        [
+          50,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.11681799053329439,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 5,
+      "clique_indices": [
+        0,
+        1,
+        8
+      ],
+      "union_masks": [
+        7,
+        11,
+        15,
+        23,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        5,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 6,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          9,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          25,
+          1
+        ],
+        [
+          26,
+          1
+        ],
+        [
+          27,
+          1
+        ],
+        [
+          28,
+          1
+        ],
+        [
+          38,
+          1
+        ],
+        [
+          42,
+          1
+        ],
+        [
+          44,
+          1
+        ],
+        [
+          48,
+          -1
+        ],
+        [
+          49,
+          -1
+        ],
+        [
+          50,
+          -1
+        ],
+        [
+          59,
+          -1
+        ],
+        [
+          62,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 8,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.12586638955905094,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 11,
+      "clique_indices": [
+        0,
+        4,
+        5
+      ],
+      "union_masks": [
+        7,
+        14,
+        15,
+        22,
+        23,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        4,
+        5,
+        8,
+        9,
+        15,
+        16
+      ],
+      "orbit_size": 3,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          36,
+          1
+        ],
+        [
+          52,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 10,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.12012186474015438,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 12,
+      "clique_indices": [
+        0,
+        4,
+        6
+      ],
+      "union_masks": [
+        7,
+        14,
+        15,
+        23,
+        26,
+        27,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        4,
+        5,
+        9,
+        11,
+        12,
+        15,
+        16
+      ],
+      "orbit_size": 6,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          7,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          33,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          53,
+          -1
+        ],
+        [
+          54,
+          -1
+        ],
+        [
+          63,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.1222330070873044,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 13,
+      "clique_indices": [
+        0,
+        4,
+        7
+      ],
+      "union_masks": [
+        7,
+        14,
+        15,
+        23,
+        27,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        4,
+        5,
+        9,
+        12,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 6,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          32,
+          1
+        ],
+        [
+          34,
+          1
+        ],
+        [
+          35,
+          1
+        ],
+        [
+          54,
+          -1
+        ],
+        [
+          55,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.11660293666664624,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 16,
+      "clique_indices": [
+        0,
+        5,
+        7
+      ],
+      "union_masks": [
+        7,
+        15,
+        22,
+        23,
+        27,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        5,
+        8,
+        9,
+        12,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 3,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          36,
+          1
+        ],
+        [
+          39,
+          1
+        ],
+        [
+          40,
+          1
+        ],
+        [
+          56,
+          -1
+        ],
+        [
+          57,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.11604568649458492,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 18,
+      "representative_candidate_index": 18,
+      "clique_indices": [
+        0,
+        6,
+        7
+      ],
+      "union_masks": [
+        7,
+        15,
+        23,
+        26,
+        27,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        5,
+        9,
+        11,
+        12,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 6,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          7,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          10,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          12,
+          -1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          41,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          58,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.115996739405218,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 19,
+      "representative_candidate_index": 0,
+      "clique_indices": [
+        1,
+        3,
+        5
+      ],
+      "union_masks": [
+        13,
+        14,
+        15,
+        29,
+        30
+      ],
+      "union_base_positions": [
+        3,
+        4,
+        5,
+        11,
+        12
+      ],
+      "orbit_size": 1,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "base_order": 13,
+      "quotient_order": 8,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.1636542092187639,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 19,
+      "representative_candidate_index": 1,
+      "clique_indices": [
+        1,
+        3,
+        6
+      ],
+      "union_masks": [
+        13,
+        14,
+        15,
+        28,
+        29,
+        30
+      ],
+      "union_base_positions": [
+        3,
+        4,
+        5,
+        10,
+        11,
+        12
+      ],
+      "orbit_size": 1,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          9,
+          1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          -1
+        ]
+      ],
+      "base_order": 13,
+      "quotient_order": 7,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.19646127032446942,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 19,
+      "representative_candidate_index": 2,
+      "clique_indices": [
+        1,
+        5,
+        6
+      ],
+      "union_masks": [
+        13,
+        15,
+        28,
+        29,
+        30
+      ],
+      "union_base_positions": [
+        3,
+        5,
+        10,
+        11,
+        12
+      ],
+      "orbit_size": 2,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          11,
+          1
+        ]
+      ],
+      "base_order": 13,
+      "quotient_order": 8,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.16580115605727486,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 22,
+      "representative_candidate_index": 0,
+      "clique_indices": [
+        0,
+        1,
+        3
+      ],
+      "union_masks": [
+        7,
+        14,
+        15,
+        21,
+        23,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        4,
+        5,
+        7,
+        9,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 4,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          7,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          9,
+          -1
+        ],
+        [
+          10,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          16,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          18,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          25,
+          -1
+        ],
+        [
+          26,
+          -1
+        ],
+        [
+          28,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.14002661275432096,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 22,
+      "representative_candidate_index": 1,
+      "clique_indices": [
+        0,
+        1,
+        5
+      ],
+      "union_masks": [
+        7,
+        15,
+        21,
+        23,
+        27,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        5,
+        7,
+        9,
+        12,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 4,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          7,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          9,
+          -1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          21,
+          1
+        ],
+        [
+          22,
+          1
+        ],
+        [
+          27,
+          -1
+        ],
+        [
+          28,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.1321087837199285,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 22,
+      "representative_candidate_index": 5,
+      "clique_indices": [
+        0,
+        5,
+        6
+      ],
+      "union_masks": [
+        7,
+        15,
+        23,
+        27,
+        28,
+        29,
+        30,
+        31
+      ],
+      "union_base_positions": [
+        1,
+        5,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "orbit_size": 2,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          4,
+          -1
+        ],
+        [
+          5,
+          -1
+        ],
+        [
+          6,
+          -1
+        ],
+        [
+          7,
+          -1
+        ],
+        [
+          8,
+          -1
+        ],
+        [
+          9,
+          -1
+        ],
+        [
+          12,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          14,
+          1
+        ],
+        [
+          15,
+          1
+        ],
+        [
+          20,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          24,
+          1
+        ],
+        [
+          29,
+          -1
+        ]
+      ],
+      "base_order": 17,
+      "quotient_order": 9,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 0.1314474490374062,
+      "exact_zero_quotient_rows": 0
+    },
+    {
+      "root_type": 26,
+      "representative_candidate_index": 0,
+      "clique_indices": [
+        0,
+        1,
+        2
+      ],
+      "union_masks": [
+        7,
+        14,
+        22
+      ],
+      "union_base_positions": [
+        1,
+        2,
+        3
+      ],
+      "orbit_size": 1,
+      "signed_conditional_registry_entries": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          -1
+        ]
+      ],
+      "base_order": 4,
+      "quotient_order": 1,
+      "all_union_rows_checked_exactly_zero": true,
+      "smallest_numeric_eigenvalue": 1.0,
+      "exact_zero_quotient_rows": 0
+    }
+  ],
+  "negative_blocks": [],
+  "unique_induced_cuts": [],
+  "unconfirmed_numeric_negatives": [],
+  "direct_representatives_completed": 23,
+  "triples_covered_by_root_congruence": 236,
+  "union_rows_checked_exactly_zero": 171,
+  "completed_candidate_roots": 5,
+  "PSD_feasibility_certified": false,
+  "independent_supported_product_replay_complete": false,
+  "new_product_tensors_generated": false,
+  "dense_reduction_loaded": false,
+  "optimizer_called": false,
+  "status": "complete five-root triple-clique discovery scan",
+  "complete_representative_scan": true,
+  "complete_candidate_congruence_coverage": true,
+  "timed_out": false,
+  "error": null,
+  "unfinished_case": null,
+  "scan_seconds": 0.05880505200184416,
+  "total_seconds": 0.8967621289993986,
+  "max_rss_kib": 203340
+}

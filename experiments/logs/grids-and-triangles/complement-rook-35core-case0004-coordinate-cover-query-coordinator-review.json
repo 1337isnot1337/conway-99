@@ -1,0 +1,30 @@
+{
+  "status": "PASS: complete coordinate-cover source/formula/query review; one bounded query authorized",
+  "reviewer": "coordinator /root",
+  "query_source_sha256": "eb352386f55c5a1fd6ddb9c692ad934d8eef87904c00e86122172dc1ebc1f9d8",
+  "query_preparation_sha256": "da135f734508b5116df69e27b132948672dc738e3e07594cd1c5bbc26ad3a42f",
+  "full_CNF_sha256": "5a805a4e302bf2a91aa3cb4d39aeaddb4759b7f9695633de18cfb0fa6d5883a2",
+  "overlay_model_sha256": "727874f9f98f5e1fab2b85478dbf2ab347333329fceab938b0a2806ae1a86a4b",
+  "cold_full_model_replay_sha256": "f9c9a3b0ead3b4e8d856b78790d7630fe89c355efebbd4e2c83329e2c284c9ec",
+  "checks": [
+    "Read complete census, overlay and query sources.",
+    "Every positive coordinate difference implies its recorded guard clause, with demand>1 weakening explicit.",
+    "Complete1214-column coverage and same-target deduplication/subsumption have exact independent ledger replay.",
+    "The original261071-clause body remains byte-for-byte intact; all178533 retained covers are appended with no new variables.",
+    "All14 units remain explicit;12 were not explicit in the previous overlay.",
+    "Strict streamed DIMACS parser inventory and invalid-stream controls pass.",
+    "Bootstrap and the single assumption-free SAT call share one60-second budget.",
+    "SAT must pass original full incidence,30 Gram conflicts,60 uncapped cuts and all476766 coordinate origins.",
+    "UNSAT must pass directDRAT, then cold full formula rebuild, retained-input inclusion and separateDRAT replay.",
+    "No timeout or solver-only answer is an exclusion."
+  ],
+  "authorized_limits": {
+    "solver_seconds_including_streamed_bootstrap": 60,
+    "direct_DRAT_seconds": 60,
+    "cold_DRAT_seconds": 60,
+    "query_count": 1,
+    "automatic_retries": 0
+  },
+  "solver_called_in_review": false,
+  "case4_excluded": false
+}

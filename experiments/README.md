@@ -597,3 +597,35 @@ The [clique-pair scan](../research/grids-and-triangles/grid_free_order10_clique_
 also finishes without a separator. The
 [triple-clique lifts](../research/grids-and-triangles/grid_free_order10_triple_clique_lifts.md)
 are prepared independently of the point and retain all labelled factors.
+
+
+The [compact F0 transcript](../research/root_prism_free_f0_carry_row_loop_run01.md)
+retains nine exact candidate prefixes and its original UNKNOWN. The
+[separate ray repair](../research/root_prism_free_f0_shared_ray_repair.md)
+rounds only free equality multipliers and reconstructs upper multipliers
+as exact deficits. Its independent checker verifies every sign, the
+strict right-hand side, all global edge allocations, and twelve cuts.
+The [384-cut preparation](../research/root_prism_free_f0_deficit_row_loop.md)
+uses this reconstruction rule and preserves every earlier inequality.
+
+The [clause explanation pilot](../research/root_prism_free_f0_clause_explanations.md)
+uses exact lower bounds to derive smaller necessary clauses. Its generic
+Boolean controls and domain-specific cold replay invoke no optimizer.
+The original exact population follows from the diagonal Gram equations.
+The clauses are weaker consequences, not full replacements in any frozen
+formula. A later lazy solver must replay each arithmetic explanation.
+
+The [complete coordinate-cover package](../research/grids-and-triangles/complement_rook_35core_case0004_coordinate_covers.md)
+records every positive coordinate difference and every same-target
+subsumption. Its streamed CNF preserves the old body byte for byte and
+adds no auxiliary variables. The whole formula cold-replays. The
+[triple-clique point scan](../research/grids-and-triangles/grid_free_order10_triple_clique_scan.md)
+finishes all twenty-three representatives without an exact separator.
+
+The [terminal deficit continuation](../research/root_prism_free_f0_deficit_row_loop_run01.md)
+adds three exact shared rays and stops at its clause limit. Its narrow
+archive restorer checks every path, member type, byte count, and hash.
+It preserves equal existing records and refuses unequal files. The cold
+mathematical replay reconstructs every candidate prefix and final CNF.
+The [coordinate-cover query](../research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_run01.md)
+returns UNKNOWN with a separate complete formula replay.

@@ -1,0 +1,244 @@
+{
+  "status": "UNKNOWN: numerical infeasibility without an exact ray; unresolved",
+  "run_status_preserved": true,
+  "postrun_exact_repair": "ninth fixed incidence excluded by a separate exact RHS-26 ray;12 new universal transports, none inserted into frozen formula",
+  "scope": "component0 globally P=F=0 split18+18; all480 selectors free; second component and alignment free",
+  "incidence_queries": 9,
+  "exact_individual_obstructions": 15,
+  "exact_individual_boxes": 525,
+  "new_proved_individual_transports_in_run": 180,
+  "new_signed_transports_in_run": 0,
+  "new_signed_transports_proved_after_run": 12,
+  "retained_individual_cut_count": 348,
+  "retained_signed_cut_count": 24,
+  "complete_proved_signed_cut_count_after_repair": 36,
+  "earliest_direct_row_cuts": 12,
+  "variables": 142980,
+  "clauses": 951630,
+  "elapsed_seconds": 19.478958474002866,
+  "peak_rss_kib": 341520,
+  "raw_CNF_sha256": "54f953de7e126071714a2b42b01328f2578d382178ad599500cf47c27a693cd7",
+  "raw_CNF_bytes": 24833357,
+  "raw_CNF_committed": false,
+  "raw_CNF_exactly_rebuildable": true,
+  "cold_transcript_replay": "cold complete carry final formula, candidate prefixes, exact individual/shared witnesses and lifts replay PASS",
+  "postrun_exact_ray": {
+    "maximum_absolute_multiplier": 7618,
+    "minimum_primary_coefficient": 0,
+    "minimum_upper_slack_coefficient": 0,
+    "nonzero_row_multipliers": 1013,
+    "orientation": "E^T ray>=0 and rhs^T ray<0 for every nonnegative primary and upper slack",
+    "rhs_dot_product": -26
+  },
+  "new_optimizer_or_solver_calls_for_repair": 0,
+  "component_excluded": false,
+  "full_graph_constructed": false,
+  "files": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-preparation-manifest.json",
+      "sha256": "8332042b2c3a4b8a6f0ef98c6950a9235fc99bd714920c282acb415b08dac670",
+      "bytes": 3783
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-threshold-independent-audit.json",
+      "sha256": "e628f8dbb716677846bb065f96141083ccf6ef2b756f5bd7c2928046efba4418",
+      "bytes": 1197
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-independent-audit.json",
+      "sha256": "ade8e10a035d66d2d3e9854712b6e7377c542ab42244aff3c50b29f031cef4ba",
+      "bytes": 4174
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-coordinator-review.json",
+      "sha256": "2512e7ef730e5a449be95e8c7a228cfc6fd0587b7c1a9de0ad274752ab0a0dad",
+      "bytes": 2744
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_carry_threshold_independent_audit.py",
+      "sha256": "5338eaa97a61744c25d9c5f029daa3825f7cf36ddd41d732b6565bcba6e1eefe",
+      "bytes": 6827
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_carry_loop_independent_audit.py",
+      "sha256": "f048542e25444168651d72d0ceb3a4b76e65e1f1d39a5c580adbb148346737c2",
+      "bytes": 13394
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_shared_ray_repair.py",
+      "sha256": "4a214635d5ba1ec73477a3acdfd36c30cb65be3c4c4fb662ee19a615388c07d3",
+      "bytes": 8642
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01.log",
+      "sha256": "db73c200d28ac88e50cbbb5b6185d21a54c42268eda326502c4a38ededfb1804",
+      "bytes": 3697
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/individual-encodings.json",
+      "sha256": "e3edcb27062ba19aa8e91c00f205537a311d8e7a7bb201d88f5084447dbe55d2",
+      "bytes": 2704392
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/individual-registry.json",
+      "sha256": "deb68bebf1a2ea3dd14dfde4e71ee32c8fc4c9f130b22c92e878ae5ad4ef152f",
+      "bytes": 1351649
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration00/candidate.json",
+      "sha256": "af6d4b64e4bb3fcfd8cb193d614b7b268b86ead62db7d0830e25c452983513bb",
+      "bytes": 28420
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration00/individual-rows.json",
+      "sha256": "9c8086ca64ffb3eb7091d04fa09d9bc8f3ec48f5a96ff4dbab113ab8898179b9",
+      "bytes": 378658
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration01/candidate.json",
+      "sha256": "28bea517b19c29b383acf3e21c3825d4db713f694451d67b2c251b624be9708d",
+      "bytes": 30939
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration01/individual-rows.json",
+      "sha256": "9fc9711c0bead0b491bbf7a1cbfd7e923b7503f3545b87fe0bd4378141c0acef",
+      "bytes": 243084
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration02/candidate.json",
+      "sha256": "57e7504e75134b2ef40ddc27980cd1d8b591a5ad08628e6bb7475c86330776d7",
+      "bytes": 32190
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration02/individual-rows.json",
+      "sha256": "2bdbfe92be517a0e9143b928076463d4104ce7a9ea1c9201b6bb2315c819f214",
+      "bytes": 277071
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration03/candidate.json",
+      "sha256": "a3f07d87acd10e50cf44343944ad30edebbaab6535b569bd293dc6fb3b2fb725",
+      "bytes": 33445
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration03/individual-rows.json",
+      "sha256": "cbf1f7d51830fa19627a3f218f4742c9d7309dbcc1147930122e6743b80a9018",
+      "bytes": 491833
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration04/candidate.json",
+      "sha256": "6e378b42dd86941f2711f7f0dccc82fbc7094a1f8a0c328407de022c2c07396b",
+      "bytes": 37201
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration04/individual-rows.json",
+      "sha256": "8c95f36df573f97a3c9f8d4268e5b92b730f394cad095a4a50e99c653745b721",
+      "bytes": 541554
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration05/candidate.json",
+      "sha256": "be83c2919e22ee61d26796d82928b964cf028ad747df53a04cb52e2a32b9b96d",
+      "bytes": 40971
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration05/individual-rows.json",
+      "sha256": "14e53c5972db222002621c4669d52cbc395ad41256dcf58981251cee21844df9",
+      "bytes": 425193
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration06/candidate.json",
+      "sha256": "d05e0c831b10b4d4e071bd2550b6fb018222759a6fed1196c12905a9ac1ef289",
+      "bytes": 43493
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration06/individual-rows.json",
+      "sha256": "061ed26abe70ec09a7a7aa10b0d3d380551b071081bfa19b7acb6826868570a5",
+      "bytes": 376260
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration07/candidate.json",
+      "sha256": "c269db18edc6dc13f86b3e2fbb3fe6064b11b06cdb00d9ed6c0af70673f2e08d",
+      "bytes": 46002
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration07/individual-rows.json",
+      "sha256": "bd7930e49931f501ea85c7f59a513e6e080c79f79d4894e88f3758952ed75665",
+      "bytes": 290460
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration08/candidate.json",
+      "sha256": "ccb685f6ab13993a398f685201bd36309a841400df729f725afa632c878e1175",
+      "bytes": 47257
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration08/individual-rows.json",
+      "sha256": "f1c84b0f7d6f4911338ebfee3fb8c39da9da77ee23a0f6bc4638dbc1a8759c99",
+      "bytes": 182313
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration08/shared-rows.json",
+      "sha256": "0982995b7a090152a9c7bfb7deb80c59108a2100a3da1347e1cb0ac3204ad0a2",
+      "bytes": 50824
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/result.json",
+      "sha256": "ecc80a941a1b0d9e152788167210a5e8b7936f28b03ee50c35658895b453d3d3",
+      "bytes": 61434
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/symmetric-encodings.json",
+      "sha256": "511bf17d18bb9f2f064c4234b8b4e6c94b26b2d835b8c7f524788b8550ce5784",
+      "bytes": 1375561
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/symmetric-registry.json",
+      "sha256": "69764dc99745145e9c895fc2ca1c911207db16d95c894bf4f7bc28e5ed3714db",
+      "bytes": 317698
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01-cold-replay.json",
+      "sha256": "b0f05cf633c674a2e1c22822028b8f1f0e0ae287449852bae00b53b03cc72204",
+      "bytes": 884
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01-cold-replay.log",
+      "sha256": "0ee7a0c6cdc8b6c91c4f994c0ffb2fb17ae10c244648b08768bf97270517a3f8",
+      "bytes": 1389
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01-shared-ray-repair.json.gz",
+      "sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+      "bytes": 28129
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01-shared-ray-repair-generation.json",
+      "sha256": "b56104e1cb6686f3fdb078ef77b91dfbd6d5ac5a240e2bd9f571d11ad477efdc",
+      "bytes": 2767
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01-shared-ray-repair-generation.log",
+      "sha256": "b56104e1cb6686f3fdb078ef77b91dfbd6d5ac5a240e2bd9f571d11ad477efdc",
+      "bytes": 2767
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01-shared-ray-repair-replay.json",
+      "sha256": "abb3eab61678d9f1fed4238925cb1dd8939850d4ada544e53f3d0645259756fc",
+      "bytes": 635
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-run01-shared-ray-repair-replay.log",
+      "sha256": "abb3eab61678d9f1fed4238925cb1dd8939850d4ada544e53f3d0645259756fc",
+      "bytes": 635
+    },
+    {
+      "path": "research/root_prism_free_f0_carry_row_loop_run01.md",
+      "sha256": "590e5d640fa893a041e51218459699be1b557f71c475ce34be5218b50a6415a6",
+      "bytes": 3626
+    },
+    {
+      "path": "research/root_prism_free_f0_shared_ray_repair.md",
+      "sha256": "0da3299dba46f162c364535d5ba327a1a33a1d56eb5f09c51f960d69557a0de1",
+      "bytes": 4282
+    }
+  ],
+  "total_bytes": 9497474
+}

@@ -215,8 +215,10 @@ A [five-root triple-clique scope](research/grids-and-triangles/grid_free_order10
 has 236 candidates in 23 root orbits. Its
 [conditional-lift preparation](research/grids-and-triangles/grid_free_order10_triple_clique_lifts.md)
 checks all 171 representative union rows coefficientwise, retaining four
-collectively impossible selected triples as zero contributions. Its
-point scan is separate from the preparation.
+collectively impossible selected triples as zero contributions. The
+[completed point scan](research/grids-and-triangles/grid_free_order10_triple_clique_scan.md)
+covers all 23 representatives and 236 candidates without an exact or
+unconfirmed negative. This numerical scan is not a PSD certificate.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -370,6 +372,15 @@ then excludes fourteen optional signatures by support dominance, twelve
 more than the two units already in that overlay. All 1,214 augmented
 targets pass both mod-two and mod-three span tests with explicit neighbor
 combinations. The new units do not by themselves exclude case four.
+The [complete coordinate-cover preparation](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_covers.md)
+records every positive difference among the 36 augmented row coordinates.
+Exact same-target implications reduce 476,766 origins to 178,533 clauses.
+The streamed overlay keeps the complete previous formula and all fourteen
+units; its full cold reconstruction passes. Demands above one are explicitly
+weakened in this particular clause family.
+Its [single bounded query](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_run01.md)
+returns UNKNOWN after sixty seconds including bootstrap. A separate full
+cold reconstruction binds that outcome; case four remains unresolved.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -450,6 +461,29 @@ now retains all 192 proved inequalities on the unchanged necessary base.
 Its 100,296-variable, 620,370-clause formula includes the four previously
 unencoded transports. Full gate controls and a cold formula replay pass.
 The continuation using this encoding is separate from these results.
+The [compact continuation transcript](research/root_prism_free_f0_carry_row_loop_run01.md)
+contains nine further incidences. Fifteen exact individual-row obstructions
+reject the first eight. The ninth passes all sixty separate boxes; its
+shared LP reports numerical infeasibility without a verified ray, so the
+run remains frozen UNKNOWN. A separate
+[exact ray repair](research/root_prism_free_f0_shared_ray_repair.md)
+then proves a right-hand side of minus 26 by recomputing every upper-bound
+multiplier as an exact deficit. Its full-domain lift gives twelve further
+valid signed cuts. Independent arithmetic checks verify all column signs,
+all 68,394 global pairs, and every transport.
+The [deficit continuation preparation](research/root_prism_free_f0_deficit_row_loop.md)
+retains all 384 proved inequalities with the repaired reconstruction rule.
+A separate [clause explanation pilot](research/root_prism_free_f0_clause_explanations.md)
+proves smaller, weaker clause consequences of all twelve repaired cuts.
+The population premise follows from the complete diagonal Gram equations.
+No existing formula is replaced by that pilot, and no component is excluded.
+The [deficit continuation transcript](research/root_prism_free_f0_deficit_row_loop_run01.md)
+rejects fourteen further incidences using 26 individual-row obstructions
+and three exact shared rays. It stops at 1,999,803 clauses before thirteen
+proved transports fit. The complete registry has 660 individual cuts and
+72 signed cuts. All candidate prefixes, 814 rational row witnesses, and
+the exact final formula cold-replay. A checked lossless archive retains
+the full transcript; the original resource-limit outcome remains unchanged.
 
 ## Scope of the unrestricted computations
 

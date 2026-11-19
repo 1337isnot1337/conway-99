@@ -1,0 +1,33 @@
+{"completed_targets": 128, "elapsed_seconds": 2.6845267559983768}
+{"completed_targets": 256, "elapsed_seconds": 5.139044577997993}
+{"completed_targets": 384, "elapsed_seconds": 7.110547045998828}
+{"completed_targets": 512, "elapsed_seconds": 8.598327308998705}
+{"completed_targets": 640, "elapsed_seconds": 10.347126797998499}
+{"completed_targets": 768, "elapsed_seconds": 12.067689296996832}
+{"completed_targets": 896, "elapsed_seconds": 13.950139110998862}
+{"completed_targets": 1024, "elapsed_seconds": 15.366439695997542}
+{"completed_targets": 1152, "elapsed_seconds": 17.33275433000017}
+{
+  "status": "PASS: complete coordinate covers, weakening and all same-target implications replayed",
+  "source_sha256": "f4692deb00982e7f3a3153faafc2cc6084db0c5827ff12d11beaf5e3d493357a",
+  "certificate_sha256": "a255f8876d3d827ff94d7df2f2640be6963348987043665dcd6fc53bf41dff8f",
+  "summary": {
+    "optional_target_columns": 1214,
+    "completed_targets": 1214,
+    "all_ordered_coordinate_pairs_covered": 1573344,
+    "positive_target_difference_pairs": 476766,
+    "demands_weakened_to_one": 111586,
+    "unique_same_target_covers": 239299,
+    "retained_minimal_cover_clauses": 178533,
+    "retained_literal_occurrences": 12887146,
+    "same_target_strict_supersets_removed": 58384,
+    "same_target_nonempty_covers_implied_by_unit": 2382,
+    "unit_clauses": 14,
+    "largest_retained_clause_literals": 197,
+    "largest_target_retained_clause_count": 201,
+    "duplicate_origins_merged": 237467
+  },
+  "clause_body_sha256": "6f4ccc4623e4a7b9a40236f84f05e1a3973dd8b1d6f95a82a5ff0b66e699a24a",
+  "optimizer_or_solver_called": false
+}
+{"output_sha256": "692671bd70bd39f7a89547235b88b81af8b6a7717c76f95e719cee8ca1f2ca18", "elapsed_seconds": 26.578842320999684, "peak_rss_kib": 705240}
