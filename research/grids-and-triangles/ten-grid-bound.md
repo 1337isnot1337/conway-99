@@ -13,7 +13,9 @@ The axis equations at $i=1,2$ give $z_{i5}+z_{i6}=0$. Adding the equations at 0 
 \|z\|^2=7h_{04}^{\mathsf T}z=28.
 \]
 
-At a point of $B_{56}$ the baselines for $i5,i6$ both vanish. The opposite-defect identities show that this point has no neighbor in $B_{i5}\cup B_{i6}$ for $i=1,2$. On those four cells $z=z_{56}=0$. A present cell sharing an axis with $04$ or $56$ also has $z=0$ throughout: its grid has no far edge to the intersecting cell, by grid domination.
+The rest of the proof gives a more general obstruction. **If two disjoint missing pairs carry the same defect, the three pairs on the remaining axes cannot all be grids.** Here the three pairs on the remaining axes are $12,13,23$, all present.
+
+To see where $z$ can be nonzero, fix an axis $i$ among $1,2,3$. Every cell $B_{ij}$ with $j$ on a special pair ($04$ or $56$) has $z\le0$: the baseline against that special pair is zero. The two square cells on $i$ and another remaining axis each have total $z$ zero. In fact their labels are disjoint from $04$ and every site of $B_{04}$ sees exactly one site of each square. The sum of $z$ over all six cells on $i$ is zero by adding $Az=0$ at the two signed near points of $i$. Thus the nonpositive contributions all vanish, point by point. This argument uses no grid assumption on those four cells.
 
 All remaining nonzero entries lie in two sets:
 
