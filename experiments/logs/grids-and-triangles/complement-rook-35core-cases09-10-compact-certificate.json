@@ -1,0 +1,442 @@
+{
+  "status": "compact exact dependencies for the two retained local-core proofs",
+  "source_sha256": "f028ab32a304c518a417a727697afbd96333a6699fbcb5787af3a6a3e0bbf9c7",
+  "cases": [
+    {
+      "case_index": 9,
+      "original_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0009-model.json",
+      "original_model_sha256": "ed7ea0ad72e414fea7cd51cd7ae7a2610f0d4501c171e67b3eead9391d57f0ee",
+      "original_cnf_sha256": "3d0abc9c9427793eb5d6ec03a40bd2fed0b77c022d7dbf51eb85f19b595e2db7",
+      "original_source_hashes": {
+        "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+        "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+        "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+        "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992"
+      },
+      "domain_record_sha256": "86ef3e535cbe74749e9694cffd4580d2d57bd9f36dbbbeeadb8f098601527aa4",
+      "discovery_model_sha256": "8e869e9d346cf18cb7f87a48d78df594c31c6b15f3621392c8661b209f2a6f7e",
+      "discovery_result": "experiments/logs/grids-and-triangles/complement-rook-35core-case0009-downdate-overlay-run01/result.json",
+      "discovery_result_sha256": "7587d166188417545b8c79ed41cf4a7fd8cf3d29ce60380aaa122f3f37f53912",
+      "discovery_cold_replay": "experiments/logs/grids-and-triangles/complement-rook-35core-case0009-downdate-overlay-cold-replay.json",
+      "discovery_cold_replay_sha256": "505a84562fe1b290e5b2b9d8fdcf10ffed6140b03a92405ad1406fe4077fd611",
+      "retained_cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-case0009-downdate-overlay-run01/retained.cnf",
+      "retained_cnf_sha256": "3866ac3479566de8f8bff4bf139decd8eb5d6bb8a7003c6bb19bfca6ae1cde8a",
+      "retained_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-case0009-downdate-overlay-run01/retained.drat",
+      "retained_proof_sha256": "3fd366f3c040567d9758641fff6b93e4a43169b0fd9a38f1eddd646a0c113b98",
+      "retained_input_clauses": 21217,
+      "small_Gram_witnesses": [
+        {
+          "rounding_scale": 8,
+          "negative_vector": [
+            0,
+            2,
+            6,
+            5,
+            -1,
+            2,
+            5,
+            -4,
+            4,
+            0,
+            -7,
+            -1,
+            -6,
+            -8,
+            0,
+            -3,
+            -6,
+            -2,
+            0,
+            -8,
+            -4,
+            -3,
+            -3,
+            -2,
+            -3,
+            -4,
+            -2,
+            0,
+            2,
+            5,
+            5,
+            0,
+            1,
+            6,
+            6
+          ],
+          "Gram_quadratic_value": 443,
+          "column_dot_products": [
+            -18,
+            -11
+          ],
+          "negative_remainder_value": -2,
+          "clause": [
+            -989,
+            -976
+          ],
+          "columns": [
+            975,
+            988
+          ],
+          "attachment_columns": [
+            [
+              211,
+              17
+            ],
+            [
+              212,
+              34
+            ]
+          ],
+          "original_signature_triples": [
+            [
+              7,
+              3,
+              1
+            ],
+            [
+              7,
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "rounding_scale": 14,
+          "negative_vector": [
+            0,
+            0,
+            -8,
+            -13,
+            7,
+            -3,
+            -9,
+            2,
+            -2,
+            0,
+            14,
+            6,
+            6,
+            11,
+            4,
+            4,
+            13,
+            -7,
+            0,
+            10,
+            3,
+            6,
+            10,
+            3,
+            4,
+            6,
+            6,
+            0,
+            -2,
+            -11,
+            -9,
+            -8,
+            -5,
+            -12,
+            -8
+          ],
+          "Gram_quadratic_value": 1452,
+          "column_dot_products": [
+            -25,
+            -29
+          ],
+          "negative_remainder_value": -14,
+          "clause": [
+            -308,
+            -298
+          ],
+          "columns": [
+            297,
+            307
+          ],
+          "attachment_columns": [
+            [
+              107,
+              16
+            ],
+            [
+              109,
+              64
+            ]
+          ],
+          "original_signature_triples": [
+            [
+              3,
+              8,
+              2
+            ],
+            [
+              3,
+              8,
+              5
+            ]
+          ]
+        }
+      ],
+      "standalone_original_only_DRAT_proof": false
+    },
+    {
+      "case_index": 10,
+      "original_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0010-model.json",
+      "original_model_sha256": "861d5ea402b0af0040dc0b3cfd408d18ef4f348b6307dc875e9c7a81ca72d336",
+      "original_cnf_sha256": "31af8937967a87f2220600674d250e7861bd7d606b26ea02308a2263440b4187",
+      "original_source_hashes": {
+        "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+        "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+        "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+        "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992"
+      },
+      "domain_record_sha256": "c790b8b1217ebff389fce3e250f7d2ee70ec1927c91ca16d41f84007c78e8b49",
+      "discovery_model_sha256": "0fd621e46b76da0369bcf0fe8c9b0f21a5c6b1a22cc72618ff6d44aeab706b03",
+      "discovery_result": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-run01/result.json",
+      "discovery_result_sha256": "c4a058a32d58ce495e3e7cc77940ecd2372c3df3a740290a3046656b2174a573",
+      "discovery_cold_replay": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-cold-replay.json",
+      "discovery_cold_replay_sha256": "cef41f61c43108fa7beb42eb7c1389b8d7b1679283f1e342d61697d72df6cd03",
+      "retained_cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-run01/retained.cnf",
+      "retained_cnf_sha256": "22a2e89be3a4572be487cc88a5cc7ca5d58df53a414578938bff204b46899e13",
+      "retained_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-run01/retained.drat",
+      "retained_proof_sha256": "e9d05605f02ebc4e7325f89cd6c97d5be3e451131dda44a314107a2b4c5b05f5",
+      "retained_input_clauses": 19528,
+      "small_Gram_witnesses": [
+        {
+          "rounding_scale": 10,
+          "negative_vector": [
+            0,
+            0,
+            5,
+            6,
+            -1,
+            2,
+            6,
+            -4,
+            4,
+            0,
+            -9,
+            -5,
+            -1,
+            -9,
+            0,
+            -3,
+            -6,
+            -1,
+            0,
+            -10,
+            -4,
+            -3,
+            -5,
+            -3,
+            -4,
+            -3,
+            -4,
+            0,
+            3,
+            7,
+            7,
+            1,
+            2,
+            7,
+            8
+          ],
+          "Gram_quadratic_value": 540,
+          "column_dot_products": [
+            -18,
+            15
+          ],
+          "negative_remainder_value": -9,
+          "clause": [
+            -1135,
+            -827
+          ],
+          "columns": [
+            826,
+            1134
+          ],
+          "attachment_columns": [
+            [
+              204,
+              17
+            ],
+            [
+              244,
+              136
+            ]
+          ],
+          "original_signature_triples": [
+            [
+              7,
+              2,
+              1
+            ],
+            [
+              8,
+              3,
+              7
+            ]
+          ]
+        },
+        {
+          "rounding_scale": 9,
+          "negative_vector": [
+            0,
+            1,
+            -3,
+            -5,
+            4,
+            -1,
+            -5,
+            2,
+            -4,
+            0,
+            8,
+            2,
+            1,
+            8,
+            1,
+            2,
+            5,
+            -3,
+            0,
+            7,
+            4,
+            3,
+            6,
+            1,
+            3,
+            1,
+            3,
+            0,
+            -1,
+            -6,
+            -6,
+            -2,
+            -2,
+            -5,
+            -9
+          ],
+          "Gram_quadratic_value": 544,
+          "column_dot_products": [
+            -16,
+            -17
+          ],
+          "negative_remainder_value": -1,
+          "clause": [
+            -1135,
+            -286
+          ],
+          "columns": [
+            285,
+            1134
+          ],
+          "attachment_columns": [
+            [
+              109,
+              128
+            ],
+            [
+              244,
+              136
+            ]
+          ],
+          "original_signature_triples": [
+            [
+              3,
+              8,
+              5
+            ],
+            [
+              8,
+              3,
+              7
+            ]
+          ]
+        },
+        {
+          "rounding_scale": 9,
+          "negative_vector": [
+            0,
+            1,
+            -4,
+            -4,
+            4,
+            -3,
+            -7,
+            2,
+            -1,
+            0,
+            9,
+            3,
+            3,
+            7,
+            0,
+            0,
+            7,
+            -1,
+            0,
+            8,
+            5,
+            5,
+            6,
+            4,
+            3,
+            0,
+            5,
+            0,
+            -2,
+            -7,
+            -9,
+            -4,
+            -2,
+            -6,
+            -8
+          ],
+          "Gram_quadratic_value": 648,
+          "column_dot_products": [
+            -20,
+            -16
+          ],
+          "negative_remainder_value": -8,
+          "clause": [
+            -764,
+            -642
+          ],
+          "columns": [
+            641,
+            763
+          ],
+          "attachment_columns": [
+            [
+              159,
+              136
+            ],
+            [
+              194,
+              8
+            ]
+          ],
+          "original_signature_triples": [
+            [
+              5,
+              6,
+              7
+            ],
+            [
+              6,
+              5,
+              7
+            ]
+          ]
+        }
+      ],
+      "standalone_original_only_DRAT_proof": false
+    }
+  ],
+  "retained_Gram_clauses_total": 5,
+  "whole_local_set_excluded": false,
+  "replay_needs_no_downdate_inverse_or_census": true,
+  "solver_called": false
+}

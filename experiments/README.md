@@ -465,3 +465,18 @@ gives the full-formula and DRAT replay for one fixed pair of incidence
 designs. Its broader fractional control has a different domain. Neither
 certificate excludes the complete split-shell case.
 
+The [two later local exclusions](../research/grids-and-triangles/complement_rook_35core_cases09_10_exclusion.md)
+have compact replays that need only five additional integer Gram vectors
+and the original incidence formulas. The
+[six-case matching cover](../research/grids-and-triangles/complement_rook_35core_six_case_matching_cover.md)
+separately checks all 576 conditional clause transports.
+
+The [complete component-pair pilot](../research/root_prism_free_f0_pair_gram_run01.md)
+records an UNKNOWN outcome. Its full DIMACS file is regenerated from the
+streamed builder; the frozen record binds its exact hash and counts.
+
+The [C4 integer distribution](../research/grids-and-triangles/grid_free_order10_c4_integer_distribution.md)
+has an optimizer-free replay of all 120 literal products and all 225
+symmetric moment entries. The positive rational mixture is a finite
+moment certificate, with no graph-realization claim.
+

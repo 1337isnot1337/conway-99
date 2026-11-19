@@ -6,12 +6,12 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Complementary-rook incidence and local 35-vertex cores. Owned by the
-   independent-set worker.
-2. Complete order-ten flag families and exact moment separators. Owned by
-   the literature/obstructions worker.
-3. Prism-free triangle shells and their component incidences. Owned by the
-   completion worker.
+1. Remaining twenty first-local complementary-rook matchings and exact
+   Gram cuts. Owned by the independent-set worker.
+2. Seven-root absence moment matrices, after the complete eight-root
+   projector and integer-class scans. Owned by the literature worker.
+3. Exact two-column Gram cuts for the full split-component pair. Owned
+   by the completion worker.
 4. Count-loop integration, independent checks, and publication. Owned by
    the coordinating worker.
 
@@ -598,3 +598,21 @@ their hypotheses permit them; computational exclusions require exact replay.
   fixing both incidences has 792 assignments and is UNSAT with direct
   and cold DRAT checks. This excludes one fixed design pair and alignment;
   it does not exclude either component or the complete split-shell case.
+- All 22 then-unresolved local cores have complete exact downdate
+  preparations, accounting for 17,612,727 column pairs. The six-case
+  matching cover gives 576 conditional clauses under explicit relabeling.
+  Two subsequent pilots exclude cases nine and ten with direct and cold
+  checks. Their retained proofs need only five additional Gram clauses;
+  small integer vectors certify those clauses. Eight of 28 matchings are
+  excluded, and a bounded continuation of the other twenty is prepared.
+- The full component-zero pair keeps all 39,168 columns and fixes neither
+  incidence design. Exact rank-thirty-three Gram and inverse identities
+  pass an independent review. Its complete streamed CNF has 3,173,640
+  clauses. One 180-second proof-enabled query ends UNKNOWN, returning at
+  181.332 seconds. It yields neither an incidence point nor an exclusion.
+- The new C4 integer scan checks all 265,720 small-coefficient shifted
+  quadratic inequalities and finds no cut. A stronger exact certificate
+  represents all fifteen flags' first and second moments by 75 integer
+  atoms with positive rational weights. A separate literal constructor
+  checks every matrix entry. This closes the pointwise integer quadratic
+  route in those flags at this point, without realizing graph neighborhoods.

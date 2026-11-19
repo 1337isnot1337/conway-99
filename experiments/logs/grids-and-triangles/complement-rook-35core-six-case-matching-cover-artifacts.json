@@ -1,0 +1,65 @@
+{
+  "status": "frozen exact six-case/four-pattern cover with576 transported clauses",
+  "verified_cases": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    21
+  ],
+  "patterns": 4,
+  "core_transports_per_pattern": 144,
+  "distinct_nonsubsumed_clauses": 576,
+  "clause_lengths": {
+    "6": 144,
+    "7": 432
+  },
+  "artifacts": [
+    {
+      "path": "experiments/workspace/complement_rook_35core_six_case_matching_cover.py",
+      "sha256": "93c3ac6d6f12b693a3a92048280f10dc4160652366a541d409c35ce4d6c73df0",
+      "bytes": 13977
+    },
+    {
+      "path": "research/grids-and-triangles/complement_rook_35core_six_case_matching_cover.md",
+      "sha256": "3ddf802b6fd70d48e6cef6110c9d569c90c2bcadf14d3138417457226640174c",
+      "bytes": 5329
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-six-case-matching-cover.json",
+      "sha256": "3cad825f319150cdd9a2dc424ad5221f40b340568615003f630fcb218bcd3324",
+      "bytes": 340284
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-six-case-matching-cover-clauses.cnf",
+      "sha256": "87a966ead800fadad514b60698a6977fe56af5b76e6f8a0d74d1a114696f9aff",
+      "bytes": 20401
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-six-case-matching-cover-generation.log",
+      "sha256": "d762e45fab92acad966d88b5ae67f4b72dc4087f3850eb8550ca8e4d656586d4",
+      "bytes": 2944
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-six-case-matching-cover-replay.log",
+      "sha256": "3bc1953ad749d017e60195f6ba174eaa74ad3ba3c7bc0dfb7c40dcf84fadc644",
+      "bytes": 2951
+    }
+  ],
+  "file_count": 6,
+  "total_bytes": 385886,
+  "published_proof_package_dependencies": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01-artifacts.json",
+      "sha256": "3a4fedd710bd0b0b7bbd3809a8ba4ff80082a0fa6af30e42a22c171946ed7ae6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-terminal-artifacts.json",
+      "sha256": "f0dda95e3a76567e8ffc6c33bcb6ac0fef462c8c29af4d572f368a8223e275dc"
+    }
+  ],
+  "new_solver_queries": 0,
+  "whole_local_set_excluded": false,
+  "old_weak_joint_CNF_entailment_claimed": false
+}

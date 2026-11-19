@@ -1,0 +1,102 @@
+{
+  "status": "complete unfixed incidence CNF built; no solver called",
+  "scope": "component0 paired with component0, identity fiber alignment, full domains",
+  "source_hashes": {
+    "root_prism_free_f0_pair_gram_build.py": "071a6118501cf2ba6306c94ea3cf481b1949dcfdabcc66322d2f6ba4d2d4accc",
+    "root_prism_free_f0_pair_gram_model.py": "1849ce2106d7903f9826372a3d3e73e9878b48e22337df00a7ef0953e18cce53",
+    "root_prism_free_f0_pair_gram.py": "187feef008f6b0f5b1718a9d5d856e4a1b0820a3f1a023445090b691494d3aef",
+    "root_prism_free_f0_components.py": "f1c3b49cd084dde9df8f421a79dfbf2233d58c07f03ebb53ef2b58449fed54f4",
+    "root_prism_free_f0_pair_clauses.py": "367b7f850d087067b547653d31bf4b25743f30934583252de1199cffb358daac"
+  },
+  "preparation": "experiments/logs/root-prism-free/f0-pair-gram-model-preparation.json.gz",
+  "preparation_sha256": "7b870a9df98c855f75fcd0191b5fe03589d9458ad1e3f985ba77edb066be0c59",
+  "Gram_certificate_sha256": "edb85ff422222961e6bc9b36322b74bcfce455bca262d6e189d7768f9ac91c98",
+  "component_motif_certificate_sha256": "47e9d8f518fab10aee604f33df1f22c97b0d201a1af4180e4307553e4857672f",
+  "full_specification_sha256": "485f6ae82064423deb67c0eabfaea4b6b3d86b343bf0efebe78546d11fedee2a",
+  "column_order_sha256": "b305db34018eae7017e2b5533f9839a7a4f2c0a399c56e78a8759b339d36dbbb",
+  "core_rows_sha256": "6558a92a672719df54c9a04d9903d96c378ce8e094908c7283a73d6a79af7784",
+  "Gram_sha256": "1c1dff34c338cb1e2f1f0e4bcca7bb6471c16f0b5ed27727be6473cb23953244",
+  "formula": {
+    "variables": 1478076,
+    "clauses": 3173640,
+    "literal_occurrences": 7370472,
+    "cnf_sha256": "31a59090b935889b97515d20f5d03cdb02f5fc9b33a321ea30ded8b20c16b4b8",
+    "cnf_bytes": 60721371,
+    "clause_blocks": [
+      {
+        "kind": "component link",
+        "first_clause_number": 1,
+        "counter_rows": 960,
+        "clauses": 235008,
+        "literal_occurrences": 547392,
+        "first_new_auxiliary_variable": 40129,
+        "body_sha256": "201bfc6a0e80fd6d197effb81c646dcd7ed526fd29db362795e4932e1d47d1de",
+        "last_auxiliary_variable": 118464
+      },
+      {
+        "kind": "component Gram",
+        "first_clause_number": 235009,
+        "counter_rows": 300,
+        "clauses": 112920,
+        "literal_occurrences": 277344,
+        "first_new_auxiliary_variable": 118465,
+        "body_sha256": "351b502e62de9d5835e99694bd0b66b7d02d6ead21c5822a42d1ae77be34b86e",
+        "last_auxiliary_variable": 174120
+      },
+      {
+        "kind": "cross Gram",
+        "first_clause_number": 347929,
+        "counter_rows": 324,
+        "clauses": 2413116,
+        "literal_occurrences": 5720544,
+        "first_new_auxiliary_variable": 174121,
+        "body_sha256": "e171a7a0f56546b951228c6e4d07611e1858964973d6a2aa228cd6569c658a4f",
+        "last_auxiliary_variable": 1340412
+      },
+      {
+        "kind": "mixed triple packing",
+        "first_clause_number": 2761045,
+        "counter_rows": 576,
+        "clauses": 412416,
+        "literal_occurrences": 824832,
+        "first_new_auxiliary_variable": 1340413,
+        "body_sha256": "ecf920b704d823a1562380173bdf25271643e81a5c213e2f65b1e1225f7ee367",
+        "last_auxiliary_variable": 1478076
+      },
+      {
+        "kind": "component motif",
+        "first_clause_number": 3173461,
+        "counter_rows": 0,
+        "clauses": 180,
+        "literal_occurrences": 360,
+        "first_new_auxiliary_variable": 1478077,
+        "body_sha256": "83e063bcf9aafc8901c3aebed71f5a05b8685bc15ef5440e9ebbd14250f91389",
+        "last_auxiliary_variable": 1478076
+      }
+    ],
+    "counter_rows": 2160,
+    "direct_clauses": 180,
+    "initial_primary_and_derived_variables": 40128,
+    "all_auxiliaries_allocated_by_one_IDPool": true,
+    "formula_streamed_one_counter_at_a_time": true,
+    "full_formula_list_kept_in_memory": false
+  },
+  "cnf": "/tmp/conway99-f0-pair-gram.cnf",
+  "cnf_sha256": "31a59090b935889b97515d20f5d03cdb02f5fc9b33a321ea30ded8b20c16b4b8",
+  "controls": {
+    "rook9_actual_incidence_positive_control": true,
+    "deleted_or_repeated_actual_column_controls_rejected": 2,
+    "prism_chords_checked": 6,
+    "F_chords_checked": 28,
+    "full_model_solved": false,
+    "solver_called": false
+  },
+  "fixed_incidence_designs": false,
+  "graph_symmetry_constraints": false,
+  "full_primary_assignment_inspector": true,
+  "exterior_adjacency_variables": 0,
+  "SAT_scope": "sixty-column incidence candidate; all exterior adjacency remains unmodeled",
+  "UNSAT_scope": "complete component0 pair with identity relative fiber alignment only",
+  "solver_called": false,
+  "elapsed_seconds": 14.407694789002562
+}

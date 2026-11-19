@@ -1,0 +1,36 @@
+{
+  "status": "UNSAT with direct DRAT; cold domain/formula rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-model.json",
+  "model_sha256": "0fd621e46b76da0369bcf0fe8c9b0f21a5c6b1a22cc72618ff6d44aeab706b03",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 10,
+  "cnf_sha256": "3f4ee7d59cb223dcd5cbb8ffdb0548290bc36cf55196d47952a0a35edc0f71bd",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 85604,
+  "bootstrap_seconds": 0.342148054001882,
+  "solve_return_seconds": 5.1351472820024355,
+  "solver_statistics": {
+    "restarts": 47,
+    "conflicts": 14569,
+    "decisions": 33662,
+    "propagations": 38790015
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-run01/raw.drat",
+  "raw_proof_sha256": "0571d273688c1cf849fd386b71d9eb6298b5e2a9f0789b9d63880c259f2754d1",
+  "raw_proof_lines": 53599,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-run01/retained.cnf",
+    "cnf_sha256": "22a2e89be3a4572be487cc88a5cc7ca5d58df53a414578938bff204b46899e13",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-run01/retained.drat",
+    "proof_sha256": "e9d05605f02ebc4e7325f89cd6c97d5be3e451131dda44a314107a2b4c5b05f5",
+    "input_clauses": 19528,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-case0010-downdate-overlay-run01/direct-drat.log",
+    "checker_log_sha256": "ffb84ac14cfa267100494ae37543cb4fa9a88bc105fd6bf790f413e3faec5893"
+  },
+  "elapsed_seconds": 7.039567052001075
+}

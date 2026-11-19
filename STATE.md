@@ -137,6 +137,14 @@ in the complete 2,405-block scan. At the integer point, the
 has an exact rank-thirteen PSD certificate. The other blocks have no
 exact PSD certificate at this point. Eight-root spectral/projector
 blocks form a separate family; the selected scans do not cover them.
+The [C4 integer-moment continuation](research/grids-and-triangles/grid_free_order10_c4_integer_distribution.md)
+checks 265,720 shifted-integer inequalities without finding a cut. It
+then gives a stronger exact certificate: 75 integer-valued atoms with
+positive rational weights reproduce every entry of the fifteen-flag
+moment matrix. Independent literal products verify all 120 distinct
+entries. Thus no pointwise quadratic inequality based only on these
+flag-value restrictions can reject this point. The atoms are not
+claimed to be realizable graph neighborhoods or integer root populations.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -255,6 +263,16 @@ of those extra conflicts, so a separate cold replay verifies the proof
 directly against the original case-two formula. The excluded matching
 indices are now `0,1,2,3,8,21`; the other 22 remain unresolved. The
 historical sweep records remain unchanged.
+The [six-case matching cover](research/grids-and-triangles/complement_rook_35core_six_case_matching_cover.md)
+gives three single-edge restrictions and one two-edge restriction.
+Its 144 explicit transports yield 576 distinct clauses, including all
+144 previous clauses. The [complete 22-case downdate preparation](research/grids-and-triangles/complement_rook_35core_downdate_preparation.md)
+checks 17,612,727 column pairs and gives 1,863 new binary conflicts.
+Two subsequent [case-nine and case-ten proofs](research/grids-and-triangles/complement_rook_35core_cases09_10_exclusion.md)
+pass direct and cold checks. Their retained proofs need only five of
+the extra Gram clauses, each with a small integer negative vector.
+Eight matchings are now excluded: `0,1,2,3,8,9,10,21`. Twenty remain
+unresolved; the whole first local set is still open.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -277,6 +295,15 @@ design and has 792 possible assignments. That fixed pair, under the
 identity fiber alignment, is UNSAT with a direct proof check, a cold
 complete formula rebuild, and retained-proof replay. It excludes only
 that fixed pair of designs. The component and the split case remain open.
+The [complete component-zero pair](research/root_prism_free_f0_pair_gram.md)
+retains all 39,168 compatible columns. Every column passes an exact
+rank-thirty-three Gram-downdate screen. A factorization expresses all
+inverse products through a 480-by-480 component table. The
+[unfixed incidence model](research/root_prism_free_f0_pair_gram_model.md)
+uses 1,478,076 variables and 3,173,640 clauses, with complete Gram and
+triple-packing coverage. Its single [180-second query](research/root_prism_free_f0_pair_gram_run01.md)
+returns UNKNOWN after 181.332 seconds to cooperative return. It gives
+no incidence point, proof, or component-pair exclusion.
 
 ## Scope of the unrestricted computations
 

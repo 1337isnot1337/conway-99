@@ -1,0 +1,193 @@
+{
+  "status": "PASS",
+  "mode": "write",
+  "certificate_sha256": "3cad825f319150cdd9a2dc424ad5221f40b340568615003f630fcb218bcd3324",
+  "clauses_sha256": "87a966ead800fadad514b60698a6977fe56af5b76e6f8a0d74d1a114696f9aff",
+  "proof_dependency_cases": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    21
+  ],
+  "patterns": [
+    {
+      "index": 0,
+      "local_position_edges": [
+        [
+          0,
+          2
+        ]
+      ],
+      "signature_edges": [
+        [
+          0,
+          9
+        ]
+      ],
+      "cover_cases": [
+        0,
+        1
+      ],
+      "remaining_selectors": [
+        1,
+        10,
+        18,
+        20,
+        26,
+        27
+      ],
+      "edge_variables": [
+        254
+      ],
+      "base_negative_clause": [
+        -254,
+        -28,
+        -27,
+        -21,
+        -19,
+        -11,
+        -2
+      ],
+      "endpoint_activation_controls": 320
+    },
+    {
+      "index": 1,
+      "local_position_edges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "signature_edges": [
+        [
+          1,
+          9
+        ]
+      ],
+      "cover_cases": [
+        8,
+        21
+      ],
+      "remaining_selectors": [
+        0,
+        10,
+        18,
+        20,
+        26,
+        27
+      ],
+      "edge_variables": [
+        417
+      ],
+      "base_negative_clause": [
+        -417,
+        -28,
+        -27,
+        -21,
+        -19,
+        -11,
+        -1
+      ],
+      "endpoint_activation_controls": 320
+    },
+    {
+      "index": 2,
+      "local_position_edges": [
+        [
+          4,
+          6
+        ]
+      ],
+      "signature_edges": [
+        [
+          18,
+          26
+        ]
+      ],
+      "cover_cases": [
+        0,
+        1,
+        8,
+        21
+      ],
+      "remaining_selectors": [
+        0,
+        1,
+        9,
+        10,
+        20,
+        27
+      ],
+      "edge_variables": [
+        3177
+      ],
+      "base_negative_clause": [
+        -3177,
+        -28,
+        -21,
+        -11,
+        -10,
+        -2,
+        -1
+      ],
+      "endpoint_activation_controls": 320
+    },
+    {
+      "index": 3,
+      "local_position_edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "signature_edges": [
+        [
+          0,
+          18
+        ],
+        [
+          1,
+          20
+        ]
+      ],
+      "cover_cases": [
+        2,
+        3
+      ],
+      "remaining_selectors": [
+        9,
+        10,
+        26,
+        27
+      ],
+      "edge_variables": [
+        260,
+        425
+      ],
+      "base_negative_clause": [
+        -425,
+        -260,
+        -28,
+        -27,
+        -11,
+        -10
+      ],
+      "endpoint_activation_controls": 400
+    }
+  ],
+  "transport_count": 144,
+  "raw_clauses": 576,
+  "distinct_nonsubsumed_clauses": 576,
+  "clause_lengths": {
+    "6": 144,
+    "7": 432
+  },
+  "solver_called": false,
+  "whole_local_set_excluded": false
+}
