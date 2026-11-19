@@ -2,11 +2,15 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+Checkpoint 87 accepts the [completed stronger-model query](experiments/logs/root-prism-free/f0-strengthened-query-root-acceptance01.json): **UNKNOWN with no primary or additional vector**. [Run 44633211291](https://github.com/1337isnot1337/conway-99/actions/runs/44633211291) executes checkpoint 86 once. Native time is 175.039 seconds within the declared 180-second allowance; the query owner finishes in 181.417 seconds and the complete query/replay pipeline in 182.318 seconds. Separate independent controls and terminal replay pass. All owners reap their children and stop their process groups without an overrun.
+
+All 33 original small output files are preserved exactly. The duplicate native model export is restorable from the accepted archive. The [actual profile](experiments/logs/root-prism-free/f0-strengthened-query-terminal-profile01.json) records search beginning at 19.69 seconds, 137,871 conflicts and 414,040 branches. This is not a presolve-only timeout. No unchanged retry is authorized. The next preparation is an exact short formulation of the retained four-exterior rows and complete triangle/common-neighbor constraints. Those preparations have not changed the accepted model. General exterior pair caps, a compatible second component and unrestricted existence remain unresolved.
+
+## Earlier checkpoints
+
 Checkpoint 86 accepts the [actual zero-solve preflight](experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-acceptance01.json) and publishes a [separate one-query authorization](experiments/logs/root-prism-free/f0-strengthened-query-root-gate01.json). Preflight run 44632464085 passes in 6.358 worker seconds and 6.535 owner seconds, with no solver construction or call and no overrun. Exact native model bytes, parameters and response/integer controls match the frozen configuration. All twelve original small output files are preserved without rounding the large control integer.
 
 The reviewed production workflow checks 25 exact dependencies, calls the immutable query once, then runs separately owned independent controls and terminal replay. Its solver clock is 175 seconds inside a measured 180-second allowance and 300-second owner. Every returned vector requires complete independent integer evaluation. Native INFEASIBLE remains unproved. Actual search outcomes are pending at this publication. The 257,594-row model is unchanged; general exterior pair caps, second-component completion and unrestricted existence remain unresolved.
-
-## Earlier checkpoints
 
 Checkpoint 85 publishes the [fresh stronger-model query sources](research/root_prism_free_f0_strengthened_query_preparation.md) and authorizes one [zero-solve native preflight](experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-gate01.json). The complete runner, actual-input configuration and preflight workflow pass independent source review. The preflight checks exact model/parameter/response transport and integer controls inside a 60-second worker and 75-second process-group owner. It permits zero optimizer calls. Actual preflight acceptance and a separate production gate remain necessary before the one bounded query.
 

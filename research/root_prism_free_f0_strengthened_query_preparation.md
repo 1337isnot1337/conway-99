@@ -1,6 +1,16 @@
 # Strengthened F0 query preparation
 
-Checkpoint 86 accepts the completed zero-solve preflight and authorizes one separately gated bounded optimizer query. The accepted model remains the exact checkpoint 84 model: 68,934 variables, 257,594 rows, raw SHA256 `4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2`.
+Checkpoint 87 accepts the completed query as UNKNOWN with no primary or additional vector. Independent terminal replay passes. The accepted model remains the exact checkpoint 84 model: 68,934 variables, 257,594 rows, raw SHA256 `4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2`.
+
+## Completed production query
+
+[Run 44633211291](https://github.com/1337isnot1337/conway-99/actions/runs/44633211291) executes checkpoint 86 once. The measured native call takes 175.039379657 seconds, within the separately declared 180-second allowance. The query worker takes 181.206623257 seconds; its owner finishes in 181.417421365 seconds inside 300 seconds. The separate terminal replay takes 0.622638523 seconds before serialization and 0.716249547 owner seconds. Its controls and all owners pass. The complete driver takes 182.318110117 seconds inside 480 seconds.
+
+The [root acceptance](../experiments/logs/root-prism-free/f0-strengthened-query-root-acceptance01.json) checks all frozen inputs and 77 output cross-references, exact native response text and reconstructed wire, the empty primary/additional vector inventories, and every required owner outcome. The original integer-control token is preserved and checked exactly. All 33 small output files are committed without re-serialization; the exported model is losslessly recoverable through the [restoration record](../experiments/logs/root-prism-free/f0-strengthened-query-model-restoration01.json).
+
+The [actual terminal profile](../experiments/logs/root-prism-free/f0-strengthened-query-terminal-profile01.json) records search starting at 19.69 seconds and main search at 19.96 seconds. The solver reports 137,871 conflicts, 414,040 branches, 633,121,867 Boolean propagations, 226,781,327 integer propagations and zero LP iterations. Most of the native allowance was spent searching. The changes in rows, symmetry parameter, solver clock and CI execution prevent attributing the difference from the earlier baseline to any single cause.
+
+UNKNOWN supplies no mathematical feasibility or infeasibility conclusion. No unchanged retry is authorized. Prepared short four-exterior channels, full triangle-support equations and cap-one common-neighbor forest constraints are the next formulation work. Their literal supports and complete native representation must be checked before a subsequent changed-model query.
 
 ## Completed preflight and one-call authorization
 
@@ -28,14 +38,13 @@ checks all 27 checkout paths and 25 exact dependencies.
 
 The [production gate](../experiments/logs/root-prism-free/f0-strengthened-query-root-gate01.json)
 and [request](../experiments/logs/root-prism-free/f0-strengthened-query-ci-request01.json)
-now authorize exactly one query and separately owned independent terminal
-replay. The query keeps the exact accepted model. Its clock/allowance/owner
+authorized exactly one query and separately owned independent terminal
+replay; that authorization is now consumed. The query keeps the exact accepted model. Its clock/allowance/owner
 limits are 175/180/300 seconds. Independent controls have a 15-second owner;
 the complete independent replay has a 120-second phase and 135-second owner.
 The CI driver acceptance bound is 480 seconds and the outer job timeout is
 12 minutes. All phase files remain available if a phase fails. No retry or
-second native call is authorized. Actual production outcomes remain pending
-at checkpoint 86 publication.
+second native call is authorized. The completed production outcome is recorded above.
 
 ## Why this query is different
 
@@ -53,7 +62,7 @@ The checkpoint 85 [root gate](../experiments/logs/root-prism-free/f0-strengthene
 
 The separate production gate binds the actual successful preflight report and owner. The production runner has a 300-second process-group owner and requires at least 180 seconds of native allowance plus 60 seconds of finalization reserve before its only solve call. It preserves exact native response text and every native integer vector before parsing. The separately saved protobuf wire is explicitly identified as reconstructed from that text.
 
-Every returned vector is checked against all domains and all 257,594 rows with Python integer arithmetic. The [independent terminal checker](../experiments/workspace/root_prism_free_f0_strengthened_query_replay.py) uses separate indexed arithmetic and protobuf only. It does not import the query, transport helper or native solver module. The [production CI driver](../experiments/workspace/root_prism_free_f0_strengthened_query_ci.py) invokes one query and then separately owned cold controls and full replay. Its [root source review](../experiments/logs/root-prism-free/f0-strengthened-query-ci-root-source-review01.json) finds no blocker. The query runner's prepare mode has now passed. The terminal checker and production driver remain unrun at checkpoint 86 publication; their complete source reviews pass. Their actual owned receipts are required to accept the later production outcome.
+Every returned vector is checked against all domains and all 257,594 rows with Python integer arithmetic. The [independent terminal checker](../experiments/workspace/root_prism_free_f0_strengthened_query_replay.py) uses separate indexed arithmetic and protobuf only. It does not import the query, transport helper or native solver module. The [production CI driver](../experiments/workspace/root_prism_free_f0_strengthened_query_ci.py) invokes one query and then separately owned cold controls and full replay. Its [root source review](../experiments/logs/root-prism-free/f0-strengthened-query-ci-root-source-review01.json) finds no blocker. The prepare mode, production driver and separate terminal checker have now completed successfully. Their actual owned receipts are bound in the root acceptance above.
 
 ## Separate triangle-support diagnostic
 

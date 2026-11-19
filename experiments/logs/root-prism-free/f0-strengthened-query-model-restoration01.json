@@ -1,0 +1,39 @@
+{
+  "schema": "conway99.exact-native-model-restoration.v1",
+  "status": "ACCEPTED_QUERY_EXPORT_RESTORABLE_FROM_EXISTING_MODEL_ARCHIVE",
+  "archive": {
+    "bytes": 5739710,
+    "git_blob": "b0c81d2579cb28cef19976197e9079ff018d650c",
+    "mode": "100644",
+    "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/model.pb.gz",
+    "sha256": "060bada9bda2a7ddfcdf52f1bf0307ede34ecd6dd933f5617d0435f197dabb27"
+  },
+  "raw_bytes": 38374405,
+  "raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "targets": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-query-run01/model.pb",
+      "bytes": 38374405,
+      "sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+      "actual_export_provenance": {
+        "path": "experiments/logs/root-prism-free/f0-strengthened-query-run01/result.json",
+        "bytes": 6541,
+        "sha256": "0ad787a0983aa0e8b956a1e3c6dc46bf31f471cfe15198244491bbbdd822b293",
+        "git_blob": "8752f4ab16c2824664fe0ccd3dc18e0ef44d6fdf",
+        "mode": "100644"
+      }
+    }
+  ],
+  "root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-root-acceptance01.json",
+    "bytes": 6310,
+    "sha256": "591b2829bf00c7dc75e42bd7a208e376b5d4d52c14cf03f33dd8e1e930f6b198",
+    "git_blob": "33c99b0195e753206df5b2435d6dd6f643ad2730",
+    "mode": "100644"
+  },
+  "restoration": "Verify the gzip archive bytes and SHA256, decompress gzip, verify the complete raw bytes and SHA256, and write that exact byte string to each declared target. Refuse an existing different file.",
+  "raw_duplicate_committed": false,
+  "full_ci_artifact_contains_original_export": true,
+  "mathematical_recomputation_or_solver_required": false,
+  "restoration_run_by_root": false
+}

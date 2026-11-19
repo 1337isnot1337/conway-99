@@ -1,0 +1,78 @@
+{
+  "schema": "conway99.f0.strengthened-query-terminal-profile.v1",
+  "status": "EXACT_COMPLETED_UNKNOWN_QUERY_PROFILE",
+  "native_log": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-run01/child.stdout.log",
+    "bytes": 11149,
+    "sha256": "247eae54e8c543a1c6c93c0fed28378d2aca960c11ff1d39384c2d3567a75549",
+    "git_blob": "267dc29fae7ab3a8cecb8b19ed1d7631719a0c91",
+    "mode": "100644"
+  },
+  "response_statistics": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-run01/response-stats.txt",
+    "bytes": 302,
+    "sha256": "6626fe0f39b7c4d09a84de0f261fcea234c04069b6b93efa8ebe3de19e698514",
+    "git_blob": "87ae32dac697b6c01c361374664b328cce0a1fab",
+    "mode": "100644"
+  },
+  "result": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-run01/result.json",
+    "bytes": 6541,
+    "sha256": "0ad787a0983aa0e8b956a1e3c6dc46bf31f471cfe15198244491bbbdd822b293",
+    "git_blob": "8752f4ab16c2824664fe0ccd3dc18e0ef44d6fdf",
+    "mode": "100644"
+  },
+  "root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-root-acceptance01.json",
+    "bytes": 6310,
+    "sha256": "591b2829bf00c7dc75e42bd7a208e376b5d4d52c14cf03f33dd8e1e930f6b198",
+    "git_blob": "33c99b0195e753206df5b2435d6dd6f643ad2730",
+    "mode": "100644"
+  },
+  "initial": {
+    "variables": 68934,
+    "linear0": 756,
+    "linear1": 1956,
+    "linear2": 138102,
+    "linear3": 64986,
+    "linearN": 51794,
+    "linearN_terms": 3029358
+  },
+  "presolved": {
+    "variables": 66963,
+    "booleans": 66939,
+    "at_most_one": 61033,
+    "at_most_one_literals": 207675,
+    "bool_and": 589,
+    "bool_and_literals": 4299,
+    "bool_or": 9192,
+    "bool_or_literals": 248819,
+    "exactly_one": 4353,
+    "exactly_one_literals": 196727,
+    "linearN": 41334,
+    "linearN_terms": 1985068,
+    "linearN_enforced": 34622,
+    "linearN_multi_enforced": 10183,
+    "unused_variables_removed": 1956
+  },
+  "search_start_seconds_rounded_in_log": 19.69,
+  "main_start_seconds_rounded_in_log": 19.96,
+  "conflicts": 137871,
+  "branches": 414040,
+  "boolean_propagations": 633121867,
+  "integer_propagations": 226781327,
+  "restarts": 17,
+  "lp_iterations": 0,
+  "native_seconds": 175.03937965700004,
+  "native_allowance_seconds": 180,
+  "native_overrun_seconds": 0,
+  "peak_rss_KiB": 822220,
+  "status_returned": "UNKNOWN",
+  "primary_vectors": 0,
+  "additional_vectors": 0,
+  "interpretation": "The completed run spent most of its native allowance in search. UNKNOWN supplies neither a satisfying vector nor an infeasibility proof.",
+  "comparison_limit": "The earlier baseline used a different model, default symmetry level two, a 180-second solver clock and a separate CI execution. This run uses the stronger model, explicit symmetry zero and a 175-second solver clock. Timing and search-count differences do not identify the causal effect of any single change.",
+  "unchanged_retry_authorized": false,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}
