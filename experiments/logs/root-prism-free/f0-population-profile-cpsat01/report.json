@@ -1,0 +1,55 @@
+{
+  "status": "PASS: immutable42-table overlay prepare",
+  "source_sha256": "a5b4485f4f30cdcb640d7cb63a5d4b1df4828e8f092f164fdad5a4a21260a67b",
+  "parent_source_sha256": "528f480b08adc5f1040807eec3eb96a75a8ea755eee28aec234f9d660034ff42",
+  "inputs": {
+    "profiles": {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles01.json.gz",
+      "sha256": "93c891e7eef037e5869e5c8e13c3cf31d0ad253cb6caf5cd38930b09715e085d"
+    },
+    "profile_cold": {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles01-cold.json",
+      "sha256": "cb10cd7dc77236d9caed7c7b8a410a33f7b998bea8d257b500d3c9f8561a76f8"
+    },
+    "independent_profile_audit": {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles-independent-audit.json",
+      "sha256": "e532fe58350ad856104333fba05b8601d776cbb98b76b3ce855ce8fa2a4be9a2"
+    },
+    "parent_cold": {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-cold/report.json",
+      "sha256": "fb287608e94737614fd58d51405855a551867cf121f201586b1c860ff4508930"
+    }
+  },
+  "parent_proto_sha256": "aa43ef31991213634b0cc812b61a5d1247c1915c6690def64a54247854ee8589",
+  "raw_proto_sha256": "500ab3e32622fe59eb45044a5d2610b087c030786df821ee06b85c8f0f3d21ef",
+  "raw_proto_bytes": 11647585,
+  "archive": {
+    "path": "experiments/logs/root-prism-free/f0-population-profile-cpsat01/model.pb.gz",
+    "sha256": "e1bd3e50c48f0a600a202aabbeecc80627fc4b6b1096ef32cdd8c17c8ed7d431",
+    "bytes": 4658858
+  },
+  "checks": {
+    "parent_checks": {
+      "all15941_integer_variable_domains_checked": true,
+      "all28647_linear_rows_checked": true,
+      "all903_product_constraints_checked": true,
+      "linear_nonzeros_checked": 1279413,
+      "maximum_absolute_linear_box_sum": 16410372831576,
+      "maximum_product_upper": 144,
+      "all_proto_int64_ranges_checked": true,
+      "objective_hints_assumptions_enforcement_literals_or_search_strategy_present": false
+    },
+    "all_parent_variables_and29550_constraints_unchanged": true,
+    "tables_checked": 42,
+    "tuples_checked": 5733,
+    "tuple_integer_entries": 55307,
+    "variables": 15941,
+    "constraints": 29592,
+    "objective_hints_assumptions_or_strategy_added": false
+  },
+  "ortools_version": "9.15.6755",
+  "optimizer_calls": 0,
+  "CpSolver_constructed": false,
+  "count_or_graph_feasibility_claimed": false,
+  "seconds": 13.89369004600303
+}

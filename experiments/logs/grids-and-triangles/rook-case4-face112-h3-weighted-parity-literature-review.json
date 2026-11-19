@@ -1,0 +1,57 @@
+{
+  "schema": "conway99.independent-source-review.v1",
+  "status": "PASS: complete weighted parity source and mathematical review",
+  "reviewer": "literature_obstructions",
+  "subjects": [
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_weighted_parity.py",
+      "sha256": "c38a4ec1d95eca5382e34c7182af38c980bf61785585207dd314a1a6546b5756",
+      "complete_source_read": true
+    },
+    {
+      "path": "experiments/workspace/rook_case4_weighted_parity_basis.py",
+      "sha256": "bb507d8d97a064bd8c56aac763b44e026c50598048b213db9399662eaaec7415",
+      "complete_source_read": true
+    },
+    {
+      "path": "experiments/workspace/rook_case4_parity_polytope.py",
+      "sha256": "048df509b05601f15d6cb4230750b36d221276cce66e625b0cf9c720ecb89062",
+      "complete_source_read": true
+    }
+  ],
+  "preparation": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-weighted-parity-preparation01.json",
+    "sha256": "c49bae350815e2d1a5dd2e9c4a5bb80daf15edf491787c1a3e4a33a58adfbfa7",
+    "definition_sha256": "5e435694b3bbb0125dbafa767d89b0fb1493d4712c38413d66bd20f378d9ae55"
+  },
+  "checks": {
+    "row_space": "Every elementary operation carries both the original 630-row XOR witness and an input-basis combination. Replay independently expands each output through the input combination, checks reduced pivot identity and reverse input-row span, and then checks all 630 projected original Gram equations. Rank after zero substitution is derived, not assumed.",
+    "inconsistency": "The exact rational point has odd denominator and satisfies all original Gram equations; reducing its integer numerators modulo two gives a parity solution. An inconsistent transformed zero row is therefore rejected, not promoted to a branch exclusion.",
+    "witness_transport": "A retained parity equation is expanded from the original 630 integer Gram rows. The complete 1214 coefficient vector, integer RHS sum, odd support and removed proved-zero columns are checked. Only the 112 hash-bound zero premises are substituted.",
+    "changed_point": "All 41041 old single/pair equations are evaluated at the new H3 point before the two weighted families. Deduplication removes only already evaluated equal support/RHS pairs at this same point; it never skips the old family because of its older no-cut result.",
+    "finite_scope": "The searched words are old basis singles/pairs plus singles/pairs from two exact weighted RREF bases. Full row-space equality of each basis does not imply that this finite low-weight search tests every parity word.",
+    "distance": "The closest forbidden Boolean vertex is found by nearest-coordinate rounding, with the minimum exact parity-flip penalty if required. The inequality is the corresponding Hamming-distance lower bound one, and acceptance uses a strict Python-integer numerator.",
+    "budgets": "The single 60-second arithmetic deadline is explicitly cooperative and shared by binding checks, both eliminations, span verification, separation and writes. The 64 MiB transcript cap reserves 1 MiB for terminal metadata, and only the first 64 distinct violated equations retain full cut records.",
+    "partial_replay": "A timeout before either or both basis certificates leaves a zero evaluated prefix. Cold replay handles zero or one saved basis without treating it as completed separation. With two bases it recomputes only the saved candidate prefix and verifies every exported cut from original rows, without repeating RREF.",
+    "no_automorphism_or_relaxation_claim": "These are Boolean consequences of the original Gram equalities and proved-zero premises. They are not equalities of the real relaxation, and a complete no-cut result would concern only the declared three finite families."
+  },
+  "observed_preparation": {
+    "case_RREF_calls": 0,
+    "case_parity_evaluations": 0,
+    "optimizer_calls": 0,
+    "reported_small_systems": 5054,
+    "reported_ordered_reductions": 10108,
+    "reported_assignment_checks": 74954
+  },
+  "review_execution": {
+    "subject_imported": false,
+    "case_row_reduction_repeated": false,
+    "synthetic_controls_repeated": false,
+    "candidate_parity_scan_repeated": false,
+    "native_model_rebuilt": false,
+    "point_acceptance_repeated": false,
+    "optimizer_calls": 0,
+    "performed": "Complete source reading and local source/preparation hash checks only."
+  },
+  "gate_scope": "No acceptance blocker found. This report does not execute or authorize any production scan."
+}

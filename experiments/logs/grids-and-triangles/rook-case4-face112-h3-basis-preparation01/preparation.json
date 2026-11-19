@@ -1,0 +1,56 @@
+{
+  "status": "PREPARED_ARTIFACT_ONLY_288_SQUARE_RECONSTRUCTION_NO_ELIMINATION",
+  "bindings": {
+    "source_sha256": "f764dbe84cc137f6c489100b6b499af1e6c893c3c6781dd3d96bf7d29ba02b34",
+    "inputs": {
+      "builder": {
+        "path": "experiments/workspace/rook_case4_face112_h3_model_v2.py",
+        "sha256": "d06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7"
+      },
+      "recovery": {
+        "path": "experiments/workspace/rook_case4_complete_lp_recovery.py",
+        "sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6"
+      },
+      "model": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/model.json",
+        "sha256": "1928eb76274865e219747f631fee2d7a327ed7acd3a845986844be13c9e34265"
+      },
+      "arrays": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/arrays.npz",
+        "sha256": "4e2de2786d3036cf995953791192500cb4aaa5b0c5079f3d97ea465a4cf64e46"
+      },
+      "numeric": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01/iteration-00-numeric.json.gz",
+        "sha256": "eda071f5ebcbf4e80574af4ef7031b31d1f74002d3a3fe9ee234ce3c7f7df8b7"
+      },
+      "terminal": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01/result.json",
+        "sha256": "328abe5e6413d2e76e943e04d1cfa225b57aa0f574eb26ccf9fca3314382192d"
+      },
+      "cold_replay": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01-replay.json",
+        "sha256": "e682e859b538e97a40786c445fa628cc26dd3a962172d0308b29d0cab48a2de5"
+      }
+    },
+    "python_flint_version": "0.9.0"
+  },
+  "proposal_raw_sha256": "8761ab48514b3e53cd1e6c1aab391f5c4e8e3f4cf3092ca75eda2678b3634b2a",
+  "proposal_gzip_sha256": "ecd48e485a37875b91b10a2dcb857941d16920cc3526ac5c32e99da315f8e666",
+  "proposal_raw_bytes": 165057,
+  "candidate_aliases": 815,
+  "square_dimension": 288,
+  "sparse_nonzeros": 2071,
+  "dense_cells": 82944,
+  "controls": {
+    "exact_alias_substitution_controls": 15552,
+    "optimizer_calls": 0,
+    "production_linear_systems_solved": 0
+  },
+  "production_linear_solve_calls": 0,
+  "optimizer_calls": 0,
+  "hard_exact_child_seconds": 60,
+  "maximum_output_integer_bits": 4096,
+  "internal_flint_integer_bits_not_claimed_bounded": true,
+  "exact_acceptance_requires_every_original_row": true,
+  "elapsed_seconds": 2.156999618993723
+}

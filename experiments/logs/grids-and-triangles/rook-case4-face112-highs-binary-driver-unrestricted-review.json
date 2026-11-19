@@ -1,0 +1,22 @@
+{
+  "status": "PASS: complete read-only binary HiGHS driver source review",
+  "subject": {
+    "path": "experiments/workspace/rook_case4_face112_highs_binary_search.py",
+    "sha256": "6569f2c12b6ff02df34346b9f67f4426e7933a0999fd13bf32ea01e32d7d44c0"
+  },
+  "entire_source_read": true,
+  "review": [
+    "The driver binds the complete compact model and native version, checks binary integrality and coefficient transport, and never accepts a floating incumbent without rounding and full original Boolean evaluation.",
+    "The original external cover pool and its global row IDs remain fixed. Each appended cover is an original necessary row, with deterministic ordering and preserved prefix.",
+    "The owner deadline covers child setup, native calls, scans and output. Per-call remainders do not replace the owner hard limit. Late or failed children remain unresolved.",
+    "Every accepted Boolean candidate is reconstructed in all1214 original coordinates and checked against all2618 integer rows and178533 covers. No visitation block or selector fixing is added.",
+    "Native infeasible, limit and other numerical statuses do not establish a class exclusion. Cold replay does not call an optimizer.",
+    "The field runtime_before_any_solve means cumulative backend runtime on later append audits. Its name is a metadata limitation; it is not used for acceptance or deadline decisions."
+  ],
+  "subject_imported": false,
+  "subject_executed": false,
+  "model_or_controls_rebuilt": false,
+  "optimizer_calls": 0,
+  "native_query_repeated": false,
+  "independent_source_review_only": true
+}

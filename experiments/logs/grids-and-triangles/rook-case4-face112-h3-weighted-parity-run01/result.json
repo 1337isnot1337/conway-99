@@ -1,0 +1,86 @@
+{
+  "status": "COMPLETE: finite three-family exact parity census",
+  "source_bindings": {
+    "driver_sha256": "c38a4ec1d95eca5382e34c7182af38c980bf61785585207dd314a1a6546b5756",
+    "row_reduction_helper_sha256": "bb507d8d97a064bd8c56aac763b44e026c50598048b213db9399662eaaec7415",
+    "parity_helper_sha256": "048df509b05601f15d6cb4230750b36d221276cce66e625b0cf9c720ecb89062",
+    "inputs": {
+      "native": [
+        "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+        "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+      ],
+      "old_basis": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-parity-preparation01/basis.json.gz",
+        "ad03018a2bb30dfb79fb126b76aa9863b16217eeb42f0b1e78fdaabde610c00d"
+      ],
+      "old_family_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-parity-run01-replay.json",
+        "7d5f64961f83c7714804fad3521d13c5deb1924f804a6f2b8227897bf509e710"
+      ],
+      "model": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/model.json",
+        "1928eb76274865e219747f631fee2d7a327ed7acd3a845986844be13c9e34265"
+      ],
+      "model_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02-cold-replay.json",
+        "56864810924bacb6b331db728a4ce32810d8e6f2dfe7c196e0a73e0b2f583a97"
+      ],
+      "point": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-h3-basis-run01/candidate.json",
+        "cecacaaa1cb6974dd898f1d2b69be32a06e44e9b89a1b45e35717bc347d3b4e8"
+      ],
+      "point_check": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-h3-point-direct-check01.json",
+        "f20cb9ffe3768591cd255dd9b148881d7c3df8df80fb881a7c59a75c6758395c"
+      ]
+    }
+  },
+  "preparation_sha256": "c49bae350815e2d1a5dd2e9c4a5bb80daf15edf491787c1a3e4a33a58adfbfa7",
+  "limits": {
+    "preparation_seconds": 60,
+    "shared_elimination_and_scan_seconds": 60,
+    "cold_replay_seconds": 60,
+    "raw_candidate_upper_bound": 123123,
+    "weighted_column_orders": 2,
+    "maximum_retained_cuts": 64,
+    "maximum_transcript_bytes": 67108864,
+    "result_reserve_bytes": 1048576,
+    "automatic_retries": 0,
+    "optimizer_calls": 0
+  },
+  "definition_sha256": "5e435694b3bbb0125dbafa767d89b0fb1493d4712c38413d66bd20f378d9ae55",
+  "basis_files": [
+    {
+      "path": "basis-00.json",
+      "sha256": "42dd2e35059ca5f0bbd9878c7a4b65ed0624cd8dfc1746aee025d19721bd360c",
+      "rank": 286
+    },
+    {
+      "path": "basis-01.json",
+      "sha256": "1e6dfc11a8c4e3e3372abd730746d534b7eff071c8ef38747f6dd4cf110792f5",
+      "rank": 286
+    }
+  ],
+  "raw_prefix": 123123,
+  "distinct_evaluated": 102381,
+  "duplicates_skipped": 20742,
+  "violations": 2,
+  "retained_cuts": 2,
+  "complete": true,
+  "optimizer_calls": 0,
+  "point_denominator": "27131679103",
+  "odd_denominator_consistency_witness": "0x380800000000008800808002800200048080000008040000148000400000000042800001010000400000d004000001400aa000c20080000424024200000924040a000102108000000900200000a1090000000804000000818040004240000100000084010848404020000000620104002000c42003005008208041400000021208000008901449008018310070440511402400023108008",
+  "planned_raw_candidates": 123123,
+  "transcript_bytes_excluding_reserved_result": 3612211,
+  "artifact_bindings": {
+    "evaluations.jsonl": {
+      "sha256": "0dffb8e243f4d5eac6206986f47af8374d33e23aab293e2b3a6a1d276327b1ac",
+      "bytes": 3287550
+    },
+    "cuts.jsonl": {
+      "sha256": "67a0e3ff1c0c4e9decc3f82ba3d492fa5ff88dc87e857d7f23ed0d3971e8ab5e",
+      "bytes": 8578
+    }
+  },
+  "elapsed_seconds": 48.46884860099817
+}

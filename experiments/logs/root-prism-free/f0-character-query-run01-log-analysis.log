@@ -1,0 +1,365 @@
+{
+  "status": "PASS: frozen-log analysis and exact row-family census; no query",
+  "source_sha256": "33b508686512c360d2ce5eaa3924915893f6ac281f82fdb5c806974f29750650",
+  "inputs": {
+    "log": {
+      "path": "experiments/logs/root-prism-free/f0-character-query-run01/child.stdout.log",
+      "sha256": "436336c50eea8756075d2391f8e182b895b90e49d26b96377319f9075466b362"
+    },
+    "child": {
+      "path": "experiments/logs/root-prism-free/f0-character-query-run01/child-result.json",
+      "sha256": "e5f41f35bc6d6b8bda9cf45507765023395bb7b3fc287e6f2efdb89804a1793a"
+    },
+    "linear": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-model.json.gz",
+      "sha256": "aa46e2ca9df7a5838926385e06a86acda041c8455ac3422ae1e7b0a5c4ce5437"
+    },
+    "products": {
+      "path": "experiments/logs/root-prism-free/f0-population-products02-specification.json.gz",
+      "sha256": "c83ebbc1d0d4e9b5ec5ccd60ed5e52ea2be2cb24f1de570f6bff8bb158d42e0c"
+    },
+    "profiles": {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles01.json.gz",
+      "sha256": "93c891e7eef037e5869e5c8e13c3cf31d0ad253cb6caf5cd38930b09715e085d"
+    },
+    "characters": {
+      "path": "experiments/logs/root-prism-free/f0-character-populations01.json.gz",
+      "sha256": "139d06a3383f8fc79d677972ce052ce29966e8b3406e7d1e7d1077aea7c2cef6"
+    },
+    "gram": {
+      "path": "experiments/logs/root-prism-free/f0-character-Gram-equalities01.json",
+      "sha256": "084764b528f9a75269c8e21bb0b55b480a552022b024db72a4357aca083770c7"
+    },
+    "native_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-character-cpsat01/report.json",
+      "sha256": "e15c4bfcf7adaabb60258e3cffa8046eb0cd97843ae8787a24b356011d7b8a5f"
+    }
+  },
+  "native_clock_intervals_seconds": {
+    "before_presolve": "0.34",
+    "presolve_until_search_setup": "88.65",
+    "search_setup_until_main_search": "16.65",
+    "main_search_until_native_return": "57.03729584600002",
+    "native_total": "162.67729584600002",
+    "timestamps_rounded_by_native_log": true
+  },
+  "named_presolve_timers": [
+    {
+      "name": "Probe",
+      "printed_wall_seconds": [
+        "14.3",
+        "10.9",
+        "30.2"
+      ],
+      "sum_of_printed_wall_seconds": "55.4"
+    },
+    {
+      "name": "PresolveToFixPoint",
+      "printed_wall_seconds": [
+        "3.05",
+        "0.963",
+        "1.13",
+        "0.717",
+        "1.33",
+        "1.25",
+        "0.942",
+        "2.72",
+        "1.56"
+      ],
+      "sum_of_printed_wall_seconds": "13.662"
+    },
+    {
+      "name": "DetectDominatedLinearConstraints",
+      "printed_wall_seconds": [
+        "0.536",
+        "2.21",
+        "3.19"
+      ],
+      "sum_of_printed_wall_seconds": "5.936"
+    },
+    {
+      "name": "FindBigVerticalLinearOverlap",
+      "printed_wall_seconds": [
+        "1.26",
+        "1.04",
+        "1.53"
+      ],
+      "sum_of_printed_wall_seconds": "3.83"
+    },
+    {
+      "name": "DetectDominanceRelations",
+      "printed_wall_seconds": [
+        "0.404",
+        "0.218",
+        "0.290",
+        "0.183",
+        "0.205",
+        "0.261",
+        "0.233",
+        "1.06",
+        "0.229"
+      ],
+      "sum_of_printed_wall_seconds": "3.083"
+    },
+    {
+      "name": "FindBigHorizontalLinearOverlap",
+      "printed_wall_seconds": [
+        "0.419",
+        "0.399",
+        "0.561"
+      ],
+      "sum_of_printed_wall_seconds": "1.379"
+    },
+    {
+      "name": "DetectDuplicateColumns",
+      "printed_wall_seconds": [
+        "0.300",
+        "0.188",
+        "0.462"
+      ],
+      "sum_of_printed_wall_seconds": "0.950"
+    },
+    {
+      "name": "ProcessAtMostOneAndLinear",
+      "printed_wall_seconds": [
+        "0.168",
+        "0.190",
+        "0.510"
+      ],
+      "sum_of_printed_wall_seconds": "0.868"
+    },
+    {
+      "name": "FindBigAtMostOneAndLinearOverlap",
+      "printed_wall_seconds": [
+        "0.212",
+        "0.280",
+        "0.356"
+      ],
+      "sum_of_printed_wall_seconds": "0.848"
+    },
+    {
+      "name": "MaxClique",
+      "printed_wall_seconds": [
+        "0.0460",
+        "0.0570",
+        "0.0946"
+      ],
+      "sum_of_printed_wall_seconds": "0.1976"
+    },
+    {
+      "name": "DetectDuplicateConstraintsWithDifferentEnforcements",
+      "printed_wall_seconds": [
+        "0.0436",
+        "0.00692",
+        "0.0349",
+        "0.0123",
+        "0.0777",
+        "0.0144"
+      ],
+      "sum_of_printed_wall_seconds": "0.18982"
+    },
+    {
+      "name": "ProcessSetPPC",
+      "printed_wall_seconds": [
+        "0.0394",
+        "0.0514",
+        "0.0509"
+      ],
+      "sum_of_printed_wall_seconds": "0.1417"
+    },
+    {
+      "name": "DetectDuplicateConstraints",
+      "printed_wall_seconds": [
+        "0.0184",
+        "0.00817",
+        "0.00888",
+        "0.0217",
+        "0.0173",
+        "0.0153"
+      ],
+      "sum_of_printed_wall_seconds": "0.08975"
+    },
+    {
+      "name": "DetectDifferentVariables",
+      "printed_wall_seconds": [
+        "0.00973",
+        "0.0215",
+        "0.0168"
+      ],
+      "sum_of_printed_wall_seconds": "0.04803"
+    },
+    {
+      "name": "TransformClausesToExactlyOne",
+      "printed_wall_seconds": [
+        "0.00759",
+        "0.0181",
+        "0.0164"
+      ],
+      "sum_of_printed_wall_seconds": "0.04209"
+    },
+    {
+      "name": "DetectEncodedComplexDomains",
+      "printed_wall_seconds": [
+        "0.0110",
+        "0.0121",
+        "0.0120"
+      ],
+      "sum_of_printed_wall_seconds": "0.0351"
+    },
+    {
+      "name": "FindAlmostIdenticalLinearConstraints",
+      "printed_wall_seconds": [
+        "0.00667",
+        "0.0107",
+        "0.0115"
+      ],
+      "sum_of_printed_wall_seconds": "0.02887"
+    },
+    {
+      "name": "MergeClauses",
+      "printed_wall_seconds": [
+        "0.0127",
+        "0.00533",
+        "0.00963"
+      ],
+      "sum_of_printed_wall_seconds": "0.02766"
+    },
+    {
+      "name": "ExtractEncodingFromLinear",
+      "printed_wall_seconds": [
+        "0.00172"
+      ],
+      "sum_of_printed_wall_seconds": "0.00172"
+    },
+    {
+      "name": "MergeNoOverlap",
+      "printed_wall_seconds": [
+        "0.00104"
+      ],
+      "sum_of_printed_wall_seconds": "0.00104"
+    },
+    {
+      "name": "MergeNoOverlap2D",
+      "printed_wall_seconds": [
+        "0.000580"
+      ],
+      "sum_of_printed_wall_seconds": "0.000580"
+    }
+  ],
+  "presolve_probe_printed_seconds_sum": "55.4",
+  "search_setup_probe_printed_seconds": "13.2353",
+  "all_named_probe_printed_seconds_sum": "68.6353",
+  "timer_sums_are_not_an_exhaustive_exclusive_wall_profile": true,
+  "table_expansion": {
+    "expanded_tables": 84,
+    "new_bool_table_rule_count": 20607,
+    "new_bool_integer_rule_count": 3311,
+    "old_tuples": 5733,
+    "refined_tuples": 19331,
+    "separate_table_expansion_wall_time_available": false,
+    "old42_tables_implied_by_exact_refined_projection": true,
+    "dropping_old_tables_would_be_a_separate_equivalent_preparation": true
+  },
+  "linear_family_census": {
+    "inherited92_PSD": {
+      "rows": 92,
+      "nonzero_terms": 877079,
+      "minimum_row_width": 29,
+      "maximum_row_width": 15038,
+      "minimum_absolute_nonzero_coefficient": 1,
+      "maximum_absolute_coefficient": 2021027760,
+      "maximum_coefficient_bits": 31,
+      "maximum_absolute_rhs": 0,
+      "maximum_absolute_box_sum": 16410372831576
+    },
+    "all_other_inherited_count_rows": {
+      "rows": 27627,
+      "nonzero_terms": 202753,
+      "minimum_row_width": 1,
+      "maximum_row_width": 85,
+      "minimum_absolute_nonzero_coefficient": 1,
+      "maximum_absolute_coefficient": 72,
+      "maximum_coefficient_bits": 7,
+      "maximum_absolute_rhs": 120,
+      "maximum_absolute_box_sum": 14676
+    },
+    "selector25_integer_refinements": {
+      "rows": 25,
+      "nonzero_terms": 189283,
+      "minimum_row_width": 113,
+      "maximum_row_width": 9395,
+      "minimum_absolute_nonzero_coefficient": 1,
+      "maximum_absolute_coefficient": 3531368,
+      "maximum_coefficient_bits": 22,
+      "maximum_absolute_rhs": 18,
+      "maximum_absolute_box_sum": 14840467476
+    },
+    "trivial903_product_links": {
+      "rows": 903,
+      "nonzero_terms": 10298,
+      "minimum_row_width": 6,
+      "maximum_row_width": 13,
+      "minimum_absolute_nonzero_coefficient": 1,
+      "maximum_absolute_coefficient": 2,
+      "maximum_coefficient_bits": 2,
+      "maximum_absolute_rhs": 0,
+      "maximum_absolute_box_sum": 288
+    },
+    "signed2385_product_links": {
+      "rows": 2385,
+      "nonzero_terms": 28698,
+      "minimum_row_width": 6,
+      "maximum_row_width": 13,
+      "minimum_absolute_nonzero_coefficient": 1,
+      "maximum_absolute_coefficient": 2,
+      "maximum_coefficient_bits": 2,
+      "maximum_absolute_rhs": 0,
+      "maximum_absolute_box_sum": 180
+    },
+    "character32_Gram_rows": {
+      "rows": 32,
+      "nonzero_terms": 377,
+      "minimum_row_width": 4,
+      "maximum_row_width": 32,
+      "minimum_absolute_nonzero_coefficient": 1,
+      "maximum_absolute_coefficient": 3,
+      "maximum_coefficient_bits": 2,
+      "maximum_absolute_rhs": 0,
+      "maximum_absolute_box_sum": 276
+    }
+  },
+  "all_linear_terms": 1308488,
+  "PSD_and_integer_refinement_terms": 1066362,
+  "PSD_and_integer_refinement_term_fraction": [
+    1066362,
+    1308488
+  ],
+  "LP_observations": {
+    "components": 4,
+    "iterations": 10588,
+    "added_cuts": 196,
+    "final_relaxation_linear_rows": 27052,
+    "cut_generators": 903,
+    "first_component_final_rows": 1750,
+    "first_component_columns": 18533,
+    "first_component_nonzeros": 123020,
+    "separate_LP_wall_time_available": false,
+    "literal_debug_counters": {
+      "Overflow": 0,
+      "Bad": 70,
+      "BadScaling": 0
+    },
+    "debug_counter_semantics_or_causal_attribution_inferred": false
+  },
+  "interpretation": [
+    "The native log directly identifies three substantial presolve probes and one search-setup probe. Their printed durations sum to68.6353seconds.",
+    "All84 tables were expanded and the table rule created20607Booleans. The log does not report a separate wall-time charge for table expansion.",
+    "The92 PSD rows and25 integer refinements are measured separately in the exact original row census. Term dominance is not proof of runtime dominance.",
+    "The log records10588LP iterations but no LP-only wall duration or per-original-family timing. It cannot establish that large PSD coefficients caused the timeout or numerical conditioning trouble.",
+    "The old42 table constraints are implied by the42 refined tables through the already certified exact projection. Removing them can be prepared with omission witnesses and unchanged full acceptance.",
+    "A later bounded probing schedule or lazy exact checking of dense rows would be a separate algorithmic change. No speed or feasibility result is asserted without a new gated experiment."
+  ],
+  "optimizer_calls": 0,
+  "model_rebuilt": false,
+  "production_outcome_changed": false
+}

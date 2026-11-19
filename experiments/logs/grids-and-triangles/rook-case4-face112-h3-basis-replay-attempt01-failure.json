@@ -1,0 +1,15 @@
+{
+  "status": "PRESERVED: prescribed cold basis replay reached its60second deadline",
+  "command_exit_code": 1,
+  "failed_log": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-basis-run01-replay.log",
+  "failed_log_sha256": "a00941c98b51f697db63b2349ebfc2689b5119a866c5cbc691c75be9347dd433",
+  "source": "experiments/workspace/rook_case4_face112_h3_basis_reconstruction.py",
+  "source_sha256": "f764dbe84cc137f6c489100b6b499af1e6c893c3c6781dd3d96bf7d29ba02b34",
+  "candidate_sha256": "cecacaaa1cb6974dd898f1d2b69be32a06e44e9b89a1b45e35717bc347d3b4e8",
+  "observed_stop": "tick(deadline) in the full face CSR-row loop; no arithmetic mismatch was reported",
+  "reported_exception": "TimeoutError",
+  "independent_point_replay_complete": false,
+  "candidate_status": "owner-checked; independent direct arithmetic still pending",
+  "automatic_retry_performed": false,
+  "scope_of_separate_replacement": "Bind passed full-model and numerical cold records, directly check all frozen CSR rows and original-coordinate obligations without model reconstruction or elimination."
+}

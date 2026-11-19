@@ -1,0 +1,27 @@
+{
+  "status": "PASS: complete read-only direct-H3 arithmetic source review",
+  "subject": {
+    "path": "experiments/workspace/rook_case4_face112_h3_point_direct_check.py",
+    "sha256": "cdf6360fd04c81280d597aa150bb3b0205de0207aa8c81f914331ceff0ed5a92"
+  },
+  "bound_saved_result": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-point-direct-check01.json",
+    "sha256": "f20cb9ffe3768591cd255dd9b148881d7c3df8df80fb881a7c59a75c6758395c"
+  },
+  "entire_source_read": true,
+  "review": [
+    "The model and arrays are hash-bound to a completed full cold reconstruction. This checker does not infer correctness from the timed-out earlier point replay.",
+    "The Python-integer bound max_abs_coefficient * max_row_width * max_numerator bounds every individual CSR product and every partial row sum in absolute value. Scaled finite endpoints receive a separate Python-integer bound before NumPy multiplication.",
+    "The coefficient guard avoids abs(INT64_MIN). Positive row widths and consistent CSR endpoints justify reduceat on the complete row batches.",
+    "Original native Gram, signature, triple, conflict and uncapped-cut rows use Python integers independently of the CSR computation.",
+    "The packed cover registry uses two little-endian target bytes followed by152 mask bytes. Little-endian unpacking, the final two padding bits, and target exclusion are checked. The bound1214*denominator controls every nonnegative cover partial sum.",
+    "The full1214-coordinate point is reconstructed through the exact live-column map and112 zeros. The max-min inequalities, both unit sums, four pair inequalities and H3 range are checked explicitly.",
+    "Only successful completion under the separate arithmetic bound produces an exact-point claim. Assertion, timeout, value or overflow failure remains unresolved; no optimizer or binary-incidence conclusion is introduced."
+  ],
+  "subject_imported": false,
+  "subject_executed": false,
+  "model_or_arrays_reconstructed": false,
+  "point_or_controls_repeated": false,
+  "optimizer_calls": 0,
+  "independent_source_review_only": true
+}

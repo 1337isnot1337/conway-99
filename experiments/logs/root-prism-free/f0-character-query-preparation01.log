@@ -1,0 +1,98 @@
+{
+  "status": "PASS: one-query preparation; no production solve",
+  "definition": {
+    "schema": "conway99.f0-character-count-query.v1",
+    "runner_source_sha256": "847d85ee005899924b3b79a094389a1a799de57c0e6e16f3f68721a8f24acee2",
+    "sources": {
+      "model": {
+        "path": "experiments/workspace/root_prism_free_f0_character_cpsat.py",
+        "sha256": "879cdb9be48f9377dd6bccd078f26a568d12467385e9ecb1d5b260cc56ff64e7"
+      },
+      "profile": {
+        "path": "experiments/workspace/root_prism_free_f0_population_profile_cpsat.py",
+        "sha256": "a5b4485f4f30cdcb640d7cb63a5d4b1df4828e8f092f164fdad5a4a21260a67b"
+      },
+      "products": {
+        "path": "experiments/workspace/root_prism_free_f0_population_products_cpsat.py",
+        "sha256": "528f480b08adc5f1040807eec3eb96a75a8ea755eee28aec234f9d660034ff42"
+      },
+      "mathematics": {
+        "path": "experiments/workspace/root_prism_free_f0_population_products.py",
+        "sha256": "147ad92071ced273139993b09633c298b7a4a8ed9298e68103f970a8f01b7a66"
+      },
+      "supervisor": {
+        "path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+        "sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278"
+      }
+    },
+    "inputs": {
+      "model_preparation": {
+        "path": "experiments/logs/root-prism-free/f0-character-cpsat01/report.json",
+        "sha256": "e15c4bfcf7adaabb60258e3cffa8046eb0cd97843ae8787a24b356011d7b8a5f"
+      },
+      "model_cold": {
+        "path": "experiments/logs/root-prism-free/f0-character-cpsat01-cold/report.json",
+        "sha256": "fd86705f404e899869234d67916c2178d77acfb9c2b847571fb897cc5f785e18"
+      },
+      "coordinator_model_review": {
+        "path": "experiments/logs/root-prism-free/f0-character-cpsat-root-source-review.json",
+        "sha256": "46712ba2491fd0066e8ea79d0ebba094cfd18b7a8be069c966e73bbf85f0402a"
+      },
+      "model_archive": {
+        "path": "experiments/logs/root-prism-free/f0-character-cpsat01/model.pb.gz",
+        "sha256": "81acda719e5d7a65ccfeb95bcd956785ee9283d60630aed2f8933599933f3f57"
+      }
+    },
+    "model_proto_sha256": "5b43e3c026dbe71fcc8d072aa1790b80f7a81312e7b1ebf36a37612b2f726eeb",
+    "native_variables": 18444,
+    "native_constraints": 34436,
+    "native_linear_rows": 31064,
+    "native_products": 3288,
+    "native_tables": 84,
+    "ortools_version": "9.15.6755",
+    "installed_cp_model_source_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+    "maximum_owned_child_seconds": 180,
+    "finalization_reserve_seconds": 8,
+    "maximum_production_solve_calls": 1,
+    "num_search_workers": 1,
+    "random_seed": 0,
+    "all_imports_build_serialization_solve_acceptance_in_child_deadline": true,
+    "native_model_built_with_public_constructors": true,
+    "native_model_hash_checked_before_solve": true,
+    "late_or_failed_child_never_accepted": true,
+    "all_primary_signed_and_auxiliary_values_saved_as_integers": true,
+    "native_infeasibility_has_no_independent_certificate": true,
+    "exact_feasible_outcome_scope": "Necessary count/product/table model only; no literal incidence or graph is certified.",
+    "graph_automorphism_assumed": false,
+    "full_PSD_enforced": false,
+    "original92_PSD_directions_and25_integer_refinements_retained": true,
+    "automatic_retry": false
+  },
+  "controls": {
+    "status": "PASS",
+    "native_parameter_roundtrip": true,
+    "signed_integer_response_roundtrip": true,
+    "owned_child_stop_controls": [
+      {
+        "name": "normal",
+        "status": "CHILD_EXITED",
+        "child_reaped": true
+      },
+      {
+        "name": "failed",
+        "status": "ERROR_CHILD_EXIT",
+        "child_reaped": true
+      },
+      {
+        "name": "deadline",
+        "status": "UNKNOWN_HARD_DEADLINE",
+        "child_reaped": true
+      }
+    ],
+    "optimizer_calls": 0,
+    "CpSolver_constructed": 0
+  },
+  "optimizer_calls": 0,
+  "CpSolver_constructed": 0,
+  "seconds": 1.6233121740006027
+}

@@ -1,0 +1,326 @@
+{
+  "status": "PASS: character-Gram source review and 32 independent literal witnesses",
+  "reviewer_source_sha256": "74608975147d6f9346599586f262b15dc767c6d5884c8986d1005457870d8f99",
+  "bindings": {
+    "subject": {
+      "path": "experiments/workspace/root_prism_free_f0_character_gram.py",
+      "sha256": "5de0969699b445286b437deec69fb31cfcdab22400c6fbfa959b488117808c8b"
+    },
+    "record": {
+      "path": "experiments/logs/root-prism-free/f0-character-Gram-equalities01.json",
+      "sha256": "084764b528f9a75269c8e21bb0b55b480a552022b024db72a4357aca083770c7"
+    },
+    "cold": {
+      "path": "experiments/logs/root-prism-free/f0-character-Gram-equalities01-cold.json",
+      "sha256": "482ccc5f26d4668ef1f45fab6200eeb2328b92e0b949b7e026052c1354cd1f7f"
+    },
+    "characters": {
+      "path": "experiments/logs/root-prism-free/f0-character-populations01.json.gz",
+      "sha256": "139d06a3383f8fc79d677972ce052ce29966e8b3406e7d1e7d1077aea7c2cef6"
+    },
+    "character_review": {
+      "path": "experiments/logs/root-prism-free/f0-character-populations-literature-review.json",
+      "sha256": "f5164ac7a59cd75c9fdd3c74364e772701038c9c8347c15ae9b6c7990c110149"
+    },
+    "moments": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+      "sha256": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    }
+  },
+  "entire134_line_subject_source_read": true,
+  "source_and_mathematical_checks": [
+    "Each transported support is looked up as an original equality with the same quota. Duplicate identical rows may use the first occurrence without changing the equation.",
+    "The nontrivial character has sum zero, so the signed sum of the 12 transported right-hand sides is zero.",
+    "For a compatible signing, the coefficient on orbit O_i is (12/|O_i|) times the signed intersection with the original support. This follows by summing the stabilizer coset mapping a selected orbit point to the anchor.",
+    "Incompatible stabilizers give zero projection. The source compares all 480 expanded coefficients, including these unsupported orbits.",
+    "A nonzero signed gcd may be divided out of a homogeneous equation. Negative divisors only choose the canonical first-positive orientation.",
+    "The saved equations use the signed-population namespace, not the count-variable namespace. No graph automorphism or orbit equality of literal selectors is assumed."
+  ],
+  "independent_retained_witnesses": [
+    {
+      "equation": 0,
+      "character": 1,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 1,
+      "character": 1,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 2,
+      "character": 1,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 3,
+      "character": 1,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 4,
+      "character": 1,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 5,
+      "character": 1,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 6,
+      "character": 1,
+      "original_row_count": 6,
+      "signed_divisor": 2,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 7,
+      "character": 1,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 8,
+      "character": 1,
+      "original_row_count": 6,
+      "signed_divisor": 2,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 9,
+      "character": 1,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 10,
+      "character": 2,
+      "original_row_count": 6,
+      "signed_divisor": 2,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 11,
+      "character": 2,
+      "original_row_count": 6,
+      "signed_divisor": 2,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 12,
+      "character": 2,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 13,
+      "character": 2,
+      "original_row_count": 12,
+      "signed_divisor": -1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 14,
+      "character": 2,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 15,
+      "character": 2,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 16,
+      "character": 2,
+      "original_row_count": 12,
+      "signed_divisor": -1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 17,
+      "character": 2,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 18,
+      "character": 2,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 19,
+      "character": 2,
+      "original_row_count": 6,
+      "signed_divisor": -2,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 20,
+      "character": 2,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 21,
+      "character": 3,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 22,
+      "character": 3,
+      "original_row_count": 12,
+      "signed_divisor": -1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 23,
+      "character": 3,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 24,
+      "character": 3,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 25,
+      "character": 3,
+      "original_row_count": 12,
+      "signed_divisor": -1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 26,
+      "character": 3,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 27,
+      "character": 3,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 28,
+      "character": 3,
+      "original_row_count": 6,
+      "signed_divisor": -2,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 29,
+      "character": 3,
+      "original_row_count": 6,
+      "signed_divisor": 2,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 30,
+      "character": 3,
+      "original_row_count": 12,
+      "signed_divisor": 1,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    },
+    {
+      "equation": 31,
+      "character": 3,
+      "original_row_count": 6,
+      "signed_divisor": 2,
+      "literal_coefficients_checked": 480,
+      "homogeneous_rhs_checked": true
+    }
+  ],
+  "literal_coefficient_checks": 15360,
+  "homogeneous_rhs_checks": 32,
+  "independent_Fraction_ranks": {
+    "1": {
+      "rows": 10,
+      "columns": 38,
+      "rational_rank": 9
+    },
+    "2": {
+      "rows": 11,
+      "columns": 42,
+      "rational_rank": 9
+    },
+    "3": {
+      "rows": 11,
+      "columns": 38,
+      "rational_rank": 10
+    }
+  },
+  "complete_projection_map_metadata_checked": 516,
+  "strength_scope": "These are useful explicit propagation equations. With complete original selector-RLT equalities and the new same-character rank-one identities C=L L^T, they already follow from alpha^T C alpha=(alpha^T L)^2=0. Independent additional strength is not claimed.",
+  "subject_imported": false,
+  "subject_executed": false,
+  "all516_projection_census_repeated": false,
+  "Flint_rank_used_in_this_review": false,
+  "native_binary_query_repeated": false,
+  "previous_controls_repeated": false,
+  "optimizer_calls": 0,
+  "F0_excluded": false
+}
