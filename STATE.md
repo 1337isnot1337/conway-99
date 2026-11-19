@@ -2,6 +2,14 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+Checkpoint 60 adds [complete local count tables for the 42 F0 selector orbits](research/root_prism_free_f0_selector_orbit_profiles.md). All 155,904 literal subsets are examined; 64,144 pass the proved pair zeros and original Gram capacities, giving 5,733 distinct population/pair-count tuples. Full cold replay and an independent reconstruction from the literal core pass. The tables imply 222 improved coordinate upper bounds and 67 coordinate domains with missing intermediate values. They constrain local subsets without assuming a graph automorphism. Cross-orbit compatibility remains open.
+
+The F0 integer population formulation is prepared with 903 deterministic population-product identities and all 25 integer refinements of held selector PSD directions. Its 15,941 variables include 903 product auxiliaries; it retains 28,647 linear rows and 903 product constraints. The actual CP-SAT model passes native validation, exact range checks and cold proto replay. No production solver has run on this preparation. The local table overlay and further signed-character products are separate continuations.
+
+The [rook H3 LP query](research/grids-and-triangles/rook_case4_face112_h3_generation_terminal.md) preserves the complete 112-zero face and appends the new 27-term parity range. One 3.643-second numerical call returns Optimal with no violated cover and no added row. Generic rational reconstruction fails, so that run remains UNRESOLVED. Its full cold replay passes. A separate saved-basis reconstruction and independent point acceptance are outside this checkpoint.
+
+The [binary rook incidence query](research/grids-and-triangles/rook_case4_face112_highs_binary_terminal.md) leaves all 1,102 surviving selectors untied and includes the proved parity, sum-of-two and grouped-guard restrictions. Its one owned 180-second search starts one native call but returns no incumbent or exact proposal. The parent kills and reaps the child; the prescribed cold replay passes with no solver. The result remains UNKNOWN. No case exclusion or full graph follows from either numerical run.
+
 
 Checkpoint 59 gives an [exact positive point for the complete 112-zero rook relaxation](research/grids-and-triangles/rook_case4_face112_exact_point.md). Its common denominator is 145,446,009, and every surviving selector is at least `1590562/145446009`. All original native rows, all 178,533 covers, both parity equalities and four pair capacities pass exact acceptance and cold replay. The single numerical run kept its original unresolved status; this later saved-basis reconstruction proves real feasibility. It gives no binary incidence or graph.
 

@@ -1,0 +1,159 @@
+{
+  "schema": "conway99.rook-face112-highs-binary-query-preparation.v1",
+  "status": "PREPARED: binary search; no production call",
+  "source_bindings": {
+    "driver": {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_search.py",
+      "sha256": "6569f2c12b6ff02df34346b9f67f4426e7933a0999fd13bf32ea01e32d7d44c0"
+    },
+    "exact_builder": {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_model.py",
+      "sha256": "3869c9aa63a596421a7fefebc492d90159b6ac8edf0739a0995254bcfd5c4301"
+    },
+    "model": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-model01.json",
+      "sha256": "195bf6c2c274100686087fd71a22f488f7aaee28025e39e490d7751bffcbceb6"
+    },
+    "owned_child_supervisor": {
+      "path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+      "sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278"
+    },
+    "inherited_supervisor_controls": {
+      "path": "experiments/logs/root-prism-free/f0-local41-batch02-preparation.json",
+      "sha256": "57bf84bdf102444aad209bf9c7fd5e62c1fc4f7bf584fa3fac8d0b75e71627ae"
+    },
+    "supervisor_review": {
+      "path": "experiments/logs/root-prism-free/f0-local41-batch-independent-source-review.json",
+      "sha256": "56c3f59565b6b211e4f659f3310f50676160b0631701e2addae323a0ab43bad4"
+    }
+  },
+  "model_sha256": "195bf6c2c274100686087fd71a22f488f7aaee28025e39e490d7751bffcbceb6",
+  "runtime": {
+    "highs_version": "1.16.0",
+    "numpy_version": "2.3.5",
+    "highspy_core_path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/highspy/_core.cpython-312-x86_64-linux-gnu.so",
+    "highspy_core_sha256": "70da2435537fba263414987fa7289649e74551981edf5d57df1f727a110e27c3",
+    "python_executable": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "options": [
+    [
+      "output_flag",
+      true
+    ],
+    [
+      "log_to_console",
+      false
+    ],
+    [
+      "threads",
+      1
+    ],
+    [
+      "parallel",
+      "off"
+    ],
+    [
+      "solver",
+      "choose"
+    ],
+    [
+      "presolve",
+      "on"
+    ],
+    [
+      "random_seed",
+      0
+    ],
+    [
+      "mip_rel_gap",
+      0.0
+    ],
+    [
+      "mip_abs_gap",
+      0.0
+    ],
+    [
+      "mip_feasibility_tolerance",
+      1e-09
+    ],
+    [
+      "primal_feasibility_tolerance",
+      1e-09
+    ],
+    [
+      "small_matrix_value",
+      1e-09
+    ]
+  ],
+  "limits": {
+    "maximum_owned_search_wall_seconds": 180,
+    "maximum_native_calls": 30,
+    "maximum_new_covers_per_returned_point": 512,
+    "maximum_added_covers": 14848,
+    "cold_owned_wall_seconds": 60,
+    "threads": 1,
+    "proposed_binary_rounding_tolerance": 1e-06
+  },
+  "native_preflight": {
+    "columns": 1102,
+    "binary_integer_columns": 1102,
+    "rows": 2195,
+    "nonzeros": 27515,
+    "all_native_coefficients_bounds_costs_integrality_checked": true,
+    "exact_rows_sha256": "262269f69ed3cbac7e7fe9f95806794b72fb141be4997b68e8a1368061e3a895",
+    "runtime_before_any_solve": 0.0
+  },
+  "tiny_controls": {
+    "tiny_native_calls": 3,
+    "production_native_calls": 0,
+    "binary_infeasible_control": {
+      "columns": 1,
+      "binary_integer_columns": 1,
+      "rows": 1,
+      "nonzeros": 1,
+      "all_native_coefficients_bounds_costs_integrality_checked": true,
+      "exact_rows_sha256": "adbb7b71133c02c8197c9e208994d35ae6fb8b596d6b1a1562d4bc1e5bbc9883",
+      "runtime_before_any_solve": 0.0
+    },
+    "external_cover_rejection_then_native_append": true,
+    "native_before_append": {
+      "columns": 3,
+      "binary_integer_columns": 3,
+      "rows": 2,
+      "nonzeros": 3,
+      "all_native_coefficients_bounds_costs_integrality_checked": true,
+      "exact_rows_sha256": "cee7b765f230e4e552eb0e50d7921cd6a4d5b976bf87152f5635c8bfc7e9126b",
+      "runtime_before_any_solve": 0.0
+    },
+    "native_after_append": {
+      "columns": 3,
+      "binary_integer_columns": 3,
+      "rows": 3,
+      "nonzeros": 5,
+      "all_native_coefficients_bounds_costs_integrality_checked": true,
+      "exact_rows_sha256": "c3d56e485fef5c582f465dc5608b3149b4de0680085ee66f1b32da561132da1e",
+      "runtime_before_any_solve": 0.0005888938903808594
+    },
+    "first_runtime": 0.0005888938903808594,
+    "second_runtime": 0.0007655620574951172,
+    "fractional_nonfinite_outside_box_rejected": true,
+    "removed_zero_coordinate_lift_checked": true,
+    "owned_supervisor_controls_reused_without_repetition": true
+  },
+  "original_rows_checked_on_acceptance": 2618,
+  "original_covers_checked_on_acceptance": 178533,
+  "external_retained_cover_pool": 164044,
+  "all1102_primary_variables_binary_and_untied": true,
+  "initial_production_objective": "zero feasibility",
+  "native_time_limit_each_call": "remaining owned wall time; parent hard deadline is authoritative",
+  "selection_rule": "first512 violated unseen original cover IDs in increasing order",
+  "only_exact_original_covers_can_be_appended": true,
+  "integral_proposal_requires_full_original_integer_acceptance": true,
+  "numerical_infeasibility_is_always_UNKNOWN": true,
+  "partial_or_late_child_never_accepted": true,
+  "no_automatic_dual_or_backend_retry": true,
+  "inherited_supervisor_controls_repeated": false,
+  "production_optimizer_calls": 0,
+  "seconds": 2.1117233450058848
+}

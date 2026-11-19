@@ -1,0 +1,46 @@
+{
+  "status": "PASS: root complete binary driver source gate before production",
+  "subjects": {
+    "driver": {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_search.py",
+      "sha256": "6569f2c12b6ff02df34346b9f67f4426e7933a0999fd13bf32ea01e32d7d44c0"
+    },
+    "builder_review": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-unrestricted-source-review.json",
+      "sha256": "bfadbdcddebfac7175bb5457345f2bd6fb33950582f7cf96b107a634169b12a8"
+    },
+    "preparation": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-query-preparation01/preparation.json",
+      "sha256": "f6d28c3a44ab75dc27a3005577aee4cf0f0be01d9056cc9e1e4f3c3fb97edfac"
+    },
+    "supervisor": {
+      "path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+      "sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278"
+    }
+  },
+  "source_review_scope": "Complete binary driver and inherited supervisor ownership function; model necessity and exact original-coordinate acceptance use the separately bound independent builder review.",
+  "checks": [
+    "All1102 native variables are explicitly integer with bounds0..1; native audits recover every coefficient, bound and integrality flag.",
+    "Numerical coordinates are only proposals: nonfinite/nonintegral entries are rejected, proved zeros are restored, and all2618 original-coordinate rows plus178533 original covers gate acceptance.",
+    "At most512 violated unseen original cover IDs are appended per returned point, in increasing order, with at most30 calls and14848 added covers.",
+    "The180-second owned wall deadline includes child imports, model replay, native initialization, scans and writes; failed or late children are not accepted, and are reaped.",
+    "No numerical infeasibility is promoted to exclusion. A successful binary incidence is explicitly not a full graph completion.",
+    "Cold replay performs no optimizer call and uses a separate literal cover evaluation for every saved Boolean proposal.",
+    "Fixed preparation/runtime/source bindings are checked before each production or cold child; prior supervisor controls are reused."
+  ],
+  "metadata_caveat": "The native audit field runtime_before_any_solve contains cumulative native runtime after append. Only preflight asserts it is zero; acceptance and wall supervision do not depend on its label.",
+  "limits": {
+    "maximum_owned_search_wall_seconds": 180,
+    "maximum_native_calls": 30,
+    "maximum_new_covers_per_returned_point": 512,
+    "maximum_added_covers": 14848,
+    "cold_owned_wall_seconds": 60,
+    "threads": 1,
+    "proposed_binary_rounding_tolerance": 1e-06
+  },
+  "production_runs_authorized": 1,
+  "prescribed_cold_replays_authorized": 1,
+  "optimizer_calls_in_this_review": 0,
+  "controls_repeated": false,
+  "case4_excluded": false
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PREPARED: exact903 deterministic products; no optimizer",
+  "source_sha256": "147ad92071ced273139993b09633c298b7a4a8ed9298e68103f970a8f01b7a66",
+  "specification": {
+    "path": "experiments/logs/root-prism-free/f0-population-products02-specification.json.gz",
+    "sha256": "c83ebbc1d0d4e9b5ec5ccd60ed5e52ea2be2cb24f1de570f6bff8bb158d42e0c",
+    "canonical_sha256": "343ffe75d52c683d2138cefc805f808622649b1608045f144e1e42471809f7bc",
+    "bytes": 894268
+  },
+  "counts": {
+    "primary_variables": 15038,
+    "variables_with_product_auxiliaries": 15941,
+    "linear_rows_including_links": 28647,
+    "native_product_constraints": 903,
+    "native_constraints": 29550,
+    "linear_nonzeros": 1279413,
+    "refinement_nonzeros": 189283,
+    "block_link_nonzeros": 10298
+  },
+  "controls": {
+    "arbitrary_binary_selection_controls": 6,
+    "complete_literal_block_identities_checked": 5418,
+    "product_and_diagonal_assignment_checks": 329,
+    "controls_use_all_pair_orbits_including_zero_orbits": true,
+    "control_whole_model_feasibility_claimed": false,
+    "solver_calls": 0
+  },
+  "binary_adder_estimate": {
+    "weighted_literal_occurrences": 5080276,
+    "initial_weight_bit_occurrences": 28497610,
+    "compressor_full_adders": 28243822,
+    "ripple_half_adders": 69522,
+    "ripple_full_adders": 67152,
+    "output_width_sum": 186636,
+    "rows": 28647,
+    "adder_auxiliary_upper_bound": 56760992,
+    "adder_clause_upper_bound": 396840290,
+    "comparison_auxiliary_upper_bound": 373272,
+    "comparison_clause_upper_bound": 1493088,
+    "maximum_unsigned_sum_width": 45
+  },
+  "maximum_linear_absolute_box_sum": 16410372831576,
+  "maximum_product_upper": 144,
+  "optimizer_calls": 0,
+  "seconds": 121.33813295800064,
+  "cooperative_limit_seconds": 120.0
+}

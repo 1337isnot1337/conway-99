@@ -1,0 +1,48 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "UNRESOLVED: retained numerical proposals give no accepted exact outcome",
+  "source_bindings": {
+    "driver_sha256": "655696089ce7f4b4fac3aabccbe1492f5f55c8c4670d3942b6b2cc251734e900",
+    "exact_face_builder_sha256": "d06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7",
+    "reviewed_parent_generation_driver_sha256": "e0e245f1cfc20ff4e5eef7f148ee57b7a97af5829094bf57a0ff9247784942bc",
+    "complete112_premise_loader_sha256": "405f732445043762db0c52cbc0cfdc159dcb945351925afdcc57af7c9606b3f9",
+    "direct_H3_verifier_sha256": "9da8c7edc60429b6a7bee6cd15da447e08a6ae1656a4be5b77b1dd2f5ba5bdb3",
+    "unchanged_native_row_assembly_and_call_helper_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_serialization_runtime_helper_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "bound_audit_sha256": "5e1e01b8c5f3c5747292d65e6938263afe7a72bfff68b00ee29cf2f41b23b2a3",
+    "complete_base_cold_replay_sha256": "56864810924bacb6b331db728a4ce32810d8e6f2dfe7c196e0a73e0b2f583a97"
+  },
+  "preparation_sha256": "7086d9db5eb728dcf934318c13611e66439eab2a062f4f0d05c57a1ef7acb5d1",
+  "limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "automatic_retry": false,
+  "production_run_calls": 1,
+  "solver_and_existing_ray_seconds": 3.6428328070032876,
+  "added_cover_rows": 0,
+  "exact_infeasibility_certificate_found": false,
+  "exact_zero_face_certificate_found": false,
+  "exact_rational_point_found": false,
+  "case4_exclusion_verified": false,
+  "whole_graph_problem_resolved": false,
+  "definition_sha256": "0bb5fc38cdfcb366891216213c165140d069691d70bbfc10d1952c54731fd677",
+  "input_replay_seconds": 2.636757991000195,
+  "native_bootstrap_seconds": 2.1709538779978175,
+  "numerical_stop_reason": "no unseen retained cover violated; full exact acceptance still required",
+  "numerical_phase_seconds": 6.428822321999178,
+  "exact_stage_seconds": 0.5719847190048313,
+  "elapsed_seconds": 9.65018123399932,
+  "peak_rss_kib": 425904
+}

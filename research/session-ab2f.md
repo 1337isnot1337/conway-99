@@ -6,10 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Freeze the new five-Gram-row parity cover and prepare its append-only complete rook LP overlay. The complete 112-face point and all 41,041 fixed parity tests have exact records. Owned by the independent-set worker.
-2. Prepare a distinct binary HiGHS search over the rook incidence variables, including all proved restrictions and exact checking of every native row and cover. The 64 propagation branches and 227 grouped cuts are finished. Owned by the literature worker.
-3. Finish the F0 integer orbit-population package and assess a bounded count formulation with deterministic population-product identities. The exact linear lift is consistent modulo two and three. No unchanged LP retry is planned. Owned by the completion worker.
-4. Root publishes checkpoint 59, completes independent review of 25 integer refinements of held selector PSD directions, and reviews the next query scopes. The 1,764-form population scan produced no new retained row.
+1. Complete independent point acceptance for the saved H3 rook basis, then prepare a finite weighted parity row-space scan. The single numerical query is frozen as unresolved. Owned by the independent-set worker.
+2. Freeze the binary HiGHS UNKNOWN terminal and review the new F0 signed-character product/profile construction. No unchanged binary query is queued. Owned by the literature worker.
+3. Prepare the first bounded integer count query with population products, all 25 integer refinements and the exact local profile tables. The immutable product parent and native proto pass preparation and cold replay. Owned by the completion worker.
+4. Root publishes checkpoint 60 and derives signed population equations from the three nontrivial real characters of the checked core group. These are necessary conditions on a single incidence, with no graph-automorphism assumption. Further character preparation is separate from the frozen 903-product parent.
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
 diagonal cubic graphs. This session does not duplicate those domains.
@@ -29,6 +29,10 @@ their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
 
+- Checkpoint 60: the F0 within-orbit construction exhausts all 155,904 literal subsets of the 42 selector orbits. Exactly 64,144 subsets survive the proved pair zeros and original Gram quotas, yielding 5,733 local count tuples. The full cold replay passes. A separate implementation reconstructs all original Gram quotas and all pair orbits from the literal inputs, and independently matches every tuple, multiplicity and representative. Coordinate projection gives 222 tighter upper bounds and 67 domains with holes. These are necessary local conditions only.
+- The deterministic F0 population model adds 903 products and 25 integer refinements to the complete 15,038-count-variable parent. It has 15,941 variables, 28,647 linear rows and 903 product constraints. Native CP-SAT preparation validates the actual serialized model and all integer ranges; cold replay passes. A direct binary carry network would require about 398 million clauses before product encoding, so the first production formulation will use the integer backend and exact witness acceptance. No numerical infeasibility will be treated as a proof.
+- The append-only H3 rook LP keeps all 164,044 retained covers in its pool. One numerical call takes 3.643 seconds and returns a positive max-min proposal without any violated cover or appended row. Generic rational rounding fails, leaving the original terminal UNRESOLVED. Complete cold replay passes. The separate saved-basis exact construction is checkpoint 61 work.
+- The distinct binary HiGHS rook query starts one native call under its owned 180-second wall budget. It returns no incumbent, no exact proposal and no appended cover before the parent kills and reaps it. The one prescribed cold replay passes with no optimizer. All source gates, model preflight, finite limits, preserved metadata failures and terminal records are retained. The outcome is UNKNOWN.
 
 - Checkpoint 59: one complete112-face numerical call returns a positive proposal with no violated cover. Generic recovery fails, preserving that run's unresolved status. A separate saved-basis reconstruction solves a 287-square integer system, with 816 floor aliases, and yields denominator 145,446,009 and positive floor 1,590,562/145,446,009. All original rows/covers and added restrictions pass, followed by a separate exact cold replay without another solve.
 - The updated complete 41,041-form parity scan finds exactly one new cut, a 27-column positive cover. Its five-row original Gram proof and all exact distances pass cold replay. The point violates it by 23,652,796/145,446,009. A direct identity reduces it to `x803<=x401+x402+x405+sum(x590..x595)`; a separate capacity identity bounds that nine-column sum by one. The proof needs only the earlier 111 zeros. An append-only LP and a binary incidence search are separate next queries.

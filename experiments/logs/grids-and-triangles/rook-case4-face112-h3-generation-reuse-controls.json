@@ -1,0 +1,153 @@
+{
+  "status": "PASS: complete source transformation and function AST accounting; no optimizer",
+  "parent_path": "experiments/workspace/rook_case4_face112_cover_generation.py",
+  "parent_sha256": "e0e245f1cfc20ff4e5eef7f148ee57b7a97af5829094bf57a0ff9247784942bc",
+  "new_path": "experiments/workspace/rook_case4_face112_h3_cover_generation.py",
+  "new_sha256": "655696089ce7f4b4fac3aabccbe1492f5f55c8c4670d3942b6b2cc251734e900",
+  "cold_base_path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02-cold-replay.json",
+  "cold_base_sha256": "56864810924bacb6b331db728a4ce32810d8e6f2dfe7c196e0a73e0b2f583a97",
+  "explicit_substitutions": [
+    {
+      "before": "\"\"\"Bounded full-pool generation on the proved 112-zero case4 face.\n\nAll 1,960 retained original native rows, both unit sums, four certified\npair capacities and 1,102 max-min rows start active. All 164,044 remaining\ncoordinate covers stay in the pool. Exact acceptance checks the full\n167,112-row matrix and the original-coordinate proof bindings.\nNo candidate, basis, positive-selector or symmetry assumption is added.\n\"\"\"",
+      "after": "\"\"\"Bounded full-pool generation on the complete112-face model plus H3.\n\nAll 1,960 retained original native rows, both unit sums, four certified\npair capacities, the27-term H3 row and1,102 max-min rows start active.\nAll164,044 original coordinate covers stay in the pool. Exact acceptance\nchecks all167,113 rows and the complete original-coordinate proof bindings.\nNo candidate, basis, positive-selector or symmetry assumption is added.\n\"\"\"",
+      "occurrences": 1
+    },
+    {
+      "before": "import rook_case4_face112_model as builder",
+      "after": "import rook_case4_face112_h3_model_v2 as builder",
+      "occurrences": 1
+    },
+    {
+      "before": "BUILDER_SHA = '8cfae2fc990e293f47029da2dc5a4d66b864e2547777d6a142de424133361da7'",
+      "after": "BUILDER_SHA = 'd06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7'",
+      "occurrences": 1
+    },
+    {
+      "before": "PARENT_DRIVER_SHA = 'c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd'",
+      "after": "PARENT_DRIVER_SHA = 'e0e245f1cfc20ff4e5eef7f148ee57b7a97af5829094bf57a0ff9247784942bc'",
+      "occurrences": 1
+    },
+    {
+      "before": "BASE_MODEL_SHA = '018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f'",
+      "after": "BASE_MODEL_SHA = '1928eb76274865e219747f631fee2d7a327ed7acd3a845986844be13c9e34265'",
+      "occurrences": 1
+    },
+    {
+      "before": "BASE_NPZ_SHA = '276db9d80b2772ab6829daf7459b19043a08996dc2b45ff8769534548b8b8ca3'",
+      "after": "BASE_NPZ_SHA = '4e2de2786d3036cf995953791192500cb4aaa5b0c5079f3d97ea465a4cf64e46'",
+      "occurrences": 1
+    },
+    {
+      "before": "BASE_STREAM_SHA = 'a3201523bbd3c70bab8206808c5b004010a84006de0641965dc0cdb79cd6cb9e'",
+      "after": "BASE_STREAM_SHA = '0e200a4ed28e0ac7b415c3c886704af512d3a1346a33ff6bfb8a9da3fad53c0a'",
+      "occurrences": 1
+    },
+    {
+      "before": "BASE_COLD_PATH = 'experiments/logs/grids-and-triangles/rook-case4-face112-model01-cold-replay.json'",
+      "after": "BASE_COLD_PATH = 'experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02-cold-replay.json'",
+      "occurrences": 1
+    },
+    {
+      "before": "BASE_COLD_SHA = '26f063161cbf9c0beb139b392f0b46007254176c522308d3ed2d5e3ee3c2e703'",
+      "after": "BASE_COLD_SHA = '56864810924bacb6b331db728a4ce32810d8e6f2dfe7c196e0a73e0b2f583a97'",
+      "occurrences": 1
+    },
+    {
+      "before": "SELECTORS, BASE_ROWS, VARIABLES, ROWS, NONZEROS = 1102, 166010, 1103, 167112, 10769371",
+      "after": "SELECTORS, BASE_ROWS, VARIABLES, ROWS, NONZEROS = 1102, 166011, 1103, 167113, 10769398",
+      "occurrences": 1
+    },
+    {
+      "before": "with_name('rook_case4_face99_parity_cover_generation.py')",
+      "after": "with_name('rook_case4_face112_cover_generation.py')",
+      "occurrences": 1
+    },
+    {
+      "before": "'complete112_premise_loader_sha256':current['complete_premise_loader_sha256'],",
+      "after": "'complete112_premise_loader_sha256':current['complete_premise_loader_sha256'],\n        'direct_H3_verifier_sha256':current['direct_H3_verifier_sha256'],",
+      "occurrences": 1
+    },
+    {
+      "before": "list(range(BASE_ROWS-4,BASE_ROWS))",
+      "after": "list(range(BASE_ROWS-5,BASE_ROWS-1))",
+      "occurrences": 2
+    },
+    {
+      "before": "    assert model['added_pair_rows'] == [[259,590],[259,591],[259,593],[259,732]]\n    arrays = extend(base)",
+      "after": "    assert model['added_pair_rows'] == [[259,590],[259,591],[259,593],[259,732]]\n    assert model['third_parity_cover_row'] == BASE_ROWS-1\n    assert model['third_parity_cover_range'] == [1,3]\n    assert len(model['third_parity_cover_original_support']) == 27\n    assert model['all_parent_array_prefixes_equal']\n    arrays = extend(base)",
+      "occurrences": 1
+    },
+    {
+      "before": "'extension_rule':'row166010+j has +1 at selector j,-1 at t, bounds[0,1]'",
+      "after": "'extension_rule':'row166011+j has +1 at selector j,-1 at t, bounds[0,1]'",
+      "occurrences": 1
+    },
+    {
+      "before": "assert len(initial)==3068 and initial_nnz==27942",
+      "after": "assert len(initial)==3069 and initial_nnz==27969",
+      "occurrences": 1
+    },
+    {
+      "before": "        'always_active_certified_pair_rows':list(range(BASE_ROWS-5,BASE_ROWS-1)),",
+      "after": "        'always_active_certified_pair_rows':list(range(BASE_ROWS-5,BASE_ROWS-1)),\n        'always_active_third_parity_cover_row':BASE_ROWS-1,\n        'third_parity_cover_range':[1,3],\n        'third_parity_cover_original_support':model['third_parity_cover_original_support'],",
+      "occurrences": 1
+    },
+    {
+      "before": "        'complete_premise_input_bindings':model['proof_input_bindings'],",
+      "after": "        'complete_premise_input_bindings':model['proof_input_bindings'],\n        'H3_parent_input_bindings':model['parent_input_bindings'],",
+      "occurrences": 1
+    },
+    {
+      "before": "'status':'bounded full-pool face112 generation with two unit sums and four pair capacities prepared; no optimizer'",
+      "after": "'status':'bounded full-pool face112 generation with both unit sums, four pair capacities and H3 prepared; no optimizer'",
+      "occurrences": 1
+    },
+    {
+      "before": "complete case4 real selector relaxation on the proved112-zero face with every original native row, coordinate cover, both proved unit sums and four certified pair capacities",
+      "after": "complete case4 real selector relaxation on the proved112-zero face with every original native row, coordinate cover, both proved unit sums, four certified pair capacities and the third parity cover",
+      "occurrences": 1
+    },
+    {
+      "before": "PASS: complete face112 matrix, exact zero/equality/pair proofs and bounded prefix transcript",
+      "after": "PASS: complete face112 plus H3 matrix, exact zero/equality/pair/parity proofs and bounded prefix transcript",
+      "occurrences": 1
+    }
+  ],
+  "complete_text_equality_after_recorded_substitutions": true,
+  "all_function_names_unchanged": true,
+  "AST_identical_functions": [
+    "digest",
+    "canonical",
+    "save",
+    "row_ids_hash",
+    "runtime_binding",
+    "initial_row_ids",
+    "extend",
+    "full_float_matrix",
+    "inspect_numeric_point",
+    "controls",
+    "checked_preparation",
+    "cold_arrays",
+    "preflight_replay",
+    "reconstruct_primal",
+    "expanded_numeric",
+    "run",
+    "main"
+  ],
+  "changed_functions": [
+    "source_bindings",
+    "load_inputs",
+    "definition",
+    "prepare",
+    "reconstruct_bound",
+    "replay"
+  ],
+  "changed_scope_only_functions": [
+    "reconstruct_bound",
+    "replay"
+  ],
+  "unchanged_limits": true,
+  "unchanged_run_and_native_helpers": true,
+  "production_optimizer_calls": 0,
+  "scope": "Only the appended H3 input/bindings and row counts change. The complete original covers remain in the pool; all exact acceptance, prefix, timeout and no-retry paths retain the reviewed algorithms."
+}

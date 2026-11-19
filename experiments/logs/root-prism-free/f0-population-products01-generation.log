@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_population_products.py", line 388, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_population_products.py", line 375, in main
+    artifact = save(Path(str(args.output_prefix) + "-specification.json.gz"), spec)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_population_products.py", line 51, in save
+    return {"path": str(path.relative_to(ROOT)), "sha256": sha(raw),
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'experiments/logs/root-prism-free/f0-population-products01-specification.json.gz' is not in the subpath of '/workspace/scratch/ab2f4d4412fd/conway-99-resume'

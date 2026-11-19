@@ -1,0 +1,26 @@
+{
+  "status": "PASS: complete compact Boolean-model source and acceptance scope reviewed",
+  "reviewer_source_sha256": "6f438c7149061b8e5eba68a4353f70711d8d511b04a0a2eeac8d6ae8290a1d09",
+  "subject_source": {
+    "path": "experiments/workspace/rook_case4_face112_highs_binary_model.py",
+    "sha256": "3869c9aa63a596421a7fefebc492d90159b6ac8edf0739a0995254bcfd5c4301"
+  },
+  "saved_model": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-model01.json",
+    "sha256": "195bf6c2c274100686087fd71a22f488f7aaee28025e39e490d7751bffcbceb6"
+  },
+  "mathematical_checks": [
+    "The original2271 native rows are rebuilt from the frozen inventory with correct guarded-row-cut signs and full signed coefficient accumulation.",
+    "Projection fixes only the proved112 zero columns; the311 removed native rows have exact binary-box tautology witnesses equal to the complete parent witnesses.",
+    "Both unit sums, all four certified pairs, the227 proved grouped cuts, the86-term sum=2 and the sparse H3 inequality are retained. No failed branch or candidate is imposed.",
+    "The comparison checks all1966 inherited native/equality/pair rows against the full arrays and all164044 retained original cover IDs.",
+    "A cover is omitted only when its guard target is proved zero; every other original cover stays in the external pool. Bit orientation is little-endian and target activation has the correct sign.",
+    "Exact Boolean acceptance requires1214 literal Python integer coordinates in{0,1}, all2618 original-coordinate rows including the zero units, and all178533 original covers.",
+    "The optional literal support check and the default integer bit intersection test express the same guarded cover predicate."
+  ],
+  "subject_imported": false,
+  "model_rebuilt": false,
+  "controls_repeated": false,
+  "optimizer_calls": 0,
+  "scope": "Builder and exact Boolean acceptance only. The forthcoming HiGHS driver, numerical rounding, time limits and process supervision are outside this report."
+}

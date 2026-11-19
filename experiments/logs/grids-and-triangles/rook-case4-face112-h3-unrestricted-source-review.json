@@ -1,0 +1,56 @@
+{
+  "status": "PASS: complete H3 necessity/append source and narrow driver delta reviewed",
+  "reviewer_source_sha256": "05ba9a7afa80780aadea3b8f8dbea2c40e7d012074762db21d1e4e1e05d18052",
+  "subjects": {
+    "parent": {
+      "path": "experiments/workspace/rook_case4_face112_cover_generation.py",
+      "sha256": "e0e245f1cfc20ff4e5eef7f148ee57b7a97af5829094bf57a0ff9247784942bc"
+    },
+    "builder": {
+      "path": "experiments/workspace/rook_case4_face112_h3_model_v2.py",
+      "sha256": "d06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7"
+    },
+    "driver": {
+      "path": "experiments/workspace/rook_case4_face112_h3_cover_generation.py",
+      "sha256": "655696089ce7f4b4fac3aabccbe1492f5f55c8c4670d3942b6b2cc251734e900"
+    },
+    "proof": {
+      "path": "experiments/workspace/rook_case4_face112_third_parity_cover.py",
+      "sha256": "9da8c7edc60429b6a7bee6cd15da447e08a6ae1656a4be5b77b1dd2f5ba5bdb3"
+    }
+  },
+  "substitution_ledger_sha256": "33235226370f246569a012ed6c629b38141d8b1dea5a69a6354fb5810a273954",
+  "complete_text_substitutions_independently_checked": 21,
+  "unchanged_function_ASTs_independently_checked": [
+    "canonical",
+    "checked_preparation",
+    "cold_arrays",
+    "controls",
+    "digest",
+    "expanded_numeric",
+    "extend",
+    "full_float_matrix",
+    "initial_row_ids",
+    "inspect_numeric_point",
+    "main",
+    "preflight_replay",
+    "reconstruct_primal",
+    "row_ids_hash",
+    "run",
+    "runtime_binding",
+    "save"
+  ],
+  "mathematical_checks": [
+    "The five original quota-one Gram rows have odd total; deleting only proved-zero odd coefficients gives H3>=1 for nonnegative integer selectors.",
+    "The reexpanded identity H3=1+2*(U-x803), together with U<=1 and x803>=0, proves H3<=3. No zero663 premise is used in that theorem.",
+    "The complete112 parent implies the theorem's prior111 zeros and both unit sums. The new model does not fix a candidate or branch.",
+    "All166010 parent row/array prefixes remain byte-identical; the sole new row has exactly27 unit coefficients and range[1,3].",
+    "The original164044-cover pool remains1960..166003. H3 is always active at166010; max-min rows begin166011.",
+    "The unchanged bounded query and exact acceptance use the new full167113-row definition. The solver result is not accepted without the inherited exact gates."
+  ],
+  "subject_imported": false,
+  "model_or_control_rebuilt": false,
+  "cold_replay_repeated": false,
+  "optimizer_calls": 0,
+  "scope": "Source and mathematical review only; no matrix reconstruction, point evaluation or solver execution repeated."
+}
