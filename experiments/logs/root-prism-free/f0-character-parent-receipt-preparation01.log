@@ -1,0 +1,92 @@
+{
+  "status": "PREPARED: exact restored-parent receipt; no production vector checked",
+  "definition": {
+    "schema": "conway99.f0-restored-parent-receipt.v1",
+    "source_sha256": "20d139a1ef528b0d1b92723b78eb8b00f6e0bd788aaf676d8051cf6ff5a5e0c8",
+    "inputs": {
+      "query_preparation": {
+        "path": "experiments/logs/root-prism-free/f0-character-packing-light-query-preparation01/preparation.json",
+        "sha256": "b8bce3bd80f42417df1fc360fc8663eb8f3f9a3c1066606c864c3ac4e24d5cb4"
+      },
+      "model_preparation": {
+        "path": "experiments/logs/root-prism-free/f0-character-y-domain-overlay01/report.json",
+        "sha256": "a4a543b35bdd22357eef39524ff8015e0d4d274547c046205c806a5f52e92061"
+      },
+      "model_cold": {
+        "path": "experiments/logs/root-prism-free/f0-character-y-domain-overlay01-cold/report.json",
+        "sha256": "851a2a4a292a891de7b38eb08212fd1a604cf72cc09dbef3af97768ebe8e21be"
+      },
+      "plan": {
+        "path": "experiments/logs/root-prism-free/f0-character-y-domain-overlay01/plan.json.gz",
+        "sha256": "4d3a13718cdac9fcf68b119a1cd1ba009edeb21c7257d4498d5ebdf18954acc4"
+      },
+      "target": {
+        "path": "experiments/logs/root-prism-free/f0-character-y-domain-overlay01/target.pb.gz",
+        "sha256": "41ff251304c8d3961ebae059581f8416f7f0a45c7cc2246be547296e7db407f0"
+      },
+      "original_native": {
+        "path": "experiments/logs/root-prism-free/f0-character-cpsat01/model.pb.gz",
+        "sha256": "81acda719e5d7a65ccfeb95bcd956785ee9283d60630aed2f8933599933f3f57"
+      },
+      "original_preparation": {
+        "path": "experiments/logs/root-prism-free/f0-character-cpsat01/report.json",
+        "sha256": "e15c4bfcf7adaabb60258e3cffa8046eb0cd97843ae8787a24b356011d7b8a5f"
+      },
+      "original_cold": {
+        "path": "experiments/logs/root-prism-free/f0-character-cpsat01-cold/report.json",
+        "sha256": "fd86705f404e899869234d67916c2178d77acfb9c2b847571fb897cc5f785e18"
+      },
+      "domains": {
+        "path": "experiments/logs/root-prism-free/f0-orbit-populations02-domains.json.gz",
+        "sha256": "4f079468530dba0746512cc4afce01666b2a63a2c8f35f66a4660a4fe3bab8ab"
+      },
+      "counts": {
+        "path": "experiments/logs/root-prism-free/f0-orbit-populations02-model.json.gz",
+        "sha256": "aa46e2ca9df7a5838926385e06a86acda041c8455ac3422ae1e7b0a5c4ce5437"
+      },
+      "count_cold": {
+        "path": "experiments/logs/root-prism-free/f0-orbit-populations02-independent-replay.json",
+        "sha256": "a8bb55cbf773ea75a8cd1d5a18b50281ecbe08f6074cea04fb2d75799138273a"
+      },
+      "full_parent": {
+        "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01.json.gz",
+        "sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69"
+      },
+      "refinements": {
+        "path": "experiments/logs/root-prism-free/f0-selector-integer-refinements01.json.gz",
+        "sha256": "68d5ea0ca4a9906e74319770924eb91f880e46cec0c3ed2ab269bb1debe7b339"
+      },
+      "refinement_cold": {
+        "path": "experiments/logs/root-prism-free/f0-selector-integer-refinements-independent-audit.json",
+        "sha256": "8a45a87eccb55fa4e5362e967ce925f38bfde25a943bb12a1a804cb4fa573cbc"
+      }
+    },
+    "target_proto_sha256": "a738d318b6b8de471ee7383f1e6ea11949eed8f8ccf4892814fa2eac268ed153",
+    "original_native_proto_sha256": "5b43e3c026dbe71fcc8d072aa1790b80f7a81312e7b1ebf36a37612b2f726eeb",
+    "variables": 18444,
+    "primitive_count_variables": 15038,
+    "restored_parent_variables": 15200,
+    "count_rows": 27719,
+    "restored_parent_rows": 28043,
+    "integer_refinements": 25,
+    "deterministic_population_identities": 903,
+    "original_native_constraints": 34436,
+    "final_native_constraints": 34398,
+    "maximum_owned_seconds": 60,
+    "subject_model_builders_imported_or_called": false,
+    "large_product_specification_loaded": false,
+    "all_arithmetic_Python_integers": true,
+    "optimizer_calls": 0,
+    "only_timely_owner_may_write_an_accepted_receipt": true,
+    "count_witness_does_not_certify_literal_incidence_graph_or_full_PSD": true
+  },
+  "controls": {
+    "status": "PASS",
+    "native_evaluator_AST_identical": true,
+    "exact_signed_row_checks_and_tamper_rejections": 4,
+    "orbit_size_denominator12_controls": 24,
+    "production_point_checks": 0,
+    "optimizer_calls": 0
+  },
+  "optimizer_calls": 0
+}

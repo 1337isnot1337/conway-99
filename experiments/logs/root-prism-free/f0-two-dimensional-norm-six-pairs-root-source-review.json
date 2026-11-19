@@ -1,0 +1,19 @@
+{
+  "status": "PASS: full source and fixed local composition scope review",
+  "reviewer": "root",
+  "source_sha256": "2b524a25818e57e97836fc5567657da862e939543f2d050268ef98590cb86899",
+  "preparation_sha256": "3c7a7b045ac8580355bf33f73963cbdcac295349820d81baf603604c32d7822f",
+  "prior_moment_source_review_sha256": "6bca6113583b2f52f3fefffad5f67edfe75a10eaca43df4d95e3262ce0e41560",
+  "checks": [
+    "The full source was read. It takes existing inverse profiles only and proves every saved mask has population3 and plus norm6.",
+    "All twelve cross-pair orbits are perfect matchings, so each count is at most3. Exact domains and deleted zero orbits are retained.",
+    "The four character cosets have three pair variables each. Hadamard inversion of the four products fixes their nonnegative integer masses.",
+    "The three frozen profile pairs are tuple23 with tuple23/24/25 on orbits2/3. There are exactly2160 unrestricted compositions per pair and6480 in total; no subsequent adaptive pair choice.",
+    "For any integer vectors in H of determinant3, the2-by-2 Gram determinant is three times an integer area square. The test is necessary for literal realization but not asserted sufficient.",
+    "Every composition is streamed through domain, zero, activation and product tests before the determinant test; exact accepted-stream hashes and rejected examples are saved.",
+    "The first case may already fail its domain bounds. A rejected local composition is not a full native count point or a proof of full-model nonredundance."
+  ],
+  "permitted_next_execution": "One fixed three-pair scan and its exact replay, each at the prepared30-second limit; no new selector-subset census.",
+  "new_optimizer_calls_in_review": 0,
+  "global_feasibility_claimed": false
+}

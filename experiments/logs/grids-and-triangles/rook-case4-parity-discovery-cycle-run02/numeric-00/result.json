@@ -1,0 +1,92 @@
+{
+  "status": "TERMINAL: saved numerical proposals only",
+  "state": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-run02/state-numeric-00.json",
+    "sha256": "7c7c42f3841b674d076c0c5566a53dea2a2c86e653b5312d17a4077344575376"
+  },
+  "iterations": [
+    {
+      "numeric": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-run02/numeric-00/numeric-00.json.gz",
+        "sha256": "23df3f484e5de1d350d41ae52d8abb7ba71ebc34988db3fbaafbddd82f5142f1",
+        "raw_sha256": "ef3c5583cdc8aa81437afb9432e18b510b5583ef22a33dfbbdd954a92870f2d5",
+        "bytes": 25878
+      },
+      "scan": {
+        "rows_scanned": 167117,
+        "nonzeros_scanned": 10769628,
+        "maximum_violation": 3.375077994860476e-14,
+        "violations_above_tolerance": 0,
+        "unseen_cover_violations": 0,
+        "selected_cover_rows": [],
+        "numeric_feasibility_is_not_exact": true
+      },
+      "added_cover_rows": []
+    }
+  ],
+  "native_calls": 1,
+  "native_seconds": 2.3458134259999497,
+  "complete": true,
+  "automatic_retry": false,
+  "optimizer_outcomes_are_not_certificates": true,
+  "matrix_binding": {
+    "coefficients": {
+      "dtype": "int64",
+      "shape": [
+        10769628
+      ],
+      "sha256": "8c34ed02b31eebb5c79ac0281a4a731771a897bba865415fed9f2ec4c938780d"
+    },
+    "column_indices": {
+      "dtype": "int32",
+      "shape": [
+        10769628
+      ],
+      "sha256": "9403756fbefe53cfa82c8b2be8c3ac8e8535715fac3015caef0289360d665a5f"
+    },
+    "original_column_ids": {
+      "dtype": "uint16",
+      "shape": [
+        1102
+      ],
+      "sha256": "31cdcac78e71aff4d6cbbf9c89bca245035c123525a2fb8e7435b7a637dc5e38"
+    },
+    "row_lower": {
+      "dtype": "int64",
+      "shape": [
+        167117
+      ],
+      "sha256": "5b56d7493f15f745631fadddebdb6ae1160ca824b0faac74140892c8d146b8cd"
+    },
+    "row_pointers": {
+      "dtype": "int64",
+      "shape": [
+        167118
+      ],
+      "sha256": "d0b6280f1e4b91e157088336dcfc3ae0e2f1bda9360db0d73f70a75cebbc81c6"
+    },
+    "row_upper": {
+      "dtype": "int64",
+      "shape": [
+        167117
+      ],
+      "sha256": "6a0312c5942602a3e0e1766b3d4ca1391a0e7fcbf8e07cbb53c2bb4a862e4c05"
+    }
+  },
+  "registry_sha256": "514cb06f767a11917ae55b5f060637ae1df99109e4740fd57017a95ef3d2132c",
+  "runtime_binding": {
+    "empty_existing_ray_check": true,
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy_version": "2.3.5",
+    "highspy_package_version": "1.16.0",
+    "native_HiGHS_version": "1.16.0",
+    "highspy_init_sha256": "38e439b7aba304fb9ee78c3c732bc0b16e79bb864c841a1f95471330cdb47865",
+    "highspy_native_binary_name": "_core.cpython-312-x86_64-linux-gnu.so",
+    "highspy_native_binary_sha256": "70da2435537fba263414987fa7289649e74551981edf5d57df1f727a110e27c3",
+    "scipy_version": "1.17.0"
+  },
+  "bootstrap_seconds": 4.400948219001293,
+  "stop_reason": "no uninserted cover violation; exact acceptance required",
+  "carried_covers_after": [],
+  "seconds": 6.846434614999453
+}

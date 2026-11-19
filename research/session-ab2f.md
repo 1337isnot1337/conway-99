@@ -6,10 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Finish the individually certified rook discovery continuation and prepare exact separation over the full 286-dimensional parity span. The failed initial full-scan cycle and the two directly recovered cuts stay separate. Owned by the independent-set worker.
-2. Prepare small fixed-profile tests of the missing two-dimensional representation moments. The accepted-count literal intake is prepared and requires a future exact parent receipt. Owned by the literature worker.
-3. Prepare the exact parent receipt and a separately frozen search tactic with linearization disabled. The final pair/edge domain model has one completed UNKNOWN search and complete cold replay; its target and earlier records remain unchanged. Owned by the completion worker.
-4. Root publishes checkpoint 64, reviews active sources and owns shared ledgers and branch refs. The endpoint-star census and implication audits are complete: 516 of 518 rows have simple retained-row implication witnesses; two prism rows remain outside those specific arguments.
+1. Run one frozen separator over the complete 286-dimensional rook parity span. The prior discovery cycle ends with three proved cuts and an exact positive point; its terminal is complete. Owned by the independent-set worker.
+2. Prepare small allowed-Gram tables from the existing three plus columns and review the full Fourier coefficient theorem. The fixed norm-six composition test and its cold replay are complete. Owned by the literature worker.
+3. Prepare separate small-table and complete Fourier formulations. Both old and no-LP count searches return UNKNOWN with no vector. The source-reviewed parent receipt remains unused. Owned by the completion worker.
+4. Root publishes checkpoint 65, derives the complete nonabelian pair factorization, and owns shared ledgers and branch refs. The algebraic construction covers all 114,960 literal pairs without a new subset census; its later package remains separate.
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
 diagonal cubic graphs. This session does not duplicate those domains.
@@ -28,6 +28,11 @@ not meet that target. New reductions will be checked on known graphs when
 their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
+
+- Checkpoint 65: the two-round rook discovery continuation gives two exact positive relaxation points and one additional 58-selector cover. Total native time is 4.142 seconds; the complete owned cycle takes 102.834 seconds. The final point has denominator 67,336,409,858 and passes all 167,118 extended rows and its three-cut registry. Separate exact replays and the final artifact binding audit pass. The last finite discovery produces no checked cut; it is not certified exhaustion of the full parity span. The earlier misspelled-path invocation made zero calls and is retained.
+- The parameter-only no-LP count search has the same mathematical target as its predecessor. One call returns UNKNOWN after 167.020 native seconds and 172.617 owner seconds, with 13,380 branches, 7,815 conflicts and no integer vector. There is no appended dense row or overrun. The 3.53-second exact cold owner passes. The separate restored-parent receipt checker has root and peer source gates, but no candidate exists to accept or lift.
+- The three fixed norm-six profile pairs exhaust their 6,480 local compositions. The declared coarse checks leave 0, 180 and 72 assignments. Of the latter two groups, 36 and 18 fail PSD; another 30 and 8 fail the integer-square condition while passing PSD and divisibility by three. The local scan and exact replay take 0.0205 and 0.0362 seconds. No full-model point or full-model nonredundance claim is made.
+- Continuing work is explicitly separate: one full-span parity query, a three-column allowed-Gram table, and a complete nonabelian pair-count lift. Root's exact coefficient construction gives 320 missing Fourier coordinates and 6,496 Gram identities. A diagonal metric form uses two scalar products per entry. This algebra has no native solver or selector-subset census in its scope.
 
 - Checkpoint 64: the separate Z/Y domain layers preserve all variable IDs, row maps, constraints and external-pool entries while tightening 8,251 pair and 5,153 edge domains. Each whole original protobuf is recovered by restoring its old domains. The Z native preparation passes; its first cold owner times out and is preserved. A distinct direct check passes in 4.52 seconds with no native constructor. The Y preparation and cold pass. All source gates and exact archives are retained.
 - The lighter count query completes one native call and returns UNKNOWN with no integer vector or appended pool row. Setup reaches the solver after 4.51 seconds, and native presolve ends at 5.01 seconds. The recorded native search is 167.568 seconds, with 4,531 branches, 68 conflicts and 112,695 internal LP iterations. The owner completes at 173.234 seconds without an overrun. The separately owned exact terminal replay passes in 4.25 seconds. This is not an infeasibility certificate.
