@@ -1,0 +1,43 @@
+{
+  "status": "PASS: complete warm native-bound query source and corrected interruption scope",
+  "reviewer": "independent_sets",
+  "driver_source_sha256": "553b6486b2ba39292b7d3fbe1dfcd37b18d63fbed30ce4bf56dcd9bd58854cfd",
+  "original_unrun_source_sha256": "65054973b335fd9d80a258aece1f2fedfcf2a87ad01c806198ad84a5816b42bc",
+  "intermediate_unrun_v3_sha256": "d57faaa4e92d38f2d983d68ec56f30654329293ca46798b602bb37a4ae0308f6",
+  "exact_helper_source_sha256": "df6a043f5a1f9f958536ff6c5b847b3b659c7701e609a30049b24582939ecc60",
+  "bound_model_sha256": "a174fde38a359f61498a0d9508beb2364ec9209f2771e9a7529a3675774008ad",
+  "installed_highspy_python_source_sha256": "57dd00d6823c00fc9696189f55591aece36bcb7a59547b9948da71a29800dac0",
+  "unchanged_native_preparation_bindings": [
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-query-preparation02.json",
+      "sha256": "25aca84973c45107de04b11485ffb54f4523c5960737e4519e0731f4588921af"
+    }
+  ],
+  "review_scope": "Read the complete original driver and all final source deltas. Compare every top-level function AST and inspect installed interrupt semantics. No model import or optimizer.",
+  "checked": [
+    "Every objective is visited at most once in the fixed1143-member order; the active model and basis are reused without appending a cut or fixing selectors.",
+    "Native objective signs produce arbitrary row-potential proposals. Only the integer finite-box checker accepts a singleton or pair exclusion; numerical dual feasibility and optimality are not mathematical premises.",
+    "The native time limit includes prior getRunTime. HandleUserInterrupt is enabled and a timed callback sets a per-call Event before requesting cancellation.",
+    "The timer is cancelled and joined in finally. The batch stops after any Event-triggered interruption or nonoptimal native status, so the persistent highspy cancellation flag cannot poison later objective calls.",
+    "The hard65-second owned-child parent kills and reaps the process. Complete certificate records survive interruption; incomplete JSONL tails are retained but not accepted.",
+    "Replay validates the complete attempted prefix and exact certificates. It permits one complete certificate whose final attempt record had not yet been completed at a hard kill; that certificate is independently checked against the fixed model.",
+    "A negative bound proves the necessary real model impossible. Otherwise whole-case exclusion requires exact bounds for all72 exhaustive parity patterns. No unrestricted graph conclusion is claimed."
+  ],
+  "functions_changed_from_initial": [
+    "native",
+    "child"
+  ],
+  "functions_changed_from_intermediate_v3": [
+    "child"
+  ],
+  "only_native_function_change_from_initial": "h.HandleUserInterrupt=True",
+  "scope_limits": [
+    "No native assembly, synthetic controls, watchdog control or production objective was repeated.",
+    "The60-second child budget and2-second calls define a bounded prefix; stopping before1143 objectives is incomplete coverage.",
+    "All unrun clock/interrupt variants remain preserved; this gate binds only553b6486."
+  ],
+  "subject_imported": false,
+  "native_model_rebuilt": false,
+  "controls_repeated": false,
+  "optimizer_calls": 0
+}

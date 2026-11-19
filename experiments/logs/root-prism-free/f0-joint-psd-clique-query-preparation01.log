@@ -1,0 +1,53 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "PASS: one-call scaled IPM/no-crossover joint-PSD/clique query prepared; no optimizer",
+  "source_sha256": "577b120992399a0a0e958eafd0bd9d7a7344982bbb4788a60bebee7ec7437441",
+  "helper_source_sha256": "f16d9648a396a4c2c78b68262ce4c767351bfd69bdf66237b49b35e0fb8752fc",
+  "model_file_sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69",
+  "model_sha256": "e5aee717846cf7bb1b2e6072438d49b38627119fed65408d2159212f876ec21d",
+  "matrix_sha256": "607b3a6b1939b70538cbaf5e5d6e395b746745bf50ced097f12d81035723a234",
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "highspy": "1.16.0",
+    "python-flint": "0.9.0"
+  },
+  "counts": {
+    "variables": 15200,
+    "equalities": 6135,
+    "inequalities": 21908,
+    "nonzeros": 1086559,
+    "original_literal_rows_retained_in_parent": 650350,
+    "original_literal_bounds_retained_in_parent": 183834,
+    "inherited_and_graph_Schur_directions": 92
+  },
+  "controls": {
+    "status": "PASS: finite-box signs and exact scaled-ray pullback",
+    "feasible_Farkas_controls": 45,
+    "strict_infeasible_controls": 1,
+    "scaling_controls": 84,
+    "subnormal_pullback_preserved_exactly": true,
+    "optimizer_calls": 0,
+    "primal_or_basis_reconstruction": false
+  },
+  "empty_existing_ray_guard_control": true,
+  "limits": {
+    "production_Highs_run_calls": 1,
+    "lp_seconds_including_setup": 180,
+    "owned_lp_child_hard_seconds": 180,
+    "numerical_output_reserve_seconds": 3,
+    "exact_phase_calls_if_existing_ray": 1,
+    "owned_exact_child_hard_seconds": 60
+  },
+  "numerical_basis_saved": false,
+  "exact_phase_only_if_existing_ray": true,
+  "primal_recovery_attempted": false,
+  "numerical_method": "ipm",
+  "run_crossover": "off",
+  "active_face_recovery_attempted": false,
+  "whole_PSD_cone_enforced": false,
+  "certified_PSD_directions_enforced": 92,
+  "numerical_row_scales_sha256": "ab1b87424535ab03a530119b0ac5f306c5f9b2b8e038d999ffcca2dc183ebf1a",
+  "optimizer_calls": 0
+}

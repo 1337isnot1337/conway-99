@@ -1,0 +1,968 @@
+{
+  "source_hashes": {
+    "complement_rook_35core_case0004_coordinate_cover_overlay.py": "5597089c00a15f72927f31c8b05f5a6bed1198a0d7ebc16aacaeb6cd39cb1c4a",
+    "complement_rook_35core_case0004_coordinate_cover_query.py": "eb352386f55c5a1fd6ddb9c692ad934d8eef87904c00e86122172dc1ebc1f9d8",
+    "complement_rook_35core_case0004_coordinate_covers.py": "f4692deb00982e7f3a3153faafc2cc6084db0c5827ff12d11beaf5e3d493357a",
+    "complement_rook_35core_case0004_intrinsic_rows.py": "24eb86e47e6f5a741721fe9174e7d3762bc74edd290c89d489dd5ddedb900c11",
+    "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+    "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "rook_case4_face111_native_bounds.py": "df6a043f5a1f9f958536ff6c5b847b3b659c7701e609a30049b24582939ecc60",
+    "rook_case4_face111_two_parity_equalities.py": "195b5fc78cb6895ee7797ebf1926f1cd19d990d992d5a9e9638d44f24aa984c6",
+    "rook_case4_face112_boolean_overlay.py": "6e96e8712b1af1bf355de8b69ac2dac358b73e27f8e68c9d500037ab7117d150",
+    "rook_case4_face99_boolean_overlay.py": "906a2cab0dcb6b23b6c35a9f0cd6a63a80b3dae27d8ca935892e37f2a0f89918",
+    "rook_case4_transportation_seed.py": "9eedacb4b62db8ad7058e291d04f83141fca306971ed278a58548ead4cd1e8a1",
+    "rook_case4_transportation_short_faces.py": "dd760f7943df8fee0ca1c7c0ef8343085d5b959f4f9def2c3d8c55b7963976b9",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "old_model_sha256": "7fddef049fd12b511556e473970999b255f41b3571d74c04fc734b29c9047c7f",
+  "old_cold_sha256": "58809ef709f19e2648e5ff531a8f36f5216f8f614ce572cfb767a2b3ab997d15",
+  "case": {
+    "index": 4,
+    "local_set_orbit": 0,
+    "matching_index": 4,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 4,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "unit_provenance": {
+    "input_bindings": {
+      "parent_model": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation01/model.json",
+        "sha256": "7fddef049fd12b511556e473970999b255f41b3571d74c04fc734b29c9047c7f"
+      },
+      "parent_cold": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation01-cold.json",
+        "sha256": "58809ef709f19e2648e5ff531a8f36f5216f8f614ce572cfb767a2b3ab997d15"
+      },
+      "equalities": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-two-parity-equalities-certificate.json",
+        "sha256": "6272996ff8c38af719b057dea6f6796efb895fdb678c69b82cc3eaff757ec606"
+      },
+      "native_model": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-model01.json",
+        "sha256": "a174fde38a359f61498a0d9508beb2364ec9209f2771e9a7529a3675774008ad"
+      },
+      "bounds": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-run01/certificates.jsonl",
+        "sha256": "92bd55e4987b18a17359a3d9344a58f599314cb524d5c44f881fecb5c4f4ce93"
+      },
+      "refined663": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-663-denominator6.json",
+        "sha256": "4a808f495cc1e24a55e8979873fda659a6d82af48f521ffabb2c0873c067d30b"
+      },
+      "independent_bound_replay": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-independent-replay.json",
+        "sha256": "5e1e01b8c5f3c5747292d65e6938263afe7a72bfff68b00ee29cf2f41b23b2a3"
+      }
+    },
+    "all112_zero_columns": [
+      101,
+      115,
+      121,
+      126,
+      133,
+      140,
+      145,
+      149,
+      235,
+      241,
+      252,
+      258,
+      263,
+      302,
+      309,
+      315,
+      329,
+      335,
+      342,
+      348,
+      352,
+      353,
+      354,
+      355,
+      356,
+      359,
+      363,
+      367,
+      368,
+      371,
+      375,
+      385,
+      387,
+      388,
+      392,
+      396,
+      397,
+      398,
+      400,
+      404,
+      408,
+      410,
+      413,
+      415,
+      417,
+      420,
+      424,
+      428,
+      430,
+      435,
+      437,
+      439,
+      442,
+      457,
+      459,
+      461,
+      465,
+      552,
+      553,
+      645,
+      663,
+      772,
+      779,
+      783,
+      788,
+      793,
+      799,
+      804,
+      809,
+      816,
+      822,
+      828,
+      841,
+      848,
+      869,
+      873,
+      923,
+      926,
+      928,
+      931,
+      934,
+      937,
+      941,
+      955,
+      957,
+      959,
+      963,
+      966,
+      970,
+      973,
+      977,
+      1021,
+      1027,
+      1034,
+      1041,
+      1054,
+      1061,
+      1062,
+      1063,
+      1064,
+      1065,
+      1066,
+      1067,
+      1080,
+      1081,
+      1125,
+      1126,
+      1127,
+      1128,
+      1129,
+      1130,
+      1167
+    ],
+    "old99_zero_columns": [
+      101,
+      115,
+      121,
+      126,
+      133,
+      140,
+      145,
+      149,
+      235,
+      241,
+      252,
+      258,
+      263,
+      302,
+      309,
+      315,
+      329,
+      335,
+      342,
+      348,
+      352,
+      353,
+      354,
+      355,
+      356,
+      359,
+      363,
+      367,
+      368,
+      371,
+      375,
+      385,
+      387,
+      388,
+      392,
+      396,
+      397,
+      398,
+      400,
+      404,
+      408,
+      410,
+      413,
+      415,
+      417,
+      420,
+      424,
+      428,
+      430,
+      435,
+      437,
+      439,
+      442,
+      457,
+      459,
+      461,
+      465,
+      552,
+      553,
+      645,
+      772,
+      779,
+      783,
+      788,
+      793,
+      799,
+      804,
+      809,
+      816,
+      822,
+      828,
+      841,
+      848,
+      869,
+      873,
+      923,
+      926,
+      928,
+      931,
+      934,
+      937,
+      941,
+      955,
+      957,
+      959,
+      963,
+      966,
+      970,
+      973,
+      977,
+      1021,
+      1027,
+      1034,
+      1041,
+      1054,
+      1061,
+      1080,
+      1081,
+      1167
+    ],
+    "added13_zero_columns": [
+      663,
+      1062,
+      1063,
+      1064,
+      1065,
+      1066,
+      1067,
+      1125,
+      1126,
+      1127,
+      1128,
+      1129,
+      1130
+    ],
+    "unit_implications": [
+      [
+        -664
+      ],
+      [
+        -1063
+      ],
+      [
+        -1064
+      ],
+      [
+        -1065
+      ],
+      [
+        -1066
+      ],
+      [
+        -1067
+      ],
+      [
+        -1068
+      ],
+      [
+        -1126
+      ],
+      [
+        -1127
+      ],
+      [
+        -1128
+      ],
+      [
+        -1129
+      ],
+      [
+        -1130
+      ],
+      [
+        -1131
+      ]
+    ],
+    "parity_supports": [
+      [
+        74,
+        75,
+        76,
+        77,
+        176,
+        177,
+        178,
+        259,
+        260,
+        261,
+        262,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        658,
+        660,
+        662,
+        762,
+        763,
+        764,
+        765,
+        1174,
+        1176,
+        1177,
+        1179,
+        1180,
+        1182,
+        1183,
+        1208,
+        1210,
+        1212,
+        1213
+      ],
+      [
+        74,
+        75,
+        76,
+        77,
+        176,
+        177,
+        178,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        658,
+        660,
+        662,
+        730,
+        731,
+        732,
+        733,
+        762,
+        763,
+        764,
+        765,
+        1174,
+        1176,
+        1177,
+        1179,
+        1180,
+        1182,
+        1183,
+        1208,
+        1210,
+        1212,
+        1213
+      ]
+    ],
+    "parity_equal_values": [
+      1,
+      1
+    ],
+    "pair_AMO": [
+      259,
+      590
+    ],
+    "sum2_support": [
+      1,
+      11,
+      26,
+      33,
+      47,
+      75,
+      76,
+      77,
+      176,
+      177,
+      178,
+      203,
+      213,
+      228,
+      236,
+      247,
+      264,
+      269,
+      273,
+      303,
+      310,
+      316,
+      322,
+      343,
+      349,
+      357,
+      364,
+      378,
+      379,
+      382,
+      407,
+      409,
+      463,
+      537,
+      538,
+      539,
+      540,
+      541,
+      592,
+      593,
+      595,
+      609,
+      616,
+      619,
+      620,
+      626,
+      627,
+      630,
+      633,
+      634,
+      635,
+      641,
+      642,
+      646,
+      649,
+      650,
+      652,
+      654,
+      655,
+      656,
+      657,
+      658,
+      659,
+      660,
+      661,
+      662,
+      667,
+      670,
+      731,
+      732,
+      733,
+      762,
+      763,
+      764,
+      765,
+      781,
+      782,
+      801,
+      802,
+      803,
+      1177,
+      1179,
+      1180,
+      1183,
+      1210,
+      1213
+    ],
+    "sum2_value": 2,
+    "sum2_identity": "3*x_663 + sum_{a in S} x_a = 2",
+    "three_old_Gram_pair_consequences_not_appended": [
+      [
+        259,
+        591
+      ],
+      [
+        259,
+        593
+      ],
+      [
+        259,
+        732
+      ]
+    ],
+    "no_candidate_or_symmetry_restriction": true
+  },
+  "formula": {
+    "base_sha256": "f3467d02ca6763391668c0cdac0a395dab23688d831b25107fcf04ea1c94ac22",
+    "base_clause_body_sha256": "52369fed8b85eaa3845e59b6ee740157f5d82ffd062b4377f464c83a8102695a",
+    "base_clause_body_bytes": 57874444,
+    "base_clause_lines": 439689,
+    "constraint_suffix_sha256": "2ea386a2d14faee1314747433bc52b989fff4d81b934898d55d521235860a848",
+    "constraint_suffix_lines": 1475,
+    "variables": 135022,
+    "clauses": 441164,
+    "CNF_sha256": "aa4a35139c75ecb857ed55af73bd20411d267fd20fa6b2593ef16a7485c528ef",
+    "CNF_bytes": 57922938
+  },
+  "suffix_encoding": {
+    "groups": [
+      {
+        "name": "new_zero_units",
+        "start": 0,
+        "count": 13
+      },
+      {
+        "name": "two_parity_exactly_one",
+        "start": 13,
+        "count": 952
+      },
+      {
+        "name": "integer_pair_AMO",
+        "start": 965,
+        "count": 1
+      },
+      {
+        "name": "derived_sum_exactly_two",
+        "start": 966,
+        "count": 509
+      }
+    ],
+    "new_auxiliaries": 170,
+    "counter_auxiliary_first": 134853,
+    "counter_auxiliary_last": 135022,
+    "counter_prefix_pairs": [
+      [
+        134853,
+        134854
+      ],
+      [
+        134855,
+        134856
+      ],
+      [
+        134857,
+        134858
+      ],
+      [
+        134859,
+        134860
+      ],
+      [
+        134861,
+        134862
+      ],
+      [
+        134863,
+        134864
+      ],
+      [
+        134865,
+        134866
+      ],
+      [
+        134867,
+        134868
+      ],
+      [
+        134869,
+        134870
+      ],
+      [
+        134871,
+        134872
+      ],
+      [
+        134873,
+        134874
+      ],
+      [
+        134875,
+        134876
+      ],
+      [
+        134877,
+        134878
+      ],
+      [
+        134879,
+        134880
+      ],
+      [
+        134881,
+        134882
+      ],
+      [
+        134883,
+        134884
+      ],
+      [
+        134885,
+        134886
+      ],
+      [
+        134887,
+        134888
+      ],
+      [
+        134889,
+        134890
+      ],
+      [
+        134891,
+        134892
+      ],
+      [
+        134893,
+        134894
+      ],
+      [
+        134895,
+        134896
+      ],
+      [
+        134897,
+        134898
+      ],
+      [
+        134899,
+        134900
+      ],
+      [
+        134901,
+        134902
+      ],
+      [
+        134903,
+        134904
+      ],
+      [
+        134905,
+        134906
+      ],
+      [
+        134907,
+        134908
+      ],
+      [
+        134909,
+        134910
+      ],
+      [
+        134911,
+        134912
+      ],
+      [
+        134913,
+        134914
+      ],
+      [
+        134915,
+        134916
+      ],
+      [
+        134917,
+        134918
+      ],
+      [
+        134919,
+        134920
+      ],
+      [
+        134921,
+        134922
+      ],
+      [
+        134923,
+        134924
+      ],
+      [
+        134925,
+        134926
+      ],
+      [
+        134927,
+        134928
+      ],
+      [
+        134929,
+        134930
+      ],
+      [
+        134931,
+        134932
+      ],
+      [
+        134933,
+        134934
+      ],
+      [
+        134935,
+        134936
+      ],
+      [
+        134937,
+        134938
+      ],
+      [
+        134939,
+        134940
+      ],
+      [
+        134941,
+        134942
+      ],
+      [
+        134943,
+        134944
+      ],
+      [
+        134945,
+        134946
+      ],
+      [
+        134947,
+        134948
+      ],
+      [
+        134949,
+        134950
+      ],
+      [
+        134951,
+        134952
+      ],
+      [
+        134953,
+        134954
+      ],
+      [
+        134955,
+        134956
+      ],
+      [
+        134957,
+        134958
+      ],
+      [
+        134959,
+        134960
+      ],
+      [
+        134961,
+        134962
+      ],
+      [
+        134963,
+        134964
+      ],
+      [
+        134965,
+        134966
+      ],
+      [
+        134967,
+        134968
+      ],
+      [
+        134969,
+        134970
+      ],
+      [
+        134971,
+        134972
+      ],
+      [
+        134973,
+        134974
+      ],
+      [
+        134975,
+        134976
+      ],
+      [
+        134977,
+        134978
+      ],
+      [
+        134979,
+        134980
+      ],
+      [
+        134981,
+        134982
+      ],
+      [
+        134983,
+        134984
+      ],
+      [
+        134985,
+        134986
+      ],
+      [
+        134987,
+        134988
+      ],
+      [
+        134989,
+        134990
+      ],
+      [
+        134991,
+        134992
+      ],
+      [
+        134993,
+        134994
+      ],
+      [
+        134995,
+        134996
+      ],
+      [
+        134997,
+        134998
+      ],
+      [
+        134999,
+        135000
+      ],
+      [
+        135001,
+        135002
+      ],
+      [
+        135003,
+        135004
+      ],
+      [
+        135005,
+        135006
+      ],
+      [
+        135007,
+        135008
+      ],
+      [
+        135009,
+        135010
+      ],
+      [
+        135011,
+        135012
+      ],
+      [
+        135013,
+        135014
+      ],
+      [
+        135015,
+        135016
+      ],
+      [
+        135017,
+        135018
+      ],
+      [
+        135019,
+        135020
+      ],
+      [
+        135021,
+        135022
+      ]
+    ],
+    "suffix_clause_count": 1475,
+    "suffix_literal_count": 10230,
+    "distinct_parity_AMO_pairs": 950
+  },
+  "original_primary_columns": 1214,
+  "remaining_primary_columns": 1102,
+  "all_previous_primary_constraints_retained": true,
+  "complete_coordinate_covers": 178533,
+  "new_auxiliary_variables": 170,
+  "all_auxiliaries_after_old134852_variables": true,
+  "byte_audit": {
+    "all439689_old_clause_bytes_preserved": true,
+    "old_complete_encoding_cold_certificate": "58809ef709f19e2648e5ff531a8f36f5216f8f614ce572cfb767a2b3ab997d15",
+    "total_literal_occurrences": 13556679
+  },
+  "full_exterior_adjacency_variables": 0,
+  "case_index": 4,
+  "candidate_basis_or_symmetry_restriction": false,
+  "status": "PASS: complete case4 CNF plus proved112-face constraints prepared; no query",
+  "complete": true,
+  "controls": {
+    "exact_primary_assignments_checked": 508,
+    "at_most_two_soundness_by_unit_conflict": true,
+    "at_most_two_completeness_by_actual_prefix_counts": true,
+    "at_least_two_truth_tables": true,
+    "solver_calls": 0
+  },
+  "cnf_path": "/workspace/scratch/ab2f4d4412fd/rook-case4-face112-boolean.cnf",
+  "production_solver_calls": 0,
+  "optimizer_calls": 0,
+  "elapsed_seconds": 4.066796559003706
+}

@@ -1,0 +1,15 @@
+{
+  "status": "UNRUN persistent-interrupt correction",
+  "old_source_sha256": "d57faaa4e92d38f2d983d68ec56f30654329293ca46798b602bb37a4ae0308f6",
+  "new_source_sha256": "553b6486b2ba39292b7d3fbe1dfcd37b18d63fbed30ce4bf56dcd9bd58854cfd",
+  "preserved_old_source": "experiments/workspace/rook_case4_face111_native_bound_query_interrupt_unrun_v3.py",
+  "change": "Record per-call Event before cancelSolve; stop after the completed attempt if interruption fired or native status is nonoptimal. No subsequent run inherits the persistent stop flag.",
+  "changed_functions": [
+    "child"
+  ],
+  "unchanged_native_transport_function": true,
+  "unchanged_exact_acceptance_and_replay": true,
+  "native_preflight_reused": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-query-preparation02.json",
+  "native_preflight_sha256": "25aca84973c45107de04b11485ffb54f4523c5960737e4519e0731f4588921af",
+  "production_queries_before_change": 0
+}

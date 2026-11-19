@@ -1,0 +1,99 @@
+{
+  "status": "PASS: complete narrow-adapter text/AST controls",
+  "source_sha256": "857597faf2f954b465a0b56f7f5b8fd250101b6449f83ca23053f38ffde94793",
+  "adapters": [
+    {
+      "adapter": "query",
+      "parent_sha256": "d074b272ccf4f963b242ea6ba8308e83602d0a71d0d500f6e204a484545e9e7a",
+      "new_sha256": "577b120992399a0a0e958eafd0bd9d7a7344982bbb4788a60bebee7ec7437441",
+      "substitution_record_sha256": "d89fa4eed1103ee692cc9d7d3e33fd67b3378e0f713802f71bc8917dd1fd0807",
+      "replacement_occurrences": [
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "entire_source_equals_explicit_substitutions": true,
+      "complete_AST_equals_explicit_substitutions": true,
+      "functions_covered": [
+        "checked_preparation",
+        "controls",
+        "helper",
+        "main",
+        "numerical",
+        "owned_child",
+        "preparation",
+        "query",
+        "version_check"
+      ]
+    },
+    {
+      "adapter": "replay",
+      "parent_sha256": "29714f02e60957616da04f747be79e2add6984a0eb0bba34bbe9ac86808ae6e4",
+      "new_sha256": "5804a7d10271b20c7f096b3012bdc78ee56be3054f94887575454da1475cb79d",
+      "substitution_record_sha256": "9b0a8cdcecd286ac322557c820533045007b82266bc18b5a93d704a20008f4fb",
+      "replacement_occurrences": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "entire_source_equals_explicit_substitutions": true,
+      "complete_AST_equals_explicit_substitutions": true,
+      "functions_covered": [
+        "canonical",
+        "check_integer_certificate",
+        "cold_model",
+        "controls",
+        "digest",
+        "number",
+        "replay"
+      ]
+    },
+    {
+      "adapter": "native-audit",
+      "parent_sha256": "c9ff9687dfe0cedb87e40021f5ae5091112ef3b2668cc4a9226d35d0e5a78ba0",
+      "new_sha256": "cdc70cff604545a549382ac2c6677dfa7cd0bb9cfebcc6c28c8846e51383cab5",
+      "substitution_record_sha256": "12b91295d6d1e1b226d7c79060daad03753e86ff0e89d041c50a780d6bfbbca9",
+      "replacement_occurrences": [
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "entire_source_equals_explicit_substitutions": true,
+      "complete_AST_equals_explicit_substitutions": true,
+      "functions_covered": [
+        "main"
+      ]
+    }
+  ],
+  "exact_helper_sha256": "f16d9648a396a4c2c78b68262ce4c767351bfd69bdf66237b49b35e0fb8752fc",
+  "exact_phase_identical_except_ray_dimension": true,
+  "independent_integer_certificate_arithmetic_identical": true,
+  "new_model_loader_review_required": true,
+  "subject_modules_imported": false,
+  "model_builds": 0,
+  "optimizer_calls": 0,
+  "eigendecompositions": 0
+}

@@ -1,0 +1,67 @@
+{
+  "status": "PASS: source, exact suffix arithmetic and unchanged prefix bytes",
+  "reviewer_source_sha256": "82fd986c263cb0627d153247cc16ff1ab6d210bf9ec5f36763941fc7d77fb245",
+  "subject_source": {
+    "path": "experiments/workspace/rook_case4_face112_boolean_overlay.py",
+    "sha256": "6e96e8712b1af1bf355de8b69ac2dac358b73e27f8e68c9d500037ab7117d150"
+  },
+  "prepared_model": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-boolean-preparation01/model.json",
+    "sha256": "d4b3b0a8df5663a703932bfb4c5afcc27093fffe3304f5bdda50c9180a93cdb2"
+  },
+  "refined_663": {
+    "objective": [
+      663
+    ],
+    "denominator": 6,
+    "upper_numerator": 4,
+    "row_constant": 4,
+    "nonzero_multipliers": 111,
+    "all_used_rows_are_equalities": true,
+    "residual_histogram": {
+      "-2": 86,
+      "0": 1017
+    }
+  },
+  "identity": "3*x_663 + sum_{a in S} x_a = 2",
+  "identity_support_size": 86,
+  "identity_is_equality": "Every nonzero multiplier uses an equality row; all 1,103 surviving coefficients are checked.",
+  "Boolean_consequence": "Nonnegative integer x_663 is zero; the other 86 terms sum to two.",
+  "new_zero_units": 13,
+  "parity_support_sizes": [
+    35,
+    41
+  ],
+  "parity_support_intersection_size": 31,
+  "distinct_parity_at_most_one_pairs": 950,
+  "new_clause_count": 1475,
+  "new_literal_count": 10230,
+  "new_auxiliary_range": [
+    134853,
+    135022
+  ],
+  "counter_proof": {
+    "soundness": "The first two true inputs force the second prefix bit; any third true input contradicts its prohibition clause.",
+    "completeness": "For at most two true inputs, assign each prefix bit its actual threshold value.",
+    "at_least_two": "Deleting each input in turn leaves a disjunction true exactly when at least two inputs are true.",
+    "subject_508_truth_controls_hash_bound_not_repeated": true
+  },
+  "existing_CNFs_checked": {
+    "old_clauses": 439689,
+    "old_body_bytes": 57874444,
+    "old_CNF_sha256": "f3467d02ca6763391668c0cdac0a395dab23688d831b25107fcf04ea1c94ac22",
+    "new_CNF_sha256": "aa4a35139c75ecb857ed55af73bd20411d267fd20fa6b2593ef16a7485c528ef",
+    "new_variables": 135022,
+    "new_clauses": 441164,
+    "all_old_clause_bytes_equal": true,
+    "all_new_clause_bytes_equal": true
+  },
+  "original_native_rows_or_domain_rebuilt": false,
+  "prior_zero_and_parity_proofs_rederived": false,
+  "subject_imported": false,
+  "solver_calls": 0,
+  "optimizer_calls": 0,
+  "case4_excluded": false,
+  "scope": "A necessary Boolean incidence overlay. No full exterior graph or candidate symmetry is imposed.",
+  "seconds": 2.8178199060057523
+}

@@ -1,0 +1,43 @@
+{
+  "native_version": "1.16.0",
+  "native_all25767_coefficients_exact": true,
+  "all_bounds_exact": true,
+  "options": {
+    "output_flag": false,
+    "solver": "simplex",
+    "threads": 1,
+    "random_seed": 0,
+    "presolve": "on",
+    "simplex_strategy": 1,
+    "time_limit": 2.0
+  },
+  "optimizer_calls": 0,
+  "status": "PASS: exact native transport and bounded query preparation",
+  "source_sha256": "d57faaa4e92d38f2d983d68ec56f30654329293ca46798b602bb37a4ae0308f6",
+  "exact_source_sha256": "df6a043f5a1f9f958536ff6c5b847b3b659c7701e609a30049b24582939ecc60",
+  "model_sha256": "a174fde38a359f61498a0d9508beb2364ec9209f2771e9a7529a3675774008ad",
+  "objectives": 1143,
+  "partition_patterns": 72,
+  "child_seconds": 60.0,
+  "per_native_call_seconds": 2.0,
+  "hard_parent_seconds": 65.0,
+  "quanta": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    64,
+    256,
+    1024,
+    65536,
+    1048576
+  ],
+  "exact_controls": {
+    "exact_signed_interval_box_controls": 3200,
+    "fractional_half_bound": true,
+    "contradiction_control": true,
+    "numerical_dual_feasibility_assumed": false
+  },
+  "seconds": 0.43186761399556417
+}

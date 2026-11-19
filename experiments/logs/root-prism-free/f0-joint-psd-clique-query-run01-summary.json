@@ -1,0 +1,38 @@
+{
+  "status": "UNKNOWN: numerical proposal only; no existing dual ray",
+  "model_file_sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69",
+  "model_sha256": "e5aee717846cf7bb1b2e6072438d49b38627119fed65408d2159212f876ec21d",
+  "query_source_sha256": "577b120992399a0a0e958eafd0bd9d7a7344982bbb4788a60bebee7ec7437441",
+  "preparation_sha256": "2dd9ec779de923db89fd040fb171c803135986ae1e57ff64707840c024ea4148",
+  "result_sha256": "d0439012c0e44e05db6b84f0a4442b82c26a9b3bd8dfc0849f10bcdb545e575a",
+  "numerical_sha256": "c55a4e3e65df053a05dca2530d152a1d35fa18c653cdd2523443834885b1d594",
+  "cold_replay_sha256": "3bdd7baa5aab64a52a8b30c32ad6048d3682b0531389d7962c098ffb8fcbeb00",
+  "numerical_status": "HighsModelStatus.kTimeLimit",
+  "ipm_iterations": 21,
+  "optimizer_calls": 1,
+  "exact_phase_calls": 0,
+  "native_phase_seconds": 177.16306940100185,
+  "owned_numerical_process": {
+    "exit_code": 0,
+    "hard_timeout": false,
+    "elapsed_seconds": 179.97604107199732
+  },
+  "wrapper_seconds": 180.03096466400166,
+  "value_valid": false,
+  "dual_valid": false,
+  "existing_ray_query": "not requested for a non-infeasible numerical status",
+  "proposal": {
+    "columns": 15200,
+    "nonzero_columns": 15004,
+    "distinct_values": 15005,
+    "minimum": 0.0,
+    "maximum": 0.545936766605802,
+    "row_values": 28043,
+    "exact_row_acceptance_performed": false
+  },
+  "cold_replay_status": "PASS: certified parents, exact overlay and terminal record; exact scope preserved",
+  "model_feasible_claimed": false,
+  "model_infeasible_claimed": false,
+  "component_excluded": false,
+  "optimizer_retry": false
+}

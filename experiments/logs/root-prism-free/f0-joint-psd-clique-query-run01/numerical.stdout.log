@@ -1,0 +1,73 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+LP has 28043 rows; 15200 cols; 1086559 nonzeros
+Coefficient ranges:
+  Matrix  [8e-09, 7e+01]
+  Cost    [0e+00, 0e+00]
+  Bound   [1e+00, 1e+00]
+  RHS     [1e+00, 1e+01]
+Presolving model
+28043 rows, 15200 cols, 1086559 nonzeros 0s
+Initial sweep identifies 0 + 163 + 0 = 163 / 28043 empty + singleton + redundant rows
+Considering dependency of 5938 equations in 15004 variables with 117962 nonzeros
+   Dependent equations search terminated after 2.04s due to expected time exceeding limit
+23725 rows, 15004 cols, 911868 nonzeros 1s
+Presolve reductions: rows 23725(-4318); columns 15004(-196); nonzeros 911868(-174691) 
+Solving the presolved LP
+IPX model has 23725 rows, 15004 columns and 911868 nonzeros
+Input
+    Number of variables:                                15004
+    Number of free variables:                           0
+    Number of constraints:                              23725
+    Number of equality constraints:                     5938
+    Number of matrix entries:                           911868
+    Matrix range:                                       [8e-09, 5e+01]
+    RHS range:                                          [1e-03, 6e+01]
+    Objective range:                                    [0e+00, 0e+00]
+    Bounds range:                                       [2e-01, 1e+00]
+Preprocessing
+    Dualized model:                                     no
+    Number of dense columns:                            0
+    Range of scaling factors:                           [2.50e-01, 2.00e+00]
+    Scaled cost norm:                                   0
+    Scaled bounds norm:                                 27.5
+IPX version 1.0
+Interior point solve
+ Iter       primal obj         dual obj       pinf       dinf       gap      time
+   0    0.00000000e+00  -2.50831667e+04   6.00e-01   1.03e+01  2.00e+00       7.9
+   1    0.00000000e+00  -2.61112148e+04   5.22e-01   9.60e+00  2.00e+00       9.5
+   2    0.00000000e+00  -2.84586367e+04   4.69e-01   8.70e+00  2.00e+00      10.8
+   3    0.00000000e+00  -3.62570448e+04   3.31e-01   5.50e+00  2.00e+00      12.0
+   4    0.00000000e+00  -4.02679747e+04   1.50e-01   1.29e+00  2.00e+00      13.2
+   5    0.00000000e+00  -4.29120132e+04   6.29e-02   5.38e-01  2.00e+00      14.4
+   6    0.00000000e+00  -3.54576070e+04   2.93e-02   1.91e-01  2.00e+00      15.4
+   7    0.00000000e+00  -2.60398104e+04   9.75e-03   8.26e-03  2.00e+00      17.0
+ Constructing starting basis...
+   Factorization: pivoted on   23725 of   23725 rows      23.1 Warning: singular matrix
+ Iter       primal obj         dual obj       pinf       dinf       gap      time
+   Factorization: pivoted on   23725 of   23725 rows      35.6 OK
+   8    0.00000000e+00  -1.60353733e+04   2.18e-03   4.01e-03  2.00e+00      53.5
+   9    0.00000000e+00  -6.40182162e+03   6.16e-04   1.17e-03  2.00e+00      64.3
+  10    0.00000000e+00  -4.55842265e+03   2.01e-04   6.14e-04  2.00e+00      77.8
+  11    0.00000000e+00  -2.26892157e+03   7.49e-05   1.94e-04  2.00e+00      91.7
+  12    0.00000000e+00  -6.68483552e+02   2.39e-05   3.62e-05  1.99e+00     105.5
+  13    0.00000000e+00  -1.58478827e+02   6.90e-07   6.88e-06  1.98e+00     116.6
+  14    0.00000000e+00  -4.22373360e+01   6.90e-08   1.79e-06  1.91e+00     125.8
+  15    0.00000000e+00  -1.05749110e+01   6.90e-09   4.15e-07  1.68e+00     130.8
+  16    0.00000000e+00  -1.55374621e+00   6.90e-10   4.17e-08  8.74e-01     136.7
+  17    0.00000000e+00  -5.08689867e-01   1.24e-10   1.32e-08  4.06e-01     141.5
+  18    0.00000000e+00  -1.35518303e-01   1.97e-11   2.50e-09  1.27e-01     146.2
+  19    0.00000000e+00  -4.08568556e-02   1.97e-12   7.35e-10  4.00e-02     151.3
+  20    0.00000000e+00  -8.98663698e-03   2.65e-13   1.42e-10  8.95e-03     156.1
+  21    0.00000000e+00  -1.87671846e-03   2.47e-15   2.61e-11  1.87e-03     161.9
+   Factorization: pivoted on   23180 of   23725 rows     163.2 Warning: timeout
+Summary
+    Runtime:                                            163.25s
+    Status interior point solve:                        time limit
+    Status crossover:                                   not run
+WARNING: Ipx: Stopped
+WARNING: Ipx: IPM       reached time limit
+Model status        : Time limit reached
+IPM       iterations: 21
+Objective value     :  0.0000000000e+00
+HiGHS run time      :        163.29

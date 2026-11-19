@@ -1,0 +1,94 @@
+{
+  "parent_path": "experiments/workspace/rook_case4_face99_boolean_query.py",
+  "parent_sha256": "b47b9c962cb62dd367dde4ddbaa37cc08d18c39ea33e4aeeaba3be83d84a8fd9",
+  "new_path": "experiments/workspace/rook_case4_face112_boolean_query.py",
+  "new_sha256": "c79ff548abf28ee4300b974e3f4a4e864647a4690b5ab3c8b8b0efa920c7f4b9",
+  "exact_text_substitutions": [
+    {
+      "old": "exact99-zero",
+      "new": "exact112-zero",
+      "occurrences": 1
+    },
+    {
+      "old": "with85 certified negative units.",
+      "new": "with proved112-face units, cardinalities and a pair constraint.",
+      "occurrences": 1
+    },
+    {
+      "old": "rook_case4_face99_boolean_overlay",
+      "new": "rook_case4_face112_boolean_overlay",
+      "occurrences": 1
+    },
+    {
+      "old": "906a2cab0dcb6b23b6c35a9f0cd6a63a80b3dae27d8ca935892e37f2a0f89918",
+      "new": "6e96e8712b1af1bf355de8b69ac2dac358b73e27f8e68c9d500037ab7117d150",
+      "occurrences": 1
+    },
+    {
+      "old": "face99",
+      "new": "face112",
+      "occurrences": 2
+    },
+    {
+      "old": "rook99",
+      "new": "rook112",
+      "occurrences": 1
+    },
+    {
+      "old": "including99zeros",
+      "new": "including112zeros",
+      "occurrences": 1
+    },
+    {
+      "old": "inspector plus99zeros required.",
+      "new": "inspector plus112zeros and all new cardinalities required.",
+      "occurrences": 1
+    },
+    {
+      "old": "inspector and99zeros passed",
+      "new": "inspector and112-face constraints passed",
+      "occurrences": 1
+    },
+    {
+      "old": "groups = [set() for _ in range(5)]",
+      "new": "groups = [set() for _ in range(6)]",
+      "occurrences": 1
+    },
+    {
+      "old": "boundaries = [218863, 218893, 261071, overlay.OLD_CLAUSES]",
+      "new": "boundaries = [218863, 218893, 261071, 439604, overlay.OLD_CLAUSES]",
+      "occurrences": 1
+    },
+    {
+      "old": "(\"original_incidence\", \"Gram_conflicts\", \"weighted_rows\", \"coordinate_covers\", \"proved85_units\")",
+      "new": "(\"original_incidence\", \"Gram_conflicts\", \"weighted_rows\", \"coordinate_covers\", \"previous85_units\", \"new112_face_constraints\")",
+      "occurrences": 1
+    },
+    {
+      "old": "needed <= set.union(*groups[:4])",
+      "new": "needed <= set.union(*groups[:5])",
+      "occurrences": 1
+    },
+    {
+      "old": "def inspect_selected(selected, model):\n    assert selected == sorted(set(selected)) and not(set(selected) & set(model[\"unit_provenance\"][\"all99_zero_columns\"]))\n    result = prior.previous.inspect_selected(selected)\n    return {\"original_full_inspector\": result, \"all99_proved_zeros_checked\": True,\n            \"selected_columns\": selected, \"full_graph_claimed\": False}\n",
+      "new": "def inspect_selected(selected, model):\n    proof = model[\"unit_provenance\"]\n    assert selected == sorted(set(selected)) and not(set(selected) & set(proof[\"all112_zero_columns\"]))\n    result = prior.previous.inspect_selected(selected)\n    chosen = set(selected)\n    assert [len(chosen & set(support)) for support in proof[\"parity_supports\"]] == [1, 1]\n    assert len(chosen & set(proof[\"sum2_support\"])) == 2\n    assert len(chosen & set(proof[\"pair_AMO\"])) <= 1\n    return {\"original_full_inspector\": result, \"all112_proved_zeros_checked\": True,\n            \"both_parity_equalities_checked\": True, \"derived86_column_sum_two_checked\": True,\n            \"integer_pair_AMO_checked\": True, \"selected_columns\": selected, \"full_graph_claimed\": False}\n",
+      "occurrences": 1
+    }
+  ],
+  "changed_function_ASTs": [
+    "retained_inclusion",
+    "prepare",
+    "inspect_selected",
+    "solve",
+    "replay"
+  ],
+  "limits_unchanged": true,
+  "owned_child_and_proof_acceptance_algorithms_unchanged": true,
+  "new_mathematical_SAT_checks": [
+    "112 zero premises",
+    "both parity sums=1",
+    "86-column sum=2",
+    "pair(259,590) AMO"
+  ],
+  "optimizer_or_solver_called": false
+}

@@ -1,0 +1,40 @@
+{
+  "schema": "rook-case4-face111-native-box-bounds-v1",
+  "source_sha256": "df6a043f5a1f9f958536ff6c5b847b3b659c7701e609a30049b24582939ecc60",
+  "source_dependencies": {
+    "native_recovery": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "two_parity_equalities": "195b5fc78cb6895ee7797ebf1926f1cd19d990d992d5a9e9638d44f24aa984c6"
+  },
+  "inputs": {
+    "native": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    },
+    "equalities": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-two-parity-equalities-certificate.json",
+      "sha256": "6272996ff8c38af719b057dea6f6796efb895fdb678c69b82cc3eaff757ec606"
+    }
+  },
+  "variables": 1103,
+  "row_count": 1963,
+  "nonzeros": 25767,
+  "all2271_original_native_rows_accounted_for": true,
+  "lower": 0,
+  "upper": 1,
+  "objective_count": 1143,
+  "coordinate_covers_added": false,
+  "conditional_positive_selector_assumptions": 0,
+  "scope": "All original native rows,111 proved zeros,two proved integer equalities,and Boolean unit boxes. Every actual case4 solution satisfies this weaker model.",
+  "status": "PASS: exact native-box model and72-pattern Boolean partition prepared",
+  "model_sha256": "a174fde38a359f61498a0d9508beb2364ec9209f2771e9a7529a3675774008ad",
+  "controls": {
+    "exact_signed_interval_box_controls": 3200,
+    "fractional_half_bound": true,
+    "contradiction_control": true,
+    "numerical_dual_feasibility_assumed": false
+  },
+  "partition_patterns": 72,
+  "optimizer_calls": 0,
+  "replay": true,
+  "seconds": 147.7595884639959
+}

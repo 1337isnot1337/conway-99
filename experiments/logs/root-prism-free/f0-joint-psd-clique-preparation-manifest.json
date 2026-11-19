@@ -1,0 +1,234 @@
+{
+  "status": "PREPARED: exact append model, cold replay, native transport and peer source review passed; optimizer not run",
+  "scope": "Necessary local-stratum relaxation with all480 free selectors; no fixed incidence, no assumed graph automorphism, no exact feasibility or exclusion claim.",
+  "parent_model_canonical_sha256": "7bc4682e3df009761c55d0740a30a0629d45e894807f79e3337fc1de4fa1aff3",
+  "model_file": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01.json.gz",
+  "model_file_sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69",
+  "model_canonical_sha256": "e5aee717846cf7bb1b2e6072438d49b38627119fed65408d2159212f876ec21d",
+  "matrix_sha256": "607b3a6b1939b70538cbaf5e5d6e395b746745bf50ced097f12d81035723a234",
+  "scales_sha256": "ab1b87424535ab03a530119b0ac5f306c5f9b2b8e038d999ffcca2dc183ebf1a",
+  "counts": {
+    "equalities": 6135,
+    "full21_Schur_proof_inputs": 22,
+    "full_eligible_edges": 68394,
+    "full_selector_domain": 480,
+    "inequalities": 21908,
+    "inherited_selector_PSD_cuts": 32,
+    "maximum_mathematical_coefficient_bits": 31,
+    "maximum_numerical_row_scale": 1073741824,
+    "new_Y_zero_orbits": 162,
+    "new_distinct_Schur_rows": 39,
+    "new_distinct_three_exterior_rows": 715,
+    "new_literal_Y_zeros": 1884,
+    "new_nonzeros": 509854,
+    "nonzeros": 1086559,
+    "old18_Schur_proof_inputs": 17,
+    "original_full_acceptance_bounds": 183834,
+    "original_full_acceptance_rows": 650350,
+    "rows": 28043,
+    "three_exterior_prism_proof_inputs": 715,
+    "total_added_nonzeros_above32PSD_parent": 525224,
+    "two_edge_prism_added_nonzeros": 15370,
+    "two_edge_prism_doubled_Y_rows": 2,
+    "two_edge_prism_inputs": 5124,
+    "two_edge_prism_new_rows": 5124,
+    "variables": 15200,
+    "joint_PSD_input_rows": 21,
+    "joint_PSD_selector_rows": 16,
+    "joint_PSD_plus_rows": 5,
+    "joint_PSD_new_rows": 21,
+    "core_pair_clique_input_rows": 258,
+    "core_pair_clique_new_rows": 258,
+    "added_row_inputs": 279,
+    "added_distinct_rows": 279,
+    "joint_PSD_input_nonzeros": 178481,
+    "core_pair_clique_input_nonzeros": 2802,
+    "total_certified_PSD_directions": 92
+  },
+  "old27764_rows_and_scales_preserved": true,
+  "new_PSD_rows": 21,
+  "core_pair_clique_rows": 258,
+  "redundant128_greedy_rows_added": false,
+  "new_census_or_eigendecomposition": false,
+  "peer_source_review_sha256": "7f2b9fbee130e30cf66ed2c58521dd697eb3d5a52c08d3c3271f01bf2d00ef1f",
+  "native_input_check": {
+    "report": "f0-joint-psd-clique-native-audit01.json",
+    "minimum_absolute_scaled_coefficient": "9/1073741824",
+    "unchanged_input_threshold": "1e-9",
+    "all1086559_nonzeros_received_exactly": true,
+    "optimizer_calls": 0
+  },
+  "prepared_query": {
+    "source": "experiments/workspace/root_prism_free_f0_joint_psd_clique_query.py",
+    "numerical_method": "ipm",
+    "crossover": "off",
+    "threads": 1,
+    "maximum_optimizer_calls": 1,
+    "numerical_child_seconds_including_setup": 180,
+    "exact_child_seconds_only_if_existing_ray": 60,
+    "basis_or_primal_recovery": false,
+    "coordinator_execution_gate": "required separately; this manifest authorizes no query"
+  },
+  "cold_replay_source": "experiments/workspace/root_prism_free_f0_joint_psd_clique_replay.py",
+  "optimizer_calls": 0,
+  "files": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-independent-source-review.json",
+      "bytes": 5377,
+      "sha256": "7f2b9fbee130e30cf66ed2c58521dd697eb3d5a52c08d3c3271f01bf2d00ef1f",
+      "git_blob": "89cf72d2376e46c48f498a1f77c743b0db9e9cc2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-independent-source-review.log",
+      "bytes": 5377,
+      "sha256": "7f2b9fbee130e30cf66ed2c58521dd697eb3d5a52c08d3c3271f01bf2d00ef1f",
+      "git_blob": "89cf72d2376e46c48f498a1f77c743b0db9e9cc2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01-cold-replay.json",
+      "bytes": 2224,
+      "sha256": "da7dce5e6485a183b3e028ca72a5be5336137d3d7091d660af3187a6f4169bdc",
+      "git_blob": "84d377f007c508b5c719987d586c0fed1fae1cc2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01-cold-replay.log",
+      "bytes": 2224,
+      "sha256": "da7dce5e6485a183b3e028ca72a5be5336137d3d7091d660af3187a6f4169bdc",
+      "git_blob": "84d377f007c508b5c719987d586c0fed1fae1cc2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01-preparation.json",
+      "bytes": 2224,
+      "sha256": "286382d259bb7d9e53c9af9c0e378369f15e29f803d1d553c58a044cc1e1f08f",
+      "git_blob": "2dbacc93026ce767658bd9b30a5e0c1735561600"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01-preparation.log",
+      "bytes": 2224,
+      "sha256": "286382d259bb7d9e53c9af9c0e378369f15e29f803d1d553c58a044cc1e1f08f",
+      "git_blob": "2dbacc93026ce767658bd9b30a5e0c1735561600"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01.json.gz",
+      "bytes": 5181157,
+      "sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69",
+      "git_blob": "982bff54f663cb4193ec7a833094b999da166c35"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-native-audit-substitutions.json",
+      "bytes": 1022,
+      "sha256": "12b91295d6d1e1b226d7c79060daad03753e86ff0e89d041c50a780d6bfbbca9",
+      "git_blob": "77c033140a9f5f26efc4dd37943e730087259bec"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-native-audit01.json",
+      "bytes": 1694,
+      "sha256": "3938d098e2347956a4b447eab497e9826d5a2ffdc5e42cb8bede84378c30168c",
+      "git_blob": "455b7ea8cfe180b7f53c8557622d751b11c761a5"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-native-audit01.log",
+      "bytes": 1865,
+      "sha256": "a45441b6120fe1326e5e119c4311e8642dcaa415db94bc633a80cee716e0bf25",
+      "git_blob": "d02cca12f7266243846e267cd809aa65535bac2a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-query-preflight01.json",
+      "bytes": 2544,
+      "sha256": "7bc800b968c4d2d5ed0224d83e6337880ea8376c8490e05c8bcb89588ca0a17b",
+      "git_blob": "2ec80943eb2182ff4b16ecb14c2f3b15d531c248"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-query-preflight01.log",
+      "bytes": 2544,
+      "sha256": "7bc800b968c4d2d5ed0224d83e6337880ea8376c8490e05c8bcb89588ca0a17b",
+      "git_blob": "2ec80943eb2182ff4b16ecb14c2f3b15d531c248"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-query-preparation01.json",
+      "bytes": 1995,
+      "sha256": "2dd9ec779de923db89fd040fb171c803135986ae1e57ff64707840c024ea4148",
+      "git_blob": "332c8d366470810a1112f642ab63ff8f89efc073"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-query-preparation01.log",
+      "bytes": 2166,
+      "sha256": "02891f9c974b6011dfbba27d748999d55edf8e8c6be835f931fcc24cc22ba0c1",
+      "git_blob": "cded9599edbdb5eaa40b07b4074724dc13b127d1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-query-substitutions.json",
+      "bytes": 1711,
+      "sha256": "d89fa4eed1103ee692cc9d7d3e33fd67b3378e0f713802f71bc8917dd1fd0807",
+      "git_blob": "bbb9c3b97255063b210e4ff68082b17a82e5f956"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-replay-substitutions.json",
+      "bytes": 2959,
+      "sha256": "9b0a8cdcecd286ac322557c820533045007b82266bc18b5a93d704a20008f4fb",
+      "git_blob": "c9ef6ca54d68c781ed1a547bab2933943f9dcca1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-reuse-controls.json",
+      "bytes": 2816,
+      "sha256": "5ec84b5fb368a19d3d86c05e8722a3b54f75273625468daa1597d59561b96e43",
+      "git_blob": "67a7271b5b33789c258b0d1e31b488c867e3cd9f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-reuse-controls.log",
+      "bytes": 2816,
+      "sha256": "5ec84b5fb368a19d3d86c05e8722a3b54f75273625468daa1597d59561b96e43",
+      "git_blob": "67a7271b5b33789c258b0d1e31b488c867e3cd9f"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_exact.py",
+      "bytes": 8364,
+      "sha256": "f16d9648a396a4c2c78b68262ce4c767351bfd69bdf66237b49b35e0fb8752fc",
+      "git_blob": "d3f4e6f95729c28f3b56d7c6673b306178ccd6a3"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_independent_source_review.py",
+      "bytes": 7451,
+      "sha256": "8e735e26e12ab87209300cb8f9cf10047b73caae92e7ffeec79b124eb995e46d",
+      "git_blob": "7cfa4df14133b43463351eb63c3cbe733c8b0da8"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_model.py",
+      "bytes": 16153,
+      "sha256": "5bef59a3831030047349a0f2d80b36fffb6aa99e8bfdc1f074d4b776143b459b",
+      "git_blob": "8d14370ea07dfffed522ce106d39e4f380df37af"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_native_audit.py",
+      "bytes": 6079,
+      "sha256": "cdc70cff604545a549382ac2c6677dfa7cd0bb9cfebcc6c28c8846e51383cab5",
+      "git_blob": "a19bcfeb5996db60f53b14599a54bd53f8d550e3"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_query.py",
+      "bytes": 19825,
+      "sha256": "577b120992399a0a0e958eafd0bd9d7a7344982bbb4788a60bebee7ec7437441",
+      "git_blob": "a2f09e6703eda3eb2b46e3e636137bae872070a6"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_replay.py",
+      "bytes": 10099,
+      "sha256": "5804a7d10271b20c7f096b3012bdc78ee56be3054f94887575454da1475cb79d",
+      "git_blob": "4397e6e7fca8c6e08ad22534c4396abd3941006f"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_reuse_control.py",
+      "bytes": 3422,
+      "sha256": "857597faf2f954b465a0b56f7f5b8fd250101b6449f83ca23053f38ffde94793",
+      "git_blob": "a5e5759cfffaa6adfd907a1217926a803f72f2fe"
+    },
+    {
+      "path": "research/root_prism_free_f0_joint_psd_clique_model.md",
+      "bytes": 8217,
+      "sha256": "f1439b94e9da856e9f9261bb433d25b4362181af17608d894dc6a45c65c65bdf",
+      "git_blob": "3f8e3ea29cd2ce1716065b1d9bc0c097fad98d4e"
+    }
+  ],
+  "file_count": 26,
+  "total_bytes": 5304549
+}

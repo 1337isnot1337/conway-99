@@ -1,0 +1,49 @@
+{
+  "parent_path": "experiments/workspace/root_prism_free_f0_schur_path_query_v3.py",
+  "parent_sha256": "d074b272ccf4f963b242ea6ba8308e83602d0a71d0d500f6e204a484545e9e7a",
+  "new_path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_query.py",
+  "new_sha256": "577b120992399a0a0e958eafd0bd9d7a7344982bbb4788a60bebee7ec7437441",
+  "exact_text_substitutions": [
+    [
+      "the exact graph-Schur/path-prism model.",
+      "the exact joint-PSD/core-pair-clique model."
+    ],
+    [
+      "e039d525a93ab2972ac53538060feb7b6e16dd9f671bb051d29c543b6008b794",
+      "f16d9648a396a4c2c78b68262ce4c767351bfd69bdf66237b49b35e0fb8752fc"
+    ],
+    [
+      "root_prism_free_f0_schur_path_exact_v3.py",
+      "root_prism_free_f0_joint_psd_clique_exact.py"
+    ],
+    [
+      "\"f0_schur_path_exact_v3\"",
+      "\"f0_joint_psd_clique_exact\""
+    ],
+    [
+      "\"certified_PSD_directions_enforced\": 71",
+      "\"certified_PSD_directions_enforced\": 92"
+    ],
+    [
+      "\"inherited_and_graph_Schur_directions\": 71",
+      "\"inherited_and_graph_Schur_directions\": 92"
+    ],
+    [
+      "record[\"certified_PSD_directions_enforced\"] == 71",
+      "record[\"certified_PSD_directions_enforced\"] == 92"
+    ],
+    [
+      "numerical_matrix.nnz == 905276",
+      "numerical_matrix.nnz == 1086559"
+    ],
+    [
+      "Schur/path-prism query prepared; no optimizer",
+      "joint-PSD/clique query prepared; no optimizer"
+    ],
+    [
+      "\"three_exterior_prism_rows\": 715, \"two_edge_prism_rows\": 5124,",
+      "\"three_exterior_prism_rows\": 715, \"two_edge_prism_rows\": 5124,\n              \"new_joint_PSD_rows\": 21, \"complete_core_pair_clique_rows\": 258,"
+    ]
+  ],
+  "optimizer_calls": 0
+}

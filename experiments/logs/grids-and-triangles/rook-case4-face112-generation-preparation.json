@@ -1,0 +1,468 @@
+{
+  "status": "bounded full-pool face112 generation with two unit sums and four pair capacities prepared; no optimizer",
+  "source_bindings": {
+    "driver_sha256": "e0e245f1cfc20ff4e5eef7f148ee57b7a97af5829094bf57a0ff9247784942bc",
+    "exact_face_builder_sha256": "8cfae2fc990e293f47029da2dc5a4d66b864e2547777d6a142de424133361da7",
+    "reviewed_parent_generation_driver_sha256": "c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd",
+    "complete112_premise_loader_sha256": "405f732445043762db0c52cbc0cfdc159dcb945351925afdcc57af7c9606b3f9",
+    "unchanged_native_row_assembly_and_call_helper_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_serialization_runtime_helper_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "bound_audit_sha256": "5e1e01b8c5f3c5747292d65e6938263afe7a72bfff68b00ee29cf2f41b23b2a3",
+    "complete_base_cold_replay_sha256": "26f063161cbf9c0beb139b392f0b46007254176c522308d3ed2d5e3ee3c2e703"
+  },
+  "runtime_binding": {
+    "empty_existing_ray_check": true,
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy_version": "2.3.5",
+    "highspy_package_version": "1.16.0",
+    "native_HiGHS_version": "1.16.0",
+    "highspy_init_sha256": "38e439b7aba304fb9ee78c3c732bc0b16e79bb864c841a1f95471330cdb47865",
+    "highspy_native_binary_name": "_core.cpython-312-x86_64-linux-gnu.so",
+    "highspy_native_binary_sha256": "70da2435537fba263414987fa7289649e74551981edf5d57df1f727a110e27c3",
+    "scipy_version": "1.17.0"
+  },
+  "definition": {
+    "complete_original_maxmin_model": {
+      "base_model_sha256": "018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f",
+      "base_array_npz_sha256": "276db9d80b2772ab6829daf7459b19043a08996dc2b45ff8769534548b8b8ca3",
+      "base_integer_stream_sha256": "a3201523bbd3c70bab8206808c5b004010a84006de0641965dc0cdb79cd6cb9e",
+      "selectors": 1102,
+      "variables_including_t": 1103,
+      "rows": 167112,
+      "nonzeros": 10769371,
+      "t_column": 1102,
+      "original_rows": 166010,
+      "added_extension_rows": 1102,
+      "extension_rule": "row166010+j has +1 at selector j,-1 at t, bounds[0,1]",
+      "variable_lower": 0,
+      "variable_upper": 1,
+      "objective": "minimize -t (equivalently maximize t)",
+      "matrix_array_bindings": {
+        "coefficients": {
+          "dtype": "<i8",
+          "shape": [
+            10769371
+          ],
+          "sha256": "a87d0d1f4c0b182a53544cb91ae72b2722cb90c42d2d47dc550362228e170ca9"
+        },
+        "column_indices": {
+          "dtype": "<i4",
+          "shape": [
+            10769371
+          ],
+          "sha256": "40db8fd02f422eef76c249c8a83bd3ecad2923bc1e729b7e4dfbe82a10064a68"
+        },
+        "row_pointers": {
+          "dtype": "<i8",
+          "shape": [
+            167113
+          ],
+          "sha256": "a31020a1ebc7d9b65d71cfdbb24a4a8a69e309133f3178011520d49c67957d0f"
+        },
+        "row_lower": {
+          "dtype": "<i8",
+          "shape": [
+            167112
+          ],
+          "sha256": "a38ba14f095a64b9f5709773c585cf5655f9c80a09f16e953c0ce60a0bc6dccc"
+        },
+        "row_upper": {
+          "dtype": "<i8",
+          "shape": [
+            167112
+          ],
+          "sha256": "8704acc24275a2e84bd1eb0997c6474c0a4f711808159014fceb0235c4052477"
+        },
+        "original_column_ids": {
+          "dtype": "<u2",
+          "shape": [
+            1102
+          ],
+          "sha256": "31cdcac78e71aff4d6cbbf9c89bca245035c123525a2fb8e7435b7a637dc5e38"
+        }
+      },
+      "fixed_zero_original_columns": [
+        101,
+        115,
+        121,
+        126,
+        133,
+        140,
+        145,
+        149,
+        235,
+        241,
+        252,
+        258,
+        263,
+        302,
+        309,
+        315,
+        329,
+        335,
+        342,
+        348,
+        352,
+        353,
+        354,
+        355,
+        356,
+        359,
+        363,
+        367,
+        368,
+        371,
+        375,
+        385,
+        387,
+        388,
+        392,
+        396,
+        397,
+        398,
+        400,
+        404,
+        408,
+        410,
+        413,
+        415,
+        417,
+        420,
+        424,
+        428,
+        430,
+        435,
+        437,
+        439,
+        442,
+        457,
+        459,
+        461,
+        465,
+        552,
+        553,
+        645,
+        663,
+        772,
+        779,
+        783,
+        788,
+        793,
+        799,
+        804,
+        809,
+        816,
+        822,
+        828,
+        841,
+        848,
+        869,
+        873,
+        923,
+        926,
+        928,
+        931,
+        934,
+        937,
+        941,
+        955,
+        957,
+        959,
+        963,
+        966,
+        970,
+        973,
+        977,
+        1021,
+        1027,
+        1034,
+        1041,
+        1054,
+        1061,
+        1062,
+        1063,
+        1064,
+        1065,
+        1066,
+        1067,
+        1080,
+        1081,
+        1125,
+        1126,
+        1127,
+        1128,
+        1129,
+        1130,
+        1167
+      ],
+      "proved_face_only": true,
+      "new_selector_assumptions_added": false,
+      "symmetry_restriction_added": false
+    },
+    "complete_original_maxmin_model_sha256": "2bf06c494d457f2c1214baf778d681adefef82f1d413bbff80746acaa8f1f447",
+    "retained_cover_pool_count": 164044,
+    "retained_cover_pool_original_ID_sha256": "247a62ae2540532e28d9c71d6d9f670cd257269371fd068c0ca5222f4b64a3ad",
+    "all_remaining_covers_in_pool_without_compression": true,
+    "initial_rows": 3068,
+    "initial_rows_original_ID_sha256": "1bc0b692d760a3d1053b1f29c4daf627de345b79f7942e81f38679505c03b3f2",
+    "initial_row_ranges": [
+      [
+        0,
+        1960
+      ],
+      [
+        166004,
+        167112
+      ]
+    ],
+    "always_active_proved_parity_equalities": [
+      166004,
+      166005
+    ],
+    "always_active_certified_pair_rows": [
+      166006,
+      166007,
+      166008,
+      166009
+    ],
+    "unit_sum_ranges": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "certified_pair_original_columns": [
+      [
+        259,
+        590
+      ],
+      [
+        259,
+        591
+      ],
+      [
+        259,
+        593
+      ],
+      [
+        259,
+        732
+      ]
+    ],
+    "complete_premise_input_bindings": {
+      "native": {
+        "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+        "sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+      },
+      "equalities": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-two-parity-equalities-certificate.json",
+        "sha256": "6272996ff8c38af719b057dea6f6796efb895fdb678c69b82cc3eaff757ec606"
+      },
+      "model": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-model01.json",
+        "sha256": "a174fde38a359f61498a0d9508beb2364ec9209f2771e9a7529a3675774008ad"
+      },
+      "certificates": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-run01/certificates.jsonl",
+        "sha256": "92bd55e4987b18a17359a3d9344a58f599314cb524d5c44f881fecb5c4f4ce93"
+      },
+      "refined663": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-663-denominator6.json",
+        "sha256": "4a808f495cc1e24a55e8979873fda659a6d82af48f521ffabb2c0873c067d30b"
+      }
+    },
+    "initial_nonzeros": 27942,
+    "maximum_active_rows": 17916,
+    "all_original_rows_required_for_rational_primal_acceptance": 167112,
+    "only_original_rows_may_be_added": true,
+    "numerical_row_selection": "at most512 unseen covers, greatest violation first, ties by original row ID",
+    "subset_ray_scope": "an exact finite-box certificate on an active subset applies to the entire face LP",
+    "basis_policy": "one persistent native solver; appendRows without reset or reload",
+    "original1214_restoration_rule": "insert zero at every one of the112 proved-zero columns",
+    "no_new_selector_assumptions_or_symmetry": true,
+    "limits": {
+      "maximum_run_calls": 30,
+      "cumulative_solver_and_existing_ray_seconds": 120,
+      "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+      "maximum_new_cover_rows_per_call": 512,
+      "maximum_total_added_cover_rows": 14848,
+      "threads": 1,
+      "violation_tolerance": 1e-07,
+      "combined_exact_reconstruction_seconds": 60,
+      "cold_exact_check_seconds": 60,
+      "maximum_rational_common_denominator_bits": 4096
+    },
+    "native_options": [
+      [
+        "output_flag",
+        true
+      ],
+      [
+        "log_to_console",
+        false
+      ],
+      [
+        "threads",
+        1
+      ],
+      [
+        "parallel",
+        "off"
+      ],
+      [
+        "solver",
+        "simplex"
+      ],
+      [
+        "presolve",
+        "on"
+      ],
+      [
+        "random_seed",
+        0
+      ]
+    ]
+  },
+  "definition_sha256": "cf463ab29d1e89270fbb92c73eb500c8a6391251a83f3567f2cd40e85c3158bf",
+  "controls": {
+    "native_rows_checked_without_optimization": 4,
+    "nonmonotone_original_row_ID_insertion_checked": true,
+    "tie_break_batch_and_seen_row_controls": 3,
+    "local_to_global_multiplier_control": true,
+    "finite_box_controls": {
+      "sharp_maxmin_half_control": true,
+      "exact_zero_face_control": true,
+      "finite_upper_bound_Farkas_control": true,
+      "invalid_rational_points_rejected": 3,
+      "optimizer_called": false
+    },
+    "optimizer_calls": 0,
+    "rational_maxmin_extension_controls": 224,
+    "all_cover_rows_in_new_pool": 164044,
+    "no_compression_or_new_selector_assumption": true
+  },
+  "fixed_zero_original_columns": [
+    101,
+    115,
+    121,
+    126,
+    133,
+    140,
+    145,
+    149,
+    235,
+    241,
+    252,
+    258,
+    263,
+    302,
+    309,
+    315,
+    329,
+    335,
+    342,
+    348,
+    352,
+    353,
+    354,
+    355,
+    356,
+    359,
+    363,
+    367,
+    368,
+    371,
+    375,
+    385,
+    387,
+    388,
+    392,
+    396,
+    397,
+    398,
+    400,
+    404,
+    408,
+    410,
+    413,
+    415,
+    417,
+    420,
+    424,
+    428,
+    430,
+    435,
+    437,
+    439,
+    442,
+    457,
+    459,
+    461,
+    465,
+    552,
+    553,
+    645,
+    663,
+    772,
+    779,
+    783,
+    788,
+    793,
+    799,
+    804,
+    809,
+    816,
+    822,
+    828,
+    841,
+    848,
+    869,
+    873,
+    923,
+    926,
+    928,
+    931,
+    934,
+    937,
+    941,
+    955,
+    957,
+    959,
+    963,
+    966,
+    970,
+    973,
+    977,
+    1021,
+    1027,
+    1034,
+    1041,
+    1054,
+    1061,
+    1062,
+    1063,
+    1064,
+    1065,
+    1066,
+    1067,
+    1080,
+    1081,
+    1125,
+    1126,
+    1127,
+    1128,
+    1129,
+    1130,
+    1167
+  ],
+  "production_optimizer_calls": 0,
+  "case4_excluded": false,
+  "seconds": 1.8221976440036087,
+  "peak_rss_kib": 400732
+}

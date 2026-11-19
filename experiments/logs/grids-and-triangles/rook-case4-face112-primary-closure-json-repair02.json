@@ -1,0 +1,41 @@
+{
+  "status": "PASS: exact JSON-value comparison before any propagation",
+  "failed_v2_source": "experiments/workspace/rook_case4_face112_primary_closure_v2.py",
+  "failed_v2_source_sha256": "bcf81e923c39b6a86cb99987c53b0fd0d444508df32313a215eb977ec453102d",
+  "corrected_source": "experiments/workspace/rook_case4_face112_primary_closure_v3.py",
+  "corrected_source_sha256": "405f732445043762db0c52cbc0cfdc159dcb945351925afdcc57af7c9606b3f9",
+  "exact_old_expression": "assert canonical(checked) == canonical(report[\"certificates\"]) and canonical(refined) == canonical(report[\"refined_663\"])",
+  "exact_new_expression": "assert json.loads(canonical(checked)) == report[\"certificates\"] and json.loads(canonical(refined)) == report[\"refined_663\"]",
+  "AST_changed_functions": [
+    "load"
+  ],
+  "controls_integer_histogram_keys": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      -10,
+      -2,
+      0,
+      1,
+      2,
+      10,
+      256
+    ],
+    [
+      256,
+      2,
+      1,
+      0,
+      -2,
+      -10
+    ]
+  ],
+  "failure_reason": "Canonical bytes still differed because integer keys sort numerically but JSON-loaded string keys sort lexicographically. Compare JSON-decoded values instead.",
+  "all_five_and_refined_arithmetic_summaries_independently_recomputed_identical": true,
+  "failed_preparation_output_created": false,
+  "production_propagation_calls": 0,
+  "optimizer_calls": 0
+}

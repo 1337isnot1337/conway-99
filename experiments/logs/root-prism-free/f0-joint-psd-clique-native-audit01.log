@@ -1,0 +1,41 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "PASS: all1086559 scaled coefficients retained exactly by native passModel",
+  "source_sha256": "cdc70cff604545a549382ac2c6677dfa7cd0bb9cfebcc6c28c8846e51383cab5",
+  "helper_sha256": "f16d9648a396a4c2c78b68262ce4c767351bfd69bdf66237b49b35e0fb8752fc",
+  "query_sha256": "577b120992399a0a0e958eafd0bd9d7a7344982bbb4788a60bebee7ec7437441",
+  "model_sha256": "e5aee717846cf7bb1b2e6072438d49b38627119fed65408d2159212f876ec21d",
+  "model_file_sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69",
+  "matrix_sha256": "607b3a6b1939b70538cbaf5e5d6e395b746745bf50ced097f12d81035723a234",
+  "numerical_row_scales_sha256": "ab1b87424535ab03a530119b0ac5f306c5f9b2b8e038d999ffcca2dc183ebf1a",
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "highspy": "1.16.0"
+  },
+  "minimum_nonzero_scaled_coefficient": "9/1073741824",
+  "minimum_nonzero_scaled_coefficient_float": 8.381903171539307e-09,
+  "minimum_count": 1,
+  "minimum_example_combined_row_column_integer_scale": [
+    21907,
+    9656,
+    -9,
+    1073741824
+  ],
+  "native_small_matrix_value": 1e-09,
+  "native_small_matrix_value_hex": "0x1.12e0be826d695p-30",
+  "minimum_strictly_above_native_threshold": true,
+  "variables": 15200,
+  "rows": 28043,
+  "nonzeros_before_passModel": 1086559,
+  "native_getNumNz_after_passModel": 1086559,
+  "entire_native_CSC_indices_values_and_row_column_bounds_equal": true,
+  "native_option_changed_to_lower_threshold": false,
+  "native_runtime": 0.0,
+  "optimizer_calls": 0,
+  "Highs_run_calls": 0,
+  "getDualRay_calls": 0,
+  "scope": "Input transport only. No numerical feasibility or internal presolve conclusion.",
+  "seconds": 13.84517170300387
+}
