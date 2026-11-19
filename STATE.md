@@ -29,6 +29,8 @@ The [distinct-endpoint theorem](research/involutions/distinct-endpoint-squares.m
 
 With repeated endpoint pairs allowed, the [endpoint graph must be disconnected](research/involutions/connected-endpoint-squares.md) whenever every square has one shared axis. A three-axis component would need three exceptional tip orbits to pair among themselves. Thus only component sizes $6+1$ remain.
 
+The [one-shared-axis exclusion](research/involutions/one-shared-axis.md) rules out the last component of size six. Any one-fixed-point involution therefore has two paired far orbits with disjoint or identical axis labels. Its final fifteen norm budgets have a standard-library exhaustive checker.
+
 ## Sources and replay
 
 - https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html, the (99,14,1,2) entry.

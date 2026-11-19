@@ -5,6 +5,7 @@ CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.jso
 .PHONY: verify
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" hoffman_singleton_double.py
+	cd $(WORKSPACE) && "$(PYTHON)" involution_six_axis_cover.py
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" grid_agreements.py
 	cd $(WORKSPACE) && "$(PYTHON)" grid_leaf.py
