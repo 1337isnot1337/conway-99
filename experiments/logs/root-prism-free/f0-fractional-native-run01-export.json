@@ -1,0 +1,24 @@
+{
+  "status": "PASS: exact joint baseline exported; no optimizer",
+  "source_sha256": "078fa066d6772ed75224ee4596b1918ec0d114159dfb5890a779b3843c7fd810",
+  "model_canonical_sha256": "a30179bd5b2b7c58bb5458a3371a947997da17288a355452469d47a59ab81413",
+  "model_file_sha256": "eb872efde0768eb514c954c57a1f8049785980d2a73e158f1d29842cc0a072cb",
+  "model_file_bytes": 2087804,
+  "matrix_sha256": "30bd8808dcd0490fa9ae124abb2ef060cfc8bfcbc57b78eaac0a67fe89f0dd55",
+  "validation_sha256": "baeeafa1485d9b9eadb4b62584b7e5c055ee7ce71a3c68a4a01f3df8b6f2743d",
+  "variables": 5847,
+  "equalities": 686,
+  "inequalities": 11373,
+  "nonzeros": 57801,
+  "positive_selector_projection_control": {
+    "status": "PASS: exact positive selector projection and rejected zero-edge extension",
+    "interior_certificate_git_blob": "6396da7dd3d5fd1df30a88cc3ea847154d62ef38",
+    "selector_denominator": 1836,
+    "selector_bounds_Gram_population_and_90_motifs_pass": true,
+    "zero_edge_extension_full_mixed_failures": 7884,
+    "zero_edge_extension_quotient_mixed_failures": 667,
+    "feasible_shared_point_claimed": false
+  },
+  "terminal_selector_cut_registry_included": false,
+  "optimizer_called": false
+}

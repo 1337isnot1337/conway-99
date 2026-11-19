@@ -1,0 +1,28 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+LP has 12059 rows; 5847 cols; 57801 nonzeros
+Coefficient ranges:
+  Matrix  [1e+00, 1e+01]
+  Cost    [0e+00, 0e+00]
+  Bound   [1e+00, 1e+00]
+  RHS     [1e+00, 6e+01]
+Presolving model
+12059 rows, 5847 cols, 57801 nonzeros 0s
+Initial sweep identifies 0 + 1 + 0 = 1 / 12059 empty + singleton + redundant rows
+Considering dependency of 684 equations in 5845 variables with 35088 nonzeros
+Dependent equations search removed 12 equations and 552 nonzeros
+12041 rows, 5845 cols, 57226 nonzeros 0s
+Presolve reductions: rows 12041(-18); columns 5845(-2); nonzeros 57226(-575) 
+Solving the presolved LP
+Choosing to use dual simplex solver
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Pr: 43(27.5) 0.0s
+       4361     0.0000000000e+00 Pr: 0(0) 2.1s
+Performed postsolve
+Solving the original LP from the solution after postsolve
+Model status        : Optimal
+Simplex   iterations: 4361
+Objective value     :  0.0000000000e+00
+P-D objective error :  0.0000000000e+00
+HiGHS run time      :          2.08

@@ -1,0 +1,95 @@
+{
+  "status": "Frozen source and expected query contract; native preparation and production optimizer have not been run",
+  "sources": [
+    {
+      "path": "experiments/workspace/rook_case4_finite_box_certificates.py",
+      "git_blob_sha": "55e521a5d8c7a65cd8c43047b223971d50a7365e",
+      "sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_maxmin_query.py",
+      "git_blob_sha": "f9b72d28aa6e4aaa677e26b9d4fce6a28da23c41",
+      "sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322"
+    }
+  ],
+  "recovered_base": {
+    "model_sha256": "9373396621ff2a713200c9832d9da82801b51f1c674233eaa81a1587a9f29b42",
+    "arrays_npz_sha256": "fb9ba6b1185f7796e39ac2904f077ad58238e89b0445305a22238c0374dd158f",
+    "canonical_integer_stream_sha256": "444835c4d3c466dc9bb5c71646da13bf98e6eefdb3a492c51bcf54185b8919d5",
+    "variables": 1156,
+    "rows": 174208,
+    "nonzeros": 11868882,
+    "original_rows_accounted": 2271,
+    "coordinate_covers_accounted": 178533,
+    "fixed_zero_original_columns": 58,
+    "native_preparation_run": 44504861314,
+    "native_preparation_job": 135493694048
+  },
+  "extension": {
+    "new_variable": "t",
+    "variable_bounds": [
+      0,
+      1
+    ],
+    "new_rows": 1156,
+    "row_rule": "0 <= x_j - t <= 1 for every remaining selector j",
+    "objective": "maximize t",
+    "variables": 1157,
+    "rows": 175364,
+    "nonzeros": 11871194,
+    "no_fixed_numerical_support": true,
+    "no_binary_graph_symmetry": true
+  },
+  "phase_limits": {
+    "production_optimizer_run_calls": 1,
+    "threads": 1,
+    "solver_and_optional_ray_seconds": 60,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_certificate_seconds": 60,
+    "LCM_bits": 4096,
+    "automatic_retry": false,
+    "ray_generating_additional_solver_call_allowed": false
+  },
+  "preparation": {
+    "optimizer_calls": 0,
+    "actions": [
+      "Bind all source and base-model hashes",
+      "Load byte-identical NPZ and all array hashes",
+      "Append exact extension rows and bind every extended array",
+      "Run optimizer-free exact algebra controls",
+      "Bind Python, NumPy, highspy package and native binary; check empty existing-ray API without solving"
+    ],
+    "command": "python experiments/workspace/rook_case4_maxmin_query.py prepare --model CANONICAL_BASE_MODEL_JSON --arrays REBUILT_ARRAYS_NPZ --output NEW_PREPARATION_JSON"
+  },
+  "query": {
+    "separate_parent_gate_required": true,
+    "command": "python experiments/workspace/rook_case4_maxmin_query.py run --model CANONICAL_BASE_MODEL_JSON --arrays REBUILT_ARRAYS_NPZ --preparation NEW_PREPARATION_JSON --directory NEW_QUERY_DIRECTORY"
+  },
+  "replay": {
+    "optimizer_calls": 0,
+    "command": "python experiments/workspace/rook_case4_maxmin_query.py replay --model CANONICAL_BASE_MODEL_JSON --arrays REBUILT_ARRAYS_NPZ --preparation NEW_PREPARATION_JSON --result NEW_QUERY_DIRECTORY/result.json --output NEW_COLD_REPORT_JSON"
+  },
+  "exact_acceptance": {
+    "bound": "For integer row multipliers lambda and gamma>=0, c=C^T lambda, r=gamma*e_t-c, B=sum_i max(lambda_i*L_i,lambda_i*U_i)+sum_j max(r_j,0). Check every nonzero row and every variable-bound contribution.",
+    "contradiction": "B<0 proves the complete indexed case4 real selector domain infeasible because every original feasible x lifts at t=0.",
+    "zero_face": "B=0,gamma>0 yields exact zero/one implications by nonnegative-slack decomposition. Positive residual at t is converted into a direct gamma=0 negative bound.",
+    "primal": "All175364 ranged rows and1157 unit-box bounds checked using arbitrary-precision rational arithmetic. A positive t proves no additional identically-zero coordinate in this real relaxation.",
+    "numerical_only": "Unverified numerical infeasibility, rounded duals and numerical primals leave case4 open.",
+    "graph_scope": "A rational point is not an integer incidence or a graph. Any contradiction excludes only indexed case4."
+  },
+  "native_helper_controls_executed": false,
+  "production_optimizer_executed": false,
+  "case4_excluded": false,
+  "superseded_unexecuted_drafts": [
+    {
+      "git_blob_sha": "2b9ca19ac4fc51022bfd5366118cf53c854638a1",
+      "sha256": "08c971388214af08ceaec5b65f683adf3b977bc31f4f2bb5e692f2d41df5acfb",
+      "difference": "Final source adds separate native passModel/bootstrap timing and RSS; no mathematical or query-scope change."
+    },
+    {
+      "git_blob_sha": "9f4f88d773ac87d09c2f226978227cf72ab3f468",
+      "sha256": "1a440b151c5f5b6eae1d2a5e3b08193fb3db4f62166a2078264b2e94e541daa2",
+      "difference": "Final source first requires an existing dual ray; no extra ray-generating LP is allowed."
+    }
+  ]
+}

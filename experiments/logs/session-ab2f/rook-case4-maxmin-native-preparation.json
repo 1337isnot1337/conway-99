@@ -1,0 +1,164 @@
+{
+  "status": "complete max-min driver prepared; no optimizer called",
+  "source_bindings": {
+    "driver_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "recovery_builder_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7"
+  },
+  "runtime_binding": {
+    "empty_existing_ray_check": true,
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy_version": "2.3.5",
+    "highspy_package_version": "1.16.0",
+    "native_HiGHS_version": "1.16.0",
+    "highspy_init_sha256": "38e439b7aba304fb9ee78c3c732bc0b16e79bb864c841a1f95471330cdb47865",
+    "highspy_native_binary_name": "_core.cpython-312-x86_64-linux-gnu.so",
+    "highspy_native_binary_sha256": "70da2435537fba263414987fa7289649e74551981edf5d57df1f727a110e27c3"
+  },
+  "mathematical_model": {
+    "base_model_sha256": "9373396621ff2a713200c9832d9da82801b51f1c674233eaa81a1587a9f29b42",
+    "base_array_npz_sha256": "fb9ba6b1185f7796e39ac2904f077ad58238e89b0445305a22238c0374dd158f",
+    "base_integer_stream_sha256": "444835c4d3c466dc9bb5c71646da13bf98e6eefdb3a492c51bcf54185b8919d5",
+    "selectors": 1156,
+    "variables_including_t": 1157,
+    "rows": 175364,
+    "nonzeros": 11871194,
+    "t_column": 1156,
+    "original_rows": 174208,
+    "added_extension_rows": 1156,
+    "extension_rule": "row174208+j has +1 at selector j,-1 at t, and bounds[0,1]",
+    "variable_lower": 0,
+    "variable_upper": 1,
+    "objective": "minimize -t (equivalently maximize t)",
+    "minimization_cost_at_t": -1,
+    "other_costs": 0,
+    "matrix_array_bindings": {
+      "coefficients": {
+        "dtype": "<i8",
+        "shape": [
+          11871194
+        ],
+        "sha256": "eef24c79fe909cd1bfc65dbd12ce285a036315153ff18bbeebb79a017edea52f"
+      },
+      "column_indices": {
+        "dtype": "<i4",
+        "shape": [
+          11871194
+        ],
+        "sha256": "0e5a4694c8c47050747d20ccb356dac28336a763c75416a6a7dc15a39fa30312"
+      },
+      "row_pointers": {
+        "dtype": "<i8",
+        "shape": [
+          175365
+        ],
+        "sha256": "14709425dfab7fdc0b235bcfc9e6594c813dd52f64335ac0a25c4fa0554cfbe0"
+      },
+      "row_lower": {
+        "dtype": "<i8",
+        "shape": [
+          175364
+        ],
+        "sha256": "8c34b58d842ee8d8b4bc980fd0094dcac58b13e6f51b0de9c8b315d0ddfdcc6d"
+      },
+      "row_upper": {
+        "dtype": "<i8",
+        "shape": [
+          175364
+        ],
+        "sha256": "840ca7651fcb7f9f836f1e16faccc67d399d1bccc1340e7eed88853d131713d7"
+      },
+      "original_column_ids": {
+        "dtype": "<u2",
+        "shape": [
+          1156
+        ],
+        "sha256": "ac0edb4f56978063963dd35b2de154d9e1fc3265849e379ea1785f4acde31fbf"
+      }
+    },
+    "original_support_restriction_added": false,
+    "new_fixed_selector_assumptions_added": false,
+    "graph_symmetry_restriction_added": false
+  },
+  "mathematical_model_sha256": "550972cca292015d484287228700402642d1e3eb52ea3d1b89ed0b74f83dff0c",
+  "limits": {
+    "production_run_calls": 1,
+    "threads": 1,
+    "solver_and_ray_seconds": 60,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "exact_arithmetic_controls": {
+    "sharp_maxmin_half_control": true,
+    "exact_zero_face_control": true,
+    "finite_upper_bound_Farkas_control": true,
+    "invalid_rational_points_rejected": 3,
+    "optimizer_called": false
+  },
+  "base_fixed_zero_columns": [
+    235,
+    241,
+    252,
+    258,
+    263,
+    302,
+    309,
+    315,
+    329,
+    335,
+    342,
+    348,
+    352,
+    353,
+    354,
+    355,
+    356,
+    359,
+    363,
+    367,
+    368,
+    371,
+    375,
+    385,
+    387,
+    388,
+    392,
+    396,
+    397,
+    398,
+    400,
+    404,
+    408,
+    410,
+    413,
+    415,
+    417,
+    420,
+    424,
+    428,
+    430,
+    435,
+    437,
+    439,
+    442,
+    457,
+    459,
+    461,
+    465,
+    552,
+    553,
+    645,
+    869,
+    873,
+    957,
+    1080,
+    1081,
+    1167
+  ],
+  "numerical_discovery_only_until_exact_check": true,
+  "production_optimizer_calls": 0,
+  "case4_excluded": false,
+  "initialization_seconds": 1.5026407280020067,
+  "peak_rss_kib": 409628
+}

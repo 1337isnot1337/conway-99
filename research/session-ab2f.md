@@ -6,10 +6,11 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Recover the complete complementary-rook case-four selector relaxation from published inputs, retaining every capacity and cover. Owned by the independent-set worker.
-2. Complete small-root high-mask moment inversions at the current order-ten count point. Owned by the literature worker.
-3. Query the complete fractional F0 shared-edge and motif baseline with exact certificate checks. Owned by the completion worker.
-4. Source review, independent arithmetic replay, bounded execution and publication. Owned by the coordinating worker.
+1. Test the complete complementary-rook case-four selector relaxation with one max-min query and exact certificate replay. Owned by the coordinating worker.
+2. Test the complete decorated high-mask distributions for all 33 small roots. Owned by the independent-set worker.
+3. Test the root-42 one-scalar moment interval, including stabilizer divisibility. Owned by the literature worker.
+4. Recover the full F0 Boolean registry and prepare its normalized fractional strengthening. Owned by the completion worker.
+5. Source review, independent arithmetic replay, bounded execution and publication. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -915,3 +916,13 @@ The complete selector-LP recovery source has been read and hash-checked by the c
 The complete rook selector LP has been recovered and independently rebuilt. Its 174,208-row integer stream and 5,312,569-byte compressed matrix match both captured pre-outage hashes exactly. The new model JSON, preparation and cold records are preserved; the old lost source is not represented as recovered.
 
 The F0 native exporter, exact helper and one-call supervisor have all been read and hash-checked. The coordinator rebuilt the 2,087,803-byte model payload from the frozen specifications and matched its exact canonical hash. The workflow requires native arithmetic controls and exact export before one sixty-second joint LP, then permits one sixty-second exact reconstruction. Full original-row or strict integer Farkas replay is required for any mathematical conclusion. The query outcome is pending. The unavailable terminal selector-cut registry remains outside this baseline.
+
+## Checkpoint 48: complete small-root presence certificates and feasible joint F0 model
+
+The remaining 32 small-root presence models pass complete exact inversion: 1,035 integer atom masses, 954 positive and 81 zero, with all 492 quotient equations checked. Together with root 49, this covers 33 roots, 1,115 atoms and 511 quotient equations. The independent checker sums the saved masses directly and replays the literal moment forms; the coordinator reproduced both algorithms. This closes the presence-only test at this count point, while decorated edge states remain a stronger test.
+
+The one native F0 baseline query returned a numerical proposal that was reconstructed exactly with a 532-column rational solve. Its 191-bit denominator is retained. Independent Node replay and a separate coordinator replay check all 145,690 original rows and 68,874 variable bounds. This is an exact feasible relaxation, not a graph. The 4,404 terminal Boolean cuts were not included. Their complete transcript has now been recovered from the preserved old checkout and is being prepared as a separate strengthening.
+
+The local runtime returned with the old checkout still at checkpoint 42. It was preserved, including 210 untracked entries. A separate checkout at checkpoint 47 is used for new integration. The complete rook max-min driver passed native preparation with mathematical model hash `550972cca292015d484287228700402642d1e3eb52ea3d1b89ed0b74f83dff0c`. Exactly one bounded production query is authorized; only an exact replay can establish its outcome.
+
+The authorized complete rook query stopped after 60.091 solver seconds and 1,264 simplex iterations. No valid numerical solution or basis, exact point, zero-face certificate, or contradiction was obtained. The numerical state and log are retained. Case four remains open; no automatic retry was made.

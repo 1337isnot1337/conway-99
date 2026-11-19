@@ -4,17 +4,18 @@ The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contr
 
 Checkpoint 44 adds an [exact case-four Gram point](research/grids-and-triangles/rook_case4_exact_gram_point.md) and a [complete root-49 moment distribution](research/grids-and-triangles/root49_packing_moment_recovery.md).
 Both are feasible points of necessary relaxations; neither constructs a graph or excludes its whole branch.
-The [complete fractional F0 structural/motif model](research/root_prism_free_f0_fractional_shared_projection.md) is prepared with 5,847 quotient variables and 57,801 nonzeros. No optimizer has run on it.
+The [complete fractional F0 structural/motif model](research/root_prism_free_f0_fractional_shared_projection.md) has an [exact feasible rational point](research/root_prism_free_f0_fractional_exact_baseline.md). All 145,690 original rows and 68,874 variable bounds pass independent replay. The terminal Boolean cuts are not part of that baseline.
 The case-four point also proves that every shifted integer quadratic inequality derived only from its Gram equations passes.
 The stronger selector capacities, covers and exterior-edge conditions remain separate.
 An [exact evaluation](research/grids-and-triangles/rook_case4_gram_native_evaluation.md) rejects the Gram point by one triple capacity and 21 exterior-row inequalities.
-The fresh native recovery run passed all eight Node entry points. [Complete rook-LP preparation and cold reconstruction](research/grids-and-triangles/rook_case4_complete_lp_recovery.md) passed with the exact pre-outage matrix hashes. Its max-min optimizer is still pending.
-One bounded joint F0 fractional query is now authorized only after native arithmetic controls and exact model export pass; its outcome is not yet known.
+The fresh native recovery run passed all eight Node entry points. [Complete rook-LP preparation and cold reconstruction](research/grids-and-triangles/rook_case4_complete_lp_recovery.md) passed with the exact pre-outage matrix hashes. Its subsequent max-min query reached its time limit without an exact certificate.
+The [complete small-root presence models](research/grids-and-triangles/small_roots_packing_moment_recovery_result.md) also pass at the immutable order-ten count point: all 1,115 atoms across 33 roots have nonnegative integer masses. Models that retain the edges between high-neighbor vertices are being tested separately.
+The complete rook max-min model passed native preparation. Its single sixty-second query was interrupted after 1,264 simplex iterations and produced no accepted exact point, face certificate or contradiction. Case four remains open.
 
 The [checkpoint-43 recovery record](research/checkpoint43_recovery.md) distinguishes newly recovered results from files still in the unavailable workspace.
 An independently rerun [integer-incidence proof](research/grids-and-triangles/high_graph_core16_recovered_proof.md) excludes 31 specified sixteen-vertex cores.
 A separately recovered [F0 interior point](research/root_prism_free_f0_gram_interior_recovered.md) proves that the base Gram and motif system cannot fix any selector.
-The later full-domain scan and refined moment query were completed locally, but their new output files have not been recovered.
+The old workspace has been restored without discarding its edits. The later full-domain scan, refined moment result, and full 4,404-cut F0 transcript have been identified there by their original hashes. Their recovered publication and additional arithmetic replay follow separately.
 The refined query reported an exact finite measure; it did not reject the count point or construct a graph.
 
 The current interface result on this branch proves that every induced rook

@@ -1,0 +1,50 @@
+{
+  "status": "PASS: independent read-only source and mathematical review",
+  "source": {
+    "git_blob_sha": "34085dd6833ab816968ede0ba4637e44713b37fc",
+    "sha256": "4fb1051fb446d31f7d1bc52f298cb87960d73073bafdfc9e4f3982d909bd8343"
+  },
+  "preparation": {
+    "git_blob_sha": "537b722f2dd4f964c5fa053d5398e41c60b4ed9d",
+    "sha256": "7ff07b4098759a56844b346087ea16cc66584b79b3b7d89d110ae97dc06f67ca",
+    "observed_summary": {
+      "roots": 32,
+      "raw_monomials": 4975,
+      "supported_monomials": 1035,
+      "structurally_zero_monomials": 3940,
+      "moment_orbits": 492,
+      "literal_completions": 1195,
+      "literal_unrooted_graph_classes": 294,
+      "catalogue_types": 294,
+      "fingerprint_groups": 294,
+      "ambiguous_fingerprint_groups": 0,
+      "product_rows": 2450,
+      "product_nonzeros": 2742,
+      "literal_type_isomorphism_comparisons": 1412,
+      "five_class_subsets_checked": 3987,
+      "direct_presence_normalization_controls": 46,
+      "synthetic_distribution_controls": 64
+    }
+  },
+  "checks": {
+    "actual_domains": "The source enumerates every high mask and every degree0..4 presence set, checks monotone visible caps, and checks every5-subset is impossible. This gives a downward-closed domain containing all actual high-class presence sets.",
+    "internal_edges": "For each retained set it enumerates every subset of all individually eligible high-high edges, then checks caps on the full literal graph. It does not assume high-high nonadjacency.",
+    "product_rows": "High masks are distinct, so root labels identify each free vertex uniquely. The disjoint-mask flag products count labelled extensions, with no division by a free-label stabilizer.",
+    "catalogue_matching": "Complete sparse coefficient fingerprints are compared for all literal classes and all nonzero cached catalogue columns. Matching class counts and anchor IDs make singleton fingerprints usable as catalogue identities within this finite family. The recorded preparation has294 singleton groups, so the fallback tie policy is not exercised.",
+    "induced_normalization": "Each literal unrooted class contributes its independently counted automorphism number times its induced-subgraph count, multiplied by the number of corresponding literal completions.",
+    "Mobius": "For a downward-closed subset family of maximum size4, every interval is Boolean. The alternating-superset formula is the exact indicator of one atom; the descending inversion and literal indicator checks implement this identity.",
+    "orbit_normalization": "The quotient counts row-orbit monomials contained in one representative atom, while orbit masses sum over atoms. The right side is orbit_size times one representative labelled moment.",
+    "unsupported_scope": "Unsupported monomials have literal cap obstructions before adding edges. The source does not claim to have fetched or numerically evaluated their omitted tensor rows.",
+    "negative_certificate": "Any negative atom is expanded into an exact induced-count form and checked as a0/1 atom indicator over the complete finite presence domain."
+  },
+  "preparation_counts_independently_regenerated": false,
+  "source_or_dependency_executed": false,
+  "point_loaded_or_evaluated": false,
+  "optimizer_called": false,
+  "observed_soundness_blockers": [],
+  "assumptions_retained": [
+    "The frozen product-cache coefficients have their published labelled-extension meaning",
+    "The frozen isomorphism helper supplies complete literal graph isomorphism counts"
+  ],
+  "full_graph_existence_conclusion": false
+}

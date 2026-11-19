@@ -1,5 +1,7 @@
 # Research catalog
 
+Checkpoint 48 records an [exact feasible joint F0 baseline](research/root_prism_free_f0_fractional_exact_baseline.md) and [complete nonnegative presence distributions for all 33 small roots](research/grids-and-triangles/small_roots_packing_moment_recovery_result.md). Both concern necessary relaxations and leave graph existence unresolved.
+
 Every structural result below concerns a hypothetical strongly regular graph with parameters $(99,14,1,2)$. The ledger gives the assumptions and stopping points of the construction and solver runs. [Research ledger](STATE.md)
 
 ## Grids and triangles
@@ -187,3 +189,5 @@ remains feasible.
 - [Exact stronger-row evaluation](research/grids-and-triangles/rook_case4_gram_native_evaluation.md) rejects the recovered Gram point by one triple capacity and 21 exterior-row inequalities. The full selector LP is being recovered separately from the public complete cover registry.
 
 - [Complete case-four selector LP recovery](research/grids-and-triangles/rook_case4_complete_lp_recovery.md) reproduces the full 174,208-row matrix and pre-outage compressed-array hash from public inputs. Native preparation and full reconstruction pass; the optimizer is a later stage.
+
+- [Complete rook case-four max-min query](research/grids-and-triangles/rook_case4_maxmin_query.md) records the first bounded solve of every retained capacity and cover. It reached its limit without an accepted exact outcome.
