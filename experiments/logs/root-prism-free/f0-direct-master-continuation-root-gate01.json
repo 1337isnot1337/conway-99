@@ -1,0 +1,68 @@
+{
+  "acceptance_checks": [
+    "All original 172 equations, 90 motif conflicts, 4416 integer cuts and 4410 zero-pair consequences remain in exact inspection.",
+    "Each later master call requires a strictly longer prefix of necessary rows; exact local matching or shared-row certificates justify every append.",
+    "Every native prefix is compared with the independently appended protobuf; no objective, hint, selector fix or visit clause is used.",
+    "Full candidate vectors are saved before expensive checks; full matching witnesses are compared through canonical JSON.",
+    "Native infeasibility is unproved. Unknown, time overrun, encoding limit and shared real-box feasibility remain distinct terminal outcomes.",
+    "Separate cold replay reconstructs called prefixes, exact candidate checks and every certificate without a new optimization call."
+  ],
+  "authorized_execution": {
+    "cold_owner_seconds": 60,
+    "finalization_reserve_seconds": 8,
+    "maximum_CP_call_seconds": 60,
+    "maximum_cumulative_CP_seconds": 180,
+    "maximum_iterations": 8,
+    "maximum_shared_sequence_seconds": 60,
+    "run_directory": "experiments/logs/root-prism-free/f0-direct-master-continuation-run01",
+    "run_owner_seconds": 300,
+    "shared_limit_clipped_to_remaining_owner": true,
+    "unchanged_prefix_retry": false
+  },
+  "inputs": {
+    "canonical_cover_repair": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-json-boundary-repair01.json",
+      "sha256": "63a60ca005cae7d18b85459bbdf08751e0a1b1b394a36ba663e07bfe058483f4"
+    },
+    "canonical_matching_repair": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-matching-json-repair01.json",
+      "sha256": "26fb21aa752ea1707188a656e7dfef512db5628f99f6939cc02b7dc8bc3852eb"
+    },
+    "controller": {
+      "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v3.py",
+      "sha256": "7b828cd3b5c34c846b97913e25bdb860bc7e75afdd7645701503f4a9760b2784"
+    },
+    "preflight_owner": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-preparation02/owner.json",
+      "sha256": "64233931cacaab448bd4aa4aa89b0e82c54f3b6a61abc6f63357fbd89c97d94b"
+    },
+    "preflight_report": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-preparation02/report.json",
+      "sha256": "0015e0d034f57d13a378d188fb4cc7ec5bf357d12911148835a58e3f1e86c19f"
+    },
+    "registry": {
+      "path": "experiments/workspace/root_prism_free_f0_direct_master_registry_v3.py",
+      "sha256": "9b5746f3cc6817515d36fb8236bb5e26d78825187914d36a3da9f1ed1f616393"
+    },
+    "registry_review": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-registry-literature-source-review.json",
+      "sha256": "c950620db8997f7a0a444a648de77976636a4b41f4c7ed0a902e10cd14026ecf"
+    },
+    "seed_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-seed-configuration02.json",
+      "sha256": "544b6d2eb9f5bf6df98e8ba0a5c250220734c55a6f862a27236d55c697370703"
+    }
+  },
+  "preflight": {
+    "optimizer_calls": 0,
+    "raw_model_sha256": "5087a04fe3bb20f9fd108765a418d2a25f17e6c5ecce7b6b2d1b5a686a20199a",
+    "rows": 4718,
+    "seed_rows": 37,
+    "solver_constructed": false,
+    "variables": 540
+  },
+  "review_coverage": "Complete original controller and registry read. Complete registry v2-to-v3 and controller v2-to-v3 diffs read. Source transition changes only complete JSON comparisons and explicit reuse of the accepted preflight. Query run and model construction functions are unchanged.",
+  "schema": "conway99.f0.direct-master.root-source-gate.v1",
+  "scope": "Necessary incidence constraints for the conditional F0 component-zero case. No whole-component exclusion or unrestricted graph conclusion is authorized by a native status.",
+  "status": "PASS_SOURCE_REVIEW_AND_BOUND_PREFLIGHT"
+}

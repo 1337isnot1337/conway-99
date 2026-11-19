@@ -1,0 +1,92 @@
+{
+  "schema": "conway99.f0.direct-master-registry.literature-source-review.v1",
+  "status": "PASS_SOURCE_AND_MATHEMATICAL_REVIEW",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_registry_v3.py",
+    "sha256": "9b5746f3cc6817515d36fb8236bb5e26d78825187914d36a3da9f1ed1f616393"
+  },
+  "seed_configuration": {
+    "path": "experiments/logs/root-prism-free/f0-direct-master-seed-configuration02.json",
+    "sha256": "544b6d2eb9f5bf6df98e8ba0a5c250220734c55a6f862a27236d55c697370703"
+  },
+  "repair_ledger": {
+    "path": "experiments/logs/root-prism-free/f0-direct-master-json-boundary-repair01.json",
+    "sha256": "63a60ca005cae7d18b85459bbdf08751e0a1b1b394a36ba663e07bfe058483f4"
+  },
+  "historical_source": {
+    "sha256": "a14fbdbfce9badeee748930d2f501ecde9bc5ca77bb866d4878a9b53096286c8",
+    "limitation": "Fresh guarded-cover INPUTS tuples did not compare equal to saved JSON lists. Its failed preflight is preserved. No native import was reached."
+  },
+  "source_coverage": "Read the complete original registry and independently compared the complete v2-to-v3 diff and all function ASTs. Only the complete guarded-cover report equality changes to canonical JSON; only seconds remains excluded.",
+  "seed_families": [
+    {
+      "kind": "seed_shared",
+      "count": 12,
+      "terms_per_row": 140,
+      "rhs": 0,
+      "derivation": "Frozen exact shared-row potential certificate is replayed; complete68394-edge lift and all12 actual core actions are recomputed by the previously reviewed helper."
+    },
+    {
+      "kind": "seed_certified_exterior",
+      "count": 1,
+      "terms_per_row": 60,
+      "rhs": 59,
+      "derivation": "Accepted independently cold-checked exterior UNSAT excludes the specified60-selection. Original population60 makes its positive no-good necessary."
+    },
+    {
+      "kind": "seed_transported_local_cover",
+      "count": 12,
+      "terms_per_row": 214,
+      "rhs": 0,
+      "derivation": "Complete original244-neighbor anchor domain and retained local UNSAT imply the guarded213-neighbor cover. Literal source derivation is replayed, then transported by the verified12 core actions."
+    },
+    {
+      "kind": "seed_certified_local_packing",
+      "count": 12,
+      "terms_per_row": 70,
+      "rhs": 0,
+      "derivation": "Accepted integer mixed-plus-pair-packing certificate and cold owner bind the12 full-domain weighted rows. These are the unchanged weighted rows, not the separate binary-capping export."
+    }
+  ],
+  "normalization_findings": [
+    "Repeated coefficients at one literal ID are added exactly; zero coefficients are removed and IDs are sorted.",
+    "The positive gcd of all remaining coefficients is removed. Since the new left side is integer, replacing the RHS by Python floor(rhs/gcd) is exactly equivalent, including for negative RHS.",
+    "The canonical key includes both normalized terms and RHS; exact duplicate rows are omitted without changing the first retained provenance.",
+    "The whole addition batch is normalized and range-checked before the registry is replaced. Overflow or the256-row limit refuses the batch without truncation.",
+    "Empty constant rows stop and require a separate exact termination certificate."
+  ],
+  "native_findings": [
+    "Only original selector IDs0..479 are allowed in additional rows; all540 original domains and IDs remain unchanged.",
+    "The lower native endpoint is the exact Boolean-box minimum sum of negative coefficients. Sum of absolute coefficients and absolute RHS are bounded strictly below2^60.",
+    "append_expected and append_native append the same linear rows. They set no selector domain, assumption, objective, hint or visit clause.",
+    "Actual core relabelings transport universally valid rows. No hypothetical graph automorphism is assumed; the seed selection is used for discovery, not as a cut hypothesis."
+  ],
+  "serialization_audit": {
+    "matching_definition": "Already JSON-native path/hash dictionaries.",
+    "shared_lift": "Lists and dictionaries in the returned certificate; the accepted old cold also binds it.",
+    "guarded_cover": "Complete canonical comparison now handles its INPUTS tuples.",
+    "new_registry_and_provenance": "JSON-native row/provenance fields.",
+    "controller_separate_issue": "The matching oracle returns tuple edge pairs in MATCHABLE witnesses. Its separate controller cold comparison was reported for canonicalization; this registry-only report does not approve the unrepaired controller."
+  },
+  "saved_metadata_inspected": {
+    "all17_configuration_input_file_hashes_matched": true,
+    "preflight_report_sha256": "0015e0d034f57d13a378d188fb4cc7ec5bf357d12911148835a58e3f1e86c19f",
+    "preflight_owner_sha256": "64233931cacaab448bd4aa4aa89b0e82c54f3b6a61abc6f63357fbd89c97d94b",
+    "accepted_preflight_owner_seconds": 7.100249544004328,
+    "saved_seed_registry_sha256": "c27d92c8c21a730e109bda6d4a200f14ba7709e11af6c1ba8bf3129d035aedcb",
+    "saved_seed_rows": 37,
+    "saved_initial_rows": 4718,
+    "native_initial_raw_sha256": "5087a04fe3bb20f9fd108765a418d2a25f17e6c5ecce7b6b2d1b5a686a20199a",
+    "interpretation": "Read the existing metadata and37 saved row entries; no model was rebuilt or parsed by this review."
+  },
+  "review_actions": {
+    "source_text_and_AST_only": true,
+    "subject_imports": 0,
+    "controls_rerun": 0,
+    "domain_or_census_rebuilds": 0,
+    "LP_or_SAT_or_CP_calls": 0,
+    "native_imports": 0,
+    "DRAT_checks_repeated": 0
+  },
+  "scope": "Registry necessity and exact append semantics. Production scheduling and controller acceptance receive a separate source-bound review."
+}

@@ -1,0 +1,44 @@
+{
+  "blocking_mathematical_errors_found": [],
+  "coverage": "Read complete 395-line source, preparation and note. No subject import, certificate regeneration, synthetic control rerun or solver execution.",
+  "files": {
+    "experiments/logs/root-prism-free/f0-fixed-exterior-residual-preparation01.json": "429ff95648cfc406694b45bfdd8c4671e5eed80b515ecb51e86768c26e761cb4",
+    "experiments/workspace/root_prism_free_f0_fixed_exterior_residual.py": "424bda93ea93a69daa70e653216fa4b14b7ff854e6d959effab1951d10dcd12b",
+    "research/root_prism_free_f0_fixed_exterior_residual.md": "e51df9c3f56967c7718fd3ac721acc3c20da498427c563f0608c13dcc5b9d884"
+  },
+  "input_binding_findings": {
+    "actual_H_reconstructed_from_saved_signature_IDs_and_checked_against_model": true,
+    "baseline_content_hash_checked": true,
+    "canonical_selection_sha256_field_checked": false,
+    "caveat": "The reported selection_sha256 is copied from model metadata. Mathematical conclusions still concern the actual reconstructed H and fully hashed D, but provenance to an accepted master candidate requires an external ID/hash comparison.",
+    "future_binding_requirement": "Before production, compare the model design_source_indices with the accepted master selection, verify its canonical selection digest and selection file digest, and bind the exterior acceptance receipt to the same model and D.",
+    "model_and_adjacency_file_hashes_bound_in_report_and_replay": true,
+    "producer_source_hash_is_a_model_metadata_check": true,
+    "selection_sha256_field_recomputed_from_IDs": false
+  },
+  "mathematical_findings": [
+    "For the stated F0 split, the central triangle has zero exterior incidence. The block SRG identity gives R = 12I + 2J - H^T H - D^2 - D = H2^T H2 with exactly eighteen unknown rows.",
+    "The reconstructed H has sixty distinct binary triples. Symmetric loop-free D is required to have degree eight and to satisfy all 1080 mixed equations and 1770 pair caps. This makes diagonal R equal three and the checked off-diagonal entries lie in {0,1,2}.",
+    "The binary inequality R_uv + R_uw - R_vw <= 3 follows coordinatewise from a(1-b)(1-c) + (1-a)bc >= 0. All 102660 orientations are checked on a passing sixty-vertex input.",
+    "Schur elimination retains exact congruence vectors. A negative pivot or nonzero off-diagonal in a zero-diagonal remainder yields an independently evaluated negative quadratic form.",
+    "Nineteen positive pivots give a nonzero nineteen-by-nineteen principal minor. The verifier computes that determinant with separate integer Bareiss elimination.",
+    "A passing certificate supplies positive rational rank-one factors whose sum is checked entrywise against R, plus a positive principal minor confirming the recorded rank. Rank at most eighteen and positive semidefiniteness therefore have exact acceptance proofs."
+  ],
+  "production_use": "Suitable as a downstream necessary-condition inspector with the explicit input bindings and an owned deadline. No production call is authorized by this review alone.",
+  "review_actions": {
+    "control_reruns": 0,
+    "model_rebuilds": 0,
+    "native_imports": 0,
+    "production_adjacencies_checked": 0,
+    "solver_calls": 0,
+    "subject_imports": 0
+  },
+  "reviewer_lane": "master_review",
+  "schema": "conway99.f0.fixed-exterior-residual.independent-source-review.v1",
+  "scope_limits": [
+    "A rejection excludes only this fully specified H,D combination. It is not a selector-only no-good for H and does not exclude every exterior adjacency extending H.",
+    "A pass checks necessary conditions only. It does not construct a binary H2, enforce its full component constraints, or construct a graph.",
+    "The source does not replace current literal-cut acceptance, a fixed-exterior SAT receipt, or process ownership. Its generic CLI has no internal wall-time owner."
+  ],
+  "status": "PASS_NECESSARY_CONDITION_MATHEMATICS_WITH_EXPLICIT_SELECTION_PROVENANCE_CAVEAT"
+}

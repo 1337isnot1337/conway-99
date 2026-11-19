@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_direct_master_continuation.py", line 540, in <module>
+    worker(args.mode[1:], args.configuration, args.preparation, args.saved_directory, args.directory, args.deadline)
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_direct_master_continuation.py", line 490, in worker
+    report = prepare(config_path, directory, deadline, stage)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_direct_master_continuation.py", line 122, in prepare
+    h, ctx, plan, cuts, cp, pb, proto, model, snapshot = initialize(config_path, directory, stage, True)
+                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_direct_master_continuation.py", line 86, in initialize
+    ctx = h.context(config_path, stage)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_direct_master_registry_v2.py", line 173, in context
+    assert {k: v for k, v in rebuilt_cover.items() if k != "seconds"} == {k: v for k, v in saved_cover.items() if k != "seconds"}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError
