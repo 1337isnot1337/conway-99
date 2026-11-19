@@ -40,7 +40,24 @@ not start a new SAT or mixed-integer search. These certificates prove the
 stated local exclusions or feasibility of finite relaxations; none is a
 solution of the existence problem.
 
-The bound of seven all-red grids has a separate replay target:
+The current bound of three all-red grids has a separate replay target:
+
+```sh
+make verify-rook-interfaces
+```
+
+It regenerates the local interface censuses, checks all saved integer
+negative Gram vectors and explicit isomorphisms, and exhausts the boundary
+signatures of the surviving four- and five-base cores. The four-base proof
+uses no SAT result. A separate checked DRAT proof for the weaker six-base
+obstruction can be replayed with:
+
+```sh
+make verify-rook-interfaces-drat DRAT_TRIM=/absolute/path/to/drat-trim
+```
+
+The earlier bound of seven retains its replay target, which also depends
+on the current interface replay:
 
 ```sh
 make verify-red-grid-bound

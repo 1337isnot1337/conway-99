@@ -86,6 +86,16 @@ The coordinated work in [issue 2](https://github.com/1337isnot1337/conway-99/iss
 is recorded in [the session log](research/session-ab2f.md). It adds necessary
 conditions and exact exclusions, but does not decide existence.
 
+The strongest current [all-red bound is three](research/grids-and-triangles/red_grid_three_bound.md).
+The complete four-base matching census has 136 assignments. Exact integer
+negative Gram vectors exclude 124; explicit isomorphisms identify the
+other twelve with one core. That core permits only 27 distinct outside
+neighborhoods, while 63 outside vertices are required. The finite replay
+uses no SAT assumption. Independent five- and six-base checks give weaker
+confirmations: a Petersen boundary obstruction and both a direct
+backtracker and a checked DRAT proof. The earlier covering arguments below
+remain independent intermediate results.
+
 [The all-red grid argument](research/grids-and-triangles/eight_red_exclusion.md)
 proves that at most seven grids can have all six triangles contained in six
 grids each. Eight would leave a 27-vertex graph. Its nontriangle edges form

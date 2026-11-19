@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-red-grid-bound verify-seven-red-residual verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -29,7 +29,7 @@ verify-global-constraints: verify-red-grid-bound verify-seven-red-residual
 	"$(PYTHON)" $(WORKSPACE)/completion_constraints_propagation.py --replay $(WORKSPACE)/completion-propagation-certificate.json
 	"$(PYTHON)" $(WORKSPACE)/global_grid_flags.py --verify experiments/logs/session-ab2f/global-grid-flags-integral.json
 
-verify-red-grid-bound:
+verify-red-grid-bound: verify-rook-interfaces
 	@set -eu; \
 	build_dir=$$(mktemp -d); \
 	trap 'rm -f "$$build_dir/"*.json "$$build_dir/"*.log; rmdir "$$build_dir"' EXIT; \
@@ -42,6 +42,25 @@ verify-red-grid-bound:
 	"$(PYTHON)" $(WORKSPACE)/eight_red_hamming_spectral_audit.py "$$build_dir/spectra.json"; \
 	"$(PYTHON)" $(WORKSPACE)/red_grid_cubic_trace.py --spectra "$$build_dir/spectra.json" --output "$$build_dir/cubic.json" > /dev/null; \
 	cmp "$$build_dir/cubic.json" experiments/logs/grids-and-triangles/red-grid-cubic-trace.json
+
+verify-rook-interfaces:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/"*; rmdir "$$build_dir"' EXIT; \
+	$(CXX) -O3 -std=c++20 $(WORKSPACE)/seven_red_interfaces_backtrack.cpp -o "$$build_dir/census"; \
+	"$$build_dir/census" 60 "$$build_dir/5.json" "$$build_dir/6.json"; \
+	for bases in 5 6; do \
+	  "$(PYTHON)" -c 'import json,sys; a=json.load(open(sys.argv[1])); b=json.load(open(sys.argv[2])); a.pop("seconds"); b.pop("seconds"); assert a==b' "$$build_dir/$$bases.json" "experiments/logs/grids-and-triangles/seven-red-interfaces-b$$bases-backtrack.json"; \
+	done; \
+	"$(PYTHON)" $(WORKSPACE)/seven_red_interfaces_backtrack_replay.py --five "$$build_dir/5.json" --six "$$build_dir/6.json" --four-output "$$build_dir/4.json"; \
+	cmp "$$build_dir/4.json" experiments/logs/grids-and-triangles/seven-red-interfaces-b4-backtrack.json
+	"$(PYTHON)" $(WORKSPACE)/rook_interface_small_spectra.py --verify $(WORKSPACE)/rook-interface-small-spectral-certificates.json
+	"$(PYTHON)" $(WORKSPACE)/four_red_boundary.py --verify experiments/logs/grids-and-triangles/four-red-boundary.json
+	"$(PYTHON)" $(WORKSPACE)/petersen_red_core_boundary.py
+
+verify-rook-interfaces-drat:
+	@test -x "$(DRAT_TRIM)" || { echo 'Set DRAT_TRIM to the drat-trim executable path.' >&2; exit 1; }
+	"$(PYTHON)" $(WORKSPACE)/seven_red_interfaces_certificate.py $(WORKSPACE)/seven-red-interfaces-b6-certificate.json --drat-trim "$(DRAT_TRIM)"
 
 verify-seven-red-residual:
 	"$(PYTHON)" $(WORKSPACE)/seven_red_nine_audit.py

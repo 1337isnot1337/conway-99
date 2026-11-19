@@ -144,3 +144,12 @@ their hypotheses permit them; computational exclusions require exact replay.
   Two workers independently checked the final algebra. The cover audit
   verifies all 2,736 surviving assignments by explicit isomorphisms. This
   leaves counts 18 and 27, without excluding seven all-red grids.
+- Replaced the seven-base case split with a smaller interface obstruction.
+  The six-base local model is UNSAT with a checked DRAT proof and an
+  independent direct backtracker. Exhaustive four-base controls agree on
+  all 1,331 assignments, retaining 136. Exact negative Gram vectors remove
+  124, and twelve explicit isomorphisms identify the one remaining core.
+  It has only 27 possible distinct outside signatures and needs 63. This
+  proves at most three all-red grids. A separate five-base census has 564
+  local assignments; 552 have exact Gram exclusions and the twelve others
+  reduce to an independently excluded Petersen core.
