@@ -58,9 +58,9 @@ For $(4,4,4)$ there are three nonzero half-sums, which cannot cancel in pairs. F
 
 Run `make verify-ten-grid-bound` for the [integer sign-table checker](../../experiments/workspace/last_eleven_grid.py) and the preceding four-missing support classification. The sign table tries all 13 oriented profiles directly. Of 496 norm-compatible triples, 448 pass the contact bound and none satisfies the three signed-axis equations.
 
-## Six patterns at the upper bound
+## Five patterns at the upper bound
 
-Suppose a root lies on ten grids and put their ten edges on the seven axes. There are 148 unlabelled choices before the structural tests. The signless-incidence, full-axis and four-disjoint-missing restrictions retain 56. Excluding all six four-edge shapes leaves nine. In three more, a missing four-point cell cannot realize any of the required internal degree sequences. The [enumerator](../../experiments/workspace/ten_grid_supports.py) retains the six labeled representatives below. The surviving cases are necessary patterns; the tests do not construct the full graph for any of them.
+Suppose a root lies on ten grids and put their ten edges on the seven axes. There are 148 unlabelled choices before the structural tests. The signless-incidence, full-axis and four-disjoint-missing restrictions retain 56. Excluding all six four-edge shapes leaves nine. In three more, a missing four-point cell cannot realize any of the required internal degree sequences. The cell-sum calculation below excludes one of the remaining six. The [enumerator](../../experiments/workspace/ten_grid_supports.py) retains the five labeled representatives below. The surviving cases are necessary patterns; the tests do not construct the full graph for any of them.
 
 | Degrees of the seven axes | Ten present pairs |
 |---|---|
@@ -68,7 +68,14 @@ Suppose a root lies on ten grids and put their ten edges on the seven axes. Ther
 | $0,2,2,4,4,4,4$ | $01,02,03,05,12,13,15,23,24,34$ |
 | $0,2,3,3,4,4,4$ | $01,02,04,12,13,23,24,34,35,45$ |
 | $1,1,3,3,3,3,6$ | $01,02,04,12,13,23,24,25,26,34$ |
-| $0,3,3,3,3,4,4$ | $01,02,05,12,13,23,24,34,35,45$ |
 | $2,2,2,2,4,4,4$ | $01,02,12,15,16,23,24,34,45,46$ |
 
 In particular, if the root lies on a full triangle, exactly two of its other six axes occur in just one grid. After deleting the full axis and these two leaves, the four remaining axes induce a four-cycle or a triangle with a pendant edge.
+
+### The degree pattern $0,3,3,3,3,4,4$
+
+For this candidate the eleven missing pairs, in order, are $03,04,06,14,15,16,25,26,36,46,56$. Let $Z$ have one row per far point and one column per missing pair, with entries $z_e(w)$. The four columns on $P=(06,26,36,56)$ determine all eleven. The [integer checker](../../experiments/workspace/ten_grid_cell_sums.py) verifies its displayed transformation $Z=Z_P T$ against every possible point type from the axis-sum equations.
+
+Set $S_{ef}=\sum_{w\in B_e} z_f(w)$. The [defect Gram identity](fourteen-grid-root.md#the-41-populations) gives $7S=Z^T Z$. In particular $S$ is symmetric and $S=T^T S_{P,*}$. Enumerate the four-point multisets separately in every cell. In a grid their defect sum is zero. In a missing cell their own degrees must belong to a simple graph with at most two edges. Each pivot cell has five distinct possible rows of $S$. Try all $5^4$ choices, enforce symmetry on the pivots, and check that every resulting missing-cell row occurs. Exactly nine matrices remain.
+
+Fix one of these matrices and a four-point multiset $p$ for a source cell. For every target cell enumerate the four-by-four binary edge matrices with the given source degrees and the reverse degrees of any allowed target multiset. In the source cell itself use only simple undirected graphs on its four sites. For each $k\in P$ add the attainable four-vectors of neighbor sums of $z_k$ across the target cells. Their total must equal $-4z_k$ at all four source sites. Process cells in increasing order of domain size, removing multisets that fail the test. In each of the nine matrices a cell becomes empty within one pass. This excludes the degree pattern.

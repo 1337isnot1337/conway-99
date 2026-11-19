@@ -61,13 +61,12 @@ class RootCells:
         self.degrees = np.array(degrees)
         self.gram = tuple(combinations_with_replacement(range(len(self.missing)), 2))
 
-    def cell_options(self, i):
+    def cell_populations(self, i):
         cell = AXIS_PAIRS[i]
         coords = self.z
         own = self.degrees[:, i]
         allowed = {tuple(sorted(map(len, g))) for g in FOUR_GRAPHS
                    if sum(map(len, g)) <= 4}
-        result = []
         for sites in combinations_with_replacement(self.bins[i], 4):
             ids = list(sites)
             if cell in self.missing:
@@ -75,6 +74,14 @@ class RootCells:
                     continue
             elif any(coords[ids].sum(axis=0)):
                 continue
+            yield sites
+
+    def cell_options(self, i):
+        cell = AXIS_PAIRS[i]
+        coords = self.z
+        result = []
+        for sites in self.cell_populations(i):
+            ids = list(sites)
             gram = np.array([coords[ids, j] @ coords[ids, k] -
                              7 * (cell == self.missing[j]) * sum(coords[ids, k])
                              for j, k in self.gram])
