@@ -100,8 +100,8 @@ struct Search {
     array<uint64_t,5> counts{};
 
     uint64_t rank_pass = 0;
-    bool report;
-    explicit Search(const Domains& input, bool report_survivors) : domain(input), report(report_survivors) {}
+    bool report, rank_only;
+    Search(const Domains& input, bool all, bool ranked) : domain(input), report(all), rank_only(ranked) {}
 
     void survivor(const array<Prefix,2>& state) const {
         cout << "survivor " << state[0].rank << ' ' << state[1].rank;
@@ -120,6 +120,11 @@ struct Search {
 
     void columns(int j, int i, array<Column,3>& col) {
         if (i==5) {
+            for (const Column& c : col) {
+                int sum=0;
+                for (int z : c.pullback) if (abs(z)==1) sum+=z;
+                if (sum) return;
+            }
             if (options[j].empty()) { high[j] = cols.size(); cols.push_back(col[0]); }
             else assert(cols[high[j]].pullback == col[0].pullback);
             int n=cols.size();
@@ -154,7 +159,7 @@ struct Search {
             if (depth<4) visit(depth+1,state);
             else {
                 rank_pass += state[0].rank <= 13;
-                if (report) survivor(state);
+                if (report || (rank_only && state[0].rank<=13)) survivor(state);
             }
         }
     }
@@ -182,10 +187,26 @@ struct Search {
     }
 
     void run() {
-        if (!primary_ok(false) || !primary_ok(true)) return;
+        if (!primary_ok(false)) return;
+        // If the inverse distinguished image is already fixed on every
+        // edge, the transposed early test is available as well.
+        bool inverse_fixed=true;
+        for (int i=0;i<5;++i) for (int j=0;j<5;++j) if (i!=j) {
+            int first=0;
+            for (unsigned mask=domain[i][j];mask;mask&=mask-1) {
+                const auto& image=perms[countr_zero(mask)];
+                for (int k=0;k<3;++k) if (abs(image[k])==1) {
+                    int code=image[k]*(k+1);
+                    if (first && code!=first) inverse_fixed=false;
+                    first=code;
+                }
+            }
+        }
+        if (inverse_fixed && !primary_ok(true)) return;
         for (int j=0; j<5; ++j) {
             array<Column,3> col{{{j,0},{j,1},{j,2}}};
             columns(j,0,col);
+            if (options[j].empty()) return;
         }
         stable_sort(order.begin(),order.end(),[&](int a,int b){return options[a].size()<options[b].size();});
         size_t size=cols.size();
@@ -205,6 +226,7 @@ struct Search {
 
 int main(int argc, char** argv) {
     bool report = argc==2 && string_view(argv[1])=="--survivors";
+    bool ranked = argc==2 && string_view(argv[1])=="--rank-survivors";
     Domains domain{};
     int templates=0;
     array<uint64_t,5> totals{};
@@ -212,7 +234,7 @@ int main(int argc, char** argv) {
     while (cin >> domain[0][0]) {
         for (int i=1;i<25;++i)
             if (!(cin >> domain[i/5][i%5])) return 1;
-        Search search(domain,report); search.run();
+        Search search(domain,report,ranked); search.run();
         ++templates;
         rank_pass+=search.rank_pass;
         for (int i=0;i<5;++i) totals[i]+=search.counts[i];

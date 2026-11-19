@@ -21,6 +21,8 @@ make verify
 | [`root_cover_audit.py`](workspace/root_cover_audit.py) | Replays the parity and transport cases used to exclude a root contained in 21 grids. [Log](logs/grids-and-triangles/root-cover-audit.log) |
 | [`level_seven_check.py`](workspace/level_seven_check.py) | Replays the rational rank certificates and checks the theta transform on five explicit lattice controls. [Log](logs/eigenlattices/level-seven-check.log) |
 
+The full proof that two triangles on six grids cannot intersect is an additional computation. Run `make verify-full-axes` for the complete interface enumeration. Its [reference output](logs/grids-and-triangles/two-full-exhaustion.log) lists every even support size.
+
 ## Explore the archive
 
 Run the individual research scripts from [`experiments/workspace/`](workspace/). The Python and C++ sources, certificate JSON, candidate arrays, and cached moment data share this directory because the scripts use sibling paths.

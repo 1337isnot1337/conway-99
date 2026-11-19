@@ -38,9 +38,10 @@ def core(interface):
     return matrix
 
 
-def rank_mod(matrix, prime):
+def independent_columns(matrix, prime):
     work = matrix.copy() % prime
     pivot = 0
+    columns = []
     for j in range(work.shape[1]):
         nonzero = np.flatnonzero(work[pivot:, j])
         if not len(nonzero):
@@ -49,8 +50,13 @@ def rank_mod(matrix, prime):
         work[[pivot, i]] = work[[i, pivot]]
         row = work[pivot] * pow(int(work[pivot, j]), -1, prime) % prime
         work[pivot+1:] = (work[pivot+1:] - work[pivot+1:, j:j+1]*row) % prime
+        columns.append(j)
         pivot += 1
-    return pivot
+    return columns
+
+
+def rank_mod(matrix, prime):
+    return len(independent_columns(matrix, prime))
 
 
 if __name__ == '__main__':

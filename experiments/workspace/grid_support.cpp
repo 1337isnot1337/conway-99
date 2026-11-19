@@ -16,6 +16,7 @@ int main(){
     static unsigned char bip[full+1];int minima[22],num[22]{};
     fill(minima,minima+22,999);
     int min_weight = 999;
+    int no_full_margin = 999, one_full_margin = 999;
     for(int m=0;m<=full;m++){
         int adj[7]{};
         for(unsigned h=m;h;h&=h-1){int e=countr_zero(h);adj[a[e]]|=1<<b[e];adj[b[e]]|=1<<a[e];}
@@ -40,6 +41,15 @@ int main(){
         int capped_degree[7]{};
         for (int i = 0; i < 7; ++i)
             capped_degree[i] = min(2, 6 - popcount(unsigned(adj[i])));
+        int full_axes = 0, capacity = 0;
+        for (int i = 0; i < 7; ++i) {
+            int missing = popcount(unsigned(adj[i]));
+            full_axes += missing == 0;
+            capacity += capped_degree[i] * missing;
+        }
+        int margin = 2 * t - capacity - 14 * e;
+        if (full_axes == 0) no_full_margin = min(no_full_margin, margin);
+        if (full_axes == 1) one_full_margin = min(one_full_margin, margin);
         int charge = 0;
         for (unsigned h = m; h; h &= h - 1) {
             int j = countr_zero(h);
@@ -47,6 +57,8 @@ int main(){
         }
         min_weight = min(min_weight, 8 * (21 - e) + 2 * t - charge);
     }
+    assert(no_full_margin == -138 && one_full_margin == -146);
+    cout << "Local capacity margins: " << no_full_margin << ' ' << one_full_margin << '\n';
     assert(min_weight == 97);
     cout << "Minimum weighted root expression: " << min_weight << '\n';
     for(int i=0;i<22;i++)cout<<i<<" "<<minima[i]<<" "<<num[i]<<'\n';

@@ -19,3 +19,11 @@ verify: $(CERTIFICATES)
 	$(CXX) -O3 -std=c++20 $(WORKSPACE)/mixed_spokes.cpp -o "$$build_dir/mixed_spokes"; \
 	"$(PYTHON)" $(WORKSPACE)/mixed_spoke_templates.py > "$$build_dir/domains"; \
 	"$$build_dir/mixed_spokes" < "$$build_dir/domains"
+
+.PHONY: verify-full-axes
+verify-full-axes:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/mixed_spokes"; rmdir "$$build_dir"' EXIT; \
+	$(CXX) -O3 -std=c++20 $(WORKSPACE)/mixed_spokes.cpp -o "$$build_dir/mixed_spokes"; \
+	"$(PYTHON)" $(WORKSPACE)/two_full_verify.py "$$build_dir/mixed_spokes"
