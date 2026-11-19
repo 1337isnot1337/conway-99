@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_core_matching_blossom_native_overlay.py", line 437, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_core_matching_blossom_native_overlay.py", line 427, in main
+    worker(args.worker_mode, args.preparation, args.directory, args.model_directory, args.deadline)
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_core_matching_blossom_native_overlay.py", line 301, in worker
+    runtime, loaded_plan, target, initial, _ = query.load_target(None, stage)
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_full_fourier_query.py", line 253, in load_target
+    r.import_native(stage)
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_character_pool_runtime.py", line 123, in import_native
+    import ortools
+ModuleNotFoundError: No module named 'ortools'

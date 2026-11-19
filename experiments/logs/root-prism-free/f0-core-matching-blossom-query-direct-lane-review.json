@@ -1,0 +1,102 @@
+{
+  "bindings": {
+    "experiments/logs/root-prism-free/f0-core-matching-blossom-native-overlay02-cold/report.json": "268a2d4f97f4436823f4d36271425c856ad770f5877667941b13e403f5b9166f",
+    "experiments/workspace/root_prism_free_f0_core_matching_blossom_query.py": "67cd7853f00d5f99df7524046c30d72a1286106c2f5577a50d573cf1fa4a967b",
+    "experiments/workspace/root_prism_free_f0_core_matching_blossom_replay.py": "baf3f134cf83c3a9f4410276ebbd570f89ec47a651dde96486c030043577e677",
+    "experiments/workspace/root_prism_free_f0_full_fourier_query.py": "a8eff9c09fdd2a31482d23e3c83b11424fab32462e9b1431c3d899b6b8034955",
+    "experiments/workspace/root_prism_free_f0_full_fourier_replay.py": "9a072b04151e4a150d1627171c16c7dd33d87a49a6817157d1766aeddab062a1"
+  },
+  "checked_files": [
+    {
+      "changed_functions_read": [
+        "configuration",
+        "owner_preparation_binding",
+        "load_target",
+        "construct_initial",
+        "provisional_record",
+        "worker"
+      ],
+      "child_function_AST_sha256": {
+        "canonical": "1f5f331cb81d3eb64607ce0cd29890c70f8a7fbffa7f7d656178052c41141f94",
+        "check_preparation": "6eafb32c8e6ee18bfe7d79bca281a47612df7ee329f848fd1ff84b6896e9d469",
+        "choose_rows": "c0c186d19ef40907e9b348ee179228ebaf5686a80f351aad08ed85446f55d4c7",
+        "configuration": "7416ffa112d505222838d5f85c9c8e7b063504fda1e13b94292721281da0d238",
+        "construct_initial": "5ccc6542de4b9c27b48685a61e49d796f5596cc37a109202155669653816433a",
+        "evaluate_proto": "74556d07ef116b4be893919e9f0a1b6d32eef63ad0eddaec5988d73fa80de248",
+        "file_sha": "c7607f70ae0fdfb0a884961534fc326cda0a8e1425dea90e92802cc0b05c4a60",
+        "load_source": "1ff04e66bd7f73190062980a34c0f25451632212179c317f178bd0aaa9e01595",
+        "load_target": "dffc916237ba0f7e24a5bb468ed5bd3efa5a1ba35e66e23af5bb0023242bbd82",
+        "native_budget_controls": "bc77561e8503eafddc6a990053694a074f2da8356d5f04eaa8ed1e4c2f3929a7",
+        "native_parameter_controls": "c9e4f4d54bf534901591f023773495ca4970e9f51e70d101419fc43c56cc212d",
+        "native_parameters": "15be90da56b33b7ba9c19ac2b6a04d4afdde90da35a4054cef7a89d7963fa0c1",
+        "native_time_budget": "e2623b90c659d6f06ad2e4883f2809873bc01bf31f5cea5817dc629e8ae6ed3f",
+        "owner_preparation_binding": "f29ecea59345ba31a93ef503a452c3dc9b205450036624f02bfe88ccc52c70b7",
+        "pool_scan": "c2dfb2835067d18c264ea82707f9e4d267ab15a670942d482071764490222e47",
+        "provisional_record": "c5823382aba49b0280502a33739a7427c0901eebf974846d5e5d421cacae4442",
+        "reuse_controls": "f576437b12947bbd99dfe80c57f955196cb544eeb4b9e96ed8be14e5a86590e6",
+        "run": "74840e94dfce727817fcd22c254f19adaedc6d7061eab8732c1868e1b8de8d4d",
+        "save": "00cd7a8a04a4ac744b7bad5066d4aa3ffe26842d2476014d87e7c3c0dfc8e2f4",
+        "sha": "5d2f17cf600e426b5b233fbac6acbf635ebc09f06bca0fad37d5385c1d852ed6",
+        "worker": "b92b78d66030c090649d7bc00bc7a08671ea061072d7e768f519d31f64aa36f2"
+      },
+      "complete_text_transformation": true,
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_query.py",
+      "unchanged_functions": [
+        "sha",
+        "file_sha",
+        "canonical",
+        "save",
+        "load_source",
+        "check_preparation",
+        "reuse_controls",
+        "native_parameter_controls",
+        "native_parameters",
+        "choose_rows",
+        "evaluate_proto",
+        "pool_scan",
+        "native_time_budget",
+        "native_budget_controls",
+        "run"
+      ]
+    },
+    {
+      "changed_functions_read": [
+        "replay"
+      ],
+      "child_function_AST_sha256": {
+        "artifact": "7d2a4d541132804bff175184249bfbd8d9c5bc02bc3f9ff95da92b08025a6dd8",
+        "owned": "028b890f11e45b4ac405213a8d659dd2caef774e94ea6bfead55e6cb1b8f6e3d",
+        "read_record": "1f973bfde283f932ccb638b172beaed693e25de42440e365570d5e83234aee62",
+        "replay": "df158d5695522ece17c1e02edbcece1571062d3f0c2fb9b48d0d5a7d0e1766ee",
+        "sha": "5d2f17cf600e426b5b233fbac6acbf635ebc09f06bca0fad37d5385c1d852ed6"
+      },
+      "complete_text_transformation": true,
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_replay.py",
+      "unchanged_functions": [
+        "sha",
+        "artifact",
+        "read_record",
+        "owned"
+      ]
+    }
+  ],
+  "cold_record_hash_bound_not_rerun": true,
+  "controls_or_optimizer_repeated": false,
+  "mathematical_source_review": [
+    "All 32296 variable IDs and all 117 pool IDs retain their parent semantics.",
+    "The new exact target and initial row counts are 65811 and 65694.",
+    "The actual initial-to-target row embedding, pool hashes and full target coverage remain checked.",
+    "The native model and cold report bindings use the actual overlay outputs.",
+    "The new cold schema uses model_report_sha256, checked against the actual saved cold record.",
+    "The one-worker, seed-zero, no-LP parameters and 300-owner/180-native caps are unchanged.",
+    "A later native call still requires a strictly larger certified pool prefix.",
+    "Candidates remain provisional pending separate exact parent and literal acceptance.",
+    "Native infeasibility and deadline outcomes remain unproved."
+  ],
+  "model_or_census_reconstructed": false,
+  "source_review_only": true,
+  "source_sha256": "ad26f3d19e287dda0ee18d0e71f422da0306517f7a0f2076514a2bb4be9cdd9a",
+  "status": "PASS: complete adapter-text and changed-path source review",
+  "subject_modules_imported": false,
+  "substitution_ledger_sha256": "f691cc652856e897de488c7005782904b5e52418a34b365c473592073bc7b5aa"
+}

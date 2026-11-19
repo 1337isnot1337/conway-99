@@ -1,0 +1,20 @@
+{
+  "schema": "conway99.f0.direct-literal-model-root-source-gate.v1",
+  "status": "PASS: complete 624-line source reviewed before native preparation",
+  "source_sha256": "b500336db29820777afb59076384a48382fa54453fce5b232a072719893cea40",
+  "source_scope_sha256": "5a385195dec5975cc89a52b61f28f26102586c906fd09d4c0ad7904cc1177a35",
+  "proof_note_sha256": "6e20fbb541c526a3756e785351120955a683364ceebd9b2272d2b00eb11eae95",
+  "checks": [
+    "Only the 480 Fourier inverse links are removed. All 540 literal-layer variables and all 4440 native cut rows are shifted by a common offset and restored exactly.",
+    "The 4404 direct rows are compared with their original integer cuts. All 12 three-limb radix contractions, slack domains and carry domains are checked explicitly.",
+    "The original core reconstructs every one of the 172 selector equations. Exactly 21 empty zero rows are retained as tautologies and 151 nonempty rows enter the model.",
+    "All 90 motif witnesses are checked on their actual induced graphs. The unspecified edge between the two exterior vertices is separately proved impossible by a common-neighbor cap.",
+    "All 4410 zero-pair certificates are accounted for by 4320 quota-one consequences and the 90 explicit motif rows; no unproved zero is imposed.",
+    "Native validation and complete public-constructor export identity are required. Separate cold reconstruction compares the whole plan and protobuf without repeating public construction.",
+    "The candidate inspector directly checks all 4681 native rows, 172 original equations, 90 motif conflicts, 4416 big-integer cuts and 4410 zero consequences. It claims only a necessary first incidence."
+  ],
+  "allowed_execution": "One 60-second owned preparation and one separate 60-second cold replay in fresh directories, using /workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python at optimization level zero. No solver or automatic retry. A production query is a separate source and preparation.",
+  "source_controls_executed_by_this_review": false,
+  "optimizer_calls": 0,
+  "feasible_incidence_or_graph_claimed": false
+}

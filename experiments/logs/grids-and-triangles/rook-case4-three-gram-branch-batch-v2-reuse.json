@@ -1,0 +1,33 @@
+{
+  "status": "PASS",
+  "old_source_sha256": "00ad60976d32f776e3fb09632bb52c56d0698aef7d4f51aea757687afab76f53",
+  "new_source_sha256": "0226d59dc1ab724ee712dfdd2249aff34d5248db1f354f264a8726a2e1d2f3cc",
+  "AST_identical_functions": [
+    "sha",
+    "file_sha",
+    "canonical",
+    "ref",
+    "write",
+    "checked",
+    "common_literals",
+    "controls",
+    "forward",
+    "cold",
+    "owned"
+  ],
+  "changed_functions": [
+    "definition",
+    "load",
+    "preflight",
+    "check_preflight"
+  ],
+  "new_functions": [
+    "proved_rows"
+  ],
+  "old_source_preserved_unrun": true,
+  "original2271_row_prefix_byte_hash_checked": true,
+  "new_rows": 7,
+  "conditional_H42_five_row_omitted": true,
+  "case4_propagation_calls": 0,
+  "optimizer_calls": 0
+}
