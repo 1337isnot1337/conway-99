@@ -23,6 +23,8 @@ The faces with odd holonomy are therefore both the binary coboundary of edge par
 
 We tested an order-seven rotation on the **quotient** taking the seven axes cyclically. There are six far orbits of size seven. The real symmetric row-sum matrix R satisfies R1=12·1 and R²+R=12I+24J. On a nontrivial rotation character the 7-dimensional near/far sector has only eigenvalues 3,−4. Its trace is 1−c, where each nonzero offset has the same total c of within-orbit edges, since a rational linear combination of seventh roots of unity has constant coefficients on the six nonzero offsets. No doubled edge can lie in its own orbit because its mates are a perfect matching and seven is odd. Thus 0≤c≤6, and 1−c divisible by seven gives c=1. Then tr(R)=6 with nonnegative even diagonal and diagonal less than 6 from the row-square equations. Both possible diagonal profiles were exhausted by [`quotient_rows.py`](experiments/workspace/quotient_rows.py) with no matrix. This does not exclude a general involution.
 
+The [Fano-plane square-pairing exclusion](research/involutions/fano-square-pairing.md) compresses the 42 far orbits to 21 squares. If the orbits pair by the three incident label pairs on each Fano line, the resulting 104 interface classes all fail an exact Gram-completion test. This excludes the pairing even without any symmetry of its interfaces.
+
 ## Sources and replay
 
 - https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html, the (99,14,1,2) entry.

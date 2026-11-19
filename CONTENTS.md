@@ -34,6 +34,10 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [Nine translated lattices](research/eigenlattices/nine_cosets.md) gives shell identities and a maximal-lattice relaxation.
 - [The positive eigenspace](research/eigenlattices/positive_lattice.md) gives a companion construction in the $3$ eigenspace.
 
+## Involutions
+
+- [The Fano-plane square pairing](research/involutions/fano-square-pairing.md) excludes all 104 interface classes at a one-fixed-point involution, allowing the interfaces to break all Fano-plane symmetries.
+
 ## Other computations
 
 - [A doubled Hoffman–Singleton graph](research/doubled-hoffman-singleton.md) gives a 14-regular 99-vertex graph satisfying 4,313 of the 4,950 scalar constraints. Its 49 twin pairs account for all positive residuals.
