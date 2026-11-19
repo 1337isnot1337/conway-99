@@ -1,0 +1,117 @@
+{
+  "schema": "conway99.f0.cap-one-forest-support-independent-literal-root-acceptance.v1",
+  "status": "ROOT_ACCEPTS_COMPLETE_SEPARATE_LITERAL_FOREST_SUPPORT_AND_ROWS",
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-replay01.json",
+    "bytes": 7241,
+    "sha256": "302067bb4677572bbbf389e3ca9b814c718814f0406b9178bf546b6e72bbd732",
+    "git_blob": "882b4c5a976e1fb29c99d7957570957b7c7e7e31"
+  },
+  "finalization": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-replay01-finalization.json",
+    "bytes": 337,
+    "sha256": "6584c968180f28af5cc8592fb058caadd625fa0d75c10d676927409d7551c598",
+    "git_blob": "8dd8eab7ad37427eaa49be25f730d83de007d18e"
+  },
+  "outer": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-replay01-outer.json",
+    "bytes": 412,
+    "sha256": "2aa91e1f410f990a1e3857294f51789df71b8d77a989e709c92117a283782ea8",
+    "git_blob": "44efb15b56ddabebc105d0577b3d5869c6857395"
+  },
+  "source": {
+    "path": "experiments/workspace/f0-cap-one-forest-support-independent-literal-replay-v8.js",
+    "sha256": "503a27d18c1fb4cf9640cb812a0bb6bf4cc38a949a185c5a0c08984a4dcfab7f",
+    "git_blob": "d41219fd062950daac47cfc831485e567ba78b10",
+    "bytes": 32333
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-configuration01.json",
+    "sha256": "1a5e7f64df475c9b3625ef216cace0288b23947158ad1b4892015fed58ff7dab",
+    "git_blob": "3d4f7f8eff00b48833ac7baa12acbde5647874dd",
+    "bytes": 8135
+  },
+  "source_review": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-root-source-review01.json",
+    "bytes": 3725,
+    "sha256": "98adc3b194d3a437df6c9c0adb0db7ae9d6b89a19490f611cf6656c45ecc45be",
+    "git_blob": "d0411183ab0a8ea13e4a79947ceae5ad55c17a82",
+    "mode": "100644"
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-root-gate01.json",
+    "bytes": 8310,
+    "sha256": "8365be365db49f62d9277bb40c62fb44623394c611bfe12488ef6ce3f508bb0c",
+    "git_blob": "8396241d644947f18a634c98af4a3459eb91ce53",
+    "mode": "100644"
+  },
+  "forward_report": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory01.json",
+    "sha256": "83d0822e59f3ad2f27d6611800b90e2333702118c617bd764156b3683c376515",
+    "git_blob": "97c854827a76e48b72154da39e59519622210721",
+    "bytes": 1855217,
+    "mode": "100644",
+    "encoding": "utf-8",
+    "kind": "json"
+  },
+  "forward_finalization": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory01-finalization.json",
+    "sha256": "63b5d93729047ceced23110eba891d84679fb649297313bab24823c759755418",
+    "git_blob": "c965363402cd2c476b7574c5c6187739f96d190b",
+    "bytes": 312,
+    "mode": "100644",
+    "encoding": "utf-8",
+    "kind": "json"
+  },
+  "counts": {
+    "accepted_pairs": 48,
+    "candidate_dispositions": 23040,
+    "accepted_zero_union": 1956,
+    "extended_pairs": 48,
+    "endpoint_forest_skipped_pairs": 0,
+    "new_variables": 3984,
+    "new_rows": 15888,
+    "new_terms": 59280,
+    "proposed_total_variables": 72918,
+    "proposed_total_rows": 273482
+  },
+  "support_wedges": 3936,
+  "complete_original_edges": 68394,
+  "complete_original_neighbor_rows": 480,
+  "root_recomputed_complete_digest_checks": {
+    "whole_derived_canonical_sha256": "a344eb76681d3eab0990a8b3e48ab1a3c493c09220022b71feee3f54054c10ad",
+    "pairs_canonical_sha256": "9b9b69e0c9faf06b93f8527ed3cde1abcbd90fd22041efa9c446b1474e6f801e",
+    "zero_union_canonical_sha256": "1b8df3eb7deb40b0481f4fe7ebd1b313ae3edede9fb12af9d11dce9b068c0f21",
+    "native_row_keys_json_sha256": "58f1f39fb9f5aa03a9cbf3240718313bc42eaed517bd0e405ff686d585b1d00f",
+    "native_variables_json_sha256": "20e5f9f6c1241bb30398d20ed9b7d73ae3cf9b3f55e07ddc7c7defa1e127317c",
+    "row_origins_json_sha256": "e11730e4e9aec56b21d27466e9ab54c81ef04576b0c952991a29fd6f65babd0c"
+  },
+  "full_derived_digest_matches": true,
+  "report_source_configuration_and_forward_bindings_match": true,
+  "root_read_complete_separate_checker_source": true,
+  "checker_author_distinct_from_forward_inventory_author": true,
+  "all_fourteen_input_bindings_reviewed": true,
+  "literal_reconstruction_complete": true,
+  "original_model_raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "original_variables": 68934,
+  "original_rows": 257594,
+  "execution": {
+    "actual_main_calls": 1,
+    "automatic_retries": 0,
+    "total_ms": 11488,
+    "outer_elapsed_ms": 11489,
+    "maximum_ms": 30000,
+    "report_bytes": 7241,
+    "maximum_report_bytes": 16777216,
+    "complete_and_within_bounds": true,
+    "original_report_and_finalization_text_bytes_preserved": true
+  },
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "current_model_changed": false,
+  "graph_constructed": false,
+  "whole_component_excluded": false,
+  "full_independent_native_replay_still_required": true,
+  "authorizes_native_build": false,
+  "authorizes_optimizer_call": false
+}

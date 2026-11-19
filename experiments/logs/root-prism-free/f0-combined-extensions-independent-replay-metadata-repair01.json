@@ -1,0 +1,65 @@
+{
+  "schema": "conway99.f0.combined-native-replay-metadata-repair.v1",
+  "status": "PRESERVED_UNRUN_V1_AND_FROZEN_METADATA_ONLY_V2",
+  "original_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay.py",
+    "sha256": "8227f8db5b3db98b3a601f4b5a77e015721f85dc8689dc73b380f769e327fdb0",
+    "git_blob": "eda13bfc025122b30f4377135e9cfb659f799694",
+    "bytes": 70746,
+    "lines": 1167
+  },
+  "revised_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+    "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+    "git_blob": "be51ef6deca257d57b018c989d994804994004c1",
+    "bytes": 70788,
+    "lines": 1167
+  },
+  "reason": "The v1 reconstruct_forests local named normalized initially held all 48 independently reconstructed disposition/support cases, then was overwritten by the separate literal report's normalization metadata. The final report's literal_dispositions_sha256 would therefore hash that metadata dictionary instead of the reconstructed case list.",
+  "affected_function": "reconstruct_forests",
+  "exact_substitutions": [
+    {
+      "before": "variables, row_keys, row_origins, normalized = [], [], [], []",
+      "after": "variables, row_keys, row_origins, normalized_cases = [], [], [], []"
+    },
+    {
+      "before": "normalized.append([origin, a, b, central, dispositions, live])",
+      "after": "normalized_cases.append([origin, a, b, central, dispositions, live])"
+    },
+    {
+      "before": "normalized = literal[\"normalized\"]",
+      "after": "literal_normalized = literal[\"normalized\"]"
+    },
+    {
+      "before": "normalized[\"whole_derived_canonical_sha256\"]",
+      "after": "literal_normalized[\"whole_derived_canonical_sha256\"]"
+    },
+    {
+      "before": "need(normalized[field] == value_sha(derived[key])",
+      "after": "need(literal_normalized[field] == value_sha(derived[key])"
+    },
+    {
+      "before": "\"literal_dispositions_sha256\": value_sha(normalized)",
+      "after": "\"literal_dispositions_sha256\": value_sha(normalized_cases)"
+    }
+  ],
+  "exact_inverse_recovers_all_original_source_bytes": true,
+  "all_other_source_bytes_identical": true,
+  "mathematical_checks_changed": false,
+  "native_row_construction_changed": false,
+  "complete_literal_comparisons_changed": false,
+  "controls_changed": false,
+  "cli_changed": false,
+  "limits_changed": false,
+  "configuration_change_required": "Bind revised_source as sources.checker and use its v2 path in the CI request. All other intended configuration fields are unchanged.",
+  "revised_report_field": "forest_complete_dispositions_sha256",
+  "corrected_digest_scope": "SHA256 of compact JSON for the complete 48 [origin,a,b,central,all480dispositions,live_supports] records rebuilt by the checker.",
+  "original_controls_calls": 0,
+  "original_main_calls": 0,
+  "revised_controls_calls": 0,
+  "revised_main_calls": 0,
+  "native_builds": 0,
+  "optimizer_calls": 0,
+  "peer_review_finding_preserved": true,
+  "execution_requires_frozen_configuration_and_separate_root_gate": true
+}

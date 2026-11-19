@@ -1,0 +1,93 @@
+{
+  "schema": "conway99.f0.combined-independent-native-replay-source-artifacts.v1",
+  "status": "COMPLETE_FROZEN_SOURCE_AND_PEER_REVIEW_PACKAGE_NO_EXECUTION",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay.py",
+      "sha256": "8227f8db5b3db98b3a601f4b5a77e015721f85dc8689dc73b380f769e327fdb0",
+      "git_blob": "eda13bfc025122b30f4377135e9cfb659f799694",
+      "bytes": 70746,
+      "lines": 1167,
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+      "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+      "git_blob": "be51ef6deca257d57b018c989d994804994004c1",
+      "bytes": 70788,
+      "lines": 1167,
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-independent-replay-metadata-repair01.json",
+      "sha256": "c5b944ddcfab62cb1cdae42cd3a1e6f0fd050f77ec208133851ee8409a5cb6ae",
+      "git_blob": "12d2a8ab9942212d7fee9144f93745ae61fc296a",
+      "bytes": 3110,
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-replay-independent-source-review01.json",
+      "sha256": "bbb8fc6c9f00c781b4ae37252c9b37e95df7087268e8b76774786e8b186a19d1",
+      "git_blob": "ddac8c7b29ece7d9fec04196827f48b92082cd84",
+      "bytes": 11898,
+      "mode": "100644"
+    }
+  ],
+  "file_count": 4,
+  "total_bytes": 156542,
+  "active_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+    "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+    "git_blob": "be51ef6deca257d57b018c989d994804994004c1",
+    "bytes": 70788,
+    "lines": 1167
+  },
+  "preserved_unrun_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay.py",
+    "sha256": "8227f8db5b3db98b3a601f4b5a77e015721f85dc8689dc73b380f769e327fdb0",
+    "git_blob": "eda13bfc025122b30f4377135e9cfb659f799694",
+    "bytes": 70746,
+    "lines": 1167
+  },
+  "source_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-replay-independent-source-review01.json",
+    "sha256": "bbb8fc6c9f00c781b4ae37252c9b37e95df7087268e8b76774786e8b186a19d1",
+    "git_blob": "ddac8c7b29ece7d9fec04196827f48b92082cd84",
+    "bytes": 11898
+  },
+  "metadata_repair": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-independent-replay-metadata-repair01.json",
+    "sha256": "c5b944ddcfab62cb1cdae42cd3a1e6f0fd050f77ec208133851ee8409a5cb6ae",
+    "git_blob": "12d2a8ab9942212d7fee9144f93745ae61fc296a",
+    "bytes": 3110
+  },
+  "controls_cli": "controls --configuration CFG --configuration-sha256 SHA --directory OUT",
+  "replay_cli": "replay --configuration CFG --configuration-sha256 SHA --preparation-directory PREP --report-sha256 SHA --owner-sha256 SHA --directory OUT",
+  "controls_status": "PASS_COMBINED_EXTENSIONS_INDEPENDENT_REPLAY_CONTROLS",
+  "replay_status": "PASS_INDEPENDENT_COMPLETE_COMBINED_EXTENSIONS_NATIVE_MODEL",
+  "phase_seconds": {
+    "controls": 10,
+    "replay": 120
+  },
+  "separate_driver_owner_seconds": {
+    "controls": 15,
+    "replay": 135
+  },
+  "intended_complete_model": {
+    "variables": 80730,
+    "rows": 297470,
+    "parent_variables": 68934,
+    "parent_rows": 257594,
+    "replaced_original_rows": 23010,
+    "appended_rows": 39876
+  },
+  "all_source_bytes_preserved": true,
+  "all_blobs_uploaded": true,
+  "configuration_and_root_gate_are_separate_required_artifacts": true,
+  "checker_control_calls": 0,
+  "checker_main_calls": 0,
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "producer_imports": 0,
+  "graph_or_exclusion_claim": false
+}

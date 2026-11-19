@@ -1,0 +1,68 @@
+{
+  "schema": "conway99.f0.combined-extensions-native-ci-request.v1",
+  "mode": "one-preparation-and-independent-cold",
+  "driver_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+    "bytes": 16246,
+    "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+    "git_blob": "06166151155be8a6cd46ec7a0b3e5989ed408dff",
+    "mode": "100644",
+    "lines": 284
+  },
+  "producer_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+    "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+    "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b",
+    "bytes": 38102,
+    "lines": 735,
+    "mode": "100644"
+  },
+  "cold_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+    "bytes": 70788,
+    "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+    "git_blob": "be51ef6deca257d57b018c989d994804994004c1",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+    "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+    "bytes": 33063,
+    "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+    "mode": "100644"
+  },
+  "supervisor_source": {
+    "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+    "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+    "bytes": 26760,
+    "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+  },
+  "gate": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci-root-gate01.json",
+    "bytes": 22283,
+    "sha256": "e3529aff4c53584b48b1801a78281e1510613e18d10fc1218583ac95c637f63a",
+    "git_blob": "30e7a423b6f9ab315dd07e3a9388918c322b8929",
+    "mode": "100644"
+  },
+  "limits": {
+    "controls_owner_seconds": 15,
+    "prepare_owner_seconds": 135,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 420
+  },
+  "base_model_raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "native_model_builds_allowed": 1,
+  "optimizer_calls_allowed": 0,
+  "automatic_retries": 0,
+  "native_query_allowed": false,
+  "result_path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-run.json",
+  "directories": {
+    "controls": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-controls",
+    "prepare": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01",
+    "cold_controls": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold-controls",
+    "cold_replay": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold",
+    "cold_controls_owner": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold-controls-owner",
+    "cold_replay_owner": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold-owner"
+  }
+}

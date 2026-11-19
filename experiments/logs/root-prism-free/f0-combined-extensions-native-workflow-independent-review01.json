@@ -1,0 +1,166 @@
+{
+  "schema": "conway99.f0.combined-extensions-native-workflow-independent-review.v1",
+  "status": "PASS_COMPLETE_WORKFLOW_AND_FROZEN_DRIVER_CONFIGURATION_INTERFACE_REVIEW",
+  "workflow": {
+    "path": ".github/workflows/conway99-combined-extensions-native-prepare.yml",
+    "git_blob": "9f3af4be8bd7274f92e208ab25ec5752ae0e3106",
+    "sha256": "fa2e104ba469fd59d69de6c40f83bd65645532ab0ef39f0dcb36c9d4c9bb05c6",
+    "bytes": 16086
+  },
+  "driver": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+    "git_blob": "06166151155be8a6cd46ec7a0b3e5989ed408dff",
+    "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+    "bytes": 16246
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+    "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+    "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+    "bytes": 33063
+  },
+  "configuration_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-final-configuration-independent-review01.json",
+    "sha256": "08906c6ec60ea561312efbf2ba717919dff2285b377075767db991420e93d8b9",
+    "git_blob": "a31b3950e2951f110f06e569c03cb04086a7bc42",
+    "bytes": 21458
+  },
+  "producer": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+    "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b",
+    "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+    "bytes": 38102
+  },
+  "checker": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+    "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+    "git_blob": "be51ef6deca257d57b018c989d994804994004c1",
+    "bytes": 70788,
+    "lines": 1167
+  },
+  "complete_workflow_lines_read": 241,
+  "complete_current_driver_lines_read": 284,
+  "static_path_audit": {
+    "exact_sparse_paths": [
+      ".github/workflows/conway99-combined-extensions-native-prepare.yml",
+      "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-replay01-finalization.json",
+      "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-replay01.json",
+      "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-root-acceptance01.json",
+      "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory-independent-source-review01.json",
+      "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory01-finalization.json",
+      "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory01-terminal-binding.json",
+      "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-builder-adaptation01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-builder-root-source-review01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-ci-independent-source-review01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-final-configuration-independent-review01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-independent-replay-metadata-repair01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-native-ci-request01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-native-ci-root-gate01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-native-workflow-independent-review01.json",
+      "experiments/logs/root-prism-free/f0-combined-extensions-replay-independent-source-review01.json",
+      "experiments/logs/root-prism-free/f0-common-neighbor-forest-extension-independent-review01.json",
+      "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-census01.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01-finalization.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01-finalization.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-root-acceptance01.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-star-channel-independent-source-review01.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-star-channel-independent-source-review02.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory01-finalization.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory01.json",
+      "experiments/logs/root-prism-free/f0-four-exterior-star-channel-root-terminal-review01.json",
+      "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01.json",
+      "experiments/logs/root-prism-free/f0-spectral-gap-pair-root-acceptance01.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-replay01-finalization.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-replay01.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-root-acceptance01.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-independent-source-review01.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01-finalization.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-root-artifact-review01.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01-finalization.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01.json",
+      "experiments/logs/root-prism-free/f0-spectral-triangle-support-literal-replay-independent-source-review01.json",
+      "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json",
+      "experiments/logs/root-prism-free/f0-strengthened-native-ci01/model.pb.gz",
+      "experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json",
+      "experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json",
+      "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-acceptance01.json",
+      "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+      "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+      "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+      "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "research/root_prism_free_f0_common_neighbor_forest_extension.md",
+      "research/root_prism_free_f0_four_exterior_prism_outage_proof.md",
+      "research/root_prism_free_f0_four_exterior_star_channels.md"
+    ],
+    "exact_sparse_path_count": 59,
+    "missing": [],
+    "extra": [],
+    "pinned_actions": [
+      {
+        "action": "actions/checkout",
+        "commit": "11d5960a326750d5838078e36cf38b85af677262"
+      },
+      {
+        "action": "actions/upload-artifact",
+        "commit": "ea165f8d65b6e75b540449e92b4886f43607fa02"
+      },
+      {
+        "action": "actions/download-artifact",
+        "commit": "d3f86a106a0bac45b974a628896c90dbdf5c8093"
+      }
+    ],
+    "artifact_directories": [
+      "f0-combined-extensions-native-ci01-controls",
+      "f0-combined-extensions-native-ci01",
+      "f0-combined-extensions-native-ci01-cold-controls",
+      "f0-combined-extensions-native-ci01-cold",
+      "f0-combined-extensions-native-ci01-cold-controls-owner",
+      "f0-combined-extensions-native-ci01-cold-owner"
+    ],
+    "source_only": true,
+    "no_execution": true
+  },
+  "findings": [
+    "The push trigger is restricted to the intended research branch and the workflow/request paths. The first executable gate requires run_attempt1, the expected before-commit, the actual after-commit, the exact branch, one permitted native preparation, zero optimizer calls, no retry and the frozen model dimensions.",
+    "All59 sparse-checkout paths were compared as an exact set against all34 configured inputs,3 helper sources,3 proof files,11 review records, producer, driver, configuration, workflow, gate/request and the2 new independent review paths. No required path is missing and no extra path is present.",
+    "All three actions are pinned to full immutable commits. Permissions are contents:read and actions:read; checkout credentials are not persisted. The workflow does not commit, push or send external messages.",
+    "Every gate dependency is byte/hash-checked and every pinned Python dependency is compiled before the installed-runtime/native phases. The configuration and source/gate/request references are then independently checked by the driver before calls and protected dependencies are checked again after successful cold replay.",
+    "The one producer controls/prepare sequence and separate checker controls/replay sequence use the exact accepted CLI/status contracts. Six fresh, disjoint worker/owner directories are required. Producer and checker owners require successful child exit, process-group reaping/stopping and no deadline overrun; a PASS-shaped report alone is insufficient.",
+    "Worker/owner allowances are10/15seconds for each controls phase and120/135seconds for each main phase. The driver checks its420-second budget and rejects a final overrun; the GitHub preparation job has a12-minute timeout. No CpSolver query exists in this workflow or driver.",
+    "The complete preparation raw-model hash/length must agree with the independent cold. The cold must also recover the exact original38,374,405-byte parent with SHA4a9b24ab... . No native model is accepted from archive-export success alone.",
+    "The small log bundle base64-encodes the exact original bytes of every selected report/receipt/log/patch/suffix; it does not parse or reserialize the control report containing the integer above2^53. Original small binary artifacts, partial reports and error/owner records are included when present, with explicit16MiB raw and12MiB encoded bounds.",
+    "The complete artifact upload includes all six directories, full raw/compressed model, runtime package inventory and top-level driver logs/result. Export and upload steps are configured to run after ordinary preceding-step failures; execution success and artifact availability remain outcomes to be observed.",
+    "The three archive-export jobs only read the saved artifact. They check the complete archive against its actual preparation report and emit exact bounded4MiB chunks with per-chunk and complete hashes, offsets and lengths. Empty terminal chunks are explicit. The headers mark export as distinct from model acceptance, and the12MiB archive cap prevents silent truncation."
+  ],
+  "fixed_paths": {
+    "request": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci-request01.json",
+    "gate": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci-root-gate01.json",
+    "result": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-run.json"
+  },
+  "request_and_gate_qualification": {
+    "final_request_and_gate_bytes_available_at_review": false,
+    "root_will_bind_both_new_reviews_and_workflow_before_push": true,
+    "expected_parent_and_all_six_exact_output_directories_must_match_final_request": true,
+    "workflow_and_driver_independently_validate_final_gate_before_execution": true
+  },
+  "execution": {
+    "yaml_or_python_executed": false,
+    "compile_calls": 0,
+    "controls_calls": 0,
+    "native_builds": 0,
+    "independent_replay_calls": 0,
+    "optimizer_calls": 0,
+    "refs_changed": 0
+  },
+  "blockers": []
+}

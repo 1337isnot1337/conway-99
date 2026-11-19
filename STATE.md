@@ -2,6 +2,14 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+Checkpoint 89 accepts the [complete independent literal forest replay](experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-root-acceptance01.json) and freezes the [combined native preparation](research/root_prism_free_f0_combined_extensions_native_preparation.md). The forest checker reconstructs every original eligible edge and all 23,040 candidate dispositions for the 48 cap-one pairs. All 3,984 new variables, 15,888 rows and six complete normalized hashes match. Its outer time is 11.489 seconds inside the 30-second bound, with no native or optimizer call.
+
+The combined configuration binds all 34 actual inputs, 30 authority statuses and 67 cross-reference links. It has 80,730 variables and 297,470 rows. The active producer and independent checker are their preserved v2 sources. The producer replaces exactly 23,010 original rows, preserves all other original messages and appends 39,876 rows. The checker must reconstruct every change and restore the entire previous model byte for byte.
+
+The [one-build gate](experiments/logs/root-prism-free/f0-combined-extensions-native-ci-root-gate01.json) authorizes one native preparation, separate synthetic controls and complete independent protobuf replay. It authorizes zero optimizer calls and no automatic retry. All phase owners require complete terminal evidence, child reaping and process-group cleanup. Actual execution is pending at this publication; no new model acceptance, graph, component exclusion or unrestricted contradiction is claimed. Fresh query sources are being prepared separately and are not authorized to execute by this gate.
+
+## Earlier checkpoints
+
 Checkpoint 88 publishes the [combined formulation plan](research/root_prism_free_f0_combined_exterior_model_plan.md) and its complete finite inventories. The exact star reformulation replaces 401,874 coefficient occurrences by 91,410 using 2,448 channels. The source-reviewed inventory passes in 34.336 seconds through serialization. Root checks all channel identities, 46,020 origin links and reported quota-one support inclusions. This reformulation alone adds no mathematical exclusion.
 
 The complete triangle-support replay passes in 7.666 seconds. It separately reconstructs all 68,394 original edges, 1,956 zero authorities, 132 targets, 6,540 structural records and 5,364 surviving records. Root accepts every exact binding and the full normalized table hash. The triangle encoding proposes 5,364 indicators and 21,540 rows for the 84 live targets.
@@ -9,8 +17,6 @@ The complete triangle-support replay passes in 7.666 seconds. It separately reco
 The complete cap-one forest inventory passes in 4.586 seconds, covering 48 pairs and 23,040 candidate dispositions. All 48 pairs remain active, with 3,936 live wedges; its formulation has 3,984 new variables and 15,888 rows. Root reconstructs every saved native row key. A separate literal support-universe replay remains pending. No native build or solver query belongs to these inventories.
 
 The combined plan has 80,730 variables and 297,470 rows, with 192,096 fewer coefficient occurrences than the previous model. The actual-input configuration, native build and separate complete native replay remain pending. The prior query remains UNKNOWN with no vector; no unchanged retry, graph or contradiction is claimed.
-
-## Earlier checkpoints
 
 Checkpoint 87 accepts the [completed stronger-model query](experiments/logs/root-prism-free/f0-strengthened-query-root-acceptance01.json): **UNKNOWN with no primary or additional vector**. [Run 44633211291](https://github.com/1337isnot1337/conway-99/actions/runs/44633211291) executes checkpoint 86 once. Native time is 175.039 seconds within the declared 180-second allowance; the query owner finishes in 181.417 seconds and the complete query/replay pipeline in 182.318 seconds. Separate independent controls and terminal replay pass. All owners reap their children and stop their process groups without an overrun.
 
