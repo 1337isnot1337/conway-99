@@ -1,0 +1,286 @@
+{
+  "status": "two one-core-point subsystems prepared and old proofs transported; no SAT solve",
+  "source_sha256": "556de5b87731db5c556059980005f4be6a9e44d24765a334000bbb25f4786644",
+  "base_manifest_sha256": "b24ccb4fec17f267cbb28bf507ea55b8ab7ca3b8c70d25cf9adca11ddf01444e",
+  "base_cnf_sha256": "4beaccae679e2014ab0a3cf105ca1f65f326b6453ed6502d7e2d65cbede2a162",
+  "dependencies": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01-full-replay.json",
+      "sha256": "13e47783fa21c97788c1258d44e45bf0cba3adde437701724073abe04d58f065"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-core-deletion-pilot01-full-replay.json",
+      "sha256": "da119392a5b2948d8263a8b156b4317b8a0603e38331dcdbb7b3968aec0e42b2"
+    }
+  ],
+  "models": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-core-star-preparation/R8-model.json",
+      "sha256": "d3b4bfdc6f3be4c3ceb1d10c1f9c265c65e698ade17832667eb46b2c8b921d7b",
+      "name": "R8",
+      "candidate_source_count": 28,
+      "retained_edge_count": 4456,
+      "variables_including_unused_primary_id_gaps": 187262,
+      "clauses": 387840,
+      "group_counts": {
+        "activation": 8912,
+        "gram": 208,
+        "population": 1,
+        "mixed": 952,
+        "degree": 28,
+        "packing": 35356
+      },
+      "clause_counts": {
+        "activation": 8912,
+        "gram": 19800,
+        "population": 51840,
+        "mixed": 80796,
+        "degree": 191136,
+        "packing": 35356
+      }
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-core-star-preparation/R3-model.json",
+      "sha256": "ace7b1f304fe5bc53aa3b755ce8f4ae8fe95591bceb51abbc47e7cebc406c88f",
+      "name": "R3",
+      "candidate_source_count": 28,
+      "retained_edge_count": 4456,
+      "variables_including_unused_primary_id_gaps": 187262,
+      "clauses": 387840,
+      "group_counts": {
+        "activation": 8912,
+        "gram": 208,
+        "population": 1,
+        "mixed": 952,
+        "degree": 28,
+        "packing": 35356
+      },
+      "clause_counts": {
+        "activation": 8912,
+        "gram": 19800,
+        "population": 51840,
+        "mixed": 80796,
+        "degree": 191136,
+        "packing": 35356
+      }
+    }
+  ],
+  "retained_proof_support": [
+    {
+      "name": "case4",
+      "certificate": "experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01/design-4-core-certificate.json",
+      "certificate_sha256": "037be0af9da9f7cc3cf9afc539d8ddd3c3b7a2cb33cce1717870adbe71cc5953",
+      "retained_input_clauses": 989,
+      "group_counts": {
+        "activation": 119,
+        "gram": 120,
+        "mixed": 25,
+        "packing": 8,
+        "assumption": 39
+      },
+      "mandatory_mixed_counter_sources": [
+        229,
+        242,
+        247
+      ],
+      "distinct_primary_edge_variables": 171,
+      "smallest_core_point_star_for_attributed_proof": {
+        "core_points": [
+          8
+        ],
+        "core_point_labels": [
+          "R8"
+        ],
+        "minimum_size_for_this_attribution": 1,
+        "signature_candidates": 28,
+        "eligible_incident_edges": 4456,
+        "raw_mixed_degree_row_requirements_before_duplicate_removal": 1008,
+        "minimal_hitting_constraints": 4,
+        "search_states": 3,
+        "all_used_edges_and_mixed_rows_contained": true,
+        "scope": "a smaller necessary submodel containing this retained proof; no new solve"
+      },
+      "clauses_with_multiple_origins": 0
+    },
+    {
+      "name": "case5",
+      "certificate": "experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01/design-5-core-certificate.json",
+      "certificate_sha256": "238e57df2d5c0a7d670633ae5eb4b6e10c7589ef2f6ae60504c60a5f22e46b38",
+      "retained_input_clauses": 1996,
+      "group_counts": {
+        "activation": 250,
+        "gram": 119,
+        "mixed": 58,
+        "packing": 12,
+        "assumption": 40
+      },
+      "mandatory_mixed_counter_sources": [
+        85,
+        86,
+        94,
+        96,
+        99,
+        110,
+        132,
+        178
+      ],
+      "distinct_primary_edge_variables": 354,
+      "smallest_core_point_star_for_attributed_proof": {
+        "core_points": [
+          3
+        ],
+        "core_point_labels": [
+          "R3"
+        ],
+        "minimum_size_for_this_attribution": 1,
+        "signature_candidates": 28,
+        "eligible_incident_edges": 4456,
+        "raw_mixed_degree_row_requirements_before_duplicate_removal": 1008,
+        "minimal_hitting_constraints": 10,
+        "search_states": 3,
+        "all_used_edges_and_mixed_rows_contained": true,
+        "scope": "a smaller necessary submodel containing this retained proof; no new solve"
+      },
+      "clauses_with_multiple_origins": 0
+    },
+    {
+      "name": "positive-eleven",
+      "certificate": "experiments/logs/grids-and-triangles/complement-rook-core-deletion-pilot01/design-1001-core-certificate.json",
+      "certificate_sha256": "4c090e2deecbc5e3da36e71bb8f8debec6399d5a1f90132df81923aefe925ee1",
+      "retained_input_clauses": 15276,
+      "group_counts": {
+        "activation": 2565,
+        "gram": 173,
+        "mixed": 541,
+        "packing": 298,
+        "assumption": 11
+      },
+      "mandatory_mixed_counter_sources": [
+        4,
+        6,
+        7,
+        10,
+        11,
+        20,
+        21,
+        25,
+        26,
+        31,
+        32,
+        40,
+        41,
+        42,
+        49,
+        51,
+        56,
+        61,
+        65,
+        66,
+        67,
+        69,
+        71,
+        73,
+        79,
+        81,
+        82,
+        83,
+        84,
+        86,
+        94,
+        96,
+        97,
+        102,
+        103,
+        107,
+        111,
+        118,
+        124,
+        126,
+        130,
+        133,
+        136,
+        140,
+        142,
+        143,
+        151,
+        159,
+        160,
+        161,
+        165,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        183,
+        184,
+        186,
+        189,
+        191,
+        199,
+        200,
+        203,
+        205,
+        206,
+        208,
+        211,
+        212,
+        213,
+        216,
+        217,
+        219,
+        221,
+        222,
+        229,
+        230,
+        233,
+        235,
+        239,
+        240,
+        241,
+        245,
+        246,
+        247,
+        250
+      ],
+      "distinct_primary_edge_variables": 3079,
+      "smallest_core_point_star_for_attributed_proof": {
+        "core_points": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "core_point_labels": [
+          "R0",
+          "R1",
+          "R2",
+          "R3",
+          "R4",
+          "R5",
+          "R6",
+          "R7",
+          "R8"
+        ],
+        "minimum_size_for_this_attribution": 9,
+        "signature_candidates": 252,
+        "eligible_incident_edges": 20934,
+        "raw_mixed_degree_row_requirements_before_duplicate_removal": 7056,
+        "minimal_hitting_constraints": 134,
+        "search_states": 5974,
+        "all_used_edges_and_mixed_rows_contained": true,
+        "scope": "a smaller necessary submodel containing this retained proof; no new solve"
+      },
+      "clauses_with_multiple_origins": 0
+    }
+  ],
+  "new_SAT_solver_called": false,
+  "whole_core_exclusion": false,
+  "scope": "exact row-subsystem preparation and proof support; no new incidence master search"
+}

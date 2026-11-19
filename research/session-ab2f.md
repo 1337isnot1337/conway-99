@@ -518,3 +518,17 @@ their hypotheses permit them; computational exclusions require exact replay.
   either the earlier repaired witness or the new positive-x521 rounded
   witness. Each complete scan checks 170,183,860 inequalities. These
   finite inequalities do not describe all Boolean moment constraints.
+- Attributing every retained input of the eight joint proofs to its
+  original equation shows that cases four and five fit inside a single
+  core-point star. Their two reduced formulas have 144,864 clauses.
+  Exact identities remove population and degree counters; all 18 R/S
+  transports and both renamed conditional DRAT proofs replay. The free
+  R8 pilot returns UNKNOWN after 63.825 seconds to cooperative return.
+- A complete local R0 census gives 864 signature sets in 118 orbits and
+  2,521 eligible matching choices on the representatives. All 35-vertex
+  cores pass visible caps and 5,042 exact projector checks. No local case
+  is excluded. These cases now seed full 35-core incidence work.
+- The new count replay target rebuilt the catalogue and passed both
+  original-equation audits. The edge-component checker completed its
+  mathematical checks, then its report rejected a relative certificate
+  path. The Makefile now supplies the absolute path; the target passes.

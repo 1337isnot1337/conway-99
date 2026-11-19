@@ -193,6 +193,20 @@ check the reductions. A separate deletion pilot gives an
 with no negative assumptions. Its fresh proof and independent full-base
 replay pass. The 144 relabelings replace the older case-one patterns in
 a refined 1,152-clause export. No whole-core exclusion or minimality follows.
+The [retained-row audit](research/grids-and-triangles/complement_rook_retained_row_support.md)
+shows that two of the original proofs fit inside one-core-point subsystems.
+The [reduced star models](research/grids-and-triangles/complement_rook_core_star_oracle.md)
+keep all incidence selectors and 4,456 eligible incident edges, with 65,774
+declared variables and 144,864 clauses. Exact identities remove redundant
+population and degree counters, and both transported conditional proofs
+pass DRAT. The first [free star pilot](research/grids-and-triangles/complement_rook_core_star_free.md)
+returns UNKNOWN and gives no new exclusion.
+A [complete local-star census](research/grids-and-triangles/complement_rook_local_star_census.md)
+has 864 local signature sets in 118 stabilizer orbits and 2,521 eligible
+matching choices on those representatives. All resulting 35-vertex cores
+pass visible pair caps and both exact principal-projector tests. This
+census supplies complete local cases for stronger incidence models; it
+does not establish extension of any case to 99 vertices.
 
 ## Scope of the unrestricted computations
 

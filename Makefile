@@ -8,6 +8,7 @@ CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.jso
 .PHONY: verify-prism-zero-counts verify-prism-zero-psd verify-incidence-master-cut-orbits
 .PHONY: verify-root-prism-free-structure verify-incidence-core-simplification verify-refined-pattern-orbits
 .PHONY: verify-prism-zero-followup-counts verify-root-edge-components
+.PHONY: verify-complement-rook-local-stars
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -76,7 +77,10 @@ verify-prism-zero-followup-counts:
 	"$(PYTHON)" $(WORKSPACE)/audit_prism_zero_followup_witness.py --witness experiments/logs/moments-and-counts/prism-zero-order10-x521-face-rounded-counts.json --sha256 ee8e22f070e0529be5be8bf14c853c6ad9ed97127570223abf6e1529ab8857f9 --x521-zero --catalogue "$$build_dir/catalogue.pickle" --output "$$build_dir/face.json"
 
 verify-root-edge-components:
-	"$(PYTHON)" $(WORKSPACE)/root_prism_free_edge_components.py --certificate experiments/logs/root-prism-free/edge-components-certificate.json
+	"$(PYTHON)" $(WORKSPACE)/root_prism_free_edge_components.py --certificate "$(CURDIR)/experiments/logs/root-prism-free/edge-components-certificate.json"
+
+verify-complement-rook-local-stars:
+	"$(PYTHON)" $(WORKSPACE)/complement_rook_local_star_census.py --certificate "$(CURDIR)/experiments/logs/grids-and-triangles/complement-rook-local-star-census.json"
 
 verify-incidence-master-cut-orbits:
 	"$(PYTHON)" $(WORKSPACE)/complement_rook_incidence_master_cut_orbits.py --pilot experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01.json --replay experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01-full-replay.json --certificate experiments/logs/grids-and-triangles/complement-rook-incidence-master-cut-orbits.json

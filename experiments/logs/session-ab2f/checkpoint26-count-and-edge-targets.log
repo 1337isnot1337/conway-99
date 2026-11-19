@@ -1,0 +1,69 @@
+catalog order 1 types 1
+catalog order 2 types 2
+catalog order 3 types 4
+catalog order 4 types 9
+catalog order 5 types 21
+catalog order 6 types 62
+catalog order 7 types 208
+catalog order 8 types 916
+catalog order 9 types 5311
+catalog order 10 types 42430
+{
+  "status": "independent original-count and25-cut audit PASS",
+  "source_sha256": "520da449f35fab8a8175dc7546ac2a20f23a2707d09a980296c7099dcf4cb1b1",
+  "witness_sha256": "3f75ad72024829c91995f3b22d50f89cd709af6b6d9d3b0806c5ee05f3097326",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "cut_preparation_sha256": "fce82618e5beef610d70fadbf7b0e5d955a43496c05c3621b78ee270ff87c820",
+  "bound_preparation_sha256": "b469897acd15b6078664625191005454e8bac56ae76318d57fd804089bcf8e50",
+  "nonnegative_integral_counts": 48965,
+  "original_equations_checked": 180445,
+  "level_totals_checked": 11,
+  "prism_containing_induced_zeros": 1443,
+  "prism_containing_core_zeros": 58,
+  "ordinary_bounds_checked": 549,
+  "certified_linear_cuts_checked": 25,
+  "minimum_held_cut_value": 629575,
+  "x521": 116,
+  "x521_zero_required": false,
+  "core_to_induced_matrix_reconstruction_repeated": false,
+  "optimizer_called": false,
+  "finder_imported": false,
+  "PSD_claimed": false,
+  "graph_constructed": false,
+  "seconds": 5.313881048998155
+}
+{
+  "status": "independent original-count and25-cut audit PASS",
+  "source_sha256": "520da449f35fab8a8175dc7546ac2a20f23a2707d09a980296c7099dcf4cb1b1",
+  "witness_sha256": "ee8e22f070e0529be5be8bf14c853c6ad9ed97127570223abf6e1529ab8857f9",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "cut_preparation_sha256": "fce82618e5beef610d70fadbf7b0e5d955a43496c05c3621b78ee270ff87c820",
+  "bound_preparation_sha256": "b469897acd15b6078664625191005454e8bac56ae76318d57fd804089bcf8e50",
+  "nonnegative_integral_counts": 48965,
+  "original_equations_checked": 180445,
+  "level_totals_checked": 11,
+  "prism_containing_induced_zeros": 1443,
+  "prism_containing_core_zeros": 58,
+  "ordinary_bounds_checked": 549,
+  "certified_linear_cuts_checked": 25,
+  "minimum_held_cut_value": 1156044,
+  "x521": 0,
+  "x521_zero_required": true,
+  "core_to_induced_matrix_reconstruction_repeated": false,
+  "optimizer_called": false,
+  "finder_imported": false,
+  "PSD_claimed": false,
+  "graph_constructed": false,
+  "seconds": 6.586037180000858
+}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/root_prism_free_edge_components.py --certificate experiments/logs/root-prism-free/edge-components-certificate.json
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/root_prism_free_edge_components.py", line 425, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/root_prism_free_edge_components.py", line 415, in main
+    print(json.dumps({"status": result["status"], "certificate": str(args.certificate.relative_to(ROOT)),
+                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'experiments/logs/root-prism-free/edge-components-certificate.json' is not in the subpath of '/workspace/scratch/ab2f4d4412fd/conway-99'
+make: *** [Makefile:79: verify-root-edge-components] Error 1

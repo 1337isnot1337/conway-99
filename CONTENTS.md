@@ -46,6 +46,15 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [Transversal degree and incidence constraints](research/independent-sets/transversal_constraints.md) proves the size-twenty degree restrictions and excludes four of 56 core patterns with integer certificates. The other 52 pass the tested real incidence relaxations.
 - [A surviving minimum Ramsey hemisphere](research/independent-sets/transversal_hemisphere_minimum.md) gives an exact 36-vertex spectral witness with a 21-vertex hemisphere of independence number seven. This identifies a limit of the local relaxation.
 
+The complementary-rook continuation has a
+[retained-proof support audit](research/grids-and-triangles/complement_rook_retained_row_support.md),
+[smaller one-core-point formulas](research/grids-and-triangles/complement_rook_core_star_oracle.md),
+and a [free UNKNOWN pilot](research/grids-and-triangles/complement_rook_core_star_free.md).
+A [complete local-star census](research/grids-and-triangles/complement_rook_local_star_census.md)
+covers 864 signature sets, 118 set orbits, and 2,521 matching choices on
+the representatives. All pass both exact projector tests; no core is
+excluded by this census.
+
 ## Eigenlattices
 
 - [Theta-series rank restrictions](research/eigenlattices/level_seven.md) derives contradictions at three ranks over $\mathbb F_7$. The exact coefficient certificates are part of `make verify`. [Rank 28](experiments/workspace/level-seven-certificate-28.json) · [Rank 30](experiments/workspace/level-seven-certificate-30.json) · [Rank 32](experiments/workspace/level-seven-certificate-32.json) · [Run logs](experiments/logs/eigenlattices/)

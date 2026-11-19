@@ -288,6 +288,23 @@ states the distinction from the separate full-model replay. The
 tests the exact integer witness in 2,332 blocks and finds no separator.
 That outcome is not an exact PSD certificate.
 
+The smaller complementary-rook subsystem and its local case census are
+documented in the [star-model note](../research/grids-and-triangles/complement_rook_core_star_oracle.md)
+and [local-star note](../research/grids-and-triangles/complement_rook_local_star_census.md).
+The latter has a direct exact replay:
+
+```sh
+make verify-complement-rook-local-stars
+```
+
+It reconstructs all 864 local signature sets, the 118 stabilizer orbits,
+and all 2,521 matching choices on the representatives. Integer Schur
+matrices and rational LDL pivots verify both principal projectors for
+every case. It calls no SAT solver. The star-model note gives the separate
+full-baseline/reduced-formula reconstruction and DRAT commands for its
+two transported conditional proofs. The free reduced-star pilot remains
+UNKNOWN.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh
