@@ -52,6 +52,18 @@ for all 584 selected cached moment blocks. It does not run an optimizer.
 The result concerns this finite relaxation, not all possible order-nine
 inequalities or a completed graph.
 
+The same zero-grid point passes 832 additional root-conditioned spectral
+and Schur blocks. Their exact kernel and positive-quotient certificates
+have a separate replay:
+
+```sh
+make verify-grid-free-projectors
+```
+
+Each block has eight explicit exact kernel vectors. Integer congruences
+certify the complementary principal matrix as positive definite. Together
+with the preceding target, this checks 1,416 blocks at the same count point.
+
 The three-base obstruction and the independent bounds of one all-red grid
 and 119 total grids have a standard-library replay target:
 
@@ -96,6 +108,15 @@ cap clauses in the Hall-strengthened run. The Hall transcript is compressed;
 the verifier reads it directly. It uses no timed solver. All three search
 outcomes are UNKNOWN. The saved points satisfy the fixed core equations
 but fail equations among the exterior vertices. They are not graph solutions.
+The same target checks an explicit near-edge tip graph against all 3,394
+local clauses and an exact positive-definiteness certificate. That small
+projection refutes a proposed local implication; it does not complete the
+exterior graph.
+The target also reconstructs all 5,040 labelled rook tip graphs, replays
+the eighteen-edge boundary propagation, and checks both exported complete
+incidence domains. The separate complete-cap search is documented in
+[its model note](../research/grids-and-triangles/two_rook_iso_pair_full_caps.md);
+the replay target does not start its timed solve.
 
 The earlier bound of three all-red grids retains its replay target:
 

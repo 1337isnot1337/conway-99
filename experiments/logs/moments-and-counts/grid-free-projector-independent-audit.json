@@ -1,0 +1,40 @@
+{
+  "status": "read-only construction and exact-certificate audit passed",
+  "scope": "832 cached order-nine spectral/Schur blocks at the fixed grid-zero count point; full block replay is a separate certificate",
+  "source_sha256": {
+    "experiments/workspace/grid_free_projector_certificate.py": "165d85b828e68f1f7f3af32d567dd2d41391d1d8e05a58031998800d98de04ea",
+    "experiments/workspace/grid_free_projector_probe.py": "0bf354d8271a795d64990dc09b9f78b78ce1e3eaee83aaa4e766056e30fb4511",
+    "experiments/workspace/spectral_flags.py": "1ea358aa317cc78e57d3650d6d0f69d2f4cbddb6636588493073a8c0467955f7",
+    "experiments/workspace/grid_free_core9_certificate.py": "ce924b80d59d7e1c2a9658ffe77595538165a2316772c07417a52a18ddc2a4e1",
+    "experiments/workspace/flag_moments.py": "5f0df28750f1d1871072d8e3b25f8c8b6a51fc2ab2eeb26f24cf2e262a5494d1",
+    "experiments/workspace/subgraph_counts.py": "2cf879fc5e5603f3a6c48f6c2e2c7b2b23e4533206c1c3b946bf1d232881145d"
+  },
+  "cache_sha256": {
+    "experiments/workspace/moments-order9.pickle": "8ac6843d1294ab3d24e6b71942ee653c1c86cc858d74101e8d2e8a3c53bca07c",
+    "experiments/workspace/induced-spectral-7.pickle": "b38ced60f1632d8368f2b20e358ab3f43d2ecfedc90bbaac9c446ce0af14c502",
+    "experiments/workspace/induced-schur-7.pickle": "67cc16e42d9529c2155e5f80e73ea23a5defacaccac28150498218ae296058aa"
+  },
+  "cheap_exact_checks": {
+    "root_types": 208,
+    "root_order": 7,
+    "positive_definite_root_projector_blocks": 416,
+    "positive_leading_principal_minors": 2912,
+    "empty_and_singleton_masks_present_for_every_root": true,
+    "maximum_inverse_denominator": 1079320,
+    "maximum_scaled_inverse_numerator": 28752,
+    "maximum_first_product_absolute_bound": 590904,
+    "maximum_second_product_absolute_bound": 37226952,
+    "maximum_safe_three_contribution_CSR_bound": 227529288,
+    "signed_int64_limit": 9223372036854775808
+  },
+  "mathematical_review": {
+    "normalization": "Induced unlabelled counts are multiplied by automorphism orders to count labelled embeddings. Diagonal class terms and ordered distinct extensions give the correct class Gram and n_u*n_v Schur correction.",
+    "projectors": "27I-9A+J=63E_-4 and 44I+11A-2J=77E_3. Their kernels contain 1 and respectively (A+4I)e_j or(A-3I)e_j.",
+    "kernel_rows": "Full root rows use [1,A_ij+shift*delta_ij]; outside and Schur rows use [1,mask bits].",
+    "quotient": "The empty/singleton pivot rows form an 8x8 determinant-one kernel minor. With M K=0, subtracting a kernel vector makes any vector vanish on those pivots. A positive definite retained principal block therefore proves full PSD with kernel exactly the eight displayed columns.",
+    "runtime_arithmetic": "The sparse product absolute bound is computed with Python integers. The int64 route is safe below 2^63; larger bounds trigger arbitrary-precision sums. Reduced matrix casts are checked, and kernel/congruence products use object integers.",
+    "Schur_generation_arithmetic": "All 416 root blocks are exactly positive definite. Scaled inverse and both product stages are bounded below 2^63; even three same-coordinate tensor contributions cannot overflow.",
+    "scope_limit": "No graph-existence result or completeness over all flag inequalities is claimed. The earlier 584-block certificate is unchanged."
+  },
+  "heavy_projector_replay_launched_by_this_audit": false
+}

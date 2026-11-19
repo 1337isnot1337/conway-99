@@ -27,10 +27,14 @@ positive definite. Thus this finite count/moment relaxation has minimum
 grid count zero. It neither constructs a graph nor proves feasibility of
 every possible order-nine inequality. The absence of a forced grid is a
 specific gap left by the interface program.
+The same point now also has [exact PSD certificates for 832 cached
+projector blocks](research/grids-and-triangles/grid_free_projector_order_nine.md),
+giving 1,416 checked blocks in total. Each added block has eight exact
+kernels and a positive definite principal quotient.
 
 The [single isomorphic pair](research/grids-and-triangles/two_rook_iso_pair_integer.md)
 remains unresolved. Its forced 81-vertex exterior has nine singleton tips
-and 36 duplicate-signature pairs. Three bounded completion runs ended
+and 36 duplicate-signature pairs. Four bounded completion runs ended
 UNKNOWN. The [Hall-strengthened run](research/grids-and-triangles/two_rook_iso_pair_integer_hall.md)
 found 31 partial graphs and added 30,446 necessary cap clauses; every
 partial graph still violates exterior common-neighbor equations. Exact
@@ -40,6 +44,23 @@ admits 103 of 256 neighborhoods at each tip, and the
 [tip Gram condition](research/grids-and-triangles/two_rook_tip_psd.md)
 is `3I-R+J-2Z` positive semidefinite. These are necessary conditions,
 not an exclusion of the pair or a construction of a full graph.
+The [complete exterior-cap model](research/grids-and-triangles/two_rook_iso_pair_full_caps.md)
+has 778,752 variables and 1,556,032 clauses. Its 180-second proof-enabled
+run also ended UNKNOWN. The model includes every exterior pair cap, so a
+satisfying primary assignment would be a complete graph under the pair
+hypothesis; no such assignment or UNSAT proof was obtained.
+
+These local tip tests permit a rook-adjacent tip edge. The exact
+[three-edge path](research/grids-and-triangles/two_rook_tip_near_edge.md)
+with edges `{0,1}`, `{0,4}`, and `{1,3}` satisfies all Hall masks, all
+tip-only common-neighbor caps, and a positive definite tip Gram matrix.
+Thus none of those tests, even together, forces the tip graph to use
+only rook-nonadjacent labels.
+At the [eighteen-edge tip boundary](research/grids-and-triangles/two_rook_tip_rook_boundary.md),
+the tips must form a rook graph. Complete coverage of all 5,040 labelled
+rook graphs, Hall filtering, Gram kernels, and exact binary propagation
+leave 19 labelled cases in two core orbits. This census records complete
+domains for subsequent joint incidence/edge models.
 
 ## Scope of the unrestricted computations
 

@@ -15,6 +15,11 @@ It does not establish feasibility of every possible order-nine flag
 inequality. The statement is limited to the count equations and the
 explicit cached moment families checked below.
 
+A [later exact projector certificate](grid_free_projector_order_nine.md)
+checks the same point against 832 additional cached spectral and Schur
+blocks. The combined finite certificate covers 1,416 blocks. The original
+584-block artifact and its replay below remain unchanged.
+
 ## The systems that were checked
 
 The catalogue built by

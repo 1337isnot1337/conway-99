@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-grid-free-relaxation verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -15,7 +15,7 @@ verify: $(CERTIFICATES)
 
 # Exact certificate replay for the global-constraints research branch.
 # This target performs no new SAT or mixed-integer search.
-verify-global-constraints: verify-red-grid-bound verify-seven-red-residual verify-grid-free-relaxation verify-rook-pair-completion
+verify-global-constraints: verify-red-grid-bound verify-seven-red-residual verify-grid-free-relaxation verify-grid-free-projectors verify-rook-pair-completion
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_certificates.py
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_hemisphere_verify.py
 	"$(PYTHON)" $(WORKSPACE)/verify_coupled_counting.py
@@ -32,6 +32,9 @@ verify-global-constraints: verify-red-grid-bound verify-seven-red-residual verif
 verify-grid-free-relaxation:
 	"$(PYTHON)" $(WORKSPACE)/grid_free_core9_certificate.py --verify experiments/logs/moments-and-counts/grid-free-core9-certificate.json.gz
 
+verify-grid-free-projectors:
+	"$(PYTHON)" $(WORKSPACE)/grid_free_projector_certificate.py --certificate experiments/logs/moments-and-counts/grid-free-projector-certificate.json.gz
+
 verify-rook-pair-completion:
 	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_pair_integer_replay.py experiments/logs/grids-and-triangles/two-rook-iso-pair-integer.json
 	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_pair_integer_lex_replay.py experiments/logs/grids-and-triangles/two-rook-iso-pair-integer-lex.json
@@ -39,6 +42,10 @@ verify-rook-pair-completion:
 	"$(PYTHON)" $(WORKSPACE)/two_rook_tip_psd_audit.py --input experiments/logs/grids-and-triangles/two-rook-iso-pair-integer.json --certificate experiments/logs/grids-and-triangles/two-rook-tip-psd-certificate.json
 	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_pair_integer_hall_replay.py experiments/logs/grids-and-triangles/two-rook-iso-pair-integer-hall.json.gz
 	"$(PYTHON)" $(WORKSPACE)/two_rook_tip_psd_hall_audit.py --input experiments/logs/grids-and-triangles/two-rook-iso-pair-integer-hall.json.gz --certificate experiments/logs/grids-and-triangles/two-rook-tip-psd-hall-certificate.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_tip_near_edge.py --replay --hall experiments/logs/moments-and-counts/two-rook-tip-hall-certificate.json --cnf $(WORKSPACE)/two-rook-tip-near-edge.cnf --proof $(WORKSPACE)/two-rook-tip-near-edge.drat --output experiments/logs/grids-and-triangles/two-rook-tip-near-edge.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_tip_rook_boundary.py --hall experiments/logs/moments-and-counts/two-rook-tip-hall-certificate.json --certificate experiments/logs/grids-and-triangles/two-rook-tip-rook-boundary-certificate.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_tip_rook_boundary_export.py --boundary-certificate experiments/logs/grids-and-triangles/two-rook-tip-rook-boundary-certificate.json --hall experiments/logs/moments-and-counts/two-rook-tip-hall-certificate.json --output experiments/logs/grids-and-triangles/two-rook-tip-rook-boundary-domains.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_pair_structural.py --certificate experiments/logs/grids-and-triangles/two-rook-pair-structural-certificate.json
 
 verify-current-grid-bounds:
 	"$(PYTHON)" $(WORKSPACE)/three_red_boundary.py --verify experiments/logs/grids-and-triangles/three-red-boundary.json --translation-certificate experiments/logs/grids-and-triangles/three-red-translation-incidence.json

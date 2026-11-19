@@ -1,0 +1,32 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{"orbit_size": 12, "quotient": {"eligible_edges": 1764, "automorphisms": 12, "vertex_orbits": 6, "edge_orbits": 164}, "duplicate_packing_rows": 114, "exact_ray_found": true}
+{"orbit_size": 2, "quotient": {"eligible_edges": 1764, "automorphisms": 72, "vertex_orbits": 1, "edge_orbits": 32}, "duplicate_packing_rows": 17, "exact_ray_found": true}
+{"orbit_size": 2, "quotient": {"eligible_edges": 1764, "automorphisms": 72, "vertex_orbits": 1, "edge_orbits": 33}, "duplicate_packing_rows": 18, "exact_ray_found": false}
+{
+  "candidate_signatures": 252,
+  "positive_incidence_columns": 72,
+  "a0_designs": 16,
+  "a0_orbits": 3,
+  "checks": [
+    {
+      "orbit_size": 12,
+      "right_side": -12,
+      "minimum_coefficient": 0,
+      "nonzero_weights": 91
+    },
+    {
+      "orbit_size": 2,
+      "right_side": -3,
+      "minimum_coefficient": 0,
+      "nonzero_weights": 19
+    },
+    {
+      "orbit_size": 2,
+      "status": "exact real edge relaxation feasible",
+      "fractional_edge_orbits": 21
+    }
+  ],
+  "a0_fully_excluded": false,
+  "whole_complementary_rook_case_excluded": false
+}

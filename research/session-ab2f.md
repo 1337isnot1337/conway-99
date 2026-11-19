@@ -235,3 +235,37 @@ their hypotheses permit them; computational exclusions require exact replay.
   signed-incidence factorization makes the tip matrix automatically PSD
   throughout that subcase. This observation motivated a separate small
   test of whether the tip cap and Hall conditions force disjoint edge sets.
+- Refuted that local implication with the three-edge tip path `{01,04,13}`.
+  It passes all 1,377 Hall clauses, every tip-only common-neighbor cap,
+  and an exact positive definite Gram certificate. The 36-variable SAT
+  model has 3,394 clauses and returns this point; direct arithmetic replay
+  independently checks it. Its feasibility concerns only the tip projection.
+- Replaced all lazy exterior caps by a complete forward-path/cardinality
+  encoding: 3,240 pair caps, 226,044 path variables, 778,752 total variables,
+  and 1,556,032 clauses. All 3,069 Boolean controls and 100,440 independent
+  pair comparisons on the saved points pass. Two readers checked the
+  existential encoding and the degree-sum argument making a SAT point a
+  full graph. The proof-enabled 180-second run ended UNKNOWN after 317,782
+  conflicts. It supplied no graph or impossibility certificate.
+- Exhausted the eighteen-edge tip boundary. Cauchy-Schwarz and the tip
+  caps force an abstract rook graph. Two independent generators agree on
+  all 5,040 labelled graphs. Hall masks leave 89 in six root-automorphism
+  orbits; exact Gram kernels and binary margin propagation leave 19 in
+  two orbits. The exported domains keep every candidate signature and
+  all certified forced values. Joint incidence/edge tests are a separate
+  next step, without choosing a fixed 72-column witness.
+- Extended the exact zero-grid certificate to all 832 cached spectral and
+  Schur projector blocks. The preliminary numerical screen found no
+  violation. The exact certificate then checked eight explicit kernels
+  per block and integer positive-definiteness congruences on the remaining
+  principal matrix. Generation reread and verified the saved compressed
+  artifact. Together with the original 584 blocks, 1,416 blocks pass at
+  the same integer count point. This is still a finite relaxation witness.
+- Derived the duplicate-pair compression `6I-D` positive semidefinite of
+  rank at most 28, together with exact exterior spectra and an aligned-tip
+  triangle restriction. In the complementary-rook tip case, a complete
+  `a=0` incidence census has sixteen designs in orbits of sizes 12, 2, 2.
+  Exact integer Farkas certificates exclude fourteen fixed designs. The
+  remaining orbit has a rational mixed-edge and packing witness, with
+  21 of its 33 edge-orbit weights fractional. No whole-core exclusion or
+  positive lower bound on `a` follows from this linear test.
