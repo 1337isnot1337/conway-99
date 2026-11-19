@@ -13,7 +13,9 @@ also independently gives at most one all-red grid. A separate
 proves `29g-4b<=3465`, hence at most 119 grids from that bound.
 The parallel [root-grid branch, PR 3](https://github.com/1337isnot1337/conway-99/pull/3)
 has stronger global restrictions: its intersecting-red-triangle exclusion
-gives no all-red grid and at most 114 grids in total. Its later checkpoint
+gives no all-red grid and at most 114 grids in total. Checkpoint `006cce9`
+further improves the total bound to 113 using a five-grid branching exclusion.
+Its earlier checkpoint
 `2e2d7ed` also bounds the number through a point by thirteen. The historical
 bounds and count witnesses below are retained with their original scope.
 
@@ -25,6 +27,19 @@ positive definite. Thus this finite count/moment relaxation has minimum
 grid count zero. It neither constructs a graph nor proves feasibility of
 every possible order-nine inequality. The absence of a forced grid is a
 specific gap left by the interface program.
+
+The [single isomorphic pair](research/grids-and-triangles/two_rook_iso_pair_integer.md)
+remains unresolved. Its forced 81-vertex exterior has nine singleton tips
+and 36 duplicate-signature pairs. Three bounded completion runs ended
+UNKNOWN. The [Hall-strengthened run](research/grids-and-triangles/two_rook_iso_pair_integer_hall.md)
+found 31 partial graphs and added 30,446 necessary cap clauses; every
+partial graph still violates exterior common-neighbor equations. Exact
+replays check every saved point and cut. The
+[local Hall projection](research/grids-and-triangles/two_rook_tip_hall.md)
+admits 103 of 256 neighborhoods at each tip, and the
+[tip Gram condition](research/grids-and-triangles/two_rook_tip_psd.md)
+is `3I-R+J-2Z` positive semidefinite. These are necessary conditions,
+not an exclusion of the pair or a construction of a full graph.
 
 ## Scope of the unrestricted computations
 

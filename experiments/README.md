@@ -84,6 +84,19 @@ have a separate replay:
 make verify-general-rook-interfaces
 ```
 
+The unresolved single-pair completion has an exact transcript replay:
+
+```sh
+make verify-rook-pair-completion
+```
+
+This checks the baseline and duplicate-label runs, every local Hall
+certificate, the rational tip Gram identities, and all points and necessary
+cap clauses in the Hall-strengthened run. The Hall transcript is compressed;
+the verifier reads it directly. It uses no timed solver. All three search
+outcomes are UNKNOWN. The saved points satisfy the fixed core equations
+but fail equations among the exterior vertices. They are not graph solutions.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh

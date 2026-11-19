@@ -1,0 +1,7701 @@
+{
+  "scope": "one tip, mixed equations and duplicate-pair packing only",
+  "point_order": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "candidate_cells": [
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      4,
+      2
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      6,
+      2
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      7,
+      2
+    ],
+    [
+      7,
+      3
+    ],
+    [
+      7,
+      5
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      8,
+      3
+    ],
+    [
+      8,
+      4
+    ]
+  ],
+  "masks": [
+    {
+      "mask": 0,
+      "tip_near_degree": 0,
+      "tip_far_degree": 0,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 1,
+      "tip_near_degree": 1,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "demand": 8,
+        "cut_capacity": 7,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 2,
+      "tip_near_degree": 1,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "demand": 8,
+        "cut_capacity": 7,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 3,
+      "tip_near_degree": 2,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 4,
+      "tip_near_degree": 1,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "demand": 8,
+        "cut_capacity": 7,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 5,
+      "tip_near_degree": 2,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 6,
+      "tip_near_degree": 2,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 7,
+      "tip_near_degree": 3,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 8,
+      "tip_near_degree": 0,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 9,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 10,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 11,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 12,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 13,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 14,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 15,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 16,
+      "tip_near_degree": 0,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 17,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 18,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 19,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 20,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 21,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 22,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 23,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 24,
+      "tip_near_degree": 0,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 25,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 26,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 27,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 28,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 29,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 30,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 31,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 32,
+      "tip_near_degree": 1,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "demand": 8,
+        "cut_capacity": 7,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 33,
+      "tip_near_degree": 2,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 34,
+      "tip_near_degree": 2,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 35,
+      "tip_near_degree": 3,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 36,
+      "tip_near_degree": 2,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 37,
+      "tip_near_degree": 3,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 38,
+      "tip_near_degree": 3,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 39,
+      "tip_near_degree": 4,
+      "tip_far_degree": 0,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 40,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 41,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 42,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "demand": 6,
+        "cut_capacity": 5,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 43,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 44,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 45,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 46,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 47,
+      "tip_near_degree": 4,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 48,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 49,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "demand": 6,
+        "cut_capacity": 5,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 50,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 51,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 52,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 53,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 54,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 55,
+      "tip_near_degree": 4,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 56,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 57,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 58,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 59,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 60,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 61,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 62,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 63,
+      "tip_near_degree": 4,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 64,
+      "tip_near_degree": 0,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 65,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 66,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 67,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 68,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 69,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 70,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "demand": 6,
+        "cut_capacity": 5,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 71,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 72,
+      "tip_near_degree": 0,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 73,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          2,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 74,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 75,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 76,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          2,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 77,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 78,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 79,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 80,
+      "tip_near_degree": 0,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 81,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 82,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 83,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 84,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 85,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 86,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 87,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 88,
+      "tip_near_degree": 0,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 89,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 90,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 91,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 92,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 93,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 94,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 95,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 96,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 97,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 98,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 99,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 100,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 101,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 102,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 103,
+      "tip_near_degree": 4,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 104,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          2,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 105,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 106,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 107,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 108,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 109,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 110,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 111,
+      "tip_near_degree": 4,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 112,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 113,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 114,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 115,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 116,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 117,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 118,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 119,
+      "tip_near_degree": 4,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 120,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 121,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          2,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 122,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 123,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 124,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          2,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 125,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 126,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 127,
+      "tip_near_degree": 4,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          8
+        ],
+        "right": [
+          1,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 128,
+      "tip_near_degree": 0,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 129,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 130,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 131,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 132,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 133,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5,
+          7
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          6
+        ],
+        "demand": 6,
+        "cut_capacity": 5,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 134,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 135,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 136,
+      "tip_near_degree": 0,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 137,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 138,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 139,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 140,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 141,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 142,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 143,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 144,
+      "tip_near_degree": 0,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 145,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 146,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          1,
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 147,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 148,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          1,
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 149,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 150,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 151,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 152,
+      "tip_near_degree": 0,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 153,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 154,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 155,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 156,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 157,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 158,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 159,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 160,
+      "tip_near_degree": 1,
+      "tip_far_degree": 1,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 161,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 162,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 163,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 164,
+      "tip_near_degree": 2,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 165,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 166,
+      "tip_near_degree": 3,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 167,
+      "tip_near_degree": 4,
+      "tip_far_degree": 1,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 168,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 169,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 170,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 171,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 172,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 173,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 174,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 175,
+      "tip_near_degree": 4,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 176,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          1,
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 177,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 178,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 179,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 180,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 181,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 182,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 183,
+      "tip_near_degree": 4,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 184,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 185,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 186,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          1,
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 187,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          3
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 188,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          1,
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 189,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 190,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 191,
+      "tip_near_degree": 4,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          7
+        ],
+        "right": [
+          2,
+          3
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 192,
+      "tip_near_degree": 0,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 193,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          3,
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6,
+          7,
+          8
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 194,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          3,
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6,
+          7,
+          8
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 195,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 196,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 197,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 198,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 199,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 200,
+      "tip_near_degree": 0,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 201,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 202,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 203,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          3,
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6,
+          7,
+          8
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 204,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 205,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          2,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 206,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 207,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 208,
+      "tip_near_degree": 0,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 209,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 210,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 211,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          3,
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6,
+          7,
+          8
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 212,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 213,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          6
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 214,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          1,
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 215,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 216,
+      "tip_near_degree": 0,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 217,
+      "tip_near_degree": 1,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 218,
+      "tip_near_degree": 1,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 219,
+      "tip_near_degree": 2,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 220,
+      "tip_near_degree": 1,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          1
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 221,
+      "tip_near_degree": 2,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          5
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 222,
+      "tip_near_degree": 2,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          8
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 223,
+      "tip_near_degree": 3,
+      "tip_far_degree": 4,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          6,
+          7,
+          8
+        ],
+        "right": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "demand": 3,
+        "cut_capacity": 2,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 224,
+      "tip_near_degree": 1,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          3,
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6,
+          7,
+          8
+        ],
+        "demand": 5,
+        "cut_capacity": 4,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 225,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 226,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 227,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 228,
+      "tip_near_degree": 2,
+      "tip_far_degree": 2,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 229,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 230,
+      "tip_near_degree": 3,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 231,
+      "tip_near_degree": 4,
+      "tip_far_degree": 2,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 232,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          3
+        ]
+      ]
+    },
+    {
+      "mask": 233,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 234,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          3,
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6,
+          7,
+          8
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 235,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 236,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          2,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 237,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 238,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 239,
+      "tip_near_degree": 4,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          5
+        ],
+        "right": [
+          1,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 240,
+      "tip_near_degree": 1,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 241,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          3,
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6,
+          7,
+          8
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 242,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 243,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 244,
+      "tip_near_degree": 2,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          1,
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "demand": 4,
+        "cut_capacity": 3,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 245,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 246,
+      "tip_near_degree": 3,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 247,
+      "tip_near_degree": 4,
+      "tip_far_degree": 3,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          4
+        ],
+        "right": [
+          2,
+          6
+        ],
+        "demand": 2,
+        "cut_capacity": 1,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 248,
+      "tip_near_degree": 1,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 249,
+      "tip_near_degree": 2,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 250,
+      "tip_near_degree": 2,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          3
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    },
+    {
+      "mask": 251,
+      "tip_near_degree": 3,
+      "tip_far_degree": 4,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          3,
+          4,
+          5
+        ],
+        "right": [
+          1,
+          2,
+          6,
+          7,
+          8
+        ],
+        "demand": 3,
+        "cut_capacity": 2,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 252,
+      "tip_near_degree": 2,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          2
+        ],
+        [
+          8,
+          1
+        ]
+      ]
+    },
+    {
+      "mask": 253,
+      "tip_near_degree": 3,
+      "tip_far_degree": 4,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          2,
+          5,
+          8
+        ],
+        "right": [
+          1,
+          3,
+          4,
+          6,
+          7
+        ],
+        "demand": 3,
+        "cut_capacity": 2,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 254,
+      "tip_near_degree": 3,
+      "tip_far_degree": 4,
+      "admitted": false,
+      "hall_cut": {
+        "left": [
+          1,
+          4,
+          7
+        ],
+        "right": [
+          2,
+          3,
+          5,
+          6,
+          8
+        ],
+        "demand": 3,
+        "cut_capacity": 2,
+        "deficit": 1
+      }
+    },
+    {
+      "mask": 255,
+      "tip_near_degree": 4,
+      "tip_far_degree": 4,
+      "admitted": true,
+      "flow_cells": [
+        [
+          4,
+          8
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          7,
+          5
+        ],
+        [
+          8,
+          4
+        ]
+      ]
+    }
+  ],
+  "admitted_masks": [
+    0,
+    8,
+    9,
+    10,
+    12,
+    16,
+    17,
+    18,
+    20,
+    24,
+    40,
+    48,
+    56,
+    57,
+    58,
+    60,
+    64,
+    65,
+    66,
+    68,
+    72,
+    74,
+    75,
+    78,
+    80,
+    81,
+    82,
+    83,
+    84,
+    86,
+    88,
+    89,
+    90,
+    92,
+    96,
+    106,
+    112,
+    113,
+    116,
+    120,
+    122,
+    123,
+    126,
+    128,
+    129,
+    130,
+    132,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    144,
+    145,
+    147,
+    149,
+    152,
+    153,
+    154,
+    156,
+    160,
+    168,
+    170,
+    172,
+    177,
+    184,
+    185,
+    187,
+    189,
+    192,
+    196,
+    197,
+    198,
+    200,
+    201,
+    202,
+    204,
+    206,
+    207,
+    208,
+    209,
+    210,
+    212,
+    213,
+    215,
+    216,
+    217,
+    218,
+    219,
+    220,
+    221,
+    222,
+    228,
+    232,
+    238,
+    240,
+    245,
+    248,
+    249,
+    250,
+    252,
+    255
+  ],
+  "forbidden_masks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    11,
+    13,
+    14,
+    15,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    59,
+    61,
+    62,
+    63,
+    67,
+    69,
+    70,
+    71,
+    73,
+    76,
+    77,
+    79,
+    85,
+    87,
+    91,
+    93,
+    94,
+    95,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    107,
+    108,
+    109,
+    110,
+    111,
+    114,
+    115,
+    117,
+    118,
+    119,
+    121,
+    124,
+    125,
+    127,
+    131,
+    133,
+    134,
+    135,
+    142,
+    143,
+    146,
+    148,
+    150,
+    151,
+    155,
+    157,
+    158,
+    159,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    169,
+    171,
+    173,
+    174,
+    175,
+    176,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    186,
+    188,
+    190,
+    191,
+    193,
+    194,
+    195,
+    199,
+    203,
+    205,
+    211,
+    214,
+    223,
+    224,
+    225,
+    226,
+    227,
+    229,
+    230,
+    231,
+    233,
+    234,
+    235,
+    236,
+    237,
+    239,
+    241,
+    242,
+    243,
+    244,
+    246,
+    247,
+    251,
+    253,
+    254
+  ],
+  "forbidden_beyond_near_le_far": [
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    73,
+    76,
+    77,
+    85,
+    91,
+    93,
+    94,
+    95,
+    104,
+    105,
+    108,
+    114,
+    121,
+    124,
+    125,
+    142,
+    146,
+    148,
+    150,
+    155,
+    157,
+    158,
+    159,
+    169,
+    176,
+    178,
+    180,
+    186,
+    188,
+    190,
+    193,
+    194,
+    195,
+    203,
+    205,
+    211,
+    214,
+    223,
+    224,
+    225,
+    226,
+    233,
+    234,
+    235,
+    236,
+    237,
+    241,
+    242,
+    243,
+    244,
+    246,
+    251,
+    253,
+    254
+  ]
+}

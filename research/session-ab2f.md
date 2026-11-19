@@ -209,3 +209,29 @@ their hypotheses permit them; computational exclusions require exact replay.
   integers and rejects noninteger congruence entries. This establishes
   minimum grid count zero in the stated finite relaxation, without
   constructing a graph or deciding stronger flag constraints.
+- Continued the single-pair case with all 81 exterior vertices present.
+  The baseline 60-second run found two partial graphs and 1,939 necessary
+  cap clauses. An independently justified ordering of the 36 duplicate
+  pairs compares only their adjacency vectors to the nine fixed tips;
+  its 180-second run returned UNKNOWN without another point. Exhaustive
+  Hall certificates leave 103 of 256 tip neighborhoods and supply 1,377
+  propagation clauses. The strengthened 180-second run found 31 partial
+  graphs and 30,446 additional cap clauses, then also returned UNKNOWN.
+  Direct integer replays check all 33 saved graphs and all 32,385 distinct
+  cap witnesses. No full graph or two-grid exclusion was obtained.
+- Derived the necessary tip condition `3I-R+J-2Z` positive semidefinite
+  in two ways: a rational Schur congruence and an exterior spectral
+  projector. Exact certificates check both original partial tip graphs.
+  The first has a kernel-integrality obstruction, but its tip four-clique
+  already violates common-neighbor bounds. No new whole case is excluded.
+- Read the parallel branch's `006cce9` checkpoint and updated the current
+  total grid bound to its stronger value 113. Its full-triangle component
+  work remains separate. The active completion follow-up replaces lazy
+  cap separation with every exterior common-neighbor bound in one model.
+- Audited the 31 Hall-run tip graphs exactly: 26 have positive definite
+  tip matrices and five have negative integer vectors. All five already
+  violate tip-only common-neighbor bounds. The 21 cap-compatible saved
+  tip graphs have no edge in common with the original rook graph; a
+  signed-incidence factorization makes the tip matrix automatically PSD
+  throughout that subcase. This observation motivated a separate small
+  test of whether the tip cap and Hall conditions force disjoint edge sets.
