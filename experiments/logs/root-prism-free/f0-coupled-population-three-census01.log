@@ -1,0 +1,33 @@
+{
+  "status": "COMPLETE_EXACT_COUPLED_UNION_CENSUS",
+  "sha256": "bc6f74139acbc3f995bea5cfe8d61877dab5b8457b968cffe8bef6d2fb69d80d",
+  "seconds": 12.669316380000964,
+  "census": {
+    "full_literal_pair_scope": 262144,
+    "covered_literal_pair_prefix": 262144,
+    "complete": true,
+    "stop_reason": null,
+    "surviving_literal_pairs": 178304,
+    "excluded_by_proved_zero_cross_pair": 83840,
+    "excluded_by_original_Gram_capacity": 0,
+    "disposition_encoding": "little-endian uint16; 0=survivor;1+original_pair_orbit=proved zero;10000+original_Gram_row=capacity violation",
+    "disposition_ledger_sha256": "bade8cd4fdfa10dc971bb6723cb09347cc938b29125a48c9b80306d21c40af46",
+    "new_forced_zero_original_pair_orbits": [],
+    "all_cross_counts_sum_to_nine_on_each_survivor": true,
+    "distinct_joint_tuples_in_covered_prefix": 59376,
+    "joint_tuple_multiplicity_histogram": {
+      "1": 56,
+      "3": 59224,
+      "6": 96
+    },
+    "joint_tuple_width": 102,
+    "exact_joint_tuple_key_payload_bytes": 6056352,
+    "hypothetical_native_table_cells": 6056352,
+    "joint_tuple_stream_sha256": "d1ac85bcb1e1b64c4e81fe7a64c23403f1067f8ac7273d967117da4ce61d6c82",
+    "large_native_table_built": false,
+    "optimizer_calls": 0,
+    "global_incidence_claimed": false,
+    "F0_exclusion_claimed": false,
+    "scope": "Exact finite six-signature restrictions only. Observed count ranges and forced zeros are complete-scope necessities only when complete=true. A nonempty survivor set is not a global incidence witness."
+  }
+}

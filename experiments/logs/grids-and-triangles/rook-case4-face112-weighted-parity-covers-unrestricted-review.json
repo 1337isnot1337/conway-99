@@ -1,0 +1,54 @@
+{
+  "status": "PASS: complete read-only weighted parity-cover source review",
+  "subject": {
+    "path": "experiments/workspace/rook_case4_face112_weighted_parity_covers.py",
+    "sha256": "71062b0c84e637016a74b8d2df267e4e1e87893ca30221b6906f20ea7b4b844b"
+  },
+  "certificate": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-covers-certificate.json",
+    "sha256": "c0c06b09c0aa79fafc2901d2bfd2b82e4da0e666baf05f853f75ac27ed7b76ce"
+  },
+  "saved_replay": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-covers-replay.json",
+    "sha256": "4a3a74688ae8f51670ff59cdbfa07030ca17177c02877d6424962f9d5c8ee9ed"
+  },
+  "entire_source_read": true,
+  "saved_chosen_rows_checked": [
+    {
+      "rhs": 9,
+      "cover_size": 70,
+      "representation": "rounded_capacity",
+      "terms": 48,
+      "all_coefficients_one": true,
+      "bounds": [
+        0,
+        4
+      ]
+    },
+    {
+      "rhs": 17,
+      "cover_size": 50,
+      "representation": "odd_cover",
+      "terms": 50,
+      "all_coefficients_one": true,
+      "bounds": [
+        1,
+        17
+      ]
+    }
+  ],
+  "mathematical_review": [
+    "Each certificate is a positive integer sum of original Gram equalities. The resulting coefficient vector is nonnegative and its right-hand side is odd,9 or17.",
+    "Writing each coefficient c as its parity plus2*floor(c/2) gives H+2F=b on the proved-zero face. For nonnegative integer selectors H is a nonnegative odd integer, hence H>=1 and equivalently F<=(b-1)/2.",
+    "Nonnegativity gives the added finite endpoints H<=b and F>=0. These endpoints introduce no independent upper-box or binary assumption.",
+    "The cover statements need only the original99 zeros. The source checks that no remaining odd-support coordinate is among the additional13 current zeros; the112-zero face only removes terms from the equivalent capacity expression.",
+    "The first chosen row is the48-unit capacity<=4; the second is the50-unit odd cover in[1,17]. Their exact fractional violations use the saved common denominator and do not establish any class exclusion.",
+    "The original Gram row sums and full1214 coefficient identities are authoritative. Saved numerical/parity discovery records supply provenance, not an unverified validity premise."
+  ],
+  "subject_imported": false,
+  "subject_executed": false,
+  "full_Gram_expansion_repeated": false,
+  "parity_scan_repeated": false,
+  "optimizer_calls": 0,
+  "case4_excluded": false
+}

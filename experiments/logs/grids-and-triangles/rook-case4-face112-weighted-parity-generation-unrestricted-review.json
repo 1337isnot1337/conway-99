@@ -1,0 +1,64 @@
+{
+  "schema": "conway99.read-only-source-review.v1",
+  "status": "PASS: complete weighted-parity append and narrow generation delta source review",
+  "reviewer": "unrestricted_completion",
+  "bindings": [
+    {
+      "path": "experiments/workspace/rook_case4_face112_weighted_parity_model.py",
+      "sha256": "06463fe26a178b9e0d1a004f47c474c6463bf52b769699c8481047dbc01a6300"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_weighted_parity_generation.py",
+      "sha256": "fb4c4b853708740e1a1726cb4455a5c82a7ae3659439407f4a00a33c67c71ec7"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_cover_generation.py",
+      "sha256": "655696089ce7f4b4fac3aabccbe1492f5f55c8c4670d3942b6b2cc251734e900"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-generation-reuse-controls.json",
+      "sha256": "bf0a98698a8c67f62254c44291fe01e10116859cb8675e7762a8a7edff64d2be"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01-cold-replay.json",
+      "sha256": "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-covers-unrestricted-review.json",
+      "sha256": "8cf733b19a4df0c3e428e852d539727d508d094d753c71fafa11edd100743bb4"
+    }
+  ],
+  "checks": {
+    "append": "Both original-coordinate Gram proofs are replayed. The 48-term range [0,4] and 50-term range [1,17] are transported through unchanged original-column IDs and appended to the cached 166011-row H3 prefix. All inherited array bytes and their canonical stream stay equal.",
+    "cached_provenance": "The passed complete parent cold record binds the old model, arrays, source, omission proofs and row/column maps. New replay explicitly does not claim to reconstruct old cover supports or rerun those omission proofs.",
+    "initial_pool_partition": "Initial rows include all1960 native rows, the two existing unit equalities, four pair capacities, H3, both weighted rows and1102 max-min rows:3071 rows/28067 terms. The164044-cover pool is unchanged and disjoint; its union with initial rows is all167115 rows.",
+    "native_and_exact_paths": "The run, prefix growth, bound/primal reconstruction algorithms and limits are unchanged. Full exact acceptance evaluates all167115 rows; restoring112 certified zeros gives the original1214 coordinate point. Numerical statuses alone do not certify exclusion.",
+    "bindings": "Source/model/array/cold hashes and explicit inherited proof bindings are checked before conversion. No new candidate, zero, symmetry or hidden restriction is introduced.",
+    "independent_delta": "Applied all25 recorded text substitutions independently and obtained byte-for-byte source equality. Independently compared all function ASTs; all16 listed unchanged functions match."
+  },
+  "AST_identical_functions": [
+    "canonical",
+    "checked_preparation",
+    "cold_arrays",
+    "controls",
+    "digest",
+    "expanded_numeric",
+    "extend",
+    "full_float_matrix",
+    "initial_row_ids",
+    "inspect_numeric_point",
+    "main",
+    "reconstruct_primal",
+    "row_ids_hash",
+    "run",
+    "runtime_binding",
+    "save"
+  ],
+  "full_new_builder_read": true,
+  "all_changed_driver_functions_read": true,
+  "subject_imported": false,
+  "model_rebuilt": false,
+  "controls_repeated": false,
+  "optimizer_calls": 0,
+  "gate_scope": "Source/math/prefix gate only; numerical runtime and old complete cold computation are not repeated."
+}

@@ -1,0 +1,5915 @@
+{
+  "inputs": {
+    "domain_cold": [
+      "f0-orbit-populations02-independent-replay.json",
+      "a8bb55cbf773ea75a8cd1d5a18b50281ecbe08f6074cea04fb2d75799138273a"
+    ],
+    "domains": [
+      "f0-orbit-populations02-domains.json.gz",
+      "4f079468530dba0746512cc4afce01666b2a63a2c8f35f66a4660a4fe3bab8ab"
+    ],
+    "moments": [
+      "f0-second-moments-preparation02.json.gz",
+      "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    ]
+  },
+  "proof": {
+    "base_zero_witnesses": 26,
+    "cases": [
+      {
+        "base_anchor": 0,
+        "base_possible_neighbors": [
+          88,
+          92,
+          95,
+          214
+        ],
+        "base_zero_witnesses": [
+          {
+            "objects": [
+              0,
+              1
+            ],
+            "zero": {
+              "literal_pair": [
+                0,
+                1
+              ],
+              "original_Gram_row": 2,
+              "pair_id": 0,
+              "pair_orbit": 0,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              4
+            ],
+            "zero": {
+              "literal_pair": [
+                0,
+                4
+              ],
+              "original_Gram_row": 2,
+              "pair_id": 3,
+              "pair_orbit": 3,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              5
+            ],
+            "zero": {
+              "literal_pair": [
+                0,
+                5
+              ],
+              "original_Gram_row": 2,
+              "pair_id": 4,
+              "pair_orbit": 4,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              91
+            ],
+            "zero": {
+              "literal_pair": [
+                0,
+                144
+              ],
+              "original_Gram_row": 39,
+              "pair_id": 143,
+              "pair_orbit": 143,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              210
+            ],
+            "zero": {
+              "literal_pair": [
+                26,
+                210
+              ],
+              "original_Gram_row": 84,
+              "pair_id": 12312,
+              "pair_orbit": 143,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              211
+            ],
+            "zero": {
+              "literal_pair": [
+                25,
+                26
+              ],
+              "original_Gram_row": 5,
+              "pair_id": 11675,
+              "pair_orbit": 3087,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              215
+            ],
+            "zero": {
+              "literal_pair": [
+                26,
+                29
+              ],
+              "original_Gram_row": 5,
+              "pair_id": 12131,
+              "pair_orbit": 3089,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              88,
+              92
+            ],
+            "zero": {
+              "literal_pair": [
+                88,
+                92
+              ],
+              "original_Gram_row": 21,
+              "pair_id": 38327,
+              "pair_orbit": 3,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              88,
+              95
+            ],
+            "zero": {
+              "literal_pair": [
+                88,
+                95
+              ],
+              "original_Gram_row": 21,
+              "pair_id": 38330,
+              "pair_orbit": 4,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              88,
+              214
+            ],
+            "zero": {
+              "literal_pair": [
+                83,
+                86
+              ],
+              "original_Gram_row": 20,
+              "pair_id": 36356,
+              "pair_orbit": 3089,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              92,
+              95
+            ],
+            "zero": {
+              "literal_pair": [
+                92,
+                95
+              ],
+              "original_Gram_row": 21,
+              "pair_id": 39884,
+              "pair_orbit": 0,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              92,
+              214
+            ],
+            "zero": {
+              "literal_pair": [
+                86,
+                87
+              ],
+              "original_Gram_row": 20,
+              "pair_id": 37539,
+              "pair_orbit": 3087,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              95,
+              214
+            ],
+            "zero": {
+              "literal_pair": [
+                86,
+                95
+              ],
+              "original_Gram_row": 33,
+              "pair_id": 37547,
+              "pair_orbit": 143,
+              "quota": 1
+            }
+          }
+        ],
+        "compatibility_degree_histogram": {
+          "4": 12
+        },
+        "compatibility_edge_count": 24,
+        "compatibility_vertex_count": 12,
+        "host_graph_automorphism_assumed": false,
+        "literal_matching": [
+          [
+            0,
+            26
+          ],
+          [
+            1,
+            145
+          ],
+          [
+            4,
+            30
+          ],
+          [
+            5,
+            149
+          ],
+          [
+            88,
+            83
+          ],
+          [
+            91,
+            144
+          ],
+          [
+            92,
+            87
+          ],
+          [
+            95,
+            148
+          ],
+          [
+            210,
+            82
+          ],
+          [
+            211,
+            25
+          ],
+          [
+            214,
+            86
+          ],
+          [
+            215,
+            29
+          ]
+        ],
+        "maximum_compatible_pair_objects": 2,
+        "original_column": 5872,
+        "pair_orbit": 25,
+        "pair_population_definition": "sum z_a*z_b over the listed 12 literal pairs",
+        "partial_selector_set_attaining_two_under_zero_constraints": [
+          0,
+          26,
+          83,
+          88
+        ],
+        "proved_count_upper_bound": 2,
+        "reduced_count_column": 5699,
+        "selector_orbits": [
+          0,
+          7
+        ],
+        "transported_star_certificates": [
+          {
+            "actual_core_action": 0,
+            "anchor": 0,
+            "possible_neighbors": [
+              88,
+              92,
+              95,
+              214
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  0,
+                  1
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    1
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 0,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 3,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 4,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    144
+                  ],
+                  "original_Gram_row": 39,
+                  "pair_id": 143,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    26,
+                    210
+                  ],
+                  "original_Gram_row": 84,
+                  "pair_id": 12312,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    25,
+                    26
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11675,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    26,
+                    29
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 12131,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38327,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38330,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    83,
+                    86
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 36356,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39884,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    86,
+                    87
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 37539,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    86,
+                    95
+                  ],
+                  "original_Gram_row": 33,
+                  "pair_id": 37547,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 2,
+            "anchor": 1,
+            "possible_neighbors": [
+              92,
+              210,
+              214,
+              215
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  0,
+                  1
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    1
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 0,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 482,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 481,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    25
+                  ],
+                  "original_Gram_row": 8,
+                  "pair_id": 502,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    145
+                  ],
+                  "original_Gram_row": 69,
+                  "pair_id": 38380,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    144,
+                    145
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 58680,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    145,
+                    148
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59017,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78648,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78649,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    87
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35961,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  214,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    214,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 79715,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    86,
+                    87
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 37539,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    87,
+                    215
+                  ],
+                  "original_Gram_row": 65,
+                  "pair_id": 38059,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 6,
+            "anchor": 4,
+            "possible_neighbors": [
+              88,
+              91,
+              92,
+              210
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  4,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 1910,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 3,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 481,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    148
+                  ],
+                  "original_Gram_row": 45,
+                  "pair_id": 2053,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    30,
+                    214
+                  ],
+                  "original_Gram_row": 90,
+                  "pair_id": 14118,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    29,
+                    30
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 13485,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    25,
+                    30
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11679,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38327,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39494,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    87
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35961,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    91
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38326,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    83
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35957,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    91
+                  ],
+                  "original_Gram_row": 27,
+                  "pair_id": 35965,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 8,
+            "anchor": 5,
+            "possible_neighbors": [
+              88,
+              210,
+              211,
+              214
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  4,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 1910,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 482,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 4,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    5,
+                    29
+                  ],
+                  "original_Gram_row": 14,
+                  "pair_id": 2408,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    149
+                  ],
+                  "original_Gram_row": 75,
+                  "pair_id": 39938,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    148,
+                    149
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 60014,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    144,
+                    149
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 58684,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78648,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78916,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    83,
+                    86
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 36356,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    211
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78645,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    83
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35957,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    83,
+                    211
+                  ],
+                  "original_Gram_row": 59,
+                  "pair_id": 36481,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 1,
+            "anchor": 88,
+            "possible_neighbors": [
+              0,
+              4,
+              5,
+              215
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  88,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    91
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38326,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38327,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38330,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    145
+                  ],
+                  "original_Gram_row": 69,
+                  "pair_id": 38380,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    83,
+                    211
+                  ],
+                  "original_Gram_row": 59,
+                  "pair_id": 36481,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    83
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35957,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    83,
+                    86
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 36356,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 3,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 4,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    26,
+                    29
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 12131,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 1910,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    29,
+                    30
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 13485,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    5,
+                    29
+                  ],
+                  "original_Gram_row": 14,
+                  "pair_id": 2408,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 4,
+            "anchor": 91,
+            "possible_neighbors": [
+              4,
+              211,
+              214,
+              215
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  88,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    91
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38326,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39497,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39494,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    91
+                  ],
+                  "original_Gram_row": 27,
+                  "pair_id": 35965,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    144
+                  ],
+                  "original_Gram_row": 39,
+                  "pair_id": 143,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    144,
+                    145
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 58680,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    144,
+                    149
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 58684,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78917,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78916,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    25,
+                    30
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11679,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  214,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    214,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 79715,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    29,
+                    30
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 13485,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    30,
+                    214
+                  ],
+                  "original_Gram_row": 90,
+                  "pair_id": 14118,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 7,
+            "anchor": 92,
+            "possible_neighbors": [
+              0,
+              1,
+              4,
+              211
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  92,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39884,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38327,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39494,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    149
+                  ],
+                  "original_Gram_row": 75,
+                  "pair_id": 39938,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    87,
+                    215
+                  ],
+                  "original_Gram_row": 65,
+                  "pair_id": 38059,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    86,
+                    87
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 37539,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    87
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35961,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 3,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 481,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    25,
+                    30
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11679,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  1
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    1
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 0,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    25,
+                    26
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11675,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    25
+                  ],
+                  "original_Gram_row": 8,
+                  "pair_id": 502,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 10,
+            "anchor": 95,
+            "possible_neighbors": [
+              0,
+              210,
+              211,
+              215
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  92,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39884,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39497,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38330,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    86,
+                    95
+                  ],
+                  "original_Gram_row": 33,
+                  "pair_id": 37547,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    148
+                  ],
+                  "original_Gram_row": 45,
+                  "pair_id": 2053,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    148,
+                    149
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 60014,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    145,
+                    148
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59017,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78917,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78649,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    26,
+                    29
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 12131,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    211
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78645,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    25,
+                    26
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11675,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    26,
+                    210
+                  ],
+                  "original_Gram_row": 84,
+                  "pair_id": 12312,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 3,
+            "anchor": 210,
+            "possible_neighbors": [
+              1,
+              4,
+              5,
+              95
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  210,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    211
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78645,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78648,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78649,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    26,
+                    210
+                  ],
+                  "original_Gram_row": 84,
+                  "pair_id": 12312,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    91
+                  ],
+                  "original_Gram_row": 27,
+                  "pair_id": 35965,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    83
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35957,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    82,
+                    87
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35961,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 482,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 481,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    145,
+                    148
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59017,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 1910,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    148,
+                    149
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 60014,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    148
+                  ],
+                  "original_Gram_row": 45,
+                  "pair_id": 2053,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 5,
+            "anchor": 211,
+            "possible_neighbors": [
+              5,
+              91,
+              92,
+              95
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  210,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    211
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78645,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78917,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78916,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    83,
+                    211
+                  ],
+                  "original_Gram_row": 59,
+                  "pair_id": 36481,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    25
+                  ],
+                  "original_Gram_row": 8,
+                  "pair_id": 502,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    25,
+                    26
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11675,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    25,
+                    30
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11679,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39497,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39494,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    144,
+                    149
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 58684,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39884,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    148,
+                    149
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 60014,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    149
+                  ],
+                  "original_Gram_row": 75,
+                  "pair_id": 39938,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 9,
+            "anchor": 214,
+            "possible_neighbors": [
+              0,
+              1,
+              5,
+              91
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  214,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    214,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 79715,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78648,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78916,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    30,
+                    214
+                  ],
+                  "original_Gram_row": 90,
+                  "pair_id": 14118,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    86,
+                    95
+                  ],
+                  "original_Gram_row": 33,
+                  "pair_id": 37547,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    86,
+                    87
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 37539,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    83,
+                    86
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 36356,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 482,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 4,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    144,
+                    149
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 58684,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  1
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    1
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 0,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    144,
+                    145
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 58680,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    144
+                  ],
+                  "original_Gram_row": 39,
+                  "pair_id": 143,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 11,
+            "anchor": 215,
+            "possible_neighbors": [
+              1,
+              88,
+              91,
+              95
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  214,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    214,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 79715,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78917,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78649,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    87,
+                    215
+                  ],
+                  "original_Gram_row": 65,
+                  "pair_id": 38059,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    5,
+                    29
+                  ],
+                  "original_Gram_row": 14,
+                  "pair_id": 2408,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    29,
+                    30
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 13485,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    26,
+                    29
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 12131,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39497,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38330,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    145,
+                    148
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59017,
+                  "pair_orbit": 3089,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    91
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38326,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    144,
+                    145
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 58680,
+                  "pair_orbit": 3087,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    145
+                  ],
+                  "original_Gram_row": 69,
+                  "pair_id": 38380,
+                  "pair_orbit": 143,
+                  "quota": 1
+                }
+              }
+            ]
+          }
+        ],
+        "used_zero_pair_orbits": [
+          0,
+          3,
+          4,
+          143,
+          3087,
+          3089
+        ]
+      },
+      {
+        "base_anchor": 0,
+        "base_possible_neighbors": [
+          95,
+          211,
+          214,
+          215
+        ],
+        "base_zero_witnesses": [
+          {
+            "objects": [
+              0,
+              1
+            ],
+            "zero": {
+              "literal_pair": [
+                0,
+                1
+              ],
+              "original_Gram_row": 2,
+              "pair_id": 0,
+              "pair_orbit": 0,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              4
+            ],
+            "zero": {
+              "literal_pair": [
+                0,
+                4
+              ],
+              "original_Gram_row": 2,
+              "pair_id": 3,
+              "pair_orbit": 3,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              5
+            ],
+            "zero": {
+              "literal_pair": [
+                0,
+                5
+              ],
+              "original_Gram_row": 2,
+              "pair_id": 4,
+              "pair_orbit": 4,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              88
+            ],
+            "zero": {
+              "literal_pair": [
+                146,
+                147
+              ],
+              "original_Gram_row": 37,
+              "pair_id": 59349,
+              "pair_orbit": 2684,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              91
+            ],
+            "zero": {
+              "literal_pair": [
+                91,
+                147
+              ],
+              "original_Gram_row": 72,
+              "pair_id": 39549,
+              "pair_orbit": 23,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              92
+            ],
+            "zero": {
+              "literal_pair": [
+                147,
+                150
+              ],
+              "original_Gram_row": 37,
+              "pair_id": 59684,
+              "pair_orbit": 2688,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              0,
+              210
+            ],
+            "zero": {
+              "literal_pair": [
+                0,
+                24
+              ],
+              "original_Gram_row": 6,
+              "pair_id": 23,
+              "pair_orbit": 23,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              95,
+              211
+            ],
+            "zero": {
+              "literal_pair": [
+                80,
+                85
+              ],
+              "original_Gram_row": 20,
+              "pair_id": 35164,
+              "pair_orbit": 2688,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              95,
+              214
+            ],
+            "zero": {
+              "literal_pair": [
+                85,
+                214
+              ],
+              "original_Gram_row": 63,
+              "pair_id": 37273,
+              "pair_orbit": 23,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              95,
+              215
+            ],
+            "zero": {
+              "literal_pair": [
+                84,
+                85
+              ],
+              "original_Gram_row": 20,
+              "pair_id": 36750,
+              "pair_orbit": 2684,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              211,
+              214
+            ],
+            "zero": {
+              "literal_pair": [
+                211,
+                214
+              ],
+              "original_Gram_row": 53,
+              "pair_id": 78916,
+              "pair_orbit": 4,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              211,
+              215
+            ],
+            "zero": {
+              "literal_pair": [
+                211,
+                215
+              ],
+              "original_Gram_row": 53,
+              "pair_id": 78917,
+              "pair_orbit": 3,
+              "quota": 1
+            }
+          },
+          {
+            "objects": [
+              214,
+              215
+            ],
+            "zero": {
+              "literal_pair": [
+                214,
+                215
+              ],
+              "original_Gram_row": 53,
+              "pair_id": 79715,
+              "pair_orbit": 0,
+              "quota": 1
+            }
+          }
+        ],
+        "compatibility_degree_histogram": {
+          "4": 12
+        },
+        "compatibility_edge_count": 24,
+        "compatibility_vertex_count": 12,
+        "host_graph_automorphism_assumed": false,
+        "literal_matching": [
+          [
+            0,
+            147
+          ],
+          [
+            1,
+            27
+          ],
+          [
+            4,
+            151
+          ],
+          [
+            5,
+            31
+          ],
+          [
+            88,
+            146
+          ],
+          [
+            91,
+            81
+          ],
+          [
+            92,
+            150
+          ],
+          [
+            95,
+            85
+          ],
+          [
+            210,
+            24
+          ],
+          [
+            211,
+            80
+          ],
+          [
+            214,
+            28
+          ],
+          [
+            215,
+            84
+          ]
+        ],
+        "maximum_compatible_pair_objects": 2,
+        "original_column": 5993,
+        "pair_orbit": 146,
+        "pair_population_definition": "sum z_a*z_b over the listed 12 literal pairs",
+        "partial_selector_set_attaining_two_under_zero_constraints": [
+          0,
+          85,
+          95,
+          147
+        ],
+        "proved_count_upper_bound": 2,
+        "reduced_count_column": 5812,
+        "selector_orbits": [
+          0,
+          6
+        ],
+        "transported_star_certificates": [
+          {
+            "actual_core_action": 0,
+            "anchor": 0,
+            "possible_neighbors": [
+              95,
+              211,
+              214,
+              215
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  0,
+                  1
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    1
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 0,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 3,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 4,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    146,
+                    147
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59349,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    147
+                  ],
+                  "original_Gram_row": 72,
+                  "pair_id": 39549,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    147,
+                    150
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59684,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    24
+                  ],
+                  "original_Gram_row": 6,
+                  "pair_id": 23,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    85
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35164,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    85,
+                    214
+                  ],
+                  "original_Gram_row": 63,
+                  "pair_id": 37273,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    84,
+                    85
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 36750,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78916,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78917,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  214,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    214,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 79715,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 2,
+            "anchor": 1,
+            "possible_neighbors": [
+              91,
+              92,
+              95,
+              215
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  0,
+                  1
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    1
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 0,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 482,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 481,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    24,
+                    27
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11222,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    27,
+                    211
+                  ],
+                  "original_Gram_row": 86,
+                  "pair_id": 12765,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    27,
+                    28
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 12582,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    146
+                  ],
+                  "original_Gram_row": 41,
+                  "pair_id": 623,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    81,
+                    84
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35561,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    84,
+                    92
+                  ],
+                  "original_Gram_row": 30,
+                  "pair_id": 36757,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    84,
+                    85
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 36750,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39494,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39497,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39884,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 6,
+            "anchor": 4,
+            "possible_neighbors": [
+              91,
+              210,
+              211,
+              215
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  4,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 1910,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 3,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 481,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    150,
+                    151
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 60675,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    95,
+                    151
+                  ],
+                  "original_Gram_row": 78,
+                  "pair_id": 41095,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    146,
+                    151
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59353,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    28
+                  ],
+                  "original_Gram_row": 12,
+                  "pair_id": 1933,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    81,
+                    84
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35561,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    81,
+                    210
+                  ],
+                  "original_Gram_row": 57,
+                  "pair_id": 35687,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    81
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35160,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78649,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78917,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    211
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78645,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 8,
+            "anchor": 5,
+            "possible_neighbors": [
+              88,
+              91,
+              95,
+              211
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  4,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 1910,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 482,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 4,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    28,
+                    31
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 13036,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    31,
+                    215
+                  ],
+                  "original_Gram_row": 92,
+                  "pair_id": 14567,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    24,
+                    31
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11226,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    5,
+                    150
+                  ],
+                  "original_Gram_row": 47,
+                  "pair_id": 2529,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    85
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35164,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    88
+                  ],
+                  "original_Gram_row": 24,
+                  "pair_id": 35167,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    81
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35160,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38330,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39497,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    91
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38326,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 1,
+            "anchor": 88,
+            "possible_neighbors": [
+              5,
+              210,
+              214,
+              215
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  88,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    91
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38326,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38327,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38330,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    146,
+                    147
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59349,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    146
+                  ],
+                  "original_Gram_row": 41,
+                  "pair_id": 623,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    146,
+                    151
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59353,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    88
+                  ],
+                  "original_Gram_row": 24,
+                  "pair_id": 35167,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    24,
+                    31
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11226,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    31,
+                    215
+                  ],
+                  "original_Gram_row": 92,
+                  "pair_id": 14567,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    28,
+                    31
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 13036,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78649,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78648,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  214,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    214,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 79715,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 4,
+            "anchor": 91,
+            "possible_neighbors": [
+              1,
+              4,
+              5,
+              214
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  88,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    91
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38326,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39497,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39494,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    81
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35160,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    81,
+                    210
+                  ],
+                  "original_Gram_row": 57,
+                  "pair_id": 35687,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    81,
+                    84
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35561,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    147
+                  ],
+                  "original_Gram_row": 72,
+                  "pair_id": 39549,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    27,
+                    28
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 12582,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    28
+                  ],
+                  "original_Gram_row": 12,
+                  "pair_id": 1933,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    28,
+                    31
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 13036,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 481,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 482,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 1910,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 7,
+            "anchor": 92,
+            "possible_neighbors": [
+              1,
+              210,
+              211,
+              214
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  92,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39884,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38327,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39494,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    150,
+                    151
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 60675,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    5,
+                    150
+                  ],
+                  "original_Gram_row": 47,
+                  "pair_id": 2529,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    147,
+                    150
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59684,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    84,
+                    92
+                  ],
+                  "original_Gram_row": 30,
+                  "pair_id": 36757,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    27,
+                    28
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 12582,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    27,
+                    211
+                  ],
+                  "original_Gram_row": 86,
+                  "pair_id": 12765,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    24,
+                    27
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11222,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78916,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78648,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    211
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78645,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 10,
+            "anchor": 95,
+            "possible_neighbors": [
+              0,
+              1,
+              5,
+              210
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  92,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39884,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39497,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38330,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    84,
+                    85
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 36750,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    85,
+                    214
+                  ],
+                  "original_Gram_row": 63,
+                  "pair_id": 37273,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    85
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35164,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    95,
+                    151
+                  ],
+                  "original_Gram_row": 78,
+                  "pair_id": 41095,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    24,
+                    31
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11226,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    24
+                  ],
+                  "original_Gram_row": 6,
+                  "pair_id": 23,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    24,
+                    27
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11222,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 4,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 482,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  1
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    1
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 0,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 3,
+            "anchor": 210,
+            "possible_neighbors": [
+              4,
+              88,
+              92,
+              95
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  210,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    211
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78645,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78648,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78649,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    24,
+                    27
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11222,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    24
+                  ],
+                  "original_Gram_row": 6,
+                  "pair_id": 23,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    24,
+                    31
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 11226,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  210
+                ],
+                "zero": {
+                  "literal_pair": [
+                    81,
+                    210
+                  ],
+                  "original_Gram_row": 57,
+                  "pair_id": 35687,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    146,
+                    151
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59353,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    95,
+                    151
+                  ],
+                  "original_Gram_row": 78,
+                  "pair_id": 41095,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    150,
+                    151
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 60675,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38330,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38327,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  95
+                ],
+                "zero": {
+                  "literal_pair": [
+                    92,
+                    95
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39884,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 5,
+            "anchor": 211,
+            "possible_neighbors": [
+              0,
+              4,
+              5,
+              92
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  210,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    211
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78645,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78917,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78916,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    81
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35160,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    88
+                  ],
+                  "original_Gram_row": 24,
+                  "pair_id": 35167,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    80,
+                    85
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35164,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  211
+                ],
+                "zero": {
+                  "literal_pair": [
+                    27,
+                    211
+                  ],
+                  "original_Gram_row": 86,
+                  "pair_id": 12765,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    147,
+                    150
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59684,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    5,
+                    150
+                  ],
+                  "original_Gram_row": 47,
+                  "pair_id": 2529,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    150,
+                    151
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 60675,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 4,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 3,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  5
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    5
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 1910,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 9,
+            "anchor": 214,
+            "possible_neighbors": [
+              0,
+              88,
+              91,
+              92
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  214,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    214,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 79715,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78648,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    214
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78916,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    28,
+                    31
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 13036,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    4,
+                    28
+                  ],
+                  "original_Gram_row": 12,
+                  "pair_id": 1933,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    27,
+                    28
+                  ],
+                  "original_Gram_row": 5,
+                  "pair_id": 12582,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  214
+                ],
+                "zero": {
+                  "literal_pair": [
+                    85,
+                    214
+                  ],
+                  "original_Gram_row": 63,
+                  "pair_id": 37273,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    147,
+                    150
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59684,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    147
+                  ],
+                  "original_Gram_row": 72,
+                  "pair_id": 39549,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    146,
+                    147
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59349,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    91,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 39494,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  92
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    92
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38327,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  88,
+                  91
+                ],
+                "zero": {
+                  "literal_pair": [
+                    88,
+                    91
+                  ],
+                  "original_Gram_row": 21,
+                  "pair_id": 38326,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          },
+          {
+            "actual_core_action": 11,
+            "anchor": 215,
+            "possible_neighbors": [
+              0,
+              1,
+              4,
+              88
+            ],
+            "zero_witnesses": [
+              {
+                "objects": [
+                  214,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    214,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 79715,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  211,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    211,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78917,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  210,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    210,
+                    215
+                  ],
+                  "original_Gram_row": 53,
+                  "pair_id": 78649,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  95,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    84,
+                    85
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 36750,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  92,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    84,
+                    92
+                  ],
+                  "original_Gram_row": 30,
+                  "pair_id": 36757,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  91,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    81,
+                    84
+                  ],
+                  "original_Gram_row": 20,
+                  "pair_id": 35561,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  5,
+                  215
+                ],
+                "zero": {
+                  "literal_pair": [
+                    31,
+                    215
+                  ],
+                  "original_Gram_row": 92,
+                  "pair_id": 14567,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  4,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    146,
+                    151
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59353,
+                  "pair_orbit": 2688,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    146
+                  ],
+                  "original_Gram_row": 41,
+                  "pair_id": 623,
+                  "pair_orbit": 23,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  88
+                ],
+                "zero": {
+                  "literal_pair": [
+                    146,
+                    147
+                  ],
+                  "original_Gram_row": 37,
+                  "pair_id": 59349,
+                  "pair_orbit": 2684,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  1,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    1,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 481,
+                  "pair_orbit": 4,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  4
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    4
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 3,
+                  "pair_orbit": 3,
+                  "quota": 1
+                }
+              },
+              {
+                "objects": [
+                  0,
+                  1
+                ],
+                "zero": {
+                  "literal_pair": [
+                    0,
+                    1
+                  ],
+                  "original_Gram_row": 2,
+                  "pair_id": 0,
+                  "pair_orbit": 0,
+                  "quota": 1
+                }
+              }
+            ]
+          }
+        ],
+        "used_zero_pair_orbits": [
+          0,
+          3,
+          4,
+          23,
+          2684,
+          2688
+        ]
+      }
+    ],
+    "extra_Gram_capacity_premise_used": false,
+    "full_incidence_or_graph_existence_claimed": false,
+    "large_subset_censuses": 0,
+    "matching_equivariance_checks": 288,
+    "optimizer_calls": 0,
+    "original_quota_one_zeros_checked_directly": true,
+    "population_three_premise_used": false,
+    "status": "PASS: two direct pair-zero packing bounds",
+    "transported_zero_witnesses": 312
+  },
+  "schema": "conway99.f0.pair_population_two_proof.v1",
+  "seconds": 0.9106004169952939,
+  "source_sha256": "0278c4e1d365e79fea05061778e75caac1e5f102f697ee31481051fff6c15539"
+}

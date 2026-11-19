@@ -1,0 +1,36 @@
+{
+  "status": "PASS: complete common-character-phase source/math review with finite arithmetic controls",
+  "reviewer": "unrestricted_completion",
+  "bindings": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_phase.py",
+      "sha256": "39a12ceb362fea57944637f94f79911ddcfac3c11c9a4478406cf8f6a34025e1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-phase-normalization01.json",
+      "sha256": "737389ccfd5290072e8dd4cb12a63bfa3a6cae2d10a6ece2793c0a891aff7e04"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-phase-normalization01-cold.json",
+      "sha256": "56c67d0049db09454abc33d2801a9a66edb0b75e120df8c5f6c07f9ce65fb36b"
+    }
+  ],
+  "checks": {
+    "single_common_action": "The four phases are realized by the recorded actual core actions and have the form (a,b,ab). One common phase multiplies every signed population of the same character; no per-orbit sign choices are made.",
+    "invariant_model": "Count variables and all same-character product variables remain fixed. Each homogeneous character-Gram row acquires one common sign. Every local and joint table is permuted with multiplicity preserved by the complete reviewed source checks. Count-only dense inequalities and coupled count bounds are invariant.",
+    "normalization": "The first union contains three selected signatures. Both selected sign sums are odd and nonzero. Exactly one of the four common phases makes both positive. Thus the normalized target retains a representative of every feasible unnormalized count model; the two rows are not universal restrictions on every labelled signed assignment.",
+    "projection": "The two explicit native rows select exactly44 of176 first joint profiles. Restricting that table to these44 profiles is equivalent after the normalization rows.",
+    "scope": "This is model-level symmetry coverage; no automorphism of a completed graph is assumed."
+  },
+  "independent_finite_arithmetic": {
+    "phase_sign_tests": 80,
+    "actual_action_indices_checked": 12,
+    "anchor_profiles_checked": 176,
+    "retained_profiles": 44
+  },
+  "full_source_read": true,
+  "subject_imported": false,
+  "all_table_closure_census_repeated": false,
+  "local_subset_census_repeated": false,
+  "optimizer_calls": 0
+}
