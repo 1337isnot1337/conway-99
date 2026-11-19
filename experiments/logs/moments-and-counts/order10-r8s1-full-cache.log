@@ -1,0 +1,59 @@
+{"complete_root_blocks_built": 128}
+{"complete_root_blocks_built": 256}
+{"complete_root_blocks_built": 384}
+{"complete_root_blocks_built": 512}
+{"complete_root_blocks_built": 640}
+{"complete_root_blocks_built": 768}
+{"complete_root_blocks_built": 896}
+{
+  "status": "complete point-independent916-root cache built",
+  "source_sha256": "25e9cebb9593311e0a852e84bd9e0f2798eb9eba0e0b4811a3c85561af03aa83",
+  "construction_source_sha256": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469",
+  "catalogue_path": "/tmp/conway99-order10-catalogue.pickle",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "cache_path": "experiments/logs/moments-and-counts/order10-r8s1-full-blocks.pickle.gz",
+  "cache_sha256": "aecf7411230f718c8c3879c38ad39dcdb041ed07c58a799f8b044ebd0ab5028d",
+  "cache_bytes": 3127487,
+  "point_independent": true,
+  "zero_flags_or_roots_removed": false,
+  "complete_root_family": true,
+  "root_blocks": 916,
+  "nontrivial_blocks": 911,
+  "maximum_flags": 220,
+  "lower_entries": 1383645,
+  "tensor_nonzeros": 1151532,
+  "explicit_transports_checked": 39105,
+  "direct_rook_controls": {
+    "status": "direct R9 rooted-product controls passed",
+    "cases": [
+      {
+        "omitted_pair": [
+          0,
+          1
+        ],
+        "root_type": 306,
+        "root_embeddings": 72,
+        "flags": 3,
+        "exact_matrix_sha256": "76f5c15b7f37f8bc07165270bc68f4041b89e71f919f0cd26adf66e928653f58",
+        "passed": true
+      },
+      {
+        "omitted_pair": [
+          0,
+          4
+        ],
+        "root_type": 304,
+        "root_embeddings": 72,
+        "flags": 11,
+        "exact_matrix_sha256": "1ca0a521c46fc20846dcc38acec2367aebb2881f98b84636c1da947bbb7663f2",
+        "passed": true
+      }
+    ]
+  },
+  "timed_out": false,
+  "maximum_seconds": 120.0,
+  "seconds": 7.0113986730011675,
+  "peak_process_rss_kib": 226736,
+  "optimizer_called": false,
+  "numerical_eigensystems_computed": false
+}

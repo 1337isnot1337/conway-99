@@ -79,6 +79,14 @@ order nine; new order-ten moment blocks are a separate search.
 [Stronger injective embedding bounds](research/grids-and-triangles/order10_embedding_bounds.md)
 improve every individual core bound but also permit this point. The
 finite relaxation therefore still cannot force a prism or rook grid.
+The next [eight-root, one-vertex flag scan](research/grids-and-triangles/grid_free_order10_r8s1.md)
+does reject that repaired point. Eleven integer quadratic witnesses give
+eleven distinct inequalities involving genuine order-ten counts. A separate
+replay constructs the extension graphs directly and checks every cut.
+The complete reusable cache retains all 916 roots without point-dependent
+zero-flag removal. These cuts exclude this point; they do not exclude the
+prism-free case. The earlier 1,416-block PSD certificate remains valid
+within its stated finite family.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -158,6 +166,14 @@ The pilot reached its eight-design limit without exhausting the class.
 [Static relabeling closure](research/grids-and-triangles/complement_rook_incidence_master_cut_orbits.md)
 gives 1,152 distinct necessary clauses. This does not improve the current
 global `a>=3` bound or exclude the complementary-rook core.
+The [exact incidence implications](research/grids-and-triangles/complement_rook_incidence_core_simplification.md)
+shorten those eight patterns to sizes `22,16,18,29,28,18,18,18`.
+Quota traces, 34 small DRAT proofs, and 64 exact incidence counterexamples
+check the reductions. A separate deletion pilot gives an
+[eleven-positive-signature exclusion](research/grids-and-triangles/complement_rook_positive_pattern.md),
+with no negative assumptions. Its fresh proof and independent full-base
+replay pass. The 144 relabelings replace the older case-one patterns in
+a refined 1,152-clause export. No whole-core exclusion or minimality follows.
 
 ## Scope of the unrestricted computations
 
@@ -191,6 +207,16 @@ The [prism interpretation](research/root_full_caps_prisms.md) identifies
 the anchor statistic with prism copies through the chosen root. Its
 zero cases make that root prism-free. A global choice of root would
 be a further normalization and was not imposed in those four runs.
+Under the globally prism-free hypothesis, a separate
+[matching reduction](research/root_prism_free_structure.md) gives 34,440
+necessary four-edge clauses and exact mixed spectral traces. Four partial
+controls satisfy every clause and visible pair cap; they are not complete
+graphs. The [complete-cap overlay](research/root_prism_free_overlay.md)
+retains the older full edge model and all four matching cases.
+Its [first four runs](research/root_prism_free_runs_01.md) all returned
+UNKNOWN at sixty seconds each. A separately checked
+[minimum-anchor normalization](research/root_prism_free_anchor_min.md)
+gives shorter component clauses. It was not imposed in those runs.
 
 The [general 39-point triangle identities](research/grids-and-triangles/triangle_root_constraints.md)
 show that both principal projector tests are automatic. The visible caps

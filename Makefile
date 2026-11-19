@@ -6,6 +6,7 @@ CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.jso
 .PHONY: verify-order-ten-count-cut verify-root-anchor-max
 .PHONY: verify-order-ten-moment-cuts verify-complement-rook-schur
 .PHONY: verify-prism-zero-counts verify-prism-zero-psd verify-incidence-master-cut-orbits
+.PHONY: verify-root-prism-free-structure verify-incidence-core-simplification verify-refined-pattern-orbits
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -67,6 +68,20 @@ verify-prism-zero-psd:
 
 verify-incidence-master-cut-orbits:
 	"$(PYTHON)" $(WORKSPACE)/complement_rook_incidence_master_cut_orbits.py --pilot experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01.json --replay experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01-full-replay.json --certificate experiments/logs/grids-and-triangles/complement-rook-incidence-master-cut-orbits.json
+
+verify-root-prism-free-structure:
+	"$(PYTHON)" $(WORKSPACE)/root_prism_free_structure.py --certificate experiments/logs/root-prism-free/structure-certificate.json --clauses experiments/logs/root-prism-free/near-axis-clauses.cnf.gz --replay
+	"$(PYTHON)" $(WORKSPACE)/root_prism_free_anchor_min.py --lex-analysis experiments/logs/root-full-caps-lex/analysis.json --certificate experiments/logs/root-prism-free/anchor-min-certificate.json --replay
+
+verify-incidence-core-simplification:
+	@test -x "$(DRAT_TRIM)" || { echo 'Set DRAT_TRIM to the drat-trim executable path.' >&2; exit 1; }
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/"*.cnf; rmdir "$$build_dir"' EXIT; \
+	"$(PYTHON)" $(WORKSPACE)/complement_rook_incidence_core_simplification.py --pilot experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01.json --full-replay experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01-full-replay.json --directory "$$build_dir" --certificate experiments/logs/grids-and-triangles/complement-rook-incidence-core-simplification.json --drat-trim "$(DRAT_TRIM)"
+
+verify-refined-pattern-orbits:
+	"$(PYTHON)" $(WORKSPACE)/complement_rook_refined_pattern_orbits.py --certificate experiments/logs/grids-and-triangles/complement-rook-refined-pattern-orbits.json
 
 verify-root-matching-coverage:
 	"$(PYTHON)" $(WORKSPACE)/root_full_caps_coverage.py --certificate experiments/logs/root-full-caps/matching-coverage.json

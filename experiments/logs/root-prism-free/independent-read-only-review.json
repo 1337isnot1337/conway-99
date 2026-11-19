@@ -1,0 +1,79 @@
+{
+  "status": "independent mathematical and read-only encoding review PASS",
+  "source_hashes": {
+    "root_prism_free_structure.py": "d3c72f72481b095086306c8cda3995b064b396e28200822ac4d479a582835904",
+    "root_prism_free_overlay.py": "66111dfcf4118dd3d3927719a89f55b224fe840f1d0527b7314664b4bbd416b1",
+    "root_prism_free_solve.py": "02ca4500d39a30c775661f4a9efd8d27d4534e6fc757af2a0f6251022f4c8a0e",
+    "root_prism_free_certificate.py": "b89623b11152f327d217ff5d1e57c434db8efc54137f2a2af431366b5a36b857"
+  },
+  "structure_certificate": "experiments/logs/root-prism-free/structure-certificate.json",
+  "structure_certificate_sha256": "7ca250ef33ff409fde71c4be00d92fc5af6b514b2a2b02b0766326c57ca90662",
+  "independent_ordered_four_site_clause_reconstruction": {
+    "clauses": 34440,
+    "clauses_per_axis": [
+      4920,
+      4920,
+      4920,
+      4920,
+      4920,
+      4920,
+      4920
+    ],
+    "matches_saved_clause_set": true,
+    "raw_clause_sha256": "05a7d5d559c00cb557001c6b80a64145dd6119ae2018f2ae1273d9c3b4d4bcf2"
+  },
+  "models": [
+    {
+      "path": "experiments/logs/root-prism-free/case-07-model.json",
+      "sha256": "ab8d0f85e5aee65843a9233177e701b4c986392d6c95f919e2a8896623c593b7",
+      "case_index": 7,
+      "variables": 982934,
+      "clauses": 2010956,
+      "matching_stabilizer_generators": 8,
+      "cnf_sha256": "d8895c8e46d591f1cbfb41a5a1af8c414782dd677d8746207ed2268e645f36b4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/case-08-model.json",
+      "sha256": "f4c43a48b206534eb88a78191e992cd96013f4932e85d4d1aa46896ae08bfadf",
+      "case_index": 8,
+      "variables": 972476,
+      "clauses": 1979578,
+      "matching_stabilizer_generators": 4,
+      "cnf_sha256": "d32b65ff37554df4f2d5dda7d95bf8e72e25b420759c6984301fd9b1662446f2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/case-09-model.json",
+      "sha256": "5c17410e3e64b078d35f54d632c60e9463d169ad191f7ee7e0d86552bf5c8030",
+      "case_index": 9,
+      "variables": 976525,
+      "clauses": 1991726,
+      "matching_stabilizer_generators": 5,
+      "cnf_sha256": "3492ab0bc08fd44978c205d242a5d57f5c0498545caab56c7b9af9a78ad13d00"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/case-10-model.json",
+      "sha256": "d6f8f37e33d98adff33cd67b959c1d0e5c93a040425817afd7701cbe02b4a781",
+      "case_index": 10,
+      "variables": 967338,
+      "clauses": 1964162,
+      "matching_stabilizer_generators": 2,
+      "cnf_sha256": "95b54ba116bde146244befda799d5f2fa14c7ceef7d91a66e8c75237852d0e85"
+    }
+  ],
+  "full_formula_rebuilt": false,
+  "solver_called": false,
+  "proof_replayed": false,
+  "mathematical_checks": [
+    "39-vertex triangle-core prism characterization by fixed points and transported matching overlaps",
+    "shared-site clause omissions follow from root zero-side units or existing common-neighbor caps",
+    "global prism-freeness gives the four-case union; a prism-free selected root alone does not",
+    "signed-axis and centered-support projector traces give tr(C^3 H)=5544+2m_r"
+  ],
+  "code_review_checks": [
+    "overlay appends only the certified34440clauses",
+    "lex-generator clause invariance is checked before accepting the symmetry normalization",
+    "certificate wrapper reconstructs base,anchor,lex,84zero units,and overlay before retained inclusion and DRAT",
+    "UNKNOWN is unresolved and candidate graphs receive full ordinary SRG checks"
+  ],
+  "scope": "The finite clauses and proof pipeline are necessary under global prism-freeness. No exclusion follows from this review."
+}

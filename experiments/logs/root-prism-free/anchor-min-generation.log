@@ -1,0 +1,211 @@
+{
+  "status": "exact minimum-partition component equivalence PASS; no formula changed",
+  "source_sha256": "99b1150b33997665bc6be80696c829d7a34a3501414b59da117e4142d5c722b5",
+  "structure_source_sha256": "d3c72f72481b095086306c8cda3995b064b396e28200822ac4d479a582835904",
+  "lex_analysis": "experiments/logs/root-full-caps-lex/analysis.json",
+  "lex_analysis_sha256": "1abd9986f9d9a44743f4d56d58e876d24aa2b7a6f8a98ed34a92698a7a191bb8",
+  "matching_count": 10395,
+  "no_mate_matching_count": 6040,
+  "matching_type_histogram": [
+    [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      1
+    ],
+    [
+      [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      30
+    ],
+    [
+      [
+        1,
+        1,
+        1,
+        3
+      ],
+      160
+    ],
+    [
+      [
+        1,
+        1,
+        2,
+        2
+      ],
+      180
+    ],
+    [
+      [
+        1,
+        1,
+        4
+      ],
+      720
+    ],
+    [
+      [
+        1,
+        2,
+        3
+      ],
+      960
+    ],
+    [
+      [
+        1,
+        5
+      ],
+      2304
+    ],
+    [
+      [
+        2,
+        2,
+        2
+      ],
+      120
+    ],
+    [
+      [
+        2,
+        4
+      ],
+      1440
+    ],
+    [
+      [
+        3,
+        3
+      ],
+      640
+    ],
+    [
+      [
+        6
+      ],
+      3840
+    ]
+  ],
+  "case24_equivalence_requires_no_reference_mates": true,
+  "case24_outside_scope_counterexamples": 180,
+  "propagation_control": {
+    "status": "strict unit-propagation improvement in the explicit local matching CNF",
+    "local_matching_variables": 60,
+    "local_matching_clauses": 552,
+    "four_positive_edges": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        4,
+        7
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "remaining_perfect_matchings": 2,
+    "full_six_edge_clauses_detect_conflict_by_unit_propagation": false,
+    "four_edge_component_clauses_detect_conflict_by_unit_propagation": true,
+    "unassigned_variables_after_full_clause_propagation": 4,
+    "scope": "local pairwise exactly-one encoding only; no full-SRG runtime comparison"
+  },
+  "scope": "new minimum-anchor four-case union, not each earlier case separately",
+  "current_pilot_changed": false,
+  "full_CNF_built": false,
+  "solver_called": false
+}
+{
+  "variant_counts": {
+    "case24_full": {
+      "case_index": 8,
+      "clauses_per_other_anchor": 120,
+      "literal_occurrences_per_other_anchor": 720,
+      "other_anchors": 13,
+      "global_clauses": 1560,
+      "clause_length_histogram": [
+        [
+          6,
+          1560
+        ]
+      ],
+      "global_clause_set_sha256": "d62ecc4fd7d99989d0b918df946c5f740142947a56c7e9aa15f46c227e801633",
+      "surviving_no_mate_matchings": 5920,
+      "stabilizer_generators_checked": 4,
+      "matching_complete_partial_control": "PASS"
+    },
+    "case24_components": {
+      "case_index": 8,
+      "clauses_per_other_anchor": 180,
+      "literal_occurrences_per_other_anchor": 720,
+      "other_anchors": 13,
+      "global_clauses": 2340,
+      "clause_length_histogram": [
+        [
+          4,
+          2340
+        ]
+      ],
+      "global_clause_set_sha256": "f04423db65af3de8e0c6d7d366ab97fedd4b8e67013dd8014bd63f2698634406",
+      "surviving_no_mate_matchings": 5920,
+      "stabilizer_generators_checked": 4,
+      "matching_complete_partial_control": "PASS"
+    },
+    "case33_components": {
+      "case_index": 9,
+      "clauses_per_other_anchor": 30,
+      "literal_occurrences_per_other_anchor": 60,
+      "other_anchors": 13,
+      "global_clauses": 390,
+      "clause_length_histogram": [
+        [
+          2,
+          390
+        ]
+      ],
+      "global_clause_set_sha256": "c607b848afd3f1349aec7680338c070d28a0daabc9eac962cac41e570c40cea6",
+      "surviving_no_mate_matchings": 4480,
+      "stabilizer_generators_checked": 5,
+      "matching_complete_partial_control": "PASS"
+    },
+    "case6_components": {
+      "case_index": 10,
+      "clauses_per_other_anchor": 190,
+      "literal_occurrences_per_other_anchor": 540,
+      "other_anchors": 13,
+      "global_clauses": 2470,
+      "clause_length_histogram": [
+        [
+          2,
+          390
+        ],
+        [
+          3,
+          2080
+        ]
+      ],
+      "global_clause_set_sha256": "aed3fcb7530faf0dc138799a1b00df18a8e4ada72f336082eb714673ce613e6e",
+      "surviving_no_mate_matchings": 3840,
+      "stabilizer_generators_checked": 2,
+      "matching_complete_partial_control": "PASS"
+    }
+  }
+}

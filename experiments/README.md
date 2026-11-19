@@ -244,6 +244,30 @@ it does not itself call DRAT. The
 [pilot result note](../research/grids-and-triangles/complement_rook_incidence_master_pilot_01_results.md)
 gives the full-base rebuild and DRAT command for each of the eight cuts.
 
+The repaired count point is rejected by the next
+[order-ten flag family](../research/grids-and-triangles/grid_free_order10_r8s1.md).
+Its eleven exact cuts have a direct graph-construction replay. That replay
+requires the hash-bound order-ten catalogue and reduced cache. The complete
+916-root cache is separate from the point-pruned discovery cache.
+
+The newer incidence and prism-structure replays are:
+
+```sh
+make verify-incidence-core-simplification DRAT_TRIM=/absolute/path/to/drat-trim
+make verify-refined-pattern-orbits
+make verify-root-prism-free-structure
+```
+
+The first reconstructs exact quota implications, checks all 64 incidence
+counterexamples, and verifies all 34 small DRAT proofs. The second checks
+the refined relabeling export, including the eleven-positive-signature
+pattern. The [positive-pattern note](../research/grids-and-triangles/complement_rook_positive_pattern.md)
+gives its separate complete-base rebuild and decisive DRAT replay.
+The third reconstructs all 34,440 prism clauses, partial controls, and
+minimum-anchor matching census. It starts no complete graph search.
+All four [prism-free overlay runs](../research/root_prism_free_runs_01.md)
+remain UNKNOWN.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh

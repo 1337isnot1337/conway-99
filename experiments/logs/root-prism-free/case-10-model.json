@@ -1,0 +1,78 @@
+{
+  "status": "global-prism-free overlay prepared; no solve",
+  "scope": "globally prism-free SRG case; not every graph with a prism-free chosen root",
+  "case_index": 10,
+  "partition": [
+    6
+  ],
+  "previous_model": "experiments/logs/root-full-caps-anchor-max/case-10-model.json",
+  "previous_model_sha256": "ae2ec1df72ab03f690f5316797f2fd6a4b4860cf9eb2a9aed2053b399a72c34c",
+  "previous_cnf": "/tmp/conway-root-full-caps-anchor-max/case-10.cnf",
+  "previous_cnf_sha256": "02ba0632ff5922893bc71270f6ed3b9b91d5551d0f492813291c88c20f5f726b",
+  "previous_variables": 967338,
+  "previous_clauses": 1929722,
+  "previous_batch": "experiments/logs/root-full-caps-anchor-max/run-01/batch.json",
+  "previous_batch_sha256": "6cc059f71a1868c6fe3f7122a7e89b959b87ef4c2fc6a4d5094e1ce3f31871a1",
+  "structure_certificate": "experiments/logs/root-prism-free/structure-certificate.json",
+  "structure_certificate_sha256": "7ca250ef33ff409fde71c4be00d92fc5af6b514b2a2b02b0766326c57ca90662",
+  "structure_source_sha256": "d3c72f72481b095086306c8cda3995b064b396e28200822ac4d479a582835904",
+  "raw_overlay_sha256": "05a7d5d559c00cb557001c6b80a64145dd6119ae2018f2ae1273d9c3b4d4bcf2",
+  "primary_edge_order_sha256": "6e766dafff29b9cb6d3cbe57b7aabf58499ca70469800ddc79f34e808d1ad4ac",
+  "new_clauses": 34440,
+  "new_variables": 0,
+  "variables": 967338,
+  "clauses": 1964162,
+  "cnf": "/tmp/conway-root-prism-free/case-10.cnf",
+  "cnf_sha256": "95b54ba116bde146244befda799d5f2fa14c7ceef7d91a66e8c75237852d0e85",
+  "matching_stabilizer_order": 12,
+  "matching_stabilizer_generators": 2,
+  "clause_invariance": [
+    {
+      "generator_image": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        0,
+        1
+      ],
+      "edge_image_sha256": "39d2fb1bcc8ffcf218abffa2bf524375004ca6049614dd418005de26ceaf299d",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        1,
+        0,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3,
+        2
+      ],
+      "edge_image_sha256": "818e652ae7ef7d20e62a070d3048382349916f2b55a92b4a88ec77a8c1a0a48b",
+      "preserved_clauses": 34440
+    }
+  ],
+  "source_hashes": {
+    "root_prism_free_overlay.py": "66111dfcf4118dd3d3927719a89f55b224fe840f1d0527b7314664b4bbd416b1",
+    "root_prism_free_solve.py": "02ca4500d39a30c775661f4a9efd8d27d4534e6fc757af2a0f6251022f4c8a0e",
+    "root_prism_free_certificate.py": "b89623b11152f327d217ff5d1e57c434db8efc54137f2a2af431366b5a36b857"
+  },
+  "all_previous_complete_caps_retained": true,
+  "all_previous_lex_and_anchor_clauses_retained": true,
+  "minimum_partition_normalization_added": false,
+  "graph_automorphism_assumptions": 0,
+  "solver_called": false,
+  "excludes_whole_old_same_index_case": false
+}

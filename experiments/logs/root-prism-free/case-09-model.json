@@ -1,0 +1,133 @@
+{
+  "status": "global-prism-free overlay prepared; no solve",
+  "scope": "globally prism-free SRG case; not every graph with a prism-free chosen root",
+  "case_index": 9,
+  "partition": [
+    3,
+    3
+  ],
+  "previous_model": "experiments/logs/root-full-caps-anchor-max/case-09-model.json",
+  "previous_model_sha256": "2b9efe50844c6450b8b6ea2791480c79aa4d9acfb88f9d97c43bbc5b6bd14d15",
+  "previous_cnf": "/tmp/conway-root-full-caps-anchor-max/case-09.cnf",
+  "previous_cnf_sha256": "f62b5928324f75adbcefa49935824d95ddf6ed8abe9d923d1f4ed407e5d3bbf4",
+  "previous_variables": 976525,
+  "previous_clauses": 1957286,
+  "previous_batch": "experiments/logs/root-full-caps-anchor-max/run-01/batch.json",
+  "previous_batch_sha256": "6cc059f71a1868c6fe3f7122a7e89b959b87ef4c2fc6a4d5094e1ce3f31871a1",
+  "structure_certificate": "experiments/logs/root-prism-free/structure-certificate.json",
+  "structure_certificate_sha256": "7ca250ef33ff409fde71c4be00d92fc5af6b514b2a2b02b0766326c57ca90662",
+  "structure_source_sha256": "d3c72f72481b095086306c8cda3995b064b396e28200822ac4d479a582835904",
+  "raw_overlay_sha256": "05a7d5d559c00cb557001c6b80a64145dd6119ae2018f2ae1273d9c3b4d4bcf2",
+  "primary_edge_order_sha256": "6e766dafff29b9cb6d3cbe57b7aabf58499ca70469800ddc79f34e808d1ad4ac",
+  "new_clauses": 34440,
+  "new_variables": 0,
+  "variables": 976525,
+  "clauses": 1991726,
+  "cnf": "/tmp/conway-root-prism-free/case-09.cnf",
+  "cnf_sha256": "3492ab0bc08fd44978c205d242a5d57f5c0498545caab56c7b9af9a78ad13d00",
+  "matching_stabilizer_order": 72,
+  "matching_stabilizer_generators": 5,
+  "clause_invariance": [
+    {
+      "generator_image": [
+        2,
+        3,
+        4,
+        5,
+        0,
+        1,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edge_image_sha256": "f20784fcf1fa256675265addce21ad73ae6d73a717ce1953416702b3877158db",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        1,
+        0,
+        5,
+        4,
+        3,
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edge_image_sha256": "7a3b76a13dc73c232f8dbd5b9fec10a2b37b75ddbfcdf12ebe0cfedc7434b483",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11,
+        6,
+        7
+      ],
+      "edge_image_sha256": "dffb7a19af2f683a4381e7ece02282dd51896b8a62eb3fb2434fbefac2effa4e",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        6,
+        11,
+        10,
+        9,
+        8
+      ],
+      "edge_image_sha256": "d91e18d5310c01a8f06a773b476e667418f7beb30de8b4c962b3095f3d4c8392",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "edge_image_sha256": "744563b0f3cec9aa6d1376b251df027ad0609474c2cb9bfe2a20ae9599d2cde0",
+      "preserved_clauses": 34440
+    }
+  ],
+  "source_hashes": {
+    "root_prism_free_overlay.py": "66111dfcf4118dd3d3927719a89f55b224fe840f1d0527b7314664b4bbd416b1",
+    "root_prism_free_solve.py": "02ca4500d39a30c775661f4a9efd8d27d4534e6fc757af2a0f6251022f4c8a0e",
+    "root_prism_free_certificate.py": "b89623b11152f327d217ff5d1e57c434db8efc54137f2a2af431366b5a36b857"
+  },
+  "all_previous_complete_caps_retained": true,
+  "all_previous_lex_and_anchor_clauses_retained": true,
+  "minimum_partition_normalization_added": false,
+  "graph_automorphism_assumptions": 0,
+  "solver_called": false,
+  "excludes_whole_old_same_index_case": false
+}

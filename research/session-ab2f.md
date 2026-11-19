@@ -468,3 +468,31 @@ their hypotheses permit them; computational exclusions require exact replay.
   partial-quadrangle classification. It explicitly retains the
   `(99,14,1,2)` parameter set; the classification is not an exclusion.
   Source: https://m.mathnet.ru/php/getFT.phtml?jrnid=al&option_lang=eng&paperid=161&what=fullt.
+- Eleven new order-ten induced moment blocks reject the repaired
+  prism-zero point. Their roots have eight vertices and their flags
+  add one vertex. A separate direct-graph implementation reconstructs
+  every product and reduced cut. Owner and coordinator replays pass.
+  The coordinator's first replay was killed with exit 137; a serialized
+  retry passed in 8.984 seconds. That failure is preserved separately.
+  The full reusable cache has all 916 roots with no point-dependent
+  pruning. The previous 1,416-block PSD certificate remains valid.
+- Exact incidence implications shorten all eight checked signed patterns
+  to sizes 22, 16, 18, 29, 28, 18, 18, and 18. The package has 34 small
+  DRAT proofs, 64 exact Gram counterexamples, and replayed quota traces.
+  A separate case-one deletion pilot removes its last negative assumption
+  and four positive assumptions. Its final eleven-positive pattern has
+  a fresh proof and independent full-baseline replay. The eleven other
+  deletion queries were UNKNOWN, so no minimality is claimed. Static
+  relabeling gives 144 positive patterns and a refined 1,152-clause export.
+- Global prism-freeness yields 34,440 necessary four-edge clauses from
+  seven near-axis matching comparisons. Exact controls, an independent
+  clause census, and overlay/wrapper reviews pass. All four complete-cap
+  pilots returned UNKNOWN at sixty seconds each, taking 245.594 seconds
+  in total. The separately checked minimum-anchor component encoding
+  was not used in these runs. No root case is excluded.
+- Read the parallel branch's `935a9f1` and `182df61` triangle-exterior
+  argument. It gives the exact exterior spectrum, excludes vertex-transitive
+  exteriors by a finite group calculation, and characterizes walk-regular
+  exteriors by full triangles. The group census was not replayed here.
+  That worker now owns the eight incomplete-grid cores; this branch
+  retains the count, complementary-rook, and prism-free matching lanes.
