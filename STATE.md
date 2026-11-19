@@ -219,6 +219,14 @@ collectively impossible selected triples as zero contributions. The
 [completed point scan](research/grids-and-triangles/grid_free_order10_triple_clique_scan.md)
 covers all 23 representatives and 236 candidates without an exact or
 unconfirmed negative. This numerical scan is not a PSD certificate.
+The [five-variable extension scan](research/grids-and-triangles/grid_free_order10_five_boolean_extension_result.md)
+checks all 4,543,737 five-subsets of the complete high-mask domains.
+Every missing fifth moment has a nonempty exact integer interval.
+There are 4,459,591 tight intervals and 84,146 intervals with positive width.
+This certifies separate five-variable extensions, not a joint distribution
+over every class. The [population quartic scan](research/grids-and-triangles/grid_free_order10_high_population_quartics.md)
+also passes all 3,583 inequalities across 153 class families.
+Its population bounds follow from the original common-neighbor quotas.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -381,6 +389,13 @@ weakened in this particular clause family.
 Its [single bounded query](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_run01.md)
 returns UNKNOWN after sixty seconds including bootstrap. A separate full
 cold reconstruction binds that outcome; case four remains unresolved.
+The [capacity closure](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_capacity_closure.md)
+retains the fourteen known absences and finds no further forced absence.
+It checks all remaining original coordinate demands and degree capacities.
+A [CaDiCaL300 query](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_cadical_run01.md)
+on the unchanged full formula also returns UNKNOWN.
+Its parent saves UNKNOWN before terminating the child at 180 seconds.
+The child supplies no accepted witness or proof. Full cold reconstruction passes.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -484,6 +499,21 @@ proved transports fit. The complete registry has 660 individual cuts and
 72 signed cuts. All candidate prefixes, 814 rational row witnesses, and
 the exact final formula cold-replay. A checked lossless archive retains
 the full transcript; the original resource-limit outcome remains unchanged.
+The [lazy continuation](research/root_prism_free_f0_lazy_row_loop_run01.md)
+retains every certified inequality and adds exact primary clause consequences
+only when needed. It checks all registered inequalities before each row LP.
+The run records 25 SAT candidates and stops at twenty complete row passes.
+Four candidates fail existing inequalities without an LP. The row passes
+produce 29 individual obstructions and three exact shared rays.
+The registry grows to 1,008 individual and 108 signed inequalities.
+The final formula has 28,308 variables and 58,974 clauses.
+The last candidate passes every registered inequality but receives no row test.
+All prefixes, 1,171 rational row witnesses, and clause bounds cold-replay.
+This run excludes no component. A separate [Gram-shift pilot](research/root_prism_free_f0_gram_shifts.md)
+reduces one large cut from 43,735 encoding clauses to 26,583 clauses.
+Its exact violation remains 26 under all twelve core transports.
+Its independent Boolean explanation decreases from 446 literals to 244 literals.
+The pilot changes no existing formula. An independent arithmetic audit passes.
 
 ## Scope of the unrestricted computations
 

@@ -6,11 +6,11 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Complete coordinate-difference incidence covers for complementary-
-   rook matching case four. Owned by the independent-set worker.
-2. Exact five-variable Boolean marginal extensions. Owned by the
-   literature worker.
-3. Compact free-selector incidence separation by individual rows and
+1. Native Boolean incidence constraints for complementary-rook matching
+   case four. Owned by the independent-set worker.
+2. Complete local high-mask packings under common-neighbor capacities.
+   Owned by the literature worker.
+3. Lazy free-selector incidence separation by individual rows and
    shared symmetric edges. Owned by the completion worker.
 4. Exact clause explanations, Gram-equality shifts, independent checks,
    and publication. Owned by the coordinating worker.
@@ -772,3 +772,29 @@ their hypotheses permit them; computational exclusions require exact replay.
   including its streamed bootstrap. Full cold reconstruction passes.
   The independent-set worker now checks forced-absence closure using
   the original coordinate demands and the degree capacities.
+
+- The five-variable extension scan completes all 4,543,737 subsets.
+  All exact extension intervals are nonempty. Of these, 4,459,591 are
+  tight and 84,146 have positive width. This gives separate local
+  distributions only. The bounded population scan also passes all
+  3,583 polynomials across 153 high-mask families.
+- The capacity closure finds no new absence after the fourteen known
+  case-four units. CaDiCaL300 then queries the unchanged full formula.
+  Its parent saves UNKNOWN and terminates the child at 180 seconds.
+  The cold formula replay passes. There is no new matching exclusion.
+- The lazy F0 preparation retains all 732 certified inequalities in an
+  exact registry. Its initial formula has 58,206 clauses and no new
+  auxiliary variable. Independent registry and clause audits pass.
+- The lazy run records 25 SAT candidates before its twenty-row-pass
+  limit. Four candidates fail existing cuts before any LP. Twenty row
+  passes yield 29 individual obstructions, 1,171 exact rational boxes,
+  and three shared rays. The registry now has 1,116 inequalities.
+  The final formula has 58,974 clauses. Its complete cold replay passes.
+  The last candidate satisfies the registry but remains untested by rows.
+- An exact Gram-equality shift reduces a large repaired cut from 43,735
+  encoding clauses to 26,583. Its independent explanation has 244
+  literals, down from 446. All twelve transports preserve the gap 26.
+  Both cold replay and an independent arithmetic audit pass.
+- The next preparations retain the full lazy registry and assess complete
+  local packing distributions. No graph or unrestricted contradiction
+  follows from the present results.

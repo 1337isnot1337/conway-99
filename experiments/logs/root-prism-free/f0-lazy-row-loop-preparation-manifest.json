@@ -1,0 +1,140 @@
+{
+  "status": "frozen lazy continuation preparation; no new SAT or LP query",
+  "scope": "all480 component0 first-incidence selectors in the globallyP=F=0 split18+18 case; second component and alignment unrestricted",
+  "parent_terminal_manifest_sha256": "d2e4aab728d3481587d584dfbad6b522ead655cf324622519e1a4241f779b6a8",
+  "registry": {
+    "individual": 660,
+    "signed_shared": 72,
+    "total": 732,
+    "previously_unencoded_included": 13
+  },
+  "formula": {
+    "primary_selectors": 480,
+    "variables": 28308,
+    "base_clauses": 56994,
+    "explanation_clauses": 1212,
+    "total_clauses": 58206,
+    "literal_occurrences": 261828,
+    "new_auxiliaries": 0,
+    "cnf_sha256": "d5fb704ee9284e5230bbaea384b39f167358460e282b2e641a7e29d076cb216f",
+    "cnf_bytes": 1403385
+  },
+  "limits": {
+    "overall_seconds": 180,
+    "maximum_SAT_calls": 500,
+    "maximum_row_passes": 20,
+    "SAT_seconds_per_call": 10,
+    "row_or_shared_LP_seconds": 60,
+    "maximum_variables": 1000000,
+    "maximum_clauses": 2000000
+  },
+  "no_ancestor_auxiliary_CNF_rebuild": true,
+  "no_visitation_blocks_or_Gram_equality_shifts": true,
+  "query_started": false,
+  "UNSAT_or_component_exclusion": false,
+  "temporary_DIMACS_excluded_from_publication": true,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_lazy_registry.py",
+      "sha256": "9a9a2c40241dc3899b9692568a2ee4127d17d5a4b8c33972dfd9b59a57e43478",
+      "bytes": 15399
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_lazy_clauses.py",
+      "sha256": "cef5448b012be57277b87297d2e3ec2c017ccea1336080f4c40c2594f2ab7640",
+      "bytes": 15767
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_lazy_row_loop.py",
+      "sha256": "7b8301c96329ecbc6610c3dd74809793029e2e13d57027c7b7f9756bfd859e07",
+      "bytes": 31956
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_lazy_row_loop_certificate.py",
+      "sha256": "e34b8084add389df0ff1354971573c5b0fe60c5ede423b33324ee84897a14558",
+      "bytes": 10593
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-registry.json.gz",
+      "sha256": "b8e008d3c89122ae8a7b96c1c7c68d506e3a6345cc2a0ccd334f4f79597d0dc1",
+      "bytes": 218881
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-registry-preparation.json",
+      "sha256": "b8a7cb011ad619ff01b9bfe63a68512b8d8c481a94d163627a032136d07e712e",
+      "bytes": 12739
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-registry-preparation.log",
+      "sha256": "b8a7cb011ad619ff01b9bfe63a68512b8d8c481a94d163627a032136d07e712e",
+      "bytes": 12739
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-registry-replay.json",
+      "sha256": "b8a7cb011ad619ff01b9bfe63a68512b8d8c481a94d163627a032136d07e712e",
+      "bytes": 12739
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-registry-replay.log",
+      "sha256": "5d834ef89aa347eb4e75cd1fa5e1ebaa6d9e6759e89c4f8ee5aece8ed840e8fb",
+      "bytes": 12991
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-clauses-controls.json",
+      "sha256": "ea051c6f6fe6d573e785fd72a4ff21a3b31123db8e53e0ed992105036647bd32",
+      "bytes": 628
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-clauses-controls.log",
+      "sha256": "ea051c6f6fe6d573e785fd72a4ff21a3b31123db8e53e0ed992105036647bd32",
+      "bytes": 628
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-row-loop-preparation.json.gz",
+      "sha256": "5e32d4366e1e5224c6abd18298d0db3040f5e41a0c0bc984c962d9020e951c01",
+      "bytes": 160725
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-row-loop-preparation.log",
+      "sha256": "518424c06ad6fab207125312f405555bc0caeb31d5f89212b87c0295ddc28d12",
+      "bytes": 3765
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-row-loop-preflight-replay.json",
+      "sha256": "dcaf844b83a6144a523593d277f9c5f5721c1eb24b050c9d120ff26ea541081c",
+      "bytes": 988
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-row-loop-preflight-replay.log",
+      "sha256": "b626ef1d90994ce818f8cd3fce711b5e5fcd07377eb5c30d81e83af624c93d8c",
+      "bytes": 1241
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_lazy_registry_independent_audit.py",
+      "sha256": "b241d7ca0bc27f5b803b6c425c8c4c7e84b730c4b303d0dea34d2384c4d367f1",
+      "bytes": 11527
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-registry-independent-audit.json",
+      "sha256": "4be8275afda2d76888fa9b0ef57a9dae7e0aa99ad867303a78e35ed6e25cc98f",
+      "bytes": 2218
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-registry-independent-audit.log",
+      "sha256": "6405e9fa3c94aa9d9ceb33cbd1fddb15fb729e568aabc5e756c11a43d602857b",
+      "bytes": 2297
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-lazy-clauses-independent-review.json",
+      "sha256": "7ba58cd63c858b591adcdced4cb474ed7663a40edc2e903f04e15c37a9fa6a84",
+      "bytes": 2727
+    },
+    {
+      "path": "research/root_prism_free_f0_lazy_row_loop.md",
+      "sha256": "5770ffc835b5fdb03e7de742750abd2cef8608431189bdb45ad73939525ba1fa",
+      "bytes": 9133
+    }
+  ],
+  "file_count": 20,
+  "total_bytes": 539681
+}

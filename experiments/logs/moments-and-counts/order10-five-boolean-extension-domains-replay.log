@@ -1,0 +1,51 @@
+{
+  "status": "cold complete five-Boolean extension domain replay PASS",
+  "source_sha256": "b71adc6a56216e2fb211ab30f94711e65c667435cfbd59e49943329383253c9f",
+  "certificate_sha256": "d53285b4629cfe4f34d361a7caadd96c35d9825b48b71ab7fff518fd1dcab3a1",
+  "summary": {
+    "five_subsets": 4543737,
+    "dense_moment_entries": 774546,
+    "monomial_product_row_references": 327655,
+    "inherited_sparse_coefficient_reads": 229779,
+    "batch_count_at_50000": 132,
+    "high_masks": 829,
+    "roots_with_five_subsets": 48,
+    "roots_without_five_subsets": 14,
+    "maximum_high_masks": 42,
+    "maximum_root_dense_moment_entries": 124314,
+    "maximum_root_five_subsets": 850668,
+    "monomials_by_degree": {
+      "0": 62,
+      "1": 829,
+      "2": 9118,
+      "3": 85492,
+      "4": 679045
+    }
+  },
+  "workload": {
+    "affine_atom_constants": 145399584,
+    "proper_moment_lookups": 140855847,
+    "mobius_subtractions": 363498960,
+    "implicit_opposite_parity_atom_pairs": 1163196672,
+    "already_four_atom_pairs_hamming_1": 363498960,
+    "new_pairs_hamming_3": 726997920,
+    "new_pairs_hamming_5": 72699792,
+    "new_pairs_hamming_3_or_5": 799697712,
+    "cached_product_rows_available": 3913479,
+    "sparse_product_coefficient_reads_for_selected_monomials": 229779,
+    "sparse_product_read_count_source": "inherited frozen four-Boolean tensor ledger; tensors not reloaded",
+    "batch_size": 50000,
+    "batch_proper_moments_int64_bytes": 12800000,
+    "batch_affine_constants_int64_bytes": 12800000,
+    "batch_input_indices_int64_bytes": 2000000,
+    "maximum_root_dense_moment_int64_bytes": 994512,
+    "numpy_temporary_and_python_tuple_memory_not_included_in_array_bounds": true,
+    "full_cache_loading_memory_not_included_in_array_bounds": true,
+    "no_array_of_all_implicit_pair_constraints_is_needed": true
+  },
+  "count_point_loaded": false,
+  "product_tensors_loaded": false,
+  "point_scan_performed": false
+}
+output_sha256 d470e91012a8fe85a434345f9d0ec0cd6047dbc7304e776f0bb2b8963b7260af
+elapsed_seconds 5.744791443001304 peak_rss_kib 132468

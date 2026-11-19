@@ -1,0 +1,85 @@
+{"iteration": 0, "status": "SAT candidate rejected by proved registered PB clauses; no row LP", "new_clauses": 48, "elapsed_seconds": 2.670407316996716}
+{"iteration": 1, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 24, "new_clauses": 36, "elapsed_seconds": 4.183534964999126}
+{"iteration": 2, "status": "SAT candidate rejected by proved registered PB clauses; no row LP", "new_clauses": 48, "elapsed_seconds": 4.298414087999845}
+{"iteration": 3, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 24, "new_clauses": 36, "elapsed_seconds": 5.460120503998041}
+{"iteration": 4, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 24, "new_clauses": 36, "elapsed_seconds": 6.506488120998256}
+{"iteration": 5, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 12, "new_clauses": 24, "elapsed_seconds": 7.589350348000153}
+{"iteration": 6, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 12, "new_clauses": 24, "elapsed_seconds": 8.57325794499775}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{"iteration": 7, "status": "SAT incidence rejected by new exact shared-row cuts", "new_symmetric_cuts": 12, "new_clauses": 24, "elapsed_seconds": 12.129373053998279}
+{"iteration": 8, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 12, "new_clauses": 24, "elapsed_seconds": 12.920874108000135}
+{"iteration": 9, "status": "SAT incidence rejected by new exact shared-row cuts", "new_symmetric_cuts": 12, "new_clauses": 24, "elapsed_seconds": 19.296807281996735}
+{"iteration": 10, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 12, "new_clauses": 24, "elapsed_seconds": 20.92939467799806}
+{"iteration": 11, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 36, "new_clauses": 48, "elapsed_seconds": 23.3701730089997}
+{"iteration": 12, "status": "SAT incidence rejected by new exact shared-row cuts", "new_symmetric_cuts": 12, "new_clauses": 24, "elapsed_seconds": 25.688458239998}
+{"iteration": 13, "status": "SAT candidate rejected by proved registered PB clauses; no row LP", "new_clauses": 24, "elapsed_seconds": 25.804048815996794}
+{"iteration": 14, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 24, "new_clauses": 36, "elapsed_seconds": 26.83144692499991}
+{"iteration": 15, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 24, "new_clauses": 36, "elapsed_seconds": 27.85045147499841}
+{"iteration": 16, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 24, "new_clauses": 36, "elapsed_seconds": 28.80079326499981}
+{"iteration": 17, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 24, "new_clauses": 36, "elapsed_seconds": 29.740637636998144}
+{"iteration": 18, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 36, "new_clauses": 48, "elapsed_seconds": 30.75810588799868}
+{"iteration": 19, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 24, "new_clauses": 36, "elapsed_seconds": 31.910959586999525}
+{"iteration": 20, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 12, "new_clauses": 24, "elapsed_seconds": 32.73929295400012}
+{"iteration": 21, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 12, "new_clauses": 24, "elapsed_seconds": 33.52361022299738}
+{"iteration": 22, "status": "SAT incidence rejected by new exact individual-row cuts", "new_individual_cuts": 12, "new_clauses": 24, "elapsed_seconds": 34.29466144699836}
+{"iteration": 23, "status": "SAT candidate rejected by proved registered PB clauses; no row LP", "new_clauses": 24, "elapsed_seconds": 34.43431790699833}
+{
+  "status": "STOP: row-pass or overall budget; unresolved",
+  "source_sha256": "7b8301c96329ecbc6610c3dd74809793029e2e13d57027c7b7f9756bfd859e07",
+  "preparation": "experiments/logs/root-prism-free/f0-lazy-row-loop-preparation.json.gz",
+  "preparation_sha256": "5e32d4366e1e5224c6abd18298d0db3040f5e41a0c0bc984c962d9020e951c01",
+  "limits": {
+    "maximum_SAT_refinement_calls": 500,
+    "maximum_row_passes": 20,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "shared_LP_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000
+  },
+  "fixed_incidence_or_second_component": false,
+  "visitation_blocks": false,
+  "whole_component_excluded": false,
+  "full_graph_completion": false,
+  "bootstrap_and_input_checks_seconds": 2.54553910499817,
+  "final_cnf": "experiments/logs/root-prism-free/f0-lazy-row-loop-run01/final.cnf",
+  "final_cnf_sha256": "570f9e85c7eaa724d71a77b9654f7aad2c9052825fde876aaf20a87f484e24bc",
+  "final_snapshot": {
+    "individual_cuts": 1008,
+    "symmetric_cuts": 108,
+    "registry_state_sha256": "cfc3a1a63ef63ef434ce0d8010f05841b14c2ececb7b5894342b74a9d7f29b38",
+    "clauses": 58974,
+    "variables": 28308,
+    "explanation_clauses": 1980,
+    "clause_state_sha256": "e6cc5227bf916418debfc9027911b9fa61b9652152cbe19df66f6effe5089f05"
+  },
+  "final_formula": {
+    "primary_variables": 480,
+    "variables": 28308,
+    "clauses": 58974,
+    "literal_occurrences": 319248,
+    "base_variables": 28308,
+    "base_clauses": 56994,
+    "base_body_sha256": "04fb936521fb7cb9db7343ccb8abef31fcc38acc3e54dd7b9b626fd858757932",
+    "registered_individual_inequalities": 1008,
+    "registered_signed_inequalities": 108,
+    "explanation_clauses": 1980,
+    "new_auxiliary_variables": 0,
+    "all480_selectors_free": true,
+    "fixed_second_component_or_incidence": false,
+    "encoding": "necessary exact independent and population60 clause explanations only",
+    "registry_not_claimed_equivalent_to_finite_explanation_CNF": true
+  },
+  "individual-registry": "experiments/logs/root-prism-free/f0-lazy-row-loop-run01/individual-registry.json.gz",
+  "individual-registry_sha256": "898396f0c67d75f0ea90da93d2763d23b3877f5f3a1d3669b558a31ed11b6e7e",
+  "symmetric-registry": "experiments/logs/root-prism-free/f0-lazy-row-loop-run01/symmetric-registry.json.gz",
+  "symmetric-registry_sha256": "062f7b209a93d4ae20ee45882fdd4107a1bfef96ea1920aaa6cb33dafa49133f",
+  "explanation-registry": "experiments/logs/root-prism-free/f0-lazy-row-loop-run01/explanation-registry.json.gz",
+  "explanation-registry_sha256": "f03179547868133305658f29b9a9c244c4c6dbb3e9e1790609c7743122beaa39",
+  "row_passes": 20,
+  "elapsed_seconds": 35.80708371899891,
+  "cooperative_overall_overrun_seconds": 0,
+  "peak_rss_kib": 155688
+}

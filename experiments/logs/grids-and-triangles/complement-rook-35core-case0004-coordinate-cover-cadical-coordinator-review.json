@@ -1,0 +1,54 @@
+{
+  "status": "PASS: complete bounded CaDiCaL wrapper and tiny proof/watchdog review; one production query authorized",
+  "reviewer": "coordinator /root",
+  "source_sha256": "1921f71964795d819e0369c9679dc1526df97c29bb1920a932c7ca449ba3de25",
+  "preparation_sha256": "e7a4185a300a48edbe01d7103da8e765dab1ad9653e2678992d3f1c4e986d731",
+  "full_CNF_sha256": "5a805a4e302bf2a91aa3cb4d39aeaddb4759b7f9695633de18cfb0fa6d5883a2",
+  "backend": "cadical300",
+  "runtime": {
+    "backend_name": "cadical300",
+    "backend_class": "Cadical300",
+    "python_sat_version": "1.9.dev23",
+    "python_executable": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_wrapper": {
+      "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/pysat/solvers.py",
+      "sha256": "21aaf31fd1e4fa42806b384c2d34674119a1d0f1f8f95338d3ba41e9472891c3"
+    },
+    "native_extension": {
+      "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "838ebc59f0c3d266c3d551c52a3c5078f342f1840a70020d1617302a3a311d99"
+    },
+    "native_factory_symbol": "cadical300_new",
+    "native_factory_present": true,
+    "backend_method_source_sha256": {
+      "new": "14709fd24ef784052f910fd13092fa9b5f3b277bf4d7a20f2dae3c44d0a53b95",
+      "add_clause": "ce664929c7b9452647142a487d5aa8d8714dff50003b012cf54da20fc194796c",
+      "solve": "08fbe36aed08cbe2d669ab6385afa648bd48c04712a072828a877d1d0ae98660",
+      "get_model": "b0af04cbfc0ed4a316d465066a1202cd5c940d3d69d95494e7565da88437bb69",
+      "get_proof": "f74f79d0ef29defe1244ab23fc2bb88364f2994c98b0ee8b45ccafea4d1d2e62",
+      "interrupt": "45972179561aea6c693897614ce32b5bdb55da7473d824a2317671ae41dedbc5"
+    }
+  },
+  "checks": [
+    "Read complete production parent/child, tiny-control and cold-replay source.",
+    "The identical439604-clause CNF and all previous exact mathematical checks remain bound.",
+    "The parent owns the child process, persists UNKNOWN before timeout termination, and always reaps it.",
+    "The180-second child deadline includes imports, source/CNF validation, streamed bootstrap and solve.",
+    "Partial child output or proof is never accepted after a timeout.",
+    "Tiny SAT/UNSAT tasks have independent full truth-table checks and direct DRAT verification.",
+    "Exact SAT incidence inspection and direct/cold retained-input DRAT gates are unchanged.",
+    "One production query, no assumptions, no retries or added symmetry constraints."
+  ],
+  "authorized_limits": {
+    "production_child_wall_seconds_including_imports_bootstrap_solve": 180,
+    "tiny_control_child_wall_seconds": 10,
+    "tiny_DRAT_seconds": 10,
+    "direct_DRAT_seconds": 60,
+    "cold_DRAT_seconds": 60,
+    "production_queries": 1,
+    "automatic_retries": 0
+  },
+  "solver_called_in_review": false,
+  "case4_excluded": false
+}

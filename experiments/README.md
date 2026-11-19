@@ -629,3 +629,26 @@ It preserves equal existing records and refuses unequal files. The cold
 mathematical replay reconstructs every candidate prefix and final CNF.
 The [coordinate-cover query](../research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_run01.md)
 returns UNKNOWN with a separate complete formula replay.
+
+The [five-variable extension result](../research/grids-and-triangles/grid_free_order10_five_boolean_extension_result.md)
+checks every five-subset of the full six-root high-mask domain.
+All 4,543,737 exact intervals are nonempty. The
+[population quartic result](../research/grids-and-triangles/grid_free_order10_high_population_quartics.md)
+also passes all 3,583 listed inequalities. Both retain complete domains
+and exact integer arithmetic. Neither supplies a global joint distribution.
+
+The [lazy F0 driver](../research/root_prism_free_f0_lazy_row_loop.md)
+evaluates every registered inequality before any row LP. Each rejected
+candidate supplies exact clause consequences with verified core transports.
+The [first run](../research/root_prism_free_f0_lazy_row_loop_run01.md)
+ends at its row-pass limit, with 1,116 certified inequalities and 58,974 clauses.
+The cold replay reconstructs every prefix and arithmetic explanation.
+The [Gram-shift pilot](../research/root_prism_free_f0_gram_shifts.md)
+gives equivalent inequalities under the original Gram equalities and
+smaller explanations. It changes no frozen formula.
+
+The [case-four capacity closure](../research/grids-and-triangles/complement_rook_35core_case0004_coordinate_capacity_closure.md)
+finds no additional unit. The
+[alternative-backend query](../research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_cadical_run01.md)
+uses the unchanged full CNF and returns UNKNOWN at its hard deadline.
+Its cold replay checks the exact formula and result bindings.

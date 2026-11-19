@@ -149,4 +149,10 @@ remains feasible.
 - [The F0 deficit continuation](research/root_prism_free_f0_deficit_row_loop_run01.md) rejects fourteen further incidences before the clause limit. All 732 proved inequalities and the exact candidate transcript remain available, including thirteen unencoded transports.
 - [The coordinate-cover query](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_run01.md) returns UNKNOWN after one bounded run. Full cold reconstruction preserves that scope.
 - [Construction searches](experiments/logs/construction-searches/) includes rooted searches, quotient cases, and checks of sampled partial graphs.
+- [Five-variable extensions](research/grids-and-triangles/grid_free_order10_five_boolean_extension_result.md) pass all 4,543,737 local interval tests at the current count point.
+- [Bounded population quartics](research/grids-and-triangles/grid_free_order10_high_population_quartics.md) pass 3,583 exact inequalities across 153 high-mask families.
+- [Lazy F0 separation](research/root_prism_free_f0_lazy_row_loop_run01.md) records 25 SAT candidates and grows the exact registry to 1,116 inequalities.
+- [Gram-equality shifts](research/root_prism_free_f0_gram_shifts.md) reduce a large cut and its clause explanations while preserving its exact violation.
+- [Case-four capacity closure](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_capacity_closure.md) finds no new absence after fourteen known units.
+- [The case-four CaDiCaL query](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_cadical_run01.md) returns UNKNOWN on the unchanged complete formula.
 - [Experiment guide](experiments/README.md) gives the workspace layout, replay commands, and limits of the archived runs.
