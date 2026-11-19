@@ -1,0 +1,69 @@
+{
+  "acceptance_boundary": {
+    "independent_terminal_certificate_acceptance_not_performed_here": true,
+    "no_claim_that_failed_sufficient_test_proves_nonredundancy": true,
+    "original_failed_outer_owner_or_metadata_resolution_not_modified": true,
+    "original_gzip_recovery_not_claimed": true,
+    "requires_complete_result_and_finalization": true,
+    "requires_expected_key_hash_and_all_counts": true
+  },
+  "complete_reads": {
+    "actual_controls": true,
+    "configuration": true,
+    "sha256_all_three_checked": true,
+    "source": true
+  },
+  "concrete_blockers": [],
+  "configuration": {
+    "bytes": 6421,
+    "git_blob": "f3ce03f97c408b7e4e4bd987443e895e6649cfa8",
+    "sha256": "d6c987194e7a7b9741c81f0fff45cbf2a37f410f3a979cdd1c57de09d11ef4e1"
+  },
+  "controls": {
+    "bytes": 735,
+    "git_blob": "6e32d93f89ea95e8fc3a43c7cbd5e975e50bf4d2",
+    "sha256": "a0519160b442eb692e7746c1b0bc1bac68a00a9add09ace5340aef3f1279f42d",
+    "status": "PASS_INDEPENDENT_ORDER_AND_ACTUAL_COEFFICIENT_CONTROLS"
+  },
+  "controls_review": {
+    "actual_coefficient_checks": 7,
+    "grid_implications": 108,
+    "nonnegative_grid_assignments": 70,
+    "rereun_by_this_reviewer": false,
+    "reversed_orientations": 14,
+    "toy_cases": 95,
+    "toy_instances": 16
+  },
+  "controls_runs_by_this_reviewer": 0,
+  "git_refs_modified": false,
+  "main_runs_by_this_reviewer": 0,
+  "mathematical_checks": [
+    "The48 unordered core-site pairs use full21-core common-neighbor counts, while q is independently reconstructed from the18-component adjacency.",
+    "Separated signature supports exhaust both orientations of the original premises; sorting the resulting(edge_id,i,j) triples matches edge-major then sorted-site traversal, including central-zero cases.",
+    "All68394 eligible edges and every saved neighbor list are reconstructed; the accepted overlay edge hash and all1884 distinct literal zero variable IDs are checked.",
+    "Every full row key contains the central edge and all live left/right star edges in exact original IDs; insertion by first ordered case retains the original key order.",
+    "The full ordered-key SHA2adfcc619820604a3f49463bd0fd8109113ab7ce13bceadcc49554533b09dd1c and all73404/936/0/72468/1250496 counts are mandatory.",
+    "For each suggested cross-quota certificate the complete original mixed supports are reconstructed. The two selector coefficients must equal precisely -x_b-x_c, and every target edge must have coefficient at least one in their sum.",
+    "Overlapping mixed supports are counted with coefficient multiplicity. Subtracting their nonnegative surplus yields exactly the target row, so the upper inequality is a continuous consequence of the existing equations and nonnegative edge variables.",
+    "The native lower endpoint -2 follows from Boolean selector bounds and nonnegative edge variables. No equality of continuous relaxations is asserted for a row lacking this sufficient certificate.",
+    "Compact case arrays identify every original row origin; certificate arrays bind the actual mixed indices. All original keys remain, and ascending retained_row_ids are provisional until independent certificate acceptance."
+  ],
+  "native_models": 0,
+  "optimizer_calls": 0,
+  "resource_scope": {
+    "census_ms": 30000,
+    "complete_five_array_conservative_bound": 13469693,
+    "publication_hashing_inside_main": false,
+    "report_bytes": 16777216,
+    "total_including_serialization_ms": 60000
+  },
+  "schema": "conway99.f0.four-exterior-cross-quota-independent-v2-source-review.v1",
+  "source": {
+    "bytes": 16181,
+    "git_blob": "2f5c4dbd0d182176d8dd8d66535a45c70a8d482f",
+    "lines": 217,
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_independent_v2.js",
+    "sha256": "ce211ba42837942dc52a9656297db4910d31bfe5c40ce0e82455f76cbae20b94"
+  },
+  "status": "PASS_COMPLETE_COMPACT_SOURCE_CONFIGURATION_AND_CONTROLS_REVIEW"
+}

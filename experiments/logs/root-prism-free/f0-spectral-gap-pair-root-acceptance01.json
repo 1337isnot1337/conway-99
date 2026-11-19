@@ -1,0 +1,56 @@
+{
+  "schema": "conway99.f0.spectral-gap-pair-root-acceptance.v1",
+  "status": "ROOT_ACCEPTS_COMPLETE_INDEPENDENT_SPECTRAL_GAP_PAIR_CENSUS",
+  "forward": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-v8-census01.json",
+    "bytes": 6899668,
+    "sha256": "65d1814f83b611ec146dbb0cd424d9f3463276bba75665bb8c1a7640d2415f3b",
+    "git_blob": "1d145fc4ddb7e11c1c1075047eec4bf1d119c225",
+    "mode": "100644"
+  },
+  "cold": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01.json",
+    "bytes": 13646,
+    "sha256": "e8d27725afb707867f6683604ff1f3123f8960305c721058f495883f23476349",
+    "git_blob": "38ec9167df27b86de0341f8387cc894c6d2ff8cc",
+    "mode": "100644"
+  },
+  "cold_finalization": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01-finalization.json",
+    "bytes": 795,
+    "sha256": "d923ce740a807eaf8b5bfc1f98bea80547e19e99c6b01fd4e5a451eadbe4ecdb",
+    "git_blob": "6c10714114b4572536d4c8acfa4a40a0d92723b2",
+    "mode": "100644"
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold-root-gate01.json",
+    "bytes": 2468,
+    "sha256": "354be2ab791c401dbbadbbcfc48d824eb5d980faee94b5304c32945d052a3ecd",
+    "git_blob": "2ec678a3c5ca8b6b0096bba7960225498b8a7a62",
+    "mode": "100644"
+  },
+  "all_forward_and_cold_deduction_rows_compared": true,
+  "all_six_gram_witnesses_compared": true,
+  "counts": {
+    "pairs": 114960,
+    "eligible_edges": 68394,
+    "states": 405426,
+    "negative_minor": 330,
+    "zero_minor": 0,
+    "positive_minor": 405096
+  },
+  "edge_zero_rows": 132,
+  "already_literal_edge_zeros": 60,
+  "edge_zeros_outside_literal_family": 72,
+  "selector_pair_covers": 6,
+  "all_selector_pair_covers_already_implied_by_original_gram": true,
+  "forced_adjacencies": 0,
+  "edge_present_requires_one_common_exterior_neighbor": 132,
+  "extra_overlap_zero_common_neighbor_cap_one": 48,
+  "next_native_append_selection": "The72 edge-zero rows outside the accepted1884 literal-zero family. Six pair covers add no constraint; other n-state consequences require separate native representations.",
+  "whole_prior_model_nonredundancy_claimed": false,
+  "optimizer_calls": 0,
+  "native_model_builds": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

@@ -1,0 +1,80 @@
+{
+  "schema": "conway99.f0.spectral-gap-pair-minor.independent-mathematical-review.v1",
+  "status": "PASS_MATHEMATICAL_NECESSITY",
+  "reviewer": "independent_sets",
+  "subject": {
+    "path": "research/root_prism_free_f0_spectral_gap_pair_minor.md",
+    "sha256": "169a4b0c8ba1381302d0eeacb449599a5e4913cd6a55a24bb711e5d4126829ce",
+    "git_blob": "168ca05d66609a2ac7027d3958a4f22c63385e1c",
+    "bytes": 13581
+  },
+  "complete_subject_read": true,
+  "scope": "Proof and formula review only. No pair census, model construction, source import, native query, or old inverse recomputation.",
+  "accepted_premises": [
+    "Actual split18+18 completion with both shell components anticomplete, cubic, and equitable into three fibers of size6.",
+    "The first18-core and full21-core plus Schur normalization are the previously accepted ones; N=60S.",
+    "The first incidence has column weight3, and each exterior vertex has two neighbors in each full12-vertex fiber.",
+    "Q=27I-9A+J=63P for an orthogonal projection; the accepted20-core is positive definite and the21st residual row vanishes."
+  ],
+  "independent_checks": [
+    {
+      "claim": "Scaled-projection conditioning",
+      "result": "For a Gram factor Q=63VV^T with V^TV=I, project away the span of the conditioned rows. The residual is63V_J E V_J^T and squares to63 times itself because E V_I^T=0. This proves M^2=63M and PSD without assuming an arbitrary Schur complement is a projection."
+    },
+    {
+      "claim": "Independent derivation of the omitted-component block",
+      "result": "Condition the central triangle first. Its block is36I-8J. The component diagonal Schur block becomes27I-9C-(9/4)F+(3/4)J, while the cross-component block acts only on the two fiber-contrast directions. In normalized fiber coordinates, each diagonal contrast block is27/2 and the cross block is-27/2. Eliminating the first component therefore subtracts(9/4)F-(3/4)J from the second block. The result is exactly T=27I-9C2-(9/2)F+(3/2)J. The zero fiber-constant direction is discarded compatibly; no inverse of a singular full block is assumed."
+    },
+    {
+      "claim": "Cubic spectral bound",
+      "result": "The fiber-indicator span is invariant, C2 has quotient J3, and T vanishes on that span. On its15-dimensional orthogonal complement T=9(3I-C2). Symmetry and degree3 give spectrum(C2) in[-3,3], hence0<=T<=54I. Connectedness is unnecessary for this bound."
+    },
+    {
+      "claim": "Gap without multiplicity assumptions",
+      "result": "If Sv=lambda*v and0<lambda<63, the block projection identities give ||Vv||^2=lambda(63-lambda)||v||^2>0 and T(Vv)=(63-lambda)Vv. Thuslambda>=9. The endpoints0,63 also satisfy lambda(lambda-9)>=0. Therefore(S^2-9S)/81 is PSD."
+    },
+    {
+      "claim": "Crossblock and profile correction",
+      "result": "The full-core correction to the C2/exterior block has rows in the fiber-indicator span. PSD and the zero fiber block imply V=Pi*V, so V=-9Pi*H2. With U^TU=6I, V^TV=81[R-eta2^T*eta2/6]. The exact identity eta2=2J-eta and column sums eta=3 imply eta2^T*eta2=eta^T*eta."
+    },
+    {
+      "claim": "Signs and scale",
+      "result": "From S^2+V^TV=63S, L=(2/3)S-R+eta^T*eta/6. With N=60S, B=180L=2N-180R+30eta^T*eta. The coefficient of R is negative and the fiber coefficient is positive."
+    },
+    {
+      "claim": "Diagonal and pair entries",
+      "result": "For selected vertices Raa=3. Hence Baa=2d_a-540+30||eta_a||^2. For distinct selected a,b, Rab=2-s-n-y and Bab=2z_ab-360+180s+180n-900y+30eta_a.dot(eta_b). The displayed equivalent formulas agree. The existing profile norms3/5 and accepted diagonal range746..1238 give conservative positive bounds1042..2086."
+    },
+    {
+      "claim": "Integer states and guards",
+      "result": "n=(D^2)_ab is a nonnegative integer. Rab>=0 gives the complete necessary interval0..2-s-y. All interval values must be tested before rejecting y. An impossible active-edge state givesY_ab=0 by endpoint activation; rejection of every allowed y,n givesx_a+x_b<=1; rejection only at y=0 givesY_ab>=x_a+x_b-1 when that edge exists. Surviving states do not establish realizability or compatibility among different n_ab."
+    },
+    {
+      "claim": "Optional multiplicities and traces",
+      "result": "The optional connected-C2 spectrum and values tr(S)=1080,tr(S^2)=56862,tr(S^3)=3219264 in the triangle-free case check algebraically using sum(lambda)=-3,sum(lambda^2)=45,sum(lambda^3)=-27 on W. The stated32 exterior triangles follows from the mixed-equation invariant subspace and the cubic trace relation. None of these ancillary counts is needed for the pair inequality."
+    },
+    {
+      "claim": "Relation to prior PSD rows",
+      "result": "The gap is an additional algebraic ingredient beyond only0<=S<=63I: the scalar valueS=4 satisfies those two inequalities and violatesS^2-9S>=0. This is only an abstract operator comparison, not a feasible graph/model counterexample. No particular resulting Boolean row is asserted independent of existing Gram, mixed, prism or Schur cuts."
+    }
+  ],
+  "qualifications": [
+    "Apply the polynomial and integer n-state reasoning to one actual graph before averaging. Squaring an averaged moment matrix would be invalid.",
+    "The exact multiplicity statement is sufficient as written for connectedC2. The principal-minor theorem does not depend on connectedness, rank counts, or trace assertions.",
+    "This report does not gate an implementation or claim a completed pair census; source/configuration/controls for that computation require their own review."
+  ],
+  "input_bindings": {
+    "accepted_domain_raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+    "accepted_kernel_raw_sha256": "a963a88606a9fad78576d711f6ef7bf67eb03032176cebc2af5af700ea7c6708",
+    "accepted_plus_primitive_sha256": "91017b1ad1ea6ff3433e91030586ec820f939a158f8cf3aab0cbf77e4ef574ed",
+    "accepted_direct_audit_sha256": "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75"
+  },
+  "computations": {
+    "case_censuses": 0,
+    "native_calls": 0,
+    "source_executions": 0,
+    "matrix_builds": 0,
+    "graph_or_branch_exclusion_claimed": false
+  },
+  "refs_mutated": false
+}

@@ -1,0 +1,119 @@
+{
+  "schema": "conway99.f0.four-exterior-cross-quota-independent-configuration.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_independent_v2.js",
+    "bytes": 16181,
+    "sha256": "ce211ba42837942dc52a9656297db4910d31bfe5c40ce0e82455f76cbae20b94",
+    "git_blob_sha": "2f5c4dbd0d182176d8dd8d66535a45c70a8d482f",
+    "lines": 217
+  },
+  "codec": {
+    "bytes": 8304,
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "git_blob_sha": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js"
+  },
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "name": "domain",
+      "archive_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "archive_git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "archive_bytes": 52094,
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "raw_bytes": 547862
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "archive_bytes": 219390,
+      "archive_sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "archive_git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "raw_bytes": 1262434,
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee"
+    }
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent-controls02.json",
+    "bytes": 735,
+    "sha256": "a0519160b442eb692e7746c1b0bc1bac68a00a9add09ace5340aef3f1279f42d",
+    "git_blob_sha": "6e32d93f89ea95e8fc3a43c7cbd5e975e50bf4d2"
+  },
+  "limits": {
+    "census_ms": 30000,
+    "total_ms": 60000,
+    "report_bytes": 16777216,
+    "cases": 73404,
+    "rows": 72468,
+    "certificates": 144936
+  },
+  "original_acceptance": {
+    "cases": 73404,
+    "central_zero_cases": 936,
+    "empty_side_cases": 0,
+    "distinct_rows": 72468,
+    "terms": 1250496,
+    "ordered_row_keys_sha256": "2adfcc619820604a3f49463bd0fd8109113ab7ce13bceadcc49554533b09dd1c",
+    "original_independent_report_sha256": "66f2fb52b3b3e6431898dcfbaedcdb5694af4e917152061d764b05771067e68e",
+    "original_metadata_resolution_sha256": "d862511537b192e2cb51bfddf5f7103b35871a2aa835d2180d2ee7daf055b007",
+    "original_root_acceptance_sha256": "79847a637e7d1da9a71b2db3dcae3133228e8575f2a2fddaabdf14238d070157",
+    "original_full_family_decision_sha256": "87bf9c7082c0b3091570ea28a16eb00266a26da4eb63b1e55abbdabadfb83e32",
+    "original_gzip_recovery_claimed": false
+  },
+  "previous_failed_attempt": {
+    "source": {
+      "bytes": 5171,
+      "sha256": "28a3178b1b800e88e587780833abeb0aea0948bc62da6e03756f225afec3e86d",
+      "git_blob_sha": "2fbb46f5a60204d8e8b5873874ef4c7385e97048"
+    },
+    "wrapper": {
+      "bytes": 2014,
+      "sha256": "34d9f345ef12898e52797df599adf4f3f081c383aa6dd4758fa80179b56b0f98",
+      "git_blob_sha": "79ec38a959aa0c50c7dfd2f7eb8e3efc419eb44b"
+    },
+    "observed_outcome": "Root reported successful original-count and ordered-key checks inside the 30-second source phase, followed by a 60-second outer-wrapper finalization failure. No complete classification output was retained or accepted.",
+    "source_or_wrapper_imported_or_executed_by_this_implementation": false
+  },
+  "material_changes": [
+    "Enumerate by all 48 core pairs and separated signature supports; independently reconstruct all eligible pairs from h/q and sort complete (edge,i,j) tuples to recover original order.",
+    "Retain each full row key once; encode all original cases, cross quotas, row origins and actual coefficient certificates as compact arrays.",
+    "Verify target positive-edge coefficients and exact selector coefficients against the actual reconstructed mixed supports for every proposed certificate.",
+    "Exclude report publication hashes from the bounded main; preserve full serialized output and compute immutable chunk hashes in separate publication calls.",
+    "Expose ascending retained_row_ids after the sufficient certificates as provisional metadata; retain every original row key and forbid deletion acceptance without an independent certificate check."
+  ],
+  "compact_array_byte_upper_bounds": {
+    "row_keys": 7502977,
+    "cases": 1908505,
+    "certificates": 3478465,
+    "row_certificate_masks": 144937,
+    "total_four_arrays": 13034884,
+    "derivation": "At most 1105560 positive edge IDs of at most five digits;72468 row keys with selectors of at most three digits;73404 seven-integer cases;144936 five-integer certificates with residual coefficient sum at most958; one one-digit mask per row. Fixed metadata is separate and well below the remaining3.7MiB. The provisional retained-row IDs add at most434809 bytes. The complete five-array bound is13469693 bytes.",
+    "retained_row_ids": 434809,
+    "total_five_arrays": 13469693
+  },
+  "certificate_scope": {
+    "mixed_equation": "sum original eligible y_vw for signatures w containing site k = q_v,k*x_v",
+    "left_recipe": "(b,j)+(c,j) when q_bj=1; the original premise already gives q_cj=1",
+    "right_recipe": "(b,i)+(c,i) when q_ci=1; the original premise already gives q_bi=1",
+    "complete_target_support_and_coefficients_checked": true,
+    "nonnegative_surplus_edge_terms_subtracted": true,
+    "failed_sufficient_test_does_not_prove_nonredundancy": true,
+    "no_rows_removed_from_original_family": true
+  },
+  "execution": {
+    "main_requires_peer_and_root_gate": true,
+    "main_runs_authorized_by_preparation": 0,
+    "planned_main_runs": 1,
+    "retries": 0,
+    "environment": "Pure V8 with accepted exact codec; no local process, old producer import, solver or native model",
+    "publication_hashing_outside_main": true,
+    "optimizer_calls": 0,
+    "native_model_builds": 0
+  },
+  "intended_report_path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01.json",
+  "output_contract": {
+    "row_keys": "complete original ordered [b,c,positive_edge_ids]",
+    "retained_row_ids": "ascending original row IDs with no sufficient mixed certificate; provisional until independent certificate acceptance",
+    "all_original_cases_and_coefficients_preserved": true,
+    "no_rows_deleted_from_output": true
+  }
+}

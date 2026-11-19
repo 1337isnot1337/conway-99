@@ -1,0 +1,13 @@
+{
+  "stage": "logging_after_source_upload",
+  "error": "TypeError: text is not a function",
+  "cause": "The publication loop used text as a local variable and shadowed the output helper after the source upload had passed its hash check.",
+  "main_run": false,
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_independent_v8.js",
+    "bytes": 15963,
+    "sha256": "77be334498ea9618f5ef4612af741c1716af58571027d167368c7ef3442fc9e3",
+    "git_blob_sha": "7c5cebaac31854bfc2ceb01b19b6c244da583e32",
+    "lines": 215
+  }
+}

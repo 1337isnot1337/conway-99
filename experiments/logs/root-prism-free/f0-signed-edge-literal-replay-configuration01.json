@@ -1,0 +1,89 @@
+{
+  "schema": "conway99.f0.signed-literal-root-replay-configuration.v1",
+  "status": "AUTHORIZE_ONE_BOUND_LITERAL_CERTIFICATE_CHECK",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_signed_edge_literal_replay_v8.js",
+    "bytes": 6135,
+    "sha256": "84b9818d677063f8d6cd997f0960af8ca226eec201fbcc99dac5be6b4a7fb658",
+    "git_blob": "abe7c24b3757b0f59ba874cb073d34282b4d3e0a",
+    "mode": "100644"
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "bytes": 8304,
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0"
+  },
+  "texts": {
+    "report": {
+      "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates01.json",
+      "bytes": 272662,
+      "sha256": "4c3363d7f875c2bf401ed2fba9d508167a1ad618d9ad15e39d21e1d690662b2f",
+      "git_blob": "f9a2cb8034dd051bd9db9097e4a2ec80f481cc5a",
+      "mode": "100644"
+    },
+    "finalization": {
+      "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates01-finalization.json",
+      "bytes": 813,
+      "sha256": "04c208519361648ce0cf5553c02484d952cdac58c0bd42c4e79258e40c438019",
+      "git_blob": "4c300ded302df1ac366c94dc1cf84b7a50c32b04",
+      "mode": "100644"
+    }
+  },
+  "archives": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "name": "domain",
+      "archive_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "archive_git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "archive_bytes": 52094,
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "raw_bytes": 547862
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "archive_sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "archive_git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "archive_bytes": 219390,
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "raw_bytes": 1262434
+    },
+    "kernels": {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-kernels01.json.gz",
+      "name": "kernels",
+      "archive_sha256": "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1",
+      "archive_git_blob": "eb5103adaeeb66fd424f672272f35e0516da1c44",
+      "archive_bytes": 453951,
+      "raw_sha256": "a963a88606a9fad78576d711f6ef7bf67eb03032176cebc2af5af700ea7c6708",
+      "raw_bytes": 1405171
+    }
+  },
+  "producer_root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates-root-gate01.json",
+    "bytes": 5729,
+    "sha256": "db29e76d616e575760340fe3b1d611f48aa9efd60aa7a1515392e86ea5040809",
+    "git_blob": "8f3b9c09e4acdf80c8de1a653b9075042adfc782",
+    "mode": "100644"
+  },
+  "primitive_kernel_inverse_audit": {
+    "path": "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit.json",
+    "bytes": 4489,
+    "sha256": "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75",
+    "git_blob": "a7ed9d7d07e7b48e3facb4fd651451e1a872880a"
+  },
+  "source_review_complete": true,
+  "source_review_scope": "master_review read all6135bytes; expanded contraction, original indexing, guard and row-origin coverage found sound. Exact raw input bindings are mandatory in outer invocation.",
+  "controls": {
+    "status": "PASS_INDEPENDENT_EXPANDED_QUADRATIC_CONTROLS",
+    "checks": 4
+  },
+  "maximum_verification_ms": 15000,
+  "maximum_outer_ms": 60000,
+  "main_calls": 1,
+  "automatic_retries": 0,
+  "expected_certificates": 252,
+  "expected_rows": 252,
+  "expected_row_keys_sha256": "f8520f41d73c21e652386533388838a8f27837d50eea09726e06bbca909edef0",
+  "optimizer_calls": 0,
+  "native_model_builds": 0
+}

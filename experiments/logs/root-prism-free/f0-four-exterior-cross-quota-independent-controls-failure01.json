@@ -1,0 +1,21 @@
+{
+  "status": "FAILED_SMALL_CONTROL_FIXTURE",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_independent_v8.js",
+    "bytes": 15713,
+    "sha256": "ba373d0cecef1a67a4fa7b21ed58f3afe9a80dcebe5fa0d49f5d541d01f402a9",
+    "git_blob_sha": "7078c8d3a0d9bae1e6d8a8a1803943e05af8c367",
+    "lines": 213
+  },
+  "error": "orientation control coverage",
+  "diagnosis": "The modular toy quota fixture did not furnish any reversed-orientation cases. The main reconstruction has not run.",
+  "main_runs": 0,
+  "preserved_source_snapshot": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_independent_draft01.js",
+    "bytes": 15713,
+    "sha256": "ba373d0cecef1a67a4fa7b21ed58f3afe9a80dcebe5fa0d49f5d541d01f402a9",
+    "git_blob_sha": "7078c8d3a0d9bae1e6d8a8a1803943e05af8c367"
+  },
+  "source_path_is_the_initial_intended_path": true,
+  "repair": "Add one all-one quota toy instance to provide reversed core orientations. The later controls also explicitly reject repeated target-edge coefficients. No production census was used for this repair."
+}

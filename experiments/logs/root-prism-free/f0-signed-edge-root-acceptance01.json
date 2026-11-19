@@ -1,0 +1,76 @@
+{
+  "schema": "conway99.f0.signed-edge-root-acceptance.v1",
+  "status": "ROOT_ACCEPTS_ALL_252_LITERAL_NEGATIVE_QUADRATIC_CERTIFICATES_AND_NATIVE_KEYS",
+  "producer": {
+    "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates01.json",
+    "bytes": 272662,
+    "sha256": "4c3363d7f875c2bf401ed2fba9d508167a1ad618d9ad15e39d21e1d690662b2f",
+    "git_blob": "f9a2cb8034dd051bd9db9097e4a2ec80f481cc5a",
+    "mode": "100644"
+  },
+  "producer_finalization": {
+    "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates01-finalization.json",
+    "bytes": 813,
+    "sha256": "04c208519361648ce0cf5553c02484d952cdac58c0bd42c4e79258e40c438019",
+    "git_blob": "4c300ded302df1ac366c94dc1cf84b7a50c32b04",
+    "mode": "100644"
+  },
+  "producer_root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates-root-gate01.json",
+    "bytes": 5729,
+    "sha256": "db29e76d616e575760340fe3b1d611f48aa9efd60aa7a1515392e86ea5040809",
+    "git_blob": "8f3b9c09e4acdf80c8de1a653b9075042adfc782",
+    "mode": "100644"
+  },
+  "literal_replay": {
+    "path": "experiments/logs/root-prism-free/f0-signed-edge-literal-replay01.json",
+    "bytes": 738,
+    "sha256": "40835a07c513d24ef91e25f9f4439bcaf70985e0cbc20092a1ac521050b780ed",
+    "git_blob": "be2fd4c7406eed7ff3e59f7cf523cbd87e15c325",
+    "mode": "100644"
+  },
+  "literal_finalization": {
+    "path": "experiments/logs/root-prism-free/f0-signed-edge-literal-replay01-finalization.json",
+    "bytes": 462,
+    "sha256": "dd06aaad6d3312d221713b058fe6943ca38d104fa8af49281312f6e98613a6db",
+    "git_blob": "22e4510b6344b6e4c2e3f92be5abd92c35cd760f",
+    "mode": "100644"
+  },
+  "literal_configuration": {
+    "path": "experiments/logs/root-prism-free/f0-signed-edge-literal-replay-configuration01.json",
+    "bytes": 3922,
+    "sha256": "acd44d5d8bf04035177d632df84507f6d4cb4266b8ef0b71591bdcf2839c1144",
+    "git_blob": "27896b0be08b823b44dd2015b8630b0a20742564",
+    "mode": "100644"
+  },
+  "literal_source": {
+    "path": "experiments/workspace/root_prism_free_f0_signed_edge_literal_replay_v8.js",
+    "bytes": 6135,
+    "sha256": "84b9818d677063f8d6cd997f0960af8ca226eec201fbcc99dac5be6b4a7fb658",
+    "git_blob": "abe7c24b3757b0f59ba874cb073d34282b4d3e0a",
+    "mode": "100644"
+  },
+  "literal_runner": {
+    "path": "experiments/workspace/root_prism_free_f0_signed_edge_literal_runner_v8.js",
+    "bytes": 3173,
+    "sha256": "9d69f6fc73eea32c999406024790322a9726236ea7084ad8a4a19344b2b8e058",
+    "git_blob": "73b99c1f8f4752e9fefbf487afc5ef00f6171442",
+    "mode": "100644"
+  },
+  "certificates": 252,
+  "distinct_signed_rows": 252,
+  "primitive_family": "plus",
+  "all_actual_matrix_entries_reconstructed_from_accepted_kernels": true,
+  "all_integer_quadratic_values_independently_recomputed": true,
+  "all_native_edges_guards_and_origin_indices_compared": true,
+  "row_keys_sha256": "f8520f41d73c21e652386533388838a8f27837d50eea09726e06bbca909edef0",
+  "present_edges_in_original_literal_zero_family": 0,
+  "complete_eight_pattern_replay_claimed": false,
+  "diagnostic_proposal_list_completeness_claimed": false,
+  "other_constraints_nonredundancy_claimed": false,
+  "scope": "Each accepted row forbids its explicitly certified selected one-edge pattern. The isolated selector remains in the row guard. No other supplied or unsupplied pattern is accepted by this receipt.",
+  "optimizer_calls": 0,
+  "native_model_builds": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

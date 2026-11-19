@@ -1,0 +1,60 @@
+{
+  "actual_preparation": {
+    "case_matrices_evaluated": 0,
+    "cofactor_identities": 6975,
+    "guarded_assignments": 54,
+    "invalid_inputs_rejected": 4,
+    "seconds": 10.426,
+    "short_directions": 49,
+    "status": "PREPARED_TARGETED_CERTIFICATE_CHECKER_ONLY",
+    "synthetic_matrices": 3375
+  },
+  "complete_source_configuration_and_actual_preparation_read": true,
+  "concrete_mathematical_blockers": [],
+  "git_refs_mutated": false,
+  "main_calls_by_this_reviewer": 0,
+  "mathematical_checks": [
+    "SHORT contains exactly49 primitive nonzero integer directions in[-2,2]^3 modulo sign. Failure of this proposing list proves nothing; only a directly negative quadratic value is accepted.",
+    "The positive-pivot cofactor vector is a scalar multiple of the exact Schur-elimination negative direction. Its direct BigInt contraction is checked after normalization, so acceptance does not depend on any stored determinant or the cofactor identity alone.",
+    "All selected matrix entries are reconstructed from accepted primitive full-core kernels and the actual one-edge pattern. Positive primitive scaling preserves PSD and the sign of a quadratic form.",
+    "Both kernel value hashes agree with the accepted direct audit, and all original eligible edges and saved neighbor lists are reconstructed before target IDs are used.",
+    "The supplied252 records are only a proposal list. Each target must be a distinct one-edge pattern on three disjoint signatures with all three original edges eligible; its parent record and original signature sites/edge IDs are checked.",
+    "A negative quadratic form in either full-core family forbids exactly the tested selected-triple adjacency pattern, regardless of the diagnostic saved minor strings.",
+    "The signed row is y_present+x_isolated-y_absent1-y_absent2<=1. Endpoint activation supplies the two selectors incident to y_present; the third selector is explicitly guarded. Its lower endpoint-2 is safe.",
+    "Native terms retain selector IDs and540+original edge IDs, sorted with no variable collision. Complete row keys include lower/upper bounds; dedup retains every original certificate index.",
+    "Known-zero premises are checked against the accepted literal overlay and exact edge namespace and are used as disposition evidence, not as the negative-quadratic acceptance.",
+    "A failed witness search yields an unaccepted partial prefix. A successful main must prove all252 provided records. No complete eight-pattern census or unrestricted pattern-completeness claim is made."
+  ],
+  "native_model_builds": 0,
+  "numerical_controls_not_rerun": true,
+  "old_diagnostic_numeric_strings_trusted": false,
+  "optimizer_calls": 0,
+  "required_terminal_acceptance": [
+    "Require status PASS_252_PROVIDED_SINGLE_EDGE_PSD_CERTIFICATES, complete=true, error=null,252 certified records, and all frozen source/config/input identities.",
+    "The source's last60-second tick precedes row deduplication/report hashing and the final byte-count conversion. An outer bound must measure through serialization and reject an overrun, or an explicit final checked deadline must be added before PASS is accepted.",
+    "The source retains sufficient exact matrices, negative vectors, quadratic values, native row keys and origin lists for a separate literal certificate check."
+  ],
+  "resource_boundary_qualification": true,
+  "schema": "conway99.f0.provided-single-edge-schur-independent-source-review.v1",
+  "status": "PASS_SOURCE_MATHEMATICS_WITH_EXPLICIT_OUTER_TIME_ACCEPTANCE",
+  "subjects": {
+    "configuration": {
+      "bytes": 5208,
+      "git_blob": "a6040e960abeb1711f5e7108fca4d21f802ba0d3",
+      "sha256": "a42abc4489fcc8738539ffa05a24eeb4eb0d1f8fd5d9ab7b31716ea52678f4d4"
+    },
+    "preparation": {
+      "bytes": 4086,
+      "git_blob": "8612b3cadc50373a28513962da5cb91f6c486602",
+      "sha256": "4b05043842068af3dab5ac56aa6d4eb3e0aad5b744750f1fb1a15669937cefba"
+    },
+    "source": {
+      "bytes": 19873,
+      "git_blob": "25d0ca0985831a5a7de302ae477b2639296f5279",
+      "path": "experiments/workspace/root_prism_free_f0_single_edge_schur_certificates_v8.js",
+      "sha256": "db1d0956b261e2dd10b69f70f104bdbb8cd055ad49c039583fdec67aeda9bca3"
+    }
+  },
+  "targeted_main_not_run_by_reviewer": true,
+  "whole_graph_or_component_exclusion_claimed": false
+}

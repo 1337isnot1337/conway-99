@@ -1,0 +1,83 @@
+{
+  "concrete_source_blockers": [],
+  "expected_model": {
+    "appended_rows": 89544,
+    "appended_terms": 600360,
+    "final_rows": 257594,
+    "parent_raw_sha256": "4505234d13039159c3191918f7db729819ad6ed25f46e538d91975466d660e83",
+    "parent_rows": 168050,
+    "variables": 68934
+  },
+  "family_counts": [
+    1224,
+    57996,
+    23010,
+    6990,
+    72,
+    252
+  ],
+  "family_order": [
+    "three_one_edge",
+    "three_path",
+    "four_retained",
+    "triangle_cover",
+    "spectral_edge_zero",
+    "signed_one_edge"
+  ],
+  "family_terms": [
+    2448,
+    173988,
+    401874,
+    20970,
+    72,
+    1008
+  ],
+  "final_source_changes_verified": [
+    "Explicit Python-int and range check for each spectral edge ID.",
+    "Owner acceptance additionally requires child_reaped and owned_process_group_stopped to be exactly true."
+  ],
+  "findings": [
+    "All six row formulas use the original selector indices and original edge index plus 540. Terms are exact distinct integer coordinates and are sorted before native insertion.",
+    "The lower bounds 0, -1, -2, 0, 0, -2 are valid from Boolean variable bounds; the upper bounds are the proof-bearing inequalities.",
+    "The four-exterior deletion depends on the separately accepted complete origin and mixed-coefficient replay. The preserved parent contains the original mixed equalities and nonnegative edge bounds used by every deletion certificate.",
+    "Triangle pruning uses only the original 1884 literal zeros. Spectral pruning similarly removes only the 60 of 132 zeros already present in that literal family. Signed rows retain all supplied certified keys.",
+    "Full parent bytes, all variables and all parent constraints are retained. The producer verifies both the full raw prefix and exact serialization after deleting the appended constraints.",
+    "Full model and suffix gzip archives are checked by lossless reconstruction. Public native transport is required to preserve every expected model byte and validate without a solver.",
+    "The CI driver binds source/configuration/gate dependencies, uses separate controls/preparation/cold directories, and checks child exit, reaping, process-group termination and elapsed bounds.",
+    "The independent cold CLI and statuses match the reviewed driver. Its controls and main are separately supervised and do not import the producer or its transport module."
+  ],
+  "frozen_runtime": {
+    "ortools": "9.15.6755",
+    "protobuf": "6.33.6",
+    "python": "3.12"
+  },
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "prior_draft": {
+    "bytes": 14505,
+    "complete_source_read": true,
+    "git_blob": "cd0760a0579de4e6b49cd5aa9d27501c00e9b1cc",
+    "sha256": "b5757c69b2fcb141263ac311ba6775b0e241ccbc2af1f5c4b904520343c7860f"
+  },
+  "remaining_gate": [
+    "Read and bind the final configuration and all actual family acceptance receipts.",
+    "Review the independent cold source and execute its protobuf controls in the bounded CI environment before accepting a model."
+  ],
+  "reviewed_ci_driver": {
+    "bytes": 7726,
+    "git_blob": "95b22fd7aa83ff462a33386b0bba8e9ec51b5610",
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_ci.py",
+    "sha256": "46080217ad2ecb71874767f3bff1be70a30ff5be7ecc58393bf2aece83be6fa7"
+  },
+  "reviewed_producer": {
+    "bytes": 14686,
+    "git_blob": "43f8f32dba2305051ed22791e66ee7c5869c9221",
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_append.py",
+    "sha256": "9879d5ad46b58ab8e4e2eb58fb302e7c140a06bd3f7b3bf3cb47f82e25e99716"
+  },
+  "schema": "conway99.f0.strengthened-native-preparation.source-review.v1",
+  "scope": "Source-only review. No configuration, model construction, native transport, controls, optimizer or CI execution is accepted by this record.",
+  "source_imports": 0,
+  "source_review_complete": true,
+  "status": "PASS_PRODUCER_AND_CI_SOURCE_REVIEW_PENDING_FINAL_CONFIGURATION"
+}

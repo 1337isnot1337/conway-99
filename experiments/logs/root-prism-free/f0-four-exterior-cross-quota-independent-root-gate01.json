@@ -1,0 +1,56 @@
+{
+  "schema": "conway99.f0.four-exterior-cross-quota-independent-root-gate.v1",
+  "status": "AUTHORIZED_ONE_COMPACT_INDEPENDENT_RECONSTRUCTION",
+  "reviewer": "root",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_independent_v2.js",
+    "bytes": 16181,
+    "sha256": "ce211ba42837942dc52a9656297db4910d31bfe5c40ce0e82455f76cbae20b94",
+    "git_blob": "2f5c4dbd0d182176d8dd8d66535a45c70a8d482f",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent-configuration02.json",
+    "bytes": 6421,
+    "sha256": "d6c987194e7a7b9741c81f0fff45cbf2a37f410f3a979cdd1c57de09d11ef4e1",
+    "git_blob": "f3ce03f97c408b7e4e4bd987443e895e6649cfa8",
+    "mode": "100644"
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent-controls02.json",
+    "bytes": 735,
+    "sha256": "a0519160b442eb692e7746c1b0bc1bac68a00a9add09ace5340aef3f1279f42d",
+    "git_blob": "6e32d93f89ea95e8fc3a43c7cbd5e975e50bf4d2",
+    "mode": "100644"
+  },
+  "peer_review": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent-v2-source-review01.json",
+    "bytes": 3920,
+    "sha256": "c742817110544ad12d4e077058ea60f8491bdbfa70da2abde021d17acda017ff",
+    "git_blob": "48821a4925ad1a9d1a7b8ba75689ab3b4bec0999",
+    "mode": "100644"
+  },
+  "complete_source_configuration_controls_and_review_read": true,
+  "checks": [
+    "Separate core-pair/support enumeration and explicit tuple ordering reproduce the old edge/site order.",
+    "All original row keys are preserved and must reproduce the previously accepted full ordered-key digest.",
+    "Every proposed continuous implication checks actual mixed supports, both selector coefficients and all target-edge coefficients.",
+    "All case origins and full row keys remain; retained IDs are provisional until a distinct artifact-only certificate check.",
+    "The materially changed compact report avoids the prior verbose publication-hash bottleneck; prior failure remains unchanged."
+  ],
+  "limits": {
+    "census_ms": 30000,
+    "total_ms": 60000,
+    "serialized_report_bytes": 16777216
+  },
+  "runs_authorized": 1,
+  "automatic_retries": 0,
+  "publication_hashing_separate": true,
+  "publication_requires_complete_result_and_successful_finalization": true,
+  "independent_certificate_check_required_before_row_deletion": true,
+  "optimizer_calls_authorized": 0,
+  "native_model_builds_authorized": 0,
+  "heavy_arithmetic_slot_released_to": "master_continuation",
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

@@ -37,3 +37,8 @@ The source returned, so those assertions passed. The wrapper then serialized and
 A separate independent compact reconstruction is in preparation. It must check actual mixed-term support certificates and preserve complete row keys and origins with smaller arrays. No unchanged automatic retry or native-model modification follows this failed attempt. Rebuilding the same row-key family will not recover the original compressed inventory or rewrite the earlier metadata failure.
 
 No native model, optimizer query, entire-component exclusion or Conway99 solution is obtained here.
+
+
+## Accepted complete reconstruction at checkpoint 82
+
+The [new compact reconstruction](root_prism_free_f0_four_exterior_cross_quota_independent_result.md) and [root coefficient replay](../experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01.json) now check all 72,468 original rows and 73,404 origins. All 63,336 sufficient recipes pass full sparse-vector comparison with the original native mixed equalities. They cover 49,458 rows. The retained 23,010 rows contain 401,874 terms; no nonredundancy conclusion is made about them. The [root acceptance](../experiments/logs/root-prism-free/f0-four-exterior-cross-quota-root-acceptance01.json) binds the complete reconstruction, timed replay and standalone prism proof. The earlier failed finalization above is unchanged. No native append or new query has run at checkpoint 82.

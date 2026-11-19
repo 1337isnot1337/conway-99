@@ -1,0 +1,49 @@
+{
+  "schema": "conway99.f0.spectral-gap-pair-independent-cold-root-gate.v1",
+  "status": "AUTHORIZED_ONE_COMPLETE_INDEPENDENT_PAIR_REPLAY",
+  "reviewer": "root",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_spectral_gap_pair_independent_replay_v8.js",
+    "bytes": 24363,
+    "sha256": "cbfee51b6fbaab2a61cffcf629d03f8552d6b5c4eeb37c7b757f8b3a3c7dc7be",
+    "git_blob": "41518abe49f084f577120e22e6467e190690667d",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold-configuration02.json",
+    "bytes": 7953,
+    "sha256": "0fdc62ecea9f396d98b7741981eb14088d96e7b88918672689753daa7cd0860e",
+    "git_blob": "f0f0022277ee84dd272da7ef27357fab0373b8be",
+    "mode": "100644"
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold-controls01.json",
+    "bytes": 953,
+    "sha256": "9957a74ca1a5466b497326e113aa114f31c2046bfdeafb9fdadd04bd85fd1b48",
+    "git_blob": "4d9a4f033cc09b9268c806d8c68adff24f2633e3",
+    "mode": "100644"
+  },
+  "source_lines_read": 222,
+  "checks": [
+    "The exact complete forward source/configuration/gate/controls/finalization and mathematical authorities are hash-bound and compared without importing producer arithmetic.",
+    "Every pair is visited in a different order and matched by independently constructed table indices.",
+    "All 405426 determinants use the expanded integer formula with BigInt; every allowed-state mask is separately checked by exact square-root interval arithmetic.",
+    "All full saved pair records, row lists, old-zero dispositions, histograms and extrema are compared.",
+    "All six selector covers must have directly reconstructed original unit-Gram witnesses.",
+    "Actual controls exercise signed division, integer square roots, interval endpoints, scaling, activation guards and metadata rejection.",
+    "Corrected configuration02 uses the exact published forward-finalization path; unrun configuration01 remains preserved."
+  ],
+  "runs_authorized": 1,
+  "automatic_retries": 0,
+  "limits": {
+    "maximum_ms": 90000,
+    "maximum_report_bytes": 1048576
+  },
+  "publication_hashing_separate": true,
+  "complete_report_and_finalization_required": true,
+  "optimizer_calls_authorized": 0,
+  "native_model_builds_authorized": 0,
+  "heavy_arithmetic_slot_released_to": "master_review",
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}
