@@ -17,6 +17,7 @@ make verify
 | [`grid_intersections.py`](workspace/grid_intersections.py) | Enumerates all 2,097,152 labeled seven-vertex graphs for the grid-count inequalities and equality case. |
 | [`grid_support.cpp`](workspace/grid_support.cpp) | Computes disjoint-pair minima and the weighted minimum of 97 for the triangle-pair bound. [Log](logs/grids-and-triangles/grid-support.log) |
 | [`grid_agreements.py`](workspace/grid_agreements.py) and [`grid_leaf.py`](workspace/grid_leaf.py) | Check the four-point maps and eight-point possibilities for a fifteen-grid root. |
+| [Two-full-axis checks](../research/grids-and-triangles/two-full-axes.md) | Test sign transports and the rank of the 59-vertex core. The C++ template verifier uses Boost.Multiprecision headers. |
 | [`root_cover_audit.py`](workspace/root_cover_audit.py) | Replays the parity and transport cases used to exclude a root contained in 21 grids. [Log](logs/grids-and-triangles/root-cover-audit.log) |
 | [`level_seven_check.py`](workspace/level_seven_check.py) | Replays the rational rank certificates and checks the theta transform on five explicit lattice controls. [Log](logs/eigenlattices/level-seven-check.log) |
 

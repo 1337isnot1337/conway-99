@@ -6,6 +6,7 @@
 #include <cstdint>
 #include <iostream>
 #include <numeric>
+#include <string_view>
 #include <vector>
 #include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
@@ -98,7 +99,24 @@ struct Search {
     array<vector<signed char>,2> grams;
     array<uint64_t,5> counts{};
 
-    explicit Search(const Domains& input) : domain(input) {}
+    uint64_t rank_pass = 0;
+    bool report;
+    explicit Search(const Domains& input, bool report_survivors) : domain(input), report(report_survivors) {}
+
+    void survivor(const array<Prefix,2>& state) const {
+        cout << "survivor " << state[0].rank << ' ' << state[1].rank;
+        for (int i=0;i<5;++i) for (int j=0;j<5;++j) {
+            if (i==j) { cout << " -1"; continue; }
+            int depth=find(order.begin(),order.end(),j)-order.begin();
+            Images action{cols[high[j]].pullback[i],
+                          cols[selected[4+2*depth]].pullback[i],
+                          cols[selected[5+2*depth]].pullback[i]};
+            auto match=find(perms.begin(),perms.end(),action);
+            assert(match!=perms.end());
+            cout << ' ' << match-perms.begin();
+        }
+        cout << '\n';
+    }
 
     void columns(int j, int i, array<Column,3>& col) {
         if (i==5) {
@@ -134,25 +152,42 @@ struct Search {
             if (!add(state,n,option[0]) || !add(state,n+1,option[1])) continue;
             ++counts[depth];
             if (depth<4) visit(depth+1,state);
+            else {
+                rank_pass += state[0].rank <= 13;
+                if (report) survivor(state);
+            }
         }
     }
 
+    bool primary_ok(bool transpose) const {
+        array<Column,5> primary{};
+        for (int j=0;j<5;++j) {
+            primary[j].j=j;
+            for (int i=0;i<5;++i) if (i!=j) {
+                const auto& image=perms[countr_zero(transpose ? domain[j][i] : domain[i][j])];
+                if (!transpose) primary[j].pullback[i]=image[0];
+                else for (int k=0;k<3;++k)
+                    if (abs(image[k])==1) primary[j].pullback[i]=(image[k]>0 ? k+1 : -k-1);
+            }
+        }
+        for (bool positive : {true,false}) {
+            Prefix test{};
+            for (int j=0;j<5;++j) {
+                int row[5]{};
+                for (int i=0;i<=j;++i) row[i]=gram(primary[i],primary[j],positive);
+                if (!test.append(j,row)) return false;
+            }
+        }
+        return true;
+    }
+
     void run() {
+        if (!primary_ok(false) || !primary_ok(true)) return;
         for (int j=0; j<5; ++j) {
             array<Column,3> col{{{j,0},{j,1},{j,2}}};
             columns(j,0,col);
         }
         stable_sort(order.begin(),order.end(),[&](int a,int b){return options[a].size()<options[b].size();});
-        // First test only the distinguished signs. These columns do not
-        // depend on any remaining free bijection.
-        for (bool positive : {true,false}) {
-            Prefix test{};
-            for (int j=0;j<5;++j) {
-                int row[5]{};
-                for (int i=0;i<=j;++i) row[i]=gram(cols[high[i]],cols[high[j]],positive);
-                if (!test.append(j,row)) return;
-            }
-        }
         size_t size=cols.size();
         for (int k=0;k<2;++k) {
             grams[k].resize(size*size);
@@ -168,19 +203,22 @@ struct Search {
     }
 };
 
-int main() {
+int main(int argc, char** argv) {
+    bool report = argc==2 && string_view(argv[1])=="--survivors";
     Domains domain{};
     int templates=0;
     array<uint64_t,5> totals{};
+    uint64_t rank_pass=0;
     while (cin >> domain[0][0]) {
         for (int i=1;i<25;++i)
             if (!(cin >> domain[i/5][i%5])) return 1;
-        Search search(domain); search.run();
+        Search search(domain,report); search.run();
         ++templates;
+        rank_pass+=search.rank_pass;
         for (int i=0;i<5;++i) totals[i]+=search.counts[i];
     }
     cout << templates << " templates; retained prefixes";
     for (auto n:totals) cout << ' ' << n;
-    cout << '\n';
+    cout << "; rank survivors " << rank_pass << '\n';
     return 0;
 }
