@@ -1,0 +1,31 @@
+{
+  "status": "coordinator complete source and mathematical review PASS",
+  "sources": [
+    {
+      "path": "experiments/workspace/complement_rook_35core_case0004_exterior_rows.py",
+      "sha256": "db88ab6af3b151dc233519efb052d1fc20bd40b251e01a61558a3c93ac709977"
+    },
+    {
+      "path": "experiments/workspace/complement_rook_35core_case0004_row_separation.py",
+      "sha256": "a5a7f1a950de22e310484ec17c098eaaf19915b556d71cec67b191c4a1a79339"
+    }
+  ],
+  "checks": [
+    "The full1214-column domain and complete eligible-pair census are bound to the original35-core.",
+    "Mixed target q=2-h-Bh and remaining degree14-|h| are exact; the extra constant coordinate retains the degree equation.",
+    "Both endpoint zero-quota tests and adjacent-pair overlap cap are necessary.",
+    "For each positive-demand integer potential, actual neighbor indicators prove the exported incidence inequality.",
+    "The saved proposal ranks rows only and remains numerical; no exact point is inferred.",
+    "Sparse dual has bounded36-coordinate potential and nonnegative max-linearization variables.",
+    "Rationalization is followed by exact integer products on every eligible neighbor; proposal violation remains numerical-only.",
+    "At most32 rows, two seconds per optimizer call,60 requested total seconds, one thread, stop on nonoptimal status/error."
+  ],
+  "authorized_pilot": {
+    "planned_rows": 32,
+    "per_row_seconds": 2,
+    "requested_total_seconds": 60,
+    "new_SAT_queries": 0,
+    "new_global_LP_queries": 0
+  },
+  "whole_case_exclusion_claimed": false
+}

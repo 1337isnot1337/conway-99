@@ -1,0 +1,42 @@
+{
+  "status": "independent source/necessity review and both complete integer row-cut checks PASS",
+  "review_source_sha256": "f5f8c97f8264777d3898e5061204fc8dd212caf83092ce3b67d11b26e207d6d7",
+  "checked_hashes": {
+    "experiments/workspace/complement_rook_35core_case0004_exterior_rows.py": "db88ab6af3b151dc233519efb052d1fc20bd40b251e01a61558a3c93ac709977",
+    "experiments/workspace/complement_rook_35core_case0004_row_separation.py": "a5a7f1a950de22e310484ec17c098eaaf19915b556d71cec67b191c4a1a79339",
+    "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-exterior-rows.json.gz": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+    "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-separation-run01.json": "e758fffa8bbeb80f0fc2edd3bdb9b9fc8b992a27303679df9d9658f0c9aa18f3"
+  },
+  "all1214_mixed_and_degree_targets_independently_recomputed": true,
+  "checked_inequalities": [
+    {
+      "target": 85,
+      "eligible_columns_checked": 423,
+      "positive_terms": 129,
+      "positive_integer_demand": 15,
+      "maximum_absolute_integer_coordinate": 12
+    },
+    {
+      "target": 628,
+      "eligible_columns_checked": 458,
+      "positive_terms": 96,
+      "positive_integer_demand": 2,
+      "maximum_absolute_integer_coordinate": 2
+    }
+  ],
+  "source_review": [
+    "Actual exterior adjacency gives H D=2J-H-BH and degree14-column_weight.",
+    "The35 mixed coordinates plus one degree coordinate are necessary.",
+    "Overlap at most1 and both endpoint zero-quota tests remove only impossible edges.",
+    "Neighbor activation y_ab<=x_b proves the positive-part weighted selector inequality.",
+    "Numeric proposal ranking/sanitization does not enter universal cut validity.",
+    "Positive demand is checked exactly; numerical proposal gaps are not exact infeasibility certificates.",
+    "No incidence or graph automorphism is imposed; nonoptimal rows stop the bounded pilot."
+  ],
+  "numerical_proposal_used_in_integer_validation": false,
+  "exact_numerical_proposal_violation_claimed": false,
+  "full_attachment_domain_or_CNF_rebuilt": false,
+  "subject_source_imported": false,
+  "optimizer_or_SAT_solver_called": false,
+  "whole_case_or_graph_exclusion_claimed": false
+}

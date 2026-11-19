@@ -178,6 +178,18 @@ adds incompatibilities from root pairs with only one residual common
 neighbor. Literal checks of both mutual-edge choices and two independent
 clique censuses give 3,821 remaining cases in 811 root orbits. This
 stronger family is prepared separately; its domain record is not a scan.
+A [separate complete scan](research/grids-and-triangles/grid_free_order10_complement_visible_scan.md)
+now tests all 811 representatives without an exact or unconfirmed
+numerical negative. It covers all 3,821 cases and 530 triple groups,
+without certifying PSD. A [prism-free extension](research/grids-and-triangles/grid_free_order10_complement_prism_domains.md)
+adds 1,155 genuine pair incompatibilities, each with an induced-P4
+witness. Its complete preparation has 4,584 remaining cliques in
+1,225 root orbits. New zero rows are proved only modulo the established
+prism-containing count zeros; the complete domains remain present.
+A [six-root double-complement family](research/grids-and-triangles/grid_free_order10_double_complements.md)
+conditions on two absent high classes. Exact identities reduce 9,118
+pairs to 1,112 candidates in 84 root orbits. The completed scan at the
+same integer point finds no separator and supplies no PSD certificate.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -311,6 +323,13 @@ exclusions, cases `6,7,14`. Every retained input of those three proofs
 belongs to its original incidence formula; none needs the downdate
 overlay. The other seventeen runs return UNKNOWN. The current excluded
 set is `0,1,2,3,6,7,8,9,10,14,21`; the first local set remains open.
+A [case-four row-separation loop](research/grids-and-triangles/complement_rook_35core_case0004_row_loop_run01.md)
+now supplies sixty exact necessary integer inequalities. A cold replay
+checks every cut and each saved LP prefix. Three numerical LP proposals
+remain feasible at their respective cut prefixes. The 60-second limit
+leaves nineteen positive rows unvisited in the final proposal; its last
+twenty cuts have not been reoptimized. There is no Farkas certificate,
+new matching exclusion, or exact real-feasibility claim from this loop.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -360,6 +379,14 @@ Adding the twelve transported row inequalities to the original free
 480-selector component model gives another exact incidence witness.
 All Gram, profile, motif and new-cut checks pass, as does a separate cold
 replay. Its exterior rows and the second component are still unspecified.
+A [complete sixty-row capacity pass](research/root_prism_free_f0_exterior_row_box_separation.md)
+now excludes extension of this replacement incidence too. Three integer
+potentials give strict capacity deficits; the other fifty-seven rows
+have separately checked rational box witnesses. Independent arithmetic
+reconstructs the full domain and verifies all twelve relabelings of
+each cut. Neither saved incidence can extend, but component zero remains
+open. A new free-selector loop with the full weighted cuts is separate
+work; no outcome for that loop is included here.
 
 ## Scope of the unrestricted computations
 

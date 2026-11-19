@@ -1,0 +1,142 @@
+{
+  "status": "exact equivalent11-coordinate target628 potential replay PASS",
+  "source_sha256": "62ce35fbd5afecdfa7619a76582ce1e248ee14dae486b561c81fb835eaedcb10",
+  "model_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "result_sha256": "e758fffa8bbeb80f0fc2edd3bdb9b9fc8b992a27303679df9d9658f0c9aa18f3",
+  "target": 628,
+  "old_potential": [
+    -2,
+    1,
+    -2,
+    1,
+    1,
+    1,
+    -1,
+    2,
+    1,
+    -1,
+    0,
+    0,
+    -2,
+    2,
+    -1,
+    0,
+    -2,
+    -2,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    -2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    -1
+  ],
+  "new_potential": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -2,
+    1,
+    0,
+    -1,
+    0,
+    0,
+    -2,
+    2,
+    -1,
+    0,
+    0,
+    -2,
+    0,
+    1,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "nonzero_core_coordinates": [
+    [
+      6,
+      -2
+    ],
+    [
+      7,
+      1
+    ],
+    [
+      9,
+      -1
+    ],
+    [
+      12,
+      -2
+    ],
+    [
+      13,
+      2
+    ],
+    [
+      14,
+      -1
+    ],
+    [
+      17,
+      -2
+    ],
+    [
+      19,
+      1
+    ],
+    [
+      20,
+      2
+    ],
+    [
+      27,
+      2
+    ],
+    [
+      32,
+      1
+    ]
+  ],
+  "degree_coordinate": 0,
+  "zero_quota_coordinates": [
+    0,
+    2,
+    16,
+    24
+  ],
+  "right_hand_side": 2,
+  "eligible_neighbors_checked": 458,
+  "positive_coefficients_unchanged": 96,
+  "identity": "Subtract1 from all nine R potentials and add1 to the degree potential; then zero positions whose quota is0. All eligible columns and the row target annihilate these changes.",
+  "new_cut_claimed": false,
+  "optimizer_or_solver_called": false
+}

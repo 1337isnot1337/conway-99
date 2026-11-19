@@ -524,3 +524,29 @@ has a standalone compressed original-only proof replay. It rebuilds each
 original formula and checks decompressed retained inputs and proofs.
 No downdate or overlay source is imported by that verifier.
 
+## Exterior-row inequalities and absence products
+
+The [complete replacement-incidence row check](../research/root_prism_free_f0_exterior_row_box_separation.md)
+has an optimizer-free replay and a separate independent reconstruction.
+Three exact integer gaps reject extension of that incidence. Fifty-seven
+rational row boxes are separate controls; they do not form a joint graph.
+Its manifest binds all 36 transported weighted inequalities.
+
+The [case-four LP continuation](../research/grids-and-triangles/complement_rook_35core_case0004_row_loop_run01.md)
+retains all sixty exact row cuts, every numerical proposal, and all
+848 visited row outcomes. Its cold replay checks the full cut pool and
+the precise prefix used by each LP. The final twenty cuts have not been
+reoptimized, and the final support has nineteen unvisited rows.
+
+The [visible-pair scan](../research/grids-and-triangles/grid_free_order10_complement_visible_scan.md)
+and [double-complement scan](../research/grids-and-triangles/grid_free_order10_double_complements.md)
+each finish their finite representative lists without a separator.
+Neither result is an exact PSD certificate. The double-complement note
+gives the separate cold replay wrapper for its JSON-key normalization.
+
+The [prism-free clique preparation](../research/grids-and-triangles/grid_free_order10_complement_prism_domains.md)
+keeps the full domains and records all nonzero terms in its new selected
+zero rows. Each term lies in the proved prism-containing zero support.
+The separate path-on-four-vertices replay reconstructs every genuine new
+pair incompatibility without using the catalogue or child transports.
+

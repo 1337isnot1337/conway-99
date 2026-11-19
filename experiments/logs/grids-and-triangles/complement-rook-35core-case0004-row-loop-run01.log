@@ -1,0 +1,48 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "round": 0,
+  "positive_rows": 287,
+  "visited": 287,
+  "new_cuts": 21,
+  "total_cuts": 23,
+  "elapsed_seconds": 25.46169367499897
+}
+{
+  "round": 1,
+  "positive_rows": 290,
+  "visited": 290,
+  "new_cuts": 17,
+  "total_cuts": 40,
+  "elapsed_seconds": 40.10505618000025
+}
+{
+  "round": 2,
+  "positive_rows": 290,
+  "visited": 271,
+  "new_cuts": 20,
+  "total_cuts": 60,
+  "elapsed_seconds": 60.18693070500012
+}
+{
+  "status": "total budget during positive support; unvisited rows unresolved",
+  "source_sha256": "b8992691bf5e56bfdc84450de64c36f43dbd3c0927973f334e00ce2d50f0c16a",
+  "dependency_source_hashes": {
+    "complement_rook_35core_case0004_lp.py": "cba1a71b01cb48e33bfd0a82113b35d3c5b846176dfb244369660d8762320d02",
+    "complement_rook_35core_case0004_exterior_rows.py": "db88ab6af3b151dc233519efb052d1fc20bd40b251e01a61558a3c93ac709977",
+    "complement_rook_35core_case0004_row_separation.py": "a5a7f1a950de22e310484ec17c098eaaf19915b556d71cec67b191c4a1a79339"
+  },
+  "preparation": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-loop-preparation.json.gz",
+  "preparation_sha256": "57d1e671267ff35f8226c140a248f76076239575ba38517d332a9f6daa2cd7a9",
+  "requested_total_seconds": 60.0,
+  "requested_rounds": 5,
+  "case_index": 4,
+  "SAT_queries": 0,
+  "exact_feasibility_claimed": false,
+  "exact_case4_exclusion_claimed": false,
+  "whole_local_set_or_graph_excluded": false,
+  "elapsed_seconds": 60.36277387000155,
+  "exact_cut_count": 60,
+  "new_exact_cuts": 58,
+  "cooperative_budget_overrun_seconds": 0.36276984399955836
+}

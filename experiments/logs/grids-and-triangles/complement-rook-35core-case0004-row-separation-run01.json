@@ -1,0 +1,7876 @@
+{
+  "status": "all32 planned row queries completed; exact inequalities only, no completion claim",
+  "source_sha256": "a5a7f1a950de22e310484ec17c098eaaf19915b556d71cec67b191c4a1a79339",
+  "preparation_source_sha256": "db88ab6af3b151dc233519efb052d1fc20bd40b251e01a61558a3c93ac709977",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-exterior-rows.json.gz",
+  "model_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "case_index": 4,
+  "proposal_sha256": "716c47ea322a2ede86974dc22354a538cee0ca1b639b757e4be61926a17408c2",
+  "proposal_variant": "with30_binary_no_good_rows",
+  "target_order": [
+    32,
+    175,
+    183,
+    792,
+    827,
+    412,
+    924,
+    618,
+    775,
+    285,
+    107,
+    294,
+    20,
+    1184,
+    85,
+    1195,
+    551,
+    725,
+    223,
+    60,
+    1024,
+    189,
+    1178,
+    628,
+    226,
+    112,
+    542,
+    96,
+    70,
+    197,
+    490,
+    331
+  ],
+  "row_seconds": 2.0,
+  "total_seconds": 60.0,
+  "rows": [
+    {
+      "target_column": 32,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.009258555000997148,
+      "threads": 1,
+      "dual_matrix_shape": [
+        640,
+        676
+      ],
+      "dual_matrix_nonzeros": 4081,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 1.1102230246251565e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 175,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.009135262997006066,
+      "threads": 1,
+      "dual_matrix_shape": [
+        645,
+        681
+      ],
+      "dual_matrix_nonzeros": 4138,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0000000000000002,
+        1.0000000000000004,
+        1.0000000000000002,
+        1.0,
+        1.0000000000000004,
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0,
+        -1.0,
+        -1.0000000000000004,
+        -1.0000000000000002,
+        -1.0000000000000004,
+        -1.0000000000000004,
+        -1.0000000000000002,
+        -0.9999999999999998,
+        -1.0,
+        -1.0,
+        0.9999999999999998,
+        1.0,
+        -1.0,
+        1.0000000000000002,
+        1.0,
+        1.0,
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 1.9741278289409132e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 183,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.009676294997916557,
+      "threads": 1,
+      "dual_matrix_shape": [
+        643,
+        679
+      ],
+      "dual_matrix_nonzeros": 4111,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -7.771561172376096e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 792,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.0049388600018573925,
+      "threads": 1,
+      "dual_matrix_shape": [
+        391,
+        427
+      ],
+      "dual_matrix_nonzeros": 2451,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -4.440892098500626e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 827,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.005673385996487923,
+      "threads": 1,
+      "dual_matrix_shape": [
+        598,
+        634
+      ],
+      "dual_matrix_nonzeros": 3867,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -0.9999999999999998,
+        -1.0000000000000002,
+        -1.0,
+        -1.0,
+        -1.0000000000000002,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0000000000000002,
+        1.0,
+        0.9999999999999998,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        0.9999999999999998,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -7.422947533524183e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 412,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.007090196999342879,
+      "threads": 1,
+      "dual_matrix_shape": [
+        676,
+        712
+      ],
+      "dual_matrix_nonzeros": 4403,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -0.9999999999999998,
+        -1.0,
+        -1.0000000000000002,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        0.9999999999999998,
+        1.0,
+        1.0,
+        1.0,
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0000000000000002,
+        0.9999999999999998,
+        1.0,
+        0.9999999999999998,
+        1.0,
+        -1.0,
+        0.9999999999999998,
+        1.0000000000000002,
+        1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 7.423167888827915e-17,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 924,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.007533363001130056,
+      "threads": 1,
+      "dual_matrix_shape": [
+        691,
+        727
+      ],
+      "dual_matrix_nonzeros": 4511,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 2.220446049250313e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 618,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.0055738350019964855,
+      "threads": 1,
+      "dual_matrix_shape": [
+        463,
+        499
+      ],
+      "dual_matrix_nonzeros": 2915,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 2.220446049250313e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 775,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.006461027001932962,
+      "threads": 1,
+      "dual_matrix_shape": [
+        433,
+        469
+      ],
+      "dual_matrix_nonzeros": 2750,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -4.440892098500626e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 285,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.008194925998395775,
+      "threads": 1,
+      "dual_matrix_shape": [
+        648,
+        684
+      ],
+      "dual_matrix_nonzeros": 4139,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.9999999999999997,
+        -1.0,
+        -0.9999999999999997,
+        -0.9999999999999996,
+        -1.0,
+        -1.0,
+        -0.9999999999999996,
+        -1.0,
+        0.9999999999999999,
+        1.0000000000000004,
+        0.9999999999999997,
+        1.0,
+        1.0000000000000002,
+        1.0,
+        1.0,
+        1.0,
+        0.9999999999999999,
+        0.9999999999999996,
+        1.0,
+        0.9999999999999997,
+        0.9999999999999998,
+        0.9999999999999997,
+        0.9999999999999998,
+        0.9999999999999997,
+        0.9999999999999998,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 3.086850629268961e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 107,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.013112763001117855,
+      "threads": 1,
+      "dual_matrix_shape": [
+        645,
+        681
+      ],
+      "dual_matrix_nonzeros": 4151,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 2.220446049250313e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 294,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.00470702600068762,
+      "threads": 1,
+      "dual_matrix_shape": [
+        451,
+        487
+      ],
+      "dual_matrix_nonzeros": 2825,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -0.0,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 20,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.005074003998743137,
+      "threads": 1,
+      "dual_matrix_shape": [
+        567,
+        603
+      ],
+      "dual_matrix_nonzeros": 3630,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 4.440892098500626e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 1184,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.007571310001367237,
+      "threads": 1,
+      "dual_matrix_shape": [
+        566,
+        602
+      ],
+      "dual_matrix_nonzeros": 3621,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        0.9999999999999991,
+        1.0000000000000004,
+        -0.0,
+        1.0,
+        1.0000000000000002,
+        -0.0,
+        0.9999999999999991,
+        1.0,
+        0.9999999999999997,
+        -1.0,
+        1.0000000000000002,
+        1.0,
+        1.0000000000000002,
+        0.9999999999999998,
+        -0.0,
+        1.0,
+        1.0000000000000009,
+        1.0,
+        -1.0,
+        1.0000000000000002,
+        1.0,
+        1.0000000000000004,
+        -1.0,
+        -1.0,
+        -1.0000000000000002,
+        -1.0000000000000002,
+        -1.0000000000000002,
+        -1.0,
+        -1.0,
+        -0.9999999999999996,
+        -0.9999999999999997,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 9.706025579920103e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 85,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.00561673600168433,
+      "threads": 1,
+      "dual_matrix_shape": [
+        423,
+        459
+      ],
+      "dual_matrix_nonzeros": 2669,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.13043478260869623,
+        -1.0,
+        1.0,
+        0.04347826086956463,
+        1.0,
+        -1.0,
+        -0.6521739130434796,
+        -1.0,
+        -0.2173913043478251,
+        -0.826086956521739,
+        -1.0,
+        0.7391304347826101,
+        1.0,
+        0.13043478260869623,
+        -0.826086956521739,
+        -1.0,
+        -1.0,
+        0.13043478260869623,
+        1.0,
+        0.3043478260869567,
+        0.4782608695652177,
+        0.3043478260869572,
+        0.21739130434782672,
+        -0.47826086956521763,
+        -0.47826086956521763,
+        -0.3913043478260861,
+        -0.8695652173913038,
+        -0.08695652173913049,
+        0.7826086956521743,
+        0.34782608695652134,
+        0.5217391304347825,
+        -0.0,
+        -0.17391304347826098,
+        -0.34782608695652145,
+        -0.13043478260869623
+      ],
+      "numerical_bounded_dual_score": 0.6572935223729389,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "normalized_numerical_proposal_gap": -1.6321463856398242,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 2,
+          "normalized_numerical_proposal_gap": -0.14444004494392804,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 6,
+          "normalized_numerical_proposal_gap": -0.110781081828858,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 12,
+          "normalized_numerical_proposal_gap": 0.33845525354633765,
+          "accepted": true
+        }
+      ],
+      "status": "exact universally necessary integer inequality checked; proposal violation numerical-only",
+      "integer_certificate": {
+        "target_column": 85,
+        "integer_vector": [
+          -12,
+          -3,
+          -12,
+          12,
+          0,
+          12,
+          -12,
+          -8,
+          -12,
+          -3,
+          -9,
+          -12,
+          9,
+          12,
+          3,
+          -9,
+          -12,
+          -12,
+          3,
+          12,
+          4,
+          6,
+          4,
+          3,
+          -6,
+          -6,
+          -4,
+          -9,
+          0,
+          9,
+          4,
+          6,
+          0,
+          -3,
+          -4,
+          -3
+        ],
+        "positive_demand": 15,
+        "positive_terms": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            9,
+            4
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            6
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            1
+          ],
+          [
+            22,
+            1
+          ],
+          [
+            27,
+            3
+          ],
+          [
+            202,
+            3
+          ],
+          [
+            204,
+            8
+          ],
+          [
+            206,
+            4
+          ],
+          [
+            208,
+            8
+          ],
+          [
+            209,
+            10
+          ],
+          [
+            210,
+            4
+          ],
+          [
+            211,
+            1
+          ],
+          [
+            213,
+            3
+          ],
+          [
+            214,
+            7
+          ],
+          [
+            216,
+            3
+          ],
+          [
+            230,
+            2
+          ],
+          [
+            287,
+            9
+          ],
+          [
+            311,
+            7
+          ],
+          [
+            317,
+            9
+          ],
+          [
+            318,
+            4
+          ],
+          [
+            319,
+            6
+          ],
+          [
+            323,
+            6
+          ],
+          [
+            324,
+            1
+          ],
+          [
+            440,
+            9
+          ],
+          [
+            441,
+            4
+          ],
+          [
+            501,
+            9
+          ],
+          [
+            502,
+            18
+          ],
+          [
+            503,
+            27
+          ],
+          [
+            504,
+            22
+          ],
+          [
+            505,
+            18
+          ],
+          [
+            506,
+            15
+          ],
+          [
+            507,
+            14
+          ],
+          [
+            508,
+            1
+          ],
+          [
+            510,
+            19
+          ],
+          [
+            511,
+            14
+          ],
+          [
+            513,
+            10
+          ],
+          [
+            514,
+            6
+          ],
+          [
+            515,
+            3
+          ],
+          [
+            517,
+            21
+          ],
+          [
+            518,
+            16
+          ],
+          [
+            519,
+            18
+          ],
+          [
+            520,
+            9
+          ],
+          [
+            521,
+            8
+          ],
+          [
+            522,
+            1
+          ],
+          [
+            523,
+            19
+          ],
+          [
+            524,
+            14
+          ],
+          [
+            525,
+            16
+          ],
+          [
+            526,
+            10
+          ],
+          [
+            527,
+            7
+          ],
+          [
+            528,
+            6
+          ],
+          [
+            530,
+            9
+          ],
+          [
+            531,
+            4
+          ],
+          [
+            537,
+            9
+          ],
+          [
+            538,
+            4
+          ],
+          [
+            543,
+            2
+          ],
+          [
+            544,
+            6
+          ],
+          [
+            545,
+            8
+          ],
+          [
+            546,
+            2
+          ],
+          [
+            549,
+            3
+          ],
+          [
+            550,
+            12
+          ],
+          [
+            558,
+            8
+          ],
+          [
+            560,
+            9
+          ],
+          [
+            566,
+            21
+          ],
+          [
+            567,
+            16
+          ],
+          [
+            568,
+            12
+          ],
+          [
+            569,
+            7
+          ],
+          [
+            570,
+            9
+          ],
+          [
+            572,
+            11
+          ],
+          [
+            573,
+            8
+          ],
+          [
+            574,
+            19
+          ],
+          [
+            575,
+            14
+          ],
+          [
+            576,
+            8
+          ],
+          [
+            577,
+            10
+          ],
+          [
+            578,
+            5
+          ],
+          [
+            579,
+            7
+          ],
+          [
+            580,
+            1
+          ],
+          [
+            581,
+            9
+          ],
+          [
+            582,
+            6
+          ],
+          [
+            597,
+            2
+          ],
+          [
+            598,
+            6
+          ],
+          [
+            608,
+            3
+          ],
+          [
+            609,
+            12
+          ],
+          [
+            610,
+            12
+          ],
+          [
+            611,
+            21
+          ],
+          [
+            612,
+            7
+          ],
+          [
+            613,
+            16
+          ],
+          [
+            614,
+            3
+          ],
+          [
+            615,
+            12
+          ],
+          [
+            616,
+            16
+          ],
+          [
+            621,
+            4
+          ],
+          [
+            630,
+            8
+          ],
+          [
+            636,
+            6
+          ],
+          [
+            638,
+            1
+          ],
+          [
+            641,
+            21
+          ],
+          [
+            642,
+            16
+          ],
+          [
+            647,
+            4
+          ],
+          [
+            649,
+            19
+          ],
+          [
+            650,
+            14
+          ],
+          [
+            652,
+            8
+          ],
+          [
+            774,
+            12
+          ],
+          [
+            790,
+            9
+          ],
+          [
+            791,
+            4
+          ],
+          [
+            795,
+            1
+          ],
+          [
+            824,
+            1
+          ],
+          [
+            924,
+            1
+          ],
+          [
+            943,
+            6
+          ],
+          [
+            944,
+            12
+          ],
+          [
+            945,
+            6
+          ],
+          [
+            946,
+            3
+          ],
+          [
+            947,
+            5
+          ],
+          [
+            949,
+            4
+          ],
+          [
+            952,
+            1
+          ],
+          [
+            956,
+            2
+          ],
+          [
+            969,
+            4
+          ],
+          [
+            983,
+            4
+          ],
+          [
+            1023,
+            3
+          ],
+          [
+            1134,
+            1
+          ],
+          [
+            1135,
+            10
+          ],
+          [
+            1146,
+            2
+          ],
+          [
+            1151,
+            8
+          ],
+          [
+            1186,
+            9
+          ],
+          [
+            1188,
+            3
+          ]
+        ],
+        "all_eligible_neighbor_products": [
+          [
+            0,
+            6
+          ],
+          [
+            6,
+            11
+          ],
+          [
+            8,
+            7
+          ],
+          [
+            9,
+            4
+          ],
+          [
+            10,
+            3
+          ],
+          [
+            11,
+            6
+          ],
+          [
+            13,
+            6
+          ],
+          [
+            14,
+            3
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            16,
+            1
+          ],
+          [
+            18,
+            -3
+          ],
+          [
+            19,
+            -6
+          ],
+          [
+            20,
+            -7
+          ],
+          [
+            22,
+            1
+          ],
+          [
+            23,
+            -3
+          ],
+          [
+            24,
+            -6
+          ],
+          [
+            25,
+            -7
+          ],
+          [
+            26,
+            -1
+          ],
+          [
+            27,
+            3
+          ],
+          [
+            29,
+            -1
+          ],
+          [
+            32,
+            0
+          ],
+          [
+            38,
+            0
+          ],
+          [
+            39,
+            -5
+          ],
+          [
+            40,
+            -9
+          ],
+          [
+            43,
+            0
+          ],
+          [
+            44,
+            -5
+          ],
+          [
+            45,
+            -9
+          ],
+          [
+            51,
+            -12
+          ],
+          [
+            59,
+            0
+          ],
+          [
+            60,
+            -5
+          ],
+          [
+            63,
+            -2
+          ],
+          [
+            64,
+            -7
+          ],
+          [
+            66,
+            -11
+          ],
+          [
+            68,
+            -12
+          ],
+          [
+            69,
+            -3
+          ],
+          [
+            70,
+            -8
+          ],
+          [
+            72,
+            -12
+          ],
+          [
+            75,
+            -12
+          ],
+          [
+            76,
+            -17
+          ],
+          [
+            202,
+            3
+          ],
+          [
+            204,
+            8
+          ],
+          [
+            206,
+            4
+          ],
+          [
+            207,
+            0
+          ],
+          [
+            208,
+            8
+          ],
+          [
+            209,
+            10
+          ],
+          [
+            210,
+            4
+          ],
+          [
+            211,
+            1
+          ],
+          [
+            212,
+            0
+          ],
+          [
+            213,
+            3
+          ],
+          [
+            214,
+            7
+          ],
+          [
+            216,
+            3
+          ],
+          [
+            217,
+            0
+          ],
+          [
+            218,
+            -1
+          ],
+          [
+            219,
+            -2
+          ],
+          [
+            220,
+            0
+          ],
+          [
+            221,
+            -6
+          ],
+          [
+            222,
+            -9
+          ],
+          [
+            223,
+            -10
+          ],
+          [
+            225,
+            -2
+          ],
+          [
+            226,
+            -9
+          ],
+          [
+            227,
+            -10
+          ],
+          [
+            228,
+            -4
+          ],
+          [
+            229,
+            0
+          ],
+          [
+            230,
+            2
+          ],
+          [
+            231,
+            -4
+          ],
+          [
+            285,
+            0
+          ],
+          [
+            286,
+            0
+          ],
+          [
+            287,
+            9
+          ],
+          [
+            294,
+            -8
+          ],
+          [
+            298,
+            0
+          ],
+          [
+            309,
+            -11
+          ],
+          [
+            311,
+            7
+          ],
+          [
+            313,
+            -2
+          ],
+          [
+            314,
+            -6
+          ],
+          [
+            315,
+            -9
+          ],
+          [
+            317,
+            9
+          ],
+          [
+            318,
+            4
+          ],
+          [
+            319,
+            6
+          ],
+          [
+            320,
+            -3
+          ],
+          [
+            321,
+            -4
+          ],
+          [
+            322,
+            -3
+          ],
+          [
+            323,
+            6
+          ],
+          [
+            324,
+            1
+          ],
+          [
+            326,
+            -3
+          ],
+          [
+            327,
+            -6
+          ],
+          [
+            328,
+            -7
+          ],
+          [
+            329,
+            -21
+          ],
+          [
+            330,
+            -3
+          ],
+          [
+            331,
+            -6
+          ],
+          [
+            332,
+            -12
+          ],
+          [
+            333,
+            -15
+          ],
+          [
+            334,
+            -16
+          ],
+          [
+            335,
+            -21
+          ],
+          [
+            337,
+            -3
+          ],
+          [
+            338,
+            -8
+          ],
+          [
+            339,
+            -12
+          ],
+          [
+            340,
+            -15
+          ],
+          [
+            341,
+            -16
+          ],
+          [
+            342,
+            -19
+          ],
+          [
+            343,
+            -10
+          ],
+          [
+            344,
+            -4
+          ],
+          [
+            345,
+            -10
+          ],
+          [
+            410,
+            -18
+          ],
+          [
+            411,
+            -9
+          ],
+          [
+            412,
+            0
+          ],
+          [
+            424,
+            -8
+          ],
+          [
+            428,
+            -17
+          ],
+          [
+            435,
+            -6
+          ],
+          [
+            437,
+            -11
+          ],
+          [
+            440,
+            9
+          ],
+          [
+            441,
+            4
+          ],
+          [
+            446,
+            0
+          ],
+          [
+            447,
+            -5
+          ],
+          [
+            451,
+            -9
+          ],
+          [
+            452,
+            -5
+          ],
+          [
+            457,
+            -18
+          ],
+          [
+            459,
+            -23
+          ],
+          [
+            467,
+            -21
+          ],
+          [
+            468,
+            -12
+          ],
+          [
+            469,
+            -3
+          ],
+          [
+            486,
+            -9
+          ],
+          [
+            501,
+            9
+          ],
+          [
+            502,
+            18
+          ],
+          [
+            503,
+            27
+          ],
+          [
+            504,
+            22
+          ],
+          [
+            505,
+            18
+          ],
+          [
+            506,
+            15
+          ],
+          [
+            507,
+            14
+          ],
+          [
+            508,
+            1
+          ],
+          [
+            510,
+            19
+          ],
+          [
+            511,
+            14
+          ],
+          [
+            513,
+            10
+          ],
+          [
+            514,
+            6
+          ],
+          [
+            515,
+            3
+          ],
+          [
+            517,
+            21
+          ],
+          [
+            518,
+            16
+          ],
+          [
+            519,
+            18
+          ],
+          [
+            520,
+            9
+          ],
+          [
+            521,
+            8
+          ],
+          [
+            522,
+            1
+          ],
+          [
+            523,
+            19
+          ],
+          [
+            524,
+            14
+          ],
+          [
+            525,
+            16
+          ],
+          [
+            526,
+            10
+          ],
+          [
+            527,
+            7
+          ],
+          [
+            528,
+            6
+          ],
+          [
+            529,
+            -9
+          ],
+          [
+            530,
+            9
+          ],
+          [
+            531,
+            4
+          ],
+          [
+            532,
+            0
+          ],
+          [
+            533,
+            -3
+          ],
+          [
+            534,
+            -4
+          ],
+          [
+            535,
+            -9
+          ],
+          [
+            537,
+            9
+          ],
+          [
+            538,
+            4
+          ],
+          [
+            539,
+            0
+          ],
+          [
+            540,
+            -3
+          ],
+          [
+            541,
+            -4
+          ],
+          [
+            542,
+            -7
+          ],
+          [
+            543,
+            2
+          ],
+          [
+            544,
+            6
+          ],
+          [
+            545,
+            8
+          ],
+          [
+            546,
+            2
+          ],
+          [
+            549,
+            3
+          ],
+          [
+            550,
+            12
+          ],
+          [
+            551,
+            0
+          ],
+          [
+            558,
+            8
+          ],
+          [
+            560,
+            9
+          ],
+          [
+            562,
+            0
+          ],
+          [
+            566,
+            21
+          ],
+          [
+            567,
+            16
+          ],
+          [
+            568,
+            12
+          ],
+          [
+            569,
+            7
+          ],
+          [
+            570,
+            9
+          ],
+          [
+            572,
+            11
+          ],
+          [
+            573,
+            8
+          ],
+          [
+            574,
+            19
+          ],
+          [
+            575,
+            14
+          ],
+          [
+            576,
+            8
+          ],
+          [
+            577,
+            10
+          ],
+          [
+            578,
+            5
+          ],
+          [
+            579,
+            7
+          ],
+          [
+            580,
+            1
+          ],
+          [
+            581,
+            9
+          ],
+          [
+            582,
+            6
+          ],
+          [
+            583,
+            0
+          ],
+          [
+            584,
+            -2
+          ],
+          [
+            585,
+            0
+          ],
+          [
+            586,
+            -5
+          ],
+          [
+            587,
+            -9
+          ],
+          [
+            588,
+            -1
+          ],
+          [
+            589,
+            -10
+          ],
+          [
+            592,
+            0
+          ],
+          [
+            593,
+            -5
+          ],
+          [
+            595,
+            -1
+          ],
+          [
+            596,
+            0
+          ],
+          [
+            597,
+            2
+          ],
+          [
+            598,
+            6
+          ],
+          [
+            599,
+            -4
+          ],
+          [
+            600,
+            0
+          ],
+          [
+            607,
+            -6
+          ],
+          [
+            608,
+            3
+          ],
+          [
+            609,
+            12
+          ],
+          [
+            610,
+            12
+          ],
+          [
+            611,
+            21
+          ],
+          [
+            612,
+            7
+          ],
+          [
+            613,
+            16
+          ],
+          [
+            614,
+            3
+          ],
+          [
+            615,
+            12
+          ],
+          [
+            616,
+            16
+          ],
+          [
+            621,
+            4
+          ],
+          [
+            623,
+            -1
+          ],
+          [
+            628,
+            -5
+          ],
+          [
+            630,
+            8
+          ],
+          [
+            636,
+            6
+          ],
+          [
+            638,
+            1
+          ],
+          [
+            641,
+            21
+          ],
+          [
+            642,
+            16
+          ],
+          [
+            647,
+            4
+          ],
+          [
+            648,
+            -1
+          ],
+          [
+            649,
+            19
+          ],
+          [
+            650,
+            14
+          ],
+          [
+            651,
+            -5
+          ],
+          [
+            652,
+            8
+          ],
+          [
+            657,
+            -6
+          ],
+          [
+            659,
+            -11
+          ],
+          [
+            707,
+            -21
+          ],
+          [
+            709,
+            -11
+          ],
+          [
+            710,
+            -16
+          ],
+          [
+            712,
+            -20
+          ],
+          [
+            713,
+            -24
+          ],
+          [
+            715,
+            -9
+          ],
+          [
+            716,
+            -14
+          ],
+          [
+            717,
+            -12
+          ],
+          [
+            718,
+            -22
+          ],
+          [
+            719,
+            -11
+          ],
+          [
+            720,
+            -16
+          ],
+          [
+            721,
+            -14
+          ],
+          [
+            722,
+            -20
+          ],
+          [
+            723,
+            -24
+          ],
+          [
+            724,
+            -21
+          ],
+          [
+            725,
+            -12
+          ],
+          [
+            726,
+            -17
+          ],
+          [
+            728,
+            -21
+          ],
+          [
+            729,
+            -25
+          ],
+          [
+            731,
+            -21
+          ],
+          [
+            732,
+            -26
+          ],
+          [
+            733,
+            -34
+          ],
+          [
+            734,
+            -28
+          ],
+          [
+            735,
+            -24
+          ],
+          [
+            736,
+            -22
+          ],
+          [
+            737,
+            -28
+          ],
+          [
+            771,
+            0
+          ],
+          [
+            772,
+            -6
+          ],
+          [
+            774,
+            12
+          ],
+          [
+            775,
+            -1
+          ],
+          [
+            776,
+            0
+          ],
+          [
+            777,
+            0
+          ],
+          [
+            778,
+            -4
+          ],
+          [
+            779,
+            -18
+          ],
+          [
+            781,
+            0
+          ],
+          [
+            782,
+            -13
+          ],
+          [
+            783,
+            -16
+          ],
+          [
+            784,
+            -7
+          ],
+          [
+            785,
+            -7
+          ],
+          [
+            787,
+            -9
+          ],
+          [
+            788,
+            -9
+          ],
+          [
+            789,
+            0
+          ],
+          [
+            790,
+            9
+          ],
+          [
+            791,
+            4
+          ],
+          [
+            792,
+            0
+          ],
+          [
+            793,
+            -17
+          ],
+          [
+            795,
+            1
+          ],
+          [
+            796,
+            -4
+          ],
+          [
+            798,
+            -8
+          ],
+          [
+            799,
+            -27
+          ],
+          [
+            801,
+            -9
+          ],
+          [
+            802,
+            -14
+          ],
+          [
+            803,
+            -18
+          ],
+          [
+            816,
+            -19
+          ],
+          [
+            818,
+            -1
+          ],
+          [
+            819,
+            -6
+          ],
+          [
+            821,
+            -10
+          ],
+          [
+            822,
+            -17
+          ],
+          [
+            824,
+            1
+          ],
+          [
+            825,
+            -4
+          ],
+          [
+            826,
+            -2
+          ],
+          [
+            827,
+            -11
+          ],
+          [
+            828,
+            -19
+          ],
+          [
+            829,
+            -1
+          ],
+          [
+            830,
+            -6
+          ],
+          [
+            831,
+            -4
+          ],
+          [
+            832,
+            -10
+          ],
+          [
+            833,
+            -13
+          ],
+          [
+            834,
+            -14
+          ],
+          [
+            835,
+            -11
+          ],
+          [
+            836,
+            -2
+          ],
+          [
+            837,
+            -7
+          ],
+          [
+            839,
+            -11
+          ],
+          [
+            840,
+            -14
+          ],
+          [
+            841,
+            -29
+          ],
+          [
+            842,
+            -11
+          ],
+          [
+            843,
+            -16
+          ],
+          [
+            844,
+            -14
+          ],
+          [
+            845,
+            -20
+          ],
+          [
+            846,
+            -23
+          ],
+          [
+            847,
+            -24
+          ],
+          [
+            848,
+            -27
+          ],
+          [
+            849,
+            -18
+          ],
+          [
+            850,
+            -14
+          ],
+          [
+            851,
+            -12
+          ],
+          [
+            852,
+            -18
+          ],
+          [
+            923,
+            -8
+          ],
+          [
+            924,
+            1
+          ],
+          [
+            925,
+            -2
+          ],
+          [
+            937,
+            -3
+          ],
+          [
+            941,
+            -7
+          ],
+          [
+            943,
+            6
+          ],
+          [
+            944,
+            12
+          ],
+          [
+            945,
+            6
+          ],
+          [
+            946,
+            3
+          ],
+          [
+            947,
+            5
+          ],
+          [
+            948,
+            -1
+          ],
+          [
+            949,
+            4
+          ],
+          [
+            950,
+            -2
+          ],
+          [
+            952,
+            1
+          ],
+          [
+            954,
+            -2
+          ],
+          [
+            955,
+            -13
+          ],
+          [
+            956,
+            2
+          ],
+          [
+            957,
+            -17
+          ],
+          [
+            958,
+            -4
+          ],
+          [
+            959,
+            -20
+          ],
+          [
+            960,
+            -7
+          ],
+          [
+            961,
+            -5
+          ],
+          [
+            962,
+            -11
+          ],
+          [
+            963,
+            -21
+          ],
+          [
+            964,
+            -6
+          ],
+          [
+            965,
+            -12
+          ],
+          [
+            966,
+            -11
+          ],
+          [
+            967,
+            -2
+          ],
+          [
+            968,
+            0
+          ],
+          [
+            969,
+            4
+          ],
+          [
+            970,
+            -15
+          ],
+          [
+            971,
+            -6
+          ],
+          [
+            972,
+            -2
+          ],
+          [
+            981,
+            -14
+          ],
+          [
+            982,
+            -5
+          ],
+          [
+            983,
+            4
+          ],
+          [
+            996,
+            -4
+          ],
+          [
+            998,
+            -9
+          ],
+          [
+            1003,
+            -13
+          ],
+          [
+            1005,
+            0
+          ],
+          [
+            1006,
+            -14
+          ],
+          [
+            1007,
+            -19
+          ],
+          [
+            1008,
+            -23
+          ],
+          [
+            1009,
+            -10
+          ],
+          [
+            1021,
+            -15
+          ],
+          [
+            1022,
+            -6
+          ],
+          [
+            1023,
+            3
+          ],
+          [
+            1024,
+            -2
+          ],
+          [
+            1027,
+            -23
+          ],
+          [
+            1029,
+            -5
+          ],
+          [
+            1030,
+            -10
+          ],
+          [
+            1032,
+            -14
+          ],
+          [
+            1034,
+            -21
+          ],
+          [
+            1036,
+            -3
+          ],
+          [
+            1037,
+            -8
+          ],
+          [
+            1038,
+            -6
+          ],
+          [
+            1041,
+            -23
+          ],
+          [
+            1042,
+            -5
+          ],
+          [
+            1043,
+            -10
+          ],
+          [
+            1044,
+            -8
+          ],
+          [
+            1047,
+            -15
+          ],
+          [
+            1048,
+            -6
+          ],
+          [
+            1049,
+            -11
+          ],
+          [
+            1051,
+            -15
+          ],
+          [
+            1054,
+            -33
+          ],
+          [
+            1055,
+            -15
+          ],
+          [
+            1056,
+            -20
+          ],
+          [
+            1057,
+            -18
+          ],
+          [
+            1058,
+            -24
+          ],
+          [
+            1061,
+            -33
+          ],
+          [
+            1063,
+            -15
+          ],
+          [
+            1064,
+            -20
+          ],
+          [
+            1065,
+            -24
+          ],
+          [
+            1068,
+            -21
+          ],
+          [
+            1069,
+            -12
+          ],
+          [
+            1077,
+            -16
+          ],
+          [
+            1085,
+            -3
+          ],
+          [
+            1086,
+            -8
+          ],
+          [
+            1093,
+            -5
+          ],
+          [
+            1094,
+            -10
+          ],
+          [
+            1100,
+            -12
+          ],
+          [
+            1101,
+            -17
+          ],
+          [
+            1105,
+            -21
+          ],
+          [
+            1106,
+            -17
+          ],
+          [
+            1115,
+            -15
+          ],
+          [
+            1116,
+            -20
+          ],
+          [
+            1117,
+            -26
+          ],
+          [
+            1131,
+            -12
+          ],
+          [
+            1132,
+            -3
+          ],
+          [
+            1134,
+            1
+          ],
+          [
+            1135,
+            10
+          ],
+          [
+            1140,
+            -7
+          ],
+          [
+            1144,
+            -11
+          ],
+          [
+            1146,
+            2
+          ],
+          [
+            1151,
+            8
+          ],
+          [
+            1156,
+            -3
+          ],
+          [
+            1162,
+            -17
+          ],
+          [
+            1163,
+            -2
+          ],
+          [
+            1164,
+            -21
+          ],
+          [
+            1165,
+            -8
+          ],
+          [
+            1173,
+            -17
+          ],
+          [
+            1175,
+            -21
+          ],
+          [
+            1177,
+            -8
+          ],
+          [
+            1184,
+            -9
+          ],
+          [
+            1185,
+            0
+          ],
+          [
+            1186,
+            9
+          ],
+          [
+            1188,
+            3
+          ],
+          [
+            1195,
+            0
+          ],
+          [
+            1199,
+            -9
+          ],
+          [
+            1200,
+            -18
+          ],
+          [
+            1207,
+            -9
+          ]
+        ],
+        "inequality": "sum positive(v dot (h_b,1))*x_b >= positive_demand*x_target",
+        "valid_for_actual_completions": true,
+        "numeric_proposal_used_in_verification": false
+      },
+      "numerical_proposal_gap": 4.061463042556052
+    },
+    {
+      "target_column": 1195,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.007107864999852609,
+      "threads": 1,
+      "dual_matrix_shape": [
+        395,
+        431
+      ],
+      "dual_matrix_nonzeros": 2478,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -0.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 1.1102230246251565e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 551,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.006862840000394499,
+      "threads": 1,
+      "dual_matrix_shape": [
+        704,
+        740
+      ],
+      "dual_matrix_nonzeros": 4585,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0000000000000002,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -2.4272517215622683e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 725,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.005828042998473393,
+      "threads": 1,
+      "dual_matrix_shape": [
+        624,
+        660
+      ],
+      "dual_matrix_nonzeros": 3986,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -0.0,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 223,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.007261596998432651,
+      "threads": 1,
+      "dual_matrix_shape": [
+        549,
+        585
+      ],
+      "dual_matrix_nonzeros": 3503,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 4.440892098500626e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 60,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.0056459410006937105,
+      "threads": 1,
+      "dual_matrix_shape": [
+        564,
+        600
+      ],
+      "dual_matrix_nonzeros": 3607,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        -1.0,
+        -0.0,
+        -1.0,
+        -1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -0.0,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 1024,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.005094521002320107,
+      "threads": 1,
+      "dual_matrix_shape": [
+        590,
+        626
+      ],
+      "dual_matrix_nonzeros": 3816,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -0.0,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 189,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.0060226659988984466,
+      "threads": 1,
+      "dual_matrix_shape": [
+        446,
+        482
+      ],
+      "dual_matrix_nonzeros": 2799,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.9999999999999999,
+        -1.0000000000000002,
+        -1.0000000000000002,
+        -1.0000000000000002,
+        -1.0,
+        -0.9999999999999999,
+        -1.0000000000000004,
+        -1.0,
+        1.0000000000000004,
+        1.0,
+        0.9999999999999999,
+        1.0,
+        1.0,
+        0.9999999999999999,
+        1.0,
+        1.0,
+        1.0000000000000002,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0000000000000002,
+        1.0000000000000004,
+        -1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 6.2789693228976755e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 1178,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.0038697889976901934,
+      "threads": 1,
+      "dual_matrix_shape": [
+        461,
+        497
+      ],
+      "dual_matrix_nonzeros": 2896,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.9999999999999998,
+        -1.0,
+        -0.9999999999999998,
+        -0.9999999999999999,
+        -0.9999999999999998,
+        -0.9999999999999998,
+        -1.0,
+        -0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999998,
+        0.9999999999999997,
+        1.0,
+        -1.0,
+        0.9999999999999998,
+        0.9999999999999996,
+        0.9999999999999998,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0000000000000002,
+        1.0,
+        1.0,
+        0.9999999999999998,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -1.1851182963438678e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 628,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.007006245999946259,
+      "threads": 1,
+      "dual_matrix_shape": [
+        458,
+        494
+      ],
+      "dual_matrix_nonzeros": 2885,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        0.5000000000000001,
+        -1.0,
+        0.5000000000000001,
+        0.5000000000000001,
+        0.5000000000000001,
+        -0.4999999999999999,
+        1.0,
+        0.5000000000000001,
+        -0.4999999999999999,
+        -0.0,
+        -0.0,
+        -1.0,
+        1.0,
+        -0.4999999999999999,
+        -0.0,
+        -1.0,
+        -1.0,
+        -0.0,
+        0.5000000000000001,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        0.5000000000000001,
+        -0.0,
+        -0.0,
+        -0.5000000000000001
+      ],
+      "numerical_bounded_dual_score": 0.057077334982647825,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "normalized_numerical_proposal_gap": -1.6575232948396579,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 2,
+          "normalized_numerical_proposal_gap": 0.057077334982647776,
+          "accepted": true
+        }
+      ],
+      "status": "exact universally necessary integer inequality checked; proposal violation numerical-only",
+      "integer_certificate": {
+        "target_column": 628,
+        "integer_vector": [
+          -2,
+          1,
+          -2,
+          1,
+          1,
+          1,
+          -1,
+          2,
+          1,
+          -1,
+          0,
+          0,
+          -2,
+          2,
+          -1,
+          0,
+          -2,
+          -2,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          -2,
+          0,
+          0,
+          2,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          -1
+        ],
+        "positive_demand": 2,
+        "positive_terms": [
+          [
+            34,
+            1
+          ],
+          [
+            35,
+            1
+          ],
+          [
+            36,
+            1
+          ],
+          [
+            204,
+            2
+          ],
+          [
+            205,
+            2
+          ],
+          [
+            207,
+            2
+          ],
+          [
+            210,
+            1
+          ],
+          [
+            237,
+            1
+          ],
+          [
+            238,
+            2
+          ],
+          [
+            239,
+            1
+          ],
+          [
+            240,
+            1
+          ],
+          [
+            263,
+            2
+          ],
+          [
+            306,
+            1
+          ],
+          [
+            311,
+            1
+          ],
+          [
+            312,
+            1
+          ],
+          [
+            314,
+            1
+          ],
+          [
+            315,
+            1
+          ],
+          [
+            335,
+            1
+          ],
+          [
+            342,
+            1
+          ],
+          [
+            348,
+            2
+          ],
+          [
+            358,
+            2
+          ],
+          [
+            360,
+            1
+          ],
+          [
+            361,
+            1
+          ],
+          [
+            362,
+            2
+          ],
+          [
+            365,
+            1
+          ],
+          [
+            366,
+            2
+          ],
+          [
+            414,
+            1
+          ],
+          [
+            416,
+            1
+          ],
+          [
+            421,
+            1
+          ],
+          [
+            422,
+            1
+          ],
+          [
+            777,
+            1
+          ],
+          [
+            810,
+            1
+          ],
+          [
+            811,
+            1
+          ],
+          [
+            812,
+            1
+          ],
+          [
+            813,
+            2
+          ],
+          [
+            814,
+            1
+          ],
+          [
+            815,
+            1
+          ],
+          [
+            818,
+            2
+          ],
+          [
+            819,
+            2
+          ],
+          [
+            820,
+            2
+          ],
+          [
+            822,
+            2
+          ],
+          [
+            828,
+            2
+          ],
+          [
+            832,
+            1
+          ],
+          [
+            839,
+            1
+          ],
+          [
+            848,
+            2
+          ],
+          [
+            855,
+            3
+          ],
+          [
+            857,
+            1
+          ],
+          [
+            858,
+            1
+          ],
+          [
+            865,
+            3
+          ],
+          [
+            867,
+            2
+          ],
+          [
+            868,
+            2
+          ],
+          [
+            869,
+            3
+          ],
+          [
+            872,
+            2
+          ],
+          [
+            873,
+            3
+          ],
+          [
+            899,
+            1
+          ],
+          [
+            900,
+            2
+          ],
+          [
+            916,
+            3
+          ],
+          [
+            919,
+            1
+          ],
+          [
+            923,
+            1
+          ],
+          [
+            929,
+            1
+          ],
+          [
+            930,
+            1
+          ],
+          [
+            933,
+            1
+          ],
+          [
+            936,
+            1
+          ],
+          [
+            940,
+            1
+          ],
+          [
+            966,
+            1
+          ],
+          [
+            973,
+            1
+          ],
+          [
+            977,
+            1
+          ],
+          [
+            981,
+            2
+          ],
+          [
+            986,
+            1
+          ],
+          [
+            988,
+            1
+          ],
+          [
+            990,
+            2
+          ],
+          [
+            991,
+            2
+          ],
+          [
+            993,
+            1
+          ],
+          [
+            994,
+            1
+          ],
+          [
+            995,
+            2
+          ],
+          [
+            1001,
+            2
+          ],
+          [
+            1002,
+            2
+          ],
+          [
+            1014,
+            2
+          ],
+          [
+            1029,
+            1
+          ],
+          [
+            1030,
+            1
+          ],
+          [
+            1031,
+            1
+          ],
+          [
+            1033,
+            1
+          ],
+          [
+            1034,
+            1
+          ],
+          [
+            1041,
+            1
+          ],
+          [
+            1061,
+            1
+          ],
+          [
+            1074,
+            2
+          ],
+          [
+            1075,
+            2
+          ],
+          [
+            1079,
+            2
+          ],
+          [
+            1080,
+            2
+          ],
+          [
+            1185,
+            2
+          ],
+          [
+            1186,
+            2
+          ],
+          [
+            1187,
+            2
+          ],
+          [
+            1191,
+            2
+          ],
+          [
+            1194,
+            2
+          ],
+          [
+            1210,
+            2
+          ],
+          [
+            1213,
+            2
+          ]
+        ],
+        "all_eligible_neighbor_products": [
+          [
+            0,
+            -2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            -2
+          ],
+          [
+            7,
+            -2
+          ],
+          [
+            8,
+            -1
+          ],
+          [
+            9,
+            -2
+          ],
+          [
+            10,
+            -2
+          ],
+          [
+            11,
+            -2
+          ],
+          [
+            12,
+            -2
+          ],
+          [
+            13,
+            -1
+          ],
+          [
+            14,
+            -2
+          ],
+          [
+            15,
+            -2
+          ],
+          [
+            22,
+            -2
+          ],
+          [
+            23,
+            -1
+          ],
+          [
+            24,
+            -2
+          ],
+          [
+            25,
+            -2
+          ],
+          [
+            26,
+            -2
+          ],
+          [
+            27,
+            -2
+          ],
+          [
+            28,
+            -2
+          ],
+          [
+            30,
+            -2
+          ],
+          [
+            31,
+            -2
+          ],
+          [
+            32,
+            -1
+          ],
+          [
+            34,
+            1
+          ],
+          [
+            35,
+            1
+          ],
+          [
+            36,
+            1
+          ],
+          [
+            43,
+            -1
+          ],
+          [
+            44,
+            -1
+          ],
+          [
+            45,
+            0
+          ],
+          [
+            46,
+            -1
+          ],
+          [
+            47,
+            -1
+          ],
+          [
+            48,
+            -1
+          ],
+          [
+            49,
+            -1
+          ],
+          [
+            51,
+            0
+          ],
+          [
+            59,
+            0
+          ],
+          [
+            60,
+            0
+          ],
+          [
+            61,
+            0
+          ],
+          [
+            62,
+            0
+          ],
+          [
+            63,
+            0
+          ],
+          [
+            64,
+            0
+          ],
+          [
+            65,
+            0
+          ],
+          [
+            67,
+            0
+          ],
+          [
+            68,
+            0
+          ],
+          [
+            69,
+            0
+          ],
+          [
+            70,
+            0
+          ],
+          [
+            71,
+            0
+          ],
+          [
+            73,
+            0
+          ],
+          [
+            75,
+            0
+          ],
+          [
+            76,
+            0
+          ],
+          [
+            77,
+            0
+          ],
+          [
+            78,
+            0
+          ],
+          [
+            79,
+            0
+          ],
+          [
+            80,
+            0
+          ],
+          [
+            82,
+            -2
+          ],
+          [
+            84,
+            0
+          ],
+          [
+            85,
+            0
+          ],
+          [
+            86,
+            0
+          ],
+          [
+            88,
+            -2
+          ],
+          [
+            89,
+            -2
+          ],
+          [
+            90,
+            -2
+          ],
+          [
+            91,
+            -2
+          ],
+          [
+            92,
+            -2
+          ],
+          [
+            93,
+            -2
+          ],
+          [
+            94,
+            -2
+          ],
+          [
+            95,
+            -2
+          ],
+          [
+            96,
+            -2
+          ],
+          [
+            97,
+            -2
+          ],
+          [
+            98,
+            -2
+          ],
+          [
+            99,
+            -2
+          ],
+          [
+            202,
+            0
+          ],
+          [
+            204,
+            2
+          ],
+          [
+            205,
+            2
+          ],
+          [
+            207,
+            2
+          ],
+          [
+            208,
+            0
+          ],
+          [
+            209,
+            0
+          ],
+          [
+            210,
+            1
+          ],
+          [
+            211,
+            0
+          ],
+          [
+            212,
+            0
+          ],
+          [
+            225,
+            0
+          ],
+          [
+            226,
+            0
+          ],
+          [
+            227,
+            0
+          ],
+          [
+            228,
+            0
+          ],
+          [
+            229,
+            0
+          ],
+          [
+            230,
+            0
+          ],
+          [
+            232,
+            0
+          ],
+          [
+            233,
+            0
+          ],
+          [
+            234,
+            0
+          ],
+          [
+            237,
+            1
+          ],
+          [
+            238,
+            2
+          ],
+          [
+            239,
+            1
+          ],
+          [
+            240,
+            1
+          ],
+          [
+            263,
+            2
+          ],
+          [
+            265,
+            0
+          ],
+          [
+            266,
+            0
+          ],
+          [
+            285,
+            -2
+          ],
+          [
+            287,
+            -1
+          ],
+          [
+            288,
+            -1
+          ],
+          [
+            289,
+            -1
+          ],
+          [
+            292,
+            0
+          ],
+          [
+            293,
+            0
+          ],
+          [
+            294,
+            0
+          ],
+          [
+            295,
+            -2
+          ],
+          [
+            296,
+            -2
+          ],
+          [
+            297,
+            -2
+          ],
+          [
+            303,
+            0
+          ],
+          [
+            304,
+            0
+          ],
+          [
+            305,
+            0
+          ],
+          [
+            306,
+            1
+          ],
+          [
+            307,
+            0
+          ],
+          [
+            308,
+            0
+          ],
+          [
+            311,
+            1
+          ],
+          [
+            312,
+            1
+          ],
+          [
+            314,
+            1
+          ],
+          [
+            315,
+            1
+          ],
+          [
+            317,
+            -1
+          ],
+          [
+            318,
+            -1
+          ],
+          [
+            319,
+            -1
+          ],
+          [
+            320,
+            -1
+          ],
+          [
+            321,
+            -1
+          ],
+          [
+            335,
+            1
+          ],
+          [
+            337,
+            -1
+          ],
+          [
+            338,
+            -1
+          ],
+          [
+            339,
+            0
+          ],
+          [
+            340,
+            -1
+          ],
+          [
+            341,
+            -1
+          ],
+          [
+            342,
+            1
+          ],
+          [
+            343,
+            -1
+          ],
+          [
+            344,
+            -1
+          ],
+          [
+            346,
+            -1
+          ],
+          [
+            347,
+            -1
+          ],
+          [
+            348,
+            2
+          ],
+          [
+            350,
+            0
+          ],
+          [
+            351,
+            0
+          ],
+          [
+            358,
+            2
+          ],
+          [
+            360,
+            1
+          ],
+          [
+            361,
+            1
+          ],
+          [
+            362,
+            2
+          ],
+          [
+            365,
+            1
+          ],
+          [
+            366,
+            2
+          ],
+          [
+            411,
+            0
+          ],
+          [
+            412,
+            0
+          ],
+          [
+            414,
+            1
+          ],
+          [
+            416,
+            1
+          ],
+          [
+            421,
+            1
+          ],
+          [
+            422,
+            1
+          ],
+          [
+            440,
+            0
+          ],
+          [
+            441,
+            0
+          ],
+          [
+            444,
+            0
+          ],
+          [
+            445,
+            0
+          ],
+          [
+            463,
+            0
+          ],
+          [
+            464,
+            0
+          ],
+          [
+            467,
+            0
+          ],
+          [
+            468,
+            -2
+          ],
+          [
+            469,
+            -2
+          ],
+          [
+            470,
+            -2
+          ],
+          [
+            472,
+            -1
+          ],
+          [
+            474,
+            -1
+          ],
+          [
+            476,
+            -1
+          ],
+          [
+            477,
+            -1
+          ],
+          [
+            481,
+            0
+          ],
+          [
+            484,
+            0
+          ],
+          [
+            485,
+            0
+          ],
+          [
+            486,
+            0
+          ],
+          [
+            489,
+            -2
+          ],
+          [
+            490,
+            0
+          ],
+          [
+            491,
+            -2
+          ],
+          [
+            492,
+            -2
+          ],
+          [
+            493,
+            0
+          ],
+          [
+            495,
+            -2
+          ],
+          [
+            496,
+            -2
+          ],
+          [
+            502,
+            0
+          ],
+          [
+            503,
+            0
+          ],
+          [
+            504,
+            0
+          ],
+          [
+            506,
+            0
+          ],
+          [
+            507,
+            0
+          ],
+          [
+            517,
+            -1
+          ],
+          [
+            518,
+            -1
+          ],
+          [
+            519,
+            -1
+          ],
+          [
+            520,
+            -1
+          ],
+          [
+            521,
+            -1
+          ],
+          [
+            523,
+            -1
+          ],
+          [
+            524,
+            -1
+          ],
+          [
+            525,
+            -1
+          ],
+          [
+            527,
+            -1
+          ],
+          [
+            528,
+            -1
+          ],
+          [
+            537,
+            -1
+          ],
+          [
+            538,
+            -1
+          ],
+          [
+            540,
+            -1
+          ],
+          [
+            541,
+            -1
+          ],
+          [
+            543,
+            -1
+          ],
+          [
+            544,
+            -1
+          ],
+          [
+            545,
+            -1
+          ],
+          [
+            547,
+            -1
+          ],
+          [
+            548,
+            -1
+          ],
+          [
+            549,
+            0
+          ],
+          [
+            550,
+            0
+          ],
+          [
+            551,
+            0
+          ],
+          [
+            566,
+            0
+          ],
+          [
+            567,
+            0
+          ],
+          [
+            568,
+            0
+          ],
+          [
+            569,
+            0
+          ],
+          [
+            570,
+            0
+          ],
+          [
+            572,
+            0
+          ],
+          [
+            573,
+            0
+          ],
+          [
+            574,
+            0
+          ],
+          [
+            575,
+            0
+          ],
+          [
+            577,
+            0
+          ],
+          [
+            578,
+            0
+          ],
+          [
+            579,
+            0
+          ],
+          [
+            581,
+            0
+          ],
+          [
+            582,
+            0
+          ],
+          [
+            592,
+            0
+          ],
+          [
+            593,
+            0
+          ],
+          [
+            595,
+            0
+          ],
+          [
+            596,
+            0
+          ],
+          [
+            597,
+            0
+          ],
+          [
+            598,
+            0
+          ],
+          [
+            601,
+            0
+          ],
+          [
+            602,
+            0
+          ],
+          [
+            604,
+            0
+          ],
+          [
+            605,
+            0
+          ],
+          [
+            707,
+            -2
+          ],
+          [
+            709,
+            0
+          ],
+          [
+            710,
+            0
+          ],
+          [
+            711,
+            0
+          ],
+          [
+            713,
+            0
+          ],
+          [
+            715,
+            -2
+          ],
+          [
+            716,
+            -2
+          ],
+          [
+            717,
+            -2
+          ],
+          [
+            718,
+            -2
+          ],
+          [
+            719,
+            -2
+          ],
+          [
+            720,
+            -2
+          ],
+          [
+            721,
+            -2
+          ],
+          [
+            722,
+            -1
+          ],
+          [
+            723,
+            -2
+          ],
+          [
+            724,
+            -2
+          ],
+          [
+            725,
+            -2
+          ],
+          [
+            726,
+            -2
+          ],
+          [
+            727,
+            -2
+          ],
+          [
+            728,
+            -1
+          ],
+          [
+            729,
+            -2
+          ],
+          [
+            731,
+            -2
+          ],
+          [
+            732,
+            -2
+          ],
+          [
+            733,
+            -2
+          ],
+          [
+            734,
+            -2
+          ],
+          [
+            735,
+            -2
+          ],
+          [
+            736,
+            -2
+          ],
+          [
+            738,
+            -2
+          ],
+          [
+            739,
+            -2
+          ],
+          [
+            742,
+            -1
+          ],
+          [
+            743,
+            -1
+          ],
+          [
+            744,
+            0
+          ],
+          [
+            745,
+            -1
+          ],
+          [
+            758,
+            -2
+          ],
+          [
+            759,
+            -1
+          ],
+          [
+            760,
+            -2
+          ],
+          [
+            766,
+            0
+          ],
+          [
+            768,
+            -2
+          ],
+          [
+            769,
+            -2
+          ],
+          [
+            771,
+            0
+          ],
+          [
+            774,
+            0
+          ],
+          [
+            775,
+            0
+          ],
+          [
+            776,
+            0
+          ],
+          [
+            777,
+            1
+          ],
+          [
+            778,
+            0
+          ],
+          [
+            781,
+            0
+          ],
+          [
+            782,
+            0
+          ],
+          [
+            784,
+            0
+          ],
+          [
+            786,
+            0
+          ],
+          [
+            787,
+            -3
+          ],
+          [
+            789,
+            -2
+          ],
+          [
+            790,
+            -2
+          ],
+          [
+            791,
+            -2
+          ],
+          [
+            792,
+            -1
+          ],
+          [
+            795,
+            -1
+          ],
+          [
+            796,
+            -1
+          ],
+          [
+            797,
+            -1
+          ],
+          [
+            799,
+            -1
+          ],
+          [
+            801,
+            -3
+          ],
+          [
+            802,
+            -3
+          ],
+          [
+            803,
+            -2
+          ],
+          [
+            804,
+            -1
+          ],
+          [
+            805,
+            -3
+          ],
+          [
+            806,
+            -3
+          ],
+          [
+            807,
+            -3
+          ],
+          [
+            810,
+            1
+          ],
+          [
+            811,
+            1
+          ],
+          [
+            812,
+            1
+          ],
+          [
+            813,
+            2
+          ],
+          [
+            814,
+            1
+          ],
+          [
+            815,
+            1
+          ],
+          [
+            818,
+            2
+          ],
+          [
+            819,
+            2
+          ],
+          [
+            820,
+            2
+          ],
+          [
+            822,
+            2
+          ],
+          [
+            824,
+            0
+          ],
+          [
+            825,
+            0
+          ],
+          [
+            826,
+            0
+          ],
+          [
+            827,
+            0
+          ],
+          [
+            828,
+            2
+          ],
+          [
+            829,
+            0
+          ],
+          [
+            830,
+            0
+          ],
+          [
+            831,
+            0
+          ],
+          [
+            832,
+            1
+          ],
+          [
+            833,
+            0
+          ],
+          [
+            834,
+            0
+          ],
+          [
+            835,
+            0
+          ],
+          [
+            836,
+            0
+          ],
+          [
+            837,
+            0
+          ],
+          [
+            838,
+            0
+          ],
+          [
+            839,
+            1
+          ],
+          [
+            840,
+            0
+          ],
+          [
+            848,
+            2
+          ],
+          [
+            849,
+            0
+          ],
+          [
+            850,
+            0
+          ],
+          [
+            851,
+            0
+          ],
+          [
+            853,
+            0
+          ],
+          [
+            854,
+            0
+          ],
+          [
+            855,
+            3
+          ],
+          [
+            857,
+            1
+          ],
+          [
+            858,
+            1
+          ],
+          [
+            865,
+            3
+          ],
+          [
+            867,
+            2
+          ],
+          [
+            868,
+            2
+          ],
+          [
+            869,
+            3
+          ],
+          [
+            872,
+            2
+          ],
+          [
+            873,
+            3
+          ],
+          [
+            899,
+            1
+          ],
+          [
+            900,
+            2
+          ],
+          [
+            916,
+            3
+          ],
+          [
+            919,
+            1
+          ],
+          [
+            923,
+            1
+          ],
+          [
+            924,
+            -1
+          ],
+          [
+            925,
+            -1
+          ],
+          [
+            927,
+            0
+          ],
+          [
+            929,
+            1
+          ],
+          [
+            930,
+            1
+          ],
+          [
+            932,
+            0
+          ],
+          [
+            933,
+            1
+          ],
+          [
+            935,
+            0
+          ],
+          [
+            936,
+            1
+          ],
+          [
+            940,
+            1
+          ],
+          [
+            944,
+            -1
+          ],
+          [
+            945,
+            0
+          ],
+          [
+            946,
+            -1
+          ],
+          [
+            947,
+            -1
+          ],
+          [
+            948,
+            0
+          ],
+          [
+            949,
+            -1
+          ],
+          [
+            950,
+            0
+          ],
+          [
+            951,
+            -1
+          ],
+          [
+            952,
+            0
+          ],
+          [
+            953,
+            -1
+          ],
+          [
+            954,
+            0
+          ],
+          [
+            966,
+            1
+          ],
+          [
+            967,
+            -1
+          ],
+          [
+            968,
+            -1
+          ],
+          [
+            969,
+            -1
+          ],
+          [
+            973,
+            1
+          ],
+          [
+            974,
+            -1
+          ],
+          [
+            975,
+            -1
+          ],
+          [
+            977,
+            1
+          ],
+          [
+            978,
+            -1
+          ],
+          [
+            979,
+            -1
+          ],
+          [
+            981,
+            2
+          ],
+          [
+            982,
+            0
+          ],
+          [
+            983,
+            0
+          ],
+          [
+            984,
+            0
+          ],
+          [
+            986,
+            1
+          ],
+          [
+            988,
+            1
+          ],
+          [
+            990,
+            2
+          ],
+          [
+            991,
+            2
+          ],
+          [
+            993,
+            1
+          ],
+          [
+            994,
+            1
+          ],
+          [
+            995,
+            2
+          ],
+          [
+            1001,
+            2
+          ],
+          [
+            1002,
+            2
+          ],
+          [
+            1014,
+            2
+          ],
+          [
+            1015,
+            0
+          ],
+          [
+            1016,
+            0
+          ],
+          [
+            1017,
+            0
+          ],
+          [
+            1022,
+            0
+          ],
+          [
+            1023,
+            0
+          ],
+          [
+            1024,
+            0
+          ],
+          [
+            1025,
+            0
+          ],
+          [
+            1026,
+            0
+          ],
+          [
+            1029,
+            1
+          ],
+          [
+            1030,
+            1
+          ],
+          [
+            1031,
+            1
+          ],
+          [
+            1033,
+            1
+          ],
+          [
+            1034,
+            1
+          ],
+          [
+            1036,
+            -1
+          ],
+          [
+            1037,
+            -1
+          ],
+          [
+            1038,
+            -1
+          ],
+          [
+            1039,
+            -1
+          ],
+          [
+            1040,
+            -1
+          ],
+          [
+            1041,
+            1
+          ],
+          [
+            1042,
+            -1
+          ],
+          [
+            1043,
+            -1
+          ],
+          [
+            1044,
+            -1
+          ],
+          [
+            1045,
+            -1
+          ],
+          [
+            1046,
+            -1
+          ],
+          [
+            1061,
+            1
+          ],
+          [
+            1063,
+            -1
+          ],
+          [
+            1064,
+            -1
+          ],
+          [
+            1065,
+            0
+          ],
+          [
+            1066,
+            -1
+          ],
+          [
+            1067,
+            -1
+          ],
+          [
+            1068,
+            0
+          ],
+          [
+            1069,
+            0
+          ],
+          [
+            1070,
+            0
+          ],
+          [
+            1074,
+            2
+          ],
+          [
+            1075,
+            2
+          ],
+          [
+            1079,
+            2
+          ],
+          [
+            1080,
+            2
+          ],
+          [
+            1085,
+            0
+          ],
+          [
+            1086,
+            0
+          ],
+          [
+            1087,
+            0
+          ],
+          [
+            1088,
+            0
+          ],
+          [
+            1089,
+            0
+          ],
+          [
+            1091,
+            0
+          ],
+          [
+            1092,
+            0
+          ],
+          [
+            1093,
+            0
+          ],
+          [
+            1094,
+            0
+          ],
+          [
+            1095,
+            0
+          ],
+          [
+            1096,
+            0
+          ],
+          [
+            1097,
+            0
+          ],
+          [
+            1098,
+            0
+          ],
+          [
+            1099,
+            0
+          ],
+          [
+            1127,
+            0
+          ],
+          [
+            1128,
+            0
+          ],
+          [
+            1130,
+            0
+          ],
+          [
+            1131,
+            0
+          ],
+          [
+            1132,
+            -2
+          ],
+          [
+            1133,
+            -2
+          ],
+          [
+            1135,
+            -1
+          ],
+          [
+            1137,
+            -1
+          ],
+          [
+            1139,
+            -1
+          ],
+          [
+            1143,
+            0
+          ],
+          [
+            1149,
+            0
+          ],
+          [
+            1151,
+            -2
+          ],
+          [
+            1152,
+            -2
+          ],
+          [
+            1153,
+            -2
+          ],
+          [
+            1154,
+            -2
+          ],
+          [
+            1173,
+            0
+          ],
+          [
+            1177,
+            -1
+          ],
+          [
+            1178,
+            0
+          ],
+          [
+            1179,
+            -2
+          ],
+          [
+            1180,
+            -1
+          ],
+          [
+            1181,
+            0
+          ],
+          [
+            1183,
+            -1
+          ],
+          [
+            1185,
+            2
+          ],
+          [
+            1186,
+            2
+          ],
+          [
+            1187,
+            2
+          ],
+          [
+            1191,
+            2
+          ],
+          [
+            1194,
+            2
+          ],
+          [
+            1210,
+            2
+          ],
+          [
+            1213,
+            2
+          ]
+        ],
+        "inequality": "sum positive(v dot (h_b,1))*x_b >= positive_demand*x_target",
+        "valid_for_actual_completions": true,
+        "numeric_proposal_used_in_verification": false
+      },
+      "numerical_proposal_gap": 0.11415466996529555
+    },
+    {
+      "target_column": 226,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.007433475002471823,
+      "threads": 1,
+      "dual_matrix_shape": [
+        624,
+        660
+      ],
+      "dual_matrix_nonzeros": 3991,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0000000000000002,
+        1.0,
+        1.0000000000000002,
+        1.0000000000000002,
+        1.0000000000000007,
+        1.0000000000000002,
+        1.0,
+        1.0,
+        1.0000000000000007,
+        1.0,
+        1.0000000000000004,
+        1.0000000000000007,
+        1.0000000000000007,
+        1.0000000000000007,
+        1.0,
+        -1.0,
+        1.0000000000000007,
+        -1.0000000000000009,
+        -1.0000000000000007,
+        -1.0000000000000009,
+        -1.0,
+        -1.0000000000000009,
+        -1.0000000000000007,
+        -1.0000000000000007,
+        -1.0,
+        -1.0000000000000007,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -8.943859388275956e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 112,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.006608499999856576,
+      "threads": 1,
+      "dual_matrix_shape": [
+        631,
+        667
+      ],
+      "dual_matrix_nonzeros": 4034,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        -1.0,
+        -0.0,
+        0.9999999999999999,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.9999999999999999,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -0.0,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 542,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.00524804299857351,
+      "threads": 1,
+      "dual_matrix_shape": [
+        583,
+        619
+      ],
+      "dual_matrix_nonzeros": 3757,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        -1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -2.220446049250313e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 96,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.0036813000006077345,
+      "threads": 1,
+      "dual_matrix_shape": [
+        440,
+        476
+      ],
+      "dual_matrix_nonzeros": 2750,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -3.3306690738754696e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 70,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.005674070998793468,
+      "threads": 1,
+      "dual_matrix_shape": [
+        613,
+        649
+      ],
+      "dual_matrix_nonzeros": 3923,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0000000000000002,
+        1.0,
+        1.0000000000000002,
+        1.0,
+        1.0000000000000004,
+        -0.9999999999999998,
+        -1.0000000000000004,
+        -1.0,
+        -1.0,
+        -1.0000000000000002,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        1.0,
+        0.9999999999999998,
+        0.9999999999999998,
+        0.9999999999999998,
+        -1.0,
+        0.9999999999999996,
+        1.0000000000000002,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 2.2722466984168027e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 197,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.006445899001846556,
+      "threads": 1,
+      "dual_matrix_shape": [
+        406,
+        442
+      ],
+      "dual_matrix_nonzeros": 2536,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 4.440892098500626e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 490,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.0038279599975794554,
+      "threads": 1,
+      "dual_matrix_shape": [
+        337,
+        373
+      ],
+      "dual_matrix_nonzeros": 2123,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        -0.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -0.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": 3.885780586188048e-16,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    },
+    {
+      "target_column": 331,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "requested_seconds": 2.0,
+      "solve_seconds": 0.011920151002414059,
+      "threads": 1,
+      "dual_matrix_shape": [
+        572,
+        608
+      ],
+      "dual_matrix_nonzeros": 3704,
+      "exact_global_feasibility_or_infeasibility_claimed": false,
+      "numerical_potential": [
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        -0.0,
+        -0.0,
+        1.0,
+        -0.0,
+        -0.0,
+        1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        -1.0
+      ],
+      "numerical_bounded_dual_score": -0.0,
+      "integer_reconstruction_attempts": [
+        {
+          "denominator_limit": 1,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 2,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 3,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 6,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 12,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 60,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 360,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 4096,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        },
+        {
+          "denominator_limit": 1000000,
+          "maximum_absolute_integer_coordinate": 1,
+          "accepted": false
+        }
+      ],
+      "status": "no exact separating integer potential retained from this query"
+    }
+  ],
+  "exact_proposal_feasibility_claimed": false,
+  "full_graph_or_case_exclusion": false,
+  "SAT_queries": 0,
+  "new_global_LP_queries": 0,
+  "elapsed_seconds": 1.1783874530010507,
+  "visited_rows": 32,
+  "exact_integer_inequalities": 2,
+  "complete32_row_plan": true
+}

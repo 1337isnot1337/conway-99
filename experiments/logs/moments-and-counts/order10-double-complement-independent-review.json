@@ -1,0 +1,30 @@
+{
+  "status": "PASS: independent read-only mathematical and encoding review",
+  "source": "experiments/workspace/grid_free_order10_double_complement_domains.py",
+  "source_sha256": "1283b15c44f408e0baf2cb1f9abd1c59b4ebee8717ca099c39e52b55c56ea935",
+  "certificate_sha256": "166c66d9b990f5806ee5fcd729eb90a6e073a98a890a348f12450908f5235eac",
+  "replay_wrapper": "experiments/workspace/grid_free_order10_double_complement_replay.py",
+  "replay_wrapper_sha256": "71289c1f1b4c14def0984c909e38b01a1c6b8be949811ab34d80a41c94288759",
+  "reviewed_claims": [
+    "For distinct high masks, both class sizes are binary and (1-Xa)(1-Xb)XX^T is pointwise PSD.",
+    "The two selected vertices are ordered by their distinct root masks; no factor of two or automorphism divisor occurs.",
+    "Both mutual-edge values are enumerated, with direct actual-to-canonical transport rebuilt after each extension.",
+    "Every old high flag splits into at most four high child classes; a selected old flag becomes the constant one.",
+    "The raw selected-row subtraction has signs M-Ca-Cb+Cab and uses labelled induced embedding coefficients throughout.",
+    "Constant-only missing cache blocks are handled only at index (0,0), with the labelled root count.",
+    "Quota-one redundancy uses the full positive sum over other allowed classes, including degree-two masks; the m=b contribution is zero and all other summands are seven-root clique complements.",
+    "For incompatible a,b, summing over every outside vertex gives exactly 93 copies of the six-root clique localizer; all masks of size zero, one and two are included, and selected a/b extensions contribute zero.",
+    "All six-root automorphisms are enumerated among all vertex permutations; the orbit images preserve candidate pairs and impose no host graph symmetry.",
+    "The separate replay wrapper changes only the JSON comparison boundary and checks the frozen constructor and certificate hashes."
+  ],
+  "extension_identity": "93 L6 = sum over all allowed one-vertex mask classes m of the lifted seven-root clique localizer; multiplicity is the number of choices of that outside vertex.",
+  "normalization_note": "The matrix M is the unweighted induced six-root scalar moment matrix, despite the word ordinary in one sentence of the note.",
+  "original_embedded_replay_limitation": "The frozen constructor compares integer dictionary keys with JSON string keys. Its embedded replay can fail at that serialization comparison; use the separately reviewed wrapper.",
+  "counts_independently_recomputed": false,
+  "domain_constructor_executed": false,
+  "coefficientwise_checks_reexecuted": false,
+  "catalogue_or_tensor_cache_loaded": false,
+  "point_scanned": false,
+  "optimizer_called": false,
+  "scope": "Source and mathematical coverage/redundancy review. It does not assert an independent rerun of the reported 88,326 coefficient checks or numerical PSD feasibility."
+}

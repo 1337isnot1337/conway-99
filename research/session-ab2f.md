@@ -660,3 +660,26 @@ their hypotheses permit them; computational exclusions require exact replay.
   sharing fifty-two triples with the old one. Every new inequality and
   original constraint passes an exact check and a cold replay. Exterior
   row-capacity separation is the next test; this is not a graph.
+- The replacement incidence also fails extension: a complete sixty-row
+  capacity pass finds three exact integer deficits and fifty-seven exact
+  rational box witnesses. Independent domain, capacity and relabeling
+  checks pass. One deficit has a direct counting form: eight neighbor
+  triples must supply seventeen incidences into a specified set, but
+  every available triple supplies at most two.
+- Two new exact case-four row inequalities seed a sixty-second LP loop.
+  It checks 848 row proposals and adds fifty-eight further integer cuts.
+  Complete positive-support checks finish in the first two rounds;
+  nineteen rows remain unvisited in the third. The last twenty cuts were
+  not followed by another global query. All sixty cuts replay exactly,
+  but no matching case is excluded and no proposal is certified feasible.
+- The complete visible-pair count scan tests 811 representatives and
+  finds no separator. A separate prism-free preparation adds 1,155
+  genuine incompatibilities, all classified by induced paths on four
+  root vertices. Two complete clique constructions and exact zero-support
+  checks prepare 1,225 representatives without using the count point.
+- A separate six-root double-absence identity gives 1,112 candidate pairs
+  in eighty-four root orbits. All 88,326 selected-row coefficient checks
+  pass. A JSON-key comparison limitation in the frozen constructor's
+  embedded replay is documented; a separate wrapper cold-replays the
+  unchanged domain successfully. The complete point scan finds no exact
+  or unconfirmed negative and does not certify PSD.
