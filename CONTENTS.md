@@ -36,6 +36,8 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 
 ## Other computations
 
+- [A doubled Hoffman–Singleton graph](research/doubled-hoffman-singleton.md) gives a 14-regular 99-vertex graph satisfying 4,313 of the 4,950 scalar constraints. Its 49 twin pairs account for all positive residuals.
+
 - [Moments and subgraph counts](experiments/logs/moments-and-counts/) includes integer count witnesses, modular consistency checks, and semidefinite relaxations.
 - [Construction searches](experiments/logs/construction-searches/) includes rooted searches, quotient cases, and checks of sampled partial graphs.
 - [Experiment guide](experiments/README.md) gives the workspace layout, replay commands, and limits of the archived runs.

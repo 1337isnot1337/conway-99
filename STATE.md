@@ -2,6 +2,8 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+The [doubled Hoffman–Singleton construction](research/doubled-hoffman-singleton.md) gives a 14-regular graph on 99 vertices with a verified CAISc score of 4,313/4,950. It has 588 residuals of $-1$ and 49 of $+12$ over unordered pairs. The graph6 artifact and independent pair and matrix checks are included.
+
 ## Scope of the unrestricted computations
 
 - [`subgraph_counts.py`](experiments/workspace/subgraph_counts.py) enumerates all induced graph types through a specified order that avoid a diamond and a (non-induced) K₂,₃. Integer extension equations count outside vertices, neighbors of a marked vertex, and common neighbors of a marked pair. It found no contradiction modulo 2 through order ten (180,445 equations, rank 46,268). [`inspect_counts.py`](experiments/workspace/inspect_counts.py) checks the original equations on all subsets of the 3-by-3 rook graph. Its floating LP reported infeasibility on both 99 and the known 243 parameters. That solver status was spurious on 99.
