@@ -97,3 +97,21 @@ At this checkpoint the native source, configuration and independent checker
 are unrun. A successful preparation and complete independent replay are
 required before a later query can use the resulting model. Historical failed
 attempts and unrun configurations remain preserved.
+
+## Checkpoint 83 execution authorization
+
+The [frozen workflow](../.github/workflows/conway99-strengthened-native-prepare.yml),
+[root gate](../experiments/logs/root-prism-free/f0-strengthened-native-ci-root-gate01.json)
+and [request](../experiments/logs/root-prism-free/f0-strengthened-native-ci-request01.json)
+now authorize one actual preparation and one independent cold. Complete
+configuration, checker and workflow reviews found no source blocker. The
+39-file checkout includes all 37 frozen dependencies plus the gate and
+request. The workflow compiles every pinned Python source before execution.
+
+The workflow requires the checkpoint 82 parent and first run attempt. It has
+read-only repository permissions. Native controls precede the production
+build, and the independent checker has separate controls and process owners.
+The full model archive is exported in two exact chunks of at most four MiB;
+small reports, the exact suffix, and the accepted three-exterior inventory
+are exported separately. These exports do not accept a model. All actual
+native and cold receipts remain pending at checkpoint 83 publication.

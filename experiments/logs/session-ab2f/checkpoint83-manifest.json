@@ -1,0 +1,86 @@
+{
+  "schema": "conway99.research-checkpoint-manifest.v1",
+  "checkpoint": 83,
+  "branch": "research/global-constraints-ab2f",
+  "expected_parent": "72e29776fa010cb04db85432c972fd59859ddc8d",
+  "base_tree": "ee8d37c4669cea6470c6f4c797dc482297a03ccf",
+  "scope": "Publish reviewed one-run native preparation and independent cold workflow; no optimizer",
+  "files": [
+    {
+      "path": ".github/workflows/conway99-strengthened-native-prepare.yml",
+      "bytes": 12147,
+      "sha256": "34fc4875a7e8c289236459c324fb970c8d04fa2d097f98e0ef2ff98bb1d2a4c5",
+      "git_blob": "36707bd1a44a295d5cb748f595dbfc8fbbb10166",
+      "mode": "100644"
+    },
+    {
+      "path": "CONTENTS.md",
+      "bytes": 62244,
+      "sha256": "4ddc5a209bc041d280af0b2853ecd9a0dff236312c5608e44d074bab430f0573",
+      "git_blob": "5957855a8866513190174d6213634fa47a929782",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-append-replay-independent-sets-source-review01.json",
+      "bytes": 7937,
+      "sha256": "55214a2ccba09459de7f2185626c76e944b555a51e47eaf258185ee5aa581efd",
+      "git_blob": "503172c7049df5d8b368b42b27ae92da0c513bf2",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci-request01.json",
+      "bytes": 2335,
+      "sha256": "b117d11d5299bec0994c67c5a9a3cb11fe2f3ee1c4df1ecc929398f1a6f0ecec",
+      "git_blob": "3e9581e59e384c7dafb7b2c663e9ba8060da9310",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci-root-gate01.json",
+      "bytes": 15747,
+      "sha256": "60306d0cdb2413fcbb76b43d8a7d40d4a5c87d07c39b2f7083f5f0c2c04827ea",
+      "git_blob": "5d849fd305055a7c37fb505a7fb06b50c51d1c0e",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-final-configuration-independent-review01.json",
+      "bytes": 4758,
+      "sha256": "848b2504581ad7a4909760e448b092cb36135b17429e3ec453680ce76e04e9cf",
+      "git_blob": "1715d543f85e58d72a0646b8d49e9441d475ec21",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_strengthened_native_preparation.md",
+      "bytes": 7130,
+      "sha256": "55cbfcc00212828a090b1fb9b5c522291cd7983fcb6459de5126bfcad77abaa1",
+      "git_blob": "9ef3b3ab4dc8ebf4d8258274536209daf6ba8f46",
+      "mode": "100644"
+    },
+    {
+      "path": "STATE.md",
+      "bytes": 162920,
+      "sha256": "88ee6d67e481bf333d74b14b9e585322c7ab10ebce0a556396514747fac3cd9b",
+      "git_blob": "84f37a81fd8ca0af555d7a7be7ab624340dd4a9e",
+      "mode": "100644"
+    }
+  ],
+  "file_count": 8,
+  "total_bytes": 275218,
+  "manifest_excludes_itself": true,
+  "deletions": [],
+  "all_prior_blobs_and_modes_must_be_preserved_except_explicit_replacements": true,
+  "pre_execution_review": {
+    "root_and_master_review_complete_wiring_check": true,
+    "all_dependency_bytes_pinned": 37,
+    "exact_sparse_checkout_files": 39,
+    "source_configuration_request_objects_equal": true,
+    "native_compilation_controls_model_and_cold_not_yet_run": true
+  },
+  "authorized_production_model_builds": 1,
+  "authorized_complete_independent_replays": 1,
+  "automatic_retries": 0,
+  "optimizer_calls_allowed": 0,
+  "native_query_allowed": false,
+  "local_checkout_reconciled": false,
+  "local_execution_unavailable": true,
+  "unrestricted_problem_solved": false
+}

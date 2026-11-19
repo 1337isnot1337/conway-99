@@ -1,0 +1,52 @@
+{
+  "schema": "conway99.f0.strengthened-native-ci-request.v1",
+  "mode": "one-preparation-and-independent-cold",
+  "gate": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci-root-gate01.json",
+    "bytes": 15747,
+    "sha256": "60306d0cdb2413fcbb76b43d8a7d40d4a5c87d07c39b2f7083f5f0c2c04827ea",
+    "git_blob": "5d849fd305055a7c37fb505a7fb06b50c51d1c0e",
+    "mode": "100644"
+  },
+  "driver_source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_ci.py",
+    "bytes": 7726,
+    "sha256": "46080217ad2ecb71874767f3bff1be70a30ff5be7ecc58393bf2aece83be6fa7",
+    "git_blob": "95b22fd7aa83ff462a33386b0bba8e9ec51b5610",
+    "mode": "100644"
+  },
+  "producer_source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_append.py",
+    "bytes": 14686,
+    "sha256": "9879d5ad46b58ab8e4e2eb58fb302e7c140a06bd3f7b3bf3cb47f82e25e99716",
+    "git_blob": "43f8f32dba2305051ed22791e66ee7c5869c9221",
+    "mode": "100644"
+  },
+  "cold_source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_append_replay.py",
+    "bytes": 34830,
+    "sha256": "8745e9eb5d7a9ced7658f4d052d7fc28c24d58a04e9f9b94514316b12e12a4d6",
+    "git_blob": "aa5a5842769ff4ab13ee99df5982f1c0dcab6090",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json",
+    "bytes": 13870,
+    "sha256": "796e79978b113e49603b9cb60ddcda6bd829725eb4384d10640d74feb959ca0c",
+    "git_blob": "086e612eeb16c03833006421f218f9ff47e34f44",
+    "mode": "100644"
+  },
+  "directories": {
+    "controls": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-controls",
+    "prepare": "experiments/logs/root-prism-free/f0-strengthened-native-ci01",
+    "cold": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold"
+  },
+  "result_path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-run.json",
+  "runtime_packages_path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-runtime-packages.txt",
+  "optimizer_calls_allowed": 0,
+  "native_query_allowed": false,
+  "automatic_retries": 0,
+  "expected_parent": "72e29776fa010cb04db85432c972fd59859ddc8d",
+  "all_arithmetic_main_results_require_owned_terminal_acceptance": true,
+  "artifact_exports_are_not_mathematical_acceptance": true
+}
