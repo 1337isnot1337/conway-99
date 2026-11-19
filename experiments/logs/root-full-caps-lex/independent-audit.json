@@ -1,0 +1,173 @@
+{
+  "status": "independent stabilizer/lift/lex audit PASS",
+  "source_hashes": {
+    "root_full_caps_lex.py": "736ccdd9060144eded621dc409a7ebd8ff4f3c3fb081ba606994c05a3f24a848",
+    "root_full_caps_lex_coverage.py": "9f5ca4aed852b5fbf29a65dd02244bc83a5ceab99254e4d66c831da6ac16c27a"
+  },
+  "audit_source_sha256": "798e628ce0f010a18a93302a29baafcf490a97b5b0768883cda035f74eb6a4e9",
+  "coverage_sha256": "a2e473d16f37c1b9ce3136b234b3b7388811b76bb864b2c88482c2a8a24aeb00",
+  "analysis_sha256": "1abd9986f9d9a44743f4d56d58e876d24aa2b7a6f8a98ed34a92698a7a191bb8",
+  "ambient_maps_independently_enumerated": 46080,
+  "primary_edges": 3486,
+  "pure_Boolean_cases_checked": 784,
+  "cases": [
+    {
+      "index": 0,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stabilizer_order": 46080,
+      "generator_count": 11,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 23233,
+      "added_clauses": 69710
+    },
+    {
+      "index": 1,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "stabilizer_order": 1536,
+      "generator_count": 9,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 19907,
+      "added_clauses": 59730
+    },
+    {
+      "index": 2,
+      "partition": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "stabilizer_order": 288,
+      "generator_count": 7,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 16655,
+      "added_clauses": 49972
+    },
+    {
+      "index": 3,
+      "partition": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "stabilizer_order": 256,
+      "generator_count": 8,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 19912,
+      "added_clauses": 59744
+    },
+    {
+      "index": 4,
+      "partition": [
+        1,
+        1,
+        4
+      ],
+      "stabilizer_order": 64,
+      "generator_count": 5,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 12785,
+      "added_clauses": 38360
+    },
+    {
+      "index": 5,
+      "partition": [
+        1,
+        2,
+        3
+      ],
+      "stabilizer_order": 48,
+      "generator_count": 5,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 13329,
+      "added_clauses": 39992
+    },
+    {
+      "index": 6,
+      "partition": [
+        1,
+        5
+      ],
+      "stabilizer_order": 20,
+      "generator_count": 3,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 8601,
+      "added_clauses": 25806
+    },
+    {
+      "index": 7,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "stabilizer_order": 384,
+      "generator_count": 8,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 22520,
+      "added_clauses": 67568
+    },
+    {
+      "index": 8,
+      "partition": [
+        2,
+        4
+      ],
+      "stabilizer_order": 32,
+      "generator_count": 4,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 12062,
+      "added_clauses": 36190
+    },
+    {
+      "index": 9,
+      "partition": [
+        3,
+        3
+      ],
+      "stabilizer_order": 72,
+      "generator_count": 5,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 16111,
+      "added_clauses": 48338
+    },
+    {
+      "index": 10,
+      "partition": [
+        6
+      ],
+      "stabilizer_order": 12,
+      "generator_count": 2,
+      "exact_edge_and_inverse_hashes_match": true,
+      "added_variables": 6924,
+      "added_clauses": 20774
+    }
+  ],
+  "proof_review": [
+    "A lexicographically minimum primary assignment in each finite stabilizer orbit satisfies every generator comparison.",
+    "A relabeling need not fix the completed graph; every orbit image remains a valid normalized primary graph.",
+    "New edge coordinate j equals the old coordinate at its inverse edge image.",
+    "Identical variable positions are always equal and can be skipped.",
+    "Forward equality flags force every actually equal prefix; exact equality flags extend every valid comparison.",
+    "Overlay auxiliaries start after the maximum variable of the full base CNF and are fresh across generators.",
+    "The build command preserves every base clause and appends the overlay under an updated DIMACS header."
+  ],
+  "solver_called": false,
+  "large_CNF_built": false,
+  "base_CNF_rebuilt": false,
+  "limits": "This audit certifies the relabeling overlay, not a solution or exclusion of any99-vertex case."
+}

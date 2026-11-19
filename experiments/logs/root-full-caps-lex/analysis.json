@@ -1,0 +1,1840 @@
+{
+  "status": "exact coverage, domain, lift, and small Boolean controls pass; no 99-point solve",
+  "scope": "relabeling overlay for each of the eleven unrestricted normalized cases",
+  "coverage": "experiments/logs/root-full-caps-lex/coverage.json",
+  "coverage_sha256": "a2e473d16f37c1b9ce3136b234b3b7388811b76bb864b2c88482c2a8a24aeb00",
+  "base_manifest": "experiments/logs/root-full-caps/model.json",
+  "base_manifest_sha256": "f17e25d386dd56890b2028bec7de4fec53d0dbe61b24ac5d46958e876cbe32ab",
+  "base_source_hashes": {
+    "root_full_caps.py": "1e064dc0bcffa6c77fbbfbfd9513fb6d0cedfc0f291ac347cdecff7729951419",
+    "root_full_caps_coverage.py": "3e12b81ebe8b3301cefec801aae60bbd41c12481957bbf25c019bc03a6884cb2",
+    "root_full_caps_batch.py": "f7e4cd81d74bf11dd64941595a84e269f020139d8a4fa59640bff8d0d5564d4e",
+    "root_full_caps_certificate.py": "18aca4b71ba13fc06f87ad7e90533bffb41599e2905f581f0763bb0700a45cfd"
+  },
+  "source_hashes": {
+    "root_full_caps_lex.py": "736ccdd9060144eded621dc409a7ebd8ff4f3c3fb081ba606994c05a3f24a848",
+    "root_full_caps_lex_coverage.py": "9f5ca4aed852b5fbf29a65dd02244bc83a5ceab99254e4d66c831da6ac16c27a"
+  },
+  "domain_sha256": "ad142f8c091bb61cddd34c982f22f3363875489c05adca5d3517f3d37e106904",
+  "primary_edge_variables": 3486,
+  "lex_controls": {
+    "status": "exact pass",
+    "maximum_vector_length": 6,
+    "independent_vector_assignments": 5461,
+    "permuted_vector_assignments": 50363,
+    "total_assignments": 55824
+  },
+  "rook_positive_control": {
+    "status": "direct nine-rook and free normalized overlay both pass",
+    "vertices": 9,
+    "pair_equations_checked": 36,
+    "primary_edge_variables": 6,
+    "generator_count": 1,
+    "lex_clauses": 10,
+    "broken_rook_clauses_checked": 4
+  },
+  "graph_automorphism_assumptions": 0,
+  "large_cnf_built": false,
+  "cases": [
+    {
+      "index": 0,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "stabilizer_order": 46080,
+      "generator_count": 11,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "lex_right_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "lex_right_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0df1412687ae52688f58fc6955c776abfe031b6a2dad3f33996826ad0cf9c69e",
+          "lex_right_sha256": "0df1412687ae52688f58fc6955c776abfe031b6a2dad3f33996826ad0cf9c69e",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "cdd55e74d6d7fa223d1d1c4672c3208b46aae3bf65a76678e52803cacd713eb3",
+          "lex_right_sha256": "cdd55e74d6d7fa223d1d1c4672c3208b46aae3bf65a76678e52803cacd713eb3",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 4,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            8,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "7a8570a3fd6bfd1fb09c0d2868e8a8e4381eb25f34e272c689d9258eec8597dd",
+          "lex_right_sha256": "7a8570a3fd6bfd1fb09c0d2868e8a8e4381eb25f34e272c689d9258eec8597dd",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 5,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            10
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "e57706ecb87475e0ba5a718340a09445dc26299649e772f91e467625d7270f68",
+          "lex_right_sha256": "e57706ecb87475e0ba5a718340a09445dc26299649e772f91e467625d7270f68",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            1,
+            2
+          ],
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "f7bbcf98633cb297805ec52e0be8ed7dbfedf8ae6d3042a6fe664e687d4f4140",
+          "lex_right_sha256": "f7bbcf98633cb297805ec52e0be8ed7dbfedf8ae6d3042a6fe664e687d4f4140",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            2,
+            3
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+          "lex_right_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            3,
+            4
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            6,
+            7,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "17944beb26fd35c9ea2f177176d69cc07343d1db385e4b8dc967aa2242d03b19",
+          "lex_right_sha256": "17944beb26fd35c9ea2f177176d69cc07343d1db385e4b8dc967aa2242d03b19",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            4,
+            5
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            8,
+            9
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+          "lex_right_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        }
+      ],
+      "base_cnf_sha256": "901783c5b104e6383e4ff4d17d515873e9fc5f80fe8458af71a6337c44764016",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 23233,
+      "added_clauses": 69710,
+      "total_variables": 983647,
+      "total_clauses": 1978574
+    },
+    {
+      "index": 1,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "stabilizer_order": 1536,
+      "generator_count": 9,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "lex_right_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "lex_right_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0df1412687ae52688f58fc6955c776abfe031b6a2dad3f33996826ad0cf9c69e",
+          "lex_right_sha256": "0df1412687ae52688f58fc6955c776abfe031b6a2dad3f33996826ad0cf9c69e",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "cdd55e74d6d7fa223d1d1c4672c3208b46aae3bf65a76678e52803cacd713eb3",
+          "lex_right_sha256": "cdd55e74d6d7fa223d1d1c4672c3208b46aae3bf65a76678e52803cacd713eb3",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "rotation",
+          "component": 4,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            8,
+            9
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+          "lex_right_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "reflection",
+          "component": 4,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            8,
+            11,
+            10
+          ],
+          "moved_primary_coordinates": 2684,
+          "edge_image_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+          "lex_right_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+          "added_variables": 2683,
+          "added_clauses": 8050
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            1,
+            2
+          ],
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "f7bbcf98633cb297805ec52e0be8ed7dbfedf8ae6d3042a6fe664e687d4f4140",
+          "lex_right_sha256": "f7bbcf98633cb297805ec52e0be8ed7dbfedf8ae6d3042a6fe664e687d4f4140",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            2,
+            3
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+          "lex_right_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        }
+      ],
+      "base_cnf_sha256": "54b366151efa54c4f3bd01e884199ca528f0b1265a54d6f5d6237a2db38d30a9",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 19907,
+      "added_clauses": 59730,
+      "total_variables": 980321,
+      "total_clauses": 1968594
+    },
+    {
+      "index": 2,
+      "partition": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "stabilizer_order": 288,
+      "generator_count": 7,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "lex_right_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "lex_right_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0df1412687ae52688f58fc6955c776abfe031b6a2dad3f33996826ad0cf9c69e",
+          "lex_right_sha256": "0df1412687ae52688f58fc6955c776abfe031b6a2dad3f33996826ad0cf9c69e",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "rotation",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            6,
+            7
+          ],
+          "moved_primary_coordinates": 3210,
+          "edge_image_sha256": "dffb7a19af2f683a4381e7ece02282dd51896b8a62eb3fb2434fbefac2effa4e",
+          "lex_right_sha256": "ce5861de51117678f755b5716043d57cbfb55e9023b39feea39764cf98415df4",
+          "added_variables": 3209,
+          "added_clauses": 9628
+        },
+        {
+          "kind": "reflection",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            11,
+            10,
+            9,
+            8
+          ],
+          "moved_primary_coordinates": 3132,
+          "edge_image_sha256": "d91e18d5310c01a8f06a773b476e667418f7beb30de8b4c962b3095f3d4c8392",
+          "lex_right_sha256": "d91e18d5310c01a8f06a773b476e667418f7beb30de8b4c962b3095f3d4c8392",
+          "added_variables": 3131,
+          "added_clauses": 9394
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            1,
+            2
+          ],
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "f7bbcf98633cb297805ec52e0be8ed7dbfedf8ae6d3042a6fe664e687d4f4140",
+          "lex_right_sha256": "f7bbcf98633cb297805ec52e0be8ed7dbfedf8ae6d3042a6fe664e687d4f4140",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        }
+      ],
+      "base_cnf_sha256": "97f3358ddd1a8c2e9fa9b8527f9914fd71033e033a96e7b0a9612cfa0d4e4491",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 16655,
+      "added_clauses": 49972,
+      "total_variables": 977069,
+      "total_clauses": 1958836
+    },
+    {
+      "index": 3,
+      "partition": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "stabilizer_order": 256,
+      "generator_count": 8,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "lex_right_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "lex_right_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "rotation",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+          "lex_right_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            7,
+            6,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2684,
+          "edge_image_sha256": "0f47f66a21235a751144e88410592adbd5a8879d576eb08f65c8b71de67bf2f2",
+          "lex_right_sha256": "0f47f66a21235a751144e88410592adbd5a8879d576eb08f65c8b71de67bf2f2",
+          "added_variables": 2683,
+          "added_clauses": 8050
+        },
+        {
+          "kind": "rotation",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            8,
+            9
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+          "lex_right_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "reflection",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            8,
+            11,
+            10
+          ],
+          "moved_primary_coordinates": 2684,
+          "edge_image_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+          "lex_right_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+          "added_variables": 2683,
+          "added_clauses": 8050
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            2,
+            3
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11,
+            4,
+            5,
+            6,
+            7
+          ],
+          "moved_primary_coordinates": 3332,
+          "edge_image_sha256": "25aed8f1d5183b713656530ae1a2f113c4acdacd82e814eda0da4dbaed8e0bd2",
+          "lex_right_sha256": "25aed8f1d5183b713656530ae1a2f113c4acdacd82e814eda0da4dbaed8e0bd2",
+          "added_variables": 3331,
+          "added_clauses": 9994
+        }
+      ],
+      "base_cnf_sha256": "fc6bfb32be37edb7def76c65b01ed0f30882c19b5ed18d4acfdffec4849068da",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 19912,
+      "added_clauses": 59744,
+      "total_variables": 980326,
+      "total_clauses": 1968608
+    },
+    {
+      "index": 4,
+      "partition": [
+        1,
+        1,
+        4
+      ],
+      "stabilizer_order": 64,
+      "generator_count": 5,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "lex_right_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "lex_right_sha256": "98105d8de49140cead541af26109742cfad296662f5e4b98b4036ad5d6ba55ec",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "rotation",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            4,
+            5
+          ],
+          "moved_primary_coordinates": 3418,
+          "edge_image_sha256": "0b6a55be75d0e2ec2ded66c4e5ad05a941da4470e9ed141eed919200a72fb6f2",
+          "lex_right_sha256": "39f7cec4ee04b5794f4110b5846242ecf20f900d3977a65db9f071b76bfa6779",
+          "added_variables": 3417,
+          "added_clauses": 10252
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6
+          ],
+          "moved_primary_coordinates": 3360,
+          "edge_image_sha256": "a9a880593ef9f6605593e7288530bb171587a16917dcc60b5c4a662e3ecf7a4d",
+          "lex_right_sha256": "a9a880593ef9f6605593e7288530bb171587a16917dcc60b5c4a662e3ecf7a4d",
+          "added_variables": 3359,
+          "added_clauses": 10078
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        }
+      ],
+      "base_cnf_sha256": "c65c8a35981ea3f0fb34b8a51ee9ca034c72fe5a8e2f6867bec200a87460c7a0",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 12785,
+      "added_clauses": 38360,
+      "total_variables": 973199,
+      "total_clauses": 1947224
+    },
+    {
+      "index": 5,
+      "partition": [
+        1,
+        2,
+        3
+      ],
+      "stabilizer_order": 48,
+      "generator_count": 5,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "lex_right_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "f7bbcf98633cb297805ec52e0be8ed7dbfedf8ae6d3042a6fe664e687d4f4140",
+          "lex_right_sha256": "f7bbcf98633cb297805ec52e0be8ed7dbfedf8ae6d3042a6fe664e687d4f4140",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2684,
+          "edge_image_sha256": "8252107460cb4e7cc95e55ce23857a282071f8270b9e0756fc4513e683fc42f7",
+          "lex_right_sha256": "8252107460cb4e7cc95e55ce23857a282071f8270b9e0756fc4513e683fc42f7",
+          "added_variables": 2683,
+          "added_clauses": 8050
+        },
+        {
+          "kind": "rotation",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            6,
+            7
+          ],
+          "moved_primary_coordinates": 3210,
+          "edge_image_sha256": "dffb7a19af2f683a4381e7ece02282dd51896b8a62eb3fb2434fbefac2effa4e",
+          "lex_right_sha256": "ce5861de51117678f755b5716043d57cbfb55e9023b39feea39764cf98415df4",
+          "added_variables": 3209,
+          "added_clauses": 9628
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            11,
+            10,
+            9,
+            8
+          ],
+          "moved_primary_coordinates": 3132,
+          "edge_image_sha256": "d91e18d5310c01a8f06a773b476e667418f7beb30de8b4c962b3095f3d4c8392",
+          "lex_right_sha256": "d91e18d5310c01a8f06a773b476e667418f7beb30de8b4c962b3095f3d4c8392",
+          "added_variables": 3131,
+          "added_clauses": 9394
+        }
+      ],
+      "base_cnf_sha256": "f46635378327447b0e41f1816411fb17465e941491f34ede05f10786bf62e3a7",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 13329,
+      "added_clauses": 39992,
+      "total_variables": 973743,
+      "total_clauses": 1948856
+    },
+    {
+      "index": 6,
+      "partition": [
+        1,
+        5
+      ],
+      "stabilizer_order": 20,
+      "generator_count": 3,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 1704,
+          "edge_image_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "lex_right_sha256": "0e21442c510f5feb6f64a8731ae4c5ba95a3b052ab4fdf1f16c7f7737d26d8a4",
+          "added_variables": 1703,
+          "added_clauses": 5110
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            2,
+            3
+          ],
+          "moved_primary_coordinates": 3480,
+          "edge_image_sha256": "017bbe3a1399debe732e810a07e1ba94451a5d2c9ae5e29cae3745bc991f1608",
+          "lex_right_sha256": "4d6616664a163264762c2ef973655b393a5fa6b8e59e234421ca6aeb5d087d01",
+          "added_variables": 3479,
+          "added_clauses": 10438
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4
+          ],
+          "moved_primary_coordinates": 3420,
+          "edge_image_sha256": "63db08fbf8bd427c03539575157f43ec20ed1dc76ac9641a9a3ec610d95e7293",
+          "lex_right_sha256": "63db08fbf8bd427c03539575157f43ec20ed1dc76ac9641a9a3ec610d95e7293",
+          "added_variables": 3419,
+          "added_clauses": 10258
+        }
+      ],
+      "base_cnf_sha256": "642822f637f8871541dc3e283c2216327a34ff26f568b6e6734dbfb298666bee",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 8601,
+      "added_clauses": 25806,
+      "total_variables": 969015,
+      "total_clauses": 1934670
+    },
+    {
+      "index": 7,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "stabilizer_order": 384,
+      "generator_count": 8,
+      "generators": [
+        {
+          "kind": "rotation",
+          "component": 0,
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2684,
+          "edge_image_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+          "lex_right_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+          "added_variables": 2683,
+          "added_clauses": 8050
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+          "lex_right_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            7,
+            6,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2684,
+          "edge_image_sha256": "0f47f66a21235a751144e88410592adbd5a8879d576eb08f65c8b71de67bf2f2",
+          "lex_right_sha256": "0f47f66a21235a751144e88410592adbd5a8879d576eb08f65c8b71de67bf2f2",
+          "added_variables": 2683,
+          "added_clauses": 8050
+        },
+        {
+          "kind": "rotation",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            8,
+            9
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+          "lex_right_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            8,
+            11,
+            10
+          ],
+          "moved_primary_coordinates": 2684,
+          "edge_image_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+          "lex_right_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+          "added_variables": 2683,
+          "added_clauses": 8050
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            4,
+            5,
+            6,
+            7,
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 3332,
+          "edge_image_sha256": "d573cb10c1b0d7760efbf43a2f836dc10237869663e399152b4482c48cca8848",
+          "lex_right_sha256": "d573cb10c1b0d7760efbf43a2f836dc10237869663e399152b4482c48cca8848",
+          "added_variables": 3331,
+          "added_clauses": 9994
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            1,
+            2
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11,
+            4,
+            5,
+            6,
+            7
+          ],
+          "moved_primary_coordinates": 3332,
+          "edge_image_sha256": "25aed8f1d5183b713656530ae1a2f113c4acdacd82e814eda0da4dbaed8e0bd2",
+          "lex_right_sha256": "25aed8f1d5183b713656530ae1a2f113c4acdacd82e814eda0da4dbaed8e0bd2",
+          "added_variables": 3331,
+          "added_clauses": 9994
+        }
+      ],
+      "base_cnf_sha256": "8f1eae908b3dd6a122fd95b7caec4f1de2e0bc35cf9246d4e90e3de2b8ccc4da",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 22520,
+      "added_clauses": 67568,
+      "total_variables": 982934,
+      "total_clauses": 1976432
+    },
+    {
+      "index": 8,
+      "partition": [
+        2,
+        4
+      ],
+      "stabilizer_order": 32,
+      "generator_count": 4,
+      "generators": [
+        {
+          "kind": "rotation",
+          "component": 0,
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2604,
+          "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+          "added_variables": 2603,
+          "added_clauses": 7810
+        },
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 2684,
+          "edge_image_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+          "lex_right_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+          "added_variables": 2683,
+          "added_clauses": 8050
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            4,
+            5
+          ],
+          "moved_primary_coordinates": 3418,
+          "edge_image_sha256": "0b6a55be75d0e2ec2ded66c4e5ad05a941da4470e9ed141eed919200a72fb6f2",
+          "lex_right_sha256": "39f7cec4ee04b5794f4110b5846242ecf20f900d3977a65db9f071b76bfa6779",
+          "added_variables": 3417,
+          "added_clauses": 10252
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6
+          ],
+          "moved_primary_coordinates": 3360,
+          "edge_image_sha256": "a9a880593ef9f6605593e7288530bb171587a16917dcc60b5c4a662e3ecf7a4d",
+          "lex_right_sha256": "a9a880593ef9f6605593e7288530bb171587a16917dcc60b5c4a662e3ecf7a4d",
+          "added_variables": 3359,
+          "added_clauses": 10078
+        }
+      ],
+      "base_cnf_sha256": "d692d5439b0512ed7878868491ef1c0f00203eb33bc4aa6f72de90845c9bb860",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 12062,
+      "added_clauses": 36190,
+      "total_variables": 972476,
+      "total_clauses": 1945054
+    },
+    {
+      "index": 9,
+      "partition": [
+        3,
+        3
+      ],
+      "stabilizer_order": 72,
+      "generator_count": 5,
+      "generators": [
+        {
+          "kind": "rotation",
+          "component": 0,
+          "image": [
+            2,
+            3,
+            4,
+            5,
+            0,
+            1,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 3210,
+          "edge_image_sha256": "f20784fcf1fa256675265addce21ad73ae6d73a717ce1953416702b3877158db",
+          "lex_right_sha256": "f4bec3940cab6a09c30008bbc9a245c32848a36a4b95b02c2c1726370240a85d",
+          "added_variables": 3209,
+          "added_clauses": 9628
+        },
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            5,
+            4,
+            3,
+            2,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "moved_primary_coordinates": 3132,
+          "edge_image_sha256": "7a3b76a13dc73c232f8dbd5b9fec10a2b37b75ddbfcdf12ebe0cfedc7434b483",
+          "lex_right_sha256": "7a3b76a13dc73c232f8dbd5b9fec10a2b37b75ddbfcdf12ebe0cfedc7434b483",
+          "added_variables": 3131,
+          "added_clauses": 9394
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            6,
+            7
+          ],
+          "moved_primary_coordinates": 3210,
+          "edge_image_sha256": "dffb7a19af2f683a4381e7ece02282dd51896b8a62eb3fb2434fbefac2effa4e",
+          "lex_right_sha256": "ce5861de51117678f755b5716043d57cbfb55e9023b39feea39764cf98415df4",
+          "added_variables": 3209,
+          "added_clauses": 9628
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            11,
+            10,
+            9,
+            8
+          ],
+          "moved_primary_coordinates": 3132,
+          "edge_image_sha256": "d91e18d5310c01a8f06a773b476e667418f7beb30de8b4c962b3095f3d4c8392",
+          "lex_right_sha256": "d91e18d5310c01a8f06a773b476e667418f7beb30de8b4c962b3095f3d4c8392",
+          "added_variables": 3131,
+          "added_clauses": 9394
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "moved_primary_coordinates": 3432,
+          "edge_image_sha256": "744563b0f3cec9aa6d1376b251df027ad0609474c2cb9bfe2a20ae9599d2cde0",
+          "lex_right_sha256": "744563b0f3cec9aa6d1376b251df027ad0609474c2cb9bfe2a20ae9599d2cde0",
+          "added_variables": 3431,
+          "added_clauses": 10294
+        }
+      ],
+      "base_cnf_sha256": "e65445741ec8181d2cda0e8f762b23e3cf045bca84c5c7e6662113dc391abf18",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 16111,
+      "added_clauses": 48338,
+      "total_variables": 976525,
+      "total_clauses": 1957202
+    },
+    {
+      "index": 10,
+      "partition": [
+        6
+      ],
+      "stabilizer_order": 12,
+      "generator_count": 2,
+      "generators": [
+        {
+          "kind": "rotation",
+          "component": 0,
+          "image": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            0,
+            1
+          ],
+          "moved_primary_coordinates": 3486,
+          "edge_image_sha256": "39d2fb1bcc8ffcf218abffa2bf524375004ca6049614dd418005de26ceaf299d",
+          "lex_right_sha256": "255ae5cc6f87fb40931d54183c6c8ff623a7119b4a3d2a806907385c2bf568bb",
+          "added_variables": 3485,
+          "added_clauses": 10456
+        },
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2
+          ],
+          "moved_primary_coordinates": 3440,
+          "edge_image_sha256": "818e652ae7ef7d20e62a070d3048382349916f2b55a92b4a88ec77a8c1a0a48b",
+          "lex_right_sha256": "818e652ae7ef7d20e62a070d3048382349916f2b55a92b4a88ec77a8c1a0a48b",
+          "added_variables": 3439,
+          "added_clauses": 10318
+        }
+      ],
+      "base_cnf_sha256": "2cce50890461fa6b649d45cacf8d47b8b907326c4cd1fcf7dd86d8f602e06588",
+      "base_variables": 960414,
+      "base_clauses": 1908864,
+      "added_variables": 6924,
+      "added_clauses": 20774,
+      "total_variables": 967338,
+      "total_clauses": 1929638
+    }
+  ]
+}

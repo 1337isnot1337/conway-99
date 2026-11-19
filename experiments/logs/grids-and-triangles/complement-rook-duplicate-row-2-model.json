@@ -1,0 +1,71 @@
+{
+  "status": "forced duplicate two-row projection built; not yet solved",
+  "case_index": 2,
+  "representative_tips": [
+    1,
+    5
+  ],
+  "covered_tip_pairs": 4,
+  "source_indices": [
+    0,
+    3
+  ],
+  "source_triples": [
+    [
+      0,
+      4,
+      1
+    ],
+    [
+      0,
+      4,
+      5
+    ]
+  ],
+  "coverage_path": "experiments/logs/grids-and-triangles/complement-rook-duplicate-row-coverage.json",
+  "coverage_sha256": "36237668d01da0173a2dfaa5d87339f8e212399cd5b391d78f952fd2b0cf3c7d",
+  "candidate_selectors": 252,
+  "neighbor_variables": [
+    163,
+    166
+  ],
+  "matching_variables": [
+    2226,
+    2583
+  ],
+  "packing_clauses": [
+    737,
+    735
+  ],
+  "disjointness_clauses": 126,
+  "distinct_gram_counts": 208,
+  "parameter_a_unrestricted": true,
+  "fixed_incidence_design": false,
+  "graph_symmetry_clauses": 0,
+  "full_exterior_graph": false,
+  "cnf_path": "experiments/workspace/complement-rook-duplicate-row-2.cnf",
+  "cnf_sha256": "51c5b8ec69329aa4466d1e9d4c4ae976b0582419aebd5d94f660a67fdba0cd0d",
+  "variables": 63002,
+  "clauses": 137127,
+  "controls": {
+    "matching": {
+      "status": "exact matching controls PASS",
+      "small_cases": 1099,
+      "small_SAT_cases": 318,
+      "rook_neighborhood_controls": 9
+    },
+    "matching_copy": {
+      "boolean_cases": 64,
+      "admitted_cases": 11,
+      "active_matching_copies_cannot_conflict": true
+    }
+  },
+  "domain_sha256": "a71d89f3bf004ddbe956fe65a5b9244fa776153a39c76da29c37193c5a8bbcbd",
+  "source_hashes": {
+    "complement_rook_duplicate_row_projection.py": "8cc529d12ef897234e1d04bab388e54e88186c7163c8182ece6a518a2a082bc6",
+    "complement_rook_row_projection.py": "0b55e2e10339449a3472cfaa7064a29c00cab5e2c79f40806a5d4a7950917344",
+    "complement_rook_a_incidence.py": "785ac205a8bb2b63fc21649eff3bcdc94fbc103ce6d1f3b7d473153d60567e19",
+    "complement_rook_a_incidence_census.py": "51d42992c6c7495ecb012e19f3ed84edd9dbd5699bd7aa3e25f75c58069cb694"
+  },
+  "build_seconds": 0.46506029100055457
+}

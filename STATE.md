@@ -35,6 +35,9 @@ The same point now also has [exact PSD certificates for 832 cached
 projector blocks](research/grids-and-triangles/grid_free_projector_order_nine.md),
 giving 1,416 checked blocks in total. Each added block has eight exact
 kernels and a positive definite principal quotient.
+The next [order-ten count probes](research/grids-and-triangles/grid_free_order10_probe.md)
+use 48,965 graph types and 549 core coordinates. Both initial 30-second
+linear searches ended UNKNOWN. No order-ten witness or exclusion follows.
 
 The [single isomorphic pair](research/grids-and-triangles/two_rook_iso_pair_integer.md)
 remains unresolved. Its forced 81-vertex exterior has nine singleton tips
@@ -83,6 +86,13 @@ a checked final blocked-formula proof establish completeness. All four
 The coordinator rebuilt each full formula, checked every retained clause,
 and independently verified all four DRAT proofs. Therefore `a>=3`.
 None of these statements excludes a single isomorphic pair.
+The [single-source](research/grids-and-triangles/complement_rook_row_projection.md)
+and [forced duplicate-pair](research/grids-and-triangles/complement_rook_duplicate_row_projection.md)
+binary projections also retain the complete incidence design. All three
+signature orbits and all eight duplicate-tip orbits have exact partial
+neighborhood witnesses. The latter orbits cover all 21 tip pairs, so this
+particular projection excludes no choice. A separate full-domain real
+projection has an exact feasible point at `a=36` and no smaller upper bound.
 
 ## Scope of the unrestricted computations
 
@@ -98,9 +108,19 @@ checks the full domain and encoding, including the 84 necessary
 broken-rook implications. A direct nine-rook assignment and 3,069
 Boolean controls pass. Each case has 960,414 variables and 1,908,864
 clauses. The sequential batch uses 180 seconds per case and records
-each outcome separately. Its first three cases returned UNKNOWN. The
+each outcome separately. Its first eight cases returned UNKNOWN. The
 model and coverage proofs are not
 nonexistence proofs; every UNKNOWN case remains open.
+The [separate lexicographic overlay](research/root_full_caps_lex.md) is
+audited and has complete stabilizer coverage and small Boolean controls.
+It preserves a labeling of every possible graph by finite-orbit minima.
+It has not yet produced a 99-vertex solve outcome.
+
+The [general 39-point triangle identities](research/grids-and-triangles/triangle_root_constraints.md)
+show that both principal projector tests are automatic. The visible caps
+exclude equal shell-neighbor rows, and the incidence Gram kernel gives
+exact fiber and component balances. These identities leave binary
+exterior incidence and individual-signature tests unresolved.
 
 - [`subgraph_counts.py`](experiments/workspace/subgraph_counts.py) enumerates all induced graph types through a specified order that avoid a diamond and a (non-induced) K₂,₃. Integer extension equations count outside vertices, neighbors of a marked vertex, and common neighbors of a marked pair. It found no contradiction modulo 2 through order ten (180,445 equations, rank 46,268). [`inspect_counts.py`](experiments/workspace/inspect_counts.py) checks the original equations on all subsets of the 3-by-3 rook graph. Its floating LP reported infeasibility on both 99 and the known 243 parameters. That solver status was spurious on 99.
 - [`core_counts.py`](experiments/workspace/core_counts.py) removes a vertex of degree at most two in ordinary injective embedding counts. In the degree-two case the common-neighbor number for the two image vertices is two minus their adjacency indicator. Subtracting previously used image vertices gives a recurrence requiring no unproved subgraph statistics. Minimum-degree-three subgraphs supply the remaining variables. Inverting deletion of edges gives induced counts. The integer solutions in [`core8.log`](experiments/logs/moments-and-counts/core8.log) and [`core9.log`](experiments/logs/moments-and-counts/core9.log) were replayed against every original equation and every nonnegativity and integrality condition. These are count assignments, not graphs.

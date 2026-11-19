@@ -164,6 +164,26 @@ independent orbit traversal, then checks the closed-form counts and all
 The [model note](../research/root_full_caps.md) gives the complete formula,
 positive controls, build command, and separate outcome records.
 
+The single-source and duplicate-pair binary projections have direct
+partial-witness replays, without loading their SAT builders:
+
+```sh
+.venv/bin/python experiments/workspace/complement_rook_row_projection_replay.py \
+  --output /tmp/complement-rook-row-replay.json
+.venv/bin/python experiments/workspace/complement_rook_duplicate_row_replay.py \
+  --output /tmp/complement-rook-duplicate-replay.json
+python experiments/workspace/triangle_root_constraints.py \
+  --replay experiments/logs/grids-and-triangles/triangle-root-constraints-exact.json
+```
+
+All source-row and duplicate-row cases have exact partial witnesses;
+none is a completed 99-vertex graph. The last command checks exact
+triangle-core identities and three controls, not a complete core census.
+The [order-ten probe note](../research/grids-and-triangles/grid_free_order10_probe.md)
+gives the separate large count-reduction recipe and its bounded UNKNOWN
+outcomes. The [lex overlay note](../research/root_full_caps_lex.md) gives
+its small coverage and Boolean replays without starting a large solve.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh

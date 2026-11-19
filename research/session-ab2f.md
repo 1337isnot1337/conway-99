@@ -339,3 +339,36 @@ their hypotheses permit them; computational exclusions require exact replay.
   and dual witnesses agree at `a=36`; all point denominators divide four.
   Thus this particular linear relaxation gives no smaller upper bound.
   Binary single-row neighborhood tests are the separate next step.
+- All three binary single-source projections admit exact partial witnesses.
+  Each retains the full 252-selector incidence and a complete local
+  neighborhood matching. A separate matrix replay checks all incidence
+  entries, known pair caps, and the local matching without importing the
+  SAT builder. No signature orbit is excluded.
+- Derived the unrestricted 39-point triangle-core identities. The cubic
+  shell has no repeated open-neighbor row exactly when its visible core
+  caps hold. Its Gram rank is `35-c`; fiber and component balances exhaust
+  the kernel. Both principal eigenspace projector tests are automatic.
+  The exact counts are `sum e(D[h])=36-3f` and `t(C60)=32-f`, where
+  `f=fix(Q)`. Root replayed the integer and rational controls. No general
+  triangle core was excluded. Saturated-triangle spread work remains
+  with the external branch.
+- Extended the exact subgraph reduction to order ten: 48,965 types and
+  549 ordinary core coordinates. Two 30-second numerical probes tested
+  the fixed order-nine zero-grid point and a free-prefix zero-grid model.
+  Both reached their limits without a primal point or certificate. Their
+  source/status audit preserves this UNKNOWN scope. A separate feasibility
+  formulation with rigorous count bounds is being prepared.
+- The forced duplicate RS pair has 21 possible unordered tip pairs.
+  Its verified four-element core stabilizer gives eight orbits. Both
+  complete source neighborhoods, their matching edges, their required
+  disjointness, and the full incidence design are jointly feasible in
+  every orbit. Root replayed all eight partial witnesses directly. No
+  tip-pair choice is excluded. The next split uses the complete joint
+  incidence/edge/packing model rather than only two source rows.
+- Prepared a separate lexicographic overlay for the unrestricted root
+  formulas. All eleven stabilizers were independently enumerated among
+  the 46,080 signed-axis maps and reproduced by generator closure.
+  The finite-orbit minimum argument preserves coverage. All 55,824
+  solver-based Boolean controls, the nine-rook controls, and 784 direct
+  independent existential controls pass. No large overlay solve was
+  started during the original batch.

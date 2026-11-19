@@ -1,0 +1,304 @@
+{
+  "schema": "triangle-root-constraints-exact-controls-v1",
+  "source_sha256": "9d9351fd48448483144b80d1753d03a991572c54b154fc8c88cd324404ee502a",
+  "status": "PASS",
+  "arithmetic": "standard-library integers and Fraction",
+  "cases": [
+    {
+      "name": "six_prisms",
+      "matchings": [
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ]
+      ],
+      "q": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "component_m": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "false_twin_pairs": 0,
+      "core_cap_violations": 0,
+      "shell_triangles": 12,
+      "incidence_gram_rank": 29,
+      "negative_projector_rank": 31,
+      "positive_projector_rank": 36,
+      "outside_signature_edge_sum_if_completable": 0,
+      "component_pair_profiles_0_1_2": [
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "six_K33_negative_control",
+      "matchings": [
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ]
+      ],
+      "q": [
+        1,
+        0,
+        3,
+        2,
+        5,
+        4,
+        7,
+        6,
+        9,
+        8,
+        11,
+        10
+      ],
+      "component_m": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "false_twin_pairs": 36,
+      "core_cap_violations": 36,
+      "shell_triangles": 0,
+      "incidence_gram_rank": 29,
+      "negative_projector_rank": 31,
+      "positive_projector_rank": 36,
+      "outside_signature_edge_sum_if_completable": 36,
+      "component_pair_profiles_0_1_2": [
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ],
+        [
+          40,
+          20,
+          0
+        ]
+      ]
+    },
+    {
+      "name": "connected_shift2",
+      "matchings": [
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ],
+        [
+          1,
+          0,
+          3,
+          2,
+          5,
+          4,
+          7,
+          6,
+          9,
+          8,
+          11,
+          10
+        ]
+      ],
+      "q": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        0,
+        1
+      ],
+      "component_m": [
+        12
+      ],
+      "false_twin_pairs": 0,
+      "core_cap_violations": 0,
+      "shell_triangles": 0,
+      "incidence_gram_rank": 34,
+      "negative_projector_rank": 36,
+      "positive_projector_rank": 36,
+      "outside_signature_edge_sum_if_completable": 36,
+      "component_pair_profiles_0_1_2": [
+        [
+          0,
+          0,
+          60
+        ]
+      ]
+    }
+  ],
+  "scope": "Three formula/indexing controls, not a census or completion test.",
+  "solver_called": false
+}

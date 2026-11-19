@@ -1,0 +1,39 @@
+{
+  "status": "unconditional one-source-row projection built; not yet solved",
+  "orbit": 2,
+  "source_index": 6,
+  "source_triple": [
+    0,
+    4,
+    8
+  ],
+  "signature_orbit_size": 36,
+  "candidate_selectors": 252,
+  "neighbor_variables": 173,
+  "zero_overlap_candidates": 122,
+  "one_overlap_candidates": 51,
+  "matching_variables": 2712,
+  "packing_clauses": 763,
+  "distinct_gram_counts": 208,
+  "parameter_a_unrestricted": true,
+  "fixed_incidence_design": false,
+  "graph_symmetry_clauses": 0,
+  "full_exterior_graph": false,
+  "cnf_path": "experiments/workspace/complement-rook-row-projection-2.cnf",
+  "cnf_sha256": "13f46f533e2f1345a3476ac78a2b1c719f4fe45c830979ba9eace8c7c2fcb663",
+  "variables": 50769,
+  "clauses": 107597,
+  "controls": {
+    "status": "exact matching controls PASS",
+    "small_cases": 1099,
+    "small_SAT_cases": 318,
+    "rook_neighborhood_controls": 9
+  },
+  "domain_sha256": "7aee990afcb697309964e3f9e07b12dfa1e913046637e45bcc4e5ce282cd41e3",
+  "source_hashes": {
+    "complement_rook_row_projection.py": "0b55e2e10339449a3472cfaa7064a29c00cab5e2c79f40806a5d4a7950917344",
+    "complement_rook_a_incidence.py": "785ac205a8bb2b63fc21649eff3bcdc94fbc103ce6d1f3b7d473153d60567e19",
+    "complement_rook_a_incidence_census.py": "51d42992c6c7495ecb012e19f3ed84edd9dbd5699bd7aa3e25f75c58069cb694"
+  },
+  "build_seconds": 1.06013319900012
+}
