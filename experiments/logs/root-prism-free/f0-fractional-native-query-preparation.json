@@ -1,0 +1,200 @@
+{
+  "schema": "f0-fractional-native-query-preparation-v1",
+  "status": "FROZEN PREPARATION: native preflight and production query pending",
+  "repository": "1337isnot1337/conway-99",
+  "published_baseline_commit": "b5b37f42badf8d943bf6fa4becfcb03ef49165c9",
+  "operational_native_replay_workflow_commit": "27938c7eb1881089f24dd072e1cb733bd95524a8",
+  "scope": {
+    "joint_baseline": true,
+    "fixed_selector_point": false,
+    "terminal_selector_registry_included": false,
+    "earlier_12_weighted_rows_included": false,
+    "conditional_component_zero": true
+  },
+  "sources": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fractional_native_io.js",
+      "git_blob": "5022933725a160e78f075a24cfe83ee2e94c1ef2",
+      "sha256": "078fa066d6772ed75224ee4596b1918ec0d114159dfb5890a779b3843c7fd810",
+      "bytes": 9338
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fractional_native_exact.py",
+      "git_blob": "6524ae53a2c08715f136555ad255454a100133b6",
+      "sha256": "c209ee3ceef72d4a9352a3bed37d70dfe7aef8c7ced239752e4316b5b5c0afaf",
+      "bytes": 21380
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fractional_native_query.py",
+      "git_blob": "1e0e71cf1dee525e38a62b04f05b09e8d23525cc",
+      "sha256": "a350fcad9e2085884b7ef1f566e477688d692ab83a28c235a55cdc30392f43b1",
+      "bytes": 13442
+    }
+  ],
+  "frozen_dependencies": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fractional_structural_recovery.js",
+      "git_blob": "3310e3ecc60267fd8a61a917774a9d60a60b32fb",
+      "sha256": "0a1beefc85a807d5073676b0de380ff714d855e8a9a84c8e6010786a18e39b2b"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fractional_baseline_recovery.js",
+      "git_blob": "8602373ee0f21762c3660bd88b214856153ed91a",
+      "sha256": "2c7f4cf9965426d97eb025793d5912d2b51cc56dc9fced76fd66219333263af1"
+    }
+  ],
+  "literal_inputs": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-fractional-structural-recovery-input.json",
+      "git_blob": "fbe9445d9f247fbbfbaccff367b0ff05afb2442a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fractional-motif-recovery-input.json",
+      "git_blob": "41b0f73b9f6a0061d49859fbd4e32564cea2db17"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-gram-interior-recovery-certificate.json",
+      "git_blob": "6396da7dd3d5fd1df30a88cc3ea847154d62ef38",
+      "role": "positive selector-projection control only; selectors not fixed"
+    }
+  ],
+  "model": {
+    "canonical_sha256": "a30179bd5b2b7c58bb5458a3371a947997da17288a355452469d47a59ab81413",
+    "canonical_bytes": 2087803,
+    "file_sha256": "eb872efde0768eb514c954c57a1f8049785980d2a73e158f1d29842cc0a072cb",
+    "file_bytes": 2087804,
+    "serialization": "JSON.stringify payload in exporter field order, plus one newline in model.json",
+    "structural_specification_sha256": "5b2a8715c9cad3217b72479dd12c733f5b8b73d878cbb70df154167b7e386525",
+    "baseline_specification_sha256": "32172068b93386040b2c3ef0a351d44cfb57484f3ad335ad28f9760516efe1bf",
+    "matrix_sha256": "30bd8808dcd0490fa9ae124abb2ef060cfc8bfcbc57b78eaac0a67fe89f0dd55",
+    "validation_sha256": "baeeafa1485d9b9eadb4b62584b7e5c055ee7ce71a3c68a4a01f3df8b6f2743d",
+    "selector_orbits": 42,
+    "edge_orbits": 5805,
+    "variables": 5847,
+    "equalities": 686,
+    "inequalities": 11373,
+    "nonzeros": 57801,
+    "literal_selectors": 480,
+    "literal_edges": 68394,
+    "literal_rows": 145690,
+    "literal_bounds": 68874
+  },
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "highspy": "1.16.0",
+    "python-flint": "0.9.0"
+  },
+  "controls": {
+    "v8": {
+      "path": "experiments/logs/root-prism-free/f0-fractional-native-io-v8-controls.json",
+      "git_blob": "226754c652efb467d5c3817dd88c414cdc6b15af",
+      "sha256": "0ad14aecebc2452234298012465d7559171486beb569342d265a4a4ee73a5cc7",
+      "result": {
+        "status": "PASS: exact finite-box certificate controls",
+        "feasible_box_multiplier_checks": 153,
+        "strict_infeasible_controls": 3,
+        "negative_inequality_multiplier_rejected": true,
+        "largest_multiplier_bits": 131,
+        "optimizer_calls": 0
+      }
+    },
+    "native_python": "PENDING: required before production query; includes actual flint Dixon control and existence-only HiGHS ray API check",
+    "native_node": "PENDING: required exact model regeneration and Node controls before production query"
+  },
+  "review": {
+    "coordinator_full_source_review": "PASS reported for all three frozen sources and exact payload; formal native preflight gate is owned by coordinator",
+    "production_gate": "CONDITIONAL: preflight must pass all pinned-version, native helper, Node controls and exact model bindings",
+    "no_production_query_run": true
+  },
+  "budgets": {
+    "maximum_production_highs_run_calls": 1,
+    "threads": 1,
+    "lp_requested_seconds_including_setup": 60,
+    "lp_owned_child_hard_seconds": 65,
+    "termination_grace_seconds": 5,
+    "maximum_exact_child_calls": 1,
+    "exact_owned_child_hard_seconds": 60,
+    "maximum_active_face_reduced_columns": 800,
+    "maximum_nonpivot_coordinate_proposals": 32,
+    "integer_bit_cap": 8192,
+    "retry_allowed": false,
+    "missing_dual_ray_auxiliary_optimization_allowed": false
+  },
+  "cli": {
+    "node_controls": [
+      "node",
+      "experiments/workspace/root_prism_free_f0_fractional_native_io.js",
+      "controls",
+      "NODE_CONTROL_OUTPUT.json"
+    ],
+    "python_controls": [
+      "python",
+      "experiments/workspace/root_prism_free_f0_fractional_native_query.py",
+      "controls",
+      "--output",
+      "PYTHON_CONTROL_OUTPUT.json"
+    ],
+    "export": [
+      "node",
+      "experiments/workspace/root_prism_free_f0_fractional_native_io.js",
+      "export",
+      "experiments/logs/root-prism-free/f0-fractional-structural-recovery-input.json",
+      "experiments/logs/root-prism-free/f0-fractional-motif-recovery-input.json",
+      "experiments/logs/root-prism-free/f0-gram-interior-recovery-certificate.json",
+      "FRESH_EXPORT_DIRECTORY"
+    ],
+    "query": [
+      "python",
+      "experiments/workspace/root_prism_free_f0_fractional_native_query.py",
+      "query",
+      "--model",
+      "EXPORT_DIRECTORY/model.json",
+      "--directory",
+      "FRESH_QUERY_DIRECTORY",
+      "--lp-seconds",
+      "60",
+      "--exact-seconds",
+      "60"
+    ],
+    "independent_replay": [
+      "node",
+      "experiments/workspace/root_prism_free_f0_fractional_native_io.js",
+      "replay",
+      "EXPORT_DIRECTORY/model.json",
+      "QUERY_DIRECTORY/exact.json",
+      "REPLAY_OUTPUT.json"
+    ]
+  },
+  "expected_output_files": {
+    "export": [
+      "model.json",
+      "export.json",
+      "io-controls.json"
+    ],
+    "query": [
+      "result.json",
+      "numerical.json",
+      "exact.json",
+      "exact-progress.json",
+      "numerical.stdout.log",
+      "numerical.stderr.log",
+      "exact.stdout.log",
+      "exact.stderr.log"
+    ],
+    "qualification": "Phase-dependent files may be absent after a hard stop; preserve actual process status and files without inventing a certificate."
+  },
+  "acceptance": {
+    "point": "Python exact quotient/full replay plus independent Node full literal-row/bound replay.",
+    "farkas": "Integer equality multipliers, nonnegative inequality multipliers, strict finite-unit-box gap, independent Node replay and existing complete quotient coverage proof.",
+    "floating_status": "No mathematical conclusion by itself.",
+    "no_point_or_ray": "UNKNOWN or ERROR as recorded; no conditional exclusion.",
+    "exact_feasible_scope": "Fractional joint baseline only, not an SRG construction or Boolean incidence.",
+    "exact_infeasible_scope": "The stated component-zero conditional stratum only, not unrestricted nonexistence."
+  },
+  "note": {
+    "path": "research/root_prism_free_f0_fractional_native_query.md",
+    "git_blob": "47109b4d92d54ce18649c6e1242c7006fbd48d9d",
+    "sha256": "e1913413b931f1f77d20447f7121241eaf0d90722ddeaa66445192925e3d7d4f"
+  }
+}

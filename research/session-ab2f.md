@@ -909,3 +909,9 @@ The recovery workflow at commit 27938c7 passed all eight Node filesystem checks.
 An exact evaluation of the reconstructed case-four Gram point finds one failed triple capacity and 21 failed exterior-row inequalities. All 186 signature capacities, thirty Gram no-goods and fourteen older zero units pass. This rejects that rational point from the stronger relaxation and does not exclude case four.
 
 The complete selector-LP recovery source has been read and hash-checked by the coordinator. It imports three public inputs, proves all 58 fixed zeros, accounts for all 2,271 native rows and 178,533 covers, and requires the pre-outage exact row stream. A separate native preparation/cold-replay job is queued by this commit. No optimizer is authorized at this preparation stage.
+
+## Checkpoint 47: complete rook model recovered; joint F0 query gate
+
+The complete rook selector LP has been recovered and independently rebuilt. Its 174,208-row integer stream and 5,312,569-byte compressed matrix match both captured pre-outage hashes exactly. The new model JSON, preparation and cold records are preserved; the old lost source is not represented as recovered.
+
+The F0 native exporter, exact helper and one-call supervisor have all been read and hash-checked. The coordinator rebuilt the 2,087,803-byte model payload from the frozen specifications and matched its exact canonical hash. The workflow requires native arithmetic controls and exact export before one sixty-second joint LP, then permits one sixty-second exact reconstruction. Full original-row or strict integer Farkas replay is required for any mathematical conclusion. The query outcome is pending. The unavailable terminal selector-cut registry remains outside this baseline.

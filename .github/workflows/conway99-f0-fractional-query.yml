@@ -1,0 +1,127 @@
+name: Conway 99 joint F0 fractional query
+
+on:
+  push:
+    branches: [research/global-constraints-ab2f]
+    paths:
+      - .github/workflows/conway99-f0-fractional-query.yml
+      - experiments/logs/root-prism-free/f0-fractional-native-query-request.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: conway99-f0-fractional-query-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  one-joint-query:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 8
+    steps:
+      - name: Check out the reviewed source and exact inputs
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/workspace/root_prism_free_f0_fractional_native_io.js
+            /experiments/workspace/root_prism_free_f0_fractional_native_exact.py
+            /experiments/workspace/root_prism_free_f0_fractional_native_query.py
+            /experiments/workspace/root_prism_free_f0_fractional_structural_recovery.js
+            /experiments/workspace/root_prism_free_f0_fractional_baseline_recovery.js
+            /experiments/logs/root-prism-free/f0-fractional-structural-recovery-input.json
+            /experiments/logs/root-prism-free/f0-fractional-motif-recovery-input.json
+            /experiments/logs/root-prism-free/f0-gram-interior-recovery-certificate.json
+            /experiments/logs/root-prism-free/f0-fractional-native-root-gate.json
+            /experiments/logs/root-prism-free/f0-fractional-native-query-request.json
+      - name: Check the source gate and one-query request
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          folder = pathlib.Path("experiments/logs/root-prism-free")
+          gate = json.loads((folder / "f0-fractional-native-root-gate.json").read_text())
+          request = json.loads((folder / "f0-fractional-native-query-request.json").read_text())
+          for name, expected in gate["sources"].items():
+              source = pathlib.Path(name)
+              assert hashlib.sha256(source.read_bytes()).hexdigest() == expected
+              if source.suffix == ".py":
+                  compile(source.read_text(), str(source), "exec")
+          assert request["model_sha256"] == gate["model_canonical_sha256"]
+          assert request["preflight_must_pass"] and request["maximum_optimizer_calls"] == 1
+          assert request["lp_seconds"] == request["exact_seconds"] == 60
+          PY
+      - name: Install the pinned native dependencies
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv "$RUNNER_TEMP/conway99-f0-env"
+          "$RUNNER_TEMP/conway99-f0-env/bin/python" -m pip install --disable-pip-version-check numpy==2.3.5 scipy==1.17.0 highspy==1.16.0 python-flint==0.9.0
+          mkdir "$RUNNER_TEMP/conway99-f0"
+      - name: Pass arithmetic controls and exact model export
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/conway99-f0-env/bin/python" experiments/workspace/root_prism_free_f0_fractional_native_query.py controls --output "$RUNNER_TEMP/conway99-f0/python-controls.json"
+          node experiments/workspace/root_prism_free_f0_fractional_native_io.js export experiments/logs/root-prism-free/f0-fractional-structural-recovery-input.json experiments/logs/root-prism-free/f0-fractional-motif-recovery-input.json experiments/logs/root-prism-free/f0-gram-interior-recovery-certificate.json "$RUNNER_TEMP/conway99-f0/model"
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib
+          folder = pathlib.Path(os.environ["RUNNER_TEMP"]) / "conway99-f0"
+          for name in ("python-controls.json", "model/io-controls.json"):
+              control = json.loads((folder / name).read_text())
+              assert control["status"].startswith("PASS") and control["optimizer_calls"] == 0
+          exported = json.loads((folder / "model/export.json").read_text())
+          assert exported["status"].startswith("PASS") and exported["optimizer_called"] is False
+          assert exported["model_canonical_sha256"] == "a30179bd5b2b7c58bb5458a3371a947997da17288a355452469d47a59ab81413"
+          assert exported["variables"] == 5847 and exported["equalities"] == 686 and exported["inequalities"] == 11373
+          assert exported["nonzeros"] == 57801
+          assert hashlib.sha256((folder / "model/model.json").read_bytes()).hexdigest() == exported["model_file_sha256"] == "eb872efde0768eb514c954c57a1f8049785980d2a73e158f1d29842cc0a072cb"
+          PY
+      - name: Run one bounded joint query and exact reconstruction
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/conway99-f0-env/bin/python" experiments/workspace/root_prism_free_f0_fractional_native_query.py query --model "$RUNNER_TEMP/conway99-f0/model/model.json" --directory "$RUNNER_TEMP/conway99-f0/query" --lp-seconds 60 --exact-seconds 60
+          if [ -f "$RUNNER_TEMP/conway99-f0/query/exact.json" ]; then
+            node experiments/workspace/root_prism_free_f0_fractional_native_io.js replay "$RUNNER_TEMP/conway99-f0/model/model.json" "$RUNNER_TEMP/conway99-f0/query/exact.json" "$RUNNER_TEMP/conway99-f0/independent-replay.json"
+          fi
+          python3 - <<'PY'
+          import json, os, pathlib
+          result = json.loads((pathlib.Path(os.environ["RUNNER_TEMP"]) / "conway99-f0/query/result.json").read_text())
+          assert not result["status"].startswith("ERROR"), result["status"]
+          assert result.get("optimizer_calls_recorded", 0) <= 1
+          PY
+      - name: Print durable proposal and exact certificate records
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os, pathlib, sys
+          folder = pathlib.Path(os.environ["RUNNER_TEMP"]) / "conway99-f0"
+          names = ("python-controls.json", "model/io-controls.json", "model/export.json",
+                   "query/result.json", "query/numerical.json", "query/exact.json",
+                   "query/exact-progress.json", "independent-replay.json",
+                   "query/numerical.stdout.log", "query/numerical.stderr.log",
+                   "query/exact.stdout.log", "query/exact.stderr.log")
+          for name in names:
+              path = folder / name
+              if path.is_file():
+                  tag = name.replace("/", "_").replace(".", "_").replace("-", "_").upper()
+                  sys.stdout.write("CONWAY99_F0_" + tag + "_BEGIN\n")
+                  raw = path.read_text()
+                  sys.stdout.write(raw)
+                  if raw and not raw.endswith("\n"):
+                      sys.stdout.write("\n")
+                  sys.stdout.write("CONWAY99_F0_" + tag + "_END\n")
+          PY
+      - name: Retain all source-bound model, proposal and replay files
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: conway99-f0-fractional-${{ github.sha }}
+          path: ${{ runner.temp }}/conway99-f0/
+          if-no-files-found: error
+          retention-days: 7

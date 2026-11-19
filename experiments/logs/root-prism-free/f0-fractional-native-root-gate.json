@@ -1,0 +1,44 @@
+{
+  "schema": "conway99.f0-native-query-root-gate.v1",
+  "status": "SOURCE_REVIEW_PASS_CONDITIONAL_ON_NATIVE_PREFLIGHT",
+  "date_utc": "2026-11-19",
+  "sources": {
+    "experiments/workspace/root_prism_free_f0_fractional_native_io.js": "078fa066d6772ed75224ee4596b1918ec0d114159dfb5890a779b3843c7fd810",
+    "experiments/workspace/root_prism_free_f0_fractional_native_exact.py": "c209ee3ceef72d4a9352a3bed37d70dfe7aef8c7ced239752e4316b5b5c0afaf",
+    "experiments/workspace/root_prism_free_f0_fractional_native_query.py": "a350fcad9e2085884b7ef1f566e477688d692ab83a28c235a55cdc30392f43b1"
+  },
+  "all_three_sources_read_by_coordinator": true,
+  "export_model_reproduced_in_V8": true,
+  "model_canonical_sha256": "a30179bd5b2b7c58bb5458a3371a947997da17288a355452469d47a59ab81413",
+  "matrix_sha256": "30bd8808dcd0490fa9ae124abb2ef060cfc8bfcbc57b78eaac0a67fe89f0dd55",
+  "required_native_preflight": [
+    "pinned dependency version check",
+    "positive and negative rational point controls",
+    "exact finite-box Farkas sign controls",
+    "actual python-flint active-face solve control",
+    "modular pivot row-swap control",
+    "empty existing-ray API control without any optimizer",
+    "hash-bound Node full structural/motif export"
+  ],
+  "production": {
+    "maximum_Highs_run_calls": 1,
+    "solver_threads": 1,
+    "lp_seconds_including_setup": 60,
+    "owned_numerical_child_hard_seconds": 65,
+    "exact_reconstruction_child_hard_seconds": 60,
+    "automatic_retry": false,
+    "ray_generation_when_no_existing_ray": false
+  },
+  "acceptance": {
+    "point": "all quotient and all145690 full original rows plus68874 bounds; independent Node replay",
+    "infeasibility": "strict arbitrary-precision finite-box Farkas gap; independent Node replay",
+    "numerical_status_alone_accepted": false
+  },
+  "scope": {
+    "joint_structural_and_motif_baseline": true,
+    "component_zero": true,
+    "terminal_4404_cut_registry_included": false,
+    "earlier_12_weighted_rows_included": false,
+    "global_graph_resolution": false
+  }
+}

@@ -185,3 +185,5 @@ remains feasible.
 - [Finite-box max-min certificates](research/grids-and-triangles/rook_case4_maxmin_certificate.md) derive exact forced-selector rules and verify small controls. The case-four max-min query is not implemented by this package.
 
 - [Exact stronger-row evaluation](research/grids-and-triangles/rook_case4_gram_native_evaluation.md) rejects the recovered Gram point by one triple capacity and 21 exterior-row inequalities. The full selector LP is being recovered separately from the public complete cover registry.
+
+- [Complete case-four selector LP recovery](research/grids-and-triangles/rook_case4_complete_lp_recovery.md) reproduces the full 174,208-row matrix and pre-outage compressed-array hash from public inputs. Native preparation and full reconstruction pass; the optimizer is a later stage.

@@ -8,7 +8,8 @@ The [complete fractional F0 structural/motif model](research/root_prism_free_f0_
 The case-four point also proves that every shifted integer quadratic inequality derived only from its Gram equations passes.
 The stronger selector capacities, covers and exterior-edge conditions remain separate.
 An [exact evaluation](research/grids-and-triangles/rook_case4_gram_native_evaluation.md) rejects the Gram point by one triple capacity and 21 exterior-row inequalities.
-The fresh native recovery run passed all eight Node entry points. Complete rook-LP preparation from public inputs is now queued, with no optimizer authorized at that stage.
+The fresh native recovery run passed all eight Node entry points. [Complete rook-LP preparation and cold reconstruction](research/grids-and-triangles/rook_case4_complete_lp_recovery.md) passed with the exact pre-outage matrix hashes. Its max-min optimizer is still pending.
+One bounded joint F0 fractional query is now authorized only after native arithmetic controls and exact model export pass; its outcome is not yet known.
 
 The [checkpoint-43 recovery record](research/checkpoint43_recovery.md) distinguishes newly recovered results from files still in the unavailable workspace.
 An independently rerun [integer-incidence proof](research/grids-and-triangles/high_graph_core16_recovered_proof.md) excludes 31 specified sixteen-vertex cores.

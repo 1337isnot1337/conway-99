@@ -1,0 +1,34 @@
+{
+  "status": "PASS: independent read-only mathematical and source review",
+  "source_bindings": [
+    {
+      "git_blob_sha": "6524ae53a2c08715f136555ad255454a100133b6",
+      "sha256": "c209ee3ceef72d4a9352a3bed37d70dfe7aef8c7ced239752e4316b5b5c0afaf",
+      "scope": "Complete exact helper source read"
+    },
+    {
+      "git_blob_sha": "1e0e71cf1dee525e38a62b04f05b09e8d23525cc",
+      "sha256": "a350fcad9e2085884b7ef1f566e477688d692ab83a28c235a55cdc30392f43b1",
+      "scope": "Complete native supervisor source read"
+    }
+  ],
+  "checked": {
+    "exact_unit_box_Farkas": "Equality multipliers are unrestricted; upper-inequality multipliers are nonnegative. The exact minimum of the combined coefficient row on [0,1]^n is sum(min(c_j,0)); rhs-sum(min(c_j,0))<0 is a valid contradiction.",
+    "numerical_active_face": "Tight activation aliases, rounded bounds and active inequalities restrict only a proposed reconstruction. They do not restrict the mathematical model, and every accepted point is tested on every original row.",
+    "modular_minor": "The F65521 elimination certifies only a nonsingular rational minor. A small modular rank is not claimed to be the full rational rank; all final equations still decide acceptance.",
+    "overflow": "Each modular entry/factor is below65521, so the NumPy int64 elimination products and subtraction are within signed64 range.",
+    "rational_solve": "Nonpivot coordinates are explicit rational proposals; the selected square minor is solved over fmpq and the restored full point is checked using Python integers.",
+    "full_domain_replay": "The 5847 quotient coordinates expand to all480 selectors and68394 edges. The checker covers171 Gram entries, population,8640 mixed rows,136788 endpoint inequalities,90 motif inequalities and all68874 unit-box variables.",
+    "query_scope": "The supervisor makes one explicit Highs.run call; getDualRay is used only after an existing-ray check. Numerical and exact phases have separate owned-child timeouts and no retry.",
+    "incomplete_outcomes": "Numerical infeasibility, failed rational reconstruction, errors and timeouts are not exclusions. Accepted exact outcomes still require the independent Node replay."
+  },
+  "checks_not_performed": [
+    "No subject source was imported or executed",
+    "No native control was rerun",
+    "No matrix/domain/exporter was rebuilt",
+    "No optimizer, rational elimination or proof computation was performed"
+  ],
+  "resource_scope": "The source's8192bit checks apply to final rational coordinates/common denominator. The fmpq solve is bounded by the owned exact-phase process timeout rather than a claimed intermediate-bit cap.",
+  "observed_soundness_blockers": [],
+  "mathematical_outcome_claimed": false
+}
