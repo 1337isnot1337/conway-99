@@ -1,0 +1,62 @@
+{
+  "status": "EXACT_ALL33_SMALL_ROOT_DECORATED_DISTRIBUTIONS; independent direct incidence-sum replay PASS",
+  "preparation_manifest_git_blob": "2b954bb7bc5a0e8b9ace9688aed34be151f3abb0",
+  "preparation_manifest_sha256": "a193a0b6febb5cd5d3c109fb95b98adc4b901834a43bb393ac94ac38a246aefe",
+  "independent_mathematical_review": {
+    "path": "experiments/logs/moments-and-counts/order10-small-roots-decorated-independent-review.json",
+    "git_blob_sha": "d3f238fb81414d9c2bb5dc0e76c000e564dcb935"
+  },
+  "entries": [
+    {
+      "path": "experiments/logs/moments-and-counts/small-root-decorated-moment-query01.json",
+      "git_blob_sha": "c1921a56faa99313bcb5d641bfd66754b45ad9eb",
+      "sha256": "6a520522d41cbe0d224a27b77bfd4d0863fa26f7f8efe13873a6883866d5f7f0",
+      "bytes": 97206
+    },
+    {
+      "path": "experiments/workspace/small_root_decorated_moment_direct_verify.js",
+      "git_blob_sha": "cd6562d764b8365f9a53bfecc5d41be3413e90b5",
+      "sha256": "3d07887ba2e491a59d7b59b7c09fb2ae6f7c242274a1e7766ab48ce32a84fbfe",
+      "bytes": 7749
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/small-root-decorated-moment-direct-replay.json",
+      "git_blob_sha": "1a2e06e5acbd81ccd2048f7edddf8f191c5dbeae",
+      "sha256": "11f4ac282a13009f130db154ff0a1583cac88d953d0d790833325708b011a9d5",
+      "bytes": 5476
+    },
+    {
+      "path": "research/grids-and-triangles/small_root_decorated_moments_result.md",
+      "git_blob_sha": "3935c3d4c047a55188c0c6f4e9a2e0cf326a87d1",
+      "sha256": "9c8a86daee5b737779d2393e160a7a234910129375ad4b3f40f9ec0cd7622f7e",
+      "bytes": 1774
+    }
+  ],
+  "run": {
+    "milliseconds": 6097,
+    "production_queries": 1,
+    "optimizer_calls": 0,
+    "source_blob": "d5fdb55ddbf2da721302299b2d8355754904282f",
+    "preparation_blob": "683261d3bce6c56eafe9398f9da466f96dc687d7",
+    "point_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46"
+  },
+  "point_git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+  "point_raw_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "summary": {
+    "roots": 33,
+    "decorated_states": 1275,
+    "presence_atoms": 1115,
+    "decorated_orbits": 589,
+    "positive_weights": 1092,
+    "zero_weights": 183,
+    "negative_weights": 0,
+    "direct_pattern_equations": 1275,
+    "direct_state_pair_tests": 114847
+  },
+  "direct_replay_does_not_use_inversion_or_extension_lists": true,
+  "optimizer_calls": 0,
+  "additional_count_queries": 0,
+  "new_separator": false,
+  "local_domain_only": true,
+  "full_graph_existence_resolved": false
+}

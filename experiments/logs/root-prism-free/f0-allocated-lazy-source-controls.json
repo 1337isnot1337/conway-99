@@ -1,0 +1,46 @@
+{
+  "status": "unchanged candidate/clause gates, limits and full proof-wrapper AST controls PASS",
+  "source_sha256": "d0afd428a5d9db7bf06691b2177dbcf5fcbae2937fee4996969345ecf8fb5d3b",
+  "file_hashes": {
+    "root_prism_free_f0_bounded_lazy_continuation.py": "361484188521fc5c741be4aa8a7e1a10a9b4e76116ae51d8d9e76b272bc78dd2",
+    "root_prism_free_f0_allocated_lazy_continuation.py": "46b30a4e7c64db612cff606bd56aa05da44356547f617e977a8fa17ac0da4c8d",
+    "root_prism_free_f0_bounded_lazy_continuation_certificate.py": "a234af13fe68e33ce16d4eb70b45a147e8d804be6fbe59c608f71c98020209db",
+    "root_prism_free_f0_allocated_lazy_continuation_certificate.py": "1ca1ba702f7e50aa49dba01cc6fe34bdb1f64c106abc0c5438d9c2aa397d318f"
+  },
+  "unchanged_loop_functions": [
+    "save_gzip",
+    "check_sources",
+    "formula",
+    "inspect_candidate",
+    "symmetric_candidates",
+    "explain_candidate",
+    "add_row_cuts",
+    "bound_record",
+    "replay_batch"
+  ],
+  "review_required_changed_loop_functions": [
+    "checked_preparation",
+    "finish_step",
+    "input_state",
+    "prepare",
+    "reconstruct",
+    "run"
+  ],
+  "new_loop_functions": [
+    "apply_quadratic",
+    "shared_family_origin"
+  ],
+  "unchanged_limits": {
+    "maximum_SAT_refinement_calls": 1000,
+    "maximum_row_passes": 100,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "shared_LP_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000
+  },
+  "proof_wrapper_entire_AST_identical_after_single_import": true,
+  "new_loop_semantics_require_separate_source_review": true,
+  "subject_import_or_solver_called": false
+}

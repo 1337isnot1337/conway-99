@@ -1,5 +1,17 @@
 # Computations and replay
 
+## Checkpoint 49 recovery and moment replays
+
+The [checkpoint record](../research/checkpoint49_recovered_moment_certificates.md) describes the restored 4,404-cut F0 transcript, the refined 200-row rational measure, all 33 decorated small-root distributions and the root-42 presence interval. These are exact finite certificates. The F0 search remains UNKNOWN; the moment tests pass at the recorded count point.
+
+The refined measure has a portable optimizer-free replay:
+
+```sh
+python experiments/workspace/audit_refined_query_portable.py --root .
+```
+
+The decorated and root-42 replay commands are documented in their [decorated result note](../research/grids-and-triangles/small_root_decorated_moments_result.md) and [interval result note](../research/grids-and-triangles/root42_packing_moment_interval_result.md). Separate root replays are saved beside the original reports. For the complete F0 transcript, use the disposable-checkout bundle replay described in the [recovery note](../research/root_prism_free_f0_allocated_lazy_run01_recovered.md).
+
 ## Main checks
 
 From the repository root, use Python, GNU Make, and a C++20 compiler. The archived checks were replayed with Python 3.14 and GCC 16.

@@ -1,0 +1,117 @@
+{
+  "status": "FROZEN_POINT_INDEPENDENT_ROOT42_INTERVAL_PREPARATION",
+  "files": [
+    {
+      "path": "experiments/workspace/root42_packing_moment_scope.js",
+      "git_blob": "2ab3477323b6a4dff2e66c688fea7826a7490630"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-packing-moment-scope.json",
+      "git_blob": "12cf57550d1f00dc156793073745e04c20c1002f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-public-extraction-request.json",
+      "git_blob": "768bf542248d214b6e74412e35780233604d1986"
+    },
+    {
+      "path": "experiments/workspace/root42_public_input_extract.py",
+      "git_blob": "23066298dbeb900e0b5d884c9bd5673625fd64b5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-public-recovery-inputs.json",
+      "git_blob": "ad89299823eef485ceeeea4824ce0eb9ebacbb3a",
+      "bytes": 25993,
+      "sha256": "b94f3b16416e9f9524bfd0aa205e351b4a094242051955243e94a126ffecfa71"
+    },
+    {
+      "path": "experiments/workspace/root42_packing_moment_interval_check.js",
+      "git_blob": "9f78b4b3075d3f5c991ce47379e593d11f7f992b"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-packing-moment-interval-preparation.json",
+      "git_blob": "7f6b7952f81dc6c1ee0f25e12379e3dcd3656979",
+      "bytes": 133118
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-packing-moment-interval-preparation-replay.json",
+      "git_blob": "93645da9f438e486a26ea66ba1f84ec5bd7baffd"
+    },
+    {
+      "path": "research/grids-and-triangles/root42_packing_moment_interval.md",
+      "git_blob": "e65b36fa437ea0d2ea4cfc6861745a3a2d36f613"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "experiments/workspace/root49_packing_moment_recovery_check.js",
+      "git_blob": "d547df71ef544fc7e36a8580bc9f7bdc311d6871"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-other-roots-scope01.json",
+      "git_blob": "4bc0045ae1447160dbf667a1918e32a9f4e3c454"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-small-roots-packing-moment-recovery-preparation.json",
+      "git_blob": "537b722f2dd4f964c5fa053d5398e41c60b4ed9d"
+    }
+  ],
+  "summary": {
+    "root_automorphisms": 24,
+    "all_presence_sets_checked": 1024,
+    "atoms": 253,
+    "lower_moments": 241,
+    "moment_orbits": 23,
+    "atom_orbits": 24,
+    "fifth_atoms": 12,
+    "fifth_orbits": 1,
+    "literal_types": 31,
+    "product_rows": 67,
+    "product_nonzeros": 82,
+    "induced_completion_transports": 241,
+    "literal_completions_transported": 319,
+    "symbolic_zeta_equations": 253,
+    "symbolic_quotient_equations": 23,
+    "free_action_checks": 6072,
+    "synthetic_distribution_controls": 3
+  },
+  "preparation_execution": {
+    "status": "PASS",
+    "milliseconds": 614,
+    "source_git_blob": "9f78b4b3075d3f5c991ce47379e593d11f7f992b"
+  },
+  "cold_owner_replay": {
+    "status": "EXACT_COLD_ROOT42_INTERVAL_PREPARATION_REPLAY_PASS",
+    "source_git_blob": "9f78b4b3075d3f5c991ce47379e593d11f7f992b",
+    "preparation_git_blob": "7f6b7952f81dc6c1ee0f25e12379e3dcd3656979",
+    "input_git_blob": "ad89299823eef485ceeeea4824ce0eb9ebacbb3a",
+    "exact_serialized_match": true,
+    "milliseconds": 535,
+    "summary": {
+      "root_automorphisms": 24,
+      "all_presence_sets_checked": 1024,
+      "atoms": 253,
+      "lower_moments": 241,
+      "moment_orbits": 23,
+      "atom_orbits": 24,
+      "fifth_atoms": 12,
+      "fifth_orbits": 1,
+      "literal_types": 31,
+      "product_rows": 67,
+      "product_nonzeros": 82,
+      "induced_completion_transports": 241,
+      "literal_completions_transported": 319,
+      "symbolic_zeta_equations": 253,
+      "symbolic_quotient_equations": 23,
+      "free_action_checks": 6072,
+      "synthetic_distribution_controls": 3
+    },
+    "count_point_loaded": false,
+    "optimizer_called": false,
+    "independence": "Fresh invocation of the same preparation source; no independent algorithm is claimed."
+  },
+  "count_point_loaded": false,
+  "optimizer_called": false,
+  "gate": "No point contraction has run. Parent must review source, note and preparation before the single exact interval query.",
+  "scope": "Complete root42 necessary high-mask presence moment model. No graph existence claim.",
+  "publication": "Blobs only; parent owns trees, commits, refs and shared documentation."
+}

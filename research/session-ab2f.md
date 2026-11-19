@@ -6,11 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Test the complete complementary-rook case-four selector relaxation with one max-min query and exact certificate replay. Owned by the coordinating worker.
-2. Test the complete decorated high-mask distributions for all 33 small roots. Owned by the independent-set worker.
-3. Test the root-42 one-scalar moment interval, including stabilizer divisibility. Owned by the literature worker.
-4. Recover the full F0 Boolean registry and prepare its normalized fractional strengthening. Owned by the completion worker.
-5. Source review, independent arithmetic replay, bounded execution and publication. Owned by the coordinating worker.
+1. Complete the compressed complementary-rook case-four max-min query, certify any forced selector face, and propagate its exact consequences. Owned by the independent-set worker.
+2. Test joint F0 selector moments after the current exact point passed all 4,416 Boolean-normalized cuts. Owned by the completion worker.
+3. Finish the decorated root-42 two-parameter certificate and review stronger triangle-incidence constraints. Owned by the literature worker.
+4. Evaluate the complete four-root triangle-incidence projector family, integrate results, and publish reviewed checkpoints. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -30,6 +29,11 @@ not meet that target. New reductions will be checked on known graphs when
 their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
+
+- Checkpoint 49 publishes the recovered 363-member F0 transcript. Its 4,404 proved cuts, 94 checked candidates, 64 full or partial row passes, 3,701 exact row boxes and 14 exact shared-edge obstructions pass a fresh optimizer-disabled replay. The original bounded run remains UNKNOWN. The misleadingly named terminal-registry seed contains only 2,928 cuts; the final registry is in the archived run directory.
+- The recovered refined high-graph measure has 200 positive rational masses of denominator 988761395399693539 and total mass 72,926,995,680. A portable audit checks all 200 original moments, 400 exact projector characteristic polynomials and 200 shifted integer-incidence inequalities on its support. It does not claim a new replay of every removed domain column.
+- All 33 decorated small-root models pass exact direct replay: 1,275 states, 1,092 positive masses, 183 zero masses. The separate root-42 presence model has the exact even interval [0,9794] for its one missing fifth moment; zero yields 241 positive masses and 12 zero masses. Independent root replays import neither query nor inversion helpers.
+- The earlier 33-root presence, full F0 fractional-baseline and interrupted full rook max-min results remain as recorded in checkpoint 48. No finite-measure certificate is promoted to a graph construction or unrestricted exclusion.
 
 - Inspected the research ledger, public claims, and existing issue ownership.
 - Started separate spectral, independent-set, and completion investigations.

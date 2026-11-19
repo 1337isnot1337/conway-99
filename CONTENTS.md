@@ -1,6 +1,6 @@
 # Research catalog
 
-Checkpoint 48 records an [exact feasible joint F0 baseline](research/root_prism_free_f0_fractional_exact_baseline.md) and [complete nonnegative presence distributions for all 33 small roots](research/grids-and-triangles/small_roots_packing_moment_recovery_result.md). Both concern necessary relaxations and leave graph existence unresolved.
+Checkpoint 49 publishes [complete recovered transcripts and exact finite moment certificates](research/checkpoint49_recovered_moment_certificates.md). It adds the 4,404-cut F0 search record with a fresh exact replay, the refined 200-row rational measure, all 33 decorated small-root distributions, and the root-42 even moment interval. None resolves graph existence.
 
 Every structural result below concerns a hypothetical strongly regular graph with parameters $(99,14,1,2)$. The ledger gives the assumptions and stopping points of the construction and solver runs. [Research ledger](STATE.md)
 

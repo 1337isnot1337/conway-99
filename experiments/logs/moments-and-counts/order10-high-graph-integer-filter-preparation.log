@@ -1,0 +1,58 @@
+{
+  "status": "complete-domain integer-incidence filter prepared; no full filter run",
+  "source_sha256": "29b7778bcb0838bc6e2062e530798d85ef3057ed7801e9e49b23498dd07115a1",
+  "bindings": {
+    "domain": {
+      "name": "order10-high-mask-graph-domain.json",
+      "sha256": "39fb9f237327616f83917a15644c36a2f397d5c938720b4dff9278d4262d94f8"
+    },
+    "features": {
+      "name": "order10-high-mask-graph-features.json",
+      "sha256": "fc5c2876dfdbfe6b9237a0ebfa610742fda9e3127bd00d6b0676e6e2ee576596"
+    },
+    "patterns": {
+      "name": "order10-high-mask-graph-patterns.json",
+      "sha256": "86248876874c7b3ded078aec9e189de6f9728302137bb857ffe1500ad519400b"
+    },
+    "moments": {
+      "name": "order10-high-mask-graph-moments01.json",
+      "sha256": "43bde72fa777410a73732d418530a6a853a39740a1b7bcfc591d78977ad4cc3d"
+    },
+    "point": {
+      "name": "prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json",
+      "sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+    },
+    "projector_filter": {
+      "name": "order10-high-mask-graph-projectors-complete01.json.gz",
+      "sha256": "9160decc71391fe42ec3f523b773f90708645bb524067122884c6d42e4c9566f"
+    },
+    "old_witness": {
+      "name": "order10-high-mask-graph-query01.json",
+      "sha256": "99261d06e9ad1219c0a580abe1715642ed11eff4a425fb030f8d7de05727beb9"
+    }
+  },
+  "full_graph_columns": 157711,
+  "maximum_core_order": 16,
+  "literal_full_core_feature_controls": 400,
+  "control_shift_counts": {
+    "-1": 277,
+    "0": 123
+  },
+  "maximum_feature_column_sum": 386,
+  "maximum_feature_coefficient": 114,
+  "int64_feature_contraction_absolute_bound": 44004,
+  "all_other_certificate_arithmetic": "Python integers",
+  "optimal_shift": "floor(first_moment/outside_population)",
+  "possible_optimal_shifts": [
+    -1,
+    0
+  ],
+  "maximum_scan_seconds": 60,
+  "unvisited_columns_retained_on_timeout": true,
+  "every_removal_requires_direct_full_core_integer_certificate": true,
+  "optimizer_called": false,
+  "full_domain_scan_called": false,
+  "seconds": 0.291009065003891,
+  "peak_rss_kib": 69612
+}
+preparation_sha256 2c0a029e556b1e933d674b1236e405d127a3fffd35553223a876370befd5c141

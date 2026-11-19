@@ -1,0 +1,65 @@
+{
+  "status": "Frozen point-independent preparation and cold replay; count query unrun",
+  "entries": [
+    {
+      "path": "experiments/workspace/small_root_decorated_moment_recovery.js",
+      "git_blob_sha": "d5fdb55ddbf2da721302299b2d8355754904282f",
+      "sha256": "c5522869f052daac2689b5cafa8ef5f0900c36bda9f6fc87e341e5a1df38f5f3",
+      "bytes": 26369
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/small-root-decorated-moment-preparation.json",
+      "git_blob_sha": "683261d3bce6c56eafe9398f9da466f96dc687d7",
+      "sha256": "2f97208fe3ef237d18c468886645208f7ae468d4e095550af790b29c5202ae75",
+      "bytes": 3449633
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/small-root-decorated-moment-preparation-replay.json",
+      "git_blob_sha": "b5acd0b59550d3bbe644ad00c7493adff78b1470",
+      "sha256": "a0e1a6cb5d6857ad769c0cce39fba0ec946efc4dcb501dda903921838c2b192f",
+      "bytes": 1249
+    },
+    {
+      "path": "research/grids-and-triangles/small_root_decorated_moments.md",
+      "git_blob_sha": "a6e81f8ce4110f10174d1cc8b41e8210137cc886",
+      "sha256": "50e9fd2247f545a531dfd681a9731789c069ed08c8cfae0e1efbcda99043e7da",
+      "bytes": 6748
+    }
+  ],
+  "input_bindings": {
+    "small32_preparation_git_blob": "537b722f2dd4f964c5fa053d5398e41c60b4ed9d",
+    "small32_preparation_sha256": "7ff07b4098759a56844b346087ea16cc66584b79b3b7d89d110ae97dc06f67ca",
+    "small32_source_git_blob": "34085dd6833ab816968ede0ba4637e44713b37fc",
+    "root49_preparation_git_blob": "051d30abea64b1e4060e51f103c619844ba864e7",
+    "root49_preparation_sha256": "b134b6c61042335fcd96d3bc227218590be6885fba80377ab9542029dfd20bac",
+    "isomorphism_dependency_git_blob": "d547df71ef544fc7e36a8580bc9f7bdc311d6871",
+    "count_point_git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+    "count_point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+  },
+  "summary": {
+    "roots": 33,
+    "presence_atoms": 1115,
+    "decorated_states": 1275,
+    "roots_with_nonempty_high_edges": 9,
+    "decorated_orbits": 589,
+    "distinct_catalogue_types": 313,
+    "automorphism_recounts": 313,
+    "literal_isomorphism_checks": 1275,
+    "frozen_product_rows_checked": 2450,
+    "raw_presence_sets_checked": 5231,
+    "internal_edge_assignments_checked": 8766,
+    "five_subsets_checked": 4113,
+    "induced_restrictions_checked": 8011,
+    "atomic_indicator_equalities_checked": 114847,
+    "presence_form_equalities_checked": 1115,
+    "root_group_state_transports_checked": 5175,
+    "stabilizer_divisibility_forms_checked": 1275
+  },
+  "native_command": "node experiments/workspace/small_root_decorated_moment_recovery.js prepare SMALL32_PREPARATION_JSON ROOT49_PREPARATION_JSON",
+  "future_query_command": "node experiments/workspace/small_root_decorated_moment_recovery.js query SMALL32_PREPARATION_JSON ROOT49_PREPARATION_JSON FROZEN_POINT_JSON",
+  "count_point_loaded": false,
+  "optimizer_called": false,
+  "source_refs_or_trees_mutated": false,
+  "count_query_requires_separate_coordinator_gate": true,
+  "full_graph_existence_resolved": false
+}

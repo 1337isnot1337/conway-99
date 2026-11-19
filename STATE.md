@@ -2,6 +2,10 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+Checkpoint 49 publishes the [recovered complete F0 transcript and refined moment witness](research/checkpoint49_recovered_moment_certificates.md), together with exact decorated distributions for all 33 small roots and the root-42 presence interval. The full F0 transcript has 4,404 proved cuts; its search status remains UNKNOWN. A fresh optimizer-disabled replay reproduces the original mathematical report exactly. The refined 200-row moment model has an exact positive rational measure on 200 retained graphs, independently checked by a portable arithmetic audit. These are feasibility results for finite necessary conditions.
+
+All 1,275 decorated states across the 33 small roots have nonnegative integer masses at the current count point: 1,092 are positive and 183 are zero. Root 42 has 253 presence atoms and an undetermined fifth moment; its complete feasible interval is `0 <= u <= 9794`, with `u` even. Choosing zero gives a valid distribution. Neither test rejects the count point. The triangle-incidence projector, decorated root-42 extension, joint F0 selector moments and compressed rook face search have separate active records in issue 2.
+
 Checkpoint 44 adds an [exact case-four Gram point](research/grids-and-triangles/rook_case4_exact_gram_point.md) and a [complete root-49 moment distribution](research/grids-and-triangles/root49_packing_moment_recovery.md).
 Both are feasible points of necessary relaxations; neither constructs a graph or excludes its whole branch.
 The [complete fractional F0 structural/motif model](research/root_prism_free_f0_fractional_shared_projection.md) has an [exact feasible rational point](research/root_prism_free_f0_fractional_exact_baseline.md). All 145,690 original rows and 68,874 variable bounds pass independent replay. The terminal Boolean cuts are not part of that baseline.
@@ -9,13 +13,13 @@ The case-four point also proves that every shifted integer quadratic inequality 
 The stronger selector capacities, covers and exterior-edge conditions remain separate.
 An [exact evaluation](research/grids-and-triangles/rook_case4_gram_native_evaluation.md) rejects the Gram point by one triple capacity and 21 exterior-row inequalities.
 The fresh native recovery run passed all eight Node entry points. [Complete rook-LP preparation and cold reconstruction](research/grids-and-triangles/rook_case4_complete_lp_recovery.md) passed with the exact pre-outage matrix hashes. Its subsequent max-min query reached its time limit without an exact certificate.
-The [complete small-root presence models](research/grids-and-triangles/small_roots_packing_moment_recovery_result.md) also pass at the immutable order-ten count point: all 1,115 atoms across 33 roots have nonnegative integer masses. Models that retain the edges between high-neighbor vertices are being tested separately.
+The [complete small-root presence models](research/grids-and-triangles/small_roots_packing_moment_recovery_result.md) also pass at the immutable order-ten count point: all 1,115 atoms across 33 roots have nonnegative integer masses. The [complete decorated models](research/grids-and-triangles/small_root_decorated_moments_result.md), which retain the edges between high-neighbor vertices, also pass.
 The complete rook max-min model passed native preparation. Its single sixty-second query was interrupted after 1,264 simplex iterations and produced no accepted exact point, face certificate or contradiction. Case four remains open.
 
 The [checkpoint-43 recovery record](research/checkpoint43_recovery.md) distinguishes newly recovered results from files still in the unavailable workspace.
 An independently rerun [integer-incidence proof](research/grids-and-triangles/high_graph_core16_recovered_proof.md) excludes 31 specified sixteen-vertex cores.
 A separately recovered [F0 interior point](research/root_prism_free_f0_gram_interior_recovered.md) proves that the base Gram and motif system cannot fix any selector.
-The old workspace has been restored without discarding its edits. The later full-domain scan, refined moment result, and full 4,404-cut F0 transcript have been identified there by their original hashes. Their recovered publication and additional arithmetic replay follow separately.
+The old workspace has been restored without discarding its edits. The later full-domain scan, refined moment result, and full 4,404-cut F0 transcript are now published with their original hashes and separate recovery audits.
 The refined query reported an exact finite measure; it did not reject the count point or construct a graph.
 
 The current interface result on this branch proves that every induced rook

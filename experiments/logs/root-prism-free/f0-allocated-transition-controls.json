@@ -1,0 +1,43 @@
+{
+  "status": "exact quadratic-to-signed-cut-to-explanation transition and replay PASS",
+  "source_sha256": "88589e75cafa81c1ec6554887ae4c668786be3b00e2c95892ef18da922af6692",
+  "loop_source_sha256": "46b30a4e7c64db612cff606bd56aa05da44356547f617e977a8fa17ac0da4c8d",
+  "production_preparation_sha256": "7eecf38db3acba31bf2e24d08937235977cce1c6c93d9426795a3f0bb713fc23",
+  "production_CNF_unchanged_sha256": "5ecf9df873686109d14280d98a733400fd2d459292ff6c3aea863ada631c445e",
+  "control_base_clauses": 56994,
+  "control_initial_optional_registry_count": 0,
+  "saved_candidate_index": 32,
+  "candidate_primary_checks_passed": true,
+  "quadratic_violations": [
+    {
+      "family_index": 21,
+      "core_action_index": 10,
+      "quadratic_predicate_sha256": "8c8721de45a44d19d15e4078fe7822c2b1ebab0b0cb56ee20f2c2207f61c4b23",
+      "exact_negative_Q": 3
+    }
+  ],
+  "new_signed_cuts": 1,
+  "transition_sha256": "d8b5e5cef6c10d344e99205dad4d4f8ebf665d2626f0e2e9ebcb56dafff170fb",
+  "explanation_batch_sha256": "ee7111177c563404e01a296fd3a367c232274d8a432c0cfef191c93478afb7f9",
+  "explanation_summary": {
+    "violated_inequalities": 1,
+    "attempted_explanations": 24,
+    "duplicate_literal_lists": 0,
+    "new_clauses": 24,
+    "new_clauses_false_on_source": 2,
+    "new_literal_occurrences": 1908,
+    "generated_both_families": true,
+    "all12_core_transports": true
+  },
+  "control_final_snapshot": {
+    "individual_cuts": 0,
+    "symmetric_cuts": 1,
+    "registry_state_sha256": "b5bd33af02c28c58aca2bc12d9d40cf5b828fdb1bcd66bc4417f1294a81229a0",
+    "clauses": 57018,
+    "variables": 28308,
+    "explanation_clauses": 24,
+    "clause_state_sha256": "8185301c7befc9581ab823da88a9496c24c63eca561160e07695fff7cd5eb449"
+  },
+  "actual_production_registry_not_weakened": true,
+  "optimizer_or_solver_called": false
+}
