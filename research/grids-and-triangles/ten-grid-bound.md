@@ -58,9 +58,9 @@ For $(4,4,4)$ there are three nonzero half-sums, which cannot cancel in pairs. F
 
 Run `make verify-ten-grid-bound` for the [integer sign-table checker](../../experiments/workspace/last_eleven_grid.py) and the preceding four-missing support classification. The sign table tries all 13 oriented profiles directly. Of 496 norm-compatible triples, 448 pass the contact bound and none satisfies the three signed-axis equations.
 
-## Seven patterns at the upper bound
+## Six patterns at the upper bound
 
-Suppose a root lies on ten grids and put their ten edges on the seven axes. There are 148 unlabelled choices before the structural tests. The signless-incidence, full-axis and four-disjoint-missing restrictions retain 56. Excluding the five four-edge shapes leaves ten. In three more, a missing four-point cell cannot realize any of the required internal degree sequences. The [enumerator](../../experiments/workspace/ten_grid_supports.py) retains the seven labeled representatives below. The surviving cases are necessary patterns; the tests do not construct the full graph for any of them.
+Suppose a root lies on ten grids and put their ten edges on the seven axes. There are 148 unlabelled choices before the structural tests. The signless-incidence, full-axis and four-disjoint-missing restrictions retain 56. Excluding all six four-edge shapes leaves nine. In three more, a missing four-point cell cannot realize any of the required internal degree sequences. The [enumerator](../../experiments/workspace/ten_grid_supports.py) retains the six labeled representatives below. The surviving cases are necessary patterns; the tests do not construct the full graph for any of them.
 
 | Degrees of the seven axes | Ten present pairs |
 |---|---|
@@ -69,7 +69,6 @@ Suppose a root lies on ten grids and put their ten edges on the seven axes. Ther
 | $0,2,3,3,4,4,4$ | $01,02,04,12,13,23,24,34,35,45$ |
 | $1,1,3,3,3,3,6$ | $01,02,04,12,13,23,24,25,26,34$ |
 | $0,3,3,3,3,4,4$ | $01,02,05,12,13,23,24,34,35,45$ |
-| $2,2,2,3,3,4,4$ | $01,02,12,15,23,24,34,45,46,56$ |
 | $2,2,2,2,4,4,4$ | $01,02,12,15,16,23,24,34,45,46$ |
 
 In particular, if the root lies on a full triangle, exactly two of its other six axes occur in just one grid. After deleting the full axis and these two leaves, the four remaining axes induce a four-cycle or a triangle with a pendant edge.

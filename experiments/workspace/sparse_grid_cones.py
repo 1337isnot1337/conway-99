@@ -14,6 +14,7 @@ from two_missing_grid_neighbors import representatives
 
 # Missing pairs, labeled grid assignments, symmetry classes, simultaneous near labelings.
 SHAPES = {
+    'cycle': (((0, 1), (1, 2), (2, 3), (0, 3)), 8009, 409, 120),
     'star': (((0, 1), (0, 2), (0, 3), (0, 4)), 97336, 1757, 1136),
     'paw': (((0, 1), (0, 2), (1, 2), (0, 3)), 29544, 4233, 206),
     'path': (((0, 1), (1, 2), (2, 3), (3, 4)), 19411, 2947, 980),
@@ -61,13 +62,19 @@ def verify(executable, name):
         assert count == classes
         source.seek(0)
         command = [str(executable), str(len(missing))]
-        if name in ('path', 'star', 'triangle and edge'):
+        if name == 'cycle':
+            command.append('--four-cycle')
+        if name in ('cycle', 'path', 'star', 'triangle and edge'):
             command.append('--signs-first')
         with subprocess.Popen(command, stdin=source, stdout=subprocess.PIPE, text=True) as run:
             labelings = 0
             for line in run.stdout:
                 fields = list(map(int, line.split()))
-                assert 0 <= fields[0] < count
+                case = fields[0]
+                if name == 'cycle':
+                    case, profile = divmod(case, 19)
+                    assert profile == 9  # Only zero deviation reaches the Gram test.
+                assert 0 <= case < count
                 full = full_adjacency(fields, pairs)
                 residual = 12*np.eye(59, dtype=np.int64)+2-full-full@full
                 if gram_possible(residual):

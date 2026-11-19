@@ -24,6 +24,10 @@ using Choices = std::vector<Edges>;
 constexpr int max_missing = 5;
 int missing = 3;
 bool signs_first = false;
+bool four_cycle = false;
+std::array<int,44> coordinate{};
+std::array<Mask,4> coordinate_masks{};
+std::array<std::array<int,max_missing>,4> coordinate_buckets{};
 Mask peripheral_grid_points;
 std::array<int,10> labels;
 central_grid::AxisSigns near_axes;
@@ -33,6 +37,28 @@ std::array<int, 24> inverse;
 std::array<std::array<int, 3>, 10> neighbors;
 std::map<std::pair<int, int>, Choices> off_diagonal;
 std::map<int, Choices> diagonal;
+
+// The four leading labels follow the missing cycle in cyclic order when
+// deviations are nonzero. Fix site names within each cell by coordinate.
+void set_coordinates(const std::array<int,4>& deviation) {
+    coordinate_masks.fill(0);
+    std::array<int,4> sizes{};
+    for (int i = 0; i < 11; ++i) {
+        int site = 0;
+        for (int x = 0; x < 4; ++x) {
+            int count = 1;
+            if (four_cycle && i < 4) count += (i % 2 ? -1 : 1) * deviation[x];
+            for (int k = 0; k < count; ++k) {
+                int v = 4*i + site++;
+                coordinate[v] = x;
+                if (i < 10) coordinate_masks[x] |= Mask{1} << v;
+                if (i < missing) coordinate_buckets[x][sizes[x]++] = v;
+            }
+        }
+        assert(site == 4);
+    }
+    for (int n : sizes) assert(n == missing);
+}
 
 void initialize() {
     Permutation p = {0,1,2,3};
@@ -45,7 +71,7 @@ void initialize() {
         inverse[j] = std::find(permutations.begin(), permutations.end(), back)-permutations.begin();
     }
 
-    // Each coordinate class contains one vertex from every missing cell.
+    // Each coordinate class has the same total number of missing vertices.
     int internal_pairs = missing*(missing-1)/2;
     for (int mask = 0; mask < (1 << internal_pairs); ++mask) {
         Edges edges;
@@ -184,27 +210,40 @@ void fill_blocks(int id, const Graph& graph, const std::vector<Choices>& blocks,
 }
 
 void missing_union(int id, const Graph& graph) {
-    if (missing >= 4 && !near_axes.permits_maps(graph)) return;
+    if (four_cycle) {
+        for (int i = 0; i < missing; ++i) {
+            std::array<Mask,2> grids{};
+            int k = 0;
+            for (int j : neighbors[i]) if (j >= missing) grids[k++] = Mask{15} << (4*j);
+            assert(k == 2);
+            // Sites with the same coordinate in a cell are interchangeable.
+            for (int v = 4*i+1; v < 4*i+4; ++v) if (coordinate[v-1] == coordinate[v]) {
+                if ((graph[v-1] & grids[0]) == (graph[v] & grids[0]) &&
+                    (graph[v-1] & grids[1]) > (graph[v] & grids[1])) return;
+            }
+        }
+    }
+    if (missing >= 4 && !four_cycle && !near_axes.permits_maps(graph)) return;
     int need[4*max_missing][4] = {};
     for (int t = 0; t < 4*missing; ++t) {
-        for (int x = 0; x < 4; ++x) need[t][x] = 1+(x == opposite[0][t%4]);
+        for (int x = 0; x < 4; ++x) need[t][x] = 1+(x == opposite[0][coordinate[t]]);
         for (Mask row = graph[t] & peripheral_grid_points; row; row &= row-1) {
-            if (--need[t][std::countr_zero(row)%4] < 0) return;
+            if (--need[t][coordinate[std::countr_zero(row)]] < 0) return;
         }
     }
     std::vector<Choices> blocks;
     for (int a = 0; a < 4; ++a) for (int b = a; b < 4; ++b) {
         int left = 0, right = 0;
         for (int i = 0; i < missing; ++i) {
-            left += need[4*i+a][b] << (3*i);
-            right += need[4*i+b][a] << (3*i);
+            left += need[coordinate_buckets[a][i]][b] << (3*i);
+            right += need[coordinate_buckets[b][i]][a] << (3*i);
         }
         const auto& patterns = a == b ? diagonal[left] : bipartite_graphs(left,right);
         Choices choices;
         for (const auto& pattern : patterns) {
             Edges edges;
             for (auto [i,j] : pattern) {
-                int x = 4*i+a, y = 4*j+b;
+                int x = coordinate_buckets[a][i], y = coordinate_buckets[b][j];
                 if (!permits_edge(graph,x,y)) break;
                 edges.emplace_back(x,y);
             }
@@ -216,6 +255,7 @@ void missing_union(int id, const Graph& graph) {
     std::sort(blocks.begin(), blocks.end(), [](const auto& a, const auto& b) {
         return a.size() < b.size();
     });
+    if (four_cycle && !near_axes.permits_maps(graph)) return;
     if (!signs_first) {
         fill_blocks(id,graph,blocks,0,{});
         return;
@@ -259,9 +299,9 @@ void fill_maps(int id, const Graph& graph, const std::vector<Choices>& slots, st
 }
 
 void complete(int id, const Case& state) {
-    if (missing >= 4) near_axes.prepare(labels,state,missing);
+    if (missing >= 4) near_axes.prepare(labels,state,missing,coordinate_masks);
     Graph graph{};
-    for (int i = 0; i < 10; ++i) for (int x = 0; x < 4; ++x) add_edge(graph,4*i+x,40+x);
+    for (int i = 0; i < 10; ++i) for (int x = 0; x < 4; ++x) add_edge(graph,4*i+x,40+coordinate[4*i+x]);
     for (int i = missing; i <= 10; ++i) {
         int color = i == 10 ? 0 : state[i][0];
         for (int x = 0; x < 4; ++x) for (int y = x+1; y < 4; ++y) {
@@ -285,7 +325,7 @@ void complete(int id, const Case& state) {
         for (int k = 0; k < 3; ++k) {
             int j = neighbors[i][k];
             if (j < missing) {
-                sources.push_back(j);
+                for (int v = 4*j; v < 4*j+4; ++v) if (coordinate[v] == x) sources.push_back(v);
             } else {
                 int y = permutations[inverse[state[i][1+k]]][x];
                 auto it = std::find(targets.begin(),targets.end(),y);
@@ -293,15 +333,25 @@ void complete(int id, const Case& state) {
                 targets.erase(it);
             }
         }
+        assert(sources.size() == targets.size());
         if (sources.empty()) continue;
         std::sort(targets.begin(),targets.end());
         Choices choices;
         do {
             Edges edges;
             for (std::size_t j = 0; j < sources.size(); ++j) {
-                edges.emplace_back(4*sources[j]+x,4*i+targets[j]);
+                edges.emplace_back(sources[j],4*i+targets[j]);
             }
-            choices.push_back(std::move(edges));
+            bool canonical = true;
+            for (std::size_t k = 1; k < sources.size(); ++k) {
+                int cell = sources[k]/4;
+                if (sources[k-1]/4 != cell) continue;
+                // Order equal-coordinate sites by their image in the first grid.
+                auto first = std::find_if(neighbors[cell].begin(), neighbors[cell].end(),
+                                          [](int j) { return j >= missing; });
+                if (i == *first && targets[k-1] > targets[k]) canonical = false;
+            }
+            if (canonical) choices.push_back(std::move(edges));
         } while (std::next_permutation(targets.begin(),targets.end()));
         slots.push_back(std::move(choices));
     }
@@ -314,6 +364,10 @@ void complete(int id, const Case& state) {
 int main(int argc, char** argv) {
     if (argc > 1 && std::string(argv[argc-1]) == "--signs-first") {
         signs_first = true;
+        --argc;
+    }
+    if (argc > 1 && std::string(argv[argc-1]) == "--four-cycle") {
+        four_cycle = true;
         --argc;
     }
     if (argc > 3) return 1;
@@ -337,13 +391,28 @@ int main(int argc, char** argv) {
         for (int j = 0; j < 10; ++j) if (!(labels[i] & labels[j])) neighbors[i][k++] = j;
         assert(k == 3);
     }
+    std::vector<std::array<int,4>> profiles(1);
+    if (four_cycle) {
+        if (missing != 4 || labels[0] != 3 || labels[1] != 6 ||
+            labels[2] != 12 || labels[3] != 9) return 1;
+        profiles.clear();
+        for (int a = -1; a <= 1; ++a) for (int b = -1; b <= 1; ++b)
+            for (int c = -1; c <= 1; ++c) {
+                int d = -a-b-c;
+                if (d >= -1 && d <= 1) profiles.push_back({a,b,c,d});
+            }
+        assert(profiles.size() == 19);
+    }
     int id;
     while (std::cin >> id) {
         Case state{};
         for (int i = missing; i < 10; ++i) for (auto& entry : state[i]) {
             if (!(std::cin >> entry)) return 1;
         }
-        complete(id,state);
+        for (std::size_t j = 0; j < profiles.size(); ++j) {
+            set_coordinates(profiles[j]);
+            complete(id*profiles.size()+j,state);
+        }
     }
     if (missing >= 4 && !signs_first) {
         std::cerr << "Far graphs " << near_axes.far_graphs << ", separately feasible axes "

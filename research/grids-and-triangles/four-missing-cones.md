@@ -1,12 +1,10 @@
 # Four missing pairs opposite a grid
 
-Suppose a grid contains a root, and exactly four of the ten pairs on the other five axes fail to form grids through that root. **The four missing pairs must form a four-cycle with one isolated axis.** The other five shapes on the passive axes all fail the exterior Gram conditions. No automorphism of the Conway graph is assumed.
-
-It follows that **at most ten grids pass through a vertex outside full triangles**. A vertex with exactly eleven grids must have one full axis. Its eleven axis pairs consist of the full six-edge star, plus five of the six edges on four of its leaves.
+At least **five of the ten axis pairs disjoint from any rooted grid must be nongrids**. The [three-missing-pair proof](eleven-grid-bound.md) excludes smaller missing sets. We exclude all six isomorphism types of four-edge graphs on the five passive axes. The hypothesis places no symmetry restriction on the Conway graph.
 
 ## Coordinates and signed axes
 
-Use the central four-point cell and ten passive four-point cells from the [three-missing-pair proof](eleven-grid-bound.md). For each of the five shapes in the table, the signless incidence matrix of the four missing edges has trivial kernel. Remove leaves successively, then use the equations around the odd cycle if one remains. Thus each of the ten passive cells has a perfect matching to the central four points. Label each passive vertex by its central neighbor, and write $p_0$ for the opposite-corner involution of the central square.
+Use the central four-point cell and ten passive four-point cells from the [three-missing-pair proof](eleven-grid-bound.md). For each shape other than the four-cycle, the signless incidence matrix of the four missing edges has trivial kernel. Remove leaves successively, then use the equations around the odd cycle if one remains. Thus each of the ten passive cells has a perfect matching to the central four points. Label each passive vertex by its central neighbor, and write $p_0$ for the opposite-corner involution of the central square.
 
 Each passive point with coordinate $x$ has five passive neighbors with coordinates $0,1,2,3,p_0(x)$ as a multiset. Enumerate the interfaces between passive grids and fill the maps from missing cells to grids exactly as in the three-missing-pair proof. The missing union has four vertices of each coordinate. Within a coordinate group enumerate all simple four-vertex graphs with the required degree sequence. Between two distinct groups enumerate every binary four-by-four matrix with the required row and column sums. This fills all 44 far points. Adding edges cannot repair an exceeded common-neighbor quota or a missing cell with more than two internal edges.
 
@@ -16,7 +14,7 @@ For a given axis, let $U_+,U_-$ be its two sets of eight far points. A passive p
 
 Finally choose one signing per axis. Two axes have just one common four-point cell, in which all four sign combinations must occur. Equivalently their positive halves meet in exactly one point. This gives all candidate signed incidences with the fourteen near vertices. Add the root to obtain an induced adjacency matrix $H$ of order 59. Its exterior incidence Gram $12I+2J-H-H^2$ must be entrywise nonnegative, positive semidefinite and have rank at most 40.
 
-For the path, star, and disjoint triangle and edge, the checker assigns the near signs before filling the missing union. In that order it adds the ten signed vertices and their five mate edges to the partial graph. The same pair quota then applies directly at every edge insertion. The check on the 59-point Gram uses the ordinary adjacency matrix reconstructed from the emitted rows and five positive sign masks.
+For the path, star, four-cycle, and disjoint triangle and edge, the checker assigns the near signs before filling the missing union. In that order it adds the ten signed vertices and their five mate edges to the partial graph. The same pair quota then applies directly at every edge insertion. The check on the 59-point Gram uses the ordinary adjacency matrix reconstructed from the emitted rows and five positive sign masks.
 
 | Missing pairs | Grid assignments | Symmetry classes | Simultaneous near labelings | Possible exterior Grams |
 |---|---:|---:|---:|---:|
@@ -25,10 +23,17 @@ For the path, star, and disjoint triangle and edge, the checker assigns the near
 | Five-vertex path | 19,411 | 2,947 | 980 | 0 |
 | Triangle and a disjoint edge | 59,100 | 1,596 | 32 | 0 |
 | Four-edge star | 97,336 | 1,757 | 1,136 | 0 |
+| Four-cycle and an isolated axis | 8,009 | 409 | 120 | 0 |
 
-The symmetry reduction permutes the five axes preserving the missing edge set and relabels the coordinates by symmetries of the central square. All 2,550 simultaneous assignments have entrywise nonnegative exterior Grams. None passes exact positive semidefiniteness. In the far-first order the triangle with a pendant edge gives 56,577,990 completed far graphs passing the early tests, of which 1,834 allow each axis separately. The corresponding numbers for the tree of degrees $3,2,1,1,1$ are 148,133,244 and 4,272.
+The symmetry reduction permutes the five axes preserving the missing edge set and relabels the coordinates by symmetries of the central square. All 2,670 simultaneous assignments have entrywise nonnegative exterior Grams. None passes exact positive semidefiniteness. In the far-first order the triangle with a pendant edge gives 56,577,990 completed far graphs passing the early tests, of which 1,834 allow each axis separately. The corresponding numbers for the tree of degrees $3,2,1,1,1$ are 148,133,244 and 4,272.
 
-These shapes exhaust the connected trees on five vertices and the four-edge graphs on five vertices containing a triangle. The remaining shape is a four-cycle and an isolate. The signless incidence argument permits nonzero alternating deviations on that cycle.
+## Alternating coordinates on the four-cycle
+
+Write the missing edges in cyclic order as $01,12,23,03$. Fix one central point $x$. At each cycle vertex the deviations of the two missing neighbor counts from one must sum to zero. Thus the four counts around the cycle are $1+k_x,1-k_x,1+k_x,1-k_x$. Nonnegativity gives $k_x\in\{-1,0,1\}$. Each missing cell contains four points, so $\sum_x k_x=0$. There are exactly 19 ordered profiles. We test all 19 for each of the 409 grid representatives.
+
+Label the four sites of each missing cell by increasing central coordinate, including repeated coordinates. Across the four cells each coordinate still occurs four times. A passive grid sees either zero or two missing labels among its three disjoint passive labels. In the latter case the labels have opposite deviations. Thus the unknown interfaces together have uniform source-coordinate margins. The permutation decomposition used to enumerate the known grid-to-grid interfaces still applies. When filling the unknown interfaces, list every actual source site with the given coordinate and enumerate every assignment to the remaining target multiset. For sites of equal coordinate in one cell we may order their two grid images lexicographically. The residual degree enumeration then uses the actual four coordinate buckets, and the signed-axis counts use each site's actual coordinate.
+
+Only the zero-deviation profile supplies any of the 120 signed neighborhoods reaching the Gram test. All 120 exterior Grams have a negative eigenvalue. A second search order, filling the smallest coordinate blocks before choosing the signed axes, gave the same count. This excludes the remaining four-edge shape.
 
 ## Exactly eleven grids at a root
 

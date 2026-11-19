@@ -108,7 +108,7 @@ Every rooted grid [has at least three nongrid pairs among its ten disjoint axis 
 
 Each rooted grid [has at least four nongrid pairs disjoint from its axis pair](research/grids-and-triangles/eleven-grid-bound.md). All four three-edge configurations fail the exterior incidence tests. This excludes twelve grids through a vertex, giving **at most eleven** and at least **40 percolating nonneighbors** at every vertex.
 
-With exactly four missing pairs opposite a rooted grid, [the four pairs form a cycle](research/grids-and-triangles/four-missing-cones.md). The other five shapes yield 2,550 signed neighborhoods, all excluded. The only eleven-grid support is a full six-edge star together with five edges on four leaves. A vertex outside full triangles lies in **at most ten grids** and has at least **44 percolating nonneighbors**.
+For any rooted grid, [at least five of the ten disjoint axis pairs must be nongrids](research/grids-and-triangles/four-missing-cones.md). The six four-edge shapes give 2,670 signed neighborhoods, all excluded by their exact exterior Grams. The four-cycle has 19 possible central-coordinate profiles and 120 signed neighborhoods, all with uniform coordinates.
 
 The [ten-grid bound](research/grids-and-triangles/ten-grid-bound.md) excludes the last eleven-grid support. Two missing pairs have the same defect vector; its squared norm and its signed-axis equations on three square cells are incompatible. Thus every vertex lies on **at most ten grids** and has at least **44 percolating nonneighbors**.
 

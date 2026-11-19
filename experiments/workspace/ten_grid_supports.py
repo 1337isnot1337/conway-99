@@ -26,7 +26,7 @@ def remaining():
         sizes['cones'] += 1
         if not impossible_degree_cell(missing):
             supports.append(missing)
-    assert sizes == {'missing graphs': 148, 'incidence': 56, 'cones': 10}
+    assert sizes == {'missing graphs': 148, 'incidence': 56, 'cones': 9}
     return supports
 
 
@@ -34,8 +34,8 @@ if __name__ == '__main__':
     supports = remaining()
     degrees = sorted(tuple(sorted(6-sum(v in e for e in f) for v in range(7))) for f in supports)
     assert degrees == [(0,2,2,4,4,4,4), (0,2,3,3,4,4,4), (0,3,3,3,3,4,4),
-                       (1,1,2,3,3,4,6), (1,1,3,3,3,3,6), (2,2,2,2,4,4,4), (2,2,2,3,3,4,4)]
-    print('Ten grids: 148 missing graphs, 56 incidence supports, ten after the cone test, '
-          'and seven after testing the four-point cells.')
+                       (1,1,2,3,3,4,6), (1,1,3,3,3,3,6), (2,2,2,2,4,4,4)]
+    print('Ten grids: 148 missing graphs, 56 incidence supports, nine after the cone test, '
+          'and six after testing the four-point cells.')
     for f in supports:
         print(' '.join(f'{a}{b}' for a,b in AXIS_PAIRS if (a,b) not in f))

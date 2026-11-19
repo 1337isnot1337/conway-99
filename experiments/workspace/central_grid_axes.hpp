@@ -25,13 +25,14 @@ class AxisSigns {
     std::array<Mask, 5> incident{};
     std::array<int, 10> labels{};
     Domains initial, after_maps;
+    std::array<Mask,4> coordinate_masks{};
 
     void make_choices(int a, const Case& state, int missing,
                       const std::array<int,4>& cells, int k, Mask positive) {
         if (k == 4) {
             for (int x = 0; x < 4; ++x) {
                 // Each central coordinate has two common neighbors with each sign.
-                if (std::popcount(positive & (0x1111111111ULL << x)) != 2) return;
+                if (std::popcount(positive & coordinate_masks[x]) != 2) return;
             }
             initial[a].push_back({positive, incident[a]^positive});
             return;
@@ -115,7 +116,9 @@ class AxisSigns {
 public:
     std::uint64_t far_graphs = 0, separate_axes = 0, labelings = 0;
 
-    void prepare(const std::array<int,10>& pairs, const Case& state, int missing) {
+    void prepare(const std::array<int,10>& pairs, const Case& state, int missing,
+                 const std::array<Mask,4>& coordinates) {
+        coordinate_masks = coordinates;
         labels = pairs;
         for (int a = 0; a < 5; ++a) {
             incident[a] = 0;
