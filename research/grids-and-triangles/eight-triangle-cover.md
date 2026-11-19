@@ -29,3 +29,13 @@ Let $k$ denote the number of components among the $t$ full triangles. In a penci
 If $t=22$, the upper bound $g\le112$ allows at most two components. One then has $m\ge11$. A pencil has at most six grids on its center; if it has more than seven vertices, at least one grid has three full triangles. Every full triangle outside the component sends exactly one edge to each member: its relation is constant across the component, and it must send three edges to this three-full grid. It is disjoint from the grid.
 
 For the center of the pencil, its 36 neighbors outside the center include all $3(m-1)$ points of the other members. Each of the $t-m$ outside full triangles must use a distinct remaining neighbor. Hence $t-m\le36-3(m-1)$, or $t\le39-2m$. This excludes $t=22$ at $m\ge11$. The earlier bound $t\le22$ now gives the result.
+
+## At least 1,215 disjoint triangle pairs with two cross-edges
+
+Let $n$ count these pairs. The [weighted crossing inequality](triangle-witness-bound.md) gives $8n\ge\sum_p w_p$, where $w_p$ is the integer root weight defined there. For the two grid degrees $d,e$ of a corner, assign a correction $a(d,e)$ as follows. In a corner on a full triangle give $-3/2$ if the other degree is one and $1/2$ otherwise. At a corner on no full triangle give one if either degree is one and zero otherwise. Two full triangles cannot meet.
+
+The [seven-axis enumeration](../../experiments/workspace/grid_support.cpp) verifies $2w_p-2\sum a(d,e)\ge196$ at every eligible root, summing once per grid through the root. It checks even the larger set of all signless-support graphs with at most thirteen grids and at most one full axis.
+
+Now sum the corrections at the nine corners of one grid. If it has $m>0$ full triangles choose them as rows, and let $j$ of its columns have degree one. Each full row contributes $3/2-2j$. Each other row contributes at least $j$. For $m=1,2,3$ the resulting lower bounds are respectively $3/2,-6,-27/2$. With $m=0$ the correction is nonnegative. Equivalently it is at least $\tfrac32(m-6\max(0,m-1))$ for each grid.
+
+The sum of $m$ over all grids is $6t$ and the sum of $\max(0,m-1)$ is $t-k$ by the pencil classification. Hence $8n\ge 98\cdot99+9k$. Even allowing $k=0$, divisibility of $n$ by three gives **$n\ge1215$**.

@@ -16,7 +16,7 @@ int main(){
     static unsigned char bip[full+1];int minima[22],num[22]{};
     fill(minima,minima+22,999);
     int min_weight = 999, min_weight_no_full = 999;
-    int no_full_margin = 999, one_full_margin = 999;
+    int no_full_margin = 999, one_full_margin = 999, min_pencil_weight = 999;
     for(int m=0;m<=full;m++){
         int adj[7]{};
         for(unsigned h=m;h;h&=h-1){int e=countr_zero(h);adj[a[e]]|=1<<b[e];adj[b[e]]|=1<<a[e];}
@@ -56,11 +56,25 @@ int main(){
             charge += max(capped_degree[a[j]], capped_degree[b[j]]);
         }
         int weight = 8 * (21 - e) + 2 * t - charge;
+        if (full_axes <= 1 && e <= 13) {
+            int bonus = 0;
+            for (unsigned h = d; h; h &= h - 1) {
+                int j = countr_zero(h);
+                int lo = 6 - popcount(unsigned(adj[a[j]]));
+                int hi = 6 - popcount(unsigned(adj[b[j]]));
+                if (lo > hi) swap(lo, hi);
+                if (hi == 6) bonus += lo == 1 ? -3 : 1;
+                else if (lo == 1) bonus += 2;
+            }
+            min_pencil_weight = min(min_pencil_weight, 2*weight - bonus);
+        }
         min_weight = min(min_weight, weight);
         if (full_axes == 0) min_weight_no_full = min(min_weight_no_full, weight);
     }
     assert(no_full_margin == -138 && one_full_margin == -146);
     cout << "Local capacity margins: " << no_full_margin << ' ' << one_full_margin << '\n';
+    assert(min_pencil_weight == 196);
+    cout << "Minimum doubled root weight after the pencil correction: " << min_pencil_weight << '\n';
     assert(min_weight == 97 && min_weight_no_full == 98);
     cout << "Minimum weighted expression outside full triangles: " << min_weight_no_full << '\n';
     cout << "Minimum weighted root expression: " << min_weight << '\n';
