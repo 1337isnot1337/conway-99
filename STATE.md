@@ -97,3 +97,5 @@ The [full-component census](research/grids-and-triangles/full-triangle-component
 The [nine-triangle rook cover exclusion](research/grids-and-triangles/nine-triangle-cover.md) rules out the 27-point cover for every flat row and column transport. Of 1,296 normalizations, five cores admit exterior attachments. All 86 resulting adjacency CNFs have independently verified DRAT refutations.
 
 Applying that exclusion to the induced subgraphs of every forced component leaves 28 pencils, a four-cycle, and $K_{2,3}$. Counting the distinct forced saturated lines gives [at most 22 full triangles](research/grids-and-triangles/full-triangle-components.md#after-the-nine-triangle-cover-exclusion).
+
+The [eight-triangle neighborhood exclusion](research/grids-and-triangles/eight-triangle-cover.md) eliminates the four-cycle and $K_{2,3}$ by 268 checked refutations. Every full component is a pencil, and there are at most 21 full triangles.

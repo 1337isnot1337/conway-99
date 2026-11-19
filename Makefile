@@ -12,6 +12,7 @@ verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" parallel_triangle_cores.py
 	cd $(WORKSPACE) && "$(PYTHON)" full_triangle_components.py
 	cd $(WORKSPACE) && "$(PYTHON)" rook_nine_covers.py
+	cd $(WORKSPACE) && "$(PYTHON)" rook_eight_covers.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
 	cd $(WORKSPACE) && "$(PYTHON)" level_seven_check.py
 	@set -eu; \
@@ -39,3 +40,8 @@ DRAT_TRIM ?= drat-trim
 verify-nine-triangle-cover:
 	"$(PYTHON)" $(WORKSPACE)/rook_nine_covers.py --control
 	"$(PYTHON)" $(WORKSPACE)/rook_nine_covers.py --verify --solver "$(CADICAL)" --checker "$(DRAT_TRIM)"
+
+.PHONY: verify-eight-triangle-cover
+verify-eight-triangle-cover:
+	"$(PYTHON)" $(WORKSPACE)/rook_eight_covers.py --control
+	"$(PYTHON)" $(WORKSPACE)/rook_eight_covers.py --verify --solver "$(CADICAL)" --checker "$(DRAT_TRIM)"

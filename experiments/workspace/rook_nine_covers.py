@@ -174,9 +174,7 @@ def positive_control():
     print('The true exterior graph passed all 510 nontrivial splits of the nine-point rook graph.')
 
 
-def verify_case(number, labels, a, incidence, args):
-    # The final core has six harder cases. Use all outer pair bounds for it.
-    formula, _ = adjacency_formula(a, incidence, labels == (3, 4, 4, 3))
+def check_proof(number, formula, args):
     with tempfile.TemporaryDirectory() as directory:
         cnf = Path(directory) / 'instance.cnf'
         proof = Path(directory) / 'proof.drat'
@@ -189,6 +187,12 @@ def verify_case(number, labels, a, incidence, args):
                                stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         if check.returncode or b's VERIFIED' not in check.stdout:
             raise RuntimeError(f'case {number}: proof check failed')
+
+
+def verify_case(number, labels, a, incidence, args):
+    # The final core has six harder cases. Use all outer pair bounds for it.
+    formula, _ = adjacency_formula(a, incidence, labels == (3, 4, 4, 3))
+    check_proof(number, formula, args)
     print(f'case {number:02d} {labels} verified', flush=True)
 
 
