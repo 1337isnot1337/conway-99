@@ -1,0 +1,221 @@
+{
+  "status": "PREPARED_FIXED_GREEDY_LOCAL_CLIQUE_SEARCH",
+  "source_sha256": "6971e3631461929355eb565cbfa002bd14ea33dc64bcfccdfde659688fb03dd8",
+  "inputs": {
+    "inventory": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01.json.gz",
+      "sha256": "cbfdad339ab84cb7eeb6b221e10be3c4c1db4fb70932de3a28e62ee4642cb7e0"
+    },
+    "cold_prefix": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-replay.json",
+      "sha256": "4717dc11e6f40007d58befc3ae968ceaaadb805c0548f797817846b3a0843be9"
+    },
+    "cold_suffix": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-suffix-replay.json",
+      "sha256": "ae85e2c9cbe19b72ad23231c6ee28ac135098eb078088780d4bd0988bd28cb5e"
+    },
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "point": {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-query-run01/numerical.json",
+      "sha256": "bfe03cf2ec0f9d00ee7ff756112a61ab368404d4ed29c7b50377f01c5ae8327e"
+    },
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-model03.json.gz",
+      "sha256": "ad046fc05a4247a081b3cabb16693682fa5539ff557dd7b599f3c3a63e7303dd"
+    }
+  },
+  "center_neighbor_counts": [
+    [
+      0,
+      238
+    ],
+    [
+      2,
+      339
+    ],
+    [
+      8,
+      280
+    ],
+    [
+      9,
+      280
+    ],
+    [
+      10,
+      339
+    ],
+    [
+      11,
+      304
+    ],
+    [
+      24,
+      280
+    ],
+    [
+      25,
+      304
+    ],
+    [
+      32,
+      268
+    ],
+    [
+      33,
+      267
+    ],
+    [
+      34,
+      269
+    ],
+    [
+      35,
+      234
+    ],
+    [
+      36,
+      234
+    ],
+    [
+      37,
+      244
+    ],
+    [
+      38,
+      275
+    ],
+    [
+      39,
+      293
+    ],
+    [
+      40,
+      294
+    ],
+    [
+      41,
+      295
+    ],
+    [
+      43,
+      227
+    ],
+    [
+      44,
+      233
+    ],
+    [
+      45,
+      298
+    ],
+    [
+      46,
+      260
+    ],
+    [
+      47,
+      323
+    ],
+    [
+      50,
+      307
+    ],
+    [
+      51,
+      298
+    ],
+    [
+      52,
+      334
+    ],
+    [
+      53,
+      320
+    ],
+    [
+      57,
+      305
+    ],
+    [
+      58,
+      274
+    ],
+    [
+      63,
+      307
+    ],
+    [
+      336,
+      225
+    ],
+    [
+      338,
+      273
+    ],
+    [
+      339,
+      280
+    ],
+    [
+      342,
+      247
+    ],
+    [
+      343,
+      257
+    ],
+    [
+      344,
+      258
+    ],
+    [
+      345,
+      253
+    ],
+    [
+      346,
+      244
+    ],
+    [
+      347,
+      311
+    ],
+    [
+      354,
+      286
+    ],
+    [
+      355,
+      218
+    ],
+    [
+      356,
+      283
+    ]
+  ],
+  "orders": [
+    "weight",
+    "weight_times_degree_plus_one",
+    "degree_then_weight"
+  ],
+  "planned_singleton_seed_trials": 34974,
+  "maximum_retained_new_rows": 128,
+  "search_seconds_including_loading": 30,
+  "exact_common_denominator": "147573952589676412928",
+  "absolute_gap_numerator_bound": "28502157238072097505280",
+  "gap_bound_bits": 75,
+  "controls": {
+    "Boolean_activation_cases": 42,
+    "quotient_alias_cases": 81,
+    "no_orbit_size_division": true
+  },
+  "point_loaded": true,
+  "greedy_trials_run": 0,
+  "optimizer_calls": 0,
+  "maximal_clique_census": false,
+  "maximum_weight_proof": false
+}

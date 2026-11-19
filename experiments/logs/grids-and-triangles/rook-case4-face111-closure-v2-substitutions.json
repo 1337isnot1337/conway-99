@@ -1,0 +1,21 @@
+{
+  "parent_source": "experiments/workspace/rook_case4_face111_primary_closure.py",
+  "parent_sha256": "b3338d44b20342b645f2ebabe61ab3b6abc843933b798e1750f31103f6d1b103",
+  "new_source": "experiments/workspace/rook_case4_face111_primary_closure_v2.py",
+  "new_sha256": "983d62f91f4bd7ce53e1a11897d41dbf3a093b7fd426659fce4069973caa169e",
+  "replacements": [
+    {
+      "old": "\"\"\"Complete original-row/cover closure from the111 proved case4 zeros.",
+      "new": "\"\"\"Complete111-zero closure with the proved second-cover equality explicit."
+    },
+    {
+      "old": "    seed=proof['all_zero_columns']\n",
+      "new": "    # The direct Gram identity is H2+2*sum(new12)=1. All new12\n    # coordinates are proved zero, so H2 has both lower and upper bound1.\n    assert proof['original_Gram_right_hand_side']==1\n    assert proof['direct_identity_on_prior_face']=='sum_H2(x)+2*sum_new12(x)=1'\n    assert parity[1]['terms']==[[a,1] for a in proof['H2_support']]\n    assert set(proof['new_zero_columns'])<=set(proof['all_zero_columns'])\n    parity[1]['upper']=1\n    seed=proof['all_zero_columns']\n"
+    },
+    {
+      "old": "        'both_integer_cover_rows_retained':True,\n",
+      "new": "        'both_integer_cover_rows_retained':True,\n        'second_cover_exactly_one_from_direct_Gram_identity':True,\n        'integer_cover_ranges':[[1,42],[1,1]],\n"
+    }
+  ],
+  "mathematical_delta": "Only the second proved parity cover upper bound42 becomes the exactly derived bound1; original rows/covers and all111 seed units unchanged"
+}

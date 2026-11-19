@@ -1,0 +1,167 @@
+{
+  "status": "PASS: source review and independent original-row arithmetic",
+  "subject": {
+    "path": "experiments/workspace/rook_case4_face99_parity_face.py",
+    "sha256": "52621284ad3b8344c5b64e99b028a8e5e063f32e91468399ad69ab4ee69e93cc"
+  },
+  "certificate": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face99-parity-face-certificate.json",
+    "sha256": "717c3e4103dd56bdd260f52b0f50c5a06f4245b834d92194357481d3163e229e"
+  },
+  "input_bindings": {
+    "native": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    },
+    "seed": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-transportation-seed-certificate.json",
+      "sha256": "64d8e375280bc067097913de2dd6e2995c19de2a4807f63cecdcd80b811a85cf"
+    },
+    "covers": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-parity-cover-certificate.json",
+      "sha256": "644a7f637fb8ea42fd49a99487ead6eb544370ae463c9e303e86e8934d2f1a81"
+    }
+  },
+  "original_Gram_rows_checked": 630,
+  "signed_Gram_rows_expanded": 42,
+  "original_coordinates_checked": 1214,
+  "known_zero_terms_removed": [
+    [
+      121,
+      -1
+    ],
+    [
+      145,
+      -1
+    ],
+    [
+      258,
+      -1
+    ],
+    [
+      335,
+      -1
+    ],
+    [
+      396,
+      -1
+    ],
+    [
+      397,
+      -1
+    ],
+    [
+      398,
+      -1
+    ],
+    [
+      400,
+      -1
+    ],
+    [
+      404,
+      -1
+    ],
+    [
+      457,
+      -1
+    ],
+    [
+      459,
+      -1
+    ],
+    [
+      461,
+      -1
+    ],
+    [
+      779,
+      -1
+    ],
+    [
+      799,
+      -1
+    ],
+    [
+      1061,
+      1
+    ]
+  ],
+  "remaining_coefficient_histogram": {
+    "0": 1061,
+    "1": 42,
+    "2": 12
+  },
+  "right_hand_side": 1,
+  "new_zero_columns": [
+    1062,
+    1063,
+    1064,
+    1065,
+    1066,
+    1067,
+    1125,
+    1126,
+    1127,
+    1128,
+    1129,
+    1130
+  ],
+  "H2_support": [
+    74,
+    75,
+    76,
+    77,
+    176,
+    177,
+    178,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    658,
+    660,
+    662,
+    663,
+    730,
+    731,
+    732,
+    733,
+    762,
+    763,
+    764,
+    765,
+    1174,
+    1176,
+    1177,
+    1179,
+    1180,
+    1182,
+    1183,
+    1208,
+    1210,
+    1212,
+    1213
+  ],
+  "prior_zero_count": 99,
+  "new_zero_count": 12,
+  "total_zero_count": 111,
+  "independent_conclusion": "sum_H2(x) + 2 sum_new12(x) = 1 on the certified face; nonnegative integrality gives each new x = 0 and sum_H2(x) = 1.",
+  "real_relaxation_caveat": "Without integrality the identity alone does not force the twelve zeros. The additional proved H2 >= 1 cover does.",
+  "prior_99_zero_derivation_repeated": false,
+  "both_saved_odd_cover_row_identities_checked": true,
+  "subject_source_imported": false,
+  "optimizer_calls": 0,
+  "matrix_regeneration": false,
+  "case4_exclusion_claimed": false,
+  "reviewer_source_sha256": "f529dac9dbe527deaf338d6f798c2c568b9561c1b804a4f0dbd9fb74a4f329ca",
+  "seconds": 0.11918886600324186
+}

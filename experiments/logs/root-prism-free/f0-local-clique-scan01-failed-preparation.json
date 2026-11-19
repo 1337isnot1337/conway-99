@@ -1,0 +1,10 @@
+{
+  "status": "PREPARATION_FAILED_BEFORE_ANY_CLIQUE_SEARCH",
+  "source_sha256": "ffc3625f9bd01eda80048d2871e849fa6267451987e46539ed99b111f1c8c482",
+  "preserved_source": "experiments/workspace/root_prism_free_f0_local_clique_scan_failed_v1.py",
+  "error": "AssertionError while treating literal480-signature adjacency bits as local neighbor indices. The validity check rejected this representation before a preparation record or any trial existed.",
+  "point_proposal_sha256": "bfe03cf2ec0f9d00ee7ff756112a61ab368404d4ed29c7b50377f01c5ae8327e",
+  "greedy_trials_run": 0,
+  "optimizer_calls": 0,
+  "repair": "Explicitly map each literal neighboring signature ID to its local index for greedy bitset operations. Verify witnesses directly against literal adjacency bits."
+}

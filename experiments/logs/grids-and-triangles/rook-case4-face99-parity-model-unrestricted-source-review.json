@@ -1,0 +1,35 @@
+{
+  "status": "PASS: complete read-only source and mathematical review",
+  "reviewer": "unrestricted_completion",
+  "subjects": {
+    "overlay": {
+      "path": "experiments/workspace/rook_case4_face99_parity_model.py",
+      "sha256": "e5479fb9f51405a85c8c2586e862f451f451810f298130af345f4a974e91c7ea"
+    },
+    "direct_cover_proof": {
+      "path": "experiments/workspace/rook_case4_face99_parity_covers.py",
+      "sha256": "2420988060354e9e77806de86040a566ece9d2f5af27b1a216135ea7e86495cc"
+    }
+  },
+  "checks": [
+    "The two original-Gram sums give 2E(x)+sum_C(x)=45 or47 after only the99 proved zero substitutions. Nonnegative integral x makes sum_C a nonnegative odd integer, hence at least1.",
+    "Both 42-column supports are lifted from original selector IDs to the unchanged1115 coordinates. Their upper42 bounds follow from the existing unit boxes.",
+    "All167935 old rows,11012058 terms, bounds, provenance and original-column arrays are retained as exact prefixes. Only84 coefficient-one terms and two lower1/upper42 rows are appended.",
+    "The canonical integer-stream check binds the complete unchanged old row prefix. Source/input/array hashes and direct cover replay are checked before use.",
+    "Cold rebuilding compares the original parent model and all arrays, then constructs the same two suffix rows. Numerical method and query are outside this builder.",
+    "The appended covers are necessary for integral incidences; preservation of the parent real feasible set is explicitly not claimed."
+  ],
+  "model_counts": {
+    "variables": 1115,
+    "rows": 167937,
+    "nonzeros": 11012142
+  },
+  "review_scope": {
+    "subject_imports": 0,
+    "controls_repeated": 0,
+    "matrix_rebuilds": 0,
+    "optimizer_calls": 0,
+    "proof_replay": false
+  },
+  "limitations": "This report is a complete source/math review, not an independent execution of the two Gram sums or the matrix cold replay."
+}

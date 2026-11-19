@@ -1,0 +1,34 @@
+{
+  "status": "PASS: complete zero-filter source review and metadata-only repair comparison",
+  "reviewer": "independent_sets",
+  "bindings": {
+    "experiments/workspace/root_prism_free_f0_joint_psd_zero_scan.py": "555ce146b2f7ae05641872d2bd3b8a9a86f690680d1c82e2f32e6ea4640114b7",
+    "experiments/workspace/root_prism_free_f0_joint_psd_zero_scan_v2.py": "3bb5b68da04e94944688b71d7900f064c4b4d246f5c02f4a1569d7e094932cea",
+    "experiments/workspace/root_prism_free_f0_joint_psd_scan.py": "7441635b50e19846e48261614daf0a69a605cce8d32a15cd90f7a4cbafc1ce73",
+    "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation01.json": "ff6d7394539372aecd39728740cd77f20eec020387c98d0beeb36f5fed870993",
+    "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation02.json": "f8505003449cdf4f3af83770ed03e48ba1d88875b9982d881e7fc8890b861762",
+    "experiments/logs/root-prism-free/f0-joint-psd-json-control.json": "89153aa5bb1d6fbdad63caa7ee4479c7a652c38136b95397ad110db7134e09ac",
+    "experiments/logs/root-prism-free/f0-joint-psd-zero-repair-binding.json": "52db30f7db614e9ea08e8393833deeae187b9dc1deb2d2e69f2f173d5bc7d440"
+  },
+  "review_scope": "Read the complete original adapter, compare the complete corrected source, and inspect prepared metadata. No subject import or computation from the PSD domain.",
+  "checked": [
+    "Every removed coordinate is witnessed by a nonzero single-coordinate zero equality in the frozen parent matrix; all162 are Y coordinates.",
+    "Every oriented parent row and candidate row receives the same exact zero substitution and positive gcd normalization before deduplication.",
+    "The identity literal_gap = positive_divisor * projected_gap + removed_term is checked without assuming the numerical proposal satisfies the proved zeros.",
+    "A retained cut requires both positive literal and positive projected exact dyadic gaps. Unit-box implication and normalized-row deduplication are checked after substitution.",
+    "The underlying literal PSD constructor remains the source of validity; heuristic gap/eigenvalue size labels do not affect mathematical acceptance.",
+    "The replay reconstructs the saved rounded integer vector, literal inequality, projected inequality, exact gaps and each retained/discarded disposition.",
+    "The new source differs only by bool(...) around one NumPy comparison, making its metadata JSON serializable without changing values, mathematical rules or budgets."
+  ],
+  "scope_limits": [
+    "This review does not rerun the162-zero extraction, filter preparation, control suite, eigenscan or result replay.",
+    "No-cut outcomes are not PSD certificates; exact positive gaps do not establish an independent new facet or a graph exclusion.",
+    "The cooperative time ceiling is checked between operations and is not a hard bound on a single eigendecomposition.",
+    "The first failed scan remains a preserved failed attempt; this report makes no mathematical claim from its incomplete output."
+  ],
+  "subject_imported": false,
+  "domain_or_kernel_reconstruction": false,
+  "controls_repeated": false,
+  "eigendecompositions": 0,
+  "optimizer_calls": 0
+}

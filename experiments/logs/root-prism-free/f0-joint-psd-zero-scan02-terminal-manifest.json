@@ -1,0 +1,157 @@
+{
+  "status": "Frozen21-row exact PSD-separation package; no optimizer or graph exclusion",
+  "preparation_manifest": {
+    "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation-manifest.json",
+    "sha256": "162a99b8682d519df52a269e1ededcec57c86b9e59a16f3c6abe16f1cafd4b81"
+  },
+  "source_sha256": "3bb5b68da04e94944688b71d7900f064c4b4d246f5c02f4a1569d7e094932cea",
+  "result_sha256": "43e590c801ccb85e385253cc475ce6f6bdc09874d10b9c7571170cb2bd06d9a3",
+  "cold_replay_sha256": "a59a5a8c559d2390847074f04e6fd51df38e2cb0bf333b4d2e88fc503068b7ae",
+  "terminal_status": "TIME_LIMIT_PARTIAL",
+  "retained_rows": 21,
+  "family_counts": {
+    "selector": 16,
+    "plus": 5,
+    "minus": 0
+  },
+  "retained_nonzeros": 178481,
+  "corrected_scan_seconds": 61.119821921995026,
+  "corrected_scan_decompositions": 3,
+  "failed_prior_attempt_decompositions": 1,
+  "failed_prior_attempt_certificates": 0,
+  "new_optimizer_calls": 0,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_zero_scan_v2.py",
+      "sha256": "3bb5b68da04e94944688b71d7900f064c4b4d246f5c02f4a1569d7e094932cea",
+      "bytes": 22076
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_json_control.py",
+      "sha256": "d966fa802c52d28ab2574f42263557929330a66b91e838b08434141f89f00d6a",
+      "bytes": 3466
+    },
+    {
+      "path": "research/root_prism_free_f0_joint_psd_scan02.md",
+      "sha256": "859bd6fcc92e9be1c0c9cbb0c160901894208a921be09866aab548d499966892",
+      "bytes": 5288
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-filter02.json.gz",
+      "sha256": "30cbae97dabfefe4b948684e8387906321d4da5c98c8ecd175a42ae1ba6a4039",
+      "bytes": 1422701
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-repair-binding.json",
+      "sha256": "52db30f7db614e9ea08e8393833deeae187b9dc1deb2d2e69f2f173d5bc7d440",
+      "bytes": 984
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-independent-source-review.json",
+      "sha256": "f0716b53c4d6b70a6053ae577df52ab59fe51b9304e6a7d716c354b775fee6a2",
+      "bytes": 3144
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan01-failure.json",
+      "sha256": "b91cc08edfee02d8d5bb0dfe73b76627493d2dfb9b95e55b18a33b8f49214b9e",
+      "bytes": 1356
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan01.json.gz",
+      "sha256": "833ee46b0e247cd2b35d1138a85090aa4f084356abbdc8bf56ceee7029fa64e5",
+      "bytes": 1608
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan01.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan01.stderr.log",
+      "sha256": "f79e5011ada6621da26763eb283537ffb6a5d0364e2d6790024be7abe6975087",
+      "bytes": 3663
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan02.json.gz",
+      "sha256": "43e590c801ccb85e385253cc475ce6f6bdc09874d10b9c7571170cb2bd06d9a3",
+      "bytes": 1650720
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan02.log",
+      "sha256": "b7e68c102e8916c05e534cbfbf981b0b6072e35d3957fa32b520518fdc810ce7",
+      "bytes": 166
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan02.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan02-summary.json",
+      "sha256": "d937bc0cc19a950620a0f6d27c73c7772aa3c6d641e34a1cf76fb788d05f031e",
+      "bytes": 3705
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-json-control.json",
+      "sha256": "89153aa5bb1d6fbdad63caa7ee4479c7a652c38136b95397ad110db7134e09ac",
+      "bytes": 648
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-json-control.log",
+      "sha256": "8c3ee1484b652b8a934cb4e63ab97212035c8ee640ec91b1db1d7ad1da862542",
+      "bytes": 624
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-json-control.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation02.json",
+      "sha256": "f8505003449cdf4f3af83770ed03e48ba1d88875b9982d881e7fc8890b861762",
+      "bytes": 4531
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation02.log",
+      "sha256": "be0eaf7a829e81c0ed31ce654fb8fc6bef70fe951eab017af0f3cd5265a2cdec",
+      "bytes": 216
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation02.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation02-cold-replay.json",
+      "sha256": "c74e0638b8d3c373d73dcc707e6bf3f42127cc41228e10a5a70f84170d72ac6a",
+      "bytes": 3380
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation02-cold-replay.log",
+      "sha256": "52e312bc4d80e48e8a8cff614098566519460ce3769f221b34c1f553432604c9",
+      "bytes": 213
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation02-cold-replay.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan02-cold-replay.json",
+      "sha256": "a59a5a8c559d2390847074f04e6fd51df38e2cb0bf333b4d2e88fc503068b7ae",
+      "bytes": 3598
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan02-cold-replay.log",
+      "sha256": "c644ce75ed280f8676076e20a21fb3e5ec32c078505fc63e3f6ae7cb29eca993",
+      "bytes": 251
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan02-cold-replay.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "file_count": 26,
+  "total_bytes": 3132338
+}

@@ -1,0 +1,155 @@
+{
+  "run_result_sha256": "691770408d6af35c86cd06004344b51159dbd6ba8ceafd2b185b5764ee37cd0e",
+  "CNF_sha256": "fcb2e5af81712b914acc491de241917d6093461ef990f5b78e86c79df3deedae",
+  "production_solve_calls": 0,
+  "fresh_CNF_rebuild": true,
+  "graph_completion_claimed": false,
+  "status": "PASS: exact SAT local-row and CNF replay",
+  "native_witness": {
+    "status": "PASS: exact native local Boolean neighbor witness",
+    "selected_primitive_variables": [
+      38,
+      40,
+      100,
+      113,
+      119,
+      153,
+      201,
+      217
+    ],
+    "selected_neighbor_ids": [
+      69,
+      73,
+      174,
+      201,
+      212,
+      284,
+      435,
+      475
+    ],
+    "selected_neighbor_signatures": [
+      [
+        0,
+        14,
+        17
+      ],
+      [
+        1,
+        2,
+        8
+      ],
+      [
+        2,
+        7,
+        17
+      ],
+      [
+        3,
+        4,
+        7
+      ],
+      [
+        3,
+        5,
+        12
+      ],
+      [
+        4,
+        10,
+        12
+      ],
+      [
+        9,
+        10,
+        15
+      ],
+      [
+        11,
+        14,
+        15
+      ]
+    ],
+    "all18_mixed_counts": [
+      1,
+      1,
+      2,
+      2,
+      2,
+      1,
+      0,
+      2,
+      1,
+      1,
+      2,
+      1,
+      2,
+      0,
+      2,
+      2,
+      0,
+      2
+    ],
+    "exterior_neighbor_count": 8,
+    "conflict_constraints_checked": 5495,
+    "visible_partial_vertices": 30,
+    "visible_common_neighbor_caps_checked": 435,
+    "partial_adjacency_rows": [
+      510,
+      32261,
+      2064387,
+      4227601,
+      8455177,
+      25299009,
+      100929569,
+      168304897,
+      68173953,
+      2164746,
+      50372626,
+      8651298,
+      268582978,
+      403702914,
+      539496706,
+      201458700,
+      2621972,
+      541102116,
+      806357060,
+      82052,
+      21242116,
+      1069629952,
+      3276808,
+      2099248,
+      3146784,
+      2098368,
+      2130240,
+      2138240,
+      2371584,
+      2506752
+    ],
+    "global_graph_completion_claimed": false
+  },
+  "runner_source_sha256": "8255ef58fdc270e04258c5277f3f31262c6aa7c7e3e6566a4fc16c912599de01",
+  "bindings": {
+    "builder": {
+      "path": "experiments/workspace/root_prism_free_f0_local_center355.py",
+      "sha256": "e3e7852c674ec132f1a08f4ca9ff4ea0d11a581be4f6f39d512b8114b48d3054"
+    },
+    "instance": {
+      "path": "experiments/logs/root-prism-free/f0-local-center355-preparation01/instance.json",
+      "sha256": "1619eb8050ee496c2e0f8f8ca65dbc98c6fee01c259b98e91c377d2ea2b3943d"
+    },
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-local-center355-preparation01/model.json",
+      "sha256": "1cdd8113ee62eff4b87bfaa24e4e5638ff94a3c4270a0449aa38384787598b86"
+    },
+    "CNF": {
+      "path": "experiments/logs/root-prism-free/f0-local-center355-preparation01/model.cnf",
+      "sha256": "fcb2e5af81712b914acc491de241917d6093461ef990f5b78e86c79df3deedae"
+    },
+    "builder_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-local-center355-preparation01/preparation.json",
+      "sha256": "1cf0c80b67e0956d62197d880cf2cc06e83f8ad049f0038430877b9cd86fc56a"
+    }
+  },
+  "pilot_preparation_sha256": "c1c63d81432a7efcd3c1bbfe0115d392641eb4f8e48fabc7342662afc6bc8acb",
+  "total_seconds": 1.8642051499991794
+}

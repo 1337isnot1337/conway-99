@@ -1,0 +1,259 @@
+{
+  "status": "exact original-row bound found; independent cold replay required",
+  "source_bindings": {
+    "driver_sha256": "c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd",
+    "exact_face_builder_sha256": "e5479fb9f51405a85c8c2586e862f451f451810f298130af345f4a974e91c7ea",
+    "previous_face99_driver_sha256": "53baba0038f51dd8439d14b27378663febc45cf90917ecb26524e0f6f275adbf",
+    "direct_integer_cover_source_sha256": "2420988060354e9e77806de86040a566ece9d2f5af27b1a216135ea7e86495cc",
+    "unchanged_native_row_assembly_and_call_helper_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_serialization_runtime_helper_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "zero_seed_source_sha256": "9eedacb4b62db8ad7058e291d04f83141fca306971ed278a58548ead4cd1e8a1",
+    "zero_seed_certificate_sha256": "64d8e375280bc067097913de2dd6e2995c19de2a4807f63cecdcd80b811a85cf"
+  },
+  "preparation_sha256": "4abfc885263fe45199490c3a7c42785776abf76d52660058f56a4ce81ec91323",
+  "limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "iterations": [
+    {
+      "call_index": 0,
+      "active_rows": 3083,
+      "numeric_artifact": {
+        "path": "iteration-00-numeric.json.gz",
+        "sha256": "5a561d95a32d89a60ab938248388cd42ab700632a534b0eae12bde1fefc18f23",
+        "decompressed_sha256": "40cbac06b026b2cbe09709714ba7085502c805950302fdfe6916edab9a345e23",
+        "decompressed_bytes": 109076
+      },
+      "added_after_call": [
+        154836,
+        154842
+      ],
+      "scan": {
+        "all_original_and_extension_rows_scanned": 169052,
+        "full_matrix_nonzeros_scanned": 11014372,
+        "retained_cover_rows_scanned": 165969,
+        "active_rows_scanned": 3083,
+        "full_row_violation_count": 2,
+        "maximum_full_row_violation": 0.17083413843499604,
+        "maximum_active_row_violation": 5.1514348342607263e-14,
+        "maximum_retained_cover_violation": 0.17083413843499604,
+        "maximum_variable_bound_violation": 2.255806301887474e-15,
+        "violated_unseen_retained_covers": 2,
+        "selected_new_cover_rows": [
+          154836,
+          154842
+        ],
+        "selection_rule": "descending floating violation, then ascending original row ID",
+        "exact_feasibility_claimed": false
+      },
+      "scan_seconds": 0.05605582699354272
+    },
+    {
+      "call_index": 1,
+      "active_rows": 3085,
+      "numeric_artifact": {
+        "path": "iteration-01-numeric.json.gz",
+        "sha256": "ccc19a18de1879fb4ada6c0e24e424c055989d97bd43a4024e90bdf4beb8540c",
+        "decompressed_sha256": "a141bdecb90b079920680b8528475d24b1fdf2df8913db073195e1da40426a25",
+        "decompressed_bytes": 109156
+      },
+      "added_after_call": [],
+      "scan": {
+        "all_original_and_extension_rows_scanned": 169052,
+        "full_matrix_nonzeros_scanned": 11014372,
+        "retained_cover_rows_scanned": 165969,
+        "active_rows_scanned": 3085,
+        "full_row_violation_count": 0,
+        "maximum_full_row_violation": 4.263256414560601e-14,
+        "maximum_active_row_violation": 4.263256414560601e-14,
+        "maximum_retained_cover_violation": 5.6066262743570405e-15,
+        "maximum_variable_bound_violation": 4.829470157119431e-15,
+        "violated_unseen_retained_covers": 0,
+        "selected_new_cover_rows": [],
+        "selection_rule": "descending floating violation, then ascending original row ID",
+        "exact_feasibility_claimed": false
+      },
+      "scan_seconds": 0.05021953899995424
+    }
+  ],
+  "automatic_retry": false,
+  "production_run_calls": 2,
+  "solver_and_existing_ray_seconds": 1.8144753079977818,
+  "added_cover_rows": 2,
+  "exact_infeasibility_certificate_found": false,
+  "exact_zero_face_certificate_found": true,
+  "exact_rational_point_found": false,
+  "case4_exclusion_verified": false,
+  "whole_graph_problem_resolved": false,
+  "definition_sha256": "cd692bf54a9df82fdbc1e31777a405134255165b00490ca094362ac22d4c076a",
+  "input_replay_seconds": 2.739797460002592,
+  "native_bootstrap_seconds": 0.7614691720009432,
+  "numerical_stop_reason": "no unseen retained cover violated; full exact acceptance still required",
+  "numerical_phase_seconds": 2.729366660998494,
+  "bound_reconstruction_attempts": [
+    {
+      "method": "scale",
+      "parameter": 1,
+      "orientation": -1,
+      "gamma": "1",
+      "nonzero_rows": 0,
+      "exact_bound": "1"
+    },
+    {
+      "method": "scale",
+      "parameter": 4,
+      "orientation": -1,
+      "gamma": "4",
+      "nonzero_rows": 9,
+      "exact_bound": "24"
+    },
+    {
+      "method": "scale",
+      "parameter": 4,
+      "orientation": 1,
+      "gamma": "4",
+      "nonzero_rows": 9,
+      "exact_bound": "57"
+    },
+    {
+      "method": "scale",
+      "parameter": 8,
+      "orientation": -1,
+      "gamma": "8",
+      "nonzero_rows": 50,
+      "exact_bound": "40"
+    },
+    {
+      "method": "scale",
+      "parameter": 8,
+      "orientation": 1,
+      "gamma": "8",
+      "nonzero_rows": 50,
+      "exact_bound": "97"
+    },
+    {
+      "method": "scale",
+      "parameter": 16,
+      "orientation": -1,
+      "gamma": "16",
+      "nonzero_rows": 50,
+      "exact_bound": "2"
+    },
+    {
+      "method": "scale",
+      "parameter": 16,
+      "orientation": 1,
+      "gamma": "16",
+      "nonzero_rows": 50,
+      "exact_bound": "95"
+    },
+    {
+      "method": "scale",
+      "parameter": 64,
+      "orientation": -1,
+      "gamma": "64",
+      "nonzero_rows": 50,
+      "exact_bound": "40"
+    },
+    {
+      "method": "scale",
+      "parameter": 64,
+      "orientation": 1,
+      "gamma": "64",
+      "nonzero_rows": 50,
+      "exact_bound": "469"
+    },
+    {
+      "method": "scale",
+      "parameter": 256,
+      "orientation": -1,
+      "gamma": "256",
+      "nonzero_rows": 50,
+      "exact_bound": "24"
+    },
+    {
+      "method": "scale",
+      "parameter": 256,
+      "orientation": 1,
+      "gamma": "256",
+      "nonzero_rows": 50,
+      "exact_bound": "1731"
+    },
+    {
+      "method": "scale",
+      "parameter": 4096,
+      "orientation": -1,
+      "gamma": "4096",
+      "nonzero_rows": 50,
+      "exact_bound": "40"
+    },
+    {
+      "method": "scale",
+      "parameter": 4096,
+      "orientation": 1,
+      "gamma": "4096",
+      "nonzero_rows": 50,
+      "exact_bound": "27253"
+    },
+    {
+      "method": "scale",
+      "parameter": 65536,
+      "orientation": -1,
+      "gamma": "65536",
+      "nonzero_rows": 50,
+      "exact_bound": "2"
+    },
+    {
+      "method": "scale",
+      "parameter": 65536,
+      "orientation": 1,
+      "gamma": "65536",
+      "nonzero_rows": 50,
+      "exact_bound": "435335"
+    },
+    {
+      "method": "scale",
+      "parameter": 1000000,
+      "orientation": -1,
+      "gamma": "1000000",
+      "nonzero_rows": 50,
+      "exact_bound": "40"
+    },
+    {
+      "method": "scale",
+      "parameter": 1000000,
+      "orientation": 1,
+      "gamma": "1000000",
+      "nonzero_rows": 50,
+      "exact_bound": "6642901"
+    },
+    {
+      "method": "fraction",
+      "parameter": 16,
+      "orientation": -1,
+      "gamma": "14",
+      "nonzero_rows": 50,
+      "exact_bound": "0"
+    }
+  ],
+  "exact_certificate": {
+    "path": "exact-bound-certificate.json.gz",
+    "sha256": "a950351d0bc982f4d20c2d25d392517620141fdd313182d75bf4f93d5dc0e740",
+    "decompressed_sha256": "ca1cd46685f7a470b5ccf2b5cd280f094921bffac32aaae0100455935981ed49",
+    "decompressed_bytes": 11445
+  },
+  "exact_stage_seconds": 0.03041369200218469,
+  "elapsed_seconds": 5.50032784799987,
+  "peak_rss_kib": 433044
+}

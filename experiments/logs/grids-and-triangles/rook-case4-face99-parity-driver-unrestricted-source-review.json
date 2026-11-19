@@ -1,0 +1,24 @@
+{
+  "status": "PASS: complete delta/source review and independent no-import AST substitution check",
+  "reviewer": "unrestricted_completion",
+  "subject": {
+    "path": "experiments/workspace/rook_case4_face99_parity_cover_generation.py",
+    "sha256": "c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd"
+  },
+  "parent": {
+    "path": "experiments/workspace/rook_case4_face99_cover_generation.py",
+    "sha256": "53baba0038f51dd8439d14b27378663febc45cf90917ecb26524e0f6f275adbf"
+  },
+  "substitution_sha256": "dc7ae75c919f0b8db566791cf48f34418e81dc4605193ca84c72dc624e672a05",
+  "checks": [
+    "The two proved covers are always active at167935 and167936. The complete old165969-cover pool remains1966..167934.",
+    "All1115 max-min extension rows start at167937. Initial rows and the full pool partition all169052 extended rows exactly.",
+    "Complete source after the18 explicit substitutions is AST-identical to the new source. The numerical run loop, full exact primal check, extend function and other reused mechanisms retain their reviewed semantics.",
+    "All model, array, stream, builder, original runtime and parent driver hashes are checked. Prefix duals continue to use global row IDs and full acceptance includes both covers.",
+    "The direct cover proof is bound through the builder. No old real-feasible-set equivalence is claimed and no additional selector or symmetry premise is introduced."
+  ],
+  "runtime_or_reconstruction_performed": false,
+  "subject_imported": false,
+  "optimizer_calls": 0,
+  "scope": "Read-only delta/source gate; no matrix, control, native-call, or proof replay."
+}

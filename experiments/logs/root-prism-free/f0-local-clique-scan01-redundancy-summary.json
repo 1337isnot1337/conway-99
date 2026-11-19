@@ -1,0 +1,24 @@
+{
+  "status": "COMPLETE_EXACT_LISTED_PARENT_IMPLICATION_CHECK",
+  "source_sha256": "4e5a3fe7e410485a6f12458fdf4ec2bdcdf299ebe0ffc596b6c7d070f66b2511",
+  "inputs": {
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-model03.json.gz",
+      "sha256": "ad046fc05a4247a081b3cabb16693682fa5539ff557dd7b599f3c3a63e7303dd"
+    },
+    "cliques": {
+      "path": "experiments/logs/root-prism-free/f0-local-clique-scan01.json",
+      "sha256": "f19b34f16e23f3cef0ec764935c5d43fb0fda638fb80e1c074b15ef3207cc9c5"
+    }
+  },
+  "target_rows": 128,
+  "implied_rows": 128,
+  "unmatched_rows": [],
+  "zero_equations_used_as_available_premises": 162,
+  "exact_parent_equality_rows": 128,
+  "optimizer_calls": 0,
+  "scope": "Only the128 retained greedy clique rows; an unmatched row is not proved independent. Numerical gaps are not used in the implication proof.",
+  "record_sha256": "909fcb07b6c161c0f13feaa49c3a9eeb2051ac2fddae90dbbdf4f2f50f508af5",
+  "seconds": 1.794336734994431,
+  "replay": false
+}

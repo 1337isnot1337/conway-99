@@ -1,0 +1,154 @@
+{
+  "schema": "conway99.f0-local-center355-CNF.v1",
+  "source_sha256": "e3e7852c674ec132f1a08f4ca9ff4ea0d11a581be4f6f39d512b8114b48d3054",
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "edge_zeros": {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01.json.gz",
+      "sha256": "397e8bf110e03a5accb5e6c1f27b2fb5525100acb67427c66669e188e74159d1"
+    },
+    "paths": {
+      "path": "experiments/logs/root-prism-free/f0-path-prism-cuts01.json.gz",
+      "sha256": "d7ce1862d52cb4c9011efe73deb438db2b4e33a3fade1d5b803569005f2d7886"
+    },
+    "inventory": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01.json.gz",
+      "sha256": "cbfdad339ab84cb7eeb6b221e10be3c4c1db4fb70932de3a28e62ee4642cb7e0"
+    },
+    "inventory_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-model-preparation.json",
+      "sha256": "a1cd24f263b9712aeb7f4ecb1b69467f698c83527199c4fc063a3c63ccee5406"
+    },
+    "complete_replay": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-suffix-replay.json",
+      "sha256": "ae85e2c9cbe19b72ad23231c6ee28ac135098eb078088780d4bd0988bd28cb5e"
+    }
+  },
+  "pysat_version": "1.9.dev23",
+  "cardinality_encoding": "EncType.seqcounter",
+  "native_instance_sha256": "5e9a12488535f56d0dfea2e6c59b4ad04929554a20dd44b6fa1c6b37e61c5e53",
+  "cnf_sha256": "fcb2e5af81712b914acc491de241917d6093461ef990f5b78e86c79df3deedae",
+  "primitive_variables": 218,
+  "total_variables": 5408,
+  "auxiliary_variables": 5190,
+  "clauses": 16105,
+  "cnf_bytes": 210906,
+  "binary_conflict_clauses": 5495,
+  "count_rows": [
+    {
+      "support": 38,
+      "demand": 1,
+      "clauses": 111
+    },
+    {
+      "support": 47,
+      "demand": 1,
+      "clauses": 138
+    },
+    {
+      "support": 38,
+      "demand": 2,
+      "clauses": 288
+    },
+    {
+      "support": 38,
+      "demand": 2,
+      "clauses": 288
+    },
+    {
+      "support": 40,
+      "demand": 2,
+      "clauses": 304
+    },
+    {
+      "support": 31,
+      "demand": 1,
+      "clauses": 90
+    },
+    {
+      "support": 0,
+      "demand": 0,
+      "clauses": 0
+    },
+    {
+      "support": 50,
+      "demand": 2,
+      "clauses": 384
+    },
+    {
+      "support": 42,
+      "demand": 1,
+      "clauses": 123
+    },
+    {
+      "support": 42,
+      "demand": 1,
+      "clauses": 123
+    },
+    {
+      "support": 51,
+      "demand": 2,
+      "clauses": 392
+    },
+    {
+      "support": 36,
+      "demand": 1,
+      "clauses": 105
+    },
+    {
+      "support": 50,
+      "demand": 2,
+      "clauses": 384
+    },
+    {
+      "support": 0,
+      "demand": 0,
+      "clauses": 0
+    },
+    {
+      "support": 50,
+      "demand": 2,
+      "clauses": 384
+    },
+    {
+      "support": 50,
+      "demand": 2,
+      "clauses": 384
+    },
+    {
+      "support": 0,
+      "demand": 0,
+      "clauses": 0
+    },
+    {
+      "support": 51,
+      "demand": 2,
+      "clauses": 392
+    },
+    {
+      "support": 218,
+      "demand": 8,
+      "clauses": 6720
+    }
+  ],
+  "center_selector_orbit": [
+    355,
+    358,
+    365,
+    378,
+    380,
+    393,
+    411,
+    413,
+    425,
+    446,
+    459,
+    476
+  ],
+  "literal_to_quotient_map_is_metadata_only": true,
+  "conditional_UNSAT_conclusion": "Only a checked UNSAT proof excludes the selected center and its twelve core relabelings.",
+  "SAT_scope": "Eight local neighbors satisfying the recorded necessary constraints; no full incidence or graph completion."
+}

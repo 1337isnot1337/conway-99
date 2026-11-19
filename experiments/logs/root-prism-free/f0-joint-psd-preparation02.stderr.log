@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 574, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 555, in main
+    result = prepare(args.cache)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 353, in prepare
+    cache = project_cache()
+            ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 207, in project_cache
+    rows = existing_rows(model)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 127, in existing_rows
+    assert matrix["lower"] == [0]*VARIABLES and matrix["upper"] == [1]*VARIABLES
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

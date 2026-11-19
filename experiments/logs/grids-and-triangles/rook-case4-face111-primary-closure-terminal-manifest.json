@@ -1,0 +1,108 @@
+{
+  "status": "FROZEN_COMPLETE111_ZERO_PROPAGATION_AND_COLD_REPLAY",
+  "files": [
+    {
+      "path": "experiments/workspace/rook_case4_face111_primary_closure.py",
+      "bytes": 9864,
+      "sha256": "b3338d44b20342b645f2ebabe61ab3b6abc843933b798e1750f31103f6d1b103",
+      "expected_git_blob": "f2e43edb615707f712fa25782e5091dd90482223"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face111_primary_closure_v2.py",
+      "bytes": 10420,
+      "sha256": "983d62f91f4bd7ce53e1a11897d41dbf3a093b7fd426659fce4069973caa169e",
+      "expected_git_blob": "6ff15171020de902dc57463d0acd763c606faee9"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face111_closure_v2_controls.py",
+      "bytes": 3683,
+      "sha256": "7450c0d1ca41099f8592d3c306950dd39d2a9112658c3ddef0424a6fa8654a03",
+      "expected_git_blob": "156042f125517bbcfaaf37c9515c94110e36305d"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face111_primary_closure.md",
+      "bytes": 3975,
+      "sha256": "19a0cd065fd0ed3cef28b0a1468687704895919f1266be092d117c0e93f997b9",
+      "expected_git_blob": "3f167c27e84c05c1a9918dcfe766e792f4476fa6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-primary-closure-preparation.json",
+      "bytes": 5740,
+      "sha256": "98f18bc03053444ead8fcc9202e7ce84ea7e82b3585799b8702817a1f98f9c45",
+      "expected_git_blob": "ac16d22c965e64034bef2247e102cd3213cd54f4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-primary-closure-v2-preparation.json",
+      "bytes": 5895,
+      "sha256": "d0f9e11a3d5dc38e255bc0bea4271f5c39351ecc8d5e6a207e778dad20d83510",
+      "expected_git_blob": "3109d0d7dd8f6c3146b83d66dd64dd9b02b7dde0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-closure-v2-substitutions.json",
+      "bytes": 1549,
+      "sha256": "afeb3020233a06a9a981ca3c78b72321bc56fcba4bff8ad562ed3557357ff1dc",
+      "expected_git_blob": "480ffb531dead45673fbb5935b24b712d0b9110e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-closure-v2-controls.json",
+      "bytes": 1177,
+      "sha256": "190e6f94777400c837e633e08c3259d38ce87b8e39b33f272a5e1d597fefbcde",
+      "expected_git_blob": "16207d4ea924e234b603ab2c2d8e542cb98197bc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-primary-closure-v2-run01.json",
+      "bytes": 55997,
+      "sha256": "ce779e7a09cabb6ee528abba2e18965a52cf4afb07140e1d63a6288b8f46fc45",
+      "expected_git_blob": "8f019a0fc2e370cf942423af03f034bb72686db1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-primary-closure-v2-run01.log",
+      "bytes": 4001,
+      "sha256": "bda1ad1f5b583f800e8cdff9edc34105730e7ea631691b922fefd587ba11a419",
+      "expected_git_blob": "6620d2152c1208339e90a65cd0693ffb1a28ce3f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-primary-closure-v2-run01-replay.json",
+      "bytes": 3971,
+      "sha256": "62f1109de0893ca4940fdf4ba5cf458236333090d8c2798fbcbf24dea657f32c",
+      "expected_git_blob": "ad0108a99084d1079c0fc8f177487f2061432053"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-primary-closure-v2-run01-replay.log",
+      "bytes": 3971,
+      "sha256": "62f1109de0893ca4940fdf4ba5cf458236333090d8c2798fbcbf24dea657f32c",
+      "expected_git_blob": "ad0108a99084d1079c0fc8f177487f2061432053"
+    }
+  ],
+  "terminal": {
+    "proved_zeros": 111,
+    "new_zero_columns_beyond111": [],
+    "new_one_columns": [],
+    "contradiction": false,
+    "complete_fixed_point_replayed": true,
+    "all_original_native_rows": 2271,
+    "all_registered_covers": 178533,
+    "integer_cover_ranges": [
+      [
+        1,
+        42
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "remaining_selectors": 1103,
+    "remaining_native_and_integer_cover_rows": 1963,
+    "remaining_coordinate_covers": 164181,
+    "remaining_total_rows": 166144,
+    "remaining_nonzeros": 10785080
+  },
+  "prior_package": "rook-case4-face99-parity-generation-git-blobs.json",
+  "direct_face_certificate_sha256": "717c3e4103dd56bdd260f52b0f50c5a06f4245b834d92194357481d3163e229e",
+  "first_preparation_preserved_unrun": true,
+  "only_production_closure": "v2 with H2 equality",
+  "new_LP_model_or_optimizer_included": false,
+  "case4_excluded": false,
+  "whole_problem_resolved": false
+}

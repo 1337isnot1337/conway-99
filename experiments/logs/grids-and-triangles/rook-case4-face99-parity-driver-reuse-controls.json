@@ -1,0 +1,57 @@
+{
+  "status": "PASS: exact source adaptation, unchanged run semantics and complete row-ID partition",
+  "source_sha256": "27d8fc909598e4077e0b4e22ef5f8eb171dfe8b2ca18ec5d958607fec38b61a3",
+  "subject_bindings": {
+    "experiments/workspace/rook_case4_face99_cover_generation.py": "53baba0038f51dd8439d14b27378663febc45cf90917ecb26524e0f6f275adbf",
+    "experiments/workspace/rook_case4_face99_parity_cover_generation.py": "c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd",
+    "experiments/logs/grids-and-triangles/rook-case4-face99-parity-driver-substitutions.json": "dc7ae75c919f0b8db566791cf48f34418e81dc4605193ca84c72dc624e672a05"
+  },
+  "explicit_replacements": 18,
+  "identical_function_count": 16,
+  "identical_functions": [
+    "canonical",
+    "checked_preparation",
+    "cold_arrays",
+    "controls",
+    "digest",
+    "expanded_numeric",
+    "extend",
+    "full_float_matrix",
+    "inspect_numeric_point",
+    "main",
+    "preflight_replay",
+    "reconstruct_primal",
+    "row_ids_hash",
+    "run",
+    "runtime_binding",
+    "save"
+  ],
+  "changed_functions": [
+    "definition",
+    "initial_row_ids",
+    "load_inputs",
+    "prepare",
+    "reconstruct_bound",
+    "replay",
+    "source_bindings"
+  ],
+  "unchanged_limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "initial_rows": 3083,
+  "coordinate_cover_pool": 165969,
+  "full_rows": 169052,
+  "new_covers_always_active": true,
+  "subject_imported": false,
+  "model_rebuilt": false,
+  "optimizer_calls": 0
+}
