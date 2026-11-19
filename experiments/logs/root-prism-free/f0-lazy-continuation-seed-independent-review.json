@@ -1,0 +1,40 @@
+{
+  "status": "PASS: terminal seed and inherited continuation/proof source review",
+  "source_sha256": "67f83a2d4eb1599302156162ad32a69e276c5887b94ea78e021e4a68b72e801f",
+  "reviewed_source_hashes": {
+    "root_prism_free_f0_lazy_continuation_seed.py": "7535defe050dbdc943ed13e414b9286fbf177621ec7abf881be95338a1adb123",
+    "root_prism_free_f0_lazy_continuation.py": "156952c1239a102beb39150946199e8357ffc684d8eaf39f68ad0c575c043266",
+    "root_prism_free_f0_lazy_continuation_certificate.py": "2776f9249b91b31a17d341e4d5b333aadbae7396bdf736e95197f63152d39abd",
+    "root_prism_free_f0_lazy_row_loop.py": "7b8301c96329ecbc6610c3dd74809793029e2e13d57027c7b7f9756bfd859e07",
+    "root_prism_free_f0_lazy_row_loop_certificate.py": "e34b8084add389df0ff1354971573c5b0fe60c5ede423b33324ee84897a14558",
+    "root_prism_free_f0_lazy_clauses.py": "cef5448b012be57277b87297d2e3ec2c017ccea1336080f4c40c2594f2ab7640"
+  },
+  "independent_entire_runner_AST_comparison": true,
+  "independent_entire_proof_wrapper_AST_comparison": true,
+  "allowed_runner_changes": [
+    "terminal-seed import and exact source binding",
+    "row-pass maximum20 to100",
+    "SAT-call maximum500 to1000",
+    "two descriptive status strings"
+  ],
+  "unchanged_overall_seconds": 180,
+  "seed_source_review": {
+    "complete_frozen_parent_reconstruct_required_in_both_modes": true,
+    "parent_result_cold_replay_manifest_and_all_manifest_files_bound": true,
+    "all1008_individual_and108_symmetric_cuts_retained": true,
+    "base56994_clauses_plus1980_reverified_explanations_equal_parent58974": true,
+    "all_old_registry_indices_and_exact_explanation_predicates_preserved": true,
+    "only_starting_registry_digest_rebased_to_canonical_complete_contents": true,
+    "clause_digest_and_full_clause_order_unchanged": true,
+    "terminal_candidate_is_rechecked_after_updating_only_snapshot_fields": true,
+    "terminal_candidate_not_added_as_units_assumptions_or_phases": true,
+    "population60_premise_and_all12_core_actions_inherited_from_full_replay": true,
+    "all480_selectors_and_second_component_remain_free": true,
+    "no_visitation_block_or_new_symmetry_constraint": true
+  },
+  "scope": "Source/mathematical review and independent static comparisons only. No new certificate replay or numerical claim.",
+  "subject_imported": false,
+  "CNF_rebuilt": false,
+  "registry_replayed": false,
+  "optimizer_solver_or_DRAT_called": false
+}

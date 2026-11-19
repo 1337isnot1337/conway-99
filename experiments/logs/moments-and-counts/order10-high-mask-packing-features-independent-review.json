@@ -1,0 +1,80 @@
+{
+  "status": "PASS: read-only feature construction and moment normalization review",
+  "source_sha256": "8e0ceb67d345456058ae2adac42326214f9386914bfb08b8df90f223a7c9cb04",
+  "result_sha256": "d4df7b082b71cc25b2f2b4710c034e43a75bafeaa4d4cf4e913422bf3787fe0f",
+  "helper_source_hashes": {
+    "grid_free_order10_four_boolean_domains.py": "52ab6687063ca4e16930013cbb159658337e8f8ce007f3d82c1d39d3c9a042d6",
+    "grid_free_order10_four_boolean_scan.py": "5a97b204d8830af614f22c6e72f6ca4c120ec5c6a31320b4b8841c7e0ce19286"
+  },
+  "checked_artifact_bindings": {
+    "matrix": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-matrix.npz",
+      "sha256": "04cfedd33c5e908cfad04b713b9078ed48254ec15dcdab5fb915fa58d83daeba",
+      "bytes": 7464965
+    },
+    "moments": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-moments.npz",
+      "sha256": "d9013bc79adf4d488f40c4e0949de292435cd987d08c4db84d918ebb00d6f12c",
+      "bytes": 390567
+    },
+    "filters": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-filters.npz",
+      "sha256": "e5dc1e7c5a3ffce980f3b126b37d36d55db6091ead798d295e1571aca224e7f5",
+      "bytes": 745482
+    }
+  },
+  "source_checks": {
+    "colex_rank_sum_binomial_i_jplus1_with_separate_degree_offsets_is_bijective": true,
+    "column_generation_lists_every_contained_monomial_through_degree4_once": true,
+    "strict_in_column_indices_plus_containment_and_exact_subset_count_prove_complete_columns": true,
+    "all124314_rows_and132062_baseline_columns_preserved_before_saved_maps": true,
+    "constant_feature_is_row0_and_every_column_has_it": true,
+    "degree0to4_cached_references_are_summed_over_all_allowed_pair_edge_values": true,
+    "distinct_high_masks_identify_free_vertices_without_an_additional_label_divisor": true,
+    "Aut_times_unlabelled_induced_count_gives_labelled_embedding_mass": true,
+    "constant_moment_equals_labelled_root_embedding_mass": true,
+    "positive_tensor_coefficients_and_prechecked_row_bounds_protect_int64_contraction": true,
+    "moment_ref_sums_use_Python_int_before_checked_int64_storage": true,
+    "CSC_pointers_nonnegative_and_total5804664_fits_int32": true,
+    "zero_hit_accumulation_uses_int64_and_max386_features_not_uint8": true,
+    "each_zero_filtered_column_has_a_contained_exact_zero_monomial_witness": true,
+    "zero_filters_bound_to_this_integer_count_point_not_unconditional_graph_constraints": true,
+    "future_nonnegative_weights_have_no_artificial_upper_bound_and_constant_row_fixes_mass": true,
+    "future_separators_require_full_atom_lift_and_fresh_literal_product_replay": true
+  },
+  "reported_matrix_summary": {
+    "baseline_shape": [
+      124314,
+      132062
+    ],
+    "baseline_nnz": 5804664,
+    "baseline_supported_rows": 32969,
+    "visible_shape": [
+      124314,
+      90776
+    ],
+    "visible_nnz": 4463060,
+    "visible_supported_rows": 17903,
+    "exact_zero_moment_rows": 106411,
+    "positive_moment_rows": 17903,
+    "baseline_columns_removed_by_zero_moments": 41286,
+    "baseline_columns_surviving_zero_moments": 90776,
+    "visible_columns_removed_by_zero_moments": 0,
+    "zero_filtered_shape": [
+      17903,
+      90776
+    ],
+    "zero_filtered_nnz": 4463060,
+    "positive_rows_without_filtered_support": 0,
+    "root_labelled_embedding_mass": 72926995680,
+    "maximum_zero_features_in_one_atom": 27,
+    "every_removed_column_has_an_exact_zero_feature_witness": true,
+    "zero_filter_applies_only_to_bound_integer_point": true,
+    "status": "matrix and exact-zero filters prepared; feasibility has not been tested"
+  },
+  "scope": "Complete source review, inherited monomial/contraction source review, and saved metadata/artifact hash checks. No matrix regeneration, tensor loading, numeric contraction, optimizer, or independent census.",
+  "subject_imported": false,
+  "matrix_rebuilt": false,
+  "tensor_or_count_point_loaded": false,
+  "solver_or_optimizer_called": false
+}

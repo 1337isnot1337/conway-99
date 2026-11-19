@@ -1,0 +1,39 @@
+{
+  "status": "PASS: complete native model and bounded query source reviewed",
+  "input_paths": {
+    "model_source": "experiments/workspace/complement_rook_35core_case0004_native_cpsat.py",
+    "query_source": "experiments/workspace/complement_rook_35core_case0004_native_cpsat_query.py",
+    "model": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+    "cold_replay": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-cold-replay.json",
+    "query_preparation": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-query-preparation.json"
+  },
+  "input_sha256": {
+    "model_source": "4462dae913abcb736c5ba5f7cffc3f3e7d50b748826cab3c89fffbfd3bd0e3eb",
+    "query_source": "63e4b7ce073973dd184ad94185e7475d449d72f5a6013f3d5fc8d1d1edf82601",
+    "model": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476",
+    "cold_replay": "a6627477382b47013a0b26984826a565df879b0f226dc2ad505da318e751b5a7",
+    "query_preparation": "e222ebdad0db2706fe5decdd454d1de3369f476ff3118165f6f68a0e1c003ef0"
+  },
+  "scope": "Indexed case 4 of the first 35-core local set; partial incidence only",
+  "reviewed_checks": [
+    "All 630 Gram positions retained, including 234 empty identities",
+    "All 186 signature and 1365 triple at-most-one constraints retained; added explicit triples have quota-one witnesses",
+    "All 30 conflicts, 60 uncapped integer inequalities and 178533 coordinate covers retained",
+    "Native upper bound on each row inequality is automatic on Boolean variables",
+    "All exported constraints checked by the separate protobuf parser and reproduced by cold reconstruction",
+    "Only 1214 Boolean variables; no objective, assumptions, hint or added graph symmetry",
+    "One child reconstructs and verifies the frozen proto before a single solve",
+    "One worker and 60-second solver limit; existing checked watchdog bounds the owned child to 180 seconds",
+    "Every feasible assignment requires the complete existing exact incidence inspector",
+    "INFEASIBLE and UNKNOWN leave case 4 unresolved"
+  ],
+  "authorized_run": {
+    "production_queries": 1,
+    "solver_seconds": 60,
+    "workers": 1,
+    "owned_child_wall_seconds": 180,
+    "automatic_retries": 0
+  },
+  "native_backend_is_an_exclusion_certificate": false,
+  "additional_reconstruction_requested_by_this_review": false
+}

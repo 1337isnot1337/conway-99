@@ -1,0 +1,60 @@
+{
+  "status": "PASS: exact frozen runner/proof reuse after declared seed/limit/label changes",
+  "source_sha256": "94eb520a698fd8078a41266de55529bf851f028916005f9eb19ea532dc339021",
+  "bound_sources": {
+    "root_prism_free_f0_lazy_row_loop.py": "7b8301c96329ecbc6610c3dd74809793029e2e13d57027c7b7f9756bfd859e07",
+    "root_prism_free_f0_lazy_row_loop_certificate.py": "e34b8084add389df0ff1354971573c5b0fe60c5ede423b33324ee84897a14558",
+    "root_prism_free_f0_lazy_continuation_seed.py": "7535defe050dbdc943ed13e414b9286fbf177621ec7abf881be95338a1adb123",
+    "root_prism_free_f0_lazy_continuation.py": "156952c1239a102beb39150946199e8357ffc684d8eaf39f68ad0c575c043266",
+    "root_prism_free_f0_lazy_continuation_certificate.py": "2776f9249b91b31a17d341e4d5b333aadbae7396bdf736e95197f63152d39abd"
+  },
+  "unchanged_runner_functions_after_two_status_label_substitutions": [
+    "save_gzip",
+    "check_sources",
+    "formula",
+    "prepare",
+    "checked_preparation",
+    "input_state",
+    "inspect_candidate",
+    "symmetric_candidates",
+    "explain_candidate",
+    "add_row_cuts",
+    "finish_step",
+    "run",
+    "bound_record",
+    "replay_batch",
+    "reconstruct"
+  ],
+  "unchanged_proof_wrapper_functions": [
+    "inputs_subset",
+    "checker_call",
+    "prove",
+    "replay"
+  ],
+  "entire_runner_AST_otherwise_identical": true,
+  "entire_proof_wrapper_AST_otherwise_identical": true,
+  "only_limit_changes": {
+    "maximum_row_passes": [
+      20,
+      100
+    ],
+    "maximum_SAT_refinement_calls": [
+      500,
+      1000
+    ]
+  },
+  "continued_limits": {
+    "maximum_SAT_refinement_calls": 1000,
+    "maximum_row_passes": 100,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "shared_LP_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000
+  },
+  "new_mathematical_initialization_review_required": true,
+  "subject_modules_imported": false,
+  "optimizer_or_solver_called": false,
+  "CNF_rebuilt": false
+}

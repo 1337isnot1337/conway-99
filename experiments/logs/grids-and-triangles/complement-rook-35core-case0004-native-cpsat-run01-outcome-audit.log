@@ -1,0 +1,39 @@
+{
+  "status": "PASS: terminal native outcome/source/runtime/proto bindings checked",
+  "source_sha256": "497690b4940284f9992da7a3f918098dbb618661e5e7d64786bd80469d754f5b",
+  "input_bindings": {
+    "model.json": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476",
+    "cold-replay.json": "a6627477382b47013a0b26984826a565df879b0f226dc2ad505da318e751b5a7",
+    "preparation-artifacts.json": "a4f6f6338b7de68ff0bb6215209f19b35c4867e584d49292e0c6ac1b2ce3f8f6",
+    "query-preparation.json": "e222ebdad0db2706fe5decdd454d1de3369f476ff3118165f6f68a0e1c003ef0",
+    "query-preparation-artifacts.json": "3e26a1bd2ef0124a97222987c9af369d8693da5279657fdd0e4dd638b893d85a",
+    "coordinator-review.json": "09fd7780aa5ba819ae6791a46a54deb47ec63d8a2e207a4a31d1b92f611b6542"
+  },
+  "result_sha256": "70e24b6043bef675760ad1b186363dae7b40f6b7294e2e7d63e3712773436341",
+  "terminal_status": "UNKNOWN: bounded native search unresolved",
+  "backend_outcome": {
+    "status": "UNKNOWN",
+    "statistics": {
+      "conflicts": 0,
+      "branches": 4074,
+      "wall_time": 63.301846444000006,
+      "user_time": 63.301846502000004
+    },
+    "reconstruction_seconds": 27.4733689900022,
+    "solve_stage_elapsed_seconds": 63.3214005430018,
+    "child_elapsed_seconds": 91.0878719100001,
+    "child_peak_rss_kib": 1504460
+  },
+  "exact_candidate_inspection": null,
+  "source_files_checked": 14,
+  "runtime_files_checked": 105,
+  "prior_complete_cold_proto_replay_sha256": "a6627477382b47013a0b26984826a565df879b0f226dc2ad505da318e751b5a7",
+  "binary_proto_sha256": "b98aa8f1b6ea6e156e5bccb19b88080e543e9514e9797627813a684ff3d7fc73",
+  "new_model_reconstruction": false,
+  "solver_or_optimizer_called": false,
+  "CP_SAT_model_or_solver_imported": false,
+  "exact_inspector_imported_only_for_SAT": false,
+  "case4_excluded": false,
+  "complete_graph_found": false
+}
+audit_sha256 c746790667520403414557baf1a8b005e542b8d49806a89df3559573724d0e39

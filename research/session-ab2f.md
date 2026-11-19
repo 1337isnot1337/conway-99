@@ -6,14 +6,14 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Native Boolean incidence constraints for complementary-rook matching
-   case four. Owned by the independent-set worker.
-2. Complete local high-mask packings under common-neighbor capacities.
+1. Native Boolean incidence and lazy coordinate covers for complementary-rook
+   matching case four. Owned by the independent-set worker.
+2. Exact root-label averaging of complete high-mask packing distributions.
    Owned by the literature worker.
-3. Lazy free-selector incidence separation by individual rows and
-   shared symmetric edges. Owned by the completion worker.
-4. Exact clause explanations, Gram-equality shifts, independent checks,
-   and publication. Owned by the coordinating worker.
+3. Bounded-potential separation for the unresolved shared F0 exterior rows.
+   Owned by the completion worker.
+4. Exact finite-domain polynomial certificates, mathematical review, and
+   publication. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -798,3 +798,31 @@ their hypotheses permit them; computational exclusions require exact replay.
 - The next preparations retain the full lazy registry and assess complete
   local packing distributions. No graph or unrestricted contradiction
   follows from the present results.
+
+- The longer lazy run records seventeen candidates and fourteen row passes.
+  Fifteen individual obstructions and five shared rays enlarge the registry
+  to 1,356 inequalities. The final formula has 59,442 clauses and cold-replays.
+  The last candidate passes sixty individual row boxes. Its shared LP
+  returns no numerical dual ray. No saved multiplier supports arithmetic
+  recovery, so a distinct bounded-potential separator is being prepared.
+- The complete high-mask census gives 132,062 universal pair-capacity atoms.
+  All 62 root domains contain 350,963 atoms before the outside-pair filter
+  and 266,159 afterward. Independent enumeration and domain review pass.
+- The empty-root feature preparation retains the complete degree-four matrix.
+  Its active part has 17,903 rows and 90,776 columns. All zero moments
+  correspond to unsupported structural rows, with no additional atom removal.
+  Exact root-label averaging is being prepared before any optimizer query.
+- The completed root-label quotient has 73 active equations and 249 orbit
+  masses. Explicit generator maps cover all 90,776 structural atoms.
+  All 124,500 literal incidence identities pass. Source reviews and a
+  separate complete S6 census verify the averaging and group coverage.
+  A small primal query with exact rational reconstruction is now being prepared.
+- The finite-domain polynomial helper checks exact constant corrections and
+  zero-moment penalty recovery. Four known separators, 160 true distributions,
+  and an independent arithmetic review pass. A metadata-only correction
+  preserves the original source and fixes the largest coefficient bit count.
+- The native case-four model retains 1,214 Boolean variables and 180,804
+  constraints. Exported-byte checks and full reconstruction pass. Its one
+  bounded query returns UNKNOWN after 63.32 solver seconds. No witness or
+  further matching exclusion follows. The next preparation considers lazy
+  cover enforcement while retaining complete external checks.

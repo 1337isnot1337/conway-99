@@ -1,0 +1,33 @@
+{
+  "status": "PASS: read-only mathematical and complete-source coverage review",
+  "source_sha256": "0887869f50f0684f99bc000fd804f5400cfe59c2a5e322633d1d9b00fdf36637",
+  "result_sha256": "27c27163aa7429d75df5d430072ece5dd045df2d54caa8a6d57a28db45db0a71",
+  "reviewed_source": "experiments/workspace/grid_free_order10_high_mask_packing_domains.py",
+  "reviewed_result": "experiments/logs/moments-and-counts/order10-high-mask-packing-domains02.json.gz",
+  "checks": {
+    "high_mask_classes_are_Boolean_because_two_members_share_at_least3_root_neighbors": true,
+    "ordered_subset_DFS_includes_empty_set_and_generates_each_feasible_subset_once": true,
+    "pair_capacity_starts_at2_and_decrements_exactly_the_mask_pair_support": true,
+    "every_actual_high_mask_set_is_in_the_universal_pair_capacity_domain": true,
+    "all62_frozen_root_types_covered_with_all_allowed_masks_and_exact_remaining_pair_quotas": true,
+    "outside_pair_intersection_exclusion_valid_for_either_mutual_edge_value": true,
+    "root_and_outside_edges_not_arbitrarily_fixed": true,
+    "visible_root_lists_partition_saved_baseline_lists_with_the_saved_removed_lists": true,
+    "no_automorphism_quotient_or_moment_normalization_is_performed_here": true,
+    "uint64_atom_codes_use42bits_uint8_usage_has_at_most42_additions_and_once_twice_use15bits": true,
+    "unknown_or_error_cannot_be_marked_as_complete": true
+  },
+  "reported_counts": {
+    "universal_atoms": 132062,
+    "universal_visible_atoms": 90776,
+    "universal_removals_with_saved_pair_witnesses": 41286,
+    "root_domains": 62,
+    "baseline_root_atoms": 350963,
+    "visible_root_atoms": 266159
+  },
+  "scope": "Source proof of enumeration coverage/necessity and cheap saved-domain bookkeeping. Does not independently rerun the universal census or recheck every saved witness. These are necessary local patterns, not graph completions.",
+  "subject_imported": false,
+  "census_repeated": false,
+  "count_point_or_product_tensors_loaded": false,
+  "optimizer_or_solver_called": false
+}

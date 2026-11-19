@@ -1,0 +1,89 @@
+{
+  "status": "PASS: complete raw coverage, explicit isomorphisms, triple domains and controls",
+  "retained_shells": 8992,
+  "representatives": 66,
+  "standard_library_only": true,
+  "optimizer_called": false,
+  "elapsed_seconds": 2.404263009000715
+}
+{
+  "status": "free480 lazy continuation from1116 proved cuts prepared; no incidence/LP query",
+  "source_sha256": "156952c1239a102beb39150946199e8357ffc684d8eaf39f68ad0c575c043266",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_lazy_continuation_seed.py": "7535defe050dbdc943ed13e414b9286fbf177621ec7abf881be95338a1adb123",
+    "root_prism_free_f0_lazy_clauses.py": "cef5448b012be57277b87297d2e3ec2c017ccea1336080f4c40c2594f2ab7640",
+    "root_prism_free_f0_lazy_registry.py": "9a9a2c40241dc3899b9692568a2ee4127d17d5a4b8c33972dfd9b59a57e43478",
+    "root_prism_free_f0_incidence_row_loop.py": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+    "root_prism_free_f0_shared_deficit_separator.py": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf"
+  },
+  "exact_registry": "experiments/logs/root-prism-free/f0-lazy-terminal-registry.json.gz",
+  "exact_registry_sha256": "effd34510808030ee05914acbb7aa5beda412a6ef1a1cf2deb8fd3605e1596ea",
+  "adapter_controls_sha256": "ea051c6f6fe6d573e785fd72a4ff21a3b31123db8e53e0ed992105036647bd32",
+  "adapter_controls": {
+    "status": "PASS: exact explanation adapter, all finite transports and population semantics",
+    "base_explanation_pairs": 353,
+    "transported_exact_implications": 4236,
+    "explicit_boolean_implication_checks": 22662,
+    "primary_only": true,
+    "optimizer_or_solver_called": false,
+    "source_sha256": "cef5448b012be57277b87297d2e3ec2c017ccea1336080f4c40c2594f2ab7640",
+    "dependency_source_hashes": {
+      "integer_cut_clause_explanations.py": "f57d51b8be3fefd7a5d1035c52cc5758c719adb6a79d16a0909f1a54fdaa59f3",
+      "root_prism_free_f0_lazy_registry.py": "9a9a2c40241dc3899b9692568a2ee4127d17d5a4b8c33972dfd9b59a57e43478"
+    }
+  },
+  "limits": {
+    "maximum_SAT_refinement_calls": 1000,
+    "maximum_row_passes": 100,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "shared_LP_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000
+  },
+  "formula": {
+    "primary_variables": 480,
+    "variables": 28308,
+    "clauses": 58974,
+    "literal_occurrences": 319248,
+    "base_variables": 28308,
+    "base_clauses": 56994,
+    "base_body_sha256": "04fb936521fb7cb9db7343ccb8abef31fcc38acc3e54dd7b9b626fd858757932",
+    "registered_individual_inequalities": 1008,
+    "registered_signed_inequalities": 108,
+    "explanation_clauses": 1980,
+    "new_auxiliary_variables": 0,
+    "all480_selectors_free": true,
+    "fixed_second_component_or_incidence": false,
+    "encoding": "necessary exact independent and population60 clause explanations only",
+    "registry_not_claimed_equivalent_to_finite_explanation_CNF": true
+  },
+  "initial_snapshot": {
+    "individual_cuts": 1008,
+    "symmetric_cuts": 108,
+    "registry_state_sha256": "aa9e1e52a6d90712013f693baa83ca4cc9c6148b91f2dab8c8b0b6caa3af2ba2",
+    "clauses": 58974,
+    "variables": 28308,
+    "explanation_clauses": 1980,
+    "clause_state_sha256": "e6cc5227bf916418debfc9027911b9fa61b9652152cbe19df66f6effe5089f05"
+  },
+  "cnf": "/tmp/conway99-f0-lazy-continuation.cnf",
+  "cnf_sha256": "570f9e85c7eaa724d71a77b9654f7aad2c9052825fde876aaf20a87f484e24bc",
+  "cnf_bytes": 1640426,
+  "scope": "all first-incidence selections for component0 in globallyP=F=0 split18+18; second component unrestricted",
+  "no_visitation_blocks_or_graph_symmetry": true,
+  "complete_registry_evaluated_before_any_LP": true,
+  "row_LP_only_after_all_registry_inequalities_hold": true,
+  "shared_LP_only_after_complete60_exact_individual_boxes": true,
+  "stop_conditions": [
+    "incremental UNSAT requiring fresh proof",
+    "UNKNOWN or uncertified result",
+    "exact symmetric row-box feasibility",
+    "resource/time/SAT-call/row-pass limit",
+    "error"
+  ],
+  "no_Gram_equality_shifts": true,
+  "optimizer_or_incidence_solver_called": false,
+  "seconds": 30.893298761999176
+}

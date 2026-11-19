@@ -227,6 +227,25 @@ This certifies separate five-variable extensions, not a joint distribution
 over every class. The [population quartic scan](research/grids-and-triangles/grid_free_order10_high_population_quartics.md)
 also passes all 3,583 inequalities across 153 class families.
 Its population bounds follow from the original common-neighbor quotas.
+The [complete high-mask packing census](research/grids-and-triangles/grid_free_order10_high_mask_packing_domains.md)
+enumerates all 132,062 configurations under the universal six-root pair capacities.
+Across all 62 roots, 350,963 configurations meet their individual pair quotas.
+The proved outside-pair intersection restriction leaves 266,159 configurations.
+For the empty root, it reduces 132,062 configurations to 90,776.
+The complete degree-four moment matrix for this root is now prepared.
+It has 124,314 rows and 5,804,664 nonzero entries before the structural restriction.
+Its active part has 17,903 rows, 90,776 columns, and 4,463,060 nonzero entries.
+All exact zero moments follow from unsupported structural rows in this preparation.
+They remove no further allowed configuration.
+No optimizer is included in that preparation.
+The [exact root-label quotient](research/grids-and-triangles/grid_free_order10_high_mask_packing_orbits.md)
+reduces the active system to 73 equations in 249 nonnegative orbit masses.
+It retains all 90,776 structural atoms through explicit generator maps.
+All 124,500 literal incidence identities verify the uniform lift to individual moments.
+No host-graph automorphism is assumed, and no optimizer runs in this preparation.
+The [finite-domain certificate helper](research/grids-and-triangles/finite_boolean_moment_certificates.md)
+checks integer polynomials on every atom and restores zero-filtered atoms by exact penalties.
+Its controls and independent arithmetic review pass.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -396,6 +415,15 @@ A [CaDiCaL300 query](research/grids-and-triangles/complement_rook_35core_case000
 on the unchanged full formula also returns UNKNOWN.
 Its parent saves UNKNOWN before terminating the child at 180 seconds.
 The child supplies no accepted witness or proof. Full cold reconstruction passes.
+The [native Boolean formulation](research/grids-and-triangles/complement_rook_35core_case0004_native_cpsat.md)
+retains all original constraints with 1,214 Boolean variables and 180,804 native constraints.
+It uses the original integer weights and adds no counter variables.
+Complete exported-byte checks and a separate full reconstruction pass.
+The [bounded native query](research/grids-and-triangles/complement_rook_35core_case0004_native_cpsat_run01.md)
+also returns UNKNOWN, with no accepted incidence assignment.
+Its requested sixty-second solver stage returns after 63.32 seconds.
+The owned child finishes within its 180-second limit and is reaped normally.
+Case four remains open, and the first local set still has eleven checked exclusions.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -514,6 +542,16 @@ reduces one large cut from 43,735 encoding clauses to 26,583 clauses.
 Its exact violation remains 26 under all twelve core transports.
 Its independent Boolean explanation decreases from 446 literals to 244 literals.
 The pilot changes no existing formula. An independent arithmetic audit passes.
+The [longer lazy continuation](research/root_prism_free_f0_lazy_continuation_run01.md)
+records seventeen further SAT candidates and fourteen complete row passes.
+It adds fifteen individual obstructions and five exact shared rays.
+The registry now has 1,188 individual and 168 signed inequalities.
+The final formula has 28,308 variables and 59,442 clauses.
+Its complete transcript and 825 rational row witnesses pass cold replay.
+The last candidate passes all sixty individual row boxes.
+Its shared LP returns no numerical dual ray, so the run remains UNKNOWN.
+No multiplier is saved for arithmetic recovery from that final LP call.
+A separate bounded-potential separator is the next step.
 
 ## Scope of the unrestricted computations
 

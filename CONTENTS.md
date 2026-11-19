@@ -155,4 +155,10 @@ remains feasible.
 - [Gram-equality shifts](research/root_prism_free_f0_gram_shifts.md) reduce a large cut and its clause explanations while preserving its exact violation.
 - [Case-four capacity closure](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_capacity_closure.md) finds no new absence after fourteen known units.
 - [The case-four CaDiCaL query](research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_cadical_run01.md) returns UNKNOWN on the unchanged complete formula.
+- [Complete high-mask packings](research/grids-and-triangles/grid_free_order10_high_mask_packing_domains.md) enumerate all 132,062 universal pair-capacity configurations and all 62 root domains.
+- [The complete empty-root moment matrix](research/grids-and-triangles/grid_free_order10_high_mask_packing_features.md) retains 90,776 structurally allowed columns and 17,903 active rows before any optimizer query.
+- [Exact root-label averaging](research/grids-and-triangles/grid_free_order10_high_mask_packing_orbits.md) reduces that system to 73 equations in 249 orbit masses and verifies the complete moment lift.
+- [Exact finite-domain polynomial certificates](research/grids-and-triangles/finite_boolean_moment_certificates.md) use integer constant corrections and zero-moment penalties, with independent arithmetic checks.
+- [The longer lazy F0 continuation](research/root_prism_free_f0_lazy_continuation_run01.md) grows the registry to 1,356 exact inequalities and ends UNKNOWN without a final numerical dual ray.
+- [The native case-four model](research/grids-and-triangles/complement_rook_35core_case0004_native_cpsat.md) retains every constraint with 1,214 Boolean variables. Its [bounded query](research/grids-and-triangles/complement_rook_35core_case0004_native_cpsat_run01.md) returns UNKNOWN.
 - [Experiment guide](experiments/README.md) gives the workspace layout, replay commands, and limits of the archived runs.

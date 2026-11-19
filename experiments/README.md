@@ -652,3 +652,35 @@ finds no additional unit. The
 [alternative-backend query](../research/grids-and-triangles/complement_rook_35core_case0004_coordinate_cover_cadical_run01.md)
 uses the unchanged full CNF and returns UNKNOWN at its hard deadline.
 Its cold replay checks the exact formula and result bindings.
+
+The [longer lazy F0 continuation](../research/root_prism_free_f0_lazy_continuation_run01.md)
+preserves the complete previous registry and every clause explanation.
+Its final registry has 1,356 inequalities, and its formula has 59,442 clauses.
+All 62 transcript records are preserved in a checked archive.
+Cold replay reconstructs the exact prefixes and final formula.
+The last shared LP has no saved numerical dual ray and remains unresolved.
+Its diagnostic checks that branch of the frozen source without repeating the LP.
+
+The [complete packing domains](../research/grids-and-triangles/grid_free_order10_high_mask_packing_domains.md)
+retain every six-root high-mask configuration allowed by the pair quotas.
+The outside-pair intersection filter has separate exact witnesses.
+The [empty-root feature package](../research/grids-and-triangles/grid_free_order10_high_mask_packing_features.md)
+saves the full matrix, integer moments, and all zero-removal witnesses.
+Its preparation does not run an optimizer.
+The [root-label quotient](../research/grids-and-triangles/grid_free_order10_high_mask_packing_orbits.md)
+records every generator map and deterministic orbit partition.
+An independent literal containment count checks all 124,500 lift identities.
+The active model has 73 rows and 249 columns.
+The quotient assumes no automorphism of the unknown graph.
+The [finite-domain certificate helper](../research/grids-and-triangles/finite_boolean_moment_certificates.md)
+checks every atom with integer arithmetic and provides a separate replay.
+Domain necessity and graph-product translation remain separate obligations.
+
+The [native case-four model](../research/grids-and-triangles/complement_rook_35core_case0004_native_cpsat.md)
+has 1,214 Boolean variables and retains all 180,804 native constraints.
+A separate protobuf parser checks every exported constraint.
+Full reconstruction reproduces the exact binary model.
+The [one bounded query](../research/grids-and-triangles/complement_rook_35core_case0004_native_cpsat_run01.md)
+returns UNKNOWN and leaves the matching case open.
+Its owned child is reaped, and no automatic retry runs.
+The outcome check does not repeat the solver or the full reconstruction.
