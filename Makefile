@@ -97,3 +97,7 @@ certify-involution-axis-frame:
 .PHONY: verify-aligned-grid-subfamilies
 verify-aligned-grid-subfamilies:
 	cd $(WORKSPACE) && "$(PYTHON)" aligned_grid_subfamilies.py
+
+.PHONY: verify-central-grid-neighborhood
+verify-central-grid-neighborhood:
+	cd $(WORKSPACE) && "$(PYTHON)" central_grid_neighborhood.py
