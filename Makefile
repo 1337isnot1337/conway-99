@@ -93,3 +93,7 @@ verify-involution-axis-frame:
 .PHONY: certify-involution-axis-frame
 certify-involution-axis-frame:
 	cd $(WORKSPACE) && "$(PYTHON)" involution_axis_frame.py --certify "$(CADICAL)" "$(DRAT_TRIM)"
+
+.PHONY: verify-aligned-grid-subfamilies
+verify-aligned-grid-subfamilies:
+	cd $(WORKSPACE) && "$(PYTHON)" aligned_grid_subfamilies.py
