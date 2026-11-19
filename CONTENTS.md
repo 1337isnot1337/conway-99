@@ -15,7 +15,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [The nine-triangle rook cover](research/grids-and-triangles/nine-triangle-cover.md) excludes the 27-point configuration in which full matchings join the triangles on a three-by-three rook graph.
 - [Nine-vertex grid partitions](research/grids-and-triangles/affine_grids.md) studies a construction using eleven disjoint grids and an obstruction to a particular affine matching assignment.
 - [A grid with its center missing](research/grids-and-triangles/incomplete_grid.md) derives an exterior-incidence reduction for an eight-vertex core.
-- [Incomplete-grid corner fibers](research/grids-and-triangles/incomplete-corner-fibers.md) excludes fiber transitivity in the induced 48-point graph and proves that each opposite pair of ten-point fibers forms a connected cubic graph.
+- [Corner fibers of every induced square](research/grids-and-triangles/incomplete-corner-fibers.md) excludes transitivity on each ten-point fiber and gives a square determinant test when both opposite-tip edges are present.
 - [Complete triangle stars](research/grids-and-triangles/triangle_star.md) derives a 48-vertex shell from an independent exterior signature.
 
 - [The 60-vertex triangle exterior](research/grids-and-triangles/triangle-exterior.md) determines its spectrum from the cubic shell and rules out every transitive automorphism group of the exterior.

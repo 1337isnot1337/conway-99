@@ -63,14 +63,18 @@ class Projection:
 
 
 @lru_cache(None)
-def point_marks(tips):
+def point_marks(tips, normalized=False):
     need = [2-sum(i == j-4 or i == (j-3) % 4 for j in tips) for i in range(4)]
     choices = [combinations(range(8+10*i, 18+10*i), v) for i, v in enumerate(need)]
-    return np.array([(*tips, *(x for group in plan for x in group)) for plan in product(*choices)])
+    if normalized:
+        assert need[0] == 1
+        choices[0] = [(8,)]
+    return np.array([(*tips, *(x for group in plan for x in group)) for plan in product(*choices)],
+                    dtype=np.int16)
 
 
-def eligible(core, tips, minus, plus):
-    words = point_marks(tips)
+def eligible(core, tips, minus, plus, normalized=False):
+    words = point_marks(tips, normalized)
     cap = 2-core-core@core
     ok = np.ones(len(words), dtype=bool)
     for i, j in combinations(range(words.shape[1]), 2):
@@ -82,7 +86,7 @@ def eligible(core, tips, minus, plus):
     return minus.filter(words, limit=44)
 
 
-def compatible_six(options, core, projection):
+def signed_relations(options, core, projection):
     assert projection.rank == 43
     incidence = []
     lengths = []
@@ -109,6 +113,12 @@ def compatible_six(options, core, projection):
     edge = (numerators == -8*projection.determinant) & (overlap <= 1) & ~blocked & ~blocked.T
     nonedge = (numerators == projection.determinant) & (overlap <= 2)
 
+    return groups, edge, nonedge
+
+
+def compatible_six(options, core, projection):
+    groups, edge, nonedge = signed_relations(options, core, projection)
+
     def extend(chosen, edge_count, remaining):
         if not remaining:
             return edge_count == 1
@@ -123,6 +133,23 @@ def compatible_six(options, core, projection):
         return False
 
     return extend([], 0, groups)
+
+
+def complete_grid_test(core):
+    with_center = np.zeros((49, 49), dtype=np.int16)
+    with_center[:48, :48] = core
+    with_center[48, 4:8] = with_center[4:8, 48] = 1
+    minus = Projection(with_center, 27, -9, 1)
+    plus = Projection(with_center, 44, 11, -2)
+    # The single mark in fiber zero may be transported to its first point.
+    normalized, _ = eligible(with_center, (4,), minus, plus, normalized=True)
+    if not len(normalized):
+        return 'no exterior point'
+    # Its mate can mark any member of that fiber, so restore all choices.
+    options = eligible(with_center, (4,), minus, plus)
+    _, edge, _ = signed_relations([options], with_center, minus)
+    assert not np.any(edge)
+    return 'no exterior mate'
 
 
 def control():
@@ -154,6 +181,7 @@ def verify(group_file):
     stages = Counter()
     x = fmpz_poly([0, 1])
     counts = []
+    complete = Counter()
     for name, iterator in [('cyclic', lambda totals: regular(False, totals)),
                            ('dihedral', lambda totals: regular(True, totals)),
                            ('other', lambda totals: nonregular(group_file, totals))]:
@@ -170,11 +198,14 @@ def verify(group_file):
                 continue
             stages['spectral'] += 1
             minus = Projection(core, 27, -9, 1)
-            if minus.rank > 44:
-                continue
-            if minus.rank == 44 and isqrt(minus.determinant)**2 != minus.determinant:
+            d = -int(char(3))
+            square = d >= 0 and isqrt(d)**2 == d
+            assert minus.rank <= 44
+            assert square == (minus.rank < 44 or isqrt(minus.determinant)**2 == minus.determinant)
+            if not square:
                 continue
             stages['core determinant'] += 1
+            complete[complete_grid_test(core)] += 1
             plus = Projection(core, 44, 11, -2)
             options = []
             for tips in combinations(range(4, 8), 2):
@@ -189,7 +220,9 @@ def verify(group_file):
         print(name, 'normalized and locally admissible:', *totals, flush=True)
     assert counts == [[5076, 1208], [632826, 48038], [230, 64]]
     assert len(seen) == 6593 and stages == {'spectral': 341, 'core determinant': 148, 'individual attachments': 2}, stages
+    assert complete == {'no exterior point': 139, 'no exterior mate': 9}, complete
     print(f'{len(seen)} marked cores, {dict(stages)}, zero six-point attachments.')
+    print('Complete-grid attachment checks:', dict(complete))
 
 
 if __name__ == '__main__':
