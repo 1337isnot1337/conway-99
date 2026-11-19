@@ -15,6 +15,7 @@ int main(){
     }
     static unsigned char bip[full+1];int minima[22],num[22]{};
     fill(minima,minima+22,999);
+    int min_weight = 999;
     for(int m=0;m<=full;m++){
         int adj[7]{};
         for(unsigned h=m;h;h&=h-1){int e=countr_zero(h);adj[a[e]]|=1<<b[e];adj[b[e]]|=1<<a[e];}
@@ -36,6 +37,17 @@ int main(){
         unsigned d=full^m;int e=popcount(d),t=0;
         for(unsigned h=d;h;h&=h-1)t+=popcount(d&dis[countr_zero(h)]);
         minima[e]=min(minima[e],t);num[e]++;
+        int capped_degree[7]{};
+        for (int i = 0; i < 7; ++i)
+            capped_degree[i] = min(2, 6 - popcount(unsigned(adj[i])));
+        int charge = 0;
+        for (unsigned h = m; h; h &= h - 1) {
+            int j = countr_zero(h);
+            charge += max(capped_degree[a[j]], capped_degree[b[j]]);
+        }
+        min_weight = min(min_weight, 8 * (21 - e) + 2 * t - charge);
     }
+    assert(min_weight == 97);
+    cout << "Minimum weighted root expression: " << min_weight << '\n';
     for(int i=0;i<22;i++)cout<<i<<" "<<minima[i]<<" "<<num[i]<<'\n';
 }
