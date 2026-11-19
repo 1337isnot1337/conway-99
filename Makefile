@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-current-grid-bounds verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -34,7 +34,24 @@ verify-current-grid-bounds:
 	"$(PYTHON)" $(WORKSPACE)/three_red_translation_incidence.py --verify experiments/logs/grids-and-triangles/three-red-translation-incidence.json
 	"$(PYTHON)" $(WORKSPACE)/global_grid_flag_certificate.py --verify experiments/logs/grids-and-triangles/global-grid-flag-certificate.json
 
-verify-red-grid-bound: verify-current-grid-bounds verify-rook-interfaces
+verify-general-rook-interfaces:
+	"$(PYTHON)" $(WORKSPACE)/two_rook_interfaces.py --verify experiments/logs/grids-and-triangles/two-rook-interfaces.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_interfaces.py --witness experiments/logs/grids-and-triangles/two-rook-interfaces-incidence-second.json
+	"$(PYTHON)" $(WORKSPACE)/rook_interface_star.py --verify experiments/logs/grids-and-triangles/rook-interface-star.json
+	"$(PYTHON)" $(WORKSPACE)/rook_interface_five_cycle.py --verify experiments/logs/grids-and-triangles/rook-interface-five-cycle.json
+	"$(PYTHON)" $(WORKSPACE)/rook_interface_dense_audit.py --verify experiments/logs/grids-and-triangles/rook-interface-dense-audit.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_completion.py --two-grid-audit --fixed-certificate experiments/logs/grids-and-triangles/two-rook-iso-completion-case48-ray.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_joint_incidence.py --verify experiments/logs/grids-and-triangles/two-rook-iso-joint-incidence.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_joint_incidence.py --verify experiments/logs/grids-and-triangles/two-rook-iso-joint-incidence-packing.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_joint_incidence.py --space-only --verify experiments/logs/grids-and-triangles/two-rook-iso-joint-incidence-space.json
+
+verify-rook-partner-bound:
+	@test -x "$(DRAT_TRIM)" || { echo 'Set DRAT_TRIM to the drat-trim executable path.' >&2; exit 1; }
+	"$(PYTHON)" $(WORKSPACE)/two_rook_interfaces.py --verify experiments/logs/grids-and-triangles/two-rook-interfaces.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_joint_integer_independent_audit.py --verify experiments/logs/grids-and-triangles/two-rook-iso-joint-integer-independent-audit.json
+	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_joint_integer_certificate.py $(WORKSPACE)/two-rook-iso-joint-integer-certificate.json --drat-trim "$(DRAT_TRIM)"
+
+verify-red-grid-bound: verify-current-grid-bounds verify-general-rook-interfaces verify-rook-interfaces
 	@set -eu; \
 	build_dir=$$(mktemp -d); \
 	trap 'rm -f "$$build_dir/"*.json "$$build_dir/"*.log; rmdir "$$build_dir"' EXIT; \

@@ -173,3 +173,28 @@ their hypotheses permit them; computational exclusions require exact replay.
   Workers stopped the all-red followup to avoid duplicating that work.
   The new active lane is the completion of two isomorphically matched
   rook grids and more general three-grid interface obstructions.
+- Completed the general two-arm census. Of 2,720 possible third interfaces,
+  explicit symmetries give 59 classes; exact quota propagation excludes 58.
+  The last has two checked 72-column incidence witnesses. A fixed-point
+  Farkas certificate rejects the first witness, while the joint real model
+  has exact rational points, even with all core-pair packing inequalities.
+- Proved independent star and short-cycle obstructions. Every grid has at
+  most two isomorphic partners by 324 explicit quota violations. Separate
+  arguments exclude four- and five-cycles. A dense integer audit checks
+  all 23,328 four-cycle assignments, all 23,328 five-cycle prefixes, and
+  all 2,592 extensions of the eight surviving prefixes.
+- Excluded the last two-arm class by a full unaveraged binary model with
+  168 signature and 9,846 edge variables. No lazy cut or orbit equality was
+  used. The coordinating worker regenerated the 1,151,148-clause formula,
+  checked retained-clause membership, and verified the DRAT proof. An
+  independent implementation checked the complete domain and logical
+  constraint families, 62,692 packing clauses, and 37,888 Boolean controls,
+  reproducing the same CNF hash. Together with the disjoint-partners lemma,
+  this proves at most one rook-isomorphic partner per grid. A separate
+  CP-SAT implementation matched the domain and passed a nine-rook control;
+  its bounded target run remained UNKNOWN during presolve.
+- Replayed the ordinary suite of the parallel root-grid branch at
+  `2e2d7ed`. Its larger full-axis replay completed support sizes zero
+  through eighteen before being interrupted to relieve resource contention
+  during the new independent proof audits. No completed full-axis replay
+  is claimed from that interrupted run.

@@ -2,9 +2,12 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
-The current interface result on this branch excludes three disjoint rook
-grids with pairwise rook-isomorphic matching interfaces, without any red
-assumption. The [exact boundary proof](research/grids-and-triangles/three_red_boundary.md)
+The current interface result on this branch proves that every induced rook
+grid has [at most one rook-isomorphic partner](research/grids-and-triangles/rook_partner_bound.md),
+without any red assumption. A complete 59-class census excludes 58 classes
+by exact incidence propagation; a checked integer completion proof excludes
+the last. Independent domain and encoding audits reproduce its full CNF.
+The earlier [three-base boundary proof](research/grids-and-triangles/three_red_boundary.md)
 also independently gives at most one all-red grid. A separate
 [integer flag certificate](research/grids-and-triangles/grid_count_119.md)
 proves `29g-4b<=3465`, hence at most 119 grids from that bound.

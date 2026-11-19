@@ -54,6 +54,24 @@ profiles. The parallel [root-grid branch](https://github.com/1337isnot1337/conwa
 proves stronger global bounds using a separate intersecting-triangle
 exclusion. Those results are not premises of this replay.
 
+The stronger bound of one rook-isomorphic partner per grid has a complete
+replay, including the independently audited binary encoding and its checked
+proof:
+
+```sh
+make verify-rook-partner-bound DRAT_TRIM=/absolute/path/to/drat-trim
+```
+
+The retained proof excludes the last of 59 three-grid interface classes.
+It does not assume graph symmetry or fix an outside-incidence witness.
+The earlier star and short-cycle obstructions, independent dense-matrix
+audits, fixed-incidence certificate, and exact rational relaxation witnesses
+have a separate replay:
+
+```sh
+make verify-general-rook-interfaces
+```
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh
