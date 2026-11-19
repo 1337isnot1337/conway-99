@@ -1,0 +1,61 @@
+{
+  "status": "PASS: independent exact saved-support arithmetic and source review",
+  "audit_source_sha256": "59543f63cc1a03c706dd0fbdf4af2cf98b6162360c36446c8ead2fcf59d50268",
+  "bindings": {
+    "source": {
+      "path": "experiments/workspace/grid_free_order10_high_mask_graph_query.py",
+      "sha256": "97490da5a7f39ff1e9d20ac9f5124e8552cfe8c715ac0f6017a2ad6e4fec8eda"
+    },
+    "preparation": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-query-preparation.json",
+      "sha256": "2b2929dcdab9a36acc08b6f5882a681ea1805eafc01393081a67257da3e9e01c"
+    },
+    "result": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-query01.json",
+      "sha256": "99261d06e9ad1219c0a580abe1715642ed11eff4a425fb030f8d7de05727beb9"
+    },
+    "features": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-features.json",
+      "sha256": "fc5c2876dfdbfe6b9237a0ebfa610742fda9e3127bd00d6b0676e6e2ee576596"
+    },
+    "domain": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-domain.json",
+      "sha256": "39fb9f237327616f83917a15644c36a2f397d5c938720b4dff9278d4262d94f8"
+    },
+    "moments": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-moments01.json",
+      "sha256": "43bde72fa777410a73732d418530a6a853a39740a1b7bcfc591d78977ad4cc3d"
+    },
+    "point": {
+      "path": "experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json",
+      "sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+    }
+  },
+  "feature_array_sha256": "bd2971d442d8fb0a0059f946b93e4e11046c211bf77b6f1a128694f8792cc68e",
+  "domain_array_sha256": "be43260f8ac6166c94d728fd64f09429b5d8f5cbfe95c1fc470b797c989a5adc",
+  "positive_rational_masses": 200,
+  "common_denominator": 1841072799597249500967,
+  "exact_matrix_products_checked": 40000,
+  "exact_equations_checked": 200,
+  "direct_induced_forms_checked": 200,
+  "ordinary_presence_aggregations_checked": 73,
+  "literal_support_graphs_checked": 200,
+  "literal_core_pair_caps_checked": 10515,
+  "support_degree_partition_checks": 1000,
+  "individual_pattern_moments_from_uniform_S6_lift": 73263,
+  "uniform_lift_reason": "A root-pattern orbit has size o. Averaging a representative graph over all 720 root relabelings gives each orbit member coefficient C/o. The checked row sum is o times its required fixed-pattern moment.",
+  "source_review": [
+    "All finite feature and domain arrays and every dependency are hash-bound.",
+    "Normalized numerical mass is converted back to labelled-root mass for exact acceptance.",
+    "Sparse rational support is checked on every one of the 200 integer rows.",
+    "The optional separator corrects the constant row by the exact finite-table minimum; integer overflow is guarded.",
+    "Numerical statuses alone are never accepted as a witness or separator.",
+    "The claim is a rational finite moment measure, not a host graph or integer embedding measure."
+  ],
+  "subject_imported": false,
+  "optimizer_or_solver_called": false,
+  "full_domain_census_or_feature_reconstruction_repeated": false,
+  "subject_controls_or_query_repeated": false,
+  "graph_existence_resolved": false
+}
+report_sha256 90b071f4710464b6c89a9979f310ab2c5ccd2de52626c02b14bd5ac9c065a32d

@@ -258,6 +258,18 @@ Every column reproduces its binomial subset totals and all earlier presence coef
 The [direct moment audit](research/grids-and-triangles/grid_free_order10_high_mask_graph_moments.md)
 checks all 200 catalogue products and their 73 presence aggregates.
 This preparation runs no optimizer and supplies no full graph.
+The [induced-graph query](research/grids-and-triangles/grid_free_order10_high_mask_graph_query.md)
+then gives an exact rational measure on 200 support graphs.
+All 200 equations and all 73,263 labelled pattern moments follow by exact replay.
+A separate [principal-projector filter](research/grids-and-triangles/grid_free_order10_high_mask_graph_projectors.md)
+removes 22,146 local graphs with full-matrix integer negative vectors.
+Its complete domain retains 135,565 graphs and 17,922 distinct feature columns.
+Every graph in the earlier support survives, so the [transferred measure](research/grids-and-triangles/grid_free_order10_high_mask_graph_filtered_witness.md)
+satisfies the stronger model without another optimizer call.
+Exact characteristic polynomials check both full projectors on all 200 support graphs.
+The [centered exterior-Gram identity](research/grids-and-triangles/projector_exterior_gram_identity.md)
+proves that a separate exterior-Gram PSD scan would add no condition.
+Binary outside-incidence feasibility remains a stronger necessary condition.
 The [finite-domain certificate helper](research/grids-and-triangles/finite_boolean_moment_certificates.md)
 checks integer polynomials on every atom and restores zero-filtered atoms by exact penalties.
 Its controls and independent arithmetic review pass.
@@ -447,6 +459,15 @@ The [exact primary propagation rules](research/grids-and-triangles/complement_ro
 retain every original integer row, all 178,533 covers, and the fourteen proved units.
 They require an original-constraint reason for every assignment.
 The subsequent complete forward closure yields no new assignment or contradiction.
+The [bounded failed-literal batch](research/grids-and-triangles/complement_rook_35core_case0004_failed_literal_run01.md)
+checks seventeen positive assumptions and proves column 359 absent.
+It stops at its sixty-second budget, leaving the remaining candidates unprobed.
+A simpler [three-row Gram certificate](research/grids-and-triangles/complement_rook_35core_case0004_gram_zero_face.md)
+then forces 46 columns absent, including 44 beyond the previous fourteen.
+Its combined right-hand side is zero and every coefficient is nonnegative.
+All 1,214 coefficients are checked directly.
+The proof uses neither the earlier absences nor integrality.
+Case four remains open.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -586,6 +607,12 @@ A separate [bounded-only query](research/root_prism_free_f0_terminal_bounded_que
 excludes this last incidence with exact demand 252 against capacity 188.
 Its gap 64 and all twelve universal transports cold-replay.
 The parent time-limited run remains frozen UNKNOWN, and the full component remains open.
+The [quadratic allocation pilot](research/root_prism_free_f0_quadratic_allocation.md)
+recovers 24 shared-potential families and all 288 transported quadratic inequalities.
+For a Boolean candidate, choosing an absent endpoint of each positive edge gives the strongest valid linear allocation at that candidate.
+Exact controls and all 44,064 historical comparisons pass.
+Three incidences fail this check while passing the fixed shared allocations.
+All three already violate retained individual cuts, so the pilot adds no historical exclusion beyond the full registry.
 
 ## Scope of the unrestricted computations
 

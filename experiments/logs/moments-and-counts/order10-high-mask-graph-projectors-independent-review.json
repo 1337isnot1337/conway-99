@@ -1,0 +1,52 @@
+{
+  "status": "PASS: independent full-source and mathematical review",
+  "subject_source": "experiments/workspace/grid_free_order10_high_mask_graph_projectors.py",
+  "source_sha256": "6582189b3d6f541bb46aec5e86123a507e8622e023e1f6f73093ab86cf53660d",
+  "preparation_sha256": "932f44594e5dcc08eec11ac9c8f0757218c5a4b285e7529ecdb19ace90dbaee5",
+  "entire_source_read": true,
+  "mathematical_derivation": {
+    "projector0": "27I-9A+J = 63 E_-4",
+    "projector1": "44I+11A-2J = 77 E_3",
+    "empty_six_root_block0": "27I_6+J_6; inverse I_6/27-J_6/891; eigenvalues 27 and 33",
+    "empty_six_root_block1": "44I_6-2J_6; inverse I_6/44+J_6/704; eigenvalues 44 and 32",
+    "schur0": "[297I-99H+9J+3(d1^T+1d^T)-33M^TM+dd^T]/11",
+    "schur1": "11[256I+64H-16J-16M^TM+4(d1^T+1d^T)-dd^T]/64",
+    "notation": "M is the six-by-k root incidence matrix; d=M^T1; H is the high adjacency matrix",
+    "lift0": "root coordinates 33Mz-3(1^Tz)1-(d^Tz)1; high coordinates 99z; full value is 891 z^TQ0z",
+    "lift1": "root coordinates -16Mz+4(1^Tz)1-(d^Tz)1; high coordinates 64z; full value is 704 z^TQ1z"
+  },
+  "fraction_free_review": {
+    "positive_pivots": "Bareiss updates represent positive scalar multiples of successive Schur complements",
+    "zero_row": "a zero pivot with no future off-diagonal is a residual zero row; skipping it preserves the previous positive divisor",
+    "zero_pivot_nonzero_offdiagonal": "choose yi=floor(abs(Bjj)/(2abs(Bij)))+1 and yj=-sign(Bij), giving Bjj-2abs(Bij)yi<0",
+    "negative_pivot": "the corresponding coordinate vector has negative residual value",
+    "back_substitution": "saved coupling-to-pivot ratios reconstruct the inverse congruence; final Q value is checked explicitly",
+    "fixed_width_arithmetic": "production Schur, elimination, vector and full quadratic arithmetic use Python integers/Fractions"
+  },
+  "domain_and_output_review": {
+    "complete_input_columns": 157711,
+    "maximum_high_order": 10,
+    "graph_reconstruction": "uses the bound graph code, eligible unordered pairs, and original mask incidence",
+    "removal_acceptance": "strict negative integer quadratic in the full literal principal matrix",
+    "partial_scan": "only recorded certified rejections are deleted; all remaining and unvisited columns are retained",
+    "budget_scope": "60-second check between columns; final column and serialization can extend wall time",
+    "replay_scope": "rechecks every negative full-matrix vector and exact retained complement; does not repeat positive PSD classification"
+  },
+  "prepared_controls_reported_not_rerun": {
+    "independent_principal_minor_matrices": 306,
+    "literal_principal_minors": 3707,
+    "exact_schur_entries": 14486,
+    "full_integer_lifts": 498,
+    "rook_both_projectors_psd": true,
+    "K5_positive_projector_negative": true,
+    "production_domain_scan_called": false
+  },
+  "limits": {
+    "production_scan_repeated": false,
+    "controls_repeated": false,
+    "domain_reenumerated": false,
+    "optimizer_called": false,
+    "positive_classification_repeated": false,
+    "graph_existence_resolved": false
+  }
+}

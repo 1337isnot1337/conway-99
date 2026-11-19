@@ -1,0 +1,19 @@
+{
+  "status": "PASS: independent exact fixed-design gap64 arithmetic and complete eligible-edge inventory",
+  "preparation_sha256": "df2798c914ad99066d14f9e0902a90b080944e068bd8e859e7caf1450dececde",
+  "result_sha256": "83950bcdc02f674bd222302fd9318b98223f88e4d22af4f24015896eeb3c73a4",
+  "complete_signature_domain_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+  "all60_selected_triples_and1080_targets_reconstructed": true,
+  "all1226_edges_reconstructed_from_overlap_and_both_endpoint_quotas": true,
+  "all1226_bounded_LP_rows_and2306_bounds_costs_checked": true,
+  "integer_demand": 252,
+  "integer_positive_capacity": 188,
+  "exact_support_gap": 64,
+  "positive_edge_count": 169,
+  "maximum_absolute_integer_potential": 12,
+  "proof": "Summed mixed equations give demand=sum(w_e*y_e). Activation0<=y_e<=1 bounds that sum bysum(max(w_e,0)), contradicting252>188. Triple weight3 and target sum24 implydegree8.",
+  "full68394_edge_allocation_and12_transports_repeated": false,
+  "subject_imported": false,
+  "optimizer_solver_or_model_rebuild_called": false,
+  "scope": "This saved60-triple incidence design cannot support a graph completion. This does not exclude the whole480-selector component."
+}

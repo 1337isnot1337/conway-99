@@ -712,3 +712,30 @@ Its first bounded solve returns UNKNOWN after reaching main search.
 The [exact propagation preparation](../research/grids-and-triangles/complement_rook_35core_case0004_primary_propagation.md)
 checks signed Boolean intervals and guarded covers with arbitrary-size integer arithmetic.
 A complete forward closure adds no assignment after the fourteen known units.
+
+
+The [induced-graph moment witness](../research/grids-and-triangles/grid_free_order10_high_mask_graph_query.md)
+uses 200 positive rational masses and checks every prepared equation.
+Independent saved-support arithmetic and literal-graph checks pass.
+The [principal-projector filter](../research/grids-and-triangles/grid_free_order10_high_mask_graph_projectors.md)
+removes 22,146 of the 157,711 local graphs with exact full-matrix vectors.
+The first scan stops at its fixed budget. A separate continuation visits
+only the remaining 3,984 columns and preserves the certified prefix.
+All removed graphs cold-replay without another PSD classification.
+The [filtered witness](../research/grids-and-triangles/grid_free_order10_high_mask_graph_filtered_witness.md)
+retains the same 200 masses. Exact characteristic polynomials verify its
+400 principal matrices. No new optimizer call is needed.
+
+The [failed-literal case-four batch](../research/grids-and-triangles/complement_rook_35core_case0004_failed_literal_run01.md)
+checks seventeen branches and learns one absence before its budget.
+Every conditional trace receives a separate inductive replay.
+The [three-row Gram certificate](../research/grids-and-triangles/complement_rook_35core_case0004_gram_zero_face.md)
+then proves 46 absences directly. Its checker uses the full attachment
+list and original Gram rows, without a solver or propagator.
+The earlier fourteen absences are not premises of this proof.
+
+The [F0 quadratic allocation pilot](../research/root_prism_free_f0_quadratic_allocation.md)
+checks all 24 saved potential families and 288 transported inequalities.
+Its exact allocation rule holds on Boolean selectors.
+The scan covers 153 saved incidences and preserves the complete existing
+registry context. It gives no new historical exclusion beyond that registry.

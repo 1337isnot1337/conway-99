@@ -1,0 +1,31 @@
+{
+  "status": "principal-projector domain filter prepared; no full scan",
+  "source_sha256": "6582189b3d6f541bb46aec5e86123a507e8622e023e1f6f73093ab86cf53660d",
+  "domain_sha256": "39fb9f237327616f83917a15644c36a2f397d5c938720b4dff9278d4262d94f8",
+  "domain_arrays_sha256": "be43260f8ac6166c94d728fd64f09429b5d8f5cbfe95c1fc470b797c989a5adc",
+  "full_columns": 157711,
+  "maximum_schur_order": 10,
+  "projectors": [
+    "27I-9B+J",
+    "44I+11B-2J"
+  ],
+  "scaled_schur_forms": [
+    "297I-99H+9J+3(d1T+1dT)-33M^TM+ddT",
+    "256I+64H-16J-16M^TM+4(d1T+1dT)-ddT"
+  ],
+  "maximum_scan_seconds": 60,
+  "unvisited_columns_retained_on_timeout": true,
+  "every_removed_column_requires_full_integer_negative_vector": true,
+  "controls": {
+    "independent_principal_minor_matrices": 306,
+    "literal_principal_minors": 3707,
+    "exact_schur_entries": 14486,
+    "full_integer_lifts": 498,
+    "rook_both_projectors_psd": true,
+    "K5_positive_projector_negative": true,
+    "production_domain_scan_called": false
+  },
+  "optimizer_called": false,
+  "seconds": 0.26580362200184027
+}
+preparation_sha256 932f44594e5dcc08eec11ac9c8f0757218c5a4b285e7529ecdb19ace90dbaee5

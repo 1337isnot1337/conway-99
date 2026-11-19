@@ -1,0 +1,241 @@
+{
+  "status": "partial coverage: requested batch budget reached",
+  "source_sha256": "492f870124a146d77dd054d7e5898b39d60195c828a10f5648d9185e015e9365",
+  "scope_source_sha256": "65808c886e17f00d9e98955fdb2bca70c5fae464e351f404e7d898829204236f",
+  "rule_source_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7",
+  "preparation_sha256": "c73b25212d5ea248e800ce46abbb12b046e6ca75e5b6848ae71cdcebb8c7ffc5",
+  "scope_preparation_sha256": "38023613faa4de991eb1d4cef375cb6ea1661b7be6b6379f25ab920ddad5cc0e",
+  "limits": {
+    "maximum_probes": 32,
+    "seconds_per_probe": 5,
+    "requested_batch_seconds": 60,
+    "stop_on_partial_trace": true,
+    "solver_or_optimizer_calls": 0
+  },
+  "candidate_count": 1200,
+  "planned_columns": [
+    556,
+    554,
+    1078,
+    972,
+    443,
+    431,
+    633,
+    896,
+    575,
+    627,
+    1113,
+    359,
+    945,
+    566,
+    555,
+    909,
+    624,
+    1120,
+    598,
+    922,
+    646,
+    563,
+    892,
+    670,
+    442,
+    376,
+    1148,
+    1076,
+    641,
+    956,
+    652,
+    928
+  ],
+  "steps": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe00-column0556.json.gz",
+      "sha256": "0a20cfa1741a073d35e0b374566c5a0b1a226542848f7b4cbf8d0bace1982b11",
+      "decompressed_sha256": "fe7d87263e79b04287b198a7b3dce9095bce3575a42b55b2af92966aeab7602b",
+      "index": 0,
+      "assumed_column": 556,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe01-column0554.json.gz",
+      "sha256": "7420f204d54d79d3c9141e09bf968ceb45dfd4c727e320a1710de269665a3da6",
+      "decompressed_sha256": "c4086cfa268495398f2338f3d3d323e11a8f6bbf525b21f28541c586b80b8b05",
+      "index": 1,
+      "assumed_column": 554,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe02-column1078.json.gz",
+      "sha256": "084fc3e9d75505a6669554ece77d03f408a2ddf771bee8e914821de43aac9a53",
+      "decompressed_sha256": "c7f029e8b0deb9f4ab069e6a610e12edaea567f1b1cb024f11323f01cd1f6f1b",
+      "index": 2,
+      "assumed_column": 1078,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe03-column0972.json.gz",
+      "sha256": "6ca72e47e6ba7ac0cfa7790089907aed18c1455190324c1c6ea9821d65bb58a0",
+      "decompressed_sha256": "1f0237c27787652e0ad913074e4fb03f725077af9962290e1d00a1eb74e4af91",
+      "index": 3,
+      "assumed_column": 972,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe04-column0443.json.gz",
+      "sha256": "587257cc7b09c2f1e36b2d5109827cc07b9fa86f272d538370d4d23db54123a2",
+      "decompressed_sha256": "87ae3603898958e3c7684506b2767558b190a71e43daf55abd47cf2d2db7ad2b",
+      "index": 4,
+      "assumed_column": 443,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe05-column0431.json.gz",
+      "sha256": "33d6a05ca04df9809f61f9802d0a80dce8bd9b9c61b0cdfbc9042f3669479245",
+      "decompressed_sha256": "098f92dbac2a8821490fa2f538b3d633b9cd66fcbc8a6ffc433b9df6b9a7ece1",
+      "index": 5,
+      "assumed_column": 431,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe06-column0633.json.gz",
+      "sha256": "4f245aa8772c017efc0c3179413f5b3708333a721ed0bd5af5ad0ef335e53cae",
+      "decompressed_sha256": "2637034d19c48b88f8f7ee8a3a5363958438229d572dbafa27382881c86ea2f3",
+      "index": 6,
+      "assumed_column": 633,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe07-column0896.json.gz",
+      "sha256": "baf54ae934b7b4a81d880188d590b2227128df0c2ea0c47f7b334bcf3aae8e02",
+      "decompressed_sha256": "37842f9f4852ed55c55b8984107fb01c8bac27a772228bb00c375d3935a8fe79",
+      "index": 7,
+      "assumed_column": 896,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe08-column0575.json.gz",
+      "sha256": "28069ed8a180ee2844e81fa61dd3c6719a772616cc229a7b65eb78d1a4ceed40",
+      "decompressed_sha256": "549c9f294f73d739f6fbf9658a3f9d3b5a33f4502ddd0e2ab442a309191eb5a8",
+      "index": 8,
+      "assumed_column": 575,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe09-column0627.json.gz",
+      "sha256": "1cd0c435ae7f9e614b9771da3037356a6280a509f9b859fcb74960a127dcc368",
+      "decompressed_sha256": "0c1b6356aa1c1682d49a8d8b6ab010f7364953eb2b71ccda32d55d9ba2af7709",
+      "index": 9,
+      "assumed_column": 627,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe10-column1113.json.gz",
+      "sha256": "a05ad53226c89ad349c0ab49d97ed522c9e5697245f96e3e78293b46e067704f",
+      "decompressed_sha256": "d1fcf8eae738f8bfb76a2a5a6ef8dfef723dfc5a286d37e206104a92bcc9ab9c",
+      "index": 10,
+      "assumed_column": 1113,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe11-column0359.json.gz",
+      "sha256": "81973ca7616cd2426d0899c4f3333d6408cbe3368579dd534222075c15559132",
+      "decompressed_sha256": "4f279ff9222246903cb37750df65ccba1a016468dccd4851668905811da0a320",
+      "index": 11,
+      "assumed_column": 359,
+      "status": "exact contradiction",
+      "learned_unit": 359
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe12-column0945.json.gz",
+      "sha256": "c03988564b35b72df7811d2d40135b7f2192d87862460f22467c157becc02ceb",
+      "decompressed_sha256": "0103d78796d8ef37372f35238e025a0c9e7c08640c033e02bda975545c97bac7",
+      "index": 12,
+      "assumed_column": 945,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe13-column0566.json.gz",
+      "sha256": "143a9ab2dfb4c7377d88cf8855128c52ef94b9ae6123c250b97be662e584767c",
+      "decompressed_sha256": "b203f8b19de044f44ec108574ecaea010437a7b8ee91cf799359afd02005c1f2",
+      "index": 13,
+      "assumed_column": 566,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe14-column0555.json.gz",
+      "sha256": "755b4e3edacbff7fe818d5aa4f09b905361645c76b71dcc6cd56729a94b9adf3",
+      "decompressed_sha256": "06726bf77adb22acc0f81dd8551d346b8d39880db92c02b16c4963170d31d0e1",
+      "index": 14,
+      "assumed_column": 555,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe15-column0909.json.gz",
+      "sha256": "fa683f54d7f8e2655d9fc65b5affe0a4752c86c014c19eb666ee4c9ff908b40e",
+      "decompressed_sha256": "0effd944ea4ae247972b0d14c1d7315629d769f8abea7510a168ac020a0d39eb",
+      "index": 15,
+      "assumed_column": 909,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-failed-literal-run01/probe16-column0624.json.gz",
+      "sha256": "8e28c339860002802f4f66e278203d851b02e05a52bca9c159c0d7d77ed6e85f",
+      "decompressed_sha256": "55588911eda2d7cbc5282e379c1ba296d441cf70a1a069e430dfff6c43d3b08a",
+      "index": 16,
+      "assumed_column": 624,
+      "status": "exact interval and guarded-cover fixed point",
+      "learned_unit": null
+    }
+  ],
+  "proved_absent_columns_beyond14": [
+    359
+  ],
+  "all1200_candidates_covered": false,
+  "planned32_prefix_complete": false,
+  "failed_literal_probing_run": true,
+  "solver_or_optimizer_called": false,
+  "case4_exclusion_promoted": false,
+  "full_graph_completion_found": false,
+  "input_bindings": {
+    "native_model_sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476",
+    "lazy_model_sha256": "aeb636198cb0b9749e2142a596404181edf92923d55d5bdf764a8f9432439b68",
+    "complete_ledger_cold_replay_sha256": "ad169d4dece65473c87e814338741923ce12b5a8b655379d35051dabfe029571",
+    "primary_inventory_sha256": "5a6af30f47826df629a3795ceea0a0a91b853cf8149860355ce1bd17ac0094b2",
+    "canonical_integer_rows_sha256": "df2c4b3932cde42ffc0359547edde535eab1f5b0662c5d7e4cc5245dd1003d69",
+    "registry_sha256": "c32e31d9ce6ec6168cea1c9f6c6ea4165a2ca7a8f2144a59a31e5a1d6da7b543",
+    "registry_raw_sha256": "3b819e29bc9aacdb5217b151f32b35cb186aa3b8a93a37784edc912ddac36736",
+    "original_input_source_hashes": {
+      "complement_rook_35core_case0004_coordinate_cover_overlay.py": "5597089c00a15f72927f31c8b05f5a6bed1198a0d7ebc16aacaeb6cd39cb1c4a",
+      "complement_rook_35core_case0004_coordinate_cover_query.py": "eb352386f55c5a1fd6ddb9c692ad934d8eef87904c00e86122172dc1ebc1f9d8",
+      "complement_rook_35core_case0004_coordinate_covers.py": "f4692deb00982e7f3a3153faafc2cc6084db0c5827ff12d11beaf5e3d493357a",
+      "complement_rook_35core_case0004_intrinsic_rows.py": "24eb86e47e6f5a741721fe9174e7d3762bc74edd290c89d489dd5ddedb900c11",
+      "complement_rook_35core_case0004_native_cpsat.py": "4462dae913abcb736c5ba5f7cffc3f3e7d50b748826cab3c89fffbfd3bd0e3eb",
+      "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+      "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+      "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+      "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+      "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+      "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+      "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144",
+      "complement_rook_35core_case0004_lazy_native.py": "5fe4d58400dc23e42ab154f8455ce47c4b061fbd2ae7c0e37f946d77c56aba0a"
+    }
+  },
+  "elapsed_seconds": 60.19963845299935,
+  "peak_rss_kib": 78180,
+  "cooperative_budget_overrun_seconds": 0.19963978300074814
+}

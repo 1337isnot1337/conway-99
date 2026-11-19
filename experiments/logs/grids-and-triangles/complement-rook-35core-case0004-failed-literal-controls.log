@@ -1,0 +1,342 @@
+{
+  "status": "PASS: explicit positive assumption and inductive failed-literal reasoning on tiny controls",
+  "source_sha256": "65808c886e17f00d9e98955fdb2bca70c5fae464e351f404e7d898829204236f",
+  "rule_source_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7",
+  "enumerated_tiny_assignments": 8,
+  "unique_feasible_point": [
+    1,
+    0,
+    0
+  ],
+  "inductive_probe_checks": [
+    {
+      "trace": {
+        "status": "exact contradiction",
+        "complete": true,
+        "records": [
+          {
+            "kind": "assignment",
+            "variable": 1,
+            "value": 1,
+            "forbidden_value": 0,
+            "conditional_minimum": 0,
+            "conditional_maximum": 0,
+            "original_minimum": 0,
+            "original_maximum": 1,
+            "origin": {
+              "family": "base_row",
+              "id": 0
+            },
+            "prior_assignment_indices": []
+          },
+          {
+            "kind": "assignment",
+            "variable": 0,
+            "value": 0,
+            "forbidden_value": 1,
+            "conditional_minimum": 2,
+            "conditional_maximum": 2,
+            "original_minimum": 1,
+            "original_maximum": 2,
+            "origin": {
+              "family": "base_row",
+              "id": 1
+            },
+            "prior_assignment_indices": [
+              0
+            ]
+          },
+          {
+            "kind": "assignment",
+            "variable": 2,
+            "value": 1,
+            "forbidden_value": 0,
+            "conditional_minimum": 0,
+            "conditional_maximum": 0,
+            "original_minimum": 0,
+            "original_maximum": 1,
+            "origin": {
+              "family": "base_row",
+              "id": 2
+            },
+            "prior_assignment_indices": [
+              1
+            ]
+          },
+          {
+            "kind": "contradiction",
+            "original_minimum": 2,
+            "original_maximum": 2,
+            "origin": {
+              "family": "base_row",
+              "id": 3
+            },
+            "prior_assignment_indices": [
+              0,
+              2
+            ]
+          }
+        ],
+        "values": [
+          0,
+          1,
+          1
+        ],
+        "sweeps": 1
+      },
+      "check": {
+        "assumption": [
+          1,
+          1
+        ],
+        "previously_proved_absent": [],
+        "original_row_offset": 1,
+        "checked_trace": {
+          "all_records_checked": 4,
+          "contradiction": true,
+          "complete_fixed_point_rechecked": false
+        },
+        "newly_proved_absent": 1
+      }
+    },
+    {
+      "trace": {
+        "status": "exact contradiction",
+        "complete": true,
+        "records": [
+          {
+            "kind": "assignment",
+            "variable": 1,
+            "value": 0,
+            "forbidden_value": 1,
+            "conditional_minimum": 1,
+            "conditional_maximum": 1,
+            "original_minimum": 0,
+            "original_maximum": 1,
+            "origin": {
+              "family": "base_row",
+              "id": 0
+            },
+            "prior_assignment_indices": []
+          },
+          {
+            "kind": "assignment",
+            "variable": 2,
+            "value": 1,
+            "forbidden_value": 0,
+            "conditional_minimum": 0,
+            "conditional_maximum": 0,
+            "original_minimum": 0,
+            "original_maximum": 1,
+            "origin": {
+              "family": "base_row",
+              "id": 1
+            },
+            "prior_assignment_indices": []
+          },
+          {
+            "kind": "assignment",
+            "variable": 0,
+            "value": 1,
+            "forbidden_value": 0,
+            "conditional_minimum": 0,
+            "conditional_maximum": 0,
+            "original_minimum": 0,
+            "original_maximum": 1,
+            "origin": {
+              "family": "base_row",
+              "id": 2
+            },
+            "prior_assignment_indices": [
+              0
+            ]
+          },
+          {
+            "kind": "contradiction",
+            "original_minimum": 2,
+            "original_maximum": 2,
+            "origin": {
+              "family": "base_row",
+              "id": 3
+            },
+            "prior_assignment_indices": [
+              1,
+              2
+            ]
+          }
+        ],
+        "values": [
+          1,
+          0,
+          1
+        ],
+        "sweeps": 1
+      },
+      "check": {
+        "assumption": [
+          2,
+          1
+        ],
+        "previously_proved_absent": [
+          1
+        ],
+        "original_row_offset": 2,
+        "checked_trace": {
+          "all_records_checked": 4,
+          "contradiction": true,
+          "complete_fixed_point_rechecked": false
+        },
+        "newly_proved_absent": 2
+      }
+    },
+    {
+      "trace": {
+        "status": "exact interval and guarded-cover fixed point",
+        "complete": true,
+        "records": [
+          {
+            "kind": "assignment",
+            "variable": 1,
+            "value": 0,
+            "forbidden_value": 1,
+            "conditional_minimum": 1,
+            "conditional_maximum": 1,
+            "original_minimum": 0,
+            "original_maximum": 1,
+            "origin": {
+              "family": "base_row",
+              "id": 0
+            },
+            "prior_assignment_indices": []
+          },
+          {
+            "kind": "assignment",
+            "variable": 2,
+            "value": 0,
+            "forbidden_value": 1,
+            "conditional_minimum": 1,
+            "conditional_maximum": 1,
+            "original_minimum": 0,
+            "original_maximum": 1,
+            "origin": {
+              "family": "base_row",
+              "id": 1
+            },
+            "prior_assignment_indices": []
+          },
+          {
+            "kind": "assignment",
+            "variable": 0,
+            "value": 1,
+            "forbidden_value": 0,
+            "conditional_minimum": 0,
+            "conditional_maximum": 0,
+            "original_minimum": 0,
+            "original_maximum": 1,
+            "origin": {
+              "family": "base_row",
+              "id": 2
+            },
+            "prior_assignment_indices": []
+          }
+        ],
+        "values": [
+          1,
+          0,
+          0
+        ],
+        "sweeps": 2
+      },
+      "check": {
+        "assumption": [
+          0,
+          1
+        ],
+        "previously_proved_absent": [
+          1,
+          2
+        ],
+        "original_row_offset": 3,
+        "checked_trace": {
+          "all_records_checked": 3,
+          "contradiction": false,
+          "complete_fixed_point_rechecked": true
+        },
+        "newly_proved_absent": null,
+        "satisfying_incidence_claimed": false
+      }
+    }
+  ],
+  "guarded_cover_probe": {
+    "trace": {
+      "status": "exact contradiction",
+      "complete": true,
+      "records": [
+        {
+          "kind": "assignment",
+          "variable": 0,
+          "value": 1,
+          "forbidden_value": 0,
+          "conditional_minimum": 0,
+          "conditional_maximum": 0,
+          "original_minimum": 0,
+          "original_maximum": 1,
+          "origin": {
+            "family": "base_row",
+            "id": 0
+          },
+          "prior_assignment_indices": []
+        },
+        {
+          "kind": "assignment",
+          "variable": 1,
+          "value": 0,
+          "forbidden_value": 1,
+          "conditional_minimum": 2,
+          "conditional_maximum": 2,
+          "original_minimum": 1,
+          "original_maximum": 2,
+          "origin": {
+            "family": "base_row",
+            "id": 1
+          },
+          "prior_assignment_indices": [
+            0
+          ]
+        },
+        {
+          "kind": "contradiction",
+          "origin": {
+            "family": "cover",
+            "id": 0
+          },
+          "prior_assignment_indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "values": [
+        1,
+        0
+      ],
+      "sweeps": 1
+    },
+    "check": {
+      "assumption": [
+        0,
+        1
+      ],
+      "previously_proved_absent": [],
+      "original_row_offset": 1,
+      "checked_trace": {
+        "all_records_checked": 3,
+        "contradiction": true,
+        "complete_fixed_point_rechecked": false
+      },
+      "newly_proved_absent": 0
+    }
+  },
+  "case4_probes_run": 0,
+  "solver_or_optimizer_called": false
+}

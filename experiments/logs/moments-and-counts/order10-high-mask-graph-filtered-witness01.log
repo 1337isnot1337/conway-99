@@ -1,0 +1,88 @@
+{
+  "status": "EXACT_FILTERED_DECORATED_MOMENT_WITNESS",
+  "source_sha256": "03f2706ee7e4fd336b45d452ce0b3b1753fee64ffd4421b3ac2a194d6808d6e4",
+  "bindings": {
+    "query_source": {
+      "path": "experiments/workspace/grid_free_order10_high_mask_graph_query.py",
+      "sha256": "97490da5a7f39ff1e9d20ac9f5124e8552cfe8c715ac0f6017a2ad6e4fec8eda"
+    },
+    "old_witness": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-query01.json",
+      "sha256": "99261d06e9ad1219c0a580abe1715642ed11eff4a425fb030f8d7de05727beb9"
+    },
+    "old_replay": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-query01-replay.json",
+      "sha256": "cead67533854a289364128b011f2d201c581d90c4825b69a347922b6b82c72e1"
+    },
+    "filter_source": {
+      "path": "experiments/workspace/grid_free_order10_high_mask_graph_projectors.py",
+      "sha256": "6582189b3d6f541bb46aec5e86123a507e8622e023e1f6f73093ab86cf53660d"
+    },
+    "finish_source": {
+      "path": "experiments/workspace/grid_free_order10_high_mask_graph_projectors_finish.py",
+      "sha256": "ba9b596969fd69a3c6aa753de3ae9bd4a325daad357b4f740e61afeb40ed7b55"
+    },
+    "filter": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-projectors-complete01.json.gz",
+      "sha256": "9160decc71391fe42ec3f523b773f90708645bb524067122884c6d42e4c9566f"
+    },
+    "filter_replay": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-projectors-complete01-replay.json",
+      "sha256": "c4811ece424b8aabb789b36c687ee00d76b70eb010a30bb23740edcf0ca764ed"
+    }
+  },
+  "integer_count_point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "rows": 200,
+  "distinct_columns": 17922,
+  "nonzeros": 757947,
+  "retained_full_columns": 135565,
+  "certified_excluded_full_columns": 22146,
+  "complete_original_domain": 157711,
+  "moment_rhs_unchanged": true,
+  "every_representative_chosen_from_retained_full_columns": true,
+  "support_projector_rank_histograms": [
+    {
+      "6": 1,
+      "7": 3,
+      "8": 5,
+      "9": 22,
+      "10": 55,
+      "11": 64,
+      "12": 36,
+      "13": 13,
+      "16": 1
+    },
+    {
+      "6": 1,
+      "7": 3,
+      "8": 5,
+      "9": 22,
+      "10": 55,
+      "11": 64,
+      "12": 36,
+      "13": 13,
+      "16": 1
+    }
+  ],
+  "positive_psd_criterion": "P symmetric and all coefficients of det(tI+P) nonnegative",
+  "positive_psd_proof": "a negative eigenvalue would give a positive root of a monic polynomial with nonnegative coefficients",
+  "new_optimizer_calls": 0,
+  "full_domain_psd_scan_repeated": false,
+  "graph_existence_resolved": false,
+  "array_sha256": {
+    "coefficients": "0b72e0bfa4528f9ac4c6aba8ba546968946d4fb2c17cd98a0a4f41f0c0089cd0",
+    "old_distinct_feature_columns": "bdd188bf12780997a58d98184e28acc27ce08cd35a5020c3e25203968ba946dd",
+    "retained_full_graph_columns": "fa553e86dee60ed32f752e617e0e2c1229488a173f77e506f5678c4a00b3fc5e",
+    "retained_full_to_filtered_column": "e84c8c4cb5895879b118fab0c1179d22070ece10fd5dc775bd2f6a6101a98f07",
+    "retained_full_representatives": "63bd920e1f7378a389c332f0fd634c4eac8a8727a5d708ad277c2391dea8e76a",
+    "filtered_column_multiplicities": "f8b968e0020f5a7f920001464bd0335870c48aa2c7261267bbefa0e112470497"
+  },
+  "arrays": {
+    "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-filtered-witness01-arrays.npz",
+    "sha256": "45c2457ce430d1c661dd8dcbcac9356ba3e27df4845055e47db7b4da93cc5131",
+    "bytes": 762773
+  },
+  "seconds": 1.8311264689982636,
+  "peak_rss_kib": 124796
+}
+result_sha256 aeeb00b68ba521791bf3178695911a333be7cb2dd36497e5fda39640e1365ca6

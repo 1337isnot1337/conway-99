@@ -1,0 +1,18 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/grid_free_order10_high_mask_graph_query.py", line 536, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/grid_free_order10_high_mask_graph_query.py", line 522, in main
+    'controls': controls(), 'production_query_called': False,
+                ^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/grid_free_order10_high_mask_graph_query.py", line 369, in controls
+    proof = table_certificate(C, np.asarray([1, 2]), inverse, [0, -1])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/grid_free_order10_high_mask_graph_query.py", line 270, in table_certificate
+    raw_values, arithmetic = exact_column_values(C, multipliers)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/grid_free_order10_high_mask_graph_query.py", line 259, in exact_column_values
+    if bound <= np.iinfo(np.int64).max():
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not callable

@@ -6,13 +6,13 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Exact primary propagation and explicit assumption checks for complementary-rook
-   matching case four. Owned by the independent-set worker.
-2. Complete induced high-graph moment equations and exact feasibility queries.
-   Owned by the literature worker and coordinating worker on separate sources.
-3. Bounded-potential separation and lazy continuation for F0 exterior rows.
+1. Exact nonnegative Gram-row saturation for complementary-rook matching
+   case four. Owned by the independent-set worker.
+2. Complete exterior-incidence tests for the surviving high-graph moment
+   support. Owned by the literature worker.
+3. Candidate-dependent shared-potential allocation and lazy F0 continuation.
    Owned by the completion worker.
-4. Complete graph-domain construction, mathematical review, and publication.
+4. Spectral domain certificates, mathematical review, and publication.
    Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
@@ -847,3 +847,27 @@ their hypotheses permit them; computational exclusions require exact replay.
   call. The log confirms main search starts at 0.32 seconds. Complete
   exact forward propagation then adds no new assignment after the fourteen
   original units. Explicit assumption checks are the next preparation.
+
+
+- The complete induced high-graph moment query has an exact witness on
+  200 positive rational graph masses. All 200 equations and the full
+  root-label lift pass. A separate saved-support audit reproduces them.
+- Principal-projector certificates remove 22,146 of the 157,711 graphs.
+  A separate suffix continuation completes the first bounded scan without
+  repeating its prefix. Every removed graph has a full integer negative
+  vector, checked again by the cold removal replay.
+- All 200 positive-mass graphs survive. Their existing weights satisfy
+  the restricted 200-by-17,922 system without a new optimizer. Exact
+  characteristic polynomials check all 400 full principal matrices.
+- The centered exterior-Gram identity proves that another Gram PSD scan
+  would add no restriction. The next model enumerates complete binary
+  outside-incidence signatures for the saved sixteen-vertex support graph.
+- Seventeen exact rook assumption probes prove column 359 absent. Its
+  reason reduces to three original Gram rows. Their nonnegative sum
+  forces 46 columns absent, including 44 new ones. This proof needs no
+  earlier absence or integrality premise. Complete small-combination
+  facial closure is the next preparation.
+- The F0 allocation pilot checks 44,064 historical candidate/family pairs.
+  Its best Boolean allocation is stronger than a fixed allocation.
+  Three additional shared-family violations already fail individual cuts,
+  so this pilot gives no new exclusion beyond the complete prior registry.

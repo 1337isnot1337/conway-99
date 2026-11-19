@@ -1,0 +1,26 @@
+{
+  "status": "PASS: complete scope and bounded failed-literal batch source reviewed",
+  "source_sha256": "492f870124a146d77dd054d7e5898b39d60195c828a10f5648d9185e015e9365",
+  "preparation_sha256": "c73b25212d5ea248e800ce46abbb12b046e6ca75e5b6848ae71cdcebb8c7ffc5",
+  "scope_source_sha256": "65808c886e17f00d9e98955fdb2bca70c5fae464e351f404e7d898829204236f",
+  "checks": [
+    "No orbit pruning relies on the symmetry census",
+    "All original2271 rows and178533 covers remain present",
+    "Each branch adds exactly one positive assumption and previously proved zero units",
+    "Conditional fixed-point implications never enter the next branch",
+    "A learned zero requires a complete exact contradiction and separate reason replay",
+    "Prior-zero premises are checked inductively from the first branch",
+    "Every trace is durably saved with source and input hashes",
+    "A partial trace stops the batch and gives no learned zero",
+    "Complete32-prefix coverage is distinguished from the1200-column domain"
+  ],
+  "authorized_run": {
+    "maximum_probes": 32,
+    "seconds_per_probe": 5,
+    "batch_seconds_including_replay": 60,
+    "optimizer_calls": 0,
+    "automatic_retries": 0
+  },
+  "required_after_run": "Freeze all traces and run separate inductive cold replay. No full case exclusion without complete proof.",
+  "optimizer_or_probes_called_by_review": false
+}
