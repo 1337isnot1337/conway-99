@@ -1,0 +1,308 @@
+{
+  "schema": "conway99.checkpoint51-literature-artifact-map.v1",
+  "status": "FROZEN_CONDITIONED_COMPLEMENTARY_SCALAR_AND_SCOPE_PACKAGES",
+  "count_point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "outcomes": {
+    "conditioned_Q": {
+      "complete_blocks": 2,
+      "orders": [
+        41,
+        34
+      ],
+      "exact_PSD": true,
+      "nullities": [
+        17,
+        16
+      ],
+      "cold_replay_passed": true
+    },
+    "complementary_Q": {
+      "complete_blocks": 9,
+      "classes": 574,
+      "exact_PSD": true,
+      "nullities": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        4,
+        2
+      ],
+      "cold_replay_passed": true,
+      "first_moment_host_controls": 300
+    },
+    "recovered_scalar_N": {
+      "complete_blocks": 2,
+      "orders": [
+        41,
+        34
+      ],
+      "exact_PSD": true,
+      "nullities": [
+        34,
+        30
+      ],
+      "cold_replay_passed": true,
+      "coefficientwise_exact_divisions": 11650,
+      "literal_host_controls": 306,
+      "independence_claim": false
+    },
+    "intersecting_triangle_scope": {
+      "complete_root_orders": [
+        5,
+        6
+      ],
+      "root_counts": [
+        8,
+        30
+      ],
+      "class_counts": [
+        257,
+        2374
+      ],
+      "lower_entries": [
+        4859,
+        127647
+      ],
+      "candidate_completion_upper_bounds": [
+        108481,
+        2967175
+      ],
+      "count_point_loaded": false,
+      "pair_tensors_generated": false,
+      "failed_v1_preserved": true,
+      "v2_fix": "Retain Counter zero defaults in the noncore workload profile."
+    },
+    "binary_code_peer_review": {
+      "full_source_read": true,
+      "no_query_or_controls_repeated": true
+    }
+  },
+  "restrictions": {
+    "graph_existence_resolved": false,
+    "new_5_root_tensors_included": false,
+    "new_6_root_tensors_included": false,
+    "refs_or_shared_docs_modified": false
+  },
+  "files": [
+    {
+      "path": "experiments/workspace/triangle_projector_core_triangle_conditioning.py",
+      "bytes": 13146,
+      "sha256": "7fb335261db4c828bfc477c2525bc7bc098eac5ce7dab6941892256b8a48886c",
+      "git_blob": "7c0095df8d1ce5ee2953fb04039a44a8d5c85fad"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_conditioned_host_controls.py",
+      "bytes": 5407,
+      "sha256": "d9876c51fc1fe40d730a3d475b94e2a70f62967397ff912a2c47550795e5320e",
+      "git_blob": "258ee382e0355b89163999c51506da0de7c9fc15"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_conditioned_query.py",
+      "bytes": 10236,
+      "sha256": "cd167c52b7b646a64e4faf58816212d427d1c280a45070e77a5eb8b0a29abb43",
+      "git_blob": "f361baad9154d1f2b3653d0e707981748c4bcb3e"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_core_triangle_conditioning.md",
+      "bytes": 5033,
+      "sha256": "a3cd1fa6f2fda5df3ad5b75d4c452426b1bc073e47ba3219d1b248990f4f5203",
+      "git_blob": "e0efa4dcafd0c5717b3b94b24e507c2d822f2403"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-host-controls.json",
+      "bytes": 4811,
+      "sha256": "a153f37920db545e1902efdd6a5237feb7d4b6f204b7a27f8e2fe950dae1ee09",
+      "git_blob": "182d3c4b7829cebf48584432cf9845b44defe8e5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query-controls.json",
+      "bytes": 1200,
+      "sha256": "69e7224302ad3ecd28d10166c9a03395e2a29372cca263e49649736446de8019",
+      "git_blob": "779948a7c4975c44dce99551bdf0ffbd5137fc38"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query-preparation.json",
+      "bytes": 2690,
+      "sha256": "8f7db0b341566d9b435eb5566690b574aa645adb8326ea26f9276c922dbba965",
+      "git_blob": "1e98f6d97ef40585c95cbf3425fd9fe9f1d7cb87"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-core-triangle-conditioning-independent-review.json",
+      "bytes": 2406,
+      "sha256": "5927ca3198b51bab6bc66985257f9b5d3f45e26689f3aac102f934798d21d7ed",
+      "git_blob": "155407d9712bd6cc64687df26a9096e8b3c125ec"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-conditioned-preparation01/preparation.json",
+      "bytes": 4837,
+      "sha256": "a01a4e845fcff7a4a2c0edbe9542248f33205640f385463e853821353e8bc65a",
+      "git_blob": "9a7352e70bbea9c24251e52751263fcb9266da45"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-conditioned-preparation01/model.json.gz",
+      "bytes": 42015,
+      "sha256": "8f398368e80ff36cba74969c8526b660c21155476b7d3cd58e0f0b7c81aeb9a0",
+      "git_blob": "321fb9900e070be311020eb81ac0526d7036bf66"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query01.json",
+      "bytes": 68356,
+      "sha256": "176a4f6974754833eca479cfee4a7d93442d8c6d462a105611f07fd0b092dff4",
+      "git_blob": "afb98f9b656af3063dbe82203b4c789708bfe6e7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query01-replay.json",
+      "bytes": 1165,
+      "sha256": "5d8330d12c1271befd8492d75674d3d20d95a9ff202c3093ac5f997c2bfdea22",
+      "git_blob": "072dde476dd69aa9a8c3d3a16fec4f9f31c2ccbd"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query01.log",
+      "bytes": 825,
+      "sha256": "68fc1f7d58c7aacf195d3dfcc99cee94312aa9076641a1c87275408593d30ce8",
+      "git_blob": "f74c7cea615248b017aad0f58481801b1d535393"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query01-replay.log",
+      "bytes": 1165,
+      "sha256": "5d8330d12c1271befd8492d75674d3d20d95a9ff202c3093ac5f997c2bfdea22",
+      "git_blob": "072dde476dd69aa9a8c3d3a16fec4f9f31c2ccbd"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_core_triangle_conditioning_result.md",
+      "bytes": 3406,
+      "sha256": "a1ada3e130e6655e0945d01ff42a4698f182a0ebb28daeb35a0a1e21b00c0d8e",
+      "git_blob": "76571c0a04da5ac38adad1358f2bb5f326b43470"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-artifacts.json",
+      "bytes": 5749,
+      "sha256": "b9d6f225fc281e834477707232743c17d782a4237e817b8facf18e64ccdfa004",
+      "git_blob": "b24f01e730fdfaeea5080ba6d59b4c20a6ce081f"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_complementary.py",
+      "bytes": 18696,
+      "sha256": "cc35693952e351bafec2920ebb3f241170a7ca1d67b961f505095c11703f1c0d",
+      "git_blob": "185bd40c6cb80d7a494480b4ca68d0bdfed6e122"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_complementary.md",
+      "bytes": 4318,
+      "sha256": "6bb1dec1a78171b90971422883631dc67af2e8b275c28e2ef65a69970f85c5ef",
+      "git_blob": "22fc147718ab0a39fbc0bdbd075d2cfc8c82b4d3"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_complementary_result.md",
+      "bytes": 1242,
+      "sha256": "479e48a4c7c4f61b7e39a0ab1e5840543390dbf2f9ef549a7f5d2597392975c0",
+      "git_blob": "689c314489aae2231d8c75ab4797a2eb6a6511f8"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-complementary-preparation01/first-moments.json",
+      "bytes": 110930,
+      "sha256": "3c3b957f6cfaebafa448804d9c61759b3a0fc448c484a7b590095f831ecc6184",
+      "git_blob": "1ed37cccaf0f985e121549f5468a0610a8ab8c44"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-complementary-preparation01/preparation.json",
+      "bytes": 84235,
+      "sha256": "67cd2f67e3276b23f1ad7d6e7e7ca023320172a265402e5c9d8202d14fd8725e",
+      "git_blob": "6d128500133cab4244e54c2b13bfe06199a93e63"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-complementary-query01.json",
+      "bytes": 1100391,
+      "sha256": "3cc32f16d5c0a3bd1b0848ed4fb5b7c0b2981a0b487f187099168589a92022fb",
+      "git_blob": "bf70e4e06ab2ea238f5f2d3da6e361791899d19a"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-complementary-query01-replay.json",
+      "bytes": 1819,
+      "sha256": "b3f2b46d93bc77ded021ec6bc96a7779c0db3a9e7813e6062134392cd260f5f6",
+      "git_blob": "5689cae985ca640744183b7f7635c7327cde4c2f"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_scalar_recovery.py",
+      "bytes": 15415,
+      "sha256": "1b7d65ab567a1e00f1e8871919273a154daeebc38a30c856f0969aa3d5f85f3b",
+      "git_blob": "57e71f441d474dda865845958ba09e22e145ccac"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_scalar_recovery.md",
+      "bytes": 3866,
+      "sha256": "47da8db20588ca8a282cd1c17f479f252f6d75300d76e49da85de88fd5955276",
+      "git_blob": "9f56b9ca7aa6622cd685095abc3d1567164c0958"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-scalar-preparation01/model.json.gz",
+      "bytes": 36502,
+      "sha256": "782e4c3738adeda2596e25bc05062fb56252547777e26e68a0428afb3a3cb5cd",
+      "git_blob": "af67b965383e2c2f464f95c1203aa0856cb908a5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-scalar-preparation01/preparation.json",
+      "bytes": 70922,
+      "sha256": "c53a027e480b177fd800a5d15cd2369d301177e59a497cc90c303ea9292cb401",
+      "git_blob": "7442b4f4c00c2f2020344778c013ed0fbb1401d7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-scalar-query01.json",
+      "bytes": 58322,
+      "sha256": "4a9b39ddec96f3418e30fa518c1301606c49c55e99443fd8e50841c0500db997",
+      "git_blob": "657c58a9a7c2c262b182c5c2567d03e977ff8ea4"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-scalar-query01-replay.json",
+      "bytes": 896,
+      "sha256": "3860acfc89cdf5b81edd1af7a75357050094a6bb49387f88d05111f100c618ca",
+      "git_blob": "020b8e4207e43fddc3bf90e7722730aff2bb24ff"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_intersecting_root_scope.py",
+      "bytes": 11281,
+      "sha256": "7ec7790200029be5bd4f6f38d084db0b9f3cba0372f63cee290faa30968becba",
+      "git_blob": "f0e64638506b1e595d8f10bf48cf83f96053bff1"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-intersecting-triangle-root-scope.json",
+      "bytes": 621,
+      "sha256": "0387ce0d9eeea280e8e961169669572ee7aa3a05255e1422476102a688b92394",
+      "git_blob": "fc478b390764ef7d3b44c49a33e8339671d1ebfb"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-intersecting-triangle-root-scope-failed.log",
+      "bytes": 1869,
+      "sha256": "82e32b9cf500fce488f418dc71a6149865ce971a7c06a1ead4e4579d328fe6c3",
+      "git_blob": "4051c181625fbc141c2c740d51d2ade6d10a14e9"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_intersecting_root_scope_v2.py",
+      "bytes": 11284,
+      "sha256": "d25c7cfdb94fa79f0100990752a3c941011dd62e230c02b71472657f715f1b65",
+      "git_blob": "b4714a072afa8084aa64c6ed50f3ad5b12082535"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-intersecting-triangle-root-scope-v2.json",
+      "bytes": 1028205,
+      "sha256": "78e62efc423f7acd498368207607c5dfc5572dd1840accebe46c38141aeb331f",
+      "git_blob": "9dbd24b0866bb2d10e4be26c8e138d9502dd07fc"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_intersecting_root_scope.md",
+      "bytes": 3498,
+      "sha256": "a26cd7443980262c5037a0b280395fe37655ce72e317c608ededffd68b521a9e",
+      "git_blob": "7b95d9e1c0861296c8ac6db4113e575c39ad7dc4"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-incidence-binary-code-independent-review.json",
+      "bytes": 2431,
+      "sha256": "eec0b13638400fdad91f047bf3f51f2ba4a44304a4722c9ca3e97bb329814641",
+      "git_blob": "34f029238737efbe8060fd79cbc80b53f27f9150"
+    }
+  ]
+}

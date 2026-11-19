@@ -1,0 +1,56 @@
+{
+  "status": "PASS_EXACT_FORCED_DUAL_WORD_CODE_BOUND",
+  "source_sha256": "2818ba7a3dc6b5bc01dd7a9744a3b1496ee18b53c5a02e9f3ddef359f790ccfe",
+  "base_dual_result_sha256": "80c87653eb52286cd90633823dfa8e07166e65531eba938b69f9b6957e287e5f",
+  "forced_dual_word_lower_bounds": {
+    "3": 231,
+    "4": 2079,
+    "6": 24486
+  },
+  "old_exact_bound": "5834276864000/755087",
+  "dual_rescaling_factor": "38999405/755087",
+  "exact_code_size_upper_bound": "1166855372800/7799881",
+  "integer_code_size_upper_bound": 149599,
+  "binary_kernel_dimension_upper_bound": 17,
+  "binary_incidence_rank_lower_bound": 82,
+  "positive_rescaled_dual": [
+    [
+      2,
+      "869888/350994645"
+    ],
+    [
+      3,
+      "50861/1286980365"
+    ],
+    [
+      4,
+      "973447/3860941095"
+    ],
+    [
+      5,
+      "22664/3860941095"
+    ],
+    [
+      6,
+      "23512/1286980365"
+    ],
+    [
+      7,
+      "271/772188219"
+    ],
+    [
+      8,
+      "307/428993455"
+    ]
+  ],
+  "all_99_dual_signs_and_seven_dual_columns_checked": true,
+  "small_host_control": {
+    "host": "three by three rook graph",
+    "triangles": 6,
+    "distinct_intersecting_pair_words": 9,
+    "distinct_disjoint_pair_words": 6
+  },
+  "stronger_LP_optimum_claimed": false,
+  "optimizer_called": false,
+  "unrestricted_graph_existence_resolved": false
+}

@@ -1,5 +1,7 @@
 # Research catalog
 
+Checkpoint 51 adds the [binary triangle-incidence rank bound of 82](research/grids-and-triangles/triangle_incidence_binary_code.md), [six more proved rook case-four zeros](research/grids-and-triangles/rook_case4_triple_saturation_face.md), and the fully recorded [UNKNOWN joint F0 moment query](research/root_prism_free_f0_second_moments_run01.md). The [conditioned](research/grids-and-triangles/triangle_projector_core_triangle_conditioning_result.md) and [complementary](research/grids-and-triangles/triangle_projector_complementary_result.md) triangle projector tests pass exactly. The [larger-root census](research/grids-and-triangles/triangle_projector_intersecting_root_scope.md) prepares a separate continuation.
+
 Checkpoint 50 adds [23 proved selector zeros in rook case four](research/grids-and-triangles/rook_case4_four_gram_face.md), [exact feasibility of all 4,416 Boolean F0 cuts](research/root_prism_free_f0_boolean_fractional_result.md), and a [complete second selector-moment preparation](research/root_prism_free_f0_second_moments.md). The [triangle-projector tests](research/grids-and-triangles/triangle_projector_order_ten.md) and [decorated root-42 test](research/grids-and-triangles/root42_decorated_interval_result.md) both pass at the count vector. Graph existence remains unresolved.
 
 Every structural result below concerns a hypothetical strongly regular graph with parameters $(99,14,1,2)$. The ledger gives the assumptions and stopping points of the construction and solver runs. [Research ledger](STATE.md)

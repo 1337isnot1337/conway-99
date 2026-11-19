@@ -1,0 +1,52 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{"call": 0, "status": "HighsModelStatus.kOptimal", "active_rows": 3117, "new_rows": 4, "unseen_violations": 4, "solver_seconds": 3.3990112230021623}
+{
+  "status": "exact original-row bound found; independent cold replay required",
+  "source_bindings": {
+    "driver_sha256": "f9aabb56194dc875b4f196c125e14dddceb25823a27b903fb597862b4c8a4efc",
+    "exact_face_builder_sha256": "d29369906b32b55a0ece17fa79025e86341269a689e8fc6dbbfd248b11985fff",
+    "unchanged_native_row_assembly_and_call_helper_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_serialization_runtime_helper_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "four_Gram_source_sha256": "658a4665f156ec892824c4ea5896ee05bb0346fab62f9c3461deb10d2ccf0e46",
+    "four_Gram_certificate_sha256": "c28347a46c0c9a0973e16487886d7b166f5bd008b7af2351ad4d7b4f0459cc50"
+  },
+  "preparation_sha256": "69806c810631991b53004fb600276829ac773ee1279465e459cd8b3fe899835d",
+  "limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "automatic_retry": false,
+  "production_run_calls": 2,
+  "solver_and_existing_ray_seconds": 3.538946429005591,
+  "added_cover_rows": 4,
+  "exact_infeasibility_certificate_found": false,
+  "exact_zero_face_certificate_found": true,
+  "exact_rational_point_found": false,
+  "case4_exclusion_verified": false,
+  "whole_graph_problem_resolved": false,
+  "definition_sha256": "46fe5f053cfaa85c337b535884240a1fe0a5d27e1ce1710674f04dadade13b38",
+  "input_replay_seconds": 2.945513029000722,
+  "native_bootstrap_seconds": 0.37266766700486187,
+  "numerical_stop_reason": "no unseen retained cover violated; full exact acceptance still required",
+  "numerical_phase_seconds": 4.283003593998728,
+  "exact_certificate": {
+    "path": "exact-bound-certificate.json.gz",
+    "sha256": "34f0ddf6239608a555fc6c21ceda7d3d4a42b779b443d0e34b81986431d37b7d",
+    "decompressed_sha256": "107f03132c201a0e717a92212de3d4b37db1ccc4515d97408f9758e3277b7ca8",
+    "decompressed_bytes": 11073
+  },
+  "exact_stage_seconds": 0.03903721799724735,
+  "elapsed_seconds": 7.26844989300298,
+  "peak_rss_kib": 442328
+}

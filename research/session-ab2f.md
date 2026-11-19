@@ -6,10 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Query the complete complementary-rook case-four relaxation on its proved 81-zero face, preserving every original row for exact acceptance. Owned by the independent-set worker.
-2. Query the joint F0 selector-moment linear model after separate native-source preparation. Its spectral matrices require separate exact checks. Owned by the completion worker.
-3. Prepare and test the triangle-incidence projector after per-embedding conditioning on a fixed root triangle. Owned by the literature worker.
-4. Review exact outcomes, develop further necessary constraints, and publish reviewed checkpoints. Owned by the coordinating worker.
+1. Derive exact capacitated transportation cuts for complementary-rook case four after the 87 proved selector zeros. Owned by the independent-set worker.
+2. Remove certified dependencies from the joint F0 selector-moment model, then run a separately prepared bounded query with full original-row acceptance. Owned by the completion worker.
+3. Prepare conditioned triangle-incidence tensors for the eight five-vertex triangle-containing roots. Six-vertex roots remain at the census stage. Owned by the literature worker.
+4. Develop the binary point-triangle kernel restrictions, review exact outcomes, and publish checkpoints. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -29,6 +29,11 @@ not meet that target. New reductions will be checked on known graphs when
 their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
+
+- Checkpoint 51: the binary point-triangle kernel has nonzero weights only 36,40,44,48,52,56,60. One exact coding LP gives dimension at most22. Forced dual words of weights3,4,6 strengthen its existing dual certificate to dimension at most17, hence incidence rank at least82. This second step uses no optimizer. Independent recurrence and rational-column checks pass. No lower bound on kernel dimension is assumed.
+- The rook 81-zero-face run uses two native calls totaling3.54seconds and adds four original covers. Its final exact certificate needs no added cover: two original Gram equations plus the triple capacity at{5,15,27} force18 columns zero, six new overall. The full1214-column short proof uses no prior zero premises. The total is87; the whole branch remains open.
+- The first joint F0 second-moment run reaches its time limit with no valid basis, exact point or ray. Its lossless seven-file numerical archive and two terminal replays preserve UNKNOWN. An exact equivalent reduction is prepared separately; the unchanged model is not retried.
+- Both conditioned triangle blocks, all nine complementary blocks and both reconstructed scalar blocks pass exact PSD and cold replay. The scalar blocks follow from the existing complete four-root flag span; they are not an independent family. The larger-root census finds257 classes at eight roots of order5 and2374 classes at thirty roots of order6. Its failed first bookkeeping attempt is preserved with the corrected census.
 
 - Checkpoint 50: exact cover compression preserves the complete rook case-four real relaxation. One bounded row-generation call exposed a zero-maxmin certificate. Its four native Gram rows give 24 additional Gram-only zeros; one was already a cover unit, so 23 are new overall. The short proof is independent of numerical optimization. All 81 known zeros pass complete original-row propagation and cold replay, with no new assignments and no integrality-dependent step.
 - The saved F0 point passes all 4,416 Boolean-normalized cuts exactly. The full 480-selector/68,394-edge baseline remains intact. Root's independent integer replay verifies the new coefficient-sum quotient and every full cut. No repeated LP was launched. The new joint-moment preparation has 9,742 pair orbits, 15,589 variables, 7,165 equalities and 46,122 inequalities. Its 389 zero-pair-orbit equalities have direct nonnegative lifted-row or motif certificates. PSD conditions are recorded separately.

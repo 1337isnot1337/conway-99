@@ -1,0 +1,51 @@
+{
+  "status": "PASS: independent read-only mathematical/source review",
+  "reviewer": "unrestricted_completion",
+  "bindings": {
+    "subject": {
+      "path": "experiments/workspace/rook_case4_face81_model.py",
+      "sha256": "d29369906b32b55a0ece17fa79025e86341269a689e8fc6dbbfd248b11985fff"
+    },
+    "recovery": {
+      "path": "experiments/workspace/rook_case4_complete_lp_recovery.py",
+      "sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6"
+    },
+    "four_Gram_proof": {
+      "path": "experiments/workspace/rook_case4_four_gram_face.py",
+      "sha256": "658a4665f156ec892824c4ea5896ee05bb0346fab62f9c3461deb10d2ccf0e46"
+    },
+    "model": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face81-model01/model.json",
+      "sha256": "21f3e08b0e7b8fcb0125cbb9fa8dc4d012c14563b7fb5bbc194bb0316a15962e"
+    },
+    "face_certificate": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-four-gram-face-certificate.json",
+      "sha256": "c28347a46c0c9a0973e16487886d7b166f5bd008b7af2351ad4d7b4f0459cc50"
+    }
+  },
+  "scope": "Read complete275-line builder, full four-Gram proof source, and relevant original_rows/audit_registry/projected recovery helpers. Read frozen model metadata and face certificate only. No subject import, sparse matrix rebuild, control rerun, optimizer or query.",
+  "checked": [
+    "The old zero-sum nonnegative Gram relation forces46 zeros over real nonnegative selectors; all negative terms in the new four-row relation belong to those zeros, forcing24 further zeros. No integrality premise.",
+    "The published14 cover units combine with70 Gram zeros in a union of81, with3 overlaps; no other selector is fixed and no selector is fixed one.",
+    "All2271 original rows retain their finite endpoints after zero substitution. A row is omitted exactly when its independent unit-box coefficient minimum and maximum lie within both endpoints.",
+    "Every178533 coordinate cover is accounted for. Fixed-zero targets make their rows nonnegative tautologies; other rows retain the target and all surviving support. Their tightened upper endpoint equals the positive support size and is a unit-box tautology.",
+    "The fixed bounds, all60 uncapped row cuts, original-signature rows, core-triple rows and conflict rows are retained or have explicit real-box omission witnesses. No Boolean normalization or numerical-support restriction enters.",
+    "One deterministic integer stream and array hashes bind row origin IDs, signed coefficients, endpoints, column projection and zero set. Cold rebuild compares complete metadata and arrays; load remains dependent on the externally bound model manifest.",
+    "The preparation is bounded and calls no optimizer. Face feasibility or infeasibility is not claimed by this package."
+  ],
+  "cheap_set_checks": {
+    "Gram_zeros": 70,
+    "cover_units": 14,
+    "overlap": 3,
+    "union": 81,
+    "remaining_columns": 1133
+  },
+  "not_repeated": [
+    "Complete cover ledger arithmetic",
+    "11,390,157-entry matrix build or hash recomputation",
+    "Preparation controls",
+    "Any optimizer or solver"
+  ],
+  "optimizer_calls": 0,
+  "case4_excluded": false
+}

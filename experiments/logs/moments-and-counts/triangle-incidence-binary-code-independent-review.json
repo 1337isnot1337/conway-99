@@ -1,0 +1,32 @@
+{
+  "schema": "conway99.triangle-binary-code-independent-review.v1",
+  "status": "PASS_READ_ONLY_MATHEMATICAL_AND_SOURCE_REVIEW",
+  "subject_source": "experiments/workspace/triangle_incidence_binary_code.py",
+  "subject_source_sha256": "c2cf228e0e6858b56d642c42227bed5d21913fe2ff2f88b15d82d03d4c35a001",
+  "proof_note": "research/grids-and-triangles/triangle_incidence_binary_code.md",
+  "proof_note_sha256": "7985e01a7ea963209ff241019ebbcd8d1ff99a338f947c24b72e8e8d472b3e8d",
+  "reviewer": "literature_obstructions",
+  "checks": [
+    "A nonzero word in ker(B^T) induces a 7-regular support; all exterior support degrees are even.",
+    "The centered support Rayleigh quotient gives 36 <= s <= 121/2. The exact first and second exterior-degree sums force s divisible by 4.",
+    "Doubly-evenness implies self-orthogonality. A^2=A over F2 and the reduced characteristic polynomial give rank(A)=54. The dot product restricted to im(A) is nondegenerate and alternating; C is isotropic there.",
+    "The seven-variable model uses A=-Krawtchouk, b=binomial(99,j), x>=0, maximize 1+sum(x). All 99 MacWilliams inequalities have the correct signs.",
+    "Exact nonnegative dual multipliers with A^T y >= 1 certify the code-size upper bound 1+b^T y. Numerical values select supports only.",
+    "Exact RREF reconstruction may set free coordinates to zero; every reconstructed equation is rechecked. All accepted dual signs and columns are checked with Fraction.",
+    "An optional primal certificate checks all seven lower bounds and all 99 inequalities exactly. Equality of exact primal and dual objectives alone triggers the LP-optimum claim.",
+    "The exact code-size upper bound is converted to a kernel-dimension bound by its power-of-two requirement. Integer division and bit_length are followed by an exact power-of-two bracket check.",
+    "Replay binds source, preparation and model; it rechecks the complete exact certificate without a solver.",
+    "The note explicitly permits the zero-dimensional kernel code, so no graph nonexistence claim follows from this upper bound alone."
+  ],
+  "scope": {
+    "full_source_read": true,
+    "full_proof_note_read": true,
+    "source_hash_checked": true,
+    "source_imported": false,
+    "preparation_controls_repeated": false,
+    "optimizer_called": false,
+    "codeword_enumeration_repeated": false,
+    "point_query_repeated": false,
+    "exact_bound_outcome_audited": false
+  }
+}

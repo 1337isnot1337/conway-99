@@ -1,0 +1,91 @@
+{
+  "status": "PASS_EXACT_CONTRACTION_PSD_AND_NEGATIVE_FORM_CONTROLS",
+  "examples": [
+    {
+      "matrix": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "PSD": true,
+      "charpoly": [
+        0,
+        2,
+        1
+      ]
+    },
+    {
+      "matrix": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "PSD": false,
+      "charpoly": [
+        -3,
+        2,
+        1
+      ],
+      "integer_vector": [
+        -2,
+        1
+      ],
+      "value": -3,
+      "primitive_form": [
+        [
+          0,
+          "4"
+        ],
+        [
+          1,
+          "-8"
+        ],
+        [
+          2,
+          "1"
+        ]
+      ]
+    },
+    {
+      "matrix": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "PSD": false,
+      "charpoly": [
+        -1,
+        0,
+        1
+      ],
+      "integer_vector": [
+        1,
+        -1
+      ],
+      "value": -2,
+      "primitive_form": [
+        [
+          1,
+          "-1"
+        ]
+      ]
+    }
+  ],
+  "count_point_loaded": false,
+  "optimizer_called": false
+}

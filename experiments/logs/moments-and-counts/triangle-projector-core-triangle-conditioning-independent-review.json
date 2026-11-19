@@ -1,0 +1,26 @@
+{
+  "status": "PASS: source and mathematical necessity reviewed",
+  "subject_path": "experiments/workspace/triangle_projector_core_triangle_conditioning.py",
+  "subject_sha256": "7fb335261db4c828bfc477c2525bc7bc098eac5ce7dab6941892256b8a48886c",
+  "base_source_sha256": "1e7a8b7380314d6dfd8ff05954a13662bc011378f5759ad675ec1bc281fa19e9",
+  "full_class_source_sha256": "d26499a0eec07c2c80a28818f0a40319fc0b14f54140a28253c820eb00d44f2a",
+  "parent_full_class_model_raw_sha256": "819aa1954ce038865404433995eb401ad7111cad0a21992f4ba8c42e3e04687c",
+  "method": "Complete source read and algebraic review; exact subject bytes hashed independently",
+  "checks": {
+    "Schur_kernel": "Q is positive semidefinite and Q(T,T)=120. Thus 120Q-q_T q_T^T is positive semidefinite for each labelled root embedding before aggregation.",
+    "projector_scale_and_rank": "Q is210 times a rank132 orthogonal projector. Removing its nonzero T direction gives25200 times a rank131 orthogonal projector.",
+    "domain": "Roots14 and15 each have a unique root triangle. All41 and34 reviewed full triangle classes remain, including root-intersecting triangles.",
+    "cross_terms": "Q(T,U) depends only on the full class ofU. The source checks its class value for every literal decomposition.",
+    "complete_induced_support": "For each triangle pair, the root contains the entire complement of their union and the required number of union sites. All labelled root isomorphisms are counted.",
+    "normalization": "Literal triangles are unlabelled sets. Different triangle classes contribute once to a lower entry; distinct triangles in the same class contribute twice. The coefficient multiplies the unlabelled induced-subgraph count, without another automorphism factor.",
+    "fixed_triangle_row": "If U=T or V=T, the conditioned kernel is identically zero. The source checks the fixed class row vanishes coefficientwise.",
+    "host_control_independence": "The control uses all ordered triangle pairs and all labelled roots directly, then compares with contraction over induced subsets.",
+    "scope": "The source has preparation only. It does not load a count point, divide an aggregated parent tensor, or claim a new exclusion."
+  },
+  "subject_imported": false,
+  "enumeration_repeated": false,
+  "controls_repeated": false,
+  "point_query_run": false,
+  "optimizer_called": false,
+  "reviewer": "/root/independent_sets"
+}

@@ -1,0 +1,55 @@
+{
+  "status": "PASS: independent source review of the full-pool81-zero-face driver",
+  "reviewer": "unrestricted_completion",
+  "bindings": {
+    "driver": {
+      "path": "experiments/workspace/rook_case4_face81_cover_generation.py",
+      "sha256": "f9aabb56194dc875b4f196c125e14dddceb25823a27b903fb597862b4c8a4efc"
+    },
+    "model_builder": {
+      "path": "experiments/workspace/rook_case4_face81_model.py",
+      "sha256": "d29369906b32b55a0ece17fa79025e86341269a689e8fc6dbbfd248b11985fff"
+    },
+    "previous_driver": {
+      "path": "experiments/workspace/rook_case4_cover_generation.py",
+      "sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2"
+    },
+    "exact_parent": {
+      "path": "experiments/workspace/rook_case4_maxmin_query.py",
+      "sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322"
+    },
+    "reuse_control": {
+      "path": "experiments/workspace/rook_case4_face81_reuse_control.py",
+      "sha256": "b59b18d3df59143aab9cd4d174c9d970385ec8166e8e3f19b187d0da84ac9f30"
+    },
+    "reuse_report": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face81-reuse-controls.json",
+      "sha256": "3c2328a9aa9043818132615184b9e2745930eb6ae0671bed2d284ce1fab79360"
+    }
+  },
+  "scope": "Read entire new driver and AST adaptation source/report, and checked imported set_model/append_rows/native_once bodies for dimension-independent behavior. No subject import, AST control rerun, matrix reconstruction, optimizer or solver.",
+  "checked": [
+    "Exact builder/model/NPZ/stream bindings are checked before numerical conversion; all1133 remaining selectors are free and all168847 remaining covers enter the complete pool.",
+    "The t extension uses0<=x_j-t<=1 with0<=all variables<=1. Every original feasible point extends witht=0; no old positive-maxmin assumption is reused.",
+    "Initial3117 rows are1984 native rows plus1133 extension rows; row IDs of covers remain their original full-matrix IDs. No compression or unsupported face restriction is introduced.",
+    "Full-pool scans select only violated unseen frozen original covers. One persistent solver appends rows without resetting the basis; native helper uses passed dimensions and rows, with the unchanged timing limits.",
+    "Partial-row duals are expanded to full IDs with zero weights outside the active prefix. Exact certificates on this subset remain valid for the whole face, while rational points must pass every original face row.",
+    "Exact bound and primal reconstruction use the new dimensions and restore the81 zeros into the original1214 coordinates. Numerical or zero-maxmin status alone does not exclude the case.",
+    "Cold replay binds each cumulative prefix, rechecks every row selection, and repeats exact certificate/point arithmetic without an optimizer. Source-loop limits and unchanged helper assertions prevent an automatic budget extension."
+  ],
+  "limits": {
+    "run_calls": 30,
+    "cumulative_solver_seconds": 120,
+    "wall_phase_seconds": 180,
+    "exact_seconds": 60,
+    "rows_added_per_call": 512
+  },
+  "not_repeated": [
+    "AST comparisons already saved in the frozen reuse report",
+    "Sparse model/array/cold preflight",
+    "Native runtime controls",
+    "Any production query"
+  ],
+  "optimizer_calls": 0,
+  "case4_excluded": false
+}

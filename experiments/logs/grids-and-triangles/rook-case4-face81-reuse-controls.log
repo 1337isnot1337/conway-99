@@ -1,0 +1,37 @@
+{
+  "status": "PASS: exact AST reuse after explicit dimension/interface substitutions",
+  "source_bindings": {
+    "rook_case4_face81_cover_generation.py": "f9aabb56194dc875b4f196c125e14dddceb25823a27b903fb597862b4c8a4efc",
+    "rook_case4_cover_generation.py": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "rook_case4_maxmin_query.py": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322"
+  },
+  "functions_checked": [
+    "extend",
+    "full_float_matrix",
+    "inspect_numeric_point",
+    "expanded_numeric",
+    "run",
+    "replay",
+    "main",
+    "reconstruct_bound",
+    "reconstruct_primal"
+  ],
+  "unchanged_imported_native_helpers": [
+    "set_model",
+    "append_rows",
+    "choose_rows",
+    "native_once"
+  ],
+  "old_dimension_constants_absent": true,
+  "allowed_changes": [
+    "bind the new face model and its dimensions",
+    "remove the old compression argument; every remaining cover is in the new pool",
+    "call dimension-adapted exact reconstruction",
+    "update the explicitly stated face scope"
+  ],
+  "new_loading_preparation_and_definition_functions_require_separate_source_review": true,
+  "subject_imported": false,
+  "model_rebuilt": false,
+  "optimizer_called": false,
+  "control_source_sha256": "b59b18d3df59143aab9cd4d174c9d970385ec8166e8e3f19b187d0da84ac9f30"
+}
