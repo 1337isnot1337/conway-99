@@ -2,7 +2,7 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
-The [doubled Hoffman–Singleton construction](research/doubled-hoffman-singleton.md) gives a 14-regular graph on 99 vertices with a verified CAISc score of 4,313/4,950. It has 588 residuals of $-1$ and 49 of $+12$ over unordered pairs. It is the unique maximizer among 14-regular 99-vertex graphs with 49 disjoint twin pairs. The graph6 artifact and independent pair and matrix checks are included.
+The [doubled Hoffman–Singleton construction](research/doubled-hoffman-singleton.md) gives a 14-regular graph on 99 vertices with a verified CAISc score of 4,313/4,950. It has 588 residuals of $-1$ and 49 of $+12$ over unordered pairs. It is the unique maximizer among 14-regular 99-vertex graphs with 49 disjoint twin pairs. The same note gives a twin-free example scoring 4,272 and an asymmetric example scoring 4,238, both with maximum residual five. The graph6 artifacts and independent pair and matrix checks are included.
 
 ## Scope of the unrestricted computations
 
