@@ -17,13 +17,13 @@ TRANSFORM = np.array([
 ])
 
 
-def cell_sum_matrices(by_sum):
-    domains = [by_sum[AXIS_PAIRS.index(e)] for e in MISSING]
-    for rows in product(*(domains[k] for k in PIVOTS)):
+def cell_sum_matrices(by_sum, missing, pivots, transform):
+    domains = [by_sum[AXIS_PAIRS.index(e)] for e in missing]
+    for rows in product(*(domains[k] for k in pivots)):
         pivot = np.array(rows)
-        if not np.array_equal(pivot[:, PIVOTS], pivot[:, PIVOTS].T):
+        if not np.array_equal(pivot[:, pivots], pivot[:, pivots].T):
             continue
-        matrix = TRANSFORM.T @ pivot
+        matrix = transform.T @ pivot
         if all(tuple(row) in domain for row, domain in zip(matrix, domains)):
             yield matrix
 
@@ -57,7 +57,7 @@ def verify():
         by_sum.append(group)
 
     count = 0
-    for matrix in cell_sum_matrices(by_sum):
+    for matrix in cell_sum_matrices(by_sum, MISSING, PIVOTS, TRANSFORM):
         count += 1
         groups = []
         for e, rows in zip(AXIS_PAIRS, by_sum):

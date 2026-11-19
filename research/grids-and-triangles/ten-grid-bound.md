@@ -58,15 +58,14 @@ For $(4,4,4)$ there are three nonzero half-sums, which cannot cancel in pairs. F
 
 Run `make verify-ten-grid-bound` for the [integer sign-table checker](../../experiments/workspace/last_eleven_grid.py) and the preceding four-missing support classification. The sign table tries all 13 oriented profiles directly. Of 496 norm-compatible triples, 448 pass the contact bound and none satisfies the three signed-axis equations.
 
-## Five patterns at the upper bound
+## Four patterns at the upper bound
 
-Suppose a root lies on ten grids and put their ten edges on the seven axes. There are 148 unlabelled choices before the structural tests. The signless-incidence, full-axis and four-disjoint-missing restrictions retain 56. Excluding all six four-edge shapes leaves nine. In three more, a missing four-point cell cannot realize any of the required internal degree sequences. The cell-sum calculation below excludes one of the remaining six. The [enumerator](../../experiments/workspace/ten_grid_supports.py) retains the five labeled representatives below. The surviving cases are necessary patterns; the tests do not construct the full graph for any of them.
+Suppose a root lies on ten grids and put their ten edges on the seven axes. There are 148 unlabelled choices before the structural tests. The signless-incidence, full-axis and four-disjoint-missing restrictions retain 56. Excluding all six four-edge shapes leaves nine. In three more, a missing four-point cell cannot realize any of the required internal degree sequences. The two calculations below exclude two of the remaining six. The [enumerator](../../experiments/workspace/ten_grid_supports.py) retains the four labeled representatives below. The surviving cases are necessary patterns; the tests do not construct the full graph for any of them.
 
 | Degrees of the seven axes | Ten present pairs |
 |---|---|
 | $1,1,2,3,3,4,6$ | $01,02,03,12,13,23,24,34,35,36$ |
 | $0,2,2,4,4,4,4$ | $01,02,03,05,12,13,15,23,24,34$ |
-| $0,2,3,3,4,4,4$ | $01,02,04,12,13,23,24,34,35,45$ |
 | $1,1,3,3,3,3,6$ | $01,02,04,12,13,23,24,25,26,34$ |
 | $2,2,2,2,4,4,4$ | $01,02,12,15,16,23,24,34,45,46$ |
 
@@ -79,3 +78,13 @@ For this candidate the eleven missing pairs, in order, are $03,04,06,14,15,16,25
 Set $S_{ef}=\sum_{w\in B_e} z_f(w)$. The [defect Gram identity](fourteen-grid-root.md#the-41-populations) gives $7S=Z^T Z$. In particular $S$ is symmetric and $S=T^T S_{P,*}$. Enumerate the four-point multisets separately in every cell. In a grid their defect sum is zero. In a missing cell their own degrees must belong to a simple graph with at most two edges. Each pivot cell has five distinct possible rows of $S$. Try all $5^4$ choices, enforce symmetry on the pivots, and check that every resulting missing-cell row occurs. Exactly nine matrices remain.
 
 Fix one of these matrices and a four-point multiset $p$ for a source cell. For every target cell enumerate the four-by-four binary edge matrices with the given source degrees and the reverse degrees of any allowed target multiset. In the source cell itself use only simple undirected graphs on its four sites. For each $k\in P$ add the attainable four-vectors of neighbor sums of $z_k$ across the target cells. Their total must equal $-4z_k$ at all four source sites. Process cells in increasing order of domain size, removing multisets that fail the test. In each of the nine matrices a cell becomes empty within one pass. This excludes the degree pattern.
+
+### The degree pattern $0,2,3,3,4,4,4$
+
+The missing pairs are $03,05,06,14,15,16,25,26,36,46,56$. This time take $P=(06,16,36,46)$. The [shared-block verifier](../../experiments/workspace/ten_grid_shared_blocks.py) tests its integer transformation on every possible point type. The same symmetric-cell-sum enumeration again leaves nine matrices.
+
+Fix four site types in a source cell $i$. For a marked site $a$ consider its four neighbor sums for the pivot eigenvectors, together with its common-neighbor counts with the three other sites $b$ of the same cell. A possible adjacency block $G$ from the source cell to a target contributes row $a$ of $G Z_P$ and entries $(GG^T)_{ab}$ to these seven numbers. In the diagonal block add the adjacency $G_{ab}$ and the number of near points shared by $a,b$. That last number is one on a side of the signed four-point cell and zero on a diagonal. Test each of the three choices of the opposite pairing. Disallow an edge between types $u,v$ if their degrees $d_u,d_v$ into the 21 cells force at least two common far neighbors, namely if $\sum_j\max(0,d_{uj}+d_{vj}-4)>1$. The seven target sums are $(-4z_P(a),2,2,2)$.
+
+First allow each target cell any of its remaining type multisets. Delete source multisets whose target sums cannot be obtained for a marked site, and iterate. Four of the nine matrices retain nonempty domains. Now choose one multiset for each of the 21 cells and enforce $Z_P^T Z_P=7S_{P,P}$ exactly. There are 63,783 assignments. For each of the seven axes, the positive near vertex selects two of the four sites in every incident cell. Its eigenvector equation requires the six selected pairs to sum to zero in the pivot coordinates. This leaves 31,658 assignments. With fixed multisets at both ends the marked-site test retains 262.
+
+Finally maintain one domain of adjacency blocks per unordered cell pair. A choice contributes $G$ at one end and $G^T$ at the other. In a diagonal block keep the opposite pairing together with the adjacency. For each marked site, remove every block choice whose contribution cannot reach the seven target sums with any selection of the other blocks. Repeat until a domain is empty or no choices are removed. Every one of the 262 assignments loses a domain. All these sums use exact integers. Packing the seven coordinates in base 256 is lossless for the test, since a row has only twelve far neighbors and every single-coordinate difference from its target is smaller than 256.

@@ -5,13 +5,14 @@ from collections import Counter
 from eleven_grid_supports import impossible_degree_cell, incidence_possible, passive_shape
 from root_cell_profiles import AXIS_PAIRS
 from sparse_grid_cones import SHAPES
-from ten_grid_cell_sums import MISSING as EXCLUDED
+from ten_grid_cell_sums import MISSING as SUM_EXCLUDED
+from ten_grid_shared_blocks import MISSING as BLOCK_EXCLUDED
 from thirteen_grid_supports import certificate, unlabelled_graphs
 
 
 def remaining():
     forbidden = {certificate(5, shape[0]) for shape in SHAPES.values()}
-    excluded = certificate(7, EXCLUDED)
+    excluded = {certificate(7, edges) for edges in (SUM_EXCLUDED, BLOCK_EXCLUDED)}
     sizes = Counter()
     supports = []
     for edges in unlabelled_graphs():
@@ -29,7 +30,7 @@ def remaining():
         if impossible_degree_cell(missing):
             continue
         sizes['cells'] += 1
-        if certificate(7, missing) != excluded:
+        if certificate(7, missing) not in excluded:
             supports.append(missing)
     assert sizes == {'missing graphs': 148, 'incidence': 56, 'cones': 9, 'cells': 6}
     return supports
@@ -38,9 +39,9 @@ def remaining():
 if __name__ == '__main__':
     supports = remaining()
     degrees = sorted(tuple(sorted(6-sum(v in e for e in f) for v in range(7))) for f in supports)
-    assert degrees == [(0,2,2,4,4,4,4), (0,2,3,3,4,4,4),
+    assert degrees == [(0,2,2,4,4,4,4),
                        (1,1,2,3,3,4,6), (1,1,3,3,3,3,6), (2,2,2,2,4,4,4)]
     print('Ten grids: 148 missing graphs, 56 incidence supports, nine after the cone test, '
-          'six after testing internal degrees, five after the cell sums.')
+          'six after testing internal degrees, four after the cell sums and shared-block tests.')
     for f in supports:
         print(' '.join(f'{a}{b}' for a,b in AXIS_PAIRS if (a,b) not in f))

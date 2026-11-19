@@ -110,7 +110,7 @@ Each rooted grid [has at least four nongrid pairs disjoint from its axis pair](r
 
 For any rooted grid, [at least five of the ten disjoint axis pairs must be nongrids](research/grids-and-triangles/four-missing-cones.md). The six four-edge shapes give 2,670 signed neighborhoods, all excluded by their exact exterior Grams. The four-cycle has 19 possible central-coordinate profiles and 120 signed neighborhoods, all with uniform coordinates.
 
-The [ten-grid bound](research/grids-and-triangles/ten-grid-bound.md) excludes the last eleven-grid support. Two missing pairs have the same defect vector; its squared norm and its signed-axis equations on three square cells are incompatible. Thus every vertex lies on **at most ten grids** and has at least **44 percolating nonneighbors**. At ten grids the cone, degree and cell-sum tests leave five possible rooted incidence patterns.
+The [ten-grid bound](research/grids-and-triangles/ten-grid-bound.md) excludes the last eleven-grid support. Two missing pairs have the same defect vector; its squared norm and its signed-axis equations on three square cells are incompatible. Thus every vertex lies on **at most ten grids** and has at least **44 percolating nonneighbors**. At ten grids the cone, cell-sum and shared-block tests leave four possible rooted incidence patterns. Their axis degrees are $(1,1,2,3,3,4,6)$, $(0,2,2,4,4,4,4)$, $(1,1,3,3,3,3,6)$ and $(2,2,2,2,4,4,4)$.
 
 The [parallel deficit inequality](research/grids-and-triangles/parallel-triangle-deficits.md) implies that two parallel full triangles force a partition into 33 triangles. There are 35 marked cores for the third parallel line.
 
