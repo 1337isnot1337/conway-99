@@ -109,3 +109,13 @@ their hypotheses permit them; computational exclusions require exact replay.
   subgraph. Boundary counting would require seventy-two distinct compatible
   neighbor triples, while only thirty-six exist. A standard-library control
   checks the finite Hamming counts.
+- Found a second closure of the eight-grid case. The rook eigenvalue-one
+  character of each three-base holonomy gives a cubic trace identity. It
+  fails on all twelve surviving cycle spectra, so the shorter proof does
+  not need the three-cover census. Integer companion-matrix cubes and
+  direct 27-by-27 holonomy controls verify the coefficients and all cases.
+- Added 265 exact negative Gram-vector certificates against specified
+  35-vertex norm-16 partial cores, a 25-row integer Farkas certificate, and
+  a checked DRAT proof for a 58-bit canonical H/Z pattern with all low
+  incidences free. These reject partial choices, not additional complete
+  incidence classes. The full-template symmetry run remained undecided.

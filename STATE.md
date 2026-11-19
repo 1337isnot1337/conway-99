@@ -151,3 +151,19 @@ and witnesses. `make verify-coupled-shells DRAT_TRIM=/absolute/path/to/drat-trim
 regenerates the norm-16 census and replays all 478 results using the separately
 built, pinned proof checker. [The replay guide](experiments/README.md) specifies
 the dependencies and distinguishes partial witnesses from completed graphs.
+
+The later [cubic trace argument](research/grids-and-triangles/red_grid_cubic_trace.md)
+gives a shorter closure of the all-red bound of seven. Three-base matching
+holonomies have a rook character determined by their fixed-point counts.
+Counting their triangles yields an additional cubic trace identity, which
+fails on all twelve spectra of the exact cycle census. This proof does not
+use the three-cover enumeration; the covering proof remains available as an
+independent route.
+
+[Stronger norm-16 completion tests](research/eigenlattices/coupled_zero_completion.md)
+reject 265 specified H/Z cores by integer negative quadratic vectors. A
+separate row Farkas certificate and a checked DRAT proof for a 58-bit pattern
+in the canonically labeled full-incidence model reject further specified
+partial choices. These checks leave the 447 whole incidence classes
+unresolved. All whole-template and time-limited solver outcomes remain
+separate from these fixed-point certificates.

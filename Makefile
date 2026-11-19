@@ -20,6 +20,8 @@ verify-global-constraints: verify-red-grid-bound
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_hemisphere_verify.py
 	"$(PYTHON)" $(WORKSPACE)/verify_coupled_counting.py
 	"$(PYTHON)" $(WORKSPACE)/coupled_zero_replay.py
+	"$(PYTHON)" $(WORKSPACE)/coupled_zero_gram.py --verify
+	"$(PYTHON)" $(WORKSPACE)/coupled_zero_row_certificate.py --verify
 	"$(PYTHON)" $(WORKSPACE)/coupled_shells_linear.py --replay $(WORKSPACE)/coupled-shells-linear-certificates.json --orbits experiments/logs/eigenlattices/coupled-shells-orbits.json
 	"$(PYTHON)" $(WORKSPACE)/coupled_shells_theta.py --verify $(WORKSPACE)/coupled-shells-zero-theta.json
 	"$(PYTHON)" $(WORKSPACE)/completion_constraints_rows.py --replay $(WORKSPACE)/completion-rows-case5-certificate.json
@@ -37,7 +39,9 @@ verify-red-grid-bound:
 	cmp "$$build_dir/double.json" experiments/logs/grids-and-triangles/grid-nine-red-covers.json; \
 	cmp "$$build_dir/triple.json" experiments/logs/grids-and-triangles/grid-eight-red-covers.json; \
 	cmp "$$build_dir/spectra.json" experiments/logs/grids-and-triangles/eight-red-cycle-spectra.json; \
-	"$(PYTHON)" $(WORKSPACE)/eight_red_hamming_spectral_audit.py "$$build_dir/spectra.json"
+	"$(PYTHON)" $(WORKSPACE)/eight_red_hamming_spectral_audit.py "$$build_dir/spectra.json"; \
+	"$(PYTHON)" $(WORKSPACE)/red_grid_cubic_trace.py --spectra "$$build_dir/spectra.json" --output "$$build_dir/cubic.json" > /dev/null; \
+	cmp "$$build_dir/cubic.json" experiments/logs/grids-and-triangles/red-grid-cubic-trace.json
 
 # Supply the path to the separately built, pinned drat-trim executable.
 verify-coupled-shells:
@@ -48,3 +52,4 @@ verify-coupled-shells:
 	"$(PYTHON)" $(WORKSPACE)/coupled_shells.py --independent --orbits "$$build_dir/orbits.json"; \
 	cmp "$$build_dir/orbits.json" experiments/logs/eigenlattices/coupled-shells-orbits.json; \
 	"$(PYTHON)" $(WORKSPACE)/coupled_shells_replay.py "$$build_dir/orbits.json" experiments/logs/eigenlattices/coupled-shells-low-all.json --drat-trim "$(DRAT_TRIM)"
+	"$(PYTHON)" $(WORKSPACE)/coupled_zero_fixed_proof.py --verify --drat-trim "$(DRAT_TRIM)"

@@ -15,6 +15,12 @@ floating-point sign decision in this proof.
 This is an unconditional restriction on such a graph, not a proof of its
 nonexistence. The total-grid bound remains 120.
 
+The later [cubic trace proof](red_grid_cubic_trace.md) gives a shorter
+completion: after the cycle census below, its extra trace identity rejects
+all twelve spectra directly. The covering and compression arguments here
+remain a second verification route. The shorter route does not depend on
+the three-cover enumeration.
+
 ## The twenty-seven remaining vertices
 
 Assume eight all-red grids `R_1,...,R_8`. The preliminary facts proved in

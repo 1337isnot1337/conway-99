@@ -51,6 +51,9 @@ archives, enumerates the thirty residual-cycle partitions, and checks the
 twelve surviving spectra by a second implementation using direct cycle
 matrices. The [proof](../research/grids-and-triangles/eight_red_exclusion.md)
 supplies the local and trace arguments excluding those twelve spectra.
+The target also checks the [cubic trace identity](../research/grids-and-triangles/red_grid_cubic_trace.md),
+which provides a shorter exclusion of all twelve without the three-cover
+census.
 
 The fourteen additional norm-16 exclusions have saved CNF cores and DRAT
 proofs. Build [drat-trim](https://github.com/marijnheule/drat-trim) at revision
@@ -79,6 +82,15 @@ also gives a command to project all 447 saved partial witnesses into the
 independent aggregate model. That exact control passed. The 61 branch
 certificates include complete proofs for ten already excluded templates;
 they do not add ten more exclusions to the census.
+
+The global replay also checks 265 integer negative quadratic witnesses for
+specified 35-vertex norm-16 cores and one exact neighborhood-row Farkas
+certificate. The coupled-shell replay additionally checks the saved DRAT
+proof for a 58-bit pattern in the canonically labeled full-incidence model.
+These are exclusions of particular partial choices; the 447 unresolved
+template classes remain unchanged. The
+[completion note](../research/eigenlattices/coupled_zero_completion.md)
+states the labeling restriction and the limits of the other solver runs.
 
 ## Explore the archive
 
