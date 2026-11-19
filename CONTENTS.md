@@ -17,6 +17,8 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [A grid with its center missing](research/grids-and-triangles/incomplete_grid.md) derives an exterior-incidence reduction for an eight-vertex core.
 - [Complete triangle stars](research/grids-and-triangles/triangle_star.md) derives a 48-vertex shell from an independent exterior signature.
 
+- [The 60-vertex triangle exterior](research/grids-and-triangles/triangle-exterior.md) determines its spectrum from the cubic shell and rules out every transitive automorphism group of the exterior.
+
 ## Independent sets
 
 - [Fourteen independent vertices through a neighborhood transversal](research/independent-sets/hemisphere.md) gives a 14-vertex independent set with seven neighbors of any chosen root. It extends to a maximal independent set of size 14 through 20. [Independent-set experiments](experiments/logs/independent-sets/)

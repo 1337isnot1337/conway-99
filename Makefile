@@ -55,3 +55,13 @@ verify-double-partner:
 	$(CXX) -O3 -std=c++20 $(WORKSPACE)/double_partner_check.cpp -o "$$build_dir/check"; \
 	"$(PYTHON)" $(WORKSPACE)/double_partner_cores.py --emit > "$$build_dir/cores"; \
 	"$$build_dir/check" < "$$build_dir/cores"
+
+GAP ?= gap
+.PHONY: verify-triangle-exterior
+verify-triangle-exterior:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/triangle-exterior.actions"; rmdir "$$build_dir"' EXIT; \
+	cd "$$build_dir"; \
+	"$(GAP)" -q -b --quitonbreak "$(CURDIR)/$(WORKSPACE)/triangle_exterior_actions.g"; \
+	"$(PYTHON)" "$(CURDIR)/$(WORKSPACE)/triangle_exterior_transitive.py" triangle-exterior.actions
