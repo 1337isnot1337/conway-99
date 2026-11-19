@@ -1,0 +1,12 @@
+{
+  "diff": "--- \n+++ \n@@ -128,7 +128,7 @@\n             \"source_sha256\": digest(__file__), \"inputs\": INPUTS,\n             \"proof\": \"Mixed row equalities and each common-core-pair capacity give t*x_a <= sum(w_b*x_b). At x_a=0 the right side is nonnegative. At x_a=1, replacing any positive w_b by min(w_b,t) preserves the inequality for binary selectors.\",\n             \"potential_bank\": potentials, \"attempts\": attempts, \"rows\": ordered,\n-            \"counts\": {\"anchors\": 480, \"potentials\": 12, \"anchor_potential_pairs\": len(attempts),\n+            \"counts\": {\"anchors\": 480, \"potentials\": len(potentials), \"anchor_potential_pairs\": len(attempts),\n                        \"positive_demand_pairs\": sum(positive_demands.values()), \"distinct_rows\": len(rows),\n                        \"original_rows\": len(original), \"additional_rows\": len(rows) - len(original),\n                        \"positive_demands\": dict(sorted(positive_demands.items())),\n",
+  "optimizer_calls": 0,
+  "parent_sha256": "abaa38d4a2454f60c805cdc31057296d8b516e203d73fc8024f1df7774c6436b",
+  "parent_source": "experiments/workspace/root_prism_free_f0_local_packing_batch_reanchoring.py",
+  "preserved_first_result": "experiments/logs/root-prism-free/f0-local-packing-new-bank-reanchoring01.json.gz",
+  "preserved_first_result_sha256": "b06c9b2cd5d164638abdff396b22414708b6bd0d79082e9c2974b3949f077f26",
+  "reason": "The copied count field was fixed at12 although the complete bank assertion, loops and11520 attempt records use24. Only this descriptive count changes.",
+  "source": "experiments/workspace/root_prism_free_f0_local_packing_batch_reanchoring_v2.py",
+  "source_sha256": "03be37e69e554d09e52696d3dd0a6d0be909e5261ac868f64363d57ec8b4663e",
+  "status": "COUNTS_METADATA_CORRECTION_ONLY"
+}

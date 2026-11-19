@@ -1,0 +1,54 @@
+{
+  "adaptation_record_sha256": "57ca97c89500235df8f18ae15c3adeb528e7c0dd8842ba03094dfb4336ea82a3",
+  "blocking_findings": [],
+  "configuration_sha256": "554e22f12d986b1b045b03b517d801ef7785f51d45efc65852a76a9932eaa52e",
+  "findings": [
+    "The new registry imports the exact normalization, row-range, native append and candidate inspection functions from hash-pinned registry v3. Their function objects and globals are unchanged.",
+    "Accepted parent run and cold receipts bind the complete 133-row registry. Its first 37 rows equal the original registry; its 96 new shared rows cover eight iterations and twelve actual transports each.",
+    "The 24 packing rows bind the root-reviewed source, accepted run/cold owners, full-domain exact cold report and exported certificate. All are new after exact normalized deduplication.",
+    "The complete 133-row parent prefix and provenance are unchanged in the 157-row new registry. The last parent call used 121 added rows; the new initial model has not been queried.",
+    "Controller run, replay, solver parameters, deadlines and acceptance functions are unchanged. initialize changes only its stage label. preparation_check now requires the current V4 source, complete current definition and exact current model hash.",
+    "The existing 256-row cap, 8-iteration maximum, 180 cumulative CP seconds, 60 seconds per CP call, and 300-second owner remain unchanged. Native infeasibility remains unproved."
+  ],
+  "preparation_status": "PASS_NATIVE_PREFLIGHT_NO_SOLVER",
+  "production_authority": "Separate root gate required.",
+  "registry_source_sha256": "417eec796fed2f5704801f07de59a54107bfa08c59f15e4c0a1fffa6fec04a15",
+  "review_actions": {
+    "cold_proof_reruns": 0,
+    "model_rebuilds": 0,
+    "native_imports": 0,
+    "optimizer_calls": 0,
+    "subject_imports": 0
+  },
+  "schema": "conway99.f0.direct-master-v4.independent-source-review.v1",
+  "source_coverage": "Read the complete new registry wrapper and complete controller diff. Compared all controller function ASTs. All normalized rows and provenance were independently recomputed without importing either subject.",
+  "source_sha256": "4c2950a430e2951b1afb337b2fb5392b36266c554194624caca20b5c28f4085f",
+  "status": "PASS_COMPLETE_PREFIX_REUSE_AND24_PACKING_ROWS",
+  "verified": {
+    "changed_functions": [
+      "initialize",
+      "preparation_check"
+    ],
+    "configuration_inputs_checked": 13,
+    "identical_functions": [
+      "digest",
+      "canonical",
+      "value_sha",
+      "save",
+      "helper",
+      "definition",
+      "prefix_snapshot",
+      "prepare",
+      "inspect_candidate",
+      "run",
+      "replay",
+      "worker",
+      "owned"
+    ],
+    "native_raw_sha256": "7417a7d0a9bb2ec639f90814118dc06eade159039503cd38315fa30555be5b8f",
+    "owner_sha256": "c8fb88b1385065980d9f4780e89bc9eea43cce909e9022a07c8fbe0fdf9149de",
+    "registry_rows": 157,
+    "registry_value_sha256": "066908e53d96b3b706923ef1939711939e35ee15f9cd3d09fa043a6fb96b7fe8",
+    "report_sha256": "5f23ab0bf3db198c1855b2337b83c7750fd7d96f06136f093a3f31d08fe21356"
+  }
+}

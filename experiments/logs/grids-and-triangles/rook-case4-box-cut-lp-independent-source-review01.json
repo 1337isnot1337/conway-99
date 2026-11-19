@@ -1,0 +1,47 @@
+{
+  "blocking_findings": [],
+  "checks": {
+    "changed_adapter_functions": [
+      "validate_registry",
+      "inspect_point"
+    ],
+    "controller_LP_rounds": 1,
+    "controller_native_calls_maximum": 30,
+    "cumulative_native_seconds": 120,
+    "exact_stage_seconds": 60,
+    "numerical_phase_seconds": 180,
+    "proof_input_hashes_verified": 10,
+    "separate_cold_seconds": 60,
+    "unchanged_adapter_function_ASTs": 23
+  },
+  "controller_findings": [
+    "The frozen167120-row prefix is checked bytewise in preflight. The new capacity is the sole extra row, giving167121 rows and1103 variables; native coefficients, bounds and objective are compared directly.",
+    "The fresh wrapper exposes one numerical round, one exact stage and one separate cold stage. It preserves numerical records and never promotes a numerical status to an exact outcome.",
+    "Initial carried cover rows come from the accepted old run; the full cover pool remains available. No column or prior row is removed.",
+    "The owner starts a process group and reaps it on the360-second hard deadline. Stage timeouts remain180,60,60 seconds. Terminal verify is a receipt-binding check, not another mathematical replay."
+  ],
+  "coverage": "Read the complete new box proof helper and all391 controller lines; read both changed adapter functions and independently compared all adapter function ASTs with the frozen parent. No old numerical kernel or large row pool was rebuilt.",
+  "files": {
+    "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-adapter-reuse.json": "0aa11f61bdaab6976cdbdc2d01b524a2462239645a50c7ea8a75e726fde96f1d",
+    "experiments/workspace/rook_case4_box_cut_lp_adapter.py": "7f574542d4fef61915337696bd6061d98ee4bdc3eb57709b7a698b3f4cb1ed07",
+    "experiments/workspace/rook_case4_box_cut_lp_proof.py": "091946b8444aa1c3b49f2955b076e00f7241a96926a9b9d2a4afb210fe4067c3",
+    "experiments/workspace/rook_case4_box_cut_lp_query.py": "b3260d9fa2f6dc320505e9206fff886011038f0d1201eea2d40164c43800f44c",
+    "experiments/workspace/rook_case4_parity_cycle_v4.py": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e"
+  },
+  "mathematical_findings": [
+    "The identity H27 + 2Q = 3 is reconstructed from the three literal Gram rows with all112 proved zeros. The possible overlap of H27 and Q is retained; no disjointness assumption enters the proof.",
+    "Every one of the191 accepted surviving boxes is checked. On all54 low boxes H27=1 and x23=0; on the137 high boxes H27=3 and Q=0. The direct box maximum of Q+x23 is at most1 throughout the complete cover.",
+    "The new11-term upper bound is given its own cold_complete_branch_box_capacity proof kind. The five old parity entries remain unchanged and only their original proof checker handles them.",
+    "Full original-coordinate exact acceptance remains unchanged except for truthful counts of five parity rows and one box row. No conditional H42=5 or low-H27 assumption is imported globally."
+  ],
+  "review_actions": {
+    "model_or_row_pool_rebuilds": 0,
+    "native_imports": 0,
+    "propagation_or_trace_replays": 0,
+    "solver_calls": 0,
+    "subject_imports": 0
+  },
+  "schema": "conway99.rook.case4.box-cut-lp.independent-source-review.v1",
+  "scope": "Source review only. Native preflight and root production gate are separate requirements. A positive selector point is not a Boolean incidence or graph. A case4 exclusion would remain conditional on this branch.",
+  "status": "PASS_DISTINCT_BOX_PROOF_AND_SINGLE_ROUND_CONTROLLER_SOURCE"
+}

@@ -1,0 +1,64 @@
+{
+  "accepted_packing_rows": 24,
+  "accepted_parent_new_rows": 96,
+  "accepted_parent_registry_rows": 133,
+  "changed_controller_functions": [
+    "initialize",
+    "preparation_check"
+  ],
+  "complete_controller_diff": "--- experiments/workspace/root_prism_free_f0_direct_master_continuation_v3.py\n+++ experiments/workspace/root_prism_free_f0_direct_master_continuation_v4.py\n@@ -17,15 +17,9 @@\n import time\n \n ROOT = Path(__file__).resolve().parents[2]\n-HELPER = (\"experiments/workspace/root_prism_free_f0_direct_master_registry_v3.py\",\n-          \"9b5746f3cc6817515d36fb8236bb5e26d78825187914d36a3da9f1ed1f616393\")\n+HELPER = (\"experiments/workspace/root_prism_free_f0_direct_master_registry_v4.py\",\n+          \"417eec796fed2f5704801f07de59a54107bfa08c59f15e4c0a1fffa6fec04a15\")\n ITERATIONS, OWNER_SECONDS, TOTAL_CP_SECONDS = 8, 300, 180\n-PREFLIGHT_AUTHORITY = {\n-    \"source_path\": \"experiments/workspace/root_prism_free_f0_direct_master_continuation_v2.py\",\n-    \"source_sha256\": \"51ebb261a596df2e6cd3d541e174fd65cd34ba807287c429171ecd9755cb81d6\",\n-    \"report_sha256\": \"0015e0d034f57d13a378d188fb4cc7ec5bf357d12911148835a58e3f1e86c19f\",\n-    \"owner_sha256\": \"64233931cacaab448bd4aa4aa89b0e82c54f3b6a61abc6f63357fbd89c97d94b\",\n-}\n CALL_SECONDS, SHARED_SECONDS, PREP_SECONDS, COLD_SECONDS, RESERVE = 60, 60, 60, 60, 8\n \n \n@@ -104,7 +98,7 @@\n     else:\n         snapshot = {\"raw_sha256\": hashlib.sha256(proto.SerializeToString()).hexdigest(),\n                     \"rows\": len(proto.constraints)}\n-    stage(\"37_seed_rows_and_complete_original_prefix_ready\")\n+    stage(\"157_seed_rows_and_complete_original_prefix_ready\")\n     return h, ctx, plan, literal_cuts, cp, pb, proto, model, snapshot\n \n \n@@ -112,17 +106,12 @@\n     report = json.loads((preparation / \"report.json\").read_bytes())\n     owner = json.loads((preparation / \"owner.json\").read_bytes())\n     assert owner[\"report_accepted\"] and owner[\"deadline_overrun_seconds\"] == 0\n-    assert digest(ROOT / PREFLIGHT_AUTHORITY[\"source_path\"]) == PREFLIGHT_AUTHORITY[\"source_sha256\"]\n-    assert digest(preparation / \"report.json\") == PREFLIGHT_AUTHORITY[\"report_sha256\"]\n-    assert digest(preparation / \"owner.json\") == PREFLIGHT_AUTHORITY[\"owner_sha256\"]\n-    assert owner[\"source_sha256\"] == PREFLIGHT_AUTHORITY[\"source_sha256\"] and owner[\"maximum_seconds\"] == PREP_SECONDS\n+    assert owner[\"source_sha256\"] == digest(__file__) and owner[\"maximum_seconds\"] == PREP_SECONDS\n     assert owner[\"report_sha256\"] == digest(preparation / \"report.json\")\n     assert owner[\"supervision\"][\"status\"] == \"CHILD_EXITED\" and owner[\"supervision\"][\"child_reaped\"]\n     assert owner[\"supervision\"][\"returncode\"] == 0\n     assert report[\"status\"] == \"PASS_NATIVE_PREFLIGHT_NO_SOLVER\"\n-    expected_definition = json.loads(canonical(definition(ctx)))\n-    expected_definition[\"source_sha256\"] = PREFLIGHT_AUTHORITY[\"source_sha256\"]\n-    assert report[\"definition\"] == expected_definition\n+    assert report[\"definition\"] == json.loads(canonical(definition(ctx)))\n     assert report[\"initial_native\"][\"raw_sha256\"] == snapshot[\"raw_sha256\"]\n     assert report[\"initial_registry_sha256\"] == value_sha(ctx[\"registry\"])\n     assert report[\"production_solve_calls\"] == 0 and report[\"optimizer_calls\"] == 0 and not report[\"CpSolver_constructed\"]\n",
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-direct-master-seed-configuration03.json",
+    "sha256": "554e22f12d986b1b045b03b517d801ef7785f51d45efc65852a76a9932eaa52e"
+  },
+  "cumulative_CP_seconds_unchanged": 180,
+  "frozen_legacy_registry": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_registry_v3.py",
+    "sha256": "9b5746f3cc6817515d36fb8236bb5e26d78825187914d36a3da9f1ed1f616393"
+  },
+  "identical_controller_functions": [
+    "digest",
+    "canonical",
+    "value_sha",
+    "save",
+    "helper",
+    "definition",
+    "prefix_snapshot",
+    "prepare",
+    "inspect_candidate",
+    "run",
+    "replay",
+    "worker",
+    "owned"
+  ],
+  "initial_native_rows": 4838,
+  "initial_registry_rows": 157,
+  "last_parent_called_registry_rows": 121,
+  "matching_oracle_and_shared_separator_unchanged": true,
+  "maximum_iterations_unchanged": 8,
+  "native_imports_in_adaptation": 0,
+  "new_prefix_contains_all133_parent_rows_unchanged": true,
+  "new_prefix_has_never_been_queried": true,
+  "new_preparation_uses_current_source_authority": true,
+  "optimizer_calls_in_adaptation": 0,
+  "owner_seconds_unchanged": 300,
+  "packing_rows_new_after_exact_normalized_dedup": 24,
+  "parent_source": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v3.py",
+    "sha256": "7b828cd3b5c34c846b97913e25bdb860bc7e75afdd7645701503f4a9760b2784"
+  },
+  "per_CP_call_seconds_unchanged": 60,
+  "production_authorized_by_separate_root_gate_only": true,
+  "registry_wrapper": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_registry_v4.py",
+    "sha256": "417eec796fed2f5704801f07de59a54107bfa08c59f15e4c0a1fffa6fec04a15"
+  },
+  "row_cap_unchanged": 256,
+  "schema": "conway99.f0.direct-master.accepted-prefix-adaptation.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v4.py",
+    "sha256": "4c2950a430e2951b1afb337b2fb5392b36266c554194624caca20b5c28f4085f"
+  },
+  "status": "FROZEN_SOURCE_AND_EXACT157_ROW_SEED_ADAPTATION",
+  "variables": 540
+}

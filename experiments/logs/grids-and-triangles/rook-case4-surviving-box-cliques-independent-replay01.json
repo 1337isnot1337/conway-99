@@ -1,0 +1,65 @@
+{
+  "active_conflict_vertices": 665,
+  "box_capacities_checked": 232256,
+  "boxes": 191,
+  "case4_excluded": false,
+  "clique_certificate": [
+    "experiments/logs/grids-and-triangles/rook-case4-surviving-box-cliques01.json.gz",
+    "6cbfb897f5c80ee49ac2c9750195a9b4c03a1a578230c3c5a1ffda4d31387338"
+  ],
+  "conflicts": 2855,
+  "implications": 0,
+  "maximal_cliques": 1216,
+  "networkx_find_cliques_source_sha256": "97649484ad7ae033f311a62990475c5964f7cad484489780cdd90c20e660d2bb",
+  "networkx_version": "3.7",
+  "new_violated_clique_beyond_known_capacity": false,
+  "optimizer_calls": 0,
+  "ordered_distinct_pairs_checked": 1213302,
+  "pair_certificate": [
+    "experiments/logs/grids-and-triangles/rook-case4-surviving-box-pair-scan01.json.gz",
+    "19d96dd0af3ebaaab33c88456872883f5a51afea53ce3c9d0d57d6e6e0ccdadc"
+  ],
+  "possible_and_forced_coordinate_sets_checked": 1102,
+  "producer_imports": 0,
+  "propagation_replays": 0,
+  "seconds": 1.6383467920095427,
+  "size_histogram": {
+    "10": 53,
+    "11": 48,
+    "12": 82,
+    "13": 136,
+    "14": 38,
+    "15": 46,
+    "16": 11,
+    "18": 1,
+    "2": 250,
+    "3": 142,
+    "4": 62,
+    "5": 81,
+    "6": 50,
+    "7": 95,
+    "8": 66,
+    "9": 55
+  },
+  "source_sha256": "1fc976e89e47a0c61f2d6eb952409d0849d7c165c73f6139e035095f6ffe6506",
+  "status": "PASS_INDEPENDENT_SETS_PAIRS_AND_ALL_MAXIMAL_CLIQUES",
+  "unordered_pairs_checked": 606651,
+  "violated_cliques": [
+    {
+      "excess_numerator": "37621464",
+      "support": [
+        23,
+        260,
+        399,
+        403,
+        406,
+        761,
+        762,
+        763,
+        764,
+        765,
+        803
+      ]
+    }
+  ]
+}
