@@ -1,0 +1,1363 @@
+{
+  "schema": "conway99.checkpoint54-manifest.v1",
+  "parent_commit": "76a3eae210977beea65e30b22fcf31a9247fd728",
+  "repository": "1337isnot1337/conway-99",
+  "branch": "research/global-constraints-ab2f",
+  "graph_existence_resolved": false,
+  "results": {
+    "rook_exact_face": "All 1115 surviving coordinates strictly between zero and one; complete exact replay",
+    "rook_boolean": "UNKNOWN after sole 180-second query",
+    "f0_edge_motifs": "162 Y-zero orbits, 1884 literal edges; independent census and nine old-point violations",
+    "f0_three_exterior_prisms": "715 mixed inequalities from 9360 one-edge configurations",
+    "f0_full_core_schur": "Full21 correction verified; 17 old-core and22 full-core cuts; tiny minus gaps flagged",
+    "five_root_integer": "All366356 shifted tests pass",
+    "six_root_projectors": "All180 matrices pass for30 triangle-containing roots,2374 classes; other32 roots outside scope"
+  },
+  "files": [
+    {
+      "path": "CONTENTS.md",
+      "bytes": 45670,
+      "sha256": "b29d33c2e72bcc1f23ec828e08cc73e7974f45898eb2030e5a81f70d8248fb1b",
+      "git_blob": "16df99a843bd55fa58ec32dd718264cb24cd86b3"
+    },
+    {
+      "path": "STATE.md",
+      "bytes": 97239,
+      "sha256": "b59763bdad933477dd3526dcaa42a7dadf23441b3181f342ffe5c8ae9c10e9dd",
+      "git_blob": "b98ac144edc88e5323446a7b2d9f94816c62a276"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-git-blobs.json",
+      "bytes": 3563,
+      "sha256": "d6869be2302219b66fa54b8c21174e25d0086a65a87b9bee5e4871a07eb9b14a",
+      "git_blob": "3120bcf63b4a6e75793a074474b202c9206a1aac"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-preparation01.log",
+      "bytes": 2471,
+      "sha256": "e68a6a46bd38e6bad345eaa80e5216424e065df37d6a9038e09b08309340877e",
+      "git_blob": "0cff746087f9ac44cf11322d79e72059ca7b95a6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-preparation01/preparation.json",
+      "bytes": 2471,
+      "sha256": "e68a6a46bd38e6bad345eaa80e5216424e065df37d6a9038e09b08309340877e",
+      "git_blob": "0cff746087f9ac44cf11322d79e72059ca7b95a6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-preparation01/proposal.json.gz",
+      "bytes": 25470,
+      "sha256": "58a7bd9e9e743bbf62edf80bc4ab2bfd8e5d15fb1ad86de41ac296f8cae2057f",
+      "git_blob": "530ae6ce1ca42333ff97125112b278e4c3d8bdc1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01-replay.json",
+      "bytes": 2212,
+      "sha256": "2804da9ac0e976d7dc566b3be9cabef861ed24727221db72d4fc5da26f3a438d",
+      "git_blob": "4cc4074880ab78999a1b1744794d7e0b2049da4b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/candidate.json",
+      "bytes": 40273,
+      "sha256": "0b627484317e65562500fbbbbd594e4a95dbfa809576fae52f6c7ccdbe7191e7",
+      "git_blob": "87a50eedcb89e89ebf43576edb106c109d6064e9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/child-result.json",
+      "bytes": 2128,
+      "sha256": "e75c387d3cbff121cc62168e960cc5aa2b9a3c7450eb72bf776c2391d7cee50e",
+      "git_blob": "953854f5fa34856f32425537a00fc5ff626abdcf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/child.stdout.log",
+      "bytes": 2128,
+      "sha256": "e75c387d3cbff121cc62168e960cc5aa2b9a3c7450eb72bf776c2391d7cee50e",
+      "git_blob": "953854f5fa34856f32425537a00fc5ff626abdcf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/result.json",
+      "bytes": 2106,
+      "sha256": "3b3a27f53eb68b568c912e94d26902aa50bdca22e1e5b290afe80dd085da24f0",
+      "git_blob": "b0b32c686417fc470a933465bebf6947e5e368b6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-terminal-manifest.json",
+      "bytes": 4315,
+      "sha256": "512aee6937ca45cb2c46e6cda7cb9ff8648ceda801fb036e45698ec628dbf790",
+      "git_blob": "4a443e2f3252dfa3c3689c4256c248b3c3b5619b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-git-blobs.json",
+      "bytes": 5067,
+      "sha256": "96719d44c811023152b0dc0de99d50511b300e4cd8d2b4d7d4e5a51610f39255",
+      "git_blob": "080e1d18d1830db9c9eb49a0f5f20ca9e3bb12f3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-independent-source-review.json",
+      "bytes": 2389,
+      "sha256": "50f3da5869ea57d24ec03a46c76ec778cf91e3993b1cb52198c77073a2ba1aa0",
+      "git_blob": "7306d583babdf990e24574b06f2f23b8fc2d4aeb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation-manifest.json",
+      "bytes": 3214,
+      "sha256": "b8bd5b08451f9b8fb70fbd176f90b1935a3df656ba0f735eb42064291528d53c",
+      "git_blob": "d6d5579a5a82c4c0474e1066beda29e5d66c026d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation01-cold.json",
+      "bytes": 2066,
+      "sha256": "58809ef709f19e2648e5ff531a8f36f5216f8f614ce572cfb767a2b3ab997d15",
+      "git_blob": "3c65cb58594e4c349200477cf78617ac655dfd9b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation01/model.json",
+      "bytes": 18019,
+      "sha256": "7fddef049fd12b511556e473970999b255f41b3571d74c04fc734b29c9047c7f",
+      "git_blob": "b4af0acc21b462a1d202577f8fd5217d86f8276e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation01/progress.json",
+      "bytes": 1889,
+      "sha256": "dbd572f33034185aa58259d05ab1da76e20dd40cb1c16b79f899c86a83fbb882",
+      "git_blob": "6c85b3465863fdcd294783c2d8fc070c7b00f3df"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-query-controls01/tiny-drat.log",
+      "bytes": 358,
+      "sha256": "bef103b4e42a9956ab3ce2aeefc4801c53b5c741e8daa3dc401d04042e436c70",
+      "git_blob": "27d3e5bc0055a86bd246df040afa6092ee91cf5d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-query-preparation.json",
+      "bytes": 19565,
+      "sha256": "561bd87e8dd3befde4e5d7e2c0b7f06e56955ee76d5297dbce3ba1da3f3cc664",
+      "git_blob": "32888ee8b3e67cdf4b17bee15732796d37b72864"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-run01-replay.json",
+      "bytes": 2463,
+      "sha256": "5f642dd8e62081766960d16a10bbfe860894b01efffcb8f8142937c62eb417ae",
+      "git_blob": "2af96bd50a41063323c261b57816bf79ae715923"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-run01/child.log",
+      "bytes": 57,
+      "sha256": "49b66202f23d88129cee3f88dbec6905bb25037dceac59e920fa6e48fd793b8a",
+      "git_blob": "c95f72bf2eb458002d1395897d8abf59adeecb20"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-run01/child/progress.json",
+      "bytes": 4349,
+      "sha256": "47667893272143b14eedef304834fa51f87af362475920fec7d1e0bb226b790e",
+      "git_blob": "386f1056a5ca3e91937c6c957d554905eb4357b1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-run01/result.json",
+      "bytes": 4994,
+      "sha256": "b17958a2e0544391cc9699d08cda417924d3c18f9224e2ed15e233c82e65bf45",
+      "git_blob": "c791946df186894edefa54c708e705608ff97410"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-terminal-manifest.json",
+      "bytes": 5089,
+      "sha256": "f82cac05ac2fd751cae3df2c17d7f9b9040d856afb30bedfea0e809eba70fa73",
+      "git_blob": "ddf5c42843795f7520c64009ddd2f17d1708abc5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-artifacts.json",
+      "bytes": 22463,
+      "sha256": "962aa58f4e80eea7a4c238bcf44c185e7ae90d8efce42df348c6f180b528b148",
+      "git_blob": "696b636bf82b8087fdcb695d3c55ad243b9b0807"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-construction-preparation.json",
+      "bytes": 951,
+      "sha256": "da9a9f784ce4bd7b717fc47d985b0feed1fc063bccacc0258074092d02ba34bb",
+      "git_blob": "dbab5ac53b161361b0f803012b7f1ff804e84830"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-preparation01.log",
+      "bytes": 7388,
+      "sha256": "aba3ac1cfe17df82280151cbc0ffe5ba2e37431855ad3f798465840ba19357b0",
+      "git_blob": "0773b7b1a47570546d379a32cd8bec0cd8becec5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-projector-inventory.json",
+      "bytes": 16635,
+      "sha256": "0a372fa48833d9dd3d18abd2a44561e8859a3e36a49f6656a15464dfef6268b4",
+      "git_blob": "e9299fec22d52723daa3be4bb672f49c8ce210d2"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query-preparation.json",
+      "bytes": 2902,
+      "sha256": "f59236001ec34d07ee41865217c50f5efc1873563060937cf1fea3b24dd9f829",
+      "git_blob": "e3faacd2c415b3d86dbe3a29c709c165a6404079"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query-preparation.log",
+      "bytes": 3243,
+      "sha256": "3efe2d89c260bd7c4a11db663792cb5c1ad49e6fd4e797db288308faba56a477",
+      "git_blob": "f83a55df03e18bbe6f65e5302d5719fa76f9fe19"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01-replay.json",
+      "bytes": 39297,
+      "sha256": "49ca3c28717270934f0a36618abc648dcbdce4a4bf5db22359583dac3bf276f3",
+      "git_blob": "53af530071c6ee67d63eb439901882a75e95b916"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01-replay.log",
+      "bytes": 39297,
+      "sha256": "49ca3c28717270934f0a36618abc648dcbdce4a4bf5db22359583dac3bf276f3",
+      "git_blob": "53af530071c6ee67d63eb439901882a75e95b916"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01.json.gz",
+      "bytes": 5686028,
+      "sha256": "4a6b440cb93b2d123fef2b7b052faff0808d4e4ccb44f20bada3d7d3caad6764",
+      "git_blob": "59f111d603024ef067e522a8fa27ac83a220f34a"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01.log",
+      "bytes": 2730,
+      "sha256": "b4991fe68282696b9d37447a3de5963d45a94f3646230813a16f93aab3be23e1",
+      "git_blob": "04d87624020cee93517c8efa4cdb58e88740d1b7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-result-summary.json",
+      "bytes": 5770,
+      "sha256": "3d9ebce396352ba10258755bcda61020566ff725df10f10aecaae9919a6568d9",
+      "git_blob": "24e7ebdfbb8d310efa4409098123335ffb7502cd"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-artifacts.json",
+      "bytes": 13685,
+      "sha256": "fef5937ec67c61fc30008ee97c2a73b341997fc07e19d34efc5abfef27f3d08c",
+      "git_blob": "6b441cf6f0500d4b870f0945fa20fac9a3ecf910"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-preparation01.log",
+      "bytes": 3677,
+      "sha256": "035f773979d0bcf7323ac117ffa680e57da51ecedc7eb9dc77e3a6b2719f0d96",
+      "git_blob": "7414ca548470dff52f48851efda3eb68cbf73161"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query-controls.json",
+      "bytes": 230,
+      "sha256": "3b19c592bec43d5ddd3cd59ff100dc9d07e97243a1591fbe8e6e2e525953f66c",
+      "git_blob": "c3a15343a42629e37137c113fca402dc88a10bd8"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query-controls.log",
+      "bytes": 231,
+      "sha256": "8b581fd356a7e98250b664dc1ada1cbcfd86383a07dc69a37b0fbe0cecaed2bf",
+      "git_blob": "381dfbebcab26ebe317db3f56718c7855f382b47"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query-preparation.json",
+      "bytes": 2132,
+      "sha256": "145d9627302958bc73cae08174d136843deba56d4d637661e9099b76a10096da",
+      "git_blob": "a4e7296f3f817d34f144917e1714e01bd3db4174"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01-replay.json",
+      "bytes": 1418,
+      "sha256": "e435f9b601106a911edea63793787b1e806cb4fc655bfbb9c41911098348efa4",
+      "git_blob": "d46288174b5a5bc9a270b40167b9fa9604a92e38"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01-replay.log",
+      "bytes": 1419,
+      "sha256": "fb2f224a6f8f6551b406fcb8934a382f0ba41a4c08e68ad952e536d882e2085d",
+      "git_blob": "13dfb51426c0acddf1db8817ec227583524e8d7d"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01.json.gz",
+      "bytes": 405146,
+      "sha256": "9c940934bfbad7f3930a58b8e9658fd620eb020e437c130b64124b255d7b1f03",
+      "git_blob": "d5f5a435b9bfe9c9cf02959456c85e8444ca1224"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01.log",
+      "bytes": 2451,
+      "sha256": "37dc96022ff3e21e8d77fe858c3b100cccc73fd67de89494e967b7609468e1c8",
+      "git_blob": "84e4ac87e8b7b4df16d11e5334acc6f622bf7dae"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-independent-source-review.json",
+      "bytes": 3221,
+      "sha256": "fecb4d3daefe99af440d98be015b4792bfc8a7e881b1c076a8ec6b6a889f35e2",
+      "git_blob": "ca4d44b02e4aac2dee7de612818cfa54cf0f52e9"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/model.json.gz",
+      "bytes": 1104673,
+      "sha256": "b85aff09c1e53965d3ec548b8a2d3cdc194bd85fb8eb7c97d4a819aa07306c60",
+      "git_blob": "af17d89257ef2dd17422096ea0d656aa17257767"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/preparation.json",
+      "bytes": 2000,
+      "sha256": "95a5755cd76cb3b213397405a62cb56d6dc14a9f0646fcaaced2cd8b71f569a8",
+      "git_blob": "50416e65dd259fe493a7c9a209e4eb76218dbdb3"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-17.json.gz",
+      "bytes": 195695,
+      "sha256": "2a0464eaf661183fd39d2237cbb474e6c9f0ddd339a741e9e7bee7fccc5d09ed",
+      "git_blob": "049ed4dd643704e208b74c9510e4bbe535885cac"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-18.json.gz",
+      "bytes": 149026,
+      "sha256": "1b27c6e871bbdcd7963ba7da4b263256c84d8e2b851f69d9ccea89c571da4e11",
+      "git_blob": "2fd98794fb6800ceef2be09cee3095da371a037a"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-19.json.gz",
+      "bytes": 73591,
+      "sha256": "0bd99dea6f43bb1954bf1987124a60efc0e0b5dec2f8ac412d859c98bb5921fe",
+      "git_blob": "df8903f2d839224420530297bd81eb526210f086"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-20.json.gz",
+      "bytes": 24888,
+      "sha256": "47ebcfbdc607a80b313a9423afce357444af4f0c92110899f46761f7e5525345",
+      "git_blob": "dba034f35aecfbb8965c79496545113214f65cb4"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-21.json.gz",
+      "bytes": 4737,
+      "sha256": "b2b36ade142d8878ba8784e95de83d0e19498c8a55b76dca359d753832c06484",
+      "git_blob": "31084d67ab73a3084c8d0de0051c0e3a7e0993d8"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-22.json.gz",
+      "bytes": 77346,
+      "sha256": "4a74a7e62f4c61210a9c844f94de9dbfeb4e07700a52404fb7c6b310ecc5a2e0",
+      "git_blob": "d4fab4ed2468675ae75607447d26cb4d3f061e96"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-23.json.gz",
+      "bytes": 41521,
+      "sha256": "2491d733af9e65269a74a1fdd868dddb3aff1ac1863a212f49888cbaffb77022",
+      "git_blob": "6e8497c8276f64863256dac9038bce9e1c6a86f5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-24.json.gz",
+      "bytes": 31610,
+      "sha256": "5eacb81aefdde8824a879fee212c3bdc44157b894b1febf2e3a61630e0bb5a63",
+      "git_blob": "c1d2e3bd6980844c7d1923994ce5b203f349afb5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-25.json.gz",
+      "bytes": 12880,
+      "sha256": "bf5cffe07df896e96393a5c69ea5123d68a607ab1081d82d28ed96a49b6ede59",
+      "git_blob": "7b4c399cda283df02ed900b081d088fe49c42df0"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-26.json.gz",
+      "bytes": 19036,
+      "sha256": "2a628af0c0c55506c7a52e7a4a4962404707131b132188df1f0eab36b695979b",
+      "git_blob": "b01b235f98e130f124ffbee3163f1ed67d4423e3"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-27.json.gz",
+      "bytes": 14368,
+      "sha256": "b47e21b2c17fe802e6747ada9914d150930fe8f9de22b26f74b3c3e781e56a9f",
+      "git_blob": "e5a9da475be03e11223a1efcc89a907b8900801d"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-28.json.gz",
+      "bytes": 4069,
+      "sha256": "0eec6cb80f619b9567253833391510e349caf46332151f289b8ac579f848adac",
+      "git_blob": "635a20e1405e39021517434455b07ab679d4144f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-29.json.gz",
+      "bytes": 9219,
+      "sha256": "649b3ca929048da01be22eb653e5d4761743495cf1d5f14114c3fcdd29a7c021",
+      "git_blob": "fc7da3a7667f8990878afbebef10e8ad21a79b7c"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-30.json.gz",
+      "bytes": 15185,
+      "sha256": "2f41e8bc148bbc8d4348420e478fa497ff82be12af43cb1d6a2ff4a92e2579e4",
+      "git_blob": "16616b9f86b575104d9b1c7e6226d303f0eebff9"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-31.json.gz",
+      "bytes": 3686,
+      "sha256": "722c75825d712b125a00681fb3d304cb49e6d8c333a0a9ed90a0000afb16f3fd",
+      "git_blob": "a7a868aa5441b211a6593345232a4aa893292bac"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-32.json.gz",
+      "bytes": 6815,
+      "sha256": "4167ccb25981aab03688e750820d0c7c4942d209af96f2d5faaec750eec1191f",
+      "git_blob": "c8e9e89a0153997e5faf84c27089faaac5718ae5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-33.json.gz",
+      "bytes": 6860,
+      "sha256": "66f36a4681a24d1ee2e6f5ba59e1789f31e804031fc6abfad96f89dc3eb7fd69",
+      "git_blob": "0217cab70efe760238a71f1505667566e9e07319"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-34.json.gz",
+      "bytes": 5304,
+      "sha256": "a63c1332939ad9e422de5b3cee80b721b490cce659da70e6c4571dc5be6a52fa",
+      "git_blob": "28c9fa400fdcff423af161d8ee6f4473636ac3f6"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-35.json.gz",
+      "bytes": 2313,
+      "sha256": "3165fac2ea087071d6cb0271a347a055cf0cc3aa71e53e9b6f5bab323556368a",
+      "git_blob": "8cfb1d73f2facc3ad0d12927a96e8bb0e02f5717"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-36.json.gz",
+      "bytes": 5488,
+      "sha256": "5c752c86d74a1e0952c8bbfc124e48080674e93b45405bf1e52db4f065d77997",
+      "git_blob": "1bb82e34b0abfda752b7ebc578ce5b87e5dda781"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-37.json.gz",
+      "bytes": 1887,
+      "sha256": "3e9f02acd6bc1887d46867ddf6fd09a9af12d7d38f174bb4c214a0364b621b7e",
+      "git_blob": "4efcd3ec1239d2ab7dc4b9346cfb418a8a7892bc"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-0-preparation.json",
+      "bytes": 20162,
+      "sha256": "1fbd0299c57fd6eeff2271df7b0f7b68804d5f37d5c8d72b32c1e4ea0ab76d24",
+      "git_blob": "785a0c4dbe57cf36cc6a3db94a8498e360f102f9"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-0.json.gz",
+      "bytes": 1171518,
+      "sha256": "a55bca41e62545df2c2028db150b1ffd69989ae04e683d1f373a63097e7f0c54",
+      "git_blob": "5feab941bbc56f7be4ce653517aefcf66af4570f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-1-preparation.json",
+      "bytes": 27125,
+      "sha256": "f3c53599a961c9d11e88a98fab5e9fa21b969adf6480e71d833c931b29741809",
+      "git_blob": "a434163a7f2fa5189da19a17e32f25cd669f2d52"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-1.json.gz",
+      "bytes": 1260759,
+      "sha256": "56671dc76a221c54a406104983275bf3d53fc2991b5a2eb8592d38677d456edf",
+      "git_blob": "63c3d08d36785509b7d35f8cb017448a077c3b7f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-2-preparation.json",
+      "bytes": 28356,
+      "sha256": "14efb0ede005fb7e841ec972ddf104a65237bce020da06fd4e1626dfb3e697ed",
+      "git_blob": "c9f5d52142e147139b9709760935b2c26fedb7e9"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-2.json.gz",
+      "bytes": 1190801,
+      "sha256": "9f6f95d0a1c0d2507f12228823c643897160e855bcd943c8f9ce7b215666aeef",
+      "git_blob": "330c9b4daab5d46a9669e33ad865725664dd3ae6"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-3-preparation.json",
+      "bytes": 26679,
+      "sha256": "933ec5c52321f0cdfd2b8ee8225014ae5a334a20ff7f75e57c54fc7c33952465",
+      "git_blob": "a47f1840c20de6a10e46489463af86e063518cc1"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-3.json.gz",
+      "bytes": 1253286,
+      "sha256": "b93c6a042dd6ae8aefe793ec189066a80013713335c40ad5731d9e5e75bfb890",
+      "git_blob": "598f232c15068c433a2f6dcf952196962b129626"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-4-preparation.json",
+      "bytes": 29343,
+      "sha256": "6b862f19e1858558fee8ec433f0948cc2964fad2c83a0cfe818871512837814c",
+      "git_blob": "af590fed103242889c9b537190f1298518c4dd8f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-4.json.gz",
+      "bytes": 1232940,
+      "sha256": "1a8c8da1a559834b7efae32dab207599009c3001b832325d6e4b8389b7b5c068",
+      "git_blob": "1ba7c9abaccafad0b28af641504faed15c68f139"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/model.json.gz",
+      "bytes": 6090305,
+      "sha256": "865fd8b034387d297ea0bdac4774e5d370c621b46720f241d3733b5b02d34a67",
+      "git_blob": "12cd54a296cf426b8a01f9495ba44c06ff67d591"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/preparation.json",
+      "bytes": 5043,
+      "sha256": "34bff87bcb9d5dfae1a76fe858060675f7455dea4ec547501b234a9f31e1556d",
+      "git_blob": "1092d705d524d1abdfea706a05b9770cd7bc4d7e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/progress.json",
+      "bytes": 3917,
+      "sha256": "3824a2ef65f9b5ae20a91f2b50a8a343aaea89f95fd58096991822e861383e46",
+      "git_blob": "0ec1c7b4b5201be28e49264eab5b6eeeaea0deeb"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-50.json.gz",
+      "bytes": 1058656,
+      "sha256": "6a9b5cc72c5263fa9ebc1d3fd3c4948a7a14f72f1b5a624781321d12340eb1e8",
+      "git_blob": "b4111de35c9af2fd57c4f358bce74a3c8ce75c04"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-51.json.gz",
+      "bytes": 761165,
+      "sha256": "79844834a628559e0e87cc151a5f634b4625f564c3ca20933d28d67c351e47e8",
+      "git_blob": "4e12aad706f956b681c2dd2f3e23efdf03922b90"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-52.json.gz",
+      "bytes": 308652,
+      "sha256": "43866db0032f72da5f471e1df4e880651d90008c5f7ab90e344259ee9a30071d",
+      "git_blob": "50083582b40812adab5c5a5a506eff30e0b778b7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-53.json.gz",
+      "bytes": 74718,
+      "sha256": "75841c4137ea0f894cf83f56ca0ce04bd66094260824b8bd68a530a39cc65312",
+      "git_blob": "89bf321bf63e2d514bd7d2b9afcbdc39fdc9b86e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-60.json.gz",
+      "bytes": 437353,
+      "sha256": "9da67823e13c7c4554f5f1c9645f9e089bca4dcca3994d485351ab3867047378",
+      "git_blob": "3d89c6d10af49f10975e0446b86dad00146583d0"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-62.json.gz",
+      "bytes": 192513,
+      "sha256": "9d81dde572b4561ee269094de1c8dd84db270ab8f561558ec8a66736f86fbafc",
+      "git_blob": "375803811054103473fe4c62851f58954c017d07"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-67.json.gz",
+      "bytes": 534383,
+      "sha256": "c5ce325d8143bcc2578975f217683b9567e58c50baa708f2a7b388bf45fa2212",
+      "git_blob": "46f7fcfe7ace8a5752066d2b741808bfdb46a715"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-68.json.gz",
+      "bytes": 392195,
+      "sha256": "f7722e8050987b5d76d1a1b0afc1217261ab05b9ab15bdfa7a23cd26a94e39ef",
+      "git_blob": "dc1422535ca928bb19ada06945ebe01181c11066"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-69.json.gz",
+      "bytes": 317795,
+      "sha256": "a73d2b5b9007a8f2a1e11330960864ee8112d0d737dafbcafd7e1a32a3e23135",
+      "git_blob": "eb42fdf4d38c248af2a68b52f61a35a0f2202f4e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-70.json.gz",
+      "bytes": 170354,
+      "sha256": "5c2d799933aa9b7ca051ffc7339fe0694e5dfaf709eadeca4674ac5a6996a07d",
+      "git_blob": "d34a7190ddbdb9f1c76bc9ca7cdeeaa885ed5d75"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-71.json.gz",
+      "bytes": 151716,
+      "sha256": "5d71180c65d51cb77ed4aa27f03c298eee430a4b91d9b49443b0f700c4df4c47",
+      "git_blob": "3966aad79ab56582733a9d4ed5b1386c08699e8e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-72.json.gz",
+      "bytes": 53265,
+      "sha256": "7a69547d34bafd03e51e6e28bd88689239d2207740869aafe7e55127f5f82210",
+      "git_blob": "f87740842309195a1ead941245b125ec337d4cce"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-76.json.gz",
+      "bytes": 140181,
+      "sha256": "2ea3fe5938414e75c78be9e6da5290672f320d1fcaa3fa37c8fff64bac333ea2",
+      "git_blob": "e14edf42d0ed4f9d625a933bdc2edc7d3c137289"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-77.json.gz",
+      "bytes": 224296,
+      "sha256": "16fb896df988df7dfa46d4cfdcd18112700577c20349410079f32e254f6cf1ab",
+      "git_blob": "cf710b402ba2192a7fd1991b351ff59dffbd95b7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-79.json.gz",
+      "bytes": 65721,
+      "sha256": "ebcbc3a3047e3b938bc27b02c0e6b7381dbd8c0d4ae32aca0f46571dfde5636d",
+      "git_blob": "10c658e1d6dcd0eccc4f70cda51da19db8d86479"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-80.json.gz",
+      "bytes": 233763,
+      "sha256": "0e6c19bdf51ea9a0504619e25c137797285076714c3db48864fa4f2270b29e26",
+      "git_blob": "e956a4a2e4c8df9e2327c330d22fddc5fd38f405"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-83.json.gz",
+      "bytes": 209469,
+      "sha256": "12c8b79e6872e95576ba8b745087367288a0df5d8936ee52d2b2b4a890b32043",
+      "git_blob": "4f094c33f19b7e2f8db6e96f45e4bc4c511c2d49"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-84.json.gz",
+      "bytes": 156927,
+      "sha256": "053454f8c1c6ea7c3b351d17f6d2404702dd708448d9fc4bcce41f709ac8ecbc",
+      "git_blob": "90657a0a73f31ef8beb9156a3267fc08109e48ae"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-85.json.gz",
+      "bytes": 46728,
+      "sha256": "5f20974835c156fa3de7e89acdf5dbfe9bffb8f56d2b2ae14d35b7092281ccd4",
+      "git_blob": "8f70bdb0b13f361e4d57b8be97ba96ebeac045cc"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-86.json.gz",
+      "bytes": 144375,
+      "sha256": "e1ef601a31b2646a3e04cc8d1f74597e77e20df70fc632dcacaccad680b29cd1",
+      "git_blob": "7e3f6333a0b9485d81788c6349da71e9df69c467"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-87.json.gz",
+      "bytes": 86550,
+      "sha256": "2239c2566cc305ea3cfd95113e5319ddcc59844c9224cb4c7b9fc2a07b410830",
+      "git_blob": "56d6229242acbaabefc5cb3f32a53d5bf386ac5f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-88.json.gz",
+      "bytes": 55190,
+      "sha256": "b0cd4f302e8139c5b7e06d31d47e53100526131828ae354aef504f242dcb360b",
+      "git_blob": "dc9c16175e2e41b22986bddc1e8b7e2c36120850"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-90.json.gz",
+      "bytes": 59605,
+      "sha256": "3b95888cb6f6311ed06592a1c0cae07132ace80d75ee8ae27307a9504aba26c4",
+      "git_blob": "d999ddd21c3122e82b930f40a1f07f0a6c51ab92"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-93.json.gz",
+      "bytes": 88716,
+      "sha256": "32a40188288f2c59539392fa41ae01f94dac0d66a99b4b7f52936b118243d1cf",
+      "git_blob": "0e5fc8a5d9e28e66dbe0dd5629521c522c801d61"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-94.json.gz",
+      "bytes": 25955,
+      "sha256": "8fca3ae0cce0873b8b46dbecb9b0622818b11c38b4ed1beeaa630bcb8eac448f",
+      "git_blob": "df50333aa75300c4b1e2480f2622a77ced38d9bf"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-95.json.gz",
+      "bytes": 13461,
+      "sha256": "8237454696b88dfb845a72ba6f6a53f84d1f8ac763c57f33655f89aa6fc71d17",
+      "git_blob": "e6e6b0f138308b411c48537722aad718f88725a5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-96.json.gz",
+      "bytes": 51295,
+      "sha256": "340ff138fe74a1319905c5c1c9875b63aec86e22ab1ab74e5a31a82f3f910260",
+      "git_blob": "efce79d8d55ab03c2e65fbe5b0d8ebb9379843ec"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-97.json.gz",
+      "bytes": 44447,
+      "sha256": "eea992003a9e54b05700995af002f65d77dd08c6438136a7ea0e82c1d61f52b3",
+      "git_blob": "768110645d893e192923fbf2af15dc73b3501d8b"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-98.json.gz",
+      "bytes": 18715,
+      "sha256": "aba34f586568f16804f4371e5460e19bbba138364e170de6cb264a1698bde49b",
+      "git_blob": "e35fd5610842c3d509b3c5b090ad3f7258465225"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-99.json.gz",
+      "bytes": 3403,
+      "sha256": "183c81ce97f8a20f40b4d491b1462668fd8bac93d6b3e7d2d7ffc9f16339e67f",
+      "git_blob": "3d945211faf9d8b84441fbff6bb9b293ade29ad8"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-projectors-independent-source-review.json",
+      "bytes": 2298,
+      "sha256": "0b32b1a2d3e44b7c4b9fcb5f9b10bf739236ad53f98d91be693e481055d5a006",
+      "git_blob": "ba036267f58a323961f2420dbd1762764fcb0620"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01-preparation.json",
+      "bytes": 661,
+      "sha256": "8bd29721bb93a0fe724069151fde4b96c8fa6c3a4f7dd801d53602056baef517",
+      "git_blob": "8236cac2d61d21c75ecfd579f52208c1e7f9a6de"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01-preparation.log",
+      "bytes": 1020,
+      "sha256": "dfa5757d5a5b01f1cd4e64fc453a2606f81af6b169a566f4ea9cfa4225b52141",
+      "git_blob": "f780591a8e34bbc3874dce23b985dbf8cd2e0f98"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01-replay.json",
+      "bytes": 666,
+      "sha256": "8c789598c08ba94f7693c5fb0cb4793446a76bc9b0a7d926cc3c2b89ee22436d",
+      "git_blob": "870cd6d924d9910bb5dacb0fbac379014778d92e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01-replay.log",
+      "bytes": 1025,
+      "sha256": "3317c60863ef9a3e01bd7068d3e32969bc2bade8ac236b47f398624f1c5506b8",
+      "git_blob": "adce2ae8e15181d4fc031aa32a1ac979c079dfe6"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01.json.gz",
+      "bytes": 244368,
+      "sha256": "397e8bf110e03a5accb5e6c1f27b2fb5525100acb67427c66669e188e74159d1",
+      "git_blob": "c58da714720d17debc9ca2a641aff59d1fd521d8"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-independent-audit.json",
+      "bytes": 1487,
+      "sha256": "549797f76d7815ce6059399978a0e3788a15314433104e03a4db7e6211c8aae7",
+      "git_blob": "e66669b147fe5628ae1336a7eae9085fa7ec9f11"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-independent-audit.log",
+      "bytes": 1487,
+      "sha256": "549797f76d7815ce6059399978a0e3788a15314433104e03a4db7e6211c8aae7",
+      "git_blob": "e66669b147fe5628ae1336a7eae9085fa7ec9f11"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-old-point-check-attempt01.log",
+      "bytes": 662,
+      "sha256": "fae760e5d5765873bf0f5098ef79285d0c4df862a100c3e3eed250aa67abd3ea",
+      "git_blob": "6e5c51d8a6e823a42e0b796e7f0b11a8e34e23d6"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-old-point-check-replay.json",
+      "bytes": 258,
+      "sha256": "929917f543e5f1f4eaba9329c4922130506346cc020ac0060ac8736a09f70e9b",
+      "git_blob": "e05ef4c51a11116c980ed4996dacb69395037bd9"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-old-point-check-replay.log",
+      "bytes": 2645,
+      "sha256": "899404c713e13b14b6718e737d15d89ee5d216217c9edabf24bc825fea2ab270",
+      "git_blob": "28a320b434390f5188f3039b1471d68d2958d1c2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-old-point-check.json",
+      "bytes": 2645,
+      "sha256": "899404c713e13b14b6718e737d15d89ee5d216217c9edabf24bc825fea2ab270",
+      "git_blob": "28a320b434390f5188f3039b1471d68d2958d1c2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-old-point-check.log",
+      "bytes": 2645,
+      "sha256": "899404c713e13b14b6718e737d15d89ee5d216217c9edabf24bc825fea2ab270",
+      "git_blob": "28a320b434390f5188f3039b1471d68d2958d1c2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-negative-and-motif-independent-git-blobs.json",
+      "bytes": 3497,
+      "sha256": "ccb106e121a2e5ff4eef03071c6c18e6226d7324079da31ce9060b16597cd303",
+      "git_blob": "e9a46f32887f354c89293f3d2a097b9a58e96604"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-negative-and-motif-independent-manifest.json",
+      "bytes": 3490,
+      "sha256": "719711cf7706c653e884209958809942c2c9da58ef5506c355d58b96af8dba1d",
+      "git_blob": "722e7d5dc49f715ba6b8cb6b93e753b2474263c6"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-edge-negative-certificate.json",
+      "bytes": 17586,
+      "sha256": "c155ae6010d3f94a315eb902b06803c27bbc2d4eb60a30a058af9ec0feeca43d",
+      "git_blob": "86d8db482da8e34654e51cb9445c7bdb2ff11c6c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-edge-negative-cold-replay.json",
+      "bytes": 418,
+      "sha256": "d02d2b0c3178ef5ec1c10dbd7eb7744155a053a4e67524d72bf19dd87d407ace",
+      "git_blob": "f1ba66689d01d77ec3f34184556becc881512c59"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-edge-negative-cold-replay.log",
+      "bytes": 418,
+      "sha256": "d02d2b0c3178ef5ec1c10dbd7eb7744155a053a4e67524d72bf19dd87d407ace",
+      "git_blob": "f1ba66689d01d77ec3f34184556becc881512c59"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-edge-negative-preparation.json",
+      "bytes": 1403,
+      "sha256": "892c202032c6c42d2f4ddf10b8c519817b3308dd6c039647a1667042d8b8d868",
+      "git_blob": "5b8e787bae62b666ad56b275b910113863dac59d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-edge-negative-preparation.log",
+      "bytes": 1403,
+      "sha256": "892c202032c6c42d2f4ddf10b8c519817b3308dd6c039647a1667042d8b8d868",
+      "git_blob": "5b8e787bae62b666ad56b275b910113863dac59d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-pair-minors01-replay.json",
+      "bytes": 299,
+      "sha256": "3e363d4ad7576e607f62238526aee03a3f77be9a2cd1a381e1e5f50ad05f5d37",
+      "git_blob": "d7d4556f45e859a977f9d527b750a671ccfab5c7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-pair-minors01-replay.log",
+      "bytes": 1526,
+      "sha256": "33516d84edc99afbcedd6c3b07da872f9c9138000d1f3cda9f7abcb170774cd8",
+      "git_blob": "d8e8dda5fa82ded318a3285013924daee59d8995"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-pair-minors01.json",
+      "bytes": 5174,
+      "sha256": "db03c1324658864cb18dcdd3d75885714696c9956d54fe5eea65394c950e7dc0",
+      "git_blob": "4f7cb40f628647092976f50ab1b3c28127b58c5e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-pair-minors01.log",
+      "bytes": 1526,
+      "sha256": "33516d84edc99afbcedd6c3b07da872f9c9138000d1f3cda9f7abcb170774cd8",
+      "git_blob": "d8e8dda5fa82ded318a3285013924daee59d8995"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-preparation01-cold-replay.json",
+      "bytes": 1065,
+      "sha256": "5450f1fe4b61002d58f8926ae92ad48abba9f653b53bfa372cf550973248e919",
+      "git_blob": "a5cebdc4947337a0fd39fb01a31f567f8ba2cb37"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-preparation01-cold-replay.log",
+      "bytes": 183,
+      "sha256": "ee6db41edd4888cdb6b123c35de92b9a8a51a6bf96c4f5a593b2365ba075a11f",
+      "git_blob": "9de1ff8dc02fbca8c574f104098da1b63534e3a9"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-preparation01.json",
+      "bytes": 3689,
+      "sha256": "a518c165d86e8b93ddfcd49f63ce1744978ee13a44dba9675d207bfeb46e7731",
+      "git_blob": "dba4b825e50097b7421163a021c46135038f1b89"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-preparation01.log",
+      "bytes": 217,
+      "sha256": "be5673ea651b7ddcd291bd386f6c6c6e462ec46b8f0ba6aaa15ccef0603edeef",
+      "git_blob": "1bc30f1750f93279c2f37e60b5b435427a136c06"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01-cold-replay.json",
+      "bytes": 1399,
+      "sha256": "150f2eae6abb9d1f8ccebd2fe47f7823d708829f08119906c053a10323297c51",
+      "git_blob": "8bc3cd400c5dff42a4dbbf6e1abdcc9b91ffa5ef"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01-cold-replay.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01-cold-replay.stdout.log",
+      "bytes": 220,
+      "sha256": "efd3b94a5d1cdf73ef7a4ff822499702d984bda3e0a5652d5818df6fecc2aea1",
+      "git_blob": "4d2a2445104bd1be63506a2293544ddc32184138"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01-git-blobs.json",
+      "bytes": 2976,
+      "sha256": "b1b58d39c72737305bd4384afe8501c2de6d13ddb8db9c5fd8b27dac12a1e18c",
+      "git_blob": "9db5011f1c953e1327781c3ed5314d33a29fafe5"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01-summary.json",
+      "bytes": 12989,
+      "sha256": "3328472000f0404fce598800d6358feabd915febf18d000efcb4401889b69f70",
+      "git_blob": "b80567ae4603211ba353ee513003195e09d52af1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01-terminal-manifest.json",
+      "bytes": 3127,
+      "sha256": "7f819550ce3e637ba787842a3085b405ce4ba4cc82de1e7d16480b78856ad8d9",
+      "git_blob": "c33fcae48e2ea19f7c453e3bb76a6fd5ee7c635e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01.json.gz",
+      "bytes": 1458674,
+      "sha256": "d28ee0220975500373085c5913071490f1eb4b31a351aa108501cc6bd5c70a54",
+      "git_blob": "4483fc6c7652341dd9828381bb1fbb6287fb2795"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01.stdout.log",
+      "bytes": 158,
+      "sha256": "169ffd76fde40e49e315374da3a827ead15b1d0e6482368b8f119ee8b46fd02b",
+      "git_blob": "02125df16b1224669518c120eb1387341b3d6b4e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit-replay.json",
+      "bytes": 276,
+      "sha256": "a857d12d96798f4ad58d8fb8ebbac8b7980b1b672e480e89c19262588f904cf0",
+      "git_blob": "2eefe5eba43e11074e4cb19635d7c7ce23dc8138"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit-replay.log",
+      "bytes": 3448,
+      "sha256": "03f249899ec5085b36dc20ace9e107eb770e2f8a15ea787cf55239b8e010d1d7",
+      "git_blob": "9a43954d76f440c9a42ec2ea9d9441c304e0d3c6"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit.json",
+      "bytes": 4489,
+      "sha256": "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75",
+      "git_blob": "a7ed9d7d07e7b48e3facb4fd651451e1a872880a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit.log",
+      "bytes": 3448,
+      "sha256": "fd94d91778fd99623925f6178d72cb961c771b8c13cde5e1ae8802f595eecd2f",
+      "git_blob": "aa487cde6962055dfaacde761fabb38158978f52"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-kernels01-preparation.json",
+      "bytes": 3249,
+      "sha256": "1ba7cd1795c285b37f9bddc51d0c1b4fbbf5078a7cc18e8c419100bf5bef4797",
+      "git_blob": "ab3a26ebbb0e2d6dc93e68592c1f6818dd329bc7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-kernels01-preparation.log",
+      "bytes": 3249,
+      "sha256": "1ba7cd1795c285b37f9bddc51d0c1b4fbbf5078a7cc18e8c419100bf5bef4797",
+      "git_blob": "ab3a26ebbb0e2d6dc93e68592c1f6818dd329bc7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-kernels01.json.gz",
+      "bytes": 453951,
+      "sha256": "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1",
+      "git_blob": "eb5103adaeeb66fd424f672272f35e0516da1c44"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-peer-source-review.json",
+      "bytes": 6183,
+      "sha256": "876de39bdcaebad4d1c3c5188de6c8547ce6790796d3903b3ca4d4039fc0dc9c",
+      "git_blob": "6c285e8d1f17a9cbba685552eb61e1c6896b0a61"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-preparation-git-blobs.json",
+      "bytes": 3775,
+      "sha256": "9dc3bf1e1e1ad6d75fa1be5919442a0c07749bcb5aed15d78b55599f0dac8503",
+      "git_blob": "967fef576cb14919ae461270fe71cd93dadb1532"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-preparation-publication-manifest.json",
+      "bytes": 4065,
+      "sha256": "e674892a2269a6a586fccdf2584e22e3279af44a3a389e1902c327ad6b3827c2",
+      "git_blob": "1ea2c313f2b34768171cd044deabd262499ce741"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-reuse-control.json",
+      "bytes": 1340,
+      "sha256": "416c9d905cd9f2a4d80ab0ed63829025965288196f029aa2c60237d77cc52539",
+      "git_blob": "05bf7612afe0f5725c925de207cefb11bf33ab1b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-preparation01-cold-replay.json",
+      "bytes": 737,
+      "sha256": "f68ab0f532635d9a213e548148a4955068627d87e296c3f257ac3a073cb62899",
+      "git_blob": "23e23d81dceab95fdd97659b8a2ef4db6139b495"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-preparation01.json",
+      "bytes": 3222,
+      "sha256": "301bc2e10b79139b14fe3ab79098128c4b3d907c745f3d7536d50da0dfc6e4d5",
+      "git_blob": "51bfdf0a55b88070775649ca1253c71d06290b56"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01-cold-replay.json",
+      "bytes": 1070,
+      "sha256": "c86c7a30030b04702479fc74ba6cee25b1d0be9d84184939eb3e254e56c226f1",
+      "git_blob": "6b8079919cc557734f2388eaeeb344925cc1531c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01-cold-replay.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01-cold-replay.stdout.log",
+      "bytes": 220,
+      "sha256": "6394db8f8de04da82a8d3ea091f61688a6333b1782a2ba30bdd7447b013aed2d",
+      "git_blob": "7e9d923e6585f737eb4b8dfe527ec206b73fccf8"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01-git-blobs.json",
+      "bytes": 3097,
+      "sha256": "8ea3b31600e656de12a8e796ee55db88298ba46723c67d981898190d7e99fc33",
+      "git_blob": "b21226a4076b1ae4c80ac1193e5ca1bd86440b8e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01-summary.json",
+      "bytes": 10372,
+      "sha256": "46badd3ea3634215df3d44a8c2714279b06afd32e24af68de667b8d0998a1de2",
+      "git_blob": "7e60baa6ec8bdd0b931a892e921704e2a4b76a37"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01-terminal-manifest.json",
+      "bytes": 3158,
+      "sha256": "df3d7f1501451ad6c8e884597a5eb552adc422bfb1e8fd644a424a2262b946c3",
+      "git_blob": "48660909249134c46f5990aafaf87c61529a4bfc"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01.json.gz",
+      "bytes": 1177528,
+      "sha256": "2e743329a4e241f1d7b3c89e1821d9d1e5419cf1417f3a985563e5b1e8376383",
+      "git_blob": "3849721bd96ccb0bc0196210b6af9c5b2935a453"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01.stdout.log",
+      "bytes": 158,
+      "sha256": "e232aa6c2a201dcf98b41686709f4db903a7d51e3a554fbb6c5fefcb1f03436b",
+      "git_blob": "b5cb0d8dfac61cdd5d80ead5d86a2f9292797cbc"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-independent-source-review.json",
+      "bytes": 5324,
+      "sha256": "bd1c2054a9a232559c69c1e6134b926252463fb4b3bb660892566c22f1522855",
+      "git_blob": "511aa00f8f9a63c1b58023c5b2ae01bab375d995"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-kernels01-cold-replay.json",
+      "bytes": 5778,
+      "sha256": "eb6ba7154865438aa12bbc7b66697a1ac80fab1a59a7001402043a5809abce2f",
+      "git_blob": "78f81f85a7aefca927592f97aa42ed4ff16d9664"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-kernels01-preparation.json",
+      "bytes": 5774,
+      "sha256": "371a52a7716dfef4daa941bf1816e55a68881399369319957ca29b04c91c8918",
+      "git_blob": "7307d3718700fbc28b8410bf7feb2ef72f68508f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-kernels01.json.gz",
+      "bytes": 522873,
+      "sha256": "65f1ad0d0015a6eff3d97c676fb0e188f57f9dee00e9245758a28bab2069b40d",
+      "git_blob": "92634a1c2c1482cf2d32322fe66310a73c3fd583"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-preparation-git-blobs.json",
+      "bytes": 2805,
+      "sha256": "f9ce6be5e6eb7c2f099906b7cbd02e9ddea87b84ff7920eff6506e0a81251d0e",
+      "git_blob": "333e953cd0c92584d97b3a22c51027b7e7b53988"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-preparation-publication-manifest.json",
+      "bytes": 2972,
+      "sha256": "163987a5ab2a7bc68eff9f68d0e16ba7c940906d16791442ca87a2b6e61ddc0a",
+      "git_blob": "7c1952425d91a5b3cbfd0c56a8dd3eb8ab042bbb"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01-preparation.json",
+      "bytes": 833,
+      "sha256": "0c05b869a2106957fade6034f0828493325b03f03c596dd9de924a97363d3212",
+      "git_blob": "aaeb5fdb7216d0ce1db535649ff4451f2a212b4a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01-preparation.log",
+      "bytes": 833,
+      "sha256": "0c05b869a2106957fade6034f0828493325b03f03c596dd9de924a97363d3212",
+      "git_blob": "aaeb5fdb7216d0ce1db535649ff4451f2a212b4a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01-replay.json",
+      "bytes": 838,
+      "sha256": "342ea3bf2453c60b819ab66b0f63883bd3e4261730bba0fb8f06cf3a9e3ca5aa",
+      "git_blob": "50dc2e1e40b189d4c985c864fc543caa754ef639"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01-replay.log",
+      "bytes": 838,
+      "sha256": "342ea3bf2453c60b819ab66b0f63883bd3e4261730bba0fb8f06cf3a9e3ca5aa",
+      "git_blob": "50dc2e1e40b189d4c985c864fc543caa754ef639"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01.json.gz",
+      "bytes": 166449,
+      "sha256": "b445ad3268cb7016a7a5df07cef9c6fda1a0c7d96fa5a560f897c9449814b194",
+      "git_blob": "bf3c1598f0cf4daac606d601917e71c81242d3f6"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-independent-source-review.json",
+      "bytes": 3740,
+      "sha256": "8465bbe9e202a036026533bf2c56e2e299efb60c9013a43b5061b013743828b6",
+      "git_blob": "6148577b6629485b975d57a7cec9f4aa10c9f297"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face99_basis_reconstruction.py",
+      "bytes": 19910,
+      "sha256": "1cbeb11b23e0033fa23d10ce24aedf1585ad0119d0433f296febf722231a67b6",
+      "git_blob": "1c162bad9dfd90abc638acb72fdf0ba1a76473cd"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face99_boolean_overlay.py",
+      "bytes": 12987,
+      "sha256": "906a2cab0dcb6b23b6c35a9f0cd6a63a80b3dae27d8ca935892e37f2a0f89918",
+      "git_blob": "69bb93bc2753cdc4422fa92ca7594e1d80c67a4a"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face99_boolean_query.py",
+      "bytes": 23315,
+      "sha256": "b47b9c962cb62dd367dde4ddbaa37cc08d18c39ea33e4aeeaba3be83d84a8fd9",
+      "git_blob": "b282e8425790ae642b52d59a7e2c076714cd29d7"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_edge_motif_census.py",
+      "bytes": 13051,
+      "sha256": "b9c5556bd503d72d2508bb03eb8d1b6be9ebadb0e0c25a1b79cec9870bc79009",
+      "git_blob": "4c5bd95cffe5d916a5d41ef6ff6fe90a8ef23a36"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_edge_motif_independent_audit.py",
+      "bytes": 12620,
+      "sha256": "469e289b3f3af367ee26b5dcb0c03496af97df313a0adfccf45e47b94030fd76",
+      "git_blob": "be5b4110e555bbfba7264da3489fc4b4eb2d19c8"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_edge_motif_point_check.py",
+      "bytes": 3763,
+      "sha256": "dd7f01826d8a304832cc371bac910f3d8fd71a8b9142e1d081a9d2d5b74842c0",
+      "git_blob": "b68d6550e2e8745576f73822cb9c6f43d128dcec"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_full_core_edge_negative_certificate.py",
+      "bytes": 11433,
+      "sha256": "02bda4ea0ce63d606efd82c7192e298663afcbf53056fd29c8ad9cad1983452e",
+      "git_blob": "b4469a35dc7dab2eb5fa85c071535ea3b46ddf07"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_full_core_pair_minors.py",
+      "bytes": 5525,
+      "sha256": "7a035d583f2d2be643a3de98f4f4df4a83c07f5f8c5b62bcb6c9567788702f7f",
+      "git_blob": "ad40c05272a5675ddadbf93549ec553fba581066"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_full_core_schur_audit.py",
+      "bytes": 9220,
+      "sha256": "0988a97703673a2ef2d6f8afb204e06edba14bb9065c0c2361e5ac79840fb6a9",
+      "git_blob": "63c92999d34c822049b16521118b518d114a95c5"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_full_core_schur_cuts.py",
+      "bytes": 28482,
+      "sha256": "c5489561a99de14cc0c68a3d05dbc8eb1eb3fc17e4a759b4c3d63f8d771f7d8e",
+      "git_blob": "8769de96b29912ce9731fe2609ea7a8ab7c1e8f6"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_full_core_schur_kernels.py",
+      "bytes": 13752,
+      "sha256": "141392693e8d4b7e140c329cfa4128b8794bd376713558394ef014975e2fc63f",
+      "git_blob": "be029b2bade8561f0367d96a09c094e50e6a0c8a"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_full_core_schur_reuse_control.py",
+      "bytes": 3481,
+      "sha256": "310c2af2199336c166c57d23706ec092e19577b9fb62f1a1156b40ff51566b96",
+      "git_blob": "46545f1758ef300ff50dd284e4956ebc99cef3ee"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_graph_schur_cuts.py",
+      "bytes": 27234,
+      "sha256": "45ce5c3cd1dffa1eaef611b4aa31964244d87e2f2c5078b99b417aa4ffb8edb5",
+      "git_blob": "f74bae76b95b1ee272cf7255de87a6db0f8cf691"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_graph_schur_kernels.py",
+      "bytes": 15550,
+      "sha256": "5be66e563e53b1efc378c8adbeb39b8ddbf24f4c97077e5d43c728260d9087be",
+      "git_blob": "cfd67cf7e37ba0148a562fd8a2fdadf14191efbb"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_three_vertex_prism_cuts.py",
+      "bytes": 9073,
+      "sha256": "8f468ed033b66b61a9c9452ead079f41b6e738d3b9dfaadee476ced49104ce22",
+      "git_blob": "8f29c93dbc6b7e60b72f7c9781cd735464b329dd"
+    },
+    {
+      "path": "experiments/workspace/triangle_class_integer_preparation.py",
+      "bytes": 19452,
+      "sha256": "edc1c76522a4925f8bdd22575d918f7eb995682c4f9b0c10ada80d48b89afca7",
+      "git_blob": "55a4ff5a510b66091e4fc7d35b1f52dafd60ba27"
+    },
+    {
+      "path": "experiments/workspace/triangle_class_integer_query.py",
+      "bytes": 13658,
+      "sha256": "9e80735b2984049adcb0f851e246e481ed433de9e576d3803b108dbc8c4c0f38",
+      "git_blob": "6bd46b19f90c7b508aaffc2771d7104ac0477759"
+    },
+    {
+      "path": "experiments/workspace/triangle_six_vertex_inventory.py",
+      "bytes": 6275,
+      "sha256": "95cf1b286033105ed3ccf6acdf20783fd071dd47a756911815221cf73ccfe5dc",
+      "git_blob": "8a14cc25ca01f0e9c764dfe5ea016e73b4fd6651"
+    },
+    {
+      "path": "experiments/workspace/triangle_six_vertex_projectors.py",
+      "bytes": 19524,
+      "sha256": "0749e9850d52949d73eb5ac03ca6111c769accbba15ecd62bd2846e87ea2eaf8",
+      "git_blob": "2ccc57d5727d3d39f169e79cd4d717fa539b1628"
+    },
+    {
+      "path": "experiments/workspace/triangle_six_vertex_query.py",
+      "bytes": 12913,
+      "sha256": "0382ac1df28bb3ad952dd530057ecb8c69c4d7898ac2ebcc5730a2cf59d053d3",
+      "git_blob": "cd4c5bff18f20374ce99f762394dd14d6d5a2170"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face99_boolean_preparation.md",
+      "bytes": 5556,
+      "sha256": "ef49623cbbd27833a2a42a8ef12293b69b39ac2130be5d7e67e6fd4228ad2463",
+      "git_blob": "c99bc9030266771168744bf8c650b2cda61e3927"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face99_boolean_terminal.md",
+      "bytes": 2651,
+      "sha256": "50a485f1d43efa527398343d82f5893496c1853291d6333f86490a4c969a9921",
+      "git_blob": "8e16d5d9379e40667c581fbc5f52b0f7ab2a8a8d"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face99_exact_selector_point.md",
+      "bytes": 4324,
+      "sha256": "c5663c9f7b23e2420c632fc6c0dfa244ab48548d42380c43012cf617e2b2701e",
+      "git_blob": "dd977ad66ac0d55afade8fcf106bedf06a4c3838"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_class_integer_preparation.md",
+      "bytes": 7625,
+      "sha256": "fa1e8299ac4d843ff736cd859942763f9c51e9acf165fe6cf6fb53f72748986c",
+      "git_blob": "3db6cf6f9e83a9e43ce6f173e85c63908263ce17"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_class_integer_result.md",
+      "bytes": 3206,
+      "sha256": "99c4d60fd2f266a0bca11dfe152c1566e85b0588c434f6b1ccc106faf77f3464",
+      "git_blob": "5560d346b756442b82eed8c343487a31874e79a5"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_scalar_flag_span.md",
+      "bytes": 4914,
+      "sha256": "ecc39662805c810d68a4a132d1ae7fdcba7cfe7cd24b2ea81b4d75e3be4c1955",
+      "git_blob": "0a05ed64346519ea72b4e3b2985b622ff6577bc4"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_six_vertex_projectors.md",
+      "bytes": 6560,
+      "sha256": "a95ae825a24f614a4c61f3ac8fe2dc3f2044739d7844820311165644f5c958e6",
+      "git_blob": "9d57bfe3cfdb1745ea12657de4c6ccb9e844df83"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_six_vertex_result.md",
+      "bytes": 5118,
+      "sha256": "196be8fc89adf29c239cc8fc65af46d8088124f96ffe2f61bcc45bbb8a0a1abb",
+      "git_blob": "420715c65ce39ae48551f23d2a641e2d985d4b33"
+    },
+    {
+      "path": "research/root_prism_free_f0_edge_motif_independent_audit.md",
+      "bytes": 3117,
+      "sha256": "2f7557f41efbb5a2b09428f526d1cd1c75354ec914a84af38c0b039a1acfa416",
+      "git_blob": "45b582685f47fb19b6795e7fe8f726339f3deb20"
+    },
+    {
+      "path": "research/root_prism_free_f0_edge_motifs.md",
+      "bytes": 6590,
+      "sha256": "eb8c30fa7cd1fa7de58a901e90c504a0cc4370235433c02986d8e315a0412999",
+      "git_blob": "bd1064c2da858f597dbd659e4fd4dd3587c0f32d"
+    },
+    {
+      "path": "research/root_prism_free_f0_full_core_edge_negative_certificate.md",
+      "bytes": 3686,
+      "sha256": "d7facee09b20efa341e4a79b75f0bcafdafa0b3ad1fd4ecce1c74aa9dba42925",
+      "git_blob": "36774ecf9759ffcf4d327006998043a4e8acc870"
+    },
+    {
+      "path": "research/root_prism_free_f0_full_core_schur.md",
+      "bytes": 7144,
+      "sha256": "fc803806e97f641ab29bbcb9c93334a54d709d8956f3c991cf32e4f3ae63643f",
+      "git_blob": "7d6dba5508bb101d1b18e1bae807730b61545145"
+    },
+    {
+      "path": "research/root_prism_free_f0_full_core_schur_cuts.md",
+      "bytes": 8141,
+      "sha256": "79670bc885365660fce1a017dafd2b5bbfc50757fd617f823163f49e16228817",
+      "git_blob": "178eabf8d79130e0364f6714e9a6f28d7f75a109"
+    },
+    {
+      "path": "research/root_prism_free_f0_full_core_schur_scan01.md",
+      "bytes": 3737,
+      "sha256": "99c8941c61aaed716820bbec29b553ff940dd7ba6e0e07919d9a6e8404434e56",
+      "git_blob": "952022ce33188d58f98a3ed76311b98b6e5da411"
+    },
+    {
+      "path": "research/root_prism_free_f0_graph_schur_cuts.md",
+      "bytes": 10257,
+      "sha256": "e78bff4ad0c02a6d9ae82c9eabbaa35cd7e9811a8ac3527ec0b99dbb98c64fba",
+      "git_blob": "dc9166115256933bf61dde3dd52fc04e4302f89d"
+    },
+    {
+      "path": "research/root_prism_free_f0_graph_schur_scan01.md",
+      "bytes": 4903,
+      "sha256": "8c739fd9688b3ce81d84998d0386298c95bd780e79a3e91003df197d3b9851b2",
+      "git_blob": "684dab5a9394d92bfb9d07b9c79f7fd9c4a11cda"
+    },
+    {
+      "path": "research/root_prism_free_f0_three_vertex_prism_cuts.md",
+      "bytes": 4682,
+      "sha256": "fed4293d572dfdddd0de174dfa85c865eb537782a734d293e86f79ba240009b1",
+      "git_blob": "3e252d6e17b572c81a80942be5e3180700045d45"
+    },
+    {
+      "path": "research/session-ab2f.md",
+      "bytes": 77701,
+      "sha256": "070fd640e3f93d8347ed11430ef23a5139c8a9525485ea40883789a9b7a26ed5",
+      "git_blob": "b8ed1a3d0ecb1f99735f213bb368c43954649379"
+    }
+  ],
+  "file_count_excluding_manifest": 222,
+  "bytes_excluding_manifest": 31474398,
+  "publication_maps": [
+    "experiments/logs/grids-and-triangles/rook-case4-face99-basis-git-blobs.json",
+    "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-git-blobs.json",
+    "experiments/logs/root-prism-free/f0-graph-schur-preparation-git-blobs.json",
+    "experiments/logs/root-prism-free/f0-graph-schur-cuts-scan01-git-blobs.json",
+    "experiments/logs/root-prism-free/f0-full-core-schur-preparation-git-blobs.json",
+    "experiments/logs/root-prism-free/f0-full-core-schur-cuts-scan01-git-blobs.json",
+    "experiments/logs/root-prism-free/f0-edge-negative-and-motif-independent-git-blobs.json",
+    "experiments/logs/moments-and-counts/order10-triangle-class-integer-artifacts.json",
+    "experiments/logs/moments-and-counts/order10-six-root-vertex-artifacts.json"
+  ]
+}

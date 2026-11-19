@@ -1,0 +1,70 @@
+{
+  "status": "RUNNING: owned proof-enabled child",
+  "source_hashes": {
+    "complement_rook_35core_case0004_coordinate_cover_cadical.py": "1921f71964795d819e0369c9679dc1526df97c29bb1920a932c7ca449ba3de25",
+    "complement_rook_35core_case0004_coordinate_cover_overlay.py": "5597089c00a15f72927f31c8b05f5a6bed1198a0d7ebc16aacaeb6cd39cb1c4a",
+    "complement_rook_35core_case0004_coordinate_cover_query.py": "eb352386f55c5a1fd6ddb9c692ad934d8eef87904c00e86122172dc1ebc1f9d8",
+    "complement_rook_35core_case0004_coordinate_covers.py": "f4692deb00982e7f3a3153faafc2cc6084db0c5827ff12d11beaf5e3d493357a",
+    "complement_rook_35core_case0004_intrinsic_rows.py": "24eb86e47e6f5a741721fe9174e7d3762bc74edd290c89d489dd5ddedb900c11",
+    "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+    "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "rook_case4_face99_boolean_overlay.py": "906a2cab0dcb6b23b6c35a9f0cd6a63a80b3dae27d8ca935892e37f2a0f89918",
+    "rook_case4_face99_boolean_query.py": "b47b9c962cb62dd367dde4ddbaa37cc08d18c39ea33e4aeeaba3be83d84a8fd9",
+    "rook_case4_transportation_seed.py": "9eedacb4b62db8ad7058e291d04f83141fca306971ed278a58548ead4cd1e8a1",
+    "rook_case4_transportation_short_faces.py": "dd760f7943df8fee0ca1c7c0ef8343085d5b959f4f9def2c3d8c55b7963976b9",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "preparation_sha256": "561bd87e8dd3befde4e5d7e2c0b7f06e56955ee76d5297dbce3ba1da3f3cc664",
+  "production_solve_calls": 1,
+  "assumptions": [],
+  "limits": {
+    "production_queries": 1,
+    "automatic_retries": 0,
+    "owned_child_wall_seconds_including_imports_bootstrap_solve_and_export": 180,
+    "direct_DRAT_seconds": 60,
+    "cold_DRAT_seconds": 60,
+    "checker_timeout_grace_seconds": 5,
+    "tiny_DRAT_seconds": 10,
+    "child_address_space_bytes": 3221225472,
+    "child_single_file_hard_bytes": 268435456,
+    "accepted_binary_proof_bytes": 67108864,
+    "accepted_text_proof_bytes": 134217728,
+    "retained_CNF_bytes": 134217728,
+    "retained_proof_bytes": 134217728,
+    "retained_distinct_input_clauses": 250000
+  },
+  "partial_proof_accepted": false,
+  "CNF_sha256": "f3467d02ca6763391668c0cdac0a395dab23688d831b25107fcf04ea1c94ac22",
+  "runtime": {
+    "backend_name": "cadical300",
+    "backend_class": "Cadical300",
+    "python_sat_version": "1.9.dev23",
+    "python_executable": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "python_wrapper": {
+      "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/pysat/solvers.py",
+      "sha256": "21aaf31fd1e4fa42806b384c2d34674119a1d0f1f8f95338d3ba41e9472891c3"
+    },
+    "native_extension": {
+      "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/pysolvers.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "838ebc59f0c3d266c3d551c52a3c5078f342f1840a70020d1617302a3a311d99"
+    },
+    "native_factory_symbol": "cadical300_new",
+    "native_factory_present": true,
+    "backend_method_source_sha256": {
+      "new": "14709fd24ef784052f910fd13092fa9b5f3b277bf4d7a20f2dae3c44d0a53b95",
+      "add_clause": "ce664929c7b9452647142a487d5aa8d8714dff50003b012cf54da20fc194796c",
+      "solve": "08fbe36aed08cbe2d669ab6385afa648bd48c04712a072828a877d1d0ae98660",
+      "get_model": "b0af04cbfc0ed4a316d465066a1202cd5c940d3d69d95494e7565da88437bb69",
+      "get_proof": "f74f79d0ef29defe1244ab23fc2bb88364f2994c98b0ee8b45ccafea4d1d2e62",
+      "interrupt": "45972179561aea6c693897614ce32b5bdb55da7473d824a2317671ae41dedbc5"
+    }
+  },
+  "backend": "cadical300",
+  "bootstrap_clauses": 439689,
+  "bootstrap_seconds": 6.8358193249951
+}

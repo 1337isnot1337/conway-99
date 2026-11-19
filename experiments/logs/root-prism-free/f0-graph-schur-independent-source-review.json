@@ -1,0 +1,92 @@
+{
+  "schema": "f0-full480-graph-schur-independent-source-review-v1",
+  "status": "PASS: mathematical derivation and complete source review; no production calculation repeated",
+  "reviewer": "independent_sets",
+  "inputs": {
+    "experiments/workspace/root_prism_free_f0_graph_schur_kernels.py": "5be66e563e53b1efc378c8adbeb39b8ddbf24f4c97077e5d43c728260d9087be",
+    "experiments/workspace/root_prism_free_f0_graph_schur_cuts.py": "45ce5c3cd1dffa1eaef611b4aa31964244d87e2f2c5078b99b417aa4ffb8edb5",
+    "experiments/logs/root-prism-free/f0-graph-schur-kernels01-preparation.json": "371a52a7716dfef4daa941bf1816e55a68881399369319957ca29b04c91c8918",
+    "experiments/logs/root-prism-free/f0-graph-schur-kernels01.json.gz": "65f1ad0d0015a6eff3d97c676fb0e188f57f9dee00e9245758a28bab2069b40d",
+    "experiments/logs/root-prism-free/f0-graph-schur-cuts-preparation01.json": "301bc2e10b79139b14fe3ab79098128c4b3d907c745f3d7536d50da0dfc6e4d5"
+  },
+  "read_scope": {
+    "kernel_source_complete": true,
+    "cut_source_complete": true,
+    "both_preparation_reports_read": true,
+    "subject_import": false,
+    "domain_rebuild": false,
+    "kernel_rebuild": false,
+    "controls_rerun": false,
+    "eigenscan": false,
+    "optimizer": false,
+    "production_cut_arithmetic_replayed": false
+  },
+  "projector_derivation": {
+    "global_matrices": [
+      "27I-9A+J = 63 E_minus4",
+      "44I+11A-2J = 77 E_3"
+    ],
+    "source_family_labels": {
+      "plus": "27I-9A+J",
+      "minus": "44I+11A-2J"
+    },
+    "core": "The 18-vertex principal block K=dI+eC+cJ is positive definite. The source checks positive rational LDL pivots, the symmetry of the stored integer inverse numerator N, and K N = D I with positive D.",
+    "cross": "For signature h_a, u_a=c*1+e*h_a. For a genuine selection z_a, the padded core-to-candidate column is z_a*u_a.",
+    "padded_schur_diagonal": "((d+c)-u_a^T K^-1 u_a)*z_a, using z_a^2=z_a and no self-edge.",
+    "padded_schur_off_diagonal": "(c-u_a^T K^-1 u_b)*z_a*z_b + e*y_ab.",
+    "averaging": "Average padded Schur matrices under the 12 actual core relabelings. x_a=E[z_a], Z_ab=E[z_a*z_b], Y_ab=E[y_ab]. PSD is preserved by averaging; no graph automorphism or equality z_a*z_b=x_a*x_b is imposed.",
+    "integer_coefficients": "Multiplication by positive D gives diagonal_x=(d+c)D-H_aa, off_diagonal_Z=cD-H_ab, Y=eD. H_ab=u_a^T N u_b. The code matches all three formulas.",
+    "actual_constants": {
+      "plus": {
+        "D": 4860,
+        "unsubtracted_diagonal": 28,
+        "off_diagonal_constant": 1,
+        "Y": -43740
+      },
+      "minus": {
+        "D": 3822676,
+        "unsubtracted_diagonal": 42,
+        "off_diagonal_constant": -2,
+        "Y": 42049436
+      }
+    },
+    "rank_scope": "No rank restriction survives or is imposed after averaging."
+  },
+  "domain_and_quotient": {
+    "selectors": 480,
+    "all_unordered_pairs": 114960,
+    "eligible_edges": 68394,
+    "orbits": [
+      42,
+      5805,
+      9742
+    ],
+    "old_variables": 15589,
+    "retained_variables": 15200,
+    "fixed_zero_pair_orbits": 389,
+    "checks": [
+      "Every unordered candidate pair contributes a Z position even when no exterior edge is eligible.",
+      "Eligible Y edges are reconstructed using overlap at most one and both endpoint zero-quota support conditions.",
+      "All 12 selector actions are checked as a group, against the core, signatures, edge domain and pair/edge/selector orbits.",
+      "Quotient coefficients are sums over literal orbit members, consistent with the frozen per-member orbit-value convention; there is no extra orbit division.",
+      "Only the 389 original exact zero pair variables are substituted. All 480 selector positions remain."
+    ]
+  },
+  "cut_and_scan_review": [
+    "literal_coefficients computes the negative of D*v^T*S*v: diagonal -k_aa*v_a^2, eligible Y coefficient -2*e*D*v_a*v_b, and all-pair Z coefficient -2*k_ab*v_a*v_b.",
+    "raw_quotient separately rechecks each orbit sum. A positive integer gcd division preserves the inequality.",
+    "The proposing matrix uses the same kernels. Eigenvectors are only proposals; every retained integer vector is bounded, normalized and checked by a full literal quadratic identity.",
+    "Saved binary64 coordinates are read losslessly as dyadic rationals. A retained gap is an exact rational evaluation at that recorded proposal, without claiming proposal feasibility.",
+    "The two raw quotient coefficient bounds are below 2^53, so integer-to-binary64 conversion followed by a power-of-two scale is exact. Subsequent floating matrix operations are only proposals.",
+    "Replay reconstructs kernels/domain and every retained row/gap without eigendecomposition or optimization.",
+    "Scan ceilings are explicitly cooperative between bounded operations. No retained separator is not a PSD certificate; finite cuts do not establish completion or exclusion."
+  ],
+  "reported_owner_controls_not_repeated": {
+    "rook_masked_schur_identities": 384,
+    "full_domain_literal_quotient_controls": 6,
+    "positive_diagonal_controls": 6,
+    "transport_controls": 24
+  },
+  "conditional_scope": "Necessary for component0 in the globally prism-free and F-free split18+18 case. Other component/alignment remain free. This gate contains no new cut or whole-case conclusion.",
+  "blockers": []
+}

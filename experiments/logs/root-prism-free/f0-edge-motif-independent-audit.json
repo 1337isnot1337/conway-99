@@ -1,0 +1,32 @@
+{
+  "status": "PASS: independent full prism census, F-cycle absence and all literal witnesses",
+  "source_sha256": "469e289b3f3af367ee26b5dcb0c03496af97df313a0adfccf45e47b94030fd76",
+  "subject_sha256": "b9c5556bd503d72d2508bb03eb8d1b6be9ebadb0e0c25a1b79cec9870bc79009",
+  "inputs": {
+    "f0-boolean-fractional-model.json.gz": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782",
+    "f0-second-moments-preparation02.json.gz": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e",
+    "f0-edge-motif-census01.json.gz": "397e8bf110e03a5accb5e6c1f27b2fb5525100acb67427c66669e188e74159d1"
+  },
+  "edge_orbits": 5805,
+  "eligible_edges": 68394,
+  "prism_orbits": 162,
+  "prism_edges": 1884,
+  "F_orbits": 0,
+  "representative_prism_count_histogram": {
+    "0": 5643,
+    "1": 160,
+    "2": 2
+  },
+  "complete_counts_sha256": "c1931f8df3cc13d76c607d2953c79c98fd550073918af267b1a4ff7c480d45e0",
+  "controls": 32,
+  "all12_core_maps_reconstructed_and_group_checked": true,
+  "all1884_literal_witnesses_and_transports_checked": true,
+  "prism_method": "unordered disjoint triangle pairs, cross degree one at all six vertices",
+  "F_method": "independent directed walks of eight-cycle exclusive-neighbor shells",
+  "edge_shell_completeness_proof_reviewed": true,
+  "scope": "Necessary Y zeros under global prism-freeness; no completion or component exclusion.",
+  "subject_imports": 0,
+  "model_rebuilds": 0,
+  "optimizer_calls": 0,
+  "seconds": 6.009232534997864
+}

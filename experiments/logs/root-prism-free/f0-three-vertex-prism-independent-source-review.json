@@ -1,0 +1,27 @@
+{
+  "status": "PASS: independent mathematical and complete source-only review",
+  "reviewer": "independent_sets",
+  "source": "experiments/workspace/root_prism_free_f0_three_vertex_prism_cuts.py",
+  "source_sha256": "8f468ed033b66b61a9c9452ead079f41b6e738d3b9dfaadee476ced49104ce22",
+  "preparation_sha256": "0c05b869a2106957fade6034f0828493325b03f03c596dd9de924a97363d3212",
+  "owner_cold_replay_sha256": "342ea3bf2453c60b819ab66b0f63883bd3e4261730bba0fb8f06cf3a9e3ca5aa",
+  "certificate_gzip_sha256": "b445ad3268cb7016a7a5df07cef9c6fda1a0c7d96fa5a560f897c9449814b194",
+  "certificate_raw_sha256": "f9a760950286af6e297e051dc26f652d3d924926bfea622fbec6570c13902e2d",
+  "scope": "Source and mathematical review only. No subject import, domain/census reconstruction, Boolean controls rerun, point contraction, eigenscan, or optimizer.",
+  "checks": [
+    "An induced triangular prism with exactly three exterior vertices and one exterior edge must place two exterior vertices a,b on one triangle and c on the other. Its unique exterior edge isab. The remaining vertices u,v,w must all lie in the18-component because every one is adjacent to an exterior vertex, while the three central vertices have no exterior neighbors.",
+    "The first triangle identifies u as the unique common core neighbor of the eligible edgeab. The three matching edges then identify v in h_a minus{u}, w in h_b minus{u}, the core edgevw, and h_c={u,v,w}. Since each exterior signature has exactly three core sites, there is no missing larger signature case. The source scans every eligible edge and every such v,w pair, so this exhausts the stated prism family.",
+    "literal_prism reconstructs all fixed induced edges on the six sites, checks two complete triangles and exactly one cross matching edge at each site, and checks that both potential exterior chordsac,bc are forbidden by two known common core neighbors. It therefore does not assume unspecified exterior nonedges.",
+    "Prism-freeness gives y_ab*z_c=0. Together with y_ab<=z_a,z_b and binary selectors, this implies y_ab+z_a*z_c<=z_a and y_ab+z_b*z_c<=z_b. No third-selector moment or product of two edge variables is required.",
+    "Uniformly average each pointwise inequality under the verified core actions. This yields Y_ab+Z_ac<=x_a and Y_ab+Z_bc<=x_b. The orbit variables denote averaged literal moments; no symmetry of the unknown graph is imposed and no orbit-size division is missing.",
+    "The pair_id formula and offset5847 match all114960 selector pairs after42 selector and5805 edge orbits. The original-to-reduced reverse map substitutes only the existing389 proved zero pair variables. Each retained row has the three distinct coefficients(-1,1,1).",
+    "If the edge moment is one of the162 known zero edge orbits, the row follows from pair activation Z_ac<=x_a. If the pair moment is a proved zero, it follows from edge activation Y_ab<=x_a. The dispositions account for every literal row before exact quotient deduplication.",
+    "The saved census arithmetic is consistent:456 known-edge-zero rows plus9684 known-pair-zero rows plus8580 retained literal rows equals2*9360. The715 distinct quotient rows are a necessary family only; no point value enters their construction."
+  ],
+  "limitations": [
+    "Completeness is for visible prisms with three exterior vertices and exactly one exterior edge, not all prism or F motifs.",
+    "The complete eligible-edge domain, core action orbits, and prior zero certificates are frozen dependencies reviewed earlier; this review did not regenerate them.",
+    "Owner census and cold replay were hash-bound but not repeated. No result about feasibility or exclusion is inferred from the preparation."
+  ],
+  "blocking_issues_found": []
+}

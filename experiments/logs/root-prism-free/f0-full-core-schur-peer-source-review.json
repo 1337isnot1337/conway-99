@@ -1,0 +1,50 @@
+{
+  "status": "PASS: independent mathematical and source-only review of full21-core Schur correction and scan adapter",
+  "reviewer": "independent_sets",
+  "scope": "Read-only review. No subject import, core reconstruction, inverse calculation, preparation replay, eigenscan, optimizer, or point contraction was run by this review.",
+  "bindings": {
+    "research/root_prism_free_f0_full_core_schur.md": "fc803806e97f641ab29bbcb9c93334a54d709d8956f3c991cf32e4f3ae63643f",
+    "experiments/workspace/root_prism_free_f0_full_core_schur_audit.py": "0988a97703673a2ef2d6f8afb204e06edba14bb9065c0c2361e5ac79840fb6a9",
+    "experiments/workspace/root_prism_free_f0_full_core_schur_kernels.py": "141392693e8d4b7e140c329cfa4128b8794bd376713558394ef014975e2fc63f",
+    "experiments/workspace/root_prism_free_f0_full_core_schur_cuts.py": "c5489561a99de14cc0c68a3d05dbc8eb1eb3fc17e4a759b4c3d63f8d771f7d8e",
+    "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit.json": "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75",
+    "experiments/logs/root-prism-free/f0-full-core-schur-kernels01-preparation.json": "1ba7cd1795c285b37f9bddc51d0c1b4fbbf5078a7cc18e8c419100bf5bef4797",
+    "experiments/logs/root-prism-free/f0-full-core-schur-cuts-preparation01.json": "a518c165d86e8b93ddfcd49f63ce1744978ee13a44dba9675d207bfeb46e7731",
+    "experiments/logs/root-prism-free/f0-full-core-schur-reuse-control.json": "416c9d905cd9f2a4d80ab0ed63829025965288196f029aa2c60237d77cc52539",
+    "experiments/logs/root-prism-free/f0-full-core-schur-cuts-preparation01-cold-replay.json": "5450f1fe4b61002d58f8926ae92ad48abba9f653b53bfa372cf550973248e919"
+  },
+  "reviewed_surfaces": {
+    "complete_mathematical_note": true,
+    "complete_independent_direct_inverse_audit_source": true,
+    "complete_new_kernel_source": true,
+    "entire_scan_diff_against_previously_reviewed_45ce5c3c_source": true,
+    "saved_preparation_and_reuse_metadata": true,
+    "previous_scan_review": "experiments/logs/root-prism-free/f0-graph-schur-independent-source-review.json"
+  },
+  "mathematical_checks": [
+    "Write f_i=(1/3)1+g_i. Then g_i dot g_j=6 delta_ij-2 and C g_i=0, while C1=3*1. Consequently Kplus acts by18 on constants and27 on fiber contrasts; Kminus acts by41 and44.",
+    "For plus, R_i=-2*1-9*g_i and the constant component of u_a=1-9*h_a is -(1/2)*1. This gives R_i Kplus^-1 u_a=1+3*d_i(a), residual q_i=-3*d_i(a), and triangle Schur18I-6J.",
+    "For minus, R_i=(5/3)*1+11*g_i and u_a=-2*1+11*h_a has constant component -(1/6)*1. This gives R_i Kminus^-1 u_a=-5/41+(11/4)*d_i(a), residual q_i=-77/41-(11/4)*d_i(a), and triangle Schur(33/2)I+(1089/82)J.",
+    "The plus residual lies in the sum-zero plane. The full21 kernel vector is(3,3,3,1,...,1), and every exterior cross vector is orthogonal to it because every h_a has weight3. Any two central vertices give the same compatible correction; no numerical pseudoinverse or missing nullspace condition is used.",
+    "The minus residual block has eigenvalues33/2 on the sum-zero plane and2310/41 on constants. The two additional Schur products are d(a) dot d(b)/2 and77/410+11*d(a) dot d(b)/24.",
+    "For an individual embedding, padding the60 selected exterior vertices to480 selectors produces diagonal z_a and off-diagonal z_a*z_b. Averaging therefore uses x_a on the diagonal and Z_ab off the diagonal. Replacing Z with x*x^T would be incorrect and is not done.",
+    "The Y coefficient remains the original global adjacency coefficient(-9 or11). The correction affects only x and Z, including every diagonal. Both correction matrices are positive semidefinite on a genuine joint-selector moment matrix by the Schur product theorem.",
+    "The note's alternative constant-minus argument is consistent with the literal margins: sum_a h_a=10*1 on the component, each exterior vertex has8 exterior neighbors, and Sminus*1=(462/41)z. Its rank-one subtraction is therefore77/410 times z*z^T before averaging."
+  ],
+  "source_checks": [
+    "The direct audit reconstructs the21-core from frozen data, verifies fibers and degree identities, checks rational LDL positivity for the chosen20/21 principal block, and compares every diagonal/off-diagonal product with both the old saved kernel and the closed correction.",
+    "The new kernel reconstructs the frozen old18 kernel, checks all480 residual vectors, verifies the seven fiber profiles and their49 ordered products per family, and matches the independent primitive integer-kernel hash.",
+    "Every one of the480 diagonal and114960 pair entries receives the correction, followed by exact positive denominator reduction. No signature is removed.",
+    "The new load_state binds both new and old sources, exact certificate bytes, full domain transports, kept variables, and the proposing point/model. It adapts the old inverse_denominator field to the positive common Schur-coefficient denominator only.",
+    "The existing exact extraction/replay machinery is unchanged in the inspected diff. Literal off-diagonal contributions retain factor2, orbit coefficients are sums over literal members, and eliminated389 variables are restored as the existing certified zeros.",
+    "The rational kernel denominators60 and254280 are coefficient denominators, not asserted denominators of the complete inverse. The minus numerator divisor11 is retained explicitly.",
+    "At direction bound1024, the saved raw quotient bounds15904800768 and109617346510848 are below2^53. Exact dyadic conversion and exact integer/dyadic gap acceptance remain valid; numerical spectra are proposals only."
+  ],
+  "limitations": [
+    "Owner controls and cold replay were read and hash-bound, not independently rerun here.",
+    "This review certifies mathematical necessity and source logic only; it does not certify an outcome of a subsequent scan.",
+    "No infeasibility, full-PSD feasibility, graph existence, or strict independence from all previous averaged constraints is claimed.",
+    "The theorem remains conditional on the fixed component-zero, globally prism-free and F-free split18+18 branch. The second component and fiber alignment remain free."
+  ],
+  "blocking_issues_found": []
+}

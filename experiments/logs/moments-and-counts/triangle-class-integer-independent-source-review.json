@@ -1,0 +1,23 @@
+{
+  "status": "PASS: read-only mathematical and complete preparation-source review",
+  "reviewer": "independent_sets",
+  "subject": "experiments/workspace/triangle_class_integer_preparation.py",
+  "expected_source_sha256": "edc1c76522a4925f8bdd22575d918f7eb995682c4f9b0c10ada80d48b89afca7",
+  "scope": "Complete source read only. No subject import, tensor enumeration, reduction, controls rerun, count-point contraction, or optimizer.",
+  "checks": [
+    "For each root vertex v, the full point-star triangle count is7. Triangles meeting the root exactly at v number7-deg_H(v)+t_H(v), since root neighbors occupy deg_H(v)-t_H(v) of those seven triangles.",
+    "For v distinct from w, every exterior common neighbor of v,w belongs to the unique triangle on its edge to v. Conversely that triangle contributes exactly one exterior common neighbor: two would give an adjacent triangle edge two common neighbors. Thus the partition quota is2-A_vw-(A_H^2)_vw with no multiplicity factor.",
+    "An internal triangle class is constantly1. The upper bounds subtract all other such constants from the relevant partition quota. A class containing two root vertices is binary by the unique triangle on their edge; a class with an outside mask of size at least3 is also binary because that vertex is unique and its incident triangle edge fixes the third vertex.",
+    "The two-coordinate sum and difference intervals use valid endpoint sums, shared partition quotas, and literal zero products. The last permits the maximum of individual upper bounds for a sum because the two nonnegative class counts cannot both be positive.",
+    "For integer z, (z-k)(z-k-1) is nonnegative. polynomial() expands the exact second moment with factor2 on off-diagonal entries, the signed first-moment term, and the correctly normalized labelled root mass.",
+    "Constant-coordinate translations and reflections preserve the polynomial. The reflection shift c-k-1 is correct for z=c-n. Omitting shifts outside the proved integer interval loses no condition because those polynomials are automatically nonnegative there.",
+    "Endpoint redundancy uses a saved representation of z-L or U-z as a nonnegative integer combination of class counts. The factorial moment R(R-1) has nonnegative induced coefficients, and the difference from the target polynomial is separately verified under the exact extension reduction.",
+    "Classifications by zero or nonnegative literal/reduced coefficients are sound. A remaining reduced candidate is divided only by a positive coefficient gcd. No sign reversal or rounded reduction is used.",
+    "The source verifies all first and multiplied partition identities against the frozen order-nine reduction, preserves all1296 classes and all signed supports of size at most two, and records partial coverage if preparation fails. No count-point value enters preparation."
+  ],
+  "limitations": [
+    "The frozen tensor normalization and reduction are dependencies; this review does not independently reproduce their coefficient arrays.",
+    "The reported owner query and cold replay are outside this source-only gate. No negative or nonnegative point outcome is certified here."
+  ],
+  "blocking_issues_found": []
+}

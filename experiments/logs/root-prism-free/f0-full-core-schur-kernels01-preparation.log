@@ -1,0 +1,101 @@
+{
+  "status": "PASS: full21-core Schur kernels prepared",
+  "source_sha256": "141392693e8d4b7e140c329cfa4128b8794bd376713558394ef014975e2fc63f",
+  "certificate_file_sha256": "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1",
+  "certificate_raw_sha256": "a963a88606a9fad78576d711f6ef7bf67eb03032176cebc2af5af700ea7c6708",
+  "scope": {
+    "all480_selectors_retained": true,
+    "fixed_zero_pair_orbits": 389,
+    "component": 0,
+    "split_shell": "18+18",
+    "global_prism_and_F_zero": true,
+    "other_component_and_alignment_free": true,
+    "per_embedding_Schur_before_averaging": true,
+    "plus_uses_positive20core_with_compatible21st_row": true,
+    "minus_uses_positive21core": true,
+    "no_graph_automorphism_assumption": true,
+    "proposing_point_feasibility_assumed": false,
+    "optimizer_calls": 0,
+    "point_contractions": 0,
+    "eigendecompositions": 0
+  },
+  "families": [
+    {
+      "family": "plus",
+      "Schur_coefficient_denominator": 60,
+      "common_numerator_divisor": 1,
+      "denominator_before_reduction": 4860,
+      "positive_reduction_factor": 81,
+      "Y": -540,
+      "correction_constant": "0",
+      "correction_dot_coefficient": "1/2",
+      "primitive_kernel_sha256": "91017b1ad1ea6ff3433e91030586ec820f939a158f8cf3aab0cbf77e4ef574ed",
+      "independent_direct_inverse_audit_matched": true,
+      "full_entries_checked": 115440,
+      "all12_actions_verified": true,
+      "maximum_vector_entry": 1024,
+      "raw_quotient_coefficient_bounds": {
+        "x": 15577645056,
+        "Z": 15904800768,
+        "Y": 13589544960,
+        "all": 15904800768
+      },
+      "bound_bits": 34,
+      "primitive_quotient_coefficient_bounds": {
+        "x": 15577645056,
+        "Z": 15904800768,
+        "Y": 13589544960,
+        "all": 15904800768
+      },
+      "proposing_matrix_positive_dyad_scale": 2048,
+      "diagonal_range": [
+        746,
+        1238
+      ],
+      "pair_range": [
+        -677,
+        577
+      ],
+      "diagonal_correction_applied": true
+    },
+    {
+      "family": "minus",
+      "Schur_coefficient_denominator": 254280,
+      "common_numerator_divisor": 11,
+      "denominator_before_reduction": 114680280,
+      "positive_reduction_factor": 451,
+      "Y": 2797080,
+      "correction_constant": "77/410",
+      "correction_dot_coefficient": "11/24",
+      "primitive_kernel_sha256": "3ec5835de875dc50cb9f349deb2bbd9bd16457657917b2e267a444d38e642b3d",
+      "independent_direct_inverse_audit_matched": true,
+      "full_entries_checked": 115440,
+      "all12_actions_verified": true,
+      "maximum_vector_entry": 1024,
+      "raw_quotient_coefficient_bounds": {
+        "x": 109617346510848,
+        "Z": 74489480085504,
+        "Y": 70390822993920,
+        "all": 109617346510848
+      },
+      "bound_bits": 47,
+      "primitive_quotient_coefficient_bounds": {
+        "x": 9965213319168,
+        "Z": 6771770916864,
+        "Y": 6399165726720,
+        "all": 9965213319168
+      },
+      "proposing_matrix_positive_dyad_scale": 16777216,
+      "diagonal_range": [
+        7351894,
+        8711604
+      ],
+      "pair_range": [
+        -2959946,
+        1577004
+      ],
+      "diagonal_correction_applied": true
+    }
+  ],
+  "seconds": 13.777166068000952
+}

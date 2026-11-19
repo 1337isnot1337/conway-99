@@ -1,0 +1,40 @@
+{
+  "status": "PREPARED_EXACT_INTEGER_TRIANGLE_CLASS_QUERY_NO_POINT_EVALUATION",
+  "source_path": "experiments/workspace/triangle_class_integer_query.py",
+  "source_sha256": "9e80735b2984049adcb0f851e246e481ed433de9e576d3803b108dbc8c4c0f38",
+  "bindings": {
+    "domain_source": "edc1c76522a4925f8bdd22575d918f7eb995682c4f9b0c10ada80d48b89afca7",
+    "domain_preparation": "95a5755cd76cb3b213397405a62cb56d6dc14a9f0646fcaaced2cd8b71f569a8",
+    "domain_model_raw": "6cae28c70273af79ea484acb1d8ae8e827696360bee5dfa73956cf25811bfc81",
+    "domain_model_gzip": "b85aff09c1e53965d3ec548b8a2d3cdc194bd85fb8eb7c97d4a819aa07306c60",
+    "scalar_model_raw": "88430ae5002742a0551c555a0798c07684c730932ee1d546864bf170105b76bd",
+    "scalar_model_gzip": "56620a3a04a298073ebd9c7988e6579805ceb997c1b1814b79f846767a028992",
+    "point": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+  },
+  "domain_directory": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01",
+  "scalar_model": "experiments/logs/moments-and-counts/triangle-all-five-vertex-preparation01/model.json.gz",
+  "point_path": "experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json",
+  "complete_roots": 21,
+  "classes": 1296,
+  "coordinate_and_signed_pair_vectors": 127296,
+  "explicit_integer_shifts": 366356,
+  "all_other_integer_shifts_covered_by_exact_minimizer_and_bounds": true,
+  "distinct_primitive_core_forms": 26289,
+  "negative_examples_limit": 64,
+  "all_negative_vector_locations_preserved": true,
+  "arithmetic": "Python integers; no floating point, eigensystem or optimizer",
+  "controls": {
+    "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query-controls.json",
+    "sha256": "3b19c592bec43d5ddd3cd59ff100dc9d07e97243a1591fbe8e6e2e525953f66c",
+    "cases": 2698
+  },
+  "limits": {
+    "seconds": 30,
+    "workers": 1,
+    "point_queries": 1
+  },
+  "cold_replay_recontracts_frozen_scalar_tensors": true,
+  "fresh_literal_product_replay_required_for_any_separator": true,
+  "count_point_loaded": false,
+  "point_query_performed": false
+}

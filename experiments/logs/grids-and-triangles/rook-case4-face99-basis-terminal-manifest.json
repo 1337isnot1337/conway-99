@@ -1,0 +1,92 @@
+{
+  "schema": "rook-case4-face99-exact-selector-point-terminal-v1",
+  "status": "PASS: complete exact fractional selector point; case4 open",
+  "source_sha256": "1cbeb11b23e0033fa23d10ce24aedf1585ad0119d0433f296febf722231a67b6",
+  "linear_solve_calls": 1,
+  "optimizer_calls": 0,
+  "exact_linear_solve_seconds": 0.1347552990046097,
+  "owned_child_elapsed_seconds": 10.985103370003344,
+  "independent_process_replay_seconds": 9.561341610002273,
+  "common_denominator": "1661041997",
+  "positive_t_numerator": "17835088",
+  "maximum_selector_numerator": "1031155712",
+  "positive_original_selectors": 1115,
+  "proved_zero_original_selectors": 99,
+  "original_selectors": 1214,
+  "population": 64,
+  "full_extended_rows": 169050,
+  "original_native_rows": 2271,
+  "original_coordinate_covers": 178533,
+  "exact_point_optimality_claimed": false,
+  "binary_incidence_or_graph_claimed": false,
+  "further_coordinate_zero_faces_possible_in_this_real_relaxation": false,
+  "input_dependency_scope": "Prior face99 model, numerical terminal and full cold replay are immutable dependencies already listed in the checkpoint53 map; they are not duplicated here.",
+  "files": [
+    {
+      "path": "experiments/workspace/rook_case4_face99_basis_reconstruction.py",
+      "bytes": 19910,
+      "sha256": "1cbeb11b23e0033fa23d10ce24aedf1585ad0119d0433f296febf722231a67b6",
+      "expected_git_blob": "1c162bad9dfd90abc638acb72fdf0ba1a76473cd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-preparation01/preparation.json",
+      "bytes": 2471,
+      "sha256": "e68a6a46bd38e6bad345eaa80e5216424e065df37d6a9038e09b08309340877e",
+      "expected_git_blob": "0cff746087f9ac44cf11322d79e72059ca7b95a6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-preparation01/proposal.json.gz",
+      "bytes": 25470,
+      "sha256": "58a7bd9e9e743bbf62edf80bc4ab2bfd8e5d15fb1ad86de41ac296f8cae2057f",
+      "expected_git_blob": "530ae6ce1ca42333ff97125112b278e4c3d8bdc1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-preparation01.log",
+      "bytes": 2471,
+      "sha256": "e68a6a46bd38e6bad345eaa80e5216424e065df37d6a9038e09b08309340877e",
+      "expected_git_blob": "0cff746087f9ac44cf11322d79e72059ca7b95a6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/result.json",
+      "bytes": 2106,
+      "sha256": "3b3a27f53eb68b568c912e94d26902aa50bdca22e1e5b290afe80dd085da24f0",
+      "expected_git_blob": "b0b32c686417fc470a933465bebf6947e5e368b6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/child-result.json",
+      "bytes": 2128,
+      "sha256": "e75c387d3cbff121cc62168e960cc5aa2b9a3c7450eb72bf776c2391d7cee50e",
+      "expected_git_blob": "953854f5fa34856f32425537a00fc5ff626abdcf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/child.stdout.log",
+      "bytes": 2128,
+      "sha256": "e75c387d3cbff121cc62168e960cc5aa2b9a3c7450eb72bf776c2391d7cee50e",
+      "expected_git_blob": "953854f5fa34856f32425537a00fc5ff626abdcf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/candidate.json",
+      "bytes": 40273,
+      "sha256": "0b627484317e65562500fbbbbd594e4a95dbfa809576fae52f6c7ccdbe7191e7",
+      "expected_git_blob": "87a50eedcb89e89ebf43576edb106c109d6064e9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01-replay.json",
+      "bytes": 2212,
+      "sha256": "2804da9ac0e976d7dc566b3be9cabef861ed24727221db72d4fc5da26f3a438d",
+      "expected_git_blob": "4cc4074880ab78999a1b1744794d7e0b2049da4b"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face99_exact_selector_point.md",
+      "bytes": 4324,
+      "sha256": "c5663c9f7b23e2420c632fc6c0dfa244ab48548d42380c43012cf617e2b2701e",
+      "expected_git_blob": "dd977ad66ac0d55afade8fcf106bedf06a4c3838"
+    }
+  ]
+}

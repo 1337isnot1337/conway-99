@@ -1,0 +1,285 @@
+{
+  "schema": "conway99.triangle-class-integer-artifacts.v1",
+  "status": "COMPLETE_EXACT_INTEGER_FAMILY_QUERY_AND_COLD_REPLAY",
+  "repository": "1337isnot1337/conway-99",
+  "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "query_source_sha256": "9e80735b2984049adcb0f851e246e481ed433de9e576d3803b108dbc8c4c0f38",
+  "query_seconds": 3.0555555679966346,
+  "replay_seconds": 4.572361952996289,
+  "totals": {
+    "shift_I": 72408,
+    "shift_C": 195429,
+    "shift_F": 69868,
+    "vectors": 127296,
+    "shifts": 366356,
+    "negative_shifts": 0,
+    "zero_shifts": 14234,
+    "positive_shifts": 352122,
+    "negative_vectors": 0,
+    "shift_Z": 10326,
+    "shift_O": 15394,
+    "shift_E": 1829,
+    "shift_T": 1102
+  },
+  "all_21_roots_and_1296_classes_retained": true,
+  "all_integer_shifts_covered_for_recorded_vectors": true,
+  "optimizer_called": false,
+  "graph_existence_resolved": false,
+  "result_archive": {
+    "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01.json.gz",
+    "sha256": "9c940934bfbad7f3930a58b8e9658fd620eb020e437c130b64124b255d7b1f03",
+    "raw_path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01.json",
+    "raw_sha256": "f9aa39b03fea725a6bc5d09fa2f7e196e51a6152bd4a6271554defebec321d0e",
+    "raw_bytes": 11600516,
+    "decompress_before_unchanged_replay": true
+  },
+  "file_count": 35,
+  "files": [
+    {
+      "path": "experiments/workspace/triangle_class_integer_preparation.py",
+      "bytes": 19452,
+      "sha256": "edc1c76522a4925f8bdd22575d918f7eb995682c4f9b0c10ada80d48b89afca7",
+      "git_blob_sha": "55a4ff5a510b66091e4fc7d35b1f52dafd60ba27",
+      "blob_sha": "55a4ff5a510b66091e4fc7d35b1f52dafd60ba27"
+    },
+    {
+      "path": "experiments/workspace/triangle_class_integer_query.py",
+      "bytes": 13658,
+      "sha256": "9e80735b2984049adcb0f851e246e481ed433de9e576d3803b108dbc8c4c0f38",
+      "git_blob_sha": "6bd46b19f90c7b508aaffc2771d7104ac0477759",
+      "blob_sha": "6bd46b19f90c7b508aaffc2771d7104ac0477759"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_class_integer_preparation.md",
+      "bytes": 7625,
+      "sha256": "fa1e8299ac4d843ff736cd859942763f9c51e9acf165fe6cf6fb53f72748986c",
+      "git_blob_sha": "3db6cf6f9e83a9e43ce6f173e85c63908263ce17",
+      "blob_sha": "3db6cf6f9e83a9e43ce6f173e85c63908263ce17"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_class_integer_result.md",
+      "bytes": 3206,
+      "sha256": "99c4d60fd2f266a0bca11dfe152c1566e85b0588c434f6b1ccc106faf77f3464",
+      "git_blob_sha": "5560d346b756442b82eed8c343487a31874e79a5",
+      "blob_sha": "5560d346b756442b82eed8c343487a31874e79a5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/model.json.gz",
+      "bytes": 1104673,
+      "sha256": "b85aff09c1e53965d3ec548b8a2d3cdc194bd85fb8eb7c97d4a819aa07306c60",
+      "git_blob_sha": "af17d89257ef2dd17422096ea0d656aa17257767",
+      "blob_sha": "af17d89257ef2dd17422096ea0d656aa17257767"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/preparation.json",
+      "bytes": 2000,
+      "sha256": "95a5755cd76cb3b213397405a62cb56d6dc14a9f0646fcaaced2cd8b71f569a8",
+      "git_blob_sha": "50416e65dd259fe493a7c9a209e4eb76218dbdb3",
+      "blob_sha": "50416e65dd259fe493a7c9a209e4eb76218dbdb3"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-17.json.gz",
+      "bytes": 195695,
+      "sha256": "2a0464eaf661183fd39d2237cbb474e6c9f0ddd339a741e9e7bee7fccc5d09ed",
+      "git_blob_sha": "049ed4dd643704e208b74c9510e4bbe535885cac",
+      "blob_sha": "049ed4dd643704e208b74c9510e4bbe535885cac"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-18.json.gz",
+      "bytes": 149026,
+      "sha256": "1b27c6e871bbdcd7963ba7da4b263256c84d8e2b851f69d9ccea89c571da4e11",
+      "git_blob_sha": "2fd98794fb6800ceef2be09cee3095da371a037a",
+      "blob_sha": "2fd98794fb6800ceef2be09cee3095da371a037a"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-19.json.gz",
+      "bytes": 73591,
+      "sha256": "0bd99dea6f43bb1954bf1987124a60efc0e0b5dec2f8ac412d859c98bb5921fe",
+      "git_blob_sha": "df8903f2d839224420530297bd81eb526210f086",
+      "blob_sha": "df8903f2d839224420530297bd81eb526210f086"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-20.json.gz",
+      "bytes": 24888,
+      "sha256": "47ebcfbdc607a80b313a9423afce357444af4f0c92110899f46761f7e5525345",
+      "git_blob_sha": "dba034f35aecfbb8965c79496545113214f65cb4",
+      "blob_sha": "dba034f35aecfbb8965c79496545113214f65cb4"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-21.json.gz",
+      "bytes": 4737,
+      "sha256": "b2b36ade142d8878ba8784e95de83d0e19498c8a55b76dca359d753832c06484",
+      "git_blob_sha": "31084d67ab73a3084c8d0de0051c0e3a7e0993d8",
+      "blob_sha": "31084d67ab73a3084c8d0de0051c0e3a7e0993d8"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-22.json.gz",
+      "bytes": 77346,
+      "sha256": "4a74a7e62f4c61210a9c844f94de9dbfeb4e07700a52404fb7c6b310ecc5a2e0",
+      "git_blob_sha": "d4fab4ed2468675ae75607447d26cb4d3f061e96",
+      "blob_sha": "d4fab4ed2468675ae75607447d26cb4d3f061e96"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-23.json.gz",
+      "bytes": 41521,
+      "sha256": "2491d733af9e65269a74a1fdd868dddb3aff1ac1863a212f49888cbaffb77022",
+      "git_blob_sha": "6e8497c8276f64863256dac9038bce9e1c6a86f5",
+      "blob_sha": "6e8497c8276f64863256dac9038bce9e1c6a86f5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-24.json.gz",
+      "bytes": 31610,
+      "sha256": "5eacb81aefdde8824a879fee212c3bdc44157b894b1febf2e3a61630e0bb5a63",
+      "git_blob_sha": "c1d2e3bd6980844c7d1923994ce5b203f349afb5",
+      "blob_sha": "c1d2e3bd6980844c7d1923994ce5b203f349afb5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-25.json.gz",
+      "bytes": 12880,
+      "sha256": "bf5cffe07df896e96393a5c69ea5123d68a607ab1081d82d28ed96a49b6ede59",
+      "git_blob_sha": "7b4c399cda283df02ed900b081d088fe49c42df0",
+      "blob_sha": "7b4c399cda283df02ed900b081d088fe49c42df0"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-26.json.gz",
+      "bytes": 19036,
+      "sha256": "2a628af0c0c55506c7a52e7a4a4962404707131b132188df1f0eab36b695979b",
+      "git_blob_sha": "b01b235f98e130f124ffbee3163f1ed67d4423e3",
+      "blob_sha": "b01b235f98e130f124ffbee3163f1ed67d4423e3"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-27.json.gz",
+      "bytes": 14368,
+      "sha256": "b47e21b2c17fe802e6747ada9914d150930fe8f9de22b26f74b3c3e781e56a9f",
+      "git_blob_sha": "e5a9da475be03e11223a1efcc89a907b8900801d",
+      "blob_sha": "e5a9da475be03e11223a1efcc89a907b8900801d"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-28.json.gz",
+      "bytes": 4069,
+      "sha256": "0eec6cb80f619b9567253833391510e349caf46332151f289b8ac579f848adac",
+      "git_blob_sha": "635a20e1405e39021517434455b07ab679d4144f",
+      "blob_sha": "635a20e1405e39021517434455b07ab679d4144f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-29.json.gz",
+      "bytes": 9219,
+      "sha256": "649b3ca929048da01be22eb653e5d4761743495cf1d5f14114c3fcdd29a7c021",
+      "git_blob_sha": "fc7da3a7667f8990878afbebef10e8ad21a79b7c",
+      "blob_sha": "fc7da3a7667f8990878afbebef10e8ad21a79b7c"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-30.json.gz",
+      "bytes": 15185,
+      "sha256": "2f41e8bc148bbc8d4348420e478fa497ff82be12af43cb1d6a2ff4a92e2579e4",
+      "git_blob_sha": "16616b9f86b575104d9b1c7e6226d303f0eebff9",
+      "blob_sha": "16616b9f86b575104d9b1c7e6226d303f0eebff9"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-31.json.gz",
+      "bytes": 3686,
+      "sha256": "722c75825d712b125a00681fb3d304cb49e6d8c333a0a9ed90a0000afb16f3fd",
+      "git_blob_sha": "a7a868aa5441b211a6593345232a4aa893292bac",
+      "blob_sha": "a7a868aa5441b211a6593345232a4aa893292bac"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-32.json.gz",
+      "bytes": 6815,
+      "sha256": "4167ccb25981aab03688e750820d0c7c4942d209af96f2d5faaec750eec1191f",
+      "git_blob_sha": "c8e9e89a0153997e5faf84c27089faaac5718ae5",
+      "blob_sha": "c8e9e89a0153997e5faf84c27089faaac5718ae5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-33.json.gz",
+      "bytes": 6860,
+      "sha256": "66f36a4681a24d1ee2e6f5ba59e1789f31e804031fc6abfad96f89dc3eb7fd69",
+      "git_blob_sha": "0217cab70efe760238a71f1505667566e9e07319",
+      "blob_sha": "0217cab70efe760238a71f1505667566e9e07319"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-34.json.gz",
+      "bytes": 5304,
+      "sha256": "a63c1332939ad9e422de5b3cee80b721b490cce659da70e6c4571dc5be6a52fa",
+      "git_blob_sha": "28c9fa400fdcff423af161d8ee6f4473636ac3f6",
+      "blob_sha": "28c9fa400fdcff423af161d8ee6f4473636ac3f6"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-35.json.gz",
+      "bytes": 2313,
+      "sha256": "3165fac2ea087071d6cb0271a347a055cf0cc3aa71e53e9b6f5bab323556368a",
+      "git_blob_sha": "8cfb1d73f2facc3ad0d12927a96e8bb0e02f5717",
+      "blob_sha": "8cfb1d73f2facc3ad0d12927a96e8bb0e02f5717"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-36.json.gz",
+      "bytes": 5488,
+      "sha256": "5c752c86d74a1e0952c8bbfc124e48080674e93b45405bf1e52db4f065d77997",
+      "git_blob_sha": "1bb82e34b0abfda752b7ebc578ce5b87e5dda781",
+      "blob_sha": "1bb82e34b0abfda752b7ebc578ce5b87e5dda781"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-class-integer-preparation01/root-37.json.gz",
+      "bytes": 1887,
+      "sha256": "3e9f02acd6bc1887d46867ddf6fd09a9af12d7d38f174bb4c214a0364b621b7e",
+      "git_blob_sha": "4efcd3ec1239d2ab7dc4b9346cfb418a8a7892bc",
+      "blob_sha": "4efcd3ec1239d2ab7dc4b9346cfb418a8a7892bc"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-preparation01.log",
+      "bytes": 3677,
+      "sha256": "035f773979d0bcf7323ac117ffa680e57da51ecedc7eb9dc77e3a6b2719f0d96",
+      "git_blob_sha": "7414ca548470dff52f48851efda3eb68cbf73161",
+      "blob_sha": "7414ca548470dff52f48851efda3eb68cbf73161"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query-controls.json",
+      "bytes": 230,
+      "sha256": "3b19c592bec43d5ddd3cd59ff100dc9d07e97243a1591fbe8e6e2e525953f66c",
+      "git_blob_sha": "c3a15343a42629e37137c113fca402dc88a10bd8",
+      "blob_sha": "c3a15343a42629e37137c113fca402dc88a10bd8"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query-controls.log",
+      "bytes": 231,
+      "sha256": "8b581fd356a7e98250b664dc1ada1cbcfd86383a07dc69a37b0fbe0cecaed2bf",
+      "git_blob_sha": "381dfbebcab26ebe317db3f56718c7855f382b47",
+      "blob_sha": "381dfbebcab26ebe317db3f56718c7855f382b47"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query-preparation.json",
+      "bytes": 2132,
+      "sha256": "145d9627302958bc73cae08174d136843deba56d4d637661e9099b76a10096da",
+      "git_blob_sha": "a4e7296f3f817d34f144917e1714e01bd3db4174",
+      "blob_sha": "a4e7296f3f817d34f144917e1714e01bd3db4174"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01-replay.json",
+      "bytes": 1418,
+      "sha256": "e435f9b601106a911edea63793787b1e806cb4fc655bfbb9c41911098348efa4",
+      "git_blob_sha": "d46288174b5a5bc9a270b40167b9fa9604a92e38",
+      "blob_sha": "d46288174b5a5bc9a270b40167b9fa9604a92e38"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01-replay.log",
+      "bytes": 1419,
+      "sha256": "fb2f224a6f8f6551b406fcb8934a382f0ba41a4c08e68ad952e536d882e2085d",
+      "git_blob_sha": "13dfb51426c0acddf1db8817ec227583524e8d7d",
+      "blob_sha": "13dfb51426c0acddf1db8817ec227583524e8d7d"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01.json.gz",
+      "bytes": 405146,
+      "sha256": "9c940934bfbad7f3930a58b8e9658fd620eb020e437c130b64124b255d7b1f03",
+      "git_blob_sha": "d5f5a435b9bfe9c9cf02959456c85e8444ca1224",
+      "blob_sha": "d5f5a435b9bfe9c9cf02959456c85e8444ca1224"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-class-integer-query01.log",
+      "bytes": 2451,
+      "sha256": "37dc96022ff3e21e8d77fe858c3b100cccc73fd67de89494e967b7609468e1c8",
+      "git_blob_sha": "84e4ac87e8b7b4df16d11e5334acc6f622bf7dae",
+      "blob_sha": "84e4ac87e8b7b4df16d11e5334acc6f622bf7dae"
+    }
+  ],
+  "remote_mutations": "Git blobs only; root owns tree, commit, branch and issue updates."
+}

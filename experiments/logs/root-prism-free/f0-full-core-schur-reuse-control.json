@@ -1,0 +1,50 @@
+{
+  "status": "PASS: source-only full21 adapter reuse",
+  "source_sha256": "310c2af2199336c166c57d23706ec092e19577b9fb62f1a1156b40ff51566b96",
+  "parent_sha256": "45ce5c3cd1dffa1eaef611b4aa31964244d87e2f2c5078b99b417aa4ffb8edb5",
+  "subject_sha256": "c5489561a99de14cc0c68a3d05dbc8eb1eb3fc17e4a759b4c3d63f8d771f7d8e",
+  "unchanged_functions": [
+    "sha",
+    "canonical",
+    "save_new",
+    "atomic_result",
+    "read_result",
+    "tick",
+    "primitive_vector",
+    "literal_coefficients",
+    "raw_quotient",
+    "dyadic_row_rule",
+    "cut",
+    "rational_proposal",
+    "expand_old",
+    "literal_quadratic",
+    "exact_violation",
+    "inverse",
+    "psd_ldl",
+    "rook_controls",
+    "full_domain_controls",
+    "limits",
+    "floating_matrix",
+    "scan",
+    "replay",
+    "main"
+  ],
+  "changed_functions_for_direct_review": [
+    "bindings",
+    "load_state",
+    "preparation"
+  ],
+  "only_additional_import": "root_prism_free_f0_full_core_schur_kernels as full_core",
+  "changed_top_level_constants": [
+    "KERNEL_FILE",
+    "KERNEL_FILE_SHA256",
+    "KERNEL_RAW_SHA256",
+    "KERNEL_SOURCE_SHA256"
+  ],
+  "all_other_top_level_AST_equal": true,
+  "kernel_geometry_or_new_binding_mathematics_audited_by_this_control": false,
+  "subject_imports": 0,
+  "model_rebuilds": 0,
+  "optimizer_calls": 0,
+  "eigendecompositions": 0
+}

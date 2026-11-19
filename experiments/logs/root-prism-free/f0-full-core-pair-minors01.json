@@ -1,0 +1,264 @@
+{
+  "status": "COMPLETE_EXACT_TWO_VERTEX_PSD_CENSUS",
+  "source_sha256": "7a035d583f2d2be643a3de98f4f4df4a83c07f5f8c5b62bcb6c9567788702f7f",
+  "inputs": {
+    "kernels": {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-kernels01.json.gz",
+      "sha256": "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1"
+    },
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "moments": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+      "sha256": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    },
+    "reduction": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-reduced-model.json.gz",
+      "sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf"
+    }
+  },
+  "all480_selectors_retained": true,
+  "all114960_pairs_retained": true,
+  "eligible_adjacency_states": 183354,
+  "census": {
+    "plus_nonedge_positive": 114960,
+    "minus_nonedge_positive": 114960,
+    "already_fixed_zero_pairs": 4410,
+    "active_pairs": 110550,
+    "plus_edge_positive": 68382,
+    "minus_edge_positive": 68394,
+    "plus_edge_negative": 12
+  },
+  "minimum_determinants": {
+    "plus": {
+      "nonedge": {
+        "determinant": 98187,
+        "pair": [
+          336,
+          390
+        ],
+        "pair_orbit": 8895,
+        "already_fixed_zero": true
+      },
+      "edge": {
+        "determinant": -33477,
+        "pair": [
+          0,
+          76
+        ],
+        "pair_orbit": 75,
+        "already_fixed_zero": false
+      }
+    },
+    "minus": {
+      "nonedge": {
+        "determinant": 45289065064320,
+        "pair": [
+          342,
+          345
+        ],
+        "pair_orbit": 9231,
+        "already_fixed_zero": true
+      },
+      "edge": {
+        "determinant": 40325434369440,
+        "pair": [
+          11,
+          370
+        ],
+        "pair_orbit": 2572,
+        "already_fixed_zero": false
+      }
+    }
+  },
+  "excluded_states": [
+    {
+      "pair": [
+        0,
+        76
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        1,
+        13
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        4,
+        72
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        5,
+        9
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        16,
+        92
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        20,
+        88
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        91,
+        103
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        95,
+        99
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        154,
+        214
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        158,
+        210
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        203,
+        215
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    },
+    {
+      "pair": [
+        207,
+        211
+      ],
+      "pair_orbit": 75,
+      "eligible_adjacency_states": [
+        0,
+        1
+      ],
+      "rejected_states": [
+        1
+      ],
+      "already_fixed_zero": false
+    }
+  ],
+  "zero_determinant_states": [],
+  "new_active_pair_state_exclusions": 12,
+  "optimizer_calls": 0,
+  "point_loaded": false,
+  "graph_existence_resolved": false,
+  "scope": "Two-by-two principal minors only; no larger PSD or graph feasibility claim."
+}

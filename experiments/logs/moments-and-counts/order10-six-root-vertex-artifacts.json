@@ -1,0 +1,450 @@
+{
+  "schema": "conway99.thirty-six-root-vertex-projector-artifacts.v1",
+  "status": "COMPLETE_FROZEN_PREPARATION_QUERY_AND_COLD_REPLAY",
+  "repository": "1337isnot1337/conway-99",
+  "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "source_sha256": "0749e9850d52949d73eb5ac03ca6111c769accbba15ecd62bd2846e87ea2eaf8",
+  "query_source_sha256": "0382ac1df28bb3ad952dd530057ecb8c69c4d7898ac2ebcc5730a2cf59d053d3",
+  "preparation_status": "COMPLETE_THIRTY_SIX_ROOT_TRIANGLE_KERNEL_AND_SCHUR_PREPARATION",
+  "preparation_seconds": 172.11447084599786,
+  "query_status": "EXACT_ALL_180_SIX_ROOT_TRIANGLE_KERNEL_BLOCKS_PSD",
+  "query_seconds": 27.51139222200436,
+  "replay_status": "PASS_EXACT_THIRTY_SIX_ROOT_TRIANGLE_KERNEL_QUERY_REPLAY",
+  "replay_seconds": 22.48338029599836,
+  "all_30_triangle_containing_roots_and_2374_classes_retained": true,
+  "complete_180_block_coverage": true,
+  "all_62_six_roots_covered": false,
+  "scalar_N_redundancy_recorded_separately": true,
+  "optimizer_called": false,
+  "graph_existence_resolved": false,
+  "result_archive": {
+    "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01.json.gz",
+    "compressed_sha256": "4a6b440cb93b2d123fef2b7b052faff0808d4e4ccb44f20bada3d7d3caad6764",
+    "uncompressed_path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01.json",
+    "uncompressed_sha256": "dfadc5df3b56124e659d989adfac601b3160885217a6823e3b1d86cfccdf3642",
+    "uncompressed_bytes": 35943301,
+    "reproduction": "Decompress the lossless archive to its .json path before using the unchanged replay CLI."
+  },
+  "source_review_not_in_this_frozen_manifest": {
+    "path": "experiments/logs/moments-and-counts/triangle-six-vertex-projectors-independent-source-review.json",
+    "sha256": "0b32b1a2d3e44b7c4b9fcb5f9b10bf739236ad53f98d91be693e481055d5a006"
+  },
+  "file_count": 59,
+  "total_bytes": 24321341,
+  "files": [
+    {
+      "path": "experiments/workspace/triangle_six_vertex_inventory.py",
+      "bytes": 6275,
+      "sha256": "95cf1b286033105ed3ccf6acdf20783fd071dd47a756911815221cf73ccfe5dc",
+      "git_blob_sha": "8a14cc25ca01f0e9c764dfe5ea016e73b4fd6651",
+      "blob_sha": "8a14cc25ca01f0e9c764dfe5ea016e73b4fd6651"
+    },
+    {
+      "path": "experiments/workspace/triangle_six_vertex_projectors.py",
+      "bytes": 19524,
+      "sha256": "0749e9850d52949d73eb5ac03ca6111c769accbba15ecd62bd2846e87ea2eaf8",
+      "git_blob_sha": "2ccc57d5727d3d39f169e79cd4d717fa539b1628",
+      "blob_sha": "2ccc57d5727d3d39f169e79cd4d717fa539b1628"
+    },
+    {
+      "path": "experiments/workspace/triangle_six_vertex_query.py",
+      "bytes": 12913,
+      "sha256": "0382ac1df28bb3ad952dd530057ecb8c69c4d7898ac2ebcc5730a2cf59d053d3",
+      "git_blob_sha": "cd4c5bff18f20374ce99f762394dd14d6d5a2170",
+      "blob_sha": "cd4c5bff18f20374ce99f762394dd14d6d5a2170"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_six_vertex_projectors.md",
+      "bytes": 6560,
+      "sha256": "a95ae825a24f614a4c61f3ac8fe2dc3f2044739d7844820311165644f5c958e6",
+      "git_blob_sha": "9d57bfe3cfdb1745ea12657de4c6ccb9e844df83",
+      "blob_sha": "9d57bfe3cfdb1745ea12657de4c6ccb9e844df83"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_six_vertex_result.md",
+      "bytes": 5118,
+      "sha256": "196be8fc89adf29c239cc8fc65af46d8088124f96ffe2f61bcc45bbb8a0a1abb",
+      "git_blob_sha": "420715c65ce39ae48551f23d2a641e2d985d4b33",
+      "blob_sha": "420715c65ce39ae48551f23d2a641e2d985d4b33"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_scalar_flag_span.md",
+      "bytes": 4914,
+      "sha256": "ecc39662805c810d68a4a132d1ae7fdcba7cfe7cd24b2ea81b4d75e3be4c1955",
+      "git_blob_sha": "0a05ed64346519ea72b4e3b2985b622ff6577bc4",
+      "blob_sha": "0a05ed64346519ea72b4e3b2985b622ff6577bc4"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-projector-inventory.json",
+      "bytes": 16635,
+      "sha256": "0a372fa48833d9dd3d18abd2a44561e8859a3e36a49f6656a15464dfef6268b4",
+      "git_blob_sha": "e9299fec22d52723daa3be4bb672f49c8ce210d2",
+      "blob_sha": "e9299fec22d52723daa3be4bb672f49c8ce210d2"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-construction-preparation.json",
+      "bytes": 951,
+      "sha256": "da9a9f784ce4bd7b717fc47d985b0feed1fc063bccacc0258074092d02ba34bb",
+      "git_blob_sha": "dbab5ac53b161361b0f803012b7f1ff804e84830",
+      "blob_sha": "dbab5ac53b161361b0f803012b7f1ff804e84830"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-preparation01.log",
+      "bytes": 7388,
+      "sha256": "aba3ac1cfe17df82280151cbc0ffe5ba2e37431855ad3f798465840ba19357b0",
+      "git_blob_sha": "0773b7b1a47570546d379a32cd8bec0cd8becec5",
+      "blob_sha": "0773b7b1a47570546d379a32cd8bec0cd8becec5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query-preparation.json",
+      "bytes": 2902,
+      "sha256": "f59236001ec34d07ee41865217c50f5efc1873563060937cf1fea3b24dd9f829",
+      "git_blob_sha": "e3faacd2c415b3d86dbe3a29c709c165a6404079",
+      "blob_sha": "e3faacd2c415b3d86dbe3a29c709c165a6404079"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query-preparation.log",
+      "bytes": 3243,
+      "sha256": "3efe2d89c260bd7c4a11db663792cb5c1ad49e6fd4e797db288308faba56a477",
+      "git_blob_sha": "f83a55df03e18bbe6f65e5302d5719fa76f9fe19",
+      "blob_sha": "f83a55df03e18bbe6f65e5302d5719fa76f9fe19"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01.log",
+      "bytes": 2730,
+      "sha256": "b4991fe68282696b9d37447a3de5963d45a94f3646230813a16f93aab3be23e1",
+      "git_blob_sha": "04d87624020cee93517c8efa4cdb58e88740d1b7",
+      "blob_sha": "04d87624020cee93517c8efa4cdb58e88740d1b7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01.json.gz",
+      "bytes": 5686028,
+      "sha256": "4a6b440cb93b2d123fef2b7b052faff0808d4e4ccb44f20bada3d7d3caad6764",
+      "git_blob_sha": "59f111d603024ef067e522a8fa27ac83a220f34a",
+      "blob_sha": "59f111d603024ef067e522a8fa27ac83a220f34a"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01-replay.json",
+      "bytes": 39297,
+      "sha256": "49ca3c28717270934f0a36618abc648dcbdce4a4bf5db22359583dac3bf276f3",
+      "git_blob_sha": "53af530071c6ee67d63eb439901882a75e95b916",
+      "blob_sha": "53af530071c6ee67d63eb439901882a75e95b916"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-query01-replay.log",
+      "bytes": 39297,
+      "sha256": "49ca3c28717270934f0a36618abc648dcbdce4a4bf5db22359583dac3bf276f3",
+      "git_blob_sha": "53af530071c6ee67d63eb439901882a75e95b916",
+      "blob_sha": "53af530071c6ee67d63eb439901882a75e95b916"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-six-root-vertex-result-summary.json",
+      "bytes": 5770,
+      "sha256": "3d9ebce396352ba10258755bcda61020566ff725df10f10aecaae9919a6568d9",
+      "git_blob_sha": "24e7ebdfbb8d310efa4409098123335ffb7502cd",
+      "blob_sha": "24e7ebdfbb8d310efa4409098123335ffb7502cd"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-0-preparation.json",
+      "bytes": 20162,
+      "sha256": "1fbd0299c57fd6eeff2271df7b0f7b68804d5f37d5c8d72b32c1e4ea0ab76d24",
+      "git_blob_sha": "785a0c4dbe57cf36cc6a3db94a8498e360f102f9",
+      "blob_sha": "785a0c4dbe57cf36cc6a3db94a8498e360f102f9"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-0.json.gz",
+      "bytes": 1171518,
+      "sha256": "a55bca41e62545df2c2028db150b1ffd69989ae04e683d1f373a63097e7f0c54",
+      "git_blob_sha": "5feab941bbc56f7be4ce653517aefcf66af4570f",
+      "blob_sha": "5feab941bbc56f7be4ce653517aefcf66af4570f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-1-preparation.json",
+      "bytes": 27125,
+      "sha256": "f3c53599a961c9d11e88a98fab5e9fa21b969adf6480e71d833c931b29741809",
+      "git_blob_sha": "a434163a7f2fa5189da19a17e32f25cd669f2d52",
+      "blob_sha": "a434163a7f2fa5189da19a17e32f25cd669f2d52"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-1.json.gz",
+      "bytes": 1260759,
+      "sha256": "56671dc76a221c54a406104983275bf3d53fc2991b5a2eb8592d38677d456edf",
+      "git_blob_sha": "63c3d08d36785509b7d35f8cb017448a077c3b7f",
+      "blob_sha": "63c3d08d36785509b7d35f8cb017448a077c3b7f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-2-preparation.json",
+      "bytes": 28356,
+      "sha256": "14efb0ede005fb7e841ec972ddf104a65237bce020da06fd4e1626dfb3e697ed",
+      "git_blob_sha": "c9f5d52142e147139b9709760935b2c26fedb7e9",
+      "blob_sha": "c9f5d52142e147139b9709760935b2c26fedb7e9"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-2.json.gz",
+      "bytes": 1190801,
+      "sha256": "9f6f95d0a1c0d2507f12228823c643897160e855bcd943c8f9ce7b215666aeef",
+      "git_blob_sha": "330c9b4daab5d46a9669e33ad865725664dd3ae6",
+      "blob_sha": "330c9b4daab5d46a9669e33ad865725664dd3ae6"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-3-preparation.json",
+      "bytes": 26679,
+      "sha256": "933ec5c52321f0cdfd2b8ee8225014ae5a334a20ff7f75e57c54fc7c33952465",
+      "git_blob_sha": "a47f1840c20de6a10e46489463af86e063518cc1",
+      "blob_sha": "a47f1840c20de6a10e46489463af86e063518cc1"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-3.json.gz",
+      "bytes": 1253286,
+      "sha256": "b93c6a042dd6ae8aefe793ec189066a80013713335c40ad5731d9e5e75bfb890",
+      "git_blob_sha": "598f232c15068c433a2f6dcf952196962b129626",
+      "blob_sha": "598f232c15068c433a2f6dcf952196962b129626"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-4-preparation.json",
+      "bytes": 29343,
+      "sha256": "6b862f19e1858558fee8ec433f0948cc2964fad2c83a0cfe818871512837814c",
+      "git_blob_sha": "af590fed103242889c9b537190f1298518c4dd8f",
+      "blob_sha": "af590fed103242889c9b537190f1298518c4dd8f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/chunk-4.json.gz",
+      "bytes": 1232940,
+      "sha256": "1a8c8da1a559834b7efae32dab207599009c3001b832325d6e4b8389b7b5c068",
+      "git_blob_sha": "1ba7c9abaccafad0b28af641504faed15c68f139",
+      "blob_sha": "1ba7c9abaccafad0b28af641504faed15c68f139"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/model.json.gz",
+      "bytes": 6090305,
+      "sha256": "865fd8b034387d297ea0bdac4774e5d370c621b46720f241d3733b5b02d34a67",
+      "git_blob_sha": "12cd54a296cf426b8a01f9495ba44c06ff67d591",
+      "blob_sha": "12cd54a296cf426b8a01f9495ba44c06ff67d591"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/preparation.json",
+      "bytes": 5043,
+      "sha256": "34bff87bcb9d5dfae1a76fe858060675f7455dea4ec547501b234a9f31e1556d",
+      "git_blob_sha": "1092d705d524d1abdfea706a05b9770cd7bc4d7e",
+      "blob_sha": "1092d705d524d1abdfea706a05b9770cd7bc4d7e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/progress.json",
+      "bytes": 3917,
+      "sha256": "3824a2ef65f9b5ae20a91f2b50a8a343aaea89f95fd58096991822e861383e46",
+      "git_blob_sha": "0ec1c7b4b5201be28e49264eab5b6eeeaea0deeb",
+      "blob_sha": "0ec1c7b4b5201be28e49264eab5b6eeeaea0deeb"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-50.json.gz",
+      "bytes": 1058656,
+      "sha256": "6a9b5cc72c5263fa9ebc1d3fd3c4948a7a14f72f1b5a624781321d12340eb1e8",
+      "git_blob_sha": "b4111de35c9af2fd57c4f358bce74a3c8ce75c04",
+      "blob_sha": "b4111de35c9af2fd57c4f358bce74a3c8ce75c04"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-51.json.gz",
+      "bytes": 761165,
+      "sha256": "79844834a628559e0e87cc151a5f634b4625f564c3ca20933d28d67c351e47e8",
+      "git_blob_sha": "4e12aad706f956b681c2dd2f3e23efdf03922b90",
+      "blob_sha": "4e12aad706f956b681c2dd2f3e23efdf03922b90"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-52.json.gz",
+      "bytes": 308652,
+      "sha256": "43866db0032f72da5f471e1df4e880651d90008c5f7ab90e344259ee9a30071d",
+      "git_blob_sha": "50083582b40812adab5c5a5a506eff30e0b778b7",
+      "blob_sha": "50083582b40812adab5c5a5a506eff30e0b778b7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-53.json.gz",
+      "bytes": 74718,
+      "sha256": "75841c4137ea0f894cf83f56ca0ce04bd66094260824b8bd68a530a39cc65312",
+      "git_blob_sha": "89bf321bf63e2d514bd7d2b9afcbdc39fdc9b86e",
+      "blob_sha": "89bf321bf63e2d514bd7d2b9afcbdc39fdc9b86e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-60.json.gz",
+      "bytes": 437353,
+      "sha256": "9da67823e13c7c4554f5f1c9645f9e089bca4dcca3994d485351ab3867047378",
+      "git_blob_sha": "3d89c6d10af49f10975e0446b86dad00146583d0",
+      "blob_sha": "3d89c6d10af49f10975e0446b86dad00146583d0"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-62.json.gz",
+      "bytes": 192513,
+      "sha256": "9d81dde572b4561ee269094de1c8dd84db270ab8f561558ec8a66736f86fbafc",
+      "git_blob_sha": "375803811054103473fe4c62851f58954c017d07",
+      "blob_sha": "375803811054103473fe4c62851f58954c017d07"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-67.json.gz",
+      "bytes": 534383,
+      "sha256": "c5ce325d8143bcc2578975f217683b9567e58c50baa708f2a7b388bf45fa2212",
+      "git_blob_sha": "46f7fcfe7ace8a5752066d2b741808bfdb46a715",
+      "blob_sha": "46f7fcfe7ace8a5752066d2b741808bfdb46a715"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-68.json.gz",
+      "bytes": 392195,
+      "sha256": "f7722e8050987b5d76d1a1b0afc1217261ab05b9ab15bdfa7a23cd26a94e39ef",
+      "git_blob_sha": "dc1422535ca928bb19ada06945ebe01181c11066",
+      "blob_sha": "dc1422535ca928bb19ada06945ebe01181c11066"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-69.json.gz",
+      "bytes": 317795,
+      "sha256": "a73d2b5b9007a8f2a1e11330960864ee8112d0d737dafbcafd7e1a32a3e23135",
+      "git_blob_sha": "eb42fdf4d38c248af2a68b52f61a35a0f2202f4e",
+      "blob_sha": "eb42fdf4d38c248af2a68b52f61a35a0f2202f4e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-70.json.gz",
+      "bytes": 170354,
+      "sha256": "5c2d799933aa9b7ca051ffc7339fe0694e5dfaf709eadeca4674ac5a6996a07d",
+      "git_blob_sha": "d34a7190ddbdb9f1c76bc9ca7cdeeaa885ed5d75",
+      "blob_sha": "d34a7190ddbdb9f1c76bc9ca7cdeeaa885ed5d75"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-71.json.gz",
+      "bytes": 151716,
+      "sha256": "5d71180c65d51cb77ed4aa27f03c298eee430a4b91d9b49443b0f700c4df4c47",
+      "git_blob_sha": "3966aad79ab56582733a9d4ed5b1386c08699e8e",
+      "blob_sha": "3966aad79ab56582733a9d4ed5b1386c08699e8e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-72.json.gz",
+      "bytes": 53265,
+      "sha256": "7a69547d34bafd03e51e6e28bd88689239d2207740869aafe7e55127f5f82210",
+      "git_blob_sha": "f87740842309195a1ead941245b125ec337d4cce",
+      "blob_sha": "f87740842309195a1ead941245b125ec337d4cce"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-76.json.gz",
+      "bytes": 140181,
+      "sha256": "2ea3fe5938414e75c78be9e6da5290672f320d1fcaa3fa37c8fff64bac333ea2",
+      "git_blob_sha": "e14edf42d0ed4f9d625a933bdc2edc7d3c137289",
+      "blob_sha": "e14edf42d0ed4f9d625a933bdc2edc7d3c137289"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-77.json.gz",
+      "bytes": 224296,
+      "sha256": "16fb896df988df7dfa46d4cfdcd18112700577c20349410079f32e254f6cf1ab",
+      "git_blob_sha": "cf710b402ba2192a7fd1991b351ff59dffbd95b7",
+      "blob_sha": "cf710b402ba2192a7fd1991b351ff59dffbd95b7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-79.json.gz",
+      "bytes": 65721,
+      "sha256": "ebcbc3a3047e3b938bc27b02c0e6b7381dbd8c0d4ae32aca0f46571dfde5636d",
+      "git_blob_sha": "10c658e1d6dcd0eccc4f70cda51da19db8d86479",
+      "blob_sha": "10c658e1d6dcd0eccc4f70cda51da19db8d86479"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-80.json.gz",
+      "bytes": 233763,
+      "sha256": "0e6c19bdf51ea9a0504619e25c137797285076714c3db48864fa4f2270b29e26",
+      "git_blob_sha": "e956a4a2e4c8df9e2327c330d22fddc5fd38f405",
+      "blob_sha": "e956a4a2e4c8df9e2327c330d22fddc5fd38f405"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-83.json.gz",
+      "bytes": 209469,
+      "sha256": "12c8b79e6872e95576ba8b745087367288a0df5d8936ee52d2b2b4a890b32043",
+      "git_blob_sha": "4f094c33f19b7e2f8db6e96f45e4bc4c511c2d49",
+      "blob_sha": "4f094c33f19b7e2f8db6e96f45e4bc4c511c2d49"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-84.json.gz",
+      "bytes": 156927,
+      "sha256": "053454f8c1c6ea7c3b351d17f6d2404702dd708448d9fc4bcce41f709ac8ecbc",
+      "git_blob_sha": "90657a0a73f31ef8beb9156a3267fc08109e48ae",
+      "blob_sha": "90657a0a73f31ef8beb9156a3267fc08109e48ae"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-85.json.gz",
+      "bytes": 46728,
+      "sha256": "5f20974835c156fa3de7e89acdf5dbfe9bffb8f56d2b2ae14d35b7092281ccd4",
+      "git_blob_sha": "8f70bdb0b13f361e4d57b8be97ba96ebeac045cc",
+      "blob_sha": "8f70bdb0b13f361e4d57b8be97ba96ebeac045cc"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-86.json.gz",
+      "bytes": 144375,
+      "sha256": "e1ef601a31b2646a3e04cc8d1f74597e77e20df70fc632dcacaccad680b29cd1",
+      "git_blob_sha": "7e3f6333a0b9485d81788c6349da71e9df69c467",
+      "blob_sha": "7e3f6333a0b9485d81788c6349da71e9df69c467"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-87.json.gz",
+      "bytes": 86550,
+      "sha256": "2239c2566cc305ea3cfd95113e5319ddcc59844c9224cb4c7b9fc2a07b410830",
+      "git_blob_sha": "56d6229242acbaabefc5cb3f32a53d5bf386ac5f",
+      "blob_sha": "56d6229242acbaabefc5cb3f32a53d5bf386ac5f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-88.json.gz",
+      "bytes": 55190,
+      "sha256": "b0cd4f302e8139c5b7e06d31d47e53100526131828ae354aef504f242dcb360b",
+      "git_blob_sha": "dc9c16175e2e41b22986bddc1e8b7e2c36120850",
+      "blob_sha": "dc9c16175e2e41b22986bddc1e8b7e2c36120850"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-90.json.gz",
+      "bytes": 59605,
+      "sha256": "3b95888cb6f6311ed06592a1c0cae07132ace80d75ee8ae27307a9504aba26c4",
+      "git_blob_sha": "d999ddd21c3122e82b930f40a1f07f0a6c51ab92",
+      "blob_sha": "d999ddd21c3122e82b930f40a1f07f0a6c51ab92"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-93.json.gz",
+      "bytes": 88716,
+      "sha256": "32a40188288f2c59539392fa41ae01f94dac0d66a99b4b7f52936b118243d1cf",
+      "git_blob_sha": "0e5fc8a5d9e28e66dbe0dd5629521c522c801d61",
+      "blob_sha": "0e5fc8a5d9e28e66dbe0dd5629521c522c801d61"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-94.json.gz",
+      "bytes": 25955,
+      "sha256": "8fca3ae0cce0873b8b46dbecb9b0622818b11c38b4ed1beeaa630bcb8eac448f",
+      "git_blob_sha": "df50333aa75300c4b1e2480f2622a77ced38d9bf",
+      "blob_sha": "df50333aa75300c4b1e2480f2622a77ced38d9bf"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-95.json.gz",
+      "bytes": 13461,
+      "sha256": "8237454696b88dfb845a72ba6f6a53f84d1f8ac763c57f33655f89aa6fc71d17",
+      "git_blob_sha": "e6e6b0f138308b411c48537722aad718f88725a5",
+      "blob_sha": "e6e6b0f138308b411c48537722aad718f88725a5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-96.json.gz",
+      "bytes": 51295,
+      "sha256": "340ff138fe74a1319905c5c1c9875b63aec86e22ab1ab74e5a31a82f3f910260",
+      "git_blob_sha": "efce79d8d55ab03c2e65fbe5b0d8ebb9379843ec",
+      "blob_sha": "efce79d8d55ab03c2e65fbe5b0d8ebb9379843ec"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-97.json.gz",
+      "bytes": 44447,
+      "sha256": "eea992003a9e54b05700995af002f65d77dd08c6438136a7ea0e82c1d61f52b3",
+      "git_blob_sha": "768110645d893e192923fbf2af15dc73b3501d8b",
+      "blob_sha": "768110645d893e192923fbf2af15dc73b3501d8b"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-98.json.gz",
+      "bytes": 18715,
+      "sha256": "aba34f586568f16804f4371e5460e19bbba138364e170de6cb264a1698bde49b",
+      "git_blob_sha": "e35fd5610842c3d509b3c5b090ad3f7258465225",
+      "blob_sha": "e35fd5610842c3d509b3c5b090ad3f7258465225"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-six-vertex-preparation01/root-99.json.gz",
+      "bytes": 3403,
+      "sha256": "183c81ce97f8a20f40b4d491b1462668fd8bac93d6b3e7d2d7ffc9f16339e67f",
+      "git_blob_sha": "3d945211faf9d8b84441fbff6bb9b293ade29ad8",
+      "blob_sha": "3d945211faf9d8b84441fbff6bb9b293ade29ad8"
+    }
+  ],
+  "remote_mutations": "Git blob creation only; no tree, commit, ref, issue or shared-document changes."
+}
