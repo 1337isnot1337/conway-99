@@ -496,3 +496,25 @@ their hypotheses permit them; computational exclusions require exact replay.
   exteriors by full triangles. The group census was not replayed here.
   That worker now owns the eight incomplete-grid cores; this branch
   retains the count, complementary-rook, and prism-free matching lanes.
+- Exact prism-containment closure fixes 58 ordinary coordinates and
+  makes all 1,443 prism-containing induced forms vanish coefficientwise.
+  The simple one-row sign rule alone fixes only 28 coordinates. The
+  stronger closure uses direct motif containment, not an LP inference.
+- A one-round count loop with those zeros and all 25 certified cuts
+  returns an exact integer count witness with x521=116. Its numerical
+  precursor survives the two complete separator scans, with one
+  unconfirmed small negative in the older family. Root independently
+  checks all 48,965 saved integer counts and 180,445 original equations.
+  The rounded point has no exact PSD certificate.
+- The ten-vertex, seventeen-edge motif F has ordinary and induced count
+  x521. Its exact edge-shell interpretation gives 3*x1+2*x521<=4158
+  unconditionally, and x521=e24+3*e222 in a prism-free graph. The zero
+  face for globally minimal shell types 33 or 6 also has an exact count
+  witness after one IPM call. Independent full-model and original-equation
+  replays pass. All 2,332 moment blocks are scanned at this integer point
+  without finding an exact or unconfirmed numerical negative. No graph
+  or exact PSD certificate follows.
+- Exact binary flag triangle inequalities give no additional cut at
+  either the earlier repaired witness or the new positive-x521 rounded
+  witness. Each complete scan checks 170,183,860 inequalities. These
+  finite inequalities do not describe all Boolean moment constraints.

@@ -1,0 +1,84 @@
+{
+  "status": "no exact violation in either complete scan; PSD not certified",
+  "source_sha256": "f35d60d5583fa974bef00577724ef16b54dc858c5517e33bef8dd14f11a6712f",
+  "bindings": {
+    "face_source_sha256": "cc89194289b24882bf22f7a5945516fa57897c9d2607e527d94100ab5e9d57dd",
+    "witness_path": "experiments/logs/moments-and-counts/prism-zero-order10-x521-face-rounded-counts.json",
+    "witness_sha256": "ee8e22f070e0529be5be8bf14c853c6ad9ed97127570223abf6e1529ab8857f9",
+    "full_face_replay_sha256": "dea8da85b270fdbb9f5361a108ffd23a35d56c0dfcb6e2bad9d1a60474438ebb",
+    "old_scanner_sha256": "4c6886bd8d5dffa711aa20991af3bb87495262bd01d8227d2f64caac0040bbae",
+    "new_scanner_sha256": "71f06ef752adff6d49f88136b9e82f054f6485a2b2867c2cd4ef9f7ef7f82887",
+    "old_cache_hashes": {
+      "moments-3-3-512.pickle": "74d5a043cb92ccdeb0c91e15d8f44de814a40196e761b550caace40201b89e53",
+      "moments-4-2-512.pickle": "74b9c284950fd317f895aa75afda15d531ceeef8d1daba7572c7f26eef68ce79",
+      "moments-5-2-512.pickle": "9af8134d9ab637c22da04614928bf25ba227c3b812a2a21a10ab0e06b482aa73",
+      "moments-6-1-512.pickle": "e1adfc383da37e534a873a022d2f439816676e748dc917e4a6d8fa3e4ffb18d7",
+      "moments-7-1-512.pickle": "725a1cda8796555cf7ee3ee174b2593b610731111ef3cc4f472355d3055eeab0",
+      "induced-moments-3-3-512.pickle": "d68282554d55346ae09d30d1a2d495ac15ed325f900e4a0185bd54073180cd38",
+      "induced-moments-4-2-512.pickle": "f2f8b43e64b08edfed79021aaa63b6bce4d57fe127d382a7fa6c5728bff16d5a",
+      "induced-moments-5-2-512.pickle": "f35f9d2c709d869924fac026ffb036e310f0967b933b36578ec0e1a53463feac",
+      "induced-moments-6-1-512.pickle": "13808003e8f24bd47b8da6169c65a1eccc205b2bc9c3be1c8b57b588a2ba37c5",
+      "induced-moments-7-1-512.pickle": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc",
+      "induced-spectral-7.pickle": "b38ced60f1632d8368f2b20e358ab3f43d2ecfedc90bbaac9c446ce0af14c502",
+      "induced-schur-7.pickle": "67cc16e42d9529c2155e5f80e73ea23a5defacaccac28150498218ae296058aa"
+    },
+    "old_forms_sha256": "8ac6843d1294ab3d24e6b71942ee653c1c86cc858d74101e8d2e8a3c53bca07c",
+    "new_full_cache_sha256": "aecf7411230f718c8c3879c38ad39dcdb041ed07c58a799f8b044ebd0ab5028d",
+    "new_construction_source_sha256": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469"
+  },
+  "proposal_path": "experiments/logs/moments-and-counts/prism-zero-order10-x521-integer-moments-input.json",
+  "proposal_sha256": "9c988d4b6ac9d055317bd8fa03fa92f4f6e039a815da8e2d5ff78b2347f1a6aa",
+  "exact_input_controls": {
+    "old_prefix_exactly_matches_58_integer_coordinates": true,
+    "new_family_exactly_matches_all_550_integer_coordinates": true,
+    "both_exact_point_denominators": 1,
+    "numerical_precursor_used": false
+  },
+  "LP_called": false,
+  "PSD_feasibility_certified": false,
+  "graph_constructed": false,
+  "input_count_witness_modified": false,
+  "old_family": {
+    "certificate_path": "experiments/logs/moments-and-counts/prism-zero-order10-x521-integer-moments-old1416.json",
+    "certificate_sha256": "5644e8d650b0c4e90bbf058f2113a44d776ff2960ccbac5211d30ff09c2a5d8e",
+    "blocks_scanned": 1416,
+    "exact_negative_blocks": 0,
+    "unique_integer_cuts": 0,
+    "unconfirmed_numeric_negatives": [],
+    "exact_replay": {
+      "status": "exact integer-vector PSD cut replay PASS",
+      "negative_blocks": 0,
+      "unique_integer_cuts": 0,
+      "LP_called": false,
+      "numerical_eigensystems_recomputed": false,
+      "passing_blocks_PSD_certified": false
+    },
+    "seconds": 0.9130212230011239
+  },
+  "new_family": {
+    "certificate_path": "experiments/logs/moments-and-counts/prism-zero-order10-x521-integer-moments-r8s1.json",
+    "certificate_sha256": "12dc72d413d9e6084490d8171a7ed06a027148a1c70d7b37305354e2ad23dc07",
+    "blocks_scanned": 916,
+    "complete_scan": true,
+    "timed_out": false,
+    "exact_negative_blocks": 0,
+    "unique_integer_cuts": 0,
+    "unconfirmed_numeric_negatives": [],
+    "exact_zero_rows_removed": 868,
+    "exact_replay": {
+      "status": "exact full-cache r8s1 separator replay PASS",
+      "negative_blocks": 0,
+      "unique_integer_cuts": 0,
+      "optimizer_called": false,
+      "numerical_eigensystems_recomputed": false
+    },
+    "seconds": 4.07406234699738
+  },
+  "unique_fresh_core_cuts": [],
+  "unique_fresh_core_cut_count": 0,
+  "all_accepted_integer_vectors_replayed": true,
+  "all_48965_integer_counts_reproduced": true,
+  "no_model_constraints_added": true,
+  "seconds": 13.92932369400296,
+  "peak_process_rss_kib": 853736
+}

@@ -1,0 +1,101 @@
+{
+  "status": "exact separator and scaled-cut controls PASS",
+  "scanner_source_sha256": "71f06ef752adff6d49f88136b9e82f054f6485a2b2867c2cd4ef9f7ef7f82887",
+  "loop_source_sha256": "a65dc6b31ebebe7bcd14398f685537f642081a7517c2e0ec94eb96246ad6e473",
+  "matrix_controls": [
+    {
+      "matrix": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "negative_vector": null,
+      "negative_value": null,
+      "expected_negative": false
+    },
+    {
+      "matrix": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "negative_vector": null,
+      "negative_value": null,
+      "expected_negative": false
+    },
+    {
+      "matrix": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "negative_vector": [
+        1,
+        0
+      ],
+      "negative_value": -1,
+      "expected_negative": true
+    },
+    {
+      "matrix": [
+        [
+          0,
+          3
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "negative_vector": [
+        2,
+        -1
+      ],
+      "negative_value": -5,
+      "expected_negative": true
+    },
+    {
+      "matrix": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          3,
+          2
+        ]
+      ],
+      "negative_vector": [
+        0,
+        -1,
+        1
+      ],
+      "negative_value": -2,
+      "expected_negative": true
+    }
+  ],
+  "scaled_cut_sign_control": true,
+  "optimizer_called": false
+}

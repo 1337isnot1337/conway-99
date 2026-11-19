@@ -87,6 +87,25 @@ The complete reusable cache retains all 916 roots without point-dependent
 zero-flag removal. These cuts exclude this point; they do not exclude the
 prism-free case. The earlier 1,416-block PSD certificate remains valid
 within its stated finite family.
+The [exact prism-containment closure](research/grids-and-triangles/grid_free_order10_prism_zero_closure.md)
+fixes 58 ordinary cores and all 1,443 prism-containing induced types.
+After these zeros and all 25 retained cuts, a
+[new count loop](research/grids-and-triangles/grid_free_order10_prism_zero_moments_loop.md)
+gives another exact integer count witness. Its unrounded proposal has no
+exact separator in the two complete scans, with one unconfirmed numerical
+negative in the older family. A separate
+[edge-component identity](research/root_prism_free_edge_components.md)
+identifies the ten-vertex motif coordinate `x521` with `e24+3*e222` in a
+prism-free graph. Thus global minimum edge-shell types 33 or 6 require
+`x521=0`. This [additional count face](research/root_prism_free_x521_face.md)
+also has an exact integer witness satisfying all 25 cuts. Both witnesses
+pass [independent original-equation audits](research/grids-and-triangles/prism_zero_followup_audits.md).
+The face witness's [complete 2,332-block scan](research/root_prism_free_x521_moments.md)
+finds no exact or unconfirmed numerical negative; it is not an exact PSD
+certificate. Separate [binary flag triangle inequalities](research/grids-and-triangles/binary_flag_triangle_inequalities.md)
+give no cut against either the earlier repaired point or the new
+positive-x521 rounded point, after 170,183,860 exact inequalities per point.
+These finite witnesses leave graph existence unresolved.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.

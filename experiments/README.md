@@ -268,6 +268,26 @@ minimum-anchor matching census. It starts no complete graph search.
 All four [prism-free overlay runs](../research/root_prism_free_runs_01.md)
 remain UNKNOWN.
 
+Two later exact count witnesses include all 25 retained inequalities.
+One also fixes the edge-component coordinate `x521` to zero. Their
+independent original-equation checks and the motif identity replay with:
+
+```sh
+make verify-prism-zero-followup-counts
+make verify-root-edge-components
+```
+
+The first rebuilds the small catalogue, checks both full induced-count
+vectors, all original equations, and the retained exact cuts. It does not
+load the dense reduction or call an optimizer. The second uses only the
+standard library to check the edge-shell census, motif automorphisms,
+cap-forbidden chords, and exact coordinate identification.
+The [follow-up audit note](../research/grids-and-triangles/prism_zero_followup_audits.md)
+states the distinction from the separate full-model replay. The
+[x521-zero moment scan](../research/root_prism_free_x521_moments.md)
+tests the exact integer witness in 2,332 blocks and finds no separator.
+That outcome is not an exact PSD certificate.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh
