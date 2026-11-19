@@ -31,29 +31,33 @@ def has_splits(graphs):
     return True
 
 
+def ordered_candidates(first, seconds, thirds, images):
+    stab = np.flatnonzero(images[first] == first)
+    second_choices = seconds.copy()
+    while second_choices:
+        second = min(second_choices)
+        second_choices.difference_update(images[second][stab])
+        both = stab[images[second][stab] == second]
+        third_choices = thirds.copy()
+        while third_choices:
+            third = min(third_choices)
+            third_choices.difference_update(images[third][both])
+            if has_splits((first,second,third)):
+                yield first,second,third
+
+
 def candidates():
     masks = {relabel(shape,p) for shape in SHAPES for p in PERMS}
     images = {m: np.array([relabel(m,p) for p in PERMS]) for m in masks}
     seen = set()
     for first in SHAPES:
-        stab = np.flatnonzero(images[first] == first)
-        second_choices = masks.copy()
-        while second_choices:
-            second = min(second_choices)
-            second_choices.difference_update(images[second][stab])
-            both = stab[images[second][stab] == second]
-            third_choices = masks.copy()
-            while third_choices:
-                third = min(third_choices)
-                third_choices.difference_update(images[third][both])
-                selected = (first, second, third)
-                if has_splits(selected):
-                    moved = np.stack([images[g] for g in selected], axis=1)
-                    seen.add(min(map(tuple, np.sort(moved, axis=1).tolist())))
+        for selected in ordered_candidates(first,masks,masks,images):
+            moved = np.stack([images[g] for g in selected], axis=1)
+            seen.add(min(map(tuple, np.sort(moved, axis=1).tolist())))
     return sorted(seen)
 
 
-def table_count(graphs):
+def table_count(graphs, first_only=False):
     rows = [r for r in TRIPLES if sum((g >> e) & 1 for g,e in zip(graphs,r)) <= 1]
     model = cp_model.CpModel()
     variables = [model.new_int_var(0,4,'') for _ in rows]
@@ -77,11 +81,32 @@ def table_count(graphs):
 
     count = Count()
     solver = cp_model.CpSolver()
-    solver.parameters.enumerate_all_solutions = True
+    solver.parameters.enumerate_all_solutions = not first_only
     solver.parameters.num_workers = 1
     status = solver.solve(model,count)
     assert status in (cp_model.INFEASIBLE, cp_model.OPTIMAL)
     return count.total
+
+
+def verify_mixed():
+    ten = {relabel(shape,p) for shape in SHAPES for p in PERMS}
+    nine = {sum(1 << j for j in es) for es in combinations(range(15),3)}
+    images = {m: np.array([relabel(m,p) for p in PERMS]) for m in ten | nine}
+    matching = {m for m in nine if len({v for j,pair in enumerate(PAIRS)
+                                        if m >> j & 1 for v in pair}) == 6}
+    checked = feasible = 0
+    for first in SHAPES:
+        for a,b,c in ordered_candidates(first,ten,nine,images):
+            if a & b & c:
+                continue
+            checked += 1
+            if table_count((a,b,c),first_only=True):
+                assert c in matching
+                feasible += 1
+    assert (checked,feasible) == (372,2)
+    print(f'Two ten-grid roots and one nine-grid root: {checked} ordered supports '
+          f'after split and common-pair tests, {feasible} feasible, all with a matching '
+          'at the nine-grid root.')
 
 
 def verify():
@@ -96,3 +121,4 @@ def verify():
 
 if __name__ == '__main__':
     verify()
+    verify_mixed()

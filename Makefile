@@ -141,3 +141,7 @@ verify-full-triangle-ten-roots:
 .PHONY: verify-full-triangle-common-pair
 verify-full-triangle-common-pair:
 	cd $(WORKSPACE) && OPENBLAS_NUM_THREADS=1 "$(PYTHON)" full_triangle_common_pair.py
+
+.PHONY: verify-104-grid-bound
+verify-104-grid-bound: verify-full-triangle-common-pair verify-full-triangle-ten-roots
+	cd $(WORKSPACE) && "$(PYTHON)" full_triangle_global_bound.py
