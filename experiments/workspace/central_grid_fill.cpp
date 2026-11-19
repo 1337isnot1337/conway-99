@@ -1,25 +1,32 @@
-// Complete the 44 far vertices opposite a central grid with three missing cells.
+// Complete the 44 far vertices opposite a grid after transporting its coordinates.
+#include "central_grid_axes.hpp"
 #include <algorithm>
 #include <array>
 #include <bit>
 #include <cassert>
 #include <cstdint>
 #include <iostream>
+#include <fstream>
+#include <string>
 #include <map>
 #include <utility>
 #include <vector>
 
-using Mask = std::uint64_t;
-using Graph = std::array<Mask, 44>;
+using central_grid::Mask;
+using central_grid::Graph;
+using central_grid::Case;
+using central_grid::opposite;
+using central_grid::used_quota;
 using Permutation = std::array<int, 4>;
 using Edge = std::pair<int, int>;
 using Edges = std::vector<Edge>;
 using Choices = std::vector<Edges>;
-using Case = std::array<std::array<int, 4>, 10>;
-
-constexpr int missing = 3;
-constexpr Mask peripheral_grid_points = ((Mask{1} << 40)-1) ^ ((Mask{1} << 12)-1);
-constexpr int opposite[3][4] = {{1,0,3,2}, {2,3,0,1}, {3,2,1,0}};
+constexpr int max_missing = 5;
+int missing = 3;
+bool signs_first = false;
+Mask peripheral_grid_points;
+std::array<int,10> labels;
+central_grid::AxisSigns near_axes;
 
 std::vector<Permutation> permutations;
 std::array<int, 24> inverse;
@@ -38,27 +45,15 @@ void initialize() {
         inverse[j] = std::find(permutations.begin(), permutations.end(), back)-permutations.begin();
     }
 
-    // A coordinate occurs once in each of the three missing cells.
-    // Index the simple 3-by-3 bipartite graphs, and the graphs within a triple.
-    for (int mask = 0; mask < 512; ++mask) {
-        Edges edges;
-        int rows = 0, cols = 0;
-        for (int i = 0; i < 3; ++i) for (int j = 0; j < 3; ++j) {
-            if (mask & (1 << (3*i+j))) {
-                edges.emplace_back(i,j);
-                rows += 1 << (2*i);
-                cols += 1 << (2*j);
-            }
-        }
-        off_diagonal[{rows,cols}].push_back(edges);
-    }
-    for (int mask = 0; mask < 8; ++mask) {
+    // Each coordinate class contains one vertex from every missing cell.
+    int internal_pairs = missing*(missing-1)/2;
+    for (int mask = 0; mask < (1 << internal_pairs); ++mask) {
         Edges edges;
         int degree = 0, index = 0;
-        for (int i = 0; i < 3; ++i) for (int j = i+1; j < 3; ++j) {
+        for (int i = 0; i < missing; ++i) for (int j = i+1; j < missing; ++j) {
             if (mask & (1 << index)) {
                 edges.emplace_back(i,j);
-                degree += (1 << (2*i)) + (1 << (2*j));
+                degree += (1 << (3*i)) + (1 << (3*j));
             }
             ++index;
         }
@@ -71,11 +66,82 @@ void add_edge(Graph& graph, int x, int y) {
     graph[y] |= Mask{1} << x;
 }
 
-int used_quota(const Graph& graph, int x, int y) {
-    return std::popcount(graph[x] & graph[y]) + ((graph[x] >> y) & 1);
+// Index only the bipartite degree margins that actually occur. This avoids
+// constructing all 2^25 graphs on a five-by-five coordinate block.
+const Choices& bipartite_graphs(int left, int right) {
+    auto [it,fresh] = off_diagonal.try_emplace(std::pair{left,right});
+    if (!fresh) return it->second;
+    std::array<int,max_missing> remaining{};
+    for (int j = 0; j < missing; ++j) remaining[j] = (right >> (3*j)) & 7;
+    Edges chosen;
+    auto extend = [&](auto&& self, int i) -> void {
+        if (i == missing) {
+            if (std::all_of(remaining.begin(), remaining.end(), [](int x) { return x == 0; }))
+                it->second.push_back(chosen);
+            return;
+        }
+        int degree = (left >> (3*i)) & 7;
+        for (unsigned mask = 0; mask < (1u << missing); ++mask) {
+            if (std::popcount(mask) != degree) continue;
+            bool possible = true;
+            for (int j = 0; j < missing; ++j) {
+                int rest = remaining[j] - ((mask >> j) & 1);
+                if (rest < 0 || rest > missing-i-1) possible = false;
+            }
+            if (!possible) continue;
+            auto size = chosen.size();
+            for (int j = 0; j < missing; ++j) if ((mask >> j) & 1) {
+                --remaining[j];
+                chosen.emplace_back(i,j);
+            }
+            self(self,i+1);
+            for (int j = 0; j < missing; ++j) if ((mask >> j) & 1) ++remaining[j];
+            chosen.resize(size);
+        }
+    };
+    extend(extend,0);
+    return it->second;
+}
+
+bool restrict_degrees = false;
+std::array<std::array<bool,1 << (3*max_missing)>,11> degree_prefixes{};
+
+bool read_degrees(const char* path) {
+    std::ifstream input(path);
+    for (auto& allowed : degree_prefixes) {
+        int count;
+        if (!(input >> count) || count < 1) return false;
+        while (count--) {
+            std::array<int,max_missing> full{};
+            for (int j = 0; j < missing; ++j) {
+                if (!(input >> full[j]) || full[j] < 0 || full[j] > 4) return false;
+            }
+            auto record = [&](auto&& self, int j, int code) -> void {
+                if (j == missing) {
+                    allowed[code] = true;
+                    return;
+                }
+                for (int d = 0; d <= full[j]; ++d) self(self,j+1,code+(d << (3*j)));
+            };
+            record(record,0,0);
+        }
+    }
+    return true;
+}
+
+bool degree_possible(int vertex, Mask row) {
+    int code = 0;
+    for (int i = 0; i < missing; ++i) {
+        int value = std::popcount(row & (Mask{15} << (4*i)));
+        code |= value << (3*i);
+    }
+    return degree_prefixes[vertex/4][code];
 }
 
 bool permits_edge(const Graph& graph, int x, int y) {
+    if (restrict_degrees &&
+        ((y < 4*missing && !degree_possible(x, graph[x] | (Mask{1} << y))) ||
+         (x < 4*missing && !degree_possible(y, graph[y] | (Mask{1} << x))))) return false;
     if (std::popcount(graph[x] & graph[y]) >= 2) return false;
     for (auto [a,b] : {Edge{x,y}, Edge{y,x}}) {
         for (Mask row = graph[a]; row; row &= row-1) {
@@ -86,10 +152,19 @@ bool permits_edge(const Graph& graph, int x, int y) {
 }
 
 void fill_blocks(int id, const Graph& graph, const std::vector<Choices>& blocks,
-                 std::size_t position, std::array<int, 3> internal) {
+                 std::size_t position, std::array<int,max_missing> internal,
+                 const std::array<Mask,5>* signs = nullptr) {
     if (position == blocks.size()) {
+        if (signs) {
+            near_axes.write(id,graph,*signs);
+            return;
+        }
+        if (missing >= 4) {
+            near_axes.complete(id,graph);
+            return;
+        }
         std::cout << id;
-        for (Mask row : graph) std::cout << ' ' << row;
+        for (int i = 0; i < 44; ++i) std::cout << ' ' << graph[i];
         std::cout << '\n';
         return;
     }
@@ -104,13 +179,14 @@ void fill_blocks(int id, const Graph& graph, const std::vector<Choices>& blocks,
             }
             add_edge(next,a,b);
         }
-        if (possible) fill_blocks(id,next,blocks,position+1,count);
+        if (possible) fill_blocks(id,next,blocks,position+1,count,signs);
     }
 }
 
 void missing_union(int id, const Graph& graph) {
-    int need[12][4] = {};
-    for (int t = 0; t < 12; ++t) {
+    if (missing >= 4 && !near_axes.permits_maps(graph)) return;
+    int need[4*max_missing][4] = {};
+    for (int t = 0; t < 4*missing; ++t) {
         for (int x = 0; x < 4; ++x) need[t][x] = 1+(x == opposite[0][t%4]);
         for (Mask row = graph[t] & peripheral_grid_points; row; row &= row-1) {
             if (--need[t][std::countr_zero(row)%4] < 0) return;
@@ -119,11 +195,11 @@ void missing_union(int id, const Graph& graph) {
     std::vector<Choices> blocks;
     for (int a = 0; a < 4; ++a) for (int b = a; b < 4; ++b) {
         int left = 0, right = 0;
-        for (int i = 0; i < 3; ++i) {
-            left += need[4*i+a][b] << (2*i);
-            right += need[4*i+b][a] << (2*i);
+        for (int i = 0; i < missing; ++i) {
+            left += need[4*i+a][b] << (3*i);
+            right += need[4*i+b][a] << (3*i);
         }
-        const auto& patterns = a == b ? diagonal[left] : off_diagonal[{left,right}];
+        const auto& patterns = a == b ? diagonal[left] : bipartite_graphs(left,right);
         Choices choices;
         for (const auto& pattern : patterns) {
             Edges edges;
@@ -140,7 +216,27 @@ void missing_union(int id, const Graph& graph) {
     std::sort(blocks.begin(), blocks.end(), [](const auto& a, const auto& b) {
         return a.size() < b.size();
     });
-    fill_blocks(id,graph,blocks,0,{});
+    if (!signs_first) {
+        fill_blocks(id,graph,blocks,0,{});
+        return;
+    }
+    near_axes.with_near_vertices(graph,[&](const Graph& signed_graph, const auto& signs) {
+        std::vector<Choices> restricted;
+        for (const auto& block : blocks) {
+            Choices choices;
+            for (const auto& pattern : block) {
+                if (std::all_of(pattern.begin(),pattern.end(),[&](const Edge& e) {
+                    return permits_edge(signed_graph,e.first,e.second);
+                })) choices.push_back(pattern);
+            }
+            if (choices.empty()) return;
+            restricted.push_back(std::move(choices));
+        }
+        std::sort(restricted.begin(), restricted.end(), [](const auto& a, const auto& b) {
+            return a.size() < b.size();
+        });
+        fill_blocks(id,signed_graph,restricted,0,{},&signs);
+    });
 }
 
 void fill_maps(int id, const Graph& graph, const std::vector<Choices>& slots, std::size_t position) {
@@ -163,6 +259,7 @@ void fill_maps(int id, const Graph& graph, const std::vector<Choices>& slots, st
 }
 
 void complete(int id, const Case& state) {
+    if (missing >= 4) near_axes.prepare(labels,state,missing);
     Graph graph{};
     for (int i = 0; i < 10; ++i) for (int x = 0; x < 4; ++x) add_edge(graph,4*i+x,40+x);
     for (int i = missing; i <= 10; ++i) {
@@ -214,10 +311,22 @@ void complete(int id, const Case& state) {
     fill_maps(id,graph,slots,0);
 }
 
-int main() {
+int main(int argc, char** argv) {
+    if (argc > 1 && std::string(argv[argc-1]) == "--signs-first") {
+        signs_first = true;
+        --argc;
+    }
+    if (argc > 3) return 1;
+    if (argc >= 2) missing = std::stoi(argv[1]);
+    if (missing < 3 || missing > max_missing) return 1;
+    if (argc == 3) {
+        if (!read_degrees(argv[2])) return 1;
+        restrict_degrees = true;
+    }
+    peripheral_grid_points = ((Mask{1} << 40)-1) ^ ((Mask{1} << (4*missing))-1);
     std::ios::sync_with_stdio(false);
     initialize();
-    int labels[10];
+
     for (int& label : labels) {
         int a,b;
         if (!(std::cin >> a >> b)) return 1;
@@ -235,6 +344,10 @@ int main() {
             if (!(std::cin >> entry)) return 1;
         }
         complete(id,state);
+    }
+    if (missing >= 4 && !signs_first) {
+        std::cerr << "Far graphs " << near_axes.far_graphs << ", separately feasible axes "
+                  << near_axes.separate_axes << ", simultaneous labelings " << near_axes.labelings << '\n';
     }
     return 0;
 }

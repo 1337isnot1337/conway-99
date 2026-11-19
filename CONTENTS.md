@@ -42,6 +42,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [A central grid and its ten disjoint pairs](research/grids-and-triangles/central-grid-neighborhood.md) exclude the $K_{2,4}$ thirteen-grid case and leave one possible support.
 - [At most twelve grids through a vertex](research/grids-and-triangles/twelve-grid-bound.md) excludes both two-missing-pair configurations opposite a grid and finishes the unrestricted thirteen-grid exclusion.
 - [At most eleven grids through a vertex](research/grids-and-triangles/eleven-grid-bound.md) excludes all four three-missing-pair shapes and the remaining twelve-grid supports.
+- [Four missing pairs opposite a grid](research/grids-and-triangles/four-missing-cones.md) must form a four-cycle. A vertex outside full triangles lies in at most ten grids.
 
 - [Disconnected endpoint graph](research/involutions/connected-endpoint-squares.md) allows repeated endpoint pairs and forces component sizes six and one when all 21 squares have one shared axis.
 - [Distinct endpoint pairs](research/involutions/distinct-endpoint-squares.md) rules out every assignment of centers when all 21 squares have one shared axis and their endpoint pairs are distinct. The proof uses two exact norm counts.

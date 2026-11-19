@@ -111,5 +111,14 @@ verify-eleven-grid-bound:
 	@set -eu; \
 	build_dir=$$(mktemp -d); \
 	trap 'rm -rf "$$build_dir"' EXIT; \
-	"$(CXX)" -std=c++20 -O3 "$(WORKSPACE)/three_missing_grid_fill.cpp" -o "$$build_dir/three-missing"; \
+	"$(CXX)" -std=c++20 -O3 "$(WORKSPACE)/central_grid_fill.cpp" -o "$$build_dir/three-missing"; \
 	OPENBLAS_NUM_THREADS=1 "$(PYTHON)" "$(WORKSPACE)/three_missing_grid_neighbors.py" "$$build_dir/three-missing"
+
+.PHONY: verify-four-missing-grid-cones
+verify-four-missing-grid-cones:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -rf "$$build_dir"' EXIT; \
+	"$(CXX)" -std=c++20 -O3 $(CXXFLAGS) "$(WORKSPACE)/central_grid_fill.cpp" -o "$$build_dir/central-grid"; \
+	OPENBLAS_NUM_THREADS=1 "$(PYTHON)" "$(WORKSPACE)/sparse_grid_cones.py" "$$build_dir/central-grid"
+	cd $(WORKSPACE) && "$(PYTHON)" eleven_grid_supports.py

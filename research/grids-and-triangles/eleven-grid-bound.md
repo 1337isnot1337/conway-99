@@ -33,4 +33,4 @@ The previous bound permits at most twelve grids. If twelve occur, nine of the 21
 
 Two supports survive. In each, the [four-point degree test](../../experiments/workspace/root_cell_profiles.py) finds a missing cell whose four internal degrees cannot realize a graph with at most two edges. This excludes twelve grids.
 
-Run `make verify-eleven-grid-bound` for the [case and Gram checker](../../experiments/workspace/three_missing_grid_neighbors.py) and its [integer block enumerator](../../experiments/workspace/three_missing_grid_fill.cpp). The earlier two-missing-cell cases replay with `make verify-twelve-grid-bound`.
+Run `make verify-eleven-grid-bound` for the [case and Gram checker](../../experiments/workspace/three_missing_grid_neighbors.py) and its [integer block enumerator](../../experiments/workspace/central_grid_fill.cpp). The earlier two-missing-cell cases replay with `make verify-twelve-grid-bound`.
