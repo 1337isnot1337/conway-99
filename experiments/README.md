@@ -436,3 +436,20 @@ Run the individual research scripts from [`experiments/workspace/`](workspace/).
 The archived logs cover [grids and triangles](logs/grids-and-triangles/), [independent sets](logs/independent-sets/), [eigenlattices](logs/eigenlattices/), [moments and counts](logs/moments-and-counts/), and [construction searches](logs/construction-searches/). The [research ledger](../STATE.md) explains which runs concern relaxations or particular construction families.
 
 Some exploratory scripts refer to solver builds and generated inputs in the original `/tmp/conway99-tools` directory, which was unavailable when the archive was published. The four checks above use the archived files and the dependencies listed here. The [initial publication](https://github.com/1337isnot1337/conway-99/tree/270ae4f8c4cfb751f9c4b5b74949c41263b645ba) preserves the original paths.
+
+## Replaying the 48-cut count face
+
+The [47-to-48-cut record](../research/grids-and-triangles/grid_free_order10_higher_flags_loop.md)
+gives exact commands for the three new six-root cuts, the four-cycle
+cut, and the independent audit of the latest x521-zero count witness.
+Its manifest is
+`logs/moments-and-counts/order10-higher-flags-loop-artifacts.json`.
+The face audit checks the original equations and all frozen reduction
+rows using Python integers. It does not run an optimizer.
+
+The [additional flag-family record](../research/grids-and-triangles/grid_free_order10_higher_flags_results.md)
+and [four-cycle decomposition](../research/grids-and-triangles/grid_free_order10_higher_flags_c4_structure.md)
+give their own replay commands. The complete 2,405-block discovery scan
+uses the unrounded proposal. Only the C4 block has a separate exact PSD
+certificate at the latest integer point.
+

@@ -1,0 +1,20 @@
+{
+  "status": "read-only source and diff audit PASS",
+  "subject_path": "experiments/workspace/audit_prism_zero_held_count_face_witness.py",
+  "subject_sha256": "3d85a135f800a40595a48a1e4592dbfdbb60bf7515b66fabb65d5425bb46f19f",
+  "original_path": "experiments/workspace/audit_prism_zero_held_count_witness.py",
+  "original_sha256": "11e9f2858c2808e04f9f3d375b6dbfd71b32003899d5fdf8f16eaa9c587c6dc2",
+  "checks": [
+    "The original 180445 identity evaluations, nonnegative integer checks, labelled/unlabelled normalizations, ordinary upper bounds and held-cut evaluations are unchanged.",
+    "The face replaces the optional 58-coordinate prism-zero metadata comparison by a required sorted union with coordinate 521, explicit x521_zero metadata, and direct zero checks.",
+    "Coordinate 521 is prism-free by the existing direct helper, so the union contains exactly 59 coordinates.",
+    "The optional reduction branch binds SHA256 0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65, identical catalogue, scale 3628800 and 549 cores.",
+    "Every induced row uses sum(int(a)*point[j]) == scale*count; each ordinary core row uses its unscaled labelled injective form == automorphism_order*ordinary_coordinate.",
+    "All optional matrix contractions use Python integer multiplication and sums, with no fixed-width accumulation.",
+    "The report explicitly says the saved reduction was evaluated, not rederived; it makes no PSD or graph claim."
+  ],
+  "independent_original_equation_replay_run_here": false,
+  "dense_reduction_loaded_here": false,
+  "optimizer_called_here": false,
+  "scope": "Source/diff gate only; the parent owns the separate full count replay."
+}

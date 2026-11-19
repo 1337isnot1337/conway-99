@@ -1,0 +1,105 @@
+{"file": "moments-3-3-512.pickle", "sha256": "74d5a043cb92ccdeb0c91e15d8f44de814a40196e761b550caace40201b89e53", "embedding_form": "ordinary", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-4-2-512.pickle", "sha256": "74b9c284950fd317f895aa75afda15d531ceeef8d1daba7572c7f26eef68ce79", "embedding_form": "ordinary", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-5-2-512.pickle", "sha256": "9af8134d9ab637c22da04614928bf25ba227c3b812a2a21a10ab0e06b482aa73", "embedding_form": "ordinary", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -5.551119734014695e-16}
+{"file": "moments-6-1-512.pickle", "sha256": "e1adfc383da37e534a873a022d2f439816676e748dc917e4a6d8fa3e4ffb18d7", "embedding_form": "ordinary", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -8.439531118528793e-17}
+{"file": "moments-7-1-512.pickle", "sha256": "725a1cda8796555cf7ee3ee174b2593b610731111ef3cc4f472355d3055eeab0", "embedding_form": "ordinary", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -5.557414136486997e-16}
+{"file": "induced-moments-3-3-512.pickle", "sha256": "d68282554d55346ae09d30d1a2d495ac15ed325f900e4a0185bd54073180cd38", "embedding_form": "induced", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-4-2-512.pickle", "sha256": "f2f8b43e64b08edfed79021aaa63b6bce4d57fe127d382a7fa6c5728bff16d5a", "embedding_form": "induced", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-5-2-512.pickle", "sha256": "f35f9d2c709d869924fac026ffb036e310f0967b933b36578ec0e1a53463feac", "embedding_form": "induced", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -8.983776195815857e-16}
+{"file": "induced-moments-6-1-512.pickle", "sha256": "13808003e8f24bd47b8da6169c65a1eccc205b2bc9c3be1c8b57b588a2ba37c5", "embedding_form": "induced", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -1.2658386044650395e-16}
+{"file": "induced-moments-7-1-512.pickle", "sha256": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc", "embedding_form": "induced", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.525387772735237e-16}
+{"file": "induced-spectral-7.pickle", "sha256": "b38ced60f1632d8368f2b20e358ab3f43d2ecfedc90bbaac9c446ce0af14c502", "embedding_form": "induced", "blocks": 416, "largest_order": 135, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.2968777407368237e-15}
+{"file": "induced-schur-7.pickle", "sha256": "67cc16e42d9529c2155e5f80e73ea23a5defacaccac28150498218ae296058aa", "embedding_form": "induced", "blocks": 416, "largest_order": 128, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.142937209846502e-15}
+{"status": "no exact violation found; PSD not certified", "blocks_examined": 1416, "exact_negative_block_count": 0, "unique_integer_cut_count": 0, "seconds": 0.7827279170014663, "peak_process_rss_kib": 91820}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 0,
+  "unique_integer_cuts": 0,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "no exact separator in scanned blocks; PSD not certified",
+  "blocks_scanned": 916,
+  "complete_scan": true,
+  "exact_negative_block_count": 0,
+  "unique_integer_cut_count": 0,
+  "seconds": 3.1738331939995987
+}
+{
+  "status": "no exact separator in scanned cached blocks; PSD not certified",
+  "blocks_scanned": 62,
+  "complete_cached_family_scan": true,
+  "complete_selected55_scan": true,
+  "complete_full62_scan": true,
+  "exact_negative_block_count": 0,
+  "unique_integer_cut_count": 0,
+  "seconds": 6.350429431000521
+}
+{
+  "status": "complete scans found no separator; PSD not certified",
+  "source_sha256": "2e7e13a245946489e3c1bac27b8780e252ee67c0aca85b254ba9751544625c8a",
+  "witness_sha256": "190c779b4a8758d9df90ccc13a54538d8e120710e224b9150dd3aa4b591bd53d",
+  "scanner_source_sha256": {
+    "grid_free_order10_moments.py": "4c6886bd8d5dffa711aa20991af3bb87495262bd01d8227d2f64caac0040bbae",
+    "grid_free_order10_r8s1_scan.py": "71f06ef752adff6d49f88136b9e82f054f6485a2b2867c2cd4ef9f7ef7f82887",
+    "grid_free_order10_r6s2_point_scan.py": "7bb2542e4e69cadade0f096ee578252a804a1c0ff2e0e2d555ce943886654a11",
+    "grid_free_order10_scaled.py": "12409f5ea1932d549cb69d9ca83e8cd4bd53d173b1a6ef136f9cdee6c095fc16"
+  },
+  "reduced_cache_sha256": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+  "proposal_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-input.json",
+  "proposal_sha256": "2f8b0e154b255c7fe907b5d695ef2398da86913d61046f48aca90f58195cecc1",
+  "families": [
+    {
+      "family": "old1416",
+      "blocks_scanned": 1416,
+      "complete_scan": true,
+      "certificate_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-old1416.json",
+      "certificate_sha256": "f4198f4111c28ac64ea6b964e1aaaae02269af22539f74124c790ef2b7252990",
+      "replay_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-old1416-replay.json",
+      "replay_sha256": "337b9d9a435686eab5aa96f6d410e455c16ae8e93ebf5f6628dd8c3ca7ca6cfb",
+      "exact_negative_blocks": 0,
+      "unique_integer_cuts": 0,
+      "unconfirmed_numeric_negatives": []
+    },
+    {
+      "family": "r8s1",
+      "expected_blocks": 916,
+      "blocks_scanned": 916,
+      "complete_scan": true,
+      "certificate_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-r8s1.json",
+      "certificate_sha256": "1a53c7702c9db76abe6e14e1e1e5dda94e5b299dc4438f8d511ae89cd506e4b2",
+      "replay_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-r8s1-replay.json",
+      "replay_sha256": "f31e3ecd8293776252851d4ec7e9833a4fc8bceb92819e4e880f7ebe638e1e83",
+      "exact_negative_blocks": 0,
+      "unique_integer_cuts": 0,
+      "unconfirmed_numeric_negatives": []
+    },
+    {
+      "family": "r6s2",
+      "expected_blocks": 62,
+      "blocks_scanned": 62,
+      "complete_scan": true,
+      "certificate_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-r6s2.json",
+      "certificate_sha256": "c8b26a574e9c9f86eedd48e0f06db82d045b51c8f7595b0155bc8bcb18e4bebc",
+      "replay_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-r6s2-replay.json",
+      "replay_sha256": "a606c4d8bc65e5b48926ed146a1f84ec742284f1080c704410808f6ae5832068",
+      "exact_negative_blocks": 0,
+      "unique_integer_cuts": 0,
+      "unconfirmed_numeric_negatives": []
+    }
+  ],
+  "all_550_float_inputs_are_exact_integers": true,
+  "all_scanner_input_denominators_are_one": true,
+  "numerical_precursor_used": false,
+  "optimizer_called": false,
+  "PSD_feasibility_certified": false,
+  "graph_constructed": false,
+  "complete_scan": true,
+  "exact_negative_blocks": 0,
+  "blocks_scanned": 2394,
+  "all_48965_integer_counts_reproduced": true,
+  "seconds": 24.366532064999774,
+  "peak_process_rss_kib": 1191448
+}

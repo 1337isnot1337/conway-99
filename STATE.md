@@ -120,6 +120,23 @@ construction retains overlapping and disjoint copies. An
 checks 7,812,610 inequalities at each saved point and finds no further cut.
 All diagonal range inequalities follow from existing count equations;
 general cross-range redundancy has not been proved.
+The [next count loop and higher-flag test](research/grids-and-triangles/grid_free_order10_higher_flags_loop.md)
+add three more six-root inequalities, each independently reconstructed.
+A one-coordinate repair gives an exact integer witness for all 47 held
+inequalities. The complete 2,394-block scan at that integer point finds
+no separator. A new four-cycle block with three free vertices then
+rejects it by an independently reconstructed 39-term inequality.
+The [complete additional families](research/grids-and-triangles/grid_free_order10_higher_flags_results.md)
+contain eleven blocks, including nontrivial free-vertex stabilizers.
+After retaining the four-cycle cut, the 48-cut model with `x521=0`
+has another exact integer count witness. A separate audit checks every
+original equation, all 48,965 saved reduction rows, all bounds and zeros,
+and all 48 held inequalities. Its unrounded proposal has no separator
+in the complete 2,405-block scan. At the integer point, the
+[four-cycle block alone](research/grids-and-triangles/grid_free_order10_higher_flags_c4_structure.md)
+has an exact rank-thirteen PSD certificate. The other blocks have no
+exact PSD certificate at this point. Eight-root spectral/projector
+blocks form a separate family; the selected scans do not cover them.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.

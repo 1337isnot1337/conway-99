@@ -1,0 +1,138 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 9,
+  "unique_integer_cuts": 9,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "complete-family prism-zero loop prepared; no optimizer called",
+  "source_sha256": "5d35db0ab5b950426699718f8c0761f600d11ea79777f60aee24bff97afce45d",
+  "dependency_hashes": {
+    "grid_free_order10_prism_zero_moments_loop.py": "a65dc6b31ebebe7bcd14398f685537f642081a7517c2e0ec94eb96246ad6e473",
+    "grid_free_order10_r6s2_point_scan.py": "7bb2542e4e69cadade0f096ee578252a804a1c0ff2e0e2d555ce943886654a11",
+    "grid_free_order10_r6s2.py": "3772c728ec764dbec0142865696bb747c06e47b29495964af867103618b75a6d",
+    "grid_free_order10_r6s2_scan.py": "ca16071dd21b7d0eed9e41d7bd08678cf5ea7b7863b8cac98a2969d230d088bd",
+    "grid_free_order10_r6s2_fresh_replay.py": "b7b5885509c84b30ee904a7dc78a63ac1ecdb3c973971fe23566dc1c2475c80a",
+    "grid_free_order10_r6s2_independent_audit.py": "46bbbf5521383fc14925644e1dcb82ebeca99094b5726b8f23e3d774aa6f643f",
+    "root_prism_free_edge_components.py": "c284c27a3a473559f837ea3d8de917de0a255dd69102fe672195fba1b35e0d00",
+    "grid_free_order10_r6s2_loop.py": "40838c0949db789308008a777b3c5433c47f27f2cc0229d2357775102f345933",
+    "grid_free_order10_higher_flags_point_scan.py": "5d1af5a24c9a509e35b9aeb47e47bd97eb01c09eb51fad32c2a72ceb87075c86",
+    "grid_free_order10_r6s2_new_cuts_replay.py": "2b0b442fcf799dc716e58d3fdcbfc9f9484d651448658cd2eb1547d983ca1945",
+    "grid_free_order10_higher_flags_fresh_replay.py": "24b6e6ece9e794f54842a9603c83ff861bb65b676d6a04d01a2b4f189ac39ab1",
+    "grid_free_order10_higher_flags_products.py": "32b39c98538bd5358e64e7e794c9f6464704ea7f1fe9f6f171d9243f4af88a36"
+  },
+  "inputs": {
+    "prior_preparation": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop-preparation.json",
+    "prior_loop": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01.json",
+    "prior_cut_certificate": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-r6s2-separation.json",
+    "prior_cut_replay": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-new-cuts-independent-replay.json",
+    "higher_cut_certificate": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/order10-higher-flags-r4s3-scan.json",
+    "higher_cut_replay": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/order10-higher-flags-r4s3-fresh-replay.json",
+    "higher_cache": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/order10-higher-flags-full-cache.json"
+  },
+  "input_hashes": {
+    "prior_preparation": "916f3112831e781eadc55c107331f08db7fbfdee4a9f93df916ebb2e9be1c5fa",
+    "prior_loop": "08366598ad71e2942e1cd1ea877616bd85c636f87a2c607e991834016a61644b",
+    "prior_cut_certificate": "fccbd4eeebba92b34f1f1fe69343633a59562f3e32817fc839aa29c490b65c19",
+    "prior_cut_replay": "c3be5a6bf23cbf2e81badf6d8ec176f6eb87182cbb8b8856acaa311e9dfa553d",
+    "higher_cut_certificate": "c70c9efc5588e0c15b9899770a137b37937f2037456f02e6b58077bb6165bcab",
+    "higher_cut_replay": "0a6a50182903345149d9d6c61df745bb175bdeeb28bcd5bf0ba4cefa83c32802",
+    "higher_cache": "b5c076fabeee3d88c89f738bdd7f746bab9a8071acee0632dbe37137eddc47b8"
+  },
+  "x521_zero": true,
+  "highs_version": "1.16.0",
+  "supported_options": {
+    "output_flag": false,
+    "threads": 1,
+    "presolve": "on",
+    "solver": "ipm",
+    "run_crossover": "off",
+    "time_limit": 120.0
+  },
+  "maximum_rounds": 6,
+  "maximum_solver_seconds_per_round": 120,
+  "maximum_seconds_per_new_family_scan": 180,
+  "threads": 1,
+  "stop_on_nonoptimal_or_incomplete_scan": true,
+  "stop_on_no_fresh_exact_cut": true,
+  "dual_extraction": false,
+  "PSD_feasibility_certified_by_scan": false,
+  "preparation_seconds": 22.61206103499717,
+  "peak_process_rss_kib": 1201816
+}
+{
+  "parent_numerical_model_sha256": "62664e9c7d7fd5abe9ca61585e10f0d3714bbd72509dca0e7a54d725cbd5943e",
+  "rows": 47668,
+  "columns": 547,
+  "nonzeros": 5439078,
+  "free_columns": 490,
+  "x521_zero": true,
+  "old_linear_cuts": 25,
+  "reconstructed_r6_induced_cuts": 18,
+  "appended_distinct_core_rows": 23,
+  "initial_cut_count": 48,
+  "initial_cut_coefficients_sha256": "f240480eb4c6b5ac084d79aedfc143506c0e03cf5202359b8a3434cc61eeece4",
+  "numerical_model_sha256": "dd90c9323bc4ae6672b70020dd2902696116404fb1fe7abe54489466691c64ad",
+  "positive_DP_bounds_and_scalings_unchanged": true,
+  "unconditional_edge_component_row_included": true,
+  "full_r6s2_roots": 62,
+  "full_r8s1_roots": 916,
+  "old_family_blocks": 1416,
+  "root_or_flag_pruning_at_seed_point": false,
+  "reduced_cache_sha256": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+  "objective": "zero; pure feasibility",
+  "parent_44cut_numerical_model_sha256": "69371751e39bc177cb5efc867fb4905d86bcbc1b8b656288665fc65388837189",
+  "base44_appended_distinct_core_rows": 19,
+  "reconstructed_followup_r6_cuts": 3,
+  "reconstructed_r4s3_cuts": 1,
+  "followup_seed_reduction_controls": [
+    {
+      "family": "r6s2",
+      "root_type": 96,
+      "positive_reduction_gcd": 2,
+      "exact_core_numerator": -733386307225787768
+    },
+    {
+      "family": "r6s2",
+      "root_type": 76,
+      "positive_reduction_gcd": 2,
+      "exact_core_numerator": -185492204800246114432222
+    },
+    {
+      "family": "r6s2",
+      "root_type": 81,
+      "positive_reduction_gcd": 2,
+      "exact_core_numerator": -6589733880626726373090412
+    },
+    {
+      "family": "r4s3",
+      "root_type": 16,
+      "induced_terms": 39,
+      "positive_reduction_gcd": 1,
+      "exact_core_value": -101639192,
+      "exact_induced_value": -101639192
+    }
+  ],
+  "full_higher_flag_roots": 11,
+  "total_scanned_blocks": 2405,
+  "higher_cache_sha256": "b5c076fabeee3d88c89f738bdd7f746bab9a8071acee0632dbe37137eddc47b8"
+}

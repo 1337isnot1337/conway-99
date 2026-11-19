@@ -1,0 +1,101 @@
+{
+  "status": "complete nine-root r4s3 generation and scan prepared; not started",
+  "source_sha256": "0b391b83587e258b24f0bb9f25b556990a3e9a007a5bb96d7944b4e5d5a4d722",
+  "product_source_sha256": "32b39c98538bd5358e64e7e794c9f6464704ea7f1fe9f6f171d9243f4af88a36",
+  "direction_source_sha256": "71f06ef752adff6d49f88136b9e82f054f6485a2b2867c2cd4ef9f7ef7f82887",
+  "form_source_sha256": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469",
+  "inputs": {
+    "product_preparation": "experiments/logs/moments-and-counts/order10-higher-flags-products-preparation.json",
+    "witness": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-witness.json",
+    "small_scan": "experiments/logs/moments-and-counts/order10-higher-flags-r2s4-repair01-scan.json"
+  },
+  "input_hashes": {
+    "product_preparation": "07d6e6b22fe77c784a5540672c245cb21691707edf209c53cf722eb101a8197f",
+    "witness": "190c779b4a8758d9df90ccc13a54538d8e120710e224b9150dd3aa4b591bd53d",
+    "small_scan": "7db3f850e35aa321a74354037733e5693d6fd22d35342bf4a2e53c017b1f7f6e"
+  },
+  "domain_sha256": "ccee69da0b0fa9eb111143c6a97a791ab88c7d7ce7004d690ab2ec286c4c2144",
+  "catalogue_path": "/tmp/conway99-order10-catalogue.pickle",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "witness_sha256": "190c779b4a8758d9df90ccc13a54538d8e120710e224b9150dd3aa4b591bd53d",
+  "root_visit_order": [
+    15,
+    16,
+    14,
+    11,
+    13,
+    10,
+    12,
+    9,
+    8
+  ],
+  "root_dimensions": [
+    [
+      15,
+      13
+    ],
+    [
+      16,
+      15
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      11,
+      38
+    ],
+    [
+      13,
+      47
+    ],
+    [
+      10,
+      103
+    ],
+    [
+      12,
+      109
+    ],
+    [
+      9,
+      206
+    ],
+    [
+      8,
+      332
+    ]
+  ],
+  "full_family_roots": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "full_family_flags": 883,
+  "full_family_lower_entries": 90240,
+  "maximum_block_order": 332,
+  "maximum_unfiltered_completion_choices_per_entry": 698,
+  "maximum_mask_matched_completion_choices_per_entry": 567,
+  "root_mask_matched_completion_bound_all_entries": 37180575,
+  "maximum_generation_and_scan_seconds": 300,
+  "threads": 1,
+  "reusable_cache_is_point_independent": true,
+  "root_or_flag_zero_pruning": false,
+  "nonbinary_diagonal_shortcut": false,
+  "free_stabilizer_divisor": false,
+  "all_overlap_multiplicities_retained": true,
+  "tiny_r2s4_exact_PSD_at_same_witness": true,
+  "negative_cuts_exported_in": "unlabelled induced catalogue counts",
+  "fresh_product_reconstruction_required_before_cut_use": true,
+  "dense_reduction_loaded": false,
+  "optimizer_called": false,
+  "preparation_seconds": 0.733542222998949,
+  "peak_process_rss_kib": 155656
+}

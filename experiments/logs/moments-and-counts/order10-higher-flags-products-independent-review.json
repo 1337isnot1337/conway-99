@@ -1,0 +1,31 @@
+{
+  "status": "PASS: independent read-only reduction and product-encoding review",
+  "subject_source": "experiments/workspace/grid_free_order10_higher_flags_products.py",
+  "subject_source_sha256": "32b39c98538bd5358e64e7e794c9f6464704ea7f1fe9f6f171d9243f4af88a36",
+  "reviewer_lane": "unrestricted_completion",
+  "overlap_review": [
+    "Every mask-compatible partial injection from right free labels to distinct left free labels is enumerated, including the all-fresh case.",
+    "Shared free-to-free edges and nonedges are compared exactly. Root adjacencies agree by mask equality.",
+    "All shared positions are assigned before fresh-label recursion, so right-side mutual prescriptions remain correct in either label order.",
+    "Each fresh right vertex enumerates precisely the unspecified edges to left-exclusive free vertices. Edges to shared and earlier fresh right vertices are prescribed, including their absence.",
+    "Every accepted overlap/completion contributes one before canonical type aggregation. Full-overlap stabilizer multiplicities are retained."
+  ],
+  "transport_review": [
+    "The mutable union graph retains its actual root, left, and appended-right indexing.",
+    "A prefix normalization changes only the cached transport computation; it does not identify product branches or divide their coefficients.",
+    "The normal-to-target map is composed back to the actual union indices, and the resulting graph isomorphism is explicitly checked on every adjacency row.",
+    "Future neighbor masks are transported by that complete actual-to-target permutation before child lookup."
+  ],
+  "normalization_review": [
+    "Flag functions count labelled free embeddings of one representative free-label orbit.",
+    "Free-label stabilizers are checked but never divided out of the product coefficients or host flag values.",
+    "Canonical union types represent labelled embedding counts; conversion by graph automorphism orders in the host controls is consistent.",
+    "The tiny r2s4 blocks and sampled r4s3 products are distinguished from the unbuilt full90240-entry r4s3 cache."
+  ],
+  "scope": "No unsound overlap restriction, lost multiplicity, invalid prefix quotient, or normalization factor was found in the reviewed source.",
+  "subject_source_imported_or_run": false,
+  "full_tensor_cache_rebuilt": false,
+  "dense_reduction_loaded": false,
+  "optimizer_called": false,
+  "independent_literal_oracle": "The separately frozen root/free literal-prescription oracle is the independent comparison route used by the subject's small controls; those controls were not rerun in this read-only review."
+}

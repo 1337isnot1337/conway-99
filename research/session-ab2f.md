@@ -570,3 +570,19 @@ their hypotheses permit them; computational exclusions require exact replay.
   triples, all 171 Gram positions, and 90 visible-motif conflicts checked.
   Its cold formula/witness replay passes. A connected shell with all
   three central edge types 33 prevents an invalid split inference.
+- The full six-root count loop adds three exact cuts. Independent direct
+  products reconstruct all 15,979 supported entries and their reductions.
+  Changing x525 from 119 to 118 repairs the next rounded count point;
+  every original equation and all 47 retained inequalities then pass.
+  The complete integer-point scan of 2,394 blocks finds no separator.
+- The complete four-root/three-free and two-root/four-free families add
+  eleven blocks. The C4 block rejects the repaired point. Independent
+  direct products reconstruct its 39-term inequality. A separate exact
+  symmetry decomposition gives an eighteen-term variance inequality.
+- The 48-cut model, with x521 also fixed to zero, returns a new exact
+  integer count point without repair. A separate checker verifies all
+  original equations, all saved induced and ordinary reduction rows,
+  every bound and required zero, and all 48 inequalities. All 2,405
+  blocks are scanned at the unrounded proposal without a separator.
+  At the integer point, the C4 block separately has an exact rank-13
+  PSD certificate. The full selected family is not certified PSD there.

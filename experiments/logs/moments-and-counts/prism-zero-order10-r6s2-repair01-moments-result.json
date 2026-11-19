@@ -1,0 +1,66 @@
+{
+  "status": "complete scans found no separator; PSD not certified",
+  "source_sha256": "2e7e13a245946489e3c1bac27b8780e252ee67c0aca85b254ba9751544625c8a",
+  "witness_sha256": "190c779b4a8758d9df90ccc13a54538d8e120710e224b9150dd3aa4b591bd53d",
+  "scanner_source_sha256": {
+    "grid_free_order10_moments.py": "4c6886bd8d5dffa711aa20991af3bb87495262bd01d8227d2f64caac0040bbae",
+    "grid_free_order10_r8s1_scan.py": "71f06ef752adff6d49f88136b9e82f054f6485a2b2867c2cd4ef9f7ef7f82887",
+    "grid_free_order10_r6s2_point_scan.py": "7bb2542e4e69cadade0f096ee578252a804a1c0ff2e0e2d555ce943886654a11",
+    "grid_free_order10_scaled.py": "12409f5ea1932d549cb69d9ca83e8cd4bd53d173b1a6ef136f9cdee6c095fc16"
+  },
+  "reduced_cache_sha256": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+  "proposal_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-input.json",
+  "proposal_sha256": "2f8b0e154b255c7fe907b5d695ef2398da86913d61046f48aca90f58195cecc1",
+  "families": [
+    {
+      "family": "old1416",
+      "blocks_scanned": 1416,
+      "complete_scan": true,
+      "certificate_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-old1416.json",
+      "certificate_sha256": "f4198f4111c28ac64ea6b964e1aaaae02269af22539f74124c790ef2b7252990",
+      "replay_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-old1416-replay.json",
+      "replay_sha256": "337b9d9a435686eab5aa96f6d410e455c16ae8e93ebf5f6628dd8c3ca7ca6cfb",
+      "exact_negative_blocks": 0,
+      "unique_integer_cuts": 0,
+      "unconfirmed_numeric_negatives": []
+    },
+    {
+      "family": "r8s1",
+      "expected_blocks": 916,
+      "blocks_scanned": 916,
+      "complete_scan": true,
+      "certificate_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-r8s1.json",
+      "certificate_sha256": "1a53c7702c9db76abe6e14e1e1e5dda94e5b299dc4438f8d511ae89cd506e4b2",
+      "replay_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-r8s1-replay.json",
+      "replay_sha256": "f31e3ecd8293776252851d4ec7e9833a4fc8bceb92819e4e880f7ebe638e1e83",
+      "exact_negative_blocks": 0,
+      "unique_integer_cuts": 0,
+      "unconfirmed_numeric_negatives": []
+    },
+    {
+      "family": "r6s2",
+      "expected_blocks": 62,
+      "blocks_scanned": 62,
+      "complete_scan": true,
+      "certificate_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-r6s2.json",
+      "certificate_sha256": "c8b26a574e9c9f86eedd48e0f06db82d045b51c8f7595b0155bc8bcb18e4bebc",
+      "replay_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-moments-r6s2-replay.json",
+      "replay_sha256": "a606c4d8bc65e5b48926ed146a1f84ec742284f1080c704410808f6ae5832068",
+      "exact_negative_blocks": 0,
+      "unique_integer_cuts": 0,
+      "unconfirmed_numeric_negatives": []
+    }
+  ],
+  "all_550_float_inputs_are_exact_integers": true,
+  "all_scanner_input_denominators_are_one": true,
+  "numerical_precursor_used": false,
+  "optimizer_called": false,
+  "PSD_feasibility_certified": false,
+  "graph_constructed": false,
+  "complete_scan": true,
+  "exact_negative_blocks": 0,
+  "blocks_scanned": 2394,
+  "all_48965_integer_counts_reproduced": true,
+  "seconds": 24.366532064999774,
+  "peak_process_rss_kib": 1191448
+}
