@@ -55,10 +55,10 @@ def assignments():
     yield from extend({}, [(1 << len(states))-1]*10)
 
 
-def transformations():
+def transformations(pairs=PAIRS, neighbors=NEIGHBORS):
     for axes in permutations(range(5)):
-        order = [PAIRS.index(tuple(sorted(axes[a] for a in pair))) for pair in PAIRS]
-        slots = [tuple(NEIGHBORS[i].index(order.index(j)) for j in NEIGHBORS[k])
+        order = [pairs.index(tuple(sorted(axes[a] for a in pair))) for pair in pairs]
+        slots = [tuple(neighbors[i].index(order.index(j)) for j in neighbors[k])
                  for i, k in enumerate(order)]
         for q in PERMS:
             conjugate = [tuple(q[p[q.index(i)]] for i in range(4)) for p in PERMS]

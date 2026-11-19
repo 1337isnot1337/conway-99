@@ -101,3 +101,7 @@ verify-aligned-grid-subfamilies:
 .PHONY: verify-central-grid-neighborhood
 verify-central-grid-neighborhood:
 	cd $(WORKSPACE) && "$(PYTHON)" central_grid_neighborhood.py
+
+.PHONY: verify-twelve-grid-bound
+verify-twelve-grid-bound:
+	cd $(WORKSPACE) && "$(PYTHON)" two_missing_grid_neighbors.py

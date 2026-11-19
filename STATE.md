@@ -104,6 +104,8 @@ Among any eight grids through a root, [some disjoint matching fails to preserve 
 
 A [grid cannot have grids on all ten disjoint pairs](research/grids-and-triangles/central-grid-neighborhood.md). The $K_{2,4}$ thirteen-grid support is therefore impossible. Only $K_{3,3}$ minus an edge remains.
 
+Every rooted grid [has at least three nongrid pairs among its ten disjoint axis pairs](research/grids-and-triangles/twelve-grid-bound.md). This excludes the remaining thirteen-grid support: **at most twelve grids pass through any vertex**, and each vertex has at least 36 percolating nonneighbors.
+
 The [parallel deficit inequality](research/grids-and-triangles/parallel-triangle-deficits.md) implies that two parallel full triangles force a partition into 33 triangles. There are 35 marked cores for the third parallel line.
 
 The [five-grid branching contradiction](research/grids-and-triangles/branching-full-triangles.md) gives at least three grids having exactly one full triangle per full triangle on average. The global bounds become 113 grids, 2,124 percolating nonedges, 1,206 two-edge triangle pairs, and five triangles on at most two grids.
