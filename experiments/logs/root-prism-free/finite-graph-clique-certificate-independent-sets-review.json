@@ -1,0 +1,19 @@
+{
+  "status": "PASS: complete source-only review of finite clique certificate helper",
+  "subject": {
+    "path": "experiments/workspace/finite_graph_clique_certificate.py",
+    "sha256": "ef97e243a4140ca741097cb8c237d080e926d5f47f2ccca01abc662ff042834b"
+  },
+  "reviewed_reasoning": [
+    "Validation enforces a loop-free symmetric bit adjacency graph with at most twelve vertices.",
+    "For the least vertex v of a nonempty subset S, every clique either avoids v or consists of v plus a clique in (S-v) intersect N(v), giving the exact two-child recurrence.",
+    "Both recurrence children strictly decrease the subset. Base value zero at the empty subset and replay of every reachable child prove the upper bound by induction.",
+    "The verifier requires exactly the reachable recurrence table, not merely a claimed top value. The independently checked clique has cardinality equal to the certified bound.",
+    "The empty graph yields the empty clique and maximum zero. Domain-specific interpretation and transitivity are outside this helper."
+  ],
+  "subject_imported": false,
+  "controls_rerun": false,
+  "census_or_search_rerun": false,
+  "optimizer_calls": 0,
+  "scope": "Read-only helper review. No independent assertion about a particular Z-orbit graph or a fractional pair-moment point."
+}

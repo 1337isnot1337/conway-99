@@ -1,0 +1,49 @@
+{
+  "schema": "conway99.independent_source_review.v1",
+  "status": "PASS: corrected Y-orbit packing preparation source and mathematical necessity",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_edge_orbit_packing_preparation.py",
+    "sha256": "e8aae22865dfaaffe043a76c872aaf1212c74a6bbb8b26301f6b61dcb541efe5"
+  },
+  "reviewer": "literature_obstructions",
+  "full_source_read": true,
+  "checks": [
+    "Every selected exterior edge activates its two literal endpoint selectors.",
+    "An endpoint-union selector zero forbids the two edge objects. The union removes repeated endpoints before forming distinct selector pairs.",
+    "The 4320 original quota-one witnesses are checked against the original Gram supports. The other 90 zeros remain explicitly labeled prior cold-checked binary-motif premises.",
+    "A saved one-edge prism plus any endpoint of the other selected edge gives a valid incompatibility.",
+    "A saved two-edge path prism forbids its two specified literal edges; saved witness dispositions do not weaken the underlying necessary implication.",
+    "For two edges sharing a center, two common fixed-core sites give at least three common neighbors of their other endpoints, exceeding either common-neighbor cap.",
+    "For a shared center and one shared core site, an original mixed quota of one forbids both selected incident edges.",
+    "The original edge-orbit to selector-pair-orbit relation and all 12 literal action permutations are checked. Every nontrivial compatibility graph is explicitly invariant and vertex-transitive.",
+    "Unary selector-zero edge orbits are retained as zero-bound records. All other retained Y orbits get a complete finite compatibility graph, with a reason for every excluded pair.",
+    "The count variable is the sum of active literal edge objects. Its clique bound concerns a finite compatibility graph and assumes no host-graph automorphism."
+  ],
+  "inherited_bindings": {
+    "moments": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+      "sha256": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    },
+    "moment_cold": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02-cold-replay.json",
+      "sha256": "e495dbc7281f420caab1f3be88e9263ab8273da6ae88a7ea4e1e72c30eaa1fcd"
+    },
+    "one_edge_prism_cold": {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01-replay.json",
+      "sha256": "342ea3bf2453c60b819ab66b0f63883bd3e4261730bba0fb8f06cf3a9e3ca5aa"
+    },
+    "path_prism_cold": {
+      "path": "experiments/logs/root-prism-free/f0-path-prism-cuts01-replay.json",
+      "sha256": "690613ccd1fd9cdf6e7c67988d9d1fac50cd751793dec53ebbadf2c5337b038f"
+    }
+  },
+  "corrected_before_production": "The first inspected source treated all 4410 zeros as quota-one Gram witnesses; the reviewed version branches correctly for the 90 binary-motif zeros.",
+  "execution": {
+    "subject_imported": false,
+    "compatibility_graphs_rebuilt": false,
+    "prior_motif_census_repeated": false,
+    "maximum_clique_calls": 0,
+    "optimizer_calls": 0
+  },
+  "limits": "This is a source-only gate. It does not certify a production graph ledger or any new numerical upper bound."
+}

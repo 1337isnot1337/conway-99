@@ -1,0 +1,47 @@
+{
+  "status": "PASS: complete driver source review; bounded production cycle permitted",
+  "reviewer": "root",
+  "bindings": {
+    "driver": {
+      "path": "experiments/workspace/rook_case4_parity_cycle_v4.py",
+      "sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e"
+    },
+    "exact_kernel": {
+      "path": "experiments/workspace/rook_case4_parity_cycle_exact.py",
+      "sha256": "2f10a42f546623cb1840d228101537e6f4f4bc584776407140ae0c36b08c99b7"
+    },
+    "kernel_peer_review": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-exact-unrestricted-review.json",
+      "sha256": "69cd80f8990d87633e1b7ac417f2cee263e1207837246a4d41d224646aa24d23"
+    }
+  },
+  "driver_lines_read": 1139,
+  "source_review_only": true,
+  "new_optimizer_calls": 0,
+  "new_case_scans": 0,
+  "checks": [
+    "All 167115 extended rows remain the immutable integer prefix; appended signed cuts have full original-Gram witnesses.",
+    "The original and two point-weighted parity families are reevaluated at each changed exact point; repeated points stop the cycle.",
+    "Every scan must finish and pass its saved-basis and exact-distance replay before a numerical continuation. Partial prefixes retain checked data without starting an LP.",
+    "The append-only cut registry binds each witness to its source point and cold replay. Earlier cuts must be satisfied by every later accepted point.",
+    "Every numerical call records the active original row IDs and checks the complete row pool before selecting any new cover.",
+    "One proposed exact square basis is solved per round; candidate aliases and nonbasic values are not imposed as universal constraints.",
+    "Exact point acceptance checks all current rows and boxes, all 2271 original native rows, 178533 original covers, 1214 restored coordinates, all inherited parity constraints and all appended cuts.",
+    "Only an independently replayed finite-box certificate can establish a zero face or this case exclusion. Solver status alone cannot.",
+    "Separate stage owners and a whole-process-group guard preserve terminal files; there is no automatic retry."
+  ],
+  "limits": {
+    "fresh_point_scans": 3,
+    "LP_rounds": 2,
+    "native_calls": 60,
+    "cumulative_native_seconds": 120,
+    "numerical_seconds_per_round": 180,
+    "seconds_per_scan_or_exact_stage": 60,
+    "maximum_new_cuts": 64,
+    "maximum_scan_transcript_bytes": 67108864,
+    "maximum_exact_dimension": 512,
+    "maximum_exact_output_bits": 4096,
+    "whole_cycle_hard_seconds": 1080
+  },
+  "scope": "One finite cycle for rook case four. A fractional point, failed reconstruction, time limit or exhausted finite family does not settle Boolean incidence or the unrestricted graph problem."
+}

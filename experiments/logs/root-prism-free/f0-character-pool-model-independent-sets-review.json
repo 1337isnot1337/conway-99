@@ -1,0 +1,28 @@
+{
+  "status": "PASS: complete source read; independent source-only domain, phase and row-map review",
+  "review_source_sha256": "03f575f9309a81e8539cb7a4b51b22a522e453d6a093954c713368987006d71c",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_character_pool_model.py",
+    "sha256": "b3029a3a197ec31305f74dead2b28f51beaf219cb2e9e289dc8f250db42a6943",
+    "lines": 596
+  },
+  "preparation": {
+    "path": "experiments/logs/root-prism-free/f0-character-pool-model01/report.json",
+    "sha256": "ed912b419cdfe1a4b4b228382ec1cfbb58a7688476c06ea14e851a3290992f30"
+  },
+  "checked_reasoning": [
+    "Each removed basic table equals the literal projection of its retained refined table; all 3288 products and parent linear rows remain.",
+    "The two joint tables bind the existing population-three equalities. The first table is filtered only by the two certified simultaneous common-phase rows.",
+    "Common-phase normalization preserves an equivalent representative, not every labelled signed assignment; no independent per-orbit phase is imposed.",
+    "Table domains are necessary coordinate projections intersected with original domains. Product targets are distinct nonfactor variables, so the single forward pass is valid; same-factor squares are treated exactly.",
+    "All46 extra count domains are bound to the complete coupled census. They contain neither a product target nor a factor, so applying them after product propagation does not invalidate that derivation.",
+    "Old/target and target/initial row maps preserve order and exact constraint contents. The117 external rows remain in the complete target and are the only rows omitted from the initial relaxation.",
+    "The native transcription checks every variable domain and exact constraint and includes signed integer domain holes and overflow bounds.",
+    "Final candidate acceptance checks the complete target, all117 external inequalities and the original parent inspector; a count witness is not a literal graph."
+  ],
+  "source_imported": false,
+  "model_or_proto_rebuilt": false,
+  "census_controls_or_candidate_scan_repeated": false,
+  "optimizer_calls": 0,
+  "scope_caution": "No independent execution of model construction or saved cold replay. The phase theorem and complete census are inherited source-bound premises."
+}

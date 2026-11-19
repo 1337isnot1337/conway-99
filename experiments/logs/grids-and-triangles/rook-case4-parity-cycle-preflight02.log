@@ -1,0 +1,17 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_parity_cycle_v2.py", line 1133, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_parity_cycle_v2.py", line 1117, in main
+    result = tiny_native_preflight(args.preparation, args.output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_parity_cycle_v2.py", line 820, in tiny_native_preflight
+    "preparation": record_ref(preparation), "runtime_binding": runtime,
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_parity_cycle_v2.py", line 107, in record_ref
+    return {"path": str(path.relative_to(ROOT)), "sha256": sha(path.read_bytes())}
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py", line 682, in relative_to
+    raise ValueError(f"{str(self)!r} is not in the subpath of {str(other)!r}")
+ValueError: 'experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation02.json' is not in the subpath of '/workspace/scratch/ab2f4d4412fd/conway-99-resume'
