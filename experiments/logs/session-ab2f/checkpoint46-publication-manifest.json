@@ -1,0 +1,68 @@
+{
+  "schema": "conway99.checkpoint46.publication.v1",
+  "parent": "27938c7eb1881089f24dd072e1cb733bd95524a8",
+  "scope": "native recovery replay, exact stronger-row evaluation, and complete LP preparation gate",
+  "files": [
+    {
+      "path": ".github/workflows/conway99-rook-lp-prepare.yml",
+      "content_reviewed": true
+    },
+    {
+      "path": "experiments/workspace/rook_case4_complete_lp_recovery.py",
+      "git_blob": "2d4bf1652fa7edf59fd88132794c99e68eba1ce9"
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-complete-lp-recovery-expected.json",
+      "git_blob": "07526ed42405bd38061b6bc852ce4043d16fd2b1"
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-complete-lp-recovery-root-gate.json",
+      "content_reviewed": true
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-complete-lp-prepare-request.json",
+      "content_reviewed": true
+    },
+    {
+      "path": "experiments/workspace/rook_case4_gram_native_evaluation.js",
+      "git_blob": "d8885a950d99ef55a860a0be0bdbfdddc5e109c6"
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-gram-native-evaluation.json",
+      "git_blob": "b69d1b3ec7395d1343451c9b6c18d46a723590b9"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_gram_native_evaluation.md",
+      "git_blob": "96cd45815c04b27c843d5e856538088979962d43"
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-gram-native-evaluation-root-replay.json",
+      "content_reviewed": true
+    },
+    {
+      "path": "experiments/logs/session-ab2f/checkpoint45-native-replay-result.json",
+      "content_reviewed": true
+    },
+    {
+      "path": "STATE.md",
+      "content_reviewed": true
+    },
+    {
+      "path": "CONTENTS.md",
+      "content_reviewed": true
+    },
+    {
+      "path": "experiments/README.md",
+      "content_reviewed": true
+    },
+    {
+      "path": "research/session-ab2f.md",
+      "content_reviewed": true
+    }
+  ],
+  "native_recovery_passed": true,
+  "rook_Gram_point_native_rows_violated": 22,
+  "complete_rook_LP_native_status": "pending",
+  "optimizer_allowed": false,
+  "global_resolution": false
+}

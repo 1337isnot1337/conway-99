@@ -901,3 +901,11 @@ All new files were frozen as Git blobs and independently reviewed before this co
 ## Checkpoint 45: bounded native recovery replay preparation
 
 The next commit adds a branch-limited CI workflow for the eight already-reviewed finite checkers. It resolves the remaining untested Node filesystem wrappers during the local workspace outage. The workflow has read-only repository permission, pinned actions, sparse checkout and explicit job/child deadlines. It runs no optimizer. Its first execution result will be recorded separately. The exact public-input extraction source for root 49 is also preserved.
+
+## Checkpoint 46: native replay passed; complete rook LP recovery queued
+
+The recovery workflow at commit 27938c7 passed all eight Node filesystem checks. Its job log reproduces the frozen F0 interior, structural, baseline and root-49 result objects exactly. The native summary is preserved as a repository artifact.
+
+An exact evaluation of the reconstructed case-four Gram point finds one failed triple capacity and 21 failed exterior-row inequalities. All 186 signature capacities, thirty Gram no-goods and fourteen older zero units pass. This rejects that rational point from the stronger relaxation and does not exclude case four.
+
+The complete selector-LP recovery source has been read and hash-checked by the coordinator. It imports three public inputs, proves all 58 fixed zeros, accounts for all 2,271 native rows and 178,533 covers, and requires the pre-outage exact row stream. A separate native preparation/cold-replay job is queued by this commit. No optimizer is authorized at this preparation stage.

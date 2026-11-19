@@ -1,0 +1,84 @@
+{
+  "schema": "conway99.recovery-native-replay.v1",
+  "status": "PASS",
+  "commit": "27938c7eb1881089f24dd072e1cb733bd95524a8",
+  "workflow_run_id": 44504273054,
+  "job_id": 135491656214,
+  "workflow_url": "https://github.com/1337isnot1337/conway-99/actions/runs/44504273054",
+  "summary": {
+    "status": "PASS",
+    "node": "v22.23.4",
+    "commit": "27938c7eb1881089f24dd072e1cb733bd95524a8",
+    "optimizer_calls": 0,
+    "records": [
+      {
+        "name": "core16",
+        "source": "experiments/workspace/high_graph_core16_recovery_check.js",
+        "sha256": "6fe0fe347a8d4ca0a8943fc2c4bcc75344325362dd75ac515bb2b651df138e77",
+        "seconds": 0.546,
+        "status": "PASS",
+        "frozen_artifact_compared": null
+      },
+      {
+        "name": "f0-interior",
+        "source": "experiments/workspace/root_prism_free_f0_gram_interior_recovery.js",
+        "sha256": "544bf85c2ec658b01bc5bfe29999c9039df24c6b95398288341699c0362a1bef",
+        "seconds": 0.132,
+        "status": "PASS",
+        "frozen_artifact_compared": "experiments/logs/root-prism-free/f0-gram-interior-recovery-certificate.json"
+      },
+      {
+        "name": "f0-structural",
+        "source": "experiments/workspace/root_prism_free_f0_fractional_structural_recovery.js",
+        "sha256": "0a1beefc85a807d5073676b0de380ff714d855e8a9a84c8e6010786a18e39b2b",
+        "seconds": 1.085,
+        "status": "PASS",
+        "frozen_artifact_compared": "experiments/logs/root-prism-free/f0-fractional-structural-recovery.json"
+      },
+      {
+        "name": "f0-baseline",
+        "source": "experiments/workspace/root_prism_free_f0_fractional_baseline_recovery.js",
+        "sha256": "2c7f4cf9965426d97eb025793d5912d2b51cc56dc9fced76fd66219333263af1",
+        "seconds": 1.727,
+        "status": "PASS",
+        "frozen_artifact_compared": "experiments/logs/root-prism-free/f0-fractional-baseline-recovery.json"
+      },
+      {
+        "name": "root49-full",
+        "source": "experiments/workspace/root49_packing_moment_recovery_check.js",
+        "sha256": "d139a96eeda8b07a1fa33850f639149622ce6443e8478b407d55477babf94e0b",
+        "seconds": 0.152,
+        "status": "PASS",
+        "frozen_artifact_compared": "experiments/logs/moments-and-counts/order10-root49-packing-moment-recovery-result.json"
+      },
+      {
+        "name": "root49-independent",
+        "source": "experiments/workspace/root49_packing_moment_recovery_replay.js",
+        "sha256": "499d7ff339453fa578ec0d37076f34b5c43b95e3fce59a868c35566448959079",
+        "seconds": 0.029,
+        "status": "PASS",
+        "frozen_artifact_compared": null
+      },
+      {
+        "name": "rook-gram",
+        "source": "experiments/workspace/rook_case4_gram_support_reconstruction.js",
+        "sha256": "a29bf85f365778b411f772fa6223c3bd941115b38d681f82c31fa0cbe23fe5e1",
+        "seconds": 0.08,
+        "status": "PASS",
+        "frozen_artifact_compared": null
+      },
+      {
+        "name": "rook-maxmin-controls",
+        "source": "experiments/workspace/rook_case4_maxmin_certificate_controls.js",
+        "sha256": "ba9ab2695e3187b33cb1a506bf57bd80e8bc07b90fb9a647d253c016dc23db9b",
+        "seconds": 0.245,
+        "status": "PASS",
+        "frozen_artifact_compared": null
+      }
+    ],
+    "checkers": 8
+  },
+  "all_eight_Node_filesystem_entry_points_executed": true,
+  "all_expected_artifact_comparisons_passed": true,
+  "optimizer_calls": 0
+}

@@ -183,3 +183,5 @@ remains feasible.
 - [Root-49 high-mask moments](research/grids-and-triangles/root49_packing_moment_recovery.md) have a complete 80-atom nonnegative integer measure at the current count point, with a separate arithmetic replay.
 - [Fractional F0 shared-edge projection](research/root_prism_free_f0_fractional_shared_projection.md) prepares the full structural and motif baseline and proves its equivalence to all raw support-function inequalities. No feasibility query has run.
 - [Finite-box max-min certificates](research/grids-and-triangles/rook_case4_maxmin_certificate.md) derive exact forced-selector rules and verify small controls. The case-four max-min query is not implemented by this package.
+
+- [Exact stronger-row evaluation](research/grids-and-triangles/rook_case4_gram_native_evaluation.md) rejects the recovered Gram point by one triple capacity and 21 exterior-row inequalities. The full selector LP is being recovered separately from the public complete cover registry.

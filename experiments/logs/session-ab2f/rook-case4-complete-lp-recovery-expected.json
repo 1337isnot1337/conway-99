@@ -1,0 +1,97 @@
+{
+  "status": "expected complete LP recovery bindings; builder not executed",
+  "source": {
+    "path": "experiments/workspace/rook_case4_complete_lp_recovery.py",
+    "git_blob": "2d4bf1652fa7edf59fd88132794c99e68eba1ce9",
+    "sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6"
+  },
+  "input_bindings": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "git_blob": "89fece302243da184766735c7517aa67f00a0dbe",
+      "sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lazy-native-model.json",
+      "git_blob": "81e2234210465fef33d164207d37c4aa7a530560",
+      "sha256": "aeb636198cb0b9749e2142a596404181edf92923d55d5bdf764a8f9432439b68"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lazy-native-registry.bin.gz",
+      "git_blob": "d37d004e2d044f91e3fef5667a33640e602280c9",
+      "sha256": "c32e31d9ce6ec6168cea1c9f6c6ea4165a2ca7a8f2144a59a31e5a1d6da7b543"
+    }
+  ],
+  "registry": {
+    "decompressed_sha256": "3b819e29bc9aacdb5217b151f32b35cb186aa3b8a93a37784edc912ddac36736",
+    "decompressed_bytes": 27494082,
+    "records": 178533,
+    "record_bytes": 154,
+    "literal_occurrences": 12887146,
+    "canonical_DIMACS_body_sha256": "6f4ccc4623e4a7b9a40236f84f05e1a3973dd8b1d6f95a82a5ff0b66e699a24a",
+    "cover_necessity_certificate_sha256": "a255f8876d3d827ff94d7df2f2640be6963348987043665dcd6fc53bf41dff8f"
+  },
+  "zero_derivation": {
+    "Gram_rows": [
+      [
+        3,
+        27,
+        1
+      ],
+      [
+        4,
+        27,
+        1
+      ],
+      [
+        17,
+        27,
+        -1
+      ]
+    ],
+    "Gram_zeros": 46,
+    "empty_cover_units": 14,
+    "overlap": 2,
+    "union": 58,
+    "no_lost_checkpoint43_input": true
+  },
+  "required_counts": {
+    "original_columns": 1214,
+    "remaining_variables": 1156,
+    "original_native_rows": 2271,
+    "original_covers": 178533,
+    "retained_native_rows": 1992,
+    "retained_covers": 172216,
+    "rows": 174208,
+    "nonzeros": 11868882,
+    "omitted_native_box_tautologies": 279,
+    "omitted_cover_zero_guards": 6317,
+    "maximum_absolute_coefficient": 1159,
+    "uncompressed_array_bytes": 147480936
+  },
+  "required_row_inventory": {
+    "tautological_Gram": 234,
+    "retained_Gram": 396,
+    "retained_original_signature": 186,
+    "retained_core_triple": 1348,
+    "tautological_core_triple": 17,
+    "retained_Gram_conflict": 4,
+    "tautological_Gram_conflict": 26,
+    "retained_uncapped_row_cut": 58,
+    "tautological_uncapped_row_cut": 2,
+    "retained_cover": 172216,
+    "tautological_cover": 6317
+  },
+  "required_integer_stream_sha256": "444835c4d3c466dc9bb5c71646da13bf98e6eefdb3a492c51bcf54185b8919d5",
+  "stream_format": "<BIqqI header(kind,original_id,lower,upper,nterms), then <Iq(reduced_column,coefficient); native rows before covers",
+  "limits": {
+    "preparation_seconds": 180,
+    "peak_RSS_checked_KiB": 1048576
+  },
+  "dependencies": "Python standard library and NumPy only; no ancestor imports or solver",
+  "prepare_command": "python experiments/workspace/rook_case4_complete_lp_recovery.py prepare --directory /tmp/rook-case4-complete-lp-recovery",
+  "replay_command": "python experiments/workspace/rook_case4_complete_lp_recovery.py replay --model /tmp/rook-case4-complete-lp-recovery/model.json --output /tmp/rook-case4-complete-lp-recovery-cold.json",
+  "generated_runtime_metadata_available": false,
+  "optimizer_allowed_in_this_stage": false,
+  "status_scope": "only a successful native preparation matching every binding clears the model gate for a separate later query"
+}
