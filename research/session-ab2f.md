@@ -119,3 +119,16 @@ their hypotheses permit them; computational exclusions require exact replay.
   a checked DRAT proof for a 58-bit canonical H/Z pattern with all low
   incidences free. These reject partial choices, not additional complete
   incidence classes. The full-template symmetry run remained undecided.
+- Tightened the seven-grid remainder using the cubic trace identity. The
+  number of vertices in exactly two internal triangles is divisible by
+  nine. The zero case fails an elementary trace condition. A complete
+  catalogue of 408 nine-vertex residual cores has no permitted spectrum.
+  An independent replay uses a different extension generator, leaf-twin
+  quotient polynomials, rational Sturm tests, and Newton sums. It checks
+  all 1,695,332 multiplicity tuples, leaving the counts 18, 27, and 36.
+  Seven all-red grids remain possible under these necessary tests.
+- Replayed all fifteen saved DRAT proofs and all 447 partial witnesses
+  after the fixed-core additions. Every replay passed. Continued the
+  norm-16 search in six models fixing the three proved zero forests for
+  each of two doubled-edge support templates, with the old zero-label
+  ordering removed. Time-limited runs are recorded as undecided.

@@ -167,3 +167,13 @@ in the canonically labeled full-incidence model reject further specified
 partial choices. These checks leave the 447 whole incidence classes
 unresolved. All whole-template and time-limited solver outcomes remain
 separate from these fixed-point certificates.
+
+[The seven-grid remainder](research/grids-and-triangles/seven_red_residual_reduction.md)
+has 36 vertices. Its number of vertices in exactly two internal triangles
+is divisible by nine. The zero case fails an elementary spectral trace
+condition, and the nine case fails a complete census of 408 residual cores.
+An independent implementation reconstructs the catalogue and characteristic
+polynomials, then checks all 1,695,332 factor-multiplicity tuples. None passes
+the cubic identity. The remaining counts are 18, 27, and 36; seven all-red
+grids have not been excluded. `make verify-seven-red-residual` replays this
+exclusion and is included in the global-certificate target.

@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-red-grid-bound verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-red-grid-bound verify-seven-red-residual verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -15,7 +15,7 @@ verify: $(CERTIFICATES)
 
 # Exact certificate replay for the global-constraints research branch.
 # This target performs no new SAT or mixed-integer search.
-verify-global-constraints: verify-red-grid-bound
+verify-global-constraints: verify-red-grid-bound verify-seven-red-residual
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_certificates.py
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_hemisphere_verify.py
 	"$(PYTHON)" $(WORKSPACE)/verify_coupled_counting.py
@@ -42,6 +42,9 @@ verify-red-grid-bound:
 	"$(PYTHON)" $(WORKSPACE)/eight_red_hamming_spectral_audit.py "$$build_dir/spectra.json"; \
 	"$(PYTHON)" $(WORKSPACE)/red_grid_cubic_trace.py --spectra "$$build_dir/spectra.json" --output "$$build_dir/cubic.json" > /dev/null; \
 	cmp "$$build_dir/cubic.json" experiments/logs/grids-and-triangles/red-grid-cubic-trace.json
+
+verify-seven-red-residual:
+	"$(PYTHON)" $(WORKSPACE)/seven_red_nine_audit.py
 
 # Supply the path to the separately built, pinned drat-trim executable.
 verify-coupled-shells:

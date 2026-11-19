@@ -9,6 +9,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [A grid with its center missing](research/grids-and-triangles/incomplete_grid.md) derives an exterior-incidence reduction for an eight-vertex core.
 - [At most seven all-red grids](research/grids-and-triangles/eight_red_exclusion.md) excludes eight grids whose six triangles each lie in six grids. Exact cycle spectra and covering certificates complete an invariant-subspace argument. [Nine-grid preliminary argument](research/grids-and-triangles/red_grid_limit.md)
 - [Cubic trace closure](research/grids-and-triangles/red_grid_cubic_trace.md) gives a second, shorter proof of the seven-grid bound, using the cycle census and no three-cover enumeration.
+- [The seven-grid remainder](research/grids-and-triangles/seven_red_residual_reduction.md) restricts its number of vertices in exactly two internal triangles to 18, 27, or 36. Two exact implementations exclude all 408 residual cores for the nine-vertex case.
 - [No induced ternary Hamming cube](research/grids-and-triangles/eight_red_hamming.md) excludes an induced `H(3,3)` by boundary and common-neighbor counting.
 - [Aggregate grid-line constraints](research/grids-and-triangles/grid_flag_relaxation.md) records an exact integral count witness at 120 grids, delimiting this relaxation.
 - [Incomplete-grid completion constraints](research/unrestricted-completion.md) proves a conditional sixteen-vertex independent set and records exact signature and partial-assignment exclusions. All eight starting cores remain unresolved.

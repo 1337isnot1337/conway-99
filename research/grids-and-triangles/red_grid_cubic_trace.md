@@ -120,6 +120,27 @@ Equating (2), (3), and (4) gives the new necessary condition
 
 For eight bases this is -4y/3. For seven bases it is 32-4y/3.
 
+### Divisibility by nine
+
+For either seven or eight all-red bases, y is divisible by nine. The
+rook character in (1) is an integer: each rook automorphism preserves the
+full lattice W intersected with the integer coordinate lattice in the
+rational eigenvalue-one space. Therefore every three-base matching product
+has a fixed-point count divisible by three. Summing over unordered triples
+of bases shows that t_R is divisible by three. Equation (3) then gives
+that y/3 is divisible by three.
+
+There is an independent spectral check. The characteristic polynomial of
+the rational invariant restriction C_Z has integer coefficients: its
+eigenvalues are algebraic integers, and its coefficients are rational.
+Newton's identities give s_3 congruent to s_1 modulo three. The energy
+identity therefore makes s_3+s_2-12s_1 congruent to -4b(11-b) modulo three.
+Substitution in (5) again gives y/3 congruent to zero modulo three.
+
+In particular, the y=24 spectra in the eight-grid census already violate
+this divisibility condition. The full cubic audit also excludes them
+directly, without using this corollary as an input.
+
 ## Exact exclusion of the twelve eight-grid spectra
 
 The existing exact cycle census leaves twelve spectra on five partitions.

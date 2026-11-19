@@ -55,6 +55,20 @@ The target also checks the [cubic trace identity](../research/grids-and-triangle
 which provides a shorter exclusion of all twelve without the three-cover
 census.
 
+The seven-grid follow-up has its own exact replay:
+
+```sh
+make verify-seven-red-residual
+```
+
+This rebuilds all 408 possible nine-vertex residual cores, reconstructs
+their characteristic polynomials by a second method, and checks every
+factor-multiplicity tuple against the quadratic and cubic trace conditions.
+It excludes the nine-vertex case. The
+[remainder note](../research/grids-and-triangles/seven_red_residual_reduction.md)
+states the resulting counts 18, 27, and 36. Seven all-red grids remain
+unresolved. This replay is also part of `make verify-global-constraints`.
+
 The fourteen additional norm-16 exclusions have saved CNF cores and DRAT
 proofs. Build [drat-trim](https://github.com/marijnheule/drat-trim) at revision
 `2e3b2dc0ecf938addbd779d42877b6ed69d9a985`, then run:
