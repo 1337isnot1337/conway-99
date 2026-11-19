@@ -29,6 +29,29 @@ Indeed $\operatorname{tr}D^2=108$, $\operatorname{tr}D^3=6c$ and $\operatorname{
 
 When $s=0$, $D$ consists of twelve triangles and a matching of their vertices within fibers. Any square alternates two matching edges with two triangle edges. Two matching edges between a pair of triangles force the third. Otherwise these two triangles and $T$ would induce the [rook grid minus one edge](../../STATE.md), which is impossible. Three matching edges give one grid on $T$, contributing three squares. If $d$ denotes the number of grids on $T$, then $q_E=207+3d$. Under transitivity the number of squares through each exterior vertex is $(69+d)/5$. Since $0\le d\le6$, this requires $d=1$ or $6$, giving 14 or 15 rooted squares.
 
+## Walk-regularity characterizes the full triangles
+
+A graph is walk-regular if for each length all vertices start the same number of closed walks. **The exterior $E$ is walk-regular if and only if $T$ lies on six grids.** In fact equality of the rooted counts through length eight suffices.
+
+The necessity argument for $s=0$ and $d\in\{1,6\}$ above uses only closed walks of lengths three and four: in a regular graph their counts at a root determine its numbers of triangles and squares. When $s=0$, contract each triangle of $D$ to a vertex and keep its three matching half-edges. The resulting cubic multigraph $H$ on twelve vertices is properly three-edge-colored by the fibers. Parallel edges occur in bundles of three, one bundle per grid on $T$. The graph $D$ is the line graph of the subdivision of $H$. Its characteristic polynomial is
+$$
+ \chi_D(z)=z^6(z+2)^6\chi_H(z^2-z-3).
+$$
+Indeed the subdivision has 30 vertices and 36 edges. If $N$ is its unsigned vertex-edge incidence matrix, $D=N^tN-2I$. In $NN^t$ the diagonal blocks are $3I,2I$ and the off-diagonal block is the incidence matrix $C$ of $H$, with $CC^t=3I+H$. Taking a Schur complement gives the displayed formula. In particular
+$$
+ \chi_E(x)=(x-8)(x-3)^{18}(x+4)^7(x+1)^4(x-1)^6\chi_H(x^2+3x-1).
+$$
+
+Suppose $d=1$. Then $H$ consists of one triple edge and a simple cubic graph $L$ on ten vertices. Compare this with the six-grid polynomial, where the ten vertices instead form five triple edges, denoted $L_0$. Each eigenvalue $h$ of $L$ contributes two eigenvalues of $E$ whose power sum $p_j(h)$ satisfies $p_0=2$, $p_1=-3$, $p_j=-3p_{j-1}+(1+h)p_{j-2}$. In particular $p_6,p_8$ are integral polynomials with leading terms $2h^3,2h^4$. The six-grid spectrum is $8^1,3^{18},1^{12},(-1)^{10},(-2)^6,(-4)^{13}$; its sixth and eighth power sums are both divisible by 60.
+
+Write $a,b$ for the counts of triangles and squares in $L$. The traces of $L^2,L^3,L^4$ are $30,6a,150+8b$, while the traces for $L_0$ are $90,0,810$. Walk-regularity requires both $\operatorname{tr}E^6$ and $\operatorname{tr}E^8$ to be divisible by 60. Subtracting the six-grid trace at length six gives $12a\equiv0\pmod{60}$. The only possible multiple of five is zero. In a cubic graph triangles outside $K_4$ components are isolated triangles or pairs sharing an edge, using respectively three points per triangle or four points per two. Ten points without a $K_4$ support at most four triangles. With a $K_4$ the other six vertices form a cubic graph; its complement is a six-cycle or two triangles, yielding respectively two or zero more triangles. Now $a=0$, and subtraction at length eight gives $16b\equiv0\pmod{60}$. Thus $15\mid b$. Each vertex lies on at most six squares, so $b\le15$. Equality would require every two neighbors of every point to have identical three-point neighborhoods. The components would all be $K_{3,3}$, impossible on ten vertices. Hence $b=0$.
+
+A simple cubic graph of girth at least five on ten vertices cannot have a proper three-edge-coloring. Two colors would form an even cycle cover, necessarily a single ten-cycle. Label it cyclically from 0 to 9. The five remaining matching edges are chords of cyclic distance four or five. Distance four preserves parity, so an odd number of chords have distance five. Two such diameters whose indices are consecutive modulo five make a square, so at most two diameters are possible. The only diameter must then be $0$ to $5$ up to rotation. On the remaining points the distance-four matching is forced: its edges are $2$ to $6$, $4$ to $8$, $1$ to $7$ and $3$ to $9$. But $1,2,6,7$ form a square. This excludes $d=1$.
+
+Conversely if $d=6$, $D$ consists of six triangular prisms. Every exterior point marks exactly one point of each prism, since the associated nine-point grid is a perfect dominating set. For every polynomial $f$, the diagonal of $Bf(D)B^t$ is constant: there is one contributing diagonal entry per prism, and the prism is vertex-transitive. The relation $EB=2J-B-BD$ implies that $E^jB$ is a linear combination of $J$ and $Bf_j(D)$ for every $j$. Thus $E^jBB^t$ has constant diagonal, using the constant row sum of $B$. Multiplying $E^2+E=12I+2J-BB^t$ by successive powers of $E$ proves inductively that all powers of $E$ have constant diagonal.
+
+Consequently at most twenty of the 231 triangles have walk-regular exteriors, by the [bound on full triangles](double-partner-witness.md). All other triangles have two exterior points with different numbers of closed walks of length at most eight.
+
 ## Faithful action on twenty blocks
 
 Let $G=\operatorname{Aut}(E)$ and assume it acts transitively on the 60 vertices. The twenty exterior triangles are its canonical blocks. The edges between any two form a matching. If two triangles have one or two cross-edges, this distinguishes a vertex of the first triangle by its matching status. The kernel of the action on the blocks fixes this vertex. Its fixed points form a $G$-invariant set by normality, so transitivity forces the kernel to fix all 60 vertices.
