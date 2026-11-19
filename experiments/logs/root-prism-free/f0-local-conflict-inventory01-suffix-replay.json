@@ -1,0 +1,124 @@
+{
+  "status": "PASS: complete cold replay by immutable prefix and fresh suffix",
+  "prefix_centers": 20,
+  "fresh_suffix_centers": 22,
+  "complete_centers": 42,
+  "literal_centers_covered": 480,
+  "production_record_raw_sha256": "8db1e5eaa05b4573dff5c582425651973c43238059a77c834b2bbd3bac1dbbe2",
+  "suffix_center_hashes": [
+    [
+      45,
+      "48de0b3e4576a5b5a8c9b1d9f3d203eeb546b6a04630e9a8c90ad4cf9a4afd62"
+    ],
+    [
+      46,
+      "e8bfff009bf91e1b20c5579b48f80c7e238d61b5c5f244fda24570f95d11edcb"
+    ],
+    [
+      47,
+      "a491636fbac3a25b79487137656e9ab6d90cce1147b55e3228c7b26c9bd4c2ab"
+    ],
+    [
+      50,
+      "6368d326661d4c2dd33a95a17859f5f89eab66d6ebeb97abb539a97b5f6db806"
+    ],
+    [
+      51,
+      "9a7ab1775f624abe1ce56b660d61b4940141ceed37f0b4540fa158e092986c33"
+    ],
+    [
+      52,
+      "b4ccbea82093657273cca9e74bd63557f95a5f98d4afad049c21dcb4b2b4d7e7"
+    ],
+    [
+      53,
+      "16da76b5d5894e8ae5db09e5d3798bb0c5f0687cba8b147cfbf10bd3dce70311"
+    ],
+    [
+      57,
+      "c5ee86286608065e81859f65e526a53a7c4504599c204495bcbec731a516639e"
+    ],
+    [
+      58,
+      "babaf83b29c8e92dd8e42206b78c30fc369f802e92321412f7d4a12916aabad5"
+    ],
+    [
+      63,
+      "343acd3b2839f3c9f194175add6d684c27c73bf6f0d0de5752a94613be3e1c9a"
+    ],
+    [
+      336,
+      "345a2577fb244fb3c7f0880b2aee939d4e36ca669e64b18086a3493a9db0fe24"
+    ],
+    [
+      338,
+      "e83ff6ce24fd909b49bb4869cafc212a320a1aa6a3dcd60b2c13ebb7f58ccc68"
+    ],
+    [
+      339,
+      "ac81e1b0c2997fab27ebab3fcb59d3269b37f31a0ba66c1712dcf3db89c1e5f0"
+    ],
+    [
+      342,
+      "30b9bd8d24dabd1542d4cd5762c370388b3609117862697710bceb7ed464c21b"
+    ],
+    [
+      343,
+      "7f18bbbae1ba433f4b6514cebf503c46e397b7999fe4e6c27dd0a5b76c56333f"
+    ],
+    [
+      344,
+      "fc088ccbda65e4665e85940d326214600f7719abfb101134fc89e6c0504da378"
+    ],
+    [
+      345,
+      "2243351ef4b2756cd6a15eca0d512ee6f8a97512ba787446b045cc7dc71cbe89"
+    ],
+    [
+      346,
+      "4752b75aa57a277a691acfc75da15e9d092bdd6a63e53458e0301debbc9435e3"
+    ],
+    [
+      347,
+      "ebe74b1b602687345c4d0cb2d322bad7366e99223a93b2c6d6c1503ba0b1ee72"
+    ],
+    [
+      354,
+      "2ff96f55cbd178cbfdc1b4b246dc8b4d6131146e2d45e5ab21ed0191b85254de"
+    ],
+    [
+      355,
+      "9481a9086549b85550b0b12982408d9de96c34264108a79fc5ed1abd77fa2ab3"
+    ],
+    [
+      356,
+      "2d8459568821a5375a77db5e3ece9d766bd07c22c244691bd338082af7c9a387"
+    ]
+  ],
+  "already_completed_centers_recomputed": 0,
+  "point_loaded": false,
+  "optimizer_calls": 0,
+  "maximal_clique_search": false,
+  "odd_cycle_search": false,
+  "local_feasibility_solve": false,
+  "source_sha256": "8a11e514ae7c8b56c001411ea7df8ee82a4e216a641584227ac8e13185829687",
+  "inputs": {
+    "source": {
+      "path": "experiments/workspace/root_prism_free_f0_local_conflict_inventory.py",
+      "sha256": "6e7a638c0c9045f82aceb37d4eceb749ad8911be4b65abeb52dd7be829f18036"
+    },
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-model-preparation.json",
+      "sha256": "a1cd24f263b9712aeb7f4ecb1b69467f698c83527199c4fc063a3c63ccee5406"
+    },
+    "record": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01.json.gz",
+      "sha256": "cbfdad339ab84cb7eeb6b221e10be3c4c1db4fb70932de3a28e62ee4642cb7e0"
+    },
+    "prefix_replay": {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-replay.json",
+      "sha256": "4717dc11e6f40007d58befc3ae968ceaaadb805c0548f797817846b3a0843be9"
+    }
+  },
+  "seconds": 4.385070097996504
+}

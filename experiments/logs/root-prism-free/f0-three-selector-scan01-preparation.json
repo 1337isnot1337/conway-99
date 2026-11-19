@@ -1,0 +1,96 @@
+{
+  "status": "PREPARED_FROZEN_POINT_THREE_SELECTOR_AND_258_CLIQUE_EVALUATION",
+  "source_sha256": "def73142c54ea432589ba05d9f9f1d1f3378676786c661928986d2eeae05bf50",
+  "inputs": {
+    "scope_source": {
+      "path": "experiments/workspace/root_prism_free_f0_three_selector_inequalities.py",
+      "sha256": "1b3f77db3479971b51b40b0f48246d3944dd14c963cae2c77959c4400bd3d3bb"
+    },
+    "scope": {
+      "path": "experiments/logs/root-prism-free/f0-three-selector-inequalities-scope01.json",
+      "sha256": "c7f574ef0ed1a05a54dc33404c5c8a1fa4c6c059340d45503a4ceeea88d8c655"
+    },
+    "scope_review": {
+      "path": "experiments/logs/root-prism-free/f0-three-selector-inequalities-independent-source-review.json",
+      "sha256": "9709536c1a25c85dcef8b97c104e0d98b6bcce3a7ebf46cb63f82df6595a5f14"
+    },
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-model03.json.gz",
+      "sha256": "ad046fc05a4247a081b3cabb16693682fa5539ff557dd7b599f3c3a63e7303dd"
+    },
+    "cliques": {
+      "path": "experiments/logs/root-prism-free/f0-core-pair-edge-cliques01.json.gz",
+      "sha256": "728f3de4ed0febf90f4062820b5a58c8e31335ebc7e65d354872c7bc8d38370e"
+    },
+    "clique_review": {
+      "path": "experiments/logs/root-prism-free/f0-core-pair-edge-cliques-independent-source-review.json",
+      "sha256": "eb55b088cf1fe853078a9131e9bf9eafdb4bd7a912143c831a1f80141ce1ff37"
+    }
+  },
+  "point_path": "experiments/logs/root-prism-free/f0-schur-path-query-run01/numerical.json",
+  "point_sha256": "bfe03cf2ec0f9d00ee7ff756112a61ab368404d4ed29c7b50377f01c5ae8327e",
+  "point_numerical_status": "HighsModelStatus.kOptimal",
+  "point_value_valid": true,
+  "exact_common_denominator": "147573952589676412928",
+  "exact_denominator_bits": 68,
+  "maximum_absolute_coordinate_numerator_bits": 67,
+  "absolute_row_gap_numerator_bound": "1237362317574786023424",
+  "gap_bound_bits": 71,
+  "anchor_representatives": [
+    0,
+    2,
+    8,
+    9,
+    10,
+    11,
+    24,
+    25,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    43,
+    44,
+    45,
+    46,
+    47,
+    50,
+    51,
+    52,
+    53,
+    57,
+    58,
+    63,
+    336,
+    338,
+    339,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    354,
+    355,
+    356
+  ],
+  "planned_array_evaluations_per_family": 4808202,
+  "maximum_numeric_candidates_per_anchor_and_family": 8,
+  "maximum_exact_new_rows_per_family": 64,
+  "core_pair_rows_evaluated_exactly": 258,
+  "maximum_scan_seconds_including_loading": 30,
+  "controls": {
+    "dense_anchor_formula_checks": 240,
+    "exact_gap_arithmetic": "Python integer common denominator",
+    "optimizer_calls": 0
+  },
+  "numeric_scan_calls": 0,
+  "optimizer_calls": 0,
+  "point_feasibility_claimed": false
+}

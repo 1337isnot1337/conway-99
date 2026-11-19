@@ -1,0 +1,61 @@
+{
+  "schema": "conway99.f0-three-selector-independent-source-review.v1",
+  "status": "PASS: independent complete-source and mathematical review",
+  "subject_source": "experiments/workspace/root_prism_free_f0_three_selector_inequalities.py",
+  "subject_sha256": "1b3f77db3479971b51b40b0f48246d3944dd14c963cae2c77959c4400bd3d3bb",
+  "preparation_path": "experiments/logs/root-prism-free/f0-three-selector-inequalities-scope01.json",
+  "preparation_sha256": "c7f574ef0ed1a05a54dc33404c5c8a1fa4c6c059340d45503a4ceeea88d8c655",
+  "full_subject_source_read": true,
+  "checks": [
+    {
+      "name": "triangle formula",
+      "finding": "For distinct binary selectors, z_b+z_a z_c-z_a z_b-z_b z_c equals (1-z_a)(1-z_c) when z_b=1 and z_a z_c when z_b=0; both are nonnegative."
+    },
+    {
+      "name": "perimeter formula",
+      "finding": "1-z_a-z_b-z_c+z_a z_b+z_a z_c+z_b z_c is one exactly at populations zero and three, and zero otherwise."
+    },
+    {
+      "name": "normalization and aliases",
+      "finding": "The expectation rows retain right sides zero and one. Counter adds every coincident quotient coefficient and removes only exact cancellations. No division by an orbit size occurs."
+    },
+    {
+      "name": "fixed coordinates",
+      "finding": "Each removed pair coordinate is checked against a frozen single-variable equality with right side zero before omission. The retained/fixed partition is checked against all 15589 original coordinates."
+    },
+    {
+      "name": "literal pair indexing",
+      "finding": "The lexicographic pair-index formula is consistent with all unordered distinct pairs. Actual core adjacency, induced signature permutations, group composition, and every saved selector/pair orbit are validated against the bound complete moment preparation."
+    },
+    {
+      "name": "coverage by 42 anchors",
+      "finding": "A distinguished triangle-row center can be moved to its selector-orbit representative. A perimeter triple can use any one of its members as anchor; allowing duplicate scans preserves complete coverage. This uses core relabelings of necessary moment constraints and assumes no automorphism of the unknown graph."
+    },
+    {
+      "name": "Burnside formulas",
+      "finding": "For a permutation with f fixed points, c2 two-cycles and c3 three-cycles, the fixed triangle-row count is f*(binom(f-1,2)+c2), and the fixed perimeter-row count is binom(f,3)+f*c2+c3."
+    },
+    {
+      "name": "reported finite sizes",
+      "finding": "The literal counts are 54950880 triangle rows and 18316960 perimeter rows. The 42-anchor inventory has 4808202 pair evaluations per family. The saved orbit counts are 4580202 and 1527066; these last two counts were read, not independently recounted."
+    },
+    {
+      "name": "future separation scope",
+      "finding": "Candidate caps are metadata only. A future scan still needs its own point binding and exact arithmetic bounds. The source does not claim that the full three-selector cone is enforced or that a point has passed."
+    }
+  ],
+  "independent_operations": [
+    "Read the full subject source",
+    "Read and hash the saved preparation",
+    "Check the Boolean identities and Burnside formulas algebraically"
+  ],
+  "subject_imported": false,
+  "controls_reexecuted": false,
+  "domain_rebuilt": false,
+  "point_loaded": false,
+  "optimizer_calls": 0,
+  "limitations": [
+    "No new preparation census or point scan was executed.",
+    "This review concerns the frozen preparation; it does not gate a later numerical separator or certify any fractional point."
+  ]
+}

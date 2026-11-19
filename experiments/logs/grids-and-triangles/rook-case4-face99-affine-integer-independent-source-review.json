@@ -1,0 +1,22 @@
+{
+  "status": "PASS: complete signed-integer affine constructor source and mathematics review",
+  "subject": "experiments/workspace/rook_case4_face99_affine_integer.py",
+  "subject_sha256": "0ac6d9d5b5cbeeafa43626a7016db8a25172b0f5c60b09230f590fa1a78b0e30",
+  "reviewer": "unrestricted_completion",
+  "complete_source_read": true,
+  "checks": {
+    "modular_minor": "The transpose row transformation is transposed to a right inverse of the selected integer square minor. Direct inverse multiplication modulo the prime establishes rational nonsingularity and prime-coprime determinant; no rational row-rank inference is used.",
+    "basic_points": "Unselected coordinates are zero only in proposals. Each basic point passes all632 original native equality rows,396 deduplicated equations and99 proved zero positions before composition.",
+    "Bezout": "If A*n=d*b and A*m=e*b, u*d+v*e=gcd(d,e) gives A*(u*n+v*m)=gcd(d,e)*b. Positive normalization preserves this equality. Each accepted basic denominator is coprime to its designated prime. The current denominator only decreases, so removing all prime factors of the initial19*601*145463 yields denominator1.",
+    "Cramer_bound": "The product of augmented row squared norms bounds determinant and every replaced-column determinant squared. The recorded output-bit bound is conservative; it does not claim bounds on all internal FLINT temporaries.",
+    "resource_scope": "One owned60-second child and at most3 rational basic solves; output-bit and file-size refusal; no optimizer/HNF/SNF or automatic retry.",
+    "replay": "Every saved basic and combined point is checked against all original equalities before the final1214-coordinate integer vector is accepted. Original zeros, stage hashes and denominator1 are checked.",
+    "scope": "Signed integer affine feasibility only. No nonnegativity, Boolean, inequality, cover, graph, or case-exclusion claim."
+  },
+  "subject_imported": false,
+  "controls_repeated": false,
+  "modular_inventory_or_minors_rebuilt": false,
+  "rational_solves": 0,
+  "optimizer_calls": 0,
+  "limitations": "Source/mathematical review only; saved modular inverse entries and eventual runtime points were not independently recomputed."
+}

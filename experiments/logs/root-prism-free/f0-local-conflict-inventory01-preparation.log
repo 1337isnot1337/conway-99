@@ -1,0 +1,37 @@
+{
+  "status": "PASS: local-conflict source/domain preparation",
+  "preparation_sha256": "a1cd24f263b9712aeb7f4ecb1b69467f698c83527199c4fc063a3c63ccee5406",
+  "source_sha256": "6e7a638c0c9045f82aceb37d4eceb749ad8911be4b65abeb52dd7be829f18036",
+  "coverage": {
+    "centers": 480,
+    "representatives": 42,
+    "actual_core_actions": 12,
+    "live_eligible_edges": 66510,
+    "distinct_literal_neighbors_untied": true,
+    "mixed_equations_per_center": 18,
+    "target_sum": 24,
+    "neighbor_signature_weight": 3,
+    "implied_local_degree": 8,
+    "frozen_path_pairs": 61476,
+    "frozen_clique_buckets": 3096,
+    "quota_one_selector_zero_pairs": 4320,
+    "motif_selector_zero_pairs": 90
+  },
+  "work_bounds": {
+    "representative_neighbor_pair_bound": 1633539,
+    "representative_vertex_count": 11658,
+    "maximum_neighbors": 339,
+    "inventory_seconds": 10,
+    "threads": 1
+  },
+  "controls": {
+    "all_five_vertex_graphs": 1024,
+    "direct_edge_triangle_and_degeneracy_comparisons": 3072,
+    "selector_conflict_activation_controls": 8,
+    "fractional_pair_bounds_alone_counterexample_denominator": 2
+  },
+  "graph_inventory_executed": false,
+  "point_loaded": false,
+  "optimizer_calls": 0,
+  "seconds": 4.207909670003573
+}

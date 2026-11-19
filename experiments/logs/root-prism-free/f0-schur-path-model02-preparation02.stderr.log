@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_schur_path_model_v2.py", line 171, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_schur_path_model_v2.py", line 152, in main
+    model = build(cold_parent=args.mode == "replay")
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_schur_path_model_v2.py", line 76, in build
+    assert canonical(path_source.build(time.monotonic() + 30, Counter())) == canonical(paths)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_path_prism_cuts.py", line 157, in build
+    check_time(deadline, "literal configurations")
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_path_prism_cuts.py", line 55, in check_time
+    raise TimeoutError("bounded two-edge prism preparation: "+stage)
+TimeoutError: bounded two-edge prism preparation: literal configurations

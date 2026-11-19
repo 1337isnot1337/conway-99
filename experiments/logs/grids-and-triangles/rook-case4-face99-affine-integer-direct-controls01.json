@@ -1,0 +1,50 @@
+{
+  "status": "PASS: saved rational control and two forged vectors rejected; no integer point tested",
+  "forged_vectors_rejected": 2,
+  "exact_check": {
+    "original_coordinates": 1214,
+    "Gram_entries": 630,
+    "empty_support_row_equalities": [
+      {
+        "cut_index": 34,
+        "target_column": 1080,
+        "demand": 2
+      },
+      {
+        "cut_index": 35,
+        "target_column": 1081,
+        "demand": 2
+      }
+    ],
+    "original_equality_rows": 632,
+    "proved_zero_coordinates": 99,
+    "all_supports_rebuilt_from_Gram_diagonals": true,
+    "common_denominator": "1661041997",
+    "integral": false,
+    "negative_coordinates": 0,
+    "positive_coordinates": 1115,
+    "zero_coordinates": 99,
+    "binary_or_nonnegative_feasibility_claimed": false,
+    "inequality_or_cover_feasibility_claimed": false
+  },
+  "source_sha256": "c98b41c58e185e34996085281efbbb2e191e445e0a57505b62931090e34f234b",
+  "input_bindings": {
+    "native": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    },
+    "zeros": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-transportation-seed-certificate.json",
+      "sha256": "64d8e375280bc067097913de2dd6e2995c19de2a4807f63cecdcd80b811a85cf"
+    },
+    "rational_control": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-basis-run01/candidate.json",
+      "sha256": "0b627484317e65562500fbbbbd594e4a95dbfa809576fae52f6c7ccdbe7191e7"
+    }
+  },
+  "constructor_or_solver_imported": false,
+  "elimination_calls": 0,
+  "optimizer_calls": 0,
+  "case4_excluded": false,
+  "seconds": 0.3066386220016284
+}

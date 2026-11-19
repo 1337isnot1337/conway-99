@@ -1,0 +1,28 @@
+{
+  "status": "PASS: independent full-source and mathematical review of rook single/pair parity separation",
+  "subjects": {
+    "experiments/workspace/rook_case4_face99_parity_separation.py": "101595222904d8576bcadf430b3a2ff37e6060b8c8690f27437108294008f0da",
+    "experiments/workspace/rook_case4_parity_polytope.py": "048df509b05601f15d6cb4230750b36d221276cce66e625b0cf9c720ecb89062",
+    "experiments/logs/grids-and-triangles/rook-case4-face99-parity-preparation01/preparation.json": "24d4e73e8f692ccef9db0eb60693f8d2bff0966e4cf73cd1cee68870f114d67f"
+  },
+  "full_subject_sources_read": true,
+  "checks": [
+    "A binary vector obeying parity r is at Hamming distance at least one from every vertex of parity 1-r. The displayed signed inequality is exactly this distance bound.",
+    "For a box point the nearest unrestricted vertex is coordinatewise rounding. If its parity is allowed, the cheapest single-coordinate flip gives a nearest forbidden vertex. Integer costs handle ties and large denominators without floating comparisons.",
+    "The 286 basis supports and 40755 distinct pair XORs retain their distinct one- or two-element pivot subsets, proving the fixed 41041 candidate equations are nonzero and distinct.",
+    "Every saved basis lift and every emitted cut is reconstructed from the original native equality rows over all1214 columns. Only the99 hash-bound proved-zero columns can be removed.",
+    "XOR of row combinations is valid modulo two even when original integer coefficients or right sides are signed. Repeated rows cancel modulo two; no real equality is inferred from parity alone.",
+    "At the saved exact point all1115 surviving numerators lie strictly inside the box; denominator1661041997 is fixed. Native rows are rechecked before separation, and original-cover acceptance is bound by the prior full replay.",
+    "The complete scan has7344314 support visits and maximum support451. Its conservative cost bound750790982644 fits41 bits. Candidate and transcript caps are explicit, and timeout results preserve only the checked prefix.",
+    "Cold replay verifies every recorded distance and reconstructs every emitted full original-row parity proof. It does not claim branch exclusion."
+  ],
+  "review_operations": [
+    "Read both complete sources",
+    "Read and hash the frozen preparation",
+    "Check the distance formula and full-row parity argument algebraically"
+  ],
+  "subject_imported": false,
+  "scan_repeated": false,
+  "optimizer_calls": 0,
+  "execution_gate": "One fixed41041-candidate scan with60-second limit and one60-second cold replay; no larger combinations or retry."
+}

@@ -1,0 +1,26 @@
+{
+  "status": "PASS: source and direct-witness-checker review of the v3 two-edge prism overlay",
+  "subjects": {
+    "experiments/workspace/root_prism_free_f0_schur_path_model_v3.py": "f76c35fb3e39704e88a250938e3be1d64ad07fba197ea0405fb11ba4aeac74bd",
+    "experiments/workspace/root_prism_free_f0_schur_path_exact_v3.py": "e039d525a93ab2972ac53538060feb7b6e16dd9f671bb051d29c543b6008b794",
+    "experiments/workspace/root_prism_free_f0_schur_path_query_v3.py": "d074b272ccf4f963b242ea6ba8308e83602d0a71d0d500f6e204a484545e9e7a",
+    "experiments/workspace/root_prism_free_f0_schur_path_replay_v3.py": "29714f02e60957616da04f747be79e2add6984a0eb0bba34bbe9ac86808ae6e4",
+    "experiments/logs/root-prism-free/f0-schur-path-v3-adapter-explicit-substitutions.json": "cbda52533615202f345cc5b0c004f758918d0e43575976076fa4dd281a6fbe62",
+    "experiments/logs/root-prism-free/f0-schur-path-v3-reuse-controls.json": "2b437a24c1f3796ab6ea6ee5fb06526b2f501d13d9fd16ee0ece994b1422ef38"
+  },
+  "review_scope": "Read complete v3 builder and exact helper. Independently applied every saved explicit substitution to the previously reviewed complete query/replay and checked exact AST equality. No subject import, domain build, literal census, transport replay, optimizer, or numerical control was run.",
+  "prior_adapter_review_sha256": "6867a7f5b1a4fe08ef5a16c0d0a68044a941f0938ef71d7f10618eda53d38a73",
+  "checks": [
+    "The two exterior edges ab and bc together force ac absent: if ac were present, the adjacent pair would have two prescribed common neighbors b and the core site z. Thus the six-site prism check does not assume an arbitrary exterior nonedge.",
+    "In the globally prism-free case, both edges cannot be active. Endpoint activation then gives y_ab+y_bc<=x_b. Averaging gives the displayed quotient row; if both edges lie in one orbit the coefficient is exactly two.",
+    "The direct checker verifies actual core and selector actions, their full group-composition table, complete orbit coverage, all5124 representative coefficient rows, and all12 saved transports per row. The broader census completeness is explicitly supplied by bound parent cold certificates, not claimed rerun.",
+    "The old6135 equality rows,16505 inequality rows,15200 variables and22640 row scales are preserved exactly. Appending5124 inequalities gives27764 rows and905276 nonzeros.",
+    "The helper binds the entire matrix and scaling list, checks every appended row's index/hash and the two coefficient-two rows, and delegates unchanged exact dyadic/Farkas arithmetic.",
+    "The query and replay ASTs match their previously reviewed parent sources after only the explicit file/hash/count/status/provenance substitutions. Existing-ray-only extraction, no crossover or basis reconstruction, one numerical call, exact finite-box acceptance and unresolved failure semantics are unchanged."
+  ],
+  "limitations": [
+    "Necessity uses the globally prism-free assumption already present in this F0 lane.",
+    "The report does not independently repeat107520 literal witnesses or61488 transports.",
+    "No feasibility, infeasibility, or numerical outcome is established."
+  ]
+}

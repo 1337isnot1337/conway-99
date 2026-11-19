@@ -1,0 +1,35 @@
+{
+  "status": "PASS: complete path overlay query/replay/native delta and exact phase",
+  "source_sha256": "d36ee88853ba6b62f3618c62f460c06330977ffa35acdf5a86e2a90051db849c",
+  "substitution_plan_sha256": "cbda52533615202f345cc5b0c004f758918d0e43575976076fa4dd281a6fbe62",
+  "full_source_comparisons": [
+    {
+      "parent": "experiments/workspace/root_prism_free_f0_schur_motif_query.py",
+      "parent_sha256": "4ab761312051920674e891f00cd7e2806e0a953bddda6075950becf9bf9fa34b",
+      "new": "experiments/workspace/root_prism_free_f0_schur_path_query_v3.py",
+      "new_sha256": "d074b272ccf4f963b242ea6ba8308e83602d0a71d0d500f6e204a484545e9e7a",
+      "complete_source_matches_explicit_substitutions": true
+    },
+    {
+      "parent": "experiments/workspace/root_prism_free_f0_schur_motif_replay.py",
+      "parent_sha256": "50cb518152001f581a903e3d9c8df30d08e96e8a4a78e42f88a56fc3cbff33c5",
+      "new": "experiments/workspace/root_prism_free_f0_schur_path_replay_v3.py",
+      "new_sha256": "29714f02e60957616da04f747be79e2add6984a0eb0bba34bbe9ac86808ae6e4",
+      "complete_source_matches_explicit_substitutions": true
+    },
+    {
+      "parent": "experiments/workspace/root_prism_free_f0_schur_motif_native_matrix_audit.py",
+      "parent_sha256": "a43aaa4e6e12e799733a2e307c1212d4b58d0843d5964a65c668415ef538715b",
+      "new": "experiments/workspace/root_prism_free_f0_schur_path_native_matrix_audit_v3.py",
+      "new_sha256": "c9ff9687dfe0cedb87e40021f5ae5091112ef3b2668cc4a9226d35d0e5a78ba0",
+      "complete_source_matches_explicit_substitutions": true
+    }
+  ],
+  "exact_helper_sha256": "e039d525a93ab2972ac53538060feb7b6e16dd9f671bb051d29c543b6008b794",
+  "exact_phase_AST_equal_except_complete_row_count": true,
+  "same_bound_scaling_ray_and_arithmetic_controls_reused": true,
+  "new_loader_requires_separate_mathematical_source_review": true,
+  "subjects_imported": false,
+  "model_rebuilt": false,
+  "optimizer_calls": 0
+}

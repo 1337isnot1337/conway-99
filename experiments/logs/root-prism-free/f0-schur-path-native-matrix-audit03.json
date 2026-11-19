@@ -1,0 +1,39 @@
+{
+  "status": "PASS: all905276 scaled coefficients retained exactly by native passModel",
+  "source_sha256": "c9ff9687dfe0cedb87e40021f5ae5091112ef3b2668cc4a9226d35d0e5a78ba0",
+  "helper_sha256": "e039d525a93ab2972ac53538060feb7b6e16dd9f671bb051d29c543b6008b794",
+  "query_sha256": "d074b272ccf4f963b242ea6ba8308e83602d0a71d0d500f6e204a484545e9e7a",
+  "model_sha256": "7bc4682e3df009761c55d0740a30a0629d45e894807f79e3337fc1de4fa1aff3",
+  "model_file_sha256": "ad046fc05a4247a081b3cabb16693682fa5539ff557dd7b599f3c3a63e7303dd",
+  "matrix_sha256": "24da97cfaf7bdb6e73efcdf9b248d70f30e04443dada5a2c923ab112f10bc812",
+  "numerical_row_scales_sha256": "0fcd8328b5ead5c51dfba7a624a69b748f38b19c894fd32c310352789e422247",
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "highspy": "1.16.0"
+  },
+  "minimum_nonzero_scaled_coefficient": "9/1073741824",
+  "minimum_nonzero_scaled_coefficient_float": 8.381903171539307e-09,
+  "minimum_count": 1,
+  "minimum_example_combined_row_column_integer_scale": [
+    21907,
+    9656,
+    -9,
+    1073741824
+  ],
+  "native_small_matrix_value": 1e-09,
+  "native_small_matrix_value_hex": "0x1.12e0be826d695p-30",
+  "minimum_strictly_above_native_threshold": true,
+  "variables": 15200,
+  "rows": 27764,
+  "nonzeros_before_passModel": 905276,
+  "native_getNumNz_after_passModel": 905276,
+  "entire_native_CSC_indices_values_and_row_column_bounds_equal": true,
+  "native_option_changed_to_lower_threshold": false,
+  "native_runtime": 0.0,
+  "optimizer_calls": 0,
+  "Highs_run_calls": 0,
+  "getDualRay_calls": 0,
+  "scope": "Input transport only. No numerical feasibility or internal presolve conclusion.",
+  "seconds": 14.063807414000621
+}
