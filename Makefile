@@ -85,3 +85,7 @@ verify-grid-diagonals:
 	trap 'rm -f "$$build_dir/diagonal-cuts"; rmdir "$$build_dir"' EXIT; \
 	"$(CXX)" -std=c++20 -O3 "$(WORKSPACE)/grid_diagonal_cuts.cpp" -o "$$build_dir/diagonal-cuts"; \
 	"$(PYTHON)" "$(WORKSPACE)/grid_diagonal_halves.py" "$$build_dir/diagonal-cuts"
+
+.PHONY: verify-involution-axis-frame
+verify-involution-axis-frame:
+	cd $(WORKSPACE) && "$(PYTHON)" involution_axis_frame.py

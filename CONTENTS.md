@@ -37,6 +37,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 ## Involutions
 
 - [The one-shared-axis exclusion](research/involutions/one-shared-axis.md) proves that some paired far orbits have disjoint or identical labels. Fifteen integer norm budgets exclude the last six-axis component.
+- [Six-axis eigenvector frames](research/involutions/six-axis-frame.md) exclude any connected component on six or more axes among the squares sharing one axis, for arbitrary remaining squares.
 
 - [Disconnected endpoint graph](research/involutions/connected-endpoint-squares.md) allows repeated endpoint pairs and forces component sizes six and one when all 21 squares have one shared axis.
 - [Distinct endpoint pairs](research/involutions/distinct-endpoint-squares.md) rules out every assignment of centers when all 21 squares have one shared axis and their endpoint pairs are distinct. The proof uses two exact norm counts.

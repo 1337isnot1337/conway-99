@@ -31,6 +31,8 @@ With repeated endpoint pairs allowed, the [endpoint graph must be disconnected](
 
 The [one-shared-axis exclusion](research/involutions/one-shared-axis.md) rules out the last component of size six. Any one-fixed-point involution therefore has two paired far orbits with disjoint or identical axis labels. Its final fifteen norm budgets have a standard-library exhaustive checker.
 
+For arbitrary mixtures of square types, [no endpoint component spans six axes](research/involutions/six-axis-frame.md). Its five tree differences would partition thirty directed pairs. The 26 potential arrays all violate one or two quotient rows.
+
 ## Sources and replay
 
 - https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html, the (99,14,1,2) entry.
