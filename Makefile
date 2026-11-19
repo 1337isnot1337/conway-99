@@ -7,6 +7,7 @@ verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" grid_agreements.py
 	cd $(WORKSPACE) && "$(PYTHON)" grid_leaf.py
+	cd $(WORKSPACE) && "$(PYTHON)" root_cell_profiles.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
 	cd $(WORKSPACE) && "$(PYTHON)" level_seven_check.py
 	@set -eu; \

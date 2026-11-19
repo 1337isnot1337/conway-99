@@ -8,6 +8,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [Counting witnesses by triangle degree](research/grids-and-triangles/triangle-witness-bound.md) raises the lower bound on disjoint triangle pairs with two cross-edges to 1,203.
 - [Fifteen grids through a point](research/grids-and-triangles/fifteen-grid-root.md) reduces the missing-axis graph to one type and classifies its eight-point pieces.
 - [Full triangles are disjoint](research/grids-and-triangles/two-full-axes.md) exhausts the matching interfaces at two intersecting full triangles. The resulting [global bounds](research/grids-and-triangles/disjoint-full-bounds.md) give at most 114 grids, at most 14 through a point, and at least 2,106 percolating nonedges.
+- [Fourteen-grid root exclusion](research/grids-and-triangles/fourteen-grid-root.md) lowers the pointwise bound to thirteen grids and gives at least 32 percolating partners for every point.
 - [Nine-vertex grid partitions](research/grids-and-triangles/affine_grids.md) studies a construction using eleven disjoint grids and an obstruction to a particular affine matching assignment.
 - [A grid with its center missing](research/grids-and-triangles/incomplete_grid.md) derives an exterior-incidence reduction for an eight-vertex core.
 - [Complete triangle stars](research/grids-and-triangles/triangle_star.md) derives a 48-vertex shell from an independent exterior signature.

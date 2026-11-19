@@ -22,7 +22,7 @@ Every fiber of each map has size at most two. If the internal matching uses side
 
 At an exterior vertex the three coordinates are thus at least $-1$, since a fiber has size $1-x$, and are at most one. Their squared sum is at most two. On the 24 missing-cell vertices the squared sum is two as well. All other coordinates vanish. This gives
 $$
-  \|x\|^2+\|y\|^2+\|z\|^2\le 2$24+12$=72 .
+  \|x\|^2+\|y\|^2+\|z\|^2\le 2(24+12)=72 .
 $$
 But every missing cell has internal degree one at all four vertices. The identity $W^2=7W$ gives $\|x\|^2=7\langle h_e,z_e\rangle=28$, and likewise for the other two vectors. Their squared norms sum to 84. This rules out the tetrahedron.
 
