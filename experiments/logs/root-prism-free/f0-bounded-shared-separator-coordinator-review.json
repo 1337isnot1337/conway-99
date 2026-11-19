@@ -1,0 +1,27 @@
+{
+  "status": "PASS: complete bounded-support separator source and exact sign controls reviewed",
+  "source_sha256": "bbdf21247d98cff416f68492415a3db6ec5f98f47d1ebb9367acac1604192798",
+  "preparation_sha256": "ddce4b389df860780c0f99ba291b2e881ea99da8e73ec3283260c10854794df7",
+  "model_sha256": "c433fa3d8dc960dfec9860efc11d919da6c7f9741d5b15f7d53edd6aac8087c6",
+  "reviewed_checks": [
+    "All selected columns, Gram entries, motif conflicts, registry inequalities and saved explanations are bound and checked",
+    "All actual degree equations are one third of the sum of their mixed rows",
+    "Every edge weight is the sum of six bounded potential coordinates, so the capacity upper bound six is automatic",
+    "The zero vector is a feasible bounded LP point",
+    "The minimized cost equals the negative exact support gap when capacities are positive edge weights",
+    "Known exact separator and 24 feasible-box identities check signs and normalization",
+    "Every numerical potential is saved before integer reconstruction, regardless of backend status",
+    "Integer support gaps are recomputed over the complete eligible edge domain",
+    "A strict exact gap, followed by all twelve checked universal lifts, is required for a selector cut"
+  ],
+  "authorized_query": {
+    "optimizer_calls": 1,
+    "seconds_including_setup": 60,
+    "threads": 1,
+    "solver": "simplex",
+    "automatic_retry": false
+  },
+  "solver_status_is_not_a_certificate": true,
+  "whole_component_exclusion": false,
+  "full_graph_constructed": false
+}

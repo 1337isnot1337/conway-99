@@ -1,0 +1,51 @@
+{
+  "status": "PASS: entire frozen runner and proof ASTs after declared seed/binding/status substitutions",
+  "source_sha256": "b844e5b230224ffc54b0be543c00f8dd7490410c3cb97a824b977ec27f1e4537",
+  "bound_sources": {
+    "root_prism_free_f0_lazy_continuation.py": "156952c1239a102beb39150946199e8357ffc684d8eaf39f68ad0c575c043266",
+    "root_prism_free_f0_lazy_continuation_certificate.py": "2776f9249b91b31a17d341e4d5b333aadbae7396bdf736e95197f63152d39abd",
+    "root_prism_free_f0_bounded_lazy_seed.py": "4fee27c4fc99297d40cc24bf7adadcd4839df6e37ffc3bc1426cb368113c2715",
+    "root_prism_free_f0_shared_bounded_fallback.py": "46ff20ca4269b71b80c2fd7e3ba2fec4f369b7dca3d4e08272a935cdfde72f1a",
+    "root_prism_free_f0_bounded_lazy_continuation.py": "361484188521fc5c741be4aa8a7e1a10a9b4e76116ae51d8d9e76b272bc78dd2",
+    "root_prism_free_f0_bounded_lazy_continuation_certificate.py": "a234af13fe68e33ce16d4eb70b45a147e8d804be6fbe59c608f71c98020209db"
+  },
+  "unchanged_limits": {
+    "maximum_SAT_refinement_calls": 1000,
+    "maximum_row_passes": 100,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "shared_LP_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000
+  },
+  "unchanged_runner_functions_after_two_status_substitutions": [
+    "save_gzip",
+    "check_sources",
+    "formula",
+    "prepare",
+    "checked_preparation",
+    "input_state",
+    "inspect_candidate",
+    "symmetric_candidates",
+    "explain_candidate",
+    "add_row_cuts",
+    "finish_step",
+    "run",
+    "bound_record",
+    "replay_batch",
+    "reconstruct"
+  ],
+  "unchanged_proof_wrapper_functions": [
+    "inputs_subset",
+    "checker_call",
+    "prove",
+    "replay"
+  ],
+  "entire_runner_AST_otherwise_identical": true,
+  "entire_proof_wrapper_AST_otherwise_identical": true,
+  "new_seed_and_shared_helper_require_separate_mathematical_source_review": true,
+  "subject_modules_imported": false,
+  "CNF_rebuilt": false,
+  "optimizer_or_solver_called": false
+}

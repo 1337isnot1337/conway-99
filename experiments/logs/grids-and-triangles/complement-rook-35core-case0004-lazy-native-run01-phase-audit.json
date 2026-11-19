@@ -1,0 +1,63 @@
+{
+  "status": "PASS: explicit lazy-run phase timing and terminal statistics audited",
+  "audit_source_sha256": "1a8fe2b1d41174f6eb161e61053475bda84c52f9d4883bf1a0fb0aa0841e4a09",
+  "result_sha256": "3c0b23f7a44a4b11de99477bbdc2c2638b6028d12d8bb90d7d2fc5c44035fe1e",
+  "cold_replay_sha256": "5a0f7524aedb9dba19a705c30963d525db86cc969461f36073092a82bcd70f07",
+  "child_log_sha256": "14bfaec558a461342a010decbeb36a9955bd15ba5fa4733b14ad63b35443aed7",
+  "response_sha256": "1c33c55b516f05c7290fc8c18e95c232eeb693d2ab3a6acdbfbba600fa8e2f6d",
+  "native_calls": 1,
+  "candidate_count": 0,
+  "appended_cover_count": 0,
+  "solver_search_start_seconds_rounded": 0.21,
+  "main_search_start_seconds_rounded": 0.32,
+  "main_task_wall_seconds_rounded": 9.79,
+  "response_solver_wall_seconds": 10.003299411,
+  "response_solver_deterministic_time": 10.75017861186604,
+  "child_elapsed_seconds": 20.758754966002016,
+  "child_peak_rss_kib": 185164,
+  "parent_observed_child_seconds": 20.98365039499913,
+  "statistics": {
+    "num_booleans": 1192,
+    "num_integers": 1192,
+    "num_conflicts": 147,
+    "num_branches": 67183,
+    "num_binary_propagations": 851301,
+    "num_integer_propagations": 915966,
+    "num_restarts": 2,
+    "num_lp_iterations": 75457
+  },
+  "checkpoint_phases": [
+    {
+      "phase": "replaying_frozen_inventory_and_registry",
+      "elapsed_seconds": 1.7792933529999573
+    },
+    {
+      "phase": "native_call",
+      "elapsed_seconds": 10.691889017001813,
+      "iteration": 0,
+      "requested_solver_seconds": 10.0,
+      "prefix_constraints": 2285
+    },
+    {
+      "phase": "iteration_saved",
+      "elapsed_seconds": 20.758330166001542,
+      "iteration": 0,
+      "backend_status": "UNKNOWN",
+      "terminal_status": "UNKNOWN: native call ended without a feasible candidate",
+      "encoded_cover_count": 14
+    },
+    {
+      "phase": "terminal",
+      "elapsed_seconds": 20.758754966002016,
+      "status": "UNKNOWN: native call ended without a feasible candidate"
+    }
+  ],
+  "search_reached_quickly_from_explicit_log": true,
+  "LP_iteration_count_is_not_a_per_phase_CPU_profile": true,
+  "earlier_full_native_query_had_no_phase_log_and_is_not_reclassified": true,
+  "frozen_prefix_unchanged": true,
+  "solver_or_optimizer_called": false,
+  "native_model_rebuilt": false,
+  "case4_excluded": false,
+  "interpretation": "The lazy call spent most of its solver interval in its main task. It did not stall in initial presolve. No candidate or new mathematical restriction resulted."
+}

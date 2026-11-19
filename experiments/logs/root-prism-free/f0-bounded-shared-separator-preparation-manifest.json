@@ -1,0 +1,61 @@
+{
+  "status": "frozen bounded-potential preparation and exact preflight; no optimizer in this package",
+  "scope": "one terminal fixed first incidence; all second components and alignments unrestricted",
+  "parent_terminal_manifest_sha256": "a71e03191ed2eee685f0992923e84ad6e9900aebfc40c9ad00f29a2d639caa0d",
+  "source_sha256": "bbdf21247d98cff416f68492415a3db6ec5f98f47d1ebb9367acac1604192798",
+  "preparation_sha256": "ddce4b389df860780c0f99ba291b2e881ea99da8e73ec3283260c10854794df7",
+  "cold_preflight_sha256": "1a51399ddad813e180ea36ee1140d08d9f3ea2615400f95c9b9faf1ff64e52b9",
+  "coordinator_gate_sha256": "5115844d81c40db21776e64e8c04014e4f3a1e30b9064aa46eb4235e0f0c14ba",
+  "model": {
+    "all_coefficients_integer": true,
+    "inequality_rows": 1220,
+    "model_sha256": "c433fa3d8dc960dfec9860efc11d919da6c7f9741d5b15f7d53edd6aac8087c6",
+    "nonzeros": 8540,
+    "positive_capacity_variables": 1220,
+    "potential_variables": 1080,
+    "variables": 2300,
+    "zero_potential_is_an_exact_feasible_point": true
+  },
+  "limits": {
+    "query_calls": 1,
+    "seconds_including_setup": 60,
+    "threads": 1,
+    "optimizer": "simplex"
+  },
+  "strict_integer_support_gap_required": true,
+  "parent_UNKNOWN_preserved": true,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_bounded_shared_separator.py",
+      "sha256": "bbdf21247d98cff416f68492415a3db6ec5f98f47d1ebb9367acac1604192798",
+      "bytes": 23182
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-shared-separator-preparation.json.gz",
+      "sha256": "ddce4b389df860780c0f99ba291b2e881ea99da8e73ec3283260c10854794df7",
+      "bytes": 21347
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-shared-separator-preparation.log",
+      "sha256": "2fe9d59aa3fc2a368ee5831a54f361303607acb64e12a851c024da06db9f73a6",
+      "bytes": 2473
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-shared-separator-preflight.json",
+      "sha256": "1a51399ddad813e180ea36ee1140d08d9f3ea2615400f95c9b9faf1ff64e52b9",
+      "bytes": 389
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-shared-separator-coordinator-review.json",
+      "sha256": "5115844d81c40db21776e64e8c04014e4f3a1e30b9064aa46eb4235e0f0c14ba",
+      "bytes": 1538
+    },
+    {
+      "path": "research/root_prism_free_f0_bounded_shared_separator.md",
+      "sha256": "a77a18356dc9785f9770a74f05fdc77224f0e322adab4159b14394153cd151ee",
+      "bytes": 6334
+    }
+  ],
+  "file_count": 6,
+  "total_bytes": 55263
+}

@@ -1,0 +1,21 @@
+{
+  "status": "PASS: complete source review and independent exact fixed-design support certificate",
+  "source_sha256": "bbdf21247d98cff416f68492415a3db6ec5f98f47d1ebb9367acac1604192798",
+  "preparation_sha256": "ddce4b389df860780c0f99ba291b2e881ea99da8e73ec3283260c10854794df7",
+  "result_sha256": "fdcf7105748e809f792b4241ecfa8e950ad916b9c229154b2ca6c509e9f7fb6e",
+  "all60_signature_weights3_and_target_sums24": true,
+  "all1220_eligible_edges_reconstructed_from_both_endpoint_quotas_and_overlap": true,
+  "all1220_bounded_LP_rows_and2300_bounds_costs_checked": true,
+  "integer_demand": 215,
+  "integer_positive_capacity": 182,
+  "exact_support_gap": 33,
+  "maximum_absolute_integer_potential": 12,
+  "integer_edge_weight_sha256": "7ba4eb045d4337584d0103f052f0998755f1423f826c356b7849f1a8fe90d5fe",
+  "proof": "Summing exact mixed rows against v gives demand = sum_e weight_e*y_e. Bounds0<=y_e<=1 imply demand<=sum_e max(weight_e,0), contradicted by215>182. Sum of mixed rows gives3*degree=24, so omitted degree8 rows are redundant.",
+  "bounded_search_box_harmless_for_proposals": true,
+  "exact_certificate_does_not_require_optimizer_status_or_float_feasibility": true,
+  "scope": "Excludes this saved60-triple incidence design as a graph completion. Independent arithmetic here concerns the fixed1,220-edge domain; the separately saved full-domain allocation and12 transports were read in the source but not numerically repeated.",
+  "subject_imported": false,
+  "model_or_domain_generator_rerun": false,
+  "optimizer_solver_or_tensor_called": false
+}

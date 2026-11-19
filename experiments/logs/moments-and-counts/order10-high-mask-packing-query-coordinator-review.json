@@ -1,0 +1,30 @@
+{
+  "status": "PASS: complete quotient query, exact rational reconstruction and separator source reviewed",
+  "source_sha256": "8aa977d91ed3bd5407974e9e704fe7d48eb07f798795ccd2b614c40ba2717e57",
+  "preparation_sha256": "b1040a602346df4a47109911b02d8402cf942b91719c3533ed6cdf1b9e48496d",
+  "model_sha256": "054d1bb69e8e9c993762712fc5cd5f1b4f0eeeadbcad8c7b30a91c1bc29935fc",
+  "checks": [
+    "The normalized primal uses all 73 equations and all 249 nonnegative variables with no finite upper bounds",
+    "The constant row enforces normalized total mass one",
+    "Unnormalized proposed support weights are solved over exact fractions and checked in every equation",
+    "The complete uniform lift checks all 500 row orbits and 124314 individual moments",
+    "A unitriangular submatrix proves exact row rank 73",
+    "Numerical infeasibility alone is not a separator",
+    "The optional bounded dual has 73 free signed multipliers in [-1,1] and all 249 nonnegativity constraints",
+    "Integer multipliers are corrected by the exact full-domain minimum and replayed on all 90776 structural atoms",
+    "A graph-count cut still requires separate literal graph-product reconstruction",
+    "All numerical proposals are saved before the bounded exact stage"
+  ],
+  "authorized_calls": {
+    "primal_invocations": 1,
+    "primal_solver_seconds_including_ray_request": 30,
+    "threads": 1,
+    "exact_stage_seconds_per_invocation": 60,
+    "conditional_dual_invocations": 1,
+    "dual_only_if": "Primal is numerically infeasible and has no exact separator",
+    "dual_solver_seconds": 30,
+    "repeat_same_query": false
+  },
+  "host_graph_constructed": false,
+  "global_existence_resolved": false
+}

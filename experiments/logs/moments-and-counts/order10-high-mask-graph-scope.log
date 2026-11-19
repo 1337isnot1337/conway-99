@@ -1,0 +1,27 @@
+{
+  "status": "complete edge-position bound on all empty-root packing orbits; no graph census",
+  "orbit_preparation_sha256": "a6ca65e8edeb1d4545e89c28833bf7526c693ce6066ec5b6f15a47d31853c61d",
+  "orbit_arrays_sha256": "83a798951206e812ffb8e5c687e96f93e8df42cedfd097420058df82a18732f6",
+  "source_sha256": "bacdaee4557f1d6987da5d545d0b470e49e2c1aa71d06c36fc736beb8da92a8f",
+  "atom_orbits": 249,
+  "covered_structural_atoms": 90776,
+  "maximum_high_vertices": 10,
+  "maximum_eligible_edges": 30,
+  "sum_unconstrained_graph_bounds_over_representatives": 1092841119,
+  "sum_unconstrained_graph_bounds_over_all_atoms": 15556572708,
+  "necessary_graph_conditions": [
+    "An edge between high vertices a,b requires |h_a intersect h_b| <= 1.",
+    "For every root i and high vertex a, sum_{b adjacent a} 1[i in h_b] <= 1 if i in h_a, otherwise <= 2.",
+    "For every high pair a,b, |h_a intersect h_b| + |N_H(a) intersect N_H(b)| <= 1 if adjacent, otherwise <= 2.",
+    "The high-induced degree of a is at most 14-|h_a|."
+  ],
+  "conditions_sufficient_for_exterior_completion": false,
+  "host_graph_automorphism_assumed": false,
+  "prism_or_F_free_hypothesis_imposed": false,
+  "high_induced_graphs_enumerated": false,
+  "moment_features_or_product_tensors_built": false,
+  "optimizer_or_solver_called": false,
+  "graph_existence_resolved": false,
+  "seconds": 0.04261290700014797
+}
+result_sha256 9733b52563e5b1937937b196ad9edeb738c141c2ca8041c27e501ca3f5cc2c94

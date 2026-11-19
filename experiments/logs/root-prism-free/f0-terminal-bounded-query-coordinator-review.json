@@ -1,0 +1,23 @@
+{
+  "status": "PASS: source and fixed preparation reviewed",
+  "source_sha256": "104d9c16fb7ad85f7f6d1dd80f23d8f559c9e584f24ba97a82f3ebe366767df6",
+  "preparation_sha256": "df2798c914ad99066d14f9e0902a90b080944e068bd8e859e7caf1450dececde",
+  "reviewed_checks": [
+    "Full thin driver source read",
+    "All source and 253 transcript bindings checked",
+    "Candidate satisfies all 2916 saved integer inequalities and 5340 explanations",
+    "All 60 individual rational boxes replayed",
+    "Bounded-only model retains all 1226 edges and 1080 potentials",
+    "Original feasibility query never called",
+    "Strict exact integer gap and cold replay required before any universal cut claim"
+  ],
+  "authorized_run": {
+    "bounded_optimizer_calls": 1,
+    "seconds_including_setup": 60,
+    "original_feasibility_calls": 0,
+    "automatic_retries": 0
+  },
+  "solver_or_optimizer_called_by_review": false,
+  "whole_case_exclusion_before_run": false,
+  "required_after_run": "Freeze result and perform the separate exact replay. UNKNOWN remains unresolved."
+}

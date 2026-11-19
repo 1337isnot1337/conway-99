@@ -1,0 +1,21 @@
+{
+  "status": "PASS: generic model, exact gap33, all12 lifts and fallback status controls",
+  "source_sha256": "46ff20ca4269b71b80c2fd7e3ba2fec4f369b7dca3d4e08272a935cdfde72f1a",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_shared_deficit_separator.py": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf",
+    "root_prism_free_f0_bounded_shared_separator.py": "bbdf21247d98cff416f68492415a3db6ec5f98f47d1ebb9367acac1604192798"
+  },
+  "control_input_hashes": {
+    "f0-bounded-shared-separator-preparation.json.gz": "ddce4b389df860780c0f99ba291b2e881ea99da8e73ec3283260c10854794df7",
+    "f0-bounded-shared-separator-run01.json": "fdcf7105748e809f792b4241ecfa8e950ad916b9c229154b2ca6c509e9f7fb6e",
+    "f0-bounded-shared-separator-run01-cold-replay.json": "19e2183e0f6eb285075bbcb4e6165717f22ad1eb3922c9fa8f5c9a33bc98e5c6",
+    "f0-bounded-shared-separator-run01-universal-cuts.json": "9029303e60cbf1249db03a5b9be0da44f2fb2b0c086760067f28887ee286e45f"
+  },
+  "model_sha256": "c433fa3d8dc960dfec9860efc11d919da6c7f9741d5b15f7d53edd6aac8087c6",
+  "exact_gap": 33,
+  "transport_count": 12,
+  "fallback_status_controls": 5,
+  "known_separator_and24_feasible_box_controls_replayed": true,
+  "no_query_or_retry": true,
+  "optimizer_or_solver_called": false
+}

@@ -6,14 +6,14 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Native Boolean incidence and lazy coordinate covers for complementary-rook
+1. Exact primary propagation and explicit assumption checks for complementary-rook
    matching case four. Owned by the independent-set worker.
-2. Exact root-label averaging of complete high-mask packing distributions.
-   Owned by the literature worker.
-3. Bounded-potential separation for the unresolved shared F0 exterior rows.
+2. Complete induced high-graph moment equations and exact feasibility queries.
+   Owned by the literature worker and coordinating worker on separate sources.
+3. Bounded-potential separation and lazy continuation for F0 exterior rows.
    Owned by the completion worker.
-4. Exact finite-domain polynomial certificates, mathematical review, and
-   publication. Owned by the coordinating worker.
+4. Complete graph-domain construction, mathematical review, and publication.
+   Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -826,3 +826,24 @@ their hypotheses permit them; computational exclusions require exact replay.
   bounded query returns UNKNOWN after 63.32 solver seconds. No witness or
   further matching exclusion follows. The next preparation considers lazy
   cover enforcement while retaining complete external checks.
+
+
+- The presence-only packing query gives 73 positive rational masses with
+  denominator 1,443,221. Separate replay checks all 73 equations and all
+  124,314 individual moments. This finite relaxation permits the saved point.
+- The complete induced high-graph domain has 157,711 decorations above 249
+  presence representatives. Independent C++ and Python searches agree on
+  every edge histogram. All graph codes are saved and checked for uniqueness.
+- The induced-pattern matrix has 200 rows and 18,427 distinct columns.
+  Every original column reproduces the earlier presence coefficients.
+  Independent colored-graph controls check 26,049 subsets. All 200 direct
+  catalogue moment products and 73 presence aggregates pass exact checks.
+- The bounded F0 separator rejects the preceding unresolved incidence with
+  gap 33. The next continuation records 81 candidates and reaches 2,916
+  universal cuts. Its 253-record transcript and final formula cold-replay.
+  A separate bounded-only query rejects its terminal incidence with gap 64.
+  Neither result excludes the full component.
+- The lazy native rook query returns UNKNOWN after its first ten-second
+  call. The log confirms main search starts at 0.32 seconds. Complete
+  exact forward propagation then adds no new assignment after the fourteen
+  original units. Explicit assumption checks are the next preparation.

@@ -1,0 +1,69 @@
+{
+  "status": "UNKNOWN: native call ended without a feasible candidate",
+  "source_hashes": {
+    "complement_rook_35core_case0004_coordinate_cover_cadical.py": "1921f71964795d819e0369c9679dc1526df97c29bb1920a932c7ca449ba3de25",
+    "complement_rook_35core_case0004_coordinate_cover_overlay.py": "5597089c00a15f72927f31c8b05f5a6bed1198a0d7ebc16aacaeb6cd39cb1c4a",
+    "complement_rook_35core_case0004_coordinate_cover_query.py": "eb352386f55c5a1fd6ddb9c692ad934d8eef87904c00e86122172dc1ebc1f9d8",
+    "complement_rook_35core_case0004_coordinate_covers.py": "f4692deb00982e7f3a3153faafc2cc6084db0c5827ff12d11beaf5e3d493357a",
+    "complement_rook_35core_case0004_intrinsic_rows.py": "24eb86e47e6f5a741721fe9174e7d3762bc74edd290c89d489dd5ddedb900c11",
+    "complement_rook_35core_case0004_lazy_native.py": "5fe4d58400dc23e42ab154f8455ce47c4b061fbd2ae7c0e37f946d77c56aba0a",
+    "complement_rook_35core_case0004_lazy_native_loop.py": "4d84924c8c25192312ce41298f66e2746d5c283f39ee95616dd11483148bdb48",
+    "complement_rook_35core_case0004_native_cpsat.py": "4462dae913abcb736c5ba5f7cffc3f3e7d50b748826cab3c89fffbfd3bd0e3eb",
+    "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+    "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "preparation_sha256": "eb2f6e6ba0ec3fdb9e0496f16ffa26e7c59f95ae3d98ec86aa5223d2cc1f6d6e",
+  "lazy_model_sha256": "aeb636198cb0b9749e2142a596404181edf92923d55d5bdf764a8f9432439b68",
+  "registry_sha256": "c32e31d9ce6ec6168cea1c9f6c6ea4165a2ca7a8f2144a59a31e5a1d6da7b543",
+  "limits": {
+    "native_calls": 8,
+    "solver_seconds_per_call": 10,
+    "requested_child_seconds": 120,
+    "hard_parent_seconds": 180,
+    "workers": 1,
+    "inserted_cover_clauses": 25000,
+    "inserted_cover_literals": 2000000
+  },
+  "production_solve_calls": 1,
+  "completed_iterations": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lazy-native-run01/iteration00/result.json",
+      "sha256": "bf3e56aaca94c6644f5773cfea773d3346d8d75b9032443d6a4cd6dad395f99b"
+    }
+  ],
+  "case4_excluded": false,
+  "full_graph_completion_found": false,
+  "phase": "terminal",
+  "phase_details": {
+    "status": "UNKNOWN: native call ended without a feasible candidate"
+  },
+  "elapsed_seconds": 20.758754966002016,
+  "child_peak_rss_kib": 185164,
+  "final_prefix": {
+    "variables": 1214,
+    "constraints": 2285,
+    "binary_proto_sha256": "77b2a7f8ad3c29d61f17f9b49fe2b956b57eaf952e8b7980ca3d808478e9f969",
+    "binary_proto_bytes": 108494,
+    "prefix_clause_ids_in_order": [
+      57694,
+      57695,
+      57696,
+      57697,
+      69160,
+      85421,
+      85422,
+      97857,
+      131790,
+      132176,
+      143605,
+      160945,
+      160946,
+      172697
+    ]
+  }
+}

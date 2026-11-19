@@ -1,0 +1,44 @@
+{
+  "status": "PASS: independent full-source review of packed registry, unchanged prefix, Boolean semantics and atomic resource gate",
+  "subject_source": "experiments/workspace/complement_rook_35core_case0004_lazy_native.py",
+  "subject_sha256": "5fe4d58400dc23e42ab154f8455ce47c4b061fbd2ae7c0e37f946d77c56aba0a",
+  "reviewer_lane": "unrestricted_completion",
+  "checks": {
+    "packed_ids": "stable sequential clause IDs; uint16 target followed by152-byte little-endian cover mask; both packing and readback reproduce frozen DIMACS body hash",
+    "literal_orientation": "entry(a,bits) is implication z_a -> OR_{b in bits} z_b; empty mask gives negative unit; native append converts DIMACS +/- (index+1) to the same Boolean literal",
+    "base_prefix": "all2271 original constraints and1214 Boolean domains reproduced; variables and constraints compared to frozen full native model; only14 proved cover units initially appended",
+    "candidate_check": "all64-selection cardinality, Gram equations, original-signature and triple capacities,30 negative Gram-conflict clauses,60 uncapped row inequalities and encoded cover prefix checked before external registry conclusions",
+    "registry_evaluation": "every178533 registered implication evaluated exactly using the full1214-bit assignment; clause fails precisely when guard selected and no cover member selected",
+    "resource_atomicity": "sorted/disjoint IDs and total clause/literal counts checked before first model mutation; resource refusal returns unchanged ID list and appends no partial batch",
+    "append_only_scope": "new clauses come only from fixed hash-bound ledger IDs; existing prefix is not weakened; no visitation block, objective, hint or graph symmetry added",
+    "finite_prefix_scope": "source explicitly does not equate finite prefix to all registered covers and does not certify native INFEASIBLE/UNKNOWN as exclusion"
+  },
+  "scope_limits": [
+    "No subject import, complete ledger replay, CP-SAT model construction or optimizer call",
+    "No claim to review a not-yet-frozen production lazy driver",
+    "Atomicity reviewed for declared resource refusal, not arbitrary runtime exceptions"
+  ],
+  "reviewed_functions": [
+    "sha",
+    "source_hashes",
+    "check_inputs",
+    "clause_from",
+    "entry",
+    "registry_from_ledger",
+    "audit_registry",
+    "prefix_proto",
+    "check_full_prefix_agreement",
+    "native_from_proto",
+    "evaluate",
+    "plan_batch",
+    "append_batch",
+    "prefix_assignment_check",
+    "controls",
+    "prepare",
+    "load_prepared",
+    "replay"
+  ],
+  "subject_module_imported": false,
+  "model_rebuilt": false,
+  "solver_or_optimizer_called": false
+}

@@ -1,0 +1,88 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "EXACT INTEGER SHARED SUPPORT SEPARATOR",
+  "source_sha256": "bbdf21247d98cff416f68492415a3db6ec5f98f47d1ebb9367acac1604192798",
+  "preparation": "experiments/logs/root-prism-free/f0-bounded-shared-separator-preparation.json.gz",
+  "preparation_sha256": "ddce4b389df860780c0f99ba291b2e881ea99da8e73ec3283260c10854794df7",
+  "requested_seconds_including_setup": 60.0,
+  "optimizer_calls": 1,
+  "exact_separator": true,
+  "exact_shared_box_feasibility": false,
+  "original_feasibility_query_repeated": false,
+  "frozen_parent_UNKNOWN_unchanged": true,
+  "whole_component_excluded": false,
+  "full_graph_constructed": false,
+  "model_sha256": "c433fa3d8dc960dfec9860efc11d919da6c7f9741d5b15f7d53edd6aac8087c6",
+  "requested_optimizer_seconds": 59.23712376600088,
+  "numerical_status": "HighsModelStatus.kOptimal",
+  "optimizer_return_seconds": 7.964289416999236,
+  "returned_solution_length": 2300,
+  "returned_solution_value_valid": true,
+  "numerical_cost_hex": "-0x1.d9f047a4ab6e8p+3",
+  "exact_integer_trials": [
+    {
+      "scale": 1,
+      "removed_integer_gcd": 1,
+      "integer_demand": 15,
+      "integer_positive_edge_capacity": 152,
+      "integer_support_gap": -137,
+      "positive_edges": 146,
+      "integer_edge_weights_sha256": "2419fe684a0de884e2f503e8fd8a8325e0610914af331315323671c5791339f3",
+      "maximum_absolute_potential": 1
+    },
+    {
+      "scale": 2,
+      "removed_integer_gcd": 1,
+      "integer_demand": 14,
+      "integer_positive_edge_capacity": 145,
+      "integer_support_gap": -131,
+      "positive_edges": 139,
+      "integer_edge_weights_sha256": "3ee245762997234243917cdcb7906a1b85b47b5030d2135f2f08f86fe4f0fb55",
+      "maximum_absolute_potential": 2
+    },
+    {
+      "scale": 3,
+      "removed_integer_gcd": 1,
+      "integer_demand": 58,
+      "integer_positive_edge_capacity": 180,
+      "integer_support_gap": -122,
+      "positive_edges": 166,
+      "integer_edge_weights_sha256": "f9c8326bc1ba88acb97ac02a9d75079caeb206ab1d8d4558ae10889dfa064c90",
+      "maximum_absolute_potential": 3
+    },
+    {
+      "scale": 4,
+      "removed_integer_gcd": 1,
+      "integer_demand": 108,
+      "integer_positive_edge_capacity": 233,
+      "integer_support_gap": -125,
+      "positive_edges": 215,
+      "integer_edge_weights_sha256": "1bb370f9b80de0d7d39c496f155aad1006d78e24e0d2961bc8d9e63a19a4d4b4",
+      "maximum_absolute_potential": 4
+    },
+    {
+      "scale": 6,
+      "removed_integer_gcd": 1,
+      "integer_demand": 116,
+      "integer_positive_edge_capacity": 190,
+      "integer_support_gap": -74,
+      "positive_edges": 164,
+      "integer_edge_weights_sha256": "6478fd76f07ce9c757aa7135aaee3e609b1fe888a4d1fc88395460f9fb37c073",
+      "maximum_absolute_potential": 6
+    },
+    {
+      "scale": 12,
+      "removed_integer_gcd": 1,
+      "integer_demand": 215,
+      "integer_positive_edge_capacity": 182,
+      "integer_support_gap": 33,
+      "positive_edges": 132,
+      "integer_edge_weights_sha256": "7ba4eb045d4337584d0103f052f0998755f1423f826c356b7849f1a8fe90d5fe",
+      "maximum_absolute_potential": 12
+    }
+  ],
+  "validity_independent_of_optimizer_status": true,
+  "elapsed_seconds": 7.98735578799824,
+  "cooperative_budget_overrun_seconds": 0
+}

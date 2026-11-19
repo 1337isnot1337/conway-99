@@ -1,0 +1,54 @@
+{
+  "status": "PASS: exact signed Boolean bounds, cover rules and reason-chain replay",
+  "source_sha256": "d808134507a54ec4f498793f3172075846edec6e8d89a46f4c2c0adf2dcb1f40",
+  "counts": {
+    "signed_row_partial_truth_assignments": 94500,
+    "guarded_cover_partial_truth_assignments": 2592
+  },
+  "integer100_bit_control": {
+    "status": "exact interval and guarded-cover fixed point",
+    "complete": true,
+    "records": [
+      {
+        "kind": "assignment",
+        "variable": 0,
+        "value": 1,
+        "forbidden_value": 0,
+        "conditional_minimum": -633825300114114700748351602688,
+        "conditional_maximum": 0,
+        "original_minimum": -633825300114114700748351602688,
+        "original_maximum": 1267650600228229401496703205376,
+        "origin": {
+          "family": "base_row",
+          "id": 0
+        },
+        "prior_assignment_indices": []
+      },
+      {
+        "kind": "assignment",
+        "variable": 1,
+        "value": 0,
+        "forbidden_value": 1,
+        "conditional_minimum": 633825300114114700748351602688,
+        "conditional_maximum": 633825300114114700748351602688,
+        "original_minimum": 633825300114114700748351602688,
+        "original_maximum": 1267650600228229401496703205376,
+        "origin": {
+          "family": "base_row",
+          "id": 0
+        },
+        "prior_assignment_indices": [
+          0
+        ]
+      }
+    ],
+    "values": [
+      1,
+      0
+    ],
+    "sweeps": 2
+  },
+  "case4_closure_run": false,
+  "failed_literal_probing_run": false,
+  "solver_or_optimizer_called": false
+}

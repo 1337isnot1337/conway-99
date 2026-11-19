@@ -1,0 +1,45 @@
+{
+  "status": "terminal bounded-only separation prepared; no optimizer call",
+  "source_sha256": "104d9c16fb7ad85f7f6d1dd80f23d8f559c9e584f24ba97a82f3ebe366767df6",
+  "source_bindings": {
+    "root_prism_free_f0_bounded_lazy_continuation.py": "361484188521fc5c741be4aa8a7e1a10a9b4e76116ae51d8d9e76b272bc78dd2",
+    "root_prism_free_f0_bounded_lazy_transcript_bundle.py": "65153e9dc7ba86c43d451a26abb8129b8deb9b1abdc5e8fc556ed6502f5a5fec",
+    "root_prism_free_f0_shared_bounded_fallback.py": "46ff20ca4269b71b80c2fd7e3ba2fec4f369b7dca3d4e08272a935cdfde72f1a"
+  },
+  "parent_result_sha256": "88c4858aa36aaf3af15f4b53ce41be5c1fee3d8f2c237a49e2df026f1228bd86",
+  "parent_cold_replay_sha256": "95996661c85ce21aa4ac6af219a1e773d170b664170380ef7012deb78676ae98",
+  "parent_terminal_manifest_sha256": "fcdba71c12c9520d8d35fd3f519ec9478595006cd95dba5f3cb94dbc7f2d600a",
+  "model": {
+    "variables": 2306,
+    "potential_variables": 1080,
+    "capacity_variables": 1226,
+    "inequality_rows": 1226,
+    "nonzeros": 8582,
+    "model_sha256": "ffd339dad0efd917a684510643187ce899b587f47bad2890db484ab8a3643ec3",
+    "specification_sha256": "e66d36e5dfb3838f753f781f179764e921f6d2488915008c27be4e19a6c1ddad"
+  },
+  "exact_checks": {
+    "candidate_sha256": "b37dc1249c9b38337a1692328cabde2c4499bdab26a16ec8a373a16ea0d560f0",
+    "sixty_exact_row_boxes_sha256": "d05580041ce769b3ce31b1ea7507f27c64741a0ca92a8029e85e14936c648f46",
+    "terminal_shared_wrapper_sha256": "22f5c41459604a3cbad8ea6abaf8cdd561c843f504f514f3542c585463a116e6",
+    "original_phase_sha256": "39381a466cafac473d5424c09d0baab33da2675c69a7c8261ce6dc62df8efc99",
+    "all2916_integer_registry_inequalities_hold": true,
+    "all5340_actual_explanation_clauses_hold": true,
+    "original_incidence_Gram_and_motif_conditions_hold": true,
+    "complete60_exact_row_boxes_replayed": true,
+    "saved_ray_or_potential_available_for_arithmetic_repair": false,
+    "original_feasibility_call_will_not_be_repeated": true,
+    "degree8_redundancy_rechecked_on_actual_supports": true
+  },
+  "maximum_seconds_including_setup": 60,
+  "maximum_optimizer_calls": 1,
+  "threads": 1,
+  "optimizer": "simplex",
+  "bounded_only": true,
+  "no_original_feasibility_retry": true,
+  "strict_integer_gap_required": true,
+  "parent_UNKNOWN_unchanged": true,
+  "component_exclusion": false,
+  "optimizer_or_solver_called": false,
+  "seconds": 7.226369653999427
+}

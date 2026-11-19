@@ -243,6 +243,21 @@ reduces the active system to 73 equations in 249 nonnegative orbit masses.
 It retains all 90,776 structural atoms through explicit generator maps.
 All 124,500 literal incidence identities verify the uniform lift to individual moments.
 No host-graph automorphism is assumed, and no optimizer runs in this preparation.
+The [exact packing witness](research/grids-and-triangles/grid_free_order10_high_mask_packing_witness.md)
+then gives 73 positive rational masses with common denominator 1,443,221.
+Separate replay checks all 73 equations and the lift to every individual moment.
+This closes separation by the specified presence-only degree-four moment model at this point.
+The [other-root scope](research/grids-and-triangles/grid_free_order10_high_mask_packing_other_roots.md)
+records complete orbit inventories for the remaining 61 six-roots, without an optimizer query.
+The stronger [induced high-graph domain](research/grids-and-triangles/grid_free_order10_high_mask_graph_domain.md)
+retains every high-edge graph satisfying the visible common-neighbor caps.
+Independent C++ and Python censuses agree on 157,711 graphs above the 249 presence representatives.
+The full induced-pattern matrix has 200 rows and 157,711 columns.
+Exact column deduplication leaves 18,427 columns, with all original columns retained through an inverse map.
+Every column reproduces its binomial subset totals and all earlier presence coefficients.
+The [direct moment audit](research/grids-and-triangles/grid_free_order10_high_mask_graph_moments.md)
+checks all 200 catalogue products and their 73 presence aggregates.
+This preparation runs no optimizer and supplies no full graph.
 The [finite-domain certificate helper](research/grids-and-triangles/finite_boolean_moment_certificates.md)
 checks integer polynomials on every atom and restores zero-filtered atoms by exact penalties.
 Its controls and independent arithmetic review pass.
@@ -424,6 +439,14 @@ also returns UNKNOWN, with no accepted incidence assignment.
 Its requested sixty-second solver stage returns after 63.32 seconds.
 The owned child finishes within its 180-second limit and is reaped normally.
 Case four remains open, and the first local set still has eleven checked exclusions.
+The [lazy native query](research/grids-and-triangles/complement_rook_35core_case0004_lazy_native_run01.md)
+keeps the complete cover registry external to the initial model.
+It returns UNKNOWN after its first ten-second solve, with no candidate assignment.
+Its saved log places main search at 0.32 seconds, so this run is not confined to presolve.
+The [exact primary propagation rules](research/grids-and-triangles/complement_rook_35core_case0004_primary_propagation.md)
+retain every original integer row, all 178,533 covers, and the fourteen proved units.
+They require an original-constraint reason for every assignment.
+The subsequent complete forward closure yields no new assignment or contradiction.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -551,7 +574,18 @@ Its complete transcript and 825 rational row witnesses pass cold replay.
 The last candidate passes all sixty individual row boxes.
 Its shared LP returns no numerical dual ray, so the run remains UNKNOWN.
 No multiplier is saved for arithmetic recovery from that final LP call.
-A separate bounded-potential separator is the next step.
+A [bounded-potential query](research/root_prism_free_f0_bounded_shared_separator_run01.md)
+then excludes that terminal incidence with exact demand 215 against capacity 182.
+The gap 33 and all twelve universal transports pass separate arithmetic checks.
+The [next lazy continuation](research/root_prism_free_f0_bounded_lazy_continuation_run01.md)
+records 81 candidates, 121 individual obstructions, 3,599 rational row boxes, and eight shared rays.
+It reaches 2,916 universal inequalities and 62,334 clauses before the overall time limit.
+All 253 transcript records and the exact final formula cold-replay.
+Its last candidate passes all sixty row boxes but receives no exact shared certificate within that budget.
+A separate [bounded-only query](research/root_prism_free_f0_terminal_bounded_query_run01.md)
+excludes this last incidence with exact demand 252 against capacity 188.
+Its gap 64 and all twelve universal transports cold-replay.
+The parent time-limited run remains frozen UNKNOWN, and the full component remains open.
 
 ## Scope of the unrestricted computations
 

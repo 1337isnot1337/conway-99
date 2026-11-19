@@ -684,3 +684,31 @@ The [one bounded query](../research/grids-and-triangles/complement_rook_35core_c
 returns UNKNOWN and leaves the matching case open.
 Its owned child is reaped, and no automatic retry runs.
 The outcome check does not repeat the solver or the full reconstruction.
+
+
+The [presence-only packing witness](../research/grids-and-triangles/grid_free_order10_high_mask_packing_witness.md)
+has 73 positive rational masses and a complete individual-moment lift.
+Its cold replay runs no optimizer.
+The [stronger high-graph preparation](../research/grids-and-triangles/grid_free_order10_high_mask_graph_domain.md)
+retains all 157,711 visible-cap graphs above the independent six-root.
+Separate C++ and Python searches give identical histograms for every presence representative.
+The saved 200-row feature matrix reproduces all previous presence coefficients.
+Its [direct RHS package](../research/grids-and-triangles/grid_free_order10_high_mask_graph_moments.md)
+checks literal embeddings, full automorphisms, and root-label orbit sizes.
+
+The [bounded F0 potential model](../research/root_prism_free_f0_bounded_shared_separator_run01.md)
+provides an exact gap 33 against the earlier unresolved incidence.
+The [81-candidate continuation](../research/root_prism_free_f0_bounded_lazy_continuation_run01.md)
+then reaches 2,916 cuts and 62,334 clauses.
+Its complete transcript has 253 records and includes all child feasibility calls.
+A deterministic archive preserves those records and passes lossless restoration checks.
+The [separate terminal query](../research/root_prism_free_f0_terminal_bounded_query_run01.md)
+uses one bounded-only model and supplies exact gap 64 against the final incidence.
+The full 68,394-edge universal lift cold-replays.
+
+The [lazy native case-four query](../research/grids-and-triangles/complement_rook_35core_case0004_lazy_native_run01.md)
+retains every cover in a complete external registry.
+Its first bounded solve returns UNKNOWN after reaching main search.
+The [exact propagation preparation](../research/grids-and-triangles/complement_rook_35core_case0004_primary_propagation.md)
+checks signed Boolean intervals and guarded covers with arbitrary-size integer arithmetic.
+A complete forward closure adds no assignment after the fourteen known units.

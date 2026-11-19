@@ -1,0 +1,59 @@
+{
+  "status": "complete induced-pattern matrix on every graph decoration; no optimizer",
+  "complete": true,
+  "source_sha256": "e5f8ae3388375c9cb84a2689917acdaf3973d0c2c2553c01647b5807c36ad934",
+  "pattern_source_sha256": "9e5714d7570536c347159072456aae2b6bf2d6e90c71a0ae2e58a018f69ca829",
+  "patterns_sha256": "86248876874c7b3ded078aec9e189de6f9728302137bb857ffe1500ad519400b",
+  "graph_domain_sha256": "39fb9f237327616f83917a15644c36a2f397d5c938720b4dff9278d4262d94f8",
+  "presence_orbits_sha256": "a6ca65e8edeb1d4545e89c28833bf7526c693ce6066ec5b6f15a47d31853c61d",
+  "full_matrix_shape": [
+    200,
+    157711
+  ],
+  "distinct_feature_matrix_shape": [
+    200,
+    18427
+  ],
+  "full_matrix_nonzeros": 7291472,
+  "distinct_matrix_nonzeros": 782041,
+  "full_matrix_sha256": "ad7860b8e1851dcea3647595950df1cf5b98d2fd5c68c6d672ba2eee6e1fe5e2",
+  "maximum_integer_coefficient": 60,
+  "complete_presence_aggregation_columns_checked": 157711,
+  "presence_equations_checked_per_column": 73,
+  "row_degree_partition_checked_on_every_column": true,
+  "independent_colored_graph_control_columns": 631,
+  "independent_colored_graph_control_subsets": 26049,
+  "colored_canonicalizer": "pynauty with separate root and free color classes",
+  "subset_tables_used": 11921,
+  "distinct_subset_tables": 2463,
+  "exact_row_rank": 200,
+  "unimodular_minor_checked": true,
+  "quotient_variable": "total nonnegative mass assigned to a graph feature column",
+  "uniform_lift": "average each representative graph over all 720 root label permutations",
+  "row_coefficient": "number of free-vertex subsets whose induced rooted pattern lies in the row orbit",
+  "individual_pattern_lift": "coefficient divided by the row orbit size",
+  "identical_columns_merged_without_domain_loss": true,
+  "every_full_graph_has_a_saved_distinct_column_id": true,
+  "arrays": {
+    "path": "experiments/logs/moments-and-counts/order10-high-mask-graph-features-arrays.npz",
+    "bytes": 597478,
+    "sha256": "bd2971d442d8fb0a0059f946b93e4e11046c211bf77b6f1a128694f8792cc68e"
+  },
+  "array_sha256": {
+    "coefficients": "29540cf1e6acbbc63b1a782ae3f87ad49a9c7c3f1e4c9c298861c208ec37598f",
+    "full_graph_column_to_distinct": "ef80401c97f34869022386dd021768415b0c45165f86ccddc3395b9d095146c5",
+    "representative_full_graph_columns": "0d0ab9c41ae55d247f91f2a8c165565bcc0059e52a45dc8e20a729cc2159905f",
+    "feature_column_multiplicities": "94212d6d42be4a8b32dad9ca8b6029a772cdf382022743c1741f61dc143138d7",
+    "row_presence_atom_orbits": "054727c1083153cf3a40b9cb3c3be0017d1b36ef5b72a108aa283723bacd8239",
+    "row_old_presence_equations": "4370fa59bc69ad2094ff446f88190cfd2bf6acefd001ec28810d434cc1f61ecb",
+    "root_label_orbit_sizes": "4a47fefcfc943f5a58f5c983f3f5ad6141a2aa2eb40dbb9e0a5cf73758bf32ac",
+    "row_free_vertices": "0e6cb6904dfb7f6e61136bf97eea1325ac93184e747cb377b030a5f7b022790b",
+    "unimodular_minor_columns": "e61ceb2efa559e7cf2f2a27b3eeb311a829309ad3ac6c25c71b051e32eead48a"
+  },
+  "moments_or_product_tensors_generated": false,
+  "host_graph_automorphism_assumed": false,
+  "optimizer_or_solver_called": false,
+  "graph_existence_resolved": false,
+  "seconds": 7.115674021999439,
+  "peak_rss_kib": 320108
+}
