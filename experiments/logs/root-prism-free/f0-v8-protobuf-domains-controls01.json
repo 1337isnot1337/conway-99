@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "source_sha256": "8f05f4778240dccd1717e6af807f186249702a54814679497446969f50305ab8",
+  "controls": [
+    {
+      "packed": false,
+      "pass": true
+    },
+    {
+      "packed": true,
+      "pass": true
+    }
+  ],
+  "rejections": [
+    "truncated varint",
+    "uint64 overflow",
+    "odd domain",
+    "overlap",
+    "adjacent intervals",
+    "unsafe endpoint",
+    "bad variable wire",
+    "truncated message"
+  ],
+  "official_proto": {
+    "repository": "google/or-tools",
+    "ref": "v9.15",
+    "path": "ortools/sat/cp_model.proto",
+    "git_blob": "a286defd6b2cf235bb7416d65b9fdc0490284537",
+    "sha256": "c967180600fab5db4fc8b7477fef56c3c6d3c0714b1f0355697f96d147f77d96"
+  },
+  "scope": "Read only IntegerVariableProto.domain; count but do not reconstruct constraint messages.",
+  "optimizer_calls": 0,
+  "control_source_sha256": "26879a5da1ab839c596c89e62b06e2c5db7f2ca9f9679516de1aee1cb22e268a"
+}

@@ -1,0 +1,94 @@
+{
+  "schema": "conway99.f0.literal-layer-correction-source-review.v1",
+  "status": "PASS: minimal routing correction and completed artifact bindings reviewed",
+  "review_kind": "Read-only source and artifact-binding review; no producer, cold checker, native build, or optimizer repeated.",
+  "subjects": {
+    "producer": {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_layer.py",
+      "sha256": "f9af8c9fcafcc070533cc5ad65c788023e782520dcea4a1a3ac46d3636a0badb"
+    },
+    "checker": {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_layer_replay.js",
+      "sha256": "5ff42605875628362849f73bb5cbcc7e4950bf072a3cb40a27114d386656c883"
+    }
+  },
+  "historical": {
+    "review": {
+      "path": "experiments/logs/root-prism-free/f0-literal-cut-layer-literature-source-review.json",
+      "sha256": "853ff176d4056d70a03407d55ea38820ed99f3fdcc4c78ad44d8a31fcdfb5642"
+    },
+    "failed_producer_sha256": "7ebd036068fe6bc799a804abfeca37e3c4fbcf66f6d615fa2510615b1ca7d8ff",
+    "unrun_checker_sha256": "4e3435da761cf9758b1dbfa04b78fbedefb9f2fa9512956570fa4a74307a41af",
+    "failure": {
+      "path": "experiments/logs/root-prism-free/f0-literal-cut-layer-failed-attempt01.json",
+      "sha256": "6c2a4a393467eeb76d3d698b01c30f297b1a57268d12536b4b7d7847e9258cbe"
+    },
+    "limitation": "The first source review did not detect the archive-position assumption. The v1 producer rejected that assumption before creating a layer or native model. Its source-only review is preserved and is not a successful preparation certificate."
+  },
+  "reviewed_diff": {
+    "producer_assertions_changed": 3,
+    "checker_route_predicates_changed": 2,
+    "checker_expected_producer_hash_changed": true,
+    "arithmetic_or_variable_allocation_changed": false,
+    "exact_radix_row_ids": [
+      4164,
+      4165,
+      4166,
+      4167,
+      4168,
+      4169,
+      4170,
+      4171,
+      4172,
+      4173,
+      4174,
+      4175
+    ],
+    "direct_row_ids": "0..4163 and 4176..4415, exactly 4404 rows",
+    "route_decision": "The absolute coefficient/activity threshold still determines each route. Corrected row-ID predicates check the observed partition; they do not replace arithmetic routing.",
+    "complete_source_basis": "Both v1 sources were previously read in full. This review read the complete v1-to-v2 diffs and verified both current full-file hashes."
+  },
+  "completed_records": {
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-literal-cut-native-layer01/report.json",
+      "sha256": "7a6786d7e3871eddcb1d635b662f1d1d0fc960c51de1e878007ee62b000d22ba"
+    },
+    "layer": {
+      "path": "experiments/logs/root-prism-free/f0-literal-cut-native-layer01/layer.json.gz",
+      "sha256": "dcb44159712f9c9a4f61cc61950c23d62b804a0d57709ca43afb33e3711d2b33",
+      "raw_sha256": "baa27810f7f95c32a5fb88285186f28c52b3812064bbf5ab09cd8fa52b2912c8"
+    },
+    "cold": {
+      "path": "experiments/logs/root-prism-free/f0-literal-cut-native-layer01-cold.json",
+      "sha256": "7bed3fffebe2bf026eac13961bbee1c2ba25ac04913a11b4b3f9f7dc8d6fa44b"
+    }
+  },
+  "checks": {
+    "complete_input_and_output_hash_bindings_read": true,
+    "all_4416_original_rows_preserved": true,
+    "inverse_links": 480,
+    "direct_cuts": 4404,
+    "radix_cuts": 12,
+    "radix_equalities": 36,
+    "radix_auxiliaries": 60,
+    "added_variables": 540,
+    "added_rows": 4920,
+    "final_variables": 32296,
+    "final_target_constraints": 58957,
+    "final_initial_constraints": 58840,
+    "unchanged_external_pool_constraints": 117,
+    "saved_maximum_absolute_term_activity": "783727900923",
+    "saved_whole_final_variable_domain_sum": "38655626228",
+    "independent_checker_scope": "The checker contracts actual Python-produced radix limbs against the external original rows through the frozen JS verifier, checks all direct rows and inverse links, and verifies contiguous allocation and the final domain budget.",
+    "actual_radix_synthetic_controls": "The saved cold record has 48 satisfying patterns and zero violating patterns. Negative/mutation coverage comes from the separately frozen generic radix controls; no additional actual-row negative control is claimed."
+  },
+  "limits": {
+    "native_model_validator_executed_by_this_review": false,
+    "source_imports": 0,
+    "producer_runs": 0,
+    "cold_runs": 0,
+    "optimizer_calls": 0,
+    "production_candidate_checked": false,
+    "complete_graph_or_exterior_edge_realization_claimed": false
+  }
+}

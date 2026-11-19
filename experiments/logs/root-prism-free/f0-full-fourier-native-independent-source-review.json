@@ -1,0 +1,86 @@
+{
+  "status": "PASS: complete source-only mathematical and append review",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_full_fourier_native.py",
+    "sha256": "a1bde1aa30b0154223d2f94fe1ee1744274792f5f993bf60ca210f2939fdf703",
+    "bytes": 34639
+  },
+  "method": "Complete source reading plus no-import integer dimension and AST binding checks",
+  "checks": {
+    "old_parent_variables": 18444,
+    "new_coordinate_ids": [
+      18444,
+      18764
+    ],
+    "new_product_ids": [
+      18764,
+      31756
+    ],
+    "literal_selector_ids": [
+      31756,
+      32236
+    ],
+    "radix_auxiliary_ids": [
+      32236,
+      32296
+    ],
+    "final_variables": 32296,
+    "target_rows": 58957,
+    "initial_rows": 58840,
+    "unchanged_external_rows": 117,
+    "complete_old_projection_of_each_local_table": 42,
+    "whole_target_and_initial_parent_hash_restoration": true,
+    "literal_inverse_links_directly_compared": 480,
+    "signed_integer_linear_activity_gate": "strictly below 2^62",
+    "native_public_constructor_full_initial_byte_comparison": true,
+    "cold_saved_plan_and_both_proto_comparison": true,
+    "owned_prepare_and_cold_seconds_each": 60
+  },
+  "review_findings": [
+    "Each extended local table projects exactly to the frozen old table; the two joint tables retain their original bytes.",
+    "Old columns retain their indices and domains; the four new namespaces are disjoint and consecutive.",
+    "The original initial-to-target map and all 117 external rows remain bound and exhaust the old target together. Identical suffix constraints are appended to both models.",
+    "The literal inverse equations use coefficient -12 on each new selector and are normalized only by exact nonzero integer scaling.",
+    "Every linear suffix activity is bounded with Python integers before native validation. The constructors and cold mode never instantiate CpSolver.",
+    "Both complete parent protobuf hashes are recovered by reversing the local-table replacements and removing only the suffix.",
+    "A completed prepared report is accepted only under the owned 60-second phase deadline. No timeout becomes a mathematical result."
+  ],
+  "scope_limits": [
+    "Literal-cut necessity and Fourier normalization are inherited from the explicitly SHA-bound specification and configured literal record/evidence. This review does not rederive either census.",
+    "The final literal configuration and actual native preparation output were not evaluated in this source-only review.",
+    "The full target remains a necessary count/literal model; this source does not assert graph feasibility or authorize production search."
+  ],
+  "subject_imports": 0,
+  "controls_repeated": 0,
+  "model_builds": 0,
+  "optimizer_calls": 0,
+  "function_AST_sha256": {
+    "sha": "5d2f17cf600e426b5b233fbac6acbf635ebc09f06bca0fad37d5385c1d852ed6",
+    "file_sha": "c7607f70ae0fdfb0a884961534fc326cda0a8e1425dea90e92802cc0b05c4a60",
+    "canonical": "1f5f331cb81d3eb64607ce0cd29890c70f8a7fbffa7f7d656178052c41141f94",
+    "save": "00cd7a8a04a4ac744b7bad5066d4aa3ffe26842d2476014d87e7c3c0dfc8e2f4",
+    "relative_path": "a9de1f7e12acfabd9fd30f4f4a926e7c07354a7feb95883733152c562fd5e682",
+    "checked_entry": "c06d0dc914e55b78089dd5fa0f450bbeb32af5fac01c210dab6e14915b114a8a",
+    "read_entry": "d63516433f2f1ffb630c25fc7f806bafdb6895c9df907bfbd9b646b93c692a62",
+    "read": "0b6d3a82837850cad22a6728cf1c2f4d55a90b60c87e7911c1bf422a37d6b015",
+    "source_module": "4ba6ee1718d134f0393e48ad5df6e428c589d0d6f873d6bd92b7fff883f9749d",
+    "configuration": "a5dab4938896105564fde99f5a6ec47464007edb7e1649c6e75defc38e52da0e",
+    "definition": "27441cc23d4a2759a7513da95b6fb8bd764740da887fcf59744c65d07f4df37f",
+    "decimal_integer": "a9ad6c6894b5b220764e628e3904d755e1634b076c6fa017c7682b19632e2e4f",
+    "checked_domain": "ceddbf92df2fc2891816acbc4d18cce5c94d9110c5dc1c33eceff519a5ac8499",
+    "checked_terms": "a8dbed0a2661af72140d320c9afbbb445f9f892151ed0cdbda5a295b76dadc55",
+    "equation_key": "56f0c0d3c3c086d9d82f552cfa3085f16bdf2d7f3311cba514745f64d666212e",
+    "controls": "76db289424bd3ced891e6e5a526c15530a504b569280e0fae4646477db6ec9d5",
+    "checked_specification": "a61834939203810d303507fc2d0bff5ffb28ce186df86f37554f4c5936c4d63f",
+    "checked_literal_layer": "48d0708a7c0124177ddcfe47eec9830d822dc568e5296a4c40bb77c1df89ca6e",
+    "add_linear": "5069abcac21381ecfc0f2ca7a1bbcea4c4a473ed32947465ece37151270155e7",
+    "add_table": "b96f756c1f109f8231007ee4aa868085ef06d2eee8fdef6ccbc72e08fecdd49e",
+    "prepare_suffix": "4992560c64bfe1fb43069e17de9f07b3dead8b6ea8703e28d47ea8215849f674",
+    "table_replacements": "f047892e146bfa5485dbdd405b8e7283b20e2f4b88d65af1363d99486e93ce48",
+    "apply_and_restore": "4848725136e55a5a1d2ca1f2a38879a06e52a8f867391709fd0380abdfc3a449",
+    "derive": "2877fed70611045c817f8280cd690b5fa9b6095be718568d99a2266e7a0c45f0",
+    "archive": "d6cbeb324c4cb21f4dfa4bfea6d48a458521fd513c32b7858ecbe5d96725d1ce",
+    "worker": "0c845a3123f3ad0df9c05b4f3b1cb1bbe78a95f779c4b9d47d8694350984b027",
+    "owned": "d4befa5852dfa438ffa8f3ae33808be1e9df1c9ff40781af6fc0305086c2fbf9"
+  }
+}

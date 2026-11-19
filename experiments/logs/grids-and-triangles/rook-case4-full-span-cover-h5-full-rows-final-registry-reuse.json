@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "old_source_sha256": "ffc1f52e9de9a224fc730fdb2b1cc9a555ecfc54da31411ab203989d5aef45f5",
+  "new_source_sha256": "bb26762de18cad7107a2d49214af61947807528cb66a638efec2589cadf26216",
+  "AST_identical_mathematical_surfaces": [
+    "Pool",
+    "propagate",
+    "verify_record",
+    "literal_bounds",
+    "terminal_bad",
+    "native_rows",
+    "matrix",
+    "survivor_states"
+  ],
+  "changed_functions": [
+    "verify_append_proofs",
+    "controls",
+    "child_forward"
+  ],
+  "unrun_initial_registry_preserved": true,
+  "old_and_new_case_preparation_calls": 0,
+  "optimizer_calls": 0,
+  "scope": "Only final registry input bindings, generic signed parity proof loading, a unit-sum premise equality assertion, signed-parity tiny controls and a fixed-point label changed. The propagation and replay kernels are unchanged."
+}

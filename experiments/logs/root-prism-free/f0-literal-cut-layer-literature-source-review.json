@@ -1,0 +1,54 @@
+{
+  "schema": "conway99.f0.literal-cut-layer.independent-source-review.v1",
+  "status": "PASS: complete producer and independent replay source review",
+  "reviewer": "literature_obstructions",
+  "sources": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_layer.py",
+      "sha256": "7ebd036068fe6bc799a804abfeca37e3c4fbcf66f6d615fa2510615b1ca7d8ff",
+      "complete_source_read": true
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_layer_replay.js",
+      "sha256": "4e3435da761cf9758b1dbfa04b78fbedefb9f2fa9512956570fa4a74307a41af",
+      "complete_source_read": true
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_radix.js",
+      "sha256": "e484e0e374e5579c75f3bfe9bdac2fa837acf75525d42d6c8f231a560856446c",
+      "role": "previously proved generic radix utility; source and synthetic controls frozen separately"
+    }
+  ],
+  "inputs_bound_by_subject": {
+    "literal_archive_sha256": "051282b7c8256fa3cad6edd9e9490290cfdfa5f6bef46b609bc32bdd63189b63",
+    "literal_raw_sha256": "3877ba7ec41c4f85f2d1623cfc5d20fa0d258c8c8319fa5dcd7313f580ac305e",
+    "full_specification_sha256": "929703b3a685f95fb28bc6553aef02d5c7f6c879628154c62b8ecfa7d69ba8d5",
+    "full_specification_raw_sha256": "46fa44efdbe3640984a010347a3dfb65964b35752c919f4b6aa2fd24317f1d0b",
+    "full_preparation_sha256": "cd96e24126c1ffab578d69d319431d023e055a82acbc883f66e72a9bdf54c96b",
+    "full_specification_cold_sha256": "650813eddce7e0c28def494a16756f49b74e1aa13b667806174c13150647e1a5"
+  },
+  "checks": [
+    "The producer and replay bind both compressed and raw authoritative row/specification archives and the separate full-specification preparation/cold ancestry.",
+    "The 480 literal bits occupy native IDs31756 through32235. Every inverse link is the saved exact numerator minus12 times its own literal bit, with no change to the pre-existing31756 variables.",
+    "Each original row has an explicit archive index and separate canonical hashes before and after the ID shift. Complete ordered row allocation prevents omitted or duplicate cuts.",
+    "For each of the4404 direct rows, the added lower bound is the minimum over the independent Boolean box. It is therefore redundant, while the original upper inequality and every exact coefficient remain unchanged.",
+    "The12 radix rows are independently constructed in Python using signed digits of absolute values, a strict capacity bound, nonnegative slack digits and carries bounded by n+2. Both endpoint carries are fixed zero by omission. The allocation gives36 equalities and60 fresh auxiliary variables.",
+    "The Node replay constructs only a reference utility envelope, replaces its rows and auxiliary declarations with the actual Python output, and invokes the weighted-contraction verifier against the external shifted original row. Thus correctness does not rest on comparing two copies of the Python digit routine.",
+    "Replay checks all4404 direct rows, all480 inverse links, all12 actual radix rows, exact complete row/variable coverage, canonical coefficients/domains and native-ID uniqueness.",
+    "Both sources compute activities with unbounded integers over domain endpoint hulls. Using hulls for previously nonconvex domains is conservative for activity bounds and does not replace the original domains.",
+    "The whole final variable-domain sum includes every parent variable, literal bit, slack and carry. Each new linear row separately checks conservative signed activity and absolute residual bounds.",
+    "Metadata counts agree arithmetically:540 added variables,4920 added linear rows,32296 final variables,58957 final target rows and58840 initial rows with117 inherited pool constraints.",
+    "The source explicitly distinguishes the exact layer specification from a built native model, a checked production candidate or exterior-edge/graph realization."
+  ],
+  "scope": {
+    "subject_module_imported": false,
+    "preparation_repeated": false,
+    "cold_repeated": false,
+    "original_archive_reexported": false,
+    "native_model_built": false,
+    "optimizer_calls": 0,
+    "actual_native_validator_executed": false,
+    "prior_original_archive_and_full_specification_proofs_relied_upon": true,
+    "numerical_or_integer_candidate_checked": false
+  }
+}

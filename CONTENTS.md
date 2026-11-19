@@ -1,5 +1,7 @@
 # Research catalog
 
+Checkpoint 68 records the [completed full-span rook cycle](research/grids-and-triangles/rook_case4_full_span_cycle_run01.md), one new three-Gram parity cover and a new exact positive point satisfying all five cuts. The [H=5 native propagation and short strengthened inequality](research/grids-and-triangles/rook_case4_full_span_cover_h5_native.md) leave 183 of 996 projected patterns unresolved. The [complete F0 Fourier specification and literal layer](research/root_prism_free_f0_full_fourier_literal_layer.md) preserve all 4,416 cuts exactly and have independent cold replay. Native integration and new candidate acceptance are subsequent stages. Neither branch is excluded.
+
 Checkpoint 67 proves the [upper-five bound and complete native-capacity projection for the 42-selector parity support](research/grids-and-triangles/rook_case4_full_span_cover_upper_five.md), with an [independent replay](experiments/logs/grids-and-triangles/rook-case4-full-span-cover-upper-five-root-replay01.json). It also preserves the [full-span rook cycle preparation](research/grids-and-triangles/rook_case4_full_span_cycle.md), recovered F0 sources and the [execution interruption record](research/session_ab2f_execution_interruption.md). New native queries remain unrun.
 
 

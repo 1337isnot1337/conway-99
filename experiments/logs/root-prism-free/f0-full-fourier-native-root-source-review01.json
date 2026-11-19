@@ -1,0 +1,27 @@
+{
+  "schema": "conway99.f0.full-Fourier-native-root-source-review.v1",
+  "status": "PASS: complete adapter source reviewed; concrete literal evidence required before execution",
+  "source": "experiments/workspace/root_prism_free_f0_full_fourier_native.py",
+  "source_sha256": "a1bde1aa30b0154223d2f94fe1ee1744274792f5f993bf60ca210f2939fdf703",
+  "reviewer": "root",
+  "complete_source_lines_read": 646,
+  "checks": [
+    "Frozen source and input hashes, parent raw protobuf hashes, and SHA-bound literal configuration are checked before construction.",
+    "All 480 literal inverse equations are compared directly with the frozen Fourier specification.",
+    "All 540 literal-layer domains and 4920 linear rows are transcribed exactly; large integer strings are canonical and become checked native integers.",
+    "All 320 Fourier coordinates, 12992 exact products, 6496 Gram links and 151 nonempty original equations are appended without additional phase fixing.",
+    "Exactly 42 local tables are replaced; their complete old tuple projections are preserved and both other tables remain unchanged.",
+    "Undoing all appends and table replacements recovers both complete parent protobuf hashes.",
+    "Every retained initial row, all 117 external pool rows, their IDs and the complete variable domains are checked.",
+    "Public CP-SAT construction and validation must produce byte-identical initial protobuf output; CpSolver is never constructed.",
+    "The full target is released before public constructor work, and each prepare or cold phase has one 60-second owned deadline.",
+    "Cold replay rebuilds the saved native plan and both protobufs from bound evidence and compares their complete bytes."
+  ],
+  "conditions": [
+    "Use a frozen configuration containing the actual literal layer, its producer and independent checker, their completed reports, and the peer source review.",
+    "A source review does not itself establish successful native preparation, cold replay, solver feasibility or graph existence.",
+    "Any later candidate remains provisional until the original parent and literal checks pass."
+  ],
+  "optimizer_calls": 0,
+  "production_query_authorized_by_this_review": false
+}
