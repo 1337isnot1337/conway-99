@@ -1,0 +1,69 @@
+{
+  "audit_raw_sha256_supplied_by_root": "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75",
+  "complete_final_difference_read": true,
+  "complete_prior_source_read": true,
+  "concrete_blockers": [],
+  "controls": {
+    "body_byte_identical_after_repairs": true,
+    "independently_rerun_by_reviewer": false,
+    "reported_by_root": {
+      "explicit_examples": 3,
+      "matrices": 729,
+      "negative": 258,
+      "positive": 258,
+      "zero": 213
+    }
+  },
+  "enumeration_and_arithmetic_checks": [
+    "The fixed 21-core adjacency is checked for symmetry/loops; the 18-site component and all mixed targets are reconstructed. Signature triples are distinct, ordered and in range.",
+    "All 68,394 original eligible unordered edges are reconstructed from signature intersection and both endpoint quota supports, and the complete neighbor lists are compared with the accepted domain.",
+    "For each smallest vertex a, ordered pairs in its higher disjoint-neighbor list enumerate each pairwise-disjoint eligible triangle exactly once after the remaining pair test. No old zero-edge or path pruning is applied.",
+    "Kernel family labels, divisors, dimensions, scalar Y values, Schur denominators and primitive hashes are checked. Every input numerator is a safe integer and exactly divisible by its declared divisor.",
+    "The positive-family absolute intermediate bound is at most six times bound cubed and is strictly below 2^53. Thus each multiplication and cumulative determinant addition/subtraction is exactly representable. The other family uses BigInt determinants throughout.",
+    "Triangle counts partition into negative proper minor, negative determinant, zero determinant and positive determinant. Negative/zero determinant records are retained only when proper minors are nonnegative, exactly as named by the output field. Negative pair witnesses separately certify the skipped cases.",
+    "The record cap and cooperative deadline throw before any complete-result status can be returned. Maximum declared duration is 60 seconds and maximum nonpositive records is 500,000 per family."
+  ],
+  "exact_repairs": [
+    {
+      "reason": "Avoids an engine-dependent 115,440-argument call near V8 call limits.",
+      "removed": "const edgeOff=off.map(v=>v+y),bound=Math.max(...diagonal,...edgeOff.map(Math.abs));",
+      "replacement": "Build edgeOff, initialize bound=0, and update bound in separate loops over diagonal and edgeOff; each Math.max call has two arguments."
+    },
+    {
+      "reason": "The proof that all positive-family Number intermediates are exact is itself checked with exact integer arithmetic.",
+      "removed": "6*bound**3<2**53",
+      "replacement": "6n*BigInt(bound)**3n<(1n<<53n)"
+    }
+  ],
+  "final_source": {
+    "bytes": 8465,
+    "git_blob": "a7f9e880e008460a2dd510fca2f30e0813b19ed3",
+    "path": "experiments/workspace/root_prism_free_f0_triangle_schur_v8.js",
+    "sha256": "c1ce569b071d244f45aadd95569f695dc72c3a7c131b6290bc36026689da6afd"
+  },
+  "intended_path": "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-independent-source-review01.json",
+  "main_census_executed_by_reviewer": false,
+  "mathematical_checks": [
+    "The determinant formula uses diagonal entries a,b,c and off-diagonal entries d=ab,e=ac,f=bc in the correct order: abc+2def-af^2-be^2-cd^2.",
+    "All 480 diagonal entries are required positive. Every original eligible pair receives an exact BigInt 2x2 principal-minor test before triangle enumeration.",
+    "A negative 2x2 minor for a present edge implies the single-edge exclusion. A triangle with nonnegative proper minors and negative determinant violates PSD and gives the valid Boolean cover y_ab+y_ac+y_bc<=2.",
+    "Pairwise signature disjointness is necessary for a triangle because a shared core neighbor would be a second common neighbor of one of its edges. Overlapping-signature triangles are explicitly outside this census and require their separate lambda=1 proof.",
+    "A zero determinant with nonnegative proper minors is a singular PSD block. It is retained as evidence for a later nullspace-extension phase, without claiming a new exclusion."
+  ],
+  "native_model_builds": 0,
+  "new_cut_novelty_claimed": false,
+  "optimizer_calls": 0,
+  "prior_source": {
+    "bytes": 8355,
+    "git_blob": "0603d10e8e01c979b14c040af94360e3b0e155c8",
+    "path": "experiments/workspace/root_prism_free_f0_triangle_schur_v8.js",
+    "sha256": "12d43541bc6745e9c5ae1fb25404117afe9914ab33d0422138c218e9d55f8177"
+  },
+  "required_execution_bindings": "The wrapper must preserve exact final source, codec, raw domain/kernel/audit hashes and compressed identities. The factory verifies internal kernel/domain structure but does not itself attach every external input digest to its result.",
+  "reviewer": "master_review",
+  "schema": "conway99.f0.exterior-triangle-schur-v8-independent-source-review.v1",
+  "source_and_git_hashes_independently_verified_in_v8": true,
+  "source_delta_scope": "Only these two adjacent lines were replaced by the four reviewed lines. Complete surrounding source and controls body are byte-identical.",
+  "status": "PASS_SOURCE_BOUND_EXACT_TRIANGLE_SCHUR_CENSUS_REVIEW",
+  "whole_component_excluded": false
+}

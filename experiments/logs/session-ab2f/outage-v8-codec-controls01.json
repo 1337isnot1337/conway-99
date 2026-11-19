@@ -1,0 +1,46 @@
+{
+  "schema": "conway99.session-ab2f.outage-codec-controls.v1",
+  "status": "PASS_KNOWN_DIGEST_AND_GZIP_CONTROLS",
+  "source": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "bytes": 8304,
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "mode": "100644"
+  },
+  "controls": {
+    "sha256_empty": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "sha256_abc": "ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad",
+    "sha1_abc": "a9993e364706816aba3e25717850c26c9cd0d89d",
+    "empty_git": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "gzip_stored_and_fixed": true,
+    "base64_hello": "hello"
+  },
+  "exact_input_decodes": [
+    {
+      "name": "domain",
+      "archive_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "archive_git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "archive_bytes": 52094,
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "raw_bytes": 547862
+    },
+    {
+      "name": "kernels",
+      "archive_sha256": "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1",
+      "archive_git_blob": "eb5103adaeeb66fd424f672272f35e0516da1c44",
+      "archive_bytes": 453951,
+      "raw_sha256": "a963a88606a9fad78576d711f6ef7bf67eb03032176cebc2af5af700ea7c6708",
+      "raw_bytes": 1405171
+    },
+    {
+      "archive_sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "archive_git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "archive_bytes": 219390,
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "raw_bytes": 1262434
+    }
+  ],
+  "kernel_raw_hash_matches_preexisting_independent_artifact": true,
+  "scope": "Codec controls and exact public artifact decoding only. No graph search, optimizer or case exclusion."
+}
