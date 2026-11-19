@@ -1,0 +1,15 @@
+# Combined exterior query
+
+## Accepted preflight
+
+[Run 44640850513](https://github.com/1337isnot1337/conway-99/actions/runs/44640850513) executed checkpoint 90 once. The frozen runner recovered the accepted 39,306,083-byte model with SHA-256 `2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6`, parsed all 80,730 variables and 297,470 rows, compared the complete native transport bytes, and obtained an empty validation result. The worker took 5.614 seconds and its owner 5.781 seconds, below their 60/75-second limits. The owner reaped the child and stopped its process group with zero overrun.
+
+The [root acceptance](../experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-root-acceptance01.json) binds the original report, owner, parameter text, parameter wire and schema, source, configuration, model receipt and workflow. All 12 original small files, totaling 23,617 bytes, are preserved in the [terminal map](../experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-terminal-git-blobs01.json). The large integer control token 18014398509481987 is retained exactly; parsed JavaScript numbers were not used to reserialize the original outputs. The duplicate raw model is recoverable losslessly from the already committed gzip archive and is described by the [restoration record](../experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-model-restoration01.json). No CpSolver was constructed and no optimization call occurred.
+
+## One bounded production query
+
+Checkpoint 91 authorizes one run of the reviewed query and independent terminal checker. The actual configuration uses four search workers, seed zero, presolve enabled, probing level zero, linearization level zero and symmetry level zero. The solver clock is 600 seconds, the measured native allowance 610 seconds, the query owner 720 seconds and the reserved finalization budget 60 seconds. Separate independent control and terminal-replay owners have 15 and 135 seconds. The full CI driver has a 900-second acceptance bound inside a 20-minute job.
+
+The [production gate](../experiments/logs/root-prism-free/f0-combined-extensions-query-root-gate01.json) pins the exact model, sources, accepted preflight, runtime and parameters. The workflow permits only the first attempt on the exact expected parent and pushed commit. It verifies all 38 dependencies before execution. The query and independent replay preserve and inspect every returned vector with exact integer arithmetic, including all 11,796 new auxiliary variables and every model row. Original native text and integer arrays are retained before parsing; the separately reconstructed response protobuf is labeled as reconstructed.
+
+Production execution is pending at this checkpoint. UNKNOWN means unresolved. A native INFEASIBLE response requires a separate proof before a mathematical exclusion can be claimed. A satisfying vector establishes only this combined exterior relaxation: general original pair caps and a compatible second component still require validation. No graph, whole-component exclusion or unrestricted contradiction has been obtained.

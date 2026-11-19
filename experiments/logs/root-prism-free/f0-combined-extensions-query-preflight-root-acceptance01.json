@@ -1,0 +1,166 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-preflight-root-acceptance.v1",
+  "status": "ROOT_ACCEPTS_EXACT_ZERO_SOLVE_COMBINED_EXTENSIONS_QUERY_PREFLIGHT",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration01.json",
+    "bytes": 6112,
+    "sha256": "3211efaf7c13917b36c3e47eedf3fc42e761f74b39ce8fcb4330d47a7072f2af",
+    "git_blob": "4fdd5c09bbc7416a850ed265597e5dfac89bb236",
+    "mode": "100644"
+  },
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01/report.json",
+    "bytes": 5319,
+    "sha256": "7eb85362babf373edd2c40eed3c797bb4dd07b87cd4300d3491bc01ae9a1e165",
+    "git_blob": "2d4cbab058d40154e6cac2baaf205a65bbb82a40",
+    "mode": "100644"
+  },
+  "owner": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01/owner.json",
+    "bytes": 1507,
+    "sha256": "96627e76ce25d3ca5fd5bfce99ea4d94032f2256b251bde68b973745c96931d2",
+    "git_blob": "c382bc18c824b2bd8349c663828066872ff12dcd",
+    "mode": "100644"
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-root-gate01.json",
+    "bytes": 9147,
+    "sha256": "97e7d7689eb20b9b33d7d2a8a62dcbe67572e65992cb5ccb6afb210b3838c74f",
+    "git_blob": "fef4f98dded944908f2d3e646d0e78aa75aca5e3",
+    "mode": "100644"
+  },
+  "request": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-request01.json",
+    "bytes": 1819,
+    "sha256": "3c8b2b21f0e28ee8e5dd6be60170b421dced3c56a681293b726fecb348acd2d5",
+    "git_blob": "36d41494ae8328b67470c72245d7c4aa63ee315f",
+    "mode": "100644"
+  },
+  "workflow": {
+    "path": ".github/workflows/conway99-combined-extensions-query-preflight.yml",
+    "bytes": 9121,
+    "sha256": "19aa3d9a606a187e6b86f269e8cf3d383b5505680529308fea387edf96e0ba1b",
+    "git_blob": "f51016f90d8ebad9a943c39b65736f4e7e326f7b",
+    "mode": "100644"
+  },
+  "model_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "bytes": 9294,
+    "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+    "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd",
+    "mode": "100644"
+  },
+  "model_archive": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/model.pb.gz",
+    "bytes": 5632144,
+    "sha256": "afeadb94ffa6fba0465a3dbe0094f4c7f7c156de8d7aa5f24a8fcfa38d275542",
+    "git_blob": "a2fce7642eb1d155b0e658e3a612d1007c0bf653",
+    "mode": "100644"
+  },
+  "model_restoration": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-model-restoration01.json",
+    "bytes": 2146,
+    "sha256": "f0436c9760b6c0c12771a301fa500c3f31f96f7566189030fd74da4f9bd2cccb",
+    "git_blob": "6cd06aa2aef074473cfc3925539629766dc6d6f5",
+    "mode": "100644"
+  },
+  "model_raw_sha256": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6",
+  "model_raw_bytes": 39306083,
+  "variables": 80730,
+  "rows": 297470,
+  "parameters": {
+    "num_search_workers": 4,
+    "random_seed": 0,
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "symmetry_level": 0,
+    "max_time_in_seconds": 600,
+    "log_search_progress": true,
+    "log_to_stdout": true,
+    "log_to_response": true
+  },
+  "runtime": {
+    "cp_model_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+    "model_schema_sha256": "266b68151ffd6c9f5db22553442abd777031663d39e1cea649a8737f811d2eff",
+    "native_helper_sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735",
+    "ortools_version": "9.15.6755",
+    "parameter_schema_sha256": "644354522af4202900329fc55844364cf1bfa77333b7ceb98e9de4aa49036c52",
+    "protobuf_version": "6.33.6"
+  },
+  "parameter_artifacts": {
+    "text": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01/parameters.pbtxt",
+      "bytes": 220,
+      "sha256": "b0b0e2f35a92b95d8d70c51ef355921b317fdd170bae7970af22f8a7f95f1ec0",
+      "git_blob": "a74cf7216407235f8e9951fb0c270a24795c4a89",
+      "mode": "100644"
+    },
+    "wire": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01/parameters.pb",
+      "bytes": 37,
+      "sha256": "0b492b9b6a0536ee4a31e3186612b00037749b969da29d8ffb09d52782ea95c3",
+      "git_blob": "a7ee0aa16db8d583be5a796dd5e9e1b4d305055c",
+      "mode": "100644"
+    },
+    "schema": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight01/parameter-schema.pb",
+      "bytes": 15472,
+      "sha256": "644354522af4202900329fc55844364cf1bfa77333b7ceb98e9de4aa49036c52",
+      "git_blob": "4c90e2fcaafc88fa2514ddae1fd0c72c992adcbe",
+      "mode": "100644"
+    }
+  },
+  "root_checks": {
+    "actual_crossreferences_checked": 20,
+    "all_parameter_text_fields_compared": true,
+    "exact_control_integer_token": "18014398509481987",
+    "owner_within_bound": true,
+    "worker_within_bound": true,
+    "complete_native_raw_byte_comparison": true,
+    "optimizer_calls": 0
+  },
+  "controls": {
+    "status": "PASS_EXACT_INSPECTION_AND_NATIVE_RESPONSE_CONTROLS",
+    "exact_large_integer_token": "18014398509481987",
+    "native_response_statuses": 3,
+    "terminal_classification_controls": 9,
+    "additional_vectors_checked": true,
+    "invalid_integer_domain_and_row_vectors_rejected": true,
+    "negative_and_empty_rows_checked": true
+  },
+  "timing_seconds": {
+    "worker": 5.6139660750000004,
+    "worker_limit": 60,
+    "owner": 5.780710187000004,
+    "owner_limit": 75,
+    "native_transport": 4.869772470000001
+  },
+  "owner_reaped_and_process_group_stopped": true,
+  "deadline_overrun_seconds": 0,
+  "ci": {
+    "run_id": 44640850513,
+    "job_id": 135971225493,
+    "source_commit": "9111f4a78ab8281d6600fb2669d82b9bb515de69",
+    "run_attempt": 1,
+    "conclusion": "success",
+    "url": "https://github.com/1337isnot1337/conway-99/actions/runs/44640850513"
+  },
+  "original_small_output_files": 12,
+  "original_small_output_bytes": 23617,
+  "original_bytes_preserved_without_JSON_numeric_reserialization": true,
+  "preflight_calls": 1,
+  "optimizer_calls": 0,
+  "production_solve_calls": 0,
+  "CpSolver_constructed": false,
+  "automatic_retries": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false,
+  "production_query_authorized_by_this_receipt": false
+}
