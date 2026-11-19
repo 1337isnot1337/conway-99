@@ -18,4 +18,19 @@ For two vertices over different nonadjacent base points, their common neighbors 
 
 For $R=A^2+A-12I-2J$, the off-diagonal upper triangle has 49 entries equal to $12$, 588 equal to $-1$ and 4,214 equal to zero. The sum of squared errors over unordered pairs is $7,644$. The row at $o$ satisfies the required graph equation, while each other vertex has a partner accounting for its large positive residual.
 
+## Sharpness among graphs with 49 disjoint twin pairs
+
+Here a pair is called twins if each vertex has the same neighbors outside the pair. Among **all** 14-regular 99-point graphs with 49 disjoint pairs of twins, the largest possible score is 4,313. The doubled Hoffman–Singleton example is the unique maximizer up to isomorphism.
+
+For any such graph let $o$ be the remaining singleton. Between two twin pairs the interface is complete or empty. For a pair let $b$ indicate adjacency to $o$, let $c$ indicate its internal edge, and let $d$ count the other pairs it sees. The degree equation $14=2d+b+c$ gives $b=c$. Exactly seven pairs see $o$, and these are exactly the internally joined pairs. Call them special. Contract every pair, retaining $o$. The resulting 50-point graph is 7-regular.
+
+Let $t$ count the edges between special vertices in this quotient. An edge with both ends in ordinary fibers has an even number of common neighbors. Each special internal edge has thirteen. Thus every successful adjacent pair must use one of the $7\cdot 2\cdot 13=182$ incidences from a special point to another fiber. Every edge between two special fibers fails, since it has $o$ and the two partners as common neighbors. Each of the $t$ quotient edges of that kind uses eight of the counted incidences. There are at most $182-8t$ successful edges.
+
+The 42 ordinary twin pairs fail the nonedge test. Between two distinct nonadjacent special fibers, the common-neighbor count is odd: the singleton contributes one and every other contribution comes in pairs. This forces another $4(21-t)$ failing nonedges. The total score is at most
+\[
+99+(182-8t)+4158-42-4(21-t)=4313-4t.
+\]
+
+Equality requires $t=0$ and success on every nonedge outside the forced failures. In the quotient every nonadjacent pair of special vertices has the common neighbor $o$. Every other quotient nonedge has a common neighbor because its lifted points satisfy the nonedge test. Thus the 7-regular quotient of order 50 has diameter two. From each vertex the seven neighbors have only 42 remaining slots for walks of length two, and all 42 nonneighbors must be reached. This forces parameters $(50,7,0,1)$. Uniqueness of the Hoffman–Singleton graph and its vertex-transitivity give the stated equality case. [Hoffman–Singleton uniqueness](https://people.math.harvard.edu/~elkies/Misc/hsgraph.pdf) · [Vertex-transitivity](https://aeb.win.tue.nl/drg/graphs/Hoffman-Singleton.html)
+
 The [graph6 file](../experiments/workspace/hoffman-singleton-double.g6) contains the full labeled graph. The [verifier](../experiments/workspace/hoffman_singleton_double.py) checks the base graph identity, reconstructs the graph, decodes the file and counts every pair by intersections of neighbor sets. A separate integer matrix calculation verifies the complete residual distribution. Run `python experiments/workspace/hoffman_singleton_double.py` with NumPy, or `make verify`.
