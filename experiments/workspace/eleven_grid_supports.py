@@ -28,6 +28,16 @@ def impossible_degree_cell(missing):
     return False
 
 
+def incidence_possible(missing, present):
+    if any(sum(not set(e) & set(f) for f in missing) < 4 for e in present):
+        return False
+    if len({v for e in missing for v in e}) < 6:
+        return False
+    parts = bipartite_components(missing)
+    return all(bipartite_components(missing[:i]+missing[i+1:]) == parts
+               for i in range(len(missing)))
+
+
 def verify():
     forbidden = {certificate(5, SHAPES[key][0]) for key in ('paw', 'fork', 'path')}
     count = Counter()
@@ -38,12 +48,7 @@ def verify():
         count['graphs'] += 1
         missing = tuple(sorted(edges))
         present = set(AXIS_PAIRS)-set(missing)
-        if any(sum(not set(e) & set(f) for f in missing) < 4 for e in present):
-            continue
-        if len({v for e in missing for v in e}) < 6:
-            continue
-        parts = bipartite_components(missing)
-        if any(bipartite_components(missing[:i]+missing[i+1:]) != parts for i in range(10)):
+        if not incidence_possible(missing, present):
             continue
         count['supports'] += 1
         if impossible_degree_cell(missing):

@@ -126,3 +126,4 @@ verify-four-missing-grid-cones:
 .PHONY: verify-ten-grid-bound
 verify-ten-grid-bound: verify-four-missing-grid-cones
 	cd $(WORKSPACE) && "$(PYTHON)" last_eleven_grid.py
+	cd $(WORKSPACE) && "$(PYTHON)" ten_grid_supports.py
