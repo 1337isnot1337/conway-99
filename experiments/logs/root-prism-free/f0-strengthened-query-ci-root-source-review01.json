@@ -1,0 +1,50 @@
+{
+  "schema": "conway99.f0.strengthened-query-ci-root-source-review.v1",
+  "status": "PASS_COMPLETE_PRODUCTION_DRIVER_SOURCE_REVIEW",
+  "reviewer": "/root",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query_ci.py",
+    "bytes": 17129,
+    "sha256": "1d9f29fad341c4736cb75e91b8a5b98791606112055dcca65503abd51a12440e",
+    "git_blob": "9a698de577a4f132a8e8af3e9c818b7f7b01c391"
+  },
+  "full_source_read": true,
+  "source_lines": 280,
+  "query_source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query.py",
+    "bytes": 33132,
+    "sha256": "b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288",
+    "git_blob": "ec845beeca4e499b72367e0a81f4c43e97be8663"
+  },
+  "terminal_cold_source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query_replay.py",
+    "bytes": 29145,
+    "sha256": "44d8bbba6f61fae1a27faa9fa516353b02dbcc53c9cbedd39c5574adb48a5ee3",
+    "git_blob": "888a72052c30590b93a2da8c3615f78ccf71c496"
+  },
+  "root_also_read_complete_query_and_terminal_checker_sources": true,
+  "checked": [
+    "The exact request, source, configuration, gate and accepted preflight bindings are checked before the query invocation.",
+    "The query's existing 300-second owner is invoked once. The outer subprocess.run waits for and reaps that owner; no solver is constructed in the driver.",
+    "The query owner must accept its terminal result with child exit, reaping, process-group termination and no owner overrun before independent replay begins.",
+    "Cold controls and full replay use the pinned process-group supervisor with separate 15-second and 135-second owners and explicit initial, supervision and final receipts.",
+    "Cold output source, configuration, gate, result and owner identities are checked. Native outcome classification is kept separate from successful terminal replay.",
+    "The finally block preserves a driver terminal and existing terminal-artifact identities after phase failures; request identity failures before the report path is established abort without a claimed result.",
+    "The 480-second driver acceptance limit is checked on finalization. It is not a separate process-group deadline; individual children retain their own explicit owners and the CI workflow must set an outer job timeout.",
+    "The driver neither invokes prepare nor retries the query or a cold phase. Both model preparation and direct optimizer counts remain zero in the driver."
+  ],
+  "required_future_workflow": [
+    "Compile all pinned Python before execution.",
+    "Retain accepted preflight report, owner, parameters.pbtxt, parameters.pb and parameter-schema.pb.",
+    "Pass the exact frozen request SHA256.",
+    "Pin the production root gate including ci_driver_source and terminal_cold_source.",
+    "Preserve all phase outputs even on failure and provide an outer job timeout."
+  ],
+  "concrete_blockers": [],
+  "Python_syntax_compilation_executed": false,
+  "controls_executed": false,
+  "query_executed": false,
+  "cold_executed": false,
+  "production_authorized_by_this_review": false,
+  "graph_or_component_exclusion_claimed": false
+}

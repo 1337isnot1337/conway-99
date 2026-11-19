@@ -1,0 +1,103 @@
+{
+  "accepted_model_root_receipt": {
+    "bytes": 7706,
+    "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+    "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+    "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116"
+  },
+  "cold_limits": {
+    "controls_owner_seconds": 15,
+    "controls_seconds": 10,
+    "exact_seconds_including_serialization": 120,
+    "external_owner_seconds": 135
+  },
+  "commands": {
+    "cold": "python experiments/workspace/root_prism_free_f0_strengthened_query_replay.py run --configuration CFG --configuration-sha256 CFGSHA --directory RUN --result-sha256 RESULTSHA --owner-sha256 OWNERSHA --gate GATE --gate-sha256 GATESHA --output COLD/report.json",
+    "cold_controls": "python experiments/workspace/root_prism_free_f0_strengthened_query_replay.py controls --output COLD/controls.json",
+    "preflight": "python experiments/workspace/root_prism_free_f0_strengthened_query.py prepare --configuration CFG --directory PREFLIGHT",
+    "query": "python experiments/workspace/root_prism_free_f0_strengthened_query.py run --configuration CFG --directory RUN --preparation PREFLIGHT --gate GATE --gate-sha256 GATESHA"
+  },
+  "configuration": {
+    "bytes": 6134,
+    "git_blob": "f4350f9cfbc4fa4b9e38598ede9b442b91d2350c",
+    "mode": "100644",
+    "path": "experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json",
+    "sha256": "4dedc66ded53ed813a0eef7a0ad366afe1093f5f5120b0d24ff5276497df3077"
+  },
+  "independent_terminal_checker": {
+    "bytes": 29145,
+    "git_blob": "888a72052c30590b93a2da8c3615f78ccf71c496",
+    "lines": 503,
+    "mode": "100644",
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query_replay.py",
+    "sha256": "44d8bbba6f61fae1a27faa9fa516353b02dbcc53c9cbedd39c5574adb48a5ee3"
+  },
+  "model_raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "old_profile_findings": {
+    "bottleneck": "The completed run spent most of its allowance in search; it did not terminate in presolve.",
+    "main_search_started_seconds": 37.01,
+    "native_call_seconds": 180.18677050599945,
+    "returned_vectors": 0,
+    "search_started_seconds": 36.41
+  },
+  "old_profile_record": {
+    "bytes": 5652,
+    "git_blob": "a546ced1952405409b578f6c7940fa35faeeeb10",
+    "path": "experiments/logs/root-prism-free/f0-boolean-query-baseline-profile-independent-review01.json",
+    "sha256": "a7d74dde7d6474fdd801d20f5650ced12ba8f2a5ea60c81eac421715d5169c89"
+  },
+  "query_limits": {
+    "finalization_reserve_seconds": 60,
+    "native_allowance_seconds": 180,
+    "owner_seconds": 300,
+    "preparation_owner_seconds": 75,
+    "preparation_seconds": 60,
+    "solver_seconds": 175
+  },
+  "query_source": {
+    "bytes": 33132,
+    "git_blob": "ec845beeca4e499b72367e0a81f4c43e97be8663",
+    "lines": 564,
+    "mode": "100644",
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query.py",
+    "sha256": "b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288"
+  },
+  "required_query_gate": {
+    "fields": [
+      "source",
+      "configuration",
+      "preflight_report",
+      "preflight_owner",
+      "model_cold",
+      "model_raw_sha256",
+      "parameters",
+      "limits",
+      "maximum_native_calls",
+      "automatic_retries",
+      "independent_terminal_cold_required",
+      "terminal_cold_source"
+    ],
+    "status": "AUTHORIZE_ONE_STRENGTHENED_BOOLEAN_MODEL_QUERY"
+  },
+  "rows": 257594,
+  "schema": "conway99.f0.strengthened-query-source-preparation.v1",
+  "scope": {
+    "Python_syntax_or_controls_executed": false,
+    "graph_constructed": false,
+    "graph_symmetry_or_selector_fix_added": false,
+    "native_preflight_executed": false,
+    "native_queries_executed": 0,
+    "native_symmetry_parameter_changed_to_zero_explicitly": true,
+    "no_parameter_sweep": true,
+    "original_pair_caps_and_second_component_completion_still_required": true,
+    "source_and_configuration_created_without_local_runtime": true,
+    "source_contains_new_terminal_classification_controls_but_they_are_unrun": true,
+    "source_labels_wire_as_reconstructed_from_native_text": true,
+    "source_requires_all_original_model_bytes_preserved": true,
+    "source_requires_independent_check_of_every_returned_primary_and_additional_vector": true,
+    "source_saves_native_response_text_before_parsing": true,
+    "whole_component_excluded": false
+  },
+  "status": "FROZEN_SOURCES_AND_ACTUAL_MODEL_CONFIGURATION_AWAITING_NATIVE_PREFLIGHT",
+  "variables": 68934
+}

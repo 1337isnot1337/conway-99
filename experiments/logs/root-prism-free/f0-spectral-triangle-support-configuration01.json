@@ -1,0 +1,101 @@
+{
+  "schema": "conway99.f0.spectral-triangle-support-configuration.v1",
+  "source": {
+    "path": "experiments/workspace/f0-spectral-triangle-support-v8.js",
+    "sha256": "030f5ebe67871ec7429ed3da223e8f9626cb7fd59aaaf2187f72cdd4bb98e091",
+    "git_blob": "c1e7fb4b7fe8439fe727b974baff5013d0323b96",
+    "bytes": 21284,
+    "lines": 322
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "bytes": 8304
+  },
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64_gzip"
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "bytes": 219390,
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "encoding": "base64_gzip"
+    },
+    "spectral_cold": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01.json",
+      "bytes": 13646,
+      "sha256": "e8d27725afb707867f6683604ff1f3123f8960305c721058f495883f23476349",
+      "git_blob": "38ec9167df27b86de0341f8387cc894c6d2ff8cc",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "spectral_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-root-acceptance01.json",
+      "bytes": 2336,
+      "sha256": "0ddbc84223a4cd56ad94597bf9320b1bb2ebbf05f0965cf07216beaca465b42e",
+      "git_blob": "408c39a6be9880f07998c89b284d31121bfd942d",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "triangle_forward": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-census01.json",
+      "sha256": "7027feb1a77cb8131371bb10823ec7e5e8b6a33f5281a0b27881ee2f6b088155",
+      "bytes": 1600480,
+      "git_blob": "44f7d8c605a1f6fab51c89fed44b9233c8215b21",
+      "encoding": "utf-8"
+    },
+    "triangle_summary": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-summary01.json",
+      "sha256": "8e8fe47a1527cb6d779fd05e174449983f7c3beb2409a5edf80ed682a46cdcfc",
+      "bytes": 3967,
+      "git_blob": "8c15d7865d0226b584346ceee3f2e722d9dd3a00",
+      "encoding": "utf-8"
+    },
+    "triangle_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-acceptance01.json",
+      "bytes": 1177,
+      "sha256": "d010e64051397b5335ac859f094da7f34cd4f5882ff4c511d639bb04fa6fe12c",
+      "git_blob": "12a10b91d58311996bbfd8800cce3da0d3e0806a",
+      "mode": "100644",
+      "encoding": "utf-8"
+    }
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-controls01.json",
+    "sha256": "4e439b1e839d05772f6c59287849ed72a7ff57196c3c5bfa7b8d80a75eb010c3",
+    "git_blob": "6dd4da4ba3713b973db209d21dc3a76e0f82956a",
+    "bytes": 729
+  },
+  "method": {
+    "path": "research/f0-spectral-triangle-support.md",
+    "sha256": "8acbfad75aaf058ebb6325bfb9b8557c94f4b30875e587c1e27d536f232e8cb9",
+    "git_blob": "749527a9c5c938533ba999dd7add8505fc7c6ef0",
+    "bytes": 5414
+  },
+  "limits": {
+    "maximum_ms": 30000,
+    "maximum_report_bytes": 16777216,
+    "maximum_targets": 132,
+    "maximum_passes": 133
+  },
+  "execution": "One pure-V8 run; complete measured bound includes input validation and ASCII report serialization.",
+  "planned_main_calls": 1,
+  "production_main_authorized": false,
+  "optimizer_calls": 0,
+  "native_model_builds": 0,
+  "actual_case_supports_enumerated_during_preparation": 0,
+  "additional_model_constraints": [],
+  "no_old_pattern_or_path_inputs": true,
+  "no_retry": true,
+  "final_report_path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01.json",
+  "finalization_path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01-finalization.json"
+}

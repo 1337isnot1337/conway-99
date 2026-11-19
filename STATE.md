@@ -2,11 +2,16 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+Checkpoint 85 publishes the [fresh stronger-model query sources](research/root_prism_free_f0_strengthened_query_preparation.md) and authorizes one [zero-solve native preflight](experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-gate01.json). The complete runner, actual-input configuration and preflight workflow pass independent source review. The preflight checks exact model/parameter/response transport and integer controls inside a 60-second worker and 75-second process-group owner. It permits zero optimizer calls. Actual preflight acceptance and a separate production gate remain necessary before the one bounded query.
+
+The [triangle-support diagnostic](experiments/logs/root-prism-free/f0-spectral-triangle-support-root-terminal-review01.json) completes in 6.743 seconds, including its 429,105-byte serialization. Of 132 targets, 48 were already zero and 84 retain supports; it produces no new zero row. Root verifies all saved target and support dispositions without claiming a separate full-domain replay. The accepted 257,594-row model is unchanged. General exterior pair caps, second-component completion, both conditional cases and unrestricted existence remain unresolved.
+
+## Earlier checkpoints
+
 Checkpoint 84 accepts the [complete strengthened native model](experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json). [CI run 44628970995](https://github.com/1337isnot1337/conway-99/actions/runs/44628970995) completes one build and one independent protobuf-only replay: 68,934 variables, 257,594 rows, 89,544 appended rows and 600,360 appended terms. The checker reconstructs every appended constraint and restores every original parent byte. All four process owners exit successfully, reap their children and stop their process groups; all declared bounds hold. The complete model and suffix archives, controls, runtime identities and raw terminal receipts are preserved. No optimizer runs in this preparation.
 
 The next F0 work is a fresh bounded query of this accepted stronger model, with exact response/vector checking, and a separate targeted spectral triangle-support closure. The retained-four algebra and [common-neighbor forest inequalities](research/root_prism_free_f0_spectral_common_neighbor_forest_rows.md) supply further exact formulations without changing the accepted model. The execution service restarted during artifact recovery; exact committed inputs and CI exports restored all preparation outputs without repeating the build or mathematics. Both conditional cases and unrestricted existence remain open.
 
-## Earlier checkpoints
 
 Checkpoint 83 publishes the [one-run CI authorization](experiments/logs/root-prism-free/f0-strengthened-native-ci-root-gate01.json) for the frozen 257,594-row F0 model and its separate protobuf-only replay. Complete producer, checker, configuration and workflow source reviews find no blocker. The workflow checks all 37 frozen dependencies before native controls, permits one production build and one complete cold, and permits zero optimizer calls. The original model and all accepted constraint packages remain unchanged. This checkpoint authorizes execution; it does not claim a completed native model or a solver result. Actual owned terminal reports will determine acceptance.
 

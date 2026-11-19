@@ -1,0 +1,134 @@
+{
+  "all_original_pair_caps_present_in_model": false,
+  "automatic_retries": 0,
+  "candidate_format": "Plain JSON array of all 68934 exact integers in the immutable model order: selectors0..479, inherited auxiliaries480..539, edges540..68933.",
+  "feasible_vector_scope": "A returned vector passing full exact model inspection is only a Boolean exterior relaxation witness. Original selected-pair caps and a compatible second component remain to be checked.",
+  "graph_symmetry_or_selector_fix_added": false,
+  "inputs": {
+    "model": {
+      "bytes": 5739710,
+      "git_blob": "b0c81d2579cb28cef19976197e9079ff018d650c",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/model.pb.gz",
+      "sha256": "060bada9bda2a7ddfcdf52f1bf0307ede34ecd6dd933f5617d0435f197dabb27"
+    },
+    "model_cold": {
+      "bytes": 14259,
+      "git_blob": "2f13275d00aca2d1cc2add3414aa8c2ed4062568",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "sha256": "75e0150b0c0ed6f6b7c5d84c270790a4311a5a81382afe0a32e360dd2d126628"
+    },
+    "model_cold_owner": {
+      "bytes": 1134,
+      "git_blob": "29a4ffa3fde0aaed50b0b70de772afb45933de86",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json",
+      "sha256": "e9f1e4fdb7277c6759be465dea97d1e01c7e1337bb18e05347062fa7aa378931"
+    },
+    "model_configuration": {
+      "bytes": 13870,
+      "git_blob": "086e612eeb16c03833006421f218f9ff47e34f44",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json",
+      "sha256": "796e79978b113e49603b9cb60ddcda6bd829725eb4384d10640d74feb959ca0c"
+    },
+    "model_preparation": {
+      "bytes": 12613,
+      "git_blob": "5180767826e0edcdc4d14bbc40b41934dd8dfd1c",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json",
+      "sha256": "114823082c6d3696fe6f53ae0979d0c375b9f13ffa94071fa9093d195633fcd7"
+    },
+    "model_preparation_owner": {
+      "bytes": 972,
+      "git_blob": "65556017f9e658cee0fe27987b590c1cc7a25ede",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json",
+      "sha256": "d162e054ff0f80208f199403869b1109f97cde67add39e3d4bc4de01731532be"
+    },
+    "model_root_acceptance": {
+      "bytes": 7706,
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116"
+    }
+  },
+  "limits": {
+    "finalization_reserve_seconds": 60,
+    "native_allowance_seconds": 180,
+    "owner_seconds": 300,
+    "preparation_owner_seconds": 75,
+    "preparation_seconds": 60,
+    "solver_seconds": 175
+  },
+  "maximum_native_calls": 1,
+  "model_byte_changes_in_query": false,
+  "model_raw_bytes": 38374405,
+  "model_raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "native_INFEASIBLE_is_unproved": true,
+  "native_query_authorized_by_configuration_alone": false,
+  "native_response_transport": "Preserve original UTF-8 native text and native primary/additional integer arrays before parsing. CpSolverResponse has no public binary-export method in the bound native wrapper; separately saved protobuf wire is reconstructed from that text.",
+  "parameter_changes_from_prior_query": [
+    "max_time_in_seconds:180 to175, retaining a separate measured180-second allowance",
+    "symmetry_level:implicit native default2 to explicit0",
+    "cp_model_presolve:implicit native defaulttrue to explicittrue"
+  ],
+  "parameters": {
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "log_search_progress": true,
+    "log_to_response": true,
+    "log_to_stdout": true,
+    "max_time_in_seconds": 175,
+    "num_search_workers": 1,
+    "random_seed": 0,
+    "symmetry_level": 0
+  },
+  "preparation_status": "UNRUN_SOURCE_AND_CONFIGURATION",
+  "rows": 257594,
+  "runtime": {
+    "cp_model_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+    "model_schema_sha256": "266b68151ffd6c9f5db22553442abd777031663d39e1cea649a8737f811d2eff",
+    "native_helper_sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735",
+    "ortools_version": "9.15.6755",
+    "parameter_schema_sha256": "644354522af4202900329fc55844364cf1bfa77333b7ceb98e9de4aa49036c52",
+    "protobuf_version": "6.33.6"
+  },
+  "schema": "conway99.f0.strengthened-boolean-query-configuration.v1",
+  "second_component_completion_present_in_model": false,
+  "separate_query_cold_required": true,
+  "source_sha256": "b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288",
+  "sources": {
+    "base": {
+      "bytes": 15210,
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+    },
+    "model_cold": {
+      "bytes": 34830,
+      "git_blob": "aa5a5842769ff4ab13ee99df5982f1c0dcab6090",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_strengthened_append_replay.py",
+      "sha256": "8745e9eb5d7a9ced7658f4d052d7fc28c24d58a04e9f9b94514316b12e12a4d6"
+    },
+    "model_producer": {
+      "bytes": 14686,
+      "git_blob": "43f8f32dba2305051ed22791e66ee7c5869c9221",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_strengthened_append.py",
+      "sha256": "9879d5ad46b58ab8e4e2eb58fb302e7c140a06bd3f7b3bf3cb47f82e25e99716"
+    },
+    "supervisor": {
+      "bytes": 26760,
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+    }
+  },
+  "variables": 68934
+}
