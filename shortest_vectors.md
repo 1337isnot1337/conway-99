@@ -1,0 +1,15 @@
+# Short vectors and two maximum cocliques
+
+Let A be the adjacency matrix of an srg(99,14,1,2), Q=3I−A, and W=Q+J/9. The identities Q²=7Q+2J and W²=7W follow from the defining parameters. For any integral column b with coordinate sum m, writing a=Qb gives
+
+    sum a = −11m,     ||a||² = 7 bᵀQb + 2m²,     (A+4I)a = −2m·1.
+
+In particular 7 bᵀQb ≥ 11|m|−2m², since an integer's square is at least its absolute value. The integer bᵀQb has the same parity as m. Thus for m=1 one gets bᵀQb ≥ 3, attained at each coordinate unit vector. Equivalently, if P=W/7 is the orthogonal projector onto the −4 eigenspace, the 99 points √7 P eᵢ are shortest vectors of squared length 28/9 in the lattice coset √7 P(e₁+A₉₈), where A₉₈ consists of integral vectors of sum zero.
+
+For m=2 the inequality gives bᵀQb ≥ 2. Equality implies that a is minus the indicator of 22 points. The last matrix identity then says these 22 points are independent and every other vertex sees four of them. The Hoffman bound gives independence number at most 22.
+
+A second source of maximum cocliques is an integral −4 eigenvector v with squared norm 14. Its positive and negative masses are equal. If some coordinate had magnitude two or greater, the eigenvector equation there would require opposite mass at least eight, giving squared norm at least sixteen. Thus v is +1 on seven points P and −1 on seven points N. Each point of N sees at least four in P. Counting pairs in P with a marked common neighbor in N gives at least 7·6 and at most 2·21 incidences. Equality forces every pair in P to be nonadjacent and to have both its common neighbors in N. The same holds on exchanging P and N. The bipartite cross graph is a symmetric (7,4,2) design, the complement of the Fano plane incidence.
+
+Every remaining point therefore has at most one neighbor in each of P,N, and the eigenvector equation makes the two counts equal. There are 70 points seeing one of each, and 15 seeing neither. Call the latter Z. For z in Z, the seven nonadjacent pairs consisting of z and a point of P require fourteen distinct neighbors of z among the 70, because any such neighbor sees only one point of P. Thus Z is independent. Both P∪Z and N∪Z are maximum cocliques, meeting in 15 points. Conversely any two 22-cocliques meeting in 15 have indicator difference of squared norm 14 and eigenvalue −4 by equality in the Hoffman bound.
+
+Each of the other 70 points sees three members of Z by the Hoffman equality, and the resulting triples form a simple 2-(15,3,2) design. Repeated triples would give two vertices with at least three common neighbors. Within the 70 the residual graph is 9-regular. At the intersection of a P label and an N label there is one triple for an adjacent pair and two for a nonadjacent pair. fano_templates.cpp checked 10,000 cyclic arrays of this type for exterior-row feasibility, with the exterior graph unrestricted. None passed all ten row-orbit tests. fano_verify.py independently verifies the first array's 29-point Gram matrix and its empty row domain. This finite search does not exclude arbitrary designs of the stated type.

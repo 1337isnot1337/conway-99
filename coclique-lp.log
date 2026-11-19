@@ -1,0 +1,23 @@
+20 independent row scout 2006 of 2963
+/home/cinna/conway-99/coclique_lp.py:22: OptimizeWarning: Unrecognized options detected: {'run_crossover': 'off', 'threads': 1}. These will be passed to HiGHS verbatim.
+  opt=linprog(np.zeros(len(factor)),A_eq=M[keep],b_eq=rhs[keep],bounds=bounds,method='highs-ipm',options={'time_limit':secs,'run_crossover':'off','threads':1})
+20 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+20 all equations max residual 0.002695987588218898 minimum -2.983562988976571e-08 point counts [ 0.1404  1.1828 42.0264 29.42    4.6476  0.5826  1.0001]
+19 independent row scout 2006 of 2963
+19 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+19 all equations max residual 0.00022637949448700567 minimum 0.0 point counts [ 1.138   6.2768 47.8912 18.2841  3.9625  1.4458  1.0016]
+18 independent row scout 2006 of 2963
+18 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+18 all equations max residual 8.956805329418671e-06 minimum 0.0 point counts [ 2.3417 14.67   45.3927 12.3809  3.6756  1.535   1.0041]
+17 independent row scout 2006 of 2963
+17 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+17 all equations max residual 0.00018505601364227076 minimum 0.0 point counts [ 3.8048 24.906  37.9589  9.6374  3.2023  1.4888  1.0018]
+16 independent row scout 2006 of 2963
+16 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+16 all equations max residual 0.00010014259851498508 minimum 0.0 point counts [ 6.2595 34.4604 28.7457  8.4028  2.8207  1.3084  1.0025]
+15 independent row scout 2005 of 2962
+15 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+15 all equations max residual 4.205751189090279e-06 minimum 0.0 point counts [10.4975 40.3922 21.6296  6.7788  2.501   1.197   1.0039]
+14 independent row scout 1999 of 2957
+14 Optimization terminated successfully. (HiGHS Status 7: Optimal)
+14 all equations max residual 4.367805937954827e-05 minimum 0.0 point counts [16.9311 41.9539 16.5138  5.4222  2.1452  1.0317  1.0021]
