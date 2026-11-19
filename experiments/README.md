@@ -19,6 +19,55 @@ make verify
 | [`root_cover_audit.py`](workspace/root_cover_audit.py) | Replays the parity and transport cases used to exclude a root contained in 21 grids. [Log](logs/grids-and-triangles/root-cover-audit.log) |
 | [`level_seven_check.py`](workspace/level_seven_check.py) | Replays the rational rank certificates and checks the theta transform on five explicit lattice controls. [Log](logs/eigenlattices/level-seven-check.log) |
 
+## Global-constraint certificates
+
+The additional [global-constraints investigation](../research/session-ab2f.md)
+uses the versions pinned in `requirements-global-constraints.txt`:
+
+```sh
+.venv/bin/python -m pip install -r experiments/requirements-global-constraints.txt
+make verify-global-constraints
+```
+
+This target replays four integer Farkas certificates for size-twenty
+transversal cocliques, seventeen elementary norm-16 counting certificates,
+61 further integer Farkas branch certificates, eleven zero-class forest
+witnesses, five exact scalar-theta witnesses, the incomplete-grid signature
+and edge-completion certificates, and an integral grid-count witness. It
+also checks the small covering enumeration for the all-red grid bound and
+the exact minimum-Ramsey hemisphere witness. It does
+not start a new SAT or mixed-integer search. These certificates prove the
+stated local exclusions or feasibility of finite relaxations; none is a
+solution of the existence problem.
+
+The fourteen additional norm-16 exclusions have saved CNF cores and DRAT
+proofs. Build [drat-trim](https://github.com/marijnheule/drat-trim) at revision
+`2e3b2dc0ecf938addbd779d42877b6ed69d9a985`, then run:
+
+```sh
+make verify-coupled-shells DRAT_TRIM=/absolute/path/to/drat-trim
+```
+
+This target regenerates the five template censuses in two ways, compares the
+478 canonical representatives with the archive, and replays every outcome:
+seventeen counting exclusions, fourteen DRAT exclusions, and 447 explicit
+partial adjacency witnesses. Each DRAT replay rebuilds the full formula,
+checks its SHA-256 digest, verifies that the saved core contains only input
+clauses of that formula, and runs the separate checker. The 447 witnesses
+still have unchosen edges and do not certify strongly regular graphs.
+
+The [norm-16 note](../research/eigenlattices/coupled_shells.md),
+[transversal note](../research/independent-sets/transversal_constraints.md),
+and [completion note](../research/unrestricted-completion.md) state the
+reductions and their limits. Independent replay output is in
+[`logs/session-ab2f/`](logs/session-ab2f/).
+
+The [linear-certificate note](../research/eigenlattices/coupled_shells_linear.md)
+also gives a command to project all 447 saved partial witnesses into the
+independent aggregate model. That exact control passed. The 61 branch
+certificates include complete proofs for ten already excluded templates;
+they do not add ten more exclusions to the census.
+
 ## Explore the archive
 
 Run the individual research scripts from [`experiments/workspace/`](workspace/). The Python and C++ sources, certificate JSON, candidate arrays, and cached moment data share this directory because the scripts use sibling paths.

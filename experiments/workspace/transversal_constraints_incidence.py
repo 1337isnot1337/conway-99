@@ -31,7 +31,7 @@ def cases(h):
     return out
 
 
-def build(edges, integer_degree_profile=None, spectral=True):
+def build(edges, integer_degree_profile=None, spectral=True, degree_cuts=False):
     r = len(edges)
     h = r + 7
     # Even near labels are the unmatched neighbors; odd labels form I.
@@ -53,6 +53,10 @@ def build(edges, integer_degree_profile=None, spectral=True):
     inc = np.array([[int(a in e) for a in range(7)] for e in edges], dtype=np.int8)
     degrees = bits @ inc
     sizes = bits.sum(axis=1)
+    core_degrees = 1 + inc.sum(axis=0)
+    if degree_cuts:
+        assert h == 20 and max(core_degrees) < 7
+        remaining_budget = 28 - 12 - int(((core_degrees-3)*(core_degrees-4)).sum())
     if spectral:
         _, neg, pos = matrices(edges)
         inverses = []
@@ -63,7 +67,6 @@ def build(edges, integer_degree_profile=None, spectral=True):
             numerator = np.array(exact * denominator, dtype=np.int64)
             assert np.array_equal(matrix @ numerator, denominator * np.eye(7, dtype=np.int64))
             inverses.append((numerator, denominator))
-        core_degrees = 1 + inc.sum(axis=0)
     I = []
     J = []
     V = []
@@ -74,6 +77,12 @@ def build(edges, integer_degree_profile=None, spectral=True):
         cap[[a // 2 for a in label]] = 1
         near_degree = sum(a % 2 for a in label)
         good = np.all(degrees <= cap, axis=1) & (sizes + near_degree >= 1) & (sizes + near_degree <= 7)
+        if degree_cuts:
+            d = sizes + near_degree
+            good &= (d >= 2) & ((d-3)*(d-4) <= remaining_budget)
+            permits_six = all(a % 2 == 0 and core_degrees[a//2] == 5 for a in label)
+            if not permits_six:
+                good &= d != 6
         if spectral:
             d = sizes + near_degree
             adjacent = np.zeros(7, dtype=np.int64)
@@ -112,17 +121,20 @@ def build(edges, integer_degree_profile=None, spectral=True):
     return A, np.array(rhs, dtype=np.int64), labels, variables
 
 
-def run(h, selected=None, seconds=30):
+def run(h, selected=None, seconds=30, degree_cuts=False):
     for index, (atlas, edges) in enumerate(cases(h)):
         if selected is not None and index not in selected:
             continue
+        if degree_cuts and any(sum(i in e for e in edges) == 6 for i in range(7)):
+            continue
         start = time.monotonic()
-        A, b, labels, variables = build(edges)
+        A, b, labels, variables = build(edges, degree_cuts=degree_cuts)
         result = linprog(np.zeros(A.shape[1]), A_eq=A, b_eq=b,
                          bounds=(0, 1), method='highs',
                          options={'time_limit': seconds, 'threads': 1})
         record = {'h': h, 'case': index, 'atlas': atlas, 'edges': edges,
                   'shape': A.shape, 'status': result.status,
+                  'integer_degree_cuts': degree_cuts,
                   'seconds': round(time.monotonic()-start, 3)}
         if result.x is not None:
             record['residual'] = float(max(abs(A @ result.x - b)))
@@ -134,5 +146,6 @@ if __name__ == '__main__':
     parser.add_argument('--h', type=int, default=20)
     parser.add_argument('--cases', type=int, nargs='*')
     parser.add_argument('--seconds', type=int, default=30)
+    parser.add_argument('--integer-degree-cuts', action='store_true')
     args = parser.parse_args()
-    run(args.h, args.cases, args.seconds)
+    run(args.h, args.cases, args.seconds, args.integer_degree_cuts)

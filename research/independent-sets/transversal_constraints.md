@@ -208,6 +208,37 @@ The implementation is
 Its LP output reports solver status and the maximum residual against every
 original equality. A floating feasible point is not an exact certificate.
 
+## Completed searches and controls
+
+The full h=20 census gave the four certified universal-axis exclusions and
+floating feasible points for all other 52 patterns. Several initial
+15-second simplex runs timed out. Longer runs resolved three of them, and
+an interior-point run resolved the last case, 55. Repeating the 52 surviving
+patterns with the integer degree cuts again gave floating feasible points
+for all 52; case 50 required an interior-point follow-up. No additional
+pattern was excluded. The largest reported equality residual in these
+censuses was below 8e−10.
+
+The main logs are `transversal-incidence20.jsonl` and
+`transversal-incidence20-degree-cuts.jsonl` in the independent-set log
+directory. The recheck and IPM files retain each timed-out case's later
+status instead of replacing the original result.
+
+`transversal_constraints_cp.py --control` extracts a transversal coclique
+from the known 9-vertex rook graph and from the known 243-vertex ternary
+Golay graph. It verifies the selected-row anchor equations, exact pairwise
+common-neighbor counts, and all exterior-column common-neighbor caps against
+their actual adjacency matrices. The controls used cocliques of sizes 3
+and 35, with 1 and 24 selected outer rows, respectively. Both pass.
+
+Two bounded integral experiments on h=20 case 0 were inconclusive. A
+Glucose SAT encoding with exterior-column common-neighbor caps timed out
+after 30 seconds. A CP-SAT encoding with finite spectral signature domains
+timed out after 45 seconds before producing an incidence assignment. These
+timeouts do not exclude the case. The scripts assign only the incidences
+from the determined core to its exterior; even a satisfying assignment
+would leave the exterior-to-exterior edges undecided.
+
 ## Replay
 
 From the repository root:
@@ -216,6 +247,8 @@ From the repository root:
 .venv/bin/python experiments/workspace/transversal_constraints.py --audit-twenty
 .venv/bin/python experiments/workspace/transversal_constraints_certificates.py
 OPENBLAS_NUM_THREADS=1 .venv/bin/python experiments/workspace/transversal_constraints_incidence.py --h 20 --seconds 15
+OPENBLAS_NUM_THREADS=1 .venv/bin/python experiments/workspace/transversal_constraints_incidence.py --h 20 --integer-degree-cuts --seconds 15
+.venv/bin/python experiments/workspace/transversal_constraints_cp.py --control
 ```
 
 The core audit needs NumPy, SymPy, and NetworkX. The exterior relaxation also

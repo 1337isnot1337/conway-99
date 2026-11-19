@@ -79,3 +79,70 @@ The integral inequality for bᵀ(3I−A)b and the equivalence between a norm-14 
 Prior-art correction: ProofAtlas's August 2026 Conway research record already reports elimination of 28, 30, and 32 by different opposite-star methods. Our rank frontier is an independent confirmation. See [`level_seven.md`](research/eigenlattices/level_seven.md) for the source and distinction.
 
 The cube-class argument in [`cube_shells.md`](research/eigenlattices/cube_shells.md) gives joint bounds on the two shortest integral shells. The rank-34 through rank-40 averaged maximal-extension scalar tests in [`averaged_extensions.py`](experiments/workspace/averaged_extensions.py) remain rationally feasible. [`shell_profiles.py`](experiments/workspace/shell_profiles.py) and [`profile_refinement.py`](experiments/workspace/profile_refinement.py) test exact coordinate profiles against the common-neighbor equations; actual rook and ternary Golay eigenvectors pass the neighborhood identities.
+
+## Global constraints and exact partial-completion certificates
+
+The coordinated work in [issue 2](https://github.com/1337isnot1337/conway-99/issues/2)
+is recorded in [the session log](research/session-ab2f.md). It adds necessary
+conditions and exact exclusions, but does not decide existence.
+
+[The all-red grid argument](research/grids-and-triangles/red_grid_limit.md)
+proves that at most eight grids can have all six triangles contained in six
+grids each. Nine would leave an eighteen-vertex graph whose triangle system
+is a double covering of K3,3. A connected covering has at most four possible
+deck involutions, each usable at most twice. A disconnected covering forces
+eleven disjoint rook grids and an impossible invariant-subspace trace.
+The proof is independent of the accompanying finite covering audit. A separate
+[aggregate grid-line model](research/grids-and-triangles/grid_flag_relaxation.md)
+still has an exactly checked integral count assignment at 120 grids.
+
+[Transversal coclique constraints](research/independent-sets/transversal_constraints.md)
+show that a size-twenty coclique containing seven neighbors of a root has
+exactly one outside vertex of degree seven into the coclique and no outside
+vertex of degree one. These elementary proofs recover two previously
+numerical profile exclusions. Four of the 56 degree-feasible axis patterns
+are excluded by saved integer Farkas identities. The other 52 pass the
+examined real incidence relaxations, including the additional integer
+vertex-degree cuts. Neither PSD feasibility nor real incidence feasibility
+constructs a graph.
+
+[Coupled norm-16 shells](research/eigenlattices/coupled_shells.md) force even
+components in the two deficit multigraphs and the partition
+`8+8+8+64+11`. The 8-point high class has at most one edge, and the 11-point
+zero class has five or six edges. The previously archived 4,985 labeled
+incidence templates reduce to 478 classes under side-preserving isomorphisms.
+Seventeen classes fail a direct counting inequality and fourteen further
+classes have checked DRAT exclusions. The other 447 classes have explicit,
+directly checked partial adjacency witnesses. They represent 4,720 of the
+original templates. This reduction is conditional on a norm-16 vector;
+exact rational witnesses show that forbidding both norm-14 and norm-16
+vectors still leaves the current scalar-theta relaxation feasible at ranks
+34, 36, 38, 40, and 42.
+
+[The zero-class structure](research/eigenlattices/coupled_zero_structure.md)
+narrows its induced graph to eleven forest types, all witnessed at the
+represented high/zero overlap level. An
+[independent aggregate linear model](research/eigenlattices/coupled_shells_linear.md)
+gives integer Farkas proofs for ten of the fourteen SAT-excluded templates.
+These strengthen verification, not the total of 31 excluded classes.
+
+[A minimum Ramsey hemisphere](research/independent-sets/transversal_hemisphere_minimum.md)
+with 21 vertices, 35 edges, and independence number seven admits a root-label
+assignment passing both exact core spectral tests. Its exterior incidence
+relaxation is numerically feasible. This demonstrates that the tested local
+criteria do not force an independent eight-set in every hemisphere.
+
+[Incomplete-grid completion constraints](research/unrestricted-completion.md)
+prove that an induced rook grid with its center absent forces an independent
+set of at least sixteen vertices. Across the eight resulting 27-vertex
+cores, exact support certificates remove 172 exterior incidence signatures.
+All eight cores remain unresolved. One integral assignment of 72 exterior
+signatures satisfies the core Gram equations and additional pair constraints,
+but an exact certificate excludes its exterior-edge completion. That result
+excludes the particular assignment, not its starting core.
+
+`make verify-global-constraints` replays the integer and rational certificates
+and witnesses. `make verify-coupled-shells DRAT_TRIM=/absolute/path/to/drat-trim`
+regenerates the norm-16 census and replays all 478 results using the separately
+built, pinned proof checker. [The replay guide](experiments/README.md) specifies
+the dependencies and distinguishes partial witnesses from completed graphs.

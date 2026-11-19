@@ -148,6 +148,12 @@ The remaining high-pair budget sharply limits repeated low incidences. If `e=0`,
 
 There are respectively forty-eight or forty-four `H`–`L` edges.
 
+[The zero-class structure note](coupled_zero_structure.md) strengthens
+these restrictions: the graph on `Z` is one of eleven forests, with
+components only `K1`, `K2`, `P3`, `K1,3`, or `P4`. Each listed forest has
+a directly checked witness at the high/zero incidence level. This does
+not remove another complete-incidence class.
+
 `coupled_shells_filter.py` tests symmetric graphs on the eight `H` vertices. For each proposed `H` neighborhood it solves the required `L` incidences exactly as an integral bipartite b-matching with the forced signature capacities. It also imposes all common-neighbor upper bounds already visible inside `P ∪ N ∪ H`. A SAT result means these necessary constraints have a witness; it does not certify the remaining graph.
 
 `coupled_shells_zero.py` models all edges within the nineteen vertices `H ∪ Z`, imposes the exact degree identities, and tests the necessary low-signature row matchings. Of the 478 complete-incidence classes, seventeen are UNSAT and the remaining 461 have directly checked partial witnesses. The seventeen coincide exactly with the counting exclusions; this solver test contributes no further exclusion.

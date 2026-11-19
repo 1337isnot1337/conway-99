@@ -32,10 +32,11 @@ def signatures(B):
     return result
 
 
-def packing(B, domains, k=14, v=99, seconds=30, solver_name='mc'):
+def packing(B, domains, k=14, v=99, seconds=30, solver_name='mc', exclusions=(), refinement=None):
     n = len(B)
     quota = (k - 2) * np.eye(n, dtype=int) + 2 - B - B @ B
     copies = []
+    by_domain = defaultdict(list)
     by_pair = defaultdict(list)
     by_triple = defaultdict(list)
     chains = []
@@ -52,6 +53,7 @@ def packing(B, domains, k=14, v=99, seconds=30, solver_name='mc'):
         for _ in range(limit):
             copies.append(index)
             lit = len(copies)
+            by_domain[index].append(lit)
             if previous is not None:
                 chains.append([-lit, previous])
             previous = lit
@@ -61,10 +63,12 @@ def packing(B, domains, k=14, v=99, seconds=30, solver_name='mc'):
             for triple in combinations(sorted(S), 3):
                 by_triple[triple].append(lit)
     start = time.monotonic()
+    excluded_clauses = [[-a, -b] for i, j in exclusions for a in by_domain[i] for b in by_domain[j]]
     if solver_name == 'cp-sat':
-        return packing_cp(B, domains, copies, by_pair, by_triple, chains, quota, k, v, seconds)
+        assert refinement is None
+        return packing_cp(B, domains, copies, by_pair, by_triple, chains + excluded_clauses, quota, k, v, seconds)
     with Solver(name=solver_name) as solver:
-        solver.append_formula(chains)
+        solver.append_formula(chains + excluded_clauses)
 
         def atmost(lits, bound):
             if bound < 0:
@@ -91,6 +95,8 @@ def packing(B, domains, k=14, v=99, seconds=30, solver_name='mc'):
             one = sum(int(quota[i, i]) for i in range(8, 14)) - 2 * two
             for count, target in ((2, two), (1, one), (0, v - n - one - two)):
                 exactly(groups[count], target)
+        if refinement is not None:
+            return refinement(solver, copies, by_domain)
         timer = Timer(seconds, solver.interrupt)
         timer.start()
         try:
@@ -175,14 +181,17 @@ def packing_cp(B, domains, copies, by_pair, by_triple, chains, quota, k, v, seco
     return output
 
 
-def control():
+def control(solver_name='mc'):
     from triangle_ball import golay
     G = golay()[0].astype(int)
-    U = [0, 1, 3, 9, 27, 81]
+    U = sorted(map(int, np.random.default_rng(123).choice(243, 27, replace=False)))
     R = sorted(set(range(len(G))) - set(U))
     B = G[np.ix_(U, U)]
     domains = sorted({tuple(int(i) for i in np.flatnonzero(G[x, U])) for x in R})
-    result = packing(B, domains, 22, 243, 10)
+    from completion_constraints_spectral import pair_exclusions
+    excluded = pair_exclusions(B, domains, 22, 243)
+    assert not excluded
+    result = packing(B, domains, 22, 243, 10, solver_name, excluded)
     assert result['status'] == 'integer incidence feasible'
     result.pop('witness')
     print(json.dumps({'positive_control': 'Golay', **result}), flush=True)
@@ -194,10 +203,11 @@ if __name__ == '__main__':
     p.add_argument('--case', type=int)
     p.add_argument('--seconds', type=float, default=30)
     p.add_argument('--solver', choices=['mc', 'cp-sat'], default='mc')
+    p.add_argument('--pair-cuts', action='store_true')
     p.add_argument('--out', type=Path)
     args = p.parse_args()
     if args.control:
-        control()
+        control(args.solver)
     else:
         output = []
         for case, (edge, counts, B) in enumerate(canonical_cases()):
@@ -205,7 +215,13 @@ if __name__ == '__main__':
                 continue
             S = signatures(B)
             print(json.dumps({'case': case, 'candidate_signatures': len(S), 'size_counts': dict(Counter(map(len, S)))}), flush=True)
-            result = packing(B, S, seconds=args.seconds, solver_name=args.solver)
+            excluded = []
+            if args.pair_cuts:
+                from completion_constraints_spectral import pair_exclusions
+                excluded = pair_exclusions(B, S)
+                print(json.dumps({'case': case, 'exact_pair_cuts': len(excluded)}), flush=True)
+            result = packing(B, S, seconds=args.seconds, solver_name=args.solver, exclusions=excluded)
+            result['exact_pair_cuts'] = len(excluded)
             result['case'] = case
             output.append(result)
             print(json.dumps({k: v for k, v in result.items() if k != 'witness'}), flush=True)

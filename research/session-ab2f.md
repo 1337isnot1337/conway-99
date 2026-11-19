@@ -58,3 +58,42 @@ their hypotheses permit them; computational exclusions require exact replay.
 - Proved that there are at most nine all-red grids, without assuming equality
   in the total-grid bound. Ten would force an eleven-grid partition with
   isomorphic interfaces, contradicting the trace on an invariant subspace.
+- Completed the norm-16 full-incidence census. Seventeen classes fail an
+  elementary four-vertex counting inequality; fourteen more fail a partial
+  adjacency model with saved DRAT proofs. The remaining 447 classes have
+  directly checked partial witnesses. This excludes 265 of the original
+  4,985 labeled templates, leaving 4,720. The coordinating worker rebuilt
+  every proof formula and replayed all fourteen proofs with a separately
+  compiled checker. A separate worker audited the encoding and found no
+  unsound restriction.
+- Proved that the high class in the norm-16 partition has at most one edge
+  and its eleven-vertex zero class has five or six edges. The scalar-theta
+  relaxation remains exactly rationally feasible at ranks 34 through 42
+  even when the norm-14 and norm-16 shells both vanish.
+- Proved that an incomplete eight-vertex grid forces an independent set of
+  size at least sixteen. Exact integer support tests remove 172 exterior
+  signatures across its eight cores; none of the cores is excluded. A
+  stronger integral incidence assignment for core five was constructed,
+  then ruled out by an exact exterior-edge certificate. Four subsequent
+  refinement cuts are sound; the next search timed out.
+- Combined grid-line multiplicities, root types, and the all-red bound in an
+  aggregate model. A saved integer witness satisfies every represented
+  condition at 120 grids. This does not improve the global grid bound and
+  does not construct a graph.
+- Strengthened the all-red bound from nine to eight. Nine disjoint all-red
+  grids would leave eighteen vertices whose twelve triangles form a double
+  covering of K3,3. The connected case has at most four possible covering
+  involutions, each usable twice; the disconnected case forces the impossible
+  eleven-grid invariant-subspace trace. Two separate workers audited the
+  proof, and a standard-library enumeration independently checked the finite
+  covering count. The proof does not depend on that enumeration.
+- Classified the norm-16 zero-class graph into eleven forest types. Each
+  type has a directly checked high/zero witness. A separate aggregate model
+  supplies 61 integer Farkas branch certificates, including complete
+  independent proofs for ten of the fourteen SAT-excluded templates. All
+  447 partial witnesses pass exact projection into that model; there are no
+  additional template exclusions from this check.
+- Exhibited a minimum 21-vertex Ramsey hemisphere of independence number
+  seven with an exact root-label spectral witness. Its exterior incidence
+  LP is numerically feasible and the bounded Boolean run is undecided.
+  This records a concrete limitation of the current local hemisphere route.
