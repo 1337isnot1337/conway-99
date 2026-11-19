@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-grid-free-relaxation verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -15,7 +15,7 @@ verify: $(CERTIFICATES)
 
 # Exact certificate replay for the global-constraints research branch.
 # This target performs no new SAT or mixed-integer search.
-verify-global-constraints: verify-red-grid-bound verify-seven-red-residual
+verify-global-constraints: verify-red-grid-bound verify-seven-red-residual verify-grid-free-relaxation
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_certificates.py
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_hemisphere_verify.py
 	"$(PYTHON)" $(WORKSPACE)/verify_coupled_counting.py
@@ -28,6 +28,9 @@ verify-global-constraints: verify-red-grid-bound verify-seven-red-residual
 	"$(PYTHON)" $(WORKSPACE)/completion_constraints_edges.py --replay $(WORKSPACE)/completion-core5-edge-certificate.json
 	"$(PYTHON)" $(WORKSPACE)/completion_constraints_propagation.py --replay $(WORKSPACE)/completion-propagation-certificate.json
 	"$(PYTHON)" $(WORKSPACE)/global_grid_flags.py --verify experiments/logs/session-ab2f/global-grid-flags-integral.json
+
+verify-grid-free-relaxation:
+	"$(PYTHON)" $(WORKSPACE)/grid_free_core9_certificate.py --verify experiments/logs/moments-and-counts/grid-free-core9-certificate.json.gz
 
 verify-current-grid-bounds:
 	"$(PYTHON)" $(WORKSPACE)/three_red_boundary.py --verify experiments/logs/grids-and-triangles/three-red-boundary.json --translation-certificate experiments/logs/grids-and-triangles/three-red-translation-incidence.json

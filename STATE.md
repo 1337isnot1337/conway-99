@@ -17,6 +17,15 @@ gives no all-red grid and at most 114 grids in total. Its later checkpoint
 `2e2d7ed` also bounds the number through a point by thirteen. The historical
 bounds and count witnesses below are retained with their original scope.
 
+An [exact zero-grid count witness](research/grids-and-triangles/grid_free_order_nine.md)
+satisfies all 23,189 original extension equations through order nine, all
+6,535 nonnegative integral induced counts, and all 584 selected cached
+ordinary/induced moment blocks. Integer congruences certify every block as
+positive definite. Thus this finite count/moment relaxation has minimum
+grid count zero. It neither constructs a graph nor proves feasibility of
+every possible order-nine inequality. The absence of a forced grid is a
+specific gap left by the interface program.
+
 ## Scope of the unrestricted computations
 
 - [`subgraph_counts.py`](experiments/workspace/subgraph_counts.py) enumerates all induced graph types through a specified order that avoid a diamond and a (non-induced) K₂,₃. Integer extension equations count outside vertices, neighbors of a marked vertex, and common neighbors of a marked pair. It found no contradiction modulo 2 through order ten (180,445 equations, rank 46,268). [`inspect_counts.py`](experiments/workspace/inspect_counts.py) checks the original equations on all subsets of the 3-by-3 rook graph. Its floating LP reported infeasibility on both 99 and the known 243 parameters. That solver status was spurious on 99.

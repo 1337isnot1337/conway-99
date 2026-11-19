@@ -198,3 +198,14 @@ their hypotheses permit them; computational exclusions require exact replay.
   through eighteen before being interrupted to relieve resource contention
   during the new independent proof audits. No completed full-axis replay
   is claimed from that interrupted run.
+- Constructed an exact integer zero-grid witness for the existing
+  order-nine count system and all 584 selected cached moment blocks.
+  It satisfies all 23,189 original extension equations, all 6,535
+  nonnegative induced counts, and zero broken-rook count. Saved integer
+  triangular congruences turn every moment matrix into a strictly
+  diagonally dominant positive matrix. An independent audit checks count
+  normalization, all 429,428 congruence entries, and fixed-width overflow
+  bounds. The verifier now computes coefficient-sum bounds with Python
+  integers and rejects noninteger congruence entries. This establishes
+  minimum grid count zero in the stated finite relaxation, without
+  constructing a graph or deciding stronger flag constraints.

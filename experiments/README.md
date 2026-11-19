@@ -40,6 +40,18 @@ not start a new SAT or mixed-integer search. These certificates prove the
 stated local exclusions or feasibility of finite relaxations; none is a
 solution of the existence problem.
 
+The exact zero-grid count and moment witness has its own replay:
+
+```sh
+make verify-grid-free-relaxation
+```
+
+It checks all 23,189 original extension equations, all 6,535 nonnegative
+integral induced counts, and integer positive-definiteness certificates
+for all 584 selected cached moment blocks. It does not run an optimizer.
+The result concerns this finite relaxation, not all possible order-nine
+inequalities or a completed graph.
+
 The three-base obstruction and the independent bounds of one all-red grid
 and 119 total grids have a standard-library replay target:
 

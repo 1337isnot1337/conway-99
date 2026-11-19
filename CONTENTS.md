@@ -44,6 +44,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 
 ## Other computations
 
+- [Exact zero-grid moment witness](research/grids-and-triangles/grid_free_order_nine.md) gives integer counts satisfying all 23,189 original order-nine extension equations and all 584 selected cached moment blocks. Integer congruences certify positive definiteness. This finite relaxation cannot force a rook grid; the witness is not a graph.
 - [Moments and subgraph counts](experiments/logs/moments-and-counts/) includes integer count witnesses, modular consistency checks, and semidefinite relaxations.
 - [Construction searches](experiments/logs/construction-searches/) includes rooted searches, quotient cases, and checks of sampled partial graphs.
 - [Experiment guide](experiments/README.md) gives the workspace layout, replay commands, and limits of the archived runs.
