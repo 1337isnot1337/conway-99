@@ -1,0 +1,49 @@
+{
+  "schema": "conway99.rook.H5-full-rows-bounded-production-gate.v1",
+  "status": "PASS: actual preparation reviewed and bound",
+  "bindings": {
+    "source": {
+      "path": "experiments/workspace/rook_case4_full_span_cover_h5_full_rows.py",
+      "sha256": "bb26762de18cad7107a2d49214af61947807528cb66a638efec2589cadf26216"
+    },
+    "source_gate": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cover-h5-full-rows-root-source-review01.json",
+      "sha256": "0e727f57fcbccc187b6353e21736ecad60a14922131ca21009456aec8d48e075"
+    },
+    "preparation": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cover-h5-full-rows-preparation01/preparation.json",
+      "sha256": "78d46c9b7de71bc3c66af4c1a35e217aa7931538b3ece51dd681ef0abe49d830"
+    },
+    "states": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cover-h5-full-rows-preparation01/states.npz",
+      "sha256": "997d5e230f8e7c485b07fb9a36247a51cc6400ad25e4de7622b689b65a657fbe"
+    },
+    "owner": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cover-h5-full-rows-preparation01-owner.json",
+      "sha256": "62865babcdc47c7199c62e59d0f0ed6473c4afe17eb758e32d2c8cdf78ef1a11"
+    }
+  },
+  "dimensions": {
+    "columns": 1102,
+    "rows": 166020,
+    "nonzeros": 10767637,
+    "prepared_branches": 183
+  },
+  "allowed_execution": "One frozen forward prefix under the declared60shared/5per-branch/90owned seconds, followed by one declared cold trace replay. Use new directories and wait for current F0native preparation/cold memory release.",
+  "limits": {
+    "forward_seconds": 60,
+    "per_branch_seconds": 5,
+    "replay_seconds": 60,
+    "owned_child_seconds": 90,
+    "maximum_branches": 183,
+    "maximum_transcript_bytes": 67108864,
+    "maximum_new_forces_per_branch": 1102,
+    "maximum_rss_kib": 1048576,
+    "automatic_retries": 0
+  },
+  "no_automatic_retries": true,
+  "unprocessed_or_partial_branches": "UNKNOWN",
+  "H5_exclusion_requires_all183_new_and813_prior_refutations": true,
+  "case4_excluded": false,
+  "optimizer_calls": 0
+}

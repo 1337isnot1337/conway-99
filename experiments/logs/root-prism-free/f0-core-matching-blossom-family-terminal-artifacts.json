@@ -1,0 +1,262 @@
+{
+  "schema": "conway99.immutable-artifacts.v1",
+  "status": "COMPLETE_COLD_REPLAYED",
+  "scope": "Complete core-matching three-vertex blossom family, immutable per-core witnesses, compact row inventory and unqueried point-scan adapter.",
+  "summary": {
+    "core_sites": 18,
+    "enumerated_triples": 549480,
+    "live_three_edge_cliques": 106584,
+    "normalized_rows": 8894,
+    "nonzeros": 26662,
+    "selected_rows_outside_explicit_box_comparisons": 6854,
+    "selected_nonzeros": 20542,
+    "omitted_rows_with_saved_box_proofs": 2040,
+    "census_owner_seconds": 15.5115,
+    "cold_owner_seconds": 20.7983,
+    "optimizer_calls": 0,
+    "production_candidate_scans": 0,
+    "native_model_changes": 0
+  },
+  "limitations": [
+    "The 6854 selected rows were not proved independent of the full existing model.",
+    "The omitted rows are justified by the explicitly saved nonnegative coefficient and variable upper-bound comparisons.",
+    "A future native overlay must check that its actual variable upper bounds are no weaker than the saved omission bounds.",
+    "The point-scan adapter has not been run on a production candidate and does not certify full count, literal incidence, or graph feasibility."
+  ],
+  "files": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-preparation01.json",
+      "bytes": 3382,
+      "sha256": "f6dcba3b0720a368e4303ca0c04527d0fc25f70175f6561c26d20cbe9c4c4b67",
+      "git_blob_sha": "04228b7a51548b90e4fb2869dfd6f5745c429c0c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-root-gate01.json",
+      "bytes": 1810,
+      "sha256": "976e31eec53c14dd95ab21137935b9b7c052891de0bce72f11dabd25fdcc4331",
+      "git_blob_sha": "b301cf5a269952877b37c9a7597f69617036ec5b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01-cold-owner.json",
+      "bytes": 1071,
+      "sha256": "fe02d80a9880b69b9716505c68ac73d4d217b0c7d66678d04904a4efab6d9a77",
+      "git_blob_sha": "12c8da0e8667ecc7ced5b4e3e8740a413d18300c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01-cold-owner.log",
+      "bytes": 142,
+      "sha256": "8423aee9de2d0f8c5feaaeaa8005a260d07a9d45630ce54c13ea503b5a2d8f9c",
+      "git_blob_sha": "46d36d71e872c5e862061c688cd6508c8441a6ea"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01-cold.json",
+      "bytes": 602,
+      "sha256": "664074cc423d925778e3e4e4898db996fdec0f30c6e0bf633b5e2a74ca796bc1",
+      "git_blob_sha": "55d560472fa679b186bac9a283b4724f25103f2d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core00.json.gz",
+      "bytes": 386243,
+      "sha256": "b5951dfb524bdab86ddfe4e887f697a823d2d64b8773248177af77490987d5d7",
+      "git_blob_sha": "4b6c59b4c9c41917b72ea6e06af7566577822cef"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core01.json.gz",
+      "bytes": 22460,
+      "sha256": "2a264c18fc3189ed47fc76cc88291bb93e0549818bf9b0845b28ba0a2840da15",
+      "git_blob_sha": "58c5db7ec6e99b3c4b00d7deca224597d911d442"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core02.json.gz",
+      "bytes": 22911,
+      "sha256": "a3ce9c710ae1a332d0280458e7d4cc7c37ac74160a2674bf18f5142d4cf25282",
+      "git_blob_sha": "31ae1257dee8fec447f4bdf8de54d45338829a25"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core03.json.gz",
+      "bytes": 22519,
+      "sha256": "471c3f1408dc25a0924174e9f159f78492161f264500953689071ce8476477c9",
+      "git_blob_sha": "161fa72bc7523419c7050447d5b2938517c44fd1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core04.json.gz",
+      "bytes": 22876,
+      "sha256": "9f9a3f0755f1793b196acd592b5fcd1f961d10c8865163086fdbc1b33709e61d",
+      "git_blob_sha": "d2ecfe16895cfbb094a15a0e1735e2a28a7c8a9d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core05.json.gz",
+      "bytes": 22367,
+      "sha256": "c993c21e6604cf048ec029b576769f16424218551e80ff80933930066a1843e2",
+      "git_blob_sha": "47d7c908df39504d246a0aa04f6d0cf278eac334"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core06.json.gz",
+      "bytes": 1788332,
+      "sha256": "04177995acb9532fe84055bdc34a034d2567ff4414a85e7e0df7f5cbc1a0ffbb",
+      "git_blob_sha": "c14bd14f7ba4724b007b969ba6ee52763bb17eb4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core07.json.gz",
+      "bytes": 54323,
+      "sha256": "af6b57740414c76710786faf042f02657cd02d3330dfbfd18c49747aed91acba",
+      "git_blob_sha": "b33530d3816a9aff4ebfa1fb0b5983e2fa96fd79"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core08.json.gz",
+      "bytes": 52945,
+      "sha256": "41beaf9f9fc5a35af7d7f3c21c6efb5f94efcc67c43b859ee7801d6a4df5921f",
+      "git_blob_sha": "eca9340e692fcc8fa5aec29bf42c44e9899e580f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core09.json.gz",
+      "bytes": 52315,
+      "sha256": "71f3d846307e687151d1124444a15612e2b35d958305214c01fb8ab9ba63fe03",
+      "git_blob_sha": "ed72eddd47475a8cef494c9d06eefe768f987304"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core10.json.gz",
+      "bytes": 52974,
+      "sha256": "c42eeaff00cda51670d0b287de69b02f0f5557f884cbe22845ab3c270c374ddd",
+      "git_blob_sha": "e0b6b322c15c6fb06b14d024631146705831e2d4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core11.json.gz",
+      "bytes": 52234,
+      "sha256": "99ffee814ed1c2055925ad9a99c98044e25ece3b66870e0dc500ca1fe51cb382",
+      "git_blob_sha": "89614fcdb57dc39269b9c28b450ee4897f9c48c7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core12.json.gz",
+      "bytes": 53637,
+      "sha256": "9934b30f30e6b897047c73a5db4e6e67f13b94e811f68d31b3910fe2484235b3",
+      "git_blob_sha": "2f755f3a50ef9e72b4ae4f795a532a9e1db1b922"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core13.json.gz",
+      "bytes": 53343,
+      "sha256": "a9452ec858139d12b0102e4f5c50939cb974cb4cbbd06c82d6d1f02222f5f883",
+      "git_blob_sha": "b93f59c86aa6d5e57ea73bf4a73f51a9a56c51c2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core14.json.gz",
+      "bytes": 53318,
+      "sha256": "568a64b443805ff543a8fe84c6871a3bbdb168309943f31c794ec6f00d584841",
+      "git_blob_sha": "8174d8812410370bdafa59bd1e68c09e40e15015"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core15.json.gz",
+      "bytes": 52902,
+      "sha256": "12e7ee8ddf52e7c407b7d7c9e70028bea873a3b60a5341a8e59b9df8963200be",
+      "git_blob_sha": "fb185dce108a1adb7d555e1e47377f388ed3fd24"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core16.json.gz",
+      "bytes": 53562,
+      "sha256": "732036736a75051d402539c609e2d51b10d10405d98c7c37b5ee562df4904996",
+      "git_blob_sha": "f19a683fa94f02523d1ecc8ee372eff047d6a1b7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/core17.json.gz",
+      "bytes": 52346,
+      "sha256": "b101c9abb49045fd575e27b7909ffba90c0c35d2a920a570f1c3bfbc90e69bb1",
+      "git_blob_sha": "733c6a3cb528baed42b84c6c1693533577ed86bc"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/owner.json",
+      "bytes": 931,
+      "sha256": "0d055b420cbd73863bb494cd68d371a6a021a7f0a99a19625363d7df07e59739",
+      "git_blob_sha": "fc4123a786d032a03d9e9cde357aadc4ce0de4d3"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/owner.log",
+      "bytes": 136,
+      "sha256": "87572b8580ef5b5a8c849af88e023591e112681a33317755ddbcf784d1567f20",
+      "git_blob_sha": "aeceebab2c562db0829ef18cbfe8a8c2a279a08f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-family-run01/result.json",
+      "bytes": 5626,
+      "sha256": "901ead85d602598336d1031f1ebc58cacf18ab9c258cd73654b04c6eca635b86",
+      "git_blob_sha": "1cc6051c5f52aca482c7b7eb8da6ef4b1f8339bd"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-inventory01/all-rows.json.gz",
+      "bytes": 104606,
+      "sha256": "c922c61e1728c5166293e8c8e7348135541c04ab93870f2cafaef8c872ef067b",
+      "git_blob_sha": "e6b1d7af699f7a198381e23bf55a116432f679b2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-inventory01/omitted-rows.json.gz",
+      "bytes": 39732,
+      "sha256": "8ce0a7fbab5f25dd8c0dbe6c854df0a234db14c2f11d790268d2f63543c22b6b",
+      "git_blob_sha": "c0d0aa93b6672b7610ded0309b4cb5f1104a659c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-inventory01/report.json",
+      "bytes": 1893,
+      "sha256": "5e5ba4687a85c30d75647c54e76b5713caa295f2a9e77f8722f10c3e8dd4382d",
+      "git_blob_sha": "88eadc6e775eef22ffc2250ff7b1fdc707d13be4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-inventory01/selected-rows.json.gz",
+      "bytes": 82246,
+      "sha256": "3af95cde2c2ef9a097401374c856137dca67eb07e16add887f9eaf93a89e4969",
+      "git_blob_sha": "19bed5d44358208553875f6e5723ebc4a1dde785"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-one-blossom01-cold.json",
+      "bytes": 340,
+      "sha256": "71530fb3beb5c824ff93176c3dc396e3b5256a49f06f07688cde3efc1e8356c2",
+      "git_blob_sha": "20856e478125edbeb06b9ac312d091ce868a947c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-one-blossom01.json",
+      "bytes": 9937,
+      "sha256": "d5de76ce7978221843a44be9cca703e53c7153decb5088f598d016b7279088f8",
+      "git_blob_sha": "3f3f946ff3d7eed699bdb2e6e040d6364abb5360"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_family.py",
+      "bytes": 28705,
+      "sha256": "21e2a8e84821b88c214eb5e514c6095b2b163e19ae1a1b4849c5e3c47a42e6f5",
+      "git_blob_sha": "c6108196e367e2caaec4fa6bf36283114572b3b3"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_inventory.py",
+      "bytes": 9208,
+      "sha256": "6455d5c3967eb4f7aa22c690ab89f7572cf31ab9c5f7975927c6096caa39513c",
+      "git_blob_sha": "e55dce53ccc165b947ff0504890b510f0918e327"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_point_scan.py",
+      "bytes": 1763,
+      "sha256": "de3cb58202ea991ac6c1a4e1612fea39342589d3776371bc5df9c921b48d7ca3",
+      "git_blob_sha": "1aecdb34b53940cfc28517574ba1f326cb5ff83c"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom.py",
+      "bytes": 10444,
+      "sha256": "a00a588a3c0bd366fbc6f6e8df2e0b00b0e19dc616e48a64077da7ffe03c61bf",
+      "git_blob_sha": "2fb5260ebba59667772154b016e2af7bb5255558"
+    },
+    {
+      "path": "research/root_prism_free_f0_core_matching_blossom_family_result.md",
+      "bytes": 5407,
+      "sha256": "0bfc7a203d98d2cfac487a291fd5668af5368b021f168e77f7604eee99cc2509",
+      "git_blob_sha": "e3364139539e198a25f647df002ff23bad838fdb"
+    },
+    {
+      "path": "research/root_prism_free_f0_core_matching_blossom_family.md",
+      "bytes": 5673,
+      "sha256": "2e786b8e88799396473e816647333c0c350d7b232826f987fb81e280a916df27",
+      "git_blob_sha": "f6b8a21203c63f808ee369fdc3f3fac52da14b57"
+    },
+    {
+      "path": "research/root_prism_free_f0_core_matching_blossom.md",
+      "bytes": 7366,
+      "sha256": "0b52e9f2cfc0574e595cebcacb968259da0fbadf6ac7f273da83c8a01aaaf94a",
+      "git_blob_sha": "7ed75692d8472ab7f8ea142cb0a1d92880e3e9d9"
+    }
+  ]
+}

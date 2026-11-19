@@ -1,0 +1,32 @@
+{
+  "schema": "conway99.f0.core-matching-candidate-oracle-source-review.v1",
+  "status": "PASS: complete source and mathematical scope reviewed",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_core_matching_candidate_oracle.py",
+    "sha256": "01adf67152884f59cf65c3b490de5b4f69c9d9bdec7a53ba8863991bfc9d0c60"
+  },
+  "review_kind": "Read-only review of the complete source; no import, preparation, controls, matching query or candidate evaluation repeated.",
+  "reasoning": {
+    "enumeration": "Pairing the least remaining vertex with each other remaining vertex gives disjoint exhaustive cases. Recursing on the other vertices enumerates each perfect matching exactly once; eight vertices give 7*5*3*1=105.",
+    "input_premises": "The four input files are bound by exact SHA256. The oracle independently expands the 18 original Gram combinations, checks their 0/1 supports and right-hand side 8, and matches the frozen U_i ledger.",
+    "allowed_edges": "The saved 68394 eligible pairs are partitioned by the 5805 saved orbits. The 162 proved-zero Y orbits are removed using their original count-column offset 42. This uses the already proved zero premises; the oracle does not derive them afresh.",
+    "selection_validation": "Input must be a sorted list of 60 distinct ordinary Python integers in 0..479. The cardinality check plus all171 reconstructed Gram entries are the stated172 original selector equalities.",
+    "positive_result": "A saved positive matching consists of four disjoint allowed pairs on the eight selected U_i vertices. The result establishes local matchability only; the 18 matchings need not combine into one exterior graph.",
+    "negative_result": "A rejection records one absent allowed edge for each of the105 complete matching templates. Any actual incidence containing all eight displayed selectors would, by sum_U_i x=8, have exactly that selected U_i set and therefore need one of those105 matchings. Hence the positive eight-selector inequality sum x<=7 is valid.",
+    "replay": "The replay recomputes the complete deterministic record and compares every field except elapsed time, with candidate-file and canonical-selection hashes bound. It does not promote an unchecked partial matching search.",
+    "controls_scope": "The exhaustive six-vertex controls and six eight-vertex controls are read in the source only. No control result is asserted to have been independently executed by this reviewer."
+  },
+  "limits": {
+    "candidate_acceptance_external": true,
+    "native_count_acceptance_checked_by_oracle": false,
+    "all_saved_4416_literal_cuts_rechecked_by_oracle": false,
+    "all_motif_or_joint_edge_constraints_checked_by_positive_result": false,
+    "full_graph_existence_claimed": false,
+    "new_global_zero_claimed": false,
+    "execution_deadline_ownership": "The module has no internal owner process; the coordinator's bounded wrapper remains responsible for runtime ownership.",
+    "production_candidate_checked": false,
+    "imports": 0,
+    "controls_run": 0,
+    "solver_calls": 0
+  }
+}

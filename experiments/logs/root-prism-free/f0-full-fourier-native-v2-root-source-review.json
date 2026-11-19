@@ -1,0 +1,20 @@
+{
+  "schema": "conway99.f0.full-Fourier-native-v2-root-source-review.v1",
+  "status": "PASS: complete two-change delta inspected against fully reviewed v1",
+  "old_source_sha256": "a1bde1aa30b0154223d2f94fe1ee1744274792f5f993bf60ca210f2939fdf703",
+  "new_source_sha256": "ce21cabaa26e28e69f84380736adb28b7e193037a67a83d0ec79df84230b77ad",
+  "unchanged_configuration_sha256": "96e8544121f3d285db3d0d438afb059be3a10d0cd1230fa951eb1ce816e494db",
+  "complete_delta_controls_sha256": "424ca4a8a03900d47935f4770d8048f092da001895ef2a3ed0d41c4bfc9c0e99",
+  "old_root_source_gate_sha256": "2741de4261e7fd3be287eae22dabc3e2a2f1261314043680471c1f13e3746f70",
+  "old_peer_source_gate_sha256": "05c99a3d72b3c5de376dca1ce110e96cbafa443d151318c78046371e9d154329",
+  "changes": [
+    "Increase each owned preparation or cold phase from60 to180seconds.",
+    "Remove the duplicate definition(config_path) call in the parent owner; retain all complete source/input/configuration checks in the worker before native construction."
+  ],
+  "basis": "The first preparation expired before native construction. Its preserved terminal records62.589 ownerseconds and34.971supervisionseconds. The child completed nativeimport at21.540seconds and specificationchecks at27.770seconds. The timing source does not attribute individual I/O durations.",
+  "execution_scope": "One distinct v2 preparation in a fresh directory, followed by one180secondcold replay only if preparation succeeds. Wait for the H5full-matrix memoryslot to be released.",
+  "mathematical_operations_and_acceptance_unchanged": true,
+  "failed_v1_records_preserved": true,
+  "optimizer_calls": 0,
+  "production_query_authorized_by_this_review": false
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "conway99.rook.three-Gram-weighted-branch-preparation-root-gate.v1",
+  "status": "PASS: complete source reviewed for finite preparation and cold replay",
+  "source": "experiments/workspace/rook_case4_three_gram_branch_preparation.py",
+  "source_sha256": "fdde57b1a3a4de759ca0b04a8465f6bb97659cc7db715aed4fa5e665358c7ed5",
+  "checks": [
+    "The exact sum of original Gram rows214,344,582 is reconstructed in all1214 coordinates and has right side3.",
+    "Removing only the112 globally proved zeros leaves26 coefficients1, nine coefficients2 and the coefficient3 at column764.",
+    "The2835 positive-support patterns exhaust the nonnegative Boolean solutions to this weighted sum: one weight3 singleton,234 weight1/weight2 pairs and2600 triples of weight1 columns.",
+    "The previously checked complete triple census and its cold record are hash-bound; each reused rejection also has its original nonnegative-capacity witness checked.",
+    "Only the235 new singleton/pair cases require new upper-capacity checks; this filtering removes no feasible Boolean solution.",
+    "Every retained branch explicitly fixes all other positive-support coordinates to zero and uses only the112 shared global zero premises.",
+    "All2271 original native rows, including the60 signed rows, are retained for the future propagation model.",
+    "Preparation and replay are separate finite operations; neither invokes propagation, a model optimizer or an H42=5 premise."
+  ],
+  "allowed_execution": "One30second preparation and one separate30second replay, with an external bounded owner if needed; wait until the current H5cold memoryslot is released.",
+  "production_propagation_authorized_by_this_gate": false,
+  "optimizer_calls": 0,
+  "case4_excluded": false
+}

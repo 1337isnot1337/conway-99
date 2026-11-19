@@ -1,0 +1,61 @@
+{
+  "schema": "conway99.f0.full-Fourier-literal-native-configuration.v1",
+  "literal_layer": {
+    "record": {
+      "path": "experiments/logs/root-prism-free/f0-literal-cut-native-layer01/layer.json.gz",
+      "sha256": "dcb44159712f9c9a4f61cc61950c23d62b804a0d57709ca43afb33e3711d2b33"
+    },
+    "sources": {
+      "producer": {
+        "path": "experiments/workspace/root_prism_free_f0_literal_cut_layer.py",
+        "sha256": "f9af8c9fcafcc070533cc5ad65c788023e782520dcea4a1a3ac46d3636a0badb"
+      },
+      "independent_checker": {
+        "path": "experiments/workspace/root_prism_free_f0_literal_cut_layer_replay.js",
+        "sha256": "5ff42605875628362849f73bb5cbcc7e4950bf072a3cb40a27114d386656c883"
+      },
+      "radix_utility": {
+        "path": "experiments/workspace/root_prism_free_f0_literal_cut_radix.js",
+        "sha256": "e484e0e374e5579c75f3bfe9bdac2fa837acf75525d42d6c8f231a560856446c"
+      },
+      "radix_controls": {
+        "path": "experiments/workspace/root_prism_free_f0_literal_cut_radix_controls.js",
+        "sha256": "50453251663287a33196c78df5f078ea8ff78cce98f2f8297943249f587cf7ad"
+      }
+    },
+    "evidence": {
+      "preparation": {
+        "path": "experiments/logs/root-prism-free/f0-literal-cut-native-layer01/report.json",
+        "sha256": "7a6786d7e3871eddcb1d635b662f1d1d0fc960c51de1e878007ee62b000d22ba"
+      },
+      "independent_cold": {
+        "path": "experiments/logs/root-prism-free/f0-literal-cut-native-layer01-cold.json",
+        "sha256": "7bed3fffebe2bf026eac13961bbee1c2ba25ac04913a11b4b3f9f7dc8d6fa44b"
+      },
+      "corrected_source_review": {
+        "path": "experiments/logs/root-prism-free/f0-literal-cut-layer-correction-literature-review.json",
+        "sha256": "ea962e763e9e131edf05ea7c5e4a2e1848e7ca0fcb933a7b300e70189c4d2a3f"
+      },
+      "prior_source_review": {
+        "path": "experiments/logs/root-prism-free/f0-literal-cut-layer-literature-source-review.json",
+        "sha256": "853ff176d4056d70a03407d55ea38820ed99f3fdcc4c78ad44d8a31fcdfb5642"
+      },
+      "generic_radix_controls": {
+        "path": "experiments/logs/root-prism-free/f0-literal-cut-radix-controls01.json",
+        "sha256": "3c234fa7e6ad8e0af15a234142f730fb9cf3011d39d2d966d6ee1c5622e44797"
+      },
+      "original_literal_rows": {
+        "path": "experiments/logs/root-prism-free/f0-literal-cut-export-ci01/literal-rows.json.gz",
+        "sha256": "051282b7c8256fa3cad6edd9e9490290cfdfa5f6bef46b609bc32bdd63189b63"
+      },
+      "native_adapter_root_gate": {
+        "path": "experiments/logs/root-prism-free/f0-full-fourier-native-root-source-review01.json",
+        "sha256": "2741de4261e7fd3be287eae22dabc3e2a2f1261314043680471c1f13e3746f70"
+      },
+      "native_adapter_peer_gate": {
+        "path": "experiments/logs/root-prism-free/f0-full-fourier-native-independent-source-review.json",
+        "sha256": "05c99a3d72b3c5de376dca1ce110e96cbafa443d151318c78046371e9d154329"
+      }
+    }
+  }
+}
