@@ -16,7 +16,9 @@ has stronger global restrictions: its intersecting-red-triangle exclusion
 gives no all-red grid and at most 114 grids in total. Checkpoint `006cce9`
 further improves the total bound to 113 using a five-grid branching exclusion.
 Its full-component census at `9c58d1d` improves this to 112 and bounds
-the number of full triangles by 24.
+the number of full triangles by 24. Its later nine-triangle-cover
+exclusion and component update at `51329e0` reduce the full-triangle
+bound to 22; the total grid bound remains 112.
 Its earlier checkpoint
 `2e2d7ed` also bounds the number through a point by thirteen. The historical
 bounds and count witnesses below are retained with their original scope.
@@ -72,10 +74,30 @@ where `t` counts edges shared by the tip and original rook graphs.
 The complementary-rook joint run remains UNKNOWN. Within that case,
 the [complete `a=0` incidence class is now excluded](research/grids-and-triangles/two_rook_a0_fixed_completion.md):
 fourteen designs have integer Farkas proofs and the two equivalent
-remaining designs have a checked binary-completion proof. Hence `a>=1`.
+remaining designs have a checked binary-completion proof. A separate
+[complete incidence proof excludes `a=1`](research/grids-and-triangles/complement_rook_a_incidence.md),
+so `a>=2`. The [complete `a=2` incidence census](research/grids-and-triangles/complement_rook_a2_incidence_census.md)
+has 576 designs in four orbits of size 144. Exact orbit regeneration and
+a checked final blocked-formula proof establish completeness. These
+are incidence designs; their binary edge-completion problems remain open.
 None of these statements excludes a single isomorphic pair.
 
 ## Scope of the unrestricted computations
+
+The [complete rooted binary model](research/root_full_caps.md) starts from
+the mandatory root and its fourteen neighbors. All 84 exterior signatures
+are forced, and all 3,486 possible exterior edges remain independent.
+It imposes every mixed equation and exterior pair cap. The chosen
+near-vertex matching has eleven normalization cases. Two independent
+audits cover all 10,395 matchings, including explicit signed-axis
+transports and a separate orbit-size calculation. The
+[builder audit](research/root_full_caps_builder_independent_audit.md)
+checks the full domain and encoding, including the 84 necessary
+broken-rook implications. A direct nine-rook assignment and 3,069
+Boolean controls pass. Each case has 960,414 variables and 1,908,864
+clauses. The sequential batch uses 180 seconds per case and records
+each outcome separately. The model and coverage proofs are not
+nonexistence proofs; every UNKNOWN case remains open.
 
 - [`subgraph_counts.py`](experiments/workspace/subgraph_counts.py) enumerates all induced graph types through a specified order that avoid a diamond and a (non-induced) K₂,₃. Integer extension equations count outside vertices, neighbors of a marked vertex, and common neighbors of a marked pair. It found no contradiction modulo 2 through order ten (180,445 equations, rank 46,268). [`inspect_counts.py`](experiments/workspace/inspect_counts.py) checks the original equations on all subsets of the 3-by-3 rook graph. Its floating LP reported infeasibility on both 99 and the known 243 parameters. That solver status was spurious on 99.
 - [`core_counts.py`](experiments/workspace/core_counts.py) removes a vertex of degree at most two in ordinary injective embedding counts. In the degree-two case the common-neighbor number for the two image vertices is two minus their adjacency indicator. Subtracting previously used image vertices gives a recurrence requiring no unproved subgraph statistics. Minimum-degree-three subgraphs supply the remaining variables. Inverting deletion of edges gives induced counts. The integer solutions in [`core8.log`](experiments/logs/moments-and-counts/core8.log) and [`core9.log`](experiments/logs/moments-and-counts/core9.log) were replayed against every original equation and every nonnegativity and integrality condition. These are count assignments, not graphs.

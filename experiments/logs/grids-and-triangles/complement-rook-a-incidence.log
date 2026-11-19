@@ -1,0 +1,16 @@
+{"a": 1, "signature_selectors": 252, "variables": 1403, "clauses": 2733, "cnf_path": "experiments/workspace/complement-rook-a-incidence-1.cnf", "cnf_sha256": "967226e79e31f05ac3048ca05c7dc4469ba95e1244586b6bd65c82cdcfe6bd72", "solve_seconds": 0.04677195400108758, "solver_statistics": {"restarts": 2, "conflicts": 868, "decisions": 1295, "propagations": 152157}, "status": "UNSAT incidence; DRAT verified", "proof_path": "experiments/workspace/complement-rook-a-incidence-1.drat", "proof_sha256": "dbaf7a1c9e5b6f61adaa7619f4608cecd00cb052ca097456e59263dd60e63d57", "drat_log": "experiments/logs/grids-and-triangles/complement-rook-a-incidence-1-drat.log"}
+{"a": 2, "signature_selectors": 252, "variables": 1612, "clauses": 3080, "cnf_path": "experiments/workspace/complement-rook-a-incidence-2.cnf", "cnf_sha256": "311de1421eaf3114599d9fa9d7021a787c2f814f72936d8789ab2da379c847c2", "solve_seconds": 0.006013033000272117, "solver_statistics": {"restarts": 1, "conflicts": 9, "decisions": 169, "propagations": 4096}, "status": "SAT incidence; full Gram verified"}
+{
+  "status": "bounded incidence sequence finished",
+  "tested": [
+    [
+      1,
+      "UNSAT incidence; DRAT verified"
+    ],
+    [
+      2,
+      "SAT incidence; full Gram verified"
+    ]
+  ],
+  "first_positive_SAT_a": 2
+}

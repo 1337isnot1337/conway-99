@@ -130,7 +130,28 @@ the complete complementary-rook `a=0` census and its final binary proof.
 Both wrappers check source and input hashes, full formula hashes, and
 membership of every retained input clause. The coordinating worker ran
 both full rebuilds and proof replays successfully. The unrestricted
-two-grid case and the complementary-rook case with `a>=1` remain open.
+two-grid case remains open. The next incidence proof excludes `a=1`,
+and the complete `a=2` census gives four orbits containing 576 designs:
+
+```sh
+make verify-complement-rook-incidence DRAT_TRIM=/absolute/path/to/drat-trim
+```
+
+This reconstructs both incidence formulas, checks the `a=2` witness,
+regenerates all orbit blocks, and replays both retained DRAT proofs.
+It does not solve any exterior edge-completion problem.
+
+The unrestricted rooted model has a separate small coverage replay:
+
+```sh
+make verify-root-matching-coverage
+```
+
+It covers all 10,395 perfect matchings by explicit relabelings and an
+independent orbit traversal, then checks the closed-form counts and all
+64 local cell assignments. It does not start the eleven-case SAT batch.
+The [model note](../research/root_full_caps.md) gives the complete formula,
+positive controls, build command, and separate outcome records.
 
 The earlier bound of three all-red grids retains its replay target:
 

@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-rook-tip-boundary verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-rook-tip-boundary verify-complement-rook-incidence verify-root-matching-coverage verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -34,6 +34,16 @@ verify-grid-free-relaxation:
 
 verify-grid-free-projectors:
 	"$(PYTHON)" $(WORKSPACE)/grid_free_projector_certificate.py --certificate experiments/logs/moments-and-counts/grid-free-projector-certificate.json.gz
+
+verify-root-matching-coverage:
+	"$(PYTHON)" $(WORKSPACE)/root_full_caps_coverage.py --certificate experiments/logs/root-full-caps/matching-coverage.json
+	"$(PYTHON)" $(WORKSPACE)/root_full_caps_matching_audit.py --certificate experiments/logs/moments-and-counts/root-full-caps-matching-audit-certificate.json.gz
+	"$(PYTHON)" $(WORKSPACE)/root_full_caps_matching_orbit_audit.py --certificate experiments/logs/grids-and-triangles/root-full-caps-matching-orbit-audit.json
+
+verify-complement-rook-incidence:
+	@test -x "$(DRAT_TRIM)" || { echo 'Set DRAT_TRIM to the drat-trim executable path.' >&2; exit 1; }
+	"$(PYTHON)" $(WORKSPACE)/complement_rook_a_incidence.py --replay --prefix $(WORKSPACE)/complement-rook-a-incidence --output experiments/logs/grids-and-triangles/complement-rook-a-incidence.json --drat-trim "$(DRAT_TRIM)"
+	"$(PYTHON)" $(WORKSPACE)/complement_rook_a_incidence_census.py --replay --output experiments/logs/grids-and-triangles/complement-rook-a2-incidence-census.json --cnf $(WORKSPACE)/complement-rook-a2-incidence-census.cnf --proof $(WORKSPACE)/complement-rook-a2-incidence-census.drat --drat-log experiments/logs/grids-and-triangles/complement-rook-a2-incidence-census-drat-replay.log --drat-trim "$(DRAT_TRIM)"
 
 verify-rook-pair-completion:
 	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_pair_integer_replay.py experiments/logs/grids-and-triangles/two-rook-iso-pair-integer.json

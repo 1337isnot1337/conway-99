@@ -1,0 +1,496 @@
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/root_full_caps_coverage.py --certificate experiments/logs/root-full-caps/matching-coverage.json
+{"scope": "all perfect matchings, with explicit signed-axis transports checked", "axes": 6, "points": 12, "matching_count": 10395, "partitions": 11, "matching_domain_sha256": "4b383abee1c98475f93391f9b654415f6406553d68c243de542684929db97f27", "cases": [{"index": 0, "partition": [1, 1, 1, 1, 1, 1], "canonical_matching": [[0, 1], [2, 3], [4, 5], [6, 7], [8, 9], [10, 11]], "labelled_matchings": 1}, {"index": 1, "partition": [1, 1, 1, 1, 2], "canonical_matching": [[0, 1], [2, 3], [4, 5], [6, 7], [8, 11], [9, 10]], "labelled_matchings": 30}, {"index": 2, "partition": [1, 1, 1, 3], "canonical_matching": [[0, 1], [2, 3], [4, 5], [6, 11], [7, 8], [9, 10]], "labelled_matchings": 160}, {"index": 3, "partition": [1, 1, 2, 2], "canonical_matching": [[0, 1], [2, 3], [4, 7], [5, 6], [8, 11], [9, 10]], "labelled_matchings": 180}, {"index": 4, "partition": [1, 1, 4], "canonical_matching": [[0, 1], [2, 3], [4, 11], [5, 6], [7, 8], [9, 10]], "labelled_matchings": 720}, {"index": 5, "partition": [1, 2, 3], "canonical_matching": [[0, 1], [2, 5], [3, 4], [6, 11], [7, 8], [9, 10]], "labelled_matchings": 960}, {"index": 6, "partition": [1, 5], "canonical_matching": [[0, 1], [2, 11], [3, 4], [5, 6], [7, 8], [9, 10]], "labelled_matchings": 2304}, {"index": 7, "partition": [2, 2, 2], "canonical_matching": [[0, 3], [1, 2], [4, 7], [5, 6], [8, 11], [9, 10]], "labelled_matchings": 120}, {"index": 8, "partition": [2, 4], "canonical_matching": [[0, 3], [1, 2], [4, 11], [5, 6], [7, 8], [9, 10]], "labelled_matchings": 1440}, {"index": 9, "partition": [3, 3], "canonical_matching": [[0, 5], [1, 2], [3, 4], [6, 11], [7, 8], [9, 10]], "labelled_matchings": 640}, {"index": 10, "partition": [6], "canonical_matching": [[0, 11], [1, 2], [3, 4], [5, 6], [7, 8], [9, 10]], "labelled_matchings": 3840}]}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/root_full_caps_matching_audit.py --certificate experiments/logs/moments-and-counts/root-full-caps-matching-audit-certificate.json.gz
+{
+  "status": "complete exact coverage PASS",
+  "perfect_matchings": 10395,
+  "matching_orbits": 11,
+  "explicit_transports_verified": 10395,
+  "independent_generator_orbits_verified": 11,
+  "summaries": [
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "canonical_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "enumerated_count": 1,
+      "generator_orbit_count": 1,
+      "formula_count": 1
+    },
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "canonical_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 30,
+      "generator_orbit_count": 30,
+      "formula_count": 30
+    },
+    {
+      "partition": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "canonical_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 160,
+      "generator_orbit_count": 160,
+      "formula_count": 160
+    },
+    {
+      "partition": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "canonical_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 180,
+      "generator_orbit_count": 180,
+      "formula_count": 180
+    },
+    {
+      "partition": [
+        1,
+        1,
+        4
+      ],
+      "canonical_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 720,
+      "generator_orbit_count": 720,
+      "formula_count": 720
+    },
+    {
+      "partition": [
+        1,
+        2,
+        3
+      ],
+      "canonical_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 960,
+      "generator_orbit_count": 960,
+      "formula_count": 960
+    },
+    {
+      "partition": [
+        1,
+        5
+      ],
+      "canonical_edges": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 2304,
+      "generator_orbit_count": 2304,
+      "formula_count": 2304
+    },
+    {
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "canonical_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 120,
+      "generator_orbit_count": 120,
+      "formula_count": 120
+    },
+    {
+      "partition": [
+        2,
+        4
+      ],
+      "canonical_edges": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 1440,
+      "generator_orbit_count": 1440,
+      "formula_count": 1440
+    },
+    {
+      "partition": [
+        3,
+        3
+      ],
+      "canonical_edges": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 640,
+      "generator_orbit_count": 640,
+      "formula_count": 640
+    },
+    {
+      "partition": [
+        6
+      ],
+      "canonical_edges": [
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "enumerated_count": 3840,
+      "generator_orbit_count": 3840,
+      "formula_count": 3840
+    }
+  ],
+  "certificate_sha256": "ed492bc4c2a50e49f855ee822adf922e0dcbe609893972a0bae96fb0e2deba5f",
+  "source_sha256": "aee33c08589ab04a3a97c865bebb644c1fcfe852e1af8aa7113642d5666ce587",
+  "seconds": 0.728208339000048,
+  "SAT_model_built": false,
+  "solver_called": false
+}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/root_full_caps_matching_orbit_audit.py --certificate experiments/logs/grids-and-triangles/root-full-caps-matching-orbit-audit.json
+{
+  "status": "closed orbit formula and local-cell controls passed",
+  "perfect_matchings": 10395,
+  "orbit_sizes": [
+    1,
+    30,
+    160,
+    180,
+    720,
+    960,
+    2304,
+    120,
+    1440,
+    640,
+    3840
+  ],
+  "local_cell_control": {
+    "far_edge_assignments": 64,
+    "cap_compatible_assignments": 19,
+    "cap_compatible_masks": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      32,
+      48
+    ],
+    "broken_rook_three_side_masks": [
+      7,
+      11,
+      13,
+      14
+    ],
+    "diagonals_with_no_sides_not_excluded": [
+      0,
+      16,
+      32,
+      48
+    ],
+    "rook_positive_control_mask": 15,
+    "four_implications_per_cell": 4,
+    "two_axis_cells_at_valency14": 21,
+    "total_broken_rook_implications": 84
+  }
+}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/complement_rook_a_incidence.py --replay --prefix experiments/workspace/complement-rook-a-incidence --output experiments/logs/grids-and-triangles/complement-rook-a-incidence.json --drat-trim "/tmp/conway99-drat-trim/drat-trim"
+{
+  "status": "exact incidence sequence replay passed",
+  "tested": [
+    [
+      1,
+      "UNSAT incidence; DRAT verified"
+    ],
+    [
+      2,
+      "SAT incidence; full Gram verified"
+    ]
+  ],
+  "first_positive_SAT_a": 2
+}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/complement_rook_a_incidence_census.py --replay --output experiments/logs/grids-and-triangles/complement-rook-a2-incidence-census.json --cnf experiments/workspace/complement-rook-a2-incidence-census.cnf --proof experiments/workspace/complement-rook-a2-incidence-census.drat --drat-log experiments/logs/grids-and-triangles/complement-rook-a2-incidence-census-drat-replay.log --drat-trim "/tmp/conway99-drat-trim/drat-trim"
+{
+  "status": "complete incidence census; final blocked formula DRAT verified",
+  "orbits": 4,
+  "labelled_designs": 576,
+  "replayed": true
+}

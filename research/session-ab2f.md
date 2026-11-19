@@ -293,3 +293,31 @@ their hypotheses permit them; computational exclusions require exact replay.
   total to 112 grids and bounds full triangles by 24. Our next computation
   returns to an unrestricted mandatory-root model. Its anchor-matching
   normalization and positive control are being audited before any batch.
+- Built and independently audited the unrestricted mandatory-root model.
+  Its 84 exterior signatures are forced, and all 3,486 possible edges
+  remain free. Every mixed equation and exterior cap is present, with
+  285,852 path variables. The 84 broken-rook implications use the
+  unconditional norm-fourteen proof. Each normalized formula has
+  960,414 variables and 1,908,864 clauses. Direct nine-rook and free
+  normalized controls pass, as do 3,069 exhaustive Boolean controls.
+- Three coverage calculations agree on all 10,395 anchor matchings and
+  eleven orbits. The independent certificate saves an explicit signed-axis
+  transport for every matching and separately traverses generator orbits.
+  Root reviewed the complete domain, runner, status handling, source
+  binding, and proof wrapper before starting eleven sequential 180-second
+  runs. Model construction and coverage do not exclude any case.
+- Excluded complementary-rook `a=1` using all 252 incidence selectors
+  and a checked DRAT proof. Together with the complete `a=0` exclusion,
+  this gives `a>=2`. A complete selector-only census finds 576 `a=2`
+  designs in four orbits of size 144. Root regenerated every blocking
+  clause and orbit, rebuilt the final formula, and replayed its proof.
+  Complete exterior edge tests for these four representatives are separate.
+- Read the external `51329e0` checkpoint, which reduces full triangles
+  to at most 22 while retaining the total grid bound 112. Its forbidden
+  nine-triangle cover does not immediately exclude the complementary-rook
+  core: an exhaustive partition check on that core's 27 triangles finds
+  no partition into nine triangles with only zero or three cross-edges.
+- Tested a possible parity shortcut on the complementary-rook incidence
+  system. The 180 equality rows have rank 154 over the binary field;
+  the coefficient vector defining `a` is outside their row span. Thus
+  these equalities alone do not give a forced parity for `a`.
