@@ -94,16 +94,29 @@ def run(output=None):
                 assert count <= 2
         if is_connected:
             assert len(decks) <= counts[0]*counts[1] <= 4
+        edges = [(v,w) for v in range(12) for w in sorted(neighbors[v]) if v < w]
+        forced_pairs = []
+        for edge in edges:
+            images = {tuple(sorted((p[edge[0]],p[edge[1]]))) for p in decks}
+            if len(images) == 1:
+                image = next(iter(images))
+                assert image != edge
+                if edge < image:
+                    forced_pairs.append([list(edge),list(image)])
+        if is_connected:
+            assert forced_pairs
         rows.append({'mask': mask, 'connected': is_connected,
                      'neighborhood_class_multiplicities': multiplicities,
                      'complement_pairings_per_part': counts,
-                     'deck_involutions': decks, 'deck_count': len(decks)})
+                     'deck_involutions': decks, 'deck_count': len(decks),
+                     'edge_pairs_swapped_by_every_deck': forced_pairs})
     assert sum(row['connected'] for row in rows) == 15
     histogram = Counter(row['deck_count'] for row in rows if row['connected'])
     result = {'normalized_covers': 16, 'connected_covers': 15,
               'connected_deck_count_histogram': dict(sorted(histogram.items())),
               'maximum_connected_decks': max(histogram),
               'maximum_base_projections_at_multiplicity_two': 2*max(histogram),
+              'maximum_base_projections_using_forced_edge_pair': 2,
               'covers': rows}
     if output:
         Path(output).parent.mkdir(parents=True, exist_ok=True)

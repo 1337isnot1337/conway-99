@@ -106,7 +106,7 @@ def build_model(roots, grids):
         if grid['rows'] == grid['columns'] == (6, 6, 6):
             row[len(roots)+i] = 1
     ub.append(row)
-    bounds.append(8)  # red_grid_limit.md
+    bounds.append(7)  # eight_red_exclusion.md
     # A triangle has the same grid multiplicity at all three of its points.
     for degree in range(7):
         row = np.array([r['degrees'][degree] for r in roots]
@@ -182,7 +182,7 @@ def replay(path):
     assert np.array_equal(a.astype(int).astype(object)@witness, b.astype(int))
     assert all(c.astype(int).astype(object)@witness <= d.astype(int))
     grid_count = sum(witness[len(roots):len(roots)+len(grids)])
-    print(f'exact aggregate witness checked: {grid_count} grids; includes all-red bound eight')
+    print(f'exact aggregate witness checked: {grid_count} grids; includes all-red bound seven')
 
 
 if __name__ == '__main__':

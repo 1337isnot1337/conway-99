@@ -40,6 +40,18 @@ not start a new SAT or mixed-integer search. These certificates prove the
 stated local exclusions or feasibility of finite relaxations; none is a
 solution of the existence problem.
 
+The bound of seven all-red grids has a separate replay target:
+
+```sh
+make verify-red-grid-bound
+```
+
+It regenerates both covering censuses, compares their full certificate
+archives, enumerates the thirty residual-cycle partitions, and checks the
+twelve surviving spectra by a second implementation using direct cycle
+matrices. The [proof](../research/grids-and-triangles/eight_red_exclusion.md)
+supplies the local and trace arguments excluding those twelve spectra.
+
 The fourteen additional norm-16 exclusions have saved CNF cores and DRAT
 proofs. Build [drat-trim](https://github.com/marijnheule/drat-trim) at revision
 `2e3b2dc0ecf938addbd779d42877b6ed69d9a985`, then run:

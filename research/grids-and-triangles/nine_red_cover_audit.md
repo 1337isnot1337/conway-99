@@ -59,6 +59,21 @@ The disconnected case is handled separately in `red_grid_limit.md`; it
 consists of two K3,3 components and is excluded by the rook eigenspace
 trace argument.
 
+### A common edge-pair gives the stronger auxiliary bound two
+
+All admissible deck involutions of a connected K in fact swap the same
+pair of edges somewhere in K. Each side has at least one complementary
+class pair of sizes 1+1, because the half-size three is odd and each
+class has size at most two. Let {a,a'} be such a pair on the left and
+{b,b'} one on the right. Every deck swaps a with a' and b with b'.
+Complementarity means that these four vertices induce a matching of two
+edges. Every deck swaps these same two edges.
+
+Consequently at most two base projections can share this connected K:
+three projections would give the corresponding two U vertices three
+common neighbors. This improves the auxiliary covering bound, while the
+global result remains at most eight all-red grids.
+
 ## Exact finite control
 
 The script
@@ -73,6 +88,9 @@ preserving the two six-vertex parts. It tests the automorphism condition,
 local bijectivity onto the three opposite fibers, and the complementary
 neighborhood identity. Fifteen normalized covers are connected. Nine have
 four deck involutions; six have one. The disconnected cover has 36.
+For each connected cover the script also lists the nonempty collection
+of edge-pairs swapped by every admissible deck, checking the stronger
+auxiliary bound directly.
 
 ```sh
 .venv/bin/python experiments/workspace/grid_nine_red_covers.py

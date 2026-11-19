@@ -97,3 +97,15 @@ their hypotheses permit them; computational exclusions require exact replay.
   seven with an exact root-label spectral witness. Its exterior incidence
   LP is numerically feasible and the bounded Boolean run is undecided.
   This records a concrete limitation of the current local hemisphere route.
+- Strengthened the all-red bound again, from eight to seven. The remaining
+  27 vertices in the eight-grid case split into points lying in two or three
+  internal triangles. The nontriangle edges are cycles; an invariant-space
+  identity forces their lengths to be multiples of three. Two independent
+  exact calculations leave twelve spectra on five cycle partitions. Local
+  six-cycle vectors and a common-covering trace bound exclude all twelve.
+  The full proof and the 1,296-cover certificate audit passed two separate
+  worker reviews and the coordinating worker's `make verify-red-grid-bound`.
+- Proved that the ternary Hamming graph H(3,3) cannot occur as an induced
+  subgraph. Boundary counting would require seventy-two distinct compatible
+  neighbor triples, while only thirty-six exist. A standard-library control
+  checks the finite Hamming counts.

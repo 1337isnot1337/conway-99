@@ -4,7 +4,7 @@
 six triangle multiplicities in each grid. It retains the signless-incidence
 support criterion, the pointwise fifteen-grid bound, the excluded sole
 six-cycle support, and the crossing-square inequality. It also requires
-integer triangle populations and at most eight all-red grids.
+integer triangle populations and at most seven all-red grids.
 
 For a grid corner p, let a,b be the multiplicities of its two lines. If the
 four other lines include a red line in each direction, the edge of D_p
@@ -16,7 +16,7 @@ for each unordered pair (a,b).
 
 The resulting relaxation has 509 root types and 1,596 possible grid-line
 types. It does not reconstruct intersections between actual grids. Its
-real optimum is approximately 120.586, so it gives no improvement on the
+real optimum is approximately 120.448, so it gives no improvement on the
 existing integer bound of 120. More strongly, its integer version has an
 exactly checked count assignment with 120 grids. This count assignment is
 not a graph, and does not prove that 120 grids are attainable.

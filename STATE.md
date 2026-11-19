@@ -86,13 +86,18 @@ The coordinated work in [issue 2](https://github.com/1337isnot1337/conway-99/iss
 is recorded in [the session log](research/session-ab2f.md). It adds necessary
 conditions and exact exclusions, but does not decide existence.
 
-[The all-red grid argument](research/grids-and-triangles/red_grid_limit.md)
-proves that at most eight grids can have all six triangles contained in six
-grids each. Nine would leave an eighteen-vertex graph whose triangle system
-is a double covering of K3,3. A connected covering has at most four possible
-deck involutions, each usable at most twice. A disconnected covering forces
-eleven disjoint rook grids and an impossible invariant-subspace trace.
-The proof is independent of the accompanying finite covering audit. A separate
+[The all-red grid argument](research/grids-and-triangles/eight_red_exclusion.md)
+proves that at most seven grids can have all six triangles contained in six
+grids each. Eight would leave a 27-vertex graph. Its nontriangle edges form
+cycles on the vertices belonging to exactly two internal triangles. A
+rational invariant-subspace calculation leaves twelve spectra on five
+cycle partitions. Local alternating vectors eliminate two partitions;
+the other three give a common three-cover of K3,3 and violate a compression
+trace bound. Two independent spectral enumerations agree, and all 1,296
+normalized three-covers are checked exactly. The
+[preliminary nine-grid argument](research/grids-and-triangles/red_grid_limit.md)
+uses a double covering and an elementary complementary-neighborhood proof.
+A separate
 [aggregate grid-line model](research/grids-and-triangles/grid_flag_relaxation.md)
 still has an exactly checked integral count assignment at 120 grids.
 

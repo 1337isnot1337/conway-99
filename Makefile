@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-red-grid-bound verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -15,8 +15,7 @@ verify: $(CERTIFICATES)
 
 # Exact certificate replay for the global-constraints research branch.
 # This target performs no new SAT or mixed-integer search.
-verify-global-constraints:
-	"$(PYTHON)" $(WORKSPACE)/grid_nine_red_covers.py
+verify-global-constraints: verify-red-grid-bound
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_certificates.py
 	"$(PYTHON)" $(WORKSPACE)/transversal_constraints_hemisphere_verify.py
 	"$(PYTHON)" $(WORKSPACE)/verify_coupled_counting.py
@@ -27,6 +26,18 @@ verify-global-constraints:
 	"$(PYTHON)" $(WORKSPACE)/completion_constraints_edges.py --replay $(WORKSPACE)/completion-core5-edge-certificate.json
 	"$(PYTHON)" $(WORKSPACE)/completion_constraints_propagation.py --replay $(WORKSPACE)/completion-propagation-certificate.json
 	"$(PYTHON)" $(WORKSPACE)/global_grid_flags.py --verify experiments/logs/session-ab2f/global-grid-flags-integral.json
+
+verify-red-grid-bound:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/"*.json "$$build_dir/"*.log; rmdir "$$build_dir"' EXIT; \
+	"$(PYTHON)" $(WORKSPACE)/grid_nine_red_covers.py --output "$$build_dir/double.json" > /dev/null; \
+	"$(PYTHON)" $(WORKSPACE)/grid_eight_red_covers.py --output "$$build_dir/triple.json" > /dev/null; \
+	"$(PYTHON)" $(WORKSPACE)/eight_red_cycle_spectra.py --output "$$build_dir/spectra.json" > /dev/null; \
+	cmp "$$build_dir/double.json" experiments/logs/grids-and-triangles/grid-nine-red-covers.json; \
+	cmp "$$build_dir/triple.json" experiments/logs/grids-and-triangles/grid-eight-red-covers.json; \
+	cmp "$$build_dir/spectra.json" experiments/logs/grids-and-triangles/eight-red-cycle-spectra.json; \
+	"$(PYTHON)" $(WORKSPACE)/eight_red_hamming_spectral_audit.py "$$build_dir/spectra.json"
 
 # Supply the path to the separately built, pinned drat-trim executable.
 verify-coupled-shells:

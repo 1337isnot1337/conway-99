@@ -1,5 +1,9 @@
 # At most eight grids whose six lines have multiplicity six
 
+The stronger bound of seven is proved in
+[`eight_red_exclusion.md`](eight_red_exclusion.md). This preliminary note
+establishes the grid facts and nine-grid exclusion used there.
+
 Call a triangle red when it belongs to six induced rook grids. Call a grid
 all-red when all six of its lines are red. A hypothetical srg(99,14,1,2)
 contains at most eight all-red grids. This restricts a particular kind of
