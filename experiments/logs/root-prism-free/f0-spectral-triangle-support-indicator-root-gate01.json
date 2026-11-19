@@ -1,0 +1,89 @@
+{
+  "schema": "conway99.f0.triangle-indicator-inventory-root-gate.v1",
+  "status": "AUTHORIZE_ONE_ARTIFACT_ONLY_TRIANGLE_INDICATOR_INVENTORY",
+  "source": {
+    "path": "experiments/workspace/f0-spectral-triangle-support-indicator-inventory-v8.js",
+    "sha256": "5e7e2419d51fdc51e0a204a4df5ac422358189bc68f2e0d28b8e27db753f2d6a",
+    "git_blob": "960c2cc851dfdd1b54a2f57a37bd723e69fdf4b0",
+    "bytes": 11506,
+    "lines": 144
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-configuration01.json",
+    "bytes": 3198,
+    "sha256": "ee2511185c2e5516b570effbf03f448f10a60b43decdedac3c7bc9ae8cc8bb70",
+    "git_blob": "5438378f86181c742157a204c301663383fff6c4"
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "bytes": 8304
+  },
+  "inputs": {
+    "ledger": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01.json",
+      "sha256": "0103baa3822afaae8992e2be6517e6a173615a937a721e3e5a83c724cdc89e86",
+      "git_blob": "7a516562bbdbe26c8bc25c0d7eb1654a6efd79d2",
+      "bytes": 429105
+    },
+    "finalization": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01-finalization.json",
+      "sha256": "1d3e3bb3850c75dd7ae79a6139493d39cede82f7faeb2dfa107de11e25aa9aae",
+      "git_blob": "a72df53d4fcf855fc6203a2220ebab60a066f250",
+      "bytes": 386
+    },
+    "gate": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-root-gate01.json",
+      "sha256": "d1179db268413caabeaddc85e007bab7698ffc89887153699fbdc5a2ae5f1a14",
+      "git_blob": "5f023d4003dfc3844f45315cfe4c01f7c24e277c",
+      "bytes": 5222
+    },
+    "support_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-configuration01.json",
+      "sha256": "c14d0bcb35d3ee393039fd6af0e7e74bce7625c523077428a61fd32c6adec456",
+      "git_blob": "90717cccedaab6f778c19c64b0f9566adb933b4d",
+      "bytes": 4383
+    },
+    "model_acceptance": {
+      "bytes": 7706,
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116"
+    }
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-controls01.json",
+    "sha256": "4294f23bd15a30a950a1bc5e5e439557d24bbd242dbbe5a776e2074a2e3ed437",
+    "git_blob": "4915304872993e08223d9b940eba7ad4ecf2356d",
+    "bytes": 626
+  },
+  "method": {
+    "path": "research/f0-spectral-triangle-support-indicators.md",
+    "sha256": "c2e0028c84c2c85c4e4243db57628077aefd48ce3d6ae14623f079220db51ea6",
+    "git_blob": "857af186ca91584f0d4d46e6bfe401fd3eaf3907",
+    "bytes": 3879
+  },
+  "independent_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-independent-source-review01.json",
+    "bytes": 6185,
+    "sha256": "abfcd108cc5137aacba5adc1072aab5c2f861f06be3ccab90ec13f69fbedd0c3",
+    "git_blob": "d75ce6691a9055069883b414ef16a7d7867b3502"
+  },
+  "root_complete_configuration_method_and_review_read": true,
+  "root_relies_on_independent_complete_source_review": true,
+  "maximum_ms": 10000,
+  "maximum_report_bytes": 16777216,
+  "maximum_main_calls": 1,
+  "automatic_retries": 0,
+  "maximum_native_model_builds": 0,
+  "maximum_optimizer_calls": 0,
+  "heavy_arithmetic_slot": "Assigned exclusively to /root/independent_sets for this one inventory after query44633211291 and its independent cold completed.",
+  "preserve_report_and_finalization_before_hashing": true,
+  "acceptance_requires_complete_report_and_passing_within_bounds_finalization": true,
+  "required_finalization_status": "PASS_INVENTORY_AND_SERIALIZATION",
+  "scope": "Deduplicate proposed indicator identities and sizes over the exact saved support artifact only. This does not authorize native model use.",
+  "future_model_use_requires_complete_independent_literal_support_reconstruction": true,
+  "graph_or_component_exclusion_authorized": false
+}

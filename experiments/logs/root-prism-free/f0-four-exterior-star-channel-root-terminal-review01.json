@@ -1,0 +1,74 @@
+{
+  "schema": "conway99.f0.four-star-channel-root-terminal-review.v1",
+  "status": "PASS_SOURCE_REVIEWED_EXACT_STAR_INVENTORY_ARTIFACT_CHECK",
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory01.json",
+    "sha256": "f522a8aa9ae699660a36dc78a97ca63bfe19bf97c4a075362a8951db0db71df3",
+    "git_blob": "f832577546031f48359dcb583b22f1cfd834a65a",
+    "bytes": 1903849,
+    "mode": "100644"
+  },
+  "finalization": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory01-finalization.json",
+    "sha256": "0ce007feb9bba740240d7b0fb2f506deb0571f90152ffa47ad841597c16b50fe",
+    "git_blob": "7d513643652031ad55b11bc6c33fa516a71c45c5",
+    "bytes": 348,
+    "mode": "100644"
+  },
+  "execution": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-owned-execution01.json",
+    "sha256": "24d8ed5e4d6c469b749848c6beea554bd8d7750f6831bfcec3998ddc1af4a7c9",
+    "git_blob": "d22ebcc4ed914316ad864e5c9d6aa6cee769f7f3",
+    "bytes": 4829,
+    "mode": "100644"
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-root-gate01.json",
+    "bytes": 7981,
+    "sha256": "50b78ede9acf3ab66f9ecef126e960ddff0ad26db87bc4a75530ff3e4d3f5769",
+    "git_blob": "7f58c555013af5d70ab88357f2d223f8016f7011",
+    "mode": "100644"
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-controls01.json",
+    "sha256": "70969bc33d7ee35fd58eb2e18d7592cf2606fee779c73625ba9e0291a778a1ea",
+    "git_blob": "365d491b7748eb28c91fa95e9826e1b8c90a317b",
+    "bytes": 1307,
+    "mode": "100644"
+  },
+  "controls_finalization": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-controls01-finalization.json",
+    "sha256": "d98ce18d41989549d7b12f6cfe52619514d1d683291b60825cdff72ff6a1a81b",
+    "git_blob": "989eee349647a91b8bc7b63d2d83ad899a0f0b41",
+    "bytes": 140,
+    "mode": "100644"
+  },
+  "exact_actual_bytes_and_all_configured_input_bindings_checked": true,
+  "complete_channel_identity_deduplication_checked": true,
+  "all_46020_origin_links_and_per_channel_origin_counts_checked": true,
+  "all_2448_channel_support_inclusions_in_reported_quota_one_witnesses_checked": true,
+  "all_23010_replacement_identities_checked": true,
+  "counts": {
+    "retained_rows": 23010,
+    "old_four_terms": 401874,
+    "old_star_occurrence_terms": 332844,
+    "channel_variables": 2448,
+    "channel_equalities": 2448,
+    "unique_star_edge_terms": 17484,
+    "channel_equality_terms": 22380,
+    "three_term_rows": 23010,
+    "three_term_row_terms": 69030,
+    "replacement_block_rows": 25458,
+    "replacement_block_terms": 91410,
+    "term_change_vs_old_four": -310464,
+    "proposed_model_variables": 71382,
+    "proposed_model_rows": 260042,
+    "complete_origin_links": 46020,
+    "unique_quota_one_mixed_witnesses": 1002
+  },
+  "source_review_used_for_original_domain_and_row_reconstruction": true,
+  "separate_full_native_replay_required": true,
+  "existing_native_model_changed": false,
+  "optimizer_calls": 0,
+  "graph_or_component_exclusion_claimed": false
+}

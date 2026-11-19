@@ -1,0 +1,167 @@
+{
+  "schema": "conway99.f0.four-star-channel-inventory-root-gate.v1",
+  "status": "AUTHORIZE_ONE_CONTROL_RUN_AND_CONDITIONAL_ONE_EXACT_STAR_INVENTORY",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_star_channel_inventory_v2.js",
+    "sha256": "0c1386cf9c8f687f4e798f8d634180987392818c84aaff5eb27826eacc327f95",
+    "git_blob": "01ef73964d2879c42e10bcd468e64af67ba320c9",
+    "bytes": 16169,
+    "lines": 198
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory-configuration02.json",
+    "bytes": 5626,
+    "sha256": "2bcb34a142a934e04ae30205d2fda3c2d0645220f34c747f40da2fdf03d48c5a",
+    "git_blob": "5d3b4091cfb8d4b836a2494a3ea540f5e4ea8954"
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "bytes": 8304
+  },
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64_gzip"
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "bytes": 219390,
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "encoding": "base64_gzip"
+    },
+    "four_inventory": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01.json",
+      "bytes": 10809436,
+      "sha256": "7e9df6f8798483bbe4be386f857b8997dffd08dd409080c258fde2b9bcbbfb22",
+      "git_blob": "b41abfd71d80c163a6180f6ab5276bfbed1a9e2e",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "four_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01-finalization.json",
+      "bytes": 2856,
+      "sha256": "88fcdf559e197a221c3983e574423d945d35bb3dd6a502b67b566f5ede2d29bb",
+      "git_blob": "7112bb771b656c79df81a145995306f0675fdac0",
+      "encoding": "utf-8"
+    },
+    "four_certificate_replay": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01.json",
+      "bytes": 135914,
+      "sha256": "5a3d211780e0a89158cc9442896b960759851f9bf78aed0f5750bb696a170c82",
+      "git_blob": "abe7c99ab4f4ef6f17dd2dec1b8124cca892f3d8",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "four_certificate_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01-finalization.json",
+      "bytes": 856,
+      "sha256": "05cdcd83ae7a7c93b2afd810c3c2dd8d109818ed369bb9a45f7d342da6fd7a11",
+      "git_blob": "893cd662ab4bd8ac86470921dee7f39f93e6cd9d",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "four_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-root-acceptance01.json",
+      "bytes": 3576,
+      "sha256": "74341c2db1458b35a8b932bb7fbde28824b9eadf09cbe404e1d5bbf5a69150a9",
+      "git_blob": "25fdbb37f6bcde2da6c08d70a36ad4e3164892ab",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "native_root_acceptance": {
+      "bytes": 7706,
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116",
+      "encoding": "utf-8"
+    },
+    "native_cold": {
+      "bytes": 14259,
+      "git_blob": "2f13275d00aca2d1cc2add3414aa8c2ed4062568",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "sha256": "75e0150b0c0ed6f6b7c5d84c270790a4311a5a81382afe0a32e360dd2d126628",
+      "encoding": "utf-8"
+    }
+  },
+  "method": {
+    "path": "research/root_prism_free_f0_four_exterior_star_channels.md",
+    "sha256": "a7f4e2c32f782fa580211c8bd1ba2b6b32e095c3ea793af54ab405e19f34ca7b",
+    "git_blob": "0930f7652e0af0f2e91372f9dcdf159785858af2",
+    "bytes": 9044
+  },
+  "complete_original_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-independent-source-review01.json",
+    "sha256": "60bc79e4d64a2e7f2993a4d8908a7bf526ccab725c3fdf58aaaec0f559cb6007",
+    "git_blob": "691252853fa37dcfc536060f3648adf96b25b9ac",
+    "bytes": 5930,
+    "mode": "100644"
+  },
+  "exact_v2_delta_review": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-independent-source-review02.json",
+    "sha256": "9154cf86580e5064d8bbd23dba50d14bb9f8adc7b0dd0fbbb35edf7f8e824cb3",
+    "git_blob": "46f5cc2a3ade0de0ccadba83ecddafba7a8df55a",
+    "bytes": 1832,
+    "mode": "100644"
+  },
+  "controls_source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_star_channel_controls_v8.js",
+    "sha256": "fb2bb71db1c600f9d4d6f2247c4602037d58aa4045db9ca61c2d354bba907181",
+    "git_blob": "f1de090fae6b89af5c03f64e3a541b0bd08ec0f6",
+    "bytes": 4863,
+    "lines": 64
+  },
+  "controls_configuration": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-controls-configuration01.json",
+    "bytes": 1305,
+    "sha256": "ca5bf2a129474f449cbe14b860f3ac32948ae242f0e14fceb9c5fd8e13d43ac1",
+    "git_blob": "f5bc6784459456fce3633c87cafd92e0f10fff5a"
+  },
+  "root_controls_review": {
+    "complete_source_lines_read": 64,
+    "complete_configuration_read": true,
+    "source_and_configuration_exact_hashes_checked": true,
+    "quota_one_scaled_integer_identity_and_unique_extension_checked_by_source": true,
+    "actual_quota_one_subset_and_negative_inclusion_controls_present": true,
+    "exact_channel_identity_and_all_origins_controls_present": true,
+    "signed_native_clause_literal_controls_present": true,
+    "inventory_factory_evaluated_by_controls": false,
+    "actual_case_data_read_by_controls": false,
+    "blockers": []
+  },
+  "root_complete_method_configuration_and_both_independent_reviews_read": true,
+  "root_relies_on_independent_full_inventory_source_review_and_exact_v2_delta_review": true,
+  "maximum_controls_calls": 1,
+  "maximum_controls_ms": 10000,
+  "required_controls_status": "PASS_EXACT_STAR_CHANNEL_IDENTITY_AND_DOMAIN_CONTROLS",
+  "required_controls_finalization_status": "PASS_CONTROLS_AND_SERIALIZATION",
+  "inventory_authorization_conditional_on_controls_and_finalization_pass": true,
+  "maximum_inventory_calls": 1,
+  "limits": {
+    "inventory_ms": 30000,
+    "total_ms": 60000,
+    "report_bytes": 16777216,
+    "channels": 21600
+  },
+  "required_inventory_status": "PASS_COMPLETE_EXACT_STAR_CHANNEL_INVENTORY",
+  "required_finalization_status": "PASS_COMPLETE_CHANNEL_INVENTORY_AND_SERIALIZATION",
+  "acceptance_requires_complete_report_and_passing_within_bounds_finalization": true,
+  "preserve_both_actual_texts_before_hashing": true,
+  "automatic_retries": 0,
+  "maximum_native_model_builds": 0,
+  "maximum_optimizer_calls": 0,
+  "heavy_arithmetic_slot": "Assigned exclusively to /root/master_continuation after completion of the triangle indicator inventory. Release after this one inventory terminates.",
+  "existing_native_model_changed": false,
+  "scope": "Exact row identity and size inventory over all accepted retained four-exterior rows and original edge namespace; no native model or solver execution.",
+  "future_model_use_requires_new_frozen_builder_and_complete_independent_native_replay": true,
+  "graph_or_component_exclusion_authorized": false
+}

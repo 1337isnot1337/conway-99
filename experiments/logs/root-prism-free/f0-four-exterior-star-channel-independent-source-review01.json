@@ -1,0 +1,65 @@
+{
+  "complete_note_source_and_configuration_read": true,
+  "configuration": {
+    "bytes": 5626,
+    "git_blob": "10799a94d4dbeba05f5651136408715520be5e79",
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory-configuration01.json",
+    "sha256": "dff5dc7ecfbad93d86563fec01c4541947950101be1835deea9822b6606fe39c"
+  },
+  "controls_run": 0,
+  "equivalence_note": {
+    "bytes": 9044,
+    "git_blob": "0930f7652e0af0f2e91372f9dcdf159785858af2",
+    "sha256": "a7f4e2c32f782fa580211c8bd1ba2b6b32e095c3ea793af54ab405e19f34ca7b",
+    "title": "Exact star channels for the retained four-exterior rows"
+  },
+  "graph_constructed": false,
+  "inventories_run": 0,
+  "mathematical_or_encoding_blocker_found": false,
+  "mathematical_review": {
+    "channel_upper_bound": "Each origin uses exactly one of the center signature's3 included sites and one of15 excluded sites. The unordered pair fixes the star, so480*3*15=21600 bounds distinct channels before exact-support merging.",
+    "clause_semantics": "On Boolean variables the new row is exactly not y_bc or p_b or p_c. Signed native literal -(540+edge_id)-1 is correct; a later Boolean-clause model needs an independently extended checker.",
+    "counts": "The original star-occurrence count is401874-3*23010=332844. With C channels and unique-star size sum S, new terms are69030+S+2C, variables68934+C and rows257594+C.",
+    "linear_lower_domain": "The replacement domain[-2,0] adds no lower restriction beyond y>=0 and both channels<=1.",
+    "quota_one_channel_bounds": "Every star is a coefficient-one subset of an inherited mixed equation with RHS x_center. Nonnegative omitted edge variables prove 0<=L<=x_center, so p=x_center-L lies in[0,1].",
+    "real_projection": "Relaxing the new channels gives the same projected real feasible set because the same unique extension satisfies all new bounds. Keeping auxiliaries integral with real originals is explicitly distinguished.",
+    "row_identity": "The accepted y_bc+L_b+L_c-x_b-x_c expression equals y_bc-p_b-p_c exactly, with every star edge and coefficient retained.",
+    "unique_extension": "For Boolean original variables p is forced to an integer in[0,1]; declaring it Boolean loses no original solution. The equality gives a unique extension."
+  },
+  "native_model_builds": 0,
+  "native_model_decodes": 0,
+  "qualifications": [
+    "The finalization field named inventory_ms is evaluated after serialization and therefore measures elapsed time since inventory start including report work. The actual30-second inventory deadline is enforced through the post-inventory tick; the60-second total bound includes serialization. The author will preserve v1 and rename the field in an unrun successor.",
+    "The source's18-component nonadjacency/common-neighbor check is an additional necessary check. Full21-core prism validity is inherited from the accepted original-row authority; the exact encoding theorem itself only needs those rows and the checked quota-one support inclusions.",
+    "A complete result must have both a complete report and a passing within-bounds finalization; a PASS-looking arithmetic report by itself is not accepted.",
+    "The large four-inventory input was not downloaded or enumerated during this review. Its previously accepted binding is reused; the future gated inventory performs its declared complete retained-row checks.",
+    "The note title/blob identity is exact; its intended repository filename was not supplied with the review request, so no filename is guessed."
+  ],
+  "reviewer": "master_review",
+  "schema": "conway99.f0.four-exterior-star-channel-independent-source-review.v1",
+  "solver_calls": 0,
+  "source": {
+    "bytes": 16125,
+    "git_blob": "d8f8ea513d9609b9164a59157afe880ba6ce29e6",
+    "lines": 198,
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_star_channel_inventory_v8.js",
+    "sha256": "b1a59689a4f8f0f8a67b1761a51b58cf00ad925030e7d2e15082335c9a8e9c58"
+  },
+  "source_imports_or_factory_evaluations": 0,
+  "source_lines": 198,
+  "source_review": [
+    "All nine exact inputs are bound by bytes,SHA256 and Git blob; compressed domain/overlay additionally bind their raw identities.",
+    "The full480-signature q formula and all68394 eligible edges are reconstructed, and every saved neighbor list and the canonical edge namespace are compared.",
+    "Only the1884 original literal zeros define star supports, matching the accepted retained family. Later spectral zeros are not silently substituted.",
+    "All73404 saved cases are indexed by original row ID; every retained row preserves every saved origin. There is no retained-origin truncation.",
+    "Each retained positive support is partitioned exactly into the central edge and two nonempty endpoint stars, then compared to the complete stars recomputed from neighbors/core-pair membership/original zeros.",
+    "The actual own quota1 and cross quotas2 are checked for every retained origin. Full positive mixed-row supports and native row indices154430+18*center+site are retained with selector coefficient-1.",
+    "Channel keys use the center and the complete sorted edge set. Each quota-one witness and origin is retained when supports merge.",
+    "Relabeling is deterministic by center then lexicographic exact support; replacement rows preserve the accepted retained-ID order and different centers retain different channel IDs.",
+    "The source checks all23010 retained rows,401874 old terms,332844 old star occurrences and the hard21600 channel bound. It fails rather than truncating.",
+    "No producer is imported and no native model is decoded,built or queried. This is an encoding/size inventory over accepted rows, not a new prism-case proof."
+  ],
+  "status": "PASS_EXACT_ENCODING_AND_COMPLETE_INVENTORY_SOURCE_REVIEW_WITH_TIMING_LABEL_QUALIFICATION",
+  "this_review_authorizes_execution": false,
+  "whole_component_excluded": false
+}

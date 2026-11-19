@@ -1,0 +1,121 @@
+{
+  "schema": "conway99.f0.four-star-channel-configuration.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_star_channel_inventory_v8.js",
+    "sha256": "b1a59689a4f8f0f8a67b1761a51b58cf00ad925030e7d2e15082335c9a8e9c58",
+    "git_blob": "d8f8ea513d9609b9164a59157afe880ba6ce29e6",
+    "bytes": 16125,
+    "lines": 198
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "bytes": 8304
+  },
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64_gzip"
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "bytes": 219390,
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "encoding": "base64_gzip"
+    },
+    "four_inventory": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01.json",
+      "bytes": 10809436,
+      "sha256": "7e9df6f8798483bbe4be386f857b8997dffd08dd409080c258fde2b9bcbbfb22",
+      "git_blob": "b41abfd71d80c163a6180f6ab5276bfbed1a9e2e",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "four_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01-finalization.json",
+      "bytes": 2856,
+      "sha256": "88fcdf559e197a221c3983e574423d945d35bb3dd6a502b67b566f5ede2d29bb",
+      "git_blob": "7112bb771b656c79df81a145995306f0675fdac0",
+      "encoding": "utf-8"
+    },
+    "four_certificate_replay": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01.json",
+      "bytes": 135914,
+      "sha256": "5a3d211780e0a89158cc9442896b960759851f9bf78aed0f5750bb696a170c82",
+      "git_blob": "abe7c99ab4f4ef6f17dd2dec1b8124cca892f3d8",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "four_certificate_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01-finalization.json",
+      "bytes": 856,
+      "sha256": "05cdcd83ae7a7c93b2afd810c3c2dd8d109818ed369bb9a45f7d342da6fd7a11",
+      "git_blob": "893cd662ab4bd8ac86470921dee7f39f93e6cd9d",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "four_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-root-acceptance01.json",
+      "bytes": 3576,
+      "sha256": "74341c2db1458b35a8b932bb7fbde28824b9eadf09cbe404e1d5bbf5a69150a9",
+      "git_blob": "25fdbb37f6bcde2da6c08d70a36ad4e3164892ab",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "native_root_acceptance": {
+      "bytes": 7706,
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116",
+      "encoding": "utf-8"
+    },
+    "native_cold": {
+      "bytes": 14259,
+      "git_blob": "2f13275d00aca2d1cc2add3414aa8c2ed4062568",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "sha256": "75e0150b0c0ed6f6b7c5d84c270790a4311a5a81382afe0a32e360dd2d126628",
+      "encoding": "utf-8"
+    }
+  },
+  "limits": {
+    "inventory_ms": 30000,
+    "total_ms": 60000,
+    "report_bytes": 16777216,
+    "channels": 21600
+  },
+  "preparation_status": "SOURCE_ONLY_NOT_EXECUTED",
+  "main_authorized": false,
+  "main_calls_so_far": 0,
+  "planned_main_calls": 1,
+  "automatic_retries": 0,
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "frozen_native_model_changed": false,
+  "original_model_raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "original_variables": 68934,
+  "original_rows": 257594,
+  "retained_four_rows": 23010,
+  "retained_four_terms": 401874,
+  "original_star_occurrence_terms": 332844,
+  "exact_unique_channel_count": null,
+  "exact_unique_channel_count_is_pending_authorized_inventory": true,
+  "channel_deduplication": "Same center selector and exactly the same sorted original live-star edge IDs. Every core-pair origin and quota-one witness is retained.",
+  "planned_definition": "p + sum(original live-star edge bits) - x_center = 0",
+  "planned_three_term_row": "y_central - p_left - p_right in [-2,0]",
+  "optional_explicit_clause": "not y_central or p_left or p_right",
+  "original_zeros_used_to_define_stars": "Only the accepted 1884 literal zeros used by the original retained family. No later spectral zero is substituted into a star.",
+  "original_full_rows_retained_in_input": true,
+  "no_case_census_or_determinant_census": true,
+  "inspection_scope": "An identity and size inventory over the accepted retained rows, with complete original edge namespace reconstruction. No native model is built.",
+  "execution_requires_separate_root_gate": true,
+  "model_use_requires_new_frozen_builder_and_independent_full_native_replay": true
+}

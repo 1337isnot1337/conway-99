@@ -2,11 +2,19 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+Checkpoint 88 publishes the [combined formulation plan](research/root_prism_free_f0_combined_exterior_model_plan.md) and its complete finite inventories. The exact star reformulation replaces 401,874 coefficient occurrences by 91,410 using 2,448 channels. The source-reviewed inventory passes in 34.336 seconds through serialization. Root checks all channel identities, 46,020 origin links and reported quota-one support inclusions. This reformulation alone adds no mathematical exclusion.
+
+The complete triangle-support replay passes in 7.666 seconds. It separately reconstructs all 68,394 original edges, 1,956 zero authorities, 132 targets, 6,540 structural records and 5,364 surviving records. Root accepts every exact binding and the full normalized table hash. The triangle encoding proposes 5,364 indicators and 21,540 rows for the 84 live targets.
+
+The complete cap-one forest inventory passes in 4.586 seconds, covering 48 pairs and 23,040 candidate dispositions. All 48 pairs remain active, with 3,936 live wedges; its formulation has 3,984 new variables and 15,888 rows. Root reconstructs every saved native row key. A separate literal support-universe replay remains pending. No native build or solver query belongs to these inventories.
+
+The combined plan has 80,730 variables and 297,470 rows, with 192,096 fewer coefficient occurrences than the previous model. The actual-input configuration, native build and separate complete native replay remain pending. The prior query remains UNKNOWN with no vector; no unchanged retry, graph or contradiction is claimed.
+
+## Earlier checkpoints
+
 Checkpoint 87 accepts the [completed stronger-model query](experiments/logs/root-prism-free/f0-strengthened-query-root-acceptance01.json): **UNKNOWN with no primary or additional vector**. [Run 44633211291](https://github.com/1337isnot1337/conway-99/actions/runs/44633211291) executes checkpoint 86 once. Native time is 175.039 seconds within the declared 180-second allowance; the query owner finishes in 181.417 seconds and the complete query/replay pipeline in 182.318 seconds. Separate independent controls and terminal replay pass. All owners reap their children and stop their process groups without an overrun.
 
 All 33 original small output files are preserved exactly. The duplicate native model export is restorable from the accepted archive. The [actual profile](experiments/logs/root-prism-free/f0-strengthened-query-terminal-profile01.json) records search beginning at 19.69 seconds, 137,871 conflicts and 414,040 branches. This is not a presolve-only timeout. No unchanged retry is authorized. The next preparation is an exact short formulation of the retained four-exterior rows and complete triangle/common-neighbor constraints. Those preparations have not changed the accepted model. General exterior pair caps, a compatible second component and unrestricted existence remain unresolved.
-
-## Earlier checkpoints
 
 Checkpoint 86 accepts the [actual zero-solve preflight](experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-acceptance01.json) and publishes a [separate one-query authorization](experiments/logs/root-prism-free/f0-strengthened-query-root-gate01.json). Preflight run 44632464085 passes in 6.358 worker seconds and 6.535 owner seconds, with no solver construction or call and no overrun. Exact native model bytes, parameters and response/integer controls match the frozen configuration. All twelve original small output files are preserved without rounding the large control integer.
 

@@ -1,0 +1,39 @@
+{
+  "schema": "conway99.f0.four-exterior-star-channel-source-review-addendum.v1",
+  "status": "PASS_LABEL_ONLY_SUCCESSOR_OF_COMPLETELY_REVIEWED_SOURCE",
+  "prior_review": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-independent-source-review01.json",
+    "sha256": "60bc79e4d64a2e7f2993a4d8908a7bf526ccab725c3fdf58aaaec0f559cb6007",
+    "git_blob": "691252853fa37dcfc536060f3648adf96b25b9ac",
+    "bytes": 5930,
+    "mode": "100644"
+  },
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_star_channel_inventory_v2.js",
+    "sha256": "0c1386cf9c8f687f4e798f8d634180987392818c84aaff5eb27826eacc327f95",
+    "git_blob": "01ef73964d2879c42e10bcd468e64af67ba320c9",
+    "bytes": 16169,
+    "lines": 198
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory-configuration02.json",
+    "sha256": "2bcb34a142a934e04ae30205d2fda3c2d0645220f34c747f40da2fdf03d48c5a",
+    "git_blob": "5d3b4091cfb8d4b836a2494a3ea540f5e4ea8954",
+    "bytes": 5626
+  },
+  "note": {
+    "path": "research/root_prism_free_f0_four_exterior_star_channels.md",
+    "sha256": "a7f4e2c32f782fa580211c8bd1ba2b6b32e095c3ea793af54ab405e19f34ca7b",
+    "git_blob": "0930f7652e0af0f2e91372f9dcdf159785858af2",
+    "bytes": 9044
+  },
+  "exact_reversal_of_one_field_name_recovers_all_v1_source_bytes": true,
+  "only_configuration_change_is_current_source_binding": true,
+  "change": "Rename finalization.inventory_ms to elapsed_since_inventory_start_including_serialization_ms; identical expression, arithmetic, limits, checks and output contents otherwise.",
+  "mathematical_or_encoding_blockers": [],
+  "source_evaluations": 0,
+  "controls_run": 0,
+  "actual_inventories": 0,
+  "native_or_solver_calls": 0,
+  "execution_authorized_by_review": false
+}
