@@ -1,0 +1,29 @@
+{
+  "status": "coordinator source and mathematical review PASS",
+  "reviewer": "coordinator; not the source author",
+  "sources": [
+    {
+      "path": "experiments/workspace/grid_free_order10_complement_domains.py",
+      "sha256": "4961411ec0f7671abb7e34c5dbd4ec257ac98f9bffcb745a408e979751179ed8"
+    },
+    {
+      "path": "research/grids-and-triangles/grid_free_order10_complement_domains.md",
+      "sha256": "d628055b29d1eace125dc9af56f52a54faf46909deeaec649f44735ca7dec74e"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-complement-domains.json.gz",
+      "sha256": "67ab98b4e727c6de1a7e79fddec560942963b6c93fdc5901ede8b38dea5f2b30"
+    }
+  ],
+  "checks": [
+    "Complete source and mathematical note read independently by coordinator.",
+    "High-mask class values are binary by the common-neighbor cap.",
+    "Unique selected vertex gives a labelled embedding bijection and sparse child congruence without an automorphism divisor.",
+    "Quota-one reduction includes every other allowed mask, including size-two classes.",
+    "All candidate selected rows match parent rows coefficientwise; no point-dependent pruning.",
+    "Author replay and nonzero literal size-two-child control inspected.",
+    "One 120-second complete scan of 737 new cases and all 916 scalar child blocks authorized; any negative needs independent literal replay before optimizer use."
+  ],
+  "independent_full_numerical_scan_repeated": false,
+  "unrestricted_resolution_claimed": false
+}

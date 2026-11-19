@@ -616,3 +616,15 @@ their hypotheses permit them; computational exclusions require exact replay.
   atoms with positive rational weights. A separate literal constructor
   checks every matrix entry. This closes the pointwise integer quadratic
   route in those flags at this point, without realizing graph neighborhoods.
+- The complete eight-root projector build covers all 916 roots and 3,664
+  blocks at the latest integer count point. Exact contractions and nine
+  kernel checks per block pass. Numerical separation finds no direction;
+  no exact PSD certificate follows. All 29 reusable cache chunks are kept.
+- The same cache gives exact class-size second moments. All 68,176
+  optimal shifted-integer quadratic inequalities pass. This tests every
+  integer shift for each class, without an eigensystem or optimizer.
+- Seven-root absence-conditioned moments reduce to parent-minus-child
+  congruences. A residual quota-one pair makes 4,478 cases positive sums
+  of child matrices. The complete remaining domain has 737 cases over
+  82 roots, with 48,785 coefficientwise selected-row checks and a literal
+  control that includes a size-two child class. A bounded scan is prepared.

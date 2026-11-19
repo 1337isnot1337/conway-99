@@ -480,3 +480,21 @@ has an optimizer-free replay of all 120 literal products and all 225
 symmetric moment entries. The positive rational mixture is a finite
 moment certificate, with no graph-realization claim.
 
+## Complete eight-root projector cache
+
+The [full projector record](../research/grids-and-triangles/grid_free_order10_projector_full_scan.md)
+binds all 916 roots, 3,664 blocks, and 29 compressed cache chunks. Its
+publication manifest lists every chunk explicitly. The run contracts
+the exact integer point and checks all universal kernels before numerical
+separation. Finding no separator does not certify positive semidefiniteness.
+
+The [class-size continuation](../research/grids-and-triangles/grid_free_order10_projector_integer_classes.md)
+uses this cache to recover second moments coefficientwise. It checks
+all 68,176 classes and every integer shift by the exact minimizing shift.
+The saved table records every first moment, second moment, and result.
+
+The [complement-domain package](../research/grids-and-triangles/grid_free_order10_complement_domains.md)
+has its own complete regeneration and sparse-lift replay. It depends on
+the scalar seven-root and eight-root caches, not on a numerical PSD claim.
+Its 737 remaining cases are a prepared domain, not an exclusion.
+

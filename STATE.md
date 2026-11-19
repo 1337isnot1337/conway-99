@@ -145,6 +145,21 @@ moment matrix. Independent literal products verify all 120 distinct
 entries. Thus no pointwise quadratic inequality based only on these
 flag-value restrictions can reject this point. The atoms are not
 claimed to be realizable graph neighborhoods or integer root populations.
+The [complete eight-root projector family](research/grids-and-triangles/grid_free_order10_projector_full_scan.md)
+now has all 3,664 blocks and 13,735,344 lower entries. The complete scan
+at that integer point finds no separator. Every contraction and all nine
+kernel identities per block are exact, but numerical separation supplies
+no PSD certificate. The reusable cache retains all 916 roots and every
+allowed neighborhood mask. A separate
+[integer class-size calculation](research/grids-and-triangles/grid_free_order10_projector_integer_classes.md)
+checks the optimal shifted quadratic for all 68,176 classes exactly.
+All pass, so this family gives no further cut.
+The [seven-root complement preparation](research/grids-and-triangles/grid_free_order10_complement_domains.md)
+expresses absence-conditioned moment matrices as differences of existing
+parent and child blocks. Residual-pair identities make 4,478 of 5,215
+cases positive sums of child blocks. The remaining 737 cases over 82
+roots have complete sparse lifts and coefficientwise zero-row checks.
+This preparation makes no point-feasibility or exclusion claim.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
