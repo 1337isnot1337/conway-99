@@ -21,3 +21,21 @@ $$
 n_b+n_c=3
 $$
 for every distinct $b,c$. This would require six equal integers all equal to $3/2$. There are 54 exterior vertices, so the configuration is impossible.
+
+## At most 24 full triangles and 112 grids
+
+The [component checker](../../experiments/workspace/full_triangle_components.py) enumerates the following necessary graphs. An edge has at most one common neighbor: two full partners of a full triangle are anticomplete unless they lie in its same grid. If three form a triangle in $H$, they form a grid, and every other member of the component is adjacent to exactly one of the three. Let $d$ denote degree in $H$. The number of grids with at least two full lines incident to a vertex is $d$ minus its number of incident triangles of $H$.
+
+By the [branching exclusion](branching-full-triangles.md), either each vertex is incident to at most three such grids, or the component is a single family of four to six grids on a common triangle. For the first category start with one vertex and extend by a neighborhood consisting of at most three groups, each a single vertex or an adjacent pair. Check the common-neighbor and triangle conditions, the three-grid bound and positive semidefiniteness of $3I-3H+J$ after each extension. All these conditions hold on connected induced subsets of a valid component. A common grid that contributes just one neighbor in a subset still counts only once there. Canonical labeling identifies duplicates, and integer fraction-free elimination tests the Gram form, including zero pivots. For the second category choose which of the four to six grids contribute two other full triangles; the others contribute one each.
+
+This gives 200 candidates including the singleton. Apply the forced-triangle rule above until it stops. A distinct saturated vector must be disjoint from all previously generated triangles, and its inner product with each must be $-2$ or $1$. A saturated triangle has at most twelve three-edge partners. Every zero-sum triple of distinct generated vectors gives a grid. The initially marked full triangles can lie in at most six, and the other generated triangles in at most four: a triangle lying in five grids automatically lies in six, since the missing-axis vectors cannot have a nonisolated vertex of degree one. If a generated triangle were full, its matching connection to an original full triangle would put it in the same component and it would already be marked. There are 150 candidates after these tests. Removing those whose generated graph is the forbidden fifteen-triangle configuration leaves 48.
+
+Each component of size $m$ with $a$ edges belonging to no triangle of $H$ and $c$ triangles contributes $a$ grids with exactly two full triangles and $c$ grids with three. In particular it contributes $a+2c$ to $b_2+2b_3$. For a total of $t$ full triangles, maximize the sum of these contributions by the integer recurrence
+$$
+D(0)=0,\qquad D(t)=\max_{m\le t}\{D(t-m)+a+2c\}
+$$
+over the remaining component types. At $t=24,25,26,27,28$ the upper bounds are $36,36,37,38,40$. Since $g\ge 6t-b_2-2b_3$, the last four would require at least $114,119,124,128$ grids, respectively. The previous bounds $g\le113$ and $4t\le g$ imply **$t\le24$**.
+
+Finally suppose $g=113$. The inequality $21g\le2277+4t$ forces $t=24$ and equality at every preceding step. In particular every triangle of positive grid degree $d$ has $s_T=12-2d$: the [capacity bound](disjoint-full-bounds.md) replaces $s_T$ by this upper bound with strictly positive coefficient $\min(2,d)$. A grid with exactly two full lines would have a saturated third parallel line of degree one to four and deficit zero, contradicting equality. Thus $b_2=0$. Repeating the recurrence using only components with $a=0$ gives $2b_3\le28$ at $t=24$, requiring $g\ge144-28=116$. This excludes 113.
+
+Consequently there are at most **112 grids** and at least **2,142 percolating nonedges**. At least seven triangles have grid degree at most two, since the total degree is at most $672$, at least 21 short of $3\cdot231$.

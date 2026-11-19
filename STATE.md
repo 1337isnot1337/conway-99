@@ -91,3 +91,5 @@ The [thirteen-grid classification](research/grids-and-triangles/fourteen-grid-ro
 The [parallel deficit inequality](research/grids-and-triangles/parallel-triangle-deficits.md) implies that two parallel full triangles force a partition into 33 triangles. There are 35 marked cores for the third parallel line.
 
 The [five-grid branching contradiction](research/grids-and-triangles/branching-full-triangles.md) gives at least three grids having exactly one full triangle per full triangle on average. The global bounds become 113 grids, 2,124 percolating nonedges, 1,206 two-edge triangle pairs, and five triangles on at most two grids.
+
+The [full-component census](research/grids-and-triangles/full-triangle-components.md) reduces 200 candidate components to 48. It gives 24 full triangles and 112 grids as upper bounds, and 2,142 percolating pairs and seven triangles of degree at most two as lower bounds.
