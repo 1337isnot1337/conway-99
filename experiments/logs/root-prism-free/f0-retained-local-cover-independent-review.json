@@ -1,0 +1,64 @@
+{
+  "schema": "conway99.f0.retained-local-cover.independent-review.v1",
+  "status": "PASS: universal guarded cover and auxiliary-extension review",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_retained_local_cover.py",
+    "sha256": "922ad60fed6ae46f8a3bab51ea419a56fe3703177111e48104e6a2b3e426974a",
+    "lines_read": 135
+  },
+  "certificate": {
+    "path": "experiments/logs/root-prism-free/f0-retained-local-cover01.json",
+    "sha256": "1334c9d6a1028a9a55b9d31dcec5f09760c28e3e4b811d50eec5392d11c1e094"
+  },
+  "attribution_source": {
+    "path": "experiments/workspace/root_prism_free_f0_exterior_retained_attribution.py",
+    "sha256": "2d4c46c711aa7f031b89b64107376238c2f29704e8dd90ca51bbda4bceff0d76",
+    "lines_read": 160
+  },
+  "attribution_record": {
+    "path": "experiments/logs/root-prism-free/f0-exterior-retained-attribution01.json",
+    "sha256": "a46d4e7ac2a74fc10641db76e16b0d0d7d64be26024ee15a2ae526e113c5d932"
+  },
+  "artifact_only_audit": {
+    "status": "PASS_ARTIFACT_ONLY_LOCALITY_AUDIT",
+    "retained_clauses": 116,
+    "hit_groups": {
+      "mixed": 13,
+      "pair_cap": 5
+    },
+    "row_local_auxiliary_ids": 144,
+    "eligible_neighbors": 244,
+    "saved_neighbor_universe": 31,
+    "outside_cover_terms": 213,
+    "arbitrary_smaller_choices_extend_using_full_B_assignment": true,
+    "subject_imports": 0,
+    "encoding_calls": 0,
+    "solver_calls": 0,
+    "proof_replays": 0
+  },
+  "mathematical_argument": [
+    "Let E be the complete244-signature eligible-neighbor domain of anchor178, and let B be its31 members in the saved selection. Suppose an actual incidence selects178 and no selector in E minus B.",
+    "Every actual exterior neighbor of178 then belongs to B. Give each of the31 old edge variables its actual adjacency bit, using zero whenever that B signature is absent. This is a full assignment of the old B-edge universe, even when the new selected subset of B is smaller.",
+    "The13 retained mixed-row groups have targets determined only by the frozen core and anchor signature. Actual adjacency therefore satisfies every complete equality on its B support; no old selected vertex is required to remain present.",
+    "For each such equality, the already-audited sequential-cardinality encoder has an auxiliary extension for every primary assignment satisfying the equality. This is the pointwise extension property, not merely a claim that one satisfying assignment exists.",
+    "The13 auxiliary intervals are pairwise disjoint and lie above all primary IDs. Each retained mixed clause uses only that row's primary support and its own interval. Thus the13 auxiliary extensions can be chosen simultaneously. The six B variables absent from the retained primary list may still be assigned; no deletion or recoding of the old cardinality rows is needed.",
+    "Each of the five retained negative pair clauses concerns two signatures sharing two fixed-core neighbors. If both were adjacent to178, they would have a third common neighbor, violating the original common-neighbor cap. These clauses are necessary independently of all other selected signatures.",
+    "The resulting assignment satisfies every one of the116 retained clauses, contradicting the separately accepted retained-input DRAT proof. Therefore x178 <= sum of x_b over b in E minus B. When x178 is zero the inequality follows directly from nonnegativity."
+  ],
+  "source_findings": {
+    "complete_domain": "The source recomputes eligibility over all480 triples and compares it with the frozen complete baseline edge domain; it is not restricted to the old60 selectors.",
+    "encoding_provenance": "The attribution source inserts read-only group-boundary callbacks, proves exact AST recovery after their deletion, and checks the complete regenerated CNF byte hash. It assigns each retained clause to its unique original clause/group.",
+    "literal_locality": "The independent artifact audit read the actual retained116 clauses, checked complete row supports and targets against fixed-selection data, checked all144 row-local auxiliary IDs for disjointness, and checked all five pair clauses and their two common core sites.",
+    "scope": "The proof uses no assumptions about other selectors, second-component incidence, degree8 encoding, or old auxiliaries outside the retained groups. It does not claim that the25 primary variables explicitly present in the core form a smaller positive incidence pattern.",
+    "strict_saved_point_violation": "The reported214-term guarded row has value1 at the saved selection, hence excludes that selection without requiring a new solve."
+  },
+  "premises": "The complete F0 triple/edge domain, the pointwise correctness of the frozen CardEnc.equals sequential encoding, and the already accepted cold DRAT proof are inherited frozen premises. They were not rebuilt or rerun.",
+  "execution_scope": {
+    "subject_imports": 0,
+    "model_or_encoding_builds": 0,
+    "optimizer_or_SAT_calls": 0,
+    "DRAT_replays": 0,
+    "source_and_saved_clause_reads_only": true
+  },
+  "new_case_or_graph_exclusion_claimed": false
+}

@@ -1,0 +1,3238 @@
+{
+  "schema": "conway99.rook-case4.h27-full-row-terminal-manifest.v1",
+  "status": "COMPLETE_FORWARD_AND_COLD_NO_NEW_GLOBAL_UNITS",
+  "source_sha256": "fc8d48f1632442daee5d186156874ba50fe46fc55e01a36010525f27bf21cfd1",
+  "preparation_publication_map": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-preparation01-git-blobs.json",
+    "sha256": "13beb8ab1421489e5dd05d4578dcd3c64481ba7aa3f2dd01f268002be30a79a7",
+    "bytes": 4693,
+    "git_blob": "3f66480f5fc8b77f92062a0dae45394d39758cea"
+  },
+  "native_ancestor_publication_map": {
+    "sha256": "d2bdd8cabdc6f655e0bd7f8ff3b788efbf034f975366141adf10bbbd45b39f56",
+    "git_blob": "53fc549d00af244a637abe69f6bd9af3ef441633"
+  },
+  "bindings": {
+    "preparation": "989ab22a2c2f78cb65b622dfdb4e0aabe8f0353d4616437e736755d4640b7ac1",
+    "forward": "5e6699c39de0ab165fa6396108ce8c11a9a9e4ca250ef557b7d3f16e7a1ac180",
+    "forward_owner": "88e1fdee61b3edabd758cc76321cd4aafd468bb327989f49f360db0a868e609b",
+    "cold": "cda4f7a1b27b991827cd794c917a1a9ed9442e3b77bb6044f1d191f4f084399e",
+    "cold_owner": "76f32ef2fb7c0d105eb49037ba3cc8522e78a47e4d39984c6107252b2c3723cd"
+  },
+  "matrix": {
+    "columns": 1102,
+    "rows": 166020,
+    "nonzeros": 10767637,
+    "shared_global_zero_premises": 112,
+    "H42_five_assumption": false
+  },
+  "coverage": {
+    "original_positive_support_patterns": 2835,
+    "original_capacity_rejections": 2391,
+    "prior_cold_native_contradictions": 184,
+    "full_row_checked_branches": 260,
+    "new_contradictions": 69,
+    "remaining_fixed_point_boxes": 191,
+    "partial": 0,
+    "unprocessed": 0,
+    "all_original_patterns_accounted_for": true
+  },
+  "new_global_zero_columns": [],
+  "new_global_one_columns": [],
+  "forward_owner_seconds": 182.84765591599717,
+  "cold_owner_seconds": 149.82628152800316,
+  "both_owners_normal_and_reaped": true,
+  "optimizer_calls": 0,
+  "case4_excluded": false,
+  "whole_graph_problem_resolved": false,
+  "scope": "Every actual case4 incidence lies in one of the191 saved fixed-point boxes. No box is asserted feasible.",
+  "note": "research/grids-and-triangles/rook_case4_three_gram_full_rows_terminal.md",
+  "files": [
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-000.json",
+      "sha256": "208891a4fa6160bb3f2577a16fc48dfa68de6c2ef471d4e417587c20f8160aa0",
+      "bytes": 794,
+      "git_blob": "2293e9062b0cb3198c6f45739c4cf6e95928f505"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-001.json",
+      "sha256": "dbe795b9ef9783fb0f65b2f313c7263e6e63ae75caf3b9c4e5d5f167c87d87bd",
+      "bytes": 375,
+      "git_blob": "6f77f799d7a294784906e574d73d8bbe1c0bae31"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-002.json",
+      "sha256": "f633d91182c6a3997e1c61ef7f09b08191e4e786807857f843346af23605429c",
+      "bytes": 605,
+      "git_blob": "879bcd1dcdfe7f6bf58416bb898e82ed232517ca"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-003.json",
+      "sha256": "efcc5fd9f29ed5a6ebdfa942b7933ab7ddd1871473d5ce7775611e91fb65c6d6",
+      "bytes": 636,
+      "git_blob": "3e36132d5c4a47f036c5cfce78651d62ad3c9293"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-004.json",
+      "sha256": "23e7f0ffa7c6da1d7d0a9a89552747f76490ccb535237dd1ed0813bcd90d00f2",
+      "bytes": 620,
+      "git_blob": "7199bc6cd99e86f8d5263edc6be29b40d4f5a6ae"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-005.json",
+      "sha256": "df1858d6551118ddce56f5bacf62dd5000fb5990fcec6b1cee806bc4c8fdb7c5",
+      "bytes": 376,
+      "git_blob": "d65bcfebd5de43ef1c7515c0ba9299a05b6bb80d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-006.json",
+      "sha256": "62c0b2b5103b706cc20f0c89add2a63b81bd2d58f96333d09a15f01190e464b2",
+      "bytes": 571,
+      "git_blob": "7d61c540d22ec55febdabaf77b3eab043c2206a5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-007.json",
+      "sha256": "303f90f4b27a9b1cbf29894ee1be75c63e77368f6db33bf22b3fecd1a59942c6",
+      "bytes": 634,
+      "git_blob": "af07845799eecb65ccb55fdadb7b92e26876907a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-008.json",
+      "sha256": "8823f4a316ab34263219422a9a2f2a3b670feda9a7cb8d88ef137197d306db85",
+      "bytes": 602,
+      "git_blob": "41e4cc6b18e7598681a7645532278165bec27b1a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-009.json",
+      "sha256": "faaa5b5651b4cd39a3dedbf9aa28da66fe1d985ac55ccf61568b73243eb0edcd",
+      "bytes": 634,
+      "git_blob": "36b1bfaeb29af1ef0be12609b7bba0f4a1360e97"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-010.json",
+      "sha256": "e6e7c21bb675f0fe42259a06688b8f710bfa91994fc6ef355d6b8d6dd43df589",
+      "bytes": 712,
+      "git_blob": "69f85f51d0554a182dae4d7cae7903470ae04586"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-011.json",
+      "sha256": "e6a3bf892c8312ad05c25845045edbe4ce247ba69889ac5220fa27101c0d1cf3",
+      "bytes": 605,
+      "git_blob": "0e1848f3e542971a8e924d9a45896668fa51b835"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-012.json",
+      "sha256": "8fd72fdf53676218f1cdbf192522e1ca92d4ccb5f5e04a36838484f0cd4f84e6",
+      "bytes": 378,
+      "git_blob": "8f3010e11bc5f85a37b633791151dcd82609860c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-013.json",
+      "sha256": "514e1b204e61fbd8a45f23c476cadfa4c50b6bb0e19f63a9ca881f69b95fa88d",
+      "bytes": 591,
+      "git_blob": "27d0796610bd3eb8c32b0201f7b64761d49276dc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-014.json",
+      "sha256": "2c3e68d6cff64f77f679203d7ec58979bdc1f249ccc38314dde85391d303a651",
+      "bytes": 622,
+      "git_blob": "c812c6fad8769d9f8537709d93510ed73dde9c23"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-015.json",
+      "sha256": "54c6a188e7f87d078658920d4114ef767757ec7d80ba104c0c67da4049ed5ee6",
+      "bytes": 605,
+      "git_blob": "4af319d7ae0d4fc443fe1b9e683ec892b7fdd26d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-016.json",
+      "sha256": "f846a6bf29ce1be57f4d15a1aa1a981986e13151f698427b5fae393aecd30583",
+      "bytes": 380,
+      "git_blob": "d00490c3b7b56bd3493ed13e8dd53e4f3c56619f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-017.json",
+      "sha256": "b3c4b52fad5c75c740a476d968f88c4da69a72b86f26cd6fe5addf10ffcc3649",
+      "bytes": 379,
+      "git_blob": "b2bbf1246c2cd31901066c1b2b93313e717e8afb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-018.json",
+      "sha256": "f579847a6223a9592f39c1ed640e562edde158a08bff0a2a63fdd14603adb7b4",
+      "bytes": 379,
+      "git_blob": "da5389d46d0eee40077fc531151bb7e3579f92e4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-019.json",
+      "sha256": "92fa42338b7fe24918efb869a8ec8b999f0ea6cda5822c17758fff9401d3a0ad",
+      "bytes": 591,
+      "git_blob": "49fa844053e24066532d4df18b2db2bc7a1e59db"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-020.json",
+      "sha256": "d9680ae0b44acace886535c64669d490d094f76fc96ed92dc2a2ff32d24b801d",
+      "bytes": 419,
+      "git_blob": "58f3326dce87ed4399cb422dc9b007bc62945b3f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-021.json",
+      "sha256": "55c40e67cf61103939f43383c2ddbf4b9a81597c79db399c658ff82f69436cf6",
+      "bytes": 418,
+      "git_blob": "05f669442644bdd7ecc4e58f9f7879a2314aed5b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-022.json",
+      "sha256": "19e852c18732f99d5297fdd5ee96481366b29943006d54a7e3901267f5e1f58c",
+      "bytes": 419,
+      "git_blob": "0d8792e479c036f534da886f715d2e8cc7ac8d47"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-023.json",
+      "sha256": "4d9f211fd10cdfbd02802f294ba9dbee2bad5db4d397a43a8d43cada487c545f",
+      "bytes": 575,
+      "git_blob": "317cd06c37f2017a95d6870ceba38632df356f09"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-024.json",
+      "sha256": "a435b4d69a5c078b57ce0420b504e4b9fd6b5b870b3ba944c40321c030b1d0f7",
+      "bytes": 605,
+      "git_blob": "59260296e7b57b387c915e96fa2262690e78ec1d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-025.json",
+      "sha256": "8e4462c0893e287e4dd428c2a5ff5cabb5077dcb8160c12fc31e7177307cebe1",
+      "bytes": 621,
+      "git_blob": "adad173396b9fa7876dbe1350081b9f8a8c1b798"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-026.json",
+      "sha256": "05d540e0ee5fb777053a6ff65cc73a247ece4dfd088c9ee8a797c71689c33219",
+      "bytes": 606,
+      "git_blob": "680544ea098db227dcca0d008737a1a875dd844e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-027.json",
+      "sha256": "a3a8d27b1b7a74392dd968ae45257bd0a8aed9a665da94a39dbb0997ec211d0c",
+      "bytes": 543,
+      "git_blob": "dd434907194b385564e85fa78aaa5f63cbed182c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-028.json",
+      "sha256": "7afbd00fd17f6fb446d24513f2f1fdb07696b80f96b22939028afa205bbd947b",
+      "bytes": 380,
+      "git_blob": "026775eb5aa9b57168117ae704ce2fd4aecd2c1b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-029.json",
+      "sha256": "5b828f60a0e4ea1529d171de5457bf7ba20ba7939ccaa53627e0d2821bae2844",
+      "bytes": 380,
+      "git_blob": "fec61db2bd73be247792532584544fd9bd20b214"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-030.json",
+      "sha256": "36cf45d2fa6f053a1c13f1f77b935b98532ddb5445ac0e8c98bd012fd131f7da",
+      "bytes": 381,
+      "git_blob": "f60e719f409b7cae218f1c40990eb228347cf9c7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-031.json",
+      "sha256": "dd43bf080b35bc58e3018b009e00802970dd0bf110da4636a1b52e9b700fc959",
+      "bytes": 590,
+      "git_blob": "d0b8356e9df1203fb43b1ba035970a534ebfcf03"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-032.json",
+      "sha256": "1db79b3e10b2227d7e8be2b5d6d01a9dcb11358ac03050e70a33e14115e60a7b",
+      "bytes": 380,
+      "git_blob": "380bbe707ba0d966c6710a3df4a9d2e8c435b3b7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-033.json",
+      "sha256": "fc6da8455012f80eb04176a4ee414bda9178e3d593c640af0b74c4a488ec1a1a",
+      "bytes": 380,
+      "git_blob": "399f839dc6ad5ff3a9be68c96410bf1e932a617d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-034.json",
+      "sha256": "bd9cb670dca5100948b785d79c8659fb8ba6dcee4a4379aeb7dde67ed76a7105",
+      "bytes": 380,
+      "git_blob": "e89e2e5528134f1a55b07ad1be469f1bb843e99d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-035.json",
+      "sha256": "8e9281f76443c60b71df43ae7b30a08d859a5db6a3e37e5fad275fa7e2cd23d1",
+      "bytes": 574,
+      "git_blob": "52fe81edd9baecb173d480994c1c3202b97e43f2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-036.json",
+      "sha256": "6d73adfb2aaeca3547b25e2e52aac40e63f2d524d8d35bfa8fcfdecd0f99d66f",
+      "bytes": 380,
+      "git_blob": "15432941df66e530492f5cbaf8f01890d99536a5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-037.json",
+      "sha256": "45b11e8a7d1012f1fe41b383ff45c86669e26167f7f3197a7f188e4b104fd46f",
+      "bytes": 380,
+      "git_blob": "a9dffd5089fa8e747ddba01676a4a330df95f61b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-038.json",
+      "sha256": "b25baa877eeb49881e5ca8f15fedb611222c2b594c96dfd8321ed04a72f8837e",
+      "bytes": 575,
+      "git_blob": "b81201a6cb8b4288c414e9b1b85670336fa5e63a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-039.json",
+      "sha256": "5be65a5a1dd62ee48a49fc55fc133d09d9b419104484c43a681f973feb322edf",
+      "bytes": 380,
+      "git_blob": "16a2ff26aea03ba19209fdea7dc6e45c052d6d9a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-040.json",
+      "sha256": "7ce56b08bf938a99f9461ddd003dd1efb6e2a9a5f89204868b2fe31002e71c4a",
+      "bytes": 379,
+      "git_blob": "204d2e4f4fb8c6ba247357f14c38d1e1b4725164"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-041.json",
+      "sha256": "7a0d1c003cb1a37b91a558dfff40ac86fc81dd0b8bbda7a3d5ae0d83ee0a3e10",
+      "bytes": 379,
+      "git_blob": "2f6ed9461a68fac1c1fc313df30144cf00941387"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-042.json",
+      "sha256": "3154bdd957227db62af035c916da8588eb098ec1309d2cde38596fa84108f257",
+      "bytes": 606,
+      "git_blob": "393d7b3977aa298746ecf890d418d42073de923a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-043.json",
+      "sha256": "08aaa851ad31a1383d035b6f01de69d1bbc87be4149c6c88c19f4684fdcc8e02",
+      "bytes": 380,
+      "git_blob": "8bda13db9fc5cae09387a4125e2b540c3a309b30"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-044.json",
+      "sha256": "7622d3a9e7a883070022baad8fe63797e57bd717c3eac12a8aed56c1355865c9",
+      "bytes": 380,
+      "git_blob": "f5cf9acfdfa1ea115a583306536c12a234e27f4f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-045.json",
+      "sha256": "3e96b18dbd61283cc13c72c327d6098285dc736cf88e7db6eb0946103c70c89a",
+      "bytes": 380,
+      "git_blob": "f46f6822033926f4ee0b0625b70fec660aa2f51d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-046.json",
+      "sha256": "ddc71614781eba37acbcb63e5b8a3eec78889a690995138249b48d95cb8f0b18",
+      "bytes": 621,
+      "git_blob": "e53db0ed46341d7da17a9c71ec5c684da4327422"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-047.json",
+      "sha256": "fa417fc45ed36ae3adf45efeeb8aa9cdec25fdd726a5c99b5d535d99f28cef49",
+      "bytes": 380,
+      "git_blob": "c901b028dde1eb55aa07d41e231a3a05e3212943"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-048.json",
+      "sha256": "e71b137e769c6ba5308291c72da9e69192a7f250a046eb6226d3532247491896",
+      "bytes": 380,
+      "git_blob": "c30fb9b125e449003c7e75679e51b83211c58ec3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-049.json",
+      "sha256": "3f0286ba0662fd78863291961d671eb570372ae2ada0075c583845fdb6ae6a52",
+      "bytes": 380,
+      "git_blob": "9751f2080708fd02ba2f1e3db0be1953fa03d5bf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-050.json",
+      "sha256": "763c1c28c9706aeacebe1e2bd7792b040715b0ec424ce66952e8a8b823544c27",
+      "bytes": 586,
+      "git_blob": "1edd2ee80773bf00b62a0046fb5a4823538ce98e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-051.json",
+      "sha256": "04d31dabadd471ab9a554bb9c29049c54775cf77749babacb9ecf9156afda578",
+      "bytes": 603,
+      "git_blob": "57e9563aaf024177877d223a1f4750a293a7d106"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-052.json",
+      "sha256": "bde127927cbb0bedeb31ffe5229c088e22c320f5584e76b30a0f6e1f80d9d692",
+      "bytes": 603,
+      "git_blob": "9b200301a909c98962a291db9e86a7be5e2c6bc7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-053.json",
+      "sha256": "5304c76b62c5d10a220d61d705376c9253b2394b4e76aa5d9a62ac9ccb6d6abb",
+      "bytes": 573,
+      "git_blob": "b145638455197b65eccab0184e5afa77aad60f1e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-054.json",
+      "sha256": "641dda77eb12342c4732c5f688efb9e7594c54c25c9728c30f3848c44fb4352d",
+      "bytes": 420,
+      "git_blob": "005488a9f8b80fb394c2f811142353a1c059e8fe"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-055.json",
+      "sha256": "7776077065677b7b05f80c6ee4d518e9e95ecc5a50a611f93195e74bbfca1e14",
+      "bytes": 420,
+      "git_blob": "d1b5c8e8266f382872e89a72a169ae3523c8f69c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-056.json",
+      "sha256": "b590bb6fe6be653da6d865ced5291783353f810a7ad9adc87e7b55922774da0d",
+      "bytes": 420,
+      "git_blob": "834f553097d0ef12e259fcbbadf51daf7f10509c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-057.json",
+      "sha256": "3f9c013dd923973d13e7e7f22c85e2dfbe563851fcb0acfdd2420f546a8efa81",
+      "bytes": 603,
+      "git_blob": "b743925ba5b182eb5c5ec15bfc32978e47523e39"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-058.json",
+      "sha256": "fea7a6d8a0ee28fe883df5f06164569da741f20b8616239fe200c95d52aad8b1",
+      "bytes": 420,
+      "git_blob": "7a158ad1c02c6760cc6d2619434e1ee9367b79a6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-059.json",
+      "sha256": "05ebc2c9531661ca3e9a8aef73755a8e0082cd9bb7bce6c391e78743d70154e7",
+      "bytes": 419,
+      "git_blob": "ce69c59531c29864da4e374b0344f0c5c878df8c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-060.json",
+      "sha256": "961a4498e95eb41a14169ffebe568924385658383bd460fb4eebc3eaa574948e",
+      "bytes": 692,
+      "git_blob": "4823427db6b0cac42cad339bd03ba2fa841ca835"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-061.json",
+      "sha256": "401e0dccf2878121674a9573320104a1f6b4cc19c27e6097ef6c0a9e7f8747d8",
+      "bytes": 421,
+      "git_blob": "044a64cdcf99a9702800c5a21712f2d0d6708e24"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-062.json",
+      "sha256": "4260699386e83c7be6dd904d5a3532ea1c0cf8b374d92678867a3b7893148bf7",
+      "bytes": 421,
+      "git_blob": "5929cc2f96cec0a833d2523faebf77db740e8cc9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-063.json",
+      "sha256": "04a6eafa2790f63245f10432ae2ed6dbb977df2db8ac606078019e7e76f2d80d",
+      "bytes": 421,
+      "git_blob": "27160628827133a6a107136b5b44f6ab4ea5a5af"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-064.json",
+      "sha256": "780c9d2385228f58d2ab0536447f5ebd36d063cd69ea55411a14456609bf7119",
+      "bytes": 603,
+      "git_blob": "dba501f969eea0c4a37be93525f556ba9651da2a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-065.json",
+      "sha256": "57889454bfd399179448ec19ae50434be97a4059347b570a9cf39012d7fff0d5",
+      "bytes": 419,
+      "git_blob": "154ba90f89486de8cd50e2c5702deccef9c86204"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-066.json",
+      "sha256": "7dec2013ad94a08b46547d637acd8c512e5ce216107156b91c09df5b9035661d",
+      "bytes": 550,
+      "git_blob": "f8e99e328feeb25bfb6ff368d321365122924480"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-067.json",
+      "sha256": "84c68a6cf261e71bee485eff8a8e3bb244d5c5d9229137905b8fad5794dc0f93",
+      "bytes": 424,
+      "git_blob": "45e101528257826bb539296b63ff24ba17402477"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-068.json",
+      "sha256": "5ee84fb6cdeb36aad9ff0d6f2f78586c98f6e5152ef755eef333d1dbdb56c1bd",
+      "bytes": 519,
+      "git_blob": "e10a8ebb4710c0a6c72c1dd9beefd3dc41f0884d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-069.json",
+      "sha256": "a4209bb41d88c5a4d51add86df3465ceecb7707a596f02cae35c7caf008c12df",
+      "bytes": 518,
+      "git_blob": "a1f432085c1ae1719a50756e4a574400b9607dd5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-070.json",
+      "sha256": "2b0aa31ee2980c44fa2bdd63c89d4fd6f7be18a27f72e6fd165a4158bd0a9cdf",
+      "bytes": 568,
+      "git_blob": "b5d5fb2b1082b28266e9b1c1fabe844141c769f7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-071.json",
+      "sha256": "ea380d9752da2cf20c0b8a32d2baa75429bc58a10cf1917275b1728476da8248",
+      "bytes": 474,
+      "git_blob": "f0ad76700b6b8029588e662ff54113b960e4105d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-072.json",
+      "sha256": "78898bfb0a6116c375f28830241166a982848d5efb9be013a8aa11adac90b891",
+      "bytes": 547,
+      "git_blob": "42dc2571619d54f3a351323380440980b760e0f5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-073.json",
+      "sha256": "28c8e40274b29f74d10ee65488060ae5bc8c5c79a54a29bec224b73734727531",
+      "bytes": 504,
+      "git_blob": "7d8afa141dd406324dba5a44772a76ebdc41d743"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-074.json",
+      "sha256": "8278c76ee1860b1c270bd59a35e11c36962388d74aa01382733b5ea2ea07259b",
+      "bytes": 399,
+      "git_blob": "8a0d24a3fd9123891f2bab7a83e711cdf2924197"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-075.json",
+      "sha256": "7bf834cf6ee6e9e745c07d1ade70f4e75a5c191470b7c0c8e8c7fb9ed8eb17f9",
+      "bytes": 398,
+      "git_blob": "bf20d03c14b80dbcd6946a846843420746937ccb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-076.json",
+      "sha256": "8b678eb47d51305a843548b6c2a306793a739dd99b905c80f8c890c1be03a58f",
+      "bytes": 413,
+      "git_blob": "8918270d64a1e17bbcade80647b5f8f5ca796b64"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-077.json",
+      "sha256": "bcfbda9de7bcb253bd093189ff7d0d00969480be1169c7099ffde9786420d9f4",
+      "bytes": 399,
+      "git_blob": "94478258177d8154f629f3f1d5f3ffb88e5922d3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-078.json",
+      "sha256": "bb0507263dfaa066622b4ac5cc8912f024fd1313fe8e7021d8267759f0ca4003",
+      "bytes": 398,
+      "git_blob": "9bc97899d1796a1185519d0e1a754b9481a49a7c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-079.json",
+      "sha256": "6c9b695ce3c5b5bc5beee50fdacd8770bd9ede67c62607fd842a22fd8dbbdb46",
+      "bytes": 383,
+      "git_blob": "25a75f84b804005e88aad4ed0640c2bc5f328eb8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-080.json",
+      "sha256": "9ad7878195c81044d4c65916ca55b16b4c8155b544ec35a6cc20e97367b64904",
+      "bytes": 490,
+      "git_blob": "c4dfc6abdd6b8b3dfbac67a5d8f51e4487fb0573"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-081.json",
+      "sha256": "8430fbdcee4f4a99be0cf8e1fa139c27fceef58da57683fba4fa8d96a50e6f54",
+      "bytes": 490,
+      "git_blob": "16d6699333e5d64e960c87f7f454a5074d33e587"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-082.json",
+      "sha256": "85d7b05a5af0886b88ed733f7d5d66a62ea974a9ce77ccfaff9544fbce682c76",
+      "bytes": 491,
+      "git_blob": "f6ce3e00f21678c7f3f69923b0bf6afb7046edcb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-083.json",
+      "sha256": "9a119a60d77047d9688e1cb9e46809d7a5e7ac073640072fd2665e7ae9f3377a",
+      "bytes": 458,
+      "git_blob": "65954959508635951a92b4d029195dbd1434579d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-084.json",
+      "sha256": "cb548464453c061d953d5e147702a0036f435d3d97b4d0a1726341ced7f1d98a",
+      "bytes": 412,
+      "git_blob": "6bbfc8a4e72b9ef8399e679182bd0582ee90ed11"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-085.json",
+      "sha256": "4f959fc2534a5eb98e4d39e84924200a25b18ab445f273606761e22709369e67",
+      "bytes": 2037,
+      "git_blob": "2da91d6b3a72f963f5d558652c0083df500b391f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-086.json",
+      "sha256": "c5e26fcb90cfce860d1064ce2ba1d32703300e5673eb4afa71d4df23e30b2020",
+      "bytes": 537,
+      "git_blob": "914d8c4bd6bc9446ac02dbdcca25e2cdaf6eacbc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-087.json",
+      "sha256": "b8f70a23d75673ef52b7335e2c90b929d316ebf9dbac003e53391e7554eb75b8",
+      "bytes": 568,
+      "git_blob": "cde4a75a3e01e170654e9b24a8f3c450744806a2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-088.json",
+      "sha256": "6a5674e550a7c7a900a2fb944bb4cb5e0c92b70bd182fdef8f77fc187e281504",
+      "bytes": 584,
+      "git_blob": "760338e715c4bf986fe1a95ba4c0f4d42fcccf06"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-089.json",
+      "sha256": "cdb83f79aeac2a512f106211050719f447bc62f55fcca2d91b0cf8ff928bfe40",
+      "bytes": 569,
+      "git_blob": "a2753435ca21f3205950e42a27e4d6c736ff6724"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-090.json",
+      "sha256": "f32ca71ecda982acf17ce06e898bf373cfec990a4f5cacc8184679abcf18aa90",
+      "bytes": 505,
+      "git_blob": "85f30314de59db2b68567ebf0200cafc61d7009f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-091.json",
+      "sha256": "5b7c2d6db201e65913c084af9b9a1e0f66bcd65ce7a16a3a01587221282f8565",
+      "bytes": 552,
+      "git_blob": "e8505a1af56c8e2721b6a060e23ccad164782c03"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-092.json",
+      "sha256": "886b129a6274391a63f3df573ed70e18bdf12d4f1c81e52f0a1bb9e40dd950e9",
+      "bytes": 536,
+      "git_blob": "d726dad029796bcc153f821fc874f8678ea5bbac"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-093.json",
+      "sha256": "52518252c472cb41712b722412fc40bcc5490223f52a93c94c4480b1d1aa331a",
+      "bytes": 490,
+      "git_blob": "64fa2120ad5294ca5cc986cbb748e4655c927909"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-094.json",
+      "sha256": "6cfcec63e5ac945f50fd96b96242b023b42d071159e9be639193bba093deae3a",
+      "bytes": 491,
+      "git_blob": "9328aaa724283fc93aeae2ae1419ee9e53c77b52"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-095.json",
+      "sha256": "4e86917c23c841963945fd8c779c442c894ca4c04bd1c2745c614f0f23fd2afc",
+      "bytes": 490,
+      "git_blob": "ba4e51c64f26eaf0cce8b24dad3259aa5d471230"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-096.json",
+      "sha256": "01eab7ad7ef6011dc8f3c96fe94d4de3aaea3cd18cd279d3fc0dc3aa5e2136d3",
+      "bytes": 474,
+      "git_blob": "49cb901f599d45d0167216abd0a48775c1212734"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-097.json",
+      "sha256": "450be8945c7ad6d380fa9dc6df9ae034ef3827dd7434e2fa01e930e22aeb304c",
+      "bytes": 490,
+      "git_blob": "10372b329ea7f2436024fa2f84a7d083b82fb3f0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-098.json",
+      "sha256": "022aa8fe5de640118b1494ccf8ebf2c4a0ce0b185455e47a7e73dc15e6dc8a4e",
+      "bytes": 399,
+      "git_blob": "c7e4ea7dfd8a3e77ae08df0340eda060ac463eef"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-099.json",
+      "sha256": "ce0702ac44e0e44e9806af880e9d30bcd4f72b3b9c1b4d3cc87b3d80731537ee",
+      "bytes": 413,
+      "git_blob": "df00aba7f982867d47d50f867b5b64f0e4b28642"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-100.json",
+      "sha256": "102ecc7bda892d8893505bbb58d3e463f89755ec25bb2beca7f1f2bb09aca5fa",
+      "bytes": 415,
+      "git_blob": "11c9af10598899d2d6354266507ee8aa84279a14"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-101.json",
+      "sha256": "4b921af8ba87de093a92c01ed9392634fb59e4e63273a6082f1ebb90326e5b0b",
+      "bytes": 399,
+      "git_blob": "409c6380288e205fbae63e5a34349bdd35fda406"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-102.json",
+      "sha256": "e0907cbe0b1aa3375cb89878c8592725d07a13914d89003e9159454e4077909e",
+      "bytes": 384,
+      "git_blob": "32070b44540caf97e05cfb3c66033ef4d997cd0b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-103.json",
+      "sha256": "5d899660dfcc640f6866edafda2f1b207d87b43089d3bdb95b78a1b474647351",
+      "bytes": 399,
+      "git_blob": "692add7e4705d555d5f278d49077d7c7c1b6ea8b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-104.json",
+      "sha256": "2e4bfbf436f012c8948fbb5c2488c5728147620741f50ade7370b727e475997f",
+      "bytes": 491,
+      "git_blob": "6178f5dd40814edb0f82c3742d3d0adb27955d26"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-105.json",
+      "sha256": "80075fa0a915878d72e8ea019cbb8b818e9792133b240621dbe91ef468cef98c",
+      "bytes": 489,
+      "git_blob": "c3f89b2eb08ae2008deef8aba227327dd9d83829"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-106.json",
+      "sha256": "5a7991858f87d7403a70a269c2c1d6c0b6812f849ffc0c2a8e0e315ebe60e672",
+      "bytes": 506,
+      "git_blob": "9b1df7e51581073d20e7f1b1c491e3c7bba839e5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-107.json",
+      "sha256": "e936b4c46aef5002c891bd95f75941b57b637492eceff61f389d87b45407087e",
+      "bytes": 449,
+      "git_blob": "c89fa800b758d6174a790090ba850cf66603b619"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-108.json",
+      "sha256": "293a2fbf7dc79ecb0fe0f1e8fc1daa69aaf60bb236e51251bb7a23e62855d1dd",
+      "bytes": 521,
+      "git_blob": "44c0851473101313de67ed9b583e6c04b23188d0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-109.json",
+      "sha256": "618177bcebb69dd5793a25cbc235eef81024af2ffb48abf6927fdbbe43770aa3",
+      "bytes": 534,
+      "git_blob": "58dbf7373e97585ac8dcb096029ff494dc6ed989"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-110.json",
+      "sha256": "40991a298860adeaa9ec1eb16dd534477b012aa6ae821f1edad0c694cc20da62",
+      "bytes": 582,
+      "git_blob": "41b0fc6af0e54e273ec799530f3ede5fadb08cc7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-111.json",
+      "sha256": "2b69a51865794aa621870d24fd61e11597756b937be8400f24ea8b5cbd905974",
+      "bytes": 550,
+      "git_blob": "d71341fa5a89314c40bc02159a09a7124cafb00a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-112.json",
+      "sha256": "f934cf313bfc1a5b0fcf44bb58062a9a9787143522b8cbd174464e77de9877ac",
+      "bytes": 462,
+      "git_blob": "b605465b49c250392adf234c59329d4e93946870"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-113.json",
+      "sha256": "cfa78d78cfeaf4b2b0db27effac542957c1361a030bba8cd05f35754eb661e66",
+      "bytes": 462,
+      "git_blob": "72bb99dc00f48680decc524d42652c088f420964"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-114.json",
+      "sha256": "5bc3166b927b0bbd3e0fb439b262e5551eafb3c11b044f78aea2590a53c1fde1",
+      "bytes": 463,
+      "git_blob": "412d51fd887adb22efbb2bbb68cd33c469760eef"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-115.json",
+      "sha256": "12d2ebc1b5bc9a9be8b5d4fab22167266037472f48791a1521e7934b3849bb28",
+      "bytes": 474,
+      "git_blob": "31994c5bca17ed48e677b7a49ee82a18ed2bd313"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-116.json",
+      "sha256": "a5e590262670e848127b53d5949c50cee98eaec439fd6b62cc4ccf70981f0f39",
+      "bytes": 472,
+      "git_blob": "d014713f603e7e3f4f88644dba682b3d62fa9f05"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-117.json",
+      "sha256": "058321262be92ce59c781e7da982246adadf9eb4a73ae6a7dbb258beac18a66c",
+      "bytes": 505,
+      "git_blob": "68551795b25f138cebe56abd5248733e592b701e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-118.json",
+      "sha256": "72ca3850ade4307ea7a43e500b7305c3bdaf1f275402f1fd192aaac38ce2f9f3",
+      "bytes": 448,
+      "git_blob": "6fef49a729fa0440b671649d653a253d3fba5990"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-119.json",
+      "sha256": "a8199c88ef39af5652a980651a650a34ecbd21be9e936c2b4854e2d1fa9f6a7d",
+      "bytes": 448,
+      "git_blob": "04d824f49e761106f0aff3db32973f6944128793"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-120.json",
+      "sha256": "b410c564bd4f44437c5a82befb62b73c5b79ace60ab2f68d88a222a170b3d06c",
+      "bytes": 448,
+      "git_blob": "0846cf6b850a172ba7bf02520c79ea571a45948c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-121.json",
+      "sha256": "8d701d6e1e8b00fa81eaa0984b2d93a69be2fbc18c14109d0387a9a44dc4a7fe",
+      "bytes": 400,
+      "git_blob": "3bb8e8c1dec461166d6d59f247069731cbc2e003"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-122.json",
+      "sha256": "32bea10c5c3d1d500ac3e4259e0ab49f38bd072053b7fc9a53a44b7ea77bbe15",
+      "bytes": 400,
+      "git_blob": "c56470281d785c423f2766408a20ae39ff712346"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-123.json",
+      "sha256": "afead2aefd5c6993443b4f580dfa73973ff85c3ca6ed69288d3f0ba8fd7dbd69",
+      "bytes": 415,
+      "git_blob": "09609afa7fe329ce032ad28fcb28aaef5d269f3a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-124.json",
+      "sha256": "20e3133f783322eb5844659c98b22649681c48c491397e007d220703885dd05b",
+      "bytes": 400,
+      "git_blob": "185ac1e7090aef191f8456fcc1fba860f9943049"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-125.json",
+      "sha256": "91ae457aba239baced7efc1f70399afcfa7541dd8c8bef73f86eb7edfb1f10b1",
+      "bytes": 399,
+      "git_blob": "4dade560ed93d771fed8253e56b9e1f671544be0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-126.json",
+      "sha256": "38277ba910f93beb49494b7dd1ee66fc9ebc2550b5abc1705e2f1caaed32fc18",
+      "bytes": 386,
+      "git_blob": "687e6e8d9f8f1a84609d93520c3ca0efd08ba6d4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-127.json",
+      "sha256": "35e39d464d03efe0a80e3c0d28aa074b8f5366084e8cd77c7e7bb3d4e9b45116",
+      "bytes": 476,
+      "git_blob": "a765baa14ecbb75ef83536aa0f02e0f12416241a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-128.json",
+      "sha256": "f9ae65042f5f90f41074e7167f3edcef07c437a5e3da774013879f731d597e6e",
+      "bytes": 1312,
+      "git_blob": "87edaf81f2351931ea38588bf0949d79e8c4af5a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-129.json",
+      "sha256": "a2948bacd6d25f39959aca06f71b79f8a00729de8d060c8508afdbc03659d2ae",
+      "bytes": 1371,
+      "git_blob": "5fda2eebbf5f0a9542ab8e99ee9d1861cb75ff07"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-130.json",
+      "sha256": "c0422e419bc33909e9c9309c7fcf78cdd5e15db689baa87a1adf975d69ee3d89",
+      "bytes": 445,
+      "git_blob": "2f1fd50ac4fa7c1e51e3e3874c8748efd550210c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-131.json",
+      "sha256": "ad4d419eccb62ed160e072b65fe10c0d8bed893c98f10924409d0e15e136b9ab",
+      "bytes": 400,
+      "git_blob": "b9edb03bd3d220a826d1b817ebe93c9cb931aa95"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-132.json",
+      "sha256": "db78b483f684a42be465c740cd99b373f506c7ffa3a636cc514cae9815353a4a",
+      "bytes": 1673,
+      "git_blob": "4741e5cd41ef016ecbcb4693de15e96446af9155"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-133.json",
+      "sha256": "b4ed852c5142ee842ea3312c5ab1e20da303d577ea3558b88141c21b8797a879",
+      "bytes": 476,
+      "git_blob": "70e7c9b96a4948ff3a2c8e45cf4abb83430c8364"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-134.json",
+      "sha256": "703bc447f15ffefffe9a335c36a7b2b497610b91847c58cd190117048d0bb54e",
+      "bytes": 387,
+      "git_blob": "cbce9c23542deff1990429b1538fea1435fd631f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-135.json",
+      "sha256": "d25841a30c2fca134a4b5d167eb92a6226810523fc2543fb53738dcc24068ea5",
+      "bytes": 536,
+      "git_blob": "fd0bd44d9035b8d40bd2baaab3fc8e79429f5719"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-136.json",
+      "sha256": "4993c593511abbdb7537c46f166731c3d78e39c868d794ad63b59ee6169bbfad",
+      "bytes": 427,
+      "git_blob": "19d4992d0617b9f408db111ca18a34f227bd5cd1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-137.json",
+      "sha256": "9ea7f785a3722ff490ac9d76cd5d5d174dab27241b6fabf4cd5f509f7d7775af",
+      "bytes": 428,
+      "git_blob": "77aa3966ca33cfb8389d019a4f281c3815245004"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-138.json",
+      "sha256": "d5554bac491a65ba5a7ede0fcb958a223e7a46bb85d4b1d3f369351addcb5ee7",
+      "bytes": 536,
+      "git_blob": "cc4547846e4715ed34489ff63003906cf1c575ab"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-139.json",
+      "sha256": "74ed7ef05f2b5e68ea7ea84a339955a61223c60371507db8f1d3bc130218e4e5",
+      "bytes": 427,
+      "git_blob": "b33e20b8edd14bdf52d86d1d5e1351b3d5b4b989"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-140.json",
+      "sha256": "67e8be84b3729b58b9b570e4afea3ea76d5d764fb3b849f73c6631c8dd983d3e",
+      "bytes": 427,
+      "git_blob": "00f2ae5832fbee7a0a95da6178b51504e6c4655f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-141.json",
+      "sha256": "262156be57e4579003f40f784559c59ac74516e42b71608b24540342c2dd79b9",
+      "bytes": 536,
+      "git_blob": "cc4118236d82efaa3cc5fac419ae695200008323"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-142.json",
+      "sha256": "c32c594447f71474610d0e5307ab7a29b8b23cd919469bd8e0ef4112d057e35b",
+      "bytes": 427,
+      "git_blob": "da89fc6932e059c40e413cc102c9e3ec2f0ad819"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-143.json",
+      "sha256": "a4a4d60acf42a3384b0020c4005f8efea2fb765984a52a8826fe804f430822ba",
+      "bytes": 428,
+      "git_blob": "ff4e9601c8eadc0e97b3c02e674d6f8a3aeb2e6a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-144.json",
+      "sha256": "1f03b55869170ab2e9dd306a483b89a3bb3a6968fbec96f77807f69c26ea1cb0",
+      "bytes": 723,
+      "git_blob": "bc3c4e847d01f3dc6802ae1ef1d93c5e0f61c7fa"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-145.json",
+      "sha256": "daa5b6bde1e723a0d89eaf2aa852bffd81ac1f6353895275531484907982e703",
+      "bytes": 428,
+      "git_blob": "28989ed9b0288574d80acd3482dcb25df0469d0d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-146.json",
+      "sha256": "0c2e76e51fa399de21504b2e64bbe34b045be9433ddfc40d07b3ee59c9eaf52f",
+      "bytes": 443,
+      "git_blob": "158e97605c4e0e7df1dd816ac830ad857a9f8cdd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-147.json",
+      "sha256": "be795d16c8944038b285736605ab52a976eb6d690eb48c6dc3318c366b962fe2",
+      "bytes": 1563,
+      "git_blob": "ebd9a6b5a3b38800be49b0e71742a9bf720855cf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-148.json",
+      "sha256": "a3ef20e1558916c8a044c7777abbdf0ef48557ac59b8bebcdf667b15f8925baa",
+      "bytes": 427,
+      "git_blob": "a7f703c8c798098564186dcd439f3dd71fa7571d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-149.json",
+      "sha256": "bef35ef57b56ad12fffff1170378446e41a5e87afe05872101fdb7499d688cbf",
+      "bytes": 450,
+      "git_blob": "3948c9a5a660eabd565c9693333a85e6f7d9040f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-150.json",
+      "sha256": "b9b51a2f0daf2dc464cb900126fcfe03e6c6d0e49d0749338309204e9241bfbc",
+      "bytes": 427,
+      "git_blob": "0fe5a3dd8c1ee99f85cb82025acbd34cd7822e28"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-151.json",
+      "sha256": "082963d63db8aa0a893b99c9bd4fe950ff2f1a1341a7b72b6422d6200a2d5978",
+      "bytes": 522,
+      "git_blob": "19a2936eb5800de8dcb6f16ed9fb6f2530ab46a6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-152.json",
+      "sha256": "13a38d0ee5568196ab30b137eba92bed313529c9e05b2020015cb91cb63e34a6",
+      "bytes": 553,
+      "git_blob": "c65abf851884550bc73419a36f7034bec4e7fa54"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-153.json",
+      "sha256": "c4dc6dc9e27a1187e343db33e9c8d1a383e66d9316bfb0942895f32da26f84b9",
+      "bytes": 570,
+      "git_blob": "8ce8c1464eae440ae747c1a7d69c74d184d0514e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-154.json",
+      "sha256": "1ba084d55cef3bad14be9f08aa5c499f99301c91551c99db37b75f79df8c7ca4",
+      "bytes": 553,
+      "git_blob": "0a43bcfec37e06574384e6613302681bf648b30f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-155.json",
+      "sha256": "a5bca2da890e5e0a09e9bfbeaf3fb8df3c3fe31cbd26433b77e9efb1e639888f",
+      "bytes": 490,
+      "git_blob": "5c6080e0042f999650fd158c5b16445f1c142e0a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-156.json",
+      "sha256": "55d37a2d01686824eaefdc50fbe83dc9eb63942d54f0a9385d197655a29cd8b0",
+      "bytes": 538,
+      "git_blob": "1ef9ec82a93e794d56cb519e72afaa9b689ffde7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-157.json",
+      "sha256": "62550dd825447f96a2b103edddb0d0b269e00759c016254be4d0f3cd1c78f683",
+      "bytes": 520,
+      "git_blob": "ea1506488a23960357677a6b187de0d2d4a3d0ce"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-158.json",
+      "sha256": "254d43c9fa5ee82d76eb80c8becb35055037d5482f4fe6951edec5df67386973",
+      "bytes": 520,
+      "git_blob": "fd1d49845476ee2ef82639908423956b620a35ba"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-159.json",
+      "sha256": "a5152d120e09b72971de4ff538dc9c01ad6d2c8c401284e15bf91e9d8f06b749",
+      "bytes": 553,
+      "git_blob": "cad7146893ea85748aa605af9875d0f63f7916b2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-160.json",
+      "sha256": "19470dc30709e66525fd1e636505768c1c50fac293d6d78c5c7735a76b816143",
+      "bytes": 569,
+      "git_blob": "07480ce491fe2089944a4fc03fb30adf4c4a4518"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-161.json",
+      "sha256": "7d18631ba239857baf7831b5b7502d55098e2c4912eea6ec3ef6757224c90e73",
+      "bytes": 425,
+      "git_blob": "bd11d2ac598225db3e473532c611dd5ec992266c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-162.json",
+      "sha256": "83f3f7239ca279705beeab78dad24bd21fc5e0408a52e9cdd61dda57a7f36b86",
+      "bytes": 427,
+      "git_blob": "2093ebce613b5bf889a2de14f01dca13a17aec38"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-163.json",
+      "sha256": "fb69701094d24cbd4ca03bee3da34ff9b40248ce4c0cd15db5e8225f2715bf83",
+      "bytes": 428,
+      "git_blob": "3fba4c0dffd6f4bfbf6c5f20a947d42ff62db380"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-164.json",
+      "sha256": "2084029ec835dc1d818c74290d0c34ea2368fa51202bd001f300eebae87271dc",
+      "bytes": 428,
+      "git_blob": "dd46958b9d85936f08310c1877f46fc87986c45a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-165.json",
+      "sha256": "769de14ca1bd38315023f7247c4849d817a292ad701bb4e27dd25da7974f1476",
+      "bytes": 535,
+      "git_blob": "07f71397b3fc60c83926dc55407fe3049970cb8f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-166.json",
+      "sha256": "17d4af73732a6d82bf245df2cc97a1821d0142534a5c9134e92dd1dc36c4fb3e",
+      "bytes": 427,
+      "git_blob": "1b8bb5d3c0d9f8a595ae533a38800f54a9b2d45a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-167.json",
+      "sha256": "10f406a44c9c92fcd527509036e9cc77c6b17c96a4e9d184e36796b0618e5755",
+      "bytes": 428,
+      "git_blob": "b201fee68331c428a7af2af5b7da53c7b9f01855"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-168.json",
+      "sha256": "1377bb79b0a84adef4c6fb95e5538353937cfeebcbe674e90e4ae5536c7ed779",
+      "bytes": 428,
+      "git_blob": "3a109ed2cf8ffaa1af89f2a27baaca698a30aad8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-169.json",
+      "sha256": "6f31a09cb17d064abf4f4eacd4fde2feee481fbc2fd74d049ec9c111f3894ba3",
+      "bytes": 551,
+      "git_blob": "aa58a34fd0cfaf72ff764323669decde504bed73"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-170.json",
+      "sha256": "7baa2ae676d738b6c7da14dc233cdf1f22f7be203f116ea4a08f12212da70791",
+      "bytes": 427,
+      "git_blob": "81a019d819671ad3ecdc7f475820123c6aa7fad3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-171.json",
+      "sha256": "b3c881a6276cc674ce043249024095aeb07d49be8425d91d927833fc87039b10",
+      "bytes": 426,
+      "git_blob": "d2324fd6d972cf3cbf89b42b46b0045ac9065fa4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-172.json",
+      "sha256": "cbe893becd6e8ba7f1e49a978df05c38f3a9628e86eaf79dcb5a8ff26f0214c0",
+      "bytes": 550,
+      "git_blob": "90e8c5d8e62198c0dc738a8c1cfc349dcd3d84ac"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-173.json",
+      "sha256": "a0e397eb87113e1a89fb6fb11d77ca039f4c122fe860d37be7ca8967f6211d82",
+      "bytes": 427,
+      "git_blob": "b96afa5fc1473bea5a931a1f340b63e95cac188f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-174.json",
+      "sha256": "611f47998d1e0a7b0a4a7d4c72ec5aa95fea3904cd657a1113bf411891e85bff",
+      "bytes": 428,
+      "git_blob": "3c5eaf6c5f57778c0f908663c00c4fb553cad76c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-175.json",
+      "sha256": "426d590ebdc938c86b17a2b5dd3d5a6038003bb0235808c3d7b0f0c9f04de5c5",
+      "bytes": 427,
+      "git_blob": "977493c74e4ae2cece27d75dff419430cd492379"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-176.json",
+      "sha256": "c7c919c87019fab5579db0bb209fc1fa15d293f390b670f5a1ba66abb2fc29bf",
+      "bytes": 550,
+      "git_blob": "2512da258c13b377663427bfd70f6612f5e7dd4d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-177.json",
+      "sha256": "036f8c5f7bbf93431250ed85fc6cb101f5dbaf7577cb03fc140c3112098b1ca6",
+      "bytes": 427,
+      "git_blob": "0931cce141aff5ac1df88a553f85acef0e5fb5b0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-178.json",
+      "sha256": "a09da3491f49c2989c6fa5c29d844992747e920a9d790065b47fd7e8d6cd2042",
+      "bytes": 428,
+      "git_blob": "4f4403c8c32944d88f6ccc373512460e41d3c479"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-179.json",
+      "sha256": "f3eba3f0d08f877d1c9d98bd464cf33453c2dbd246139412932d2cba9484de1f",
+      "bytes": 678,
+      "git_blob": "763f8aa51eb147c1557cdc773fc1d07d005680eb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-180.json",
+      "sha256": "a0ece3a5760fe3ec7fcf3ad03e856a7038454847886ca249e8797e7aa681f909",
+      "bytes": 426,
+      "git_blob": "1d299ee9383d4ed78c2a0a345a4d5aef35cf5c1c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-181.json",
+      "sha256": "52efe5431ae98ab5d417440ab9efff456eb88a7be7a6bffbc397ada6a7c9f1d4",
+      "bytes": 427,
+      "git_blob": "1cfb552898aa00d53f593a387b8dd646f5966d5d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-182.json",
+      "sha256": "4b59bdd3c41d01e603b18b8b712da93980ccb2fab3a2021e3fdd79845262aa25",
+      "bytes": 687,
+      "git_blob": "85ff06117c921db5d2a5c4ed2d1c4ea5b57bb3ea"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-183.json",
+      "sha256": "7b9e84c0e782f7e6a1dc7dffae158a98a64c116daad264c5917519020ba8193b",
+      "bytes": 428,
+      "git_blob": "ed5b283d7b7fcbb6cd3cf3d9869c96ff69fe2ae4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-184.json",
+      "sha256": "2b0b1e66887094772928d652a6f6cf9fb1274fbb836205e6c0a433daaa124305",
+      "bytes": 427,
+      "git_blob": "5e9a09641fad8490307fdb4987b74488c8451bbb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-185.json",
+      "sha256": "da60112807ed61d9a8576d7f21f0032e730b200898677c869d3c59255895558c",
+      "bytes": 687,
+      "git_blob": "33c3c8bb2362221f9a14cb8128ce76e44144d617"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-186.json",
+      "sha256": "570c317fe59dc43cc8c43bd347c67342db9557c648f43684bed2b00939fadf4f",
+      "bytes": 427,
+      "git_blob": "8120097efc32c1acedaf9096328594b059cadb5d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-187.json",
+      "sha256": "2f3573606b441387a95b911ecb74420a531093e1357a0f6b258066d3b2157ead",
+      "bytes": 428,
+      "git_blob": "bb233e9b4b665e88f943f6fdc9ce972bacd1e17a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-188.json",
+      "sha256": "fba46c38d83c2063ad6e3383cb93d62cc771c2a9d8b960a864db9fd018a3d564",
+      "bytes": 429,
+      "git_blob": "0c1cb515b3d0f1eca5972f9eb57359f94acc9a52"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-189.json",
+      "sha256": "fbdc74145ef7c90583b188c65c121defc99be3358bc63cebd92a11781a095811",
+      "bytes": 464,
+      "git_blob": "a43316b21beeeb81f3679c559f6cdc8495eed90a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-190.json",
+      "sha256": "a845658c8ffa12c3c7d455fe23d898f6bc66f68405c1c068987076a457ced34c",
+      "bytes": 427,
+      "git_blob": "b1088c72d06d260c170f1a8b8de5fe75e7b171a5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-191.json",
+      "sha256": "22c778c5f35a0f91fc5f95d906f3e2a2f4cf3824a0c1c9c211bff41a6ee90bc2",
+      "bytes": 427,
+      "git_blob": "483f8acb3db1266bcfbbe3a1a3e32bdec3b231af"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-192.json",
+      "sha256": "f8b6def96ea8cba0e9bad1b4871ded8f69981c20161ac9de35d07f201ff8497f",
+      "bytes": 465,
+      "git_blob": "8ae0922cffdf60a0609dac6345363f7aa046e432"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-193.json",
+      "sha256": "c2dd773b7317357b1747fb0bf3f4c1c0557c81e4802f89d212b099bdea1a4c5a",
+      "bytes": 463,
+      "git_blob": "a77f48e1f7aa6d40dc4db26b39a2bc93f61fe8b6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-194.json",
+      "sha256": "e46292edb196c7cd0105c3b0067dd26b7266eb587fc741a54d2853005d8270ad",
+      "bytes": 426,
+      "git_blob": "332c82d99dd8e14110ec73edf7eb48d862d2724e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-195.json",
+      "sha256": "14829854f1ad9bc6d8ad89020e65b01457d7804099e7ace8998db4bad98a5503",
+      "bytes": 429,
+      "git_blob": "f0c5a749bb3d97ec3521d272d3c9f550d29ef6fd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-196.json",
+      "sha256": "84785f941089c6b3a08e72695635146c7a49f715dd341885c2cefc8a87796307",
+      "bytes": 428,
+      "git_blob": "eca16150498b0bb6809e4caf48783e782e03fc59"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-197.json",
+      "sha256": "e9c4e7cd3600e40234b3ef8d0ea5a8b94840fbfdc32b709e4bee4f76b4a69ab6",
+      "bytes": 476,
+      "git_blob": "4c1dd1fa28edc2ca60e4f9084ddb7d21f413c361"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-198.json",
+      "sha256": "c6d52ba36187e4c8f55e0500c7f326c761220afb76ee52815a60ad4f1e7091cd",
+      "bytes": 1407,
+      "git_blob": "281bc4b7f9d0b49710b29a75dd1e77698fb0baaa"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-199.json",
+      "sha256": "1d8795e2a75712b2c44c8fc41969d6a45bb8e92e602cc0715068735280e76b33",
+      "bytes": 1307,
+      "git_blob": "9c3f742a4e6f183d6aa41de1beaa5d8a875df6c5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-200.json",
+      "sha256": "8355dfb89d98e89ac944e5c2c88563af40a34014e5cb412a35deb818efe35101",
+      "bytes": 460,
+      "git_blob": "c42b87bed04047d82256cc1d24b279b8fbcf474e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-201.json",
+      "sha256": "14d3ab4e637703f55de1be1b146dd1e6bf3b1ef826db0cbbaf467e467557fb24",
+      "bytes": 476,
+      "git_blob": "62813af8041fa8e170c7d8a8e4a9ae7a4261bccd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-202.json",
+      "sha256": "32f9d0dc0dc6582d89d7ab2eb8113910a7ee0f4f1630f924c939698fa07b9b03",
+      "bytes": 476,
+      "git_blob": "0d38ce6b3a1bf133f9b89d2f1cd8269624b952cc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-203.json",
+      "sha256": "86c2d081bcd19c6dd5b60985bc090bd80016f4be3d24ad8d9721c3dbfc27b59b",
+      "bytes": 476,
+      "git_blob": "0dbe8268eed3802277784a1e26a8fd871555eb59"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-204.json",
+      "sha256": "13ba4340cf0649869f615e2d78909ffa5a5a25766dde4a4c60f16e5943812c52",
+      "bytes": 476,
+      "git_blob": "e5d80eb6bd7740bb36e6c27fd439f66a211cb01c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-205.json",
+      "sha256": "f95b92eb9063bdb70f27e1f61e3dd9ae8c9677c1ee7935a98e986f249710ae07",
+      "bytes": 490,
+      "git_blob": "3f8771669264874a69e046c4bc3660825e922b8a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-206.json",
+      "sha256": "932a0cf684838fa49879d0e358caef3b75e3ad65181b05f485c4cd946df1803f",
+      "bytes": 428,
+      "git_blob": "ee67f0ace4456cd44539fc78a479e0b5f393fea3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-207.json",
+      "sha256": "5d80c744772bf48449f4027da8bd1547ee8f693774e248a8a6c01a3cf4a687d9",
+      "bytes": 427,
+      "git_blob": "5e01f6a883d0aed6915ed93e621f3aa796758a71"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-208.json",
+      "sha256": "159c5d1982a709f0df347f9fba7c06b8a22010d795b7b02badc06c42dbb95531",
+      "bytes": 476,
+      "git_blob": "1ce7f8c1891f888122292519ae13f6dd8e4b7b1c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-209.json",
+      "sha256": "b0a4c52ce48ac349b037058e1482bb6fa92e2c9fee873123114c05b77afa27c3",
+      "bytes": 490,
+      "git_blob": "2bb153cd5595cabfeb877859cc0414b5719f4e87"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-210.json",
+      "sha256": "b4fc912fbe719f02552cd9e362d2585d4f2118b1325b086e2f1567552cf29165",
+      "bytes": 428,
+      "git_blob": "65f0cfbb1b0819fc4327b084bbf671327514600c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-211.json",
+      "sha256": "d8cf4f6d437f2f1b3982f212b08d9a6d4e40c178ee2ad568273305a8e886c9fd",
+      "bytes": 427,
+      "git_blob": "cde4532472a960695f747391cbb9df960edbd320"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-212.json",
+      "sha256": "c51df88dd9eab21142e7af7ac555e1b5f899955fdb6ffa9b200c1e4575c4e41e",
+      "bytes": 611,
+      "git_blob": "ac120250a94e522927dfd22e80f892521f29df05"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-213.json",
+      "sha256": "9144ed73e4fe03b247b0ef143104c0e3bab7eab6a174712352c92d1bfca7964d",
+      "bytes": 428,
+      "git_blob": "54fb06db9e2e601af5cd036448d2fb0094a6bb83"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-214.json",
+      "sha256": "b01a318a9e5f530995b68c559317526352bb16c26bce095555537e04d32e6b38",
+      "bytes": 594,
+      "git_blob": "dbb4ea265acbb966eb03353362f907c4fc709a04"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-215.json",
+      "sha256": "edd46d7e5b3b3bc9de086660e8e5f0543ea39b4a8dfc05da109ee0f0cad6accc",
+      "bytes": 428,
+      "git_blob": "2c93f9234d7be5d916725a0eb3f1bb336e2d8659"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-216.json",
+      "sha256": "85438975ece81112d65298389fc86f61b6d1e7e78b78335f13cb8ded6ea60c2e",
+      "bytes": 450,
+      "git_blob": "11d0ee02b411561b1cb0bf0e0183471f5664c644"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-217.json",
+      "sha256": "59ad65b38da985f76993e6f503a0a6d1c1b8e826c8e24466ed86ac11e1293f61",
+      "bytes": 428,
+      "git_blob": "0bd5bacbd6901b94db826bec8933308ca7660fb9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-218.json",
+      "sha256": "ac8243a7161f097f3850f4631032c401f86d751cb8cc378a463092297ab47807",
+      "bytes": 450,
+      "git_blob": "923ac9c8fb2038639d3227f421a2fe08209b5281"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-219.json",
+      "sha256": "68c1d08348bf4cf28a9f8968804296ffb91c73fe41479ccc25e861a10c26d835",
+      "bytes": 451,
+      "git_blob": "321a3a6574344ac068051974b1fd4a55cb6ed5f3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-220.json",
+      "sha256": "6f9d06a48e4f48e697fed82b7a27706c57a7227e8109c435f6fa2be04c66e337",
+      "bytes": 426,
+      "git_blob": "d366e669d8e3cf9886bfa44651433c79ab17bdce"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-221.json",
+      "sha256": "aabcb047136e91af201bb502c8e1ea32fb9001b5475d7570d57f637ab419f420",
+      "bytes": 551,
+      "git_blob": "308ef1790fa28b35a755e0093e0d9aaca6890829"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-222.json",
+      "sha256": "559faf2e5ab608b1c735a0c1133890d0437492ed7650a63f7eb1f8649d86639d",
+      "bytes": 541,
+      "git_blob": "12e07a274059d23a2439c4828d106e51d68801d7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-223.json",
+      "sha256": "2dbc71987a0df58d985e9f391cfa71252403e7b87335aeb40881e6c4ef8f5c51",
+      "bytes": 572,
+      "git_blob": "8146a14dedee59897b520e970ac0772ec7ad9957"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-224.json",
+      "sha256": "b732b697282659d5c646db7c9486e6aaa8da863256dd02d2e1b13a049bf29264",
+      "bytes": 562,
+      "git_blob": "da9f6614d69a8472aa0c72461fd48ecdbd63a778"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-225.json",
+      "sha256": "00d2f7c2ce97417842c3a34099ba2e61f94969b0239e79752b6d15b838afc85f",
+      "bytes": 402,
+      "git_blob": "432834076647bb7968507c1ccfbee6bfdd4b7195"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-226.json",
+      "sha256": "c493c75b6309386637192f6bd51a57153a757af3377dac13f8c99d6b89682943",
+      "bytes": 462,
+      "git_blob": "c568b68f189c0ab8bcbd1889b24a0ff8574a838f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-227.json",
+      "sha256": "dc23d328c155febcfc8ece87004407dfda75ebfc5df219841d52d054b3ec88a1",
+      "bytes": 477,
+      "git_blob": "cd701bef2afc3c19baacd3be270f7c896d22dbb9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-228.json",
+      "sha256": "a8914b5ea7bc53cae66b995319d6abef260c10f99ff758ba148613159f761df9",
+      "bytes": 675,
+      "git_blob": "222435bd29c2dca4fdf4235690abbe9b27673f50"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-229.json",
+      "sha256": "13e6eb7a02bb2b760db3edd9ef924e75bcb0ec4c451cf475030386ecc3b4fca3",
+      "bytes": 417,
+      "git_blob": "0d4107a8454cee25b47364d60e52c3305f35abda"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-230.json",
+      "sha256": "5796a72b6fd52333f4b84b3f1b44662d715ef00f2dfa9c9c0a78c9342efa3d99",
+      "bytes": 647,
+      "git_blob": "d4d59671e8ba420b30679a5d372c92f42289baa9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-231.json",
+      "sha256": "43829024c2c7557f945097682a333e45f7b2c125e8bfd99be072de3985ccbac2",
+      "bytes": 463,
+      "git_blob": "1f91a5ebc1953b2e1bba0b3a34110bc5c4f8299b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-232.json",
+      "sha256": "74317b722bcf787ff3b43dcaf2c0bc53c27a8e1d9974a9cdf46fe9e20ec7f4e6",
+      "bytes": 701,
+      "git_blob": "586bb4d2e5c2650016ab50933e15603b07cd5b0a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-233.json",
+      "sha256": "81dcdb518d9de9463e98a6b17a83fcd9ec7900920048819c715d283827fe950a",
+      "bytes": 402,
+      "git_blob": "dadb48f59d18c0ad9f7e4725713e6601113cc6bb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-234.json",
+      "sha256": "10882e191f7c7dbf0a088ef2af2d910bd29a1d2c6c0748b652985a90e527b828",
+      "bytes": 401,
+      "git_blob": "6f435db52f428fe784d24aa92372a2512eb95d55"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-235.json",
+      "sha256": "ee83f7d72c2653779beefac2f1b8eea74da0bebd3c80aa1dbdeb3fbb49b30e55",
+      "bytes": 788,
+      "git_blob": "970fb3d5cb2f4307eb5cd7e12f73b68b49c2dd04"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-236.json",
+      "sha256": "6b9bc471a5b7aec8653624aff5a80de381c1fa3e73040004e46b0819cef7840c",
+      "bytes": 524,
+      "git_blob": "2cc1a5afb23a97e9dfe5e0a53a7bc268fb99b558"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-237.json",
+      "sha256": "4fd289dd0b0e61c0bb92be3522023f9484aca8173a8b8465eca6f08645068790",
+      "bytes": 428,
+      "git_blob": "32906aebc39e5047210e0a48f851949fe25746ae"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-238.json",
+      "sha256": "b892eb1a4d2e3b3fe46f6b53277d09e0a465ff802e0cf2d28f609679634945bf",
+      "bytes": 1040,
+      "git_blob": "2f5553d4da230db7b57b5ff3e172b749c178918e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-239.json",
+      "sha256": "db8590c97a8b2cd513a073a013c391cdd818a3ddd7c7375aefb5e1b59e86ac0e",
+      "bytes": 562,
+      "git_blob": "12f522ccd160b661e6b689cd4607fe057b870d1c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-240.json",
+      "sha256": "d25f387d8fa1bd71fb459462bc633b5cfc769b4a9e58479a5ef9a00ef719feb0",
+      "bytes": 417,
+      "git_blob": "196e3a7398799e95556f208acd71c34091cc61db"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-241.json",
+      "sha256": "3b94dcc4e1b62cc5696e8e337513b6349ac6106dbdc60e0c49ea47f9db709a56",
+      "bytes": 459,
+      "git_blob": "757308fab94b35f1c0ffeb960df2f3f554d18c75"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-242.json",
+      "sha256": "b89f405d2811061de3669e158fa4ca112457c2e3a31821e674013fb5df089583",
+      "bytes": 460,
+      "git_blob": "754bcaed1ef0504e2890bec5997bb32a8c19b329"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-243.json",
+      "sha256": "be4e1fab09268dd75f0c87ef87e6b18f3bf0f34afc051bb6f84b08d73e19fe96",
+      "bytes": 402,
+      "git_blob": "dfe193815da7880c0d47e6edb98004c88b5df89b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-244.json",
+      "sha256": "bc0ce8f02bb7752f5a190e3508b9a6487c34ebaf24f256edf9f084e72537a0ec",
+      "bytes": 432,
+      "git_blob": "b501f7bfd9abb8efe695b73677b5698b5d73354b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-245.json",
+      "sha256": "8ba20b3b2a912e9cb73de146e84fab5b3a30e256f11b5c5b08347648e66e7af7",
+      "bytes": 458,
+      "git_blob": "36859104a55245f18409d1345da2396fb5892426"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-246.json",
+      "sha256": "2776ee582259f969c93855f767d3d8a486be216770ea2806debdb46477e0f04d",
+      "bytes": 461,
+      "git_blob": "8c7b1c64050866102a5cf87f0365d3df6d1dea4d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-247.json",
+      "sha256": "ac98ab667f3c211f4f9265e0147bb4ebadd0f88d2bc729ef053c001da6312632",
+      "bytes": 417,
+      "git_blob": "42f2ef5874d247b3d76d61075c45ff54a932ee28"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-248.json",
+      "sha256": "ed0094cf213f6d70d33ede40b45663c76b9452e93040ad1f75f0d01b35fc45e1",
+      "bytes": 479,
+      "git_blob": "1fb4a499ce948b194b7276b3402c37c61a29cd24"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-249.json",
+      "sha256": "45d86c8aae88487223ffeb3a5e5d0374c16e3c68b2cc7d3f951f18d9d29f2fd9",
+      "bytes": 461,
+      "git_blob": "997ebc20f318f7ddd30bc7f10c135f8df85134fd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-250.json",
+      "sha256": "629b4382e9554c52deb8fc37c5c36b0cc6cb34f8cc17b97381438610774fa037",
+      "bytes": 417,
+      "git_blob": "f4981d4fcb91b02cb3201fa2392e67c493898cfc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-251.json",
+      "sha256": "4f8ffc58735c2150f8c1e6e18702f15e37b1272a2276c349ff9e472d27d9ac2b",
+      "bytes": 402,
+      "git_blob": "d6c8d8cf31c5f1f3425bfeee27003cbd784a0a47"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-252.json",
+      "sha256": "47a099f0699088bcf2476457035aadb4fd3b6a8eeaff853b7876b6646793536d",
+      "bytes": 510,
+      "git_blob": "709966f22c184d61c9b1cb56f59811ee3ea07e39"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-253.json",
+      "sha256": "77efb73a71061912a5b7df504db5fc2a3d60f6c804726d75e06c545491657816",
+      "bytes": 1261,
+      "git_blob": "210028c9f744bc554e3b420f2b34c4c24f033ffc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-254.json",
+      "sha256": "10481a4351efc026f6a20e539017cd6563b3a3d32c9fe15987d0f371aaedcba4",
+      "bytes": 1209,
+      "git_blob": "c25c00e2880113f321f451b0eeaf3d6acf74a9a6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-255.json",
+      "sha256": "2c4f5c873696f716ee41a7ffed2a0f271d5ce9a34568735418041b33c2d12056",
+      "bytes": 402,
+      "git_blob": "cc051daedeb907cf1e70a055d2950c48732c799c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-256.json",
+      "sha256": "396e64dd0e6c8f8a39bd02b07eb298df1175504808c891aa924d7df5e90a856a",
+      "bytes": 476,
+      "git_blob": "c218f1d3332d53022cc712c5100267b759357c66"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-257.json",
+      "sha256": "245f60bb3d686cc6d0959f6c9691c5d543eac654243f4754c2c249bd8ab7f7a5",
+      "bytes": 690,
+      "git_blob": "134726be0c8c2125b587ddd17bc93e009c25ff4a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-258.json",
+      "sha256": "1eda2cc429e4aa73fc305bda023e46f951f758ff0386346d694268b09d3b07d1",
+      "bytes": 442,
+      "git_blob": "0aa7f714e5efd11d6e2716fbc7f4ac7d6827aa81"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/branch-259.json",
+      "sha256": "cf9e7b5ee9c9cf309f57527cdf7673b0a6c3fe37d08047d8f72b5e6b77592d1a",
+      "bytes": 443,
+      "git_blob": "1810f2e32ad1625b0757f9147c2b1eab40fa55e9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/child-result.json",
+      "sha256": "5e6699c39de0ab165fa6396108ce8c11a9a9e4ca250ef557b7d3f16e7a1ac180",
+      "bytes": 53652,
+      "git_blob": "f49c72a2fe6f7f9671835fd0aa82126c66ca655c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/progress.json",
+      "sha256": "6a00a1f18538412df520f4f9376d9dcd3fee0e8b04edb815c27ccbd9e3722174",
+      "bytes": 49468,
+      "git_blob": "3b02a3a33328816dc204eb3f06a51aa8ac38da74"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/stdout.log",
+      "sha256": "2c8222745c7f4b732fa755f55f2aab04858ed0bdab5fad74253a7825d1ab609b",
+      "bytes": 80,
+      "git_blob": "3a92c1064d23549f8d0555a9408e6b3f66975bed"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01/supervisor.json",
+      "sha256": "88e1fdee61b3edabd758cc76321cd4aafd468bb327989f49f360db0a868e609b",
+      "bytes": 50188,
+      "git_blob": "b157e9123637bb9988b3d110c1f792da9fe11a77"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-000.json",
+      "sha256": "2c8f3663640b7ee664577bd4e456ecf6c566cc6e632ca62eb80a670deb3463d0",
+      "bytes": 293,
+      "git_blob": "e7a228f5e448778fb01b91ce2ce34367808309e6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-001.json",
+      "sha256": "dfc2aa295d2c031f87827bed4ad3984bec89d29dc429e6563eeeace7ced14629",
+      "bytes": 292,
+      "git_blob": "4364e340a639f96d9547922ca9e648f02ec1a7a0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-002.json",
+      "sha256": "52cea3e49672296ea953b3ddaef39a5d8198994f0f6bbec886cd8bb58d47ab1e",
+      "bytes": 293,
+      "git_blob": "40915f8eee8c48680d30c0272dcfe1136bcf68d1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-003.json",
+      "sha256": "97eedb5fa2cce7de43ee721aecd870bce4e9a2d5b6485f7d0fa166f02578a935",
+      "bytes": 293,
+      "git_blob": "de5a99db4a29f6795f5644e208b5c525952abafb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-004.json",
+      "sha256": "f0b7449ae28a1dabb7ee7ebd21ea7469f10ecef1b2e64c1142bf9a1334ef09d7",
+      "bytes": 293,
+      "git_blob": "0a95a6bfbf1e0ec07b13030fcf7ff5cebb6877e9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-005.json",
+      "sha256": "b2f67b1bb3ef819fe6b63eb6060d4e9de4ed532f4653b33c2da5ecac4ed25d4b",
+      "bytes": 292,
+      "git_blob": "a5c9e6289ed840998983103a05f12d9a047e5081"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-006.json",
+      "sha256": "d9512c739f1b95ea8a02fe0fb5b58529fc53f67f43a05411cdb756e4fe14f64f",
+      "bytes": 294,
+      "git_blob": "199a369c359d8b77374f6f339f1b30b9c8a14f2f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-007.json",
+      "sha256": "41423df67b09ac4f351b3cc2a19fea0ae3597785df57c1820ea94fe02f317f7a",
+      "bytes": 294,
+      "git_blob": "fe35b211dad42a497c4c30da02100e517d266820"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-008.json",
+      "sha256": "315c8b796064effd01207f8a9ae725defbc04906c9e52a6cab7feaaa1578001a",
+      "bytes": 294,
+      "git_blob": "8f1171f36128f1f971c2dc2ac4298f421806358b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-009.json",
+      "sha256": "235a10524e18acf0297d53b0d24afd7cc5ef565f1d4ff3a20c298ee6f3d4fa54",
+      "bytes": 294,
+      "git_blob": "67ed0784fd34cf8e4387142a8a1eb6e14e96419d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-010.json",
+      "sha256": "600cf79dd0e6e7fdc505fd9bf003ccb090e1cc156441eaaeecc130dfde025b4f",
+      "bytes": 295,
+      "git_blob": "387d18e21fb2dcf49eac3d3f9eac63cc24bf78ca"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-011.json",
+      "sha256": "ea191063005c938277fc826b789c0c049b32aa8c095310d5f5e9a7cd994a9acb",
+      "bytes": 295,
+      "git_blob": "947a5e6b3d94498829428a83a4d1eed5ad997672"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-012.json",
+      "sha256": "8d76b461137dbafd02932791da53f1c48a8f8098f239778d8673cd07d816420e",
+      "bytes": 294,
+      "git_blob": "a56062c8024f4c1a726558d32051957104f0d470"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-013.json",
+      "sha256": "8fbd037e8bdbab326ef798068969e116bc03e69800f9625d0e82405cea762ad2",
+      "bytes": 295,
+      "git_blob": "79a80a39f5e63664942ae8c2aaa633215503a5da"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-014.json",
+      "sha256": "e0582bdf74c9159c6f1f1186b2e1870cab9dd5b4e4a5f8c46eafe239862ca3d9",
+      "bytes": 295,
+      "git_blob": "d87599f5da8df08025702f042ca62f048df52cf0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-015.json",
+      "sha256": "233f7d2c7c3f0e4203633470debbf693278890590233614df252553ac185de25",
+      "bytes": 295,
+      "git_blob": "aec0f5f5833dec3dae640fbcea2981149f131179"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-016.json",
+      "sha256": "50323ee8a00365dd8851c60f71a939be9b90e986de0339036660bc154d1745f9",
+      "bytes": 294,
+      "git_blob": "bb9d648a062f72dcecad362d777e89fb338e873a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-017.json",
+      "sha256": "5f93aceb413aa0c4a981c544917ff53116a4405c84b8a4b6d441c1bf8955dc42",
+      "bytes": 294,
+      "git_blob": "fd4f08da5b6ff1ba66972db96637c5e64c3311e0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-018.json",
+      "sha256": "721b7b88db49a8cda649fc9dfd7b8aa8149bce0d94d48b1f92e56b397bd4cefc",
+      "bytes": 294,
+      "git_blob": "2fdeae4c083b311f834a1d5b21a71edf17360406"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-019.json",
+      "sha256": "a9babb025706ac10a2385324d65e3497df5ce76aa0a05d301a8bc009147fb247",
+      "bytes": 295,
+      "git_blob": "c1359d6555e4758c4b177faa073c7b6915a72907"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-020.json",
+      "sha256": "c0cf396f30a32960feaa1edd85a563ffb82e4687f9807efd0c1460308bd47924",
+      "bytes": 296,
+      "git_blob": "0a46d651bf99c75eb65118aa5cde9ae843cc6a71"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-021.json",
+      "sha256": "d437417733870e8bd45bd632c21e037eb0e3077061e37949c52bf75f1e6a1c9e",
+      "bytes": 296,
+      "git_blob": "83887083c698b94861d6b034fb25838d22b1efe4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-022.json",
+      "sha256": "a8e03e1da3b0d55c4bb715879be77bdaa683db572da6a90f8e052ea44b464bff",
+      "bytes": 296,
+      "git_blob": "ab625545650d53eaf25fa5494e5f53dc311d3dec"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-023.json",
+      "sha256": "a3016113729669f77871427be9af1a556489381d75ca475aa22e99b1592d412f",
+      "bytes": 295,
+      "git_blob": "630c1d385e274e23d7fb429e270c39f98c702a0e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-024.json",
+      "sha256": "8bb999b4c2d1a15e548b6e6e70c7da871b3d43610e20e351dcb2ad3dd62831fe",
+      "bytes": 295,
+      "git_blob": "6f688c8b8e1bdce949b701f2f468e35c512b7cb5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-025.json",
+      "sha256": "fa0704984b133ebd3b1911cb1cb6fa4dae7c42a1ed3f77804d92ce4f7838d40f",
+      "bytes": 295,
+      "git_blob": "45caba24de604dd7ed5979cbcd335399e754b0de"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-026.json",
+      "sha256": "f68e3101487dbfbf6dbbcfcedf3df30212509d47c121faac06f2ddb1c3da9256",
+      "bytes": 295,
+      "git_blob": "45fc29a4292f6d3ef86cc64022d376aa2b010747"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-027.json",
+      "sha256": "181095219c1544015a85b955fc93fc0946876a4c5a36f7172719f91dde9aac13",
+      "bytes": 295,
+      "git_blob": "33f7e34beeb8ca330ee51db2a00989cf57df1241"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-028.json",
+      "sha256": "12296f7ad23c8582eae5bc3fa2998dcd3cd1245149aa750cfde016faa969497d",
+      "bytes": 294,
+      "git_blob": "7a242275452c45c4c8738d9d915e91c7a105fcae"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-029.json",
+      "sha256": "7adf93e24b6c5cb4f920d612a292a87799eda5b83f2c989dcc45d99a8f876988",
+      "bytes": 294,
+      "git_blob": "cfef72329f172254a3b75b96c08b27c7135de087"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-030.json",
+      "sha256": "294863e7d79037503275fe145cb9140df646bceb4c9e58068cb14c3ef4184381",
+      "bytes": 294,
+      "git_blob": "500338320b424d11d2e6e0ada0de5d08a660774a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-031.json",
+      "sha256": "0e5711abf3e3e8ebb20e3c1dfa46f3ef2791e62b2c527d22ad8c56c3a26a1624",
+      "bytes": 295,
+      "git_blob": "9110f4c31c48f99de0838f7f7e45fc87b167780e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-032.json",
+      "sha256": "8a02dfea0bf982baab91a52712023611ec763b5e8f02677ba6cfd2fd949f82c8",
+      "bytes": 294,
+      "git_blob": "aafc4ecfd2ffd7b9dfcb54c64a007094b1bc00d3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-033.json",
+      "sha256": "639367b8131b980da0bb9aac5a1bd10c65658e3c3b3c6d36f67d85db10bd6926",
+      "bytes": 294,
+      "git_blob": "54d2da59f0c53044a9ddced868103febaf16a943"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-034.json",
+      "sha256": "e68b302b37119c32d37a7d8e4d27da0d0a09b022b78ed3754836c277503a0ef7",
+      "bytes": 294,
+      "git_blob": "40fa1b1420a10367ea494f84d143f37fcd57f541"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-035.json",
+      "sha256": "25ef27866557eda18ebee24d13fb3277b8ae661fa6b62ae8d05d7dd49dc2ed6e",
+      "bytes": 295,
+      "git_blob": "e8354bab7ecb54277d1b578fb9373d6b51b6ee63"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-036.json",
+      "sha256": "efc4761679d0935445e57ce83c5b94826e0f204e00d8a72a7ae317f3d3be5507",
+      "bytes": 294,
+      "git_blob": "e69303799c90ad56b3c6d1e05e0d97050fb6c9ed"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-037.json",
+      "sha256": "820f43a1f38cc511fbf66c1e89f3c50b17e5700cf0b868144e713b31b07a9123",
+      "bytes": 294,
+      "git_blob": "ec8fc2f38afa8e69bd31b870af3ec5ea31ff609f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-038.json",
+      "sha256": "cc5f2cafc58a5aecab489f9aebebb15c26ce2af8da1a9456c60eee51fdb76c23",
+      "bytes": 295,
+      "git_blob": "01058f75bc9dee3a04805b49cec2d95ac340fd03"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-039.json",
+      "sha256": "b70996ed238d52ef3ff08809ec9dc507792a6e13b782cc19eaca1e7a1c6b8ce7",
+      "bytes": 294,
+      "git_blob": "2280ad831a925d545dae3a48ebf2263a99e2f51d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-040.json",
+      "sha256": "2bd86207e24a60fc48c426330f9c5c724704ab89920d5bff08d223ed1e8227f3",
+      "bytes": 294,
+      "git_blob": "90f81ee5984ba4061032d1ef29a0cbbcbd33e8f5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-041.json",
+      "sha256": "d3aa9b24bd1faf96ee7411be8e16e26991b01faecdcc9e7cafa8c8cb48dfeb37",
+      "bytes": 294,
+      "git_blob": "73a01e39bd034914a618daeaa5c5749dcabd7d4c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-042.json",
+      "sha256": "32ed82653ed540df59dce49620310ffe9d343976c2f604f0a0e60f03c5fcd1b0",
+      "bytes": 295,
+      "git_blob": "daf9e3e9fb53d620b9474428a00ee69c0c6c52a6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-043.json",
+      "sha256": "995bbd4377940cd3e8eae2a2e252ecd8a0f3ea7e74f64d3dfb41f475a5fe07c3",
+      "bytes": 294,
+      "git_blob": "25cfd5a8ea3c75f9b9ea2152d0a907025cdc5382"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-044.json",
+      "sha256": "becb9d9cd7a39c7fa60f609d3f964536e638c06b9b90b9746a6db2af518c530f",
+      "bytes": 294,
+      "git_blob": "e0ba9a0bd2f218411b340a76d17db1576200b730"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-045.json",
+      "sha256": "80974b771cfb38087f1fd943c0dbc4f9d93472ec91c064ebc03bb288e84d78c4",
+      "bytes": 294,
+      "git_blob": "0eea8f5bb70165d4dec9f0385104ab3e44596b40"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-046.json",
+      "sha256": "47dc056c4160dde9f55c0c976a3e240a9b4380be6f14889127fca569a1173451",
+      "bytes": 295,
+      "git_blob": "5740e48e2ec126772e751551e1b4b94731ef0f16"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-047.json",
+      "sha256": "14cf3e2ea7909b7e317e07cc840fd0dedbea86decc322ff45f27b2c19705a6ca",
+      "bytes": 294,
+      "git_blob": "4672d7165cc9191af0f0e3917639860172d55718"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-048.json",
+      "sha256": "44468ee268c28cc70ec001a09125bca5148fd759b2a7b0e75cd70eaf71bcf937",
+      "bytes": 294,
+      "git_blob": "f60d108dab8a4cecb35bb754d5e048775c64bccb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-049.json",
+      "sha256": "faa78db8b84b4fa8251e9a10a981972afe82b98bfb4c757e8c05743a4f22a663",
+      "bytes": 294,
+      "git_blob": "e15cfe2ea506058d16cb6320dd8dc96de5f05b04"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-050.json",
+      "sha256": "a277004039ccd6a720a697bc13a73e859b2b66c020e3a55695e82ec0cc342dcb",
+      "bytes": 295,
+      "git_blob": "c8d918f6127a83db15c1778ba1407595247f3a8e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-051.json",
+      "sha256": "91db234bf41a04103a8e1c80e4f7c811d72d7907ad6d9571bfbe761bd40686eb",
+      "bytes": 295,
+      "git_blob": "a23b1f8052418c06bcc65bd8bb2213371251657f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-052.json",
+      "sha256": "276a764dfa12eaa36512a73d0849720d05bf5e77ce0fc81217138e28a33623c5",
+      "bytes": 295,
+      "git_blob": "2eba16d6a0c132a539a525095cedfaaa295ae0fc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-053.json",
+      "sha256": "878d19ab05f465a88a9307c3460bb52bc23cc44a1ce5f388d2a090558e3b7ab2",
+      "bytes": 295,
+      "git_blob": "cded5fad9e731be16f784b35a3cda653f34a72f5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-054.json",
+      "sha256": "3131705ecefb2d1bacf19a60a5ad211fc9ef4932ae648a5ccc8014b4df2d8d7a",
+      "bytes": 296,
+      "git_blob": "3bf3de8167700d7664a541718bf85c190642c833"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-055.json",
+      "sha256": "a3a51fd84286a3687ef0ccd1884bd46ab6c20574eff2298bbd8c1fd8d0a6dc2a",
+      "bytes": 296,
+      "git_blob": "9f488c64702a63acd772f0dae3a63ac05077d14d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-056.json",
+      "sha256": "aaaff8dc8e7d37479820147cd4cd48efdf146139c5109f1fc07848ff2ca827bd",
+      "bytes": 296,
+      "git_blob": "e98ceb74bb60877a0309cbd2c56ad64c940d5cc7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-057.json",
+      "sha256": "7180a58527685cacbc4e8f0f2e160b9ed5fb4c3fb437784c0db92a23f455790e",
+      "bytes": 295,
+      "git_blob": "28f4b5de14531306c3bebe738d0d108d00121a89"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-058.json",
+      "sha256": "bd6b8ad8c4e11d2a9244b7159e95c4a848bf1cc7b41aa7fa605d81b01a49ead1",
+      "bytes": 296,
+      "git_blob": "ba79345c49794c0dfb44340af056a3c45010e593"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-059.json",
+      "sha256": "1dd63109e991005fdd6b58629dfdf0bae2aa5ac611dfcb3f67146f8b9ea88123",
+      "bytes": 296,
+      "git_blob": "3d8a3094dda934297bae05af5ac6c1abfab9711b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-060.json",
+      "sha256": "61081ba99d24dad6748ba3658e065502fd88e2abb7ea055eff51193d0c87e6be",
+      "bytes": 295,
+      "git_blob": "5d1678a32518fc27484c870e6e0a6a90803e7f0e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-061.json",
+      "sha256": "301e721efa9b7e44c824e32b0c5badc858da34c479dd89ebc6b2b94abd5469e2",
+      "bytes": 296,
+      "git_blob": "51bb9e63fb6f023363dfa7a7c0b8828d3636ff68"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-062.json",
+      "sha256": "6d6dd118e8cca4cfd4ff1017d05dc873d74fc41b632e53929f4e88f971ed1ca7",
+      "bytes": 296,
+      "git_blob": "b5076ed3f2fd774c79cecc7bac5a9a06403cfc49"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-063.json",
+      "sha256": "3233a775a2b869c5baac01a2028eeb9d62020171f5d1550d18ffd42fad02c74c",
+      "bytes": 296,
+      "git_blob": "3cd7dfd7ade1d9b07470e161e4ad85ceaa416673"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-064.json",
+      "sha256": "4260738fac479ce38b3d3e84a27538ee207606bcea96b999531f9566b3f6c5da",
+      "bytes": 295,
+      "git_blob": "bb44cd2cbf14608814286650c663348c43d9e623"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-065.json",
+      "sha256": "2dda6b5e51730e7ca4a5caf060875d3fa30558e66d25b05e71dce4af525081f5",
+      "bytes": 296,
+      "git_blob": "ed963e7edcb9402f514a59c9d67a01e22a2c72d3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-066.json",
+      "sha256": "d727fec8fd2897b6b29a899d8edc176563e2a4039454414e820b65ac226353cf",
+      "bytes": 295,
+      "git_blob": "41cd7cd5d1ecce7976417ea498049faec1451cc0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-067.json",
+      "sha256": "f0c60fb25e46ed63db596cdb56fa6d0ba019e1833dc4b9ee904b54398fc0b438",
+      "bytes": 294,
+      "git_blob": "da7dd186b7f85506f0f328a1c6e58ec3a2849696"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-068.json",
+      "sha256": "9c76ef8048e49edb35eb213c05efeb70ada4c366eee6022e55f1ef1d645f6913",
+      "bytes": 294,
+      "git_blob": "5953abac9e73e0fd4e0b3bebb6975b6508513bef"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-069.json",
+      "sha256": "16758d67ba8ec4a79b56d8be388debd3876b4a30b19b45c355edef99f45747aa",
+      "bytes": 294,
+      "git_blob": "4ebc0aa4d8458422bca40e25f6a9548e1d0ac557"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-070.json",
+      "sha256": "54d55ce8d9a0b7ae0acec65fb9c6634a10d7a9b9d8e8a514363ef44171b48d5a",
+      "bytes": 295,
+      "git_blob": "34607eba50bf8838ffb4d91eeb41da7b9acd7c5d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-071.json",
+      "sha256": "244fc0f23664ca8f554bf3e6016e72cb8e78fb992d85db9f768e69694faafba4",
+      "bytes": 295,
+      "git_blob": "fc425be2a5085f8420861e9d2879ca6a6c83dae9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-072.json",
+      "sha256": "b9353db178f1da70859bb115c3f933b6e504ce7c622517d8c809d2282d6a3548",
+      "bytes": 296,
+      "git_blob": "af5e709663a6f9be48ba8972856d04c3767fc360"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-073.json",
+      "sha256": "13002565ac6a2d4bc121f6273d36d017e7459419d4ae72783d9316aa12b61d39",
+      "bytes": 295,
+      "git_blob": "da5eb470fe297982dd111afd4b349bb8a3e5d3e7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-074.json",
+      "sha256": "3eaa28d48d74c78e28c59691af07f8a96a7e0617bf9d866c948623abdd6beef5",
+      "bytes": 295,
+      "git_blob": "373aadd01f5728dce3d8cbee48df5c707a862cdd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-075.json",
+      "sha256": "2f52e2916cb61e4df2d5eba3a3ca7275f50c5b0324bf9316998deee9c0e61cd6",
+      "bytes": 295,
+      "git_blob": "b5e07e0d76c460886821015194cf46f9838ac748"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-076.json",
+      "sha256": "74286e6c69d3820632bb7758a00b99f0bd222d96e5681f502e84de6d8970a3c6",
+      "bytes": 295,
+      "git_blob": "86e86e7165c405e4729a774386aa836513c076f6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-077.json",
+      "sha256": "18c21454f3f7972a06f1ef3ab03f18e291cd69ba3cd5c5b355e26dfa1f817368",
+      "bytes": 295,
+      "git_blob": "e9ad9d3ecf08c0c32a41047051e91659bb918de6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-078.json",
+      "sha256": "dc22fa903059aaac7133e47b554430ac979f3b691b96e7b475399e99ab28b986",
+      "bytes": 295,
+      "git_blob": "10e58e446aef92d07661fbaf45bfce6e447a749c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-079.json",
+      "sha256": "9121a25d866515b22ce7efb5aa001fdc5d7c4cecbf0b7e46db5b48fa4355fe63",
+      "bytes": 295,
+      "git_blob": "aa740d3bf0af2a2ada5f4abd9c475e9ed5fbab3e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-080.json",
+      "sha256": "82af218f01bdc5c5c8903c680677f30cc4d905a27d8bdacd9ef3b256841bde54",
+      "bytes": 295,
+      "git_blob": "be49b6424d0aaab1df354b97e7da038357187631"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-081.json",
+      "sha256": "c508c9d4d8a5d3a661fce94764a0a8b55c1605a04836e29ddafc1b3dbc37e3b1",
+      "bytes": 295,
+      "git_blob": "635f6089d95618da6eeb1de683e3d04a4450b72d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-082.json",
+      "sha256": "b8128c19fb5ef0322e4c571e334df047d389e5d9a6afffdec3998aa7936f2f0c",
+      "bytes": 295,
+      "git_blob": "6b48b1baa01a372657d9ea754cedb0b25fd43a0e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-083.json",
+      "sha256": "dacc5f48daec82da56c2eeb8e38ea51b922ffa838526b343cf55b305e412827e",
+      "bytes": 295,
+      "git_blob": "17fb543980a372b4837e077b65c5bbba4d555552"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-084.json",
+      "sha256": "c4ba9daad8b8b7ee33aae2eed67b19f2ea300d3e22df20eecd049253ec590c9c",
+      "bytes": 295,
+      "git_blob": "0cbfb2cfba64ab52df957d8f356284e2473ecd45"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-085.json",
+      "sha256": "a91c5134acd99e52a1957a0e99a4d77eab8d954dd7620bb528fd6afc904cc5f0",
+      "bytes": 298,
+      "git_blob": "4f7eaeefaf5a29f87ca7bac8aab7927b16706dfc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-086.json",
+      "sha256": "4997d6027c27b2a8d1979f124990733cbd7c27041d10385ce6731210afdd8de3",
+      "bytes": 296,
+      "git_blob": "cfe72872852e389e0fc838999e710ea091a1c564"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-087.json",
+      "sha256": "013c92067eb3725696eae3580e298e8baf66f45be32993826f05581a5b864af9",
+      "bytes": 296,
+      "git_blob": "8d6e028750545702801dfbb2de3687847bd56ee2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-088.json",
+      "sha256": "b385323d8a5b64ed5e40c8c9aca1ab7b2785b794b7887f4362ab9999ca144e78",
+      "bytes": 296,
+      "git_blob": "996abe6be4225d65be7ea34f786efed92d37f29e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-089.json",
+      "sha256": "daafb63295c235f681e06f739c509fd1a5ff7ed385feff4b6f876f4e6c4d3e3d",
+      "bytes": 296,
+      "git_blob": "fe70d8e4f3efab7448e8baf2d2d21a2a93111695"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-090.json",
+      "sha256": "aeb876418fe3da4376e8a3261b46a49fac01bd1cc45db3e441359e01e16de08b",
+      "bytes": 295,
+      "git_blob": "0b20c5d39a7f4f1955c71c2f39ef8e4499669cdc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-091.json",
+      "sha256": "93d991533da7e7e1ab534934a946d7ad5e5f38793f7217acea604ba481417e52",
+      "bytes": 296,
+      "git_blob": "e1e7c5f082fe883c2a8fcaa39de05f498195adcb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-092.json",
+      "sha256": "a55fb08356eefb08e8aa888ec602679f7e14abfa98b41b6e854fb3b1d34714b4",
+      "bytes": 296,
+      "git_blob": "44c8267e8c30291aae818837692b119aa6cc80a5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-093.json",
+      "sha256": "2e0daa90dcf4cf49905d2083dbe21cce342dbc13277beb0702af94d39e56efd7",
+      "bytes": 295,
+      "git_blob": "23ecb687e4fc314c5f22b43767f184fb670a0f1c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-094.json",
+      "sha256": "79127bc03847407ab81ed59d08e976ec6cb1c564cff8bba7daacaeb0b113534a",
+      "bytes": 295,
+      "git_blob": "af355fe35d8f2f1b08e9268fc5ced3b44610fe23"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-095.json",
+      "sha256": "6d28ecb114bb8851beb257c527c311820e65179e72186b84e11cef933c1531ba",
+      "bytes": 295,
+      "git_blob": "7d09936e8cdeea88e2080a23286eca73367a5d22"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-096.json",
+      "sha256": "f4e223dd1fb7d6f49218692bd29803fd7b7106659e4b9274439d07490344118b",
+      "bytes": 295,
+      "git_blob": "39a85b7d98faeffc83903b59ea867ffedf1e5422"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-097.json",
+      "sha256": "570860e2aad6fb5398853b4a605d990fd5df5f5326dac2fa34d9e0ad5d16b4d0",
+      "bytes": 295,
+      "git_blob": "9d5b6cd4afde7dc2a24e724e9a5b2aa443ec2a3a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-098.json",
+      "sha256": "66b4c582ff0829aab515fb9461f848cec9e803908ce68ed3ebb614a6efd45d07",
+      "bytes": 295,
+      "git_blob": "39d7e4decbe47643fc670ccd2c0b72caed662a78"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-099.json",
+      "sha256": "7331021874b9c179547d1f5dfb2dee933495220ef72f3fd5789b64a1841db21a",
+      "bytes": 295,
+      "git_blob": "004fa920b727dfcd06effbebae3e314edecefd55"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-100.json",
+      "sha256": "2128642f6fe5e158d8311f568a641ae76ddc44029dcbd65ba98b0aa190b0c99f",
+      "bytes": 296,
+      "git_blob": "ce3a5fbdcab7438bcc95da37aeba66393e78a660"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-101.json",
+      "sha256": "4ba498f0a6ab911a81c07b55fa280810227037120faf97767ecb8981c3c031e8",
+      "bytes": 296,
+      "git_blob": "e8013e0d427347ee4ecc6f3ecd896ca992c1d76f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-102.json",
+      "sha256": "b0a1c4ec872dc34e4ce7850493bda6e04aaccf92615db2e55c11e3da6b63eb2d",
+      "bytes": 296,
+      "git_blob": "fca70f05d76b231f2e793082cd5560882f138bb5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-103.json",
+      "sha256": "c80bab208efa9e920c0fb4a454883eacffdc20792da0f5012446fad9a3bb4ff6",
+      "bytes": 296,
+      "git_blob": "3c6e157e5f58de8f98e5c8fd72b785a11c12a821"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-104.json",
+      "sha256": "022ce263a1aef84cc2e8e26f1e2250b54abcf6f523f874819d082b505a1a6eaf",
+      "bytes": 296,
+      "git_blob": "6012ab27d6169e722ac60ad3ee4c12580b26636c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-105.json",
+      "sha256": "a1906c59e3acf96abc8737b79b673860bcc498f30c5f44aecf8f6ec45b7177a2",
+      "bytes": 296,
+      "git_blob": "6a1dd1c345d97769e0c2243e2be1ed133882e07c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-106.json",
+      "sha256": "50db7ba89ea9ba0d6016c0d7ebdcffde573913ebdacc962f1fb60903d8d5e823",
+      "bytes": 296,
+      "git_blob": "f9d92e582c458e91bd6aa53d87c36fab2b498a1d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-107.json",
+      "sha256": "6bf1e0df8cc96280a1b1f8f11ce9b5c05fdbf46bed469ab3d2e6bd2226b500ad",
+      "bytes": 298,
+      "git_blob": "d8e38e70aeb698e662e84413a13b3c6bfd9b71e3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-108.json",
+      "sha256": "f7846274df86f424b0e4e27131d57fa68ab8064dcd76119a4702f18741303a52",
+      "bytes": 296,
+      "git_blob": "8f3356b4466c927b9955fcf4c32a770a23bc864e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-109.json",
+      "sha256": "67ca9b8017f919f034521cd51d74666fd40ce824661fc27b459557de8e96b4ef",
+      "bytes": 297,
+      "git_blob": "6b8ff550dbac71a67b2fa8b49b01862a0913c39e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-110.json",
+      "sha256": "9302a5473774821646846d48c97d178cb85a8149c091923ea4be3f181686996c",
+      "bytes": 297,
+      "git_blob": "e6ab9b12572c756d6084261bc0d8824a11f15a77"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-111.json",
+      "sha256": "cb09f471066b876c6af7dde87bd389e43948601bd0a3c028e99c532f61e35841",
+      "bytes": 297,
+      "git_blob": "3fef4823e61e8a8dc84329a6ca42dc9639b2f91b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-112.json",
+      "sha256": "fa77d9382ba44d3e4941a8db755d0bd3009294eab92e2083d9e5101836b6fc00",
+      "bytes": 298,
+      "git_blob": "025146ca169af93011a7eaa7b28694f8a40de605"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-113.json",
+      "sha256": "6262a2b94e8e837b6692d00febf025b5c6b6dd4d38c131667052d0a1e2cb3573",
+      "bytes": 298,
+      "git_blob": "c32dd47b0cd647ad67f7b2c00ec6bb8098940540"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-114.json",
+      "sha256": "cc0b4370ffc4e97a116ce2f1d268739d38b7601d101656e833ec6fa8c894f6f6",
+      "bytes": 298,
+      "git_blob": "6cf5faad7a5be5b378057ba078b96f60ff9a1662"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-115.json",
+      "sha256": "4ba812cce8f09adc169670b4c240f3366c85e089956391a0e17adf751b59f9b1",
+      "bytes": 296,
+      "git_blob": "c358530c20c3d74cd3c3b693f917c7ccfde02ea9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-116.json",
+      "sha256": "f3f837fb0d0b981b7b0ff904e88fa01b423cfbeb4db500b29c6702103f5fab21",
+      "bytes": 296,
+      "git_blob": "58d6e2fb2c844ca8a2c84b4d139cb7bad13d2358"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-117.json",
+      "sha256": "b3eb7f1da85cd5aab9da2259c736153f87b10e2823e8e540441ff645588a4bc1",
+      "bytes": 296,
+      "git_blob": "ea51def4fa726ef0d099e80d513e86d7b295e27a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-118.json",
+      "sha256": "17091cf7a0906c990af58671fb3de6ef252ec65bbffbac2589c783a69e0b84e7",
+      "bytes": 298,
+      "git_blob": "ad1012fe2d89e48a0d7eeb9ff09f733d1b39f4db"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-119.json",
+      "sha256": "a3196969b85479ccfa8891ad555cf68a1a9f6f010e3089940fb03a77811f286e",
+      "bytes": 298,
+      "git_blob": "c753a8570ebfead6dcd60fd7278e9f07c55103f3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-120.json",
+      "sha256": "821d342219ed52280803ef16938ad6217905bd7d5a48de3346f84b8d51007b57",
+      "bytes": 298,
+      "git_blob": "cd8e44be57308a8670f20d93c9e066352f8f77f4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-121.json",
+      "sha256": "8f9a959f1b235d54ef15ef1973a42fb765941f8000276b16908d76ad75f74c56",
+      "bytes": 296,
+      "git_blob": "3ae55a36717720606f9217f65cb00c2ebf8410c8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-122.json",
+      "sha256": "067a49b75c00faa8d17ee7e4251e5a24a1466df42c3bd595aa7aaa1c87c3d7c0",
+      "bytes": 296,
+      "git_blob": "00f78328e8352efef15050bb7a47bf47848a8fdd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-123.json",
+      "sha256": "8bfa571bf6be8d6c4bfd9e84738433bb2b26d2ad31e5754a2cd28f376517b330",
+      "bytes": 296,
+      "git_blob": "b7fedc60368dc06092e3da133077f75aad6839b5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-124.json",
+      "sha256": "37e4c460521817d6cfad4c8dd16d20d25406f47b3e3732f07e65024529f541e3",
+      "bytes": 296,
+      "git_blob": "9a8a5e5bc301ec416f7040d317d7663f9a8c9e9e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-125.json",
+      "sha256": "9ee408d0d46ee5806174f60b37a4c4ed55d4b22df020d5a87ddf1b91d261fe25",
+      "bytes": 296,
+      "git_blob": "a0a3be6b479f84733566f50ffc6e86bed2ee012d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-126.json",
+      "sha256": "22edc2855efd6bf5156ca8293594814a43b5fb07f27f5b82f2bff6e9afe08c29",
+      "bytes": 296,
+      "git_blob": "f891021acc74b8758c427d0fc464056b16ab9d19"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-127.json",
+      "sha256": "c1b7a38cf0b3afe71543b065f988a0adadc88d1f50ef5c5e9b5ef3c51857c446",
+      "bytes": 296,
+      "git_blob": "f4a6ec2390a501965a0712da8bd2a169aed10f91"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-128.json",
+      "sha256": "54c235a1c22c76cd32517d2f4e961d635ef34afefee7e11337181f4ae2c59f24",
+      "bytes": 298,
+      "git_blob": "f38efee07d0157d8539aa002c922a421b2432808"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-129.json",
+      "sha256": "dde2d56cd0ba868ee57e9cf3743794bcf28be10895cf7ae3e45b6c349ba1362e",
+      "bytes": 298,
+      "git_blob": "386ee70bca6a4738c1cef5e4db2630c831373422"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-130.json",
+      "sha256": "62b699b818a2e4fdb91ae3ed077f2803c13ed4c75eafa0aa072f21414b627cda",
+      "bytes": 296,
+      "git_blob": "f00792cff0628fa6d8224754f20f8bd5ed0440cb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-131.json",
+      "sha256": "e2d3eb430db07198b972eeedcb5275210e271b94873b7cc5270ac94610591ab4",
+      "bytes": 296,
+      "git_blob": "009c3fb7290c6694b703e90116e8bf733e9e7d50"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-132.json",
+      "sha256": "39970f341c7d5b328c0ada7ea105a2e644c26d6067e57515ae981f6f7dbf0a88",
+      "bytes": 299,
+      "git_blob": "809d2039251ce272a353717b172d37dbd9902847"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-133.json",
+      "sha256": "3022308548fe60cf375086d46de016dc6d0c92f92c8500f659cb46246e8dac70",
+      "bytes": 296,
+      "git_blob": "24ad8df0872a0a6b667a105333d1d00f3ec99f80"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-134.json",
+      "sha256": "3244e1c83df3c799ba4cb04d6dd61228a72829e36a535536ce357b549a68a21a",
+      "bytes": 296,
+      "git_blob": "19c3e9eb079f626b913f3b6f89143c0f1e909d48"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-135.json",
+      "sha256": "fc43bb56a3adfa7f409e547e09068f0f9e1ff414e4ac39f2ae7d42a3b7f17073",
+      "bytes": 297,
+      "git_blob": "a7282d4aa100259a413eb24a31978e62ff0bf6f5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-136.json",
+      "sha256": "9d43d4bf1bac875562f92e280d92f460de4e5493ca58354032b4f8a8e56e331b",
+      "bytes": 298,
+      "git_blob": "65084d2de71f21d058281a1bd5925d602934f5fb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-137.json",
+      "sha256": "9385bc301dcb10f9252bf1a6af88ea8eaae6bad8933dc43b8e51138ea88f01bc",
+      "bytes": 298,
+      "git_blob": "177672eb4fa685500330d84ebcee382da6947c5b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-138.json",
+      "sha256": "57fa5b96767e8e2d9f4b50bf55d3f7e4bf4fc4de9ba7330a336c286608d9d527",
+      "bytes": 297,
+      "git_blob": "9ae005c88d456a9cb33ee5c466bb5cb670d43234"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-139.json",
+      "sha256": "935e8da6b314f9a64a8de5d13247330a28464de461d2d914847c7aa88b130aa8",
+      "bytes": 298,
+      "git_blob": "8dbb9f88d98ccb90835cdb80d56e939c75e57d92"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-140.json",
+      "sha256": "614f528fb3c9e1eb69d0ec4a0a3608d4d9cd6683a5537c839b009099c68ab36c",
+      "bytes": 298,
+      "git_blob": "d4bbeb52c655a1a331d07ddf077ca8be4cd23f97"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-141.json",
+      "sha256": "fff35e44c278fe4542150f491711235ff1121ace364eb248c0c0259c69edbdd0",
+      "bytes": 297,
+      "git_blob": "093d6455ee1a0f759038aa82ea43664a6a742238"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-142.json",
+      "sha256": "dbf9d49f4cec90c81fe5389545853c19b17bc9408cd1b3c7964f44ed5992b739",
+      "bytes": 298,
+      "git_blob": "ba6c5a996c12e7d468147712e13bd8a197a29e4a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-143.json",
+      "sha256": "47cfa311f56a231b3413d0288a89800c9d3dc3e340881dae4b52a75f1732a5a8",
+      "bytes": 298,
+      "git_blob": "fcfb10d043b7af951effd31d92616c9bdcac464d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-144.json",
+      "sha256": "fc4e1c4f4fbd5878a8bd965b802b17607385237e26a90a8b6f1b85da663bed85",
+      "bytes": 297,
+      "git_blob": "78c8f6ffd68924ded33dfddb1334ae5e4a584bed"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-145.json",
+      "sha256": "0c6e2bd1ab0e1f6e831d4e5c0a4abef4fca44688267df0888667fef91f9a9d40",
+      "bytes": 298,
+      "git_blob": "4baa176ea5d63982e69d226338f0ba18f3b3b438"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-146.json",
+      "sha256": "f729868b1732e93ea46ce842fae212ffaf24bdc44a1eb97dc198f2c574b7f4fa",
+      "bytes": 296,
+      "git_blob": "88aeadfe73cafffff7ee5da557c1a6e611f5ec9f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-147.json",
+      "sha256": "51092e65d7cacf531ff220767ea97b5d84119c170a440c9ab32ab85ce7968453",
+      "bytes": 298,
+      "git_blob": "15af17ee3655a85232e8f2086d90f36f19e20edc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-148.json",
+      "sha256": "b2a3c3cb073ca4ac4cb5b24104836fd3f9401f3248eb88cea3172e49541c9b7e",
+      "bytes": 298,
+      "git_blob": "5fdac91759cfb8db1eba563c1a3aaed33f509470"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-149.json",
+      "sha256": "e38faa446c4b4cca38adc351d29f2a3bf0fba17c3ba54ce202da47a3149f50e7",
+      "bytes": 298,
+      "git_blob": "5d14cd5c497c1d04efff740ac9d5a3e90475ec2d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-150.json",
+      "sha256": "7c4d12da504dbf7f26fa326b79c18488c08da6da628f35549295300d0ee7127f",
+      "bytes": 298,
+      "git_blob": "96cf195d6f51b0c4607f41d7a1952886f3e64382"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-151.json",
+      "sha256": "759ae2704e491cfb460120e2f7f131b9538278bf3476b048d17d470b50f0991b",
+      "bytes": 296,
+      "git_blob": "c1e87a84542ecb20ba4f731989a9f40a5972a037"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-152.json",
+      "sha256": "0d4aec4ec0bd53f071851ebd50c6b65268ba90f215ac1d7f84caf59749d7209c",
+      "bytes": 297,
+      "git_blob": "cdb27031cce7a82c150d06d6a5224af676f8f420"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-153.json",
+      "sha256": "cf76a261bddf4a656e5921c282e762aa33b0e94a4f01367b5ec94c9c8e257bae",
+      "bytes": 297,
+      "git_blob": "ddfda3a7df6c041af5a6747ab957fffef566b804"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-154.json",
+      "sha256": "21443f913ee524675b8675e87943fc1e197a7cfe885db1ba242511e74b55ac41",
+      "bytes": 297,
+      "git_blob": "aa9998156c8bcac28f14997674d099040beaf2c2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-155.json",
+      "sha256": "71dc151d6fbd06ea05c7b966a77fb0430895c40da196193ebe12c0a80460f205",
+      "bytes": 296,
+      "git_blob": "147bbcb2c26f108b0c2adbeee5d0162503af1993"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-156.json",
+      "sha256": "9f5e8914bfb5b4475c516148319c1c8ee321f0a19b36bb05a0cedeb5d30316af",
+      "bytes": 297,
+      "git_blob": "9a4664b562c7b8fabbe12789f976057617e9ce53"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-157.json",
+      "sha256": "f7ea6fee7c5ad2845bced8dc0ea420833804a5cca51072f28030a573de79c31e",
+      "bytes": 296,
+      "git_blob": "7aca889d43ecbd9b23c703e0fdb7ab5e19e49084"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-158.json",
+      "sha256": "83f71a1811baca2f8da4ec58fd1e7977540c5a8c59e32f875e06b6cf21e135b5",
+      "bytes": 296,
+      "git_blob": "b517df0b1acb9958d99d5379de23a7e87e5b8b6e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-159.json",
+      "sha256": "e0583744ff9d6f2342c9a570ac39a4a57f98a2fcf9c171c62f760939993aa9a4",
+      "bytes": 297,
+      "git_blob": "d02978f0a24c8fdef5004a7d2e15f481906b3fd2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-160.json",
+      "sha256": "701294215e231e71c8ff371801eb5467f4bd04ca001ac6a0879ff48895cead50",
+      "bytes": 297,
+      "git_blob": "75623fca0e1100385642a65fd8030d5c0a55a569"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-161.json",
+      "sha256": "72f57fe8609754549b15b024516f7b9a6c35bf6aec9d6cc9dd08a2ffc774c45c",
+      "bytes": 298,
+      "git_blob": "bb167d7f7ec96bf94f83cf3dd83fbd935d69d02e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-162.json",
+      "sha256": "fb8413e150a3e9f567a1e7ef655afc948b444766667af6f62085f3adb4ece948",
+      "bytes": 298,
+      "git_blob": "9457d296ce6b6acdf2ad20af95ccaeaa65059fd5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-163.json",
+      "sha256": "d9b4edd97169666687f55775dbef49925d73a3b65576631e5221866a39b0d54e",
+      "bytes": 298,
+      "git_blob": "46ee50b65ade2d045a1e59dfc4ed05a9d521ad16"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-164.json",
+      "sha256": "c104e82ac89ef76a0a624c04f3ad41deff186aabbc23404fc60729ab0ab60edf",
+      "bytes": 298,
+      "git_blob": "adbe7d41993ce053bb76516873723042426fc32f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-165.json",
+      "sha256": "9ea5e5855c8ad321cca9dad6dcf3e84800870a8f28132eb6503879be07f2a42a",
+      "bytes": 297,
+      "git_blob": "4b78acfef79671ca1f721c1837cf16b539f2c415"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-166.json",
+      "sha256": "448352bac02a43546c0cefd1ae3a173d5f01e01c13cce42cb85045cb8730a8eb",
+      "bytes": 298,
+      "git_blob": "b0399a97228ebc99693bc3364df181d7909a1559"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-167.json",
+      "sha256": "06a2b3e6e2bb82c29245a1ff3aada4d39b2f10c45227ed61ec0f161dd8b3eedb",
+      "bytes": 298,
+      "git_blob": "bef8b555c6b4209b9a1c762d84c33c9684c32cd0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-168.json",
+      "sha256": "aca9b722df4dbb95bb99fd243b4e3f5139ef565a3a1b1d16ab71aabf147d9f68",
+      "bytes": 298,
+      "git_blob": "c51526c0b90d0ec4e671b54f4c54da45bc716ff3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-169.json",
+      "sha256": "7f21e35c77b75479d58b39d4f6839cb4d8b9a91a75ea81ecae1b106e279746ea",
+      "bytes": 297,
+      "git_blob": "ae5ea9a3baeb116d5fb92ccf18ae5907082de68b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-170.json",
+      "sha256": "be52d434bb456a27808dd80ffb91c520439eb3cdac5d5d25baa024b2226d5d1c",
+      "bytes": 298,
+      "git_blob": "1b3c18c6197fd57ab6089e1296627b2fefb37523"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-171.json",
+      "sha256": "eb744d9b47ccb5c044e5aa8ed238aead31cc1bca5427fec24eb8f6fd774ea379",
+      "bytes": 298,
+      "git_blob": "ea0b45a7e65df3bd63f3563ddce43430d16f09a8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-172.json",
+      "sha256": "8512ed6fe7f782f121385e7f032e2be3b84703de0143143c6d83a3c57da61e5b",
+      "bytes": 297,
+      "git_blob": "d8e71f8f618f71e28fab2d8c2102eab7dcdf400c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-173.json",
+      "sha256": "9d2ed0c4c4415fb05cc66e03d5402615cc01e78fcec907301d066dc53c844732",
+      "bytes": 298,
+      "git_blob": "460ecf63c237b29963ea1e09d8d2c03bb38abadc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-174.json",
+      "sha256": "09a28e7bf18812a80ced043fb29f77d14c4eecd9a1899a138087132213b653ff",
+      "bytes": 298,
+      "git_blob": "46cdb965b9202a250d60f0fa47bb9646708dbc23"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-175.json",
+      "sha256": "bb908a8b69866edce126e6f3089f8a7b06f0c9ec781a4f38a132b3476a1bedf8",
+      "bytes": 298,
+      "git_blob": "11d241b69d3841acfd37a39ddb44c7cd04446ba8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-176.json",
+      "sha256": "0f92ca7bee075dd1f6aac626acc7b14f32c00e65fb09982b235c93c0261d4147",
+      "bytes": 297,
+      "git_blob": "3e3806f2354b57fed3f4739936a19bc8baac9a6c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-177.json",
+      "sha256": "cf3cda58066329f20739085b4b1e1d7d6ea0e7baee20e57967d0c7b5657a53b5",
+      "bytes": 298,
+      "git_blob": "d174f6c108ca6c304fad6f45614de023539e4725"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-178.json",
+      "sha256": "22d76c87e520f5d79bbc4c0cc403a906671662f07185c584541accb94f22f405",
+      "bytes": 298,
+      "git_blob": "546cdd9164eeb6523322da7561120241767a93dd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-179.json",
+      "sha256": "4055d691aebb4f64be76e64207dd36535f7289eabc02a386696b32dd2f990c13",
+      "bytes": 297,
+      "git_blob": "f646a2a195c7c3522ef5bc9545efad80964a35ed"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-180.json",
+      "sha256": "8734683712ddf3e2d799f8422b55024b5ed53703f68a0b5cfa61830cda54a6e0",
+      "bytes": 298,
+      "git_blob": "d10a462eb6a338d8b389c21f15855207f8ed9fe9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-181.json",
+      "sha256": "526df989a3c03cfbfe38edb365815a79b3bb076941160afdef11b9c903db2874",
+      "bytes": 298,
+      "git_blob": "901f8671eef5ca7618e8c1f848436484e79e804a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-182.json",
+      "sha256": "796841ff6dee9fe92947be414a34090e2b239a78d050b5c9cf9c333eeb8b6714",
+      "bytes": 297,
+      "git_blob": "640b3d474fb7fec4d4ec2d358775ab17615fc33d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-183.json",
+      "sha256": "5246ed88387d8caf8b6084cae0e36731241990159897c641c3598813d1696d24",
+      "bytes": 298,
+      "git_blob": "4df3a2efd6a9a00cf534ac7df080a4c8d7922544"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-184.json",
+      "sha256": "5cba7f4b03448f50429a2864e18fcdc6564691a78681de3ddfe33d49129426de",
+      "bytes": 298,
+      "git_blob": "b89e60ef5e0845828716b4547a97c6a8a8aaf4df"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-185.json",
+      "sha256": "4230ae7cf77836f919bae7e283117e16fa2c4e5dc6729e750f9d62b3fe726d32",
+      "bytes": 297,
+      "git_blob": "78477a95d31addac3af2c7cc345e00e863c8c9e5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-186.json",
+      "sha256": "fa7bda0a821622cddff38206d5755791aeb427f57c496514bdac977a20e8e405",
+      "bytes": 298,
+      "git_blob": "c808daf925c46b9a11ef014000a2ebcda29f7b31"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-187.json",
+      "sha256": "cf2d787b01f2998b8a718ad5c1d82d96b4356f8c20fbf42edd16b24468a32c62",
+      "bytes": 298,
+      "git_blob": "4a9a5443a007c95caf942b9a39ddaa91d0fca448"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-188.json",
+      "sha256": "df1b4616798659d4efc94ffb9dd0a10d76a7d92829d610808e14f6e45482f13e",
+      "bytes": 298,
+      "git_blob": "b895035f9333a66b4c450b4cf2a4955809002046"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-189.json",
+      "sha256": "9b5f79f3115be2eb2c2ece8b972da1756056f7b88a6ab31dbbfd8aef96bd5b58",
+      "bytes": 298,
+      "git_blob": "b85ee24b8d74cf3e5135b15c9c48071b3e20151e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-190.json",
+      "sha256": "4c052b9d58cacdd2255b46be55088f3af271621424cac2c251694d5583340075",
+      "bytes": 298,
+      "git_blob": "cee0c7292e4a36f761130d07da48a9c402a4aa60"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-191.json",
+      "sha256": "c736699a8810a649be5af1dbcf36ca03402153fc32d245480a02bfb9f4b9c9d9",
+      "bytes": 298,
+      "git_blob": "6db8671590f65cccb7f7989de01c4c9147025b6c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-192.json",
+      "sha256": "65ba0b67470faa8e939ebf41e4eae8e20e026a40b6fe314b0f9408ce72ebbea5",
+      "bytes": 298,
+      "git_blob": "0eae70b139c95a9effb527af8020a5ed2aa07677"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-193.json",
+      "sha256": "c65ec294436f983daade85b29b8f3e334cb0927fa78a69e3e5eab0f560214647",
+      "bytes": 298,
+      "git_blob": "f2ab4801616a7ebc37ab71d5655475a462d76443"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-194.json",
+      "sha256": "d09c4dd41ed87ae47c87caf21fb8d16eda6ee19f5a6c975020ae63ce3199c594",
+      "bytes": 298,
+      "git_blob": "f19e1100111cd7ae6dd7d1f5dae70361c2462f68"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-195.json",
+      "sha256": "54fa58d419fd94715b410678293990597fcd1b86e0e55e23c98ba2ca3d2f2e53",
+      "bytes": 298,
+      "git_blob": "07d80ccffcd505455f17f1cd7fe0997816a00929"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-196.json",
+      "sha256": "f31b4323677c8be9e1baf5480ba530af5034e7c702aaf7a12901881869ac8aa4",
+      "bytes": 298,
+      "git_blob": "dc9d21cc2959da2b3ded8134af7213278fb397b6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-197.json",
+      "sha256": "c4a6a8479afedf94fd9106f67c0db91bb7727c70e20a745f2d7133763afa6ce6",
+      "bytes": 296,
+      "git_blob": "3f3d175f6393ffe9790c8fec43bbc26f7296cc39"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-198.json",
+      "sha256": "1a51aeb572c1ecf1fdde9f82df545c2aebd7fed31f7e40a92ce2eacd1e8421f0",
+      "bytes": 298,
+      "git_blob": "e566565a7a041da996fa0195c0bb178c4bd825de"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-199.json",
+      "sha256": "8c0fc02fdd402f20182a6d5a7c5d5a52eb525091e3d898b149bf45a72348def0",
+      "bytes": 298,
+      "git_blob": "d30e13784ff6539c6ca24524b6941c0fd5ce491f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-200.json",
+      "sha256": "3429601d629115f88fcd635fbdd19e0a2670d30f9ca6d157d1e49cfc1401040b",
+      "bytes": 296,
+      "git_blob": "488a2f7a04da9de2260d1592255403fe51965361"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-201.json",
+      "sha256": "071cba44d96d5cd90958a4489ce39376f30db2c32ff6248dcdea5c873ff5732c",
+      "bytes": 296,
+      "git_blob": "42c911093049f003b7a65b8201803cf7b1781c75"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-202.json",
+      "sha256": "d60060ef8b77bdb658b7379b0ef5ae18bc56b1bafa22746434d41f44decc3d28",
+      "bytes": 296,
+      "git_blob": "f022b5d6720bf83ef7571a2470baf56d2143764b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-203.json",
+      "sha256": "4e188c360dd338cd22e39681a1c2c74f2f40b0d5e5a5112485014c16cfd773a1",
+      "bytes": 296,
+      "git_blob": "2c75e520cb4a9263ad19f90874f5ebd4dc29df21"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-204.json",
+      "sha256": "21fbf0b61a4dab5d2483a2207043a841f6fe3adea7833b063557975b12db2347",
+      "bytes": 296,
+      "git_blob": "db4c19a17dda7a50c6cc162a88f6eb6054683ce2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-205.json",
+      "sha256": "d2f6c87b579c21eca09735e6bf4caf70a74b90085e98133da80f326487639495",
+      "bytes": 296,
+      "git_blob": "0ce4ce33c3abcb36b6a753e4004a942980088a9f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-206.json",
+      "sha256": "377f8cfe9c1e536c5752fffbb97933218958799c3dc751e715618946cf966143",
+      "bytes": 298,
+      "git_blob": "8b57af069a7917d9ecfa101f99b1409ec298217a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-207.json",
+      "sha256": "b85a168010e16141eea171ba0c7cef42312dfb39cc91e8925e67cf8560b808dc",
+      "bytes": 298,
+      "git_blob": "9a2cf2339b78179048644463857a6867133b15dd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-208.json",
+      "sha256": "2a8c0ee678562ca25d69caf698544e4d59401abe4682a12dfef9cbbe677038f3",
+      "bytes": 296,
+      "git_blob": "c2d5265ca530cefff45ff5c9a491527ee443403b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-209.json",
+      "sha256": "3002ce6ea51a5272e3698100e882b774249f0414b70cff635a0adfcca876fcf2",
+      "bytes": 296,
+      "git_blob": "8e3a23ccc7767485602673c29d7cdc81aef678af"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-210.json",
+      "sha256": "6ffa34725307d2aba554f5092c843a3d72032a0bc800f589ba82db983fe28a60",
+      "bytes": 298,
+      "git_blob": "afceba9b3e1699468c529b2419076e277a551007"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-211.json",
+      "sha256": "9873b6a6ec5423a51e5a995eddcfb236189a7cc9540bb83e78f30534296a3c0c",
+      "bytes": 298,
+      "git_blob": "13bf2a06028adce6003a1fd509509f96ee9abcf5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-212.json",
+      "sha256": "50434274deaa1a9387691cf17df43038187820e4798021a2900a381a7646c71c",
+      "bytes": 297,
+      "git_blob": "3e78ed84202a9707ee97a2427b4f4b2b7922b47f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-213.json",
+      "sha256": "af5942a90662702e91adeaa2eb044862f92405ad6902420de820c10819f7d7fe",
+      "bytes": 298,
+      "git_blob": "fae22cc8ab8b83423b68a717d16deec2bc09a9f7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-214.json",
+      "sha256": "7718209fe1016581846d6b6274dee0d40bb338d3d6f3fac28723428e962da734",
+      "bytes": 297,
+      "git_blob": "8c08c88ff04f6f26b50765cf3383ee3ed6e589fb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-215.json",
+      "sha256": "85b2b56cf07020a34e22e3655f480a2669d3a21f0ad06900b6d88ddd28ed2ab0",
+      "bytes": 298,
+      "git_blob": "788c598954a73ac665cada601e00a8b967c1527f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-216.json",
+      "sha256": "e0df398180e9b910d2f13cc0f740b0da8b674ddb3bcb7369ab23372e80e4dd85",
+      "bytes": 298,
+      "git_blob": "2d81839ad492487ac0dc38fdeee6ded9c0fab93e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-217.json",
+      "sha256": "a692d47c27614b1e43b62a9b67698b389d5d48ebf29faad2b1e4ab118a9d4642",
+      "bytes": 298,
+      "git_blob": "f45e2c0585026b3bbe00ddd7e39dadf06056b5ce"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-218.json",
+      "sha256": "d4811333a8b5b8897af67a2ad1b0a3e832fd6a1d6ad6e074c2e29ab98cbfa5a9",
+      "bytes": 298,
+      "git_blob": "46ed6eddcf02181f06800c1f9fce1064dcb19715"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-219.json",
+      "sha256": "fd5f8763d481f8038b1abbf1d64d47ed6ab2cd61b4b2b4523de3d4b6f78eedbf",
+      "bytes": 298,
+      "git_blob": "faee4e1b92a881d2b81059dc44df709296246eee"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-220.json",
+      "sha256": "ec42687fef3ede586f6e73f9c3adee5a09feab5a10e6a888581dc001918149a5",
+      "bytes": 298,
+      "git_blob": "cbf62558a18fadd36e0d7d735c5dfec90107035e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-221.json",
+      "sha256": "43fb755248dcb0868f78eecbb0f2758280311bc77839012f1671cc4d242642be",
+      "bytes": 297,
+      "git_blob": "42a69d4d5a0cad496cbc35243fb5762480138ada"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-222.json",
+      "sha256": "9d2ae37e6afe2ed524c2a6261dd5d15a9f3522e69127f3703f4de27beca78106",
+      "bytes": 297,
+      "git_blob": "534b780034ded46553b8b4d1ea50c184bab4cd78"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-223.json",
+      "sha256": "1a565a276a01afe14e664555d9bfaf5d9ffa86eb35161936962705a6649e7868",
+      "bytes": 297,
+      "git_blob": "8ab99256780d4ce7643f4b4cbcec165d3b4d49eb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-224.json",
+      "sha256": "bae9850cbd4799e1afc2aa708f08a65b2b0a6274df28e563b2354c2fbd01c277",
+      "bytes": 297,
+      "git_blob": "e9bf549a5b071dfc1239b86248e77ef21fd5d367"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-225.json",
+      "sha256": "a2aee3bf61d9874bd35ee521eaf55f565a762a17219339aed10a8c156dbd2afa",
+      "bytes": 296,
+      "git_blob": "1cc5154e08b5bac5902871c62f12616d5ff1e904"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-226.json",
+      "sha256": "a5f89b592cbff543b689f3e04ebef6a0c0caadade5bafd14639ee73b3581f788",
+      "bytes": 296,
+      "git_blob": "3a040b7f390c42b66782fc7639dcc46546563148"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-227.json",
+      "sha256": "502d0e2a0c36642d7c1ed36b83939a6263a38db4e1007bba677c3abddac426d1",
+      "bytes": 296,
+      "git_blob": "0884c248567eeb5f4701c14bc3e30b75fb2ef219"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-228.json",
+      "sha256": "e313ec043c2ce6191791d9370cd16f5a0cd43a197d4fee090af508246a0359ce",
+      "bytes": 297,
+      "git_blob": "2f81e45eca30a6a891e2b32aec0c368f43b6502b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-229.json",
+      "sha256": "4551160a309127214ee80617a4771bdc42b361a8835c64e317a78bf259f61c4d",
+      "bytes": 296,
+      "git_blob": "3ed7c088e0e9aef62f925acad66ed9c6e55b1aa6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-230.json",
+      "sha256": "8e61340f40a52932cde8594027d952c81c318df36098560ca00ec25bddb6ca24",
+      "bytes": 297,
+      "git_blob": "077820c9fef414ca45408d826c6d4ec2edcb9dd1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-231.json",
+      "sha256": "a3579b4b28fe0cf65f67d4495542fe5af4fea5a213e9f58fd7adc52eb0d5a38d",
+      "bytes": 296,
+      "git_blob": "d1069fbe9259dd47d984c986a6bd54691b38205c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-232.json",
+      "sha256": "78ce17274064344435d6e7255b3be7fc0d67556f71fc0345290ddb4131f850d1",
+      "bytes": 297,
+      "git_blob": "dfd0ebbe131ada55819b702e30738329c8f66b02"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-233.json",
+      "sha256": "2a315099530673107428dfe4b049cce5dfa58dcb78322854b5d0e6e1c1f6f4fb",
+      "bytes": 296,
+      "git_blob": "eb31f9d49e9e475ebee3f07269561a0067c1ca09"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-234.json",
+      "sha256": "94dda6347c7487083b82b2c9ad78f15a11d0edbfdb46a4ba1592b2437e85f3fd",
+      "bytes": 296,
+      "git_blob": "b5c55b55213fd1fbddbf92b16a5a1bac4fe1a13f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-235.json",
+      "sha256": "8321d49dfad8510e5617bb9f3312922ad60638f5b91132e0b00daee89649fc50",
+      "bytes": 297,
+      "git_blob": "532502ad70ab512a65eb81dc55cfa63321b7ef79"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-236.json",
+      "sha256": "a3b2c902fedb3d8639b8c9a8172da56c1fc0149b03c48b389da4758a7a35ff54",
+      "bytes": 297,
+      "git_blob": "bdb3d2e57cb83a6083073a9a5c7d82494b7cb19f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-237.json",
+      "sha256": "6dfd96a609204b59cb60172ba5eab10f946067e406e0fe4ae0c7e1d0dcb103b8",
+      "bytes": 296,
+      "git_blob": "7a108876046433a1e34ebac919070d204390481a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-238.json",
+      "sha256": "e2cfe941f087f53f8f753c1e228064a7d41c3d05796922e5daddedd716b6dc8b",
+      "bytes": 298,
+      "git_blob": "48c4bf2fd9be9fdcce63d8bd7769761bd1b9d0d9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-239.json",
+      "sha256": "9aea2d65411b5aeaf941b204502c36b118e6d04a239b4ca909a6e13c3a025247",
+      "bytes": 297,
+      "git_blob": "f80867d5be9d424cdd34b4e6dc292b2ef40e12af"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-240.json",
+      "sha256": "8c0e1d7036e1ee339d1d7a4a2a02b4ecd75edb619741be36409e845cccdf861a",
+      "bytes": 296,
+      "git_blob": "b0aab1780aedc571dbaec53a50e56f457d71100b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-241.json",
+      "sha256": "c7d2d23751a79fb45967b664ee0f8a6b6a0339618fa5d7883abef53ce1d8bbb1",
+      "bytes": 296,
+      "git_blob": "2b335ed52266ed6e8820c68760778e3b99557168"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-242.json",
+      "sha256": "c3b9c4f89dc71606b7b5f5ef2394d05c84c987de6496e35779dd0d64db22b5e6",
+      "bytes": 296,
+      "git_blob": "1e2268b243244f2ce8cf9c5a93d423724e109a0d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-243.json",
+      "sha256": "0362c4edf7705bb1dc1c0202c7fe9cb709684cc24a5daa63136eaadc59547471",
+      "bytes": 296,
+      "git_blob": "e2901f3877127e645e0a405b2b455ebdd3210d7e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-244.json",
+      "sha256": "a00771d375b24e4fe8f27d865d8415a710b10e7a22937b3428fd540654268bff",
+      "bytes": 296,
+      "git_blob": "c5a9a7d07c6d990418100214a15c3edce4a7f1e2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-245.json",
+      "sha256": "3483eb08499dd62e7d7594f462b415993603ab57aa5eeac85da187e15ddb2064",
+      "bytes": 296,
+      "git_blob": "43ac351dec1ea55575e1190a99330c6d879c16f3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-246.json",
+      "sha256": "6f81f8e23ac7a90b2e94f9d1cd4ed4e76dafdeffcfcb30eb12d0d559ec03b8b2",
+      "bytes": 296,
+      "git_blob": "3ac90732bae6e7270f6ed0722b5c0a085ac46fc7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-247.json",
+      "sha256": "0084c066aba32e2fb0ae11a927b8ec635acd5f9cbdcb38f4f69f9bc3970b30d4",
+      "bytes": 296,
+      "git_blob": "d92730b86e089eb6ff7879cdcaeda84815148022"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-248.json",
+      "sha256": "8cd9025bc7ccb055e58d6750d8ac384ad2998dd1af983e0d78354adca2e55994",
+      "bytes": 296,
+      "git_blob": "513afd6fa75fe799fdffd8301e90992bc2278d9e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-249.json",
+      "sha256": "d198d295aa555909f1b6d0bd94b0cdec51a2ffcf2d66b7da8d55eb9538015951",
+      "bytes": 296,
+      "git_blob": "9b4b074de55b65fac68c8f39a0bd4459694c0dcc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-250.json",
+      "sha256": "3d2ce50486f5f5678039752d383aeee41b6c3c789568665662ab8a9ba33b7cb7",
+      "bytes": 296,
+      "git_blob": "e4dc28737e36d0167358e4574a2e91f902317513"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-251.json",
+      "sha256": "5f64799adba78e11f97b5ab151c9deb5c28bf5797cc6a4c3ff1bcb1914a6472a",
+      "bytes": 296,
+      "git_blob": "79736ef1be4a6b8b6e5f1396b65ddde4417b3ce2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-252.json",
+      "sha256": "5d9a09141dab4a4e8aa50d51e36f8127aa80cbb075711080c58904b91bcdde2d",
+      "bytes": 297,
+      "git_blob": "7a64e1493604308312f76a4d9222581aa205ab12"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-253.json",
+      "sha256": "fd80e7ecbed57c36a216ea50c7b3eb2bacfaf4ff7d06a6f9d7914d671dd5bcdb",
+      "bytes": 298,
+      "git_blob": "ea3de3aed4ea4f8bdd32a486b16d33021a2841d9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-254.json",
+      "sha256": "2976e09bcab671fbb207bca3c581ca6adf992aa1b6396f510ff13d8716e237c5",
+      "bytes": 298,
+      "git_blob": "78168d3055dc9a54e518f55dbfe736a71c91edc2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-255.json",
+      "sha256": "4872f10c89aefa6732451620352bc0d81fab399eed1da3a853594dadba4774b2",
+      "bytes": 296,
+      "git_blob": "b8c853a1a0ef9849a5d622c6fbd9c8190273ef3b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-256.json",
+      "sha256": "9ee303cf6144e7944882959d0e4067eeddc40bc47edf995d63c9b49872608456",
+      "bytes": 296,
+      "git_blob": "35d2883a9172f24a9bd1f8cb15571ab64184736c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-257.json",
+      "sha256": "ff4ad7ea511ee974f85dfc967d68dda1f50bb617a7a10a37ad7fd1c78ef96b1f",
+      "bytes": 297,
+      "git_blob": "bbfec0354492f5c24a23f89cab7f9ddf800b818b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-258.json",
+      "sha256": "4b45e1beeddbe28e776004be78a11f481143ebeddcf4045807a9b6b034a2b21e",
+      "bytes": 296,
+      "git_blob": "488ecb88c40566a96036a4bdb605b53f6f887ab8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/check-259.json",
+      "sha256": "209a14d10c5c1367e99737fee6c419ee580807e3228a66323d9753cdbfb4843c",
+      "bytes": 296,
+      "git_blob": "aa670323b2db485a09c133b4a2ea72903d399fb8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/child-result.json",
+      "sha256": "cda4f7a1b27b991827cd794c917a1a9ed9442e3b77bb6044f1d191f4f084399e",
+      "bytes": 55013,
+      "git_blob": "f10f4a9b8d6ded0af9259190fdcbca8ddb3709b6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/progress.json",
+      "sha256": "7dc362a43a45858000d7bc9181c1aba6685aa22495c0250857cb25e0b00029e8",
+      "bytes": 50467,
+      "git_blob": "675f0118b774fe435aead7c5e233090b377c4adc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/stdout.log",
+      "sha256": "09d3adf195b4ffa23474092b5c036ea1d32febb0101d657abe0bcab5461d48f3",
+      "bytes": 60,
+      "git_blob": "64fa49258032ba6703c12c133104aee6aca27b51"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-three-gram-full-rows-run01-cold/supervisor.json",
+      "sha256": "76f32ef2fb7c0d105eb49037ba3cc8522e78a47e4d39984c6107252b2c3723cd",
+      "bytes": 51226,
+      "git_blob": "c4aa29b2bfc959e4af11e080d5fbb93b782e51ac"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_three_gram_full_rows_terminal.md",
+      "sha256": "4af0aee8e25987022d6c66af9b9039a2cb9d9cf4ee9afba2ee7643fd3ef6157f",
+      "bytes": 3093,
+      "git_blob": "b7e34e193568a9d74db9768fb90e1dd107070d07"
+    }
+  ]
+}
