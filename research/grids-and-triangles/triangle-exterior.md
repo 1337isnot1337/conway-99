@@ -52,11 +52,29 @@ Conversely if $d=6$, $D$ consists of six triangular prisms. Every exterior point
 
 Consequently at most twenty of the 231 triangles have walk-regular exteriors, by the [bound on full triangles](double-partner-witness.md). All other triangles have two exterior points with different numbers of closed walks of length at most eight.
 
+## Fixed points of exterior automorphisms
+
+For every triangle, each nonidentity automorphism of $E$ moves at least 36 points. Its prime divisors belong to $\{2,3,5\}$, and every element of order five acts freely. These conclusions do not require saturation.
+
+For a moved set of size $m$, its mean internal degree is at most $3+5m/60$. This follows by applying the upper bound 3 on the nonconstant spectrum to its centered indicator. Every moved point has at most two fixed neighbors: each is also a neighbor of its image. The mean internal degree is therefore at least six, giving $m\ge36$. For an automorphism of odd prime order, two fixed neighbors of a moved orbit would have at least three common neighbors. Thus every moved point has at most one fixed neighbor, giving $m\ge48$.
+
+Primes larger than eight cannot join a fixed point to a moving orbit. Connectedness would force a free action, and no such prime divides 60. At a fixed point there are between one and four exterior triangles, by the six-mark count above. An element of order five or seven must fix all those triangles pointwise. At order seven, a fixed point touching a moving orbit has just one neighbor left in the fixed set, which cannot contain its triangle. So an order-seven action would have to be free, again impossible.
+
+At order five the fixed set has size $0,5$ or $10$. Its internal vertex degrees are three and eight. Size five would require a cubic graph of odd order. At size ten at most one vertex has degree eight, since two would have at least six common neighbors. Parity of the degree sum then implies that every degree is three. Each fixed point belongs to a triangle inside this cubic graph. In a cubic graph with at most one common neighbor per edge, these triangles are disjoint, and three does not divide ten. This proves freeness. In particular the order of a Sylow five-subgroup is at most five, since it acts freely on sixty points.
+
+An order-five exterior symmetry also requires $s\in\{0,5,10\}$ by the triangle count. Its free orbits give the polynomial constraint
+$$
+ \chi_D(z)\equiv z^2(z-1)(z-3)^3 F(z)^5\pmod 5
+$$
+for a monic polynomial $F$ of degree six. Indeed, over characteristic five, a five-cycle acts as a single unipotent Jordan block. Order the vertices in twelve orbits; $E$ is a matrix of circulant five-by-five blocks. The filtration by the powers of the cyclic shift minus the identity has five layers, all acted on by the same twelve-by-twelve quotient. Hence $\chi_E$ is a fifth power modulo five. Substitute the exterior characteristic identity and compare the multiplicities of the roots $0,1,3$ of the indicated factors.
+
 ## Faithful action on twenty blocks
 
 Let $G=\operatorname{Aut}(E)$ and assume it acts transitively on the 60 vertices. The twenty exterior triangles are its canonical blocks. The edges between any two form a matching. If two triangles have one or two cross-edges, this distinguishes a vertex of the first triangle by its matching status. The kernel of the action on the blocks fixes this vertex. Its fixed points form a $G$-invariant set by normality, so transitivity forces the kernel to fix all 60 vertices.
 
 It remains to rule out the case in which every two blocks are anticomplete or joined by a full matching. Each block then has six neighboring blocks, giving a simple 6-regular graph $H$ on twenty points. The block partition is equitable with quotient $2I+H$. The connectedness of $E$ gives connectedness of $H$; interlacing gives $\lambda_2(H)\le1$. Take $f(z)=(z-1)(z+3)^2$. Its sum over the eigenvalues of $H$ is at most $f(6)=405$, since all others are at most 1. Yet it is $\operatorname{tr}H^3+5\cdot120-9\cdot20\ge420$. This proves faithfulness.
+
+In fact the action on the twenty blocks is faithful whenever $s=0$, even if $G$ is intransitive. A block-fixing permutation cycling any one block can meet another block by a nonempty matching only if it is a full matching and the other block also cycles. Connectedness and the quotient contradiction above exclude this possibility. Any remaining nonidentity element of the kernel swaps pairs inside triangle blocks. Each moved vertex has just one fixed neighbor: its triangle's third point. An additional fixed neighbor would be a second common neighbor of the adjacent swapped pair. The moved set then has mean internal degree seven, requiring at least 48 vertices. Swapping at most two vertices in each of twenty triangles moves at most 40.
 
 ## Exhausting the faithful actions
 
