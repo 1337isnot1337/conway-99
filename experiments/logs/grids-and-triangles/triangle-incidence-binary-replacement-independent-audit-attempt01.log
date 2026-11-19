@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/triangle_incidence_binary_replacement_independent_audit.py", line 276, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/triangle_incidence_binary_replacement_independent_audit.py", line 258, in main
+    report = calculate(args.root)
+             ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/triangle_incidence_binary_replacement_independent_audit.py", line 236, in calculate
+    "replacement_LP_certificate_checks": bound_checks(root),
+                                         ^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/triangle_incidence_binary_replacement_independent_audit.py", line 88, in bound_checks
+    assert sha(canonical) == prep["model_sha256"] == result["model_sha256"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,215 @@
+{
+  "schema": "conway99.triangle-vertex-projector-publication.v1",
+  "status": "COMPLETE_EXACT_22_PLUS_18_BLOCK_QUERY_AND_REPLAY",
+  "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "tested_families": {
+    "unconditioned": 18,
+    "core_triangle_conditioned": 4,
+    "all_four_root_vertices_conditioned": 18
+  },
+  "all_40_matrices_exactly_PSD": true,
+  "no_separator_found": true,
+  "no_optimizer_called": true,
+  "raw_results_archived": [
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-projector-query01.json",
+      "sha256": "4bfa499485f9149485f882074dc421128df5ee539d2262f576acb1b04e3e5538",
+      "archive": "experiments/logs/moments-and-counts/order10-triangle-vertex-projector-query01.json.gz"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-root-schur-query01.json",
+      "sha256": "4b23092065e6a6be80165261ef7cab6925d6c7ced7c81adb8be1103c72f72a2d",
+      "archive": "experiments/logs/moments-and-counts/order10-triangle-vertex-root-schur-query01.json.gz"
+    }
+  ],
+  "scope": "Complete stated four-root class/projector families at one integer count point. No graph existence or complete order-ten cone claim.",
+  "independent_review_scope": "The included independent source review binds the 22-block constructor/query. The stronger all-root-vertex source was separately reviewed by the coordinator; no expanded peer-review scope is asserted.",
+  "graph_existence_resolved": false,
+  "git_refs_modified": false,
+  "files": [
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-projector-preparation.log",
+      "bytes": 1884,
+      "sha256": "26a55e47f7f3a70b15fb558c325831af04c9e3f53c798862398a7d3f6ef5a98c",
+      "git_blob_sha": "3b5217826ea2289a615c87b75a52a45734f541cb",
+      "uploaded_blob_sha": "3b5217826ea2289a615c87b75a52a45734f541cb"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-projector-query-preparation.json",
+      "bytes": 2139,
+      "sha256": "a7b47db4e476e125aaf1a6921c5cb44104187fa1fe8fded47a8268d1c869bf01",
+      "git_blob_sha": "1de470870fb3607e6d8258043f5b562e2b766fad",
+      "uploaded_blob_sha": "1de470870fb3607e6d8258043f5b562e2b766fad"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-projector-query01-replay.json",
+      "bytes": 5931,
+      "sha256": "31bde776207068f36c8b6db7e85e948abbd35a97832bab6f09c50b00baa7a6c2",
+      "git_blob_sha": "433bb14330468a71847194a7124d6900c9ce0470",
+      "uploaded_blob_sha": "433bb14330468a71847194a7124d6900c9ce0470"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-projector-query01.json.gz",
+      "bytes": 334547,
+      "sha256": "1c09835f2b722f2c852e67403acc510b70dc573efa52c08ad6d664f6373d2957",
+      "git_blob_sha": "44eb46231d42963a07a495c790ac0bd98a1d74a5",
+      "uploaded_blob_sha": "44eb46231d42963a07a495c790ac0bd98a1d74a5"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-projector-query01.log",
+      "bytes": 965,
+      "sha256": "6b62abbd0987a390dda6df352ff7c1f8cd76108fa1682327cbf33353ad3e8638",
+      "git_blob_sha": "abeeb8e3ebf90be57a8e77f94cd357a3bcd24c1b",
+      "uploaded_blob_sha": "abeeb8e3ebf90be57a8e77f94cd357a3bcd24c1b"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-root-schur-preparation.log",
+      "bytes": 1439,
+      "sha256": "c79600726964d5a57aa8edc725821b6fdfc5b3f2b68aaadec6d46075c0eabbe0",
+      "git_blob_sha": "50734474d46610d6108c10dd81a5e83c5731ad8f",
+      "uploaded_blob_sha": "50734474d46610d6108c10dd81a5e83c5731ad8f"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-root-schur-query-preparation.json",
+      "bytes": 1740,
+      "sha256": "ede9a71ee69707c9b2ce2bb2198aba8917d1fe47443f91704a6d9cea9f30444a",
+      "git_blob_sha": "3f7add9f391a383d906ed8807932443ab9fa0f17",
+      "uploaded_blob_sha": "3f7add9f391a383d906ed8807932443ab9fa0f17"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-root-schur-query01-replay.json",
+      "bytes": 6542,
+      "sha256": "916b3e86ba8b70a4a7ec566b8a79e0ae7828cc3b6416911e0bdb1e29468dcdc6",
+      "git_blob_sha": "dfc6dbab6793c01316c30a351d24e063ece8ff21",
+      "uploaded_blob_sha": "dfc6dbab6793c01316c30a351d24e063ece8ff21"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-root-schur-query01.json.gz",
+      "bytes": 355094,
+      "sha256": "d6b9e9a1ef212d145e8aa485bfdb5b2482e23cd7eed07091174ed71314cbe600",
+      "git_blob_sha": "9ab3f02facdb87c56fd72eafe144ea40c9fec7ef",
+      "uploaded_blob_sha": "9ab3f02facdb87c56fd72eafe144ea40c9fec7ef"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/order10-triangle-vertex-root-schur-query01.log",
+      "bytes": 965,
+      "sha256": "1f0ccb9210062a0a9d82860c0148e70b622be514e22eb8430158810e6f4cc0fe",
+      "git_blob_sha": "cc5519a298cfc7be6f4909279e31a6be10ebca5b",
+      "uploaded_blob_sha": "cc5519a298cfc7be6f4909279e31a6be10ebca5b"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/triangle-vertex-projector-independent-source-review.json",
+      "bytes": 3614,
+      "sha256": "34fdaf5da76b50b10cede1b615d351385c5c353920b5087da17ada4ce6abd7d9",
+      "git_blob_sha": "45ce9940cba2110fa9199916897f45f8c257fe23",
+      "uploaded_blob_sha": "45ce9940cba2110fa9199916897f45f8c257fe23"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/triangle-vertex-projector-preparation01/model.json.gz",
+      "bytes": 1705409,
+      "sha256": "7dfb0f2d60e81c920d38d8b3c558c9e57ec326ab97010ede251689f284907149",
+      "git_blob_sha": "34cf393bef44ba80fd4f5e88f9e2447f5405354f",
+      "uploaded_blob_sha": "34cf393bef44ba80fd4f5e88f9e2447f5405354f"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/triangle-vertex-projector-preparation01/preparation.json",
+      "bytes": 9473,
+      "sha256": "71d57c17d2c1e6b034b6511206246db3fc3abd6046bf40d992e447887163f29c",
+      "git_blob_sha": "114389a0d960f39d6a34727db163b6cda7798b99",
+      "uploaded_blob_sha": "114389a0d960f39d6a34727db163b6cda7798b99"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/triangle-vertex-root-schur-preparation01/model.json.gz",
+      "bytes": 1087377,
+      "sha256": "3774933c475f5fab09f8c8f693e2d9cc1902e69e7467f85b01b7fdec9b22ab44",
+      "git_blob_sha": "2420fce423e4e28cba41fed2f8b100a97b33f831",
+      "uploaded_blob_sha": "2420fce423e4e28cba41fed2f8b100a97b33f831"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/logs/moments-and-counts/triangle-vertex-root-schur-preparation01/preparation.json",
+      "bytes": 8103,
+      "sha256": "584fde1b12dad1c6e2234de53a4ab648eb82363558b1ee42eb267f624f753f74",
+      "git_blob_sha": "f7af19da6985fe054f4ed082fa95f3e802f19d5e",
+      "uploaded_blob_sha": "f7af19da6985fe054f4ed082fa95f3e802f19d5e"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/workspace/triangle_vertex_projector_independent_source_review.py",
+      "bytes": 4770,
+      "sha256": "8a1f4b39fb6500fd2cad32a42c2d80c5aa3a44321adb126907f95eb1d083def7",
+      "git_blob_sha": "0c36a0e03238c54ca2b83e4399de19fcbb43512e",
+      "uploaded_blob_sha": "0c36a0e03238c54ca2b83e4399de19fcbb43512e"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/workspace/triangle_vertex_projector_moments.py",
+      "bytes": 16455,
+      "sha256": "fea5b560e4aeeb323da6e8cde2bc52571a3dc7499f0900a0a12b1f134d4a31c7",
+      "git_blob_sha": "322c19c865440715bcaba9216313e707a16e25fc",
+      "uploaded_blob_sha": "322c19c865440715bcaba9216313e707a16e25fc"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/workspace/triangle_vertex_projector_query.py",
+      "bytes": 8845,
+      "sha256": "c2529d20935733c835a24b2600dd195c439f68f2cf258c9eb48325ff466516d3",
+      "git_blob_sha": "23ad85372bc891c10bbbf972315e889e891d57b3",
+      "uploaded_blob_sha": "23ad85372bc891c10bbbf972315e889e891d57b3"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/workspace/triangle_vertex_root_schur.py",
+      "bytes": 10857,
+      "sha256": "8eee12ffbb5f78e82f52c3ab67f67c43f5b0d8fbaede98ab1c8e74f878312174",
+      "git_blob_sha": "b716038238b8765b157064e62855875ffef4d8a7",
+      "uploaded_blob_sha": "b716038238b8765b157064e62855875ffef4d8a7"
+    },
+    {
+      "group": "projectors",
+      "path": "experiments/workspace/triangle_vertex_root_schur_query.py",
+      "bytes": 9119,
+      "sha256": "8dbb17abdd09f63281d4c7bff7e19aff997c21389f55e7ae43fbe1429c6ae1c1",
+      "git_blob_sha": "f509614bd72e02b0e11c6d8c84b64cd144188178",
+      "uploaded_blob_sha": "f509614bd72e02b0e11c6d8c84b64cd144188178"
+    },
+    {
+      "group": "projectors",
+      "path": "research/grids-and-triangles/triangle_vertex_projector_results.md",
+      "bytes": 2594,
+      "sha256": "32364652ac39ae7a6175597ce4cc3cacb11312e90958b5a239ca305782f31a7c",
+      "git_blob_sha": "697e629e3ba158c625ca12e1e94bcb83b31b0303",
+      "uploaded_blob_sha": "697e629e3ba158c625ca12e1e94bcb83b31b0303"
+    },
+    {
+      "group": "projectors",
+      "path": "research/grids-and-triangles/triangle_vertex_projectors.md",
+      "bytes": 4714,
+      "sha256": "6dd7ecbac1419046cf6e3b43c51d0c60386423012ff7959983a0e20d9f305bdd",
+      "git_blob_sha": "8de84c98da708928418b295919968b3e5674583b",
+      "uploaded_blob_sha": "8de84c98da708928418b295919968b3e5674583b"
+    },
+    {
+      "group": "projectors",
+      "path": "research/grids-and-triangles/triangle_vertex_root_schur.md",
+      "bytes": 2984,
+      "sha256": "f687640d572723cc6697a1c64267f6a0391ab728917f3af40349bc15dd6fcbf8",
+      "git_blob_sha": "affd30267fd2757c78aa07909ab93d3f7ce41348",
+      "uploaded_blob_sha": "affd30267fd2757c78aa07909ab93d3f7ce41348"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "UNRESOLVED: retained numerical proposals give no accepted exact outcome",
+  "source_bindings": {
+    "driver_sha256": "53baba0038f51dd8439d14b27378663febc45cf90917ecb26524e0f6f275adbf",
+    "exact_face_builder_sha256": "613e2de31570d56a2b1b52a164158a7ed9b80b4f8f834e550fbbc9c6e608e078",
+    "unchanged_native_row_assembly_and_call_helper_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_serialization_runtime_helper_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "zero_seed_source_sha256": "9eedacb4b62db8ad7058e291d04f83141fca306971ed278a58548ead4cd1e8a1",
+    "zero_seed_certificate_sha256": "64d8e375280bc067097913de2dd6e2995c19de2a4807f63cecdcd80b811a85cf"
+  },
+  "preparation_sha256": "325c16ff224f32aaaf064c97e1066d4fafa7d03f13b7b99bf7eae7b7670230f7",
+  "limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "automatic_retry": false,
+  "production_run_calls": 1,
+  "solver_and_existing_ray_seconds": 10.441441138005757,
+  "added_cover_rows": 0,
+  "exact_infeasibility_certificate_found": false,
+  "exact_zero_face_certificate_found": false,
+  "exact_rational_point_found": false,
+  "case4_exclusion_verified": false,
+  "whole_graph_problem_resolved": false,
+  "definition_sha256": "969960c84038c97453ae3041b74282306500ea922b4bc7e4bb4465a0245f20bd",
+  "input_replay_seconds": 7.159896666998975,
+  "native_bootstrap_seconds": 0.4782045210013166,
+  "numerical_stop_reason": "no unseen retained cover violated; full exact acceptance still required",
+  "numerical_phase_seconds": 11.392886349996843,
+  "exact_stage_seconds": 5.361402775997703,
+  "elapsed_seconds": 23.917788134000148,
+  "peak_rss_kib": 429780
+}

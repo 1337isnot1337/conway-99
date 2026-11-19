@@ -1,0 +1,52 @@
+{
+  "schema": "conway99.independent-source-review.v1",
+  "status": "PASS_READ_ONLY_UPPER_CELL_AND_GRAM_REDUNDANCY_REVIEW",
+  "reviewer": "literature_obstructions",
+  "bindings": {
+    "experiments/workspace/rook_transportation_upper_faces.py": "db494ee5d8eae98f3b724e277c67723676c343e94f17ade6be528eab00007ccc",
+    "experiments/workspace/rook_case4_transportation_upper_faces.py": "d051c308fccda4970e555f41bad7f56dbc13ea635ff3b5fdbd6f1b168955d495",
+    "experiments/workspace/rook_case4_upper_face_redundancy.py": "5663fbd2fe429cedc8a8e2f85c1ab95f54ce9ba247457fee71143cca83aa8ae8"
+  },
+  "saved_metadata": {
+    "preparation_sha256": "26398532ca53a40c15cbc86575ed68a95e6a2c4aa3a706364fdb38dd688dfc55",
+    "preparation_status": "COMPLETE: every original cell classified from the105 saved flows",
+    "counts": {
+      "active_cells": 1839,
+      "forced_positive_upper_cells": 330,
+      "forced_upper_Gram": 320,
+      "strict_saved_slack": 1087,
+      "decreasing_residual_cycle": 422,
+      "inactive_zero_cells": 23,
+      "forced_upper_triple": 10,
+      "distinct_full_support_equalities": 170,
+      "direct_Gram_duplicates_on99_face": 168,
+      "not_direct_Gram_duplicates": 2
+    },
+    "upper_certificate_gzip_sha256": "065a60238630ddcf31281dc84e031c00ae0a728aea01788ab23eedff22dfc1fb",
+    "redundancy_sha256": "80a3c47b87ef83e85dab24c60c99afaeba3e59dca881afaeca4218aa6e213da0",
+    "redundancy_status": "PASS: all170 forced-upper equalities already follow from Gram on the99-zero face",
+    "single_Gram_row_equalities": 168,
+    "two_Gram_row_equalities": 2
+  },
+  "reviewed": [
+    "The residual network correctly uses capacity-minus-flow on row-to-column arcs and flow on column-to-row arcs.",
+    "A saturated positive target cell can decrease exactly when its row reaches its column in the residual network. The saved simple path plus the target reverse arc gives a feasible positive cycle perturbation.",
+    "If no such path exists, the reachable row/column cut contains the target as an outgoing cell. Every outgoing cell is saturated and every incoming cell has zero flow, making the cut equality exact.",
+    "Removing the target capacity row from the cut combination yields a row bounded above by minus the target capacity. Its left side is at least minus the target population after the proved-zero premises, so the target population is at least its capacity; the original upper bound gives equality.",
+    "Only Gram equality rows may have negative multipliers. Every other original capacity row has a positive multiplier. The full 1214-coordinate remainder is checked, and every negative remainder coordinate must have an explicit earlier zero reason.",
+    "Inactive cells are separately accounted for as identically zero on the saved face. Equalities are deduplicated only by identical full original support and identical right-hand side.",
+    "The redundancy source checks every one of the 170 target identities in all 1214 coordinates, with exact right-hand-side cancellation and residual support contained in the proved 99 zeros.",
+    "The 168 direct identities use saved original Gram rows. The two remaining identities explicitly use the differences C(5,27)-C(9,27) and C(7,27)-C(14,27), respectively.",
+    "The resulting equalities add no affine rank on this face. No joint incidence feasibility or exclusion conclusion follows."
+  ],
+  "limits": {
+    "full_three_subject_sources_read": true,
+    "original_99_zero_seed_reproved": false,
+    "earlier_domain_and_seed_packages_are_dependencies": true,
+    "saved_metadata_hashes_checked": true,
+    "census_or_coefficient_replay_repeated": false,
+    "max_flow_or_optimizer_called": false,
+    "subject_imported": false
+  },
+  "case4_excluded": false
+}

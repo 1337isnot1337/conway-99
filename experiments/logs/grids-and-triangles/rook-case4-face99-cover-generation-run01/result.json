@@ -1,0 +1,244 @@
+{
+  "status": "UNRESOLVED: retained numerical proposals give no accepted exact outcome",
+  "source_bindings": {
+    "driver_sha256": "53baba0038f51dd8439d14b27378663febc45cf90917ecb26524e0f6f275adbf",
+    "exact_face_builder_sha256": "613e2de31570d56a2b1b52a164158a7ed9b80b4f8f834e550fbbc9c6e608e078",
+    "unchanged_native_row_assembly_and_call_helper_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_serialization_runtime_helper_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "zero_seed_source_sha256": "9eedacb4b62db8ad7058e291d04f83141fca306971ed278a58548ead4cd1e8a1",
+    "zero_seed_certificate_sha256": "64d8e375280bc067097913de2dd6e2995c19de2a4807f63cecdcd80b811a85cf"
+  },
+  "preparation_sha256": "325c16ff224f32aaaf064c97e1066d4fafa7d03f13b7b99bf7eae7b7670230f7",
+  "limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "iterations": [
+    {
+      "call_index": 0,
+      "active_rows": 3081,
+      "numeric_artifact": {
+        "path": "iteration-00-numeric.json.gz",
+        "sha256": "e4815cfba1b058a0e563456cd5637717e0692f0fe23a07a6f8abb0c6d925541a",
+        "decompressed_sha256": "4d6549d85733ec29e824b4ab9d25b0894488492e38d46d2e32e80336593e1b6b",
+        "decompressed_bytes": 145781
+      },
+      "added_after_call": [],
+      "scan": {
+        "all_original_and_extension_rows_scanned": 169050,
+        "full_matrix_nonzeros_scanned": 11014288,
+        "retained_cover_rows_scanned": 165969,
+        "active_rows_scanned": 3081,
+        "full_row_violation_count": 0,
+        "maximum_full_row_violation": 1.4210854715202004e-14,
+        "maximum_active_row_violation": 1.4210854715202004e-14,
+        "maximum_retained_cover_violation": 0.0,
+        "maximum_variable_bound_violation": 0.0,
+        "violated_unseen_retained_covers": 0,
+        "selected_new_cover_rows": [],
+        "selection_rule": "descending floating violation, then ascending original row ID",
+        "exact_feasibility_claimed": false
+      },
+      "scan_seconds": 0.38780883100116625
+    }
+  ],
+  "automatic_retry": false,
+  "production_run_calls": 1,
+  "solver_and_existing_ray_seconds": 10.441441138005757,
+  "added_cover_rows": 0,
+  "exact_infeasibility_certificate_found": false,
+  "exact_zero_face_certificate_found": false,
+  "exact_rational_point_found": false,
+  "case4_exclusion_verified": false,
+  "whole_graph_problem_resolved": false,
+  "definition_sha256": "969960c84038c97453ae3041b74282306500ea922b4bc7e4bb4465a0245f20bd",
+  "input_replay_seconds": 7.159896666998975,
+  "native_bootstrap_seconds": 0.4782045210013166,
+  "numerical_stop_reason": "no unseen retained cover violated; full exact acceptance still required",
+  "numerical_phase_seconds": 11.392886349996843,
+  "bound_reconstruction_attempts": [
+    {
+      "method": "scale",
+      "parameter": 1,
+      "orientation": -1,
+      "gamma": "1",
+      "nonzero_rows": 0,
+      "exact_bound": "1"
+    },
+    {
+      "method": "scale",
+      "parameter": 64,
+      "orientation": -1,
+      "gamma": "64",
+      "nonzero_rows": 7,
+      "exact_bound": "71"
+    },
+    {
+      "method": "scale",
+      "parameter": 64,
+      "orientation": 1,
+      "gamma": "64",
+      "nonzero_rows": 7,
+      "exact_bound": "181"
+    },
+    {
+      "method": "scale",
+      "parameter": 256,
+      "orientation": -1,
+      "gamma": "256",
+      "nonzero_rows": 309,
+      "exact_bound": "301"
+    },
+    {
+      "method": "scale",
+      "parameter": 256,
+      "orientation": 1,
+      "gamma": "256",
+      "nonzero_rows": 309,
+      "exact_bound": "904"
+    },
+    {
+      "method": "scale",
+      "parameter": 4096,
+      "orientation": -1,
+      "gamma": "4096",
+      "nonzero_rows": 1017,
+      "exact_bound": "317"
+    },
+    {
+      "method": "scale",
+      "parameter": 4096,
+      "orientation": 1,
+      "gamma": "4096",
+      "nonzero_rows": 1017,
+      "exact_bound": "12456"
+    },
+    {
+      "method": "scale",
+      "parameter": 65536,
+      "orientation": -1,
+      "gamma": "65536",
+      "nonzero_rows": 1080,
+      "exact_bound": "994"
+    },
+    {
+      "method": "scale",
+      "parameter": 65536,
+      "orientation": 1,
+      "gamma": "65536",
+      "nonzero_rows": 1080,
+      "exact_bound": "196170"
+    },
+    {
+      "method": "scale",
+      "parameter": 1000000,
+      "orientation": -1,
+      "gamma": "1000000",
+      "nonzero_rows": 1081,
+      "exact_bound": "11057"
+    },
+    {
+      "method": "scale",
+      "parameter": 1000000,
+      "orientation": 1,
+      "gamma": "1000000",
+      "nonzero_rows": 1081,
+      "exact_bound": "2989977"
+    },
+    {
+      "method": "fraction",
+      "parameter": 256,
+      "orientation": -1,
+      "gamma": "20919756397683768138066784343612305560234358630752000",
+      "nonzero_rows": 309,
+      "exact_bound": "27164272144506742303358737472980290594988896245751998"
+    },
+    {
+      "method": "fraction",
+      "parameter": 256,
+      "orientation": 1,
+      "gamma": "20919756397683768138066784343612305560234358630752000",
+      "nonzero_rows": 309,
+      "exact_bound": "71522491536559952274015102129015525801055467881965869"
+    },
+    {
+      "method": "fraction",
+      "parameter": 4096,
+      "orientation": -1,
+      "gamma": "189147481949252683710387354527015128318192123738167163878297271526194026590370361778906712038243930021673037675626754118109801315575298914597345250743222024652645859194511470923084265091431142634982960889337362250237225158200987972173922705142705016765711654716797179017046776776563077037541502552150898429648985947451112596936893630616835372772447133031037407049190257289001443039725185546439815649957967431630539063356520174563421912257843427768430984546342282348017406344495106764897530702703839050823313008312458672467081494822184565936219860884117340141457134422637475759731345700239471271841269035418631553219288249411181967157738496377712656648124566071432011884292414364403785885136474832432954142988624835405104336444313645894711257981303118522880000",
+      "nonzero_rows": 1017,
+      "exact_bound": "4848927475146213307482933818357914549338955384890675553972355497455628552401567655969794478712271413252332506826855410353228234875240727390169760141420267333783527045995706543241394580897699096493516935853648040719850219751368184397529899928085993270842651726508353778007733756221057180786927325169353993344277301509627995865265577540775558984222975427765952815666449902124735598486888371920304001918574300334349209765445083985669208601532217764429696430603815983934132051612430049269244598782907665822687326209961911733921648693750310640275426629441804857842729791619179457571051567999894009412961465994926855668320928482971235729210680767839709204825311066569292758447417496000946760213364008643536414519196628676674562219255398404231292513546748506764020"
+    },
+    {
+      "method": "fraction",
+      "parameter": 4096,
+      "orientation": 1,
+      "gamma": "189147481949252683710387354527015128318192123738167163878297271526194026590370361778906712038243930021673037675626754118109801315575298914597345250743222024652645859194511470923084265091431142634982960889337362250237225158200987972173922705142705016765711654716797179017046776776563077037541502552150898429648985947451112596936893630616835372772447133031037407049190257289001443039725185546439815649957967431630539063356520174563421912257843427768430984546342282348017406344495106764897530702703839050823313008312458672467081494822184565936219860884117340141457134422637475759731345700239471271841269035418631553219288249411181967157738496377712656648124566071432011884292414364403785885136474832432954142988624835405104336444313645894711257981303118522880000",
+      "nonzero_rows": 1017,
+      "exact_bound": "566863622719607313691483936694156872349856352780101729905895414167951262707019510611568461087734518948217234177375157100492658675899839326192288056202204957097506216538571287243969977264669423366160310639102585146802503088579194917691964748763579817243260406247391878463265030690947953835580129773530389846659938847579401358788397533848224294639270442856938232043307076287065583561892012754635759879946377079456490949828947834669507822289112283272189348739113189823840868798153002758316362917484542557061703520288563189780474192230809919251164985359737339888304603047487165778020188510739790563787719450100966022756825791248554866004915318130225838413608589618212148770935229466640214617716631752282127176670248108897941024502283368569772917662066419737576280"
+    }
+  ],
+  "primal_reconstruction_attempts": [
+    {
+      "denominator_limit": 1,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 2,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 4,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 16,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 64,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 256,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 4096,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 1000000,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    }
+  ],
+  "exact_stage_seconds": 5.361402775997703,
+  "elapsed_seconds": 23.917788134000148,
+  "peak_rss_kib": 429780
+}

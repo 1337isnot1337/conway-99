@@ -1,0 +1,53 @@
+{
+  "status": "PASS: independent complete driver diff and changed-path source review",
+  "source_bindings": {
+    "rook_case4_face81_cover_generation.py": "f9aabb56194dc875b4f196c125e14dddceb25823a27b903fb597862b4c8a4efc",
+    "rook_case4_face99_cover_generation.py": "53baba0038f51dd8439d14b27378663febc45cf90917ecb26524e0f6f275adbf",
+    "rook_case4_face99_reuse_control.py": "940e4bfa23bd712ec04d27164d5fab7c17d54911bfbeb6f0e96a6ace5d167e96",
+    "rook_case4_face99_model.py": "613e2de31570d56a2b1b52a164158a7ed9b80b4f8f834e550fbbc9c6e608e078"
+  },
+  "previous_model_gate_sha256": "3126d715554a8c21448c833294cf5f616e5434f20e98860720eb467e77b2d6e3",
+  "AST_identical_functions": [
+    "digest",
+    "canonical",
+    "save",
+    "row_ids_hash",
+    "runtime_binding",
+    "initial_row_ids",
+    "load_inputs",
+    "extend",
+    "full_float_matrix",
+    "inspect_numeric_point",
+    "controls",
+    "checked_preparation",
+    "cold_arrays",
+    "preflight_replay",
+    "reconstruct_primal",
+    "expanded_numeric",
+    "run",
+    "main"
+  ],
+  "changed_functions_reviewed": [
+    "source_bindings",
+    "definition",
+    "prepare",
+    "reconstruct_bound",
+    "replay"
+  ],
+  "unchanged_limits_and_native_options": true,
+  "reviewed": [
+    "The model, NPZ and integer-stream hashes bind the separately reviewed exact99-zero face before numeric conversion.",
+    "The pool is all165969 original covers; the initial prefix is1966 native rows and1115 max-min extensions.",
+    "The0<=x_j-t<=1 extension preserves each original feasible x by t=0.",
+    "Source and certificate fields bind the exact99-zero seed, with no new zero assumption.",
+    "Row-ID mapping, exact multiplier acceptance, full-row point checks and stopped/error handling retain the reviewed parent implementation.",
+    "An exact active-subset certificate excludes the complete face, whereas active-subset numerical feasibility does not certify it."
+  ],
+  "scope": {
+    "subject_imported": false,
+    "model_rebuilt": false,
+    "controls_repeated": false,
+    "optimizer_called": false,
+    "new_runtime_authorization": false
+  }
+}

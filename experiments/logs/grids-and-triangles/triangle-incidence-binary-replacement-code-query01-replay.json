@@ -1,0 +1,34 @@
+{
+  "status": "PASS_EXACT_REPLACEMENT_CODE_BOUND_REPLAY",
+  "bindings": {
+    "source_sha256": "5badcf9c720073f7ea4bd38ec30763c948848e9f64beaa2f851b3714661ceaf3",
+    "parent_bindings": {
+      "source_sha256": "8befdefb75ff4b4fbaee717d6ad5255f441f4ad2eed62bc8464f3efe6ff5025b",
+      "exact_arithmetic_helper_sha256": "c2cf228e0e6858b56d642c42227bed5d21913fe2ff2f88b15d82d03d4c35a001",
+      "chain_collision_source_sha256": "34bfb0832a6f1bf49db3ee6e39dd68baf4e1ce650f62723992f344f6421bed57",
+      "chain_collision_report_sha256": "c2e4fcda3a4f578a75ed2c01a47e816807c4ac4ee4a50d3518fb2c4d479937ef"
+    },
+    "replacement_source_sha256": "993fcdb85f2e4c50e5bb86a86d4a8a5a2ae75b3e0bac85453a25f6b4234e3c62",
+    "replacement_controls_sha256": "e3014b321d39dd444d66427b3b24633a5743c99b31ebc846c064e803b4f500c5"
+  },
+  "result_sha256": "ac9a7b4647cd1b216612ca63e7f83ccbcdb6c0b3a1ae697f8968dda21d9f1c0d",
+  "certificate": {
+    "exact_code_size_upper_bound": "560594944/189229",
+    "binary_kernel_dimension_upper_bound": 11,
+    "binary_incidence_rank_lower_bound": 88,
+    "dual_column_slacks": [
+      "0",
+      "1900544/1703061",
+      "81920/189229",
+      "0",
+      "0",
+      "0",
+      "114688/567687"
+    ],
+    "all101_dual_signs_and_seven_columns_checked": true,
+    "exact_primal_objective": "560594944/189229",
+    "exact_LP_optimum": true,
+    "all101_primal_rows_and_seven_bounds_checked": true
+  },
+  "optimizer_calls": 0
+}

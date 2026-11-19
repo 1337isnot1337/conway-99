@@ -1,0 +1,6 @@
+The first metadata-only preparation stopped before writing a preparation manifest or loading the count point. It incorrectly expected JSON object key insertion order after canonical serialization. The query input assertion was corrected to compare the complete family-key set; explicit family iteration order remains fixed. No model or tensor changed.
+
+Traceback (most recent call last):
+  File "<stdin>", line 15, in <module>
+AssertionError
+

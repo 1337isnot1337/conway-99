@@ -1,0 +1,33 @@
+{
+  "status": "PASS: exact32-cut model prepared",
+  "source_sha256": "1c21e5eb27db84dba33f782c7755e18433b2ce087328b87d89f74a0698090a8b",
+  "model_file_sha256": "3302546078e2277c8ce30d032110bb527c6a986a74f76fc1f78451bf4da4b804",
+  "model_sha256": "d098a4b84405823aa38e9d2def7b675c6166507f7350937f1dc0f65af7274dcd",
+  "matrix_sha256": "b49a35a0c19e43a70bc8957f0fe09e03f17113ff67caab40a4d4fa63307cca01",
+  "numerical_row_scales_sha256": "7d9c593cbf3e2ab127bc37575029acf236edc21018e9e5a6e5d8199f7b5ebc57",
+  "counts": {
+    "variables": 15200,
+    "equalities": 5973,
+    "inequalities": 15751,
+    "rows": 21724,
+    "nonzeros": 380052,
+    "new_PSD_rows": 32,
+    "new_nonzeros": 196350,
+    "full_selectors": 480,
+    "full_original_acceptance_rows": 650350,
+    "full_original_acceptance_bounds": 183834,
+    "full_additional_quadratic_checks": 32,
+    "maximum_new_integer_coefficient_bits": 27,
+    "maximum_numerical_row_scale": 67108864
+  },
+  "controls": {
+    "status": "PASS: exact numerical scaling and dual pullback",
+    "finite_exact_scaling_controls": 2240,
+    "optimizer_calls": 0
+  },
+  "all_original_prefix_rows_unchanged": true,
+  "all32_literal_cuts_rederived": true,
+  "optimizer_calls": 0,
+  "eigendecompositions": 0,
+  "seconds": 7.209453130999464
+}

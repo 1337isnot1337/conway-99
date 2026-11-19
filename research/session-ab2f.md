@@ -6,10 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Prepare the complete complementary-rook case-four LP after the 99 certified selector zeros. All 105 seeded transportation projections have reached an exact fixed point. Owned by the independent-set worker.
-2. Add exact augmented-selector PSD inequalities to the equivalent reduced F0 joint-moment model, with full original-row acceptance. Owned by the completion worker.
-3. Prepare both additional triangle spectral projectors on complete four-root class domains. The five- and six-root conditioned Q blocks pass exactly. Owned by the literature worker.
-4. Test integer weight-enumerator consequences of the binary rank-88 proof, review exact outcomes, and publish checkpoints. Owned by the coordinating worker.
+1. Reconstruct an exact point from the saved complementary-rook case-four basis. Substituting 829 proposed equalities leaves a 287-square integer system. The full original model remains the acceptance criterion. Owned by the independent-set worker.
+2. Prepare exact cuts from both graph-projector Schur forms in the F0 joint-moment model. The 32-selector-cut query has a numerical optimum but no exact terminal certificate. Owned by the completion worker.
+3. Prepare integer triangle-class count inequalities after all 40 additional four-root and 126 complete five-root matrix tests pass. Audit coefficient and extension redundancies before any point scan. Owned by the literature worker.
+4. Develop global binary-code constraints, review exact outcomes, and publish checkpoints. The ten new triangle inequalities improve the real bound while leaving incidence rank at least 88. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -29,6 +29,11 @@ not meet that target. New reductions will be checked on known graphs when
 their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
+
+- Checkpoint 53: ten graph-specific dual-code inequalities follow from equal generator columns, triangle replacements, triangle toggles, weighted chains and triangle-containing supports. The complete 109-row coding relaxation has exact optimum 52183040/17817. An independent checker verifies all primal rows, every dual sign and column, and the five active multipliers. The rank bound remains 88. Two earlier formal integer enumerators fail the new graph conditions; neither constructs a code.
+- The complete rook 99-zero-face LP reaches numerical optimality with positive minimum selector value in one 10.441-second native call. Coordinatewise rational recovery fails. The terminal record and full cold replay preserve UNKNOWN. The independent forced-upper transportation census finds 170 support equalities, all redundant after existing Gram rows and the 99 zeros.
+- The F0 model with all 32 exact augmented-selector cuts reaches numerical optimality after 29 interior-point iterations and 9823 crossover iterations. Rational reconstruction fails, and the saved active face exceeds the fixed recovery cap. The terminal status is UNKNOWN. The lossless numerical archive and both exact terminal replays are retained.
+- All 40 additional four-root graph-projector blocks pass exact PSD. The complete five-root preparation covers all 21 roots and 1296 triangle classes. All 126 matrices pass in 17.198 seconds, with a separate 13.377-second cold replay. No separator is obtained. All sources, preparations, exact results and bounded query records are retained.
 
 - Checkpoint 52: three-triangle chains give exactly 24948-9g distinct weight-five words in the binary dual code. The bound g<=120 gives 23868 such words. The exact coding optimum 140594432/35063 is below4096, so kernel dimension is at most11 and incidence rank is at least88. A complete6435-host collision census and independent recurrence/rational checks pass. The earlier star-word query gives rank85 and is preserved.
 - The rook transportation calculation gives88 zeros from six short original-row certificates; adding the14 earlier cover units gives99 distinct zeros. The seeded105-projection closure finds no further zero or contradiction. All projected flows and zero certificates replay exactly. The complete1115-column LP is prepared separately.

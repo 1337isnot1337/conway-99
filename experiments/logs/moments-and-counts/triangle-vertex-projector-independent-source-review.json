@@ -1,0 +1,94 @@
+{
+  "status": "PASS: independent complete source and mathematical review",
+  "reviewer_source_sha256": "8a1f4b39fb6500fd2cad32a42c2d80c5aa3a44321adb126907f95eb1d083def7",
+  "bindings": {
+    "triangle_vertex_projector_moments.py": "fea5b560e4aeeb323da6e8cde2bc52571a3dc7499f0900a0a12b1f134d4a31c7",
+    "triangle_vertex_projector_query.py": "c2529d20935733c835a24b2600dd195c439f68f2cf258c9eb48325ff466516d3",
+    "triangle_projector_conditioned_query.py": "cd167c52b7b646a64e4faf58816212d427d1c280a45070e77a5eb8b0a29abb43",
+    "triangle_incidence_projector_moments.py": "1e7a8b7380314d6dfd8ff05954a13662bc011378f5759ad675ec1bc281fa19e9"
+  },
+  "small_independent_kernel_arithmetic": [
+    {
+      "overlap": 3,
+      "directed_cross_edges": 6,
+      "old": 120,
+      "minus": 4,
+      "plus": 180
+    },
+    {
+      "overlap": 1,
+      "directed_cross_edges": 4,
+      "old": -20,
+      "minus": 0,
+      "plus": 70
+    },
+    {
+      "overlap": 0,
+      "directed_cross_edges": 0,
+      "old": -6,
+      "minus": 1,
+      "plus": -18
+    },
+    {
+      "overlap": 0,
+      "directed_cross_edges": 1,
+      "old": 1,
+      "minus": 0,
+      "plus": -7
+    },
+    {
+      "overlap": 0,
+      "directed_cross_edges": 2,
+      "old": 8,
+      "minus": -1,
+      "plus": 4
+    },
+    {
+      "overlap": 0,
+      "directed_cross_edges": 3,
+      "old": 15,
+      "minus": -2,
+      "plus": 15
+    }
+  ],
+  "small_independent_spectral_arithmetic": [
+    {
+      "adjacency_eigenvalue": 14,
+      "multiplicity": 1,
+      "minus_triangle_eigenvalue": 0,
+      "plus_triangle_eigenvalue": 0
+    },
+    {
+      "adjacency_eigenvalue": 3,
+      "multiplicity": 54,
+      "minus_triangle_eigenvalue": 0,
+      "plus_triangle_eigenvalue": 770
+    },
+    {
+      "adjacency_eigenvalue": -4,
+      "multiplicity": 44,
+      "minus_triangle_eigenvalue": 21,
+      "plus_triangle_eigenvalue": 0
+    }
+  ],
+  "reviewed": [
+    "B B^T=A+7I and the two vertex-projector factorizations imply the advertised positive semidefinite triangle kernels.",
+    "A shared triangle vertex gives exactly four directed cross-edge contributions; lambda=1 excludes further cross edges.",
+    "The constructor enumerates each induced support as root union two triangles, every labelled root map, and every unordered triangle pair.",
+    "Distinct triangles in one class contribute twice to its diagonal; two different classes contribute once to the stored lower-triangular entry. Equal triangles contribute once.",
+    "Coefficients multiply unlabelled induced counts; no additional automorphism factor is required after counting every labelled root map in the representative.",
+    "For each individual root embedding, conditioning on its internal triangle gives d M-diag(q) f f^T diag(q), with d=4 or180. Summation preserves positivity; global first moments are not multiplied together.",
+    "The exact characteristic polynomial test is valid for a real symmetric matrix: nonnegative coefficients of det(tI+M) exclude a positive root and hence a negative eigenvalue.",
+    "Negative-vector forms double off-diagonal lower entries and divide by a positive coefficient gcd. The reported primitive value is divided by the same gcd.",
+    "The query and replay bind all22 blocks/574classes and mark incomplete/error paths without claiming full coverage or graph existence."
+  ],
+  "scope": {
+    "complete_subject_source_read": true,
+    "subject_imported": false,
+    "tensor_rebuilt": false,
+    "count_point_loaded": false,
+    "matrix_contracted": false,
+    "optimizer_or_query_called": false,
+    "runtime_authorization_implied": false
+  }
+}

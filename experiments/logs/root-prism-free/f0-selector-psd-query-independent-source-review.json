@@ -1,0 +1,50 @@
+{
+  "status": "PASS_READ_ONLY_32_PSD_QUERY_SOURCE_REVIEW",
+  "reviewer": "independent_sets",
+  "bindings": {
+    "exact_helper": {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_exact.py",
+      "sha256": "9834bf571545ab401cc7667e818a19c956d09b4636d577cc5de961d313be746b"
+    },
+    "query_driver": {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_query.py",
+      "sha256": "5e9ebe327f6ae5ccbb85d0697faca359b9517d17b9a8f0ccf375317eab1e44b3"
+    },
+    "model_builder": {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_model.py",
+      "sha256": "1c21e5eb27db84dba33f782c7755e18433b2ce087328b87d89f74a0698090a8b"
+    },
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-preparation.json",
+      "sha256": "69190862dc537ec7c98d05f2e3c33ee33813334936db894332a4b7aa7a94c585"
+    }
+  },
+  "complete_source_reads": [
+    "model_builder",
+    "exact_helper",
+    "query_driver"
+  ],
+  "checks": {
+    "old5973_equalities_and15719_inequalities_preserved": true,
+    "all32_rows_rederived_from_frozen_integer_PSD_vectors_by_builder": true,
+    "389_zero_substitution_and_original_full_acceptance_retained": true,
+    "positive_power_of_two_row_scaling_preserves_real_feasibility": true,
+    "each_binary64_scaled_coefficient_checked_by_exact_integer_ratio": true,
+    "scaled_ray_multipliers_pulled_back_as_Fractions_before_rounding": true,
+    "inherited_Farkas_acceptance_checks_all_integer_rows_and_unit_bounds": true,
+    "primal_acceptance_checks650350_full_rows183834_bounds_and32_full480_quadratics": true,
+    "full480_quadratic_equals_negative_positive_divisor_times_row_residual": true,
+    "one_native_run_existing_ray_only_and_owned_child_limits": true,
+    "no_whole_PSD_cone_or_graph_feasibility_claim": true
+  },
+  "mathematical_scaling": "For A_i x <= b_i scaled to (A_i/s_i)x <= b_i/s_i with s_i>0, the original multiplier is lambda_i/s_i. Exact Fraction pullback avoids binary64 underflow.",
+  "scope": {
+    "subject_import": false,
+    "controls_repeated": false,
+    "model_or_CNF_rebuilt": false,
+    "optimizer_called": false,
+    "ray_or_point_reconstruction_repeated": false,
+    "actual_prepared_matrix_bytes_rederived": false,
+    "relies_on_frozen_model_cold_replay_for_matrix_generation": true
+  }
+}
