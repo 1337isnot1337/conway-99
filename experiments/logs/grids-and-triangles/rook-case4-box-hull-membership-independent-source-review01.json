@@ -1,0 +1,40 @@
+{
+  "all_eleven_input_and_two_preparation_artifact_hashes_verified": true,
+  "blockers": [],
+  "controls_rerun": 0,
+  "mathematical_checks": [
+    "The191-lambda endpoint formulation is equivalent to membership in the convex hull of the frozen axis-aligned boxes: lower weighted endpoint<=x<=upper weighted endpoint in every coordinate; reconstruct each box point by a common coordinatewise interpolation fraction.",
+    "Exact mass acceptance checks integer nonnegative masses, positive common denominator, sum, every endpoint cross-product, and degenerate weighted intervals. The acceptance claim is only this box-hull relaxation.",
+    "Complete191-box coverage and current rational point are bound to accepted independent cold artifacts, original-column mapping and the112 proved-zero coordinates.",
+    "For any proposed integer signed coefficient vector, alpha=min over all191 exact endpoint minima is a necessary lower bound. The strict integer inequality alpha*D-c dot n>0 separates the current point independently of native ray correctness.",
+    "Ray scaling and either orientation propose coefficients only; unsupported or nonfinite numerical data fail before acceptance.",
+    "Saved basis is a candidate face only. Rescaling y=D*lambda correctly subtracts D for fixed upper-bound columns, solves integer RHS equations, then divides basic values byD. All resulting masses must pass the full endpoint inspector.",
+    "Hadamard/Cramer metadata safely bounds a0/1 basis of dimension at most191 with shifted RHS magnitude at most192D; it does not assert actual basis rank or bounded native intermediate sizes."
+  ],
+  "model_builds": 0,
+  "optimizer_calls": 0,
+  "preparation": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-box-hull-membership-preparation01/preparation.json",
+    "sha256": "7e3477a1f4c323affcea0a4721d2333bdf4373384ddbe330970c9059359bc760"
+  },
+  "preparation_dimensions": {
+    "empty_coordinate_rows": 1264,
+    "nonzeros": 38333,
+    "rows": 2205,
+    "variables": 191
+  },
+  "reviewer": "master_review",
+  "schema": "conway99.rook-case4.box-hull-membership.source-review.v1",
+  "scope_conditions": [
+    "No original-model or Boolean solution follows from feasible box-hull membership.",
+    "A strict separator is a necessary inequality for the frozen branch cover, not a whole-case contradiction.",
+    "The separate query/owner controller and subsequent terminal/cold data require their own binding review."
+  ],
+  "source": {
+    "lines": 491,
+    "path": "experiments/workspace/rook_case4_box_hull_membership.py",
+    "sha256": "54330f430c0c4dae03a0298533121ce43482ceb295f54df715ad2f2180d3503c"
+  },
+  "source_imports": 0,
+  "status": "PASS_COMPLETE_SOURCE_REVIEW_NO_BLOCKER"
+}

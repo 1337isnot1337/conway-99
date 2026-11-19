@@ -1,0 +1,34 @@
+{
+  "controls": {
+    "asserted_dominance_pairs_checked_by_truth_tables": 19554,
+    "authoritative_and_candidate_inputs_unchanged": true,
+    "binary_assignments_per_row": 8,
+    "capping_truth_comparisons": 2592,
+    "coverage_authority_configurations": 5,
+    "coverage_entries_checked_by_truth_tables": 1625,
+    "duplicate_coefficients_and_duplicate_candidates_checked": true,
+    "empty_support_dominance_pairs": 972,
+    "retained_frontier_pairwise_nondominated": true,
+    "toy_raw_rows": 324,
+    "zero_positive_multiple_positive_and_nonzero_rhs_classification_checked": true
+  },
+  "input_domain": "Exact Python integer coefficients or exact decimal integer strings. int() coercion is not a validator for arbitrary floating inputs; the bound literal/census producers must preserve the integer domain.",
+  "mathematical_findings": [
+    "For binary guard0, both original and capped rows hold because every RHS weight is nonnegative.",
+    "For guard1, a selected weight at least demand makes either row true; otherwise all selected weights are unchanged. Dividing by the positive gcd preserves the inequality.",
+    "Same-anchor coordinatewise cross-products imply the second nonnegative weighted sum is at least the demand-scaled first sum. Missing coordinates have zero weight.",
+    "An empty support becomes x_a <= 0. It dominates every same-anchor guard row; no nonempty support dominates it.",
+    "Dominance is transitive, so frontier replacements preserve coverage. The final pass verifies a direct authoritative or final-frontier witness for every raw candidate.",
+    "The helper does not alter authoritative rows or input origins; later model assembly must retain the full authoritative prefix."
+  ],
+  "native_imports": 0,
+  "optimizer_calls": 0,
+  "review_scope": "Proof helper; full census inputs, provenance and output receive their separate source/cold binding.",
+  "schema": "conway99.f0.local-row-dominance.independent-source-review.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_local_row_dominance.py",
+    "sha256": "d91591788e7f97742736df8bb6cdafaddb46939668054fb7450e351a2d276566"
+  },
+  "source_lines_read": 109,
+  "status": "PASS_INTEGER_DOMAIN_PROOF_AND_EXHAUSTIVE_BOOLEAN_CONTROLS"
+}

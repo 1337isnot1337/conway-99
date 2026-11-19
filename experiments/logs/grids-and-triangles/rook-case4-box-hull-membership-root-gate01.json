@@ -1,0 +1,77 @@
+{
+  "authorized_next_action": "One run under the frozen configuration, followed by its existing exact and independent cold stages.",
+  "full_sources_read": [
+    "helper",
+    "query",
+    "replay"
+  ],
+  "inputs": {
+    "configuration": {
+      "bytes": 4279,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-hull-membership-query-configuration01.json",
+      "sha256": "2d27c3212172fbec39b4cfadb91967536d806b830758158343113d1d71c42280"
+    },
+    "helper": {
+      "bytes": 25758,
+      "path": "experiments/workspace/rook_case4_box_hull_membership.py",
+      "sha256": "54330f430c0c4dae03a0298533121ce43482ceb295f54df715ad2f2180d3503c"
+    },
+    "preparation": {
+      "bytes": 5493,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-hull-membership-preparation01/preparation.json",
+      "sha256": "7e3477a1f4c323affcea0a4721d2333bdf4373384ddbe330970c9059359bc760"
+    },
+    "query": {
+      "bytes": 25552,
+      "path": "experiments/workspace/rook_case4_box_hull_membership_query.py",
+      "sha256": "aa557c7b99ec3de71e9ecde3f6f7dfa3ca71066a835086cdd3b3f2eb7be558e5"
+    },
+    "replay": {
+      "bytes": 10032,
+      "path": "experiments/workspace/rook_case4_box_hull_membership_replay.py",
+      "sha256": "0db0c7f9acb6e1b5bd5429e6dd26fce813bc53fa9c33fb1111494e0d8f7d0d61"
+    }
+  },
+  "limits": {
+    "automatic_retries": 0,
+    "cold_owner_seconds": 90,
+    "cold_seconds": 60,
+    "exact_owner_seconds": 90,
+    "exact_seconds": 60,
+    "maximum_abs_cut_coefficient": 1048576,
+    "maximum_basis_dimension": 191,
+    "maximum_exact_output_bits": 2048,
+    "maximum_record_bytes": 16777216,
+    "native_calls": 1,
+    "native_owner_seconds": 90,
+    "native_seconds": 60,
+    "preparation_seconds": 30,
+    "threads": 1,
+    "whole_owner_seconds": 300
+  },
+  "mathematical_checks": [
+    "191 nonnegative mixture weights sum to one",
+    "forced-one and forced-zero endpoint inequalities are necessary and sufficient for the convex hull of the191 axis-aligned boxes",
+    "exact coordinate interpolation follows from the two endpoint slacks",
+    "basis restriction is a proposal only; every reconstructed weight and2204 endpoint inequalities are checked",
+    "signed cuts use the exact minimum over every complete box",
+    "independent replay imports no producer or native library"
+  ],
+  "model_shape": {
+    "rows": 2205,
+    "unit_terms": 38333,
+    "variables": 191
+  },
+  "native_checks": [
+    "one simplex run with explicit60-second cap",
+    "presolve off and existing-ray guard prevent an implicit extra solve",
+    "all38333 unit coefficients and all row/column bounds checked before run",
+    "one exact basis solve of dimension at most191",
+    "separate owned native, exact, cold phases with reaping and whole300-second owner",
+    "nonoptimal, timeout, unproved infeasibility, or failed reconstruction remains UNKNOWN"
+  ],
+  "new_optimizer_calls": 0,
+  "repeated_large_matrix_or_branch_trace_checks": 0,
+  "scope": "Conditional rook case4 only; neither mixture membership nor a separating cut constructs a Boolean incidence or excludes the whole case.",
+  "status": "PASS_ROOT_SOURCE_AND_PREPARATION_GATE_ONE_BOX_HULL_QUERY"
+}

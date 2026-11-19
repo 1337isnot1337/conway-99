@@ -1,0 +1,47 @@
+{
+  "configuration01_unchanged": true,
+  "explicit_new_block": "    a = actual.a_matrix_\n    native_starts = list(a.start_)\n    native_indices = list(a.index_)\n    native_values = list(a.value_)\n    restored = [[] for _ in rows]\n    assert len(native_indices) == len(native_values) == len(indices)\n    if a.format_ == highspy.MatrixFormat.kRowwise:\n        assert len(native_starts) == len(rows) + 1\n        for i in range(len(rows)):\n            for k in range(native_starts[i], native_starts[i + 1]):\n                assert native_values[k] == 1.0 and 0 <= native_indices[k] < n\n                restored[i].append(int(native_indices[k]))\n    else:\n        assert a.format_ == highspy.MatrixFormat.kColwise and len(native_starts) == n + 1\n        for j in range(n):\n            for k in range(native_starts[j], native_starts[j + 1]):\n                assert native_values[k] == 1.0 and 0 <= native_indices[k] < len(rows)\n                restored[int(native_indices[k])].append(j)\n    assert [sorted(r) for r in restored] == [r[\"columns\"] for r in rows]\n    assert all(len(r) == len(set(r)) for r in restored)\n",
+  "explicit_old_block": "    a = actual.a_matrix_\n    restored = [[] for _ in rows]\n    assert len(a.index_) == len(a.value_) == len(indices)\n    if a.format_ == highspy.MatrixFormat.kRowwise:\n        assert len(a.start_) == len(rows) + 1\n        for i in range(len(rows)):\n            for k in range(a.start_[i], a.start_[i + 1]):\n                assert a.value_[k] == 1.0 and 0 <= a.index_[k] < n\n                restored[i].append(int(a.index_[k]))\n    else:\n        assert a.format_ == highspy.MatrixFormat.kColwise and len(a.start_) == n + 1\n        for j in range(n):\n            for k in range(a.start_[j], a.start_[j + 1]):\n                assert a.value_[k] == 1.0 and 0 <= a.index_[k] < len(rows)\n                restored[int(a.index_[k])].append(j)\n    assert [sorted(r) for r in restored] == [r[\"columns\"] for r in rows]\n    assert all(len(r) == len(set(r)) for r in restored)\n",
+  "getter_return_annotations": {
+    "index_": "list[int]",
+    "start_": "list[int]",
+    "value_": "list[float]"
+  },
+  "installed_type_stub_sha256": "d20890baa688faaae31a25b5f84477ff47a60710f911808b660cc732839f5545",
+  "module_level_statements_unchanged": true,
+  "native_getter_load_counts": {
+    "index_": 1,
+    "start_": 1,
+    "value_": 1
+  },
+  "native_imports": 0,
+  "new_configuration_or_query_run": false,
+  "optimizer_calls": 0,
+  "original": {
+    "path": "experiments/workspace/rook_case4_box_hull_membership_query.py",
+    "sha256": "aa557c7b99ec3de71e9ecde3f6f7dfa3ca71066a835086cdd3b3f2eb7be558e5"
+  },
+  "original_successful_result_preserved": true,
+  "runtime_speedup_measured": false,
+  "source_imports": 0,
+  "source_sha256": "4061b3071d7a8057b80041bfcce27989509dbd26f0623a7ce2bfc3f622aeeb5e",
+  "status": "PASS_UNRUN_CACHE_ONLY_NATIVE_TRANSPORT_REPAIR",
+  "unchanged_function_count": 11,
+  "unchanged_function_names": [
+    "source_bindings",
+    "read_ref",
+    "prepare",
+    "load",
+    "numerical",
+    "exact",
+    "owned",
+    "success",
+    "controller",
+    "run",
+    "verify"
+  ],
+  "unrun_repaired_source": {
+    "path": "experiments/workspace/rook_case4_box_hull_membership_query_cached_unrun_v2.py",
+    "sha256": "6925a9e2182e2d1e8a5f32d10e50dd353bb32c2a3415ebd80bb602daf8da785a"
+  }
+}

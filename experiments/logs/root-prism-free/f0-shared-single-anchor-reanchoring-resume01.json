@@ -1,0 +1,77 @@
+{
+  "first_attempt": {
+    "accepted": false,
+    "complete_saved_artifacts": [
+      "bank.json",
+      "complete-census.json.gz"
+    ],
+    "directory": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring01",
+    "inner_deadline_seconds": 60,
+    "native_imports": 0,
+    "optimizer_calls": 0,
+    "outer_exit_code": 124,
+    "outer_timeout_seconds": 65,
+    "terminal_report_written": false
+  },
+  "inputs_and_sources": [
+    {
+      "bytes": 17020,
+      "path": "experiments/workspace/root_prism_free_f0_shared_single_anchor_reanchoring.py",
+      "sha256": "878e7058cd6aab4761adf56e2ca90e0cbc199d463a1824d26da0171632793676"
+    },
+    {
+      "bytes": 7448,
+      "path": "experiments/workspace/root_prism_free_f0_shared_single_anchor_reduction.py",
+      "sha256": "b25311bbc83bd81015b25f0063596ee7d2259f99732ec0498489ffd48464c441"
+    },
+    {
+      "bytes": 4840,
+      "path": "experiments/workspace/root_prism_free_f0_local_row_dominance.py",
+      "sha256": "d91591788e7f97742736df8bb6cdafaddb46939668054fb7450e351a2d276566"
+    },
+    {
+      "bytes": 18641,
+      "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring-configuration01.json",
+      "sha256": "42b6a6651435adbfb81d33819917f870df2d69f7205878d01899ea9a2ef8ba53"
+    },
+    {
+      "bytes": 29026,
+      "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring01/bank.json",
+      "sha256": "ba861832d39d865e62b648ba6e342f8f960075f96d3f48861952794c128e9fa0"
+    },
+    {
+      "bytes": 4081956,
+      "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring01/complete-census.json.gz",
+      "sha256": "8741c7ff5cdeba72e330b0ec4ecf51f10e55f9f2491904d3e2eba1f7ce70974c"
+    },
+    {
+      "bytes": 0,
+      "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring01.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring01.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "proof_of_cached_predicate_equivalence": "All capped weights and demands are strictly positive integers. An index in first support but absent from second violates w_first*t_second <= 0. Otherwise every first-support coefficient is looked up exactly and the same integer cross-product inequality is tested. Cached keys are canonical hashes constructed by the unchanged helper from immutable normalized rows.",
+  "resume": {
+    "changes": [
+      "Load the complete preserved bank and census through exact file hashes.",
+      "Import the frozen producer for exact parsing, normalization, serialization and hash reads only; do not call its census.",
+      "Keep the frozen helper source unchanged; replace only its local in-memory dominance predicate by the same exact cross-product criterion with cached immutable weight dictionaries.",
+      "Reject when positive-weight support of the first row is not contained in the second; this is equivalent to the original zero-missing-weight criterion.",
+      "Preserve every returned public reduction field; independently cold-check all rows and coverage before accepting export."
+    ],
+    "directory": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02",
+    "enumeration_repeated": false,
+    "inner_deadline_seconds": 120,
+    "native_imports": 0,
+    "optimizer_calls": 0,
+    "outer_timeout_seconds": 125
+  },
+  "schema": "conway99.f0.shared-single-anchor-reanchoring.resume.v1",
+  "scope": "Fresh sixteen shared certificates only; no historical potential-bank expansion or whole-component exclusion.",
+  "status": "PRESERVED_TIMED_OUT_CENSUS_AND_DECLARED_EXACT_REDUCTION_RESUME"
+}

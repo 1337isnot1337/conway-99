@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "archive": {
+        "bytes": 2915988,
+        "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02/dominance.json.xz",
+        "sha256": "7e7824417c54c8694a1c08a217174b3ecd8c7c2d219dcff7d414dfd1a10f363e"
+      },
+      "exact_original_bytes_restored": true,
+      "raw_bytes": 31642127,
+      "raw_sha256": "6b2abfe813df4c5b8afb9d49ad24653633e2e37714015847ec508df2b8d170bb",
+      "recipe": "gzip.compress(lzma.decompress(archive), compresslevel=9, mtime=0)",
+      "restored": {
+        "bytes": 7670286,
+        "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02/dominance.json.gz",
+        "sha256": "e518834802791b341a7d7c3eb2d57cd0c89f5d8ff004f12ffe4e9e141f8992f2"
+      }
+    },
+    {
+      "archive": {
+        "bytes": 3071384,
+        "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02/retained-rows.json.xz",
+        "sha256": "e82cd96fb6d57b6a7dd447b01b4857d257fee9b547ca5a892bf0895c14b3b3ac"
+      },
+      "exact_original_bytes_restored": true,
+      "raw_bytes": 42131611,
+      "raw_sha256": "5897295a988c38b8cd459402eef1e7e2ea29519c6363f02c9ac71aab73d7163f",
+      "recipe": "lzma.decompress(archive)",
+      "restored": {
+        "bytes": 42131611,
+        "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02/retained-rows.json",
+        "sha256": "5897295a988c38b8cd459402eef1e7e2ea29519c6363f02c9ac71aab73d7163f"
+      }
+    },
+    {
+      "archive": {
+        "bytes": 2516088,
+        "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02-independent-cold.json.gz",
+        "sha256": "c5eca2313768571598d9d402723f2308ac5f1b0bb1c7c44212a0ce2abb3301f2"
+      },
+      "exact_original_bytes_restored": true,
+      "recipe": "gzip.decompress(archive)",
+      "restored": {
+        "bytes": 13556237,
+        "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02-independent-cold.json",
+        "sha256": "4d5b7a4a10bc1deed16509b0ed2dfbcc2d4794178054846a4c3f5768f967f05f"
+      }
+    }
+  ],
+  "json_reserialization_used": false,
+  "optimizer_calls": 0,
+  "runtime_gzip_os_header": 3,
+  "status": "PASS_EXACT_RESTORATION_OF_ALL_ARCHIVED_ACCEPTANCE_INPUTS"
+}
