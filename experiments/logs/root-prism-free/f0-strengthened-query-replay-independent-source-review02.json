@@ -1,0 +1,106 @@
+{
+  "schema": "conway99.f0.strengthened-query-independent-terminal-source-review.v1",
+  "status": "PASS_COMPLETE_INDEPENDENT_TERMINAL_CHECKER_SOURCE_REVIEW",
+  "reviewer": "independent_sets",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query_replay.py",
+    "git_blob": "888a72052c30590b93a2da8c3615f78ccf71c496",
+    "sha256": "44d8bbba6f61fae1a27faa9fa516353b02dbcc53c9cbedd39c5574adb48a5ee3",
+    "bytes": 29145
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json",
+    "git_blob": "f4350f9cfbc4fa4b9e38598ede9b442b91d2350c",
+    "sha256": "4dedc66ded53ed813a0eef7a0ad366afe1093f5f5120b0d24ff5276497df3077",
+    "bytes": 6134
+  },
+  "complete_source_read": true,
+  "source_lines": 503,
+  "inherited_inputs_read_and_rehashed": [
+    {
+      "name": "model_cold",
+      "bytes": 14259,
+      "git_blob": "2f13275d00aca2d1cc2add3414aa8c2ed4062568",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "sha256": "75e0150b0c0ed6f6b7c5d84c270790a4311a5a81382afe0a32e360dd2d126628"
+    },
+    {
+      "name": "model_cold_owner",
+      "bytes": 1134,
+      "git_blob": "29a4ffa3fde0aaed50b0b70de772afb45933de86",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json",
+      "sha256": "e9f1e4fdb7277c6759be465dea97d1e01c7e1337bb18e05347062fa7aa378931"
+    },
+    {
+      "name": "model_configuration",
+      "bytes": 13870,
+      "git_blob": "086e612eeb16c03833006421f218f9ff47e34f44",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json",
+      "sha256": "796e79978b113e49603b9cb60ddcda6bd829725eb4384d10640d74feb959ca0c"
+    },
+    {
+      "name": "model_preparation",
+      "bytes": 12613,
+      "git_blob": "5180767826e0edcdc4d14bbc40b41934dd8dfd1c",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json",
+      "sha256": "114823082c6d3696fe6f53ae0979d0c375b9f13ffa94071fa9093d195633fcd7"
+    },
+    {
+      "name": "model_preparation_owner",
+      "bytes": 972,
+      "git_blob": "65556017f9e658cee0fe27987b590c1cc7a25ede",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json",
+      "sha256": "d162e054ff0f80208f199403869b1109f97cde67add39e3d4bc4de01731532be"
+    },
+    {
+      "name": "model_root_acceptance",
+      "bytes": 7706,
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116"
+    }
+  ],
+  "inherited_reference_checks": {
+    "cross_references": 13,
+    "raw_model_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+    "small_receipts_rehashed": 6,
+    "whole_native_model_read": false
+  },
+  "findings": {
+    "exact_vector": "exact_vector rejects booleans, floats, wrong lengths and any non-Python-int value. It independently checks every variable interval and every unconditional linear row with indexed Python-integer multiplication and accumulation. No zip truncation, fixed-width accumulation, NumPy arithmetic or imported producer inspector is used. Empty rows and disconnected interval domains are handled.",
+    "complete_row_scope": "The immutable 68,934-variable, 257,594-row protobuf is bound to the accepted full native export and independent model cold. All rows must be unconditional linear constraints; each indexed coefficient and variable ID is inspected. The complete serialized protobuf must equal the pinned raw model.",
+    "response_transport": "The original native response text and separately reconstructed wire must parse to exactly the same whole CpSolverResponse serialization. Native primary and every additional vector are also matched to the saved integer-array snapshot. The checker accurately labels the wire as reconstructed, without claiming a native binary export.",
+    "all_vectors_and_activities": "Every primary/additional vector has an exact named file, receipt and independent full-row check. Directory enumeration detects missing or extra candidate files. Complete activity archives must decode byte-for-byte to the independent compact canonical integer activity array, with matching length and SHA. Primary selector and edge projections are checked separately.",
+    "status_and_resource_classification": "A native overrun is UNKNOWN_NATIVE_BUDGET_OVERRUN. Native INFEASIBLE remains UNPROVED_NATIVE_INFEASIBLE; it is never a mathematical exclusion. Missing SAT vectors, invalid vectors and incompatible native status/vector combinations receive explicit error classifications. A zero-call result is accepted only as the declared insufficient-owner-budget outcome with no response/vector files.",
+    "owner_and_gate_bindings": "The checker binds its own source, query source, configuration, actual root gate, model cold, preflight report/owner, query result/owner, preliminary receipt and supervision receipt. The source requires the owned child to be reaped with zero return status and no owner deadline overrun. A 300-second query owner and the one-call/175-second solver/180-second measured allowance are explicit.",
+    "parameters_and_runtime": "The complete pinned parameter descriptor, explicitly set parameters and their text/wire snapshots are checked. Exact package versions and Python/native-wrapper file hashes are read without importing the native solver wrapper. Symmetry is explicitly disabled; no parameter mutation is inferred from numerical behavior.",
+    "inherited_receipt_compatibility": "The six actual small inherited model inputs were fetched and hash-verified. Thirteen cross-references, both accepted owner limits/statuses, the complete 89,544-row/600,360-term append receipt and all raw-model SHA references match the current checker accesses.",
+    "controls_read": "The source's controls cover integers beyond binary64 exactness, negative coefficients, empty rows, disconnected domains, Boolean/float/length rejection, full response round trips with additional vectors, and eight terminal-classification cases. These controls were read but not executed in this review.",
+    "checker_execution_scope": "Only protobuf/parameter message classes are imported by the checker. It has no producer, CpModel, CpSolver or solver-module import. The complete 120-second bound includes report serialization; a post-write timeout raises and records an error, so the external owned exit receipt remains required rather than accepting a PASS-looking file alone.",
+    "mathematical_scope": "A fully checked vector is only a witness for the frozen Boolean exterior relaxation. The checker explicitly does not assert all original selected-pair caps, a compatible second component, a graph construction or whole-component exclusion."
+  },
+  "limitations": [
+    "This is a source/schema gate, not a query result or an executed independent cold.",
+    "No full native model archive was downloaded or decoded in this review; the previously accepted model receipts and exact raw hash are reused.",
+    "The future production gate, preflight and query receipts must satisfy the source's strict actual-file checks when the independent replay runs."
+  ],
+  "mathematical_or_source_blocker_found": false,
+  "python_source_imports": 0,
+  "controls_run": 0,
+  "native_model_decodes": 0,
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "branch_or_ref_mutations": 0,
+  "prior_unpublished_metadata_draft": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-replay-independent-source-review01.json",
+    "git_blob": "8fc39e935193e7983781ddca9d272d615c60e174",
+    "sha256": "d743751db6823142fe5e7d0a2fea69bd7df44fd9e6fe9f44454998cd5ef80da9",
+    "bytes": 7665
+  },
+  "metadata_correction": "Corrects only the configuration pathname to the author's confirmed frozen path. Source, configuration bytes, source findings and execution counts are unchanged."
+}

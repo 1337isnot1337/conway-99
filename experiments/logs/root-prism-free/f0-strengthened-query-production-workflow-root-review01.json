@@ -1,0 +1,60 @@
+{
+  "schema": "conway99.f0.strengthened-query-production-workflow-root-review.v1",
+  "status": "PASS_COMPLETE_PRODUCTION_WORKFLOW_SOURCE_REVIEW",
+  "reviewer": "/root",
+  "source": {
+    "path": ".github/workflows/conway99-strengthened-query.yml",
+    "bytes": 17241,
+    "sha256": "69f74421cf123a30fac69067282c73cc73f581397a379075cec7ce14f4b80bc9",
+    "git_blob": "aca43642e513f9eb7c8fb49e3dd7504f598c2254",
+    "mode": "100644"
+  },
+  "complete_source_read": true,
+  "lines": 224,
+  "explicit_checkout_paths": 27,
+  "exact_runtime_dependencies": 25,
+  "dependency_set_matches_checkout_except_gate_and_request": true,
+  "checked": [
+    "Push-only dedicated workflow/request trigger on the claimed branch, first attempt and exact expected-parent/ref checks.",
+    "Read-only repository permissions, no persisted checkout credentials, pinned checkout/upload action commits, shared native-work concurrency group and 12-minute outer job timeout.",
+    "Every source/input/authority dependency is hash-and-byte checked; all Python sources are compiled before runtime installation or the driver invocation.",
+    "The workflow compares the actual accepted preflight source, configuration, report, owner, model and parameter bindings, including original exact parameter snapshots.",
+    "The one immutable driver invocation uses the computed exact request SHA; the runner/cold/driver/config hashes are also literal workflow constants.",
+    "Actual query source supplies the 300-second owner and 175/180-second native contract. Cold controls and main have separate 15/135-second owners; driver acceptance bound is480seconds.",
+    "Always-run log export preserves every original output byte except the duplicate model.pb, which remains in the complete uploaded artifact and is exactly restorable from the accepted model archive.",
+    "Export ceilings are16MiB of original files and20MiB encoded. Exceeding either cannot create a partial accepted bundle; the full artifact step still runs.",
+    "No automatic preparation, second query, parameter sweep or retry appears."
+  ],
+  "actual_preflight_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-acceptance01.json",
+    "bytes": 9914,
+    "sha256": "5dc30d5131c3c33b1640533187c46688ede903998ff743cdad351e1a4185f296",
+    "git_blob": "035a1b80b9eca91c4cab438b027a56475f3e1386",
+    "mode": "100644"
+  },
+  "runner_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-independent-source-review01.json",
+    "bytes": 9284,
+    "sha256": "bd659639317888702ab0a227affb99367bad75939df32980051438386bd8faa3",
+    "git_blob": "296e0645ce8d809de1418f9bda34faf7e26d8c83",
+    "mode": "100644"
+  },
+  "terminal_checker_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-replay-independent-source-review02.json",
+    "bytes": 8177,
+    "sha256": "560f76ec825b51888e495c5e71dee591bac0cbd45fa275dafb578048a23a931a",
+    "git_blob": "db50f4871c6abfcf30ddb4f081e12e06ee3aba3a",
+    "mode": "100644"
+  },
+  "driver_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-ci-root-source-review01.json",
+    "bytes": 3156,
+    "sha256": "5be20e08c46523552176297b8d47a376a4a0dd61cfe11acbadfafa60e6cdd650",
+    "git_blob": "61ed28913916a20d1304683d26564002ef8b52fd",
+    "mode": "100644"
+  },
+  "concrete_blockers": [],
+  "workflow_executed_by_reviewer": false,
+  "optimizer_calls_by_reviewer": 0,
+  "production_authorized_by_this_review": false
+}

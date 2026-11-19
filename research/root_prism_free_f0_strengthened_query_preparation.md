@@ -1,6 +1,41 @@
 # Strengthened F0 query preparation
 
-Checkpoint 85 authorizes one zero-solve native preflight. The production optimizer query is not authorized by this checkpoint. The accepted model remains the exact checkpoint 84 model: 68,934 variables, 257,594 rows, raw SHA256 `4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2`.
+Checkpoint 86 accepts the completed zero-solve preflight and authorizes one separately gated bounded optimizer query. The accepted model remains the exact checkpoint 84 model: 68,934 variables, 257,594 rows, raw SHA256 `4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2`.
+
+## Completed preflight and one-call authorization
+
+[Preflight run 44632464085](https://github.com/1337isnot1337/conway-99/actions/runs/44632464085)
+executes checkpoint 85 once. The worker completes in 6.357763164 seconds and
+the process owner in 6.534583334 seconds. Native transport takes 5.576695360
+seconds and reproduces all 38,374,405 accepted model bytes. The owner exits
+successfully, reaps the child and stops its process group with no overrun.
+CpSolver construction and optimizer calls are both zero.
+
+The [root acceptance](../experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-acceptance01.json)
+checks the complete actual receipt chain and original export bytes. Root also
+reads and compares all ten native parameter text values directly. The large
+control token is checked with exact integer arithmetic; the report is never
+re-serialized through a JavaScript number. Twelve original small files are
+preserved. The duplicate transported model is exactly restorable from the
+already committed model archive using the
+[restoration record](../experiments/logs/root-prism-free/f0-strengthened-query-preflight-model-restoration01.json).
+
+The [terminal checker source review](../experiments/logs/root-prism-free/f0-strengthened-query-replay-independent-source-review02.json)
+passes after all 503 source lines and actual inherited receipt contracts are
+checked. Root reads the complete production driver and workflow. The
+[workflow review](../experiments/logs/root-prism-free/f0-strengthened-query-production-workflow-root-review01.json)
+checks all 27 checkout paths and 25 exact dependencies.
+
+The [production gate](../experiments/logs/root-prism-free/f0-strengthened-query-root-gate01.json)
+and [request](../experiments/logs/root-prism-free/f0-strengthened-query-ci-request01.json)
+now authorize exactly one query and separately owned independent terminal
+replay. The query keeps the exact accepted model. Its clock/allowance/owner
+limits are 175/180/300 seconds. Independent controls have a 15-second owner;
+the complete independent replay has a 120-second phase and 135-second owner.
+The CI driver acceptance bound is 480 seconds and the outer job timeout is
+12 minutes. All phase files remain available if a phase fails. No retry or
+second native call is authorized. Actual production outcomes remain pending
+at checkpoint 86 publication.
 
 ## Why this query is different
 
@@ -14,11 +49,11 @@ The [runner](../experiments/workspace/root_prism_free_f0_strengthened_query.py) 
 
 The [preflight workflow](../.github/workflows/conway99-strengthened-query-preflight.yml) checks fifteen exact dependencies in a seventeen-file sparse checkout, compiles the pinned Python, installs the pinned runtime, and invokes the prepare mode once. The worker has 60 seconds inside a 75-second process-group owner. It checks exact parameter transport, signed/empty/large-integer vector controls, native response transport, terminal classification, full native validation and byte-for-byte model export. It never constructs CpSolver or calls solve.
 
-The [root gate](../experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-gate01.json) and [request](../experiments/logs/root-prism-free/f0-strengthened-query-preflight-request01.json) permit that preflight only. First-attempt and expected-parent guards prevent an unchanged retry. Exact output bytes must be retained, including the control integer `18014398509481987`, which cannot be safely round-tripped through a binary64 JSON number.
+The checkpoint 85 [root gate](../experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-gate01.json) and [request](../experiments/logs/root-prism-free/f0-strengthened-query-preflight-request01.json) permitted that preflight only. First-attempt and expected-parent guards prevent an unchanged retry. Exact output bytes must be retained, including the control integer `18014398509481987`, which cannot be safely round-tripped through a binary64 JSON number.
 
-A later production gate must bind the actual successful preflight report and owner. The production runner has a 300-second process-group owner and requires at least 180 seconds of native allowance plus 60 seconds of finalization reserve before its only solve call. It preserves exact native response text and every native integer vector before parsing. The separately saved protobuf wire is explicitly identified as reconstructed from that text.
+The separate production gate binds the actual successful preflight report and owner. The production runner has a 300-second process-group owner and requires at least 180 seconds of native allowance plus 60 seconds of finalization reserve before its only solve call. It preserves exact native response text and every native integer vector before parsing. The separately saved protobuf wire is explicitly identified as reconstructed from that text.
 
-Every returned vector is checked against all domains and all 257,594 rows with Python integer arithmetic. The [independent terminal checker](../experiments/workspace/root_prism_free_f0_strengthened_query_replay.py) uses separate indexed arithmetic and protobuf only. It does not import the query, transport helper or native solver module. The [production CI driver](../experiments/workspace/root_prism_free_f0_strengthened_query_ci.py) invokes one query and then separately owned cold controls and full replay. Its [root source review](../experiments/logs/root-prism-free/f0-strengthened-query-ci-root-source-review01.json) finds no blocker. These sources remain unrun at this publication; the terminal checker's separate peer review and actual preflight acceptance are still required before production.
+Every returned vector is checked against all domains and all 257,594 rows with Python integer arithmetic. The [independent terminal checker](../experiments/workspace/root_prism_free_f0_strengthened_query_replay.py) uses separate indexed arithmetic and protobuf only. It does not import the query, transport helper or native solver module. The [production CI driver](../experiments/workspace/root_prism_free_f0_strengthened_query_ci.py) invokes one query and then separately owned cold controls and full replay. Its [root source review](../experiments/logs/root-prism-free/f0-strengthened-query-ci-root-source-review01.json) finds no blocker. The query runner's prepare mode has now passed. The terminal checker and production driver remain unrun at checkpoint 86 publication; their complete source reviews pass. Their actual owned receipts are required to accept the later production outcome.
 
 ## Separate triangle-support diagnostic
 
