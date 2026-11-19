@@ -739,3 +739,18 @@ checks all 24 saved potential families and 288 transported inequalities.
 Its exact allocation rule holds on Boolean selectors.
 The scan covers 153 saved incidences and preserves the complete existing
 registry context. It gives no new historical exclusion beyond that registry.
+
+## Checkpoint-43 recovery checks
+
+The [sixteen-core proof](../research/grids-and-triangles/high_graph_core16_recovered_proof.md) has a standalone JavaScript checker.
+The [F0 interior check](../research/root_prism_free_f0_gram_interior_recovered.md) uses only the two published gzip inputs and standard Node modules.
+
+```sh
+node experiments/workspace/high_graph_core16_recovery_check.js
+node experiments/workspace/root_prism_free_f0_gram_interior_recovery.js
+```
+
+Both pure checking functions ran in the available JavaScript runtime before publication.
+The F0 function checked all 1,836 literal incidences and the final rational point.
+The Node filesystem wrapper was not executed while the shell was unavailable.
+The [recovery record](../research/checkpoint43_recovery.md) identifies local artifacts that remain unpublished.

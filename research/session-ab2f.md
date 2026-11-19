@@ -871,3 +871,23 @@ their hypotheses permit them; computational exclusions require exact replay.
   Its best Boolean allocation is stronger than a fixed allocation.
   Three additional shared-family violations already fail individual cuts,
   so this pilot gives no new exclusion beyond the complete prior registry.
+
+## Checkpoint 43: workspace outage and recovered results
+
+The execution environment became unavailable before the next full publication cycle.
+Checkpoint 42 remains the last complete local package.
+This checkpoint recovers two results through independent JavaScript checks and the public repository inputs.
+
+- The specified ten-high core has the necessary inequality `5e(H)-sum binom(deg_H(v),2)>=6`.
+  It excludes its empty high graph and all thirty eligible single edges.
+- The F0 base Gram and motif system has an exact interior point from 1,836 checked binary incidences.
+  Every selector occurs between 24 and 851 times. No base-only selector zero forcing is possible.
+- Before the outage, the complete integer filter removed exactly those 31 graph columns.
+  The refined 200-moment query then reported another exact rational measure.
+  Its result hash and independent cold replay were not captured.
+- Rook propagation stabilized at 58 zeros. A complete selector LP was prepared but never optimized.
+- The allocated F0 run ended UNKNOWN with 4,404 cuts and 65,622 clauses.
+  Its chronological cold replay passed. The terminal package remains in the unavailable workspace.
+
+See the [recovery record](checkpoint43_recovery.md) for captured hashes and exact publication limits.
+The next owned lanes are the complete rook selector LP, the other sixty-one root moment models, and the complete fractional F0 edge model.

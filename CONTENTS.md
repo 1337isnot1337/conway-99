@@ -174,3 +174,7 @@ remains feasible.
 - [Seventeen exact failed-literal probes](research/grids-and-triangles/complement_rook_35core_case0004_failed_literal_run01.md) find one new absence. A [three-row Gram certificate](research/grids-and-triangles/complement_rook_35core_case0004_gram_zero_face.md) strengthens it to 46 absent columns, including 44 new ones.
 - [Candidate-dependent F0 allocation](research/root_prism_free_f0_quadratic_allocation.md) retains 288 exact quadratic support inequalities. Its historical pilot gives no new exclusion beyond the full existing registry.
 - [Experiment guide](experiments/README.md) gives the workspace layout, replay commands, and limits of the archived runs.
+
+- [Recovered sixteen-core proof](research/grids-and-triangles/high_graph_core16_recovered_proof.md) excludes all thirty eligible single-edge cases and the empty high graph by an integer-incidence inequality.
+- [Recovered F0 Gram interior point](research/root_prism_free_f0_gram_interior_recovered.md) checks 1,836 binary incidences and their exact positive average.
+- [Checkpoint-43 recovery record](research/checkpoint43_recovery.md) preserves the publication boundary and captured statuses after the execution environment became unavailable.

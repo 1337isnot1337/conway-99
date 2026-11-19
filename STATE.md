@@ -2,6 +2,12 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+The [checkpoint-43 recovery record](research/checkpoint43_recovery.md) distinguishes newly recovered results from files still in the unavailable workspace.
+An independently rerun [integer-incidence proof](research/grids-and-triangles/high_graph_core16_recovered_proof.md) excludes 31 specified sixteen-vertex cores.
+A separately recovered [F0 interior point](research/root_prism_free_f0_gram_interior_recovered.md) proves that the base Gram and motif system cannot fix any selector.
+The later full-domain scan and refined moment query were completed locally, but their new output files have not been recovered.
+The refined query reported an exact finite measure; it did not reject the count point or construct a graph.
+
 The current interface result on this branch proves that every induced rook
 grid has [at most one rook-isomorphic partner](research/grids-and-triangles/rook_partner_bound.md),
 without any red assumption. A complete 59-class census excludes 58 classes

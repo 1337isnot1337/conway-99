@@ -1,0 +1,137 @@
+{
+  "schema": "conway99.f0-allocated-recovery-status.v1",
+  "intended_path": "experiments/logs/session-ab2f/f0-allocated-recovery-status.json",
+  "date_utc": "2026-11-19",
+  "owner": "/root/unrestricted_completion",
+  "repository": "1337isnot1337/conway-99",
+  "scope": "Component zero in a globally prism-free, F-free split18+18 shell; all 480 first-component incidence selectors are free. No exclusion of this component or of SRG(99,14,1,2) is claimed.",
+  "storage_status": {
+    "workspace": "Unavailable at recovery-record creation.",
+    "local_artifacts": "The terminal artifacts were generated locally but are currently unavailable for re-reading or upload. Their captured hashes below are observations from the completed run, not new file verification.",
+    "commit_status": "The new terminal package has not been committed.",
+    "final_run_note_completed": false,
+    "final_publication_manifest_completed": false,
+    "production_process": "No optimizer or SAT query remains active in this lane.",
+    "pending_read": "One resume call containing git status and hash/report reads is pending; no repeated command was launched."
+  },
+  "bindings": {
+    "source": {
+      "path": "experiments/workspace/root_prism_free_f0_allocated_lazy_continuation.py",
+      "sha256": "46b30a4e7c64db612cff606bd56aa05da44356547f617e977a8fa17ac0da4c8d"
+    },
+    "seed": {
+      "path": "experiments/workspace/root_prism_free_f0_allocated_lazy_seed.py",
+      "sha256": "dfbb7a9b28f1077918672094a549fd15f59bcd7f3547f95be1a14d941ca0adab"
+    },
+    "proof_wrapper": {
+      "path": "experiments/workspace/root_prism_free_f0_allocated_lazy_continuation_certificate.py",
+      "sha256": "1ca1ba702f7e50aa49dba01cc6fe34bdb1f64c106abc0c5438d9c2aa397d318f"
+    },
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-allocated-lazy-continuation-preparation.json.gz",
+      "sha256": "7eecf38db3acba31bf2e24d08937235977cce1c6c93d9426795a3f0bb713fc23"
+    },
+    "preparation_cold_replay": {
+      "path": "experiments/logs/root-prism-free/f0-allocated-lazy-continuation-preflight-replay.json",
+      "sha256": "7708b1e73c5c5ef48e5f039a39718c9d3d7696304811946012500031d2c52702"
+    },
+    "initial_cnf": {
+      "sha256": "5ecf9df873686109d14280d98a733400fd2d459292ff6c3aea863ada631c445e",
+      "variables": 28308,
+      "clauses": 62358
+    },
+    "coordinator_gate": {
+      "path": "experiments/logs/root-prism-free/f0-allocated-lazy-coordinator-source-review.json",
+      "sha256": "f7c05b0eba4ad7046e8102486f2598b73e6f740c4f984ae785d3b88c57e0ec0d"
+    },
+    "independent_source_gate": {
+      "path": "experiments/logs/root-prism-free/f0-allocated-lazy-independent-source-review.json",
+      "sha256": "764c83ad8c247cccccacb6b724cfb2f3d5cb6aef18a224b6c149b43b521a42ae"
+    }
+  },
+  "terminal": {
+    "status": "UNKNOWN: row-pass or overall time budget; unresolved",
+    "result_path": "experiments/logs/root-prism-free/f0-allocated-lazy-continuation-run01/result.json",
+    "result_sha256": "6955adbab024f3a3668258c5fad56592d05025acf381d4a4a71d1915b788deab",
+    "elapsed_seconds": 185.240050815,
+    "declared_overall_seconds": 180,
+    "cooperative_overrun_seconds": 5.240050815,
+    "peak_rss_kib": 304520,
+    "sat_candidates": 94,
+    "registry_only_refinements": 30,
+    "quadratic_checks": 64,
+    "quadratic_only_refinements": 0,
+    "quadratic_check_seconds": 4.258004654,
+    "row_passes": 64,
+    "complete_row_passes": 63,
+    "partial_row_passes": 1,
+    "exact_integer_row_obstructions": 109,
+    "exact_rational_row_boxes": 3701,
+    "shared_calls": 14,
+    "exact_shared_rays": 14,
+    "bounded_fallback_calls": 0,
+    "exact_shared_points": 0,
+    "initial_potential_families": 24,
+    "final_potential_families": 38,
+    "final_transported_quadratic_predicates": 456,
+    "new_individual_cuts": 1308,
+    "new_signed_cuts": 168,
+    "final_individual_cuts": 3948,
+    "final_signed_cuts": 456,
+    "final_total_selector_cuts": 4404,
+    "new_explanation_clauses": 3264,
+    "final_explanation_clauses": 8628,
+    "final_variables": 28308,
+    "final_clauses": 65622,
+    "final_literal_occurrences": 847068,
+    "final_cnf_sha256": "b37bc914aa5ec290329410cddf249586abbe166b8e61d475af93f9a6bb958a4f",
+    "final_partial_pass": {
+      "iteration": 93,
+      "processed_rows": 30,
+      "total_rows": 60,
+      "exact_obstructions": 1,
+      "exact_boxes": 29,
+      "unprocessed_rows": 30,
+      "transported_cuts_retained": 12,
+      "explanations_retained": 24
+    },
+    "last_candidate_sha256": "77fb6e267905d8ce78e10f1832b0f3630bf069bbe7ca5360347d9ef48ed91659",
+    "outcomes_path": "experiments/logs/root-prism-free/f0-allocated-lazy-continuation-run01-outcomes.json",
+    "outcomes_sha256": "fb8e3a33b5778431804077b8196ff4da9f28dec8474da6d029f2a95961f86f8b"
+  },
+  "exact_replay": {
+    "path": "experiments/logs/root-prism-free/f0-allocated-lazy-continuation-run01-cold-replay.json",
+    "observed_status": "PASS",
+    "sha256": null,
+    "sha256_note": "The terminal cold-replay hash was not captured before workspace access failed; do not substitute the preparation replay hash.",
+    "checked": "Chronological reconstruction of all 94 candidate prefixes, 109 integer row obstructions, 3701 rational row boxes, 14 shared rays, 64 quadratic checks, 38 potential families, 8628 explanation clauses, and the final CNF.",
+    "optimizer_or_solver_called": false
+  },
+  "transcript_bundle": {
+    "source_path": "experiments/workspace/root_prism_free_f0_allocated_lazy_transcript_bundle.py",
+    "source_sha256": "b3d93052ee109c9367733c5de9bb02b52dc1dee3fe527233b17c279030fff914",
+    "archive_path": "experiments/logs/root-prism-free/f0-allocated-lazy-continuation-run01-transcript.tar.gz",
+    "archive_sha256": "7345f9cef9f0785310a7568067ba2a2e5dc90c72c8fe843051d3d3993a245ce0",
+    "archive_bytes": 6766832,
+    "records": 363,
+    "uncompressed_record_bytes": 37909307,
+    "manifest_path": "experiments/logs/root-prism-free/f0-allocated-lazy-continuation-run01-transcript-bundle.json",
+    "manifest_sha256": "75e803942a2cda8332f20a90f5b668d13cff4978652b85238708130ce7c776cb",
+    "build_observed_status": "PASS",
+    "restoration_status": "A restore/replay command was launched, but its final output has not been observed. No restore PASS is claimed here.",
+    "raw_final_cnf_included": false
+  },
+  "next_fractional_model_plan": {
+    "execution_status": "Derivation and preparation only. No optimizer is authorized until source, domain, exact quotient and certificate gates are reviewed.",
+    "domain": "All 480 admissible triples h_a in {0,1}^18 and all 68,394 universally eligible unordered signature pairs. No saved incidence is fixed.",
+    "variables": "480 selectors x_a in [0,1] and 68,394 symmetric edge variables y_ab with 0 <= y_ab <= x_a and y_ab <= x_b.",
+    "equations": "All 171 upper-triangular first-component Gram equations, population sum x=60, and all 8,640 mixed equations sum_b h_bi*y_ab=q_ai*x_a.",
+    "degree_identity": "Every h_b has weight 3 and every q_a sums to 24. Summing the 18 mixed equations gives sum_b y_ab=8*x_a, so separate degree rows are redundant.",
+    "inequalities": "All 90 necessary component motif inequalities and all 4,404 exact terminal selector cuts. Inspect and retain the 12 older direct weighted row cuts from the unchanged base separately; their registry relationship must be checked explicitly.",
+    "averaging": "Average a feasible full model over the 12 verified component relabelings. This preserves convex necessary constraints and does not assume any automorphism of a completed graph. Verify transport of every signature, eligible edge, mixed/Gram row, motif and cut.",
+    "quotient": "Use one selector value on each of the 42 known selector orbits and one edge value per exactly enumerated edge orbit. Replace each full row by its integer orbit-coefficient sums, retaining a map from every original row to the quotient row. The number of edge orbits and the final row counts have not been computed.",
+    "proof_gate": "A rational quotient point must lift and satisfy every full original row and bound exactly. A numerical infeasibility report is insufficient; reconstruct exact equality and nonnegative inequality multipliers and an exact negative finite-box support gap before any conditional exclusion.",
+    "scope_limit": "An exact feasible fractional point is not a graph. An exact infeasibility certificate would exclude only this component-zero stratum under the already proved global prism-free/F-free shell assumptions.",
+    "resources": "Build and hash the exact full/quotient specification and record matrix sizes before proposing one bounded, single-thread query. No new root SAT batch or identical lazy continuation is planned."
+  }
+}
