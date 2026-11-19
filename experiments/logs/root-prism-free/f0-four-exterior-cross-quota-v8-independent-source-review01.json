@@ -1,0 +1,55 @@
+{
+  "complete_source_read": true,
+  "concrete_blockers": [],
+  "controls": {
+    "activated_assignments": 13,
+    "reported_by_root": true,
+    "rerun_by_reviewer": false,
+    "source_body_unchanged_by_order_repair": true
+  },
+  "execution_requirements": {
+    "domain_archive_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+    "domain_raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+    "maximum_ms": 30000,
+    "overlay_archive_sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+    "overlay_raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+    "source_bound_configuration_required_before_main": true,
+    "wrapper_must_hash_bind_source_codec_and_inputs": true
+  },
+  "final_source_and_git_hashes_verified": true,
+  "main_reconstruction_run_by_reviewer": false,
+  "mathematical_checks": [
+    "For q_bj=1, the mixed row at (b,j) contains the central edge y_bc and every left-side term, while the mixed row at (c,j) bounds the complete right side. Their sum dominates the original four-exterior row after extra nonnegative edge terms are removed.",
+    "For q_ci=1, the symmetric certificate uses mixed rows at (c,i) and (b,i). Original edge eligibility ensures both cross quotas are at least one, so a <=1 test means exactly one.",
+    "A quota-one row need not eliminate an individual live edge. The classification must be performed on the actual complete accepted family; no empty-support shortcut is assumed.",
+    "Both certificates are linear consequences of mixed equalities and nonnegative edge domains. They do not rely on integrality or on a new prism proof.",
+    "The source records the correct native mixed-row offsets: 154430+18*center+site, with both rows needed by each domination proof."
+  ],
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "prior_unrun_source": {
+    "bytes": 5209,
+    "git_blob": "879280599330977a43ad22dd0b65e45356022845",
+    "sha256": "d852753b929ec9ad95e9faa3ed4a41defbcafafebf1593c4e6755c6a2df43d92"
+  },
+  "reconstruction_checks": [
+    "The complete eligible edge order is rebound to the accepted overlay's edge-order digest, and all 1,884 accepted zero edges are reused.",
+    "The 48 core-site pairs are reconstructed with nonadjacency and zero common neighbors in the full 21-vertex core. Quota indices remain in the 18-site signature component.",
+    "Every eligible central edge and separated oriented core-site pair is tested using the original two quota-one premises. Original case indices include central-zero and empty-side dispositions.",
+    "Each live T-star is reconstructed from the complete eligible namespace with accepted zero edges removed. Full center/positive-edge row keys, all origins and both possible mixed proofs are retained.",
+    "Acceptance requires all original counts: 73,404 cases, 936 central zeros, no empty side, 72,468 distinct rows and 1,250,496 terms.",
+    "The complete ordered row-key hash must equal 2adfcc619820604a3f49463bd0fd8109113ab7ce13bceadcc49554533b09dd1c. Counts alone cannot grant acceptance.",
+    "The result explicitly distinguishes reconstructed row keys from recovery of the original compressed inventory and leaves the historical metadata failure unchanged."
+  ],
+  "reviewer": "master_review",
+  "schema": "conway99.f0.four-exterior-cross-quota-v8-independent-source-review.v1",
+  "source": {
+    "bytes": 5171,
+    "git_blob": "2fbb46f5a60204d8e8b5873874ef4c7385e97048",
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_v8.js",
+    "sha256": "28a3178b1b800e88e587780833abeb0aea0948bc62da6e03756f225afec3e86d"
+  },
+  "source_change_checked": "The only change removes the final lexicographic row-key sort. Map insertion order preserves first-case order, as required by the accepted cold's increasing-first-origin check.",
+  "status": "PASS_SOURCE_BOUND_ORIGINAL_FOUR_ROWS_AND_CROSS_QUOTA_REVIEW",
+  "whole_component_excluded": false
+}

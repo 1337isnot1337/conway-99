@@ -1,0 +1,22 @@
+{
+  "schema": "conway99.f0.four-exterior-cross-quota-failure.v1",
+  "status": "UNACCEPTED_FAILURE_NO_AUTOMATIC_RETRY",
+  "error": "Error: wrapper deadline including finalization",
+  "started": {
+    "at": "2026-11-19T21:45:36.373Z",
+    "source": "28a3178b1b800e88e587780833abeb0aea0948bc62da6e03756f225afec3e86d",
+    "runner": {
+      "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_runner_v8.js",
+      "bytes": 2014,
+      "sha256": "34d9f345ef12898e52797df599adf4f3f081c383aa6dd4758fa80179b56b0f98",
+      "git_blob": "79ec38a959aa0c50c7dfd2f7eb8e3efc419eb44b",
+      "mode": "100644"
+    },
+    "runs": 1
+  },
+  "optimizer_calls": 0,
+  "native_model_builds": 0,
+  "whole_component_excluded": false,
+  "root_interpretation": "The exception occurred only at the wrapper's final deadline check, after the source returned and report serialization/hashes were computed. All source assertions therefore passed, but the report and quota counts were not retained. No quota classification or row removal is accepted. Preserve this attempt; a separately reviewed independent compact reconstruction may replace it.",
+  "automatic_retry_performed": false
+}

@@ -1,0 +1,140 @@
+{
+  "schema": "conway99.f0.psd-positive-cube-v8-diagnostic-summary.v1",
+  "status": "COMPLETED_FORWARD_DIAGNOSTIC_FULL_PATTERN_REPLAY_NOT_PERFORMED",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_psd_positive_cube_census_v8.js",
+    "bytes": 24074,
+    "sha256": "8643c9d3bf1ae6175b315a8a7300c7c34c668fe16e41162f79994f0b341e694a",
+    "git_blob_sha": "9bfc7aa719d97bc23f6457e2729b24825ef1f7ab",
+    "lines": 270
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-configuration01.json",
+    "bytes": 6634,
+    "sha256": "32cdf292c7acc396ffafd18697c37484484d1dded8e48fabadfc468e2ff59c58",
+    "git_blob_sha": "5c62fd9fc2e59eaabf52419a92d8b437db57fe04"
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-root-gate01.json",
+    "bytes": 3041,
+    "sha256": "08ac355ad170b42190b8e00f37b9e90f11f8057cf37a90182b508ba03a789e2e",
+    "git_blob_sha": "7df48b9e43468aae610ae04fad461f8ef0d301cb"
+  },
+  "peer_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-independent-source-review01.json",
+    "bytes": 6371,
+    "sha256": "3e87e21aea25fd82882c027a0789676b161e72faa45f499f65293cafc6373fd0",
+    "git_blob_sha": "40fb1d008a14a16176ba291c2118549d75a3e6a9"
+  },
+  "parent_cold": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold01.json",
+    "bytes": 5447714,
+    "sha256": "5436baf4d22a0d6b929162176029a1defa13ecb4446f2436655b22aa1b2de9c1",
+    "git_blob_sha": "58d2facfff6e29f2d8d5b2e8232f072758a3cc1c"
+  },
+  "parent_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-acceptance01.json",
+    "bytes": 1177,
+    "sha256": "d010e64051397b5335ac859f094da7f34cd4f5882ff4c511d639bb04fa6fe12c",
+    "git_blob_sha": "12a10b91d58311996bbfd8800cce3da0d3e0806a"
+  },
+  "full_report": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01.json",
+    "bytes": 16254139,
+    "sha256": "80d5b82a95fad4c5cc7ff6623950491cfc29747600345f79f2a88c9078a6af32",
+    "git_blob_sha": "f5fc7789310e6b7221b7dc12cdf2bbde1e05b539"
+  },
+  "restoration_manifest": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/manifest.json",
+    "bytes": 3753,
+    "sha256": "63f2a9b7d4182cf3bfac94652c27396c206994890ac61d8ac9294405265a9af7",
+    "git_blob_sha": "3ab27f9f691712c133165605aa732dea4fde37f6"
+  },
+  "row_projection": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-stored-projection01.json",
+    "bytes": 651596,
+    "sha256": "3fcd2dafb3d585ac09dc8e5639ce90cb5d5b58f642cabcd0087b36fde525c2b6",
+    "git_blob_sha": "f392154f9e6d56e088163d32451fc4b27cba5164"
+  },
+  "scope": "The fixed F0 full-core Schur kernels, restricted to the parent's pairwise-disjoint-signature triples with all three original edges eligible.",
+  "parent_universe": 1179048,
+  "parent_negative_triangles": 10830,
+  "processed_triangles": 10830,
+  "patterns": 86640,
+  "matrices": 173280,
+  "principal_minors": 1212960,
+  "positive_cube_origins": 10830,
+  "distinct_literal_rows": 10830,
+  "row_kind_counts": {
+    "selector_triple": 0,
+    "edge_and_third_selector": 0,
+    "homogeneous_path": 0,
+    "triangle": 10830
+  },
+  "positive_mask_origin_counts": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10830
+  ],
+  "compatible_pattern_count_histogram": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    252,
+    10578,
+    0
+  ],
+  "family_invalid_pattern_counts": [
+    [
+      0,
+      112,
+      90,
+      0,
+      50,
+      0,
+      0,
+      10830
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "source_reported_triangle_cover_rows_only": true,
+  "additional_single_edge_pattern_rejections": 252,
+  "extra_patterns_by_mask": {
+    "100": 50,
+    "001": 112,
+    "010": 90
+  },
+  "old_zero_or_path_rows_used_in_PSD_classification": false,
+  "independent_pattern_replay_executed": false,
+  "root_direct_comparison_to_accepted_parent_rows": "pending separate root receipt",
+  "new_signed_rows_accepted_or_installed": false,
+  "independently_accepted_absence_of_shorter_cubes_claimed": false,
+  "finalization": {
+    "serialized_bytes": 16254139,
+    "seconds": 19.213,
+    "maximum_ms": 60000,
+    "complete_within_time_and_bytes": true
+  },
+  "failures": [],
+  "optimizer_calls": 0,
+  "native_model_builds": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

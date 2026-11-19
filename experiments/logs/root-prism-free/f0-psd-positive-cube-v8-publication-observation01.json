@@ -1,0 +1,24 @@
+{
+  "schema": "conway99.f0.psd-positive-cube-publication-observation.v1",
+  "full_report": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01.json",
+    "bytes": 16254139,
+    "sha256": "80d5b82a95fad4c5cc7ff6623950491cfc29747600345f79f2a88c9078a6af32",
+    "git_blob_sha": "f5fc7789310e6b7221b7dc12cdf2bbde1e05b539"
+  },
+  "attempted_action": "github_create_blob using the exact full UTF-8 report content",
+  "response": {
+    "content": [
+      {
+        "type": "text",
+        "text": "tool call error: tool call failed for `codex_apps/github.create_blob`\n\nCaused by:\n    Transport send error: Transport [codex_rmcp_client::tool_list_changes::ToolListChanges<codex_rmcp_client::event_notification_transport::EventNotificationTransport<rmcp::transport::worker::WorkerTransport<rmcp::transport::streamable_http_client::StreamableHttpClientWorker<codex_rmcp_client::http_client_adapter::StreamableHttpClientAdapter>>>>] error: unexpected server response: HTTP 400: {\"detail\":\"MCP request body is invalid or exceeds the 16 MiB limit\"}"
+      }
+    ],
+    "isError": true
+  },
+  "observed_error": "HTTP 400: MCP request body is invalid or exceeds the 16 MiB limit",
+  "outcome": "No complete-file blob upload is claimed. Four exact chunks and the existing prefix/suffix restoration format preserve all original report bytes.",
+  "automatic_main_retry": false,
+  "main_runs": 1,
+  "source_result_modified": false
+}

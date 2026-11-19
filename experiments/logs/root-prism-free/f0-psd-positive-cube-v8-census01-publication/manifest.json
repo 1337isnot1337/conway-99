@@ -1,0 +1,82 @@
+{
+  "schema": "conway99.exact-prefix-suffix-artifacts.v1",
+  "helper_sha256": "b1d5fb68cbbbdbad7ef7a59b31d9ec842fd17bc3269638a41b9e90be65f6324a",
+  "entries": [
+    {
+      "base": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/chunk-000.json.part",
+        "bytes": 4194304,
+        "sha256": "e1563b77ff0f4d1b40ad2a035f0970f2899f2a1d448adb9c4f08a6aa6bd47225",
+        "codec": "identity",
+        "decoded": {
+          "bytes": 4194304,
+          "sha256": "e1563b77ff0f4d1b40ad2a035f0970f2899f2a1d448adb9c4f08a6aa6bd47225"
+        }
+      },
+      "prefix_bytes": 4194304,
+      "suffix": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/chunk-001.json.part",
+        "bytes": 4194304,
+        "sha256": "56a5c6860dfaa2634a2c858a835084600ab53e226b5fd1b700c7316fd12bab73"
+      },
+      "target": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/assembled-prefix-002.bin",
+        "bytes": 8388608,
+        "sha256": "bf0e7742763d6e3dc05a6514754d6e6b0b1852da1b8f86f018728e730a21617a"
+      }
+    },
+    {
+      "base": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/assembled-prefix-002.bin",
+        "bytes": 8388608,
+        "sha256": "bf0e7742763d6e3dc05a6514754d6e6b0b1852da1b8f86f018728e730a21617a",
+        "codec": "identity",
+        "decoded": {
+          "bytes": 8388608,
+          "sha256": "bf0e7742763d6e3dc05a6514754d6e6b0b1852da1b8f86f018728e730a21617a"
+        }
+      },
+      "prefix_bytes": 8388608,
+      "suffix": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/chunk-002.json.part",
+        "bytes": 4194304,
+        "sha256": "259fd830c474289f9a816ef05953a357e0bb892d7ce8cf5867517d8b2ad8de8b"
+      },
+      "target": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/assembled-prefix-003.bin",
+        "bytes": 12582912,
+        "sha256": "e36bfb7c011e6e4fd8dc93c7ade3625fccbfb78b5ba7fdfde6baf4e634be1190"
+      }
+    },
+    {
+      "base": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/assembled-prefix-003.bin",
+        "bytes": 12582912,
+        "sha256": "e36bfb7c011e6e4fd8dc93c7ade3625fccbfb78b5ba7fdfde6baf4e634be1190",
+        "codec": "identity",
+        "decoded": {
+          "bytes": 12582912,
+          "sha256": "e36bfb7c011e6e4fd8dc93c7ade3625fccbfb78b5ba7fdfde6baf4e634be1190"
+        }
+      },
+      "prefix_bytes": 12582912,
+      "suffix": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/chunk-003.json.part",
+        "bytes": 3671227,
+        "sha256": "0b77af47d7d62ea4527ff12048792ea9e303176c2e483abbcc9a738c6877812d"
+      },
+      "target": {
+        "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01.json",
+        "bytes": 16254139,
+        "sha256": "80d5b82a95fad4c5cc7ff6623950491cfc29747600345f79f2a88c9078a6af32"
+      }
+    }
+  ],
+  "source_targets_modified": false,
+  "publication_reason": "The exact full UTF-8 JSON upload exceeded the connector's 16 MiB request-body cap after escaping. Four exact chunks are preserved.",
+  "full_report_expected_git_blob_sha": "f5fc7789310e6b7221b7dc12cdf2bbde1e05b539",
+  "full_report_git_blob_uploaded": false,
+  "actual_helper_restore_executed_here": false,
+  "independent_V8_complete_byte_concatenation_compared_to_original": true,
+  "restoration_command": "python experiments/workspace/exact_prefix_suffix_artifacts.py restore --manifest experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-publication/manifest.json"
+}

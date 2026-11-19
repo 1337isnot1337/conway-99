@@ -1,0 +1,100 @@
+{
+  "schema": "conway99.f0.triangle-schur-independent-cold-summary.v1",
+  "status": "PASS_COMPLETE_INDEPENDENT_CENSUS_AND_LITERAL_ZERO_DISPOSITION",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_schur_independent_cold.js",
+    "sha256": "cc15c3022af605c47c3ad6830066b26faa1ecb8adb07ad57d2b849f44a9f6db3",
+    "git_blob": "c55fc1f908798e9e774a1df34e29d2a153f08cf7",
+    "bytes": 19889
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-configuration01.json",
+    "sha256": "c363820f64f487ea7beb03f6b939fb8e855f0e6153dcba3b2e522784d275eae3",
+    "git_blob": "b5a031e89f56938f5032dad7d3699adcc634a85a",
+    "bytes": 3875
+  },
+  "preparation": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-preparation01.json",
+    "sha256": "502ff4a3e7abf4e023d23fc3f7896c2b251c69653561cd0f8989904e44d0fbe2",
+    "git_blob": "caff461ac4ee681ddf521e1af54572107914accb",
+    "bytes": 3274
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-gate01.json",
+    "sha256": "7ee6ca0e469105e84eb68c9b2ebb603ae798b89463404990b235268d167a2a99",
+    "git_blob": "4680bf8ce914e40109cf279aa9fb9de257727687",
+    "bytes": 2159
+  },
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold01.json",
+    "sha256": "5436baf4d22a0d6b929162176029a1defa13ecb4446f2436655b22aa1b2de9c1",
+    "git_blob": "58d2facfff6e29f2d8d5b2e8232f072758a3cc1c",
+    "bytes": 5447714
+  },
+  "main_call_count": 1,
+  "seconds": 19.421,
+  "maximum_ms": 60000,
+  "universe": {
+    "selectors": 480,
+    "eligible_pairs": 68394,
+    "disjoint_edges": 49320,
+    "disjoint_eligible_triangles": 1179048,
+    "completed_maximum_vertex_exclusive": 480
+  },
+  "families": [
+    {
+      "family": "plus",
+      "primitive_kernel_sha256": "91017b1ad1ea6ff3433e91030586ec820f939a158f8cf3aab0cbf77e4ef574ed",
+      "negative_eligible_pairs": 12,
+      "zero_eligible_edge_minors": 0,
+      "minimum_eligible_edge_minor": "-33477",
+      "counts": {
+        "negative_proper_minor": 0,
+        "negative_determinant": 10830,
+        "zero_determinant": 0,
+        "positive_determinant": 1168218
+      },
+      "minimum_triangle_determinant": "-606991500",
+      "maximum_triangle_determinant": "1234517760",
+      "nonpositive_records": 10830,
+      "nonpositive_records_sha256": "60dd838a427e23b5d3c773e7eb8ecb9852e77a88bd0d9e1ac647e51be7965ff8"
+    },
+    {
+      "family": "minus",
+      "primitive_kernel_sha256": "3ec5835de875dc50cb9f349deb2bbd9bd16457657917b2e267a444d38e642b3d",
+      "negative_eligible_pairs": 0,
+      "zero_eligible_edge_minors": 0,
+      "minimum_eligible_edge_minor": "333268052640",
+      "counts": {
+        "negative_proper_minor": 0,
+        "negative_determinant": 0,
+        "zero_determinant": 0,
+        "positive_determinant": 1179048
+      },
+      "minimum_triangle_determinant": "171407183270017500",
+      "maximum_triangle_determinant": "404402911870464000",
+      "nonpositive_records": 0,
+      "nonpositive_records_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "literal_edge_zero_disposition": {
+    "known_zero_edge_premises": 1884,
+    "tested_triangles": 10830,
+    "old_literal_edge_zero": 3840,
+    "not_rejected_by_literal_edge_zero": 6990,
+    "ledger_sha256": "33dfafcfaf75c2acc014aa061262f49b181bf619c79b6ec3ec688e43f23bd184"
+  },
+  "acceptance": {
+    "every_saved_neighbor_row_reconstructed": true,
+    "every_forward_negative_record_and_proper_minor_compared": true,
+    "all_pair_minors_and_triangle_determinants_exact_bigint": true,
+    "no_zero_edge_pruning": true,
+    "kernel_inverses_are_accepted_premises": true
+  },
+  "other_constraints_tested": false,
+  "new_cut_independence_claimed": false,
+  "optimizer_calls": 0,
+  "native_processes": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

@@ -1,0 +1,63 @@
+{
+  "schema": "conway99.f0.psd-positive-cube-root-gate.v1",
+  "status": "AUTHORIZED_ONE_COMPLETE_PSD_ONLY_POSITIVE_CUBE_CENSUS",
+  "reviewer": "root",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_psd_positive_cube_census_v8.js",
+    "bytes": 24074,
+    "sha256": "8643c9d3bf1ae6175b315a8a7300c7c34c668fe16e41162f79994f0b341e694a",
+    "git_blob_sha": "9bfc7aa719d97bc23f6457e2729b24825ef1f7ab",
+    "lines": 270
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-configuration01.json",
+    "sha256": "32cdf292c7acc396ffafd18697c37484484d1dded8e48fabadfc468e2ff59c58",
+    "bytes": 6634,
+    "git_blob": "5c62fd9fc2e59eaabf52419a92d8b437db57fe04"
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-controls01.json",
+    "bytes": 895,
+    "sha256": "1709285bfdbbbb59dddd3ca115f5c1f44f117577b2cafcb4a3afe630db1463d8",
+    "git_blob_sha": "b6411bf6d09608707290aea07930e6de0f2bfce4"
+  },
+  "peer_review": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-independent-source-review01.json",
+    "sha256": "3e87e21aea25fd82882c027a0789676b161e72faa45f499f65293cafc6373fd0",
+    "bytes": 6371,
+    "git_blob": "40fb1d008a14a16176ba291c2118549d75a3e6a9"
+  },
+  "parent_cold_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-acceptance01.json",
+    "bytes": 1177,
+    "sha256": "d010e64051397b5335ac859f094da7f34cd4f5882ff4c511d639bb04fa6fe12c",
+    "git_blob": "12a10b91d58311996bbfd8800cce3da0d3e0806a",
+    "mode": "100644"
+  },
+  "complete_source_lines_read": 270,
+  "complete_configuration_controls_and_peer_review_read": true,
+  "checked": [
+    "Every positive-only forbidden cube contains pattern111, so the accepted complete negative list gives the whole declared search scope.",
+    "All eight adjacency patterns use all seven principal minors in each exact kernel; no old zero/prism rows alter PSD classification.",
+    "Minimal positive masks retain a compatible completion after each possible literal removal.",
+    "Isolated selectors retain activation guards; two-edge rows correctly use the common center selector.",
+    "Full terms and both bounds define row identity; all origins and one exact linear dominator for every parent triangle cover are retained.",
+    "Source/configuration/controls and actual parent forward/cold data are pinned. Finalization must pass both elapsed-time and serialized-byte bounds."
+  ],
+  "limits": {
+    "maximum_ms": 60000,
+    "maximum_triangles": 10830,
+    "maximum_patterns": 86640,
+    "maximum_cube_origins": 32490,
+    "maximum_unique_rows": 32490,
+    "maximum_serialized_bytes": 33554432
+  },
+  "runs_authorized": 1,
+  "automatic_retries": 0,
+  "optimizer_calls_authorized": 0,
+  "native_model_builds_authorized": 0,
+  "heavy_arithmetic_slot_released_to": "master_continuation",
+  "acceptance_requires_independent_complete_replay": true,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

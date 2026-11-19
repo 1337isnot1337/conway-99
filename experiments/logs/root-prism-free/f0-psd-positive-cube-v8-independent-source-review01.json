@@ -1,0 +1,93 @@
+{
+  "actual_controls_summary": {
+    "activated_assignments": 4608,
+    "exact_linear_dominance_checks": 170,
+    "forbidden_pattern_sets": 256,
+    "large_exact_integer_determinants": 1,
+    "large_integer_entry": "18014398509481987",
+    "positive_cubes": 170,
+    "positive_only_incomplete_pattern_coverage_examples": 236,
+    "small_signed_determinants": 729
+  },
+  "actual_parent_authority_fields_checked": {
+    "cold": {
+      "bytes": 5447714,
+      "git_blob_sha": "58d2facfff6e29f2d8d5b2e8232f072758a3cc1c",
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold01.json",
+      "sha256": "5436baf4d22a0d6b929162176029a1defa13ecb4446f2436655b22aa1b2de9c1"
+    },
+    "cold_configuration": {
+      "bytes": 3875,
+      "git_blob_sha": "b5a031e89f56938f5032dad7d3699adcc634a85a",
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-configuration01.json",
+      "sha256": "c363820f64f487ea7beb03f6b939fb8e855f0e6153dcba3b2e522784d275eae3"
+    },
+    "forward": {
+      "bytes": 1600480,
+      "git_blob_sha": "44f7d8c605a1f6fab51c89fed44b9233c8215b21",
+      "path": "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-census01.json",
+      "sha256": "7027feb1a77cb8131371bb10823ec7e5e8b6a33f5281a0b27881ee2f6b088155"
+    }
+  },
+  "complete_configuration_and_actual_controls_read": true,
+  "concrete_blockers": [],
+  "configuration": {
+    "bytes": 6634,
+    "git_blob_sha": "5c62fd9fc2e59eaabf52419a92d8b437db57fe04",
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-configuration01.json",
+    "sha256": "32cdf292c7acc396ffafd18697c37484484d1dded8e48fabadfc468e2ff59c58"
+  },
+  "controls": {
+    "bytes": 895,
+    "git_blob_sha": "b6411bf6d09608707290aea07930e6de0f2bfce4",
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-controls01.json",
+    "sha256": "1709285bfdbbbb59dddd3ca115f5c1f44f117577b2cafcb4a3afe630db1463d8"
+  },
+  "controls_rerun_by_reviewer": false,
+  "implementation_review": [
+    "The complete original 68,394-edge namespace is reconstructed, and each triangle's literal selector and edge IDs are checked against the accepted original domain.",
+    "Every pattern preserves both families' three pair minors and determinant; singleton minors are stored once per triangle. The complete 111 value and proper minors are replayed against the accepted negative record.",
+    "Full literal terms and both bounds determine row identity. Every cube origin, minimality witness, pattern table and one explicit triangle-cover dominator are retained.",
+    "Counters require 86,640 patterns, 173,280 matrices and 1,212,960 principal minors. Limits cap cube origins and unique rows at 32,490.",
+    "Errors and incomplete prefixes retain a nonaccepted status. Main acceptance must require complete=true and successful finalization with the actual serialized-byte and elapsed-time values within the declared limits."
+  ],
+  "input_authority_review": [
+    "Fetched and SHA256-checked actual parent forward, complete cold and cold configuration. Their status/schema/source/configuration contracts match the loader, including the complete 1,179,048-triangle universe and the 10,830-entry ordered negative list.",
+    "Actual parent count-object key order agrees, so the source's strict JSON count comparison is valid for these frozen inputs. The cold's forward/domain/kernel/audit binding field names match the exact configuration.",
+    "The loader hash-checks every configured source, text input, compressed archive and decompressed raw input, then binds primitive kernels to both the independent full-core audit and the accepted parent census.",
+    "No old zero, prism or path cut is used to determine PSD compatibility, and all 10,830 negative triangles are retained before classification."
+  ],
+  "limits": {
+    "maximum_cube_origins": 32490,
+    "maximum_ms": 60000,
+    "maximum_patterns": 86640,
+    "maximum_serialized_bytes": 33554432,
+    "maximum_triangles": 10830,
+    "maximum_unique_rows": 32490
+  },
+  "main_pattern_census_executed_by_reviewer": false,
+  "mathematical_review": [
+    "A selected triple's three singleton, three pair and full determinant principal minors are computed with BigInt in both families. A pattern is compatible only when all fourteen minors are nonnegative.",
+    "Every positive-only partial assignment contains 111. The accepted full parent cold has no negative proper minor and lists every negative 111 determinant, so these 10,830 triples contain every PSD-only positive cube in the declared disjoint-signature eligible universe.",
+    "A positive cube is forbidden exactly when every edge-pattern completion is incompatible. One-bit removal witnesses certify minimality; the complete antichain has at most three members on three edge variables.",
+    "An isolated vertex not incident to a positive fixed edge retains its selector guard. Zero positive edges give a selector-triple cover; one positive edge gives an edge-plus-third-selector cover; three positive edges give the triangle cover.",
+    "For two positive edges, endpoint activation justifies the homogeneous path row with the shared center selector. Its lower endpoint -1 is automatic. The other row kinds contain nonnegative terms and correctly use lower endpoint zero.",
+    "The source symbolically adds nonnegative integer combinations of the retained cut and existing endpoint/bound rows to obtain the original triangle cover, with scale two in the selector-only case. This proves continuous-relaxation dominance, not merely Boolean implication.",
+    "Positive-only cubes are not claimed to cover all incompatible patterns. PSD-compatible patterns are not claimed to extend to graph embeddings."
+  ],
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "producer_executed_by_reviewer": false,
+  "reviewer": "master_review",
+  "schema": "conway99.f0.psd-positive-cube-v8-independent-source-review.v1",
+  "source": {
+    "bytes": 24074,
+    "git_blob_sha": "9bfc7aa719d97bc23f6457e2729b24825ef1f7ab",
+    "lines": 270,
+    "path": "experiments/workspace/root_prism_free_f0_psd_positive_cube_census_v8.js",
+    "sha256": "8643c9d3bf1ae6175b315a8a7300c7c34c668fe16e41162f79994f0b341e694a"
+  },
+  "source_lines_read": 270,
+  "status": "PASS_SOURCE_BOUND_COMPLETE_PSD_POSITIVE_CUBE_CENSUS_REVIEW",
+  "whole_component_excluded": false
+}

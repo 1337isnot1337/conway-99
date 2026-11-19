@@ -13,8 +13,9 @@ Of the 10,830 inequalities, 3,840 contain an edge already proved zero.
 The other 6,990 survive that specific test. This is not a claim of
 logical independence from every existing constraint.
 
-The complete independent replay is separate pending work at this
-checkpoint. The source has independent review, and the exact forward
+The complete independent replay is accepted at checkpoint 81. It
+reconstructs every eligible pair, every negative triangle record and all
+10,830 literal-zero dispositions. The exact forward and independent
 records are preserved. No enlarged native model, solver query, graph
 construction, or entire-case exclusion is claimed.
 
@@ -148,7 +149,7 @@ The disposition pass takes 0.748 seconds. It tests no other native,
 selector, path, or prism implication. A retained row is therefore a
 candidate addition, not a certificate that all other rows fail to imply it.
 
-## Durable records and next step
+## Durable records and independent acceptance
 
 The [complete census](../experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-census01.json)
 contains all 10,830 exact determinant records and their proper minors.
@@ -163,8 +164,20 @@ isolate for exact arithmetic. The portable decoder checks SHA-256,
 Git blob SHA-1, gzip CRC and output length. The decompressed kernel also
 matches its previously recorded raw SHA-256.
 
-The next independent replay must reproduce the complete family and the
-literal-zero partition. A separate proposed calculation will inspect
-all eight adjacency patterns for the 10,830 negative triangles. It may
-replace some triangle covers by stronger path or edge/selector
-inequalities. No such pattern census has run in this checkpoint.
+The [complete independent replay](../experiments/logs/root-prism-free/f0-triangle-schur-independent-cold01.json)
+uses maximum-vertex bitset intersections and a six-permutation BigInt
+determinant expansion. It finishes in 19.421 seconds. Every forward
+negative record, proper minor, count and extremum agrees. The root
+[acceptance receipt](../experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-acceptance01.json)
+also compares every literal-zero disposition after explicit JSON-field
+normalization. The complete partition remains 3,840 and 6,990.
+
+The subsequent [positive-cube diagnostic](root_prism_free_f0_psd_positive_cube_diagnostic.md)
+evaluates all eight edge patterns for these 10,830 triples. It reports
+only the same triangle covers as minimal positive-only rows. A separate
+[root comparison](../experiments/logs/root-prism-free/f0-psd-positive-cube-root-parent-row-comparison01.json)
+checks all 10,830 complete output row keys against this accepted family.
+The full pattern table has no independent completeness replay, so its
+reported absence of stronger positive-only cubes remains diagnostic.
+It also records 252 single-edge pattern failures for separate signed-row
+analysis; no such signed row is accepted or installed here.
