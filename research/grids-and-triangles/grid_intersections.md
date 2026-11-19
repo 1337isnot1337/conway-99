@@ -22,7 +22,7 @@ All simple graphs on seven vertices with e edges and m pairs of disjoint edges s
 
     0 0 0 0 0 0 0 4 8 12 15 20 27 33 39 45 55 65 75 85 95 105.
 
-The integer enumeration in grid_intersections.py checks every one of the 2^21 subsets of the edges of K7. The first inequality gives 45g − 3,465 ≤ 4,158 − 18g and hence g ≤ 121.
+The integer enumeration in [`grid_intersections.py`](../../experiments/workspace/grid_intersections.py) checks every one of the 2^21 subsets of the edges of K7. The first inequality gives 45g − 3,465 ≤ 4,158 − 18g and hence g ≤ 121.
 
 ## Excluding equality
 
@@ -42,7 +42,7 @@ Finally, each grid accounts for 18 distinct nonpercolating nonedges. The bound g
 
 Write n for the number of unordered pairs of disjoint triangles joined by exactly two edges. Those edges form a matching. Equivalently n counts square and opposite-side choices for which the two triangle tips are nonadjacent. In the witness argument above each such opposite-side choice has at most two common centers. Consequently Σm_p ≤ n.
 
-At a root p, fix two of its seven triangles, with signed neighbors a,a′ and b,b′. The four remaining square corners opposite p have labels (a,b), (a,b′), (a′,b), (a′,b′). Among them there are four potential edges changing just one sign. If three are present, neither diagonal can be present, as each diagonal would produce a second triangle on a present edge. The nine vertices then induce the rook graph with one edge deleted, excluded by the integral eigenvector argument in STATE.md. If all four edges are present there is a grid. Otherwise at most two are present.
+At a root p, fix two of its seven triangles, with signed neighbors a,a′ and b,b′. The four remaining square corners opposite p have labels (a,b), (a,b′), (a′,b), (a′,b′). Among them there are four potential edges changing just one sign. If three are present, neither diagonal can be present, as each diagonal would produce a second triangle on a present edge. The nine vertices then induce the rook graph with one edge deleted, excluded by the integral eigenvector argument in [`STATE.md`](../../STATE.md). If all four edges are present there is a grid. Otherwise at most two are present.
 
 In the four squares at p specified by these labels, each present sign-changing edge accounts for a link between opposite tips in exactly two squares. For example, (a,b) and (a′,b) are adjacent precisely when a′ is adjacent to the triangle tip on the side from b to (a,b). This equivalence follows from the uniqueness of the outer vertex with near neighbors a′ and b. Thus a two-triangle choice at p outside a common grid gives at least four missing opposite-tip links across its four squares. Summing over the roots counts each square-side choice four times. This proves n ≥ 2,079 − 9g.
 
@@ -56,7 +56,7 @@ The sum of h_ij over j distinct from i equals (A+4I) times the indicator of the 
 
 Let F be the complement of D_p, and let C be the unoriented vertex-edge incidence matrix of F over the rationals. The support of each coordinate across the vectors z_e belongs to ker C, and every edge of F occurs in the support of at least one such vector. Consequently deleting any edge preserves the rank of C. The rank is seven minus the number of bipartite connected components, counting isolated vertices. Indeed, a left-kernel vector alternates sign across each edge, giving one free scalar for a bipartite component and none for an odd-cycle component.
 
-Restrict the seven-axis enumeration to graphs satisfying this edge-deletion criterion. grid_support.cpp checks all 2^21 labeled graphs. An independent check on the 1,044 seven-vertex graphs of the NetworkX graph atlas gives the same minima. With a dash indicating an impossible support, the resulting minimum m_p for e_p = 0 to 21 is
+Restrict the seven-axis enumeration to graphs satisfying this edge-deletion criterion. [`grid_support.cpp`](../../experiments/workspace/grid_support.cpp) checks all 2^21 labeled graphs. An independent check on the 1,044 seven-vertex graphs of the NetworkX graph atlas gives the same minima. With a dash indicating an impossible support, the resulting minimum m_p for e_p = 0 to 21 is
 
     0 0 0 0 0 2 0 4 8 12 17 20 27 34 42 48 – 67 – – – 105.
 
@@ -74,6 +74,6 @@ At every point of a present cell the neighbors in the two directions of its inte
 
 Fix a vertex w in one of the three present cells. By the disjoint-cell formula it has four neighbors in the missing cells, all of sign opposite its own. No other one of the three present cells has a neighbor of w since their axes intersect. Since Az=−4z, the two internal neighbors of w have opposite signs to one another. It follows that the sign pattern on that square is precisely one of its two signed coordinates, up to negation. At either near vertex of each of the three remaining axes, the equation Az=0 there requires that patterns selecting that axis occur equally often in each orientation. A cell whose pattern selects the other coordinate contributes zero. Thus each axis is selected an even number of times. There are three cells and each selects exactly one axis, a contradiction.
 
-The support table excludes 16 and 18 through 20 grids. The 21-grid case was independently eliminated by the two computational reductions described in STATE.md and root_cover_audit.py. The latter reproduces all four sign orbits (sizes 1, 105, 120, 30), all three ternary transports in each, and zero feasible character assignments in all twelve cases. This proves the stated upper bound of 15. Each grid accounts for four nonneighbors at the root, giving 84−4·15=24.
+The support table excludes 16 and 18 through 20 grids. The 21-grid case was independently eliminated by the two computational reductions described in [`STATE.md`](../../STATE.md) and [`root_cover_audit.py`](../../experiments/workspace/root_cover_audit.py). The latter reproduces all four sign orbits (sizes 1, 105, 120, 30), all three ternary transports in each, and zero feasible character assignments in all twelve cases. This proves the stated upper bound of 15. Each grid accounts for four nonneighbors at the root, giving 84−4·15=24.
 
 The same argument excludes a support F that is just a six-cycle. The missing cells again alternate ±z, and each missing vertex has internal degree one by comparison with a disjoint same-sign cell. Every present cell meets at least one missing edge since only one axis lies outside the cycle. Hence the norm is 24 instead of the required 28.

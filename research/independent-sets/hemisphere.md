@@ -20,4 +20,4 @@ There is also no h=21 for this choice of I. The sum of (d−3)(d−4) is 2(h−2
 
 At b this says the sizes of its seven outside neighbors sum to 35, exceeding 7·4. Consequently every root admits a maximal coclique of size between fourteen and twenty containing seven of its neighbors. This upper bound concerns the stated choice of coclique.
 
-The seven additional independent vertices used before maximal extension have labels consisting of seven different edges on seven points. There are 65 isomorphism classes for this pattern. hemisphere_cases.py exhausts the 116,280 labeled choices and verifies each multiplicity by the orbit-stabilizer formula.
+The seven additional independent vertices used before maximal extension have labels consisting of seven different edges on seven points. There are 65 isomorphism classes for this pattern. [`hemisphere_cases.py`](../../experiments/workspace/hemisphere_cases.py) exhausts the 116,280 labeled choices and verifies each multiplicity by the orbit-stabilizer formula.
