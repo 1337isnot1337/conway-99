@@ -45,6 +45,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [At least five missing pairs opposite every rooted grid](research/grids-and-triangles/four-missing-cones.md) excludes all six four-edge shapes, including all 19 alternating profiles of the four-cycle.
 - [At most ten grids through a vertex](research/grids-and-triangles/ten-grid-bound.md) rules out the last eleven-grid case by two equal eigenvectors and three square profiles.
 - [A triangle on exactly four grids](research/grids-and-triangles/four-grid-triangle.md) leaves fourteen residual cores, each of which fixes the incidences of all sixty exterior vertices with twelve neighbors.
+- [Grids at different points of a full triangle](research/grids-and-triangles/full-triangle-cross-grids.md) are disjoint when formed from its prism axes. Three ten-grid roots would force at least two index pairs common to all three.
 
 - [Disconnected endpoint graph](research/involutions/connected-endpoint-squares.md) allows repeated endpoint pairs and forces component sizes six and one when all 21 squares have one shared axis.
 - [Distinct endpoint pairs](research/involutions/distinct-endpoint-squares.md) rules out every assignment of centers when all 21 squares have one shared axis and their endpoint pairs are distinct. The proof uses two exact norm counts.

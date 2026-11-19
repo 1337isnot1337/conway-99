@@ -133,3 +133,7 @@ verify-ten-grid-bound: verify-four-missing-grid-cones
 .PHONY: verify-four-grid-triangle
 verify-four-grid-triangle:
 	cd $(WORKSPACE) && "$(PYTHON)" four_grid_triangle.py
+
+.PHONY: verify-full-triangle-ten-roots
+verify-full-triangle-ten-roots:
+	cd $(WORKSPACE) && "$(PYTHON)" full_triangle_ten_roots.py
