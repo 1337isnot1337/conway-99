@@ -1,0 +1,35 @@
+{
+  "status": "coordinator mathematical review and independent source review PASS; one bounded exact scan authorized",
+  "files": [
+    {
+      "path": "experiments/workspace/grid_free_order10_five_boolean_integer.py",
+      "sha256": "fe4d74878794d0bc17004467a4676a32af4fc7c79a8a3b816327b31a91211438"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-five-boolean-integer-preparation.json",
+      "sha256": "052f6457c13ca847199f37f9dfb57772ddcc3a9acd350b5181429cadb5936742"
+    }
+  ],
+  "coverage": {
+    "roots": 62,
+    "five_subsets": 4543737,
+    "integer_functionals": 72699792,
+    "all_integer_shifts": true
+  },
+  "review": [
+    "integer-valued L gives (L-k)(L-k-1)>=0 for every integer k",
+    "the exact convex difference gives minimizing shift floor(p/g) for g>0",
+    "global negation covers all 32 signs with 16 representatives",
+    "every cached matrix is contracted in Python integers and binary diagonals checked",
+    "256 times maximum matrix entry bounds every int64 intermediate",
+    "zero root requires the entire matrix to be zero",
+    "each negative form is re-expanded in Python integers and requires independent literal product replay before optimization"
+  ],
+  "authorized": {
+    "scans": 1,
+    "seconds": 60,
+    "optimizer_calls": 0,
+    "eigensystem_calls": 0
+  },
+  "finite_family_only": true
+}

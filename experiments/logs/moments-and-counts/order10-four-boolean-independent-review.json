@@ -1,0 +1,61 @@
+{
+  "status": "PASS: independent read-only mathematical and source review of four-Boolean domains and exact scanner",
+  "bindings": {
+    "domain_source": {
+      "path": "experiments/workspace/grid_free_order10_four_boolean_domains.py",
+      "sha256": "52ab6687063ca4e16930013cbb159658337e8f8ce007f3d82c1d39d3c9a042d6"
+    },
+    "domain_certificate": {
+      "path": "experiments/logs/moments-and-counts/order10-four-boolean-domains.json.gz",
+      "sha256": "5fd508dba5bcda5aeb8231ab39dd6b68df5c55ffffebb98b7344e874155bef35"
+    },
+    "scan_source": {
+      "path": "experiments/workspace/grid_free_order10_four_boolean_scan.py",
+      "sha256": "5a97b204d8830af614f22c6e72f6ca4c120ec5c6a31320b4b8841c7e0ce19286"
+    },
+    "scan_preparation": {
+      "path": "experiments/logs/moments-and-counts/order10-four-boolean-scan01-preparation.json",
+      "sha256": "bc4f2a425518f493a672869d57f3134e80e1ebb0f448ce60235cf947cb9bf697"
+    }
+  },
+  "mathematical_review": {
+    "high_mask_indicators_are_binary": "Two distinct outside vertices in one mask class of size at least three would have at least three common neighbors.",
+    "pair_flag_normalization": "For distinct high masks a,b, free labels are determined by their root masks. The edge and nonedge induced pair flags sum to Xa*Xb with no factor or divisor.",
+    "higher_monomial_representation": "A triple is (sum of ab pair flags)*Xc; a quadruple is (sum of ab pair flags)*(sum of cd pair flags). All masks are distinct, so free vertices from different factors cannot coincide.",
+    "lower_triangle_entries": "Each cached product entry is used once. It is a product value, not a quadratic-form expansion, so no off-diagonal factor of two is inserted.",
+    "nonbinary_flags": "Other two-free flags remain in the frozen cache. The selected high/high pair flags are binary; the code does not incorrectly apply this to every two-free flag.",
+    "absence_orientation": "For present set S, the atom is sum over T containing S of (-1)^(|T|-|S|) m_T. Subtracting each upper neighbor from a subset lacking that bit computes this upper-set Mobius transform.",
+    "marginal_coverage": "Every at-most-four marginal is a sum of atoms in one tested maximal-size marginal. Roots with fewer than four masks use their full smaller domain, including the constant-only case.",
+    "scope": "Finite atom nonnegativity is necessary. Passing it does not establish a common global distribution or graph existence."
+  },
+  "integer_arithmetic_review": {
+    "coefficient_sum_guard": "Positive int64 coefficients and nnz*max(coefficient)<=INT64_MAX protect all CSR row sums before contraction.",
+    "used_column_guard": "Only tensor-referenced embedding columns are converted to int64; unreferenced columns are zero and cannot change any tensor product.",
+    "contraction_guard": "max(referenced embedding)*max(coefficient row sum)<=INT64_MAX protects every product and every nonnegative partial sum.",
+    "transform_guard": "Each monomial sums at most four cached values. Every transformed atom has at most 16 monomials, and a row has at most 16 atoms. The checked 1024*max(cached value) bound protects conversion, every subtraction, and atom row sums.",
+    "negative_acceptance": "Every saved atom is independently expanded as signed cached rows in Python integers, multiplied by exact automorphism orders, and checked against the negative scanned value before positive-gcd normalization.",
+    "timeout_scope": "Incomplete or failed scans retain incomplete status. No floating-point fallback, optimizer or eigensystem exists."
+  },
+  "independent_small_checks": {
+    "direct_high_mask_domains": 62,
+    "literal_two_class_domains": 9118,
+    "domain_counts_recomputed_from_saved_roots": {
+      "monomials_by_degree": {
+        "0": 62,
+        "1": 829,
+        "2": 9118,
+        "3": 85492,
+        "4": 679045
+      },
+      "maximal_marginals": 679054,
+      "atom_inequalities": 10864739
+    },
+    "boolean_assignments": 31,
+    "mobius_entries_compared_with_direct_inclusion_exclusion": 341
+  },
+  "catalogue_or_product_cache_loaded": false,
+  "cached_tensor_contraction_rerun": false,
+  "full_domain_census_rerun": false,
+  "point_count_scan_run": false,
+  "subject_sources_modified": false
+}

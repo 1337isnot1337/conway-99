@@ -1,0 +1,202 @@
+{
+  "status": "PASS: both existing absent-column units have exact two-coordinate proofs",
+  "source_sha256": "8f82db0afcb2a9e349cd6d05e15f8117b5981327ac16b51f2fa624e09352718b",
+  "row_domain_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "original60_cut_result_sha256": "9b0713b668e2c0ae47139007cdf6ad8961be2fb0e9caf2b42e0193a5528ecaa6",
+  "all_reconstructed_targets": 1214,
+  "certificates": [
+    {
+      "old_cut_index": 34,
+      "zero_based_column": 1080,
+      "DIMACS_forbidding_unit": [
+        -1081
+      ],
+      "old_signature_and_attachment": [
+        232,
+        144
+      ],
+      "core_neighbors": [
+        8,
+        10,
+        20,
+        31,
+        34
+      ],
+      "new_sparse_integer_potential": [
+        [
+          3,
+          1
+        ],
+        [
+          10,
+          -1
+        ]
+      ],
+      "degree_coordinate": 0,
+      "positive_demand": 1,
+      "all1214_candidate_neighbors_tested": true,
+      "eligible_neighbor_count": 365,
+      "R3_neighbor_column_support": [
+        202,
+        208,
+        210,
+        211,
+        213,
+        214,
+        216,
+        217,
+        219,
+        221,
+        222,
+        228,
+        229,
+        231,
+        232
+      ],
+      "S1_neighbor_column_support": [
+        202,
+        208,
+        210,
+        211,
+        213,
+        214,
+        216,
+        217,
+        219,
+        221,
+        222,
+        228,
+        229,
+        231,
+        232,
+        549,
+        550,
+        551,
+        568,
+        569,
+        576,
+        577,
+        578,
+        580,
+        584,
+        585,
+        586,
+        587,
+        707,
+        715,
+        716,
+        719,
+        720,
+        722,
+        724,
+        725,
+        726,
+        728
+      ],
+      "support_inclusion_checked": true,
+      "R3_demand": 2,
+      "S1_demand": 1,
+      "complete_neighbor_product_histogram": {
+        "-1": 23,
+        "0": 342
+      },
+      "old_frozen_integer_certificate_also_rechecked": true
+    },
+    {
+      "old_cut_index": 35,
+      "zero_based_column": 1081,
+      "DIMACS_forbidding_unit": [
+        -1082
+      ],
+      "old_signature_and_attachment": [
+        232,
+        160
+      ],
+      "core_neighbors": [
+        8,
+        10,
+        20,
+        32,
+        34
+      ],
+      "new_sparse_integer_potential": [
+        [
+          3,
+          1
+        ],
+        [
+          10,
+          -1
+        ]
+      ],
+      "degree_coordinate": 0,
+      "positive_demand": 1,
+      "all1214_candidate_neighbors_tested": true,
+      "eligible_neighbor_count": 347,
+      "R3_neighbor_column_support": [
+        202,
+        208,
+        209,
+        211,
+        213,
+        214,
+        215,
+        217,
+        219,
+        220,
+        222
+      ],
+      "S1_neighbor_column_support": [
+        202,
+        208,
+        209,
+        211,
+        213,
+        214,
+        215,
+        217,
+        219,
+        220,
+        222,
+        549,
+        550,
+        551,
+        566,
+        567,
+        568,
+        569,
+        570,
+        574,
+        575,
+        577,
+        578,
+        579,
+        585,
+        586,
+        707,
+        715,
+        716,
+        717,
+        719,
+        720,
+        721,
+        724,
+        725,
+        726,
+        727
+      ],
+      "support_inclusion_checked": true,
+      "R3_demand": 2,
+      "S1_demand": 1,
+      "complete_neighbor_product_histogram": {
+        "-1": 26,
+        "0": 321
+      },
+      "old_frozen_integer_certificate_also_rechecked": true
+    }
+  ],
+  "mathematical_reason": "Every eligible exterior neighbor meeting R3 also meets S1, but the chosen source would require two R3 neighbors and only one S1 neighbor.",
+  "new_selector_exclusions_beyond_the_frozen60_cuts": 0,
+  "case4_or_local_set_excluded": false,
+  "optimizer_or_solver_called": false
+}

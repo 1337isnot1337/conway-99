@@ -1,0 +1,11 @@
+{
+  "status": "preparation assertion; no point scan or matrix contraction",
+  "source_sha256": "874c7c81b037de6e0064c77f34b972238b928d2ce9c99ace54f9440c0cf54857",
+  "preserved_source": "experiments/workspace/grid_free_order10_triple_clique_scan_preparation_v1.py",
+  "assertion": "actual==original[nonconstant_squarefree_terms]",
+  "cause": "The original term record also stores internal_edge_choice_upper_bound. The compared masks and coefficients match; the dictionary field sets differ.",
+  "correction": "Project both term records to masks and coefficient before comparison; preserve all source edge-pattern coverage checks.",
+  "point_scanned": false,
+  "numerical_solver_called": false,
+  "metadata_written": false
+}

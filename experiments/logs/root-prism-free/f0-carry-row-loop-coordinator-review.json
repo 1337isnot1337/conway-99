@@ -1,0 +1,60 @@
+{
+  "status": "coordinator full encoder source, complete loop diff and proof-wrapper diff review PASS; one compact continuation authorized",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_carry_threshold.py",
+      "sha256": "942efb35d35429d88d7cc9c3bc14aa7a116972186f60abeebe50db89214ec75f"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_carry_row_loop.py",
+      "sha256": "ec85c752a5d3c5538250e0099286dcbad674e23ef9572f72bbd3ca72fb5ef403"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_carry_row_loop_certificate.py",
+      "sha256": "6ed58e8656b5a46a8dd14e6064495dbfe2960d8916bdabc85b54ec22cd3d557a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-threshold-controls.json",
+      "sha256": "cbd79ada6cd165961811e005b51d3979f2d80c63fbc90dfefa18f0d9d0e29196"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-preparation.json.gz",
+      "sha256": "b43aedd6dda33b3b0415865831fb48e87610815f4f3659d7a59f8c5c84b0eb9e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-carry-row-loop-preflight-replay.json",
+      "sha256": "6f35b3c18507eebc6f6ce4cdd904709924fc3c6f563e42f4de2301cdd6d5db62"
+    }
+  ],
+  "review": [
+    "every gate is a full truth-table Tseitin equivalence, including aliases and constants",
+    "carry-save buckets preserve weighted sum; ripple carry preserves exact binary value",
+    "low-to-high comparator recurrence gives exact sum>=threshold",
+    "literal merging, weight capping and gcd normalization preserve Boolean semantics",
+    "prior full candidate/prefix transcript rebuilt before importing every retained cut",
+    "all twelve final shared transports re-proved; four previously unencoded transports included",
+    "all 192 proved inequalities encoded on unchanged 56994-clause necessary base",
+    "all 480 selectors free; no candidate visitation blocks or fixed second component",
+    "runner exact-row/shared-ray gates unchanged from the fully reviewed parent",
+    "fresh proof, full cold reconstruction and retained DRAT replay required for an exclusion"
+  ],
+  "initial_formula": {
+    "variables": 100296,
+    "clauses": 620370,
+    "individual_cuts": 168,
+    "signed_cuts": 24,
+    "CNF_sha256": "46e5cda7906d7ed409e825a5baabad0e27380fdfeffa609612c689b4a1f930ef"
+  },
+  "authorized": {
+    "loops": 1,
+    "overall_seconds": 180,
+    "maximum_incidences": 20,
+    "SAT_seconds_per_call": 10,
+    "individual_pass_seconds": 60,
+    "shared_LP_seconds": 60,
+    "on_incremental_UNSAT_fresh_proof_seconds": 60,
+    "direct_DRAT_seconds": 60,
+    "cold_DRAT_seconds": 60
+  },
+  "scope": "component0 in globallyP=F=0 split18+18 only; exact symmetric box is not a graph"
+}

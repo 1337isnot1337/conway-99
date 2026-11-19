@@ -1,0 +1,39 @@
+{
+  "status": "coordinator complete source and mathematical review PASS; one bounded proof-capable query authorized",
+  "files": [
+    {
+      "path": "experiments/workspace/complement_rook_35core_case0004_row_cut_boolean.py",
+      "sha256": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-model.json",
+      "sha256": "51268b36baee6ba62c7925ab85a18724d5e9b28006cb2a62f6bd3228f862346a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-preflight.json",
+      "sha256": "9482cabcb5fc0a615fd6cfc57c0394f1678fc9830ed73e39460b1769cd4009b1"
+    }
+  ],
+  "review": [
+    "complete original 1214-column case4 domain regenerated and original 218863-clause body preserved byte-for-byte",
+    "all 30 certified Gram conflict clauses retained",
+    "all 60 original integer potentials checked through frozen exact model dependencies",
+    "positive guarded thresholds encoded without primary selection assumptions; auxiliary IDs above all original variables",
+    "empty positive supports force only their proved target selectors 1080 and 1081 absent",
+    "generic existential controls and 586 actual-cut complete primary assignments pass",
+    "SAT must pass original incidence and all 60 uncapped inequalities; no graph construction inferred",
+    "UNSAT must have direct DRAT plus cold full formula, exact cuts and retained input replay"
+  ],
+  "formula": {
+    "variables": 134852,
+    "clauses": 261071,
+    "CNF_sha256": "b0ca3f15a6d2c9e27f82af783cb62c1ecc27376e53f5820105c49d6fd7b72738"
+  },
+  "authorized": {
+    "solver_queries": 1,
+    "solve_seconds": 60,
+    "direct_DRAT_seconds": 60,
+    "cold_DRAT_seconds": 60
+  },
+  "scope": "indexed 35-core case4 only; whole first local set remains separate"
+}

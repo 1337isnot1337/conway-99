@@ -1,0 +1,23 @@
+{
+  "status": "reviewed frozen triangle scanner prepared at the latest48-cut integer point",
+  "source": "experiments/workspace/root_binary_flag_triangles.py",
+  "source_sha256": "f8a9fa436f0719fd8e75dd892708ef472497593d3233bcd5ffc457ee934468c0",
+  "witness": "experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json",
+  "witness_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "cache_sha256": "aecf7411230f718c8c3879c38ad39dcdb041ed07c58a799f8b044ebd0ab5028d",
+  "root_blocks": 916,
+  "exact_triangle_inequalities": 170183860,
+  "reason": "Earlier complete scans used the repaired point and positive-x521 point, not this later48-cut point.",
+  "review": [
+    "complete root and mask lists checked; binary diagonals exact",
+    "nonnegative sparse row coefficient sum at most2;14 times maximum embedding protects all int64 intermediates",
+    "all four polynomials independently have nonnegative Boolean truth tables",
+    "any accepted negative is expanded and independently rebuilt using direct graph isomorphism lookup"
+  ],
+  "seconds_limit": 60,
+  "optimizer_calls": 0,
+  "eigensystem_calls": 0,
+  "new_products": 0,
+  "one_scan_authorized": true
+}

@@ -1,0 +1,77 @@
+{
+  "status": "PASS: independent read-only case4 overlay source review and integer/existing-CNF audit",
+  "audit_source_sha256": "0e9569581e43b9b2462402651ce8ffbc94106abe7e37d65d242d5d07c4d68c6f",
+  "bindings": {
+    "source": {
+      "path": "experiments/workspace/complement_rook_35core_case0004_row_cut_boolean.py",
+      "sha256": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45"
+    },
+    "model": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-model.json",
+      "sha256": "51268b36baee6ba62c7925ab85a18724d5e9b28006cb2a62f6bd3228f862346a"
+    },
+    "base": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0004-model.json",
+      "sha256": "43fc0c40a724f4c287df770fce58abc45835ee7534f2b7e5cd06d3baf380cfde"
+    },
+    "inventory": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lp-model.json.gz",
+      "sha256": "18e7b79a7e83c1c40f0c0c29301703400f26b42401f0b07a2f21783a298119a6"
+    },
+    "row_domain": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-exterior-rows.json.gz",
+      "sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628"
+    },
+    "cut_result": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-loop-run01.json",
+      "sha256": "9b0713b668e2c0ae47139007cdf6ad8961be2fb0e9caf2b42e0193a5528ecaa6"
+    },
+    "weighted_encoder": {
+      "path": "experiments/workspace/root_prism_free_f0_weighted_threshold.py",
+      "sha256": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+    },
+    "preflight": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-preflight.json",
+      "sha256": "9482cabcb5fc0a615fd6cfc57c0394f1678fc9830ed73e39460b1769cd4009b1"
+    }
+  },
+  "actual_complete_CNF_sha256": "b0ca3f15a6d2c9e27f82af783cb62c1ecc27376e53f5820105c49d6fd7b72738",
+  "original_CNF_recovered_from_prefix_sha256": "e76d9cb74cc1b907c5af37fe224b278181d6e5d052de691f7d86cabb6b028b4d",
+  "independently_recomputed_row_targets": 1214,
+  "independently_recomputed_eligible_edges": 275578,
+  "exact_negative_Gram_vectors_replayed": 30,
+  "exact_integer_row_potentials_replayed": 60,
+  "all_capped_gcd_thresholds_recomputed": true,
+  "all_appended_block_hashes_checked": true,
+  "all_new_variable_intervals_disjoint_and_above_original": true,
+  "empty_support_units": [
+    [
+      34,
+      1080,
+      1081,
+      2
+    ],
+    [
+      35,
+      1081,
+      1082,
+      2
+    ]
+  ],
+  "source_math_review": {
+    "necessity": "For every actual completion, v dot row_target times x_a is sum_b (v dot (h_b,1))*y_ab, bounded above by sum_b max(v dot (h_b,1),0)*x_b.",
+    "original_formula": "The complete original clause body and all 30 certified conflict clauses are retained; no fixed incidence or graph automorphism condition is added.",
+    "threshold_semantics": "Positive-weight capping and ceiling after gcd preserve Boolean thresholds. Forward suffix predicates are existentially exact, with fresh IDs for each cut and a guard on the source selector.",
+    "resources": "Exhausting a preparation limit refuses the complete overlay instead of adding an arbitrary constraint.",
+    "SAT_path": "Original incidence inspector plus every uncapped integer inequality and Gram conflict; no exterior graph claim.",
+    "UNSAT_path": "Full cold formula reconstruction, exact row potentials, retained input inclusion and an independent DRAT verification are required.",
+    "scope": "Only indexed 35-core case4 and its separately verified relabelings; cuts are necessities of actual completions, not asserted consequences of the old incidence CNF alone."
+  },
+  "subject_modules_imported": false,
+  "CNF_rebuilt": false,
+  "solver_called": false,
+  "DRAT_run_by_this_audit": false,
+  "new_feasibility_or_exclusion_claim": false,
+  "seconds": 0.5225670189975062
+}
+output_sha256 3d995c1e7491c5d59583beb7eeb120e1c80f96dc3aed11cac02e47ee8cc8b264

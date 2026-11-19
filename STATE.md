@@ -198,6 +198,25 @@ extends this to products of two clique absences. Complete censuses give
 3,283 candidates in 347 root orbits. Exact primitive identities and
 cancellation maps certify all 41,413 union rows. Its cold replay passes;
 the preparation alone makes no claim about the count point.
+The [completed clique-pair scan](research/grids-and-triangles/grid_free_order10_clique_pair_scan.md)
+now tests all 347 representatives, checks all 3,785 selected union rows,
+and finds no exact or unconfirmed negative. An initial cache-padding
+assertion stopped before the first matrix; the corrected scan verifies
+the true product support and preserves the failed attempt.
+The [four-class Boolean atom screen](research/grids-and-triangles/grid_free_order10_four_boolean_atoms.md)
+checks 10,864,739 exact nonnegative atom expressions over all 62 six-vertex roots.
+All pass. The separate [five-class integer-sum screen](research/grids-and-triangles/grid_free_order10_five_boolean_integer.md)
+checks 72,699,792 signed sums and every integer shift, again without a
+negative. A [fresh binary triangle scan](research/grids-and-triangles/binary_flag_triangle_48cut.md)
+also checks all 170,183,860 inequalities at this latest point; the earlier
+triangle scans concerned different points. These are exact finite-family
+results, not a graph or a joint distribution over every flag.
+A [five-root triple-clique scope](research/grids-and-triangles/grid_free_order10_triple_clique_scope.md)
+has 236 candidates in 23 root orbits. Its
+[conditional-lift preparation](research/grids-and-triangles/grid_free_order10_triple_clique_lifts.md)
+checks all 171 representative union rows coefficientwise, retaining four
+collectively impossible selected triples as zero contributions. Its
+point scan is separate from the preparation.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -343,6 +362,14 @@ retains every incidence selector, every eligible shared edge, and all
 sixty cuts. Its one sixty-second query reaches the time limit. A cold
 replay reconstructs all 590,165 rows and 4,121,379 nonzeros, but there is
 no primal or dual certificate. Case four remains unresolved.
+The [Boolean overlay of all sixty cuts](research/grids-and-triangles/complement_rook_35core_case0004_row_cut_boolean_run01.md)
+also returns UNKNOWN after one sixty-second query. It preserves the
+original clause body and has a separate arithmetic and encoding audit.
+A [complete intrinsic-row census](research/grids-and-triangles/complement_rook_35core_case0004_intrinsic_rows.md)
+then excludes fourteen optional signatures by support dominance, twelve
+more than the two units already in that overlay. All 1,214 augmented
+targets pass both mod-two and mod-three span tests with explicit neighbor
+combinations. The new units do not by themselves exclude case four.
 
 On the globally prism-free `x521=0` face, a triangle's cubic shell is
 connected on 36 vertices or splits into two eighteen-vertex components.
@@ -411,6 +438,18 @@ The [general endpoint-allocation argument](research/symmetric_exterior_row_cuts.
 proves these cuts without fixing the incidence used to find them.
 This excludes the third incidence with every second component and
 alignment free; it still does not exclude component zero.
+A [combined row and shared-edge loop](research/root_prism_free_f0_symmetric_row_loop_run01.md)
+rejects five further incidences. Eleven individual-row certificates give
+132 new transported cuts. The fifth incidence has sixty individual row
+witnesses but another exact shared-edge contradiction, with right-hand
+side minus one. Eight of its twelve transported cuts fit before the
+encoding reached its variable limit; all twelve remain proved and saved.
+The complete transcript cold-replays. No UNSAT result was obtained.
+A [compact carry encoding](research/root_prism_free_f0_carry_row_loop.md)
+now retains all 192 proved inequalities on the unchanged necessary base.
+Its 100,296-variable, 620,370-clause formula includes the four previously
+unencoded transports. Full gate controls and a cold formula replay pass.
+The continuation using this encoding is separate from these results.
 
 ## Scope of the unrestricted computations
 

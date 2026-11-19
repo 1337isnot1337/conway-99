@@ -1,0 +1,116 @@
+{"completed_columns": 128, "total_columns": 1214, "elapsed_seconds": 0.8713282340031583}
+{"completed_columns": 256, "total_columns": 1214, "elapsed_seconds": 1.4210492390011495}
+{"completed_columns": 384, "total_columns": 1214, "elapsed_seconds": 1.9349462669997592}
+{"completed_columns": 512, "total_columns": 1214, "elapsed_seconds": 2.340275456001109}
+{"completed_columns": 640, "total_columns": 1214, "elapsed_seconds": 2.8235951740025484}
+{"completed_columns": 768, "total_columns": 1214, "elapsed_seconds": 3.3492049720007344}
+{"completed_columns": 896, "total_columns": 1214, "elapsed_seconds": 3.8509166410003672}
+{"completed_columns": 1024, "total_columns": 1214, "elapsed_seconds": 4.250370606001525}
+{"completed_columns": 1152, "total_columns": 1214, "elapsed_seconds": 4.750435554000433}
+{
+  "status": "complete intrinsic-row census with exact witnesses",
+  "source_sha256": "24eb86e47e6f5a741721fe9174e7d3762bc74edd290c89d489dd5ddedb900c11",
+  "row_domain_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "old_two_unit_certificate_sha256": "395854ca6bce2e47379b2160359eea1e146cfc1593da9cc519d7f44a07b8082b",
+  "case_index": 4,
+  "all_optional_columns": 1214,
+  "complete": true,
+  "complete_eligible_unordered_edges": 275578,
+  "all_unordered_candidate_pairs_checked": 736291,
+  "ordered_coordinate_pairs_checked": 1573344,
+  "excluded_by": {
+    "support_dominance": [
+      352,
+      353,
+      354,
+      355,
+      439,
+      552,
+      553,
+      645,
+      869,
+      873,
+      957,
+      1080,
+      1081,
+      1167
+    ],
+    "GF2": [],
+    "GF3": []
+  },
+  "all_excluded_targets": [
+    352,
+    353,
+    354,
+    355,
+    439,
+    552,
+    553,
+    645,
+    869,
+    873,
+    957,
+    1080,
+    1081,
+    1167
+  ],
+  "previously_explicitly_excluded_targets": [
+    1080,
+    1081
+  ],
+  "new_targets_beyond_previous_explicit_units": [
+    352,
+    353,
+    354,
+    355,
+    439,
+    552,
+    553,
+    645,
+    869,
+    873,
+    957,
+    1167
+  ],
+  "summary": {
+    "dominance_excluded_targets": 14,
+    "dominance_witness_pairs": 14,
+    "GF2_excluded_targets": 0,
+    "GF3_excluded_targets": 0,
+    "union_excluded_targets": 14,
+    "GF2_rank_histogram": {
+      "22": 4,
+      "23": 23,
+      "24": 108,
+      "25": 178,
+      "26": 252,
+      "27": 251,
+      "28": 292,
+      "29": 90,
+      "30": 16
+    },
+    "GF3_rank_histogram": {
+      "22": 4,
+      "23": 23,
+      "24": 108,
+      "25": 178,
+      "26": 252,
+      "27": 251,
+      "28": 292,
+      "29": 90,
+      "30": 16
+    },
+    "positive_field_combination_certificates": 2428,
+    "negative_field_dual_certificates": 0
+  },
+  "controls": {
+    "GF2_exhaustive_span_and_witness_cases": 1024,
+    "GF3_packed_addition_and_dot_cases": 729,
+    "GF3_explicit_reachable_span_and_witness_cases": 10314,
+    "optimizer_or_solver_called": false
+  },
+  "point_independent": true,
+  "optimizer_or_solver_called": false,
+  "scope": "Necessary single-source exterior-row tests on the complete frozen case4 optional-column domain. Field membership is only a modular necessary condition, not a nonnegative or binary row witness. No incidence design or whole case is excluded by passing tests."
+}
+{"output_sha256": "0d1c096865678958737e34551fb55a203fd65b9dc8b0b5613bd9f1dfd26185e9", "elapsed_seconds": 5.198975699000584, "peak_rss_kib": 42684}

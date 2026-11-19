@@ -1,0 +1,250 @@
+{
+  "status": "free480 individual/shared-row continuation prepared; no main query",
+  "source_sha256": "2d08cd3dac2269584f8fc91680566f4418f3e7afd6fed6c0b6cd2a5a9a53af2a",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_incidence_row_loop.py": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+    "root_prism_free_f0_shared_row_separator.py": "7d8f3324826c1fa7fa05e79dbbee7c6e16b064dd01ef5e548160f6a7fe04368a",
+    "root_prism_free_f0_signed_threshold.py": "605b4984ef30374950d19eb66fe37465026e0719fa3a6cb73bfbe68c92e0b1ad",
+    "root_prism_free_f0_symmetric_selector_cut.py": "15ec937609b7de44b808e9de7053bb9ee080ddf732a3defd2b23577c026fe274"
+  },
+  "published_signed_certificate_sha256": "3aea5e48c4a35eb7e023708231f3dbf585634c25de25484f364276041260f846",
+  "signed_encoder_controls_sha256": "70493b2c1cfd8360c5c4509d678af3285243211468c0d40c461f797730d75b90",
+  "signed_encoder_controls": {
+    "status": "signed literal substitution into the frozen threshold DAG controls PASS",
+    "source_sha256": "605b4984ef30374950d19eb66fe37465026e0719fa3a6cb73bfbe68c92e0b1ad",
+    "unsigned_encoder_sha256": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144",
+    "formulas": 785,
+    "complete_primary_assignments": 11207,
+    "both_signs_and_zero_coefficients_checked": true,
+    "fresh_true_guard_and_no_primary_fixing_checked": true,
+    "resource_refusal_checked": true,
+    "tiny_boolean_solver_only": true,
+    "incidence_or_LP_query_called": false
+  },
+  "dynamic_shared_helper_control": {
+    "status": "dynamic shared domain, fixed ray and all12 published selector lifts replay PASS",
+    "source_sha256": "7d8f3324826c1fa7fa05e79dbbee7c6e16b064dd01ef5e548160f6a7fe04368a",
+    "primary_edges": 1220,
+    "standard_form_inventory": {
+      "primary_edges": 1220,
+      "equations": 1140,
+      "standard_form_rows": 2360,
+      "standard_form_variables": 2440,
+      "standard_form_nonzeros": 12200,
+      "data_sha256": "dd4358bcaee7751afdd77d1c286dc9a8692ea6e6452d5dbf2d2cf29806c37f7e",
+      "rows_sha256": "dcb3a9455a507cda9c6576f0ca7a282e5248f1017ce1eec3977c1a82ca75d7cf"
+    },
+    "normalized_gap": 2,
+    "optimizer_or_solver_called": false
+  },
+  "limits": {
+    "maximum_incidences": 20,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_threshold_states_per_cut": 250000,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000,
+    "shared_LP_seconds": 60
+  },
+  "formula": {
+    "primary_variables": 480,
+    "variables": 53136,
+    "clauses": 98274,
+    "literal_occurrences": 287244,
+    "individual_initial_formula": {
+      "primary_variables": 480,
+      "variables": 40932,
+      "clauses": 78222,
+      "literal_occurrences": 227208,
+      "old_overlay_formula": {
+        "primary_variables": 480,
+        "variables": 28308,
+        "clauses": 56994,
+        "literal_occurrences": 163716,
+        "base_clauses": 56550,
+        "added_guarded_clauses": 444,
+        "added_literal_occurrences": 24864,
+        "new_auxiliary_variables": 0,
+        "cut_count": 12,
+        "old_witness_cut_outcomes": [
+          {
+            "target_signature": 336,
+            "left": 5,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 337,
+            "left": 4,
+            "right": 2,
+            "holds": true
+          },
+          {
+            "target_signature": 360,
+            "left": 6,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 390,
+            "left": 6,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 404,
+            "left": 7,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 405,
+            "left": 5,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 427,
+            "left": 8,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 445,
+            "left": 6,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 454,
+            "left": 7,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 455,
+            "left": 7,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 467,
+            "left": 6,
+            "right": 0,
+            "holds": true
+          },
+          {
+            "target_signature": 479,
+            "left": 0,
+            "right": 2,
+            "holds": false
+          }
+        ],
+        "old_witness_failed_guarded_clause_count": 1,
+        "old_witness_rejected": true,
+        "old_witness_or_its_complement_fixed": false,
+        "all480_original_selectors_free": true,
+        "exterior_edge_variables": 0
+      },
+      "initial_full_weighted_cuts": 36,
+      "initial_added_clauses": 21228,
+      "initial_added_auxiliary_variables": 12624,
+      "frozen_replacement_incidence_failed_cut_outcomes": [
+        {
+          "cut_index": 0,
+          "target": 110,
+          "left": 4,
+          "right": 5
+        },
+        {
+          "cut_index": 12,
+          "target": 349,
+          "left": 0,
+          "right": 3
+        },
+        {
+          "cut_index": 24,
+          "target": 479,
+          "left": 7,
+          "right": 10
+        }
+      ],
+      "fixed_incidence_or_second_component": false,
+      "visitation_blocks": false
+    },
+    "old_twelve_direct_cuts_retained": true,
+    "individual_weighted_cuts": 36,
+    "symmetric_signed_cuts": 12,
+    "added_signed_clauses": 20052,
+    "added_signed_auxiliary_variables": 12204,
+    "previous_all_box_incidence_cut_values": [
+      {
+        "cut_index": 0,
+        "signed_sum": 2
+      },
+      {
+        "cut_index": 1,
+        "signed_sum": -47
+      },
+      {
+        "cut_index": 2,
+        "signed_sum": -51
+      },
+      {
+        "cut_index": 3,
+        "signed_sum": -46
+      },
+      {
+        "cut_index": 4,
+        "signed_sum": -34
+      },
+      {
+        "cut_index": 5,
+        "signed_sum": -41
+      },
+      {
+        "cut_index": 6,
+        "signed_sum": -39
+      },
+      {
+        "cut_index": 7,
+        "signed_sum": -36
+      },
+      {
+        "cut_index": 8,
+        "signed_sum": -47
+      },
+      {
+        "cut_index": 9,
+        "signed_sum": -41
+      },
+      {
+        "cut_index": 10,
+        "signed_sum": -31
+      },
+      {
+        "cut_index": 11,
+        "signed_sum": -48
+      }
+    ],
+    "all480_selectors_free": true,
+    "fixed_second_component_or_incidence": false
+  },
+  "cnf": "/tmp/conway99-f0-symmetric-row-loop.cnf",
+  "cnf_sha256": "70d626cccaff274c7df91c9c1c6665f44a0b75367918d987e71df121681d8c47",
+  "cnf_bytes": 1795463,
+  "scope": "all first-incidence selections for component0 in globallyP=F=0 split18+18; second component unrestricted",
+  "visitation_blocks_or_graph_symmetry": false,
+  "initial_and_future_cuts_only_from_exact_potentials": true,
+  "shared_query_only_after_complete60_exact_individual_boxes": true,
+  "stop_conditions": [
+    "incremental UNSAT requiring fresh proof",
+    "UNKNOWN or uncertified result",
+    "exact symmetric box feasibility",
+    "resource/time/incidence limit",
+    "error"
+  ],
+  "optimizer_or_incidence_solver_called": false,
+  "seconds": 37.780213531998015
+}

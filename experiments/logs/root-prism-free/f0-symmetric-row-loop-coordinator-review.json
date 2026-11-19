@@ -1,0 +1,65 @@
+{
+  "status": "coordinator mathematical and full995-line source review PASS; one bounded continuation authorized",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_symmetric_row_loop.py",
+      "sha256": "2d08cd3dac2269584f8fc91680566f4418f3e7afd6fed6c0b6cd2a5a9a53af2a"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_shared_row_separator.py",
+      "sha256": "7d8f3324826c1fa7fa05e79dbbee7c6e16b064dd01ef5e548160f6a7fe04368a"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_signed_threshold.py",
+      "sha256": "605b4984ef30374950d19eb66fe37465026e0719fa3a6cb73bfbe68c92e0b1ad"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_symmetric_row_loop_certificate.py",
+      "sha256": "f97015ac229b5955d8d48d0009b4ad5f7b8fa0f4e69e7c98f57c5692db0d303f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-symmetric-row-loop-preparation.json.gz",
+      "sha256": "ac320bcd92d1e801fc027ca7776ad97ebe978628b530caa67ceb5d770c992a55"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-symmetric-row-loop-preflight-replay.json",
+      "sha256": "1264c464902347531bef89bf6eb22c147af77ed83f6a4b9a0ae1d57a14fc17a0"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-signed-threshold-independent-review.json",
+      "sha256": "a44f827c7d7b446c7c685d38e6925985bd9a29d7341f31d0ef1145edd6715a0c"
+    }
+  ],
+  "review": [
+    "all480 selectors remain free; original necessary baseline and all old cuts retained",
+    "signed inequalities translated to positive weighted literals with one fresh true auxiliary guard",
+    "separate exact candidate/row/symmetric-cut registries and current-prefix inspections",
+    "complete60 exact individual row witnesses required before shared LP",
+    "shared ray verifies all exact equations and upper-bound slacks before full68394-edge lift",
+    "all12 core transports checked; no saved incidence or graph automorphism assumed in cuts",
+    "resource refusal stops before a partial cut; no visitation blocks",
+    "cold replay reconstructs every candidate prefix, exact witness, endpoint allocation and full final CNF",
+    "incremental UNSAT is uncertified until fresh proof query, direct DRAT and separate cold full-formula/proof replay"
+  ],
+  "initial_formula": {
+    "selectors": 480,
+    "variables": 53136,
+    "clauses": 98274,
+    "individual_weighted_cuts": 36,
+    "symmetric_signed_cuts": 12
+  },
+  "authorized": {
+    "loops": 1,
+    "overall_seconds": 180,
+    "maximum_incidences": 20,
+    "SAT_seconds_per_call": 10,
+    "individual_row_pass_seconds": 60,
+    "shared_LP_seconds": 60,
+    "threads_per_LP": 1,
+    "on_incremental_UNSAT_fresh_query_seconds": 60,
+    "direct_DRAT_seconds": 60,
+    "cold_DRAT_seconds": 60
+  },
+  "stop_on_exact_symmetric_box_feasibility": true,
+  "scope": "component0 only in globallyP=F=0 split18+18; no fullgraph conclusion"
+}

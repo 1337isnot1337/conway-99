@@ -1,0 +1,30 @@
+{
+  "status": "coordinator review PASS; one bounded scan authorized",
+  "files": [
+    {
+      "path": "experiments/workspace/grid_free_order10_clique_pair_scan.py",
+      "sha256": "019c9ebcefa54b28776cd28e522bed678fe9b90a980a600d6920803fb9108a7b"
+    },
+    {
+      "path": "experiments/workspace/grid_free_order10_clique_pair_scan_v2.py",
+      "sha256": "683601c8f9d4a4bc26a5edbded76bdb447cca9e4b860f0bf191cb3fd60efc8f1"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-clique-pair-scan02-preparation.json",
+      "sha256": "f21c8c93198bbfd4f4c1f10adfdb018b05118f1479bd77044c958eb321f2986c"
+    }
+  ],
+  "review": [
+    "reviewed complete v1-v2 diff",
+    "only arithmetic-path correction admits the actual 6535-column padding",
+    "every nonzero parent tensor index remains below the true order8 limit1224",
+    "failed v1 stopped before first matrix contraction; no mathematical result lost",
+    "all prior exact row, full-domain and negative-form checks retained"
+  ],
+  "authorized": {
+    "scans": 1,
+    "seconds": 60,
+    "optimizer_calls": 0
+  },
+  "no_graph_existence_claim": true
+}

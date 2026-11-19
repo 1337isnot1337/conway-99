@@ -6,14 +6,14 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Boolean encoding of sixty proved exterior-row cuts for complementary-
+1. Complete coordinate-difference incidence covers for complementary-
    rook matching case four. Owned by the independent-set worker.
 2. Products of clique-absence moment matrices. Owned by the literature
    worker.
-3. Free-selector incidence separation by individual rows and shared
-   symmetric edges. Owned by the completion worker.
-4. Four-variable Boolean atom tests, independent checks, and publication.
-   Owned by the coordinating worker.
+3. Compact free-selector incidence separation by individual rows and
+   shared symmetric edges. Owned by the completion worker.
+4. Exact count inequalities, independent checks, and publication. Owned
+   by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -705,3 +705,31 @@ their hypotheses permit them; computational exclusions require exact replay.
   absences have a complete 3,283-case preparation with 347 root orbits.
   Exact primitive identities certify all 41,413 union rows. Their point
   scan is separate from this preparation.
+
+- The combined free-selector loop rejects five more incidences. Eleven
+  individual-row obstructions yield 132 transported cuts. A fifth
+  incidence passes all sixty individual rows but fails the shared LP
+  with an exact Farkas right-hand side of minus one. Eight of twelve
+  new signed cuts fit before the fixed variable ceiling stops encoding.
+  All twelve are saved, and the complete five-candidate transcript passes
+  a cold replay. This is an encoding limit, not an UNSAT conclusion.
+- A separate carry-save/ripple encoder preserves all 192 proved cuts,
+  including the four unencoded transports. Its complete formula has
+  100,296 variables and 620,370 clauses. Full Boolean controls, an
+  independent gate audit, and cold formula reconstruction pass. The
+  original thresholds and parent transcript remain unchanged.
+- The sixty-cut case-four Boolean query returns UNKNOWN. A complete
+  intrinsic-row census then gives fourteen direct support-dominance
+  exclusions, twelve new beyond its earlier explicit units. Every
+  augmented target passes exact mod-two and mod-three span membership.
+  The next preparation collects all coordinate-difference cover clauses.
+- The corrected clique-pair scan completes 347 representatives without
+  a separator. The exact four-class atom screen passes all 10,864,739
+  expressions. The five-class integer-sum screen passes all 72,699,792
+  signed functionals at their minimizing integer shifts. A fresh scan
+  also closes the older triangle-family coverage gap at the latest point:
+  all 170,183,860 inequalities pass. None constructs a graph.
+- The five-root triple-clique family has 236 candidates in twenty-three
+  root orbits. Its conditional preparation checks all 171 selected union
+  rows on complete coefficient supports and retains four impossible
+  triples as zero contributions. The point scan is a separate step.

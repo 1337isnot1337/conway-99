@@ -571,3 +571,29 @@ is UNKNOWN after one sixty-second query. Its cold replay regenerates
 every integer matrix array without invoking an optimizer. The temporary
 compressed matrix cache is reproducible and is omitted from the package.
 
+
+The [combined F0 loop](../research/root_prism_free_f0_symmetric_row_loop_run01.md)
+records five rejected incidences and stops at an encoding limit. Its
+cold replay checks all individual boxes, exact integer obstructions,
+shared Farkas columns, endpoint allocations, transported cuts, and the
+precise formula prefix of every candidate. The
+[compact continuation](../research/root_prism_free_f0_carry_row_loop.md)
+re-encodes all 192 proved inequalities, including four previously
+unencoded transports, with full Tseitin adder gates. Its preparation
+cold-replays the complete parent transcript before importing any cut.
+
+The [case-four Boolean result](../research/grids-and-triangles/complement_rook_35core_case0004_row_cut_boolean_run01.md)
+is UNKNOWN after one bounded query. The separate
+[intrinsic-row census](../research/grids-and-triangles/complement_rook_35core_case0004_intrinsic_rows.md)
+gives fourteen exact support-dominance units and explicit field-span
+witnesses for every target. No solver is used in that census.
+
+The [four-class atom](../research/grids-and-triangles/grid_free_order10_four_boolean_atoms.md),
+[five-class integer-sum](../research/grids-and-triangles/grid_free_order10_five_boolean_integer.md),
+and [latest-point triangle](../research/grids-and-triangles/binary_flag_triangle_48cut.md)
+notes give complete exact finite-family tests at the current count point.
+All pass. Their scope differs from a PSD or graph-realizability claim.
+The [clique-pair scan](../research/grids-and-triangles/grid_free_order10_clique_pair_scan.md)
+also finishes without a separator. The
+[triple-clique lifts](../research/grids-and-triangles/grid_free_order10_triple_clique_lifts.md)
+are prepared independently of the point and retain all labelled factors.

@@ -1,0 +1,18 @@
+{
+  "status": "PASS: independent read-only signed threshold adapter review",
+  "source_sha256": "605b4984ef30374950d19eb66fe37465026e0719fa3a6cb73bfbe68c92e0b1ad",
+  "unsigned_encoder_sha256": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144",
+  "control_artifact_sha256": "70493b2c1cfd8360c5c4509d678af3285243211468c0d40c461f797730d75b90",
+  "review": [
+    "For sum c_i*z_i <= 0, moving positive terms to complemented literals gives the stated positive threshold with demand equal to the positive coefficient sum.",
+    "The literal substitution is a Boolean bijection on primary assignments, so the frozen unsigned existential DAG remains equivalent after substitution.",
+    "All term IDs are at most the old top; the fresh guard and every new DAG auxiliary lie above it and cannot be substituted.",
+    "The unit guard forces only a fresh auxiliary, not an original selector.",
+    "If every coefficient is nonpositive the original inequality is a Boolean tautology and the empty formula is exact.",
+    "The unsigned resource refusal propagates without returning a partial encoding."
+  ],
+  "controls_rerun": false,
+  "incidence_query_called": false,
+  "optimizer_called": false,
+  "scope": "Complete adapter source read and arithmetic/ID semantics checked; author controls and any future full formula were not rerun."
+}

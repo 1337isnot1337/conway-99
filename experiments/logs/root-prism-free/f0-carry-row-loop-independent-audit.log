@@ -1,0 +1,91 @@
+{
+  "status": "PASS: independent inherited-cut, actual-CNF and loop/proof semantic audit",
+  "audit_source_sha256": "f048542e25444168651d72d0ceb3a4b76e65e1f1d39a5c580adbb148346737c2",
+  "loop_source_sha256": "ec85c752a5d3c5538250e0099286dcbad674e23ef9572f72bbd3ca72fb5ef403",
+  "proof_wrapper_sha256": "6ed58e8656b5a46a8dd14e6064495dbfe2960d8916bdabc85b54ec22cd3d557a",
+  "preparation_sha256": "b43aedd6dda33b3b0415865831fb48e87610815f4f3659d7a59f8c5c84b0eb9e",
+  "subject_dependencies_checked": {
+    "root_prism_free_f0_carry_threshold.py": "942efb35d35429d88d7cc9c3bc14aa7a116972186f60abeebe50db89214ec75f",
+    "root_prism_free_f0_incidence_row_loop.py": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+    "root_prism_free_f0_shared_row_separator.py": "7d8f3324826c1fa7fa05e79dbbee7c6e16b064dd01ef5e548160f6a7fe04368a",
+    "root_prism_free_f0_symmetric_row_loop.py": "2d08cd3dac2269584f8fc91680566f4418f3e7afd6fed6c0b6cd2a5a9a53af2a"
+  },
+  "parent_terminal_bindings_checked": {
+    "experiments/logs/root-prism-free/f0-symmetric-row-loop-preparation.json.gz": "ac320bcd92d1e801fc027ca7776ad97ebe978628b530caa67ceb5d770c992a55",
+    "experiments/logs/root-prism-free/f0-symmetric-row-loop-run01-cold-replay.json": "fb5cde46be5506f4edb30323f3a17ce2a96f929c631dc8662b02d50ae1d655ec",
+    "experiments/logs/root-prism-free/f0-symmetric-row-loop-run01/result.json": "03c7cfa9cfde1a23df0e3b3b2ffe6e1650801eaf5daf9e79a0403f45574fd20b"
+  },
+  "inherited_individual_cuts": 168,
+  "inherited_signed_cuts": 20,
+  "new_previously_unencoded_transports": 4,
+  "all_last_transports_checked": 12,
+  "all_weighted_cuts": 192,
+  "old_primary_incidence_prefix_clauses_hash_checked": 56550,
+  "old_direct_guarded_clauses_checked": 444,
+  "new_encoded_clause_blocks_hash_checked": 192,
+  "fresh_auxiliary_intervals_checked": 192,
+  "formula_variables": 100296,
+  "formula_clauses": 620370,
+  "formula_literals": 2404476,
+  "formula_sha256": "46e5cda7906d7ed409e825a5baabad0e27380fdfeffa609612c689b4a1f930ef",
+  "parent_selections_rejected": [
+    {
+      "parent_iteration": 0,
+      "violated_individual_cut_count": 1,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 1,
+      "violated_individual_cut_count": 4,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 2,
+      "violated_individual_cut_count": 4,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 3,
+      "violated_individual_cut_count": 4,
+      "violated_signed_cut_count": 0
+    },
+    {
+      "parent_iteration": 4,
+      "violated_individual_cut_count": 0,
+      "violated_signed_cut_count": 1
+    }
+  ],
+  "functions_AST_identical_after_explicit_status_string_changes": [
+    "signed_cut",
+    "signed_outcomes",
+    "inspect",
+    "counters",
+    "symmetric_candidates",
+    "run",
+    "reconstruct"
+  ],
+  "proof_wrapper_functions_AST_identical_to_previous": [
+    "checker_call",
+    "inputs_subset",
+    "prove",
+    "replay"
+  ],
+  "mathematical_review": [
+    "All row potentials are revalidated on the complete signature and neighbor domain before encoding.",
+    "The prior complete reconstruction checks every actual candidate against its exact cut prefix before any terminal registry is inherited.",
+    "The last shared ray and all 12 transported global predicates are replayed; eight deduplicate and four are newly encoded.",
+    "Only a complete 60-row exact rational box pass permits the shared-edge query.",
+    "Resource failure appends no partial cut; replay accepts only the recorded terminal prefix.",
+    "Incremental UNSAT remains uncertified until a fresh complete reconstruction, proof-enabled solve, retained-clause inclusion and separate cold DRAT check.",
+    "The second component remains unrestricted; no visitation block or hypothetical graph symmetry is introduced."
+  ],
+  "compact_carry_gate_truth_tables_reaudited": false,
+  "subject_modules_imported": false,
+  "CNF_rebuilt": false,
+  "optimizer_or_SAT_called": false,
+  "DRAT_checked": false,
+  "whole_component_excluded": false,
+  "scope": "Component 0 in the globally P=F=0 split 18+18 case only.",
+  "seconds": 1.5081261499981338
+}
+output_sha256 ade8e10a035d66d2d3e9854712b6e7377c542ab42244aff3c50b29f031cef4ba
