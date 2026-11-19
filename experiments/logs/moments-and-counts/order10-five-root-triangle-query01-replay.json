@@ -1,0 +1,165 @@
+{
+  "status": "PASS_EXACT_FIVE_ROOT_CONDITIONED_QUERY_REPLAY",
+  "source_sha256": "ca578502aa0048428f2bb3a7a13b4d5fd969870adc6f82b1c92b7dbf804c7a54",
+  "result_sha256": "bbdf949677fe0d2baae328677bb67dd907590d5362db0450a4a00ff248c67a63",
+  "bindings": {
+    "base_source": "1e7a8b7380314d6dfd8ff05954a13662bc011378f5759ad675ec1bc281fa19e9",
+    "arithmetic_source": "cd167c52b7b646a64e4faf58816212d427d1c280a45070e77a5eb8b0a29abb43",
+    "builder_source": "578f8db7c51c7f5b934e7f7275b295a9a5908bf09d5f6a9d9662366914046e5c",
+    "preparation": "ed9e636277398aadb39077a344456412619bd40ea970717ebffdb148102ef73c",
+    "model_raw": "9011737fb1459d5c6c4db1dca51f777c49b3306b3ce27ca336096961ed768a06",
+    "model_gzip": "395d56df140bcdc30554ef8bed48663d11f006abb5cd72f1d94aff018f216ff8",
+    "point": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+  },
+  "blocks": [
+    {
+      "root_type": 26,
+      "order": 56,
+      "exact_positive_semidefinite": true,
+      "kernel_checks": {
+        "core_triangle_rows_zero": [
+          true
+        ],
+        "root_point_star_vectors_zero": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "nullity": 6
+    },
+    {
+      "root_type": 27,
+      "order": 44,
+      "exact_positive_semidefinite": true,
+      "kernel_checks": {
+        "core_triangle_rows_zero": [
+          true
+        ],
+        "root_point_star_vectors_zero": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "nullity": 9
+    },
+    {
+      "root_type": 28,
+      "order": 26,
+      "exact_positive_semidefinite": true,
+      "kernel_checks": {
+        "core_triangle_rows_zero": [
+          true
+        ],
+        "root_point_star_vectors_zero": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "nullity": 8
+    },
+    {
+      "root_type": 32,
+      "order": 34,
+      "exact_positive_semidefinite": true,
+      "kernel_checks": {
+        "core_triangle_rows_zero": [
+          true
+        ],
+        "root_point_star_vectors_zero": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "nullity": 10
+    },
+    {
+      "root_type": 33,
+      "order": 34,
+      "exact_positive_semidefinite": true,
+      "kernel_checks": {
+        "core_triangle_rows_zero": [
+          true
+        ],
+        "root_point_star_vectors_zero": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "nullity": 6
+    },
+    {
+      "root_type": 34,
+      "order": 28,
+      "exact_positive_semidefinite": true,
+      "kernel_checks": {
+        "core_triangle_rows_zero": [
+          true
+        ],
+        "root_point_star_vectors_zero": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "nullity": 7
+    },
+    {
+      "root_type": 35,
+      "order": 19,
+      "exact_positive_semidefinite": true,
+      "kernel_checks": {
+        "core_triangle_rows_zero": [
+          true,
+          true
+        ],
+        "root_point_star_vectors_zero": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "nullity": 11
+    },
+    {
+      "root_type": 37,
+      "order": 16,
+      "exact_positive_semidefinite": true,
+      "kernel_checks": {
+        "core_triangle_rows_zero": [
+          true
+        ],
+        "root_point_star_vectors_zero": [
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      },
+      "nullity": 8
+    }
+  ],
+  "complete_eight_block_coverage": true,
+  "tensor_generation_repeated": false,
+  "optimizer_called": false,
+  "seconds": 0.038498706999234855
+}

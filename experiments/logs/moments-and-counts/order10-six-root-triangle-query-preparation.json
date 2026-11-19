@@ -1,0 +1,47 @@
+{
+  "schema": "conway99.six-root-conditioned-query-preparation.v1",
+  "status": "PREPARED_FOR_ONE_BOUNDED_EXACT_QUERY_NO_COUNT_CONTRACTION",
+  "source_path": "experiments/workspace/triangle_projector_six_root_query.py",
+  "source_sha256": "22867387284be93e8840e3890149e700ba5e1c1a34cd75faf2c1500c8a01540e",
+  "builder_source_sha256": "3a01408b78323129146d0856fe81231d867461eaee422536bc7e87a8c8a9fdd5",
+  "preparation_path": "experiments/logs/moments-and-counts/triangle-projector-six-root-preparation01/preparation.json",
+  "preparation_sha256": "9fa1e50db6e809de53639ee3382b8803a94df85798898d243258d61c6c137a8b",
+  "model_raw_sha256": "3474f83d65a7fd4ffbc84b124b147f8cafc6ab4b0fcd2ed3ba3c39eed58d1550",
+  "model_gzip_sha256": "45bdb52816da961cb3a64764ee1bdd9238fbf1a3e0b33a2a22ea8a48698ba777",
+  "point_path": "experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json",
+  "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "blocks": 30,
+  "classes": 2374,
+  "lower_entries": 127647,
+  "tensor_nonzeros": 230648,
+  "core_triangle_zero_rows": 38,
+  "root_point_star_checks": 180,
+  "exact_arithmetic": "Python-integer count contractions and exact integer coefficients of det(tI+M). A symmetric matrix is PSD iff every coefficient is nonnegative.",
+  "negative_acceptance": "Save an integer vector, verify its quadratic value and induced-count coefficient form exactly. No numerical sign alone is accepted.",
+  "timer": {
+    "query_invocations": 1,
+    "seconds": 30,
+    "threads": 1,
+    "timeout_preserves_completed_blocks": true,
+    "cold_replay_after_query": true
+  },
+  "controls": {
+    "preparation_sha256": "9fa1e50db6e809de53639ee3382b8803a94df85798898d243258d61c6c137a8b",
+    "core_triangle_classes": 38,
+    "host_controls": 674,
+    "host_orders": {
+      "6": 30,
+      "7": 41,
+      "8": 136,
+      "9": 156,
+      "10": 311
+    },
+    "labelled_root_embeddings": 46482,
+    "ordered_triangle_pairs": 455190,
+    "source_bytes": 19886
+  },
+  "count_point_contracted": false,
+  "optimizer_called": false,
+  "graph_existence_resolved": false,
+  "source_review_required_before_query": true
+}

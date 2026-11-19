@@ -1,0 +1,25 @@
+{
+  "status": "PASS: complete augmented-selector PSD source and necessity reviewed",
+  "source_path": "experiments/workspace/root_prism_free_f0_selector_psd_cuts.py",
+  "source_sha256": "64fa05e1947ac0e59801a400e0b9ee61e3c08691156025509c7390732db8bab2",
+  "note_sha256": "3e029f196d9941c1da7d199bc67c46cb1941e8197865a3debae18b04189ba768",
+  "reviewer_lane": "independent_sets",
+  "checks": {
+    "necessity": "The12-action average of(1,z)(1,z)^T is PSD without assuming graph symmetry; binary z gives diagonal Zaa=xa.",
+    "signs": "The exported upper row has coefficients -(v_a^2+2cv_a) on x_a and -2v_av_b on every distinct pair, RHS c^2.",
+    "complete_orbits": "The loader checks all480 selectors,114960 pairs,12 closed permutation actions, and complete selector/pair orbit coverage.",
+    "zero_substitution": "Only389 pair coordinates with literal original zero equalities are removed. No vector support or numerical active-set restriction enters the domain.",
+    "quotient_arithmetic": "Two independent orbit-sum expressions agree. Positive gcd division is exact; primitive-vector scaling/sign changes preserve the square inequality.",
+    "integer_bounds": "With each orbit at most12 and vector entries at most4096, raw coefficients are bounded by36*4096^2, below binary64 integer limits.",
+    "lossless_proposal_gap": "Saved finite doubles are converted exactly to a common power-of-two denominator. Full480-coordinate quadratic evaluation independently checks the quotient gap and divisor.",
+    "scope": "A nonfeasible numerical array may propose a valid row. A violated row proves neither model infeasibility nor linear independence; no retained row is not a PSD certificate.",
+    "replay": "Every retained vector is expanded again and its strict exact proposal gap checked; no eigendecomposition or optimizer is used in replay.",
+    "augmented_equivalence": "Under sum x=60 and Z1=60x, the claimed augmented-PSD/Z-PSD equivalence follows by substituting v+(c/60)1."
+  },
+  "subject_imported": false,
+  "controls_or_domain_rebuilt": false,
+  "production_scan_repeated": false,
+  "eigendecomposition_called": false,
+  "optimizer_called": false,
+  "scope": "Read-only source/algebra gate; reported production cut values and controls were not independently rerun."
+}

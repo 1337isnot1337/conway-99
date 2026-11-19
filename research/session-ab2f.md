@@ -6,10 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Derive exact capacitated transportation cuts for complementary-rook case four after the 87 proved selector zeros. Owned by the independent-set worker.
-2. Remove certified dependencies from the joint F0 selector-moment model, then run a separately prepared bounded query with full original-row acceptance. Owned by the completion worker.
-3. Prepare conditioned triangle-incidence tensors for the eight five-vertex triangle-containing roots. Six-vertex roots remain at the census stage. Owned by the literature worker.
-4. Develop the binary point-triangle kernel restrictions, review exact outcomes, and publish checkpoints. Owned by the coordinating worker.
+1. Prepare the complete complementary-rook case-four LP after the 99 certified selector zeros. All 105 seeded transportation projections have reached an exact fixed point. Owned by the independent-set worker.
+2. Add exact augmented-selector PSD inequalities to the equivalent reduced F0 joint-moment model, with full original-row acceptance. Owned by the completion worker.
+3. Prepare both additional triangle spectral projectors on complete four-root class domains. The five- and six-root conditioned Q blocks pass exactly. Owned by the literature worker.
+4. Test integer weight-enumerator consequences of the binary rank-88 proof, review exact outcomes, and publish checkpoints. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -29,6 +29,11 @@ not meet that target. New reductions will be checked on known graphs when
 their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
+
+- Checkpoint 52: three-triangle chains give exactly 24948-9g distinct weight-five words in the binary dual code. The bound g<=120 gives 23868 such words. The exact coding optimum 140594432/35063 is below4096, so kernel dimension is at most11 and incidence rank is at least88. A complete6435-host collision census and independent recurrence/rational checks pass. The earlier star-word query gives rank85 and is preserved.
+- The rook transportation calculation gives88 zeros from six short original-row certificates; adding the14 earlier cover units gives99 distinct zeros. The seeded105-projection closure finds no further zero or contradiction. All projected flows and zero certificates replay exactly. The complete1115-column LP is prepared separately.
+- The joint F0 reduction proves exact selector-row rank132 and retains all original conditions in15200 variables. Its simplex query is UNKNOWN. The separately frozen IPM query reaches numerical optimality but fails exact rational recovery. One augmented-selector PSD scan supplies32 integer-certified cuts against that proposal. A cut-augmented model is a new continuation.
+- All eight five-root and thirty six-root conditioned triangle blocks pass exact PSD at the immutable count point. The six-root preparation covers2374 classes and230648 tensor terms, with674 direct host controls. The two other triangle spectral projectors remain separate from this family.
 
 - Checkpoint 51: the binary point-triangle kernel has nonzero weights only 36,40,44,48,52,56,60. One exact coding LP gives dimension at most22. Forced dual words of weights3,4,6 strengthen its existing dual certificate to dimension at most17, hence incidence rank at least82. This second step uses no optimizer. Independent recurrence and rational-column checks pass. No lower bound on kernel dimension is assumed.
 - The rook 81-zero-face run uses two native calls totaling3.54seconds and adds four original covers. Its final exact certificate needs no added cover: two original Gram equations plus the triple capacity at{5,15,27} force18 columns zero, six new overall. The full1214-column short proof uses no prior zero premises. The total is87; the whole branch remains open.

@@ -1,0 +1,54 @@
+{
+  "status": "PASS: exact augmented-selector PSD extraction prepared; no production scan",
+  "source_sha256": "64fa05e1947ac0e59801a400e0b9ee61e3c08691156025509c7390732db8bab2",
+  "inputs": {
+    "f0-second-moments-preparation02.json.gz": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e",
+    "f0-second-moments-reduced-model.json.gz": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf",
+    "f0-incidence-case00-run01/result.json": "64d5411e04764b0d7e7157c47b67d759e536a401fee8fe36e274943f2fda4abf"
+  },
+  "counts": {
+    "full_selectors": 480,
+    "augmented_order": 481,
+    "distinct_full_pairs": 114960,
+    "selector_orbits": 42,
+    "pair_orbits": 9742,
+    "zero_orbits": 389,
+    "reduced_variables": 15200
+  },
+  "basic_controls": {
+    "status": "PASS: literal square identities",
+    "Boolean_evaluations": 4662,
+    "infeasible_proposal_can_suggest_valid_cut": true,
+    "optimizer_calls": 0,
+    "eigendecompositions": 0
+  },
+  "domain_controls": {
+    "status": "PASS: full480 averaged-square controls",
+    "full_domain_controls": 9,
+    "literal_group_transports": 36,
+    "zero_substitution_checked": true,
+    "full_linear_feasibility_claimed_for_controls": false,
+    "optimizer_calls": 0,
+    "eigendecompositions": 0
+  },
+  "planned_scan_limits": {
+    "eigendecompositions": 1,
+    "directions": 8,
+    "rounding_scales": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024,
+      4096
+    ],
+    "retained_cuts": 32,
+    "maximum_integer_vector_entry": 4096
+  },
+  "raw_quotient_coefficient_absolute_bound": 603979776,
+  "all_raw_cut_coefficients_exact_in_binary64": true,
+  "proposal_must_be_exactly_feasible": false,
+  "PSD_feasibility_certified": false,
+  "linear_optimizer_calls": 0
+}

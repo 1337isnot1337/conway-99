@@ -1,0 +1,114 @@
+{
+  "schema": "f0-selector-psd-scan01-terminal-publication-v1",
+  "status": "FROZEN:32 exact necessary PSD cuts; no feasibility or exclusion conclusion",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_scan_archive.py",
+      "bytes": 1744,
+      "sha256": "646dae9976609514aaf73eb9a43b76025444e346ecd468c816ae8b45643ae9ee",
+      "git_blob": "347df9bb4a7d5abd04daf230f3478d8d5ce6c2e9"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01.json.gz",
+      "bytes": 965499,
+      "sha256": "5c74497bb70d44bf2fac7002ed16b4657500c4af2518cab196684c9346449e79",
+      "git_blob": "3b44f5528ab98e2d7a2b4d85a217929035c63318"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01-archive-report.json",
+      "bytes": 362,
+      "sha256": "fc542f27cf13fec2191f1e6bab58b4f3389d81cfab3502b63d1463197a979038",
+      "git_blob": "07a8e35abbbccc93bf605841f4ebaccb17e7c715"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01-archive-restore.json",
+      "bytes": 362,
+      "sha256": "da7c782bff4f8c86f1e30b59aed86fae53533b71368ef01922c51d5ec99bc6d4",
+      "git_blob": "7e47904a506a03db3e30cdc411aa5f9b97b2a07d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01-replay.json",
+      "bytes": 422,
+      "sha256": "13a4ff6890f94fcaa6e2269fbec7ed7b67dfe9b65251a90618ffe36a62790a7e",
+      "git_blob": "dfb587c0a2f47a8e435f7435f11a2a5c1c553d86"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01-archive-cold-replay.json",
+      "bytes": 422,
+      "sha256": "13a4ff6890f94fcaa6e2269fbec7ed7b67dfe9b65251a90618ffe36a62790a7e",
+      "git_blob": "dfb587c0a2f47a8e435f7435f11a2a5c1c553d86"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01-summary.json",
+      "bytes": 1161,
+      "sha256": "bd53c157ef408e74a40923bc43c5db6b885c838e312ecb1880bf6bf123323371",
+      "git_blob": "bd0161a4536f5e858587ccd9db30cd644f61e26b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01.stdout.log",
+      "bytes": 1147,
+      "sha256": "794b1c24002246a3cbbd302e9e3874d10cd27840bc84dd4a829ff3f500f30029",
+      "git_blob": "13f23870609d9c29ecd879d149c683114bf7ddcb"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "research/root_prism_free_f0_selector_psd_scan01.md",
+      "bytes": 3963,
+      "sha256": "13c2b38d5c28b1b17427388656caf5deed1e27b44fe1885983c34cadec593cb4",
+      "git_blob": "8451e0696391d50e6cc3629427ca9de055688da4"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-publication-manifest.json",
+      "bytes": 1397,
+      "sha256": "312fe6b2b68d35cacb1f6c2792a4134ae98ff00c68d008a962035c98378705b6",
+      "git_blob": "d25d0ea31553afc45ae4c5734e9846c9815dfc8f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-ipm-query-run01-terminal-manifest.json",
+      "bytes": 4822,
+      "sha256": "9d844604c81b9e037b1af99c32741c3c30093b22df9155b79edb0f7f0d2b2d47",
+      "git_blob": "4fd8e59d248356e4a7b53965d3467b8a5de3ebd1"
+    }
+  ],
+  "outcome": {
+    "status": "EXACT_VALID_PSD_CUTS_FOUND; no feasibility conclusion",
+    "source_sha256": "64fa05e1947ac0e59801a400e0b9ee61e3c08691156025509c7390732db8bab2",
+    "preparation_sha256": "1e9de6de2fb86809ebdedc751b2e7a5942ce4cf47c211421e65b530cb2f350cf",
+    "numerical_file_sha256": "20674e3a41842e42232df60e24abf3f34a5a5c8ec9a16a258d4906bb58562fd9",
+    "numerical_source_sha256": "c6f2658796459167b885b9f9f7ecbf75b6ba92808c4115e6962b806aafe786e7",
+    "model_sha256": "684b3a646a95d8404bf7b46a3ab170ef88b82e54fdb02aec3a34b8f9613847ae",
+    "proposing_status": "HighsModelStatus.kOptimal",
+    "proposing_value_valid": true,
+    "proposal_feasibility_claimed": false,
+    "eigendecompositions": 1,
+    "optimizer_calls": 0,
+    "PSD_certified": false,
+    "scan_stopped_at_limit": true,
+    "elapsed_seconds": 5.2420065620026435,
+    "requested_seconds": 60.0,
+    "cooperative_overrun_seconds": 0,
+    "cuts": 32,
+    "attempts": 32,
+    "directions_reached": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "nonzeros": 196350,
+    "maximum_coefficient_bits": 27,
+    "external_process_hard_seconds": 60,
+    "process_exit_code": 0,
+    "cold_replay_passed": true,
+    "fresh_archive_replay_identical": true
+  },
+  "raw_result_sha256": "7f8a2a22007539a67075aeb122ace3f81f800490723b8ca2c3a510c19ef45997"
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PRESERVED PREFLIGHT CLI FAILURE: duplicated entry point, corrected before production query",
+  "old_source_sha256": "2c446636df7ed65cc9dcca60c8034faf9e3238a2911fd81953e2ac2a56b5291c",
+  "corrected_source_sha256": "9cae35ba181c9ad3fd95f211a5b874ecaaeaa74b0bc2ef51310872ebe5c56efe",
+  "old_source_path": "experiments/workspace/root_prism_free_f0_second_moments_reduced_replay_v1.py",
+  "old_preflight_path": "experiments/logs/root-prism-free/f0-second-moments-reduced-query-cold-preflight.json",
+  "exit_code": 1,
+  "failure": "First full cold preflight passed and wrote its report; an unintended duplicate __main__ block invoked it a second time, which refused to overwrite that report.",
+  "AST_delta": "Only the second identical top-level __main__ block was removed; every function and mathematical check is unchanged.",
+  "mathematical_sources_changed": false,
+  "optimizer_calls": 0
+}

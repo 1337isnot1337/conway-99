@@ -1,0 +1,96 @@
+{
+  "schema": "conway99-independent-review-v1",
+  "status": "PASS_CHAIN_WORD_PROOF_AND_EXACT_CODE_BOUND_REVIEW",
+  "reviewer": "literature_obstructions",
+  "bindings": {
+    "experiments/workspace/triangle_chain_binary_words.py": "34bfb0832a6f1bf49db3ee6e39dd68baf4e1ce650f62723992f344f6421bed57",
+    "experiments/workspace/triangle_incidence_binary_chain_code.py": "8befdefb75ff4b4fbaee717d6ad5255f441f4ad2eed62bc8464f3efe6ff5025b",
+    "experiments/workspace/triangle_incidence_binary_code.py": "c2cf228e0e6858b56d642c42227bed5d21913fe2ff2f88b15d82d03d4c35a001",
+    "experiments/logs/grids-and-triangles/triangle-chain-binary-words-census.json": "c2e4fcda3a4f578a75ed2c01a47e816807c4ac4ee4a50d3518fb2c4d479937ef",
+    "experiments/logs/grids-and-triangles/triangle-incidence-binary-chain-code-preparation.json": "95b84fee68c47031d2c28633cc63e11e538808a47eecfe511270aaac4768e77f",
+    "experiments/logs/grids-and-triangles/triangle-incidence-binary-chain-code-query01.json": "cb06a3fe46a94c0821b4570f55aceec868001fcd0efd697340d83fd1ef522c2f",
+    "experiments/logs/grids-and-triangles/triangle-incidence-binary-chain-code-query01-replay.json": "b0ff55b6d72a934562aaa018501585c0ec52ce67fe1ecec3288de178c1ec611f",
+    "census_summary": {
+      "status": "PASS_COMPLETE_THREE_TRIANGLE_CHAIN_COLLISION_CENSUS",
+      "all_hosts_through_collision_order": 6435,
+      "totals": {
+        "chains": 537,
+        "distinct_words": 528,
+        "double_words": 9,
+        "grid_count": 1
+      },
+      "all_host_records_sha256": "1ed6da99eabe6e66319efd828e6ddd1d54237665f000eb901696561500d34b11",
+      "literal_rook_control": {
+        "triangles": 6,
+        "chains": 18,
+        "distinct_words": 9,
+        "double_words": 9,
+        "grid_count": 1,
+        "word_shape_by_outer_edge_count": {
+          "4": 9
+        }
+      }
+    }
+  },
+  "full_sources_read": [
+    "triangle_chain_binary_words.py",
+    "triangle_incidence_binary_chain_code.py",
+    "triangle_incidence_binary_code.py"
+  ],
+  "mathematical_checks": [
+    "A three-triangle chain has a unique middle triangle, two distinct canceled tips, and a five-point support inducing an isolated point plus 2K2, P4, or C4.",
+    "For a fixed support, its isolated point is determined and each perfect matching of the other four points determines the two canceled tips by the unique-common-neighbor rule. There are at most two such matchings.",
+    "Two chains with the same support use at most nine vertices. The complete cap-valid catalogue on orders seven through nine therefore contains every possible collision union.",
+    "For a double word, the two matchings reconstruct four distinct canceled tips. Their six triangles produce the eighteen edges of a unique induced nine-vertex rook grid; no extra edge is allowed by the visible caps.",
+    "Conversely each induced rook grid gives nine double words. A double support reconstructs the whole grid uniquely, so two different grids cannot account for the same double word.",
+    "There are 231*3*6^2=24948 chains in any SRG(99,14,1,2), hence 24948-9*g distinct constructed weight-five dual-code words.",
+    "Using the separately established bound g<=120 yields at least 23868 weight-five dual words.",
+    "MacWilliams with lower bound L_j gives sum_w (L_j-K_j(w))*A_w <= binom(99,j)-L_j. Nonnegative exact dual multipliers and all seven columns certify the size upper bound.",
+    "The code size is a power of two. A size upper bound strictly below 4096 implies dimension at most eleven and binary point-triangle incidence rank at least eighty-eight."
+  ],
+  "source_checks": [
+    "The collision builder enumerates unordered endpoint pairs for each middle triangle once, checks reconstructed literal edges, and binds the complete catalogue hash.",
+    "The LP builder binds the collision source and census hashes, retains all ninety-nine Krawtchouk inequalities and all seven allowed weight variables, and uses numerical output only to propose rational supports.",
+    "The exact acceptance helper checks every dual sign and column; if a primal is accepted it checks all ninety-nine constraints and all seven nonnegative bounds.",
+    "The replay path calls no optimizer and binds source, preparation, model, and result hashes."
+  ],
+  "independent_arithmetic": {
+    "status": "PASS_INDEPENDENT_BIGINT_CHAIN_CODE_ARITHMETIC",
+    "all_99_primal_rows_checked": true,
+    "all_99_dual_signs_and_7_columns_checked": true,
+    "exact_primal_and_dual_objective": "140594432/35063",
+    "dual_column_slacks": [
+      "0",
+      "25856/35063",
+      "0",
+      "9472/105189",
+      "225280/315567",
+      "78592/105189",
+      "0"
+    ],
+    "positive_dual_degrees": [
+      1,
+      4,
+      5
+    ],
+    "tight_primal_degrees": [
+      1,
+      4,
+      5,
+      98
+    ],
+    "integer_size_bound": "4009",
+    "code_dimension_upper_bound": 11,
+    "binary_incidence_rank_lower_bound": 88,
+    "optimizer_calls": 0,
+    "catalogue_recensus": false
+  },
+  "independent_arithmetic_method": "Fresh V8 BigInt rational arithmetic using the finite binomial-sum definition of every Krawtchouk value; no import of subject code.",
+  "limits": [
+    "The catalogue census was source-reviewed and its saved metadata/hash were checked; the 6435-host enumeration was not repeated.",
+    "The graph existence problem is not resolved. A trivial binary kernel remains compatible with the bound.",
+    "The upper bound g<=120 is a previously proved input, not reproved here."
+  ],
+  "optimizer_calls": 0,
+  "graph_existence_resolved": false
+}
