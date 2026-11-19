@@ -754,3 +754,37 @@ Both pure checking functions ran in the available JavaScript runtime before publ
 The F0 function checked all 1,836 literal incidences and the final rational point.
 The Node filesystem wrapper was not executed while the shell was unavailable.
 The [recovery record](../research/checkpoint43_recovery.md) identifies local artifacts that remain unpublished.
+
+## Checkpoint-44 finite relaxation certificates
+
+The [case-four rational Gram point](../research/grids-and-triangles/rook_case4_exact_gram_point.md) has a complete artifact-only replay:
+
+```sh
+node experiments/workspace/rook_case4_gram_support_reconstruction.js verify \
+  experiments/logs/session-ab2f/rook-case4-gram-support-input.json \
+  experiments/logs/session-ab2f/rook-case4-gram-support-result.json \
+  /tmp/rook-case4-gram-replay.json
+```
+
+The destination must be fresh. This checks all 630 original equations and all 1,214 rational coordinates. It does not check later capacity or cover rows.
+
+The [root-49 measure](../research/grids-and-triangles/root49_packing_moment_recovery.md) has a separate checker that imports no subject source:
+
+```sh
+node experiments/workspace/root49_packing_moment_recovery_replay.js \
+  experiments/logs/moments-and-counts/order10-root49-packing-moment-recovery-preparation.json \
+  experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json \
+  experiments/logs/moments-and-counts/order10-root49-packing-moment-recovery-result.json
+```
+
+The [F0 fractional baseline](../research/root_prism_free_f0_fractional_shared_projection.md) regenerates all quotient rows and the full-row projection controls:
+
+```sh
+node experiments/workspace/root_prism_free_f0_fractional_baseline_recovery.js \
+  experiments/logs/root-prism-free/f0-fractional-structural-recovery-input.json \
+  experiments/logs/root-prism-free/f0-fractional-motif-recovery-input.json \
+  experiments/logs/root-prism-free/f0-gram-interior-recovery-certificate.json
+node experiments/workspace/rook_case4_maxmin_certificate_controls.js
+```
+
+All pure JavaScript checks were executed and independently replayed in V8 before publication. The Node filesystem entry points were read but have not been executed during the workspace outage. The F0 baseline omits the unavailable terminal 4,404-cut registry and the twelve earlier weighted rows. It is a prepared necessary relaxation, with no solver outcome.

@@ -6,14 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Exact nonnegative Gram-row saturation for complementary-rook matching
-   case four. Owned by the independent-set worker.
-2. Complete exterior-incidence tests for the surviving high-graph moment
-   support. Owned by the literature worker.
-3. Candidate-dependent shared-potential allocation and lazy F0 continuation.
-   Owned by the completion worker.
-4. Spectral domain certificates, mathematical review, and publication.
-   Owned by the coordinating worker.
+1. Recover the complete complementary-rook case-four selector relaxation from published inputs, retaining every capacity and cover. Owned by the independent-set worker.
+2. Complete small-root high-mask moment inversions at the current order-ten count point. Owned by the literature worker.
+3. Query the complete fractional F0 shared-edge and motif baseline with exact certificate checks. Owned by the completion worker.
+4. Source review, independent arithmetic replay, bounded execution and publication. Owned by the coordinating worker.
 
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
@@ -891,3 +887,13 @@ This checkpoint recovers two results through independent JavaScript checks and t
 
 See the [recovery record](checkpoint43_recovery.md) for captured hashes and exact publication limits.
 The next owned lanes are the complete rook selector LP, the other sixty-one root moment models, and the complete fractional F0 edge model.
+
+## Checkpoint 44: exact finite measures and a complete fractional baseline
+
+- Case four has a nonnegative rational Gram point on 287 columns, with common denominator 648602182798933000000000000. The full 1,214-coordinate witness passes all 630 Gram equations, all individual bounds, all 46 Gram zeros and population 64. A fresh artifact-only replay and a coordinator replay pass. This also proves every shifted integer quadratic Gram inequality for this core.
+- Root 49 has a complete high-mask domain of 80 atoms in 19 actual-root orbits. Exact inversion at the saved count point gives 74 positive and six zero integer masses, totalling 11,975,040. Every individual and quotient equation passes. Literal graph checks establish the population-four bound, all product factors and complete local coverage. No separator is obtained.
+- The complete F0 structural/motif baseline has 5,847 quotient variables, 686 equalities, 11,373 inequalities and 57,801 nonzeros. Explicit row maps cover all 145,690 full rows. Both the literal model and quotient regenerate exactly. This package contains no optimizer query.
+- The shared-edge projection theorem identifies the full family of raw integer-potential inequalities with the fixed-selector box-image condition. It does not identify Boolean-normalized cuts with the fractional model.
+- Exact finite-box max-min algebra is prepared for future forced-selector discovery. Its complete small controls pass, but no case-four max-min driver or query is included here.
+
+All new files were frozen as Git blobs and independently reviewed before this commit. The unavailable local checkpoint-43 outputs remain unavailable; this publication does not silently reconstruct or replace their reported results. Native bounded queries will be separate continuations with their own gates and outcomes.

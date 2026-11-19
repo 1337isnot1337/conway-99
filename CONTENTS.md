@@ -178,3 +178,8 @@ remains feasible.
 - [Recovered sixteen-core proof](research/grids-and-triangles/high_graph_core16_recovered_proof.md) excludes all thirty eligible single-edge cases and the empty high graph by an integer-incidence inequality.
 - [Recovered F0 Gram interior point](research/root_prism_free_f0_gram_interior_recovered.md) checks 1,836 binary incidences and their exact positive average.
 - [Checkpoint-43 recovery record](research/checkpoint43_recovery.md) preserves the publication boundary and captured statuses after the execution environment became unavailable.
+
+- [Exact case-four Gram point](research/grids-and-triangles/rook_case4_exact_gram_point.md) gives all 1,214 rational coordinates and checks all 630 Gram equations. It proves that Gram-only integer quadratic tests cannot exclude this core.
+- [Root-49 high-mask moments](research/grids-and-triangles/root49_packing_moment_recovery.md) have a complete 80-atom nonnegative integer measure at the current count point, with a separate arithmetic replay.
+- [Fractional F0 shared-edge projection](research/root_prism_free_f0_fractional_shared_projection.md) prepares the full structural and motif baseline and proves its equivalence to all raw support-function inequalities. No feasibility query has run.
+- [Finite-box max-min certificates](research/grids-and-triangles/rook_case4_maxmin_certificate.md) derive exact forced-selector rules and verify small controls. The case-four max-min query is not implemented by this package.

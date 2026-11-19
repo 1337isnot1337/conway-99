@@ -1,0 +1,1044 @@
+{
+  "status": "EXACT_ROOT49_COMPLETE_PACKING_MOMENT_DISTRIBUTION",
+  "source_git_blob": "d547df71ef544fc7e36a8580bc9f7bdc311d6871",
+  "bindings": {
+    "commit": "a20ec755c7364c4b7a6e40317e5a7a745224679d",
+    "extraction_git_blob": "e37ba84dab96432460fd4360af0d4de673be1649",
+    "scope_git_blob": "4bc0045ae1447160dbf667a1918e32a9f4e3c454",
+    "scope_sha256": "fd577aca265beb46bee2206ea8d474edcd048d6d0bdc12f4d4d7d4709e607142",
+    "arrays_sha256": "4af4af187681c33af2ce0d64fc1e7c3e7afb30e37eec181c741776883d602533",
+    "tensors_sha256": "84d69eb567b961f8cdce332f66b152a2cac803feb50a5a7b161d67479b31fb5c",
+    "point_git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+    "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+  },
+  "root_type": 49,
+  "labelled_root_mass": "11975040",
+  "complete_atoms": 80,
+  "complete_orbits": 19,
+  "complete_supported_moments": 80,
+  "structurally_zero_moments": 176,
+  "atom_weights": [
+    {
+      "atom_index": 0,
+      "masks": [],
+      "global_atom_code": 0,
+      "weight": "2283666",
+      "moment": "11975040",
+      "catalogue_type": 49,
+      "automorphisms": 6
+    },
+    {
+      "atom_index": 1,
+      "masks": [
+        19
+      ],
+      "global_atom_code": 32,
+      "weight": "469846",
+      "moment": "1064448",
+      "catalogue_type": 201,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 2,
+      "masks": [
+        21
+      ],
+      "global_atom_code": 64,
+      "weight": "469846",
+      "moment": "1064448",
+      "catalogue_type": 201,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 3,
+      "masks": [
+        22
+      ],
+      "global_atom_code": 128,
+      "weight": "949960",
+      "moment": "2126952",
+      "catalogue_type": 194,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 4,
+      "masks": [
+        19,
+        22
+      ],
+      "global_atom_code": 160,
+      "weight": "73179",
+      "moment": "103572",
+      "catalogue_type": 996,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 5,
+      "masks": [
+        21,
+        22
+      ],
+      "global_atom_code": 192,
+      "weight": "73179",
+      "moment": "103572",
+      "catalogue_type": 996,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 6,
+      "masks": [
+        25
+      ],
+      "global_atom_code": 512,
+      "weight": "469846",
+      "moment": "1064448",
+      "catalogue_type": 201,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 7,
+      "masks": [
+        22,
+        25
+      ],
+      "global_atom_code": 640,
+      "weight": "161306",
+      "moment": "209352",
+      "catalogue_type": 1001,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 8,
+      "masks": [
+        26
+      ],
+      "global_atom_code": 1024,
+      "weight": "949960",
+      "moment": "2126952",
+      "catalogue_type": 194,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 9,
+      "masks": [
+        19,
+        26
+      ],
+      "global_atom_code": 1056,
+      "weight": "73179",
+      "moment": "103572",
+      "catalogue_type": 996,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 10,
+      "masks": [
+        21,
+        26
+      ],
+      "global_atom_code": 1088,
+      "weight": "161306",
+      "moment": "209352",
+      "catalogue_type": 1001,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 11,
+      "masks": [
+        22,
+        26
+      ],
+      "global_atom_code": 1152,
+      "weight": "145746",
+      "moment": "210816",
+      "catalogue_type": 983,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 12,
+      "masks": [
+        21,
+        22,
+        26
+      ],
+      "global_atom_code": 1216,
+      "weight": "10413",
+      "moment": "11643",
+      "catalogue_type": 6210,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 13,
+      "masks": [
+        25,
+        26
+      ],
+      "global_atom_code": 1536,
+      "weight": "73179",
+      "moment": "103572",
+      "catalogue_type": 996,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 14,
+      "masks": [
+        22,
+        25,
+        26
+      ],
+      "global_atom_code": 1664,
+      "weight": "10413",
+      "moment": "11643",
+      "catalogue_type": 6210,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 15,
+      "masks": [
+        28
+      ],
+      "global_atom_code": 4096,
+      "weight": "949960",
+      "moment": "2126952",
+      "catalogue_type": 194,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 16,
+      "masks": [
+        19,
+        28
+      ],
+      "global_atom_code": 4128,
+      "weight": "161306",
+      "moment": "209352",
+      "catalogue_type": 1001,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 17,
+      "masks": [
+        21,
+        28
+      ],
+      "global_atom_code": 4160,
+      "weight": "73179",
+      "moment": "103572",
+      "catalogue_type": 996,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 18,
+      "masks": [
+        22,
+        28
+      ],
+      "global_atom_code": 4224,
+      "weight": "145746",
+      "moment": "210816",
+      "catalogue_type": 983,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 19,
+      "masks": [
+        19,
+        22,
+        28
+      ],
+      "global_atom_code": 4256,
+      "weight": "10413",
+      "moment": "11643",
+      "catalogue_type": 6210,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 20,
+      "masks": [
+        25,
+        28
+      ],
+      "global_atom_code": 4608,
+      "weight": "73179",
+      "moment": "103572",
+      "catalogue_type": 996,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 21,
+      "masks": [
+        22,
+        25,
+        28
+      ],
+      "global_atom_code": 4736,
+      "weight": "10413",
+      "moment": "11643",
+      "catalogue_type": 6210,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 22,
+      "masks": [
+        26,
+        28
+      ],
+      "global_atom_code": 5120,
+      "weight": "145746",
+      "moment": "210816",
+      "catalogue_type": 983,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 23,
+      "masks": [
+        19,
+        26,
+        28
+      ],
+      "global_atom_code": 5152,
+      "weight": "10413",
+      "moment": "11643",
+      "catalogue_type": 6210,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 24,
+      "masks": [
+        21,
+        26,
+        28
+      ],
+      "global_atom_code": 5184,
+      "weight": "10413",
+      "moment": "11643",
+      "catalogue_type": 6210,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 25,
+      "masks": [
+        22,
+        26,
+        28
+      ],
+      "global_atom_code": 5248,
+      "weight": "17568",
+      "moment": "17568",
+      "catalogue_type": 6202,
+      "automorphisms": 12
+    },
+    {
+      "atom_index": 26,
+      "masks": [
+        50
+      ],
+      "global_atom_code": 268435456,
+      "weight": "637228",
+      "moment": "1330560",
+      "catalogue_type": 166,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 27,
+      "masks": [
+        19,
+        50
+      ],
+      "global_atom_code": 268435488,
+      "weight": "0",
+      "moment": "0",
+      "catalogue_type": 843,
+      "automorphisms": 4
+    },
+    {
+      "atom_index": 28,
+      "masks": [
+        21,
+        50
+      ],
+      "global_atom_code": 268435520,
+      "weight": "100696",
+      "moment": "133056",
+      "catalogue_type": 853,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 29,
+      "masks": [
+        22,
+        50
+      ],
+      "global_atom_code": 268435584,
+      "weight": "93514",
+      "moment": "125280",
+      "catalogue_type": 780,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 30,
+      "masks": [
+        21,
+        22,
+        50
+      ],
+      "global_atom_code": 268435648,
+      "weight": "6048",
+      "moment": "6048",
+      "catalogue_type": 5259,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 31,
+      "masks": [
+        25,
+        50
+      ],
+      "global_atom_code": 268435968,
+      "weight": "100696",
+      "moment": "133056",
+      "catalogue_type": 853,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 32,
+      "masks": [
+        22,
+        25,
+        50
+      ],
+      "global_atom_code": 268436096,
+      "weight": "12380",
+      "moment": "13610",
+      "catalogue_type": 5476,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 33,
+      "masks": [
+        26,
+        50
+      ],
+      "global_atom_code": 268436480,
+      "weight": "93514",
+      "moment": "125280",
+      "catalogue_type": 780,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 34,
+      "masks": [
+        21,
+        26,
+        50
+      ],
+      "global_atom_code": 268436544,
+      "weight": "12380",
+      "moment": "13610",
+      "catalogue_type": 5476,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 35,
+      "masks": [
+        25,
+        26,
+        50
+      ],
+      "global_atom_code": 268436992,
+      "weight": "6048",
+      "moment": "6048",
+      "catalogue_type": 5259,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 36,
+      "masks": [
+        28,
+        50
+      ],
+      "global_atom_code": 268439552,
+      "weight": "215976",
+      "moment": "268056",
+      "catalogue_type": 812,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 37,
+      "masks": [
+        19,
+        28,
+        50
+      ],
+      "global_atom_code": 268439584,
+      "weight": "0",
+      "moment": "0",
+      "catalogue_type": 5648,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 38,
+      "masks": [
+        21,
+        28,
+        50
+      ],
+      "global_atom_code": 268439616,
+      "weight": "12702",
+      "moment": "13932",
+      "catalogue_type": 5682,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 39,
+      "masks": [
+        22,
+        28,
+        50
+      ],
+      "global_atom_code": 268439680,
+      "weight": "12108",
+      "moment": "13338",
+      "catalogue_type": 5208,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 40,
+      "masks": [
+        25,
+        28,
+        50
+      ],
+      "global_atom_code": 268440064,
+      "weight": "12702",
+      "moment": "13932",
+      "catalogue_type": 5682,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 41,
+      "masks": [
+        22,
+        25,
+        28,
+        50
+      ],
+      "global_atom_code": 268440192,
+      "weight": "1230",
+      "moment": "1230",
+      "catalogue_type": 45876,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 42,
+      "masks": [
+        26,
+        28,
+        50
+      ],
+      "global_atom_code": 268440576,
+      "weight": "12108",
+      "moment": "13338",
+      "catalogue_type": 5208,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 43,
+      "masks": [
+        21,
+        26,
+        28,
+        50
+      ],
+      "global_atom_code": 268440640,
+      "weight": "1230",
+      "moment": "1230",
+      "catalogue_type": 45876,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 44,
+      "masks": [
+        52
+      ],
+      "global_atom_code": 1073741824,
+      "weight": "637228",
+      "moment": "1330560",
+      "catalogue_type": 166,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 45,
+      "masks": [
+        19,
+        52
+      ],
+      "global_atom_code": 1073741856,
+      "weight": "100696",
+      "moment": "133056",
+      "catalogue_type": 853,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 46,
+      "masks": [
+        21,
+        52
+      ],
+      "global_atom_code": 1073741888,
+      "weight": "0",
+      "moment": "0",
+      "catalogue_type": 843,
+      "automorphisms": 4
+    },
+    {
+      "atom_index": 47,
+      "masks": [
+        22,
+        52
+      ],
+      "global_atom_code": 1073741952,
+      "weight": "93514",
+      "moment": "125280",
+      "catalogue_type": 780,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 48,
+      "masks": [
+        19,
+        22,
+        52
+      ],
+      "global_atom_code": 1073741984,
+      "weight": "6048",
+      "moment": "6048",
+      "catalogue_type": 5259,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 49,
+      "masks": [
+        25,
+        52
+      ],
+      "global_atom_code": 1073742336,
+      "weight": "100696",
+      "moment": "133056",
+      "catalogue_type": 853,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 50,
+      "masks": [
+        22,
+        25,
+        52
+      ],
+      "global_atom_code": 1073742464,
+      "weight": "12380",
+      "moment": "13610",
+      "catalogue_type": 5476,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 51,
+      "masks": [
+        26,
+        52
+      ],
+      "global_atom_code": 1073742848,
+      "weight": "215976",
+      "moment": "268056",
+      "catalogue_type": 812,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 52,
+      "masks": [
+        19,
+        26,
+        52
+      ],
+      "global_atom_code": 1073742880,
+      "weight": "12702",
+      "moment": "13932",
+      "catalogue_type": 5682,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 53,
+      "masks": [
+        21,
+        26,
+        52
+      ],
+      "global_atom_code": 1073742912,
+      "weight": "0",
+      "moment": "0",
+      "catalogue_type": 5648,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 54,
+      "masks": [
+        22,
+        26,
+        52
+      ],
+      "global_atom_code": 1073742976,
+      "weight": "12108",
+      "moment": "13338",
+      "catalogue_type": 5208,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 55,
+      "masks": [
+        25,
+        26,
+        52
+      ],
+      "global_atom_code": 1073743360,
+      "weight": "12702",
+      "moment": "13932",
+      "catalogue_type": 5682,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 56,
+      "masks": [
+        22,
+        25,
+        26,
+        52
+      ],
+      "global_atom_code": 1073743488,
+      "weight": "1230",
+      "moment": "1230",
+      "catalogue_type": 45876,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 57,
+      "masks": [
+        28,
+        52
+      ],
+      "global_atom_code": 1073745920,
+      "weight": "93514",
+      "moment": "125280",
+      "catalogue_type": 780,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 58,
+      "masks": [
+        19,
+        28,
+        52
+      ],
+      "global_atom_code": 1073745952,
+      "weight": "12380",
+      "moment": "13610",
+      "catalogue_type": 5476,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 59,
+      "masks": [
+        25,
+        28,
+        52
+      ],
+      "global_atom_code": 1073746432,
+      "weight": "6048",
+      "moment": "6048",
+      "catalogue_type": 5259,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 60,
+      "masks": [
+        26,
+        28,
+        52
+      ],
+      "global_atom_code": 1073746944,
+      "weight": "12108",
+      "moment": "13338",
+      "catalogue_type": 5208,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 61,
+      "masks": [
+        19,
+        26,
+        28,
+        52
+      ],
+      "global_atom_code": 1073746976,
+      "weight": "1230",
+      "moment": "1230",
+      "catalogue_type": 45876,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 62,
+      "masks": [
+        56
+      ],
+      "global_atom_code": 17179869184,
+      "weight": "637228",
+      "moment": "1330560",
+      "catalogue_type": 166,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 63,
+      "masks": [
+        19,
+        56
+      ],
+      "global_atom_code": 17179869216,
+      "weight": "100696",
+      "moment": "133056",
+      "catalogue_type": 853,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 64,
+      "masks": [
+        21,
+        56
+      ],
+      "global_atom_code": 17179869248,
+      "weight": "100696",
+      "moment": "133056",
+      "catalogue_type": 853,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 65,
+      "masks": [
+        22,
+        56
+      ],
+      "global_atom_code": 17179869312,
+      "weight": "215976",
+      "moment": "268056",
+      "catalogue_type": 812,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 66,
+      "masks": [
+        19,
+        22,
+        56
+      ],
+      "global_atom_code": 17179869344,
+      "weight": "12702",
+      "moment": "13932",
+      "catalogue_type": 5682,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 67,
+      "masks": [
+        21,
+        22,
+        56
+      ],
+      "global_atom_code": 17179869376,
+      "weight": "12702",
+      "moment": "13932",
+      "catalogue_type": 5682,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 68,
+      "masks": [
+        25,
+        56
+      ],
+      "global_atom_code": 17179869696,
+      "weight": "0",
+      "moment": "0",
+      "catalogue_type": 843,
+      "automorphisms": 4
+    },
+    {
+      "atom_index": 69,
+      "masks": [
+        22,
+        25,
+        56
+      ],
+      "global_atom_code": 17179869824,
+      "weight": "0",
+      "moment": "0",
+      "catalogue_type": 5648,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 70,
+      "masks": [
+        26,
+        56
+      ],
+      "global_atom_code": 17179870208,
+      "weight": "93514",
+      "moment": "125280",
+      "catalogue_type": 780,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 71,
+      "masks": [
+        19,
+        26,
+        56
+      ],
+      "global_atom_code": 17179870240,
+      "weight": "6048",
+      "moment": "6048",
+      "catalogue_type": 5259,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 72,
+      "masks": [
+        21,
+        26,
+        56
+      ],
+      "global_atom_code": 17179870272,
+      "weight": "12380",
+      "moment": "13610",
+      "catalogue_type": 5476,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 73,
+      "masks": [
+        22,
+        26,
+        56
+      ],
+      "global_atom_code": 17179870336,
+      "weight": "12108",
+      "moment": "13338",
+      "catalogue_type": 5208,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 74,
+      "masks": [
+        21,
+        22,
+        26,
+        56
+      ],
+      "global_atom_code": 17179870400,
+      "weight": "1230",
+      "moment": "1230",
+      "catalogue_type": 45876,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 75,
+      "masks": [
+        28,
+        56
+      ],
+      "global_atom_code": 17179873280,
+      "weight": "93514",
+      "moment": "125280",
+      "catalogue_type": 780,
+      "automorphisms": 2
+    },
+    {
+      "atom_index": 76,
+      "masks": [
+        19,
+        28,
+        56
+      ],
+      "global_atom_code": 17179873312,
+      "weight": "12380",
+      "moment": "13610",
+      "catalogue_type": 5476,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 77,
+      "masks": [
+        21,
+        28,
+        56
+      ],
+      "global_atom_code": 17179873344,
+      "weight": "6048",
+      "moment": "6048",
+      "catalogue_type": 5259,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 78,
+      "masks": [
+        22,
+        28,
+        56
+      ],
+      "global_atom_code": 17179873408,
+      "weight": "12108",
+      "moment": "13338",
+      "catalogue_type": 5208,
+      "automorphisms": 1
+    },
+    {
+      "atom_index": 79,
+      "masks": [
+        19,
+        22,
+        28,
+        56
+      ],
+      "global_atom_code": 17179873440,
+      "weight": "1230",
+      "moment": "1230",
+      "catalogue_type": 45876,
+      "automorphisms": 2
+    }
+  ],
+  "orbit_weights": [
+    "2283666",
+    "1409538",
+    "2849880",
+    "439074",
+    "483918",
+    "437238",
+    "62478",
+    "17568",
+    "1911684",
+    "0",
+    "604176",
+    "561084",
+    "36288",
+    "74280",
+    "647928",
+    "0",
+    "76212",
+    "72648",
+    "7380"
+  ],
+  "negative_atoms": 0,
+  "negative_certificates": [],
+  "all_80_moment_equations_checked": true,
+  "all_19_quotient_equations_checked": true,
+  "optimizer_called": false,
+  "full_graph_existence_claimed": false,
+  "scope": "Exact finite presence-moment calculation for root49 using the frozen complete structural packing domain."
+}

@@ -1,0 +1,43 @@
+{
+  "status": "PASS: baseline source, exact quotient, literal rational inspector and projection theorem reviewed",
+  "source_sha256": "2c7f4cf9965426d97eb025793d5912d2b51cc56dc9fced76fd66219333263af1",
+  "source_git_blob": "8602373ee0f21762c3660bd88b214856153ed91a",
+  "report_git_blob": "0a9427beac8bfc4137cd1d5fced82050c86a0ee4",
+  "note_git_blob": "3416a7c33e6e8b5145e4836a331c6c7970559d02",
+  "matrix_sha256": "30bd8808dcd0490fa9ae124abb2ef060cfc8bfcbc57b78eaac0a67fe89f0dd55",
+  "baseline_specification_sha256": "32172068b93386040b2c3ef0a351d44cfb57484f3ad335ad28f9760516efe1bf",
+  "counts": {
+    "variables": 5847,
+    "selector_orbits": 42,
+    "edge_orbits": 5805,
+    "full_equalities": 8812,
+    "full_inequalities": 136878,
+    "full_rows": 145690,
+    "quotient_equalities": 686,
+    "quotient_inequalities": 11373,
+    "quotient_rows": 12059,
+    "full_motif_rows": 90,
+    "motif_orbits": 8,
+    "literal_motif_rows": 8,
+    "equality_nonzeros": 35056,
+    "inequality_nonzeros": 22745
+  },
+  "interior_control": {
+    "status": "PASS: exact positive selector projection and rejected zero-edge extension",
+    "interior_certificate_git_blob": "6396da7dd3d5fd1df30a88cc3ea847154d62ef38",
+    "selector_denominator": 1836,
+    "selector_bounds_Gram_population_and_90_motifs_pass": true,
+    "zero_edge_extension_full_mixed_failures": 7884,
+    "zero_edge_extension_quotient_mixed_failures": 667,
+    "feasible_shared_point_claimed": false
+  },
+  "projection_checks": [
+    "The image of the activated edge box is compact and convex.",
+    "Its support function equals the positive edge-potential sum weighted by endpoint minima.",
+    "Strict separation and rational approximation justify integer potentials.",
+    "Every endpoint allocation is valid; their minimum is the support function.",
+    "The product replacement is confined to Boolean selectors."
+  ],
+  "numeric_query_prepared_or_run": false,
+  "earlier_and_terminal_cut_registries_included": false
+}

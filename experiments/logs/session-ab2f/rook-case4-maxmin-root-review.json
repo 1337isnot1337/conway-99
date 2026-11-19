@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "source_git_blob": "d4e8aaba9b5b3051143d11323fe64738201912d8",
+  "note_git_blob": "85d0cc995d44521ff794a105514c127ad06a5736",
+  "controls_git_blob": "e5f768a57b83b3a5dcfbf44d639cff8c737dc613",
+  "full_source_and_proof_read": true,
+  "exact_controls_replayed": true,
+  "counts": {
+    "status": "PASS",
+    "scope": "exact finite-box algebra controls only; no case4 model, optimizer, or exclusion",
+    "certificate_candidates": 10935,
+    "feasible_point_decompositions_checked": 75006,
+    "zero_bound_objective_certificates": 172,
+    "exact_forced_literal_checks": 100,
+    "arbitrary_precision_formula_matches_all_tiny_candidates": true,
+    "positive_t_residual_and_negative_extension_sum_controls": true,
+    "analytic_controls": [
+      "2t<=1 for x1+x2=1",
+      "2t<=0 and both selectors0 for x1+x2=0",
+      "finite-box Farkas gap-1 for x1+x2>=3"
+    ],
+    "optimizer_calls": 0
+  },
+  "case4_model_or_optimizer_run": false
+}
