@@ -321,3 +321,21 @@ their hypotheses permit them; computational exclusions require exact replay.
   system. The 180 equality rows have rank 154 over the binary field;
   the coefficient vector defining `a` is outside their row span. Thus
   these equalities alone do not give a forced parity for `a`.
+- Excluded all four complementary-rook `a=2` incidence orbits with
+  complete binary edge models. Each has 1,764 independent edges and
+  all 2,556 exterior caps. The solver returned UNSAT in every case;
+  retained cores have 289, 499, 655, and 1,833 input clauses. Root
+  independently rebuilt all four complete formulas, checked their hashes
+  and retained-clause inclusion, and verified the four DRAT proofs.
+  This excludes all 576 designs and strengthens the necessary bound
+  to `a>=3`. It does not exclude the whole complementary-rook core.
+- The first two unrestricted root cases, with matching partitions
+  `(1,1,1,1,1,1)` and `(1,1,1,1,2)`, returned UNKNOWN after their
+  180-second budgets. They produced no graph or impossibility proof.
+- Built the full complementary-rook real incidence/edge projection before
+  averaging over its 144 core relabelings. It keeps all 252 candidate
+  signatures and 20,934 eligible edges. The averaged system has 182
+  variables, 54 equalities, and 517 inequalities. Exact rational primal
+  and dual witnesses agree at `a=36`; all point denominators divide four.
+  Thus this particular linear relaxation gives no smaller upper bound.
+  Binary single-row neighborhood tests are the separate next step.

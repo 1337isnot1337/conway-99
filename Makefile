@@ -2,7 +2,7 @@ WORKSPACE := experiments/workspace
 PYTHON ?= $(or $(wildcard $(CURDIR)/.venv/bin/python),python3)
 CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.json 32.json)
 
-.PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-rook-tip-boundary verify-complement-rook-incidence verify-root-matching-coverage verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
+.PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-rook-tip-boundary verify-complement-rook-incidence verify-complement-rook-a2-completion verify-root-matching-coverage verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -44,6 +44,16 @@ verify-complement-rook-incidence:
 	@test -x "$(DRAT_TRIM)" || { echo 'Set DRAT_TRIM to the drat-trim executable path.' >&2; exit 1; }
 	"$(PYTHON)" $(WORKSPACE)/complement_rook_a_incidence.py --replay --prefix $(WORKSPACE)/complement-rook-a-incidence --output experiments/logs/grids-and-triangles/complement-rook-a-incidence.json --drat-trim "$(DRAT_TRIM)"
 	"$(PYTHON)" $(WORKSPACE)/complement_rook_a_incidence_census.py --replay --output experiments/logs/grids-and-triangles/complement-rook-a2-incidence-census.json --cnf $(WORKSPACE)/complement-rook-a2-incidence-census.cnf --proof $(WORKSPACE)/complement-rook-a2-incidence-census.drat --drat-log experiments/logs/grids-and-triangles/complement-rook-a2-incidence-census-drat-replay.log --drat-trim "$(DRAT_TRIM)"
+
+verify-complement-rook-a2-completion:
+	@test -x "$(DRAT_TRIM)" || { echo 'Set DRAT_TRIM to the drat-trim executable path.' >&2; exit 1; }
+	@set -eu; \
+	for case_index in 0 1 2 3; do \
+	  "$(PYTHON)" $(WORKSPACE)/complement_rook_a2_fixed_certificate.py replay \
+	    --certificate experiments/logs/grids-and-triangles/complement-rook-a2-fixed-case$$case_index-certificate.json \
+	    --log experiments/logs/grids-and-triangles/complement-rook-a2-fixed-case$$case_index-retained-drat-replay.log \
+	    --drat-trim "$(DRAT_TRIM)"; \
+	done
 
 verify-rook-pair-completion:
 	"$(PYTHON)" $(WORKSPACE)/two_rook_iso_pair_integer_replay.py experiments/logs/grids-and-triangles/two-rook-iso-pair-integer.json

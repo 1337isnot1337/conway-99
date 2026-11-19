@@ -78,8 +78,10 @@ remaining designs have a checked binary-completion proof. A separate
 [complete incidence proof excludes `a=1`](research/grids-and-triangles/complement_rook_a_incidence.md),
 so `a>=2`. The [complete `a=2` incidence census](research/grids-and-triangles/complement_rook_a2_incidence_census.md)
 has 576 designs in four orbits of size 144. Exact orbit regeneration and
-a checked final blocked-formula proof establish completeness. These
-are incidence designs; their binary edge-completion problems remain open.
+a checked final blocked-formula proof establish completeness. All four
+[complete binary edge models are now excluded](research/grids-and-triangles/complement_rook_a2_fixed_completion.md).
+The coordinator rebuilt each full formula, checked every retained clause,
+and independently verified all four DRAT proofs. Therefore `a>=3`.
 None of these statements excludes a single isomorphic pair.
 
 ## Scope of the unrestricted computations
@@ -96,7 +98,8 @@ checks the full domain and encoding, including the 84 necessary
 broken-rook implications. A direct nine-rook assignment and 3,069
 Boolean controls pass. Each case has 960,414 variables and 1,908,864
 clauses. The sequential batch uses 180 seconds per case and records
-each outcome separately. The model and coverage proofs are not
+each outcome separately. Its first three cases returned UNKNOWN. The
+model and coverage proofs are not
 nonexistence proofs; every UNKNOWN case remains open.
 
 - [`subgraph_counts.py`](experiments/workspace/subgraph_counts.py) enumerates all induced graph types through a specified order that avoid a diamond and a (non-induced) K₂,₃. Integer extension equations count outside vertices, neighbors of a marked vertex, and common neighbors of a marked pair. It found no contradiction modulo 2 through order ten (180,445 equations, rank 46,268). [`inspect_counts.py`](experiments/workspace/inspect_counts.py) checks the original equations on all subsets of the 3-by-3 rook graph. Its floating LP reported infeasibility on both 99 and the known 243 parameters. That solver status was spurious on 99.

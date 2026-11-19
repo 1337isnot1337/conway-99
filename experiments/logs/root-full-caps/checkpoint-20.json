@@ -1,0 +1,155 @@
+{
+  "snapshot_utc": "2026-11-19T03:46:22.580308+00:00",
+  "scope": "Checkpoint20: all four a=2 completion exclusions replayed; unrestricted cases0-2 UNKNOWN, later cases pending.",
+  "batch": {
+    "status": "running sequential batch",
+    "manifest": "experiments/logs/root-full-caps/model.json",
+    "manifest_sha256": "f17e25d386dd56890b2028bec7de4fec53d0dbe61b24ac5d46958e876cbe32ab",
+    "requested_seconds_per_case": 180.0,
+    "hard_execution_limit_per_case": 240.0,
+    "proof_checker_limit_seconds": 60,
+    "started_utc": "2026-11-19T03:35:19.422994+00:00",
+    "cases": [
+      {
+        "index": 0,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "status": "UNKNOWN; case remains open",
+        "started_utc": "2026-11-19T03:35:19.423556+00:00",
+        "result": "experiments/logs/root-full-caps/run-01/case-00-result.json",
+        "log": "experiments/logs/root-full-caps/run-01/case-00.log",
+        "result_sha256": "8630a502e2ef9d0dca9fa65c023f8ba9c1d7289b8853c3ba06355682fc131971",
+        "solver_status": "unknown at wall budget; this normalization case remains open",
+        "seconds": 180.3300657259988,
+        "statistics": {
+          "restarts": 1143,
+          "conflicts": 384322,
+          "decisions": 885927,
+          "propagations": 886833466
+        }
+      },
+      {
+        "index": 1,
+        "partition": [
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "status": "UNKNOWN; case remains open",
+        "started_utc": "2026-11-19T03:38:20.374530+00:00",
+        "result": "experiments/logs/root-full-caps/run-01/case-01-result.json",
+        "log": "experiments/logs/root-full-caps/run-01/case-01.log",
+        "result_sha256": "13d9d83e8daccb148ac5f7014cd32056c5cfa1b3af856f1532d6b101be629074",
+        "solver_status": "unknown at wall budget; this normalization case remains open",
+        "seconds": 180.67548562400043,
+        "statistics": {
+          "restarts": 1061,
+          "conflicts": 416153,
+          "decisions": 921274,
+          "propagations": 971102436
+        }
+      },
+      {
+        "index": 2,
+        "partition": [
+          1,
+          1,
+          1,
+          3
+        ],
+        "status": "UNKNOWN; case remains open",
+        "started_utc": "2026-11-19T03:41:21.441330+00:00",
+        "result": "experiments/logs/root-full-caps/run-01/case-02-result.json",
+        "log": "experiments/logs/root-full-caps/run-01/case-02.log",
+        "result_sha256": "a0be80d13cb213a72b0743485014b59052b370d6c796870bf17d1e5056a21a1d",
+        "solver_status": "unknown at wall budget; this normalization case remains open",
+        "seconds": 180.2199293270005,
+        "statistics": {
+          "restarts": 1301,
+          "conflicts": 384517,
+          "decisions": 882279,
+          "propagations": 953646755
+        }
+      },
+      {
+        "index": 3,
+        "partition": [
+          1,
+          1,
+          2,
+          2
+        ],
+        "status": "running",
+        "started_utc": "2026-11-19T03:44:22.078201+00:00",
+        "result": "experiments/logs/root-full-caps/run-01/case-03-result.json",
+        "log": "experiments/logs/root-full-caps/run-01/case-03.log"
+      },
+      {
+        "index": 4,
+        "partition": [
+          1,
+          1,
+          4
+        ],
+        "status": "not started"
+      },
+      {
+        "index": 5,
+        "partition": [
+          1,
+          2,
+          3
+        ],
+        "status": "not started"
+      },
+      {
+        "index": 6,
+        "partition": [
+          1,
+          5
+        ],
+        "status": "not started"
+      },
+      {
+        "index": 7,
+        "partition": [
+          2,
+          2,
+          2
+        ],
+        "status": "not started"
+      },
+      {
+        "index": 8,
+        "partition": [
+          2,
+          4
+        ],
+        "status": "not started"
+      },
+      {
+        "index": 9,
+        "partition": [
+          3,
+          3
+        ],
+        "status": "not started"
+      },
+      {
+        "index": 10,
+        "partition": [
+          6
+        ],
+        "status": "not started"
+      }
+    ]
+  }
+}

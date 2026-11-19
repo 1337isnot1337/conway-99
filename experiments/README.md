@@ -141,6 +141,17 @@ This reconstructs both incidence formulas, checks the `a=2` witness,
 regenerates all orbit blocks, and replays both retained DRAT proofs.
 It does not solve any exterior edge-completion problem.
 
+All four `a=2` edge-completion models are now excluded. Their complete
+formula reconstruction and retained-proof replay are separate:
+
+```sh
+make verify-complement-rook-a2-completion DRAT_TRIM=/absolute/path/to/drat-trim
+```
+
+Each case retains all 1,764 eligible edge variables and all 2,556
+exterior pair caps. Together with the `a=0` and `a=1` exclusions, these
+four proofs give `a>=3` in the complementary-rook boundary case.
+
 The unrestricted rooted model has a separate small coverage replay:
 
 ```sh
