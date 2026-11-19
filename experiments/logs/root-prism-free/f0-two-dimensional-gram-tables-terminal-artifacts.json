@@ -1,0 +1,148 @@
+{
+  "schema": "conway99.f0.small-Gram-table-terminal-artifacts.v1",
+  "status": "COMPLETE_EXACT_GRAM_TABLES_AND_COLD_REPLAY",
+  "repository": "1337isnot1337/conway-99",
+  "scope": {
+    "selector_orbits": [
+      2,
+      3,
+      4
+    ],
+    "vectors_per_orbit": 19,
+    "pair_vector_combinations": 1083,
+    "triple_vector_combinations": 6859,
+    "pair_tuple_counts": [
+      39,
+      39,
+      39
+    ],
+    "joint_six_entry_tuples": 610,
+    "complete_full_table": true,
+    "new_selector_subset_censuses": 0,
+    "production_count_candidates_checked": 0,
+    "optimizer_calls": 0
+  },
+  "bindings": {
+    "source_sha256": "7fd5cf303b7a20b31305329aece575f114a76dcb6482478aed63ac491b81b33c",
+    "preparation_sha256": "71a1104cfd377f575a03afbbe4921b14a3e0504e75f1e6c891efe477ae1b5d83",
+    "result_sha256": "dd69bcdae9fd4df56a49195b8965ef89e7ae5ddf321c21e6b4547f650d7dce7a",
+    "cold_sha256": "125c41ec7add01ccbcbeff1aad4788a9973c4f0e409fedacaef91846c40d7f41",
+    "root_gate_sha256": "9be3f46884f64626655c9d945617f90279722fb55ad25e14348732997f8b647a"
+  },
+  "integration_schema": {
+    "joint_rows": "result.stages[3].tuples",
+    "entry_domains": "result.joint_entry_values",
+    "native_forms": "preparation.six_native_entry_forms[*].native_count_terms",
+    "entry_order": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        2
+      ]
+    ],
+    "new_variable_ids_allocated": false
+  },
+  "earlier_preparation_map": {
+    "path": "experiments/logs/root-prism-free/f0-two-dimensional-gram-tables-preparation-artifacts.json",
+    "blob": "bb45b82eb0fc2130e5814cd804ee7ee94e005f36",
+    "sha256": "0fa3396c708b56441b5753ff7af180e7154cb07cef7a13f1653dbb9aa2d67633"
+  },
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_two_dimensional_vector_domains.py",
+      "bytes": 12081,
+      "sha256": "0b2d15c2d331466acbc29b3585bec4c53de5a912424c9d50b179e5ed37d15660",
+      "git_blob_sha": "af920ba11d997ecb61b3a5478fa978e1565a2bc0",
+      "blob": "af920ba11d997ecb61b3a5478fa978e1565a2bc0"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_two_dimensional_gram_tables.py",
+      "bytes": 14660,
+      "sha256": "7fd5cf303b7a20b31305329aece575f114a76dcb6482478aed63ac491b81b33c",
+      "git_blob_sha": "df645950e8270b06c61bb7608f4ef8cca1b8c3ce",
+      "blob": "df645950e8270b06c61bb7608f4ef8cca1b8c3ce"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-two-dimensional-vector-domains-preparation01.json",
+      "bytes": 73969,
+      "sha256": "571b52265dc70a9e5992750d05ab0928364a68fa650716734bd3727728e135c1",
+      "git_blob_sha": "303d3e106d9e589e5ad94fb8f092e8d36329b057",
+      "blob": "303d3e106d9e589e5ad94fb8f092e8d36329b057"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-two-dimensional-gram-tables-preparation01.json",
+      "bytes": 4318,
+      "sha256": "71a1104cfd377f575a03afbbe4921b14a3e0504e75f1e6c891efe477ae1b5d83",
+      "git_blob_sha": "15497e017f9b142acf67f54fb61f0f2ee5e37e94",
+      "blob": "15497e017f9b142acf67f54fb61f0f2ee5e37e94"
+    },
+    {
+      "path": "research/root_prism_free_f0_two_dimensional_vector_domains.md",
+      "bytes": 6074,
+      "sha256": "9317fcf616920ef1a9486fa789432d7d1814f2297629e69a3865238ca943cf2c",
+      "git_blob_sha": "6c6fee21e8a9c4c35a46dcc71e6675489c237cf9",
+      "blob": "6c6fee21e8a9c4c35a46dcc71e6675489c237cf9"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-two-dimensional-gram-tables-enumeration01.json",
+      "bytes": 20337,
+      "sha256": "dd69bcdae9fd4df56a49195b8965ef89e7ae5ddf321c21e6b4547f650d7dce7a",
+      "git_blob_sha": "b0a29a4c97fbff4475a0c77ec118fd4f83dde350",
+      "blob": "b0a29a4c97fbff4475a0c77ec118fd4f83dde350"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-two-dimensional-gram-tables-enumeration01.log",
+      "bytes": 224,
+      "sha256": "fe03905f8d244bcc9bc32a0d90029a3541207fc49fab4ca00420090889041bb2",
+      "git_blob_sha": "d0c9e44576166f6d2f891106e1846fe6758d13ba",
+      "blob": "d0c9e44576166f6d2f891106e1846fe6758d13ba"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-two-dimensional-gram-tables-enumeration01-cold.json",
+      "bytes": 754,
+      "sha256": "125c41ec7add01ccbcbeff1aad4788a9973c4f0e409fedacaef91846c40d7f41",
+      "git_blob_sha": "fb23fd36597e5da9fae819cf61db7f688aaf1126",
+      "blob": "fb23fd36597e5da9fae819cf61db7f688aaf1126"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-two-dimensional-gram-tables-enumeration01-cold.log",
+      "bytes": 217,
+      "sha256": "39d167ee4c80afa48b2c58378cd513af9ea4a3616ab2e6128bec34dff39e1ff1",
+      "git_blob_sha": "02240a1c96874a66ebfe900d65ef387fc8718652",
+      "blob": "02240a1c96874a66ebfe900d65ef387fc8718652"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-two-dimensional-gram-tables-root-source-review.json",
+      "bytes": 1883,
+      "sha256": "9be3f46884f64626655c9d945617f90279722fb55ad25e14348732997f8b647a",
+      "git_blob_sha": "dfe4aa3dd631a2974aa035c743c22f8efdb2779f",
+      "blob": "dfe4aa3dd631a2974aa035c743c22f8efdb2779f"
+    },
+    {
+      "path": "research/root_prism_free_f0_two_dimensional_gram_tables.md",
+      "bytes": 5922,
+      "sha256": "3ab399597549cdd439e1beffe5660dfb18d71ffc66780b5536b792c1829c195c",
+      "git_blob_sha": "40b76a056912eefe6791cac30acc537943d9e707",
+      "blob": "40b76a056912eefe6791cac30acc537943d9e707"
+    }
+  ]
+}

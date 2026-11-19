@@ -6,10 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Run one frozen separator over the complete 286-dimensional rook parity span. The prior discovery cycle ends with three proved cuts and an exact positive point; its terminal is complete. Owned by the independent-set worker.
-2. Prepare small allowed-Gram tables from the existing three plus columns and review the full Fourier coefficient theorem. The fixed norm-six composition test and its cold replay are complete. Owned by the literature worker.
-3. Prepare separate small-table and complete Fourier formulations. Both old and no-LP count searches return UNKNOWN with no vector. The source-reviewed parent receipt remains unused. Owned by the completion worker.
-4. Root publishes checkpoint 65, derives the complete nonabelian pair factorization, and owns shared ledgers and branch refs. The algebraic construction covers all 114,960 literal pairs without a new subset census; its later package remains separate.
+1. Prepare a bounded reusable full-span parity/LP cycle. The first full-span query produces a directly proved 42-selector cut; the next cycle must bind each current exact point and cut registry explicitly. Owned by the independent-set worker.
+2. Prepare an independent exact Fourier-to-literal decoder and acceptance boundaries using the existing inverse masks. The small 610-tuple Gram table and both Fourier reviews are complete. Owned by the literature worker.
+3. Prepare and cold-check the six-observable Gram-table overlay, then the separate full Fourier lift. Preserve every existing count row, product, table projection and external pool entry. Owned by the completion worker.
+4. Root publishes checkpoint 66 and owns shared ledgers, source gates and branch refs. The complete nonabelian coefficient theorem and proof note are frozen and independently reviewed; no full Fourier model query has run.
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
 diagonal cubic graphs. This session does not duplicate those domains.
@@ -28,6 +28,11 @@ not meet that target. New reductions will be checked on known graphs when
 their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
+
+- Checkpoint 66: the complete 286-dimensional parity-span formulation has 2,491 Boolean variables and 2,208 constraints. Exact coefficient and native audits pass. One 6.661-second solver call produces a 42-selector odd cover with deficit 7,303,459,804/67,336,409,858. Its direct proof uses fifty original Gram equations with RHS sum81. The separate 0.156-second replay reconstructs all1,214 coefficients and checks the complete native vector. No further point or case exclusion is claimed.
+- The three exact vector domains each contain nineteen points. All1,083 pair and6,859 triple combinations give39 tuples per pair and610 joint tuples. The0.083-second enumeration and0.071-second cold replay agree on every tuple, witness and multiplicity. Pair projections of the joint table are exact. These are necessary local moment restrictions, not full-count witnesses.
+- Root constructs all6,496 full two-dimensional Gram forms in5.775 seconds. The source checks every literal pair coefficient, all42 orbit transport systems, the complete Fourier inverse and the earlier six forms. With complete local-mask Fourier coordinates, all active scalar and matrix transforms are equivalent to the9,742 original pair histograms. The full RLT system then implies each original selector equality through a zero mean square. Independent source and complete proof-note reviews pass.
+- The coordinate change a=2x-y,b=y gives2B_ij=a_i*a_j+3b_i*b_j. The proposed full lift therefore adds320 coordinates and12,992 products. The local tables must retain a congruent to b modulo two; no independent orientation fixing is permitted. Exterior edges and generic averaged inequalities retain separate acceptance obligations. Native integration and a reusable rook cycle are continuing work outside this checkpoint.
 
 - Checkpoint 65: the two-round rook discovery continuation gives two exact positive relaxation points and one additional 58-selector cover. Total native time is 4.142 seconds; the complete owned cycle takes 102.834 seconds. The final point has denominator 67,336,409,858 and passes all 167,118 extended rows and its three-cut registry. Separate exact replays and the final artifact binding audit pass. The last finite discovery produces no checked cut; it is not certified exhaustion of the full parity span. The earlier misspelled-path invocation made zero calls and is retained.
 - The parameter-only no-LP count search has the same mathematical target as its predecessor. One call returns UNKNOWN after 167.020 native seconds and 172.617 owner seconds, with 13,380 branches, 7,815 conflicts and no integer vector. There is no appended dense row or overrun. The 3.53-second exact cold owner passes. The separate restored-parent receipt checker has root and peer source gates, but no candidate exists to accept or lift.

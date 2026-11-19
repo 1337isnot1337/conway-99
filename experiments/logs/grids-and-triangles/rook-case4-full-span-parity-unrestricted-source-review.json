@@ -1,0 +1,28 @@
+{
+  "execution_scope_not_reviewed": "The separate production supervisor/driver is outside this artifact; this source only prepares the model.",
+  "material_blocker_found": false,
+  "mathematical_checks": [
+    "The286 binary choice variables range over the complete projected original-Gram parity span. Saved basis witnesses are reconstructed from630 original rows, independence is checked, and every original projected row including its affine RHS is reduced into the basis.",
+    "Each odd-XOR support row contains the negated support literal, hence enforces support_j=XOR(choice_i). The negated beta literal gives beta=XOR(selected RHS bits). The final odd-XOR enforces forbidden_vertex_parity != beta.",
+    "The flip variables satisfy flip_j<=support_j and at most one flip. For any fixed parity support, a nearest box vertex is formed coordinatewise; if its parity is allowed, one least-penalty flip reaches the nearest forbidden vertex. This is complete even at half-integral ties.",
+    "The distance numerator is sum(min(n,D-n)*support)+sum(abs(D-2n)*flip). Its integer upper bound D-1 is equivalent to strict distance below one. A zero-support selected equation cannot produce an accepted witness; consistency and the affine XOR rule exclude it.",
+    "The direct inspector XORs the chosen original-row witnesses, recomputes the full1214 positive integer Gram-row sum and RHS, removes only the112 proved-zero coordinates, and reconstructs the signed forbidden-vertex inequality.",
+    "The exact identity deficit=D-distance is rechecked using the accepted rational point. SAT is only a proposed violated valid cut. No count/graph exclusion or checked exhaustion follows from a solver status.",
+    "Native literal/coefficient checking covers all2491 Boolean variables,1104 XORs,1102 flip activations,one at-most-one and the exact weighted inequality. The declared full unit-box activity is bounded before serialization."
+  ],
+  "not_performed": [
+    "subject imports",
+    "controls",
+    "span elimination",
+    "native model build",
+    "point scan",
+    "optimizer",
+    "candidate reconstruction"
+  ],
+  "reviewer": "unrestricted_completion",
+  "source": {
+    "path": "experiments/workspace/rook_case4_full_span_parity_separation.py",
+    "sha256": "893c7b0ba5d849daf29ed6a5668fb937efda854103d99812e84a68df66f27207"
+  },
+  "status": "PASS: complete source-only full-span parity formulation and exact witness-lift review"
+}

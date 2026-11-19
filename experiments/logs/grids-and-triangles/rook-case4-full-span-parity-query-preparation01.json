@@ -1,0 +1,54 @@
+{
+  "INFEASIBLE_is_unresolved": true,
+  "case4_excluded": false,
+  "constraints": 2208,
+  "controls_repeated": false,
+  "driver_source_sha256": "3a66af1c2500eebdb36001a004628460f936efc60584d411a2dbdc37d4a928da",
+  "independent_audit_sha256": "d6d7cfef703c8e598cb52b7c3dce67aaf9f7a7b99028e83056fb95f7c31885f5",
+  "limits": {
+    "cold_seconds": 60,
+    "maximum_response_bytes": 4194304,
+    "native_calls": 1,
+    "native_seconds": 60,
+    "owned_child_seconds": 120,
+    "retries": 0,
+    "workers": 1
+  },
+  "model_preparation_sha256": "0b2de700e4cd088ffb7a52726b0aef4cf8e3d0eeb4ade2d2dfacdf9dc7dbdd90",
+  "native_calls": 0,
+  "native_proto_transport_sha256_matches": true,
+  "objective_hint_assumptions_added": false,
+  "one_complete_vector_persisted_before_replay": true,
+  "parameters": "max_time_in_seconds: 60\nlog_search_progress: true\nnum_search_workers: 1",
+  "proto_sha256": "8b8f94b7b1e700c6b71744d5e6d94a814aa84638f7e412c588918a0fd497180f",
+  "runtime_binding": {
+    "files": {
+      "cp_model": {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/python/cp_model.py",
+        "sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25"
+      },
+      "cp_model_helper": {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/python/cp_model_helper.cpython-312-x86_64-linux-gnu.so",
+        "sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735"
+      },
+      "cp_model_pb2": {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/cp_model_pb2.py",
+        "sha256": "ac12f9549e96ff7f496846144c794d7cb17d869fccb6d050896787226e48209e"
+      }
+    },
+    "ortools": "9.15.6755",
+    "protobuf": "6.33.6",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "seconds": 1.045561008999357,
+  "specification_sha256": "3a6b0181421629e2fb220720ef801c1b4458842bda4533911103a2d3ef3386a7",
+  "status": "PREPARED: one full-span parity query; zero production solver calls",
+  "subject_source_sha256": "893c7b0ba5d849daf29ed6a5668fb937efda854103d99812e84a68df66f27207",
+  "variables": 2491,
+  "watchdog_reuse": {
+    "complete_function_AST_identical": true,
+    "source": "experiments/workspace/complement_rook_35core_case0004_coordinate_cover_cadical.py",
+    "source_sha256": "1921f71964795d819e0369c9679dc1526df97c29bb1920a932c7ca449ba3de25",
+    "watchdog_controls_repeated": false
+  }
+}

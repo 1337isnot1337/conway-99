@@ -1,0 +1,98 @@
+{
+  "all630_original_Gram_equations_in_span": true,
+  "case4_excluded": false,
+  "controls": {
+    "native_optimizer_calls": 0,
+    "one_flip_completeness_controls": 120,
+    "production_points_searched": 0,
+    "serialized_proto_Boolean_assignments": 13056
+  },
+  "inputs": {
+    "basis": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-parity-preparation01/basis.json.gz",
+      "ad03018a2bb30dfb79fb126b76aa9863b16217eeb42f0b1e78fdaabde610c00d"
+    ],
+    "native": [
+      "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    ],
+    "point": [
+      "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-run02/exact-01/candidate.json",
+      "23de7244e4e4efb1ef82ff649008b1236bb389888ffbb923edf4017cfe1bc2e3"
+    ],
+    "point_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-run02/exact-01/cold.json",
+      "a043d06fc2df9cc6c87c240bc3799a87e997abb31c7755c97dc12b3ba396bc49"
+    ],
+    "zero_model": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+      "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+    ],
+    "zero_model_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01-cold-replay.json",
+      "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+    ]
+  },
+  "inventory": {
+    "constraints": 2208,
+    "support_XOR_choice_literals": 30428,
+    "support_XOR_rows": 1102,
+    "total_XOR_rows": 1104,
+    "variables": 2491,
+    "weighted_nonzeros": 2204,
+    "weighted_upper": 67336409857,
+    "worst_weighted_unit_box_activity": 69998985719486
+  },
+  "limits": {
+    "automatic_retries": 0,
+    "maximum_integer_magnitude": 4611686018427387903,
+    "maximum_proto_bytes": 16777216,
+    "maximum_specification_raw_bytes": 16777216,
+    "planned_native_calls": 1,
+    "planned_owned_child_seconds": 120,
+    "planned_solver_seconds": 60,
+    "planned_threads": 1,
+    "preparation_seconds": 60
+  },
+  "native_proto_check": {
+    "XOR_rows": 1104,
+    "all_variables_and_constraint_literals_checked": true,
+    "optimizer_calls": 0,
+    "weighted_terms": 2204
+  },
+  "production_optimizer_calls": 0,
+  "proto": {
+    "bytes": 166814,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-preparation01/model.pb",
+    "sha256": "8b8f94b7b1e700c6b71744d5e6d94a814aa84638f7e412c588918a0fd497180f"
+  },
+  "rank": 286,
+  "runtime_binding": {
+    "files": {
+      "cp_model": {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/python/cp_model.py",
+        "sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25"
+      },
+      "cp_model_helper": {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/python/cp_model_helper.cpython-312-x86_64-linux-gnu.so",
+        "sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735"
+      },
+      "cp_model_pb2": {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/cp_model_pb2.py",
+        "sha256": "ac12f9549e96ff7f496846144c794d7cb17d869fccb6d050896787226e48209e"
+      }
+    },
+    "ortools": "9.15.6755",
+    "protobuf": "6.33.6",
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+  },
+  "seconds": 1.651467887997569,
+  "source_sha256": "893c7b0ba5d849daf29ed6a5668fb937efda854103d99812e84a68df66f27207",
+  "specification": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-preparation01/specification.json.gz",
+    "raw_bytes": 465013,
+    "raw_sha256": "b160b86536bfdfb10f17092889f88f5f8acfd6388cd8fed56696faf094efd85e",
+    "sha256": "3a6b0181421629e2fb220720ef801c1b4458842bda4533911103a2d3ef3386a7"
+  },
+  "status": "PREPARED: complete original-Gram dual-span separation; no production query"
+}
