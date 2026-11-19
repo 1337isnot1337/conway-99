@@ -89,3 +89,7 @@ verify-grid-diagonals:
 .PHONY: verify-involution-axis-frame
 verify-involution-axis-frame:
 	cd $(WORKSPACE) && "$(PYTHON)" involution_axis_frame.py
+
+.PHONY: certify-involution-axis-frame
+certify-involution-axis-frame:
+	cd $(WORKSPACE) && "$(PYTHON)" involution_axis_frame.py --certify "$(CADICAL)" "$(DRAT_TRIM)"

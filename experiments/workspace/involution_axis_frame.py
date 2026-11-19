@@ -1,5 +1,6 @@
 """Exclude a balanced six-axis frame in the even far quotient of an involution."""
 
+import argparse
 from collections import Counter
 from dataclasses import dataclass
 from itertools import combinations, permutations
@@ -76,7 +77,7 @@ def covers():
 
 def complete_constant_rows(chosen):
     """Recover the number of all-raised rows at each label from U times H."""
-    count = [[sum(i in bits(e.label) and j in bits(e.raised) for e in chosen)
+    count = [[sum(1 for e in chosen if e.label & (1 << i) and e.raised & (1 << j))
               for j in AXES] for i in range(7)]
     used = Counter(e.label for e in chosen)
     full_rows = {}
@@ -172,14 +173,14 @@ def obstruction(rows):
         spikes.append(tuple(i for i, x in enumerate(f) if abs(x) == 2))
     for i in sorted({i for pair in spikes for i in pair}):
         if row_model(rows, (i,)):
-            return 1
+            return (i,)
     for pair in sorted(set(spikes)):
         if row_model(rows, pair):
-            return 2
+            return pair
     raise AssertionError("no local contradiction found")
 
 
-def verify():
+def verify(certificate_tools=None):
     total = completions = 0
     pool = set()
     for choice in covers():
@@ -193,11 +194,17 @@ def verify():
     while pool:
         rows = min(pool)
         pool.difference_update(orbit(rows))
-        counts[obstruction(rows)] += 1
+        selected = obstruction(rows)
+        counts[len(selected)] += 1
+        if certificate_tools:
+            from involution_frame_certificates import certify
+            certify(rows, selected, *certificate_tools)
     assert counts == {1: 23, 2: 3}
     print("Six-axis frames: 8028 covers, 800 completions, 26 classes.")
     print("23 classes fail one quotient row and the other three fail a pair of rows.")
 
 
 if __name__ == "__main__":
-    verify()
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--certify", nargs=2, metavar=("CADICAL", "DRAT_TRIM"))
+    verify(parser.parse_args().certify)

@@ -41,3 +41,5 @@ For each remaining class choose the two rows $i,j$ where a common difference has
  \sum_k B_{ik}B_{jk}+ B_{ij}=4-|u_i\cap u_j|.
 \]
 Each product is at most two because a quotient column has only one entry of weight two. Each of the three classes has a pair for which this is infeasible. The search permits any positions for the double weights and imposes no conditions on the other squares. Reproduce with `make verify-involution-axis-frame` in a Python environment with OR-Tools.
+
+For an independent certificate of each row obstruction run `make certify-involution-axis-frame` with python-sat, CaDiCaL, and drat-trim. The second encoding represents a weight by two Boolean variables, counts repeated literals with a sequential counter, and expands the common-neighbor product into Boolean conjunctions. The checker independently verifies all 26 generated DRAT proofs.
