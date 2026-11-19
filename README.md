@@ -1,5 +1,7 @@
 # Conway's 99-graph problem
 
+[Conway's 99-graph project page](https://1337isnot1337.github.io/projects/conway-99/) — an illustrated overview of the design, scope, and source.
+
 Does a simple graph on 99 vertices exist in which every vertex has degree 14, every adjacent pair has one common neighbor, and every nonadjacent pair has two? **The existence question remains open.** This repository records structural bounds, exact certificates, and construction searches for this graph. The work is unrefereed.
 
 | Research topic | Main result |
