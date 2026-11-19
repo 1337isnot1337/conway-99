@@ -1,6 +1,6 @@
-# No triangle has a vertex-transitive exterior
+# No triangle exterior is cospectral with a vertex-transitive graph
 
-Fix any triangle $T$ of a hypothetical Conway 99-graph. The graph on the 60 points with no neighbor in $T$ cannot be vertex-transitive. Its automorphisms need only preserve this induced graph. The argument determines the exterior spectrum from the 36 neighbors of $T$ and uses a finite group enumeration in the last step.
+Fix any triangle $T$ of a hypothetical Conway 99-graph. The graph on the 60 points with no neighbor in $T$ cannot even have the same adjacency spectrum as any vertex-transitive simple graph. Its automorphisms need only preserve this induced graph. The argument determines the exterior spectrum from the 36 neighbors of $T$ and uses a finite group enumeration in the last step.
 
 ## Spectrum of the exterior
 
@@ -90,5 +90,7 @@ For each action, a simple invariant graph is a union of orbits on unordered pair
 | Rooted square count is 14 or 15 | 362 |
 | Rank at most 42 modulo 101 | 0 |
 | Rank at most 42 modulo 1009 | 0 |
+
+The stronger cospectral exclusion drops the nonedge common-neighbor bound from the candidate graph. A vertex-transitive graph with the exterior spectrum is connected, has degree eight, and is walk-regular. Its third and fourth traces give one triangle at every vertex and $d=1$ or $6$ for the original triangle. The trace divisibility at lengths six and eight above excludes $d=1$ using the original shell, so the spectrum must be the six-grid spectrum. Thus every vertex of the candidate lies on fifteen squares. The twenty triangles again form canonical blocks, and each pair of blocks is joined by a matching because an extra triangle would contradict uniqueness at a vertex. The transitive faithfulness proof uses just those facts and the second eigenvalue. The same 912 actions therefore suffice. Of their 66,327 orbital unions, 14,778 have exactly one triangle at each vertex. Counting $\sum_{y\ne w}\binom{|N(w)\cap N(y)|}{2}$ squares through a root leaves 314. Every one has rank greater than 42 at both primes. This excludes all transitive cospectral mates.
 
 Run `make verify-triangle-exterior` with GAP, its TransGrp library, Python and NumPy. The [GAP action enumerator](../../experiments/workspace/triangle_exterior_actions.g) and [orbital and modular rank checker](../../experiments/workspace/triangle_exterior_transitive.py) recreate the table from the catalog. Counts refer to marked actions and orbital unions, so a graph can appear more than once. The [ProofAtlas research record](https://www.proofatlas.ai/collaboration/conways-99-graph-conjecture/) already discusses the triangle spread and the six-prism construction. The present exclusion leaves exterior graphs with more than one vertex orbit open.

@@ -38,16 +38,17 @@ def unions(options, remaining, first=0, chosen=()):
 
 def local_counts(rows, v):
     triangles_twice = squares = 0
+    common_ok = True
     for w, row in enumerate(rows):
         if w == v:
             continue
         adjacent = (rows[v] >> w) & 1
         common = (rows[v] & row).bit_count()
         if common + adjacent > 2:
-            return None
+            common_ok = False
         triangles_twice += adjacent * common
-        squares += common == 2
-    return triangles_twice, squares
+        squares += common * (common - 1) // 2
+    return triangles_twice, squares, common_ok
 
 
 def rank_mod(matrix, prime):
@@ -79,12 +80,18 @@ def scan_action(block, generators, counts):
         rows = [sum(entries) for entries in zip(inside, *chosen)]
         counts[1] += 1
         check = local_counts(rows, 0)
-        if check is None or check[0] != 2:
+        triangles_twice, squares, common_ok = check
+        if triangles_twice != 2:
             continue
-        counts[2] += 1
-        if check[1] not in (14, 15):
+        counts[4] += 1
+        if common_ok:
+            counts[2] += 1
+        exterior = common_ok and squares in (14, 15)
+        cospectral = squares == 15
+        counts[3] += int(exterior)
+        counts[5] += int(cospectral)
+        if not (exterior or cospectral):
             continue
-        counts[3] += 1
         assert all(r.bit_count() == 8 and local_counts(rows, i) == check for i, r in enumerate(rows))
         matrix = np.array([[(row >> j) & 1 for j in range(60)] for row in rows])
         matrix -= 3 * np.eye(60, dtype=int)
@@ -93,7 +100,7 @@ def scan_action(block, generators, counts):
 
 
 def scan(path):
-    counts = [0] * 4
+    counts = [0] * 6
     labels = set()
     for line in path.read_text().replace("\\\n", "").splitlines():
         group, action, n, x, y, z, *images = map(int, line.split())
@@ -102,9 +109,11 @@ def scan(path):
         generators = [images[i:i+60] for i in range(0, len(images), 60)]
         assert len(generators) == n and all(sorted(g) == list(range(60)) for g in generators)
         scan_action((x, y, z), generators, counts)
-    assert counts == [912, 66327, 2302, 362], counts
+    assert counts == [912, 66327, 2302, 362, 14778, 314], counts
     print(f"{counts[0]} actions, {counts[1]} orbital unions, {counts[2]} local passes, "
           f"{counts[3]} square-count passes, zero rank passes at either prime.")
+    print(f"{counts[4]} unions with one triangle at every vertex, {counts[5]} with fifteen rooted squares, "
+          "zero cospectral rank passes at either prime.")
 
 
 if __name__ == "__main__":
