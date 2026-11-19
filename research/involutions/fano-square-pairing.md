@@ -4,6 +4,8 @@ Suppose an involution fixes a unique point $o$ in a Conway graph. Its 14 neighbo
 
 Consider a Fano plane on the seven axes. On each line $\{a,b,c\}$, pair far orbits of labels $ab,ac$ in one square, $ba,bc$ in another, and $ca,cb$ in a third. This uses both copies of each label. **This pairing is impossible**, even if the rest of the graph breaks every symmetry of the Fano plane. The proof derives the inter-square edge counts from a small Gram matrix and excludes all 104 resulting cases.
 
+The [distinct-endpoint theorem](distinct-endpoint-squares.md) also excludes this pairing by a noncomputational argument and covers other assignments of centers.
+
 ## The Gram matrix for any pairing
 
 Let $U$ be the $7\times42$ matrix of far-orbit labels, with two ones per column. In each square $s$ choose an order for its two far orbits. Write $m_s$ for the sum of their label columns and $\delta_s$ for their difference. Form $M$ and $\Delta$ from these 21 columns. Write $N_{st}$ for the number of single matching interfaces between far orbits in different squares, with $N_{ss}=0$. Each vertex outside a square sees at most one point from each diagonal, since the two diagonal points already have two common neighbors in the square. Three single interfaces would produce an L-shape in the two-by-two array of orbit pairs. At its middle edge the other two single interfaces each give a different common neighbor via one of the two complete diagonal-orbit interfaces. This violates the adjacent-pair quota. Thus $N_{st}\in\{0,1,2\}$.

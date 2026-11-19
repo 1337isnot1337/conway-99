@@ -25,6 +25,8 @@ We tested an order-seven rotation on the **quotient** taking the seven axes cycl
 
 The [Fano-plane square-pairing exclusion](research/involutions/fano-square-pairing.md) compresses the 42 far orbits to 21 squares. If the orbits pair by the three incident label pairs on each Fano line, the resulting 104 interface classes all fail an exact Gram-completion test. This excludes the pairing even without any symmetry of its interfaces.
 
+The [distinct-endpoint theorem](research/involutions/distinct-endpoint-squares.md) removes the Fano-plane assumption. If all 21 squares have one shared axis, at least one pair of endpoints must occur twice or more. The signed-root representation in rank seven violates an orbit degree bound, and the balanced representation violates a squared-norm congruence modulo 16.
+
 ## Sources and replay
 
 - https://aeb.win.tue.nl/graphs/srg/srgtab51-100.html, the (99,14,1,2) entry.
