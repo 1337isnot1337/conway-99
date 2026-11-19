@@ -11,6 +11,8 @@ verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" level_seven_check.py
 	@set -eu; \
 	build_dir=$$(mktemp -d); \
-	trap 'rm -f "$$build_dir/grid_support"; rmdir "$$build_dir"' EXIT; \
+	trap 'rm -f "$$build_dir/grid_support" "$$build_dir/aligned_spokes"; rmdir "$$build_dir"' EXIT; \
 	$(CXX) -O3 -std=c++20 $(WORKSPACE)/grid_support.cpp -o "$$build_dir/grid_support"; \
-	"$$build_dir/grid_support"
+	"$$build_dir/grid_support"; \
+	$(CXX) -O3 -std=c++20 $(WORKSPACE)/aligned_spokes.cpp -o "$$build_dir/aligned_spokes"; \
+	"$$build_dir/aligned_spokes"
