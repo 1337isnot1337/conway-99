@@ -50,3 +50,11 @@ their hypotheses permit them; computational exclusions require exact replay.
   4,985 templates and 8/64/11 exterior partition already occur in
   `signed_eight_heavy.py`; they are not new exclusions. The current work adds
   an algebraic even-cycle proof and full incidence-orbit classification.
+- Proved that a size-twenty transversal coclique has exactly one outside
+  vertex of degree seven into it and no outside vertex of degree one. Four
+  universal-axis patterns are excluded by saved integer Farkas identities,
+  independently replayed without spectral pruning. The other 52 patterns
+  survive the tested real incidence relaxation.
+- Proved that there are at most nine all-red grids, without assuming equality
+  in the total-grid bound. Ten would force an eleven-grid partition with
+  isomorphic interfaces, contradicting the trace on an invariant subspace.
