@@ -1,0 +1,36 @@
+{
+  "accepted_box_capacity_cold_all260_record_bindings_checked": true,
+  "accepted_box_capacity_cold_status": "PASS_INDEPENDENT_H27_LOW_FACE_CUT_AND_CAPACITY_EQUIVALENCE",
+  "control_repeats": 0,
+  "full_source_read": true,
+  "input_bindings_previously_stream_hash_verified": 13,
+  "mathematical_checks": [
+    "The 2271 original rows are retained, with 17 accepted rows appended: 2288 rows on 1102 live variables.",
+    "All 191 boxes remain in the input inventory. Exactly 54 H27=1 boxes are eligible: one weight-three singleton and 53 weight-one plus weight-two pairs. The other 137 boxes are not excluded by this pilot.",
+    "For signed row multipliers, positive multipliers use the upper endpoint and negative multipliers use the lower endpoint. A strict exact combined-form minimum over the entire branch box above that signed upper bound proves exclusion.",
+    "The full 1214-coordinate lift inserts the 112 fixed zero coordinates, checks the live coefficients, and reproduces the exact bound and box minimum.",
+    "A selected weight-three singleton or selected weight-one plus weight-two pair exhausts H27+2Q=3. The accepted full-branch propagation then implies the complete inspected box. The guarded singleton/pair nogood therefore follows from the whole branch condition.",
+    "Omitting coordinate covers from this LP weakens it. A feasible native point remains unresolved; exclusion acceptance does not assume the omitted rows.",
+    "Rounded rays only propose exact integer multipliers. All accepted inequalities and strict gaps are recomputed with integers; native status alone is not a certificate."
+  ],
+  "model_builds": 0,
+  "no_mathematical_blocker_found": true,
+  "optimizer_calls": 0,
+  "original_row_source": {
+    "path": "experiments/workspace/rook_case4_complete_lp_recovery.py",
+    "sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6"
+  },
+  "reused_functions_ast_equal": [
+    "normalize_row",
+    "original_rows"
+  ],
+  "reviewer": "master_review",
+  "scope": "Source review only. No low54 branch has been excluded by this review, and no full case or SRG nonexistence conclusion is asserted.",
+  "source": {
+    "lines": 403,
+    "path": "experiments/workspace/rook_case4_low54_native_lp.py",
+    "sha256": "174c084dc9df3e3e0eed5e028ad18b6c89957c51b4ddfe7c0e4bbeaaa70d5380"
+  },
+  "source_imports": 0,
+  "status": "PASS_INDEPENDENT_LOW54_NATIVE_LP_SOURCE_REVIEW"
+}

@@ -1,0 +1,32 @@
+{
+  "authorized": {
+    "automatic_retries": 0,
+    "finite_audits": 1,
+    "optimizer_calls": 0,
+    "owner_seconds": 30
+  },
+  "checks": [
+    "The baseline raw coefficient vector is reconstructed from the full original edge domain and its saved allocation hash.",
+    "Every one of171 original Gram rows is bound to the actual parent plan, including the21 empty zero equations.",
+    "All153 skew identities are expanded as explicit original-Gram row combinations, with every480-coordinate coefficient and the zero constant checked.",
+    "For each of306 signed raw gauges the test is exactly r=g-b-sign*z, with every selected-coordinate remainder zero.",
+    "If r is coordinatewise nonpositive, nonnegative selectors and the original Gram identity imply the raw gauge from the baseline. Positive gcd normalization preserves this homogeneous implication.",
+    "All12 transports inherit the implication under the independently checked core actions and the already accepted baseline transports.",
+    "A failing sufficient test is not evidence of irredundancy; no row is removed and complete independent census replay remains required."
+  ],
+  "complete_source_lines_read": 225,
+  "configuration": {
+    "bytes": 2148,
+    "path": "experiments/logs/root-prism-free/f0-skew-gauge-dominance-configuration01.json",
+    "sha256": "2f0f1dbced22624abad836cbb832f6f0b4bf89fdb7c4a22519c978c9428e1a14"
+  },
+  "native_query_authorized": false,
+  "parent_or_new_rows_modified": false,
+  "schema": "conway99.f0.skew-gauge-dominance.root-gate.v1",
+  "source": {
+    "bytes": 13445,
+    "path": "experiments/workspace/root_prism_free_f0_skew_gauge_dominance.py",
+    "sha256": "9e576ca4da3968fab766a557a1d172c9814194e972dbf9512cc329981b146dc8"
+  },
+  "status": "PASS_COMPLETE_SOURCE_REVIEW_FINITE_EXACT_AUDIT"
+}

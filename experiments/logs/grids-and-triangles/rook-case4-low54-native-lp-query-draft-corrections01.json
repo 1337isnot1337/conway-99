@@ -1,0 +1,19 @@
+{
+  "status": "TWO_UNRUN_QUERY_DRAFT_CORRECTIONS",
+  "old_sha256": "b0b790a98c44ed80790ba9877c4efc862382e7551d15fafd1c0a1f30c680fffe",
+  "new_sha256": "7f3f3db6422932def93ef9b9efa52415a1499d8d0675c48c776d3318f74bfa13",
+  "old_source": "experiments/workspace/rook_case4_low54_native_lp_query_unrun_v1.py",
+  "new_source": "experiments/workspace/rook_case4_low54_native_lp_query.py",
+  "changes": [
+    {
+      "old": "def forward(configuration, directory):\n    import highspy\n    started = time.monotonic()",
+      "new": "def forward(configuration, directory):\n    started = time.monotonic()\n    import highspy"
+    },
+    {
+      "old": "    cold = json.loads((directory/\"cold.json\").read_bytes()) if accepted else None\n    result =",
+      "new": "    cold = json.loads((directory/\"cold.json\").read_bytes()) if accepted else None\n    accepted = bool(accepted and cold[\"status\"] == \"PASS\")\n    result ="
+    }
+  ],
+  "optimizer_or_native_calls": 0,
+  "old_preparation_repeated": false
+}

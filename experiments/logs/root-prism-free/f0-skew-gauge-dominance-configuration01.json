@@ -1,0 +1,46 @@
+{
+  "complete_gauges": 306,
+  "complete_site_pairs": 153,
+  "independent_census_cold_required_before_any_seed_filter": true,
+  "inputs": {
+    "baseline_cut": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-00/universal-cuts.json",
+      "sha256": "433bef5a9bc11e5d3398da96bdb1985e0c634d60ca3b3a1862bb34fe7b7a2388"
+    },
+    "census": {
+      "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-run01/complete-census.json.gz",
+      "sha256": "612ec034b7dc81fd422010a74c01be9b469e7b3de92b4ea88055732e9d13047b"
+    },
+    "gauge_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-configuration01.json",
+      "sha256": "c53ae366cf1fcbee15fc403bcf1a5fc2138fc673137c98f78370f599ed05c0b8"
+    },
+    "gauge_owner": {
+      "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-run01/owner.json",
+      "sha256": "a515deae91df73c01f3dedd2d5873ec109ee3731a41b18e3365442745e3d129e"
+    },
+    "gauge_report": {
+      "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-run01/report.json",
+      "sha256": "4cba8f521f56fa84cc5df34e46a86deadbff0f5cd74e8369d539faf9240866d7"
+    },
+    "parent_run": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/result.json",
+      "sha256": "5192b4cf6a3149522f1c9f771e19a0571cf9ea50169eb151a343f7913e197e25"
+    },
+    "plan": {
+      "path": "experiments/logs/root-prism-free/f0-direct-literal-model01/plan.json.gz",
+      "sha256": "bd921d7d8f16c64bd866e0ec319b1cc3db37450cf5a6c884a37a9f40044c48d7"
+    },
+    "shared": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-00/shared.json",
+      "sha256": "3c0ae45f2500c68344faa14c5677dead512b31b4d4b90e8aadb9bd5f8c4301fc"
+    }
+  },
+  "main_audit_requires_root_gate": true,
+  "no_rows_removed_or_modified": true,
+  "optimizer_or_native_query_authorized": false,
+  "original_Gram_rows": 171,
+  "owner_seconds": 30,
+  "schema": "conway99.f0.skew-gauge-dominance-configuration.v1",
+  "source_sha256": "9e576ca4da3968fab766a557a1d172c9814194e972dbf9512cc329981b146dc8"
+}

@@ -1,0 +1,926 @@
+{
+  "status": "COMPLETE_IMMUTABLE_LOW54_TERMINAL_BLOB_MAP",
+  "scope": "All54 one-call numerical branches, four independent exact exclusions, complete cold receipt, current-point evaluation and root production gate.",
+  "manifest": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01-publication-manifest.json",
+    "bytes": 38094,
+    "sha256": "92f938ba11c29c199cbec1914789527ff11025abb4e216f96400852b3c8fe4ce",
+    "git_blob_sha": "abc424f66eea135b9ad482381b2b1ef0c1ec45df"
+  },
+  "preparation_map": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preparation-git-blobs01.json",
+    "bytes": 14757,
+    "sha256": "1c98432648b7e0000d503e71a3ccff8a5c8b9f0b4fb939a9754c90540a166706",
+    "git_blob_sha": "ced6f0a38162945a2eb8912d82413a820ae5e880"
+  },
+  "files": {
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-root-gate01.json": "92771fef4772f7e3c3b96030fafdaf3ae9efd784",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold-owner.json": "0f37f9594ccc1348cd901cd16db6f8f4555c6b89",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.json": "48ac9a2107dcf76f1e27d0dfa122a6c179591619",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.stderr.log": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.stdout.log": "1af9f95e76130a73ea84b17d2a3e53fd015f63b2",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-00.json": "a10eab439314c4eeeaa0dd9f18f50f5fd22ad9c4",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-01.json": "0b895f505e3891bff8fd28ccb8ff07dedc200cb8",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-02.json": "a60015f2b2979849f8a15623323ba23770d94f57",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-03.json": "a2cf8ecec7f5b489e3b37a541239bd3c79ef61a8",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-04.json": "d4edc6f2874f0ba5b468d59622ebb327837728ed",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-05.json": "be598ecf3a81878b4de05d3cb1f6377687093cad",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-06.json": "ec4e14ba3cdd99e9fbc7c3ede85ab34f5f131331",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-07.json": "292595f6081dc89aa1f01d4595577a6ab5b47672",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-08.json": "dca970f00f4552906c319bc056dfd98e8ec90e8c",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-09.json": "04e79e2ab0e7a3538dbb2597c8a8e00a3f5a2ab7",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-10.json": "e4c61cd2983a8321bdb3d723f7c146f9ac0bb950",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-11.json": "1a4aa2f832be9715c5df84d3311c994819f12aa2",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-12.json": "75f8d6b5a9c9bd6426351f9b34591223b402c5d8",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-13.json": "06f1fb4bf9ad3f705ae5651e9ce7412890beb92a",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-14.json": "8b4fd8a6e14418cdfd59e010eb60e1739c4e683f",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-15.json": "bfd9ffa7130fba5c80ef2fa03e17e58927c8415a",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-16.json": "d15791fc29e8e9defa063e8500dae9d5b820dcf2",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-17.json": "fd4d566344e8b6597bb01128885eed2bd82aad57",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-18.json": "c46a7adacc886ddd3f615753b92bf1d7531ae9b6",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-19.json": "5d0f5748bc7271bf343cc73fe7be8d0d6198d696",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-20.json": "43ca6082194d64c6e81c788e2312bebf25e54744",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-21.json": "ea8fb639e060cdddcbe003741732e5a81c85c60d",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-22.json": "c123684884ea629a5b8ea400d0ad58221c366a9c",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-23.json": "103bb7d347408fce395f73f7e3bdd8fb520ac5e1",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-24.json": "6ccedce291a468a2a11b0b0052032031ae7bdeae",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-25.json": "589f526d581bcad7291aba2f9a90856b1ea34afb",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-26.json": "ba1770a4cf003e163f7e530900f98c10ff8c23c1",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-27.json": "6adb810ee4bc524eb472f69f767a7d01b841a112",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-28.json": "cfa6cfdeab6b24ec7d9a9a737532e3b42c098e69",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-29.json": "17136199ef2def7a7f50755c088d61c0b7887480",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-30.json": "6e1f288bfcc0ea8c890bbe7de4bff07e87576b18",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-31.json": "8676c9440bde7bdccb98d43749a7239d933708dc",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-32.json": "cead98816ec5300687db625128640f579b767e23",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-33.json": "e8387f28b9d5ada96ffe052e7c263a964f8a5a1c",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-34.json": "facd13f32c9845813e2c21aa40deec45be4b4770",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-35.json": "d36e5b6071309432f8db6e509929ae97529fe608",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-36.json": "5636ecdcb381e48085c44060a6e3f445d926d407",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-37.json": "c72977219fe29d8560a8e8bc4d4a541769acfee8",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-38.json": "a71681a723d1c17047212e77ad4c22a659f135df",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-39.json": "21cce7e67549d09395fd3d094b63e27bb3a5e290",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-40.json": "b8a58c742c7abcc645abe7d49aa4bb1196037839",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-41.json": "5bcfc9a0f7130caf839ca450ff708445c1d5279d",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-42.json": "7cffc5c5a906a364f55ad74290e583981377746e",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-43.json": "fee4c75ef2803c5b224dc762f1ec3788afac524e",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-44.json": "08eeeffd8e8829976ef6bca8d7955130dc5b9609",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-45.json": "5a3d14ed381a62edd1f28532e619b812c2a36716",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-46.json": "71d39ab14c736787388ffb70f490b05c8f287066",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-47.json": "8e0446d7a31d572edae8f69ce84f100b8bdbe136",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-48.json": "c2ce74f9d68ceb7c0234d3e8ffaea961d090aa39",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-49.json": "d1647b9061f999eb50aafe51686168306f73ddfa",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-50.json": "116d93e998eff69e95e6746c12d49d3e450bcf0f",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-51.json": "ddcfc5633c8159ce536f06fd9d0a625bf77e3071",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-52.json": "bd2f1929533f115051737de0e460f9f7826868db",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-53.json": "6a1eb934e89cc6f481ec90b1c1b067eaefeea7ed",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-10.json": "fb8bac604146341f06eca9401dca3a04652a7da6",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-11.json": "be9ed793f6ee240fae815ba45dc1f3a75b84e506",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-15.json": "89433fd620fbf20d2daab89d7d6bbd428f5817ee",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-53.json": "5e5eedeb7c161da60577d67ef99ac019175f2490",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/highs.log": "d60a71060dfed1765ecf70b48dc0a27202e7ccf5",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/initialization.json": "51760c007c8ee8d59917ce7ea296eb0bb29b90b0",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-00.json": "d558c459ba09092f9c93edd3351074d9b24552e6",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-01.json": "1da57aff6c1ec15009ff78dde31767b7c766a938",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-02.json": "47d16e84748fb16de75efa1ba999df155a01203f",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-03.json": "56a96b0c6bad40dd990aa7eef894a2b700915a15",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-04.json": "40f8dda0feb097be774156d914d2760795c76966",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-05.json": "b48f6f3d91396bed6de21f054fe29a9b0809f3b7",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-06.json": "99aa59a1d22c6afbd33277e5a2501f26d3426c70",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-07.json": "4673ce8b4fa45e7c3809e0821572073b76cb8d2d",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-08.json": "de0ba30d181cef18bcd175534a3325282dc1c26d",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-09.json": "fda118d79f3fcdb86a37f0d70e996d1163a010f3",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-10.json": "79aef7cec54f3f694c40769a822bf8ada48e19e9",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-11.json": "99cdfa409363c7cee886d17fe5c8114385743973",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-12.json": "1b95a1015450786ac04b1e38fe36904d0828ec3f",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-13.json": "3553aebdafce49a58935556b6167b9dd28254439",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-14.json": "bfa0a645ce941d9a3a2e4b83df591d05c22adb28",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-15.json": "aa892d3d09204f18287ee6fb592efde018185d5c",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-16.json": "603981cbb83f86434ce6b5295ba91fbdda46a974",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-17.json": "0a1350ff36405d89f76b398031e018e3f2eb9f9f",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-18.json": "c34aca59b7ea3c93d404dc91704d09dd91f7a4da",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-19.json": "9560e47b7c8cd3be9a896e210819f4fad25f9bef",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-20.json": "10c274d9cf8c712e4967b7086fa3cb08a2f35c96",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-21.json": "b811d8f0fa47cfcbfdb94090c168033c7187a5a8",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-22.json": "04f3e0b871b1c358d9332db260fefacf23d96400",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-23.json": "5a42190332b427b6a4afe1a256e2dd7142400c65",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-24.json": "5146481755f5c83ce6802799367bc287b966e835",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-25.json": "6b179fad7767d036da3d92c3dfbc62024e70a399",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-26.json": "7e7dc0d9f83fac9f3246b6ccb7b61f1b98168629",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-27.json": "6fc6d7e09905828a551ad733f333d8f4d7a024a4",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-28.json": "291f09d190d3b51bd8d0f268cca015132440905b",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-29.json": "ce1b0b77702e49de9c15d4f013b300a8743a55d2",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-30.json": "afa89874d50c867e5ec3064b86e48b48caab7b78",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-31.json": "0f67d507217301005e8c59f54a3f328b3c6420eb",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-32.json": "f403a205cb1d5ee2c93f19688036b4470de7d12f",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-33.json": "2a8727d4ec73ecd603f4320fd30891d4f9a705be",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-34.json": "e088c323eb4fa83c5612336a4c9eade728647f55",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-35.json": "b5abd9d5e9cfbe0dc13966bdada1d33a87425abf",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-36.json": "67a628dbc372c97845ec2d4f2923493d3c22c156",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-37.json": "b0daf96674bcac92bb7d3533f932a17740cc7f2a",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-38.json": "2571eeb71830d6f3627f7dc470eb70801a74d034",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-39.json": "0c9ad1cecc1e2f72a0188bf56ea67f72ba3bd6d7",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-40.json": "5eae6560f03f13cc9caa1e34d8e401086e0cf79e",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-41.json": "da9e2417d27730d5035ae8fa6c597aee64e39b3b",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-42.json": "5daae32bc358a858906a879bdef7d2b0322f6b5a",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-43.json": "792cb7f56ecc891d5f7db8c589a205c08f3dcd98",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-44.json": "e85306d881d8042aff2170b00894416433c08dc6",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-45.json": "748fae42b230d182979050d45292d2cde982159e",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-46.json": "72287c2f59f6b643070cb59486b0fe07908c711d",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-47.json": "d3b9461b65e00cbc30241d71c0e46ba605a57543",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-48.json": "44b2c9777b2f5fdd88ab975270c05a333bbcecb5",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-49.json": "762194973d2be367dac7ec4fba4e847f262f94e2",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-50.json": "a901d281f15f5df867012594898d45ecf4cf5384",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-51.json": "42c2c5cc7ffc51fe13a6ba14ab04612f48f75260",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-52.json": "1c7d84f1b5fe224227a2f0af2dedf4f5803b00c5",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-53.json": "07175725bf9ea8b7107daa996e32b6f53e62e5a8",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/records.jsonl": "5bd34e985533e60bd247358b8fdc1b5ca3fcc5f6",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/result.json": "579a548f28feca6e23f3364e65bbc5d9fa571e72",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward-owner.json": "4306d95fad1018e28f1563c6e485202a924d3dd1",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward.stderr.log": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward.stdout.log": "6c80965ca43924845a73f42a04717979087fe448",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/result.json": "e3667e9872ae10783d68cfc93d32025e12c467f5",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01-analysis.json": "2c0e53ac5a38068cf8d9f1a7a2316a98b93a795e",
+    "experiments/workspace/rook_case4_low54_native_lp_terminal_analysis.py": "b443b942241eb0651a190bc7f6bbcb1af1a91f99",
+    "research/grids-and-triangles/rook_case4_low54_native_lp_run01.md": "322e40423397cc74703b6fbe0262643786ee6627",
+    "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01-publication-manifest.json": "abc424f66eea135b9ad482381b2b1ef0c1ec45df"
+  },
+  "artifacts": [
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-root-gate01.json",
+      "bytes": 4150,
+      "sha256": "5da4b8f59a0073c64775db4ebd0e4735fcd16ddb2e8c1ab024949854ed063a5d",
+      "git_blob_sha": "92771fef4772f7e3c3b96030fafdaf3ae9efd784"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold-owner.json",
+      "bytes": 1876,
+      "sha256": "8ab372bb0040a4839c17ec72f9d59f0ecb8322f56ce3225a76b56bf506c484a5",
+      "git_blob_sha": "0f37f9594ccc1348cd901cd16db6f8f4555c6b89"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.json",
+      "bytes": 2820,
+      "sha256": "ea492ec530c512759b93d25afc6900a2468d1f221f75aac2eb39092bd8af73f3",
+      "git_blob_sha": "48ac9a2107dcf76f1e27d0dfa122a6c179591619"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.stdout.log",
+      "bytes": 105,
+      "sha256": "6570c80640ffee0a58cd9c3efcc0cf19ba9c7e958210c23d76eba007d26aeee1",
+      "git_blob_sha": "1af9f95e76130a73ea84b17d2a3e53fd015f63b2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-00.json",
+      "bytes": 441,
+      "sha256": "9240231d285d56fa8b138111d435c5212c56a7c30bde655bd8037b29bfc0f356",
+      "git_blob_sha": "a10eab439314c4eeeaa0dd9f18f50f5fd22ad9c4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-01.json",
+      "bytes": 441,
+      "sha256": "41d1d1cd464cdb4c1021cb302f19f192bf7f3f80c58d64e2b6a0d19f3d031b1b",
+      "git_blob_sha": "0b895f505e3891bff8fd28ccb8ff07dedc200cb8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-02.json",
+      "bytes": 441,
+      "sha256": "d4d932e9e53f31ff990f550bf78ed70d5f02ee7b685b212418aa56a5a0205637",
+      "git_blob_sha": "a60015f2b2979849f8a15623323ba23770d94f57"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-03.json",
+      "bytes": 441,
+      "sha256": "16db559559cd7d7c5ac77a4fa7deb3c02436958c816b67d58415018e811d26b4",
+      "git_blob_sha": "a2cf8ecec7f5b489e3b37a541239bd3c79ef61a8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-04.json",
+      "bytes": 441,
+      "sha256": "b170bb040584853910fe5030b6ce4de0fae8c9d0815cd13d996f84c23695c7a6",
+      "git_blob_sha": "d4edc6f2874f0ba5b468d59622ebb327837728ed"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-05.json",
+      "bytes": 441,
+      "sha256": "4a4d33271ed139d4c6cc6c27890b841d783ea06e848036fdc81b6039327629d2",
+      "git_blob_sha": "be598ecf3a81878b4de05d3cb1f6377687093cad"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-06.json",
+      "bytes": 441,
+      "sha256": "eac59e9e5d45f8de3c0adfb2a71fe01b53ec6a3f077ad7a5ca2ff8331da222e0",
+      "git_blob_sha": "ec4e14ba3cdd99e9fbc7c3ede85ab34f5f131331"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-07.json",
+      "bytes": 441,
+      "sha256": "61f61f9bec1558dfaf8febc6082d7b04bc68505297b650d2d3e5c0f8a647507e",
+      "git_blob_sha": "292595f6081dc89aa1f01d4595577a6ab5b47672"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-08.json",
+      "bytes": 441,
+      "sha256": "acf7027e64c25a0b09bfe2fc992c18a8977817f107347bf2f0dea903634d27d6",
+      "git_blob_sha": "dca970f00f4552906c319bc056dfd98e8ec90e8c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-09.json",
+      "bytes": 441,
+      "sha256": "37a2676cd8795d6a9e9f40e97a7dbb0d3ba4f8c42bfee6f3c71575d924287de1",
+      "git_blob_sha": "04e79e2ab0e7a3538dbb2597c8a8e00a3f5a2ab7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-10.json",
+      "bytes": 1495,
+      "sha256": "5e1eb89db571211ea7ee45e5cc25da30a17d72297992e9e4bd6411300fbfb6dd",
+      "git_blob_sha": "e4c61cd2983a8321bdb3d723f7c146f9ac0bb950"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-11.json",
+      "bytes": 1495,
+      "sha256": "71d0c7935cc345922154b855d8a4c85a605ce6b2f437ab0bb06f8064c42b7257",
+      "git_blob_sha": "1a4aa2f832be9715c5df84d3311c994819f12aa2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-12.json",
+      "bytes": 443,
+      "sha256": "3b9887fe2e1de65371755bd52b04cfee0d7073f8ff62da17e7852e54fd21e248",
+      "git_blob_sha": "75f8d6b5a9c9bd6426351f9b34591223b402c5d8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-13.json",
+      "bytes": 443,
+      "sha256": "2938ef08e96ecebd50c7a16c768f1cc46f93bf0abcd009015ba3a1096d1eb373",
+      "git_blob_sha": "06f1fb4bf9ad3f705ae5651e9ce7412890beb92a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-14.json",
+      "bytes": 443,
+      "sha256": "b688d031d2bc913c3e5b8ad932d2cc61e751c3313f3feb50b934cdccbc4a253d",
+      "git_blob_sha": "8b4fd8a6e14418cdfd59e010eb60e1739c4e683f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-15.json",
+      "bytes": 1396,
+      "sha256": "fa57efaf7d0e0d99537900ef3426331bb271a6f2c7ea384cdf34f9d00270636a",
+      "git_blob_sha": "bfd9ffa7130fba5c80ef2fa03e17e58927c8415a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-16.json",
+      "bytes": 443,
+      "sha256": "e7380619de16da0e6e87063ed2f689d35969df4c7d4e5b76dd50bea082004fbe",
+      "git_blob_sha": "d15791fc29e8e9defa063e8500dae9d5b820dcf2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-17.json",
+      "bytes": 443,
+      "sha256": "88764f26f187a7a21e14268975135c908e4f3f805143a28424bc0cbdd8413fd8",
+      "git_blob_sha": "fd4d566344e8b6597bb01128885eed2bd82aad57"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-18.json",
+      "bytes": 443,
+      "sha256": "08a76de454ca0fbcddeeb1d5bbfebf710c97b02632c3096064aa270144646fe4",
+      "git_blob_sha": "c46a7adacc886ddd3f615753b92bf1d7531ae9b6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-19.json",
+      "bytes": 443,
+      "sha256": "d4764eccdb38c3caa89b62b2a7b94d1878e3db14232e88ef9084a9394ea30d29",
+      "git_blob_sha": "5d0f5748bc7271bf343cc73fe7be8d0d6198d696"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-20.json",
+      "bytes": 443,
+      "sha256": "90e632e17e3900d4596bd41ef47900eacd7451e11f819e846c3931881f38b1d2",
+      "git_blob_sha": "43ca6082194d64c6e81c788e2312bebf25e54744"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-21.json",
+      "bytes": 443,
+      "sha256": "393abac445a031183e939851538d276738b407055a8261fb09c0d8174e31edb5",
+      "git_blob_sha": "ea8fb639e060cdddcbe003741732e5a81c85c60d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-22.json",
+      "bytes": 443,
+      "sha256": "ee73374160a5f049b291c26eee41d9c819e1a4e11304158febe7cf1ab44cd58f",
+      "git_blob_sha": "c123684884ea629a5b8ea400d0ad58221c366a9c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-23.json",
+      "bytes": 443,
+      "sha256": "1acc3b9a19ddd6c7d0990219b5287db50e7926246cf495ab80fb01e310b3065e",
+      "git_blob_sha": "103bb7d347408fce395f73f7e3bdd8fb520ac5e1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-24.json",
+      "bytes": 443,
+      "sha256": "b2a3fe1c80bd1650f98a3431617c9f82f3ce7436a8ed8f93c4aa5c97a93ad6e2",
+      "git_blob_sha": "6ccedce291a468a2a11b0b0052032031ae7bdeae"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-25.json",
+      "bytes": 443,
+      "sha256": "8823f12b499e15c4840345b1e761711850b8242bd0fc07465c0d4dee426da8bd",
+      "git_blob_sha": "589f526d581bcad7291aba2f9a90856b1ea34afb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-26.json",
+      "bytes": 443,
+      "sha256": "34c106eac16381f81501755fd547debc9db15ef917754710aa4eb2a320cbb4f6",
+      "git_blob_sha": "ba1770a4cf003e163f7e530900f98c10ff8c23c1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-27.json",
+      "bytes": 443,
+      "sha256": "b162e8e18d62fac64fd3c51608e297e83f9d32ca6a264f1153a168df1350c504",
+      "git_blob_sha": "6adb810ee4bc524eb472f69f767a7d01b841a112"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-28.json",
+      "bytes": 443,
+      "sha256": "7762e90c144da63dd7c0c66941e87376b2fcedad7fd465815dcf0dfb2a8bd19f",
+      "git_blob_sha": "cfa6cfdeab6b24ec7d9a9a737532e3b42c098e69"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-29.json",
+      "bytes": 443,
+      "sha256": "720c6e6e394dd5260a02fab245b9d7a3698942fb4b63816445668ded18b27aad",
+      "git_blob_sha": "17136199ef2def7a7f50755c088d61c0b7887480"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-30.json",
+      "bytes": 443,
+      "sha256": "f390e558db453be036c596aafd221ad9f32bdcb0054fa126d8270203357e7d16",
+      "git_blob_sha": "6e1f288bfcc0ea8c890bbe7de4bff07e87576b18"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-31.json",
+      "bytes": 443,
+      "sha256": "7e48442f5f6b2b9c916260507464e7770ef6726c6b5b165c1316b8c2552aec47",
+      "git_blob_sha": "8676c9440bde7bdccb98d43749a7239d933708dc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-32.json",
+      "bytes": 443,
+      "sha256": "230bfbd4d80aaca7c2baa2f19682048c37c89773b23c1715a084d723b80d63e9",
+      "git_blob_sha": "cead98816ec5300687db625128640f579b767e23"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-33.json",
+      "bytes": 443,
+      "sha256": "06d72cd4576f402e7b682ec3a0358e8b8b81a78a744dcefa0cea86fcc8f1e68a",
+      "git_blob_sha": "e8387f28b9d5ada96ffe052e7c263a964f8a5a1c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-34.json",
+      "bytes": 443,
+      "sha256": "8957620e38be160d1ffe7a9aa2377dca7a4d55c053474413a30245d75fc4c447",
+      "git_blob_sha": "facd13f32c9845813e2c21aa40deec45be4b4770"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-35.json",
+      "bytes": 443,
+      "sha256": "1d5ccfce43732eeb6a68ebb0548aa3f81eb28832b0e05b1967576141dcfe669e",
+      "git_blob_sha": "d36e5b6071309432f8db6e509929ae97529fe608"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-36.json",
+      "bytes": 443,
+      "sha256": "e4c4b3bcb30bd6f4b8006accc7cab2e25050d17df8146d2a3d83fb8ed19aee14",
+      "git_blob_sha": "5636ecdcb381e48085c44060a6e3f445d926d407"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-37.json",
+      "bytes": 443,
+      "sha256": "7e9b845d6fe75e064e844b29b7217917ddfd93c31d83f8ad886fe58b66f15e82",
+      "git_blob_sha": "c72977219fe29d8560a8e8bc4d4a541769acfee8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-38.json",
+      "bytes": 443,
+      "sha256": "0cdca5907421dfadea6294665670565c8294823665a87d31d06825d4e278332a",
+      "git_blob_sha": "a71681a723d1c17047212e77ad4c22a659f135df"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-39.json",
+      "bytes": 443,
+      "sha256": "87c433183472a47a216e1120c990dce6dc082fffa72a51612764a1dee7159f99",
+      "git_blob_sha": "21cce7e67549d09395fd3d094b63e27bb3a5e290"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-40.json",
+      "bytes": 443,
+      "sha256": "9389ca1788eb342f67b7aa3eff5478926874196b6b3b85bbbfd768516c279d04",
+      "git_blob_sha": "b8a58c742c7abcc645abe7d49aa4bb1196037839"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-41.json",
+      "bytes": 443,
+      "sha256": "010c665794b27e5f53d479f33b6a300c6534e6124db0e10ef1062dccde042c84",
+      "git_blob_sha": "5bcfc9a0f7130caf839ca450ff708445c1d5279d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-42.json",
+      "bytes": 443,
+      "sha256": "133cc62af14a2bba98a96cabc8a7a0acba9766250ae53508f9b6b8551d321614",
+      "git_blob_sha": "7cffc5c5a906a364f55ad74290e583981377746e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-43.json",
+      "bytes": 443,
+      "sha256": "75de389f81b556d4ade88cd5c3a89f7f9a963ba59d118f5cb6082aae54122ca3",
+      "git_blob_sha": "fee4c75ef2803c5b224dc762f1ec3788afac524e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-44.json",
+      "bytes": 443,
+      "sha256": "fa50dfce257bd12f3746702ffb15c6c23a0146ccad334c6a91b5a08d6088cb39",
+      "git_blob_sha": "08eeeffd8e8829976ef6bca8d7955130dc5b9609"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-45.json",
+      "bytes": 443,
+      "sha256": "0bf3b1dae4fec77ac35f21153e734730b66bccb857e78f47433634231c0acb60",
+      "git_blob_sha": "5a3d14ed381a62edd1f28532e619b812c2a36716"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-46.json",
+      "bytes": 443,
+      "sha256": "4e74a3a3f5d2fd2e2326609bdae31e9c3a5af3a94c711fee93c1b4742a167b5d",
+      "git_blob_sha": "71d39ab14c736787388ffb70f490b05c8f287066"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-47.json",
+      "bytes": 443,
+      "sha256": "fdd6baca3974e54e714c107b705a73b7a66046cc7c7c2668b82aef870ca09ebd",
+      "git_blob_sha": "8e0446d7a31d572edae8f69ce84f100b8bdbe136"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-48.json",
+      "bytes": 443,
+      "sha256": "8219df8c68f342256e4fe1d5468fbbd72d96a256bc7306514aa146ba1bd75d21",
+      "git_blob_sha": "c2ce74f9d68ceb7c0234d3e8ffaea961d090aa39"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-49.json",
+      "bytes": 443,
+      "sha256": "9c3f6c008ff12947c27dd65c56efa7c1fd102503afc70a753f06d1999197bebf",
+      "git_blob_sha": "d1647b9061f999eb50aafe51686168306f73ddfa"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-50.json",
+      "bytes": 443,
+      "sha256": "8c86973f3cbfd331cfaf0ade17356d92c25a21f2bb6014bd87204313e9828b8d",
+      "git_blob_sha": "116d93e998eff69e95e6746c12d49d3e450bcf0f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-51.json",
+      "bytes": 443,
+      "sha256": "c9eade8d13cff28347265e917177c581c0196e51ffb57ff280d42484e56aee84",
+      "git_blob_sha": "ddcfc5633c8159ce536f06fd9d0a625bf77e3071"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-52.json",
+      "bytes": 443,
+      "sha256": "8326e16242c06d889d0ef3c5a0d7e571acb7c16195fb56199c0a9de476b0dfa4",
+      "git_blob_sha": "bd2f1929533f115051737de0e460f9f7826868db"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/branch-53.json",
+      "bytes": 1495,
+      "sha256": "7c45eacd25c5ceafc661fc19d13a614319b369f848f3165e0517a9d1d6099bf2",
+      "git_blob_sha": "6a1eb934e89cc6f481ec90b1c1b067eaefeea7ed"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-10.json",
+      "bytes": 13543,
+      "sha256": "6c1754f861a6c705b3ad19fe06e5937622d85b64a4fe04fc709b19259a1bfe86",
+      "git_blob_sha": "fb8bac604146341f06eca9401dca3a04652a7da6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-11.json",
+      "bytes": 11871,
+      "sha256": "139072a1d7db4bbf2e8f4e549c5d944c1544ae1a452a4c6c3b3e82b144c01222",
+      "git_blob_sha": "be9ed793f6ee240fae815ba45dc1f3a75b84e506"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-15.json",
+      "bytes": 13110,
+      "sha256": "672708e7c407a5dee461c6492f83fc20a494cf2ac3d110904c8dbb2870fa913d",
+      "git_blob_sha": "89433fd620fbf20d2daab89d7d6bbd428f5817ee"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-53.json",
+      "bytes": 14322,
+      "sha256": "4d985aeb9dce1b061fa0a6156482e3d0fef15acfb626c7cad61302ea1efd56d6",
+      "git_blob_sha": "5e5eedeb7c161da60577d67ef99ac019175f2490"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/highs.log",
+      "bytes": 33009,
+      "sha256": "b5bbc7a94715767e3efb8d59547d6177c40a449fb469ae067ba01ef35dab9c5d",
+      "git_blob_sha": "d60a71060dfed1765ecf70b48dc0a27202e7ccf5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/initialization.json",
+      "bytes": 666,
+      "sha256": "228bed1c16b117cb97d5f8ee9684350634601554c8c244a42a62b388ceb1e738",
+      "git_blob_sha": "51760c007c8ee8d59917ce7ea296eb0bb29b90b0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-00.json",
+      "bytes": 132211,
+      "sha256": "6acf5e547c670bd98fdcc5ae27c7d8129c3f8f21c93736fce4637f0bd3aa3c43",
+      "git_blob_sha": "d558c459ba09092f9c93edd3351074d9b24552e6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-01.json",
+      "bytes": 132279,
+      "sha256": "b0b0347e0b6593f1c69a99e1134fd36e849c2528d866661affdbb4881572b651",
+      "git_blob_sha": "1da57aff6c1ec15009ff78dde31767b7c766a938"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-02.json",
+      "bytes": 132361,
+      "sha256": "dcd631f2cc0679c21228277ae7e7d4e0d62debe61bc45bbdbfa068e5c1f6a91e",
+      "git_blob_sha": "47d16e84748fb16de75efa1ba999df155a01203f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-03.json",
+      "bytes": 132377,
+      "sha256": "8ffb6a7550e13c27993885e8110737c3ee10f2330755f93090ec023c7ac356f1",
+      "git_blob_sha": "56a96b0c6bad40dd990aa7eef894a2b700915a15"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-04.json",
+      "bytes": 132293,
+      "sha256": "8f59e188ee35a0cb6a64416a226557fb97f6dc2a0774e4ae8614afe9771be126",
+      "git_blob_sha": "40f8dda0feb097be774156d914d2760795c76966"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-05.json",
+      "bytes": 132368,
+      "sha256": "68ff9b9c140409efde21dc35f8ccca1b5fcf5da2308da674c2d0037c634deb6b",
+      "git_blob_sha": "b48f6f3d91396bed6de21f054fe29a9b0809f3b7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-06.json",
+      "bytes": 132402,
+      "sha256": "63544ea84b03efb761461ca7a427f103257ca32f093573906afae8a37ba2631c",
+      "git_blob_sha": "99aa59a1d22c6afbd33277e5a2501f26d3426c70"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-07.json",
+      "bytes": 132327,
+      "sha256": "aa7b6968cceb2390cb2ae939cbf1e1f58e1ab56012d5a0442d7e9a8969cce1b3",
+      "git_blob_sha": "4673ce8b4fa45e7c3809e0821572073b76cb8d2d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-08.json",
+      "bytes": 132253,
+      "sha256": "233a75569c52926675b3bc77ffee63f566c3345c0f018bfe2be4650c7c3a2643",
+      "git_blob_sha": "de0ba30d181cef18bcd175534a3325282dc1c26d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-09.json",
+      "bytes": 132270,
+      "sha256": "7a1bce769174e62b3196ec18d9f4d4d20271ab4b3aede29a68946fd7b9d31f42",
+      "git_blob_sha": "fda118d79f3fcdb86a37f0d70e996d1163a010f3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-10.json",
+      "bytes": 167247,
+      "sha256": "ec0c17dde00cd8a0f27e00a42e6d69fdfc95a2fcf2f9d9244e32981fe4911506",
+      "git_blob_sha": "79aef7cec54f3f694c40769a822bf8ada48e19e9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-11.json",
+      "bytes": 171698,
+      "sha256": "6787efe15b5666f1bd55da8a06f56813ed5e7af57d6ffdd01f359eda2b68f94d",
+      "git_blob_sha": "99cdfa409363c7cee886d17fe5c8114385743973"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-12.json",
+      "bytes": 132278,
+      "sha256": "f3ee40e1811d3c5c614402bf909ef2e8aa3e4dd4f5cddc3c4815d6f3202dd50f",
+      "git_blob_sha": "1b95a1015450786ac04b1e38fe36904d0828ec3f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-13.json",
+      "bytes": 132468,
+      "sha256": "c7a2902130ceeaae00ad783bb6cb8973893cfe4a6c144d7646cd3f18929a5ef2",
+      "git_blob_sha": "3553aebdafce49a58935556b6167b9dd28254439"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-14.json",
+      "bytes": 132392,
+      "sha256": "05c2cf68f830283abf4a9d01b1b4c552c2adb1c11d68b48bc3db28f4c6ae4def",
+      "git_blob_sha": "bfa0a645ce941d9a3a2e4b83df591d05c22adb28"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-15.json",
+      "bytes": 166712,
+      "sha256": "3e3205ca93842842b39460dff5f63d368be5794b187603cd8acad985addae7c3",
+      "git_blob_sha": "aa892d3d09204f18287ee6fb592efde018185d5c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-16.json",
+      "bytes": 132335,
+      "sha256": "3491232c8a325ff89a7dea1d6722d2770f7e2b49738a937bf6688769011c6008",
+      "git_blob_sha": "603981cbb83f86434ce6b5295ba91fbdda46a974"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-17.json",
+      "bytes": 132265,
+      "sha256": "2901dd0c01cb0a13bb775db7a702fb537b628a7f3ad3e3b07b0ec2ab114f1467",
+      "git_blob_sha": "0a1350ff36405d89f76b398031e018e3f2eb9f9f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-18.json",
+      "bytes": 132225,
+      "sha256": "e73bc7f3b5e48b35f16c21d7269cba598bc33ce865d3264879eb89abbd7fadbc",
+      "git_blob_sha": "c34aca59b7ea3c93d404dc91704d09dd91f7a4da"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-19.json",
+      "bytes": 132140,
+      "sha256": "5fe1db9cd5aa3a3a82391e357f723470a6799b036ffc62dc655cf5c50cda2941",
+      "git_blob_sha": "9560e47b7c8cd3be9a896e210819f4fad25f9bef"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-20.json",
+      "bytes": 132407,
+      "sha256": "627410a3a4467dba475a2063d9061544620616251b9e346f51ab0aad4e5d2665",
+      "git_blob_sha": "10c274d9cf8c712e4967b7086fa3cb08a2f35c96"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-21.json",
+      "bytes": 132464,
+      "sha256": "1667ee9381876d2fd51e96d22e99195db7bc7b139f5990c5a27a5d9968f2fb6b",
+      "git_blob_sha": "b811d8f0fa47cfcbfdb94090c168033c7187a5a8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-22.json",
+      "bytes": 132662,
+      "sha256": "969f72b3f76d1be577d3340928d72e14b44f83fac8fb72d5046bd8368a3a4777",
+      "git_blob_sha": "04f3e0b871b1c358d9332db260fefacf23d96400"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-23.json",
+      "bytes": 132333,
+      "sha256": "07abd3c5daa775a1fc9211aa562ea30095a9e067341efe1e1320c43cf06942ec",
+      "git_blob_sha": "5a42190332b427b6a4afe1a256e2dd7142400c65"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-24.json",
+      "bytes": 132395,
+      "sha256": "c41374212faebbd041428a4e0954ef0696912ba2b18ea34cd4884635c99cc8d0",
+      "git_blob_sha": "5146481755f5c83ce6802799367bc287b966e835"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-25.json",
+      "bytes": 132348,
+      "sha256": "e83314d7bec1d16a6bf6038b3582babe4151e335ec89fa6f716b0aeb21038f19",
+      "git_blob_sha": "6b179fad7767d036da3d92c3dfbc62024e70a399"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-26.json",
+      "bytes": 132276,
+      "sha256": "220d927ae53a2750f536057b4375a6b75f4f60d541f6dd26c0ffecf0875230ee",
+      "git_blob_sha": "7e7dc0d9f83fac9f3246b6ccb7b61f1b98168629"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-27.json",
+      "bytes": 132315,
+      "sha256": "3f3ce1fd8f623ec09df6142b406ff26d63a3b235480b9ae4d74eda9f1fc0fcc0",
+      "git_blob_sha": "6fc6d7e09905828a551ad733f333d8f4d7a024a4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-28.json",
+      "bytes": 132251,
+      "sha256": "b6df33f509c3914d1de50a7fe2e4820cc39f11137b7e4dc53604283ab5150126",
+      "git_blob_sha": "291f09d190d3b51bd8d0f268cca015132440905b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-29.json",
+      "bytes": 132339,
+      "sha256": "ab2825cf09112748b003592cc48593f1a005faf244506cf1eeb2cba1a3f17816",
+      "git_blob_sha": "ce1b0b77702e49de9c15d4f013b300a8743a55d2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-30.json",
+      "bytes": 132328,
+      "sha256": "8167c5aed867e543fe578b0c39938de79a12acaad2114ce077931c69be6beaee",
+      "git_blob_sha": "afa89874d50c867e5ec3064b86e48b48caab7b78"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-31.json",
+      "bytes": 132348,
+      "sha256": "36d72c9e29fe95c4058c7878e2053ab359d1aef162209f84452e2954637d8d36",
+      "git_blob_sha": "0f67d507217301005e8c59f54a3f328b3c6420eb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-32.json",
+      "bytes": 132318,
+      "sha256": "a2eb967a2a434ab8aa44a6d3753df3ac307d3df7ce8dfb653788002e6193d79f",
+      "git_blob_sha": "f403a205cb1d5ee2c93f19688036b4470de7d12f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-33.json",
+      "bytes": 132280,
+      "sha256": "713d7d1f22f0214c0430c83fe57563891af2ba1b0f372560d01c3b9140157a3d",
+      "git_blob_sha": "2a8727d4ec73ecd603f4320fd30891d4f9a705be"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-34.json",
+      "bytes": 132343,
+      "sha256": "30abff47de3ec89a6c7b792bc42b44118feb97d05bf7fbef762253e9676e0624",
+      "git_blob_sha": "e088c323eb4fa83c5612336a4c9eade728647f55"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-35.json",
+      "bytes": 132340,
+      "sha256": "7e7761b1913f079f069a807b696fd12a85608f5fa4a1650bc0a6d72b6443bb68",
+      "git_blob_sha": "b5abd9d5e9cfbe0dc13966bdada1d33a87425abf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-36.json",
+      "bytes": 132244,
+      "sha256": "28294beeb1d62040f6314650c39c2f683f10af66165e5790322105da3f95130d",
+      "git_blob_sha": "67a628dbc372c97845ec2d4f2923493d3c22c156"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-37.json",
+      "bytes": 132397,
+      "sha256": "aba3e4be230ee7a81095b9387683bd80fb6e39464897cec77ffaf1c8e00d4c99",
+      "git_blob_sha": "b0daf96674bcac92bb7d3533f932a17740cc7f2a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-38.json",
+      "bytes": 132257,
+      "sha256": "34ce07584cd8c3a81756b0083b806747271e266407758207e6575751a0439869",
+      "git_blob_sha": "2571eeb71830d6f3627f7dc470eb70801a74d034"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-39.json",
+      "bytes": 132264,
+      "sha256": "0c22b7aa85b842aa38191ae1af1cf76bc2797fba70c03ae9864496213b7d989f",
+      "git_blob_sha": "0c9ad1cecc1e2f72a0188bf56ea67f72ba3bd6d7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-40.json",
+      "bytes": 132200,
+      "sha256": "16c5d90624020aeaaf862850a660584b6cf43c2019f519d8315153213401f45a",
+      "git_blob_sha": "5eae6560f03f13cc9caa1e34d8e401086e0cf79e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-41.json",
+      "bytes": 132318,
+      "sha256": "720c3084744e5f1d1c59fca258d6b2945d05906071a59209c61e9a681e7eb5cb",
+      "git_blob_sha": "da9e2417d27730d5035ae8fa6c597aee64e39b3b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-42.json",
+      "bytes": 132210,
+      "sha256": "0c51512052d274dbbd5d4d44dddccc891c86f35c77146cf09385db12f59fbc7f",
+      "git_blob_sha": "5daae32bc358a858906a879bdef7d2b0322f6b5a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-43.json",
+      "bytes": 132308,
+      "sha256": "13456c4f7e6cff2a65091e8399ea42091f69b906866d53086013bea995d1afe3",
+      "git_blob_sha": "792cb7f56ecc891d5f7db8c589a205c08f3dcd98"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-44.json",
+      "bytes": 132349,
+      "sha256": "a13daacb3e6d8bd7234c2efcb9d4749bdd0f03317c3bcc24da5a43a3fce3e395",
+      "git_blob_sha": "e85306d881d8042aff2170b00894416433c08dc6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-45.json",
+      "bytes": 132317,
+      "sha256": "4dcf3db552af9e6983c929b024d3223325b264edcd373400f3fce807562ece34",
+      "git_blob_sha": "748fae42b230d182979050d45292d2cde982159e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-46.json",
+      "bytes": 132333,
+      "sha256": "c614a4df9b0e77fe72e2f824b2a35579b16096ec0cd5af47d4c0d3f775727324",
+      "git_blob_sha": "72287c2f59f6b643070cb59486b0fe07908c711d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-47.json",
+      "bytes": 132253,
+      "sha256": "d3e551b29c26d13bacc4a9cb6af8a33053bffdf8a0c90069973f75eb8637b23c",
+      "git_blob_sha": "d3b9461b65e00cbc30241d71c0e46ba605a57543"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-48.json",
+      "bytes": 132208,
+      "sha256": "e37c336b0568f539843f20a2fa07690d4aa67540f718dca8ec1b95bf00d75bcb",
+      "git_blob_sha": "44b2c9777b2f5fdd88ab975270c05a333bbcecb5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-49.json",
+      "bytes": 132257,
+      "sha256": "7eb924ac3394f7526341c1790a9538cebca0742daa73ae4ea0dcdefd6e2a7e33",
+      "git_blob_sha": "762194973d2be367dac7ec4fba4e847f262f94e2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-50.json",
+      "bytes": 132338,
+      "sha256": "0176cbf5ee445c2c2535ff436cd277d5724c66d6353e267071f938db6a190083",
+      "git_blob_sha": "a901d281f15f5df867012594898d45ecf4cf5384"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-51.json",
+      "bytes": 132425,
+      "sha256": "c2343e53a723ac04341369385ed5e249e905f2b25ce7d555a3354d4b9dcbb1f6",
+      "git_blob_sha": "42c2c5cc7ffc51fe13a6ba14ab04612f48f75260"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-52.json",
+      "bytes": 132392,
+      "sha256": "4d7f8ea46a8935b7706d526100e23516688ea2475654f1d3f7955dcad946ce63",
+      "git_blob_sha": "1c7d84f1b5fe224227a2f0af2dedf4f5803b00c5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/numeric-53.json",
+      "bytes": 166791,
+      "sha256": "38fac384ad00cbb56bcf087e14b88ee4e8026bbd15f84acffc9026f38d223c06",
+      "git_blob_sha": "07175725bf9ea8b7107daa996e32b6f53e62e5a8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/records.jsonl",
+      "bytes": 10372,
+      "sha256": "96afdfab10e241ec7279f5333394e6ef576fe0b37299254e2b7f2e08537044f6",
+      "git_blob_sha": "5bd34e985533e60bd247358b8fdc1b5ca3fcc5f6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/result.json",
+      "bytes": 12131,
+      "sha256": "6093f705ae1d9432ff05884bc9a101c356caa5d8de254bbb742181f295477cd7",
+      "git_blob_sha": "579a548f28feca6e23f3364e65bbc5d9fa571e72"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward-owner.json",
+      "bytes": 1013,
+      "sha256": "c519d9481161902bd32c6556008e73645322c620069f00ea8b3723c22125c1ff",
+      "git_blob_sha": "4306d95fad1018e28f1563c6e485202a924d3dd1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward.stdout.log",
+      "bytes": 5071,
+      "sha256": "df06f1a9ef048af63cb6fd2cec7125d27dad24a6f151ef03b6ab4d90941ac9c6",
+      "git_blob_sha": "6c80965ca43924845a73f42a04717979087fe448"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/result.json",
+      "bytes": 2280,
+      "sha256": "63b8274dfdfd9cabe55155ab3fb2a8f1d9670dc2dd2c927d048bda1ed0ccce15",
+      "git_blob_sha": "e3667e9872ae10783d68cfc93d32025e12c467f5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01-analysis.json",
+      "bytes": 5640,
+      "sha256": "0e1cc245793cd1174699bd831355b92f72f7476570c083b1146515995dd6eaa6",
+      "git_blob_sha": "2c0e53ac5a38068cf8d9f1a7a2316a98b93a795e"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_low54_native_lp_terminal_analysis.py",
+      "bytes": 7539,
+      "sha256": "9be2680bebc3cad7bbdb5d4ab1e4e8e0aec1b07771bf067dc9f4442ddeb3477b",
+      "git_blob_sha": "b443b942241eb0651a190bc7f6bbcb1af1a91f99"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_low54_native_lp_run01.md",
+      "bytes": 4174,
+      "sha256": "32a368145f1195b2a9289cbdb3e009cd3c46989c96cc97b8053312a8437481f0",
+      "git_blob_sha": "322e40423397cc74703b6fbe0262643786ee6627"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01-publication-manifest.json",
+      "bytes": 38094,
+      "sha256": "92f938ba11c29c199cbec1914789527ff11025abb4e216f96400852b3c8fe4ce",
+      "git_blob_sha": "abc424f66eea135b9ad482381b2b1ef0c1ec45df"
+    }
+  ],
+  "remote_blob_shas_verified": true,
+  "tree_or_ref_mutations": 0
+}
+

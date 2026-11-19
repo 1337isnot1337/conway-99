@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_low54_native_lp_query.py", line 350, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_low54_native_lp_query.py", line 337, in main
+    answer = preflight_child(args.preparation.resolve(), args.directory.resolve())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_low54_native_lp_query.py", line 117, in preflight_child
+    h, audit = native(spec, directory)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_low54_native_lp_query.py", line 85, in native
+    assert ra.format_ == highspy.MatrixFormat.kRowwise
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

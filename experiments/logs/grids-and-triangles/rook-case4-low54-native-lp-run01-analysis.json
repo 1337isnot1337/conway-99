@@ -1,0 +1,218 @@
+{
+  "all54_native_calls": 54,
+  "all_unexcluded50_numerically_optimal": true,
+  "case4_excluded": false,
+  "cumulative_native_seconds": 18.661773589032236,
+  "current_artifact_references_checked": 139,
+  "excluded_whole_cover_indices": [
+    10,
+    11,
+    15,
+    64
+  ],
+  "four_pair_inequalities": [
+    {
+      "certificate": {
+        "bytes": 13543,
+        "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-10.json",
+        "sha256": "6c1754f861a6c705b3ad19fe06e5937622d85b64a4fe04fc709b19259a1bfe86"
+      },
+      "exact_branch_gap": "827",
+      "point_denominator": "2594289631",
+      "point_lhs_numerator": "363193485",
+      "point_slack_numerator": "2231096146",
+      "point_violated": false,
+      "terms": [
+        [
+          261,
+          1
+        ],
+        [
+          803,
+          1
+        ]
+      ],
+      "upper": 1,
+      "whole_cover_box_index": 10
+    },
+    {
+      "certificate": {
+        "bytes": 11871,
+        "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-11.json",
+        "sha256": "139072a1d7db4bbf2e8f4e549c5d944c1544ae1a452a4c6c3b3e82b144c01222"
+      },
+      "exact_branch_gap": "1066",
+      "point_denominator": "2594289631",
+      "point_lhs_numerator": "363193485",
+      "point_slack_numerator": "2231096146",
+      "point_violated": false,
+      "terms": [
+        [
+          262,
+          1
+        ],
+        [
+          803,
+          1
+        ]
+      ],
+      "upper": 1,
+      "whole_cover_box_index": 11
+    },
+    {
+      "certificate": {
+        "bytes": 13110,
+        "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-15.json",
+        "sha256": "672708e7c407a5dee461c6492f83fc20a494cf2ac3d110904c8dbb2870fa913d"
+      },
+      "exact_branch_gap": "44",
+      "point_denominator": "2594289631",
+      "point_lhs_numerator": "56378660",
+      "point_slack_numerator": "2537910971",
+      "point_violated": false,
+      "terms": [
+        [
+          339,
+          1
+        ],
+        [
+          765,
+          1
+        ]
+      ],
+      "upper": 1,
+      "whole_cover_box_index": 15
+    },
+    {
+      "certificate": {
+        "bytes": 14322,
+        "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/forward/certificate-53.json",
+        "sha256": "4d985aeb9dce1b061fa0a6156482e3d0fef15acfb626c7cad61302ea1efd56d6"
+      },
+      "exact_branch_gap": "844",
+      "point_denominator": "2594289631",
+      "point_lhs_numerator": "1284500613",
+      "point_slack_numerator": "1309789018",
+      "point_violated": false,
+      "terms": [
+        [
+          761,
+          1
+        ],
+        [
+          1183,
+          1
+        ]
+      ],
+      "upper": 1,
+      "whole_cover_box_index": 64
+    }
+  ],
+  "full_model_feasibility_of_unexcluded_boxes_claimed": false,
+  "inputs": {
+    "cold": {
+      "bytes": 2820,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.json",
+      "sha256": "ea492ec530c512759b93d25afc6900a2468d1f221f75aac2eb39092bd8af73f3"
+    },
+    "config": {
+      "bytes": 3160,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-query-configuration01.json",
+      "sha256": "a0ac53ac6969ceeaaeedd2fabfa38d8944dd856c85bb461113a70cd92784c272"
+    },
+    "gate": {
+      "bytes": 4150,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-root-gate01.json",
+      "sha256": "5da4b8f59a0073c64775db4ebd0e4735fcd16ddb2e8c1ab024949854ed063a5d"
+    },
+    "point": {
+      "bytes": 41391,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/exact/candidate.json",
+      "sha256": "7fda72c6a212a6ebe504c03a17f66c05c8545d33e4aebc651f42f817cc3a4bd9"
+    },
+    "point_cold": {
+      "bytes": 1126,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01/exact/cold.json",
+      "sha256": "b69a3a38aeb911c45657871544f21897bc4f9bb6201675c1eab5f45ca8a5c317"
+    },
+    "spec": {
+      "bytes": 160835,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preparation02/specification.json.gz",
+      "sha256": "b037035bb6756bcb259cc06fc6ae22781f343fedeb38c8ec923dcb19fdb50164"
+    },
+    "terminal": {
+      "bytes": 2280,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/result.json",
+      "sha256": "63b8274dfdfd9cabe55155ab3fb2a8f1d9670dc2dd2c927d048bda1ed0ccce15"
+    }
+  },
+  "maximum_single_native_seconds": 1.3087616829870967,
+  "native_calls_in_this_audit": 0,
+  "new_global_zero_columns": [],
+  "numerical_status_counts": {
+    "HighsModelStatus.kInfeasible": 4,
+    "HighsModelStatus.kOptimal": 50
+  },
+  "old_trace_or_row_replay_repeated": false,
+  "point_rejected_by_any_pair": false,
+  "remaining_whole_case_boxes": 187,
+  "seconds": 0.4380940700066276,
+  "source": {
+    "bytes": 7539,
+    "path": "experiments/workspace/rook_case4_low54_native_lp_terminal_analysis.py",
+    "sha256": "9be2680bebc3cad7bbdb5d4ab1e4e8e0aec1b07771bf067dc9f4442ddeb3477b"
+  },
+  "status": "PASS_TERMINAL_BINDINGS_AND_EXACT_FOUR_PAIR_CONTRACTION",
+  "unexcluded_whole_cover_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    12,
+    13,
+    14,
+    16,
+    17,
+    18,
+    19,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    57,
+    60
+  ]
+}

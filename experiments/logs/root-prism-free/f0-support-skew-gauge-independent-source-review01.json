@@ -1,0 +1,50 @@
+{
+  "all366_source_lines_read": true,
+  "configuration": {
+    "bytes": 7827,
+    "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-configuration01.json",
+    "sha256": "c53ae366cf1fcbee15fc403bcf1a5fc2138fc673137c98f78370f599ed05c0b8"
+  },
+  "input_hashes_checked": 11,
+  "main_census_repeated": false,
+  "mathematical_checks": [
+    "For gauge sites p<q, the potential perturbation is sign*(h_a[q] e_p-h_a[p] e_q) exactly on the selected support. The internal edge perturbation cancels by skew symmetry.",
+    "The target-demand perturbation is sign*sum_a(h_a[q] q_a[p]-h_a[p] q_a[q]); all 153 sums are checked to vanish on the accepted Gram incidence.",
+    "Every global edge with exactly one endpoint in the support is enumerated. Its derivative is h_inside[q]*h_outside[p]-h_inside[p]*h_outside[q], matching the producer loop orientation and sign.",
+    "Internal positive weights and their original allocated endpoints remain unchanged. Each boundary positive capacity is assigned to its outside endpoint, so subtracting max(0,new_weight)-max(0,old_weight) at that endpoint exactly updates the full allocation.",
+    "Demand changes are included in each selected coefficient. Edges outside the support have zero potential at both ends and remain zero. The complete coefficient sum on the old selected incidence remains four.",
+    "Every core action preserves the complete core adjacency, target matrix, signature domain, and eligible edge set. Transporting an accepted row is valid even when numeric endpoint order changes; a full replay must transport the original endpoint allocation rather than recompute a new minimum-ID choice.",
+    "Primitive normalization divides by the gcd of all nonzero coefficients. The gcd divides the raw gap four because that gap is a sum of those coefficients.",
+    "All 306 gauges and all 3672 transports have complete coverage. Exact row dedup preserves every existing parent row and retains all distinct new rows with all gauge/action origins."
+  ],
+  "no_mathematical_blocker_found": true,
+  "optimizer_calls": 0,
+  "preparation": {
+    "bytes": 2911,
+    "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-preparation01/report.json",
+    "sha256": "1f0f1b1dd43b207c13ad0a4e7045d8fb3748ccc34c6fd533c0cb13df66419450"
+  },
+  "preparation_inventory": {
+    "boundary_derivative_entries": 136280,
+    "boundary_edges": 15643,
+    "global_edges": 68394,
+    "internal_edges": 1223,
+    "parent_registry_rows": 12481,
+    "signed_gauges": 306,
+    "transported_rows_before_dedup": 3672
+  },
+  "preparation_owner": {
+    "bytes": 497,
+    "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-preparation01/owner.json",
+    "sha256": "150a49f9f8dc113df70eec1632c6f6fabf956ea31ee5966d532234eabdd2083b"
+  },
+  "producer": {
+    "bytes": 21697,
+    "path": "experiments/workspace/root_prism_free_f0_support_skew_gauge.py",
+    "sha256": "760fae86189139db3f51b0adccaec27856c241b47e33c6f251ccbf7aad059981"
+  },
+  "reviewer": "master_review",
+  "scope": "The finite census still requires root authorization and independent full-edge coefficient replay before its export becomes seed authority.",
+  "source_imports": 0,
+  "status": "PASS_INDEPENDENT_SUPPORT_SKEW_GAUGE_SOURCE_REVIEW"
+}

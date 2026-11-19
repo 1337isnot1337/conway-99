@@ -1,0 +1,88 @@
+{
+  "authorized": {
+    "automatic_retries": 0,
+    "calls_per_branch": 1,
+    "cumulative_native_seconds": 120,
+    "extra_ray_solves": 0,
+    "forward_cooperative_seconds": 180,
+    "forward_hard_owner_seconds": 210,
+    "one_pilot": true,
+    "requested_native_seconds_per_branch": 2,
+    "selected_branches": 54,
+    "separate_cold_hard_owner_seconds": 90,
+    "separate_cold_seconds": 60,
+    "threads": 1
+  },
+  "configuration": {
+    "bytes": 3160,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-query-configuration01.json",
+    "sha256": "a0ac53ac6969ceeaaeedd2fabfa38d8944dd856c85bb461113a70cd92784c272"
+  },
+  "independent_preparation_audit": {
+    "bytes": 2073,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preparation-audit02.json",
+    "sha256": "e9a1bd2947e4e2992640a26e85b62afbbbcbdf355bb302227e2aff58c9534f33"
+  },
+  "mathematics": [
+    "All2271 original native rows and17 accepted global rows remain on the112-zero face. The complete191-box cover supplies exactly54 low boxes.",
+    "Both simplex sparse storage forms are reconstructed and every signed matrix coefficient and endpoint is compared to the same frozen matrix. All1102 variable bounds reset before each branch.",
+    "A numerical ray only proposes signed integer row multipliers. Acceptance requires the exact combined minimum over the entire conditioned box to exceed the combined row endpoint.",
+    "Independent replay reconstructs the small original rows and all1214-coordinate contractions. The original positive weight-three identity and accepted complete propagation bind each singleton or pair guard to its box.",
+    "Native feasible, unknown, unproved infeasible and uncertified rays remain unresolved. No full-cover row pool is scanned and no full-model feasible point is claimed."
+  ],
+  "original_failed_no_solver_preflight_and_storage_error_preserved": true,
+  "preflight": {
+    "bytes": 14609,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preflight03/child/result.json",
+    "sha256": "70a6e20b06949b58ebefbd54ecc6214ff5b3df970dd1c2bd341d7f0b845aea32"
+  },
+  "preflight_owner": {
+    "bytes": 1042,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preflight03/supervisor.json",
+    "sha256": "c7e7631047ecb43fd99cf575e73c2055c99425e8e04f83090d7233f85343691c"
+  },
+  "preparation": {
+    "bytes": 4045,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preparation02/preparation.json",
+    "sha256": "a2b840b62891ff7f562e21138bcbd60b589677bc106db77e49b90be23f60eee4"
+  },
+  "review": {
+    "complete_helper403_lines_read": true,
+    "complete_independent_cold291_lines_read": true,
+    "complete_original_query_read": true,
+    "native_CSR_CSC_repair_read": true,
+    "two_unrun_cleanup_deltas_read": true,
+    "unchanged_query_AST_compared": true
+  },
+  "schema": "conway99.rook-case4.low54-native-lp.root-gate.v1",
+  "source_bindings": {
+    "cold": {
+      "bytes": 15386,
+      "path": "experiments/workspace/rook_case4_low54_native_lp_replay.py",
+      "sha256": "12906b10154ea48871ee659fb4553a7aa9c5d28846d2a5e124c152d557dfb144"
+    },
+    "helper": {
+      "bytes": 21877,
+      "path": "experiments/workspace/rook_case4_low54_native_lp.py",
+      "sha256": "174c084dc9df3e3e0eed5e028ad18b6c89957c51b4ddfe7c0e4bbeaaa70d5380"
+    },
+    "owner": {
+      "bytes": 25552,
+      "path": "experiments/workspace/rook_case4_box_hull_membership_query.py",
+      "sha256": "aa557c7b99ec3de71e9ecde3f6f7dfa3ca71066a835086cdd3b3f2eb7be558e5"
+    },
+    "owner_helper": {
+      "bytes": 25758,
+      "path": "experiments/workspace/rook_case4_box_hull_membership.py",
+      "sha256": "54330f430c0c4dae03a0298533121ce43482ceb295f54df715ad2f2180d3503c"
+    },
+    "query": {
+      "bytes": 21236,
+      "path": "experiments/workspace/rook_case4_low54_native_lp_query.py",
+      "sha256": "2ab88406370bb1f0a695fd3d191aee411e35bec0f3ced13758266811958dbefe"
+    }
+  },
+  "status": "PASS_COMPLETE_SOURCE_REVIEW_AND_NATIVE_PREFLIGHT",
+  "unrestricted_problem_solved": false,
+  "whole_case_exclusion_claimed": false
+}
