@@ -1,0 +1,49 @@
+{
+  "checked_arguments": [
+    "The 756 empty-row coordinate vectors are independent and each selector right-hand side is zero.",
+    "Skew-site potentials have identically zero contraction on every unordered edge because M transpose plus M is zero.",
+    "The saved 153-square minor, outside the empty coordinates, has full rank modulo two and therefore over the rationals.",
+    "The independent modulo-three rank 7731 supplies a rational lower bound for degree-plus-mixed rows. Over the rationals every degree row is one third of the corresponding mixed-row sum.",
+    "The exhibited 909 independent left-kernel vectors give the matching upper bound 8640 minus 909 equals 7731.",
+    "Every skew selector right-hand side is the displayed integer Gram combination and has constant zero. Its coefficient identity is checked at every original selector.",
+    "Annihilation by the complete rational left kernel proves solvability of unrestricted signed rational edge equations. It does not constrain edge signs, capacities, activation or integrality."
+  ],
+  "cold_result": {
+    "bytes": 1466,
+    "path": "experiments/logs/root-prism-free/f0-shared-rational-kernel01-cold.json",
+    "sha256": "45d90993f1c78af166d2db8e886754a883592f492ee9bea92cead2790b6b7e3a"
+  },
+  "cold_source": {
+    "bytes": 7211,
+    "path": "experiments/workspace/root_prism_free_f0_shared_rational_kernel_cold.py",
+    "sha256": "0d781fe5dbddcaa82fb53943622c3fc6b47dcd65091d9e3f8f8648b26433b87c"
+  },
+  "conclusion": {
+    "empty_rows": 756,
+    "left_nullity": 909,
+    "new_rational_selector_equalities_beyond_gram": 0,
+    "rational_mixed_rank": 7731,
+    "skew_site_vectors": 153,
+    "unrestricted_problem_solved": false,
+    "whole_component_excluded": false
+  },
+  "note": {
+    "bytes": 6101,
+    "path": "research/root_prism_free_f0_shared_rational_kernel.md",
+    "sha256": "81de3bde66160883f3972ba34b43dd0aeb9cee8dc16d60583416e0e4a18b7a52"
+  },
+  "producer": {
+    "bytes": 9984,
+    "path": "experiments/workspace/root_prism_free_f0_shared_rational_kernel.py",
+    "sha256": "f017f6cc2b3674b21b9fb519e585c8d61495ae4db715fe40bd2715f38d1421b5"
+  },
+  "review_scope": {
+    "complete_independent_cold_source_read": true,
+    "complete_producer_source_read": true,
+    "complete_theorem_note_read": true,
+    "native_query_authorized": false,
+    "root_repeated_large_elimination": false
+  },
+  "schema": "conway99.f0.shared-rational-kernel.root-review.v1",
+  "status": "PASS_COMPLETE_SOURCE_AND_PROOF_REVIEW"
+}

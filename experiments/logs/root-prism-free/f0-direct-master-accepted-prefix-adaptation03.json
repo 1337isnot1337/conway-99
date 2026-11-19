@@ -1,0 +1,70 @@
+{
+  "accepted_cold_and_complete_export_bound_by_hash": true,
+  "accepted_parent_registry_rows_preserved_in_order": 253,
+  "additional_complete_shared_census_rows": 12168,
+  "additional_exact_packing_rows": 48,
+  "changed_controller_functions": [
+    "definition",
+    "initialize"
+  ],
+  "complete_controller_diff": "--- experiments/workspace/root_prism_free_f0_direct_master_continuation_v4.py\n+++ experiments/workspace/root_prism_free_f0_direct_master_continuation_v5.py\n@@ -17,8 +17,8 @@\n import time\n \n ROOT = Path(__file__).resolve().parents[2]\n-HELPER = (\"experiments/workspace/root_prism_free_f0_direct_master_registry_v4.py\",\n-          \"417eec796fed2f5704801f07de59a54107bfa08c59f15e4c0a1fffa6fec04a15\")\n+HELPER = (\"experiments/workspace/root_prism_free_f0_direct_master_registry_v5.py\",\n+          \"af36bd758df4eb694443a5762c55804027396c68c84e8d15a6399110e75d6fd4\")\n ITERATIONS, OWNER_SECONDS, TOTAL_CP_SECONDS = 8, 300, 180\n CALL_SECONDS, SHARED_SECONDS, PREP_SECONDS, COLD_SECONDS, RESERVE = 60, 60, 60, 60, 8\n \n@@ -57,6 +57,7 @@\n             \"seed_configuration\": ctx[\"config\"], \"base_definition\": ctx[\"base\"].definition(),\n             \"shared_definition\": ctx[\"shared_definition\"], \"matching_definition\": ctx[\"matching\"].definition(),\n             \"seed_registry_sha256\": value_sha(ctx[\"registry\"]), \"seed_rows\": len(ctx[\"registry\"]),\n+            \"maximum_registry_rows\": ctx[\"maximum_registry_rows\"],\n             \"variables\": 540, \"base_linear_rows\": 4681, \"initial_linear_rows\": 4681 + len(ctx[\"registry\"]),\n             \"maximum_iterations\": ITERATIONS, \"owner_seconds\": OWNER_SECONDS,\n             \"maximum_cumulative_CP_solve_seconds\": TOTAL_CP_SECONDS, \"maximum_seconds_per_CP_call\": CALL_SECONDS,\n@@ -98,7 +99,7 @@\n     else:\n         snapshot = {\"raw_sha256\": hashlib.sha256(proto.SerializeToString()).hexdigest(),\n                     \"rows\": len(proto.constraints)}\n-    stage(\"157_seed_rows_and_complete_original_prefix_ready\")\n+    stage(\"12469_seed_rows_and_complete_original_prefix_ready\")\n     return h, ctx, plan, literal_cuts, cp, pb, proto, model, snapshot\n \n \n",
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-direct-master-seed-configuration04.json",
+    "sha256": "a34afd815e2f95312e5afda0834cba889495b2d5a06815de6fdcce0f46299bcd"
+  },
+  "controller": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v5.py",
+    "sha256": "8a3ed24dbf4ff16768e24d608bfd2dc57e8d0db879cb707a28df09dd528d9801"
+  },
+  "cumulative_CP_seconds_unchanged": 180,
+  "final_parent253_prefix_was_not_queried": true,
+  "identical_controller_functions": [
+    "digest",
+    "canonical",
+    "value_sha",
+    "save",
+    "helper",
+    "prefix_snapshot",
+    "preparation_check",
+    "prepare",
+    "inspect_candidate",
+    "run",
+    "replay",
+    "worker",
+    "owned"
+  ],
+  "independent44_second_census_not_repeated_in_context": true,
+  "last_parent_called_registry_rows": 241,
+  "legacy_cap_unchanged": 256,
+  "maximum_iterations_unchanged": 8,
+  "native_imports_in_adaptation": 0,
+  "native_linear_rows": 17150,
+  "new_add_rows_AST_identical_to_v3": true,
+  "new_add_rows_has_its_own_module_globals": true,
+  "new_registry_cap": 16384,
+  "new_rows_are_not_filtered_by_old_candidate_violation": true,
+  "no_existing_original_or_added_rows_removed": true,
+  "optimizer_calls_in_adaptation": 0,
+  "owner_seconds_unchanged": 300,
+  "parent_controller": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v4.py",
+    "sha256": "4c2950a430e2951b1afb337b2fb5392b36266c554194624caca20b5c28f4085f"
+  },
+  "per_CP_call_seconds_unchanged": 60,
+  "pre_native_size_calculation": {
+    "additional_terms": 1577616,
+    "complete_native_terms": 2031768,
+    "maximum_additional_absolute_activity": 1614279,
+    "maximum_additional_coefficient": 10046,
+    "native_raw_bytes_safe_upper_bound": 24658221,
+    "registry_json_bytes": 21145617
+  },
+  "registry": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_registry_v5.py",
+    "sha256": "af36bd758df4eb694443a5762c55804027396c68c84e8d15a6399110e75d6fd4"
+  },
+  "schema": "conway99.f0.direct-master.accepted-prefix-adaptation.v2",
+  "seed_rows": 12469,
+  "status": "FROZEN_COMPLETE12469_ROW_SEED_ADAPTATION",
+  "variables": 540
+}
