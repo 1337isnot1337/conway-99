@@ -87,3 +87,5 @@ The [two-full-axis proof](research/grids-and-triangles/two-full-axes.md) exclude
 The [fourteen-grid root exclusion](research/grids-and-triangles/fourteen-grid-root.md) leaves at most thirteen grids through each point, giving at least 32 percolating partners there. The remaining seven-edge support has 41 cell populations, each inconsistent with its four-point eigenvector equations.
 
 The [thirteen-grid classification](research/grids-and-triangles/fourteen-grid-root.md#thirteen-grids) leaves two bipartite missing-axis graphs. Both have a full axis, so a vertex outside all full triangles has at most twelve grids.
+
+The [parallel deficit inequality](research/grids-and-triangles/parallel-triangle-deficits.md) implies that two parallel full triangles force a partition into 33 triangles. There are 35 marked cores for the third parallel line.
