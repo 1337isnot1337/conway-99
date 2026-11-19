@@ -5,6 +5,7 @@ CERTIFICATES := $(addprefix $(WORKSPACE)/level-seven-certificate-,28.json 30.jso
 .PHONY: verify verify-grid-free-relaxation verify-grid-free-projectors verify-current-grid-bounds verify-general-rook-interfaces verify-rook-partner-bound verify-rook-pair-completion verify-rook-tip-boundary verify-complement-rook-incidence verify-complement-rook-a2-completion verify-root-matching-coverage verify-red-grid-bound verify-seven-red-residual verify-rook-interfaces verify-rook-interfaces-drat verify-global-constraints verify-coupled-shells
 .PHONY: verify-order-ten-count-cut verify-root-anchor-max
 .PHONY: verify-order-ten-moment-cuts verify-complement-rook-schur
+.PHONY: verify-prism-zero-counts verify-prism-zero-psd verify-incidence-master-cut-orbits
 verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
@@ -53,6 +54,19 @@ verify-complement-rook-schur:
 
 verify-root-anchor-max:
 	"$(PYTHON)" $(WORKSPACE)/root_full_caps_anchor_max.py --certificate experiments/logs/root-full-caps-anchor-max/anchor-max-certificate.json
+
+verify-prism-zero-counts:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/catalogue.pickle" "$$build_dir/audit.json"; rmdir "$$build_dir"' EXIT; \
+	"$(PYTHON)" -c 'import pickle,sys; sys.path.insert(0,"experiments/workspace"); from subgraph_counts import build; pickle.dump(build(10),open(sys.argv[1],"wb"),protocol=4)' "$$build_dir/catalogue.pickle"; \
+	"$(PYTHON)" $(WORKSPACE)/audit_prism_zero_count_witness.py --witness experiments/logs/moments-and-counts/prism-zero-repair-witness.json --catalogue "$$build_dir/catalogue.pickle" --output "$$build_dir/audit.json"
+
+verify-prism-zero-psd:
+	"$(PYTHON)" $(WORKSPACE)/grid_free_order10_prism_zero_psd.py replay --certificate experiments/logs/moments-and-counts/prism-zero-psd-certificate.json.gz
+
+verify-incidence-master-cut-orbits:
+	"$(PYTHON)" $(WORKSPACE)/complement_rook_incidence_master_cut_orbits.py --pilot experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01.json --replay experiments/logs/grids-and-triangles/complement-rook-incidence-master-pilot01-full-replay.json --certificate experiments/logs/grids-and-triangles/complement-rook-incidence-master-cut-orbits.json
 
 verify-root-matching-coverage:
 	"$(PYTHON)" $(WORKSPACE)/root_full_caps_coverage.py --certificate experiments/logs/root-full-caps/matching-coverage.json

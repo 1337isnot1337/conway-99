@@ -67,6 +67,18 @@ retains all fourteen inequalities and returns a numerical proposal.
 Only two induced counts become negative after rounding, each minus one.
 The moment scan finds no exact separator, but it does not certify PSD.
 This run gives neither an exact count witness nor a prism-free exclusion.
+A subsequent [one-coordinate repair](research/grids-and-triangles/grid_free_order10_prism_zero_repair.md)
+does give an exact prism-zero count witness through order ten. Increasing
+coordinate 549 from five to six makes all 48,965 induced counts nonnegative
+integers. An [independent replay](research/grids-and-triangles/prism_zero_count_independent_audit.md)
+checks every original equation, level total, reduced count, and all 1,443
+prism-containing types. The new prefix also has [exact PSD certificates
+for all 1,416 selected cached blocks](research/grids-and-triangles/grid_free_order10_prism_zero_psd.md).
+Both owner and coordinator replays pass. These blocks use counts through
+order nine; new order-ten moment blocks are a separate search.
+[Stronger injective embedding bounds](research/grids-and-triangles/order10_embedding_bounds.md)
+improve every individual core bound but also permit this point. The
+finite relaxation therefore still cannot force a prism or rook grid.
 The [principal-projector scan](research/grids-and-triangles/order10_projector_zeros.md)
 excludes only the rook graph plus an isolated vertex among all types
 through order ten. It adds no new zero-grid restriction.
@@ -137,6 +149,15 @@ and an independent clause audit checks the complete orbit expansion.
 All rejected triangles use three mixed-type signatures. No signature
 or eligible edge loses all triangle support, so this is not a core
 exclusion.
+
+The [baseline incidence-master pilot](research/grids-and-triangles/complement_rook_incidence_master_pilot_01_results.md)
+now gives eight checked signed selector-pattern exclusions. Their source
+designs have `a=11,14,12,17,17,17,19,18`. Each proof has a separate
+complete-base rebuild, retained-clause inclusion check, and DRAT replay.
+The pilot reached its eight-design limit without exhausting the class.
+[Static relabeling closure](research/grids-and-triangles/complement_rook_incidence_master_cut_orbits.md)
+gives 1,152 distinct necessary clauses. This does not improve the current
+global `a>=3` bound or exclude the complementary-rook core.
 
 ## Scope of the unrestricted computations
 

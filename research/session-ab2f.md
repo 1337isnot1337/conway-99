@@ -446,3 +446,25 @@ their hypotheses permit them; computational exclusions require exact replay.
   most two grids. Its full 919,143-core replay remains separate from
   this branch's checks. Its generic crossing and transitive 60-point
   exterior investigations remain reserved to the external worker.
+- Repaired the prism-zero point by changing only coordinate 549 from
+  five to six. Root independently reconstructed all 48,965 counts,
+  checked all 180,445 original equations, and directly identified
+  all 1,443 prism-containing types as zero. The unchanged older prefix
+  now has exact certificates for all 1,416 cached PSD blocks, with
+  separate owner and coordinator replays. This is a finite relaxation
+  witness, not a graph. New order-ten moment blocks remain untested
+  by that certificate.
+- Improved all 549 ordinary-core upper bounds by subtracting used
+  vertices in the embedding recurrence. All 76 small rook controls
+  pass, including every vertex order. The repaired point satisfies
+  all improved bounds; its largest count-to-bound ratio is below 0.44.
+- The baseline incidence-master pilot completed eight designs with
+  `a>2`; all eight conditional calls were UNSAT. Fresh explicit-unit
+  proofs and all eight separate full-formula rebuild/DRAT replays pass.
+  The pilot stopped at its design limit, not exhaustion. Removing only
+  unused units and closing the patterns under the 144 core relabelings
+  gives 1,152 distinct non-subsumed clauses. Root replayed this closure.
+- Read Theorem 1 and Lemma 2.4 of Makhnev and Nirova's 2006 slender
+  partial-quadrangle classification. It explicitly retains the
+  `(99,14,1,2)` parameter set; the classification is not an exclusion.
+  Source: https://m.mathnet.ru/php/getFT.phtml?jrnid=al&option_lang=eng&paperid=161&what=fullt.

@@ -222,6 +222,28 @@ counts become minus one; no exact feasible point follows from the run.
 The [maximum-anchor run table](../research/root_full_caps_anchor_max_runs_01.md)
 records four further UNKNOWN cases under its separate coverage convention.
 
+The [exact prism-zero repair](../research/grids-and-triangles/grid_free_order10_prism_zero_repair.md)
+and its selected cached PSD blocks have independent replays:
+
+```sh
+make verify-prism-zero-counts
+make verify-prism-zero-psd
+make verify-incidence-master-cut-orbits
+```
+
+The first target rebuilds the small catalogue and checks all original
+count equations without rebuilding the large reduced matrix. The
+[count-audit note](../research/grids-and-triangles/prism_zero_count_independent_audit.md)
+also gives the optional reduced-form replay. The second target verifies
+all 1,416 exact PSD certificates without recomputing numerical
+eigensystems. Neither target constructs a graph.
+
+The third target replays the static closure of eight checked incidence
+patterns under core relabeling. It binds the completed proof replays;
+it does not itself call DRAT. The
+[pilot result note](../research/grids-and-triangles/complement_rook_incidence_master_pilot_01_results.md)
+gives the full-base rebuild and DRAT command for each of the eight cuts.
+
 The earlier bound of three all-red grids retains its replay target:
 
 ```sh
