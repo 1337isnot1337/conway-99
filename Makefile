@@ -7,6 +7,7 @@ verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" grid_intersections.py
 	cd $(WORKSPACE) && "$(PYTHON)" grid_agreements.py
 	cd $(WORKSPACE) && "$(PYTHON)" grid_leaf.py
+	cd $(WORKSPACE) && "$(PYTHON)" incomplete_grid_profiles.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cell_profiles.py
 	cd $(WORKSPACE) && "$(PYTHON)" thirteen_grid_supports.py
 	cd $(WORKSPACE) && "$(PYTHON)" parallel_triangle_cores.py
