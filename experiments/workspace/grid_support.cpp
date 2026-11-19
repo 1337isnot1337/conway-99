@@ -16,6 +16,7 @@ int main(){
     static unsigned char bip[full+1];int minima[22],num[22]{};
     fill(minima,minima+22,999);
     int min_weight = 999, min_weight_no_full = 999;
+    int witness_margin[2] = {999, 999};
     int no_full_margin = 999, one_full_margin = 999, min_pencil_weight = 999;
     for(int m=0;m<=full;m++){
         int adj[7]{};
@@ -57,6 +58,11 @@ int main(){
         }
         int weight = 8 * (21 - e) + 2 * t - charge;
         if (full_axes <= 1 && e <= 13) {
+            int degree_two = 0;
+            for (int i = 0; i < 7; ++i)
+                degree_two += popcount(unsigned(adj[i])) == 4;
+            int corrected = 2*t - capacity + 2*degree_two - 11*e;
+            witness_margin[full_axes] = min(witness_margin[full_axes], corrected);
             int bonus = 0;
             for (unsigned h = d; h; h &= h - 1) {
                 int j = countr_zero(h);
@@ -73,6 +79,8 @@ int main(){
     }
     assert(no_full_margin == -138 && one_full_margin == -146);
     cout << "Local capacity margins: " << no_full_margin << ' ' << one_full_margin << '\n';
+    assert(witness_margin[0] == -102 && witness_margin[1] == -108);
+    cout << "Two-page root margins: " << witness_margin[0] << ' ' << witness_margin[1] << '\n';
     assert(min_pencil_weight == 196);
     cout << "Minimum doubled root weight after the pencil correction: " << min_pencil_weight << '\n';
     assert(min_weight == 97 && min_weight_no_full == 98);

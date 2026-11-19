@@ -13,6 +13,7 @@ verify: $(CERTIFICATES)
 	cd $(WORKSPACE) && "$(PYTHON)" full_triangle_components.py
 	cd $(WORKSPACE) && "$(PYTHON)" rook_nine_covers.py
 	cd $(WORKSPACE) && "$(PYTHON)" rook_eight_covers.py
+	cd $(WORKSPACE) && "$(PYTHON)" double_partner_cores.py
 	cd $(WORKSPACE) && "$(PYTHON)" root_cover_audit.py
 	cd $(WORKSPACE) && "$(PYTHON)" level_seven_check.py
 	@set -eu; \
@@ -45,3 +46,12 @@ verify-nine-triangle-cover:
 verify-eight-triangle-cover:
 	"$(PYTHON)" $(WORKSPACE)/rook_eight_covers.py --control
 	"$(PYTHON)" $(WORKSPACE)/rook_eight_covers.py --verify --solver "$(CADICAL)" --checker "$(DRAT_TRIM)"
+
+.PHONY: verify-double-partner
+verify-double-partner:
+	@set -eu; \
+	build_dir=$$(mktemp -d); \
+	trap 'rm -f "$$build_dir/check" "$$build_dir/cores"; rmdir "$$build_dir"' EXIT; \
+	$(CXX) -O3 -std=c++20 $(WORKSPACE)/double_partner_check.cpp -o "$$build_dir/check"; \
+	"$(PYTHON)" $(WORKSPACE)/double_partner_cores.py --emit > "$$build_dir/cores"; \
+	"$$build_dir/check" < "$$build_dir/cores"

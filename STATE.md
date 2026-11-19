@@ -99,3 +99,5 @@ The [nine-triangle rook cover exclusion](research/grids-and-triangles/nine-trian
 Applying that exclusion to the induced subgraphs of every forced component leaves 28 pencils, a four-cycle, and $K_{2,3}$. Counting the distinct forced saturated lines gives [at most 22 full triangles](research/grids-and-triangles/full-triangle-components.md#after-the-nine-triangle-cover-exclusion).
 
 The [eight-triangle neighborhood exclusion](research/grids-and-triangles/eight-triangle-cover.md) eliminates the four-cycle and $K_{2,3}$ by 268 checked refutations. Every full component is a pencil, and there are at most 21 full triangles. The pencil classification also gives at least 1,215 disjoint triangle pairs with two cross-edges.
+
+The [shared-witness exclusion](research/grids-and-triangles/double-partner-witness.md) checks all 919,143 locally admissible 38-point cores. A triangle of grid degree two can be charged at most 36 crossing witnesses. This gives at most 105 grids and 20 full triangles, at least 2,268 percolating nonedges, and at least 21 triangles on at most two grids. Replay with `make verify-double-partner`.
