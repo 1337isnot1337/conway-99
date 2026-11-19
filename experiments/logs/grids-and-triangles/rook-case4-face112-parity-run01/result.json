@@ -1,0 +1,73 @@
+{
+  "status": "COMPLETE_EXACT_PARITY_SCAN: cold replay pending",
+  "complete": true,
+  "evaluated_candidates": 41041,
+  "violated_inequalities": 1,
+  "case4_excluded": false,
+  "limits": {
+    "preparation_seconds": 60,
+    "scan_seconds": 60,
+    "replay_seconds": 60,
+    "candidate_equations": 41041,
+    "maximum_basis_rows_per_candidate": 2,
+    "maximum_transcript_bytes": 67108864,
+    "checkpoint_every_candidates": 256,
+    "automatic_retries": 0,
+    "optimizer_calls": 0
+  },
+  "optimizer_calls": 0,
+  "automatic_retries": 0,
+  "bindings": {
+    "inventory": {
+      "inventory_cold_sha256": "96f8a1f6e5f09a6a5978bf6ffd1ac06dd1e59a8d8d34fb104337ab25fc8dbc6f",
+      "inventory_dependency_source_hashes": {
+        "rook_case4_complete_lp_recovery.py": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+        "rook_case4_transportation_seed.py": "9eedacb4b62db8ad7058e291d04f83141fca306971ed278a58548ead4cd1e8a1"
+      },
+      "inventory_gzip_sha256": "61288003fb0b4dae4e37d936cd9c6343e4cbfaec75076c14ea05fa4ede290929",
+      "inventory_raw_sha256": "06024df62d4723f287cce4abf6b3a6d26ae8a3e93e991e994c8843620af20528",
+      "inventory_source_sha256": "aff911d07c002d621933ef5371520a5d9c13842a278ab7ac4874279137d93207",
+      "source_sha256": "c09b76ed3570ca0fec17c2446a8222cb9c556ad5664f665adf38a5f473b188db"
+    },
+    "mod2_certificate_gzip_sha256": "2b2ea2cca576ac60424557442325ad8ed57a1e43f1027c77e5055189183c5600",
+    "mod2_certificate_raw_sha256": "ebbb485a638515758a2576db9f8216e90d792f62b6b96d00c96c651157967ab3",
+    "modular_cold_sha256": "0bf5fb3687db3fd81a5cf270cc6b30666f1c22c7318878f201d7720f8abf29b0",
+    "modular_source_sha256": "c09b76ed3570ca0fec17c2446a8222cb9c556ad5664f665adf38a5f473b188db",
+    "new_inputs": {
+      "H2_Gram": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face99-parity-face-certificate.json",
+        "sha256": "717c3e4103dd56bdd260f52b0f50c5a06f4245b834d92194357481d3163e229e"
+      },
+      "model112": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-model01/model.json",
+        "sha256": "018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f"
+      },
+      "model112_cold": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-model01-cold-replay.json",
+        "sha256": "26f063161cbf9c0beb139b392f0b46007254176c522308d3ed2d5e3ee3c2e703"
+      },
+      "point112": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-basis-run01/candidate.json",
+        "sha256": "bb81664e8ea9faec6878ee98ec36c5ae844535e805f78fabe7c475a1f83d8ebb"
+      },
+      "point112_replay": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-basis-run01-replay.json",
+        "sha256": "cda50fcd87c9e5009243b76442a953a0f1f6b6461baead3ecf296cce508a0c59"
+      },
+      "zero663": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face99-zero663-gram-capacity-certificate.json",
+        "sha256": "312d96f363eaad62c31ab685c50ec73f019a9d0742ddcbed9b1193a236113802"
+      }
+    },
+    "parity_controls_sha256": "2358071f1ec985c06d938e8986679edf625f7336f47eb4b533740de98f7dfcbd",
+    "parity_helper_sha256": "048df509b05601f15d6cb4230750b36d221276cce66e625b0cf9c720ecb89062",
+    "source_sha256": "90447087ed53f80e77f903926b6a07db006daf741d4d54c82c23bc4bb67afc11"
+  },
+  "preparation_sha256": "dcdd4faef5f6c5f7079f08a2b512fa3900ac3d432ad8bc12f9043f2f6000757d",
+  "candidate_ledger_sha256": "9984fbff81a172238d7a1407d716e9fc4359ff86c5e1ea24ae23c9dda6f17468",
+  "original2271_native_point_rows_rechecked": true,
+  "transcript_bytes": 980311,
+  "evaluations_sha256": "1bb615ff87955c2931293c735879d3aa1da051423f6a4679449de935fcf3cc8c",
+  "cuts_sha256": "7e85b3d3a84c4b7e9489c1ab1f91717d372a399a62b55843b169f9a6e9e64a5b",
+  "seconds": 15.991246213998238
+}

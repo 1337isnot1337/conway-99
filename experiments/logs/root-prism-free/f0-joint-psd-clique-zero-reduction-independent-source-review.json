@@ -1,0 +1,64 @@
+{
+  "status": "PASS: read-only mathematical and complete-source review of the exact 162-Y-zero reduction",
+  "reviewer": "independent_sets",
+  "reviewed_sources": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_zero_reduction.py",
+      "sha256": "3dfa11d839993206d59cc76d48f77881320ee8fd13e956fd247e17f2fc0ef120",
+      "complete_source_read": true
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_clique_zero_replay.py",
+      "sha256": "b8db3a661ed2a31056d30eb7134bbce7f06d33d77ddc354338b28834f73e95e7",
+      "complete_source_read": true
+    }
+  ],
+  "inspected_saved_reports": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-zero-model01-preparation.json",
+      "sha256": "89c0fef915ebdeee5d99195d05fc6da981f83576dc7327259f768797fdbf418a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-zero-model01-standalone-replay.json",
+      "sha256": "c3ef825b6177d7b545f6827545e4650c4febb6c56928487b9b6f859656e9f94d"
+    }
+  ],
+  "mathematical_checks": [
+    "Every eliminated coordinate is certified by a nonzero singleton original equality with right-hand side zero. There are exactly 162 distinct coordinates, all in the Y range 42..5846. Every selector-orbit and Z coordinate remains.",
+    "Projection deletes these forced-zero coordinates; the inverse inserts zeros. Each retained row is literally a projected original row with the same sense, right-hand side, integer coefficients and numerical scale.",
+    "An omitted equality is a box tautology only when its exact minimum and maximum both equal the right-hand side. An omitted inequality requires its exact box maximum to be at most the right-hand side. Empty false rows are retained.",
+    "Primitive normalization is used only to discover proportional rows. The verifier independently checks every coefficient and right-hand side by cross multiplication. Equality multiples may have either nonzero sign; duplicate inequalities require positive multiples; either orientation of an equality implies its corresponding inequality.",
+    "All old rows precede their recorded obligation checks; every old row has either an exact box witness or a retained-row identity. Every new row has a distinct original-row source. These checks prove both directions of real unit-box equivalence.",
+    "The 92 PSD directions are protected against both tautology and duplicate deletion. The independent checker reconstructs their family inventory from the parent rows, requires distinct retained-row images, and checks all saved scales are unchanged positive powers of two.",
+    "The standalone checker imports no builder or numerical helper. Its complete literal row identities do not rely on the builder's canonical-key duplicate lookup."
+  ],
+  "observed_owner_report_counts": {
+    "old_variables": 15200,
+    "new_variables": 15038,
+    "old_rows": 28043,
+    "new_rows": 27719,
+    "new_equalities": 5973,
+    "new_inequalities": 21746,
+    "old_nonzeros": 1086559,
+    "new_nonzeros": 1079832,
+    "zero_columns": 162,
+    "omitted_zero_equalities": 162,
+    "omitted_Y_le_Z_box_rows": 162,
+    "retained_PSD_directions": 92,
+    "duplicate_reductions": 0
+  },
+  "scope_qualification": "The full 480 selectors remain represented by their 42 existing selector-orbit coordinates. This review confirms the reduction logic relative to the frozen parent; it does not rederive the parent model's graph-theoretic premises or establish feasibility.",
+  "execution_scope": {
+    "actual_source_hashes_checked": true,
+    "saved_report_hashes_checked": true,
+    "subject_sources_imported": false,
+    "models_decompressed_or_rebuilt": false,
+    "full_row_map_replayed_by_this_reviewer": false,
+    "controls_rerun": false,
+    "optimizer_calls": 0,
+    "eigendecompositions": 0
+  },
+  "material_blocker": false,
+  "changes_requested": [],
+  "model_feasibility_or_exclusion_claimed": false
+}

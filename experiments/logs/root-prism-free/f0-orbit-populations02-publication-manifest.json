@@ -1,0 +1,253 @@
+{
+  "status": "FROZEN: exact complete bounded orbit-count linear model and independent arithmetic replay",
+  "scope": "Necessary model for F0 component zero in the split 18+18 case; no bounded integer feasibility or graph exclusion claim.",
+  "counts": {
+    "equalities": 5973,
+    "inequalities": 21746,
+    "nonzeros": 1079832,
+    "physical_PSD_directions": 92,
+    "rows": 27719,
+    "variables": 15038
+  },
+  "inventory": {
+    "new15038": {
+      "edge": {
+        "literal_positions": 66510,
+        "orbits": 5643,
+        "size_histogram": {
+          "12": 5447,
+          "3": 10,
+          "6": 186
+        }
+      },
+      "pair": {
+        "literal_positions": 110550,
+        "orbits": 9353,
+        "size_histogram": {
+          "12": 9078,
+          "3": 12,
+          "6": 263
+        }
+      },
+      "selector": {
+        "literal_positions": 480,
+        "orbits": 42,
+        "size_histogram": {
+          "12": 38,
+          "6": 4
+        }
+      }
+    },
+    "old15200": {
+      "edge": {
+        "literal_positions": 68394,
+        "orbits": 5805,
+        "size_histogram": {
+          "12": 5599,
+          "3": 10,
+          "6": 196
+        }
+      },
+      "pair": {
+        "literal_positions": 110550,
+        "orbits": 9353,
+        "size_histogram": {
+          "12": 9078,
+          "3": 12,
+          "6": 263
+        }
+      },
+      "selector": {
+        "literal_positions": 480,
+        "orbits": 42,
+        "size_histogram": {
+          "12": 38,
+          "6": 4
+        }
+      }
+    },
+    "original15589": {
+      "edge": {
+        "literal_positions": 68394,
+        "orbits": 5805,
+        "size_histogram": {
+          "12": 5599,
+          "3": 10,
+          "6": 196
+        }
+      },
+      "pair": {
+        "literal_positions": 114960,
+        "orbits": 9742,
+        "size_histogram": {
+          "12": 9424,
+          "3": 12,
+          "6": 306
+        }
+      },
+      "selector": {
+        "literal_positions": 480,
+        "orbits": 42,
+        "size_histogram": {
+          "12": 38,
+          "6": 4
+        }
+      }
+    },
+    "removed_Y": {
+      "edge": {
+        "literal_positions": 1884,
+        "orbits": 162,
+        "size_histogram": {
+          "12": 152,
+          "6": 10
+        }
+      },
+      "pair": {
+        "literal_positions": 0,
+        "orbits": 0,
+        "size_histogram": {}
+      },
+      "selector": {
+        "literal_positions": 0,
+        "orbits": 0,
+        "size_histogram": {}
+      }
+    },
+    "removed_Z": {
+      "edge": {
+        "literal_positions": 0,
+        "orbits": 0,
+        "size_histogram": {}
+      },
+      "pair": {
+        "literal_positions": 4410,
+        "orbits": 389,
+        "size_histogram": {
+          "12": 346,
+          "6": 43
+        }
+      },
+      "selector": {
+        "literal_positions": 0,
+        "orbits": 0,
+        "size_histogram": {}
+      }
+    }
+  },
+  "preparation_sha256": "239b8ae3651fe4fa327151e50a3214680079c6c07de589c6a27b43f20aeac34a",
+  "independent_replay_sha256": "a8bb55cbf773ea75a8cd1d5a18b50281ecbe08f6074cea04fb2d75799138273a",
+  "finite_field_results": [
+    {
+      "prime": 2,
+      "rank": 5117,
+      "status": "PASS: complete modular point and both exact rank bounds"
+    },
+    {
+      "prime": 3,
+      "rank": 5138,
+      "status": "PASS: complete modular point and both exact rank bounds"
+    }
+  ],
+  "complete_original_row_replay": true,
+  "preserved_PSD_directions": 92,
+  "largest_absolute_row_box_sum_or_rhs": "16410372831576",
+  "preparation_seconds": 49.72080036799889,
+  "independent_replay_seconds": 28.558442210000067,
+  "failed_v1_source_and_log_preserved": true,
+  "quadratic_population_block_identities_imposed": false,
+  "optimizer_calls": 0,
+  "eigendecompositions": 0,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_orbit_population_lift.py",
+      "sha256": "cdc1ce0412d111432eb4f9d78d9b83f8ed37fe26879f0be589ec53ddefd3fe28",
+      "bytes": 20767,
+      "git_blob_sha1": "cb7fbfbcb897df5c863d8df3173a23152312406c"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_orbit_population_lift_v2.py",
+      "sha256": "f02edb406adbd3d2e3fbcf6b68b917cf4eb6fe9cffad6778b1e94a5f85122e7d",
+      "bytes": 21095,
+      "git_blob_sha1": "f912de1dcaa45661fd3c1424b42b41f2819d2ed5"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_orbit_population_modular.py",
+      "sha256": "947ff977b8b060296f05fbbae6734c67e73534c6fc371becda064f36047e9bf0",
+      "bytes": 8381,
+      "git_blob_sha1": "07eb3feb6e6f6466add280784de1e9e1ca06c4ad"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_orbit_population_replay.py",
+      "sha256": "78ba45784e64264f2144aabef6fe12c177f11c55967151548ee57af9672a86cb",
+      "bytes": 14684,
+      "git_blob_sha1": "c197ad7b328bfade587c7050b033293fd62cb29b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations01-generation.log",
+      "sha256": "6c0646dd0146ef68df610ebcd0ad8323f38dd4f8d0ea642a067538daa10833ff",
+      "bytes": 1033,
+      "git_blob_sha1": "d9f2ac924f9931f700b876408a89e04f47515195"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations01-schema-failure-repair.json",
+      "sha256": "a54b9f26600fad2b912d7dc8cdfff4bee35477e2d66634f3680e42a259e93c70",
+      "bytes": 1575,
+      "git_blob_sha1": "3732bdf4adce130b8e229ff01e3dffafbb5ed7f7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-domains.json.gz",
+      "sha256": "4f079468530dba0746512cc4afce01666b2a63a2c8f35f66a4660a4fe3bab8ab",
+      "bytes": 117388,
+      "git_blob_sha1": "4850ec29f6a6c1e15b631324514fa3bd2267ffe2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-model.json.gz",
+      "sha256": "aa46e2ca9df7a5838926385e06a86acda041c8455ac3422ae1e7b0a5c4ce5437",
+      "bytes": 4326978,
+      "git_blob_sha1": "65cf658de44160e6e3d62570bdb393c9b1490b6d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-arithmetic.json.gz",
+      "sha256": "78c2bd93cfd70f8129b628a291a6416e275188c692403c3cb4a3b9bce5ea9d2e",
+      "bytes": 1064538,
+      "git_blob_sha1": "c54495226117b248e80e878e8f681546d3472caa"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-preparation.json",
+      "sha256": "239b8ae3651fe4fa327151e50a3214680079c6c07de589c6a27b43f20aeac34a",
+      "bytes": 4060,
+      "git_blob_sha1": "0392c36da2633f1be60262869682d61c8107c5a0"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-generation.log",
+      "sha256": "35039ad54c9ee2bfdae86a66be1d5d4ebc6f47d55b68da4eb68c1d9534ea3b24",
+      "bytes": 8672,
+      "git_blob_sha1": "61d4cc1b30ef995a04f9ac2131334f4ea0f111be"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-independent-replay.json",
+      "sha256": "a8bb55cbf773ea75a8cd1d5a18b50281ecbe08f6074cea04fb2d75799138273a",
+      "bytes": 3559,
+      "git_blob_sha1": "7ecfb0ae2349e178598c18206347a01fa9bd3d80"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-independent-replay.log",
+      "sha256": "9641cb8f9453f3322384bedb72bee23d25ca32cdfd7aba9088462ed4579ffad7",
+      "bytes": 4363,
+      "git_blob_sha1": "e9b55ff63cea19c4e92747d8770d469c4f83b546"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations-independent-source-review.json",
+      "sha256": "0331cbce6f4f32a8bb6a769e3e8c6d07e4932928d0b8696d667413ace4e2f5c3",
+      "bytes": 3966,
+      "git_blob_sha1": "e4388fe6f32ca6b561ca38b09528f686b99fd4eb"
+    },
+    {
+      "path": "research/root_prism_free_f0_orbit_populations.md",
+      "sha256": "7f5b14055bdbbb98270ae685498ddf162118b5aa54451c9435d2ae23e9794fdb",
+      "bytes": 8945,
+      "git_blob_sha1": "49e28ea1a20debe2ae37445463d2240a6360da79"
+    }
+  ]
+}

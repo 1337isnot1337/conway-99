@@ -6,11 +6,10 @@ Branch: `research/global-constraints-ab2f`.
 
 ## Active investigations
 
-1. Prepare the complete rook case-four model on the 112-zero face with both parity equalities and the certified pair rows. All 1,102 surviving selectors and every original row/cover remain represented. Complete unbranched propagation is finished. Owned by the independent-set worker.
-2. Prepare an exact equivalent F0 model eliminating the 162 proved zero edge columns. Preserve all old obligations, all 92 held PSD directions, explicit transport maps and exact duplicate/box-tautology witnesses. The joint PSD/clique query and exact audit are finished; its invalid numerical vector is not used for another cut scan. Owned by the completion worker.
-3. Prepare a complete rook Boolean branch cover. The original 72 parity patterns reduce to 64 after the new zero, certified pair and direct native pair-box exclusions. Reuse the full primary propagation engine and every cover, with explicit positive branch assumptions and bounded complete-prefix records. Owned by the literature worker.
-4. Root publishes the native-bound theorem, strengthened Boolean model and its bounded UNKNOWN terminal, and reviews the new branch and full-model gates. There is no unchanged Boolean retry. The remaining native-bound objectives require a separately defined continuation. The global binary incidence rank bound remains 88.
-
+1. Freeze the new five-Gram-row parity cover and prepare its append-only complete rook LP overlay. The complete 112-face point and all 41,041 fixed parity tests have exact records. Owned by the independent-set worker.
+2. Prepare a distinct binary HiGHS search over the rook incidence variables, including all proved restrictions and exact checking of every native row and cover. The 64 propagation branches and 227 grouped cuts are finished. Owned by the literature worker.
+3. Finish the F0 integer orbit-population package and assess a bounded count formulation with deterministic population-product identities. The exact linear lift is consistent modulo two and three. No unchanged LP retry is planned. Owned by the completion worker.
+4. Root publishes checkpoint 59, completes independent review of 25 integer refinements of held selector PSD directions, and reviews the next query scopes. The 1,764-form population scan produced no new retained row.
 The separate worker in issue 1 owns the incomplete-grid corner graph,
 arbitrary-square extensions, complete-grid corners, and twenty-point
 diagonal cubic graphs. This session does not duplicate those domains.
@@ -29,6 +28,14 @@ not meet that target. New reductions will be checked on known graphs when
 their hypotheses permit them; computational exclusions require exact replay.
 
 ## Work log
+
+
+- Checkpoint 59: one complete112-face numerical call returns a positive proposal with no violated cover. Generic recovery fails, preserving that run's unresolved status. A separate saved-basis reconstruction solves a 287-square integer system, with 816 floor aliases, and yields denominator 145,446,009 and positive floor 1,590,562/145,446,009. All original rows/covers and added restrictions pass, followed by a separate exact cold replay without another solve.
+- The updated complete 41,041-form parity scan finds exactly one new cut, a 27-column positive cover. Its five-row original Gram proof and all exact distances pass cold replay. The point violates it by 23,652,796/145,446,009. A direct identity reduces it to `x803<=x401+x402+x405+sum(x590..x595)`; a separate capacity identity bounds that nine-column sum by one. The proof needs only the earlier 111 zeros. An append-only LP and a binary incidence search are separate next queries.
+- Column 663 has a shorter premise chain: 143 original Gram rows and signature capacity 51 give `6*x663<=5` using only the old 99 zeros. All 1,214 coefficients are expanded directly. Neither later parity equality nor the twelve subsequent zeros is needed for this deduction.
+- The complete parity branch cover has 64 remaining patterns. The first batch completes 50 forward traces and 28 cold checks before its limits. A disjoint continuation completes the remaining 14 forwards, 22 old checks and 14 new checks. Every branch is a checked fixed point; none is refuted. No new global literal appears in their intersection. All 227 disjoint-guard inequalities strictly pass the exact rational point.
+- The F0 equivalent reduction removes 162 proved edge-zero columns and 324 box-tautological rows, retaining all 92 PSD directions. Its term count falls by only 0.62 percent; no identical optimizer retry follows. The exact integer orbit-population lift retains all 27,719 rows and actual orbit sizes. Independent arithmetic checks all transports and modular certificates. The 5,973 equalities are consistent modulo two and three, with ranks 5,117 and 5,138.
+- Root checks all 1,764 single/pair orbit-population integer quadratics and all their integer shifts through exact minimization. One tiny candidate is an existing equality consequence; a separate checker reconstructs its five retained-row combination and all literal origins. A second finite calculation refines eleven held selector PSD directions into 25 integer rows and proves the other 37 zero-mean directions gain nothing from shifts. No numerical search is repeated.
 
 - Checkpoint 58: the small 1,103-variable native model makes 48 objective attempts, with 47 numerical optimal returns and one time limit. Five exact bounds are accepted. A new zero at column 663 and the rounded pair inequality for (259,590) strengthen the integer face. The other three pairs are already forbidden by Gram row 580. Refining the saved multiplier vector at denominator six gives `3*x663+sum_S x=2` for 86 columns, with no unit-box correction. Independent checking reconstructs all original rows and the full 1,214-coordinate identity.
 - Full exact propagation from the 112 zeros, H1=H2=1 and four pair rows finishes with no additional assignment or contradiction. All 178,533 covers remain included. The resulting complete LP has 1,102 variables, 166,010 rows and 10,767,167 nonzeros. Its numerical query is a separate continuation.

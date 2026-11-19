@@ -1,0 +1,34 @@
+{
+  "status": "PASS: complete scope and runner source review; authorize one bounded branch batch and one cold pass",
+  "reviewer": "root",
+  "files": {
+    "scope_source": {
+      "path": "experiments/workspace/rook_case4_face112_branch_scope.py",
+      "sha256": "291be1d8b93acebd859fc642b953acd463e40fd62cecdb3e57c7c14e86a31e8a"
+    },
+    "runner": {
+      "path": "experiments/workspace/rook_case4_face112_branch_batch.py",
+      "sha256": "cda346ce4bb34a9ccc1f5fc603485124bc0cb389b8b9cc48d169b08297a6bd60"
+    },
+    "preparation": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-branch-batch-preparation01/preparation.json",
+      "sha256": "47ebe7180723ab95bdf5370c29a0be6abe80005dc5e0bd7e3df51926282b87ea"
+    }
+  },
+  "complete_scope_source_read": true,
+  "complete_runner_source_read": true,
+  "arithmetic_scope": "The two proved unit sums imply exactly one of32 common singleton or40 difference-pair patterns. One proved zero, four certified pairs and three original-native box contradictions remove8 patterns. All64 retained branches preserve every original row and178533 covers, plus the112 proved zeros and proved86-column sum of2.",
+  "conditional_assignments_only": true,
+  "branch_positive_assumptions_explicit": true,
+  "all72_pattern_dispositions_retained": true,
+  "supervisor_reused_unchanged": true,
+  "supervisor_controls_repeated": false,
+  "forward_child_seconds_cooperative": 60,
+  "forward_child_seconds_hard": 65,
+  "cold_child_seconds_hard": 60,
+  "maximum_forward_invocations": 1,
+  "maximum_cold_invocations": 1,
+  "source_gate_production_calls": 0,
+  "cold_acceptance": "Only an exact verify_trace replay against the hash-bound full branch row system can exclude a branch. Partial/unqueried branches remain open; a complete fixed point is not a SAT witness.",
+  "case4_excluded": false
+}

@@ -1,0 +1,102 @@
+{
+  "status": "PASS: five existing equality rows reproduce the full candidate exactly",
+  "audit_source_sha256": "364e440f7efc79d0f4374820afde05e26dd0d5955352dde0fb91145f7d058ed1",
+  "inputs": {
+    "proof_source": {
+      "path": "experiments/workspace/root_prism_free_f0_orbit_integer_redundancy.py",
+      "sha256": "24a0b0a7954f198e52084c75f010fe6473f82bc14674d11e062492043d08443c"
+    },
+    "proof": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-integer-quadratics-scan01-redundancy.json",
+      "sha256": "495eec0bde8b61da031b10a8fe0657df72bf1822f7e04d639e74480fc9cdc88b"
+    },
+    "scan": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-integer-quadratics-scan01.json.gz",
+      "sha256": "5491abae33fb6faa79b006fe8b789df801ad289ec42167d3c53ec9041627aa51"
+    },
+    "baseline": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "moments": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+      "sha256": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    },
+    "reduced": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-reduced-model.json.gz",
+      "sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf"
+    },
+    "parent": {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01.json.gz",
+      "sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69"
+    }
+  },
+  "parent_equality_multipliers": [
+    [
+      3,
+      "6"
+    ],
+    [
+      1481,
+      "6"
+    ],
+    [
+      1494,
+      "6"
+    ],
+    [
+      1611,
+      "6"
+    ],
+    [
+      1624,
+      "6"
+    ]
+  ],
+  "all_coefficient_positions_checked": 15200,
+  "right_hand_side": 6,
+  "independent_literal_Gram_supports": [
+    [
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    [
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    [
+      144,
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151
+    ]
+  ],
+  "literal_lifted_rows_reconstructed": 72,
+  "identities": [
+    "L=3",
+    "R=L^2-3L=2P-2L",
+    "3L-P-6=2*(L-3)-R/2"
+  ],
+  "complete_both_mathematical_sources_read": true,
+  "full_finite_family_or_point_scan_repeated": false,
+  "subject_imports": false,
+  "matrix_rebuilt": false,
+  "optimizer_calls": 0,
+  "nonredundant_candidate_rows": 0
+}

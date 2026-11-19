@@ -1,0 +1,135 @@
+{
+  "status": "PASS: exact text transformation and complete function AST comparison",
+  "parent_path": "experiments/workspace/rook_case4_face99_basis_reconstruction.py",
+  "parent_sha256": "1cbeb11b23e0033fa23d10ce24aedf1585ad0119d0433f296febf722231a67b6",
+  "source_path": "experiments/workspace/rook_case4_face112_basis_reconstruction.py",
+  "source_sha256": "6e8ac4d29fa14bf9c1ba2793a3f86c1e53854995cecb4bd30ae7e193352f3ee4",
+  "substitutions": [
+    {
+      "old": "face99",
+      "new": "face112",
+      "count": 9
+    },
+    {
+      "old": "The829 x_j=t",
+      "new": "The816 x_j=t",
+      "count": 1
+    },
+    {
+      "old": "all169050",
+      "new": "all167112",
+      "count": 2
+    },
+    {
+      "old": "all original1214-coordinate rows.",
+      "new": "all original1214-coordinate rows, both unit sums and all four pair bounds.",
+      "count": 1
+    },
+    {
+      "old": "613e2de31570d56a2b1b52a164158a7ed9b80b4f8f834e550fbbc9c6e608e078",
+      "new": "8cfae2fc990e293f47029da2dc5a4d66b864e2547777d6a142de424133361da7",
+      "count": 1
+    },
+    {
+      "old": "c417a08853096bbb7a6d8148aca80a5f08249c19f2978f3f49a86ec0c20c301b",
+      "new": "018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f",
+      "count": 1
+    },
+    {
+      "old": "7e75bbb360d91d6a4a424262c2c61ad5d7e0e13942a7b80a8ca39ec731ebf4af",
+      "new": "276db9d80b2772ab6829daf7459b19043a08996dc2b45ff8769534548b8b8ca3",
+      "count": 1
+    },
+    {
+      "old": "e4815cfba1b058a0e563456cd5637717e0692f0fe23a07a6f8abb0c6d925541a",
+      "new": "8276a6d8b8a7d6c6dbfbcf2ce914add06d34a7618281d14be4a3f4d670f0f579",
+      "count": 1
+    },
+    {
+      "old": "5c10bf25a01a8256b20def55e0b7ecd496f619d89616f2a74059300d6be180d0",
+      "new": "37b9488d027464f437db0228569338d49c0e1fddbd173c95523938681c4f3ce0",
+      "count": 1
+    },
+    {
+      "old": "b7ffcc26286579a922c3fd5776243aa6f4f998e771f1b2b48d967a4b198cee70",
+      "new": "e6db315ca8b8e5337623e8ef27a15f24a761f77d2981e6fe66a1c0483b506665",
+      "count": 1
+    },
+    {
+      "old": "4d6549d85733ec29e824b4ab9d25b0894488492e38d46d2e32e80336593e1b6b",
+      "new": "795e1b3cc098bd174a20eb720aab80ec53e040366d6404e17b4ea14e91413f4e",
+      "count": 1
+    },
+    {
+      "old": "rook-case4-face112-cover-generation-run01",
+      "new": "rook-case4-face112-generation-run01",
+      "count": 3
+    },
+    {
+      "old": "SELECTORS, BASE_ROWS, FULL_ROWS = 1115, 167935, 169050",
+      "new": "SELECTORS, BASE_ROWS, FULL_ROWS = 1102, 166010, 167112\nNATIVE_ROWS, COVER_END = 1960, 166004",
+      "count": 1
+    },
+    {
+      "old": "VARIABLES, DIMENSION, ALIASES = 1116, 287, 829",
+      "new": "VARIABLES, DIMENSION, ALIASES = 1103, 287, 816",
+      "count": 1
+    },
+    {
+      "old": "assert numeric[\"active_original_row_ids\"] == list(range(1966))+list(range(BASE_ROWS, FULL_ROWS))",
+      "new": "expected_active = list(range(NATIVE_ROWS)) + list(range(COVER_END, FULL_ROWS))\n    assert numeric[\"active_original_row_ids\"] == expected_active",
+      "count": 1
+    },
+    {
+      "old": "assert 0 <= row < 1966 and int(arrays[\"row_origin_kind\"][row]) == 0",
+      "new": "kind = int(arrays[\"row_origin_kind\"][row])\n        assert (0 <= row < NATIVE_ROWS and kind == 0) or (row == COVER_END and kind == 2)",
+      "count": 1
+    },
+    {
+      "old": "rows.append({\"original_face_row\": row, \"original_native_row\": int(arrays[\"row_origin_index\"][row]),",
+      "new": "rows.append({\"original_face_row\": row, \"row_origin_kind\": kind,\n                     \"row_origin_index\": int(arrays[\"row_origin_index\"][row]),",
+      "count": 1
+    },
+    {
+      "old": "{\"HighsBasisStatus.kUpper\": 148, \"HighsBasisStatus.kLower\": 139}",
+      "new": "{\"HighsBasisStatus.kLower\": 155, \"HighsBasisStatus.kUpper\": 132}",
+      "count": 1
+    },
+    {
+      "old": "\"fixed_zero_original_columns\": model[\"fixed_zero_columns\"]}",
+      "new": "\"fixed_zero_original_columns\": model[\"fixed_zero_columns\"],\n            \"both_unit_sum_supports\": model[\"integer_cover_live_original_supports\"],\n            \"all_four_pair_bounds\": model[\"added_pair_rows\"]}",
+      "count": 1
+    },
+    {
+      "old": "assert all(restored[a] == 0 for a in spec[\"fixed_zero_original_columns\"])",
+      "new": "assert len(spec[\"fixed_zero_original_columns\"]) == 112\n    assert all(restored[a] == 0 for a in spec[\"fixed_zero_original_columns\"])\n    assert len(spec[\"both_unit_sum_supports\"]) == 2 and len(spec[\"all_four_pair_bounds\"]) == 4\n    for support in spec[\"both_unit_sum_supports\"]:\n        assert sum(restored[a] for a in support) == den\n    for a, b in spec[\"all_four_pair_bounds\"]:\n        assert restored[a] + restored[b] <= den",
+      "count": 1
+    },
+    {
+      "old": "\"original1214_bounds_and_all99_zeros_checked\": True, \"population\": 64,",
+      "new": "\"original1214_bounds_and_all112_zeros_checked\": True, \"population\": 64,\n            \"both_parity_equalities_checked\": True, \"all_four_pair_bounds_checked\": True,",
+      "count": 1
+    }
+  ],
+  "changed_functions": [
+    "proposal",
+    "inspect"
+  ],
+  "unchanged_functions": [
+    "sha",
+    "canonical",
+    "save",
+    "tick",
+    "bindings",
+    "fold",
+    "controls",
+    "prepared",
+    "prepare",
+    "solve_child",
+    "query",
+    "replay",
+    "main"
+  ],
+  "optimizer_calls": 0,
+  "production_exact_solves": 0
+}
