@@ -1,0 +1,291 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-producer-source-contract.v1",
+  "status": "FROZEN_SOURCE_AND_INTERFACES_UNRUN_CONFIGURATION_PENDING_ACTUAL_LITERAL_ACCEPTANCE",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b"
+  },
+  "configuration_schema": "conway99.f0.triangle-gap-native-configuration.v1",
+  "configuration_authorship": "root; actual immutable literal replay/root receipts must exist before final configuration",
+  "input_aliases": [
+    "parent_model",
+    "parent_configuration",
+    "parent_report",
+    "parent_owner",
+    "parent_cold",
+    "parent_cold_owner",
+    "parent_root_acceptance",
+    "gap_report",
+    "gap_literal_report",
+    "gap_literal_finalization",
+    "gap_literal_owner",
+    "gap_literal_root_acceptance"
+  ],
+  "source_aliases": {
+    "base": {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2",
+      "bytes": 15210,
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70"
+    },
+    "supervisor": {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+      "bytes": 26760,
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+    },
+    "checker": "root's separately frozen protobuf-only native replay source; no guessed hash"
+  },
+  "configuration_fields": [
+    "schema",
+    "source_sha256",
+    "layout",
+    "family_order",
+    "expected_family_counts",
+    "expected_family_terms",
+    "runtime",
+    "limits",
+    "inputs",
+    "sources",
+    "authorities",
+    "authority_links",
+    "proofs",
+    "reviews",
+    "optimizer_calls",
+    "automatic_retries",
+    "native_query_authorized",
+    "independent_complete_protobuf_replay_required"
+  ],
+  "authorities": "Exactly one expected status for each input alias except parent_model and parent_configuration. All statuses must begin PASS_, OWNED_ or ROOT_ACCEPTS_, except the forward gap_report COMPLETE status.",
+  "layout": {
+    "parent_variables": 80730,
+    "parent_rows": 300795,
+    "new_variables": 0,
+    "replaced_rows": 0,
+    "appended_rows": 3156,
+    "appended_terms": 3156,
+    "gap_triangle_zero_start": 300795,
+    "variables": 80730,
+    "rows": 303951,
+    "triangle_variable_start": 71382,
+    "triangle_variables": 5364
+  },
+  "family_order": [
+    "gap_triangle_zero"
+  ],
+  "expected_family_counts": {
+    "gap_triangle_zero": 3156
+  },
+  "expected_family_terms": {
+    "gap_triangle_zero": 3156
+  },
+  "limits": {
+    "controls_worker_seconds": 10,
+    "controls_owner_seconds": 15,
+    "prepare_worker_seconds": 120,
+    "prepare_owner_seconds": 135
+  },
+  "cli": {
+    "controls": "python experiments/workspace/root_prism_free_f0_triangle_gap_model.py controls --configuration CFG --configuration-sha256 SHA --directory NEW_OUT",
+    "prepare": "python experiments/workspace/root_prism_free_f0_triangle_gap_model.py prepare --configuration CFG --configuration-sha256 SHA --directory NEW_OUT",
+    "worker_only_arguments": [
+      "--worker",
+      "--deadline ABSOLUTE_MONOTONIC_DEADLINE"
+    ],
+    "ownership": "The public modes own a fresh process group through the exact pinned supervisor; no duplicate external owner is required for producer modes."
+  },
+  "statuses": {
+    "controls": "PASS_TRIANGLE_GAP_MODEL_CONTROLS",
+    "prepare": "PASS_COMPLETE_TRIANGLE_GAP_NATIVE_PREPARATION",
+    "owner_schema": "conway99.f0.triangle-gap-native-owner.v1",
+    "owner_success": "The accepted mode report status, report_accepted:true; explicit successful reaped/stopped supervision."
+  },
+  "parent": {
+    "root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-root-acceptance01.json",
+      "git_blob": "c40bf305e72dedec3d42cdfc862ca436380ebf76",
+      "sha256": "bb744c426034992ddae1702cdb479e61d17d9a2fa5da2a614f4d6c15643908f0",
+      "bytes": 14417
+    },
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/model.pb.gz",
+      "bytes": 5690176,
+      "sha256": "3a84ccb555ebc28c5ba7cc0d2f2d5bacec9de48c9c8b8e6380278e1222cbe7f2",
+      "git_blob": "7a069862cfedca531b2f3acfd9da284b1e11f948",
+      "mode": "100644"
+    },
+    "configuration": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+      "bytes": 24503,
+      "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+      "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+      "mode": "100644"
+    },
+    "report": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/report.json",
+      "bytes": 23939,
+      "sha256": "f7be6afd05ae3ac32fbf6c768e7c3cb4decd830be18bef548f16b7e142d3d00f",
+      "git_blob": "117b739356e011bd74503f92a41aaf3a0e4e48c5",
+      "mode": "100644"
+    },
+    "owner": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/owner.json",
+      "bytes": 1311,
+      "sha256": "b5368c3ba810f06f56f4b8bb2c0e8db8b52c683d6d0cdbeee6aa5190185489ec",
+      "git_blob": "b4b2a776e096bc506744eb2fc466f8ec9b203082",
+      "mode": "100644"
+    },
+    "cold": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold/report.json",
+      "bytes": 16627,
+      "sha256": "a9e9f97f5e437ebb65091c7b693ae3af93e682573f3ca743d39ec74d6dd20953",
+      "git_blob": "90c26ca5b6def071a349a9482a6639f3c32d60d1",
+      "mode": "100644"
+    },
+    "cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-owner/owner.json",
+      "bytes": 1912,
+      "sha256": "e48634509d4246f20638fc500611d41ec0591fe65d0765a22bdf60c408f74607",
+      "git_blob": "05cbd3eb0eef1d72a12dc54a5e250ba110aa2dd3",
+      "mode": "100644"
+    },
+    "raw_bytes": 39512348,
+    "raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8",
+    "variables": 80730,
+    "rows": 300795,
+    "terms": 3337296
+  },
+  "forward_report": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-minors01.json",
+    "bytes": 2569247,
+    "sha256": "31789e7cb6012e8d0f3545170bfa19daec752027b4cd1c7a6bc013749cc146f1",
+    "git_blob": "2f0d27b2c2bd2d9e61ddcb4c11ae41168a206ee5"
+  },
+  "literal_report_contract": {
+    "schema": "conway99.f0.recorded-triangle-spectral-gap-independent-literal-replay.v1",
+    "status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_GAP_LITERAL_REPLAY",
+    "complete": true,
+    "records_verified": 5364,
+    "all_5364_records_independently_verified": true,
+    "all_seven_minors_per_record_independently_recomputed": true,
+    "fields": [
+      "forward_report",
+      "failed_triangle_indices",
+      "failed_count",
+      "failed_triangle_indices_sha256",
+      "proposed_indicator_zero_row_keys_sha256"
+    ]
+  },
+  "literal_root_required_fields": [
+    "status beginning ROOT_ACCEPTS_",
+    "parent_native_root_acceptance",
+    "forward_report",
+    "report",
+    "finalization",
+    "owner",
+    "failed_triangle_indices",
+    "failed_count",
+    "failed_triangle_indices_sha256",
+    "proposed_indicator_zero_row_keys_sha256"
+  ],
+  "zero_row_key": "[0,0,[[71382+triangle_index,1]]], ascending failed triangle index",
+  "row_keys_sha256": "68cbeeb785a7d68e7141464bd3c9c9274bebddcd33875ea4c843494f2da44b4c",
+  "ledger_schema": "conway99.f0.triangle-gap-appended-row-ledger.v1",
+  "ledger_fields": [
+    "source",
+    "configuration",
+    "gap_report",
+    "gap_literal_report",
+    "gap_literal_root_acceptance",
+    "family_order",
+    "family_counts",
+    "family_terms",
+    "failed_triangle_indices",
+    "row_keys",
+    "row_origins",
+    "row_keys_sha256",
+    "family_row_keys_sha256",
+    "all_certified_zeros_retained"
+  ],
+  "exact_row_origin": {
+    "family": "gap_triangle_zero",
+    "proposal_index": "i",
+    "native_row_index": "300795+i",
+    "triangle_index": "t",
+    "vertices": "forward.records[t].vertices",
+    "edge_ids": "forward.records[t].edge_ids",
+    "indicator_variable": "71382+t",
+    "origin": "forward.records[t].origin"
+  },
+  "report_schema": "conway99.f0.triangle-gap-native-preparation.v1",
+  "report_fields": [
+    "source",
+    "configuration",
+    "inputs",
+    "authorities",
+    "authority_links",
+    "layout",
+    "runtime",
+    "family_order",
+    "family_counts",
+    "family_terms",
+    "row_keys_sha256",
+    "family_row_keys_sha256",
+    "family_row_jsonl_sha256",
+    "parent_variables",
+    "parent_rows",
+    "variables",
+    "rows",
+    "parent_total_terms",
+    "total_terms",
+    "term_change",
+    "model_raw_bytes",
+    "model_raw_sha256",
+    "model",
+    "artifacts",
+    "restoration",
+    "preservation",
+    "gap_check",
+    "gap_literal_root_acceptance",
+    "native_transport"
+  ],
+  "artifacts": {
+    "model": "model.pb",
+    "model_archive": "model.pb.gz",
+    "suffix_archive": "suffix.pb.gz",
+    "row_ledger": "append-rows.json.gz",
+    "restoration_manifest": "restoration-manifest.json"
+  },
+  "suffix": "CpModelProto containing only the 3156 new linear ConstraintProto messages; full raw bytes equal complete accepted parent raw bytes concatenated with suffix raw bytes.",
+  "restoration_fields": [
+    "parent_raw_bytes",
+    "parent_raw_sha256",
+    "suffix_raw_bytes",
+    "suffix_raw_sha256"
+  ],
+  "preservation_message_digest": "SHA256 of each original message's 8-byte big-endian serialized length followed by its exact serialized bytes, in original order.",
+  "native_premise_checks": {
+    "indicator_variable_messages": 3156,
+    "edge_variable_messages": 9468,
+    "complete_AND_constraint_messages": 12624
+  },
+  "final": {
+    "variables": 80730,
+    "rows": 303951,
+    "terms": 3340452
+  },
+  "controls_prepared_unrun": {
+    "mutations": 6,
+    "AND_zero_boolean_assignments": 16,
+    "old_signed_integer": "18014398509481987",
+    "native_imports": false
+  },
+  "source_or_control_execution": 0,
+  "native_builds": 0,
+  "optimizer_calls": 0,
+  "automatic_retries": 0,
+  "refs_mutated": false,
+  "retained_scope": "All accepted parent bytes remain unchanged. No cover duplicates, new variables, selector fixes, graph symmetry, objective, hint, solve mode, old-family rebuild, or spectral recomputation."
+}

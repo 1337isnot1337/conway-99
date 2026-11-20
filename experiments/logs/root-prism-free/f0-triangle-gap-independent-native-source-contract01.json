@@ -1,0 +1,230 @@
+{
+  "schema": "conway99.f0.triangle-gap-independent-native-source-contract.v1",
+  "status": "FROZEN_INDEPENDENT_COMPLETE_PROTOBUF_CHECKER_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+    "bytes": 52501,
+    "sha256": "d663daa9b3db161710228de58351ca665485a9716784b15955638baf7629ad07",
+    "git_blob": "a930f650fd886299e2645f123be6f54a4f56e217",
+    "mode": "100644"
+  },
+  "producer": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b",
+    "mode": "100644"
+  },
+  "prior_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "bytes": 82846,
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+  },
+  "exact_generic_function_reuse": [
+    {
+      "name": "compact",
+      "bytes": 121,
+      "sha256": "e41424b818f1a9d3d05e223b9bb4b65dfef0f7a2242b2b2492385428f686d038",
+      "exact_body_reused": true
+    },
+    {
+      "name": "digest",
+      "bytes": 62,
+      "sha256": "50b76bfffc27cbd7a792c95d031f6fd8e49777b6241b96ed8c4c4773edc356cb",
+      "exact_body_reused": true
+    },
+    {
+      "name": "reject_constant",
+      "bytes": 84,
+      "sha256": "0e5a5b92c1432761813c7e166407d8fae9daba73b2ac3d6771afa0f2120415bf",
+      "exact_body_reused": true
+    },
+    {
+      "name": "parse_json",
+      "bytes": 80,
+      "sha256": "7c106c16045b3278d5cf1bb90fead92e19cb57165902d118bb9f480302cc2dc2",
+      "exact_body_reused": true
+    },
+    {
+      "name": "relative_path",
+      "bytes": 206,
+      "sha256": "a5b6ffb1fd95a4d88e86d7f0d433cbf895115d13240865764da5f3021c33908c",
+      "exact_body_reused": true
+    },
+    {
+      "name": "file_ref",
+      "bytes": 171,
+      "sha256": "08768e2427090f7db5333f44bf7985a682d685fadc7e7e0882a8a8a118be844b",
+      "exact_body_reused": true
+    },
+    {
+      "name": "read_ref",
+      "bytes": 254,
+      "sha256": "e661002e3f0bd296e137399e3cb1fb4deeee3f53700ed4d193ecdeb6b4324bb2",
+      "exact_body_reused": true
+    },
+    {
+      "name": "equal_ref",
+      "bytes": 242,
+      "sha256": "b7496094c211dcdecf7f4e0ee87ad1fdfe781d4147faeff66e2358e3337a2f9a",
+      "exact_body_reused": true
+    },
+    {
+      "name": "json_ref",
+      "bytes": 240,
+      "sha256": "3fb06e1fbd5125a9aceebf79e5975a05ac13d029988d1f06535ad9204f7392e9",
+      "exact_body_reused": true
+    },
+    {
+      "name": "save_new",
+      "bytes": 93,
+      "sha256": "0e96801c1c4a0d94a7d4359cb480e792f244ec06c52b3cd56e115892de93bcfd",
+      "exact_body_reused": true
+    },
+    {
+      "name": "no_native_imports",
+      "bytes": 161,
+      "sha256": "1b6d384e786d5ca49fef02b4045a8ce8d44e00ff72788d098427f19e7e1ca069",
+      "exact_body_reused": true
+    },
+    {
+      "name": "row_key",
+      "bytes": 475,
+      "sha256": "c200b8f460f9b2144df0d843c1b0b05a232f54719481f4c97246aebbec5eab81",
+      "exact_body_reused": true
+    },
+    {
+      "name": "expected_constraint",
+      "bytes": 323,
+      "sha256": "46f8941b5acb18bd20749cb053b5144d6a25be09a560e60332ca7ee478b6d31a",
+      "exact_body_reused": true
+    },
+    {
+      "name": "compare_row",
+      "bytes": 183,
+      "sha256": "a66c349baebc64cad376ffb6094d0640d600eddb9ca492ed78832f0f1ce6871c",
+      "exact_body_reused": true
+    },
+    {
+      "name": "owner_ok",
+      "bytes": 1155,
+      "sha256": "b775b6e6b2ed4dad4abb184d4f8d961e2418ae5d51ec5a29602d4cd4ef729a6f",
+      "exact_body_reused": true
+    },
+    {
+      "name": "decode_and_edges",
+      "bytes": 1033,
+      "sha256": "bef6b49a598c014d81d72eb6888320cf69e6a803dc13ca78a1801c55149ef91c",
+      "exact_body_reused": true
+    },
+    {
+      "name": "message_digest",
+      "bytes": 229,
+      "sha256": "3dcf7b51c4f34c7b3d076dade95b5c01018dd6941bca25a5e8e5733156226a26",
+      "exact_body_reused": true
+    },
+    {
+      "name": "full_model_check",
+      "bytes": 3129,
+      "sha256": "be3a72447db1aaad0c5b0a99e97b6d8b6838f5e0493935bd40610d74476c9d57",
+      "exact_body_reused": true
+    }
+  ],
+  "mathematical_scope": "Literal replay certifies the 3156 failed recorded triangles; native checker recovers the existing triangle AND meanings and compares the full accepted raw parent plus exactly3156 unit-zero constraints. It does not rerun spectral arithmetic.",
+  "configuration_schema": "conway99.f0.triangle-gap-native-configuration.v1",
+  "input_aliases": [
+    "parent_model",
+    "parent_configuration",
+    "parent_report",
+    "parent_owner",
+    "parent_cold",
+    "parent_cold_owner",
+    "parent_root_acceptance",
+    "gap_report",
+    "gap_literal_report",
+    "gap_literal_finalization",
+    "gap_literal_owner",
+    "gap_literal_root_acceptance"
+  ],
+  "source_aliases": [
+    "base",
+    "supervisor",
+    "parent_producer",
+    "parent_cold",
+    "gap_literal",
+    "checker"
+  ],
+  "parent": {
+    "variables": 80730,
+    "rows": 300795,
+    "terms": 3337296,
+    "raw_bytes": 39512348,
+    "raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8"
+  },
+  "final": {
+    "variables": 80730,
+    "rows": 303951,
+    "terms": 3340452
+  },
+  "appended_rows": 3156,
+  "appended_terms": 3156,
+  "new_variables": 0,
+  "replaced_rows": 0,
+  "row_key": "[0,0,[[71382+t,1]]] for every independently accepted failed t in increasing order",
+  "row_keys_sha256": "68cbeeb785a7d68e7141464bd3c9c9274bebddcd33875ea4c843494f2da44b4c",
+  "native_meanings_checked": {
+    "triangle_variable_messages": 3156,
+    "edge_variable_message_occurrences": 9468,
+    "complete_AND_constraint_messages": 12624
+  },
+  "control_contract": {
+    "worker_seconds": 10,
+    "external_owner_seconds": 15,
+    "synthetic_variables": 5,
+    "original_rows": 5,
+    "appended_rows": 2,
+    "mutation_rejections": 10,
+    "AND_truth_assignments": 16,
+    "AND_zero_cover_equivalence_assignments": 16,
+    "large_wire_integer": "9007199254740993",
+    "actual_model_decoded": false
+  },
+  "replay_contract": {
+    "worker_seconds": 120,
+    "external_owner_seconds": 135,
+    "model_full_parse": true,
+    "complete_original_variable_and_constraint_comparison": true,
+    "complete_suffix_message_comparison": true,
+    "full_parent_recovery": true,
+    "complete_exact_ledger_and_manifest_bytes": true
+  },
+  "cli": {
+    "mode": [
+      "controls",
+      "replay"
+    ],
+    "required": [
+      "--configuration",
+      "--configuration-sha256",
+      "--directory"
+    ],
+    "replay_required": [
+      "--preparation-directory",
+      "--report-sha256",
+      "--owner-sha256"
+    ],
+    "ownership": "worker-only; the CI driver must own and reap each fresh process group"
+  },
+  "statuses": {
+    "controls": "PASS_TRIANGLE_GAP_INDEPENDENT_REPLAY_CONTROLS",
+    "replay": "PASS_INDEPENDENT_COMPLETE_TRIANGLE_GAP_NATIVE_MODEL"
+  },
+  "no_native_imports_guard": true,
+  "source_execution": 0,
+  "controls_execution": 0,
+  "actual_model_decodes": 0,
+  "optimizer_calls": 0,
+  "automatic_retries": 0,
+  "native_query_authorized": false
+}

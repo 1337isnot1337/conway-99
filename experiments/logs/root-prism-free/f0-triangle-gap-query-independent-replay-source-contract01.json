@@ -1,0 +1,225 @@
+{
+  "schema": "conway99.f0.triangle-gap-query-independent-replay-source-contract.v1",
+  "status": "FROZEN_SOURCE_UNRUN_ACTUAL_MODEL_AND_QUERY_CONFIGURATION_PENDING",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_query_replay.py",
+    "bytes": 37127,
+    "sha256": "d1756716e217191f62eafcfaa358d67ef89c1f6159afa13696741dd40477b592",
+    "git_blob": "e5cd87397b382668e2bdcb79e0b60840c85059f1"
+  },
+  "parent": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "bytes": 37638,
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "git_blob": "5191a03e92e6ab9f1039eeb791518baebdec4661"
+  },
+  "configuration_schema": "conway99.f0.triangle-gap-query-configuration.v1",
+  "input_aliases": [
+    "model",
+    "model_configuration",
+    "model_preparation",
+    "model_preparation_owner",
+    "model_cold",
+    "model_cold_owner",
+    "model_root_acceptance"
+  ],
+  "source_aliases": [
+    "base",
+    "supervisor",
+    "model_producer",
+    "model_cold",
+    "model_ci"
+  ],
+  "source_pins": {
+    "model_producer": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+      "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+      "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b",
+      "bytes": 32732
+    },
+    "model_cold": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+      "sha256": "8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f",
+      "git_blob": "ca84307dec2b412d209344840da7d30538707e4a",
+      "bytes": 52759
+    },
+    "model_ci": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_ci.py",
+      "sha256": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+      "git_blob": "52c27afcedea73b474b8874581ccba4a5f1a1a93",
+      "bytes": 17279
+    },
+    "base": {
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+    },
+    "supervisor": {
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+    }
+  },
+  "accepted_model": {
+    "variables": 80730,
+    "rows": 303951,
+    "total_terms": 3340452,
+    "original_edge_variable_slice": [
+      540,
+      68934
+    ],
+    "parent_raw_bytes": 39512348,
+    "parent_raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8",
+    "parent_variables": 80730,
+    "parent_rows": 300795,
+    "parent_terms": 3337296,
+    "new_variables": 0,
+    "replaced_rows": 0,
+    "appended_rows": 3156,
+    "appended_terms": 3156,
+    "family_order": [
+      "gap_triangle_zero"
+    ],
+    "family_counts": {
+      "gap_triangle_zero": 3156
+    },
+    "family_terms": {
+      "gap_triangle_zero": 3156
+    },
+    "full_raw_identity": "Actual future configuration model_raw_sha256/model_raw_bytes; must agree with preparation, independent replay and root receipt, archive decompression and exact protobuf bytes. No prospective raw hash is invented."
+  },
+  "native_authority_schemas": {
+    "preparation": "conway99.f0.triangle-gap-native-preparation.v1",
+    "preparation_owner": "conway99.f0.triangle-gap-native-owner.v1",
+    "independent_replay": "conway99.f0.triangle-gap-independent-cold.v1",
+    "independent_owner": "conway99.f0.triangle-gap-external-cold-owner.v1",
+    "root": "conway99.f0.triangle-gap-native-root-acceptance.v1"
+  },
+  "native_root_required_fields": [
+    "configuration",
+    "preparation",
+    "independent_cold",
+    "model_archive",
+    "owners.preparation",
+    "owners.independent_cold",
+    "driver_source",
+    "parent_raw_sha256",
+    "parent_raw_bytes",
+    "total_terms",
+    "model_raw_sha256",
+    "model_raw_bytes",
+    "complete_original_parent_bytes_recovered",
+    "native_query_authorized_by_this_receipt"
+  ],
+  "native_root_status": "ROOT_ACCEPTS_COMPLETE_TRIANGLE_GAP_NATIVE_MODEL_AND_INDEPENDENT_COLD",
+  "native_receipt_changes": [
+    "Use gap_check and its exact 5,364-record /3,156-indicator /9,468-edge /12,624-AND receipt instead of prior incidence hashes and target-total fields.",
+    "Bind both preparation and native replay to model_configuration.inputs.gap_literal_root_acceptance and independently recovered parent.",
+    "Require complete accepted zero-row and AND-meaning flags; spectral arithmetic is not repeated in this terminal checker."
+  ],
+  "parameters": {
+    "num_search_workers": 4,
+    "num_full_subsolvers": 3,
+    "subsolvers": [
+      "no_lp",
+      "quick_restart_no_lp",
+      "portfolio_no_lp"
+    ],
+    "random_seed": 0,
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "symmetry_level": 0,
+    "max_time_in_seconds": 600,
+    "log_search_progress": true,
+    "log_to_stdout": true,
+    "log_to_response": true
+  },
+  "limits": {
+    "solver_seconds": 600,
+    "native_allowance_seconds": 610,
+    "owner_seconds": 720,
+    "preparation_seconds": 60,
+    "preparation_owner_seconds": 75,
+    "finalization_reserve_seconds": 60
+  },
+  "independent_controls": {
+    "worker_seconds": 10,
+    "external_owner_seconds": 15,
+    "status": "PASS_TRIANGLE_GAP_QUERY_INDEPENDENT_INTEGER_AND_RESPONSE_CONTROLS",
+    "cli": "controls --output OUTPUT_JSON",
+    "model_inputs_read": false,
+    "optimizer_calls": 0
+  },
+  "independent_terminal": {
+    "worker_seconds": 120,
+    "external_owner_seconds": 135,
+    "status": "PASS_INDEPENDENT_TRIANGLE_GAP_QUERY_TERMINAL_REPLAY",
+    "schema": "conway99.f0.triangle-gap-query-independent-cold.v1",
+    "cli": "run --output OUTPUT_JSON --configuration CFG --configuration-sha256 SHA --directory QUERY_DIR --result-sha256 SHA --owner-sha256 SHA --gate GATE --gate-sha256 SHA"
+  },
+  "query_schemas": {
+    "terminal": "conway99.f0.triangle-gap-query-terminal.v1",
+    "owner": "conway99.f0.triangle-gap-query-owner.v1"
+  },
+  "query_root_gate_status": "AUTHORIZE_ONE_TRIANGLE_GAP_MODEL_QUERY",
+  "query_gate_required_fields": [
+    "source",
+    "terminal_cold_source",
+    "configuration",
+    "limits",
+    "parameters",
+    "maximum_native_calls",
+    "automatic_retries",
+    "independent_terminal_cold_required",
+    "model_raw_sha256",
+    "model_cold"
+  ],
+  "terminal_report_fields": [
+    "source",
+    "configuration",
+    "root_gate",
+    "query_result",
+    "query_owner",
+    "query_source",
+    "model_cold",
+    "model_root_acceptance",
+    "model_raw_sha256",
+    "model_raw_bytes",
+    "variables",
+    "rows",
+    "native_answer_classification",
+    "native_status",
+    "query_native_calls",
+    "query_native_seconds",
+    "query_native_overrun_seconds",
+    "returned_vectors_independently_checked",
+    "vectors",
+    "complete_parameters_checked",
+    "complete_response_messages_checked",
+    "all_available_native_vectors_and_saved_row_activities_checked"
+  ],
+  "exact_reuse": {
+    "exact_integer_domain_and_all_linear_activity_loops_unchanged": true,
+    "signed_and_disconnected_domain_semantics_unchanged": true,
+    "response_text_wire_snapshot_and_all_returned_vector_checks_preserved": true,
+    "additional_vectors_and_saved_activity_arrays_preserved": true,
+    "complete_parameter_text_wire_descriptor_verification_unchanged": true,
+    "repeated_subsolver_strings_use_extend_in_original_order": true,
+    "assertions_required": true,
+    "native_or_producer_imports": 0
+  },
+  "semantic_scope": {
+    "UNKNOWN": "No exclusion.",
+    "INFEASIBLE": "UNPROVED_NATIVE_INFEASIBLE; not a mathematical exclusion proof.",
+    "FEASIBLE_or_OPTIMAL": "Every returned vector must pass all integer domains and all 303,951 rows; it remains a partial-model witness until original pair caps and second-component completion pass.",
+    "optimizer_calls_by_checker": 0,
+    "no_CpModel_or_CpSolver": true,
+    "no_original_pair_cap_or_second_component_completion_claim": true
+  },
+  "publication": {
+    "source_only": true,
+    "actual_query_configuration_written": false,
+    "preflight_run": false,
+    "query_run": false,
+    "controls_run": false,
+    "native_model_decoded": false,
+    "root_owns_gate_and_actual_receipts": true
+  }
+}

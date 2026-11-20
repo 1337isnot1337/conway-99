@@ -1,0 +1,380 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-ci-root-gate.v1",
+  "status": "AUTHORIZE_ONE_TRIANGLE_GAP_NATIVE_PREPARATION_AND_SEPARATE_COLD",
+  "expected_parent": "0a73ddeee2f9ad31cc89502b44e6b613bbeea126",
+  "branch": "research/global-constraints-ab2f",
+  "run_attempt": 1,
+  "driver_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_ci.py",
+    "bytes": 17279,
+    "sha256": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+    "git_blob": "52c27afcedea73b474b8874581ccba4a5f1a1a93",
+    "mode": "100644"
+  },
+  "producer_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b",
+    "mode": "100644"
+  },
+  "cold_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+    "bytes": 52759,
+    "sha256": "8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f",
+    "git_blob": "ca84307dec2b412d209344840da7d30538707e4a",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-configuration01.json",
+    "bytes": 14242,
+    "sha256": "dc60f13b81bf12a197e897d5cdfd4fe57540f071d385bb4df4e24ff580954a9f",
+    "git_blob": "316a4c3aaac63ebd8a0caca560814151014d5c0c",
+    "mode": "100644"
+  },
+  "supervisor_source": {
+    "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+    "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+    "bytes": 26760,
+    "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+  },
+  "workflow": {
+    "path": ".github/workflows/conway99-triangle-gap-native-prepare.yml",
+    "bytes": 13386,
+    "sha256": "c0807fdecfc31f23854a5c0f76b31ef329c8483a7eeedff6a725d89a5eccb55f",
+    "git_blob": "231f7daaef9b78182218564d966943f9320396e8",
+    "mode": "100644"
+  },
+  "source_reviews": {
+    "producer": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-producer-independent-source-review01.json",
+      "bytes": 5690,
+      "sha256": "8744d50196e14bf3567e0c18fa1d160ae7c52c4988a52c5489568ab58cbfcbc1",
+      "git_blob": "275a429e9d301c06444c4563bf78aea329353857",
+      "mode": "100644"
+    },
+    "independent_checker": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-replay-independent-source-review01.json",
+      "bytes": 8751,
+      "sha256": "b49837a74b7cc7246b4c0e82db0a5217469634479862353695eefb3e56360b95",
+      "git_blob": "dfdbf39f121ede4ead4a1fc0792824909ead32c5",
+      "mode": "100644"
+    },
+    "ci": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci-independent-source-review02.json",
+      "bytes": 5355,
+      "sha256": "8e6935d70de94638be3361e956bacdc811dde07c8f409bc5a0c93f415b0eeb0c",
+      "git_blob": "4acc54dbfe22b6e60ec1da9afc0670e9eb55e8da",
+      "mode": "100644"
+    },
+    "actual_configuration_and_workflow": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-configuration-independent-review01.json",
+      "bytes": 9165,
+      "sha256": "69b3e4c002859dbe01d307da6e0fccd676eb244c0759e8f64552da316a941cd6",
+      "git_blob": "bae7c9edc93f03daaab3127ec660485e05ce5b53",
+      "mode": "100644"
+    }
+  },
+  "parent_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-root-acceptance01.json",
+    "bytes": 14417,
+    "sha256": "bb744c426034992ddae1702cdb479e61d17d9a2fa5da2a614f4d6c15643908f0",
+    "git_blob": "c40bf305e72dedec3d42cdfc862ca436380ebf76"
+  },
+  "literal_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-literal-root-acceptance01.json",
+    "bytes": 37723,
+    "sha256": "cb33ecf2589c44dae627b3828c20a11369255051fc951c11bf27cdeeaad86897",
+    "git_blob": "12f21da0c28544d4bf23bada0e50b082c97d0d95",
+    "mode": "100644"
+  },
+  "base_model_raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8",
+  "base_model_raw_bytes": 39512348,
+  "variables": 80730,
+  "rows": 303951,
+  "total_terms": 3340452,
+  "parent_rows": 300795,
+  "parent_terms": 3337296,
+  "appended_rows": 3156,
+  "appended_terms": 3156,
+  "new_variables": 0,
+  "replaced_rows": 0,
+  "family_order": [
+    "gap_triangle_zero"
+  ],
+  "family_counts": {
+    "gap_triangle_zero": 3156
+  },
+  "family_terms": {
+    "gap_triangle_zero": 3156
+  },
+  "limits": {
+    "controls_owner_seconds": 15,
+    "prepare_owner_seconds": 135,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 420
+  },
+  "worker_limits": {
+    "controls_worker_seconds": 10,
+    "controls_owner_seconds": 15,
+    "prepare_worker_seconds": 120,
+    "prepare_owner_seconds": 135
+  },
+  "native_model_builds_allowed": 1,
+  "independent_complete_replays_allowed": 1,
+  "optimizer_calls_allowed": 0,
+  "native_query_allowed": false,
+  "automatic_retries": 0,
+  "dependencies": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01-finalization.json",
+      "bytes": 457,
+      "sha256": "4ccae618d2a7e80f46e44847d0ba3769f8b0109a9882dc4b30fc9a2f4a9d5bfd",
+      "git_blob": "0892627e553d2c1ca1d585422ded13822cd44654",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01-owner.json",
+      "bytes": 3576,
+      "sha256": "ec7948bb21f4c9126da97fd4c4b47b690d344cd7d1f0800cec39d1fdef6f08a5",
+      "git_blob": "5ed2d35b34c5ad379881162413118dc2fa705dbc",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01.json",
+      "bytes": 24136,
+      "sha256": "6fbf1ab7cac847439e6e21e7a4df40c070e9a0e89aad5a55267f86da566a1bee",
+      "git_blob": "ce11025e36cd562463d84c26b086af247890ed45",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-source-review01.json",
+      "bytes": 11946,
+      "sha256": "334ff50ac3263e9b6355557588232c2e2fcc8b30d9fbe525ac9a9d33baabfc90",
+      "git_blob": "0e530845eec3533a468e80f6c0eb7add3a2fed3d",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-source-review01.json",
+      "bytes": 6275,
+      "sha256": "ead0eefc0dd201a62c94cf1479b081fdf8f57bbfa8b0cab308bc7a50be370974",
+      "git_blob": "b22eeae7894ca1d1c13e05514581325f2d334715",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-literal-root-acceptance01.json",
+      "bytes": 37723,
+      "sha256": "cb33ecf2589c44dae627b3828c20a11369255051fc951c11bf27cdeeaad86897",
+      "git_blob": "12f21da0c28544d4bf23bada0e50b082c97d0d95",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-minors01.json",
+      "bytes": 2569247,
+      "sha256": "31789e7cb6012e8d0f3545170bfa19daec752027b4cd1c7a6bc013749cc146f1",
+      "git_blob": "2f0d27b2c2bd2d9e61ddcb4c11ae41168a206ee5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-minor-independent-review01.json",
+      "bytes": 6211,
+      "sha256": "9132b5b87497a608e40ea07361257c963731a5dc758f41ba1d9605726af18099",
+      "git_blob": "4358f7123e3459d78d0efc1670da8031c1fc989d",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-independent-native-source-contract02.json",
+      "bytes": 8854,
+      "sha256": "cf0c402f9a24c65ad0b243875296f718ea2d4ef0e1612ab7bdfebeac8e828b9b",
+      "git_blob": "93f8c90eabe4ed2a1355ff398aa2008e891808e6",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci-independent-source-review02.json",
+      "bytes": 5355,
+      "sha256": "8e6935d70de94638be3361e956bacdc811dde07c8f409bc5a0c93f415b0eeb0c",
+      "git_blob": "4acc54dbfe22b6e60ec1da9afc0670e9eb55e8da",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci-source-reuse01.json",
+      "bytes": 2836,
+      "sha256": "57a2f2a2104c0b4acd180d3af1810a6b636c56d499758c25739462d4286c0ccd",
+      "git_blob": "02423e7b5b926dd6951442707fdd1218148e0929",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-configuration-independent-review01.json",
+      "bytes": 9165,
+      "sha256": "69b3e4c002859dbe01d307da6e0fccd676eb244c0759e8f64552da316a941cd6",
+      "git_blob": "bae7c9edc93f03daaab3127ec660485e05ce5b53",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-configuration01.json",
+      "bytes": 14242,
+      "sha256": "dc60f13b81bf12a197e897d5cdfd4fe57540f071d385bb4df4e24ff580954a9f",
+      "git_blob": "316a4c3aaac63ebd8a0caca560814151014d5c0c",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-producer-independent-source-review01.json",
+      "bytes": 5690,
+      "sha256": "8744d50196e14bf3567e0c18fa1d160ae7c52c4988a52c5489568ab58cbfcbc1",
+      "git_blob": "275a429e9d301c06444c4563bf78aea329353857",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-producer-source-contract01.json",
+      "bytes": 10492,
+      "sha256": "8801a341f7a29ec964415f1a0ceab175eb1bfe678e0a2b66b09cd9b5f3feebcc",
+      "git_blob": "17520fb93fe6bf3cb9156e27143471085fe203c7",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-replay-independent-source-review01.json",
+      "bytes": 8751,
+      "sha256": "b49837a74b7cc7246b4c0e82db0a5217469634479862353695eefb3e56360b95",
+      "git_blob": "dfdbf39f121ede4ead4a1fc0792824909ead32c5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-owner/owner.json",
+      "bytes": 1912,
+      "sha256": "e48634509d4246f20638fc500611d41ec0591fe65d0765a22bdf60c408f74607",
+      "git_blob": "05cbd3eb0eef1d72a12dc54a5e250ba110aa2dd3",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold/report.json",
+      "bytes": 16627,
+      "sha256": "a9e9f97f5e437ebb65091c7b693ae3af93e682573f3ca743d39ec74d6dd20953",
+      "git_blob": "90c26ca5b6def071a349a9482a6639f3c32d60d1",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/model.pb.gz",
+      "bytes": 5690176,
+      "sha256": "3a84ccb555ebc28c5ba7cc0d2f2d5bacec9de48c9c8b8e6380278e1222cbe7f2",
+      "git_blob": "7a069862cfedca531b2f3acfd9da284b1e11f948",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/owner.json",
+      "bytes": 1311,
+      "sha256": "b5368c3ba810f06f56f4b8bb2c0e8db8b52c683d6d0cdbeee6aa5190185489ec",
+      "git_blob": "b4b2a776e096bc506744eb2fc466f8ec9b203082",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/report.json",
+      "bytes": 23939,
+      "sha256": "f7be6afd05ae3ac32fbf6c768e7c3cb4decd830be18bef548f16b7e142d3d00f",
+      "git_blob": "117b739356e011bd74503f92a41aaf3a0e4e48c5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+      "bytes": 24503,
+      "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+      "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-root-acceptance01.json",
+      "bytes": 14417,
+      "sha256": "bb744c426034992ddae1702cdb479e61d17d9a2fa5da2a614f4d6c15643908f0",
+      "git_blob": "c40bf305e72dedec3d42cdfc862ca436380ebf76",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "bytes": 15210,
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2",
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "bytes": 26760,
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_spectral_gap_replay_v8.js",
+      "bytes": 26731,
+      "sha256": "e9d66efc24f9f97600ec8155390c554aad066e8d25b54e7e9469a677da4fc129",
+      "git_blob": "88f3061a75fe2aa872e2fb03e0c3af25bd2d81f4",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_ci.py",
+      "bytes": 17279,
+      "sha256": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+      "git_blob": "52c27afcedea73b474b8874581ccba4a5f1a1a93",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+      "bytes": 32732,
+      "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+      "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+      "bytes": 52759,
+      "sha256": "8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f",
+      "git_blob": "ca84307dec2b412d209344840da7d30538707e4a",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+      "bytes": 64900,
+      "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+      "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+      "bytes": 82846,
+      "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+      "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_recorded_triangle_spectral_gap.md",
+      "bytes": 6731,
+      "sha256": "6e892e3a544f0ff38932cbec6abfa8ff77e09b56cea46926dcc8121c95b16d11",
+      "git_blob": "f4e2821e25e3d46c27cd61603892660a0b34c54d",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_spectral_gap_pair_minor.md",
+      "bytes": 13581,
+      "sha256": "169a4b0c8ba1381302d0eeacb449599a5e4913cd6a55a24bb711e5d4126829ce",
+      "git_blob": "168ca05d66609a2ac7027d3958a4f22c63385e1c",
+      "mode": "100644"
+    }
+  ],
+  "dependency_count": 33,
+  "sparse_path_count": 36,
+  "root_review": {
+    "complete_native_producer_read": true,
+    "independent_checker_authored_separately": true,
+    "all_peer_reviews_read": true,
+    "actual_statuses_checked": 10,
+    "actual_authority_links_checked": 25,
+    "complete_changed_CI_source_and_exact_reuse_checked": true,
+    "full_workflow_and_sparse_set_checked": true,
+    "final_source_receipt_guard_reviewed": true,
+    "separate_actual_literal_acceptance_required_and_present": true,
+    "parent_original_archive_committed_and_hash_checked": true
+  },
+  "execution_contract": "One controls/preparation pair and separate owned independent controls/complete protobuf replay. Preserve exact terminal bytes, including failed reports, even when a later phase fails. No automatic retry or solver query.",
+  "scope": "Append the certified3156 unit-zero indicators to the entire accepted parent byte prefix. A successful build remains a necessary F0 model, not a full graph or an exclusion.",
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

@@ -1,0 +1,244 @@
+{
+  "schema": "conway99.f0.triangle-gap-query-runner-and-ci-independent-source-review.v1",
+  "status": "PASS_COMPLETE_TRIANGLE_GAP_QUERY_RUNNER_AND_CI_SOURCE_REVIEW",
+  "reviewer": "/root/master_review",
+  "query_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_query.py",
+    "git_blob": "fe3240c26b0ea100ceb2dca5f9bb7a9d6b35b8eb",
+    "sha256": "e2c09ac087ff47f19df4b512f143cf27c348b956548f63d1e6b68b6abcfed682",
+    "bytes": 39242
+  },
+  "ci_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_query_ci.py",
+    "git_blob": "943dc49ea9722a9dafc168b6268101eadcd79f04",
+    "sha256": "9fa2aa97cacc16732928b81cadbf3e7865500810022bf3781b7de4dcb0d8160e",
+    "bytes": 17106
+  },
+  "terminal_checker_interface": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_query_replay.py",
+    "bytes": 37127,
+    "sha256": "d1756716e217191f62eafcfaa358d67ef89c1f6159afa13696741dd40477b592",
+    "git_blob": "e5cd87397b382668e2bdcb79e0b60840c85059f1",
+    "qualification": "The reviewer authored this separate checker; this receipt checks the runner/CI interface against it and does not claim an independent peer review of that checker."
+  },
+  "complete_source_reads": {
+    "runner_lines": 642,
+    "ci_lines": 281
+  },
+  "prior_query_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py",
+    "bytes": 39635,
+    "sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "git_blob": "7295da45c769913e7bb8b6b408abac551880a29a"
+  },
+  "prior_ci_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci.py",
+    "bytes": 17160,
+    "sha256": "a6a048ab3f385e04ab157971eb70ad1f56ba7515cc5c0887a29ac12c97d5910a",
+    "git_blob": "182b9cbd13f3033edca5431dc7c578e1fbec3e87"
+  },
+  "independently_checked_function_text_comparisons": [
+    {
+      "name": "canonical",
+      "unchanged": true,
+      "parent_sha256": "43cf15500ba5fb7bd96ac7f0426159b09fa880eb04a326cdfc77007265ef1bfe",
+      "new_sha256": "43cf15500ba5fb7bd96ac7f0426159b09fa880eb04a326cdfc77007265ef1bfe"
+    },
+    {
+      "name": "sha",
+      "unchanged": true,
+      "parent_sha256": "d41609d967cf1415af635774d407295df5f352d32b53d6a926cd38dfdab7c74d",
+      "new_sha256": "d41609d967cf1415af635774d407295df5f352d32b53d6a926cd38dfdab7c74d"
+    },
+    {
+      "name": "digest",
+      "unchanged": true,
+      "parent_sha256": "a62011dc9781bbe74e9ff723f5d78946021b40683dc6ae9b28a7eec1a0f01cfb",
+      "new_sha256": "a62011dc9781bbe74e9ff723f5d78946021b40683dc6ae9b28a7eec1a0f01cfb"
+    },
+    {
+      "name": "binding",
+      "unchanged": true,
+      "parent_sha256": "259b22efafad62793c726c33be820ffe74670462be079129afa869e719b761eb",
+      "new_sha256": "259b22efafad62793c726c33be820ffe74670462be079129afa869e719b761eb"
+    },
+    {
+      "name": "read_bytes",
+      "unchanged": true,
+      "parent_sha256": "57cd4feb618d065850d9ee5fb8a6d6fbb7373b6087ab9a32dc1d2fd9b2d30ff1",
+      "new_sha256": "57cd4feb618d065850d9ee5fb8a6d6fbb7373b6087ab9a32dc1d2fd9b2d30ff1"
+    },
+    {
+      "name": "read_json",
+      "unchanged": true,
+      "parent_sha256": "650e895453d2995dc0dcfd1e50fb14c7ddca50f66149215af7ffa196c8640643",
+      "new_sha256": "650e895453d2995dc0dcfd1e50fb14c7ddca50f66149215af7ffa196c8640643"
+    },
+    {
+      "name": "same_reference",
+      "unchanged": true,
+      "parent_sha256": "eaee674385eea4b98a8116625af43f7e429674865bb88400c02452da9aa59fbb",
+      "new_sha256": "eaee674385eea4b98a8116625af43f7e429674865bb88400c02452da9aa59fbb"
+    },
+    {
+      "name": "save",
+      "unchanged": true,
+      "parent_sha256": "792adf3766bc243d496bb8db90af6211fb2ae1ef3b09eee0c9e809f7d8c81683",
+      "new_sha256": "792adf3766bc243d496bb8db90af6211fb2ae1ef3b09eee0c9e809f7d8c81683"
+    },
+    {
+      "name": "check_time",
+      "unchanged": false,
+      "parent_sha256": "a295bd9f04ecaf6a734c74b8a699ef3b135a513dbdbd3ed941ed99dec4f0f043",
+      "new_sha256": "9365e8cddee3869d71137533b7c5b89ce22d44d16ac7d349e47024c9501a4878"
+    },
+    {
+      "name": "bound_module",
+      "unchanged": true,
+      "parent_sha256": "a98cc3c5c6198bec29a948161ef8a60bee206271e61dc6d60090dd80f933e7ce",
+      "new_sha256": "a98cc3c5c6198bec29a948161ef8a60bee206271e61dc6d60090dd80f933e7ce"
+    },
+    {
+      "name": "configuration",
+      "unchanged": false,
+      "parent_sha256": "0777f39eb49f95a9ce9ab921ebefdbd7b96c7762e491ca58c06774ac3bad2276",
+      "new_sha256": "c74c2120c9c015342c13e8ab4334e32ae14129c0b2e955a9c710dfb476a0a1d4"
+    },
+    {
+      "name": "accepted_model",
+      "unchanged": false,
+      "parent_sha256": "7f6a598720f9d5abbc0ad9d38b4d11908fe8ff453cbd1dcf7bd7138b5c54bc67",
+      "new_sha256": "3457d38d294d8c0b6c84668a0100f879cb14ca8e763bbe54b631ac1ecae547ed"
+    },
+    {
+      "name": "parameters",
+      "unchanged": true,
+      "parent_sha256": "7b55e0c284af6a057a8c7ad246e9fe6da85c0c87af142712568652fdff68241a",
+      "new_sha256": "7b55e0c284af6a057a8c7ad246e9fe6da85c0c87af142712568652fdff68241a"
+    },
+    {
+      "name": "inspect_vector",
+      "unchanged": true,
+      "parent_sha256": "a71a556fd6a6e1a55f36bac7f33fcfabbb303d06f1cf49be46e8d8e27ab7e053",
+      "new_sha256": "a71a556fd6a6e1a55f36bac7f33fcfabbb303d06f1cf49be46e8d8e27ab7e053"
+    },
+    {
+      "name": "controls",
+      "unchanged": false,
+      "parent_sha256": "d400c58813de381464048a01a35be72ecc5af3452b7f732d5973cb6e2ce33ede",
+      "new_sha256": "bdb3246eab59f44371ba8362d1c539c1a12c581554561635b72812c36b4a8260"
+    },
+    {
+      "name": "prepare",
+      "unchanged": false,
+      "parent_sha256": "3b8d26699c75aa4fd53252a29781a56b925b633654f60e547ddeb69b3e514565",
+      "new_sha256": "5a9702aeebe8ff64f4d2a518c9e36566700da7cd2a1c8b83dfe3d1da627d82ab"
+    },
+    {
+      "name": "query_authority",
+      "unchanged": false,
+      "parent_sha256": "c52785e9788f52ed71bb6021d16029167f8b359f59ba4ab8d6076b6994e28270",
+      "new_sha256": "65ea4e8c59bfb025a979d6a8bb62771ddf097aa302be10aef01614a2904bc602"
+    },
+    {
+      "name": "classification",
+      "unchanged": false,
+      "parent_sha256": "2b1be0701fc82f760ddbe11056daeabbadf7cca49956a19b4f9ab075a1cd8555",
+      "new_sha256": "ade67cd6a605a426bf5782953ea81cba06e83fe9ed7c6748f0bc245d3c2a7f94"
+    },
+    {
+      "name": "run",
+      "unchanged": true,
+      "parent_sha256": "44e562a2f2f23b2f3d720eb5215b825e5ce5deb0a41c861a3cbfb2391a4f1c5d",
+      "new_sha256": "44e562a2f2f23b2f3d720eb5215b825e5ce5deb0a41c861a3cbfb2391a4f1c5d"
+    },
+    {
+      "name": "worker",
+      "unchanged": false,
+      "parent_sha256": "bc3b116e1d57da233d5ac476f7df742e6dd3d4fedb07790351540ec6255cd6e4",
+      "new_sha256": "3c7537c052501f27e89097a5521912933d95af2ab8fb9ebe40b9bff968bc6afb"
+    },
+    {
+      "name": "owned",
+      "unchanged": false,
+      "parent_sha256": "7f25b95682d1927a75ea3ecbc2873c05f4a7f6630e93914efa4b0ec7c08d40f6",
+      "new_sha256": "d3b093769d30674825ffe4a047a8b20211113a7ce885d708e599d67a7ec2f95f"
+    }
+  ],
+  "exact_ci_substitution_reconstruction": {
+    "substitutions": [
+      {
+        "from": "triangle-incidence",
+        "to": "triangle-gap",
+        "occurrences": 5
+      },
+      {
+        "from": "TRIANGLE_INCIDENCE",
+        "to": "TRIANGLE_GAP",
+        "occurrences": 4
+      },
+      {
+        "from": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+        "to": "e2c09ac087ff47f19df4b512f143cf27c348b956548f63d1e6b68b6abcfed682",
+        "occurrences": 1
+      },
+      {
+        "from": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+        "to": "d1756716e217191f62eafcfaa358d67ef89c1f6159afa13696741dd40477b592",
+        "occurrences": 1
+      },
+      {
+        "from": "80730, 300795",
+        "to": "80730, 303951",
+        "occurrences": 1
+      }
+    ],
+    "complete_result_equals_frozen_source": true,
+    "parent_bytes": 17160,
+    "result_bytes": 17106
+  },
+  "model_acceptance": [
+    "The runner binds the actual seven native input receipts and all five fixed source references before decoding a model.",
+    "The new native configuration, preparation/owner, independent replay/owner and root receipt have triangle-gap schemas and exact successful statuses.",
+    "The root driver_source is the CI Python source; driver remains the separate terminal JSON. Configuration, both reports, both owners and archive references agree.",
+    "The accepted immediate parent has 80,730 variables, 300,795 rows, 3,337,296 terms and the exact 39,512,348-byte raw identity.",
+    "The new model has no new variables/replacements and adds exactly 3,156 unit-zero terms/rows, for 303,951 rows and 3,340,452 terms.",
+    "The failed-index and complete zero-row digests are explicitly pinned to the actual independent literal replay.",
+    "The gap_check and all complete native-AND/preservation flags match the frozen producer and final native checker field names; obsolete incidence and target-total fields are absent.",
+    "The model archive, decompressed complete bytes and exact protobuf roundtrip must match the actual future query configuration and all native receipts.",
+    "Original exterior edges are read only from variables[540:68934], with their complete edge hash. The new auxiliary tail is not mistaken for exterior edges."
+  ],
+  "query_contract": [
+    "The explicit ordered full portfolio is no_lp, quick_restart_no_lp, portfolio_no_lp with num_full_subsolvers=3 and num_search_workers=4. Repeated strings are extended in order.",
+    "The seed, presolve, probing/linearization/symmetry settings, exact text/wire parameter export and pinned runtime checks are unchanged.",
+    "One 600-second solver clock has a 610-second measured native allowance and 720-second process-group owner. The caller requires a 60-second finalization reserve before the native call.",
+    "A separate 60-second/75-second zero-solve preflight and a hash-bound production gate are mandatory. Configuration alone does not authorize a call.",
+    "Exact native response text is saved before parsing. Primary and all additional vectors are saved before integer checking; reconstructed binary protobuf is explicitly labelled as reconstructed.",
+    "All variable domains and every linear activity are recomputed using Python integers. Complete per-vector activities, checks, selections and edge IDs are retained.",
+    "The whole run function, parameter builder and vector inspector are text-identical to the prior independently reviewed source. No parameter sweep, automatic retry, graph symmetry or unproved selector fix is introduced.",
+    "UNKNOWN and time overruns remain no exclusion; native INFEASIBLE remains UNPROVED_NATIVE_INFEASIBLE. A feasible Boolean vector remains a partial-model witness."
+  ],
+  "ownership_and_ci": [
+    "The runner uses the pinned supervisor and requires returncode zero, a reaped child and stopped process group before accepting a terminal report.",
+    "Initial owner, supervision, partial native response/result states, worker errors and final owner remain separately preserved. Unfinished or overrun states are not accepted.",
+    "The CI driver invokes only run once on the already accepted/preflighted model and then owns the independent checker controls and complete terminal replay under 15/135-second bounds.",
+    "Exact request/gate/source/configuration/preflight references and model identity are checked before invocation; all query and checker source pins are current.",
+    "The fresh runner and checker CLI/status fields match the new CI. The independent report must bind the saved query result/owner, exact call count and derived native classification.",
+    "CI finally retains available terminal artifacts on failure and applies its 900-second whole-pipeline acceptance bound. It never rebuilds or prepares a model, imports the implementations, constructs a solver itself or retries."
+  ],
+  "actual_execution": {
+    "source_imports": 0,
+    "source_compilations": 0,
+    "controls": 0,
+    "preflight": 0,
+    "native_model_decode": 0,
+    "optimizer_calls": 0
+  },
+  "concrete_blockers": [],
+  "pending_gates": [
+    "Actual native preparation, independent native replay and root acceptance with exact new model/archive hashes.",
+    "Actual query configuration and a source/receipt compatibility check against those records.",
+    "One separately authorized zero-solve preflight, its accepted outputs, and an explicit one-call production gate.",
+    "Separate independent review of the terminal checker, owned by root."
+  ]
+}

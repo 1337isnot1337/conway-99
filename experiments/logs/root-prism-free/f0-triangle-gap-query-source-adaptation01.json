@@ -1,0 +1,208 @@
+{
+  "schema": "conway99.f0.triangle-gap-query-source-adaptation.v1",
+  "status": "FROZEN_UNRUN_QUERY_RUNNER_AND_CI_SOURCE_PREPARATION",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_query.py",
+    "bytes": 39242,
+    "sha256": "e2c09ac087ff47f19df4b512f143cf27c348b956548f63d1e6b68b6abcfed682",
+    "git_blob": "fe3240c26b0ea100ceb2dca5f9bb7a9d6b35b8eb",
+    "mode": "100644"
+  },
+  "parent_source": {
+    "bytes": 39635,
+    "sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "git_blob": "7295da45c769913e7bb8b6b408abac551880a29a",
+    "mode": "100644",
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py"
+  },
+  "exact_runner_substitutions": [
+    {
+      "from": "triangle-incidence",
+      "to": "triangle-gap",
+      "count": 10
+    },
+    {
+      "from": "triangle incidence",
+      "to": "triangle gap",
+      "count": 1
+    },
+    {
+      "from": "TRIANGLE_INCIDENCE",
+      "to": "TRIANGLE_GAP",
+      "count": 10
+    },
+    {
+      "from": "MODEL_SOURCE_SHA = \"29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199\"",
+      "to": "MODEL_SOURCE_SHA = \"a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c\"",
+      "count": 1
+    },
+    {
+      "from": "MODEL_COLD_SHA = \"1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec\"",
+      "to": "MODEL_COLD_SHA = \"8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f\"",
+      "count": 1
+    },
+    {
+      "from": "MODEL_CI_SHA = \"ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7\"",
+      "to": "MODEL_CI_SHA = \"bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048\"",
+      "count": 1
+    },
+    {
+      "from": "PARENT_RAW_SHA = \"2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6\"",
+      "to": "PARENT_RAW_SHA = \"56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8\"",
+      "count": 1
+    },
+    {
+      "from": "PARENT_RAW_BYTES, PARENT_VARIABLES, PARENT_ROWS, PARENT_TERMS = 39306083, 80730, 297470, 3310380",
+      "to": "PARENT_RAW_BYTES, PARENT_VARIABLES, PARENT_ROWS, PARENT_TERMS = 39512348, 80730, 300795, 3337296",
+      "count": 1
+    },
+    {
+      "from": "VARIABLES, ROWS, TOTAL_TERMS, EDGE_STOP = 80730, 300795, 3337296, 68934",
+      "to": "VARIABLES, ROWS, TOTAL_TERMS, EDGE_STOP = 80730, 303951, 3340452, 68934",
+      "count": 1
+    },
+    {
+      "from": "FAMILY_ORDER = [\"side_edge\", \"local_selector\", \"global_target_total\"]\nFAMILY_COUNTS = dict(zip(FAMILY_ORDER, [2904, 420, 1]))\nFAMILY_TERMS = dict(zip(FAMILY_ORDER, [10320, 16512, 84]))",
+      "to": "FAMILY_ORDER = [\"gap_triangle_zero\"]\nFAMILY_COUNTS = {\"gap_triangle_zero\": 3156}\nFAMILY_TERMS = {\"gap_triangle_zero\": 3156}",
+      "count": 1
+    },
+    {
+      "from": "for field in (\"row_keys_sha256\", \"family_row_keys_sha256\", \"family_row_jsonl_sha256\", \"literal_hashes\"):",
+      "to": "for field in (\"row_keys_sha256\", \"family_row_keys_sha256\", \"family_row_jsonl_sha256\"):",
+      "count": 1
+    },
+    {
+      "from": "assert preparation[\"incidence_check\"] == cold[\"incidence_check\"]",
+      "to": "assert preparation[\"gap_check\"] == cold[\"gap_check\"]",
+      "count": 1
+    },
+    {
+      "from": "sum(FAMILY_TERMS.values()) == 26916",
+      "to": "sum(FAMILY_TERMS.values()) == 3156",
+      "count": 1
+    },
+    {
+      "from": "sum(FAMILY_COUNTS.values()) == 3325",
+      "to": "sum(FAMILY_COUNTS.values()) == 3156",
+      "count": 1
+    },
+    {
+      "from": "    assert preparation[\"global_target_total_row_retained\"] is True\n    assert preparation[\"input_extraction_execution_accepted\"] is False\n",
+      "to": "    assert preparation[\"all_certified_zeros_retained\"] is True\n",
+      "count": 1
+    },
+    {
+      "from": "                  \"complete_row_origins_and_lossless_restoration_checked\", \"all_side_and_nonempty_local_proposals_retained\",\n                  \"global_target_total_row_independently_checked\", \"all_seven_literal_hashes_rederived_from_native_AND_meanings\"):",
+      "to": "                  \"complete_row_origins_and_lossless_restoration_checked\", \"all_3156_certified_zero_rows_retained\",\n                  \"native_AND_meanings_recovered_independently\"):",
+      "count": 1
+    },
+    {
+      "from": "    for field in (\"Boolean_implication_classification_used_to_prune\", \"original_failed_extractor_execution_accepted\",\n                  \"original_extractor_overrun_waived\", \"original_extractor_or_literal_producer_imported\",\n                  \"native_transport_or_preparation_producer_imported\", \"native_query_authorized_by_this_report\"):\n        assert cold[field] is False\n    for alias, field in ((\"incidence_root_acceptance\", \"independent_literal_root_acceptance\"),\n                         (\"target_total_root_acceptance\", \"target_total_root_acceptance\")):\n        same_reference(preparation[field], model_cfg[\"inputs\"][alias])\n        same_reference(cold[field], model_cfg[\"inputs\"][alias])\n    target = cold[\"target_total_check\"]\n    assert target[\"complete_target_edges\"] == target[\"complete_target_vertices\"] == 84\n    assert target[\"original_Gram_rows_rechecked\"] == 18 and target[\"original_endpoint_rows_rechecked\"] == 168\n    assert target[\"all_seven_structural_conditions_rechecked\"] is True and target[\"Boolean_bound\"] == 12\n    assert target[\"proposed_native_row_key_sha256\"] == \"36c10df91bd844086786344beb942a2fd271e2cb9fafc6712f9168d215a7a446\"\n",
+      "to": "    for field in (\"spectral_arithmetic_repeated\", \"spectral_producer_or_literal_checker_imported\",\n                  \"native_transport_or_preparation_producer_imported\", \"native_query_authorized_by_this_report\"):\n        assert cold[field] is False\n    same_reference(preparation[\"gap_literal_root_acceptance\"], model_cfg[\"inputs\"][\"gap_literal_root_acceptance\"])\n    same_reference(cold[\"gap_literal_root_acceptance\"], model_cfg[\"inputs\"][\"gap_literal_root_acceptance\"])\n    gap = cold[\"gap_check\"]\n    assert gap[\"forward_records_bound\"] == 5364 and gap[\"complete_failed_indices\"] == 3156\n    assert gap[\"native_indicator_messages_checked\"] == 3156 and gap[\"native_edge_variable_messages_checked\"] == 9468\n    assert gap[\"complete_native_AND_messages_checked\"] == 12624 and gap[\"all_certified_zeros_retained\"] is True\n    assert gap[\"spectral_minor_recomputations\"] == gap[\"old_family_reconstructions\"] == 0\n    assert gap[\"failed_triangle_indices_sha256\"] == \"cb049b7390dfd13617d01675b0cce593377ba5bebfc6084767a49033f7ad4dbe\"\n    assert cold[\"row_keys_sha256\"] == \"68cbeeb785a7d68e7141464bd3c9c9274bebddcd33875ea4c843494f2da44b4c\"\n",
+      "count": 1
+    }
+  ],
+  "ci_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_query_ci.py",
+    "bytes": 17106,
+    "sha256": "9fa2aa97cacc16732928b81cadbf3e7865500810022bf3781b7de4dcb0d8160e",
+    "git_blob": "943dc49ea9722a9dafc168b6268101eadcd79f04",
+    "mode": "100644"
+  },
+  "parent_ci_source": {
+    "bytes": 17160,
+    "sha256": "a6a048ab3f385e04ab157971eb70ad1f56ba7515cc5c0887a29ac12c97d5910a",
+    "git_blob": "182b9cbd13f3033edca5431dc7c578e1fbec3e87",
+    "mode": "100644",
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci.py"
+  },
+  "exact_ci_substitutions": [
+    {
+      "from": "triangle-incidence",
+      "to": "triangle-gap",
+      "count": 5
+    },
+    {
+      "from": "TRIANGLE_INCIDENCE",
+      "to": "TRIANGLE_GAP",
+      "count": 4
+    },
+    {
+      "from": "QUERY_SHA = \"c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34\"",
+      "to": "QUERY_SHA = \"e2c09ac087ff47f19df4b512f143cf27c348b956548f63d1e6b68b6abcfed682\"",
+      "count": 1
+    },
+    {
+      "from": "COLD_SHA = \"303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4\"",
+      "to": "COLD_SHA = \"d1756716e217191f62eafcfaa358d67ef89c1f6159afa13696741dd40477b592\"",
+      "count": 1
+    },
+    {
+      "from": "VARIABLES, ROWS = 80730, 300795",
+      "to": "VARIABLES, ROWS = 80730, 303951",
+      "count": 1
+    }
+  ],
+  "source_peer_review": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-query-runner-and-ci-independent-source-review01.json",
+    "bytes": 12537,
+    "sha256": "2dbbb5b73c501120f8d7aa0ef36a7311e5021d7e8a82dd1727f713ea4dbe779f",
+    "git_blob": "69dbc50085f7512a6f4c8eacc874d790353b451d",
+    "mode": "100644"
+  },
+  "expected_model": {
+    "variables": 80730,
+    "rows": 303951,
+    "terms": 3340452,
+    "actual_raw_sha256_pending_native_acceptance": true
+  },
+  "native_source_bindings": {
+    "producer": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+      "bytes": 32732,
+      "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+      "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b",
+      "mode": "100644"
+    },
+    "checker": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+      "bytes": 52759,
+      "sha256": "8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f",
+      "git_blob": "ca84307dec2b412d209344840da7d30538707e4a",
+      "mode": "100644"
+    },
+    "ci": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_gap_ci.py",
+      "bytes": 17279,
+      "sha256": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+      "git_blob": "52c27afcedea73b474b8874581ccba4a5f1a1a93",
+      "mode": "100644"
+    }
+  },
+  "parameters_unchanged": {
+    "num_search_workers": 4,
+    "random_seed": 0,
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "symmetry_level": 0,
+    "subsolvers": [
+      "no_lp",
+      "quick_restart_no_lp",
+      "portfolio_no_lp"
+    ],
+    "num_full_subsolvers": 3,
+    "max_time_in_seconds": 600,
+    "log_search_progress": true,
+    "log_to_stdout": true,
+    "log_to_response": true
+  },
+  "source_execution": 0,
+  "controls_execution": 0,
+  "optimizer_calls": 0,
+  "actual_query_configuration_created": false,
+  "preflight_gate_created": false,
+  "production_gate_created": false,
+  "model_hash_fabricated": false,
+  "independent_query_checker_peer_review_separate_and_pending": true
+}

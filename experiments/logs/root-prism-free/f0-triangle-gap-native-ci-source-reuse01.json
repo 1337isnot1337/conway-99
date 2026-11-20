@@ -1,0 +1,90 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-ci-source-reuse.v1",
+  "status": "FROZEN_NATIVE_CI_SOURCE_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_ci.py",
+    "bytes": 17279,
+    "sha256": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+    "git_blob": "52c27afcedea73b474b8874581ccba4a5f1a1a93",
+    "mode": "100644"
+  },
+  "parent_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+    "bytes": 17497,
+    "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+    "git_blob": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a",
+    "mode": "100644"
+  },
+  "exact_ordered_substitutions": [
+    {
+      "from": "triangle-incidence",
+      "to": "triangle-gap",
+      "count": 5
+    },
+    {
+      "from": "triangle_incidence",
+      "to": "triangle_gap",
+      "count": 1
+    },
+    {
+      "from": "TRIANGLE_INCIDENCE",
+      "to": "TRIANGLE_GAP",
+      "count": 14
+    },
+    {
+      "from": "BASE_RAW_SHA = \"2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6\"",
+      "to": "BASE_RAW_SHA = \"56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8\"",
+      "count": 1
+    },
+    {
+      "from": "BASE_RAW_BYTES = 39306083",
+      "to": "BASE_RAW_BYTES = 39512348",
+      "count": 1
+    },
+    {
+      "from": "VARIABLES, ROWS = 80730, 300795",
+      "to": "VARIABLES, ROWS = 80730, 303951",
+      "count": 1
+    },
+    {
+      "from": "TOTAL_TERMS = 3337296",
+      "to": "TOTAL_TERMS = 3340452",
+      "count": 1
+    },
+    {
+      "from": "FAMILY_COUNTS = {\"side_edge\": 2904, \"local_selector\": 420, \"global_target_total\": 1}",
+      "to": "FAMILY_COUNTS = {\"gap_triangle_zero\": 3156}",
+      "count": 1
+    },
+    {
+      "from": "FAMILY_TERMS = {\"side_edge\": 10320, \"local_selector\": 16512, \"global_target_total\": 84}",
+      "to": "FAMILY_TERMS = {\"gap_triangle_zero\": 3156}",
+      "count": 1
+    },
+    {
+      "from": "original_extractor_or_literal_producer_imported",
+      "to": "spectral_producer_or_literal_checker_imported",
+      "count": 1
+    },
+    {
+      "from": "assert cold_report[\"literal_hashes\"] == preparation[\"literal_hashes\"]",
+      "to": "assert cold_report[\"gap_check\"] == preparation[\"gap_check\"]",
+      "count": 1
+    }
+  ],
+  "new_source_generated_only_by_these_substitutions": true,
+  "limits": {
+    "controls_owner_seconds": 15,
+    "prepare_owner_seconds": 135,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 420
+  },
+  "native_model_builds_allowed": 1,
+  "optimizer_calls_allowed": 0,
+  "native_query_allowed": false,
+  "automatic_retries": 0,
+  "source_execution": 0,
+  "configuration_pending_actual_literal_root_acceptance": true,
+  "workflow_and_gate_pending": true
+}

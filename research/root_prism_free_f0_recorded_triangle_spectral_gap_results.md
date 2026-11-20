@@ -6,9 +6,11 @@ determinant while every proper principal minor was nonnegative. The other
 2,208 passed all seven principal-minor tests. None of the passing matrices
 had zero determinant.
 
-This is a completed source-reviewed computation. A separate independent
-terminal verification has not yet been completed. The proposed rows are
-not installed, and the frozen native model is unchanged.
+The complete separate independent literal replay now passes and is
+[root accepted](../experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-literal-root-acceptance01.json).
+It confirms every record, all 37,548 minors, all origins and both row-key
+families. The rows are certified for the next native append; the actual
+new native preparation and complete protobuf replay remain separate.
 
 | Recorded outcome | Triangles |
 | --- | ---: |
@@ -115,3 +117,27 @@ The complete source, method, configuration, independent source review,
 root gate, terminal artifacts and this note are listed in
 f0-recorded-triangle-spectral-gap-terminal-git-blobs01.json. The earlier
 preparation map remains preserved as the historical unrun preparation.
+
+
+## Separate independent replay
+
+The independent worker visits the accepted triangle list in reverse
+order and computes each principal determinant by signed permutation
+expansion using BigInt. It reconstructs the saved edge namespace,
+fiber profiles, kernel offsets, all target-incidence tables and every
+complete original record. Its seven exact controls include values
+above 2^53.
+
+The complete replay takes 13.516 seconds through report hashing under
+30 seconds. The elapsed owner takes 13.725 seconds under 45 seconds.
+The original 24,136-byte report, 457-byte finalization and 3,576-byte
+owner are retained. The report SHA256 is
+6fbf1ab7cac847439e6e21e7a4df40c070e9a0e89aad5a55267f86da566a1bee.
+The sorted failed-index array SHA256 is
+cb049b7390dfd13617d01675b0cce593377ba5bebfc6084767a49033f7ad4dbe.
+
+The [native preparation](root_prism_free_f0_triangle_gap_native_preparation.md)
+appends only the 3,156 unit-zero indicators after this independent
+acceptance. All 84 target edges still have nonempty recorded support;
+the replay does not change the scope or turn passing minors into
+feasibility certificates.

@@ -1,0 +1,79 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-producer-independent-source-review.v1",
+  "status": "PASS_COMPLETE_TRIANGLE_GAP_NATIVE_PRODUCER_SOURCE_REVIEW",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b"
+  },
+  "source_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-producer-source-contract01.json",
+    "bytes": 10492,
+    "sha256": "8801a341f7a29ec964415f1a0ceab175eb1bfe678e0a2b66b09cd9b5f3feebcc",
+    "git_blob": "17520fb93fe6bf3cb9156e27143471085fe203c7"
+  },
+  "reviewer": "/root/master_review",
+  "full_source_lines_read": 544,
+  "complete_contract_read": true,
+  "scope": {
+    "source_only": true,
+    "source_imported": false,
+    "source_compiled": false,
+    "controls_run": false,
+    "native_model_built": false,
+    "optimizer_calls": 0,
+    "actual_native_configuration_available": false,
+    "native_execution_authorized_by_this_review": false
+  },
+  "input_authority_checks": [
+    "The source requires all twelve declared input aliases and all ten successful status authorities; every configured source, proof and review is byte/hash bound.",
+    "The accepted parent root, preparation, independent replay, both owners, configuration and archive are cross-bound to the exact 39,512,348-byte parent identity, 80,730 variables, 300,795 rows and 3,337,296 terms.",
+    "The literal report, finalization and owner must be successful and refer to the same forward report. Their complete 5,364-record verification, failed count, 30-second worker and 45-second owner bounds, and exact report/finalization hashes are required.",
+    "The future root literal acceptance must bind this actual parent acceptance and the exact report/finalization/owner and failed-index list. Final configuration and its status/link lists remain a separate root gate."
+  ],
+  "actual_literal_interface": {
+    "report": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01.json",
+      "bytes": 24136,
+      "sha256": "6fbf1ab7cac847439e6e21e7a4df40c070e9a0e89aad5a55267f86da566a1bee",
+      "git_blob": "ce11025e36cd562463d84c26b086af247890ed45"
+    },
+    "finalization": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01-finalization.json",
+      "bytes": 457,
+      "sha256": "4ccae618d2a7e80f46e44847d0ba3769f8b0109a9882dc4b30fc9a2f4a9d5bfd",
+      "git_blob": "0892627e553d2c1ca1d585422ded13822cd44654"
+    },
+    "owner": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01-owner.json",
+      "bytes": 3576,
+      "sha256": "ec7948bb21f4c9126da97fd4c4b47b690d344cd7d1f0800cec39d1fdef6f08a5",
+      "git_blob": "5ed2d35b34c5ad379881162413118dc2fa705dbc"
+    },
+    "field_names_match_frozen_producer": true,
+    "configuration_not_fabricated": true
+  },
+  "mathematical_row_checks": [
+    "The accepted strict ascending index list contains exactly 3,156 integers in 0..5363 and equals every forward determinant-only failure [index,64].",
+    "Each appended row is exactly [0,0,[[71382+index,1]]], in increasing triangle index; its complete compact-array digest equals the pinned zero-row digest.",
+    "For every failed index, the source checks the exact existing Boolean indicator message, all three named edge variable messages and all four complete AND ConstraintProtos.",
+    "The AND rows give indicator = product of the three binary edges. Setting that indicator to zero therefore installs the independently certified triangle exclusion without requiring a new activation assumption.",
+    "Every row origin retains forward vertices, edge IDs and full target/support origin. There is no pruning, added cover duplicate, variable, selector fixation, objective, hint or graph symmetry."
+  ],
+  "preservation_checks": [
+    "The suffix is a CpModelProto containing only the 3,156 unit-zero constraints.",
+    "The full serialized bytes must equal parent_raw + suffix_raw exactly. Deleting the suffix must recover every parent byte.",
+    "The public native transport is hash-pinned, validates the native model and must export bytes exactly equal to the independently constructed protobuf.",
+    "The model, suffix and complete row ledger are losslessly archived and compared with their original bytes. The restoration manifest binds all raw/archive identities.",
+    "All original variable and constraint messages retain their ordered length-prefixed digests; final dimensions are 80,730 variables, 303,951 rows and 3,340,452 terms."
+  ],
+  "ownership_checks": [
+    "Controls are synthetic protobuf and Boolean truth checks only, with a 10-second worker and 15-second owner; preparation uses a 120-second worker and 135-second owner.",
+    "The owner invokes the worker once through the pinned process-group supervisor. Successful acceptance requires returncode zero, child reaped, process group stopped, exact PASS report and source/configuration references.",
+    "Worker exceptions and post-report deadline failures retain error records. Initial owner, owned receipt, supervisor, stages, final owner and terminal artifacts have distinct files.",
+    "No CpSolver, native optimization, retry, native query or inference of full graph feasibility belongs to this source."
+  ],
+  "concrete_blockers": [],
+  "remaining_gate": "Actual configuration, actual literal root acceptance and complete independent native replay are still required before any later query."
+}
