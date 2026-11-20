@@ -1,0 +1,205 @@
+{
+  "schema": "conway99.f0.triangle-incidence-independent-replay-source-contract.v1",
+  "status": "FROZEN_COMPLETE_THREE_FAMILY_PROTOBUF_REPLAY_SOURCE_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob_sha": "a7c3cb08bd93b67caad943162fe9d8de73689119",
+    "bytes": 82846,
+    "lines": 1291
+  },
+  "preserved_unrun_integration_draft": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay_unrun_draft01.py",
+    "sha256": "7062a138b213f749a1180f57e30e87385df7f17fb61fb54219588bd46fe64f6c",
+    "git_blob_sha": "744e5be1fd5193c5c18dc36520b22d0913163fea",
+    "bytes": 81747,
+    "lines": 1277
+  },
+  "current_source_imported": false,
+  "current_source_compiled": false,
+  "controls_run": false,
+  "main_run": false,
+  "instructions_for_next_consumer": {
+    "configuration_schema": "conway99.f0.triangle-incidence-native-configuration.v1",
+    "configuration_binding": "Exact path/SHA256 supplied by CLI; cfg.sources.checker binds this source. The actual native configuration remains root-owned.",
+    "controls_cli": "controls --configuration CFG --configuration-sha256 SHA --directory OUT",
+    "replay_cli": "replay --configuration CFG --configuration-sha256 SHA --preparation-directory PREP --report-sha256 SHA --owner-sha256 SHA --directory OUT",
+    "external_supervision_required": true,
+    "internal_supervisor": false,
+    "controls_worker_seconds": 10,
+    "controls_owner_seconds": 15,
+    "replay_worker_seconds": 120,
+    "replay_owner_seconds": 135,
+    "maximum_report_bytes": 1048576,
+    "read_only_native_inputs": true,
+    "no_automatic_prepare_or_optimizer": true,
+    "automatic_retries": 0,
+    "output_directories": "Fresh and distinct from preparation and external owner directories; exclusive-create files.",
+    "all_controls_output_must_be_preserved_as_raw_JSON_text": "The control report includes the exact integer 9007199254740993; do not round-trip it through V8 Number."
+  },
+  "outputs": {
+    "controls": {
+      "file": "report.json",
+      "schema": "conway99.f0.triangle-incidence-independent-controls.v1",
+      "status": "PASS_TRIANGLE_INCIDENCE_INDEPENDENT_REPLAY_CONTROLS"
+    },
+    "replay": {
+      "file": "report.json",
+      "schema": "conway99.f0.triangle-incidence-independent-cold.v1",
+      "status": "PASS_INDEPENDENT_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_MODEL"
+    },
+    "failure": {
+      "file": "error.json",
+      "schema": "conway99.f0.triangle-incidence-independent-error.v1",
+      "status": "ERROR_INDEPENDENT_TRIANGLE_INCIDENCE_REPLAY",
+      "report_accepted": false
+    },
+    "shared_receipt_fields": [
+      "source",
+      "configuration",
+      "mode",
+      "maximum_seconds",
+      "seconds_before_report_serialization",
+      "automatic_retries",
+      "optimizer_calls",
+      "CpModel_constructed",
+      "CpSolver_constructed",
+      "native_optimizer_constructed",
+      "native_query_run"
+    ],
+    "replay_fields": [
+      "preparation_report",
+      "preparation_owner",
+      "parent_root_acceptance",
+      "independent_literal_root_acceptance",
+      "target_total_root_acceptance",
+      "inputs",
+      "layout",
+      "variables",
+      "rows",
+      "total_terms",
+      "model_raw_sha256",
+      "model_raw_bytes",
+      "model_archive_sha256",
+      "model_archive_bytes",
+      "base_restoration_sha256",
+      "base_restoration_bytes",
+      "artifacts",
+      "family_counts",
+      "family_terms",
+      "row_keys_sha256",
+      "family_row_keys_sha256",
+      "family_row_jsonl_sha256",
+      "literal_hashes",
+      "incidence_check",
+      "native_premise_checks",
+      "target_total_check",
+      "preservation",
+      "restoration"
+    ],
+    "native_model_or_optimizer_constructed": false
+  },
+  "dimensions": {
+    "preserved_parent": {
+      "variables": 80730,
+      "rows": 297470,
+      "terms": 3310380,
+      "raw_bytes": 39306083,
+      "raw_sha256": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6"
+    },
+    "added_variables": 0,
+    "replaced_rows": 0,
+    "appended_family_order": [
+      "side_edge",
+      "local_selector",
+      "global_target_total"
+    ],
+    "appended_family_counts": {
+      "side_edge": 2904,
+      "local_selector": 420,
+      "global_target_total": 1
+    },
+    "appended_family_terms": {
+      "side_edge": 10320,
+      "local_selector": 16512,
+      "global_target_total": 84
+    },
+    "appended_rows": 3325,
+    "appended_terms": 26916,
+    "final_variables": 80730,
+    "final_rows": 300795,
+    "final_terms": 3337296
+  },
+  "input_aliases": [
+    "parent_model",
+    "parent_configuration",
+    "parent_report",
+    "parent_owner",
+    "parent_cold",
+    "parent_cold_owner",
+    "parent_root_acceptance",
+    "domain",
+    "indicator_inventory",
+    "incidence_inventory",
+    "incidence_finalization",
+    "incidence_owner",
+    "incidence_terminal_binding",
+    "incidence_root_acceptance",
+    "incidence_theorem_review",
+    "incidence_literal_report",
+    "incidence_literal_finalization",
+    "incidence_literal_owner",
+    "target_total_report",
+    "target_total_finalization",
+    "target_total_owner",
+    "target_total_root_acceptance",
+    "target_total_theorem_review"
+  ],
+  "source_aliases": [
+    "base",
+    "supervisor",
+    "parent_producer",
+    "parent_cold",
+    "incidence_producer",
+    "checker"
+  ],
+  "native_independent_reconstruction": [
+    "Decode the accepted parent using generated protobuf only. Verify its exact raw bytes and original 68,394 edge variables/order.",
+    "Recover all 5,364 triangle meanings from the actual parent AND upper/lower ConstraintProtos in reverse triangle order, then compare accepted indicator metadata and all 84 target equalities.",
+    "Rebuild all 6,300 edge-incidence records, all 480 local dispositions, 2,904 side capacities and 420 local capacities. Compare every saved origin and all seven literal hashes.",
+    "Recheck the 420 original degree and 1,260 mixed ConstraintProtos used by nonempty local caps; derive k0 and overlap totals from fixed core/signature metadata.",
+    "Reconstruct all 84 target edges/nodes, 18 original Gram supports/native ConstraintProtos, 168 endpoint ConstraintProtos and all seven conditions for the bound of twelve. Rebuild the exact third row and its origin.",
+    "Compare every original variable/constraint message and every appended complete ConstraintProto, including domains, names, enforcement and any extra fields.",
+    "Check full_raw equals exact_parent_raw plus suffix_raw; require the suffix consists solely of the declared rows; deleting those rows recovers the original full parent bytes.",
+    "Compare complete canonical row-ledger and restoration-manifest bytes, all family hashes and JSONL hashes, all preparation/owner/stage/source/configuration bindings."
+  ],
+  "scope_preservation": {
+    "original_extractor_execution_accepted": false,
+    "original_failed_timing_waived": false,
+    "proposal_only_until_independent_reconstruction": true,
+    "literal_root_acceptance": {
+      "git_blob_sha": "70ff31624e04962edd436ba9b1a62d611390cff0",
+      "sha256": "f5bfd2f0af981e9b8fd96931e78bda6d2648960e8d0ddd981e2777bae88afea0",
+      "bytes": 9201
+    },
+    "target_total_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-root-acceptance01.json",
+      "git_blob_sha": "f71469c7a5b9ac380ba6159f15a4121628028461",
+      "sha256": "10dd8fbfd42dc695bae9c83a3f61f7b9694d940a092e8e67e034781fd3eb0ebc",
+      "bytes": 14322
+    },
+    "first_two_family_seven_hashes_unchanged": true,
+    "all_native_variables_and_original_rows_preserved": true,
+    "graph_constructed": false,
+    "whole_component_excluded": false,
+    "native_query_authorized_by_this_source_or_contract": false
+  },
+  "prepared_controls": [
+    "Exact toy parent/suffix concatenation and full parent restoration.",
+    "Complete-message mutation rejections for old variables/rows, new coefficients/domains/names/enforcement, suffix metadata and row order.",
+    "Decode toy native AND rows, reject wrong upper/lower meanings, and exhaust all sixteen Boolean assignments.",
+    "Check the local integer rounding for both k0 values and both selector values.",
+    "Preserve exact protobuf integer 2^53+1 and distinguish insertion-order JSON from sorted-key JSON for the same object."
+  ],
+  "current_gate": "No controls, native decode, model construction or optimizer execution has occurred. Root gate and source review are required before either CLI mode."
+}

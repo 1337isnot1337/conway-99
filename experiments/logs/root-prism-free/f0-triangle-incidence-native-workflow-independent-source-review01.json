@@ -1,0 +1,91 @@
+{
+  "schema": "conway99.f0.triangle-incidence-native-workflow-independent-source-review.v1",
+  "status": "PASS_COMPLETE_NATIVE_WORKFLOW_GATE_REQUEST_WIRING_SOURCE_REVIEW_UNRUN",
+  "reviewer": "master_review",
+  "workflow": {
+    "path": ".github/workflows/conway99-triangle-incidence-native-prepare.yml",
+    "git_blob_sha": "fead6d497c143bbea801816fdc730a364660d466",
+    "sha256": "2b4c8af957955c697ce93480c189f1355cb458019747611977e8de9388e7ab27",
+    "bytes": 14476
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-root-gate01.json",
+    "git_blob_sha": "cf06ed46e06f0b3a0c18ed87fc33b8f93e8fabd6",
+    "sha256": "68cf157f30e46c7deb6e62b3b26dfefcf12d96bc6bf23115478ecbd11f41c546",
+    "bytes": 16149
+  },
+  "request": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-request01.json",
+    "git_blob_sha": "1acd8400258c6abdee6618bb8ace83f3eaeab22d",
+    "sha256": "81772ce5aca604ab1f2b45f216f44e8d1b482b84113b295e9c1983e6940224dc",
+    "bytes": 2969
+  },
+  "driver": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+    "git_blob_sha": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a",
+    "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+    "bytes": 17497
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+    "git_blob_sha": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+    "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+    "bytes": 24503
+  },
+  "prior_driver_review": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-independent-source-review01.json",
+    "git_blob_sha": "f7416e5bef4ef15d8ad54ad60bb24a7d9d7a4390",
+    "sha256": "d66197a276fd5d9a8317bd3caee8fa22e00cd144dcab21d86e9edbc10df53969",
+    "bytes": 7019
+  },
+  "complete_source_reads": [
+    "workflow",
+    "root_gate",
+    "request"
+  ],
+  "expected_parent": "35ce548cf5d7fb6af541e0b7ec719f63269c9d33",
+  "binding_checks": {
+    "sparse_paths": 45,
+    "unique_dependencies": 42,
+    "exact_sparse_manifest_match": true,
+    "all_configuration_references_in_gate": true,
+    "request_gate_source_references_equal": true
+  },
+  "findings": [
+    "Push triggers are restricted to the intended research branch and the workflow/request paths; the first-attempt, expected-parent, exact-event-after and branch guards precede installation and execution.",
+    "Read-only repository/actions permissions and persist-credentials:false match this build/replay-only job. Checkout/upload/download action revisions are pinned.",
+    "The request, root gate and corrected driver agree on the single producer-controls, producer-preparation, independent-controls and independent-replay calls. The workflow calls the driver once and provides no retry, native query or second preparation path.",
+    "All 42 unique gate dependencies are hashed with byte counts, and every configured input/source/proof/review has a matching dependency. The exact 45-path sparse checkout covers these dependencies, the workflow, gate and request.",
+    "The worker/runtime installation pins OR-Tools 9.15.6755 and protobuf 6.33.6. Python files are compiled before the driver; compilation is future CI work, not performed by this review.",
+    "Preparation, controls, replay, replay controls and both external owner directories are distinct and match the request and artifact exports. Driver acceptance requires reaped/stopped ownership and full model/count/preservation comparisons.",
+    "The always-run primary export preserves exact file bytes, including owners, failures, parameters where present, ledger, suffix and restoration metadata. It excludes only the duplicate full model files from its compact bundle; the full artifact retains the model.",
+    "The full model archive is exported separately through three read-only jobs with four-MiB chunks and complete archive/part byte and SHA bindings. An empty final chunk is allowed. The archive is capped at twelve MiB.",
+    "Primary bundle caps are sixteen MiB raw files and twelve MiB encoded. Full artifact retention is thirty days. The outer production job is bounded at twelve minutes."
+  ],
+  "mathematical_scope": {
+    "variables": 80730,
+    "rows": 300795,
+    "total_terms": 3337296,
+    "new_variables": 0,
+    "appended_rows": 3325,
+    "original_failed_extractor_execution_accepted": false,
+    "independent_complete_protobuf_replay_required": true,
+    "native_query_authorized": false,
+    "solver_calls": 0
+  },
+  "review_execution": {
+    "source_text_and_metadata_only": true,
+    "local_python_or_shell_calls": 0,
+    "imports_or_compilation": 0,
+    "controls_runs": 0,
+    "model_decodes_or_builds": 0,
+    "optimizer_calls": 0,
+    "case_censuses": 0,
+    "github_refs_or_tree_changes": 0
+  },
+  "limitations": [
+    "This review checks complete frozen workflow wiring and declared input identities. It does not claim that the future CI build, independent replay or artifact export has executed successfully.",
+    "The underlying producer, checker and mathematical authorities retain their separate frozen source reviews; this record does not replace their actual terminal receipts."
+  ],
+  "blockers": []
+}

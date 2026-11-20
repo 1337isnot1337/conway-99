@@ -1,0 +1,227 @@
+name: Conway 99 triangle-incidence F0 native preparation
+
+on:
+  push:
+    branches: [research/global-constraints-ab2f]
+    paths:
+      - .github/workflows/conway99-triangle-incidence-native-prepare.yml
+      - experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-request01.json
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: conway99-triangle-incidence-native-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  prepare-and-replay:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Check out the explicit frozen sources and mathematical inputs
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/workflows/conway99-triangle-incidence-native-prepare.yml
+            /experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold-owner/owner.json
+            /experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold/report.json
+            /experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/model.pb.gz
+            /experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/owner.json
+            /experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/report.json
+            /experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json
+            /experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json
+            /experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-independent-source-review01.json
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-finalization.json
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-owner.json
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01.json
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01-finalization.json
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01-owner.json
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01.json
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-root-acceptance01.json
+            /experiments/logs/root-prism-free/f0-recorded-triangle-capacity-row-keys01.json
+            /experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json
+            /experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-finalization.json
+            /experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-owner.json
+            /experiments/logs/root-prism-free/f0-target-color-twelve-certificate01.json
+            /experiments/logs/root-prism-free/f0-target-color-twelve-independent-source-review01.json
+            /experiments/logs/root-prism-free/f0-target-color-twelve-proof-scope-clarification01.json
+            /experiments/logs/root-prism-free/f0-target-color-twelve-root-acceptance01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-independent-replay-source-contract01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-model-checker-interface-review01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-model-source-reuse01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-independent-source-review01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-request01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-root-gate01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration-contract01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-producer-root-source-review01.json
+            /experiments/logs/root-prism-free/f0-triangle-incidence-replay-independent-source-review01.json
+            /experiments/workspace/root_prism_free_f0_boolean_shared_model.py
+            /experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py
+            /experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py
+            /experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py
+            /experiments/workspace/root_prism_free_f0_recorded_triangle_capacity_inventory_v8.js
+            /experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py
+            /experiments/workspace/root_prism_free_f0_triangle_incidence_model.py
+            /experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py
+            /research/root_prism_free_f0_recorded_triangle_capacities.md
+            /research/root_prism_free_f0_target_color_twelve_bound.md
+      - name: Verify the one-run gate and compile all pinned Python sources
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, sys
+          assert sys.version_info[:2] == (3, 12)
+          assert os.environ['GITHUB_RUN_ATTEMPT'] == '1'
+          request_path = pathlib.Path('experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-request01.json')
+          request = json.loads(request_path.read_bytes())
+          gate_ref = request['gate']
+          gate_raw = pathlib.Path(gate_ref['path']).read_bytes()
+          assert hashlib.sha256(gate_raw).hexdigest() == gate_ref['sha256']
+          assert len(gate_raw) == gate_ref['bytes']
+          gate = json.loads(gate_raw)
+          event = json.loads(pathlib.Path(os.environ['GITHUB_EVENT_PATH']).read_bytes())
+          assert event['before'] == gate['expected_parent']
+          assert event['after'] == os.environ['GITHUB_SHA']
+          assert event['ref'] == 'refs/heads/research/global-constraints-ab2f'
+          assert gate['status'] == 'AUTHORIZE_ONE_TRIANGLE_INCIDENCE_NATIVE_PREPARATION_AND_SEPARATE_COLD'
+          assert gate['optimizer_calls_allowed'] == request['optimizer_calls_allowed'] == 0
+          assert gate['native_model_builds_allowed'] == request['native_model_builds_allowed'] == 1
+          assert gate['automatic_retries'] == request['automatic_retries'] == 0
+          assert gate['native_query_allowed'] is False and request['native_query_allowed'] is False
+          assert request['mode'] == 'one-preparation-and-independent-cold'
+          assert request['schema'] == 'conway99.f0.triangle-incidence-native-ci-request.v1'
+          assert gate['variables'] == 80730 and gate['rows'] == 300795
+          assert gate['limits'] == request['limits']
+          assert gate['base_model_raw_sha256'] == request['base_model_raw_sha256']
+          for name in ('driver_source', 'producer_source', 'cold_source', 'configuration', 'supervisor_source'):
+              assert request[name] == gate[name]
+          assert len({entry['path'] for entry in gate['dependencies']}) == len(gate['dependencies'])
+          for entry in gate['dependencies']:
+              path = pathlib.Path(entry['path'])
+              raw = path.read_bytes()
+              assert hashlib.sha256(raw).hexdigest() == entry['sha256'], str(path)
+              assert len(raw) == entry['bytes'], str(path)
+              if path.suffix == '.py':
+                  compile(raw.decode('utf-8'), str(path), 'exec')
+          print(json.dumps({'gate': 'PASS', 'optimizer_calls_allowed': 0, 'expected_rows': 300795, 'expected_variables': 80730}))
+          PY
+      - name: Install the pinned native and protobuf runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv .ci-triangle-incidence-venv
+          .ci-triangle-incidence-venv/bin/python -m pip install --disable-pip-version-check --only-binary=:all: ortools==9.15.6755 protobuf==6.33.6
+          .ci-triangle-incidence-venv/bin/python -m pip freeze > experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-runtime-packages.txt
+      - name: Run one preparation and its separately owned independent replay
+        shell: bash
+        run: |
+          set -euo pipefail
+          .ci-triangle-incidence-venv/bin/python - <<'PY'
+          import hashlib, pathlib, subprocess, sys
+          path = pathlib.Path('experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-request01.json')
+          digest = hashlib.sha256(path.read_bytes()).hexdigest()
+          subprocess.run([sys.executable, 'experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py', '--request', str(path), '--request-sha256', digest], check=True)
+          PY
+      - name: Export exact reports, ownership receipts, row ledger, and suffix
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, gzip, hashlib, json, pathlib
+          prefix = pathlib.Path('experiments/logs/root-prism-free')
+          names = ('f0-triangle-incidence-native-ci01-controls', 'f0-triangle-incidence-native-ci01', 'f0-triangle-incidence-native-ci01-cold-controls', 'f0-triangle-incidence-native-ci01-cold', 'f0-triangle-incidence-native-ci01-cold-controls-owner', 'f0-triangle-incidence-native-ci01-cold-owner')
+          selected = []
+          for name in names:
+              root = prefix / name
+              if root.is_dir():
+                  selected.extend(p for p in root.rglob('*') if p.is_file() and p.name not in ('model.pb', 'model.pb.gz') and (p.suffix in ('.json', '.log', '.gz') or (p.suffix == '.pb' and p.stat().st_size <= 1 << 20)))
+          selected.extend(prefix.glob('f0-triangle-incidence-native-ci01-run*.log'))
+          selected.extend(prefix / name for name in ('f0-triangle-incidence-native-ci01-run.json', 'f0-triangle-incidence-native-ci01-runtime-packages.txt'))
+          files, total = [], 0
+          for path in sorted(set(selected)):
+              if not path.is_file():
+                  continue
+              raw = path.read_bytes()
+              total += len(raw)
+              assert total <= 16 << 20
+              files.append({'path': str(path), 'sha256': hashlib.sha256(raw).hexdigest(), 'bytes': len(raw), 'base64': base64.b64encode(raw).decode('ascii')})
+          bundle = {'schema': 'conway99.public_ci_bundle.v1', 'files': files, 'optimizer_calls_allowed': 0, 'exact_original_bytes_preserved': True}
+          raw = json.dumps(bundle, sort_keys=True, separators=(',', ':')).encode()
+          encoded = base64.b64encode(gzip.compress(raw, mtime=0)).decode('ascii')
+          assert len(encoded) <= 12 << 20
+          print('CONWAY99_TRIANGLE_INCIDENCE_BUNDLE_BEGIN')
+          for offset in range(0, len(encoded), 4096):
+              print(encoded[offset:offset+4096])
+          print('CONWAY99_TRIANGLE_INCIDENCE_BUNDLE_END')
+          PY
+      - name: Retain all preparation and independent replay files
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: conway99-triangle-incidence-native-${{ github.sha }}
+          path: |
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-controls/
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-controls/
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold/
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-controls-owner/
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-owner/
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-run*.log
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-run.json
+            experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-runtime-packages.txt
+          if-no-files-found: error
+          retention-days: 30
+
+  export-model-archive:
+    needs: prepare-and-replay
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 3
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [0, 1, 2]
+    steps:
+      - name: Read this run's exact public artifact
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          name: conway99-triangle-incidence-native-${{ github.sha }}
+          path: artifact
+      - name: Export one bounded native archive chunk
+        shell: bash
+        env:
+          CONWAY_ARCHIVE_PART: ${{ matrix.part }}
+        run: |
+          python3 - <<'PY'
+          import base64, hashlib, json, os, pathlib
+          root = pathlib.Path('artifact')
+          matches = list(root.rglob('f0-triangle-incidence-native-ci01/model.pb.gz'))
+          if not matches:
+              print('No native model archive was produced; no model bytes accepted by this export.')
+              raise SystemExit(0)
+          assert len(matches) == 1
+          path = matches[0]
+          report = json.loads((path.parent / 'report.json').read_bytes())
+          raw = path.read_bytes()
+          full_sha = hashlib.sha256(raw).hexdigest()
+          assert len(raw) == report['model']['archive_bytes'] and full_sha == report['model']['archive_sha256']
+          assert len(raw) <= 12 << 20
+          part, size = int(os.environ['CONWAY_ARCHIVE_PART']), 4 << 20
+          assert part in (0, 1, 2)
+          offset = min(part * size, len(raw))
+          data = raw[offset:min((part+1)*size, len(raw))]
+          header = {'schema': 'conway99.public_native_archive_chunk.v1', 'path': 'experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/model.pb.gz', 'part': part, 'part_count': 3, 'offset': offset, 'bytes': len(data), 'sha256': hashlib.sha256(data).hexdigest(), 'full_bytes': len(raw), 'full_sha256': full_sha, 'export_is_not_model_acceptance': True}
+          print('CONWAY99_TRIANGLE_INCIDENCE_MODEL_CHUNK_BEGIN')
+          print(json.dumps(header, sort_keys=True, separators=(',', ':')))
+          encoded = base64.b64encode(data).decode('ascii')
+          for offset in range(0, len(encoded), 4096):
+              print(encoded[offset:offset+4096])
+          print('CONWAY99_TRIANGLE_INCIDENCE_MODEL_CHUNK_END')
+          PY

@@ -1,0 +1,73 @@
+{
+  "schema": "conway99.f0.triangle-incidence-producer-checker-interface-review.v1",
+  "status": "PASS_SOURCE_ONLY_PRODUCER_CHECKER_INTERFACE_COMPARISON",
+  "producer": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "bytes": 64900,
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+  },
+  "independent_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "bytes": 82846,
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+  },
+  "accepted_parent_root": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "bytes": 9294,
+    "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+    "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd"
+  },
+  "accepted_literal_root": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-root-acceptance01.json",
+    "bytes": 9201,
+    "sha256": "f5bfd2f0af981e9b8fd96931e78bda6d2648960e8d0ddd981e2777bae88afea0",
+    "git_blob": "70ff31624e04962edd436ba9b1a62d611390cff0"
+  },
+  "accepted_target_total_root": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-root-acceptance01.json",
+    "bytes": 14322,
+    "sha256": "10dd8fbfd42dc695bae9c83a3f61f7b9694d940a092e8e67e034781fd3eb0ebc",
+    "git_blob": "f71469c7a5b9ac380ba6159f15a4121628028461"
+  },
+  "scope": {
+    "full_producer_source_prepared_and_read": true,
+    "independent_checker_full_mathematical_source_review_claimed": false,
+    "checker_sections_read": [
+      "imports/constants and input/source namespaces",
+      "configuration loader",
+      "two-family checks/report shape",
+      "twelve-bound receipts and returned native premise metadata",
+      "preparation records and owner/export transport",
+      "complete protobuf prefix/suffix preservation",
+      "complete ledger/manifest expected bytes",
+      "toy controls",
+      "terminal report and CLI/serialization/error paths"
+    ],
+    "no_producer_or_checker_import": true,
+    "no_compilation": true,
+    "no_controls_run": true,
+    "no_actual_model_or_case_replay": true
+  },
+  "checked_interfaces": [
+    "All23 required input aliases and six required source aliases agree.",
+    "Layout, three family orders/counts/terms and300795/3337296 final totals agree.",
+    "The original3324-row acceptance keeps its seven digests scoped to the first two families.",
+    "Global target row uses original y indices and a sorted84-edge origin at row300794.",
+    "The complete target_total_check dictionary and private native Gram row order agree.",
+    "Allfive exact stage labels, their order and elapsed fields agree.",
+    "Producer status, report schemas, ownership fields and actual native-transport field names agree.",
+    "Every complete canonical ledger field and every complete restoration-manifest field agree, including suffix_format.",
+    "Artifact names and raw/archive/suffix hashes are checked without trusting selected protobuf fields.",
+    "Checker restores every old variable and constraint message and recovers the exact complete parent bytes.",
+    "New constraint equality includes names, enforcement and all unapproved metadata.",
+    "Producer-owned10/15 and120/135 limits match checker10/120 workers and external15/135 owners.",
+    "The failed extractor owner/finalization remain unaccepted in both readers; actual independent literal acceptance is required."
+  ],
+  "concrete_interface_blockers": [],
+  "source_interface_pass": true,
+  "independent_full_native_replay_still_required": true,
+  "native_build_authorized": false,
+  "query_authorized": false
+}

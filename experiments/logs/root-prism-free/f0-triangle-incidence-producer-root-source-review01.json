@@ -1,0 +1,141 @@
+{
+  "schema": "conway99.f0.triangle-incidence-producer-root-source-review.v1",
+  "status": "PASS_ROOT_COMPLETE_TRIANGLE_INCIDENCE_PRODUCER_SOURCE_REVIEW_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "bytes": 64900,
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+  },
+  "parent_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+    "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b",
+    "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+    "bytes": 38102
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+    "bytes": 24503,
+    "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+    "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+    "mode": "100644"
+  },
+  "independent_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "bytes": 82846,
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+  },
+  "independent_checker_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-replay-independent-source-review01.json",
+    "bytes": 12516,
+    "sha256": "6f2d37e5f61e3038376d1e54f7b2e3550fa950656593c9d4f28b56c654435aad",
+    "git_blob": "721323040cf6f8a41ad5a318a4665ca54822aeb0",
+    "mode": "100644"
+  },
+  "configuration_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration-contract01.json",
+    "bytes": 32464,
+    "sha256": "2ff5f896281f11d76032ea6312b45a3e64b073ac46cd7440e9e4da183c61d01e",
+    "git_blob": "87a738b4dd196ee0124784cf1ceb2d81a0ea7251"
+  },
+  "source_reuse": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-model-source-reuse01.json",
+    "bytes": 11017,
+    "sha256": "2b44310b92599ad42125d2f3a1887ed7fcdaa214e8e7ec85e31290d96bad02f7",
+    "git_blob": "b6c032522dba10c33f27e3d304cf103da14deedc"
+  },
+  "complete_source_lines": 1048,
+  "complete_source_read": true,
+  "exact_function_reuse_checks": {
+    "identical_functions": [
+      "canonical",
+      "sha",
+      "digest",
+      "write_new",
+      "save",
+      "binding",
+      "same_ref",
+      "read_bytes",
+      "read_json",
+      "bound_module",
+      "runtime_record",
+      "key",
+      "constraint",
+      "variable",
+      "message_digest",
+      "stage",
+      "worker"
+    ],
+    "owned_exact_three_namespace_replacements": true,
+    "new_functions_reviewed": [
+      "deadline_check",
+      "load_configuration",
+      "validate_owner",
+      "load_inputs",
+      "parent_model",
+      "validate_literal_inputs",
+      "validate_target_total_inputs",
+      "collect_incidence",
+      "rebuild_capacity_keys",
+      "append_suffix",
+      "ordered_json",
+      "same_constraint",
+      "incidence_rows",
+      "controls",
+      "target_total_row",
+      "prepare"
+    ]
+  },
+  "actual_configuration_reference_checks": {
+    "authorities": 16,
+    "links": 60,
+    "committed_input_descriptors": 23,
+    "existing_source_descriptors": 5,
+    "new_checker_descriptor": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+      "bytes": 82846,
+      "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+      "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+    }
+  },
+  "root_checks": [
+    "All 16 changed/new function bodies, all constants, ownership and CLI read. 17 inherited helpers compared exactly with accepted parent source; owned() differs only by the three declared namespace substitutions.",
+    "The 23 inputs have exact previously committed blob and byte identities. All16 successful authority statuses and all60 cross-references checked against actual root-held receipts.",
+    "Failed original extractor finalization12196ms and owner17209ms remain explicit unaccepted inputs. Their data is only an untrusted proposal; accepted independent literal receipts supply the seven reconstructed digests.",
+    "All5364 saved triangle AND meanings, all84 target equalities and all6300 incident edge records are reconstructed from accepted triangle data and original edge order. No implication classification removes a row.",
+    "Side rows have sum(triangle indicators)<=edge; local rows have sum(incident triangle indicators)<=(2+k0)*selector. Their bounds and origins match the accepted literal proof.",
+    "The single84-edge sum<=12 row is bound to the corrected structural theorem, exact Boolean certificate, root receipt and all12 actual native private color quota rows.",
+    "All80730 variables and297470 parent rows are retained byte for byte, with a constraints-only suffix of3325 rows/26916 terms and no changed namespace.",
+    "Full native transport parses, validates and exports the exact expected protobuf without constructing CpSolver. Lossless model/suffix/ledger archives and whole-parent reversal are checked.",
+    "Controls include exact signed large integers, whole-parent reversal, metadata/coefficient/domain/order mutations, AND/incidence and local/global row truth checks.",
+    "Preparation worker120s/owner135s and controls10s/15s remain fixed; subprocess groups must be reaped/stopped and overruns are unaccepted.",
+    "No source import, compilation, control or native build was performed by this review. Those remain one gated CI preparation followed by the complete independent protobuf replay."
+  ],
+  "expected_layout": {
+    "parent_variables": 80730,
+    "parent_rows": 297470,
+    "new_variables": 0,
+    "replaced_rows": 0,
+    "appended_rows": 3325,
+    "appended_terms": 26916,
+    "side_edge_start": 297470,
+    "local_selector_start": 300374,
+    "global_target_total_start": 300794,
+    "variables": 80730,
+    "rows": 300795,
+    "triangle_variable_start": 71382,
+    "triangle_variables": 5364
+  },
+  "expected_total_terms": 3337296,
+  "source_review_only": true,
+  "python_source_imported": false,
+  "python_compilation_run": false,
+  "controls_run": false,
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "automatic_retries": 0,
+  "native_execution_authorized_by_this_record": false,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}
