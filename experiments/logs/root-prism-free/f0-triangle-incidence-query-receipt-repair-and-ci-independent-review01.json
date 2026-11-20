@@ -1,0 +1,120 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-receipt-repair-and-ci-source-review.v1",
+  "status": "PASS_EXACT_RECEIPT_FIELD_REPAIR_AND_COMPLETE_QUERY_CI_SOURCE_REVIEW_UNRUN",
+  "reviewer": "master_review",
+  "runner": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py",
+    "git_blob_sha": "7295da45c769913e7bb8b6b408abac551880a29a",
+    "sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "bytes": 39635
+  },
+  "ci_driver": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci.py",
+    "git_blob_sha": "182b9cbd13f3033edca5431dc7c578e1fbec3e87",
+    "sha256": "a6a048ab3f385e04ab157971eb70ad1f56ba7515cc5c0887a29ac12c97d5910a",
+    "bytes": 17160
+  },
+  "independent_terminal_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "git_blob_sha": "5191a03e92e6ab9f1039eeb791518baebdec4661",
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "bytes": 37638,
+    "lines": 620
+  },
+  "native_ci": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+    "git_blob_sha": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a",
+    "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+    "bytes": 17497
+  },
+  "prior_full_runner_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-independent-source-review01.json",
+    "bytes": 14894,
+    "sha256": "0115eec25146a3321721799e5d2995dd457dbca44dd93e98b9b8b1f4e80e34cd",
+    "git_blob_sha": "0c50ed5f37dbb78400b5239cb108ec28b01d31f5"
+  },
+  "historical_unrun_source_identities": {
+    "runner": {
+      "git_blob_sha": "fc4bedae06976c50d6efafaa80d3155aa397aee4",
+      "sha256": "d7e5307f0554cc308dbdf26dd3225b3cdb9d2628b9261b9896bbb9698ec83d0e",
+      "bytes": 39628
+    },
+    "ci_driver": {
+      "git_blob_sha": "9473b8c7495022d4288baf09cadcdea5e94d2ace",
+      "sha256": "c7ce283f58332ebb8311130f042650027ce55dcc81ac44ed891594d107fa11b7",
+      "bytes": 17160
+    },
+    "interpretation": "These immutable prior blob identities are historical source drafts; they are not the final runnable source bindings."
+  },
+  "receipt_interface_issue": {
+    "discovered_after_initial_contract_review": true,
+    "prior_root_convention": "driver references the CI terminal JSON, while driver_source references the CI Python source.",
+    "affected_unrun_statement": "same_reference(root_acceptance[\"driver\"], cfg[\"sources\"][\"model_ci\"])",
+    "corrected_statement": "same_reference(root_acceptance[\"driver_source\"], cfg[\"sources\"][\"model_ci\"])",
+    "root_confirmed_distinct_driver_and_driver_source_fields": true,
+    "actual_preflight_or_query_affected": false,
+    "resolved_before_execution": true
+  },
+  "exact_delta_verification": {
+    "runner_single_line_only": true,
+    "runner_before": "same_reference(root_acceptance[\"driver\"], cfg[\"sources\"][\"model_ci\"])",
+    "runner_after": "same_reference(root_acceptance[\"driver_source\"], cfg[\"sources\"][\"model_ci\"])",
+    "ci_single_pin_only": true,
+    "old_query_sha256": "d7e5307f0554cc308dbdf26dd3225b3cdb9d2628b9261b9896bbb9698ec83d0e",
+    "new_query_sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "checker_source_unchanged": true,
+    "controls_or_execution": 0
+  },
+  "source_review": {
+    "full_runner_review_reused": true,
+    "unchanged_integer_and_response_kernels_reread": false,
+    "complete_ci_lines_read": 281,
+    "ci_controls_and_main_interfaces_compared_with_frozen_checker": true,
+    "no_remaining_interface_blocker": true
+  },
+  "ci_findings": [
+    "The request, root gate, query source/configuration, terminal checker, supervisor and preserved preflight reports are hash-bound before any phase. Runner and checker source hashes are explicit constants.",
+    "The driver invokes the query runner once in run mode. It performs no automatic prepare, model rebuild, parameter sweep or retry.",
+    "The query runner owns its720-second process group. The driver waits for and reaps that owner, then requires accepted report, exact source/configuration/gate links, zero owner overrun and stopped/reaped worker group.",
+    "Independent controls and terminal replay are separate supervised children with15-second and135-second owners. Both require successful zero exit, reaped/stopped groups, zero optimizer calls and absence of producer/native imports or CpModel/CpSolver construction.",
+    "The cold controls and run CLI match the final checker: controls --output; run --configuration --configuration-sha256 --directory --result-sha256 --owner-sha256 --gate --gate-sha256 --output.",
+    "Run-cold acceptance binds the exact query result and owner, full native-call count and classification, and the number of independently checked vectors. The checker supplies the complete native response and exact domain/row/activity verification.",
+    "Preflight, query and cold directories must be distinct and unnested. The output report is outside query/cold directories and is exclusively created.",
+    "Failures preserve their available query/native/cold files and a finally-written terminal driver report. A900-second driver overrun remains explicitly unaccepted. Full directory export is the separate workflow's responsibility.",
+    "Native UNKNOWN and unproved INFEASIBLE retain their source classifications. A workflow PASS only means this bounded call and its independent replay completed; it does not establish feasibility or exclusion."
+  ],
+  "contracts": {
+    "query_owner_seconds": 720,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 900,
+    "cold_owner_schema": "conway99.f0.triangle-incidence-query-independent-ci-owner.v1",
+    "cold_controls_status": "PASS_TRIANGLE_INCIDENCE_QUERY_INDEPENDENT_INTEGER_AND_RESPONSE_CONTROLS",
+    "cold_replay_status": "PASS_INDEPENDENT_TRIANGLE_INCIDENCE_QUERY_TERMINAL_REPLAY",
+    "driver_terminal_status": "PASS_ONE_BOUNDED_QUERY_AND_INDEPENDENT_TERMINAL_REPLAY",
+    "native_root_driver_source_required": true,
+    "maximum_native_calls": 1,
+    "automatic_retries": 0,
+    "variables": 80730,
+    "rows": 300795
+  },
+  "review_scope": {
+    "source_text_and_exact_delta_comparison_only": true,
+    "source_imports": 0,
+    "compilations": 0,
+    "controls_runs": 0,
+    "model_decodes_or_builds": 0,
+    "optimizer_calls": 0,
+    "actual_new_model_or_query_receipt_acceptance_claimed": false,
+    "actual_query_configuration_created": false,
+    "original_pair_caps_checked": false,
+    "second_component_completion_checked": false,
+    "whole_component_excluded": false
+  },
+  "remaining_gates": [
+    "Bind the separately accepted actual native model and root receipt, including driver_source, in the real query configuration.",
+    "Complete one separately gated zero-solve preflight and preserve its exact report/owner/parameter files.",
+    "Freeze the final production workflow/request/root gate before the single query."
+  ],
+  "blockers": []
+}

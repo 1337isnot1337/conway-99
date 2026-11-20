@@ -1,0 +1,73 @@
+{
+  "schema": "conway99.f0.four-exterior-cross-quota-root-acceptance.v1",
+  "status": "ROOT_ACCEPTS_COMPLETE_FOUR_EXTERIOR_RECONSTRUCTION_AND_49458_MIXED_REDUNDANCY_CERTIFICATES",
+  "complete_reconstruction": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01.json",
+    "bytes": 10809436,
+    "sha256": "7e9df6f8798483bbe4be386f857b8997dffd08dd409080c258fde2b9bcbbfb22",
+    "git_blob": "b41abfd71d80c163a6180f6ab5276bfbed1a9e2e",
+    "mode": "100644"
+  },
+  "certificate_replay": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01.json",
+    "bytes": 135914,
+    "sha256": "5a3d211780e0a89158cc9442896b960759851f9bf78aed0f5750bb696a170c82",
+    "git_blob": "abe7c99ab4f4ef6f17dd2dec1b8124cca892f3d8",
+    "mode": "100644"
+  },
+  "certificate_finalization": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01-finalization.json",
+    "bytes": 856,
+    "sha256": "05cdcd83ae7a7c93b2afd810c3c2dd8d109818ed369bb9a45f7d342da6fd7a11",
+    "git_blob": "893cd662ab4bd8ac86470921dee7f39f93e6cd9d",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-configuration01.json",
+    "bytes": 4224,
+    "sha256": "33db79538313dd72695ca4a5940e5501c200bd04c40955a6787cef23820d6cc1",
+    "git_blob": "b1681bbb9b67226437de3457b080542c7697aa82",
+    "mode": "100644"
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-root-gate01.json",
+    "bytes": 2020,
+    "sha256": "21340785a78e9ad6307a372a231e3e3ea86fc661311059d44994a6a1f2bc28e8",
+    "git_blob": "6b4a087da5596389b267c80dcdeccd8b7741d333",
+    "mode": "100644"
+  },
+  "standalone_necessary_inequality_proof": {
+    "path": "research/root_prism_free_f0_four_exterior_prism_outage_proof.md",
+    "bytes": 5754,
+    "sha256": "d3ed501a913f41d7a1b737768740df569b3b6de0e22c56dafa81d4612bc27bc4",
+    "git_blob": "07e7a9ac0a4c475c7e4872029ac1cc2f59858e09"
+  },
+  "proof_review": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-prism-standalone-proof-independent-review01.json",
+    "sha256": "3b3a41cb384105af51d3b9ae7948af857514dc9e31417a8e7e320816a42c86ed",
+    "bytes": 2400,
+    "git_blob": "a936d3636e1db8ad816af3780863b35e34ca9e1e"
+  },
+  "complete_standalone_proof_and_review_read": true,
+  "every_live_case_reconstructed_and_premises_checked": true,
+  "original_rows": 72468,
+  "original_cases": 73404,
+  "original_terms": 1250496,
+  "ordered_row_keys_sha256": "2adfcc619820604a3f49463bd0fd8109113ab7ce13bceadcc49554533b09dd1c",
+  "sufficient_mixed_equation_certificates": 63336,
+  "rows_implied_by_two_original_mixed_equations": 49458,
+  "retained_rows": 23010,
+  "retained_terms": 401874,
+  "retained_row_ids_sha256": "b53cff225273f025bc9b6d8e2cd6a654291993df8da4d0345a0dc2312b0dafac",
+  "all_saved_row_masks_and_retained_ids_checked": true,
+  "nonnegative_surplus_coefficient_sum": 4680204,
+  "original_parent_constraints_removed": 0,
+  "retained_rows_nonredundancy_claimed": false,
+  "old_unpublished_inventory_or_old_cold_recovered": false,
+  "new_complete_reconstruction_is_acceptance_basis": true,
+  "scope": "Necessary rows for the globally prism-free F0 branch. The 49,458 omitted new rows are implied by original mixed equations and nonnegative edges. Every retained row is covered by the standalone prism proof.",
+  "optimizer_calls": 0,
+  "native_model_builds": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

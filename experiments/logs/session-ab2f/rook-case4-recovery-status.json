@@ -1,0 +1,50 @@
+{
+  "status": "recovery record only; workspace unavailable; no graph solution or case4 exclusion",
+  "agent": "/root/independent_sets",
+  "repository": "1337isnot1337/conway-99",
+  "intended_path": "experiments/logs/session-ab2f/rook-case4-recovery-status.json",
+  "artifact_commit_status": "new complete-selector-LP artifacts are uncommitted in the inaccessible local workspace; this recovery blob does not attach them to any tree or ref",
+  "last_observed_completed_stage": "complete selector LP preparation and exact cold matrix replay both exited 0",
+  "frozen_selector_model": {
+    "source_path": "experiments/workspace/complement_rook_35core_case0004_complete_selector_lp.py",
+    "source_sha256": "772227d96575c03f10d9f66735086844900ea773cf1b467368284595b9efe4c7",
+    "model_path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-complete-selector-lp-model.json",
+    "model_sha256": "43306e151754119529e84fa6321e8e77a383bad0fc11fba55b86e57fe291388d",
+    "preparation_sha256": "618dffafd314190c2c660accc831d69b3438e1b2b0f43333b726f738f46f807d",
+    "array_path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-complete-selector-lp-arrays.npz",
+    "array_sha256": "fb9ba6b1185f7796e39ac2904f077ad58238e89b0445305a22238c0374dd158f",
+    "array_bytes": 5312569,
+    "uncompressed_array_bytes": 147480936,
+    "canonical_integer_stream_sha256": "444835c4d3c466dc9bb5c71646da13bf98e6eefdb3a492c51bcf54185b8919d5",
+    "original_columns": 1214,
+    "fixed_zero_columns": 58,
+    "remaining_columns": 1156,
+    "rows": 174208,
+    "nonzeros": 11868882,
+    "retained_original_primary_rows": 1992,
+    "retained_coordinate_covers": 172216,
+    "complete_input_primary_rows": 2271,
+    "complete_input_coordinate_covers": 178533,
+    "all_60_row_cuts_accounted_for": true,
+    "omission_rule": "exact substitution of proved zeros and checked box tautologies only",
+    "preparation_seconds": 24.207033291997504,
+    "preparation_peak_rss_kib": 325428,
+    "preparation_exit_code": 0,
+    "cold_replay_exit_code": 0,
+    "cold_replay_report_hash": null,
+    "cold_replay_hash_status": "not read before transport loss",
+    "optimizer_calls_on_this_model": 0
+  },
+  "predecessor_closure": {
+    "status": "complete exact propagation from 58 proved zeros found no further zeros, no ones and no contradiction",
+    "result_sha256": "d157cfc1ad10f574d28d2f1e0d9267b5f7d5580d447ee5c32db01e5d4ced78ff",
+    "terminal_manifest_sha256": "73d3bbe7dbec71e4a83fe637ba4a0554ca5bcab5a1ade998bac31eac02c59365"
+  },
+  "pending_work": {
+    "optimizer_driver_implemented": false,
+    "optimizer_driver_or_query_run": false,
+    "next_preparation": "Separate max-min t driver was discussed; no implementation, generated model, or optimizer call exists.",
+    "authorization_scope": "prepare and exact certificate derivation first; production query requires coordinator gate",
+    "no_tree_or_ref_mutation_authorized_in_this_blob_step": true
+  }
+}

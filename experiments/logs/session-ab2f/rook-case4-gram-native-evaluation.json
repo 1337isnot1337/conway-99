@@ -1,0 +1,228 @@
+{
+  "status": "complete exact evaluation of published native rows on certified Gram point",
+  "native_model_git_blob": "89fece302243da184766735c7517aa67f00a0dbe",
+  "native_model_sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476",
+  "point_git_blob": "b0bc5e43f768e7f082fe93d87f2a429281e10a20",
+  "point_sha256": "0b2f1ac00015b12e612ae29a3f48c67c15d773365152cbc464d3f31f3a37957b",
+  "counts": {
+    "Gram": 630,
+    "original_signature": 186,
+    "triple": 1365,
+    "Gram_conflict": 30,
+    "uncapped_row_cut": 60,
+    "old_unit": 14
+  },
+  "violation_count": 22,
+  "violations_by_family": {
+    "triple": 1,
+    "uncapped_row_cut": 21
+  },
+  "violations": [
+    {
+      "family": "triple",
+      "index": 710,
+      "label": [
+        8,
+        10,
+        29
+      ],
+      "lhs_numerator": "648602182800878650185977812",
+      "rhs_numerator": "648602182798933000000000000",
+      "positive_gap_numerator": "1945650185977812",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 2,
+      "label": 139,
+      "lhs_numerator": "2570090575715723040990254616",
+      "rhs_numerator": "2201448717458358339769812799",
+      "positive_gap_numerator": "368641858257364701220441817",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 3,
+      "label": 143,
+      "lhs_numerator": "593433752449089595884588700",
+      "rhs_numerator": "431371478893713070046765423",
+      "positive_gap_numerator": "162062273555376525837823277",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 4,
+      "label": 199,
+      "lhs_numerator": "382605375037355733081953280",
+      "rhs_numerator": "290462016083906803550156184",
+      "positive_gap_numerator": "92143358953448929531797096",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 5,
+      "label": 220,
+      "lhs_numerator": "413611206472246175033073231",
+      "rhs_numerator": "235083462829028837508474489",
+      "positive_gap_numerator": "178527743643217337524598742",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 6,
+      "label": 281,
+      "lhs_numerator": "239012837253986732090996656",
+      "rhs_numerator": "232058407421656502570262400",
+      "positive_gap_numerator": "6954429832330229520734256",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 7,
+      "label": 434,
+      "lhs_numerator": "181353141284379429637217265",
+      "rhs_numerator": "101768584526043721060412760",
+      "positive_gap_numerator": "79584556758335708576804505",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 8,
+      "label": 449,
+      "lhs_numerator": "94871722870296011761405011",
+      "rhs_numerator": "73138147749930243690664554",
+      "positive_gap_numerator": "21733575120365768070740457",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 9,
+      "label": 582,
+      "lhs_numerator": "167219813149803913857827414",
+      "rhs_numerator": "74425712625030284689139640",
+      "positive_gap_numerator": "92794100524773629168687774",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 10,
+      "label": 606,
+      "lhs_numerator": "6125512700829474299441670498",
+      "rhs_numerator": "5026596802155024321101262997",
+      "positive_gap_numerator": "1098915898674449978340407501",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 11,
+      "label": 638,
+      "lhs_numerator": "144832011709480585103314729",
+      "rhs_numerator": "126634881620934086112967614",
+      "positive_gap_numerator": "18197130088546498990347115",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 12,
+      "label": 674,
+      "lhs_numerator": "190308174533897730802486104",
+      "rhs_numerator": "188025385787827669808831176",
+      "positive_gap_numerator": "2282788746070060993654928",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 13,
+      "label": 694,
+      "lhs_numerator": "985079413589678066665608605",
+      "rhs_numerator": "540193983934778231605019048",
+      "positive_gap_numerator": "444885429654899835060589557",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 14,
+      "label": 698,
+      "lhs_numerator": "574708176113221648540442964",
+      "rhs_numerator": "433181042650686481978599606",
+      "positive_gap_numerator": "141527133462535166561843358",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 15,
+      "label": 706,
+      "lhs_numerator": "223838828635377267600159400",
+      "rhs_numerator": "22131908921603383220844740",
+      "positive_gap_numerator": "201706919713773884379314660",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 16,
+      "label": 820,
+      "lhs_numerator": "586570834959793256953876056",
+      "rhs_numerator": "529245496532279589184450881",
+      "positive_gap_numerator": "57325338427513667769425175",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 17,
+      "label": 905,
+      "lhs_numerator": "162700983044230997065246536",
+      "rhs_numerator": "93144979617748130482347650",
+      "positive_gap_numerator": "69556003426482866582898886",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 18,
+      "label": 917,
+      "lhs_numerator": "52313475672885091603834719",
+      "rhs_numerator": "15138407949040776482515047",
+      "positive_gap_numerator": "37175067723844315121319672",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 19,
+      "label": 997,
+      "lhs_numerator": "559633061473313848879735308",
+      "rhs_numerator": "209900076482393300169657565",
+      "positive_gap_numerator": "349732984990920548710077743",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 20,
+      "label": 1119,
+      "lhs_numerator": "212684305218523354386480832",
+      "rhs_numerator": "122960413279413127968260777",
+      "positive_gap_numerator": "89723891939110226418220055",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 21,
+      "label": 1122,
+      "lhs_numerator": "514079646910690054465040619",
+      "rhs_numerator": "318006480407843720358497919",
+      "positive_gap_numerator": "196073166502846334106542700",
+      "denominator": "648602182798933000000000000"
+    },
+    {
+      "family": "uncapped_row_cut",
+      "index": 22,
+      "label": 1179,
+      "lhs_numerator": "124206134559157775974396694",
+      "rhs_numerator": "53893392018102014683394316",
+      "positive_gap_numerator": "70312742541055761291002378",
+      "denominator": "648602182798933000000000000"
+    }
+  ],
+  "full_coordinate_covers_evaluated": false,
+  "new_reconstruction_performed": false,
+  "optimizer_calls": 0,
+  "case4_excluded": false
+}

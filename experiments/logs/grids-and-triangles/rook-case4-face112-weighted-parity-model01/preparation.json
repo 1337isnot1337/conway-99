@@ -1,0 +1,49 @@
+{
+  "status": "PASS: cached complete H3 prefix and two exact Gram parity rows prepare",
+  "source_bindings": {
+    "builder_sha256": "06463fe26a178b9e0d1a004f47c474c6463bf52b769699c8481047dbc01a6300",
+    "complete_premise_loader_sha256": "405f732445043762db0c52cbc0cfdc159dcb945351925afdcc57af7c9606b3f9",
+    "published_input_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "unchanged_rule_checker_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7",
+    "unchanged112_parent_builder_sha256": "8cfae2fc990e293f47029da2dc5a4d66b864e2547777d6a142de424133361da7",
+    "direct_H3_verifier_sha256": "9da8c7edc60429b6a7bee6cd15da447e08a6ae1656a4be5b77b1dd2f5ba5bdb3",
+    "unchanged_H3_parent_builder_sha256": "d06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7",
+    "direct_weighted_covers_verifier_sha256": "71062b0c84e637016a74b8d2df267e4e1e87893ca30221b6906f20ea7b4b844b"
+  },
+  "model_sha256": "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3",
+  "columns": 1102,
+  "rows": 166013,
+  "nonzeros": 10767292,
+  "unchanged_parent_rows": 166011,
+  "appended_weighted_parity_rows": 2,
+  "appended_row_sizes": [
+    48,
+    50
+  ],
+  "appended_ranges": [
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      17
+    ]
+  ],
+  "canonical_integer_stream_sha256": "461e17bf688f21c831928b528e334cb5f80f0a8f9075df0dee740f76fae1db55",
+  "arrays": {
+    "path": "arrays.npz",
+    "sha256": "59a06470793e6959a67ae30dfb29ecf0de4c8aa74661e1335d7676aa612c1e7e",
+    "bytes": 5347974
+  },
+  "all_parent_array_prefixes_equal": true,
+  "all_original_coordinate_cut_coefficients_checked": true,
+  "prior_complete_cold_replay_bound": "56864810924bacb6b331db728a4ce32810d8e6f2dfe7c196e0a73e0b2f583a97",
+  "all_omission_witnesses_replayed_in_this_run": false,
+  "all_inherited_row_column_transport_arrays_preserved": true,
+  "original_cover_supports_reconstructed": false,
+  "optimizer_calls": 0,
+  "case4_excluded": false,
+  "seconds": 24.429125428003317,
+  "peak_rss_kib": 466392
+}

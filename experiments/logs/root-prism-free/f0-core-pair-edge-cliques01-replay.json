@@ -1,0 +1,33 @@
+{
+  "status": "PASS: common-core-pair edge-clique replay",
+  "source_sha256": "2721f32b6bc1778fb7bd4dd7b6893880e2fe0ef014323fb7365e20f02fbb1811",
+  "record_file_sha256": "728f3de4ed0febf90f4062820b5a58c8e31335ebc7e65d354872c7bc8d38370e",
+  "record_raw_sha256": "eb2c2c8829a2c75e59103609b4cb984b52eb44f64868efc7b735b6bb817fef18",
+  "census": {
+    "empty_live_bucket": 25128,
+    "all_center_core_pair_buckets": 73440,
+    "raw_edge_memberships": 410364,
+    "known_zero_edge_memberships_removed": 11304,
+    "lifted_core_pair_quota_at_most_one": 29616,
+    "mixed_center_core_quota_at_most_one": 15600,
+    "retained": 3096,
+    "retained_literal_edge_memberships": 30528,
+    "retained_pair_conflict_instances": 136740,
+    "maximum_retained_bucket_size": 12,
+    "distinct_quotient_rows": 258,
+    "quotient_row_nonzeros": 2802,
+    "quotient_rows_with_repeated_edge_column": 0,
+    "actual_core_row_transports": 3096
+  },
+  "controls": {
+    "all_five_vertex_graphs_examined": 1024,
+    "cap_valid_graphs": 683,
+    "common_neighbor_bucket_checks": 20490,
+    "binary_activation_and_at_most_one_checks": 35,
+    "coincident_quotient_column_checks": 189
+  },
+  "cuts_constructed": true,
+  "point_loaded": false,
+  "optimizer_calls": 0,
+  "seconds": 3.1474658670049394
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "conway99.f0.local-pair-packing-root-gate.v1",
+  "status": "PASS: complete 539-line source and mathematical lift reviewed",
+  "source_sha256": "750c7959439b28f4ec5c33939b84b17886037a6585de80a148f708a0287e2ee5",
+  "preparation_report_sha256": "ee348676e6455c6f1893be7e65afa26d1cdb963edad1f9bf038cff84ec151862",
+  "checks": [
+    "The fixed anchor178 has31 selected and244 complete original eligible neighbors. The full domain is checked directly at this anchor and all its transported images.",
+    "Any two exterior neighbors containing the same core pair would have those two core vertices and the anchor as three common neighbors. Therefore the neighbor sum on each pair is at most the anchor selector.",
+    "Subtracting nonnegative pair multipliers from the activated mixed identity gives t*x_anchor <= sum_b max(v.h_b-sum_pair_mu,0)*x_b over the entire eligible-neighbor domain.",
+    "The202-variable,31-row LP includes18 signed site potentials, all153 nonnegative pair multipliers and31 positive-part variables. It is distinct from the old row-box LP, which omitted pair packing.",
+    "Every numerical value is only a proposal. Exact dyadic rounding, nonnegative multiplier checks, all244 literal contractions and all12 relabelings are required for a positive integer gap.",
+    "The exact normalized LP point and objective are checked, but validity of the universal cut does not depend on numerical status or numerical feasibility.",
+    "The actual proposal is saved before exact reconstruction. A separate owned cold pass reconstructs the model, integer proposal and all transported cuts before publication can certify new rows.",
+    "Process-group ownership, native and owner limits, overrun handling and terminal no-cut states preserve unresolved outcomes. No unchanged retry is permitted."
+  ],
+  "allowed_work": "One30-second native LP under one60-second owner, followed by one separate60-second cold owner, using the established virtual-environment interpreter and fresh directories.",
+  "scope": "One anchor of one already excluded incidence; any accepted cut is universal within the component-zero split-shell setting.",
+  "new_cut_claimed_by_this_gate": false,
+  "whole_component_excluded": false
+}

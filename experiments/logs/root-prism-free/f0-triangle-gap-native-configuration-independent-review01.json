@@ -1,0 +1,176 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-configuration-independent-review.v1",
+  "status": "PASS_COMPLETE_ACTUAL_TRIANGLE_GAP_CONFIGURATION_AND_NATIVE_WORKFLOW_REVIEW",
+  "reviewer": "master_continuation",
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-configuration01.json",
+    "git_blob": "316a4c3aaac63ebd8a0caca560814151014d5c0c",
+    "sha256": "dc60f13b81bf12a197e897d5cdfd4fe57540f071d385bb4df4e24ff580954a9f",
+    "bytes": 14242
+  },
+  "producer": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b"
+  },
+  "checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+    "bytes": 52759,
+    "sha256": "8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f",
+    "git_blob": "ca84307dec2b412d209344840da7d30538707e4a"
+  },
+  "checker_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-replay-independent-source-review01.json",
+    "bytes": 8751,
+    "sha256": "b49837a74b7cc7246b4c0e82db0a5217469634479862353695eefb3e56360b95",
+    "git_blob": "dfdbf39f121ede4ead4a1fc0792824909ead32c5"
+  },
+  "workflow": {
+    "path": ".github/workflows/conway99-triangle-gap-native-prepare.yml",
+    "git_blob": "231f7daaef9b78182218564d966943f9320396e8",
+    "sha256": "c0807fdecfc31f23854a5c0f76b31ef329c8483a7eeedff6a725d89a5eccb55f",
+    "bytes": 13386
+  },
+  "driver": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_ci.py",
+    "bytes": 17279,
+    "sha256": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+    "git_blob": "52c27afcedea73b474b8874581ccba4a5f1a1a93"
+  },
+  "complete_driver_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci-independent-source-review02.json",
+    "bytes": 5355,
+    "sha256": "8e6935d70de94638be3361e956bacdc811dde07c8f409bc5a0c93f415b0eeb0c",
+    "git_blob": "4acc54dbfe22b6e60ec1da9afc0670e9eb55e8da",
+    "mode": "100644"
+  },
+  "complete_configuration_text_read": true,
+  "complete_workflow_lines_read": 218,
+  "exact_sparse_checkout_paths": 36,
+  "inputs": {
+    "aliases": [
+      "parent_model",
+      "parent_configuration",
+      "parent_report",
+      "parent_owner",
+      "parent_cold",
+      "parent_cold_owner",
+      "parent_root_acceptance",
+      "gap_report",
+      "gap_literal_report",
+      "gap_literal_finalization",
+      "gap_literal_owner",
+      "gap_literal_root_acceptance"
+    ],
+    "actual_text_inputs_rehashed": [
+      "parent_configuration",
+      "parent_report",
+      "parent_owner",
+      "parent_cold",
+      "parent_cold_owner",
+      "parent_root_acceptance",
+      "gap_report",
+      "gap_literal_report",
+      "gap_literal_finalization",
+      "gap_literal_owner",
+      "gap_literal_root_acceptance"
+    ],
+    "binary_parent_archive_ref": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/model.pb.gz",
+      "bytes": 5690176,
+      "sha256": "3a84ccb555ebc28c5ba7cc0d2f2d5bacec9de48c9c8b8e6380278e1222cbe7f2",
+      "git_blob": "7a069862cfedca531b2f3acfd9da284b1e11f948",
+      "mode": "100644"
+    },
+    "binary_parent_archive_identity_matches_actual_parent_root_and_preparation_and_cold": true,
+    "binary_parent_archive_refetched_in_this_review": false,
+    "whole_binary_parent_byte_check_required_in_both_native_phases": true
+  },
+  "source_bindings": {
+    "current_producer_sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "exact_six_aliases": [
+      "base",
+      "supervisor",
+      "parent_producer",
+      "parent_cold",
+      "gap_literal",
+      "checker"
+    ],
+    "all_six_source_texts_rehashed_and_match_actual_refs": true,
+    "source_final_checker_includes_transport_receipt_guard": true,
+    "all_two_proof_and_five_existing_review_texts_rehashed": true
+  },
+  "authority_checks": {
+    "expected_status_count": 10,
+    "all_actual_status_values_checked": true,
+    "links": 25,
+    "all_actual_reference_field_paths_resolved": true,
+    "reference_paths_and_sha256_match": true,
+    "reference_byte_counts_match_when_present": true,
+    "no_dummy_or_pending_input_identity": true,
+    "actual_independent_literal_root": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-literal-root-acceptance01.json",
+      "bytes": 37723,
+      "sha256": "cb33ecf2589c44dae627b3828c20a11369255051fc951c11bf27cdeeaad86897",
+      "git_blob": "12f21da0c28544d4bf23bada0e50b082c97d0d95",
+      "mode": "100644"
+    }
+  },
+  "model_contract": {
+    "original_variables": 80730,
+    "original_rows": 300795,
+    "original_terms": 3337296,
+    "complete_original_raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8",
+    "complete_original_raw_bytes": 39512348,
+    "new_variables": 0,
+    "replaced_rows": 0,
+    "appended_rows": 3156,
+    "appended_terms": 3156,
+    "final_variables": 80730,
+    "final_rows": 303951,
+    "final_terms": 3340452,
+    "exact_family_order": [
+      "gap_triangle_zero"
+    ],
+    "append_start": 300795,
+    "zero_indicator_variable_rule": "71382 + each independently accepted failed triangle index, in ascending index order",
+    "duplicate_triangle_cover_rows_installed": false,
+    "runtime_versions_and_model_descriptor_match_accepted_parent_and_source_constants": true,
+    "source_worker_limits_match_configuration": {
+      "controls_worker_seconds": 10,
+      "controls_owner_seconds": 15,
+      "prepare_worker_seconds": 120,
+      "prepare_owner_seconds": 135
+    }
+  },
+  "workflow_checks": [
+    "The complete frozen YAML uses the intended branch and only its own workflow/request paths to trigger. The concurrency group does not cancel an existing attempt.",
+    "Permissions are contents:read and actions:read. Checkout, upload-artifact and download-artifact actions are pinned by full immutable commit IDs; checkout does not persist credentials.",
+    "All 36 sparse paths are distinct. Every configured input, source, proof and existing review, the producer/configuration/driver, current checker peer review and pending configuration peer path is present. The remaining paths are the declared contracts/reuse record and gate/request/workflow.",
+    "Before installation or native invocation, the workflow checks Python 3.12, first run attempt, exact pushed parent/current SHA/branch, one-build and zero-query/retry counts, configuration/source agreement between gate and request, all dependency byte counts and SHA256s, and compiles each listed Python dependency.",
+    "The pinned ortools 9.15.6755 and protobuf 6.33.6 installation matches the actual configuration. Producer transport and independent protobuf replay additionally check the declared runtime identities.",
+    "The workflow invokes the reviewed CI driver exactly once through its actual --request and --request-sha256 CLI. Driver phase and report interfaces agree with the producer and final checker: 10/15-second controls, 120/135-second preparation/replay, 420-second driver acceptance bound and 12-minute main job bound.",
+    "Six separate fresh producer/checker/owner directories are used through the request contract. The independently reviewed driver preserves finally-owned cold receipts and requires all four phase outcomes before granting its PASS.",
+    "Always-run export retains exact small original bytes in a bounded bundle with per-file SHA256 and lengths, including logs, owners, ledger and suffix. The complete output directories and raw/compressed model are also retained as an artifact.",
+    "The separate three-part archive export reads this run's artifact, binds the entire compressed model to the preparation report, and emits exact offset/length/chunk/full hashes. Its metadata explicitly says export is not model acceptance.",
+    "The workflow has no solver call, objective, query dispatch, model retry or unchanged-prefix retry."
+  ],
+  "driver_interface_review_scope": "Read the actual constants/statuses, producer/checker command construction, cross-phase model/term/row/receipt comparisons, final preservation and command-line parser. The separate referenced peer review covers all 299 driver lines; this receipt does not claim a duplicate full-driver review.",
+  "unresolved_blockers": [],
+  "gate_request_scope": "Final root gate and request bytes were not yet frozen during this review. Root must bind this receipt and the checker peer review, inspect all final dependency entries and actual expected-parent/paths, then authorize the single native preparation and separate replay. This review grants no execution authority.",
+  "execution": {
+    "configuration_executed": false,
+    "workflow_executed": false,
+    "source_compiled": false,
+    "source_imported": false,
+    "controls_run": false,
+    "native_model_built": false,
+    "native_query_run": false,
+    "optimizer_calls": 0,
+    "automatic_retries": 0
+  },
+  "refs_mutated": false,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

@@ -1,0 +1,109 @@
+{
+  "status": "PASS_COMPLETE_EXACTLY_THREE_EXTERIOR_PRISM_SCOPE",
+  "source_sha256": "8f1e41ec2349d8f73f2e3ab41952be3d853c3c6050c7780333f2aaca99f8de0e",
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "one_edge": {
+      "path": "experiments/logs/root-prism-free/f0-three-vertex-prism-cuts01.json.gz",
+      "sha256": "b445ad3268cb7016a7a5df07cef9c6fda1a0c7d96fa5a560f897c9449814b194"
+    },
+    "two_edges": {
+      "path": "experiments/logs/root-prism-free/f0-path-prism-cuts01.json.gz",
+      "sha256": "d7ce1862d52cb4c9011efe73deb438db2b4e33a3fade1d5b803569005f2d7886"
+    }
+  },
+  "fixed_component_order": 18,
+  "fixed_component_degrees": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "fixed_component_triangles": [],
+  "full_core_triangles": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      3,
+      4
+    ],
+    [
+      0,
+      5,
+      6
+    ],
+    [
+      0,
+      7,
+      8
+    ],
+    [
+      1,
+      9,
+      11
+    ],
+    [
+      1,
+      10,
+      13
+    ],
+    [
+      1,
+      12,
+      14
+    ],
+    [
+      2,
+      15,
+      17
+    ],
+    [
+      2,
+      16,
+      19
+    ],
+    [
+      2,
+      18,
+      20
+    ]
+  ],
+  "every_full_core_triangle_meets_central_three": true,
+  "all480_exterior_signatures_avoid_central_three": true,
+  "split_counts": {
+    "3": 2,
+    "2": 12,
+    "1": 6
+  },
+  "three_exterior_edge_case_impossible_on_this_core": true,
+  "one_edge_quotient_rows": 715,
+  "two_edge_quotient_rows": 5124,
+  "distinct_combined_quotient_rows": 5839,
+  "both_census_records_read_but_not_reconstructed": true,
+  "complete_only_for_exactly_three_exterior_vertices_and_fixed21_core": true,
+  "other_component_and_alignment_free": true,
+  "point_loaded": false,
+  "optimizer_calls": 0,
+  "graph_existence_resolved": false
+}

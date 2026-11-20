@@ -1,0 +1,82 @@
+{
+  "status": "PASS_READ_ONLY_MATHEMATICAL_AND_SOURCE_REVIEW",
+  "subject_source": {
+    "git_blob": "d5fdb55ddbf2da721302299b2d8355754904282f",
+    "sha256_reported_by_owner": "c5522869f052daac2689b5cafa8ef5f0900c36bda9f6fc87e341e5a1df38f5f3",
+    "characters": 26369
+  },
+  "subject_preparation": {
+    "git_blob": "683261d3bce6c56eafe9398f9da466f96dc687d7",
+    "characters": 3449633,
+    "source_binding_matched": true,
+    "reported_summary": {
+      "roots": 33,
+      "presence_atoms": 1115,
+      "decorated_states": 1275,
+      "roots_with_nonempty_high_edges": 9,
+      "decorated_orbits": 589,
+      "distinct_catalogue_types": 313,
+      "automorphism_recounts": 313,
+      "literal_isomorphism_checks": 1275,
+      "frozen_product_rows_checked": 2450,
+      "raw_presence_sets_checked": 5231,
+      "internal_edge_assignments_checked": 8766,
+      "five_subsets_checked": 4113,
+      "induced_restrictions_checked": 8011,
+      "atomic_indicator_equalities_checked": 114847,
+      "presence_form_equalities_checked": 1115,
+      "root_group_state_transports_checked": 5175,
+      "stabilizer_divisibility_forms_checked": 1275
+    }
+  },
+  "reviewer": "literature_obstructions",
+  "complete_source_read": true,
+  "findings": [
+    {
+      "topic": "complete decorated domain",
+      "result": "All cap-valid high-edge assignments for every supported mask set are retained. Visible-cap failures with no high edges are monotone under adding edges. The independent five-mask exclusion gives complete population-at-most-four scope."
+    },
+    {
+      "topic": "literal normalization",
+      "result": "Distinct high masks identify their exterior vertices uniquely. A fixed labelled decorated pattern therefore counts Aut(F) times its induced count, including automorphisms moving root positions. No root-stabilizer divisor is applied."
+    },
+    {
+      "topic": "induced restriction poset",
+      "result": "For a fixed decorated upper state, each intermediate mask subset has exactly one induced edge restriction. Every interval is Boolean in the added mask vertices. Its Mobius coefficient is exactly (-1) to the population difference, even when several edge completions exist for the same larger mask set."
+    },
+    {
+      "topic": "exact inversion and controls",
+      "result": "The source constructs every restriction and extension list, checks every atomic-indicator column, and verifies the complete zeta equations. Negative-state certificates are direct count forms and exact atom-indicator expansions."
+    },
+    {
+      "topic": "presence coarsening",
+      "result": "Summing all induced-edge decorations on a fixed selected mask set gives its presence moment. Summing complete decorated-state weights with the same full mask set gives the presence exact-state weight. The two sums have distinct meanings and are used correctly."
+    },
+    {
+      "topic": "root action",
+      "result": "All actual root automorphisms are counted, checked as literal permutations, and lifted to the full decorated state domain. This is labelled-root reindexing, not a host-graph automorphism assumption."
+    },
+    {
+      "topic": "stabilizer divisibility",
+      "result": "The stabilizer of an exact decorated state acts freely by precomposition on the injective ordered root embeddings realizing that state. Its order divides the exact mass. The code separately checks the induced-form coefficients have that divisor before testing the count point."
+    },
+    {
+      "topic": "arithmetic and bindings",
+      "result": "Finite combinatorial coefficients are guarded safe integers; point contractions and inversion use BigInt. The Node entry point checks the frozen Git blobs of both preparation inputs, the isomorphism dependency and the count point."
+    },
+    {
+      "topic": "scope",
+      "result": "The synthetic strict-coarsening control shows a finite decorated negative weight can be hidden by nonnegative presence weights. It explicitly makes no claim of a catalogue-consistent count point. A real point query remains separate."
+    }
+  ],
+  "concerns": [],
+  "execution_in_this_review": {
+    "subject_source_executed": false,
+    "preparation_recensus": false,
+    "tensor_generation": false,
+    "count_point_loaded": false,
+    "point_query": false,
+    "optimizer": false
+  },
+  "review_limits": "Source and mathematical audit only. The preparation counters are recorded from the frozen artifact and were not independently recomputed."
+}

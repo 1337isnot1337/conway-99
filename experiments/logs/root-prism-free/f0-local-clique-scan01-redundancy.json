@@ -1,0 +1,2446 @@
+{
+  "status": "COMPLETE_EXACT_LISTED_PARENT_IMPLICATION_CHECK",
+  "source_sha256": "4e5a3fe7e410485a6f12458fdf4ec2bdcdf299ebe0ffc596b6c7d070f66b2511",
+  "inputs": {
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-model03.json.gz",
+      "sha256": "ad046fc05a4247a081b3cabb16693682fa5539ff557dd7b599f3c3a63e7303dd"
+    },
+    "cliques": {
+      "path": "experiments/logs/root-prism-free/f0-local-clique-scan01.json",
+      "sha256": "f19b34f16e23f3cef0ec764935c5d43fb0fda638fb80e1c074b15ef3207cc9c5"
+    }
+  },
+  "target_rows": 128,
+  "implied_rows": 128,
+  "unmatched_rows": [],
+  "zero_equations_used_as_available_premises": 162,
+  "exact_parent_equality_rows": 128,
+  "certificates": [
+    {
+      "target_row": 0,
+      "parent_family": "equalities",
+      "parent_row": 84,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          44,
+          1,
+          5975
+        ],
+        [
+          47,
+          1,
+          5978
+        ],
+        [
+          296,
+          1,
+          5991
+        ],
+        [
+          328,
+          1,
+          5994
+        ],
+        [
+          331,
+          1,
+          5997
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 1,
+      "parent_family": "equalities",
+      "parent_row": 356,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 2,
+      "parent_family": "equalities",
+      "parent_row": 422,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 3,
+      "parent_family": "equalities",
+      "parent_row": 431,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 4,
+      "parent_family": "equalities",
+      "parent_row": 344,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 5,
+      "parent_family": "equalities",
+      "parent_row": 435,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2292,
+          1,
+          6037
+        ],
+        [
+          3997,
+          1,
+          6086
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 6,
+      "parent_family": "equalities",
+      "parent_row": 337,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 7,
+      "parent_family": "equalities",
+      "parent_row": 395,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 8,
+      "parent_family": "equalities",
+      "parent_row": 443,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2377,
+          1,
+          6044
+        ],
+        [
+          3997,
+          1,
+          6086
+        ],
+        [
+          5186,
+          1,
+          6105
+        ],
+        [
+          5187,
+          1,
+          6106
+        ],
+        [
+          5188,
+          1,
+          6107
+        ],
+        [
+          5189,
+          1,
+          6108
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 9,
+      "parent_family": "equalities",
+      "parent_row": 94,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 10,
+      "parent_family": "equalities",
+      "parent_row": 387,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 11,
+      "parent_family": "equalities",
+      "parent_row": 427,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 12,
+      "parent_family": "equalities",
+      "parent_row": 444,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2377,
+          1,
+          6044
+        ],
+        [
+          3997,
+          1,
+          6086
+        ],
+        [
+          5186,
+          1,
+          6105
+        ],
+        [
+          5187,
+          1,
+          6106
+        ],
+        [
+          5188,
+          1,
+          6107
+        ],
+        [
+          5189,
+          1,
+          6108
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 13,
+      "parent_family": "equalities",
+      "parent_row": 377,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2740,
+          1,
+          6061
+        ],
+        [
+          3887,
+          1,
+          6081
+        ],
+        [
+          4685,
+          1,
+          6093
+        ],
+        [
+          4686,
+          1,
+          6094
+        ],
+        [
+          4687,
+          1,
+          6095
+        ],
+        [
+          4688,
+          1,
+          6096
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 14,
+      "parent_family": "equalities",
+      "parent_row": 351,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 15,
+      "parent_family": "equalities",
+      "parent_row": 643,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 16,
+      "parent_family": "equalities",
+      "parent_row": 446,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          5147,
+          1,
+          6101
+        ],
+        [
+          5186,
+          1,
+          6105
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 17,
+      "parent_family": "equalities",
+      "parent_row": 450,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 18,
+      "parent_family": "equalities",
+      "parent_row": 338,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 19,
+      "parent_family": "equalities",
+      "parent_row": 373,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 20,
+      "parent_family": "equalities",
+      "parent_row": 48,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 21,
+      "parent_family": "equalities",
+      "parent_row": 445,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2292,
+          1,
+          6037
+        ],
+        [
+          4050,
+          1,
+          6087
+        ],
+        [
+          4615,
+          1,
+          6092
+        ],
+        [
+          5147,
+          1,
+          6101
+        ],
+        [
+          5148,
+          1,
+          6102
+        ],
+        [
+          5149,
+          1,
+          6103
+        ],
+        [
+          5150,
+          1,
+          6104
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 22,
+      "parent_family": "equalities",
+      "parent_row": 51,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          297,
+          1,
+          5992
+        ],
+        [
+          331,
+          1,
+          5997
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 23,
+      "parent_family": "equalities",
+      "parent_row": 37,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          293,
+          1,
+          5988
+        ],
+        [
+          294,
+          1,
+          5989
+        ],
+        [
+          295,
+          1,
+          5990
+        ],
+        [
+          296,
+          1,
+          5991
+        ],
+        [
+          297,
+          1,
+          5992
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 24,
+      "parent_family": "equalities",
+      "parent_row": 419,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 25,
+      "parent_family": "equalities",
+      "parent_row": 88,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 26,
+      "parent_family": "equalities",
+      "parent_row": 125,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          1222,
+          1,
+          6020
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 27,
+      "parent_family": "equalities",
+      "parent_row": 434,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 28,
+      "parent_family": "equalities",
+      "parent_row": 556,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          5147,
+          1,
+          6101
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 29,
+      "parent_family": "equalities",
+      "parent_row": 567,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 30,
+      "parent_family": "equalities",
+      "parent_row": 129,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 31,
+      "parent_family": "equalities",
+      "parent_row": 287,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 32,
+      "parent_family": "equalities",
+      "parent_row": 649,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 33,
+      "parent_family": "equalities",
+      "parent_row": 322,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 34,
+      "parent_family": "equalities",
+      "parent_row": 428,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 35,
+      "parent_family": "equalities",
+      "parent_row": 348,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 36,
+      "parent_family": "equalities",
+      "parent_row": 194,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2895,
+          1,
+          6066
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 37,
+      "parent_family": "equalities",
+      "parent_row": 439,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 38,
+      "parent_family": "equalities",
+      "parent_row": 571,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 39,
+      "parent_family": "equalities",
+      "parent_row": 489,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 40,
+      "parent_family": "equalities",
+      "parent_row": 103,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          1528,
+          1,
+          6025
+        ],
+        [
+          1529,
+          1,
+          6026
+        ],
+        [
+          1530,
+          1,
+          6027
+        ],
+        [
+          1531,
+          1,
+          6028
+        ],
+        [
+          1532,
+          1,
+          6029
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 41,
+      "parent_family": "equalities",
+      "parent_row": 46,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 42,
+      "parent_family": "equalities",
+      "parent_row": 34,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          293,
+          1,
+          5988
+        ],
+        [
+          294,
+          1,
+          5989
+        ],
+        [
+          295,
+          1,
+          5990
+        ],
+        [
+          296,
+          1,
+          5991
+        ],
+        [
+          297,
+          1,
+          5992
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 43,
+      "parent_family": "equalities",
+      "parent_row": 398,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 44,
+      "parent_family": "equalities",
+      "parent_row": 655,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          4685,
+          1,
+          6093
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 45,
+      "parent_family": "equalities",
+      "parent_row": 191,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2746,
+          1,
+          6062
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 46,
+      "parent_family": "equalities",
+      "parent_row": 555,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 47,
+      "parent_family": "equalities",
+      "parent_row": 684,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 48,
+      "parent_family": "equalities",
+      "parent_row": 410,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 49,
+      "parent_family": "equalities",
+      "parent_row": 300,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 50,
+      "parent_family": "equalities",
+      "parent_row": 253,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2957,
+          1,
+          6070
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 51,
+      "parent_family": "equalities",
+      "parent_row": 363,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 52,
+      "parent_family": "equalities",
+      "parent_row": 249,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          671,
+          1,
+          6006
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 53,
+      "parent_family": "equalities",
+      "parent_row": 306,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          4098,
+          1,
+          6088
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 54,
+      "parent_family": "equalities",
+      "parent_row": 280,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 55,
+      "parent_family": "equalities",
+      "parent_row": 78,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 56,
+      "parent_family": "equalities",
+      "parent_row": 674,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 57,
+      "parent_family": "equalities",
+      "parent_row": 641,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 58,
+      "parent_family": "equalities",
+      "parent_row": 173,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 59,
+      "parent_family": "equalities",
+      "parent_row": 40,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 60,
+      "parent_family": "equalities",
+      "parent_row": 359,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 61,
+      "parent_family": "equalities",
+      "parent_row": 565,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 62,
+      "parent_family": "equalities",
+      "parent_row": 130,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          52,
+          1,
+          5979
+        ],
+        [
+          645,
+          1,
+          6002
+        ],
+        [
+          991,
+          1,
+          6012
+        ],
+        [
+          1782,
+          1,
+          6030
+        ],
+        [
+          1801,
+          1,
+          6031
+        ],
+        [
+          1807,
+          1,
+          6032
+        ],
+        [
+          1812,
+          1,
+          6033
+        ],
+        [
+          1816,
+          1,
+          6034
+        ],
+        [
+          1817,
+          1,
+          6035
+        ],
+        [
+          1818,
+          1,
+          6036
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 63,
+      "parent_family": "equalities",
+      "parent_row": 629,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 64,
+      "parent_family": "equalities",
+      "parent_row": 505,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 65,
+      "parent_family": "equalities",
+      "parent_row": 179,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          93,
+          1,
+          5985
+        ],
+        [
+          686,
+          1,
+          6009
+        ],
+        [
+          1035,
+          1,
+          6019
+        ],
+        [
+          1816,
+          1,
+          6034
+        ],
+        [
+          2314,
+          1,
+          6041
+        ],
+        [
+          2527,
+          1,
+          6051
+        ],
+        [
+          2533,
+          1,
+          6052
+        ],
+        [
+          2537,
+          1,
+          6053
+        ],
+        [
+          2542,
+          1,
+          6054
+        ],
+        [
+          2543,
+          1,
+          6055
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 66,
+      "parent_family": "equalities",
+      "parent_row": 206,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 67,
+      "parent_family": "equalities",
+      "parent_row": 239,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 68,
+      "parent_family": "equalities",
+      "parent_row": 441,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2292,
+          1,
+          6037
+        ],
+        [
+          4050,
+          1,
+          6087
+        ],
+        [
+          4615,
+          1,
+          6092
+        ],
+        [
+          5147,
+          1,
+          6101
+        ],
+        [
+          5148,
+          1,
+          6102
+        ],
+        [
+          5149,
+          1,
+          6103
+        ],
+        [
+          5150,
+          1,
+          6104
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 69,
+      "parent_family": "equalities",
+      "parent_row": 416,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 70,
+      "parent_family": "equalities",
+      "parent_row": 662,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 71,
+      "parent_family": "equalities",
+      "parent_row": 396,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 72,
+      "parent_family": "equalities",
+      "parent_row": 62,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 73,
+      "parent_family": "equalities",
+      "parent_row": 164,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2314,
+          1,
+          6041
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 74,
+      "parent_family": "equalities",
+      "parent_row": 134,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          1818,
+          1,
+          6036
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 75,
+      "parent_family": "equalities",
+      "parent_row": 295,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 76,
+      "parent_family": "equalities",
+      "parent_row": 379,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2740,
+          1,
+          6061
+        ],
+        [
+          3887,
+          1,
+          6081
+        ],
+        [
+          4685,
+          1,
+          6093
+        ],
+        [
+          4686,
+          1,
+          6094
+        ],
+        [
+          4687,
+          1,
+          6095
+        ],
+        [
+          4688,
+          1,
+          6096
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 77,
+      "parent_family": "equalities",
+      "parent_row": 140,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          643,
+          1,
+          6000
+        ],
+        [
+          646,
+          1,
+          6003
+        ],
+        [
+          1225,
+          1,
+          6023
+        ],
+        [
+          1529,
+          1,
+          6026
+        ],
+        [
+          1531,
+          1,
+          6028
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 78,
+      "parent_family": "equalities",
+      "parent_row": 262,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          3644,
+          1,
+          6076
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 79,
+      "parent_family": "equalities",
+      "parent_row": 598,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 80,
+      "parent_family": "equalities",
+      "parent_row": 178,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2674,
+          1,
+          6057
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 81,
+      "parent_family": "equalities",
+      "parent_row": 403,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 82,
+      "parent_family": "equalities",
+      "parent_row": 80,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          45,
+          1,
+          5976
+        ],
+        [
+          638,
+          1,
+          5998
+        ],
+        [
+          991,
+          1,
+          6012
+        ],
+        [
+          998,
+          1,
+          6013
+        ],
+        [
+          1003,
+          1,
+          6014
+        ],
+        [
+          1010,
+          1,
+          6015
+        ],
+        [
+          1022,
+          1,
+          6016
+        ],
+        [
+          1032,
+          1,
+          6017
+        ],
+        [
+          1034,
+          1,
+          6018
+        ],
+        [
+          1035,
+          1,
+          6019
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 83,
+      "parent_family": "equalities",
+      "parent_row": 461,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 84,
+      "parent_family": "equalities",
+      "parent_row": 302,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          3997,
+          1,
+          6086
+        ],
+        [
+          4050,
+          1,
+          6087
+        ],
+        [
+          4098,
+          1,
+          6088
+        ],
+        [
+          4099,
+          1,
+          6089
+        ],
+        [
+          4100,
+          1,
+          6090
+        ],
+        [
+          4101,
+          1,
+          6091
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 85,
+      "parent_family": "equalities",
+      "parent_row": 256,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          77,
+          1,
+          5982
+        ],
+        [
+          671,
+          1,
+          6006
+        ],
+        [
+          1022,
+          1,
+          6016
+        ],
+        [
+          1801,
+          1,
+          6031
+        ],
+        [
+          2300,
+          1,
+          6038
+        ],
+        [
+          2527,
+          1,
+          6051
+        ],
+        [
+          2746,
+          1,
+          6062
+        ],
+        [
+          2957,
+          1,
+          6070
+        ],
+        [
+          3117,
+          1,
+          6073
+        ],
+        [
+          3454,
+          1,
+          6075
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 86,
+      "parent_family": "equalities",
+      "parent_row": 207,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2957,
+          1,
+          6070
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 87,
+      "parent_family": "equalities",
+      "parent_row": 675,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 88,
+      "parent_family": "equalities",
+      "parent_row": 128,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          1812,
+          1,
+          6033
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 89,
+      "parent_family": "equalities",
+      "parent_row": 243,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 90,
+      "parent_family": "equalities",
+      "parent_row": 569,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          5544,
+          1,
+          6121
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 91,
+      "parent_family": "equalities",
+      "parent_row": 587,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 92,
+      "parent_family": "equalities",
+      "parent_row": 370,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 93,
+      "parent_family": "equalities",
+      "parent_row": 35,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          327,
+          1,
+          5993
+        ],
+        [
+          328,
+          1,
+          5994
+        ],
+        [
+          329,
+          1,
+          5995
+        ],
+        [
+          330,
+          1,
+          5996
+        ],
+        [
+          331,
+          1,
+          5997
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 94,
+      "parent_family": "equalities",
+      "parent_row": 511,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2458,
+          1,
+          6049
+        ],
+        [
+          4098,
+          1,
+          6088
+        ],
+        [
+          4737,
+          1,
+          6098
+        ],
+        [
+          5478,
+          1,
+          6113
+        ],
+        [
+          5479,
+          1,
+          6114
+        ],
+        [
+          5480,
+          1,
+          6115
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 95,
+      "parent_family": "equalities",
+      "parent_row": 122,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          52,
+          1,
+          5979
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 96,
+      "parent_family": "equalities",
+      "parent_row": 609,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 97,
+      "parent_family": "equalities",
+      "parent_row": 319,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 98,
+      "parent_family": "equalities",
+      "parent_row": 59,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          671,
+          1,
+          6006
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 99,
+      "parent_family": "equalities",
+      "parent_row": 19,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          42,
+          1,
+          5973
+        ],
+        [
+          43,
+          1,
+          5974
+        ],
+        [
+          44,
+          1,
+          5975
+        ],
+        [
+          45,
+          1,
+          5976
+        ],
+        [
+          46,
+          1,
+          5977
+        ],
+        [
+          47,
+          1,
+          5978
+        ],
+        [
+          52,
+          1,
+          5979
+        ],
+        [
+          59,
+          1,
+          5980
+        ],
+        [
+          66,
+          1,
+          5981
+        ],
+        [
+          77,
+          1,
+          5982
+        ],
+        [
+          83,
+          1,
+          5983
+        ],
+        [
+          88,
+          1,
+          5984
+        ],
+        [
+          93,
+          1,
+          5985
+        ],
+        [
+          94,
+          1,
+          5986
+        ],
+        [
+          95,
+          1,
+          5987
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 100,
+      "parent_family": "equalities",
+      "parent_row": 488,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 101,
+      "parent_family": "equalities",
+      "parent_row": 211,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2533,
+          1,
+          6052
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 102,
+      "parent_family": "equalities",
+      "parent_row": 612,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          3763,
+          1,
+          6078
+        ],
+        [
+          5149,
+          1,
+          6103
+        ],
+        [
+          5186,
+          1,
+          6105
+        ],
+        [
+          5414,
+          1,
+          6110
+        ],
+        [
+          5478,
+          1,
+          6113
+        ],
+        [
+          5488,
+          1,
+          6118
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 103,
+      "parent_family": "equalities",
+      "parent_row": 562,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          3764,
+          1,
+          6079
+        ],
+        [
+          5147,
+          1,
+          6101
+        ],
+        [
+          5188,
+          1,
+          6107
+        ],
+        [
+          5416,
+          1,
+          6112
+        ],
+        [
+          5480,
+          1,
+          6115
+        ],
+        [
+          5486,
+          1,
+          6116
+        ],
+        [
+          5544,
+          1,
+          6121
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 104,
+      "parent_family": "equalities",
+      "parent_row": 161,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2310,
+          1,
+          6040
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 105,
+      "parent_family": "equalities",
+      "parent_row": 113,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 106,
+      "parent_family": "equalities",
+      "parent_row": 355,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 107,
+      "parent_family": "equalities",
+      "parent_row": 607,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          5186,
+          1,
+          6105
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 108,
+      "parent_family": "equalities",
+      "parent_row": 630,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2895,
+          1,
+          6066
+        ],
+        [
+          3907,
+          1,
+          6085
+        ],
+        [
+          5792,
+          1,
+          6132
+        ],
+        [
+          5793,
+          1,
+          6133
+        ],
+        [
+          5794,
+          1,
+          6134
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 109,
+      "parent_family": "equalities",
+      "parent_row": 336,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 110,
+      "parent_family": "equalities",
+      "parent_row": 495,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2456,
+          1,
+          6047
+        ],
+        [
+          4100,
+          1,
+          6090
+        ],
+        [
+          4739,
+          1,
+          6100
+        ],
+        [
+          5413,
+          1,
+          6109
+        ],
+        [
+          5414,
+          1,
+          6110
+        ],
+        [
+          5415,
+          1,
+          6111
+        ],
+        [
+          5416,
+          1,
+          6112
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 111,
+      "parent_family": "equalities",
+      "parent_row": 615,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 112,
+      "parent_family": "equalities",
+      "parent_row": 682,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 113,
+      "parent_family": "equalities",
+      "parent_row": 513,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2455,
+          1,
+          6046
+        ],
+        [
+          4101,
+          1,
+          6091
+        ],
+        [
+          4738,
+          1,
+          6099
+        ],
+        [
+          5486,
+          1,
+          6116
+        ],
+        [
+          5487,
+          1,
+          6117
+        ],
+        [
+          5488,
+          1,
+          6118
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 114,
+      "parent_family": "equalities",
+      "parent_row": 648,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 115,
+      "parent_family": "equalities",
+      "parent_row": 162,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2455,
+          1,
+          6046
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 116,
+      "parent_family": "equalities",
+      "parent_row": 263,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 117,
+      "parent_family": "equalities",
+      "parent_row": 195,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          94,
+          1,
+          5986
+        ],
+        [
+          687,
+          1,
+          6010
+        ],
+        [
+          1034,
+          1,
+          6018
+        ],
+        [
+          1817,
+          1,
+          6035
+        ],
+        [
+          2315,
+          1,
+          6042
+        ],
+        [
+          2543,
+          1,
+          6055
+        ],
+        [
+          2746,
+          1,
+          6062
+        ],
+        [
+          2751,
+          1,
+          6063
+        ],
+        [
+          2756,
+          1,
+          6064
+        ],
+        [
+          2760,
+          1,
+          6065
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 118,
+      "parent_family": "equalities",
+      "parent_row": 325,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 119,
+      "parent_family": "equalities",
+      "parent_row": 142,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 120,
+      "parent_family": "equalities",
+      "parent_row": 405,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 121,
+      "parent_family": "equalities",
+      "parent_row": 149,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          1226,
+          1,
+          6024
+        ],
+        [
+          1531,
+          1,
+          6028
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 122,
+      "parent_family": "equalities",
+      "parent_row": 294,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 123,
+      "parent_family": "equalities",
+      "parent_row": 462,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 124,
+      "parent_family": "equalities",
+      "parent_row": 369,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 125,
+      "parent_family": "equalities",
+      "parent_row": 371,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2740,
+          1,
+          6061
+        ],
+        [
+          3644,
+          1,
+          6076
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 126,
+      "parent_family": "equalities",
+      "parent_row": 549,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          2898,
+          1,
+          6069
+        ],
+        [
+          3906,
+          1,
+          6084
+        ],
+        [
+          5601,
+          1,
+          6122
+        ],
+        [
+          5602,
+          1,
+          6123
+        ],
+        [
+          5603,
+          1,
+          6124
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    },
+    {
+      "target_row": 127,
+      "parent_family": "equalities",
+      "parent_row": 611,
+      "parent_orientation": -1,
+      "positive_target_multiplier": 1,
+      "nonnegative_coordinate_residual": [],
+      "proved_zero_terms_and_equality_rows": [
+        [
+          3763,
+          1,
+          6078
+        ],
+        [
+          5149,
+          1,
+          6103
+        ],
+        [
+          5186,
+          1,
+          6105
+        ],
+        [
+          5414,
+          1,
+          6110
+        ],
+        [
+          5478,
+          1,
+          6113
+        ],
+        [
+          5488,
+          1,
+          6118
+        ]
+      ],
+      "exact_equality_after_zero_substitution": true
+    }
+  ],
+  "optimizer_calls": 0,
+  "scope": "Only the128 retained greedy clique rows; an unmatched row is not proved independent. Numerical gaps are not used in the implication proof."
+}

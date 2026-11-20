@@ -1,0 +1,153 @@
+{
+  "schema": "conway99.f0.strengthened-query-preflight-root-gate.v1",
+  "status": "AUTHORIZE_ONE_STRENGTHENED_QUERY_PREFLIGHT",
+  "expected_parent": "22c868f042801373104fa12e0d9ab6a32583e63e",
+  "source": {
+    "bytes": 33132,
+    "git_blob": "ec845beeca4e499b72367e0a81f4c43e97be8663",
+    "lines": 564,
+    "mode": "100644",
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query.py",
+    "sha256": "b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288"
+  },
+  "configuration": {
+    "bytes": 6134,
+    "git_blob": "f4350f9cfbc4fa4b9e38598ede9b442b91d2350c",
+    "mode": "100644",
+    "path": "experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json",
+    "sha256": "4dedc66ded53ed813a0eef7a0ad366afe1093f5f5120b0d24ff5276497df3077"
+  },
+  "workflow": {
+    "path": ".github/workflows/conway99-strengthened-query-preflight.yml",
+    "bytes": 8068,
+    "sha256": "b18e74b599705b961f1e26cff99fbfa3d08fbbdac843ebc73d725f063cf44be9",
+    "git_blob": "f0477394c2629b775a673d3d2b67f1ebfc61d65d",
+    "mode": "100644"
+  },
+  "independent_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-query-independent-source-review01.json",
+    "bytes": 9284,
+    "sha256": "bd659639317888702ab0a227affb99367bad75939df32980051438386bd8faa3",
+    "git_blob": "296e0645ce8d809de1418f9bda34faf7e26d8c83",
+    "mode": "100644"
+  },
+  "independent_source_review_accepted": true,
+  "model_root_acceptance": {
+    "bytes": 7706,
+    "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+    "mode": "100644",
+    "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+    "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116"
+  },
+  "model_raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "model_raw_bytes": 38374405,
+  "variables": 68934,
+  "rows": 257594,
+  "limits": {
+    "preparation_seconds": 60,
+    "preparation_owner_seconds": 75
+  },
+  "dependencies": [
+    {
+      "path": ".github/workflows/conway99-strengthened-query-preflight.yml",
+      "bytes": 8068,
+      "sha256": "b18e74b599705b961f1e26cff99fbfa3d08fbbdac843ebc73d725f063cf44be9",
+      "git_blob": "f0477394c2629b775a673d3d2b67f1ebfc61d65d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json",
+      "bytes": 6134,
+      "sha256": "4dedc66ded53ed813a0eef7a0ad366afe1093f5f5120b0d24ff5276497df3077",
+      "git_blob": "f4350f9cfbc4fa4b9e38598ede9b442b91d2350c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "bytes": 14259,
+      "sha256": "75e0150b0c0ed6f6b7c5d84c270790a4311a5a81382afe0a32e360dd2d126628",
+      "git_blob": "2f13275d00aca2d1cc2add3414aa8c2ed4062568"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json",
+      "bytes": 1134,
+      "sha256": "e9f1e4fdb7277c6759be465dea97d1e01c7e1337bb18e05347062fa7aa378931",
+      "git_blob": "29a4ffa3fde0aaed50b0b70de772afb45933de86"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/model.pb.gz",
+      "bytes": 5739710,
+      "sha256": "060bada9bda2a7ddfcdf52f1bf0307ede34ecd6dd933f5617d0435f197dabb27",
+      "git_blob": "b0c81d2579cb28cef19976197e9079ff018d650c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json",
+      "bytes": 972,
+      "sha256": "d162e054ff0f80208f199403869b1109f97cde67add39e3d4bc4de01731532be",
+      "git_blob": "65556017f9e658cee0fe27987b590c1cc7a25ede"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json",
+      "bytes": 12613,
+      "sha256": "114823082c6d3696fe6f53ae0979d0c375b9f13ffa94071fa9093d195633fcd7",
+      "git_blob": "5180767826e0edcdc4d14bbc40b41934dd8dfd1c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json",
+      "bytes": 13870,
+      "sha256": "796e79978b113e49603b9cb60ddcda6bd829725eb4384d10640d74feb959ca0c",
+      "git_blob": "086e612eeb16c03833006421f218f9ff47e34f44"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "bytes": 7706,
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116",
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-query-independent-source-review01.json",
+      "bytes": 9284,
+      "sha256": "bd659639317888702ab0a227affb99367bad75939df32980051438386bd8faa3",
+      "git_blob": "296e0645ce8d809de1418f9bda34faf7e26d8c83"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "bytes": 15210,
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2",
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "bytes": 26760,
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_strengthened_append.py",
+      "bytes": 14686,
+      "sha256": "9879d5ad46b58ab8e4e2eb58fb302e7c140a06bd3f7b3bf3cb47f82e25e99716",
+      "git_blob": "43f8f32dba2305051ed22791e66ee7c5869c9221"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_strengthened_append_replay.py",
+      "bytes": 34830,
+      "sha256": "8745e9eb5d7a9ced7658f4d052d7fc28c24d58a04e9f9b94514316b12e12a4d6",
+      "git_blob": "aa5a5842769ff4ab13ee99df5982f1c0dcab6090"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_strengthened_query.py",
+      "bytes": 33132,
+      "sha256": "b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288",
+      "git_blob": "ec845beeca4e499b72367e0a81f4c43e97be8663"
+    }
+  ],
+  "maximum_preflight_calls": 1,
+  "optimizer_calls_allowed": 0,
+  "native_query_allowed": false,
+  "automatic_retries": 0,
+  "root_complete_source_read": true,
+  "root_complete_configuration_and_review_read": true,
+  "actual_controls_and_transport_pending": true,
+  "heavy_arithmetic_slot": "Reserved exclusively for this CI preflight after the completed triangle-support main released the slot.",
+  "complete_output_bytes_must_be_preserved": true,
+  "large_integer_control_must_not_be_reserialized_through_binary64": true,
+  "production_query_requires_later_actual_preflight_acceptance_and_separate_gate": true
+}

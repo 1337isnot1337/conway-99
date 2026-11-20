@@ -1,0 +1,107 @@
+{"stage": "all five generators preserve both atom domains, all monomials and exact moments", "seconds": 0.9022987379976257, "peak_rss_kib": 120672}
+{"stage": "complete deterministic orbit partitions and integer quotient constructed", "seconds": 1.6111484129978635, "peak_rss_kib": 120672}
+{"stage": "full literal incidence lift identity verified and quotient arrays saved", "seconds": 2.933140591998381, "peak_rss_kib": 120672}
+{
+  "status": "complete exact S6 packing-moment quotient; no optimizer",
+  "complete": true,
+  "source_sha256": "59af3f038c1f2795d03d11a80eaee363832f748bcc9863245b8237c71d8d73cd",
+  "feature_preparation_sha256": "d4df7b082b71cc25b2f2b4710c034e43a75bafeaa4d4cf4e913422bf3787fe0f",
+  "feature_source_sha256": "8e0ceb67d345456058ae2adac42326214f9386914bfb08b8df90f223a7c9cb04",
+  "packing_domain_sha256": "27c27163aa7429d75df5d430072ece5dd045df2d54caa8a6d57a28db45db0a71",
+  "integer_count_point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "requested_seconds": 60,
+  "optimizer_called": false,
+  "new_product_tensor_or_reduction_loaded": false,
+  "host_graph_automorphism_assumed": false,
+  "graph_existence_resolved": false,
+  "exact_generator_domain_closure_checks": 1735760,
+  "exact_moment_constancy_checks": 621570,
+  "stage": "full literal incidence lift identity verified and quotient arrays saved",
+  "seconds": 2.9351112879994616,
+  "peak_rss_kib": 120672,
+  "row_orbits": 500,
+  "active_row_orbits": 73,
+  "atom_orbits": 249,
+  "full_quotient_shape": [
+    500,
+    249
+  ],
+  "active_quotient_shape": [
+    73,
+    249
+  ],
+  "full_quotient_nnz": 3951,
+  "active_quotient_nnz": 3951,
+  "row_orbit_size_histogram": {
+    "1": 2,
+    "6": 2,
+    "10": 2,
+    "15": 11,
+    "20": 10,
+    "30": 4,
+    "45": 5,
+    "60": 59,
+    "90": 39,
+    "120": 23,
+    "180": 136,
+    "360": 166,
+    "720": 41
+  },
+  "atom_orbit_size_histogram": {
+    "1": 2,
+    "6": 1,
+    "10": 1,
+    "12": 1,
+    "15": 4,
+    "20": 1,
+    "30": 3,
+    "45": 2,
+    "60": 11,
+    "72": 3,
+    "90": 17,
+    "120": 12,
+    "180": 34,
+    "240": 1,
+    "360": 89,
+    "720": 67
+  },
+  "covered_full_rows": 124314,
+  "covered_supported_rows": 17903,
+  "covered_visible_atoms": 90776,
+  "covered_baseline_atoms": 132062,
+  "literal_lift_identity_entry_checks": 124500,
+  "literal_lift_identity": "atom_orbit_size * C[R,O] = row_orbit_size * D[R,O]",
+  "rhs_construction": "sum of the individual moments over each complete monomial orbit",
+  "quotient_variable": "total nonnegative mass of one atom orbit",
+  "uniform_lift": "assign quotient mass divided by atom-orbit size to every atom in that orbit",
+  "coefficient_and_lift_product_bound": 518400,
+  "rhs_integer_bound": 52507436889600,
+  "maximum_coefficient": 60,
+  "root_labelled_embedding_mass": 72926995680,
+  "maximum_row_transport_length": 15,
+  "maximum_atom_transport_length": 15,
+  "arrays": {
+    "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-orbits01-arrays.npz",
+    "sha256": "83a798951206e812ffb8e5c687e96f93e8df42cedfd097420058df82a18732f6",
+    "bytes": 2691204
+  },
+  "feature_artifact_bindings": {
+    "matrix": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-matrix.npz",
+      "sha256": "04cfedd33c5e908cfad04b713b9078ed48254ec15dcdab5fb915fa58d83daeba",
+      "bytes": 7464965
+    },
+    "moments": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-moments.npz",
+      "sha256": "d9013bc79adf4d488f40c4e0949de292435cd987d08c4db84d918ebb00d6f12c",
+      "bytes": 390567
+    },
+    "filters": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-filters.npz",
+      "sha256": "e5dc1e7c5a3ffce980f3b126b37d36d55db6091ead798d295e1571aca224e7f5",
+      "bytes": 745482
+    }
+  },
+  "timed_out": false
+}
+output_sha256 a6ca65e8edeb1d4545e89c28833bf7526c693ce6066ec5b6f15a47d31853c61d

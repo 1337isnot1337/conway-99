@@ -1,0 +1,69 @@
+{
+  "status": "PASS: all original rows/covers and112-zero/two-equality/four-pair proofs cold rebuilt",
+  "source_bindings": {
+    "builder_sha256": "8cfae2fc990e293f47029da2dc5a4d66b864e2547777d6a142de424133361da7",
+    "complete_premise_loader_sha256": "405f732445043762db0c52cbc0cfdc159dcb945351925afdcc57af7c9606b3f9",
+    "published_input_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "unchanged_rule_checker_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7"
+  },
+  "model_sha256": "018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f",
+  "columns": 1102,
+  "rows": 166010,
+  "nonzeros": 10767167,
+  "canonical_integer_stream_sha256": "a3201523bbd3c70bab8206808c5b004010a84006de0641965dc0cdb79cd6cb9e",
+  "row_inventory": {
+    "tautological_Gram": 234,
+    "retained_Gram": 396,
+    "retained_original_signature": 184,
+    "tautological_original_signature": 2,
+    "retained_core_triple": 1320,
+    "tautological_core_triple": 45,
+    "tautological_Gram_conflict": 28,
+    "retained_Gram_conflict": 2,
+    "retained_uncapped_row_cut": 58,
+    "tautological_uncapped_row_cut": 2,
+    "retained_cover": 164044,
+    "tautological_cover": 14489,
+    "retained_integer_parity_cover": 2,
+    "retained_certified_native_bound_pair": 4
+  },
+  "integer_cover_ranges": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "added_pair_rows": [
+    [
+      259,
+      590
+    ],
+    [
+      259,
+      591
+    ],
+    [
+      259,
+      593
+    ],
+    [
+      259,
+      732
+    ]
+  ],
+  "all_omission_witnesses_replayed": true,
+  "all_row_column_transports_checked": true,
+  "arrays": {
+    "path": "arrays.npz",
+    "sha256": "276db9d80b2772ab6829daf7459b19043a08996dc2b45ff8769534548b8b8ca3",
+    "bytes": 5347695
+  },
+  "seconds": 32.29635962100292,
+  "peak_rss_kib": 497948,
+  "optimizer_or_solver_called": false,
+  "case4_excluded": false
+}

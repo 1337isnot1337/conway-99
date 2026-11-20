@@ -1,0 +1,64 @@
+{
+  "schema": "conway99.f0.triangle-incidence-native-ci-request.v1",
+  "mode": "one-preparation-and-independent-cold",
+  "driver_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+    "bytes": 17497,
+    "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+    "git_blob": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a",
+    "mode": "100644"
+  },
+  "producer_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "bytes": 64900,
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+  },
+  "cold_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "bytes": 82846,
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+    "bytes": 24503,
+    "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+    "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+    "mode": "100644"
+  },
+  "supervisor_source": {
+    "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+    "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+    "bytes": 26760,
+    "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+  },
+  "gate": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci-root-gate01.json",
+    "bytes": 16149,
+    "sha256": "68cf157f30e46c7deb6e62b3b26dfefcf12d96bc6bf23115478ecbd11f41c546",
+    "git_blob": "cf06ed46e06f0b3a0c18ed87fc33b8f93e8fabd6",
+    "mode": "100644"
+  },
+  "limits": {
+    "controls_owner_seconds": 15,
+    "prepare_owner_seconds": 135,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 420
+  },
+  "native_model_builds_allowed": 1,
+  "optimizer_calls_allowed": 0,
+  "native_query_allowed": false,
+  "base_model_raw_sha256": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6",
+  "automatic_retries": 0,
+  "result_path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-run.json",
+  "directories": {
+    "controls": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-controls",
+    "prepare": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01",
+    "cold_controls": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-controls",
+    "cold_replay": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold",
+    "cold_controls_owner": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-controls-owner",
+    "cold_replay_owner": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-owner"
+  }
+}

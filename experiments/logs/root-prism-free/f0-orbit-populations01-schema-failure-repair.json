@@ -1,0 +1,20 @@
+{
+  "status": "v1 failed on archived fixed-zero record schema; no arithmetic result accepted",
+  "old_source": "experiments/workspace/root_prism_free_f0_orbit_population_lift.py",
+  "old_source_sha256": "cdc1ce0412d111432eb4f9d78d9b83f8ed37fe26879f0be589ec53ddefd3fe28",
+  "new_source": "experiments/workspace/root_prism_free_f0_orbit_population_lift_v2.py",
+  "new_source_sha256": "f02edb406adbd3d2e3fbcf6b68b917cf4eb6fe9cffad6778b1e94a5f85122e7d",
+  "failed_log": "experiments/logs/root-prism-free/f0-orbit-populations01-generation.log",
+  "failed_log_sha256": "6c0646dd0146ef68df610ebcd0ad8323f38dd4f8d0ea642a067538daa10833ff",
+  "cause": "fixed_zero_original_variables stores [variable, original equality ID] pairs, not bare variable IDs",
+  "exact_before": "    assert zeros_z == old[\"fixed_zero_original_variables\"]\n",
+  "exact_after": "    zero_entries = old[\"fixed_zero_original_variables\"]\n    assert zeros_z == [variable for variable, original_equality in zero_entries]\n    for variable, original_equality in zero_entries:\n        row = moments[\"matrix\"][\"equalities\"][original_equality]\n        assert row[\"family\"] == \"certified zero selector moment\"\n        assert row[\"rhs\"] == 0 and row[\"terms\"] == [[variable, 1]]\n",
+  "changed_AST_functions": [
+    "domains"
+  ],
+  "new_check": "Extract exactly the same389 variable IDs and verify each original stored singleton zero equality literally.",
+  "mathematical_lift_changed": false,
+  "old_source_preserved": true,
+  "production_modular_elimination_called": false,
+  "optimizer_calls": 0
+}

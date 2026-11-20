@@ -1,0 +1,69 @@
+{
+  "status": "PASS: full-source review and independent original-row arithmetic",
+  "subject": {
+    "path": "experiments/workspace/rook_case4_face111_two_parity_equalities.py",
+    "sha256": "195b5fc78cb6895ee7797ebf1926f1cd19d990d992d5a9e9638d44f24aa984c6"
+  },
+  "certificate": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face111-two-parity-equalities-certificate.json",
+    "sha256": "6272996ff8c38af719b057dea6f6796efb895fdb678c69b82cc3eaff757ec606"
+  },
+  "prior_111_zero_premise": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face99-parity-face-certificate.json",
+    "sha256": "717c3e4103dd56bdd260f52b0f50c5a06f4245b834d92194357481d3163e229e"
+  },
+  "native_input": {
+    "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+    "sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+  },
+  "odd_cover_input": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face99-parity-cover-certificate.json",
+    "sha256": "644a7f637fb8ea42fd49a99487ead6eb544370ae463c9e303e86e8934d2f1a81"
+  },
+  "H1_signed_rows_checked": 33,
+  "H2_signed_rows_checked": 42,
+  "original_coordinates_checked": 1214,
+  "live_support_sizes": [
+    36,
+    42
+  ],
+  "capacity_row": 51,
+  "capacity_original_signature": 96,
+  "live_capacity_support": [
+    259,
+    260,
+    261,
+    262
+  ],
+  "H1_minus_H2": {
+    "positive": [
+      259,
+      260,
+      261,
+      262
+    ],
+    "negative": [
+      590,
+      591,
+      592,
+      593,
+      594,
+      595,
+      730,
+      731,
+      732,
+      733
+    ]
+  },
+  "exact_conclusion": "H2=1; capacity gives A<=1; H1=1+A-B is nonnegative and at most2; original integer Gram identity makes it odd; hence H1=1 and A=B<=1.",
+  "prior_zero_derivation_repeated": false,
+  "integrality_required": true,
+  "old_real_feasible_region_preserved": false,
+  "new_zero_columns_claimed": [],
+  "new_one_columns_claimed": [],
+  "case4_excluded": false,
+  "subject_imported": false,
+  "optimizer_calls": 0,
+  "reviewer_source_sha256": "a4becd3dd8217c9634ede416645c27f0408ce0ece0e5c4be375d6eea28294e32",
+  "seconds": 0.02135168100357987
+}

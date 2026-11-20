@@ -1,0 +1,20 @@
+{
+  "status": "PASS: complete parameter-only source delta and cold preflight review",
+  "reviewer": "root",
+  "query_source_sha256": "f3f704371307da14ab035eed1b2a7345bb1725babf0f01cc8e06d5b7e26475e7",
+  "replay_source_sha256": "9aad245010f752f26f57566eaa2e3730200898f5f32e242c1ca32b4a98c023e7",
+  "preparation_sha256": "123c940a34b590c944316a2fd606e5febcf1cedbdea3ec0f828d41b115068f37",
+  "cold_preflight_sha256": "306f69e1a3a69017167aee25dff9890240ad73a9c7e9642fb7adf8a3d371e77c",
+  "prior_full_source_gate_sha256": "e91a974d74f8303c7554e79b249cc541be144d83674a37ed390bfec6451d351e",
+  "checks": [
+    "The complete textual diffs of query and replay were read. The sole search change is explicit linearization_level=0; provenance and installed-native field controls are separately recorded.",
+    "All thirteen execution and arithmetic functions are AST-identical, including worker, run, pool scan, complete target checking, provisional status and candidate persistence.",
+    "The installed OR-Tools9.15.6755 text/wire controls retain explicit zero and all old fields at three time limits. The separate cold preflight binds all18444 domains,34398 target constraints and117 dense rows.",
+    "No objective, hint, fixed count, constraint removal or altered target is introduced. All later calls require strictly more proved pool rows.",
+    "One fresh180-second owned search is allowed with the frozen12-call/16-row limits, worker1,seed0,probing0. A native limit remains unresolved; a target-passing vector remains provisional.",
+    "Any future parent acceptance must bind the actual123c940a preparation. The historical intake cannot accept it without a separately reviewed binding adapter."
+  ],
+  "permitted_next_execution": "One frozen no-LP query and its separate terminal replay; no automatic retry.",
+  "count_witness_or_exclusion_claimed": false,
+  "new_optimizer_calls_in_review": 0
+}

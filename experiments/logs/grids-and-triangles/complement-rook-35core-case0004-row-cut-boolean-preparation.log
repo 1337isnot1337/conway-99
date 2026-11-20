@@ -1,0 +1,257 @@
+{"complete_cut_prefix": 10, "variables": 109603, "clauses": 222610}
+{"complete_cut_prefix": 20, "variables": 111681, "clauses": 225686}
+{"complete_cut_prefix": 30, "variables": 113027, "clauses": 227675}
+{"complete_cut_prefix": 40, "variables": 116635, "clauses": 233580}
+{"complete_cut_prefix": 50, "variables": 118617, "clauses": 236529}
+{"complete_cut_prefix": 60, "variables": 134852, "clauses": 261071}
+{
+  "status": "complete original case4 formula plus30 Gram conflicts and60 row cuts; not solved",
+  "complete": true,
+  "source_hashes": {
+    "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+    "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0004-model.json",
+  "base_model_sha256": "43fc0c40a724f4c287df770fce58abc45835ee7534f2b7e5cd06d3baf380cfde",
+  "base_cnf_sha256": "e76d9cb74cc1b907c5af37fe224b278181d6e5d052de691f7d86cabb6b028b4d",
+  "row_cut_result": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-loop-run01.json",
+  "row_cut_result_sha256": "9b0713b668e2c0ae47139007cdf6ad8961be2fb0e9caf2b42e0193a5528ecaa6",
+  "row_cut_exact_replay": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-loop-replay01.json",
+  "row_cut_exact_replay_sha256": "0de66ba641844b5ff0b942cc0d1f5c79c5236d41a6eee48b26d3a6694c22ba93",
+  "row_domain_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "complete_ordered_cut_list_sha256": "6117b83b9d5ca63f050903ecba74d7ab9fc282a04288a52d642b6ae0a71ff57e",
+  "no_good_primary_clauses": [
+    [
+      -134,
+      -303
+    ],
+    [
+      -294,
+      -303
+    ],
+    [
+      -303,
+      -311
+    ],
+    [
+      -303,
+      -317
+    ],
+    [
+      -303,
+      -320
+    ],
+    [
+      -303,
+      -323
+    ],
+    [
+      -303,
+      -326
+    ],
+    [
+      -303,
+      -332
+    ],
+    [
+      -303,
+      -634
+    ],
+    [
+      -303,
+      -636
+    ],
+    [
+      -303,
+      -646
+    ],
+    [
+      -303,
+      -664
+    ],
+    [
+      -303,
+      -671
+    ],
+    [
+      -303,
+      -1151
+    ],
+    [
+      -303,
+      -1184
+    ],
+    [
+      -304,
+      -316
+    ],
+    [
+      -304,
+      -330
+    ],
+    [
+      -316,
+      -323
+    ],
+    [
+      -353,
+      -379
+    ],
+    [
+      -354,
+      -369
+    ],
+    [
+      -355,
+      -379
+    ],
+    [
+      -355,
+      -1184
+    ],
+    [
+      -356,
+      -368
+    ],
+    [
+      -369,
+      -565
+    ],
+    [
+      -634,
+      -671
+    ],
+    [
+      -646,
+      -671
+    ],
+    [
+      -664,
+      -671
+    ],
+    [
+      -1034,
+      -1060
+    ],
+    [
+      -1034,
+      -1067
+    ],
+    [
+      -1149,
+      -1168
+    ]
+  ],
+  "case": {
+    "index": 4,
+    "local_set_orbit": 0,
+    "matching_index": 4,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 4,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "34b1170cbd47465bd2ba0442a4790d61d5030e4d139533ebb28f458b6b1a36fe",
+  "column_domain_sha256": "b6de27fe093824c8ee4b39c97756612c46cf8695da18099c1a4b93858cae0e1c",
+  "Gram_sha256": "183e232ee26668bfbb59ef2af77c0a4291c8ac9a796e8e911b7552cef2aa199e",
+  "cnf": "/tmp/conway99-case4-row-cut-boolean.cnf",
+  "cnf_sha256": "b0ca3f15a6d2c9e27f82af783cb62c1ecc27376e53f5820105c49d6fd7b72738",
+  "cnf_bytes": 4564801,
+  "formula": {
+    "primary_columns": 1214,
+    "variables": 134852,
+    "clauses": 261071,
+    "original_variables": 107207,
+    "original_clauses": 218863,
+    "certified_Gram_conflict_clauses": 30,
+    "exact_exterior_row_cuts": 60,
+    "weighted_threshold_clauses": 42178,
+    "weighted_threshold_auxiliary_variables": 27645,
+    "weighted_threshold_branch_states": 27716,
+    "largest_cut_branch_states": 13352,
+    "largest_cut_auxiliary_variables": 13345,
+    "largest_normalized_demand": 885,
+    "threshold_demand_histogram": {
+      "1": 26,
+      "2": 11,
+      "3": 7,
+      "4": 3,
+      "5": 3,
+      "7": 2,
+      "8": 3,
+      "15": 1,
+      "27": 1,
+      "39": 1,
+      "86": 1,
+      "885": 1
+    },
+    "forced_absent_columns": [
+      1080,
+      1081
+    ],
+    "actual_cut_complete_input_control_assignments": 586,
+    "unchanged_original_clause_body_sha256": "3941a91cefacff9c6d8fa4e2b37f7ee728a40d875dd764418823e66314980c6d",
+    "added_clause_body_sha256": "5cdd890941eeb578594f45dcfe0f4728d3d58793e4f2bc35dc1290a8ef5f4261"
+  },
+  "limits": {
+    "branch_states_per_cut": 250000,
+    "total_variables": 1000000,
+    "total_clauses": 2000000,
+    "complete_row_cut_count": 60
+  },
+  "generic_exact_encoding_controls": {
+    "status": "exact guarded weighted-threshold existential controls PASS",
+    "source_sha256": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144",
+    "weight_vectors": 125,
+    "threshold_formulas": 1149,
+    "complete_primary_and_guard_assignments": 31582,
+    "largest_auxiliary_count_in_controls": 8,
+    "capping_and_gcd_threshold_equivalence_checked": true,
+    "forward_only_auxiliary_existential_equivalence_checked": true,
+    "resource_guard_refuses_formula": true,
+    "tiny_boolean_solvers_only": true,
+    "incidence_query_called": false
+  },
+  "Boolean_equivalence": "Original primary-feasible incidence formula AND all30 exact Gram conflicts AND all60 original integer guarded inequalities; every new auxiliary is existential.",
+  "full_exterior_adjacency_variables": 0,
+  "fixed_incidence_design": false,
+  "graph_automorphism_constraints": false,
+  "SAT_queries": 0,
+  "SAT_scope": "Partial binary incidence only; every original margin, triple, no-good and row inequality must be checked directly.",
+  "UNSAT_scope": "Only indexed35-core case4 and its actual verified relabelings.",
+  "build_seconds": 44.13248806199772,
+  "peak_rss_kib": 117524
+}

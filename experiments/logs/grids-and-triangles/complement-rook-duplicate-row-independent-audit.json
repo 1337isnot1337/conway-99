@@ -1,0 +1,404 @@
+{
+  "status": "independent two-source coverage/domain/necessity audit PASS",
+  "builder_sha256": "8cc529d12ef897234e1d04bab388e54e88186c7163c8182ece6a518a2a082bc6",
+  "audit_source_sha256": "919e0ebe8e6e8b58836857407caf350b1ab46a9bd4cd1937de7c3127d3c3dcad",
+  "coverage_sha256": "36237668d01da0173a2dfaa5d87339f8e212399cd5b391d78f952fd2b0cf3c7d",
+  "core_relabelings_examined": 144,
+  "ordered_normalized_RS_stabilizer_order": 4,
+  "tip_pairs_covered": 21,
+  "orbits": [
+    {
+      "representative": [
+        1,
+        2
+      ],
+      "size": 4,
+      "members": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          7
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    {
+      "representative": [
+        1,
+        3
+      ],
+      "size": 1,
+      "members": [
+        [
+          1,
+          3
+        ]
+      ]
+    },
+    {
+      "representative": [
+        1,
+        5
+      ],
+      "size": 4,
+      "members": [
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          7
+        ]
+      ]
+    },
+    {
+      "representative": [
+        1,
+        8
+      ],
+      "size": 2,
+      "members": [
+        [
+          1,
+          8
+        ],
+        [
+          3,
+          8
+        ]
+      ]
+    },
+    {
+      "representative": [
+        2,
+        5
+      ],
+      "size": 2,
+      "members": [
+        [
+          2,
+          5
+        ],
+        [
+          6,
+          7
+        ]
+      ]
+    },
+    {
+      "representative": [
+        2,
+        6
+      ],
+      "size": 2,
+      "members": [
+        [
+          2,
+          6
+        ],
+        [
+          5,
+          7
+        ]
+      ]
+    },
+    {
+      "representative": [
+        2,
+        7
+      ],
+      "size": 2,
+      "members": [
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          6
+        ]
+      ]
+    },
+    {
+      "representative": [
+        2,
+        8
+      ],
+      "size": 4,
+      "members": [
+        [
+          2,
+          8
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          6,
+          8
+        ],
+        [
+          7,
+          8
+        ]
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case": 0,
+      "tip_pair": [
+        1,
+        2
+      ],
+      "covered_pairs": 4,
+      "source_indices": [
+        0,
+        1
+      ],
+      "neighbors": [
+        163,
+        166
+      ],
+      "matching_pairs": [
+        2226,
+        2583
+      ],
+      "packing_pairs": [
+        737,
+        735
+      ],
+      "disjointness_clauses": 119,
+      "domain_sha256": "dc5050b169a0ea862748f837af784cc6ebd6df6cef0af8dab5f826b63ce1c617",
+      "manifest_domain_hash_match": true
+    },
+    {
+      "case": 1,
+      "tip_pair": [
+        1,
+        3
+      ],
+      "covered_pairs": 1,
+      "source_indices": [
+        0,
+        2
+      ],
+      "neighbors": [
+        163,
+        163
+      ],
+      "matching_pairs": [
+        2226,
+        2226
+      ],
+      "packing_pairs": [
+        737,
+        737
+      ],
+      "disjointness_clauses": 123,
+      "domain_sha256": "9720014249b47975290a8d5be82c879fe7cd9c53bbc7fe21b004717e5db39feb",
+      "manifest_domain_hash_match": true
+    },
+    {
+      "case": 2,
+      "tip_pair": [
+        1,
+        5
+      ],
+      "covered_pairs": 4,
+      "source_indices": [
+        0,
+        3
+      ],
+      "neighbors": [
+        163,
+        166
+      ],
+      "matching_pairs": [
+        2226,
+        2583
+      ],
+      "packing_pairs": [
+        737,
+        735
+      ],
+      "disjointness_clauses": 126,
+      "domain_sha256": "a71d89f3bf004ddbe956fe65a5b9244fa776153a39c76da29c37193c5a8bbcbd",
+      "manifest_domain_hash_match": true
+    },
+    {
+      "case": 3,
+      "tip_pair": [
+        1,
+        8
+      ],
+      "covered_pairs": 2,
+      "source_indices": [
+        0,
+        6
+      ],
+      "neighbors": [
+        163,
+        173
+      ],
+      "matching_pairs": [
+        2226,
+        2712
+      ],
+      "packing_pairs": [
+        737,
+        763
+      ],
+      "disjointness_clauses": 131,
+      "domain_sha256": "85426ff7f499de0ace1423c7c376dd725b5a50ce7711a15e3d778bc779815925",
+      "manifest_domain_hash_match": true
+    },
+    {
+      "case": 4,
+      "tip_pair": [
+        2,
+        5
+      ],
+      "covered_pairs": 2,
+      "source_indices": [
+        1,
+        3
+      ],
+      "neighbors": [
+        166,
+        166
+      ],
+      "matching_pairs": [
+        2583,
+        2583
+      ],
+      "packing_pairs": [
+        735,
+        735
+      ],
+      "disjointness_clauses": 121,
+      "domain_sha256": "89fffe751751d3fa787fd1d05ceb49f6d6ca9d1b5d0b791452b9c258332376e4",
+      "manifest_domain_hash_match": true
+    },
+    {
+      "case": 5,
+      "tip_pair": [
+        2,
+        6
+      ],
+      "covered_pairs": 2,
+      "source_indices": [
+        1,
+        4
+      ],
+      "neighbors": [
+        166,
+        166
+      ],
+      "matching_pairs": [
+        2583,
+        2583
+      ],
+      "packing_pairs": [
+        735,
+        735
+      ],
+      "disjointness_clauses": 137,
+      "domain_sha256": "e089858f2153b513127b7e4421ab66aaacd8d4c6a98e5b17485f65318b5bb137",
+      "manifest_domain_hash_match": true
+    },
+    {
+      "case": 6,
+      "tip_pair": [
+        2,
+        7
+      ],
+      "covered_pairs": 2,
+      "source_indices": [
+        1,
+        5
+      ],
+      "neighbors": [
+        166,
+        166
+      ],
+      "matching_pairs": [
+        2583,
+        2583
+      ],
+      "packing_pairs": [
+        735,
+        735
+      ],
+      "disjointness_clauses": 127,
+      "domain_sha256": "91515b92b8527a04fd893491471cb8e947d898fd2e546491f5bf97e592ca46b2",
+      "manifest_domain_hash_match": true
+    },
+    {
+      "case": 7,
+      "tip_pair": [
+        2,
+        8
+      ],
+      "covered_pairs": 4,
+      "source_indices": [
+        1,
+        6
+      ],
+      "neighbors": [
+        166,
+        173
+      ],
+      "matching_pairs": [
+        2583,
+        2712
+      ],
+      "packing_pairs": [
+        735,
+        763
+      ],
+      "disjointness_clauses": 139,
+      "domain_sha256": "13661633c82b01e76e75fe147f0a6cd87da7ce341aa051dca167cb6da06db041",
+      "manifest_domain_hash_match": true
+    }
+  ],
+  "shared_incidence_selectors": 252,
+  "parameter_a_unrestricted": true,
+  "fixed_incidence_witness": false,
+  "graph_automorphism_assumption": false,
+  "source_review": [
+    "The Gram equation at core pair R0,S4 forces exactly two of the seven tip signatures.",
+    "All21 unordered choices are explicitly transported by actual core/domain relabelings.",
+    "Each source has all27 mixed equations, degree11, eight zero-overlap and three one-overlap neighbors.",
+    "The two sources have two core common neighbors, hence are nonadjacent with disjoint exterior neighborhoods.",
+    "Every neighbor bit activates the same shared signature selector.",
+    "Matching copies express edges used inside one source neighborhood; an inactive copy asserts no global nonedge.",
+    "Primary source-edge domains are distinct and do not intersect either matching domain.",
+    "All primary IDs precede cardinality auxiliary allocation; extraction uses the same primary allocation.",
+    "The union of the two selected row systems has30 distinct exterior edges and satisfies the asserted partial caps."
+  ],
+  "solver_called": false,
+  "CNF_rebuilt": false,
+  "proof_rebuilt": false,
+  "limits": "Necessary two-row projection only; no full exterior graph or SAT/UNSAT outcome is certified here."
+}

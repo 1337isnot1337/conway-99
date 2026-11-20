@@ -1,0 +1,185 @@
+{
+  "status": "PASS: exact structural quotient prepared; no cuts, motifs, optimizer or feasibility claim",
+  "input_git_blob": "fbe9445d9f247fbbfbaccff367b0ff05afb2442a",
+  "published_source_sha256": "7ab2ec935cdbbb7035a0fd95d5a7ca514aed508b7d5efbe953c5265176733589",
+  "counts": {
+    "core_vertices": 21,
+    "component_vertices": 18,
+    "triples": 480,
+    "eligible_edges": 68394,
+    "full_variables": 68874,
+    "group_order": 12,
+    "selector_orbits": 42,
+    "edge_orbits": 5805,
+    "quotient_variables": 5847,
+    "full_mixed_rows": 8640,
+    "mixed_row_orbits": 732,
+    "distinct_literal_mixed_rows": 668,
+    "nonzero_literal_mixed_rows": 667,
+    "full_gram_rows": 171,
+    "gram_row_orbits": 21,
+    "distinct_literal_gram_rows": 19,
+    "nonzero_literal_gram_rows": 18,
+    "full_activation_rows": 136788,
+    "distinct_literal_activation_rows": 11365
+  },
+  "orbit_size_histograms": {
+    "selectors": {
+      "6": 4,
+      "12": 38
+    },
+    "edges": {
+      "3": 10,
+      "6": 196,
+      "12": 5599
+    },
+    "mixed_rows": {
+      "6": 24,
+      "12": 708
+    },
+    "gram_rows": {
+      "3": 3,
+      "6": 9,
+      "12": 9
+    }
+  },
+  "burnside_fixed_points": {
+    "selectors": [
+      480,
+      0,
+      0,
+      0,
+      0,
+      0,
+      24,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "edges": [
+      68394,
+      166,
+      166,
+      0,
+      0,
+      166,
+      264,
+      168,
+      168,
+      0,
+      0,
+      168
+    ],
+    "mixed_rows": [
+      8640,
+      0,
+      0,
+      0,
+      0,
+      0,
+      144,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "gram_rows": [
+      171,
+      9,
+      9,
+      0,
+      0,
+      9,
+      27,
+      9,
+      9,
+      0,
+      0,
+      9
+    ]
+  },
+  "core_degree_histogram": {
+    "4": 18,
+    "8": 3
+  },
+  "eligible_degree_histogram": {
+    "224": 12,
+    "227": 6,
+    "232": 12,
+    "233": 12,
+    "244": 36,
+    "250": 12,
+    "253": 12,
+    "258": 24,
+    "260": 12,
+    "264": 24,
+    "274": 12,
+    "283": 12,
+    "285": 48,
+    "286": 12,
+    "288": 12,
+    "295": 36,
+    "296": 12,
+    "298": 24,
+    "299": 12,
+    "300": 12,
+    "301": 12,
+    "305": 6,
+    "307": 12,
+    "314": 24,
+    "322": 12,
+    "333": 12,
+    "334": 12,
+    "335": 12,
+    "349": 24
+  },
+  "mixed_target_histogram": {
+    "0": 756,
+    "1": 4248,
+    "2": 3636
+  },
+  "matrix_nonzeros": {
+    "mixed_nonzero_rows": 34821,
+    "gram_nonzero_rows": 193,
+    "activation_rows": 22730,
+    "population": 42
+  },
+  "integer_controls": {
+    "literal_full_to_quotient_row_evaluations": 582396,
+    "test_denominator": 23,
+    "all_480_degree_redundancy_checks": true,
+    "all_144_group_compositions_checked": true,
+    "full_21_core_actions_checked": true,
+    "independent_edge_and_mixed_Burnside_counts_checked": true
+  },
+  "bindings": {
+    "core_and_actions_sha256": "6d71124432f5f3477ecd0ff9947681c2732828c748b14059ad61413878adeaf9",
+    "triples_sha256": "c10de8bc9484041dcc4a2bae86a80d00a52bed7199f5cfbf6de2f9563192a8f1",
+    "targets_sha256": "bb77d18d3e037d94b57b1673f826db03f96322da27614ce811d6f3a81c9c3311",
+    "edges_sha256": "411052a41a473bb7199fe277516fb60c54018dec120309622a499229579791bb",
+    "selector_orbits_sha256": "1d31f84f26fabf8aeec9e52095ed9431b176209b009980d6605475b0445bfd41",
+    "edge_orbits_sha256": "4dec8fbb54f59f54fafc558a0f6d5bd6cb3566c8d49dcb20767f43429f83fa4b",
+    "mixed_row_orbits_sha256": "afa22ac71bc43df31d20525f0bf6795045da6fe7070057f21e3536f6453e10ef",
+    "literal_mixed_rows_sha256": "9cb1e5a41ebb3675f69efce2fa8311c4f1bfa440ec43b7cd608b02145fd7ca75",
+    "mixed_row_map_sha256": "e5837817112e936821b15037bace88173a51017d99c60a58748b81246dc26098",
+    "literal_gram_rows_sha256": "6a6ab30286ef7bd6fa269622c468837d6f891541363ffc4132552e8f16f462ee",
+    "literal_activation_rows_sha256": "6a754fc1c1d9b40f77eb4a8d9dbbf9b53ad4e7d11a8d7c66fb8a486cbecbe377",
+    "activation_row_map_sha256": "5a96cd75249c506040ff69eec9f3d3af3a62538e98d8bb7f1490723da62c701e",
+    "structural_specification_sha256": "5b2a8715c9cad3217b72479dd12c733f5b8b73d878cbb70df154167b7e386525"
+  },
+  "scope": {
+    "motif_rows_added": false,
+    "terminal_4404_cuts_added": false,
+    "full_fractional_model_complete": false,
+    "optimizer_called": false,
+    "feasible_point_found": false,
+    "component_excluded": false
+  },
+  "hash_controls": 3,
+  "source_path": "experiments/workspace/root_prism_free_f0_fractional_structural_recovery.js",
+  "source_sha256": "0a1beefc85a807d5073676b0de380ff714d855e8a9a84c8e6010786a18e39b2b",
+  "literal_input_sha256": "ef4018f26c48e9eb90bf544d41678778d71b587994096383023c8836e70bca6e"
+}

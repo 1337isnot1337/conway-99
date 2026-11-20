@@ -1,0 +1,118 @@
+{
+  "status": "PASS: certified-zero adapter prepared; parent domain/cache unchanged",
+  "source_sha256": "555ce146b2f7ae05641872d2bd3b8a9a86f690680d1c82e2f32e6ea4640114b7",
+  "parent_source_sha256": "7441635b50e19846e48261614daf0a69a605cce8d32a15cd90f7a4cbafc1ce73",
+  "parent_inputs": {
+    "preparation": [
+      "f0-joint-psd-preparation03.json",
+      "94a4b20c380836c4e430d1a551c55a547c03c6a119680d74e73723193112082e"
+    ],
+    "cache": [
+      "f0-joint-psd-cache01.json.gz",
+      "6d293340386e77e0bf0b0a7b006744523d75eb7e90ef0fd371c3eed5eb82801e"
+    ],
+    "cold": [
+      "f0-joint-psd-preparation03-cold-replay.json",
+      "e0c8e127ff72714705d7c178b4418e30c5f2cad50bed992a8a8d97b38145a2b4"
+    ]
+  },
+  "base_bindings": {
+    "source_sha256": "7441635b50e19846e48261614daf0a69a605cce8d32a15cd90f7a4cbafc1ce73",
+    "reused_source_sha256": {
+      "root_prism_free_f0_selector_psd_cuts.py": "64fa05e1947ac0e59801a400e0b9ee61e3c08691156025509c7390732db8bab2",
+      "root_prism_free_f0_full_core_schur_cuts.py": "c5489561a99de14cc0c68a3d05dbc8eb1eb3fc17e4a759b4c3d63f8d771f7d8e",
+      "root_prism_free_f0_graph_schur_kernels.py": "5be66e563e53b1efc378c8adbeb39b8ddbf24f4c97077e5d43c728260d9087be",
+      "root_prism_free_f0_full_core_schur_kernels.py": "141392693e8d4b7e140c329cfa4128b8794bd376713558394ef014975e2fc63f"
+    },
+    "inputs": {
+      "baseline": [
+        "f0-boolean-fractional-model.json.gz",
+        "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+      ],
+      "full": [
+        "f0-second-moments-preparation02.json.gz",
+        "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+      ],
+      "reduced": [
+        "f0-second-moments-reduced-model.json.gz",
+        "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf"
+      ],
+      "old_kernel": [
+        "f0-graph-schur-kernels01.json.gz",
+        "65f1ad0d0015a6eff3d97c676fb0e188f57f9dee00e9245758a28bab2069b40d"
+      ],
+      "kernel": [
+        "f0-full-core-schur-kernels01.json.gz",
+        "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1"
+      ],
+      "kernel_cold": [
+        "f0-full-core-schur-cuts-preparation01-cold-replay.json",
+        "5450f1fe4b61002d58f8926ae92ad48abba9f653b53bfa372cf550973248e919"
+      ],
+      "inverse_audit": [
+        "f0-full-core-schur-independent-audit.json",
+        "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75"
+      ],
+      "inverse_cold": [
+        "f0-full-core-schur-independent-audit-replay.json",
+        "a857d12d96798f4ad58d8fb8ebbac8b7980b1b672e480e89c19262588f904cf0"
+      ],
+      "model": [
+        "f0-schur-path-model03.json.gz",
+        "ad046fc05a4247a081b3cabb16693682fa5539ff557dd7b599f3c3a63e7303dd"
+      ],
+      "proposal": [
+        "f0-schur-path-query-run01/numerical.json",
+        "bfe03cf2ec0f9d00ee7ff756112a61ab368404d4ed29c7b50377f01c5ae8327e"
+      ]
+    },
+    "model_sha256": "7bc4682e3df009761c55d0740a30a0629d45e894807f79e3337fc1de4fa1aff3",
+    "matrix_sha256": "24da97cfaf7bdb6e73efcdf9b248d70f30e04443dada5a2c923ab112f10bc812"
+  },
+  "relative_size_label_threshold": "1/10000000000",
+  "limits": {
+    "family_order": [
+      "selector",
+      "plus",
+      "minus"
+    ],
+    "matrix_orders": [
+      481,
+      480,
+      480
+    ],
+    "decompositions_per_family": 1,
+    "directions_per_family": 8,
+    "scales": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "maximum_vector_entry": 1024,
+    "retained_cuts_per_family": 16,
+    "retained_cuts_total": 48,
+    "attempts_per_family": 48,
+    "maximum_seconds": 60,
+    "time_limit_cooperative_between_operations": true
+  },
+  "filter_file_sha256": "621cd3c6a00f7375c67fc696a293fc6e2f25883c17c5253496fd83ba1172a5a1",
+  "filter_canonical_sha256": "ca6c39543ef0178de10fc2feed1ea870e221dea2bb4358d8808908124b1cec97",
+  "controls": {
+    "status": "PASS: exact zero substitution, positive gcd, residual identity and labels",
+    "literal_boolean_equivalences": 1500,
+    "nonzero_proposal_zero_coordinate_control": true,
+    "numerical_size_labels_do_not_establish_redundancy": true,
+    "eigendecompositions": 0,
+    "optimizer_calls": 0
+  },
+  "parent_controls_reused_sha256": "e3b0d3d5a20ceee79cfdb3032105143d1b8713fb439786f3bff9532aa645f1ed",
+  "certified_zero_variables": 162,
+  "existing_primitive_rows_after_zero_substitution": 33576,
+  "oriented_parent_row_origins": 33899,
+  "domain_or_kernel_reconstruction_performed": false,
+  "eigendecompositions": 0,
+  "optimizer_calls": 0
+}

@@ -1,0 +1,248 @@
+{
+  "status": "UNRESOLVED: retained numerical proposals give no accepted exact outcome",
+  "source_bindings": {
+    "driver_sha256": "fb4c4b853708740e1a1726cb4455a5c82a7ae3659439407f4a00a33c67c71ec7",
+    "exact_face_builder_sha256": "06463fe26a178b9e0d1a004f47c474c6463bf52b769699c8481047dbc01a6300",
+    "reviewed_parent_generation_driver_sha256": "655696089ce7f4b4fac3aabccbe1492f5f55c8c4670d3942b6b2cc251734e900",
+    "complete112_premise_loader_sha256": "405f732445043762db0c52cbc0cfdc159dcb945351925afdcc57af7c9606b3f9",
+    "direct_H3_verifier_sha256": "9da8c7edc60429b6a7bee6cd15da447e08a6ae1656a4be5b77b1dd2f5ba5bdb3",
+    "direct_weighted_covers_verifier_sha256": "71062b0c84e637016a74b8d2df267e4e1e87893ca30221b6906f20ea7b4b844b",
+    "unchanged_native_row_assembly_and_call_helper_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_serialization_runtime_helper_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "bound_audit_sha256": "5e1e01b8c5f3c5747292d65e6938263afe7a72bfff68b00ee29cf2f41b23b2a3",
+    "complete_base_cold_replay_sha256": "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+  },
+  "preparation_sha256": "d33f414489ca4f3e734b4011c4582668bf469f8192a659d8200ff440edb8543c",
+  "limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "iterations": [
+    {
+      "call_index": 0,
+      "active_rows": 3071,
+      "numeric_artifact": {
+        "path": "iteration-00-numeric.json.gz",
+        "sha256": "b024197a41afb7412b5010deafcf136cbf1bf3ca1b08aed2ffd1965e4cb9ee00",
+        "decompressed_sha256": "d73d5d8463b194c057c8f9c96d2cb0dd3e1d4cc9acc40f76701440bad0805831",
+        "decompressed_bytes": 144230
+      },
+      "added_after_call": [],
+      "scan": {
+        "all_original_and_extension_rows_scanned": 167115,
+        "full_matrix_nonzeros_scanned": 10769496,
+        "retained_cover_rows_scanned": 164044,
+        "active_rows_scanned": 3071,
+        "full_row_violation_count": 0,
+        "maximum_full_row_violation": 4.618527782440651e-14,
+        "maximum_active_row_violation": 4.618527782440651e-14,
+        "maximum_retained_cover_violation": 0.0,
+        "maximum_variable_bound_violation": 0.0,
+        "violated_unseen_retained_covers": 0,
+        "selected_new_cover_rows": [],
+        "selection_rule": "descending floating violation, then ascending original row ID",
+        "exact_feasibility_claimed": false
+      },
+      "scan_seconds": 0.18691005399887217
+    }
+  ],
+  "automatic_retry": false,
+  "production_run_calls": 1,
+  "solver_and_existing_ray_seconds": 2.6214981290031574,
+  "added_cover_rows": 0,
+  "exact_infeasibility_certificate_found": false,
+  "exact_zero_face_certificate_found": false,
+  "exact_rational_point_found": false,
+  "case4_exclusion_verified": false,
+  "whole_graph_problem_resolved": false,
+  "definition_sha256": "35ce7bca9fafb01d289d2896bd58382815f4abdc1882b65e5c80af74fe1938f1",
+  "input_replay_seconds": 5.4029218970026704,
+  "native_bootstrap_seconds": 0.775964335000026,
+  "numerical_stop_reason": "no unseen retained cover violated; full exact acceptance still required",
+  "numerical_phase_seconds": 3.6270633489984903,
+  "bound_reconstruction_attempts": [
+    {
+      "method": "scale",
+      "parameter": 1,
+      "orientation": -1,
+      "gamma": "1",
+      "nonzero_rows": 0,
+      "exact_bound": "1"
+    },
+    {
+      "method": "scale",
+      "parameter": 64,
+      "orientation": -1,
+      "gamma": "64",
+      "nonzero_rows": 19,
+      "exact_bound": "157"
+    },
+    {
+      "method": "scale",
+      "parameter": 64,
+      "orientation": 1,
+      "gamma": "64",
+      "nonzero_rows": 19,
+      "exact_bound": "297"
+    },
+    {
+      "method": "scale",
+      "parameter": 256,
+      "orientation": -1,
+      "gamma": "256",
+      "nonzero_rows": 362,
+      "exact_bound": "263"
+    },
+    {
+      "method": "scale",
+      "parameter": 256,
+      "orientation": 1,
+      "gamma": "256",
+      "nonzero_rows": 362,
+      "exact_bound": "1019"
+    },
+    {
+      "method": "scale",
+      "parameter": 4096,
+      "orientation": -1,
+      "gamma": "4096",
+      "nonzero_rows": 998,
+      "exact_bound": "408"
+    },
+    {
+      "method": "scale",
+      "parameter": 4096,
+      "orientation": 1,
+      "gamma": "4096",
+      "nonzero_rows": 998,
+      "exact_bound": "12471"
+    },
+    {
+      "method": "scale",
+      "parameter": 65536,
+      "orientation": -1,
+      "gamma": "65536",
+      "nonzero_rows": 1061,
+      "exact_bound": "1047"
+    },
+    {
+      "method": "scale",
+      "parameter": 65536,
+      "orientation": 1,
+      "gamma": "65536",
+      "nonzero_rows": 1061,
+      "exact_bound": "196242"
+    },
+    {
+      "method": "scale",
+      "parameter": 1000000,
+      "orientation": -1,
+      "gamma": "1000000",
+      "nonzero_rows": 1066,
+      "exact_bound": "11115"
+    },
+    {
+      "method": "scale",
+      "parameter": 1000000,
+      "orientation": 1,
+      "gamma": "1000000",
+      "nonzero_rows": 1066,
+      "exact_bound": "2990865"
+    },
+    {
+      "method": "fraction",
+      "parameter": 256,
+      "orientation": -1,
+      "gamma": "535557524920204876088909509401825097600916831623392379629746200570656000",
+      "nonzero_rows": 362,
+      "exact_bound": "608888172745825981638364743659594773745201371910104586413757523466590668"
+    },
+    {
+      "method": "fraction",
+      "parameter": 256,
+      "orientation": 1,
+      "gamma": "535557524920204876088909509401825097600916831623392379629746200570656000",
+      "nonzero_rows": 362,
+      "exact_bound": "2003076192542510346633428934891740982725086132308087290881415846801385124"
+    },
+    {
+      "method": "fraction",
+      "parameter": 4096,
+      "orientation": -1,
+      "gamma": "298007797814967051182978780238043140466685722678527323821337724105912567574527987718843624587137258252092226926163948262699467044585580260172927384461421899105428359428540082445707818392856710810513589084553597731063623677436664051941008734148954986599431817160347720316492042003345317899150612259581562168462286465853303826956929998615798984633069681941777695822270216995844039172653784934332030161633536985990918159338274889579372968114748797135816948410196437098013042195133031260140182426944754125457475862538535922863810435040985365141169764985756961824622307062176621352115882673645972685427748047482933861028661067218087761109677447099246067843314833822802694823328053342656823253847007510459820156417253416269083838486844836609072286340041972789233351400785903557600751467306778804216837619880085162141996738380969548327309442307099407829230390929682028967196160000",
+      "nonzero_rows": 998,
+      "exact_bound": "6685523169479046849497110442149484148261270882408454527272312304929921607215736404919665961990841083931750544621789348564919047773654739294105008602030795797288739256488277876918841731554082083583056005523061296096520306849163424575289137302813456784642567964330978846867562750607493017203661351056030958241132767317958418866541249567698933911017391584607034176049749878783946087943869583010755392218250214295665799629114211287610938770602480399764065201051844676645493181890727078555661345773922546296817437550380041551146793377226389874896768909137971608597044620564759095981827180950300228286081272392130739082954929731698273076742116229400083100068688995146026260456261111702549908609188521439254488529560634956792972698510727101710001777858819262897457033502245154901182057819951461861469847978227551932226633230066409322239174402858382733599184755341435457834798595"
+    },
+    {
+      "method": "fraction",
+      "parameter": 4096,
+      "orientation": 1,
+      "gamma": "298007797814967051182978780238043140466685722678527323821337724105912567574527987718843624587137258252092226926163948262699467044585580260172927384461421899105428359428540082445707818392856710810513589084553597731063623677436664051941008734148954986599431817160347720316492042003345317899150612259581562168462286465853303826956929998615798984633069681941777695822270216995844039172653784934332030161633536985990918159338274889579372968114748797135816948410196437098013042195133031260140182426944754125457475862538535922863810435040985365141169764985756961824622307062176621352115882673645972685427748047482933861028661067218087761109677447099246067843314833822802694823328053342656823253847007510459820156417253416269083838486844836609072286340041972789233351400785903557600751467306778804216837619880085162141996738380969548327309442307099407829230390929682028967196160000",
+      "nonzero_rows": 998,
+      "exact_bound": "896093993439491572281385371903559045641663020834001074624914625535892711707870681766749725736988093284921259435485248784718639219303625416506966324287151557164166765815423285387602031056340974833402358316107545574857845542557213879738147070594765154168966760711771034883451711947180138196207898725821609188117696613485513869431336002370414146798579058876146321722590457596727713017221450297082964403290890158447487316721579318347522458661490259760137656447250227132698483822892994374413146261839944853879232304881211580547521691480459044686657141761959963434303099554476353451714368524634306272275981907090115601990256161189166336173657387575467836467326007877258259492618236130167548239196148318968265881121589460310181044597866389160533371110747565487220508952030164209124226103027690359111557688275696884181503353748071805739105978736054179594209265987010997699438499713"
+    }
+  ],
+  "primal_reconstruction_attempts": [
+    {
+      "denominator_limit": 1,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 2,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 4,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 16,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 64,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 256,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 4096,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    },
+    {
+      "denominator_limit": 1000000,
+      "proposal_sanitization": "values within1e-12 of0 or1 replaced by that endpoint; no feasibility inferred",
+      "accepted": false,
+      "first_failure": "('violated exact row', 0)"
+    }
+  ],
+  "exact_stage_seconds": 0.3843972809991101,
+  "elapsed_seconds": 9.416766263006139,
+  "peak_rss_kib": 426052
+}

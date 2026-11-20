@@ -1,0 +1,21 @@
+{
+  "historical_artifact_entry": {
+    "bytes": 978,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owner.json",
+    "sha256": "1f31e0fb8a395c757e3f9f75af3623ba630965f433c40b934cca70adb0da852e"
+  },
+  "mathematical_replay_repeated": false,
+  "meaning": "The supervision artifact inventory captured owner.json before the outer wrapper replaced it with the final terminal owner. The embedded entry names a historical snapshot, not the current contents of owner.json. The exact snapshot bytes are preserved at restored_snapshot.path.",
+  "reconstruction": "Remove supervision and report from the terminal object; restore status UNKNOWN_BEFORE_CHILD and report_accepted false; serialize sorted JSON with indent two and a terminal newline. SHA256 and byte count must match the historical entry.",
+  "restored_snapshot": {
+    "bytes": 978,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owned-initial-receipt.json",
+    "sha256": "1f31e0fb8a395c757e3f9f75af3623ba630965f433c40b934cca70adb0da852e"
+  },
+  "status": "EXACT_HISTORICAL_OWNER_SNAPSHOT_RECOVERED",
+  "terminal_owner": {
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owner.json",
+    "sha256": "ccd6e7ffa5d46d35ab4d65efdfd2fb87922ebcddfa6fbe03d326c98f0784edd2"
+  },
+  "terminal_owner_modified": false
+}

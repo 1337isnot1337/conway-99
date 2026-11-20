@@ -1,0 +1,160 @@
+{
+  "schema": "conway99.f0.strengthened-query-independent-source-review.v1",
+  "status": "PASS_COMPLETE_RUNNER_CONFIGURATION_AND_PREFLIGHT_WORKFLOW_SOURCE_REVIEW",
+  "reviewer": "/root/master_continuation",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query.py",
+    "git_blob": "ec845beeca4e499b72367e0a81f4c43e97be8663",
+    "sha256": "b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288",
+    "bytes": 33132
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json",
+    "git_blob": "f4350f9cfbc4fa4b9e38598ede9b442b91d2350c",
+    "sha256": "4dedc66ded53ed813a0eef7a0ad366afe1093f5f5120b0d24ff5276497df3077",
+    "bytes": 6134
+  },
+  "preflight_workflow": {
+    "path": ".github/workflows/conway99-strengthened-query-preflight.yml",
+    "git_blob": "f0477394c2629b775a673d3d2b67f1ebfc61d65d",
+    "sha256": "b18e74b599705b961f1e26cff99fbfa3d08fbbdac843ebc73d725f063cf44be9",
+    "bytes": 8068
+  },
+  "full_source_lines_read": 564,
+  "full_configuration_and_workflow_read": true,
+  "reused_functions_read": [
+    {
+      "source": {
+        "bytes": 15210,
+        "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+        "mode": "100644",
+        "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+        "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+      },
+      "functions": [
+        "transport",
+        "linear"
+      ],
+      "import_and_main_guards_read": true
+    },
+    {
+      "source": {
+        "bytes": 26760,
+        "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+        "mode": "100644",
+        "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+        "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+      },
+      "functions": [
+        "supervise"
+      ],
+      "import_and_main_guards_read": true
+    }
+  ],
+  "actual_receipts_fetched_and_hash_verified": [
+    {
+      "bytes": 12613,
+      "git_blob": "5180767826e0edcdc4d14bbc40b41934dd8dfd1c",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json",
+      "sha256": "114823082c6d3696fe6f53ae0979d0c375b9f13ffa94071fa9093d195633fcd7"
+    },
+    {
+      "bytes": 972,
+      "git_blob": "65556017f9e658cee0fe27987b590c1cc7a25ede",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json",
+      "sha256": "d162e054ff0f80208f199403869b1109f97cde67add39e3d4bc4de01731532be"
+    },
+    {
+      "bytes": 14259,
+      "git_blob": "2f13275d00aca2d1cc2add3414aa8c2ed4062568",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "sha256": "75e0150b0c0ed6f6b7c5d84c270790a4311a5a81382afe0a32e360dd2d126628"
+    },
+    {
+      "bytes": 1134,
+      "git_blob": "29a4ffa3fde0aaed50b0b70de772afb45933de86",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json",
+      "sha256": "e9f1e4fdb7277c6759be465dea97d1e01c7e1337bb18e05347062fa7aa378931"
+    },
+    {
+      "bytes": 7706,
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116"
+    }
+  ],
+  "accepted_model_authority_review": [
+    "Actual preparation, owner, independent cold and root acceptance fields agree with the loader's complete authority chain, including the cold owner's run/owner.json path.",
+    "The loader checks the accepted archive hash and bytes, decompressed hash and bytes, protobuf schema and complete raw roundtrip before transport.",
+    "The frozen model has 68934 variables and 257594 linear unenforced rows. Its complete variable order is preserved; original edge names, domains and canonical original-edge order are rechecked.",
+    "No objective, hint, assumptions, extra variables, selector fix or graph-symmetry equation is added.",
+    "The exact accepted raw model hash is 4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2.",
+    "This review reuses the accepted model mathematical cold; it does not reconstruct, decode or build that full model."
+  ],
+  "preflight_review": [
+    "The prepare branch constructs protobuf parameters, response controls and the transported CpModel, but never constructs CpSolver or invokes solve.",
+    "Exact parameter text and wire roundtrips retain all explicit settings; runtime package, Python wrapper, native helper and descriptor hashes are checked.",
+    "The reused transport validates the native model and compares every exported byte with the expected accepted protobuf.",
+    "The vector controls exercise signed and empty rows, a coefficient above binary64 exact precision, noninteger values, domain and row violations, primary/additional response-vector transport, and terminal classification.",
+    "The worker has a 60-second phase deadline inside a 75-second process-group owner. Actual preflight reports remain pending until the separate authorized CI run."
+  ],
+  "production_review": [
+    "Production requires an accepted actual preflight report and owner plus a hash-bound root gate binding the exact source, configuration, preflight, model cold, parameters, limits and one-call policy.",
+    "Parameter files are compared by exact bytes across the different preflight and production paths.",
+    "There is exactly one solver.solve call site. It is reached only when at least 180 seconds native allowance plus 60 seconds finalization reserve remain within the 300-second owner.",
+    "The solver receives 175 seconds, one worker, seed zero, presolve true, probing zero, linearization zero and symmetry zero. Logging settings match the frozen configuration.",
+    "Native solve elapsed time above 180 seconds is preserved as UNKNOWN_NATIVE_BUDGET_OVERRUN. There is no retry or alternate call.",
+    "The original native response text, primary and every additional integer vector are saved before protobuf parsing or exact arithmetic. Reconstructed protobuf wire is explicitly labeled as reconstructed from native text.",
+    "Every returned vector is checked with Python integers against every variable domain and every linear row, with exact row activities retained.",
+    "INFEASIBLE remains unproved; a checked returned vector remains an exterior-relaxation witness pending separate cold and the missing original pair-cap/second-component checks."
+  ],
+  "ownership_review": [
+    "Fresh directories use exist_ok=False.",
+    "Initial, supervisor and final owner receipts have distinct immutable paths.",
+    "The pinned supervisor starts a new process group, kills its owned group in finally and reaps the child.",
+    "Owner acceptance requires zero child exit, successful reaping and group cleanup, matching source/configuration/model size, a terminal report and no owner deadline overrun.",
+    "Partial native states, exceptions and hard deadline outcomes remain preserved and unaccepted."
+  ],
+  "workflow_review": [
+    "Push trigger is restricted to the dedicated workflow/request paths on the research branch; the first-attempt guard and expected-parent/ref checks prevent unchanged retries.",
+    "Permissions are read only and checkout does not persist credentials. Actions are pinned by commit.",
+    "The explicit sparse checkout covers the runner/configuration, seven accepted inputs, four helpers, this review, workflow, request and gate.",
+    "The gate stage checks request/gate agreement, exact dependency hashes and sizes, zero allowed optimizer calls and the 60/75-second preparation contract.",
+    "Python source compilation does not execute imports. The workflow installs the pinned runtime and invokes only the owned prepare mode once.",
+    "Always-run export preserves exact small artifact bytes through base64, and the complete CI artifact retains the transported model and all output files.",
+    "The future request and root gate were not part of this source-only review; root must bind this exact reviewed workflow, source, configuration and review before execution."
+  ],
+  "reviewed_limits": {
+    "finalization_reserve_seconds": 60,
+    "native_allowance_seconds": 180,
+    "owner_seconds": 300,
+    "preparation_owner_seconds": 75,
+    "preparation_seconds": 60,
+    "solver_seconds": 175
+  },
+  "reviewed_parameters": {
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "log_search_progress": true,
+    "log_to_response": true,
+    "log_to_stdout": true,
+    "max_time_in_seconds": 175,
+    "num_search_workers": 1,
+    "random_seed": 0,
+    "symmetry_level": 0
+  },
+  "concrete_blockers": [],
+  "main_or_control_execution_by_reviewer": 0,
+  "native_model_builds_by_reviewer": 0,
+  "solver_calls_by_reviewer": 0,
+  "full_model_census_or_mathematical_cold_repeated": false,
+  "independent_terminal_checker_review_delegated_to": "/root/independent_sets",
+  "production_or_preflight_authorized_by_this_review": false,
+  "graph_or_component_exclusion_claimed": false
+}

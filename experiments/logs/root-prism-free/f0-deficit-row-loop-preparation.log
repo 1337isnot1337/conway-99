@@ -1,0 +1,399 @@
+{
+  "status": "PASS: complete raw coverage, explicit isomorphisms, triple domains and controls",
+  "retained_shells": 8992,
+  "representatives": 66,
+  "standard_library_only": true,
+  "optimizer_called": false,
+  "elapsed_seconds": 3.802525186998537
+}
+{
+  "status": "PASS: complete raw coverage, explicit isomorphisms, triple domains and controls",
+  "retained_shells": 8992,
+  "representatives": 66,
+  "standard_library_only": true,
+  "optimizer_called": false,
+  "elapsed_seconds": 4.458129792001273
+}
+{
+  "status": "free480 carry/deficit continuation prepared; complete parent/prefix/repair replay; no main query",
+  "source_sha256": "27b10330125ca5586512e2a4d3f8a297cf203dbb05e246bda4820240d03e940e",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_incidence_row_loop.py": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+    "root_prism_free_f0_shared_deficit_separator.py": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf",
+    "root_prism_free_f0_carry_threshold.py": "942efb35d35429d88d7cc9c3bc14aa7a116972186f60abeebe50db89214ec75f",
+    "root_prism_free_f0_carry_row_loop.py": "ec85c752a5d3c5538250e0099286dcbad674e23ef9572f72bbd3ca72fb5ef403",
+    "root_prism_free_f0_shared_ray_repair.py": "4a214635d5ba1ec73477a3acdfd36c30cb65be3c4c4fb662ee19a615388c07d3"
+  },
+  "parent_terminal_bindings": {
+    "experiments/logs/root-prism-free/f0-carry-row-loop-preparation.json.gz": "b43aedd6dda33b3b0415865831fb48e87610815f4f3659d7a59f8c5c84b0eb9e",
+    "experiments/logs/root-prism-free/f0-carry-row-loop-run01/result.json": "ecc80a941a1b0d9e152788167210a5e8b7936f28b03ee50c35658895b453d3d3",
+    "experiments/logs/root-prism-free/f0-carry-row-loop-run01-cold-replay.json": "b0f05cf633c674a2e1c22822028b8f1f0e0ae287449852bae00b53b03cc72204",
+    "experiments/logs/root-prism-free/f0-carry-row-loop-run01-shared-ray-repair.json.gz": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5"
+  },
+  "carry_encoder_controls_sha256": "cbd79ada6cd165961811e005b51d3979f2d80c63fbc90dfefa18f0d9d0e29196",
+  "carry_encoder_controls": {
+    "status": "carry-save, ripple, comparator and signed controls PASS",
+    "source_sha256": "942efb35d35429d88d7cc9c3bc14aa7a116972186f60abeebe50db89214ec75f",
+    "gate_truth_assignments": 280,
+    "weighted_formulas": 2278,
+    "weighted_primary_assignments": 45306,
+    "signed_formulas": 786,
+    "signed_primary_assignments": 11223,
+    "direct_gate_trace_and_exact_binary_sum_checked": true,
+    "aliases_complements_constants_and_guard_aliases_checked": true,
+    "all_full_Tseitin_equivalences_checked": true,
+    "fresh_auxiliary_ids_and_resource_refusal_checked": true,
+    "tiny_boolean_solver_only": true,
+    "incidence_or_LP_query_called": false
+  },
+  "dynamic_shared_helper_control": {
+    "complete_parent_replay": {
+      "status": "cold complete carry final formula, candidate prefixes, exact individual/shared witnesses and lifts replay PASS",
+      "source_sha256": "ec85c752a5d3c5538250e0099286dcbad674e23ef9572f72bbd3ca72fb5ef403",
+      "preparation_sha256": "b43aedd6dda33b3b0415865831fb48e87610815f4f3659d7a59f8c5c84b0eb9e",
+      "result_sha256": "ecc80a941a1b0d9e152788167210a5e8b7936f28b03ee50c35658895b453d3d3",
+      "final_cnf_sha256": "54f953de7e126071714a2b42b01328f2578d382178ad599500cf47c27a693cd7",
+      "checked_candidates": 9,
+      "exact_individual_obstructions": 15,
+      "exact_individual_boxes": 525,
+      "exact_shared_rays": 0,
+      "exact_shared_points": 0,
+      "individual_cut_count": 348,
+      "symmetric_cut_count": 24,
+      "variables": 142980,
+      "clauses": 951630,
+      "optimizer_or_solver_called": false,
+      "UNSAT_proof_checked": false,
+      "whole_component_excluded": false,
+      "full_graph_completion": false
+    },
+    "parent_UNKNOWN_status_unchanged": "UNKNOWN: numerical infeasibility without an exact ray; unresolved",
+    "all_twelve_separate_repair_transports": [
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 0
+        },
+        "registry_index": 24,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 1
+        },
+        "registry_index": 25,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 2
+        },
+        "registry_index": 26,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 3
+        },
+        "registry_index": 27,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 4
+        },
+        "registry_index": 28,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 5
+        },
+        "registry_index": 29,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 6
+        },
+        "registry_index": 30,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 7
+        },
+        "registry_index": 31,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 8
+        },
+        "registry_index": 32,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 9
+        },
+        "registry_index": 33,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 10
+        },
+        "registry_index": 34,
+        "new_cut": true
+      },
+      {
+        "origin": {
+          "kind": "separate exact-deficit repair of frozen parent UNKNOWN",
+          "repair_certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+          "core_action_index": 11
+        },
+        "registry_index": 35,
+        "new_cut": true
+      }
+    ],
+    "separate_repair_exact_ray_check": {
+      "rhs_dot_product": -26,
+      "minimum_primary_coefficient": 0,
+      "minimum_upper_slack_coefficient": 0,
+      "nonzero_row_multipliers": 1013,
+      "maximum_absolute_multiplier": 7618,
+      "orientation": "E^T ray>=0 and rhs^T ray<0 for every nonnegative primary and upper slack"
+    },
+    "new_deficit_helper_reproduces_repair": {
+      "status": "new exact-deficit helper reproduces frozen RHS-26 ray and all12 transports PASS",
+      "source_sha256": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf",
+      "inventory": {
+        "primary_edges": 1228,
+        "equations": 1140,
+        "standard_form_rows": 2368,
+        "standard_form_variables": 2456,
+        "standard_form_nonzeros": 12280,
+        "data_sha256": "0cb4337602aeff41d340285a60bf19fbfa516e5c30ef84fad2e3389e6c82c6ec",
+        "rows_sha256": "03830e188d56da8a56fb9d4fb337b5f7a1cbb2ca07a7385b9ffe5f52b756d433"
+      },
+      "exact_ray_check": {
+        "rhs_dot_product": -26,
+        "minimum_primary_coefficient": 0,
+        "minimum_upper_slack_coefficient": 0,
+        "nonzero_row_multipliers": 1013,
+        "maximum_absolute_multiplier": 7618,
+        "orientation": "E^T ray>=0 and rhs^T ray<0 for every nonnegative primary and upper slack"
+      },
+      "ray_reconstruction": {
+        "method": "round only free equality multipliers; exact upper deficits",
+        "free_multiplier_orientation": -1,
+        "free_multiplier_scale": 1,
+        "numerical_inputs_are_exact_dyadic_rationals": true,
+        "numerical_upper_multipliers_discarded": true,
+        "upper_multiplier_rule": "max(0,-sum of free integer equality coefficients at that primary)"
+      },
+      "normalized_gap": 26,
+      "transports": 12,
+      "optimizer_or_solver_called": false
+    },
+    "all_nine_parent_selections_rejected_by_proved_cuts": [
+      {
+        "parent_iteration": 0,
+        "violated_individual_cut_count": 2,
+        "violated_signed_cut_count": 0
+      },
+      {
+        "parent_iteration": 1,
+        "violated_individual_cut_count": 1,
+        "violated_signed_cut_count": 0
+      },
+      {
+        "parent_iteration": 2,
+        "violated_individual_cut_count": 1,
+        "violated_signed_cut_count": 0
+      },
+      {
+        "parent_iteration": 3,
+        "violated_individual_cut_count": 5,
+        "violated_signed_cut_count": 0
+      },
+      {
+        "parent_iteration": 4,
+        "violated_individual_cut_count": 4,
+        "violated_signed_cut_count": 0
+      },
+      {
+        "parent_iteration": 5,
+        "violated_individual_cut_count": 2,
+        "violated_signed_cut_count": 0
+      },
+      {
+        "parent_iteration": 6,
+        "violated_individual_cut_count": 2,
+        "violated_signed_cut_count": 0
+      },
+      {
+        "parent_iteration": 7,
+        "violated_individual_cut_count": 1,
+        "violated_signed_cut_count": 0
+      },
+      {
+        "parent_iteration": 8,
+        "violated_individual_cut_count": 0,
+        "violated_signed_cut_count": 1
+      }
+    ]
+  },
+  "limits": {
+    "maximum_incidences": 20,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_threshold_states_per_cut": 250000,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000,
+    "shared_LP_seconds": 60
+  },
+  "formula": {
+    "primary_variables": 480,
+    "variables": 208836,
+    "clauses": 1476450,
+    "literal_occurrences": 5816352,
+    "old_direct_overlay_formula": {
+      "primary_variables": 480,
+      "variables": 28308,
+      "clauses": 56994,
+      "literal_occurrences": 163716,
+      "base_clauses": 56550,
+      "added_guarded_clauses": 444,
+      "added_literal_occurrences": 24864,
+      "new_auxiliary_variables": 0,
+      "cut_count": 12,
+      "old_witness_cut_outcomes": [
+        {
+          "target_signature": 336,
+          "left": 5,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 337,
+          "left": 4,
+          "right": 2,
+          "holds": true
+        },
+        {
+          "target_signature": 360,
+          "left": 6,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 390,
+          "left": 6,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 404,
+          "left": 7,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 405,
+          "left": 5,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 427,
+          "left": 8,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 445,
+          "left": 6,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 454,
+          "left": 7,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 455,
+          "left": 7,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 467,
+          "left": 6,
+          "right": 0,
+          "holds": true
+        },
+        {
+          "target_signature": 479,
+          "left": 0,
+          "right": 2,
+          "holds": false
+        }
+      ],
+      "old_witness_failed_guarded_clause_count": 1,
+      "old_witness_rejected": true,
+      "old_witness_or_its_complement_fixed": false,
+      "all480_original_selectors_free": true,
+      "exterior_edge_variables": 0
+    },
+    "old_twelve_direct_cuts_retained": true,
+    "individual_weighted_cuts": 348,
+    "symmetric_signed_cuts": 36,
+    "added_weighted_clauses": 1419456,
+    "added_weighted_auxiliary_variables": 180528,
+    "encoding": "unchanged full-Tseitin carry-save and ripple binary thresholds",
+    "all480_selectors_free": true,
+    "fixed_second_component_or_incidence": false
+  },
+  "cnf": "/tmp/conway99-f0-deficit-row-loop.cnf",
+  "cnf_sha256": "2c528bfce40ea18b82949fbb45dcb05f683096c8c9ab2dd94583e238ab458cb3",
+  "cnf_bytes": 39946715,
+  "scope": "all first-incidence selections for component0 in globallyP=F=0 split18+18; second component unrestricted",
+  "visitation_blocks_or_graph_symmetry": false,
+  "initial_and_future_cuts_only_from_exact_potentials": true,
+  "shared_query_only_after_complete60_exact_individual_boxes": true,
+  "stop_conditions": [
+    "incremental UNSAT requiring fresh proof",
+    "UNKNOWN or uncertified result",
+    "exact symmetric box feasibility",
+    "resource/time/incidence limit",
+    "error"
+  ],
+  "optimizer_or_incidence_solver_called": false,
+  "seconds": 87.37364678300219
+}

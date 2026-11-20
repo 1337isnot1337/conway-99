@@ -1,0 +1,71 @@
+{
+  "accepted_evidence_bindings_checked": {
+    "mod2_independent": {
+      "bytes": 1558,
+      "path": "experiments/logs/root-prism-free/f0-shared-mod2-projection-independent01.json",
+      "sha256": "b9681565811ee38866303a482811675704064a5d0745708d30586e83916b702d"
+    },
+    "mod3_independent": {
+      "bytes": 1558,
+      "path": "experiments/logs/root-prism-free/f0-shared-mod3-projection-independent01.json",
+      "sha256": "c9708a77fa7aa80e5fa31d4b9d4929766bf5656b7b7c901aa29a74c975035124"
+    },
+    "mod4_cold_owner": {
+      "bytes": 1807,
+      "path": "experiments/logs/root-prism-free/f0-shared-mod4-run01-cold/owner.json",
+      "sha256": "eb1345f0fb177ec838075753fb8ebc2c081d772c8a5ef42846874496f1ce1eb3"
+    },
+    "mod4_independent_cold": {
+      "bytes": 96012,
+      "path": "experiments/logs/root-prism-free/f0-shared-mod4-run01-cold/report.json",
+      "sha256": "addda32b70e0bde2444ab39b9535d5c08e6565867e86295f09663d6c76ae2083"
+    },
+    "mod4_owner": {
+      "bytes": 2123,
+      "path": "experiments/logs/root-prism-free/f0-shared-mod4-run01/owner.json",
+      "sha256": "fc449d82aa4edf8c58ea7900b6fd1e61d515bad8dfb48bc9f95283dee1437263"
+    },
+    "mod4_report": {
+      "bytes": 1976,
+      "path": "experiments/logs/root-prism-free/f0-shared-mod4-run01/report.json",
+      "sha256": "1a106db963058c58d30b00c9baa4113cc24a0e49d77c20b0b1d1078f32af3b75"
+    },
+    "rational_kernel_cold": {
+      "bytes": 1466,
+      "path": "experiments/logs/root-prism-free/f0-shared-rational-kernel01-cold.json",
+      "sha256": "45d90993f1c78af166d2db8e886754a883592f492ee9bea92cead2790b6b7e3a"
+    }
+  },
+  "corollary": {
+    "bytes": 4556,
+    "path": "experiments/logs/root-prism-free/f0-shared-two-three-primary-corollary01.json",
+    "sha256": "b22903443937cef148fd8ee92eac460825ee106c016359af25bcd468384cbc5e"
+  },
+  "full_note_and_binding_read": true,
+  "mathematical_checks": [
+    "Unimodular row and column transformations preserve the row-module definition H={w mod2:2w lies in row(A) mod4}. The ordinary binary row span U is contained in H.",
+    "For one nonzero Smith factor d, H/U has dimension1 exactly when v2(d)=1. Odd d contributes to both H and U; d divisible by4 contributes to neither. A zero Smith factor adds no direction.",
+    "Rank over F2 is7713 and rational rank is7731, leaving exactly18 even nonzero factors. Eighteen independently checked half-even classes modulo U exhaust that difference, so every even factor has v2=1 and none has v2>=2.",
+    "Rank over F3 is7731 for the full degree-plus-mixed system, so no nonzero Smith factor is divisible by3. The degree rows must be included for this step, as the binding explicitly records.",
+    "For the full system, rational compatibility forces the zero transformed RHS coordinates to vanish. Mod2 compatibility forces every even-factor transformed RHS coordinate to be even. Dividing after cancellation therefore gives denominators coprime to6.",
+    "For P*A*Q=D, the original solution is Q times the Smith-coordinate solution. Integer unimodularity preserves denominators coprime to6, giving one rational solution that reduces modulo every2^r*3^s.",
+    "The complete rational mixed-kernel record transfers to degree-plus-mixed rows because each degree row and RHS is one third of its18 mixed-row sums over Q; modulo2 the same sum gives the degree row and RHS."
+  ],
+  "no_mathematical_blocker_found": true,
+  "note": {
+    "bytes": 4868,
+    "path": "research/root_prism_free_f0_shared_two_three_primary.md",
+    "sha256": "f32278365da5db656c2ee8c506de60d38b4813b499edf5a89f871b298af7f3a8"
+  },
+  "old_records_modified": false,
+  "optimizer_calls": 0,
+  "rank_or_witness_recomputations": 0,
+  "reviewer": "independent_sets",
+  "scope_qualifications": [
+    "Relies on the previously accepted ranks, original-row half-even witness contractions, and universal Gram RHS compatibility; this review does not repeat their computations.",
+    "Applies to all68394 eligible edge variables without activation or interval bounds.",
+    "No signed integer edge solution, nonnegative solution, Boolean adjacency, full graph realization, or conclusion at primes>=5 follows."
+  ],
+  "source_imports": 0,
+  "status": "PASS_INDEPENDENT_TWO_AND_THREE_PRIMARY_PROOF_REVIEW"
+}

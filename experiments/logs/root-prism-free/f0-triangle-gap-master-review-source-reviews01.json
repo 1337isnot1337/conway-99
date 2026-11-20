@@ -1,0 +1,59 @@
+{
+  "schema": "conway99.f0.triangle-gap-master-review-source-reviews.v1",
+  "status": "COMPLETE_IMMUTABLE_SOURCE_REVIEWS_NO_NATIVE_OR_QUERY_EXECUTION",
+  "files": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-producer-independent-source-review01.json",
+      "bytes": 5690,
+      "sha256": "8744d50196e14bf3567e0c18fa1d160ae7c52c4988a52c5489568ab58cbfcbc1",
+      "git_blob": "275a429e9d301c06444c4563bf78aea329353857",
+      "mode": "100644",
+      "purpose": "full native producer source review"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci-independent-source-review01.json",
+      "bytes": 4170,
+      "sha256": "09a569ee35edf562a1ed623e883e53b3a8dacc3f02d737a078dce5b84ccd877a",
+      "git_blob": "7b132229d4eddd8aabd9d2b1b1f5ff2cc490b129",
+      "mode": "100644",
+      "purpose": "historical review before final native checker receipt guard"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci-independent-source-review02.json",
+      "bytes": 5355,
+      "sha256": "8e6935d70de94638be3361e956bacdc811dde07c8f409bc5a0c93f415b0eeb0c",
+      "git_blob": "4acc54dbfe22b6e60ec1da9afc0670e9eb55e8da",
+      "mode": "100644",
+      "purpose": "final native CI source/interface review"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-gap-query-runner-and-ci-independent-source-review01.json",
+      "bytes": 12537,
+      "sha256": "2dbbb5b73c501120f8d7aa0ef36a7311e5021d7e8a82dd1727f713ea4dbe779f",
+      "git_blob": "69dbc50085f7512a6f4c8eacc874d790353b451d",
+      "mode": "100644",
+      "purpose": "full fresh query runner and CI peer review"
+    }
+  ],
+  "file_count": 4,
+  "total_bytes": 27752,
+  "literal_terminal_map": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-terminal-git-blobs01.json",
+    "bytes": 4543,
+    "sha256": "bcc300416d5bd0cb7377858c443f0dfed2f30612966abd872dff6f95f2b478a5",
+    "git_blob": "b582e1b297aa22f7aca2ddd9d5c6ee97110db700",
+    "mode": "100644"
+  },
+  "fresh_terminal_checker_source_map": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-query-independent-replay-source-artifacts01.json",
+    "bytes": 1657,
+    "sha256": "8c3e430122fe891f250ae4957bb8379318d8d870b4f9f41da0e50f467ca189a1",
+    "git_blob": "7df951a3e88703819a877282141ff8a89ada0279",
+    "mode": "100644"
+  },
+  "completed_literal_replay_calls": 1,
+  "additional_literal_or_native_calls": 0,
+  "query_or_native_source_execution": false,
+  "git_refs_mutated": false,
+  "scope": "The literal terminal is separately root-accepted. These source reviews do not authorize a native build or query."
+}

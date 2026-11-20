@@ -1,0 +1,77 @@
+{
+  "execution_boundary": {
+    "generated_row_novelty_against_all_old_constraints_not_claimed": true,
+    "independent_numerical_replay_not_claimed": true,
+    "local_processes": 0,
+    "main_census_runs_by_this_reviewer": 0,
+    "native_model_builds": 0,
+    "optimizer_calls": 0,
+    "reviewed_source_cooperative_limit_ms": 30000,
+    "root_wrapper_still_to_bind": [
+      "exact source",
+      "codec",
+      "complete domain archive and raw identities",
+      "complete kernel archive and raw identities",
+      "accepted overlay archive and raw identities",
+      "full-core audit",
+      "theorem and independent theorem review",
+      "actual controls receipt"
+    ],
+    "source_file_or_git_refs_modified": false,
+    "terminal_census_acceptance_not_claimed": true,
+    "wrapper_configuration_review_not_claimed": true
+  },
+  "review": {
+    "arithmetic": "All coefficients are safe integers under the frozen primitive kernel; determinant products use BigInt; conversion of a saved determinant to Number follows an exact safe-integer range assertion.",
+    "complete_source_read": true,
+    "completeness": "Fixed nested pair loops, exact pair/eligible-edge counts, determinant sign accounting and final deadline are asserted.",
+    "concrete_blockers": [],
+    "controls_rerun_by_this_reviewer": false,
+    "controls_source_read": true,
+    "controls_static_counts": {
+      "activated_guard_assignments": 16,
+      "bigint_boundary": true,
+      "explicit_minors": 3,
+      "integer_scaling_cases": 1323,
+      "profile_pairs": 49
+    },
+    "diagonal": "2*d_a-540+30*eta(a)^2, with accepted conservative positive bounds1042..2086.",
+    "domain": "Distinct weight-three masks; C reconstructed from full21-core; all quotas recomputed and compared; eta obtained from the first3 central rows and compared to saved kernel fiber_counts.",
+    "eligible_edges": "All pairs are reconstructed using overlap<=1 and both reciprocal positive-quota supports; the complete68394 edge list hash and every saved neighbor list are compared.",
+    "evidence": "Every pair retains both complete determinant lists, null for unavailable y=1, both allowed-n masks, the exact overlap/profile dot/base off-diagonal, edge ID and endpoints; diagonal/eta tables and full rejection lists are preserved.",
+    "exported_rows": [
+      "If the eligible y=1 state has no passing n, y_ab=0 is valid because that edge activates both selectors.",
+      "If neither available y state has a passing n, x_a+x_b<=1 is valid.",
+      "If y=0 has no passing n and eligible y=1 has one, y_ab>=x_a+x_b-1 is valid."
+    ],
+    "kernel_binding": "All115440 diagonal/off-diagonal entries followed by Y=-540 reproduce accepted primitive value SHA91017b1ad1ea6ff3433e91030586ec820f939a158f8cf3aab0cbf77e4ef574ed.",
+    "off_diagonal": "2*(z_ab-540*y)-180*(2-s-n-y)+30*eta(a).eta(b); expanded y coefficient -900.",
+    "old_zero_usage": "The1884 accepted literal zeros are used only to label already-zero and not-in-that-family edge deductions. They do not prune the census or decide determinant acceptance.",
+    "pair_index": "a*(959-a)/2+b-a-1 is the complete480-signature upper off-diagonal order for a<b.",
+    "source_sha256_and_byte_count_checked": true,
+    "state_scope": "All114960 unordered distinct pairs; y=0 always; y=1 only for an original eligible edge; every integer n from0 through2-s-y.",
+    "theorem": "L=(S^2-9S)/81=(2/3)S-R+eta^T eta/6 is PSD; N=60S and B=180L=2N-180R+30eta^T eta."
+  },
+  "schema": "conway99.f0.spectral-gap-pair-census-independent-source-review.v1",
+  "source": {
+    "bytes": 8072,
+    "git_blob": "83167462867c95957756c6c3bcd700b9ebfeda59",
+    "path": "experiments/workspace/root_prism_free_f0_spectral_gap_pair_census_v8.js",
+    "sha256": "0babfb05881141e10d1ad0eb2bba6d6df839b83291fd6f29af2ec2fccafbf242"
+  },
+  "status": "PASS_SOURCE_BOUND_COMPLETE_PAIR_STATE_CENSUS_REVIEW",
+  "theorem": {
+    "bytes": 13581,
+    "git_blob": "168ca05d66609a2ac7027d3958a4f22c63385e1c",
+    "path": "research/root_prism_free_f0_spectral_gap_pair_minor.md",
+    "sha256": "169a4b0c8ba1381302d0eeacb449599a5e4913cd6a55a24bb711e5d4126829ce"
+  },
+  "theorem_independent_review": {
+    "bytes": 6211,
+    "full_receipt_read_by_this_reviewer": false,
+    "git_blob": "4358f7123e3459d78d0efc1670da8031c1fc989d",
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-minor-independent-review01.json",
+    "receipt_from_author": true,
+    "sha256": "9132b5b87497a608e40ea07361257c963731a5dc758f41ba1d9605726af18099"
+  }
+}

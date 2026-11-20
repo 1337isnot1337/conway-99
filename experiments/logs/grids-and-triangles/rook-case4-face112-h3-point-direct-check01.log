@@ -1,0 +1,90 @@
+{
+  "status": "PASS: independent exact full H3 selector point arithmetic",
+  "source_sha256": "cdf6360fd04c81280d597aa150bb3b0205de0207aa8c81f914331ceff0ed5a92",
+  "input_bindings": {
+    "model": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/model.json",
+      "1928eb76274865e219747f631fee2d7a327ed7acd3a845986844be13c9e34265"
+    ],
+    "arrays": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/arrays.npz",
+      "4e2de2786d3036cf995953791192500cb4aaa5b0c5079f3d97ea465a4cf64e46"
+    ],
+    "model_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02-cold-replay.json",
+      "56864810924bacb6b331db728a4ce32810d8e6f2dfe7c196e0a73e0b2f583a97"
+    ],
+    "numerical_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01-replay.json",
+      "e682e859b538e97a40786c445fa628cc26dd3a962172d0308b29d0cab48a2de5"
+    ],
+    "candidate": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-basis-run01/candidate.json",
+      "cecacaaa1cb6974dd898f1d2b69be32a06e44e9b89a1b45e35717bc347d3b4e8"
+    ],
+    "native": [
+      "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    ],
+    "covers": [
+      "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lazy-native-registry.bin.gz",
+      "c32e31d9ce6ec6168cea1c9f6c6ea4165a2ca7a8f2144a59a31e5a1d6da7b543"
+    ],
+    "failed_cold_log": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-basis-run01-replay.log",
+      "a00941c98b51f697db63b2349ebfc2689b5119a866c5cbc691c75be9347dd433"
+    ]
+  },
+  "seconds_limit": 60,
+  "model_rebuilt": false,
+  "subject_source_imported": false,
+  "optimizer_calls": 0,
+  "linear_solve_calls": 0,
+  "exact_point_verified": true,
+  "numpy_version": "2.3.5",
+  "preparation_sha256": "443bcdab6efd61027cd43edaac753d038c1986286b6faf06a0ed6f69a3634a46",
+  "exact_arithmetic": {
+    "status": "PASS: independent exact full H3 selector point arithmetic",
+    "base_CSR": {
+      "rows": 166011,
+      "terms": 10767194,
+      "maximum_coefficient_absolute": 1159,
+      "maximum_row_terms": 228,
+      "proved_absolute_product_and_partial_sum_bound": "4621284176040348",
+      "proved_scaled_endpoint_absolute_bound": "1561862239243298",
+      "signed_int64_maximum": "9223372036854775807",
+      "row_activity_sha256": "7ba715eb86cf86622f9768b814284f23a50c48cb21469fb03d110b81e380c79b"
+    },
+    "maxmin_extension_rows_checked": 1102,
+    "full_face_rows_checked": 167113,
+    "full_variable_bounds_checked": 1103,
+    "original_native_family_counts": {
+      "Gram": 630,
+      "signature": 186,
+      "triple": 1365,
+      "Gram_conflict": 30,
+      "uncapped_row_cut": 60
+    },
+    "original_covers_checked": 178533,
+    "raw_registry_sha256": "3b819e29bc9aacdb5217b151f32b35cb186aa3b8a93a37784edc912ddac36736",
+    "little_endian_signature_bit_order": true,
+    "all_guard_columns_checked": true,
+    "safe_integer_sum_bound": "32937858431042",
+    "cover_activity_sha256": "ef111a38305bdc83f7261489d6708ba08e1cb57d22e6c3643fc4889c8dfdb787",
+    "all_original1214_bounds_and112_zeros_checked": true,
+    "population": 64,
+    "both_unit_sums_checked": true,
+    "all_four_pair_bounds_checked": true,
+    "H3_range_checked": [
+      1,
+      3
+    ],
+    "H3_numerator": "27131679103",
+    "common_denominator": "27131679103",
+    "t_numerator": "296623030",
+    "strictly_positive_t": true,
+    "binary_incidence_or_graph_claimed": false,
+    "case4_excluded": false
+  },
+  "elapsed_seconds": 18.874499456003832
+}

@@ -1,0 +1,87 @@
+{
+  "schema": "f0-32-PSD-cut-model-query-preparation-publication-v1",
+  "status": "FROZEN_PREPARATION_NO_PRODUCTION_QUERY",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_model.py",
+      "sha256": "1c21e5eb27db84dba33f782c7755e18433b2ce087328b87d89f74a0698090a8b",
+      "bytes": 8940
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_exact.py",
+      "sha256": "9834bf571545ab401cc7667e818a19c956d09b4636d577cc5de961d313be746b",
+      "bytes": 13609
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_query.py",
+      "sha256": "5e9ebe327f6ae5ccbb85d0697faca359b9517d17b9a8f0ccf375317eab1e44b3",
+      "bytes": 19303
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_replay.py",
+      "sha256": "c8dc5e4a529cdb72652b1805c8d19d22de2c22c0e3e8fe43acca33c2e2b111b8",
+      "bytes": 14627
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_query_controls.py",
+      "sha256": "a7507671264186b7ff004a34dc850cdf183e4276975c44fbf3579427f92cb405",
+      "bytes": 5277
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-model01.json.gz",
+      "sha256": "3302546078e2277c8ce30d032110bb527c6a986a74f76fc1f78451bf4da4b804",
+      "bytes": 1176921
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-model01-preparation.json",
+      "sha256": "5f891adab947766877a39c20ce5d1e49ee23d59952cf9f66cf28d6da76d1824b",
+      "bytes": 1271
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-model01-cold-replay.json",
+      "sha256": "85d8d1b49c3c020f340dffc217758275d1d9bfb0ab6294cdc3cb34ba83872d66",
+      "bytes": 1275
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-preparation.json",
+      "sha256": "69190862dc537ec7c98d05f2e3c33ee33813334936db894332a4b7aa7a94c585",
+      "bytes": 2893
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-cold-preflight.json",
+      "sha256": "b90a1b33c6cfdad1e081afdb8fc9463890c4537cec8154f6577a651c4a2991be",
+      "bytes": 5701
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-focused-controls.json",
+      "sha256": "7ed5af3ca4e67a93de6c76764a2cb13ff897c421834da49813cfd7888d8a3d38",
+      "bytes": 3051
+    },
+    {
+      "path": "research/root_prism_free_f0_selector_psd_model.md",
+      "sha256": "aa755ae696adeef0bc58bd69647891075ae154d79bffda9ddc6d98646b50c311",
+      "bytes": 6256
+    }
+  ],
+  "scope": {
+    "component": 0,
+    "split_shell": "18+18",
+    "global_prism_and_F_zero": true,
+    "all480_selectors_free": true,
+    "other_component_and_alignment_free": true,
+    "full_PSD_cone_enforced": false,
+    "exact_PSD_directions": 32,
+    "optimizer_calls": 0
+  },
+  "model_sha256": "d098a4b84405823aa38e9d2def7b675c6166507f7350937f1dc0f65af7274dcd",
+  "matrix_sha256": "b49a35a0c19e43a70bc8957f0fe09e03f17113ff67caab40a4d4fa63307cca01",
+  "numerical_row_scales_sha256": "7d9c593cbf3e2ab127bc37575029acf236edc21018e9e5a6e5d8199f7b5ebc57",
+  "proposed_query_limits": {
+    "one_numerical_call_including_setup_seconds": 180,
+    "one_exact_stage_seconds": 60,
+    "coordinator_runtime_gate_required": true
+  },
+  "prior_scan_terminal_manifest_sha256": "adf3556444c28e9e929dd26d46913806c75c55645274c87f3d6c43bf8f2aec7f",
+  "supersedes_unpublished_manifest_sha256": "f8da4b198c3a6e6d60288da15a3191413a553aff351caae232be3dcd1578d1a2",
+  "change": "Only unpublished note inline-math delimiters were corrected; all mathematical sources, models, and reports are unchanged."
+}

@@ -1,0 +1,106 @@
+{"direct_cycle_matrices_checked": 8, "independent_partitions_checked": 30, "independent_spectra_checked": 12, "survivors": [{"cycles": [6, 6, 6], "spectra": 1}, {"cycles": [6, 6, 6, 6], "spectra": 3}, {"cycles": [6, 6, 12], "spectra": 3}, {"cycles": [12, 12], "spectra": 2}, {"cycles": [6, 6, 6, 9], "spectra": 3}], "status": "exact agreement"}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/transversal_constraints_certificates.py
+{"h": 20, "universal_axis": 5, "rows": 331, "columns": 37241, "dot_rhs": 4, "max_column": 0, "spectral_filter": false, "case": 27, "atlas": 1078}
+{"h": 20, "universal_axis": 1, "rows": 331, "columns": 37100, "dot_rhs": 4, "max_column": 0, "spectral_filter": false, "case": 28, "atlas": 1079}
+{"h": 20, "universal_axis": 0, "rows": 331, "columns": 37336, "dot_rhs": 4, "max_column": 0, "spectral_filter": false, "case": 29, "atlas": 1080}
+{"h": 20, "universal_axis": 3, "rows": 331, "columns": 37200, "dot_rhs": 4, "max_column": 0, "spectral_filter": false, "case": 30, "atlas": 1081}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/transversal_constraints_hemisphere_verify.py
+{"vertices": 21, "edges": 35, "independence_number": 7, "independent_set": [0, 2, 4, 7, 11, 15, 19], "core_vertices": 36, "exact_q_positive_pivots": ["20", "91/5", "139/7", "2496/139", "59/3", "23935/1534", "5541228/311155", "23545496/1385307", "40108794/2943187", "248808376/20054397", "2930980925/248808376", "935750016/117239237", "165369859/14621094", "31173787856/4134246475", "23306962320/1948361741", "23835966124/1456685145", "46807588928/5958991531", "5870344097/731368577", "57560617280/5870344097", "6708076303/899384645", "30860768688/6708076303"], "exact_p_positive_pivots": ["50", "2331/50", "342/7", "15725/342", "802/17", "4205293/89022", "7029460648/155595841", "301275133935/7029460648", "841171751832/20085008929", "11500948333605/280390583944", "32393562947610/766729888907", "91432003467495/2159570863174", "198967809520140/6095466897833", "389001029964465/13264520634676", "924873367044600/25933401997631", "17401934819961/456727588664", "696239642275180/17401934819961", "4068390163637035/139247928455036", "28201848618641160/813678032727407", "62454026614852935/1880123241242744", "42796375846461140/1387867258107843"], "full_projector_ranks": [35, 35], "schur_identities_verified": true}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/verify_coupled_counting.py
+17 integer counting certificates verified; core counts 2 3 0 12 0
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/coupled_zero_replay.py
+Saved high/low partial witnesses: 447
+e0_a0_b1_c0_d1 15
+e0_a1_b2_c0_d0 182
+e0_a2_b0_c0_d1 54
+e0_a2_b0_c1_d0 4
+e0_a3_b1_c0_d0 151
+e0_a5_b0_c0_d0 26
+e1_a0_b3_c0_d0 2
+e1_a1_b1_c0_d1 4
+e1_a2_b2_c0_d0 9
+Verified forest: e0_a3_b1_c0_d0 core 0 orbit 1
+Verified forest: e0_a5_b0_c0_d0 core 0 orbit 2
+Verified forest: e0_a2_b0_c0_d1 core 1 orbit 3
+Verified forest: e0_a1_b2_c0_d0 core 1 orbit 12
+Verified forest: e1_a2_b2_c0_d0 core 2 orbit 1
+Verified forest: e0_a0_b1_c0_d1 core 2 orbit 58
+Verified forest: e0_a2_b0_c1_d0 core 3 orbit 23
+Verified forest: e1_a1_b1_c0_d1 core 4 orbit 41
+Verified forest: e1_a0_b3_c0_d0 core 4 orbit 89
+Verified forest: e0_a0_b1_c1_d0 core 1 orbit 2
+Verified forest: e1_a0_b0_c0_d2 core 3 orbit 29
+PASS: eleven exact H/Z witnesses, each using an actual core overlap matrix.
+Scope: these witnesses do not choose low/zero or low/low edges.
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/coupled_zero_gram.py --verify
+PASS: 265 exact negative quadratic certificates.
+Scope: fixed H/Z partial points only; no incidence template excluded.
+Other saved points: 182 (no negative certificate recorded; no PSD assertion made).
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/coupled_zero_row_certificate.py --verify
+PASS: row certificate for core 0 orbit 1 zero vertex 0
+Dual column minimum: 0 ; right-hand side: -1
+Thus a nonnegative neighborhood row would imply 0 <= -1
+Scope: this fixed H/Z and H/L point only, not its incidence template.
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/coupled_shells_linear.py --replay experiments/workspace/coupled-shells-linear-certificates.json --orbits experiments/logs/eigenlattices/coupled-shells-orbits.json
+{"core": 2, "orbit": 31, "exact_branches_replayed": 12}
+{"core": 3, "orbit": 75, "exact_branches_replayed": 7}
+{"core": 4, "orbit": 136, "exact_branches_replayed": 4}
+{"core": 4, "orbit": 159, "exact_branches_replayed": 3}
+{"core": 4, "orbit": 165, "exact_branches_replayed": 2}
+{"core": 4, "orbit": 166, "exact_branches_replayed": 3}
+{"core": 4, "orbit": 186, "exact_branches_replayed": 4}
+{"core": 4, "orbit": 187, "exact_branches_replayed": 6}
+{"core": 4, "orbit": 204, "exact_branches_replayed": 6}
+{"core": 4, "orbit": 214, "exact_branches_replayed": 5}
+{"core": 4, "orbit": 225, "exact_branches_replayed": 5}
+{"core": 4, "orbit": 33, "exact_branches_replayed": 2}
+{"core": 4, "orbit": 35, "exact_branches_replayed": 2}
+{"core": 4, "orbit": 64, "exact_branches_replayed": 0}
+{"exact_template_exclusions_replayed": 10, "exact_branch_certificates_replayed": 61}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/coupled_shells_theta.py --verify experiments/workspace/coupled-shells-zero-theta.json
+catalog order 1 types 1
+catalog order 2 types 2
+catalog order 3 types 4
+catalog order 4 types 9
+catalog order 5 types 21
+rank 34: 85 rational inequalities verified; norm14=norm16=0
+catalog order 1 types 1
+catalog order 2 types 2
+catalog order 3 types 4
+catalog order 4 types 9
+catalog order 5 types 21
+rank 36: 85 rational inequalities verified; norm14=norm16=0
+catalog order 1 types 1
+catalog order 2 types 2
+catalog order 3 types 4
+catalog order 4 types 9
+catalog order 5 types 21
+rank 38: 85 rational inequalities verified; norm14=norm16=0
+catalog order 1 types 1
+catalog order 2 types 2
+catalog order 3 types 4
+catalog order 4 types 9
+catalog order 5 types 21
+rank 40: 85 rational inequalities verified; norm14=norm16=0
+catalog order 1 types 1
+catalog order 2 types 2
+catalog order 3 types 4
+catalog order 4 types 9
+catalog order 5 types 21
+rank 42: 103 rational inequalities verified; norm14=norm16=0
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/completion_constraints_rows.py --replay experiments/workspace/completion-rows-case5-certificate.json
+{"exact_certificates_replayed": 4, "case": 5}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/completion_constraints_edges.py --replay experiments/workspace/completion-core5-edge-certificate.json
+{"case": 5, "incidence_columns": 72, "edge_variables": 1677, "status": "integer incidence valid; symmetric edge completion exactly excluded"}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/completion_constraints_propagation.py --replay experiments/workspace/completion-propagation-certificate.json
+{"case": 0, "exact_signature_exclusions": 50, "survivors": 5210}
+{"case": 1, "exact_signature_exclusions": 0, "survivors": 5071}
+{"case": 2, "exact_signature_exclusions": 30, "survivors": 4780}
+{"case": 3, "exact_signature_exclusions": 24, "survivors": 5358}
+{"case": 4, "exact_signature_exclusions": 0, "survivors": 5118}
+{"case": 5, "exact_signature_exclusions": 36, "survivors": 4500}
+{"case": 6, "exact_signature_exclusions": 32, "survivors": 5044}
+{"case": 7, "exact_signature_exclusions": 0, "survivors": 4928}
+{"total_exact_signature_exclusions": 172}
+"/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python" experiments/workspace/global_grid_flags.py --verify experiments/logs/session-ab2f/global-grid-flags-integral.json
+exact aggregate witness checked: 120 grids; includes all-red bound seven

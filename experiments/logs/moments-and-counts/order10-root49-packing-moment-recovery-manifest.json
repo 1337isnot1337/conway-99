@@ -1,0 +1,73 @@
+{
+  "status": "FROZEN_EXACT_ROOT49_MOMENT_DISTRIBUTION_AND_REPLAY",
+  "files": [
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root49-public-recovery-inputs.json",
+      "git_blob": "e37ba84dab96432460fd4360af0d4de673be1649"
+    },
+    {
+      "path": "experiments/workspace/root49_packing_moment_recovery_check.js",
+      "git_blob": "d547df71ef544fc7e36a8580bc9f7bdc311d6871"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root49-packing-moment-recovery-preparation.json",
+      "git_blob": "051d30abea64b1e4060e51f103c619844ba864e7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root49-packing-moment-recovery-result.json",
+      "git_blob": "1b80dd8bc11ac4e396d987431fd93e56f9a04eb1"
+    },
+    {
+      "path": "experiments/workspace/root49_packing_moment_recovery_replay.js",
+      "git_blob": "598961394729a55d101e0ceaa7604e79217cce61"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root49-packing-moment-recovery-replay.json",
+      "git_blob": "7f0882f48c2f269650866d013c70c54e234eacd7"
+    },
+    {
+      "path": "research/grids-and-triangles/root49_packing_moment_recovery.md",
+      "git_blob": "17216d4726b31f9b2c1a1e527b1ddd54e23b0e4d"
+    }
+  ],
+  "referenced_immutable_inputs": [
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-other-roots-scope01.json",
+      "git_blob": "4bc0045ae1447160dbf667a1918e32a9f4e3c454"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json",
+      "git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+      "sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+    }
+  ],
+  "exact_result": {
+    "root": 49,
+    "atoms": 80,
+    "orbits": 19,
+    "positive_integer_masses": 74,
+    "zero_masses": 6,
+    "negative_masses": 0,
+    "labelled_root_mass": "11975040",
+    "normalized_probability_common_denominator": "11975040",
+    "individual_equations": 80,
+    "quotient_equations": 19
+  },
+  "preparation": {
+    "raw_degree_at_most_four_monomials": 256,
+    "valid": 80,
+    "literally_and_coefficientwise_zero": 176,
+    "five_subset_exclusions": 126,
+    "actual_root_automorphisms": 6,
+    "unrooted_types": 19
+  },
+  "separate_replay": {
+    "subject_imported": false,
+    "optimizer_called": false,
+    "graph_or_tensor_generation_repeated": false,
+    "all_mass_and_moment_arithmetic_exact": true
+  },
+  "production_optimizer_calls": 0,
+  "further_roots_queried": false,
+  "full_graph_existence_resolved": false
+}

@@ -1,0 +1,70 @@
+{
+  "status": "exact case4 Gram witness and fresh replay frozen",
+  "artifacts": [
+    {
+      "path": "experiments/workspace/rook_case4_gram_support_reconstruction.js",
+      "git_blob": "4b13e03a1621cc8603d0255f3977ea5791bc8eeb",
+      "sha256": "a29bf85f365778b411f772fa6223c3bd941115b38d681f82c31fa0cbe23fe5e1"
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-gram-support-input.json",
+      "git_blob": "de630b50df6da14820498a1d30b0a5ee031d5c1a",
+      "sha256": "d044f863229f295b89474ce1604ae0691bf382798aa2747ea8f7e0ebee7227b4"
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-gram-support-preparation.json",
+      "git_blob": "3347f0bf7bb1af3fbb6f9e09557f5f817dd583e0",
+      "sha256": "951792131dce02c60d57427c39d631ddb67f7f396576d933a5199b9bdcc0647c"
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-gram-support-result.json",
+      "git_blob": "b0bc5e43f768e7f082fe93d87f2a429281e10a20",
+      "sha256": "0b2f1ac00015b12e612ae29a3f48c67c15d773365152cbc464d3f31f3a37957b"
+    },
+    {
+      "path": "experiments/logs/session-ab2f/rook-case4-gram-support-replay.json",
+      "git_blob": "04fd3a9c93508bc804259b25fcd62f8695fd6dfa",
+      "sha256": "f43669c38d4b5c0c11975a211d944b23b089b9a02a789abd35a4f5dc5a54864c"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_exact_gram_point.md",
+      "git_blob": "9f6513dcbe5d5323753b8eb3e50f904a8cc13543",
+      "sha256": "065a93233a371c12574f165ee1c0fb6636a98fcb896d92e5062acd62021b9940"
+    }
+  ],
+  "resource_bound": {
+    "minor_order": 285,
+    "free_coordinates": [
+      {
+        "support_position": 285,
+        "original_column": 1209,
+        "numerator": "187003346196",
+        "denominator": "1000000000000"
+      },
+      {
+        "support_position": 286,
+        "original_column": 1210,
+        "numerator": "8082175193",
+        "denominator": "1000000000000"
+      }
+    ],
+    "minor_coefficients": "0 or1",
+    "rhs_absolute_upper_bound": "14000000000000",
+    "determinant_absolute_bound": "r! by the Leibniz formula",
+    "factorial_bits": 1919,
+    "all_Bareiss_and_backsubstitution_temporary_bound_bits": 3889,
+    "maximum_prepared_bits": 4096,
+    "derivation": "Each intermediate Bareiss coefficient is an integer minor, bounded by r!; the augmented column contributes at most rhsBound. A subtraction needs at most2(r!)^2 rhsBound; an adjugate back-substitution accumulator at most(r+2)(r!)^2 rhsBound."
+  },
+  "scope": {
+    "all630_Gram_equations": true,
+    "nonnegative_rational_weights": true,
+    "individual_upper_bounds": true,
+    "original_signature_or_triple_capacities": false,
+    "exterior_row_cuts_or_covers": false,
+    "binary_incidence_or_graph": false,
+    "case4_excluded": false
+  },
+  "optimizer_calls": 0,
+  "tree_or_ref_mutation": false
+}

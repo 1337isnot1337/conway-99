@@ -1,0 +1,93 @@
+{"phase": "all_cover_witnesses_replayed_and_stream_saved", "elapsed_seconds": 18.451294586997392}
+{"phase": "complete_original_domain_and_rows_reconstructed", "elapsed_seconds": 19.9506931169999}
+{"phase": "adding_native_covers", "elapsed_seconds": 21.986454055997456}
+{"phase": "adding_native_covers", "elapsed_seconds": 23.022250111996982}
+{"phase": "adding_native_covers", "elapsed_seconds": 24.421411470997555}
+{"phase": "adding_native_covers", "elapsed_seconds": 25.43518655799926}
+{"phase": "adding_native_covers", "elapsed_seconds": 26.3733725159982}
+{"phase": "adding_native_covers", "elapsed_seconds": 27.363482749999093}
+{"phase": "adding_native_covers", "elapsed_seconds": 28.35091754399764}
+{"phase": "adding_native_covers", "elapsed_seconds": 29.33780140700037}
+{"phase": "adding_native_covers", "elapsed_seconds": 30.07829694300017}
+{"phase": "adding_native_covers", "elapsed_seconds": 30.951451965996966}
+{"phase": "complete_native_model_validated", "elapsed_seconds": 31.74740156899861}
+{"phase": "complete_exported_proto_audit_passed", "elapsed_seconds": 41.61009925399776}
+{
+  "status": "PASS: cold full native model and all exported constraint bytes replayed",
+  "source_hashes": {
+    "complement_rook_35core_case0004_coordinate_cover_overlay.py": "5597089c00a15f72927f31c8b05f5a6bed1198a0d7ebc16aacaeb6cd39cb1c4a",
+    "complement_rook_35core_case0004_coordinate_cover_query.py": "eb352386f55c5a1fd6ddb9c692ad934d8eef87904c00e86122172dc1ebc1f9d8",
+    "complement_rook_35core_case0004_coordinate_covers.py": "f4692deb00982e7f3a3153faafc2cc6084db0c5827ff12d11beaf5e3d493357a",
+    "complement_rook_35core_case0004_intrinsic_rows.py": "24eb86e47e6f5a741721fe9174e7d3762bc74edd290c89d489dd5ddedb900c11",
+    "complement_rook_35core_case0004_native_cpsat.py": "4462dae913abcb736c5ba5f7cffc3f3e7d50b748826cab3c89fffbfd3bd0e3eb",
+    "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+    "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "model_sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476",
+  "runtime_binding_sha256": "6295906f5cc9f16e7442cd657146aa550b9416ee1152bb22a847e9576cf3ec8c",
+  "primary_inventory_sha256": "5a6af30f47826df629a3795ceea0a0a91b853cf8149860355ce1bd17ac0094b2",
+  "binary_proto_sha256": "b98aa8f1b6ea6e156e5bccb19b88080e543e9514e9797627813a684ff3d7fc73",
+  "proto_audit": {
+    "status": "PASS: all exported Boolean variables and every native constraint match exact inputs",
+    "variables": 1214,
+    "constraints": 180804,
+    "constraint_type_counts": {
+      "at_most_one": 1551,
+      "bool_and": 234,
+      "bool_or": 178563,
+      "linear": 456
+    },
+    "zero_based_constraint_intervals_end_exclusive": [
+      [
+        "Gram",
+        0,
+        630
+      ],
+      [
+        "original_signature",
+        630,
+        816
+      ],
+      [
+        "core_triple",
+        816,
+        2181
+      ],
+      [
+        "Gram_conflict",
+        2181,
+        2211
+      ],
+      [
+        "uncapped_row_cut",
+        2211,
+        2271
+      ],
+      [
+        "coordinate_cover",
+        2271,
+        180804
+      ]
+    ],
+    "all_630_Gram_positions_retained": true,
+    "tautological_empty_zero_Gram_rows": 234,
+    "all_1365_nontrivial_triple_capacities_retained": true,
+    "quota_one_implied_triples_now_explicit": 1353,
+    "original_uncapped_integer_row_cuts": 60,
+    "native_literal_rule": "positive DIMACS v maps to v-1; negative DIMACS v maps to v",
+    "no_extra_proto_fields_enforcement_objective_assumptions_hint_or_symmetry": true,
+    "binary_proto_bytes": 27434194,
+    "binary_proto_sha256": "b98aa8f1b6ea6e156e5bccb19b88080e543e9514e9797627813a684ff3d7fc73"
+  },
+  "main_case4_solver_queries": 0,
+  "tiny_controls_repeated": false,
+  "case4_excluded": false,
+  "elapsed_seconds": 41.65001120099987,
+  "peak_rss_kib": 442732
+}
+replay_sha256 a6627477382b47013a0b26984826a565df879b0f226dc2ad505da318e751b5a7

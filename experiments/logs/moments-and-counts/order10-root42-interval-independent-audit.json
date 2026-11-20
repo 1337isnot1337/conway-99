@@ -1,0 +1,45 @@
+{
+  "status": "PASS: independent root42 domain, affine identities and interval controls",
+  "domain_subsets_checked": 1024,
+  "all_high_masks_checked": 42,
+  "atoms": 253,
+  "lower_moments": 241,
+  "fifth_atoms": 12,
+  "complete_fifth_orbits": 1,
+  "fifth_stabilizer": 2,
+  "affine_constants_and_slopes_checked": 253,
+  "symbolic_zeta_equations_checked": 253,
+  "coefficientwise_stabilizer_checks": 253,
+  "affine_sparse_terms": 1575,
+  "frozen_product_rows_bound": 67,
+  "small_even_interval_controls": 3969,
+  "count_point_loaded": false,
+  "optimizer_called": false,
+  "subject_prepare_or_query_called": false,
+  "scope": "Complete necessary root42 presence model; no decorated-edge model or graph-existence assertion.",
+  "elapsed_ms": 84,
+  "independent_source": {
+    "git_blob_sha": "c49f2e121f0994b18a53bdc8f55a7ad8bfbe0562",
+    "sha256": "b27c7615c8055f8ac71e2c646f0c6e0aa6d9ce0077f770b1cfa75d3a69de2098"
+  },
+  "subject_source": {
+    "git_blob_sha": "9f78b4b3075d3f5c991ce47379e593d11f7f992b",
+    "sha256": "22b7c85a280c2863cfc4758aea3ef0f0fcc87cd6fa1c3f3562dc9160c5aed5e3"
+  },
+  "preparation": {
+    "git_blob_sha": "7f6b7952f81dc6c1ee0f25e12379e3dcd3656979",
+    "sha256": "d6e6ab225e8f74ef0cc59a1506156b4db9451840c2b2074b10adadf1abe3f598"
+  },
+  "input": {
+    "git_blob_sha": "ad89299823eef485ceeeea4824ce0eb9ebacbb3a",
+    "sha256": "b94f3b16416e9f9524bfd0aa205e351b4a094242051955243e94a126ffecfa71"
+  },
+  "read_only_mathematical_review": {
+    "full_interval_source_read": true,
+    "full_scope_source_read": true,
+    "normalization": "Distinct masks fix free vertices, so raw product multiplicities multiply full unrooted Aut(F).",
+    "completeness": "All higher moments are the12 maximum atoms in oneS4 orbit; all lower moments are bound. Invertibility of the full Boolean-subset zeta transform leaves exactly one scalaru.",
+    "divisibility": "Precomposition by the exact-state stabilizer acts freely on injective root embeddings. Thus maximum-stateu is even; coefficientwise checks show this also supplies every smaller-state stabilizer congruence.",
+    "certificate_signs": "Opposite-slope bounding atoms combine with positive coefficients to cancelu. Even interval failure is kept distinct from a real linear inequality."
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASS: independent complete read-only source review",
+  "subject_paths": {
+    "Python converter": "experiments/workspace/root_prism_free_f0_lossless_registry_input.py",
+    "JavaScript reader": "experiments/workspace/root_prism_free_f0_lossless_registry_input.js"
+  },
+  "subject_sha256": {
+    "Python converter": "795836b0bff4e9ad55e1e2c44954d719058fcaec81e0a84dbd9fb668dafdcff2",
+    "JavaScript reader": "fce582be152a5257352a9fd49536e8b26e6ba21a579514542c2a3e883e7d27e9"
+  },
+  "checked": [
+    "Integer-only Python parsing rejects fractional/exponential/nonfinite tokens and duplicate keys; arbitrary precision is retained.",
+    "Safe integers remain JSON numbers; larger signed integers receive an unambiguous reserved singleton tag, and original tag collisions are rejected.",
+    "The JavaScript reader refuses unsafe Number values and noncanonical/malformed tags, then reconstructs large integers with BigInt.",
+    "The independent canonical encoder preserves numeric-looking strings, escapes, Unicode code units and Python code-point key order; integer negative zero normalizes to zero.",
+    "Original compressed and decompressed input hashes, canonical original hashes, exact statistics and converter/transfer source bindings are checked.",
+    "This transport changes no mathematical coefficient, cut, model or domain."
+  ],
+  "scope": {
+    "subject_imported": false,
+    "controls_rerun": false,
+    "registry_reparsed": false,
+    "model_rebuilt": false,
+    "optimizer_called": false
+  },
+  "qualification": "This is a source and contract review. The author control/run artifacts were not rerun."
+}

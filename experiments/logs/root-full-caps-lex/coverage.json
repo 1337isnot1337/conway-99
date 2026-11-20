@@ -1,0 +1,1721 @@
+{
+  "scope": "complete normalized-matching stabilizers; coordinate relabelings only",
+  "axes": 6,
+  "local_endpoints": 12,
+  "ambient_group_order": 46080,
+  "ambient_group_sha256": "5eae02bdd14376de3d7c1e4b024d9bcc38e448c3ccac072287f38dd3090789ef",
+  "stabilizer_cases": 11,
+  "source_hashes": {
+    "root_full_caps_coverage.py": "3e12b81ebe8b3301cefec801aae60bbd41c12481957bbf25c019bc03a6884cb2",
+    "root_full_caps_lex_coverage.py": "9f5ca4aed852b5fbf29a65dd02244bc83a5ceab99254e4d66c831da6ac16c27a"
+  },
+  "cases": [
+    {
+      "index": 0,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "canonical_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          9
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "stabilizer_order": 46080,
+      "matching_orbit_size": 1,
+      "stabilizer_sha256": "5eae02bdd14376de3d7c1e4b024d9bcc38e448c3ccac072287f38dd3090789ef",
+      "generator_count": 11,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 4,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            8,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 5,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            11,
+            10
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            1,
+            2
+          ],
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            2,
+            3
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            3,
+            4
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            6,
+            7,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            4,
+            5
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            8,
+            9
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 1,
+      "partition": [
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "canonical_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          7
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 1536,
+      "matching_orbit_size": 30,
+      "stabilizer_sha256": "3ebb165915ac36f8e4f96efac1169da0f320bbfdf55195f4cdaa188dad316063",
+      "generator_count": 9,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 4,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            8,
+            9
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 4,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            8,
+            11,
+            10
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            1,
+            2
+          ],
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            2,
+            3
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 2,
+      "partition": [
+        1,
+        1,
+        1,
+        3
+      ],
+      "canonical_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 288,
+      "matching_orbit_size": 160,
+      "stabilizer_sha256": "e470dceb86cf2372fb7800c0d3a91dfa7e8e3fb77fbc9901e496717f9eb240d9",
+      "generator_count": 7,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            11,
+            10,
+            9,
+            8
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            1,
+            2
+          ],
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 3,
+      "partition": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "canonical_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 256,
+      "matching_orbit_size": 180,
+      "stabilizer_sha256": "104c51e3bfcc62bf0dea40b8af21bc1194daacc49c918eb88f36d830d9f6e396",
+      "generator_count": 8,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            7,
+            6,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            8,
+            9
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 3,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            8,
+            11,
+            10
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            2,
+            3
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 4,
+      "partition": [
+        1,
+        1,
+        4
+      ],
+      "canonical_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 64,
+      "matching_orbit_size": 720,
+      "stabilizer_sha256": "42de56b75f93cfd1a0b06c5e3e13c1b2e39b620a20c19354959c7bffac9ad338",
+      "generator_count": 5,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            4,
+            5
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 5,
+      "partition": [
+        1,
+        2,
+        3
+      ],
+      "canonical_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 48,
+      "matching_orbit_size": 960,
+      "stabilizer_sha256": "5ede39d44da1a68e496495adcbda424db7a7836f93e556d3bc83b9e2b4c742cd",
+      "generator_count": 5,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            5,
+            4,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            11,
+            10,
+            9,
+            8
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 6,
+      "partition": [
+        1,
+        5
+      ],
+      "canonical_matching": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 20,
+      "matching_orbit_size": 2304,
+      "stabilizer_sha256": "734a600e362a0bde65ffb6cb37b0e4e2d387459c83eb5190477690beade88bad",
+      "generator_count": 3,
+      "generators": [
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            2,
+            3
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            3,
+            2,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 7,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "canonical_matching": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          8,
+          11
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 384,
+      "matching_orbit_size": 120,
+      "stabilizer_sha256": "978e4162b4f85daf538edb5a0148946a280c6fb93c2c8a4ed3f26ab168cde036",
+      "generator_count": 8,
+      "generators": [
+        {
+          "kind": "rotation",
+          "component": 0,
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            7,
+            6,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            10,
+            11,
+            8,
+            9
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 2,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            9,
+            8,
+            11,
+            10
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            4,
+            5,
+            6,
+            7,
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            1,
+            2
+          ],
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            8,
+            9,
+            10,
+            11,
+            4,
+            5,
+            6,
+            7
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 8,
+      "partition": [
+        2,
+        4
+      ],
+      "canonical_matching": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 32,
+      "matching_orbit_size": 1440,
+      "stabilizer_sha256": "89095643346d1951ba847d5b28db83dcc700dcdcd999ed6b0a4019b32908b7f4",
+      "generator_count": 4,
+      "generators": [
+        {
+          "kind": "rotation",
+          "component": 0,
+          "image": [
+            2,
+            3,
+            0,
+            1,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            3,
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            4,
+            5
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            5,
+            4,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 9,
+      "partition": [
+        3,
+        3
+      ],
+      "canonical_matching": [
+        [
+          0,
+          5
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          6,
+          11
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 72,
+      "matching_orbit_size": 640,
+      "stabilizer_sha256": "8b622dd8f811ac7491e8a278478546e097c706bff6a70063c87d3e82488d2919",
+      "generator_count": 5,
+      "generators": [
+        {
+          "kind": "rotation",
+          "component": 0,
+          "image": [
+            2,
+            3,
+            4,
+            5,
+            0,
+            1,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            5,
+            4,
+            3,
+            2,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        {
+          "kind": "rotation",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            8,
+            9,
+            10,
+            11,
+            6,
+            7
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 1,
+          "image": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            7,
+            6,
+            11,
+            10,
+            9,
+            8
+          ]
+        },
+        {
+          "kind": "component interchange",
+          "components": [
+            0,
+            1
+          ],
+          "image": [
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    },
+    {
+      "index": 10,
+      "partition": [
+        6
+      ],
+      "canonical_matching": [
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          9,
+          10
+        ]
+      ],
+      "stabilizer_order": 12,
+      "matching_orbit_size": 3840,
+      "stabilizer_sha256": "d7c3c5085b9c9a428811e0a3183a277a721b938abd13f3f851203414263bd2c9",
+      "generator_count": 2,
+      "generators": [
+        {
+          "kind": "rotation",
+          "component": 0,
+          "image": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            0,
+            1
+          ]
+        },
+        {
+          "kind": "reflection",
+          "component": 0,
+          "image": [
+            1,
+            0,
+            11,
+            10,
+            9,
+            8,
+            7,
+            6,
+            5,
+            4,
+            3,
+            2
+          ]
+        }
+      ],
+      "generated_closure_equals_explicit_stabilizer": true
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "schema": "conway99.f0.remote-compressed-input-recovery.v1",
+  "status": "PASS: exact public input recovery; no model or optimizer",
+  "commit": "ee0f9f143fb6a5f886c8ff4f023f8058f8f49c39",
+  "reader": {
+    "path": "experiments/workspace/f0_v8_gzip_reader.js",
+    "git_blob": "cb37f6ceec1609e819d7be3b31a79f41db219f91",
+    "sha256": "0d3727bcdddc20c13c2bac65933a43d1d374196708b0040c5371d1b6c59f5f22",
+    "bytes": 7520
+  },
+  "hash_helper": {
+    "git_blob": "e1e7eda6a06a4a4d5079ab149fb4c95429dc594f",
+    "sha256": "4d619aec18b1ba991add4e1e71fbf95c570031df185ea4efbde1782b35ffd4ef"
+  },
+  "recovered": [
+    {
+      "source_sha256": "0d3727bcdddc20c13c2bac65933a43d1d374196708b0040c5371d1b6c59f5f22",
+      "source_git": "cb37f6ceec1609e819d7be3b31a79f41db219f91",
+      "compressed_sha256": "627577aea4a25c15e5d2846242adda9c6b7c97164b7ba47fb9a2cab5d3988fd8",
+      "compressed_git": "fafc89fc74e1d4a8e0ae1f7c7c3880c0b78fba2f",
+      "raw_sha256": "eada1b8ca3b2bf991de9b2323f154d16f1eb9b232e0299380c94d27b551a49fe",
+      "raw_git": "a09c2ffa2ff13fdfa43bb93251a2cdb3c902713b",
+      "seconds": 5.397,
+      "compressed_bytes": 320319,
+      "uncompressed_bytes": 2605132,
+      "crc32": 3505311536,
+      "blocks": 12,
+      "stored_blocks": 0,
+      "fixed_blocks": 0,
+      "dynamic_blocks": 12,
+      "keys": [
+        "Fourier_columns_in_a_b_coordinates",
+        "Gram_forms",
+        "H",
+        "active_one_dimensional_characters",
+        "active_two_dimensional_representations",
+        "block_inventory",
+        "complete_literal_unordered_pairs",
+        "correlation_Fourier_delta_checks",
+        "count_or_graph_feasibility_claimed",
+        "existing_one_dimensional_products",
+        "full_matrix_literal_coefficients_checked",
+        "group",
+        "inputs",
+        "limits",
+        "literal_transports",
+        "literal_unit_vector_inversion_checks",
+        "local_mask_tables_built_or_replaced",
+        "local_mask_tables_required_for_exact_literal_realization",
+        "missing_integer_Fourier_coordinates",
+        "native_model_constructed",
+        "new_scalar_Gram_identities",
+        "new_selector_subsets_enumerated",
+        "old_six_Gram_forms_recovered",
+        "optimizer_calls",
+        "original_pair_orbits",
+        "pair_histogram_equivalence_requires_all_active_irreps",
+        "proposed_full_lift_products",
+        "proposed_full_lift_variables_before_other_changes",
+        "scalar_products_using_diagonal_metric",
+        "schema",
+        "seconds",
+        "source_sha256",
+        "stabilizers",
+        "status"
+      ]
+    },
+    {
+      "key": "inverse",
+      "path": "experiments/logs/root-prism-free/f0-character-literal-lift-preparation01.json.gz",
+      "compressed_sha256": "241cd14c61b465025c72ffcaa65af8e5c48e9e5a0eda7ea7d252e9d74b22db1e",
+      "compressed_git": "f6a9c2301f1e89eae81ec21eba7b2b162ce01f33",
+      "raw_sha256": "5d5cfd028964954ce8144c241ffee40f8111727cea1b72dbcb9ef160c7774913",
+      "raw_git": "3d6abe58700522a5badaa78efc1aaeb945463ac5",
+      "compressed_bytes": 456696,
+      "uncompressed_bytes": 3027276,
+      "crc32": 2676040388,
+      "blocks": 17,
+      "stored_blocks": 0,
+      "fixed_blocks": 0,
+      "dynamic_blocks": 17
+    },
+    {
+      "key": "characters",
+      "path": "experiments/logs/root-prism-free/f0-character-populations01.json.gz",
+      "compressed_sha256": "139d06a3383f8fc79d677972ce052ce29966e8b3406e7d1e7d1077aea7c2cef6",
+      "compressed_git": "d8ba3353b5624f2fecd6f55204a8cf63152239ca",
+      "raw_sha256": "72afbd0b54f0b12d4fd48de8c9c48bdeae77e412a643166442050077f422891e",
+      "raw_git": "7c492e9c012f04ed92d41e7cdf5e35f86a22d7b2",
+      "compressed_bytes": 228263,
+      "uncompressed_bytes": 3110490,
+      "crc32": 4287805198,
+      "blocks": 9,
+      "stored_blocks": 0,
+      "fixed_blocks": 0,
+      "dynamic_blocks": 9
+    }
+  ],
+  "native_initial_domain_extraction": {
+    "status": "PASS: exact variable-domain extraction only; no native model/solver",
+    "source_sha256": "8f05f4778240dccd1717e6af807f186249702a54814679497446969f50305ab8",
+    "compressed_sha256": "ca5e66f17bd53620fe7dd61102d43cb9e581af821c7709eae92dc90b4609a53a",
+    "raw_sha256": "9d1e6a031d5c2c83a47982477d51b34fba42edf1bbcdae1bccfa9906745badfe",
+    "compressed_bytes": 503389,
+    "raw_bytes": 3973028,
+    "crc32": 3432658144,
+    "variables": 18444,
+    "constraint_messages": 34281,
+    "top_level_fields": {
+      "2": 18444,
+      "3": 34281
+    },
+    "domains_sha256": "36d141c827822c3158b901ab07f4d9f79f4e8868eae3e4eb349d6b782e1455a9",
+    "all_endpoint_numbers_exact": true,
+    "constraint_contents_replayed": false,
+    "optimizer_calls": 0
+  },
+  "unavailable_contents_api": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+      "git_blob": "83e8ce4f6b6bfba1e94437e91896f892edb91067",
+      "content_returned": "empty",
+      "not_reconstructed_here": true
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-y-domain-overlay01/plan.json.gz",
+      "git_blob": "d6dc8aaa27609c82949d6e4f32ce165283b075b3",
+      "content_returned": "empty",
+      "not_reconstructed_here": true
+    }
+  ],
+  "full_model_replay": false,
+  "native_library_imported": false,
+  "optimizer_calls": 0,
+  "scope": "Compressed and uncompressed hashes, gzip CRC and length are verified. The native initial helper reads all variable domains and counts constraint envelopes; it does not inspect their contents."
+}

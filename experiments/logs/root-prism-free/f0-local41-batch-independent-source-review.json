@@ -1,0 +1,38 @@
+{
+  "status": "PASS: complete runner source and prepared encoding gate",
+  "reviewer": "root",
+  "runner_path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+  "runner_sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278",
+  "builder_sha256": "cf3f4e250ce9c33bbc3c1c0714f0188de012d0d4d36ae32d427d15771349a6e9",
+  "models_preparation_sha256": "2213372cd8615df2c177c08d7dfd034812eeb385a75266ada1403d331d765976",
+  "query_preparation_sha256": "57bf84bdf102444aad209bf9c7fd5e62c1fc4f7bf584fa3fac8d0b75e71627ae",
+  "complete_runner_source_read": true,
+  "gate": {
+    "production_batches": 1,
+    "maximum_centers": 41,
+    "maximum_calls_per_center": 1,
+    "per_owned_child_wall_seconds": 5,
+    "batch_wall_seconds": 60,
+    "cold_replay_seconds": 60,
+    "automatic_retry": false
+  },
+  "reviewed": [
+    "All saved instance, model and CNF bytes are bound to the complete 41-center preparation.",
+    "The center order is fixed, starts at336 and excludes the previously solved355.",
+    "Literal neighbor variables remain untied; quotient equalities are not imposed on Boolean choices.",
+    "The parent persists UNKNOWN before killing and reaping its own child.",
+    "Timer interruption and hard deadlines cannot become UNSAT.",
+    "SAT acceptance checks every CNF clause and the original local native constraints.",
+    "A raw UNSAT result requires a separately checked proof on a rebuilt CNF before any selector zero.",
+    "Cold replay rebuilds every prepared formula and checks available native witnesses."
+  ],
+  "supervisor_controls_read": {
+    "normal_exit": "CHILD_EXITED, return0, reaped",
+    "error_exit": "ERROR_CHILD_EXIT, return3, reaped",
+    "hard_deadline": "UNKNOWN_HARD_DEADLINE, return-9, reaped",
+    "earlier_late_error_exit": "Preserved as UNKNOWN; excluded from the successful control triple."
+  },
+  "review_called_solver": false,
+  "review_rebuilt_models": false,
+  "local_SAT_is_graph_completion": false
+}

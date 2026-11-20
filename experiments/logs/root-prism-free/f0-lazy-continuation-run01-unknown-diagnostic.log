@@ -1,0 +1,51 @@
+{
+  "status": "PASS: frozen UNKNOWN has no saved dual ray; recovery was not attempted on a recorded vector",
+  "source_sha256": "5f4c7c0f4424c36d5cc9cc293b36e807a0eaeb3e4d23119391ca64a90024149f",
+  "shared_helper_sha256": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf",
+  "result_sha256": "3bb89930202266409acfce6ca52949b5c370928216ce64e9123e22daf5f9e593",
+  "cold_replay_sha256": "7bd045ab660f3aedd2bd9c514c9e2fa8a91a4f07f415cebba2c133adc73b2330",
+  "shared_record_sha256": "2b7b8796a2642dc77ebea1126582c9a39497f35530856b35084c183ff75fe3b7",
+  "inventory": {
+    "primary_edges": 1220,
+    "equations": 1140,
+    "standard_form_rows": 2360,
+    "standard_form_variables": 2440,
+    "standard_form_nonzeros": 12200,
+    "data_sha256": "b5c0e2ab7e6b8130d2af32c8bfbcce2b4120a57f2ee0bb362c58018c35ae625c",
+    "rows_sha256": "40ad64af6e99c755aca4e48dd07436869a455374607ece250bb03b75081af7cf"
+  },
+  "reported_numerical_status": "HighsModelStatus.kInfeasible",
+  "reported_optimizer_calls": 1,
+  "reported_optimizer_return_seconds": 0.41443414599780226,
+  "recorded_total_shared_seconds": 2.7694404239991854,
+  "bound_source_control": {
+    "getDualRay_exists_branch_saves_hex_before_all_deficit_trials": true,
+    "getDualRay_API_status_assigned_to_discarded_name": true,
+    "exists_branch_AST_sha256": "9b417cc6108f9d3541d6d2fe0208254633d0d3a1554f99c8b634b8bc2b832eb3"
+  },
+  "inferred_getDualRay_exists_value": false,
+  "inference_scope": "normal frozen code path plus absence of numerical_ray_hex; API return status was not stored",
+  "saved_numerical_ray_available": false,
+  "saved_basis_available_in_this_record": false,
+  "per_scale_integer_rhs_values": null,
+  "per_scale_recovery_limitation": "No equality multiplier vector was saved; no scale RHS can be reconstructed.",
+  "true_feasibility_or_infeasibility_determined": false,
+  "new_proposed_separation_problem": {
+    "potential_variables": 1080,
+    "positive_capacity_variables": 1220,
+    "total_variables": 2300,
+    "edge_inequality_rows": 1220,
+    "maximum_constraint_nonzeros": 8540,
+    "bounds": "-1<=v[a,i]<=1;0<=t[a,b]<=6",
+    "constraints": "t[a,b]>=sum(i in h[b])v[a,i]+sum(i in h[a])v[b,i]",
+    "objective": "maximize sum(a,i)q[a,i]*v[a,i]-sum(eligible edges)t[a,b]",
+    "degree_redundancy": "each neighbor triple has3 coordinates;sum_i q[a,i]=24 implies degree8",
+    "certificate_rule": "integer v with exact sum(v*q)-sum_edges max(0,edge_weight)>0",
+    "need_not_extract_a_solver_dual_ray": true,
+    "save_all_proposed_potential_coordinates_before_exact_reconstruction": true,
+    "source_domain_and_control_review_required_before_query": true
+  },
+  "optimizer_or_solver_called": false,
+  "original_LP_repeated": false,
+  "frozen_UNKNOWN_unchanged": true
+}

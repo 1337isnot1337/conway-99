@@ -1,0 +1,85 @@
+{
+  "schema": "conway99.f0.exterior-four-cycle-root-review.v1",
+  "status": "PASS_CONDITIONAL_FOUR_CYCLE_DERIVATION_AND_FIXED_CORE_ARITHMETIC",
+  "proof": {
+    "path": "research/root_prism_free_f0_exterior_four_cycle_identity.md",
+    "bytes": 4984,
+    "sha256": "ee1162a2ad75b0fee893be155566c69698789fee7a62ab6a92e6c155a0f8520a",
+    "git_blob": "661ec1b57d95123031d15b6c8a0ee89cc92187b5",
+    "mode": "100644"
+  },
+  "premise": {
+    "path": "research/root_prism_free_f0_spectral_gap_pair_minor.md",
+    "git_blob": "168ca05d66609a2ac7027d3958a4f22c63385e1c",
+    "sha256": "169a4b0c8ba1381302d0eeacb449599a5e4913cd6a55a24bb711e5d4126829ce"
+  },
+  "fixed_domain": {
+    "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+    "bytes": 52094,
+    "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+    "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+    "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+    "encoding": "base64-gzip"
+  },
+  "whole_derivation_and_spectral_premise_read": true,
+  "component_trace4": 318,
+  "component_four_cycles": 6,
+  "opposite_pairs": [
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      13
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      1,
+      12
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      15
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      14
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      4,
+      17
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      5,
+      16
+    ]
+  ],
+  "exterior_trace4_constant": 8568,
+  "identity_constant": 171,
+  "fixed_component_identity_constant": 177,
+  "omitted_component_four_cycle_upper_bound": 13,
+  "native_model_changed": false,
+  "optimizer_calls": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

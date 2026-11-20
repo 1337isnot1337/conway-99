@@ -1,0 +1,136 @@
+{
+  "schema": "conway99-core-triangle-conditioning-artifacts-v1",
+  "status": "FROZEN_EXACT_TWO_BLOCK_QUERY_AND_REPLAY",
+  "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "query_source_sha256": "cd167c52b7b646a64e4faf58816212d427d1c280a45070e77a5eb8b0a29abb43",
+  "builder_source_sha256": "7fb335261db4c828bfc477c2525bc7bc098eac5ce7dab6941892256b8a48886c",
+  "model_raw_sha256": "8bd186531a14656a2ecf06857742532b26ff53fa3fb4f75cc2b6bd8322e51ef6",
+  "complete_domains": {
+    "root_types": [
+      14,
+      15
+    ],
+    "orders": [
+      41,
+      34
+    ],
+    "lower_entries": 1456,
+    "tensor_nonzeros": 11211,
+    "point_dependent_domain_pruning": false
+  },
+  "query_result": {
+    "status": "EXACT_BOTH_CONDITIONED_TRIANGLE_BLOCKS_PSD",
+    "seconds": 0.10285519999888493,
+    "nullities": [
+      17,
+      16
+    ],
+    "count_queries": 1,
+    "optimizer_calls": 0
+  },
+  "replay": {
+    "status": "PASS_COLD_EXACT_CONDITIONED_QUERY_REPLAY",
+    "seconds": 0.0482970259981812,
+    "new_tensor_enumeration": false,
+    "independent_tensor_verification_claimed": false
+  },
+  "controls": {
+    "constructor_small_hosts": 19,
+    "independent_ten_vertex_hosts": 6,
+    "induced_subsets_per_ten_vertex_host": 848,
+    "toy_matrices": 3
+  },
+  "mathematical_scope": "The two complete per-embedding core-triangle Schur blocks are PSD at the specified finite count point. No graph existence or whole-cone feasibility conclusion.",
+  "files": [
+    {
+      "path": "experiments/workspace/triangle_projector_core_triangle_conditioning.py",
+      "bytes": 13146,
+      "sha256": "7fb335261db4c828bfc477c2525bc7bc098eac5ce7dab6941892256b8a48886c",
+      "git_blob": "7c0095df8d1ce5ee2953fb04039a44a8d5c85fad"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_conditioned_host_controls.py",
+      "bytes": 5407,
+      "sha256": "d9876c51fc1fe40d730a3d475b94e2a70f62967397ff912a2c47550795e5320e",
+      "git_blob": "258ee382e0355b89163999c51506da0de7c9fc15"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_conditioned_query.py",
+      "bytes": 10236,
+      "sha256": "cd167c52b7b646a64e4faf58816212d427d1c280a45070e77a5eb8b0a29abb43",
+      "git_blob": "f361baad9154d1f2b3653d0e707981748c4bcb3e"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_core_triangle_conditioning.md",
+      "bytes": 5033,
+      "sha256": "a3cd1fa6f2fda5df3ad5b75d4c452426b1bc073e47ba3219d1b248990f4f5203",
+      "git_blob": "e0efa4dcafd0c5717b3b94b24e507c2d822f2403"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-host-controls.json",
+      "bytes": 4811,
+      "sha256": "a153f37920db545e1902efdd6a5237feb7d4b6f204b7a27f8e2fe950dae1ee09",
+      "git_blob": "182d3c4b7829cebf48584432cf9845b44defe8e5"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query-controls.json",
+      "bytes": 1200,
+      "sha256": "69e7224302ad3ecd28d10166c9a03395e2a29372cca263e49649736446de8019",
+      "git_blob": "779948a7c4975c44dce99551bdf0ffbd5137fc38"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query-preparation.json",
+      "bytes": 2690,
+      "sha256": "8f7db0b341566d9b435eb5566690b574aa645adb8326ea26f9276c922dbba965",
+      "git_blob": "1e98f6d97ef40585c95cbf3425fd9fe9f1d7cb87"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-core-triangle-conditioning-independent-review.json",
+      "bytes": 2406,
+      "sha256": "5927ca3198b51bab6bc66985257f9b5d3f45e26689f3aac102f934798d21d7ed",
+      "git_blob": "155407d9712bd6cc64687df26a9096e8b3c125ec"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-conditioned-preparation01/preparation.json",
+      "bytes": 4837,
+      "sha256": "a01a4e845fcff7a4a2c0edbe9542248f33205640f385463e853821353e8bc65a",
+      "git_blob": "9a7352e70bbea9c24251e52751263fcb9266da45"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-conditioned-preparation01/model.json.gz",
+      "bytes": 42015,
+      "sha256": "8f398368e80ff36cba74969c8526b660c21155476b7d3cd58e0f0b7c81aeb9a0",
+      "git_blob": "321fb9900e070be311020eb81ac0526d7036bf66"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query01.json",
+      "bytes": 68356,
+      "sha256": "176a4f6974754833eca479cfee4a7d93442d8c6d462a105611f07fd0b092dff4",
+      "git_blob": "afb98f9b656af3063dbe82203b4c789708bfe6e7"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query01-replay.json",
+      "bytes": 1165,
+      "sha256": "5d8330d12c1271befd8492d75674d3d20d95a9ff202c3093ac5f997c2bfdea22",
+      "git_blob": "072dde476dd69aa9a8c3d3a16fec4f9f31c2ccbd"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query01.log",
+      "bytes": 825,
+      "sha256": "68fc1f7d58c7aacf195d3dfcc99cee94312aa9076641a1c87275408593d30ce8",
+      "git_blob": "f74c7cea615248b017aad0f58481801b1d535393"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-triangle-projector-conditioned-query01-replay.log",
+      "bytes": 1165,
+      "sha256": "5d8330d12c1271befd8492d75674d3d20d95a9ff202c3093ac5f997c2bfdea22",
+      "git_blob": "072dde476dd69aa9a8c3d3a16fec4f9f31c2ccbd"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_core_triangle_conditioning_result.md",
+      "bytes": 3406,
+      "sha256": "a1ada3e130e6655e0945d01ff42a4698f182a0ebb28daeb35a0a1e21b00c0d8e",
+      "git_blob": "76571c0a04da5ac38adad1358f2bb5f326b43470"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "authorized_experiment": "one prepared 180-second continuation and exact cold replay",
+  "bindings": {
+    "experiments/logs/root-prism-free/f0-allocated-lazy-continuation-preparation.json.gz": "7eecf38db3acba31bf2e24d08937235977cce1c6c93d9426795a3f0bb713fc23",
+    "experiments/logs/root-prism-free/f0-allocated-lazy-independent-source-review.json": "764c83ad8c247cccccacb6b724cfb2f3d5cb6aef18a224b6c149b43b521a42ae",
+    "experiments/logs/root-prism-free/f0-allocated-transition-controls.json": "af709639cd4d2ee5fada0280d7c987dca1907810854d1d1f724ce58ab6d174b5",
+    "experiments/workspace/root_prism_free_f0_allocated_lazy_continuation.py": "46b30a4e7c64db612cff606bd56aa05da44356547f617e977a8fa17ac0da4c8d",
+    "experiments/workspace/root_prism_free_f0_allocated_lazy_continuation_certificate.py": "1ca1ba702f7e50aa49dba01cc6fe34bdb1f64c106abc0c5438d9c2aa397d318f",
+    "experiments/workspace/root_prism_free_f0_allocated_lazy_seed.py": "dfbb7a9b28f1077918672094a549fd15f59bcd7f3547f95be1a14d941ca0adab",
+    "experiments/workspace/root_prism_free_f0_quadratic_portfolio.py": "33e6abf18bd9f87a3814b7486294ac9e5ef1f131a332b087fe3e7207fbf46319",
+    "experiments/workspace/root_prism_free_f0_shared_reserved_fallback.py": "0685fc162e91a466ed033becb7d01259c4869f2afd9214474b4b0eae7dfcd066"
+  },
+  "checks": [
+    "Retained all 2928 exact cuts and all original explanation clauses.",
+    "Checked every retained quadratic family before each new row query.",
+    "Allocated each positive edge coefficient to an endpoint, with exact candidate violation.",
+    "Appended new shared families and replayed every transition in chronological order.",
+    "Reserved bounded separator time after one short original feasibility call.",
+    "Accepted only exact rational points or replayed strict integer separators.",
+    "Preserved fresh proof and cold DRAT requirements for any component exclusion."
+  ],
+  "solver_run_by_this_review": false,
+  "status": "PASS: allocated continuation source and exact replay reviewed"
+}

@@ -1,0 +1,314 @@
+{
+  "schema": "conway99.f0.triangle-incidence-producer-source-reuse.v1",
+  "status": "SOURCE_ONLY_APPEND_PREPARATION_WITH_EXACT_FUNCTION_REUSE_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "bytes": 64900,
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+  },
+  "parent_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+    "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b",
+    "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+    "bytes": 38102
+  },
+  "independent_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "bytes": 82846,
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+  },
+  "complete_function_inventory": [
+    {
+      "name": "canonical",
+      "kind": "text_identical_parent_function",
+      "sha256": "70947ad94be4add2a6ddc0ffacfe96cbd7f0ee2dd6086bec5f462cb7097fc2eb",
+      "lines": 2
+    },
+    {
+      "name": "sha",
+      "kind": "text_identical_parent_function",
+      "sha256": "4e627faf4b903521e935f7c6f3ae93545856f821d0e2565ba7ea6cf97d3d0e6c",
+      "lines": 2
+    },
+    {
+      "name": "digest",
+      "kind": "text_identical_parent_function",
+      "sha256": "d656a4a41d0d7c4afd0cbc322bb6173150cf709b366374cb26351bc3da1fdbc2",
+      "lines": 2
+    },
+    {
+      "name": "write_new",
+      "kind": "text_identical_parent_function",
+      "sha256": "f72768c1a23123a955024de3059db25fff2402d9d31f8b22a187ec7641513c04",
+      "lines": 3
+    },
+    {
+      "name": "save",
+      "kind": "text_identical_parent_function",
+      "sha256": "bd213f04049bb69ff98c35cae0b72e0db315dd5e553d379693fbc84043a1d612",
+      "lines": 2
+    },
+    {
+      "name": "binding",
+      "kind": "text_identical_parent_function",
+      "sha256": "85b674e9d3132963f961e723f166ce25c82e93584a8292fcdf30bb6792ca003c",
+      "lines": 4
+    },
+    {
+      "name": "same_ref",
+      "kind": "text_identical_parent_function",
+      "sha256": "c21ca37f9f26b866db418cf9d75fd0d033ba8562fe47e7e006c877ac4f3bf19d",
+      "lines": 6
+    },
+    {
+      "name": "read_bytes",
+      "kind": "text_identical_parent_function",
+      "sha256": "da3402cdbc3eb489e25ef462aab50fa3a4e378ab776f679f0b2d372ff178ae22",
+      "lines": 7
+    },
+    {
+      "name": "read_json",
+      "kind": "text_identical_parent_function",
+      "sha256": "fc557884be8719a427431453224276e9f09261303a656f235e0a0413ec45eebf",
+      "lines": 7
+    },
+    {
+      "name": "bound_module",
+      "kind": "text_identical_parent_function",
+      "sha256": "c2c84ff9de24131a3f4b15baed514625c6af4e05025c38469e7a2b7e24fee70c",
+      "lines": 6
+    },
+    {
+      "name": "deadline_check",
+      "kind": "new_append_source_function",
+      "sha256": "08ad37876022bdda248f277687a8616106305995bfbfd04c967c338f5e5d951b",
+      "lines": 3
+    },
+    {
+      "name": "load_configuration",
+      "kind": "new_append_source_function",
+      "sha256": "da7f07fae119ec3e7ec0d4b66dbafcd89993f280ad2a786d8d2ea0faf9335928",
+      "lines": 31
+    },
+    {
+      "name": "validate_owner",
+      "kind": "new_append_source_function",
+      "sha256": "e631f62f915e744886b72eddd9ca6415a732e411da976c7fd207d6e346a330e1",
+      "lines": 13
+    },
+    {
+      "name": "load_inputs",
+      "kind": "new_append_source_function",
+      "sha256": "c1f36ca16c80668308b19be3cfaa8e764bcb44810cd12ca6d761cd74afe92845",
+      "lines": 87
+    },
+    {
+      "name": "parent_model",
+      "kind": "new_append_source_function",
+      "sha256": "0458e2de58ee0c02d853e3ec83c6ab80e727e71cc8637ee2b2b833e8a354c6e7",
+      "lines": 21
+    },
+    {
+      "name": "validate_literal_inputs",
+      "kind": "new_append_source_function",
+      "sha256": "78039ba7064bd7449350522fb2da85f40a87f57b61c21ca5ff15d6c5ddde1522",
+      "lines": 92
+    },
+    {
+      "name": "validate_target_total_inputs",
+      "kind": "new_append_source_function",
+      "sha256": "a00b07c28e412475eb65945356183f6fe344393af8c33c31f130aff3fff230a3",
+      "lines": 76
+    },
+    {
+      "name": "runtime_record",
+      "kind": "text_identical_parent_function",
+      "sha256": "6e3962285a27aaa415496e1bbf5fa3363ef5e8113d669f578a48fb41840dcb9b",
+      "lines": 15
+    },
+    {
+      "name": "key",
+      "kind": "text_identical_parent_function",
+      "sha256": "1e2ba75bf04bcda4bfb29d4ee127844059a80c7b78a5c376860f8d819c8e13df",
+      "lines": 6
+    },
+    {
+      "name": "constraint",
+      "kind": "text_identical_parent_function",
+      "sha256": "9606963f34615b5413bbaca8d48457157ac99ec5120a03ede67355a9350cbe9e",
+      "lines": 8
+    },
+    {
+      "name": "variable",
+      "kind": "text_identical_parent_function",
+      "sha256": "3adc889340f183ea7bedf8e93a060e7a5c3059f9bffd034882749809982c9944",
+      "lines": 6
+    },
+    {
+      "name": "message_digest",
+      "kind": "text_identical_parent_function",
+      "sha256": "77673380487f1100c186c30a90a85a0db710c336fb6fe858403b3186a3d860e1",
+      "lines": 7
+    },
+    {
+      "name": "collect_incidence",
+      "kind": "new_append_source_function",
+      "sha256": "b79aa867239dc453bbb69d5c345bd37fa05e41e08c0fb194cd47a69f48839929",
+      "lines": 16
+    },
+    {
+      "name": "rebuild_capacity_keys",
+      "kind": "new_append_source_function",
+      "sha256": "3d87792b697862fbd8497827204a742bd93bb7afd721743fa7d9982cd2a60347",
+      "lines": 27
+    },
+    {
+      "name": "append_suffix",
+      "kind": "new_append_source_function",
+      "sha256": "da8d1a7a314c563b114a03426be6ff89260ac4e0b31390cb40cf9ef66650f7d7",
+      "lines": 17
+    },
+    {
+      "name": "ordered_json",
+      "kind": "new_append_source_function",
+      "sha256": "c92e5aa1c97be81276a3f47d1c8154c1f8095730f0a888435bf550304561a68d",
+      "lines": 3
+    },
+    {
+      "name": "same_constraint",
+      "kind": "new_append_source_function",
+      "sha256": "538cc4e0cd7b3a0d954f68dc5110e6a369f2fc444bc86508e29cc9fc5ae99819",
+      "lines": 2
+    },
+    {
+      "name": "incidence_rows",
+      "kind": "new_append_source_function",
+      "sha256": "cd36c35d0243da62a50c2f2e9cc77c9c5a79edd199798ccb1cb172343c6208ae",
+      "lines": 108
+    },
+    {
+      "name": "controls",
+      "kind": "new_append_source_function",
+      "sha256": "fe47600775e963af8b6bffa2ce12621d498002396630ad017b38f9d826de8a5f",
+      "lines": 79
+    },
+    {
+      "name": "target_total_row",
+      "kind": "new_append_source_function",
+      "sha256": "6802b578e76d27c9c526799be0ff6a254c4ee456023d7a27d7b3595cb86e845e",
+      "lines": 38
+    },
+    {
+      "name": "stage",
+      "kind": "text_identical_parent_function",
+      "sha256": "6129f5241c210c11385e08f44ca6baf58b363ec7f16f92491d05b30b8da37b20",
+      "lines": 3
+    },
+    {
+      "name": "prepare",
+      "kind": "new_append_source_function",
+      "sha256": "df940f86fe3b33274c0a74184ea4783ae3b9622783f0c8021d56f21da1209e00",
+      "lines": 116
+    },
+    {
+      "name": "worker",
+      "kind": "text_identical_parent_function",
+      "sha256": "7e2079d1a81c2b33619977907b5f88123674d82417aa89b9c47dae585e74f7bf",
+      "lines": 23
+    },
+    {
+      "name": "owned",
+      "kind": "three_exact_namespace_substitutions",
+      "sha256": "90eb71d8fd2e6c997c30b4cb338894b698c736b0d66af74c6f95ec88f00f26fb",
+      "lines": 58
+    }
+  ],
+  "text_identical_parent_functions": [
+    "canonical",
+    "sha",
+    "digest",
+    "write_new",
+    "save",
+    "binding",
+    "same_ref",
+    "read_bytes",
+    "read_json",
+    "bound_module",
+    "runtime_record",
+    "key",
+    "constraint",
+    "variable",
+    "message_digest",
+    "stage",
+    "worker"
+  ],
+  "owned_function_exact_substitutions": [
+    {
+      "old": "combined-extensions",
+      "new": "triangle-incidence"
+    },
+    {
+      "old": "COMBINED_EXTENSIONS",
+      "new": "TRIANGLE_INCIDENCE"
+    },
+    {
+      "old": "combined_extensions_supervisor",
+      "new": "triangle_incidence_supervisor"
+    }
+  ],
+  "cli_reuse": {
+    "parent_choices": [
+      "controls",
+      "prepare"
+    ],
+    "new_choices": [
+      "controls",
+      "prepare"
+    ],
+    "only_argument_change": "--configuration-sha256 is required in the new CLI.",
+    "inherited_assertions_required_guard": true,
+    "inherited_worker_flag_and_deadline": true
+  },
+  "new_function_purpose": {
+    "deadline_check": "Cooperative triangle-incidence phase bound.",
+    "load_configuration": "Three-family layout, fixed sources, proof/review bytes, 23 inputs and accepted roots.",
+    "validate_owner": "Accepted complete parent preparation and independent cold ownership.",
+    "load_inputs": "Complete parent ancestry; exact failed extractor records remain unaccepted.",
+    "parent_model": "Full raw parent identity and original edge namespace.",
+    "validate_literal_inputs": "Actual independent literal replay, finalization, owner and root receipt.",
+    "validate_target_total_inputs": "Actual twelve-bound certificate, review, finalization, owner and root receipt.",
+    "collect_incidence": "All saved indicator edge/vertex incidences.",
+    "rebuild_capacity_keys": "Both unfiltered local capacity families.",
+    "append_suffix": "Constraint-only protobuf append and exact whole-parent reversal.",
+    "ordered_json": "Preserved insertion order for the accepted incidence-object digest.",
+    "same_constraint": "Complete expected ConstraintProto bytes, including absence of other fields.",
+    "incidence_rows": "All native indicator meanings, complete row/origin reconstruction and seven literal digests.",
+    "controls": "Meaningful small prefix, mutation, incidence, signed-integer, count and JSON-order controls; unrun.",
+    "target_total_row": "Exact 84-edge row and 12 private quota-one native Gram messages.",
+    "prepare": "One native parse/validation/export without CpSolver, full preservation, lossless archives and receipts."
+  },
+  "preserved_unrun_draft04": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model_unrun_draft04.py",
+    "bytes": 43362,
+    "sha256": "45b16dd51004db84631265313b8246da998f63a8ba66f00df6d7a27f82a37712",
+    "git_blob": "34a3ac7f4ebe25e5e2f9f730495f097d48d8a851",
+    "status": "UNRUN_DRAFT_WITH_EXACT_FAILED_RECEIPTS_AND_PENDING_LITERAL_ACCEPTANCE"
+  },
+  "preserved_unrun_draft05": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model_unrun_draft05.py",
+    "bytes": 53792,
+    "sha256": "2b8fb38f01c17139a2e353440c4494cddf9272f82314a605dc3d5a0d2f1226f0",
+    "git_blob": "a32555c3f403eac4a4f737867d4aaad64b7926a7"
+  },
+  "source_text_comparisons_performed": true,
+  "python_source_imported": false,
+  "python_compilation_run": false,
+  "controls_run": false,
+  "actual_model_loaded": false,
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "actual_configuration_created": false,
+  "native_execution_authorized_by_this_record": false
+}

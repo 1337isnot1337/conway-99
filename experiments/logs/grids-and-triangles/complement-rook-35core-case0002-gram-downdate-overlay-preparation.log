@@ -1,0 +1,79 @@
+{
+  "status": "case2 original formula plus886 exact Gram-downdate clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_gram_downdate_overlay.py": "361815c8748c1a138581fafd43f85a101e444e4bfc7e0fddc85cd300069d7476",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992"
+  },
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0002-model.json",
+  "base_model_sha256": "84793fff0bfbb7bcbeb5b50974dfefad596b4dc72fa35619190eb1b871082883",
+  "base_cnf_sha256": "1f6089828e644e52b2aaebb0d082ec6e9410a6101b26cae9300894f74a8bc80e",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate.json.gz",
+  "certificate_sha256": "de5cbe02ea5cda392b139bed8e7468fc75e6e37bb7619aad8e743a396c859294",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-clauses.cnf",
+  "binary_fragment_sha256": "a86af34800a77f1a07f72d823e02d2832fecb39eb8775ce2526c0a7f5806d25e",
+  "case": {
+    "index": 2,
+    "local_set_orbit": 0,
+    "matching_index": 2,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 2,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "column_domain_sha256": "1cb6ff815932fd1b541bb98ee9329034bd27c49a6054272fc76025ef66b3dd69",
+  "domain_record_sha256": "3a96bff256d2b89226a7b715a8304ff9c4e89943f5b621298e671de118aaa92d",
+  "Gram_sha256": "ec26c8fbe667ebccaa614c5278525b16cfe57f6cec0493f484e63d3e34cd5ae8",
+  "cnf": "/tmp/conway-complement-rook-35core-case0002-gram-downdate-overlay.cnf",
+  "cnf_sha256": "f23dba5ab0cbb266dad36d99d4f7b8e226b2ee1e6bbe181b025612b9845b8db3",
+  "formula": {
+    "primary_columns": 1287,
+    "variables": 114512,
+    "original_clauses": 233919,
+    "additional_binary_clauses": 886,
+    "clauses": 234805,
+    "original_body_unchanged": true
+  },
+  "controls": {
+    "full_original_domain_and_CNF_cold_rebuilt": true,
+    "all886_integer_negative_vectors_directly_checked": true,
+    "exact886_clause_bytes_checked": true,
+    "all_original_columns_retained": true,
+    "new_auxiliary_variables": 0
+  },
+  "graph_automorphism_assumptions": 0,
+  "other_cases_tested": false,
+  "SAT_scope": "necessary64-column incidence witness for indexed35-core case2; exterior graph unspecified",
+  "UNSAT_scope": "indexed35-core case2 only, after retained proof and full binding replay",
+  "preparation_seconds": 4.361298872001498
+}

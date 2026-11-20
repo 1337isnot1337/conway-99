@@ -1,0 +1,23 @@
+{
+  "status": "PASS: independent gate truth, integer-circuit and source audit",
+  "audit_source_sha256": "5338eaa97a61744c25d9c5f029daa3825f7cf36ddd41d732b6565bcba6e1eefe",
+  "subject_sha256": "942efb35d35429d88d7cc9c3bc14aa7a116972186f60abeebe50db89214ec75f",
+  "direct_gate_CNF_truth_assignments": 19456,
+  "large_weight_threshold_formulas": 99,
+  "large_weight_threshold_assignments": 792,
+  "large_weight_signed_assignments": 56,
+  "maximum_tested_weight_bit_length": 82,
+  "checks": [
+    "full gate equivalences including constants, repeated inputs and complements",
+    "carry-save identity sum=xor+2*majority and two-row ripple arithmetic",
+    "low-to-high constant comparator recurrence",
+    "exact integer weight merging, Boolean capping and gcd normalization",
+    "signed literal and guard aliases",
+    "fresh strictly increasing auxiliary IDs",
+    "resource refusal returns no usable partial formula"
+  ],
+  "SAT_solver_called": false,
+  "optimizer_called": false,
+  "incidence_formula_loaded": false,
+  "scope": "The complete source was read. Primitive clauses and independent integer circuit traces were checked; no main incidence formula or future continuation was rebuilt."
+}

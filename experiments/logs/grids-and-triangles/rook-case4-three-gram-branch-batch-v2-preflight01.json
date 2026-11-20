@@ -1,0 +1,107 @@
+{
+  "status": "PREPARED_NO_CASE_PROPAGATION",
+  "definition": {
+    "source_sha256": "0226d59dc1ab724ee712dfdd2249aff34d5248db1f354f264a8726a2e1d2f3cc",
+    "bindings": {
+      "kernel": [
+        "experiments/workspace/rook_case4_full_span_cover_h5_full_rows.py",
+        "bb26762de18cad7107a2d49214af61947807528cb66a638efec2589cadf26216"
+      ],
+      "scope_source": [
+        "experiments/workspace/rook_case4_three_gram_branch_preparation.py",
+        "fdde57b1a3a4de759ca0b04a8465f6bb97659cc7db715aed4fa5e665358c7ed5"
+      ],
+      "preparation": [
+        "experiments/logs/grids-and-triangles/rook-case4-three-gram-branches-preparation01/preparation.json",
+        "ad3f2b14fd4f60b0d411cd5d920ec461cffed3ab7a0ddf68861b9500cad95ba3"
+      ],
+      "preparation_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-three-gram-branches-preparation01-replay.json",
+        "769a2536abf223d5b9f6aac27b50b0623f0976e955d153165e4c7b1fceac7e2c"
+      ]
+    },
+    "limits": {
+      "forward_seconds": 60,
+      "per_branch_seconds": 1,
+      "cold_seconds": 60,
+      "owned_seconds": 90,
+      "maximum_records": 444,
+      "maximum_transcript_bytes": 67108864,
+      "automatic_retries": 0
+    },
+    "original_native_rows": 2271,
+    "native_rows": 2278,
+    "variables": 1214,
+    "original_native_terms": 28784,
+    "native_terms": 29129,
+    "retained_branches": 444,
+    "proved_append_inputs": {
+      "native": [
+        "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+        "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+      ],
+      "model": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+        "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+      ],
+      "upper_five": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cover-upper-five01.json",
+        "1655bac4e5a5a558e58e0a685aa4dc94489ef5bfb8f065afe43ac8a6ddcd3b1f"
+      ],
+      "short_cut": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cover-strengthened-cut01.json",
+        "65128ef554e550f2b78569cadd52477ddd8fd35ddd81d480d9c1ea9048bc1da8"
+      ],
+      "short_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cover-strengthened-cut-replay01.json",
+        "a01b169ce78471d675f0287560cb9ac6cb0247712e0d5bd3a189c8c2ec663267"
+      ],
+      "initial_registry": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-preparation01.json",
+        "6be18862b4555fed0d78c404937e46512eab7d3fb3361e78cbde8af6f30c543a"
+      ],
+      "parity_registry": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/result.json",
+        "408da79724822a1197fbda868fe73e5de70fd36b2b55a448716be2573944df32"
+      ],
+      "registry_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01-bindings.json",
+        "e19e9cf1585ef885a633f50af391712d99f5e1b117fa95f36c729ead9985ebf6"
+      ]
+    },
+    "proved_append_rows": 7,
+    "H42_equal_five_is_not_a_premise": true,
+    "raw_branch_cover": 2835,
+    "scope": "case4 on the112 proved global zeros; no H42 condition",
+    "unchanged_imported_functions": [
+      "Pool",
+      "tiny_pool",
+      "propagate",
+      "verify_record",
+      "literal_bounds",
+      "verify_append_proofs",
+      "gram_sum"
+    ],
+    "optimizer_calls": 0
+  },
+  "controls": {
+    "status": "PASS",
+    "literal_union_intersection_controls": 729,
+    "empty_case_no_vacuous_units": true,
+    "case4_propagation_calls": 0,
+    "optimizer_calls": 0
+  },
+  "native_rows": 2278,
+  "native_terms": 29129,
+  "variables": 1214,
+  "original2271_row_prefix_unchanged": true,
+  "proved_appended_rows": 7,
+  "appended_row_sha256": "355fce6feb4cc880e78b9e4ae0a120d873b9ac6b88305ca2d9a406ea33e6e8d6",
+  "maximum_int64_activity_bound": 35449993,
+  "initial_boxes_checked": 444,
+  "numpy_version": "2.3.5",
+  "kernel_functions_copied_or_changed": false,
+  "case4_propagation_calls": 0,
+  "optimizer_calls": 0,
+  "seconds": 0.7947927119967062
+}

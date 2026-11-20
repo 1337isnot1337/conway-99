@@ -1,0 +1,31 @@
+{
+  "status": "PASS: cold original case2 formula rebuilt, all retained inputs included, DRAT verified",
+  "source_sha256": "38c47d45575f895d4c2863ae18ced8b9ccef5c3a2aedea215ee53d8248dd9740",
+  "original_source_hashes": {
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992"
+  },
+  "original_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0002-model.json",
+  "original_model_sha256": "84793fff0bfbb7bcbeb5b50974dfefad596b4dc72fa35619190eb1b871082883",
+  "original_cnf_sha256": "1f6089828e644e52b2aaebb0d082ec6e9410a6101b26cae9300894f74a8bc80e",
+  "original_variables": 114512,
+  "original_clauses": 233919,
+  "discovery_result": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-overlay-run01/result.json",
+  "discovery_result_sha256": "58ab353cc3b6c503c2f2290b6a2a6a9648af2337155facae6563608d0526aca2",
+  "retained_cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-overlay-run01/retained.cnf",
+  "retained_cnf_sha256": "a8c4127d12996380d0ccfe54d9ceacdba0331897a8cc99e48cb636dfcdcd2ec2",
+  "retained_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-gram-downdate-overlay-run01/retained.drat",
+  "retained_proof_sha256": "e852639b89d5768a28625176c7107c46f114b36c9d3417042f11966d78978f06",
+  "retained_input_clauses": 23913,
+  "all_retained_inputs_are_original_formula_clauses": true,
+  "additional_spectral_or_downdate_premises_required": false,
+  "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-case0002-original-only-replay.drat.log",
+  "checker_log_sha256": "c1970c72f6e7b720036e47bbfb1f9e5380cf384afe59dd5ecd46ca82f861da93",
+  "checker_seconds": 60,
+  "elapsed_seconds": 2.4949021130014444,
+  "excluded_scope": "indexed35-core case2 only",
+  "whole_local_eight_set_excluded": false,
+  "solver_called": false
+}

@@ -1,0 +1,1058 @@
+{
+  "status": "COMPLETE_LISTED_LOCAL_CONFLICT_INVENTORY",
+  "centers": 42,
+  "literal_centers": 480,
+  "result_report": {
+    "status": "PASS: complete local-conflict inventory",
+    "source_sha256": "6e7a638c0c9045f82aceb37d4eceb749ad8911be4b65abeb52dd7be829f18036",
+    "record_sha256": "cbfdad339ab84cb7eeb6b221e10be3c4c1db4fb70932de3a28e62ee4642cb7e0",
+    "record_raw_sha256": "8db1e5eaa05b4573dff5c582425651973c43238059a77c834b2bbd3bac1dbbe2",
+    "representative_centers": 42,
+    "literal_centers_covered": 480,
+    "point_loaded": false,
+    "optimizer_calls": 0,
+    "seconds": 7.331973371001368
+  },
+  "layers": {
+    "base_mixed_and_lifted_Gram": {
+      "edges": {
+        "representatives": 389025,
+        "all_480_centers": 4423098
+      },
+      "triangles": {
+        "representatives": 6301707,
+        "all_480_centers": 71397750
+      }
+    },
+    "plus_published_core_pair_cliques": {
+      "edges": {
+        "representatives": 400984,
+        "all_480_centers": 4559838
+      },
+      "triangles": {
+        "representatives": 6366087,
+        "all_480_centers": 72131382
+      }
+    },
+    "plus_published_path_prisms": {
+      "edges": {
+        "representatives": 406076,
+        "all_480_centers": 4617834
+      },
+      "triangles": {
+        "representatives": 6438132,
+        "all_480_centers": 72942966
+      }
+    },
+    "plus_semantic_selector_motif_conflicts": {
+      "edges": {
+        "representatives": 406912,
+        "all_480_centers": 4627338
+      },
+      "triangles": {
+        "representatives": 6442958,
+        "all_480_centers": 72996522
+      }
+    }
+  },
+  "coverage": {
+    "path_pairs_covered_by_base": {
+      "representatives": 180,
+      "all_480_centers": 2112
+    },
+    "path_pairs_covered_after_core_cliques": {
+      "representatives": 299,
+      "all_480_centers": 3480
+    },
+    "motif_pairs_covered_by_base": {
+      "representatives": 401,
+      "all_480_centers": 4572
+    },
+    "motif_pairs_covered_after_core_cliques": {
+      "representatives": 468,
+      "all_480_centers": 5328
+    },
+    "motif_pairs_covered_after_path_rows": {
+      "representatives": 468,
+      "all_480_centers": 5328
+    },
+    "quota_one_zero_pairs_already_covered": {
+      "representatives": 76879,
+      "all_480_centers": 876336
+    }
+  },
+  "degeneracy_range": [
+    46,
+    64
+  ],
+  "representatives": [
+    {
+      "center": 0,
+      "orbit_size": 12,
+      "neighbors": 238,
+      "degeneracy": 51,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 279,
+          "triangles_with_a_new_pair": 1339
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 23,
+          "triangles_with_a_new_pair": 34
+        }
+      ]
+    },
+    {
+      "center": 2,
+      "orbit_size": 12,
+      "neighbors": 339,
+      "degeneracy": 64,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 198,
+          "triangles_with_a_new_pair": 1374
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 82,
+          "triangles_with_a_new_pair": 1510
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 137
+        }
+      ]
+    },
+    {
+      "center": 8,
+      "orbit_size": 12,
+      "neighbors": 280,
+      "degeneracy": 59,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 227,
+          "triangles_with_a_new_pair": 1288
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 22,
+          "triangles_with_a_new_pair": 67
+        }
+      ]
+    },
+    {
+      "center": 9,
+      "orbit_size": 12,
+      "neighbors": 280,
+      "degeneracy": 56,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 325,
+          "triangles_with_a_new_pair": 1882
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 69
+        }
+      ]
+    },
+    {
+      "center": 10,
+      "orbit_size": 12,
+      "neighbors": 339,
+      "degeneracy": 63,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 242,
+          "triangles_with_a_new_pair": 1593
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 82,
+          "triangles_with_a_new_pair": 1534
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 157
+        }
+      ]
+    },
+    {
+      "center": 11,
+      "orbit_size": 12,
+      "neighbors": 304,
+      "degeneracy": 60,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 200,
+          "triangles_with_a_new_pair": 1101
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 82,
+          "triangles_with_a_new_pair": 1275
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 17,
+          "triangles_with_a_new_pair": 101
+        }
+      ]
+    },
+    {
+      "center": 24,
+      "orbit_size": 12,
+      "neighbors": 280,
+      "degeneracy": 56,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 389,
+          "triangles_with_a_new_pair": 2131
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 103
+        }
+      ]
+    },
+    {
+      "center": 25,
+      "orbit_size": 12,
+      "neighbors": 304,
+      "degeneracy": 60,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 400,
+          "triangles_with_a_new_pair": 2334
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 82,
+          "triangles_with_a_new_pair": 1299
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 17,
+          "triangles_with_a_new_pair": 104
+        }
+      ]
+    },
+    {
+      "center": 32,
+      "orbit_size": 12,
+      "neighbors": 268,
+      "degeneracy": 56,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 372,
+          "triangles_with_a_new_pair": 2020
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 143,
+          "triangles_with_a_new_pair": 1860
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 122
+        }
+      ]
+    },
+    {
+      "center": 33,
+      "orbit_size": 12,
+      "neighbors": 267,
+      "degeneracy": 55,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 198,
+          "triangles_with_a_new_pair": 1066
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 57,
+          "triangles_with_a_new_pair": 656
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 21,
+          "triangles_with_a_new_pair": 73
+        }
+      ]
+    },
+    {
+      "center": 34,
+      "orbit_size": 12,
+      "neighbors": 269,
+      "degeneracy": 55,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 388,
+          "triangles_with_a_new_pair": 2072
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 150,
+          "triangles_with_a_new_pair": 1928
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 18,
+          "triangles_with_a_new_pair": 116
+        }
+      ]
+    },
+    {
+      "center": 35,
+      "orbit_size": 12,
+      "neighbors": 234,
+      "degeneracy": 58,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 299,
+          "triangles_with_a_new_pair": 1343
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 17,
+          "triangles_with_a_new_pair": 30
+        }
+      ]
+    },
+    {
+      "center": 36,
+      "orbit_size": 12,
+      "neighbors": 234,
+      "degeneracy": 47,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 346,
+          "triangles_with_a_new_pair": 1481
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 164,
+          "triangles_with_a_new_pair": 2152
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 21,
+          "triangles_with_a_new_pair": 66
+        }
+      ]
+    },
+    {
+      "center": 37,
+      "orbit_size": 12,
+      "neighbors": 244,
+      "degeneracy": 58,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 354,
+          "triangles_with_a_new_pair": 1769
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 64,
+          "triangles_with_a_new_pair": 911
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 19,
+          "triangles_with_a_new_pair": 72
+        }
+      ]
+    },
+    {
+      "center": 38,
+      "orbit_size": 12,
+      "neighbors": 275,
+      "degeneracy": 56,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 343,
+          "triangles_with_a_new_pair": 1768
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 107,
+          "triangles_with_a_new_pair": 1504
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 19,
+          "triangles_with_a_new_pair": 56
+        }
+      ]
+    },
+    {
+      "center": 39,
+      "orbit_size": 12,
+      "neighbors": 293,
+      "degeneracy": 63,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 220,
+          "triangles_with_a_new_pair": 1416
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 87,
+          "triangles_with_a_new_pair": 1240
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 21,
+          "triangles_with_a_new_pair": 111
+        }
+      ]
+    },
+    {
+      "center": 40,
+      "orbit_size": 12,
+      "neighbors": 294,
+      "degeneracy": 63,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 245,
+          "triangles_with_a_new_pair": 1411
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 138,
+          "triangles_with_a_new_pair": 1997
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 115
+        }
+      ]
+    },
+    {
+      "center": 41,
+      "orbit_size": 12,
+      "neighbors": 295,
+      "degeneracy": 63,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 290,
+          "triangles_with_a_new_pair": 1609
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 237,
+          "triangles_with_a_new_pair": 3142
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 18,
+          "triangles_with_a_new_pair": 175
+        }
+      ]
+    },
+    {
+      "center": 43,
+      "orbit_size": 6,
+      "neighbors": 227,
+      "degeneracy": 60,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 288,
+          "triangles_with_a_new_pair": 1318
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 18,
+          "triangles_with_a_new_pair": 84
+        }
+      ]
+    },
+    {
+      "center": 44,
+      "orbit_size": 12,
+      "neighbors": 233,
+      "degeneracy": 48,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 308,
+          "triangles_with_a_new_pair": 1368
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 22,
+          "triangles_with_a_new_pair": 56
+        }
+      ]
+    },
+    {
+      "center": 45,
+      "orbit_size": 12,
+      "neighbors": 298,
+      "degeneracy": 64,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 300,
+          "triangles_with_a_new_pair": 1738
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 147,
+          "triangles_with_a_new_pair": 2217
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 21,
+          "triangles_with_a_new_pair": 127
+        }
+      ]
+    },
+    {
+      "center": 46,
+      "orbit_size": 12,
+      "neighbors": 260,
+      "degeneracy": 56,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 279,
+          "triangles_with_a_new_pair": 1292
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 147,
+          "triangles_with_a_new_pair": 2028
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 16,
+          "triangles_with_a_new_pair": 68
+        }
+      ]
+    },
+    {
+      "center": 47,
+      "orbit_size": 12,
+      "neighbors": 323,
+      "degeneracy": 60,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 297,
+          "triangles_with_a_new_pair": 1926
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 259,
+          "triangles_with_a_new_pair": 4068
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 176
+        }
+      ]
+    },
+    {
+      "center": 50,
+      "orbit_size": 6,
+      "neighbors": 307,
+      "degeneracy": 58,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 440,
+          "triangles_with_a_new_pair": 2816
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 259,
+          "triangles_with_a_new_pair": 4559
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 22,
+          "triangles_with_a_new_pair": 248
+        }
+      ]
+    },
+    {
+      "center": 51,
+      "orbit_size": 12,
+      "neighbors": 298,
+      "degeneracy": 57,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 300,
+          "triangles_with_a_new_pair": 1734
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 164,
+          "triangles_with_a_new_pair": 2796
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 17,
+          "triangles_with_a_new_pair": 93
+        }
+      ]
+    },
+    {
+      "center": 52,
+      "orbit_size": 12,
+      "neighbors": 334,
+      "degeneracy": 62,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 352,
+          "triangles_with_a_new_pair": 2157
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 146,
+          "triangles_with_a_new_pair": 2406
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 196
+        }
+      ]
+    },
+    {
+      "center": 53,
+      "orbit_size": 12,
+      "neighbors": 320,
+      "degeneracy": 60,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 110,
+          "triangles_with_a_new_pair": 722
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 100,
+          "triangles_with_a_new_pair": 1462
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 23,
+          "triangles_with_a_new_pair": 135
+        }
+      ]
+    },
+    {
+      "center": 57,
+      "orbit_size": 6,
+      "neighbors": 305,
+      "degeneracy": 58,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 110,
+          "triangles_with_a_new_pair": 651
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 26,
+          "triangles_with_a_new_pair": 112
+        }
+      ]
+    },
+    {
+      "center": 58,
+      "orbit_size": 12,
+      "neighbors": 274,
+      "degeneracy": 58,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 279,
+          "triangles_with_a_new_pair": 1517
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 0,
+          "triangles_with_a_new_pair": 0
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 19,
+          "triangles_with_a_new_pair": 63
+        }
+      ]
+    },
+    {
+      "center": 63,
+      "orbit_size": 6,
+      "neighbors": 307,
+      "degeneracy": 58,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 290,
+          "triangles_with_a_new_pair": 1703
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 259,
+          "triangles_with_a_new_pair": 4267
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 22,
+          "triangles_with_a_new_pair": 282
+        }
+      ]
+    },
+    {
+      "center": 336,
+      "orbit_size": 12,
+      "neighbors": 225,
+      "degeneracy": 56,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 272,
+          "triangles_with_a_new_pair": 1352
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 87,
+          "triangles_with_a_new_pair": 849
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 82
+        }
+      ]
+    },
+    {
+      "center": 338,
+      "orbit_size": 12,
+      "neighbors": 273,
+      "degeneracy": 53,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 155,
+          "triangles_with_a_new_pair": 831
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 143,
+          "triangles_with_a_new_pair": 1747
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 23,
+          "triangles_with_a_new_pair": 119
+        }
+      ]
+    },
+    {
+      "center": 339,
+      "orbit_size": 12,
+      "neighbors": 280,
+      "degeneracy": 53,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 245,
+          "triangles_with_a_new_pair": 1306
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 176,
+          "triangles_with_a_new_pair": 2606
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 119
+        }
+      ]
+    },
+    {
+      "center": 342,
+      "orbit_size": 12,
+      "neighbors": 247,
+      "degeneracy": 55,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 252,
+          "triangles_with_a_new_pair": 1227
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 221,
+          "triangles_with_a_new_pair": 2318
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 19,
+          "triangles_with_a_new_pair": 126
+        }
+      ]
+    },
+    {
+      "center": 343,
+      "orbit_size": 12,
+      "neighbors": 257,
+      "degeneracy": 54,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 324,
+          "triangles_with_a_new_pair": 1614
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 93,
+          "triangles_with_a_new_pair": 1103
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 20,
+          "triangles_with_a_new_pair": 115
+        }
+      ]
+    },
+    {
+      "center": 344,
+      "orbit_size": 12,
+      "neighbors": 258,
+      "degeneracy": 55,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 252,
+          "triangles_with_a_new_pair": 1251
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 50,
+          "triangles_with_a_new_pair": 507
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 21,
+          "triangles_with_a_new_pair": 82
+        }
+      ]
+    },
+    {
+      "center": 345,
+      "orbit_size": 12,
+      "neighbors": 253,
+      "degeneracy": 54,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 297,
+          "triangles_with_a_new_pair": 1433
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 273,
+          "triangles_with_a_new_pair": 3608
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 19,
+          "triangles_with_a_new_pair": 148
+        }
+      ]
+    },
+    {
+      "center": 346,
+      "orbit_size": 12,
+      "neighbors": 244,
+      "degeneracy": 47,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 315,
+          "triangles_with_a_new_pair": 1422
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 303,
+          "triangles_with_a_new_pair": 3759
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 14,
+          "triangles_with_a_new_pair": 102
+        }
+      ]
+    },
+    {
+      "center": 347,
+      "orbit_size": 12,
+      "neighbors": 311,
+      "degeneracy": 54,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 231,
+          "triangles_with_a_new_pair": 1286
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 187,
+          "triangles_with_a_new_pair": 2515
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 22,
+          "triangles_with_a_new_pair": 180
+        }
+      ]
+    },
+    {
+      "center": 354,
+      "orbit_size": 12,
+      "neighbors": 286,
+      "degeneracy": 54,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 310,
+          "triangles_with_a_new_pair": 1778
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 257,
+          "triangles_with_a_new_pair": 3652
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 21,
+          "triangles_with_a_new_pair": 184
+        }
+      ]
+    },
+    {
+      "center": 355,
+      "orbit_size": 12,
+      "neighbors": 218,
+      "degeneracy": 46,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 348,
+          "triangles_with_a_new_pair": 1416
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 150,
+          "triangles_with_a_new_pair": 1682
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 19,
+          "triangles_with_a_new_pair": 98
+        }
+      ]
+    },
+    {
+      "center": 356,
+      "orbit_size": 12,
+      "neighbors": 283,
+      "degeneracy": 54,
+      "layer_additions": [
+        {
+          "layer": "plus_published_core_pair_cliques",
+          "new_pairs": 290,
+          "triangles_with_a_new_pair": 1525
+        },
+        {
+          "layer": "plus_published_path_prisms",
+          "new_pairs": 196,
+          "triangles_with_a_new_pair": 2888
+        },
+        {
+          "layer": "plus_semantic_selector_motif_conflicts",
+          "new_pairs": 19,
+          "triangles_with_a_new_pair": 123
+        }
+      ]
+    }
+  ],
+  "path_pairs_all_480": 61476,
+  "motif_pair_incidences_all_480": 14832
+}

@@ -1,0 +1,81 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 9,
+  "unique_integer_cuts": 9,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{"starting_round": 0, "rows": 47668, "held_cuts": 48}
+{"file": "moments-3-3-512.pickle", "sha256": "74d5a043cb92ccdeb0c91e15d8f44de814a40196e761b550caace40201b89e53", "embedding_form": "ordinary", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-4-2-512.pickle", "sha256": "74b9c284950fd317f895aa75afda15d531ceeef8d1daba7572c7f26eef68ce79", "embedding_form": "ordinary", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-5-2-512.pickle", "sha256": "9af8134d9ab637c22da04614928bf25ba227c3b812a2a21a10ab0e06b482aa73", "embedding_form": "ordinary", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -8.004915696736245e-16}
+{"file": "moments-6-1-512.pickle", "sha256": "e1adfc383da37e534a873a022d2f439816676e748dc917e4a6d8fa3e4ffb18d7", "embedding_form": "ordinary", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.1154296756107656e-16}
+{"file": "moments-7-1-512.pickle", "sha256": "725a1cda8796555cf7ee3ee174b2593b610731111ef3cc4f472355d3055eeab0", "embedding_form": "ordinary", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -4.440931032417719e-16}
+{"file": "induced-moments-3-3-512.pickle", "sha256": "d68282554d55346ae09d30d1a2d495ac15ed325f900e4a0185bd54073180cd38", "embedding_form": "induced", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-4-2-512.pickle", "sha256": "f2f8b43e64b08edfed79021aaa63b6bce4d57fe127d382a7fa6c5728bff16d5a", "embedding_form": "induced", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-5-2-512.pickle", "sha256": "f35f9d2c709d869924fac026ffb036e310f0967b933b36578ec0e1a53463feac", "embedding_form": "induced", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -6.03622227655224e-16}
+{"file": "induced-moments-6-1-512.pickle", "sha256": "13808003e8f24bd47b8da6169c65a1eccc205b2bc9c3be1c8b57b588a2ba37c5", "embedding_form": "induced", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-7-1-512.pickle", "sha256": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc", "embedding_form": "induced", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -5.219404306169792e-16}
+{"file": "induced-spectral-7.pickle", "sha256": "b38ced60f1632d8368f2b20e358ab3f43d2ecfedc90bbaac9c446ce0af14c502", "embedding_form": "induced", "blocks": 416, "largest_order": 135, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.122643187214183e-15}
+{"file": "induced-schur-7.pickle", "sha256": "67cc16e42d9529c2155e5f80e73ea23a5defacaccac28150498218ae296058aa", "embedding_form": "induced", "blocks": 416, "largest_order": 128, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.5762786924373067e-07}
+{"status": "no exact violation found; PSD not certified", "blocks_examined": 1416, "exact_negative_block_count": 0, "unique_integer_cut_count": 0, "seconds": 1.7521342510008253, "peak_process_rss_kib": 1200508}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 0,
+  "unique_integer_cuts": 0,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "no exact separator in scanned blocks; PSD not certified",
+  "blocks_scanned": 916,
+  "complete_scan": true,
+  "exact_negative_block_count": 0,
+  "unique_integer_cut_count": 0,
+  "seconds": 4.048669579002308
+}
+{
+  "status": "no exact separator in scanned cached blocks; PSD not certified",
+  "blocks_scanned": 62,
+  "complete_cached_family_scan": true,
+  "complete_selected55_scan": true,
+  "complete_full62_scan": true,
+  "exact_negative_block_count": 0,
+  "unique_integer_cut_count": 0,
+  "seconds": 10.136823983000795
+}
+{
+  "status": "no exact separator in scanned higher-flag blocks; PSD not certified",
+  "blocks_scanned": 11,
+  "complete_r4s3_scan": true,
+  "complete_r2s4_scan": true,
+  "complete_full11_scan": true,
+  "exact_negative_block_count": 0,
+  "unique_integer_cut_count": 0,
+  "seconds": 4.094367601999693
+}
+{"round": 0, "rows": 47668, "nonzeros": 5439078, "held_cuts": 48, "held_cut_coefficients_sha256": "f240480eb4c6b5ac084d79aedfc143506c0e03cf5202359b8a3434cc61eeece4", "numerical_model_sha256": "dd90c9323bc4ae6672b70020dd2902696116404fb1fe7abe54489466691c64ad", "numerical_status": "HighsModelStatus.kOptimal", "highs_run_status": "HighsStatus.kOk", "solver_seconds": 20.223687131001498, "returned_data_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-solver-data.json.gz", "returned_data_sha256": "aadc39402bd9b262cf6dfc36c4cc192f9e853e53bac3a82f85e91d0368e9f29c", "returned_value_valid": true, "returned_dual_valid": true, "solver_info": {"active_bound_norm": 0.0, "active_cost_norm": 0.0, "basis_validity": 0, "centring_status": 0, "crossover_iteration_count": 0, "dual_solution_status": 2, "ipm_iteration_count": 11, "max_complementarity_violation": 8.477761450981644e-16, "max_dual_infeasibility": 9.855712979962331e-17, "max_dual_residual_error": 9.870471582168557e-16, "max_integrality_violation": "inf", "max_primal_infeasibility": 0.0, "max_primal_residual_error": 2.7755575615628914e-17, "max_relative_dual_infeasibility": 9.855712979962331e-17, "max_relative_dual_residual_error": 9.870471582168557e-16, "max_relative_primal_infeasibility": 0.0, "max_relative_primal_residual_error": 2.7755575615628914e-17, "mip_dual_bound": 0.0, "mip_gap": "inf", "mip_node_count": -1, "num_complementarity_violations": 0, "num_dual_infeasibilities": 0, "num_dual_residual_errors": 0, "num_primal_infeasibilities": 0, "num_primal_residual_errors": 0, "num_relative_dual_infeasibilities": 0, "num_relative_dual_residual_errors": 0, "num_relative_primal_infeasibilities": 0, "num_relative_primal_residual_errors": 0, "objective_function_value": 0.0, "pdlp_iteration_count": 0, "primal_dual_integral": "-inf", "primal_dual_objective_error": 2.1715222098704317e-12, "primal_solution_status": 2, "qp_iteration_count": 0, "simplex_iteration_count": 0, "sum_dual_infeasibilities": 4.540186343536078e-16, "sum_primal_infeasibilities": 0.0, "valid": true}, "proposal_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-proposal.json", "proposal_sha256": "02b57dd6f31340501e226589f50d6cfa8f36951aeaedeb5df77ba04529119587", "scans": [{"family": "old1416", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-old1416-separation.json", "certificate_sha256": "f7802248c5288743dae7fb4902288d159d381f35f07bb2b91cb0ca9e00a7ec79", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-old1416-replay.json", "replay_sha256": "337b9d9a435686eab5aa96f6d410e455c16ae8e93ebf5f6628dd8c3ca7ca6cfb", "complete_scan": true, "blocks_scanned": 1416, "exact_negative_blocks": 0, "unique_integer_cuts": 0}, {"family": "r8s1", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-r8s1-separation.json", "certificate_sha256": "bdf0b29d4f8f47240c51da6f4462ff1c9e4cbc8b50e2e7ac70c7eec3e8b65ce7", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-r8s1-replay.json", "replay_sha256": "f31e3ecd8293776252851d4ec7e9833a4fc8bceb92819e4e880f7ebe638e1e83", "complete_scan": true, "blocks_scanned": 916, "exact_negative_blocks": 0, "unique_integer_cuts": 0}, {"family": "r6s2", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-r6s2-separation.json", "certificate_sha256": "09ba7f3c484b51104f0677eb26898b17cd6f0c5c50e3cc188d6496794ea41475", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-r6s2-replay.json", "replay_sha256": "a606c4d8bc65e5b48926ed146a1f84ec742284f1080c704410808f6ae5832068", "complete_scan": true, "blocks_scanned": 62, "exact_negative_blocks": 0, "unique_integer_cuts": 0}, {"family": "higher11", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-higher11-separation.json", "certificate_sha256": "2a19074876a55fcc7c311f34f41b0b37e3b5ca942c4aff8404fd9b2eaa945e59", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-higher11-replay.json", "replay_sha256": "1bed5b5c9994ad4b4d2f9eadb066ddf126f7790bd34b92bbbe00fc1ff03edc2a", "complete_scan": true, "blocks_scanned": 11, "exact_negative_blocks": 0, "unique_integer_cuts": 0}], "fresh_exact_cuts": 0, "duplicate_exact_separators": [], "rounded_counts_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-all-flags-x521-face-loop01-round0-rounded-counts.json", "rounded_counts_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df", "rounded_count_status": "exact integral order-ten count witness verified", "exact_count_and_held_cut_witness": true}
+{
+  "status": "stopped with no fresh exact separator; PSD not certified",
+  "exact_count_witness": true,
+  "exact_infeasibility_certificate": false
+}

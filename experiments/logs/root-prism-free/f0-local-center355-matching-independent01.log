@@ -1,0 +1,31 @@
+{
+  "status": "PASS: all ten claimed matching witnesses checked independently",
+  "source_sha256": "5bd6dc58181ab426f3d97ff75480eceafe1376bcd808d16993cc42fc80f2cc77",
+  "inputs": {
+    "point": {
+      "path": "experiments/logs/root-prism-free/f0-local-center355-pilot01/result.json",
+      "sha256": "691770408d6af35c86cd06004344b51159dbd6ba8ceafd2b185b5764ee37cd0e"
+    },
+    "diagnostic": {
+      "path": "experiments/logs/root-prism-free/f0-local-center355-matching-diagnostic02.json",
+      "sha256": "18375b3c9f1a32eb62abdd7ea118f609dd712cee080227bb23d41cf910fc0d5d"
+    },
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "edge_zeros": {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01.json.gz",
+      "sha256": "397e8bf110e03a5accb5e6c1f27b2fb5525100acb67427c66669e188e74159d1"
+    }
+  },
+  "subject_source_imported": false,
+  "rejected_matching_ledger_repeated": false,
+  "positive_rook_control_prisms": 6,
+  "passing_cases_checked": 10,
+  "visible_cap_checks": 4350,
+  "optimizer_calls": 0,
+  "graph_completion_claimed": false,
+  "scope": "The saved eight-neighbor set admits all ten listed visible matching extensions. This checks their positivity, not the rejection ledger.",
+  "seconds": 1.1011749969984521
+}

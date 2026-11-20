@@ -1,0 +1,43 @@
+{
+  "status": "UNRESOLVED: numerical outcome retained without an accepted exact outcome",
+  "source_bindings": {
+    "driver_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "recovery_builder_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7"
+  },
+  "preparation_sha256": "a5828b30883c1c518a1cbab8cbaf591796f47d42e638b8e84bdd4dcaf055e45e",
+  "base_model_sha256": "9373396621ff2a713200c9832d9da82801b51f1c674233eaa81a1587a9f29b42",
+  "limits": {
+    "production_run_calls": 1,
+    "threads": 1,
+    "solver_and_ray_seconds": 60,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "exact_infeasibility_certificate_found": false,
+  "exact_zero_face_certificate_found": false,
+  "exact_rational_point_found": false,
+  "case4_exclusion_verified": false,
+  "whole_graph_problem_resolved": false,
+  "automatic_retry": false,
+  "mathematical_model_sha256": "550972cca292015d484287228700402642d1e3eb52ea3d1b89ed0b74f83dff0c",
+  "initialization_seconds": 2.0133704699983355,
+  "initialization_peak_rss_kib": 408480,
+  "numeric_artifact": {
+    "path": "numeric.json.gz",
+    "sha256": "4a16b14277cc7021dada690b40e69d5b373da9772009e486dd7c5a1395bfb634",
+    "decompressed_sha256": "746d2e8541714b5d84db22ec76bb8ff1024c07182aa3ff9cc43d7099e6d90604",
+    "decompressed_bytes": 947752
+  },
+  "numerical_status": "HighsModelStatus.kInterrupt",
+  "native_bootstrap_seconds": 4.237873120997392,
+  "native_bootstrap_peak_rss_kib": 604408,
+  "solver_and_ray_seconds": 60.09056101000169,
+  "simplex_iterations": 1264,
+  "integer_bound_reconstruction_attempts": [],
+  "rational_primal_reconstruction_attempts": [],
+  "exact_stage_seconds": 1.2527001672424376e-05,
+  "elapsed_seconds": 67.55103164199681,
+  "peak_rss_kib": 1585724
+}

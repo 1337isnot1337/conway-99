@@ -1,0 +1,652 @@
+{
+  "checkpoint": 63,
+  "parent_commit": "725d62ec04920c8baff47e247943697d76e7ca85",
+  "scope": "Complete fixed-F0 selector-pair and edge packing certificates; original external-row count-model preparation, zero-call failure and successful lighter initialization; bounded rook-cycle preparation and source gates. Active domain overlays, query and cycle terminal artifacts are separate.",
+  "source_maps": [
+    "experiments/logs/root-prism-free/f0-pair-orbit-packing-preparation-artifacts.json",
+    "experiments/logs/root-prism-free/f0-pair-orbit-packing-terminal-artifacts.json",
+    "experiments/logs/root-prism-free/f0-character-pool-completed-git-blobs01.json",
+    "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation-git-blobs.json"
+  ],
+  "files": [
+    {
+      "path": "STATE.md",
+      "bytes": 119149,
+      "sha256": "75336a9eb36033d2b50dc44d40e5286b9905982019e18e63ecbf6ed8a344fea6",
+      "git_blob": "20fc23772e15fc1271c4f80403a6e93800b699f2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-unrestricted-review.json",
+      "bytes": 2254,
+      "sha256": "4a7b8a464057b84a13421d33881ce11ef2b9b16dab75f2e09f00d67d20f8e4e8",
+      "git_blob": "443cf52c3b9744c00a351287fd56793aac8e7d48"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-exact-unrestricted-review.json",
+      "bytes": 2624,
+      "sha256": "69cd80f8990d87633e1b7ac417f2cee263e1207837246a4d41d224646aa24d23",
+      "git_blob": "e5f5116139b02083ec5b9cf73d075b2a1a0f20df"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight02.log",
+      "bytes": 1511,
+      "sha256": "30fafe7b3773c2f1dd955883bb3cef26c22608b2e5acefcb619574844c676428",
+      "git_blob": "8bdebfb2a712122244ac1b666c808ebaa530d31e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight03.json",
+      "bytes": 6366,
+      "sha256": "aa3eecc73cb793457b339c970bbf662f66802162ae93e0e54ef354c1faf73f8c",
+      "git_blob": "823c35f892ea9671b02a3fdc5bffd6839a6990aa"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight03.log",
+      "bytes": 3057,
+      "sha256": "bcd9ebe70aef48062bbbea3526c1b6a26fbd7ec8d68d26009f6cb29a000ef993",
+      "git_blob": "72da1b673dc5af80b2fb2cd94d31d96b6ef2c66f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight04.json",
+      "bytes": 6366,
+      "sha256": "d3827408d08dd443093cba2d0c19e250391c142c6e97a4f04f316567c04bf264",
+      "git_blob": "5c865e69ff6f9e2abdef14f01870999ee4f76009"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight04.log",
+      "bytes": 3057,
+      "sha256": "de5051e99a83a759343563b9aabfc7a7e3c12b8cb6e0ad357f7411bf72924b06",
+      "git_blob": "26613b9ac9771e68a69b5e43ef149faa2cbdfa8f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation-git-blobs.json",
+      "bytes": 6445,
+      "sha256": "ac4f21a5301c14671e9fa92b4354128a2e702743e55291b3a41c916c38ec63f3",
+      "git_blob": "4cfb04e8787ceefbb821abbc464ddd93f35ffcad"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation-manifest.json",
+      "bytes": 4942,
+      "sha256": "d10df665062dcbcce848271e7c2b3a7cfc4c763736917fbfbcdacebef94d78bf",
+      "git_blob": "86a8ebb165ee59cc95c88d3e7f3d3829f4f81fb0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation01.json",
+      "bytes": 9210,
+      "sha256": "6d103583906bc7a401ad262c42c7438496fffd53cc9e03ad0ad4bbee818a8b0d",
+      "git_blob": "3874c8f86567bb071609f43b2c59737a867b04f7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation01.log",
+      "bytes": 773,
+      "sha256": "51ebad12e707306f24c61bd6fd116819b7865bd8bd946551f4b11600a377b690",
+      "git_blob": "484c85bc2c290ed65bf6c20b577bdf41d0b77bad"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation02.json",
+      "bytes": 9691,
+      "sha256": "b518a8357ca8f89714f4080e0f119efc7ad13bafe7e6e604b06fe81b3281348c",
+      "git_blob": "df91158a4b44177d797ae0e7db78b2bd57f4fbd8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation02.log",
+      "bytes": 773,
+      "sha256": "882078d8a32d30c206e4027ee39a6315721385214ccf4ddd61c82dea3d1481a7",
+      "git_blob": "df537080e5aa142697c092a155b1c4687e11f8f6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation03.json",
+      "bytes": 9690,
+      "sha256": "3569c71a6a47d5abe4377574d0f80014c832aa2894fce2ae3a06dcc6af69be60",
+      "git_blob": "f80c545ca758f734b29c4e70f889ee5de1850352"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation03.log",
+      "bytes": 772,
+      "sha256": "be8cda95739a1f333c687a9a3b688ab2aedcb266d0612984e486669e21b847d6",
+      "git_blob": "632a9401ec4c31e1c3d4853c74baabdb23388f28"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation04.json",
+      "bytes": 9691,
+      "sha256": "61c56185b99adba1b56728b96b34e3c3ec9a25e1708c9e5e53bf4413b9f1e5f0",
+      "git_blob": "f4f2d958b70c23509c286d38d4ab9e2e63d56ac8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preparation04.log",
+      "bytes": 773,
+      "sha256": "ffb4c874a3ed9c739b4515f4fbec2b666ca4eb6b2970ba5f2a64da50bf6f04c5",
+      "git_blob": "77e880a8a68d25132eb6ba54e148fbaacc4e5b63"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-root-source-review.json",
+      "bytes": 2762,
+      "sha256": "f4c3e51209070c0d4f0bdff07dcdbac6bf8155474be9f1ddee863560c4cf965e",
+      "git_blob": "243945e0cd33fb6ca9f0a5a330e3e409c9b3c7c8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-v3-path-correction.json",
+      "bytes": 777,
+      "sha256": "2954c1e4a460fdd488217940e9930a5bf90907c67d4f101a61f16ca9e165a307",
+      "git_blob": "22e3d437335ca3dc0516dae511f6a4806f1203f7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-v4-runtime-binding.json",
+      "bytes": 1636,
+      "sha256": "d26c881d9feff737536fc4c449c326f17ca92569578673e79be3781c5a07608a",
+      "git_blob": "1ea0906bdceede35cdd2a034ccf2f1f6f4af0d86"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-phase-unrestricted-source-review.json",
+      "bytes": 2294,
+      "sha256": "36887b846c5cda9f352c6bc8792eee5dc75c15e8903183ba1eeb92bacdfdbaf2",
+      "git_blob": "d60df9478f6c1e6418fff894cd69fb34ad98072d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-completed-artifacts01.json",
+      "bytes": 12026,
+      "sha256": "1e1aefbb66df7552aaa9423633edd4422bcc59130d868350a8acfe6176316195",
+      "git_blob": "11adee535240b25c6cfbc3b1ce1d1a8386533758"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-completed-git-blobs01.json",
+      "bytes": 13737,
+      "sha256": "dc2e70dd314cdbbabdbba971c6f91f19cabdb4ee1ad8f40f2969588737e5b570",
+      "git_blob": "64406373a4a0ca63596031bb24db3a582f480cd1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model-independent-sets-review.json",
+      "bytes": 2322,
+      "sha256": "f74a3c8db559e15a47d4b29b821f6d0022ed0e8223ebe319c0bf7eacb7af68a3",
+      "git_blob": "bfe867881200d9d8bf17166071196df8df0461a7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model-independent-sets-review.log",
+      "bytes": 276,
+      "sha256": "7c92b08e5f673011e040a8de099a9646fad4cc68db73ec60947f2ec181d013b3",
+      "git_blob": "47166ee560b9344db091354f1536092649f68651"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model-root-source-review.json",
+      "bytes": 2099,
+      "sha256": "009257a87f45c480e741961d3329174b33c263849911d3da185ff36669470bbf",
+      "git_blob": "2261efa00e2dd45c9cce354b531347617097f335"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model01-cold.json",
+      "bytes": 1342,
+      "sha256": "24a450d6d6c3bf537e6c049aaad2bf843e154a0586e463a2fc14eaff48eac2c8",
+      "git_blob": "e2035e12e99b01e3a0fc5d788be573ed64fd8a7b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model01-cold.log",
+      "bytes": 1614,
+      "sha256": "00109143cf5f61b63faff37664046c75264f06f23a1858cbfb93a8753fc39234",
+      "git_blob": "4768115c9014ffa28dd4fd5a1335afa86629e15b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model01.log",
+      "bytes": 3562,
+      "sha256": "871b66fb2046d2007f2339bfea4b76883f373b2651da6a6d071404bb2f8992b5",
+      "git_blob": "f6925663bbc8fe9759c601a5a23a920ecfa6b3d1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model01/initial.pb.gz",
+      "bytes": 501575,
+      "sha256": "5710bf3f31c076d8afa4cfc6f2207123d25d53d19dcc284607102de1a3f22dac",
+      "git_blob": "3aeacc89014fd7a46a43c27d149fd010dbc629f3"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model01/plan.json.gz",
+      "bytes": 457772,
+      "sha256": "b3179e520d5913530c7d3cfae27529b5717be26c763de024b725c38959aa2aef",
+      "git_blob": "6cb069ed636c0e4e6491810f5b342e7ce4b3f1f2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model01/report.json",
+      "bytes": 2911,
+      "sha256": "ed912b419cdfe1a4b4b228382ec1cfbb58a7688476c06ea14e851a3290992f30",
+      "git_blob": "806d0a4d92aa36d307b032550791e939773aa630"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-model01/target.pb.gz",
+      "bytes": 4790189,
+      "sha256": "1a26b2ec303121e44d0100a586c568ba85387137341ccd503471a6994cba1a2f",
+      "git_blob": "194164d53b2e488011bd9b586c36d6c07eb9fc7d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-preflight01.json",
+      "bytes": 901,
+      "sha256": "41d9e155a23f7e40546b3e546e975b2ac6434a4fae28b4e95ff8faa58becb272",
+      "git_blob": "44e798836d65e3597b3346a6b07d85570a238498"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-preflight01.log",
+      "bytes": 966,
+      "sha256": "459910450758cadbf9a65d6230ae8fbbdb904ff7638cfeae6ecbba93fe91ebd0",
+      "git_blob": "46f3df4236bd4f3491a8770b9f382ca6e0c9a4d8"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-preparation01.log",
+      "bytes": 4364,
+      "sha256": "2f3ddc7eb31eb63fa863e18deaaef60aa0f787b2ea48c4d622847e1ea448125d",
+      "git_blob": "f4d01723aec7abe5a0cbd19797a55ac270c82c3c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-preparation01/preparation.json",
+      "bytes": 3766,
+      "sha256": "6e0812462e4ddb9b1b331d0652edc92d14da75dd4c975eb8dbc5c8cefcd95ba1",
+      "git_blob": "a72c99e8646928edf726809bdbf4c6300ebeb512"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-root-source-review.json",
+      "bytes": 2405,
+      "sha256": "efd0c6750982c10b9869462b9f9633af7e396c6bd04b7369449ede72ae3e2df6",
+      "git_blob": "f6b0ba5e9cec87c56e9c621f1c194d97aaafbedd"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-run01-narrow-replay.json",
+      "bytes": 2887,
+      "sha256": "7d73713f9bab7e1c798d1bc193348c80885e8b0eac6851399007ebea166c21c5",
+      "git_blob": "ed5728912afba45ee7c3c91426c3f8b4f7dea7f9"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-run01-narrow-replay.log",
+      "bytes": 2887,
+      "sha256": "7d73713f9bab7e1c798d1bc193348c80885e8b0eac6851399007ebea166c21c5",
+      "git_blob": "ed5728912afba45ee7c3c91426c3f8b4f7dea7f9"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-run01.log",
+      "bytes": 835,
+      "sha256": "f479e06ac97d9804bee6b03fe0d8220b6d1cea53508a8bfd74da2b066b5bcecd",
+      "git_blob": "2f861cfa2e78b7e07f8cbc70ba93c5f0a3019979"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-run01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-run01/child.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-run01/progress.json",
+      "bytes": 494,
+      "sha256": "f2638b5ec82da81928d7a5e7f343a28446c8696229a5a0b60f388addc885c54f",
+      "git_blob": "67baa84bd5b17c26de72a62fb3e6e118c75d8e10"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-run01/result.json",
+      "bytes": 749,
+      "sha256": "481700e73395a83275aa247d2ba1cc54c073799b6fd8592a3f2b2d66ff2d24c3",
+      "git_blob": "881abfdc7853203d5a2db6cf40f488f87cba47db"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-run01/supervisor.json",
+      "bytes": 151,
+      "sha256": "91823fd85c7eafcb8b25bb9c05a6c6412265f16581b23ae61b9faafa95db7434",
+      "git_blob": "9d821d239f66dddbadf06cf32418a52ab4891166"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-initialization01.log",
+      "bytes": 750,
+      "sha256": "ba0230984a40d0a77b2721851dc83f8fb7efe67fac91596f43b029c51c80d79a",
+      "git_blob": "0fc25ad608a52123db6d3921478b38582d1fe825"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-initialization01/child-result.json",
+      "bytes": 1221,
+      "sha256": "f5e9cb133a8ba2ad741d94d9c917e8625581d373498039d105ddc80289853a1b",
+      "git_blob": "92a63d00e1275c99cbb7e5aa118506c11cae6b02"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-initialization01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-initialization01/child.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-initialization01/result.json",
+      "bytes": 668,
+      "sha256": "f71e76c23008a4f518e326727e1a0e868fc3d76c006d5d074f17a74ebe1c6091",
+      "git_blob": "ffc8da73210f22b3c83861003ea94fac1e06ca16"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-initialization01/stages.json",
+      "bytes": 4843,
+      "sha256": "2a2eb516d1a5525090bc51e0a3538790e8c1bd0e9c96d84b1b644d6cf6c72ed1",
+      "git_blob": "2964da2707cfe682df48f1f1151a2261ac79a03b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-initialization01/supervisor.json",
+      "bytes": 146,
+      "sha256": "d9e0dca376dfff0e252ee72931a66a171104b5a6e6a1aeaab690bfb98b697a57",
+      "git_blob": "b3a83537a0d61dc464ba720a96b1797637689d15"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-preparation01.log",
+      "bytes": 3483,
+      "sha256": "29d662f8dc5fe4ba9a5b9c1ba06cd0b23971506370fc6b5899d34def6fa698a8",
+      "git_blob": "6539141c28c87c4377b9343b5590b5813be77f80"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-preparation01/preparation.json",
+      "bytes": 2981,
+      "sha256": "d22ae9977d8efbc446c3f303ffd9ef764f9a1ddc9e66af989e4ad13c784ca4c5",
+      "git_blob": "dd3b2720f86c9653363c38a3ea9d93344c94b39d"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-runtime-root-source-review.json",
+      "bytes": 1495,
+      "sha256": "85b7141c67054184ed4520bf35b2fe9cf46f1510784e44cf59d7f0b259ff1cb9",
+      "git_blob": "80fb5dfa5fde2385344770c317427d23fb9b5295"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-census-literature-review.json",
+      "bytes": 3259,
+      "sha256": "e9e944e4618fcf1cb352d77901c228436462e1d20e970fd9e08ae0250373fe4c",
+      "git_blob": "105028292211885609e98bfbd5cb962aadc1e033"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-census-preparation01.json",
+      "bytes": 14767,
+      "sha256": "3561840ec929ad68a6b4e22df8f6cad5e9a604b9828b9bc4cd63bdfa8654cdd0",
+      "git_blob": "74d0895cebe84705193368b08bb334e8a7d27266"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-literature-review.json",
+      "bytes": 3282,
+      "sha256": "ca9e0aecf5a7bc3dee2245209a2d7b23b40451d51645876aecfa19eb5615c1d7",
+      "git_blob": "fac0a3a62b65b08ab6df0f952998ec05046a0333"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-preparation01-owner.json",
+      "bytes": 592,
+      "sha256": "280e607d3feeb765e7bdf736d82d1df84e7ee90dc68a53d0ee9dd1339f28d16d",
+      "git_blob": "4d164d2d85c51d2931b09a3eb4f6b8032afa1525"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-preparation01.json.gz",
+      "bytes": 1033483,
+      "sha256": "2d581d92545eb1d8718960471fe8c4bfe191a6a80a9f9d5d22754dc4afe0ec18",
+      "git_blob": "1541cf8d94bb96a5c075ce65ef731505e6b5b0da"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-preparation01.log",
+      "bytes": 472,
+      "sha256": "f4a781f538e8cfb47a9d94ac98d9b9748fc15d5c866dcf341f21bf7ea86a7bde",
+      "git_blob": "8009a528f4d7072de71c39d11ff2e4f431adbccc"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01-cold-owner.json",
+      "bytes": 800,
+      "sha256": "7ae9e795d7be1415cf7885a311683018fa8c03b7d5e7791a87c378e75700dcf5",
+      "git_blob": "5f552d6bd8dc5380667fd8a02025f1e23a1aebe2"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01-cold.json",
+      "bytes": 1843,
+      "sha256": "8965162db2cd4bfc05c129ecd5cf0a1ba2b39bcbd35f776cc60c27a52c501ded",
+      "git_blob": "69406f803b33f5716023ff9a5603438cc4f1943c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01-cold.log",
+      "bytes": 213,
+      "sha256": "1619245f422d797fb580d62195d4f076e2ec9451c29e8452c89cd7aff8d1394b",
+      "git_blob": "aea83b8d39d8cd9e28ca053940539bb870800773"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01-ledger.jsonl.gz",
+      "bytes": 79198,
+      "sha256": "75c5ba7443d0740e4ffa35828e70c25c28ffe4e18f398d2454315901f2cc7735",
+      "git_blob": "58e378cc212477cc1ffc0957e2be27b3e863470b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01-owner.json",
+      "bytes": 705,
+      "sha256": "55fda5d12ae6d58e223258d65a3f04e35b66d8ed717e1d17a8149d44fad18af2",
+      "git_blob": "8bb3bd6e1531d5732e11c09bfb392aa9046ad1a8"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01.json.gz",
+      "bytes": 1532,
+      "sha256": "5b9614ca91185e380bbc7fd220d797c983a5a4c6756942686f51efca57be1c2d",
+      "git_blob": "f93efbc09851f5c077e6fcc14ab31b31bd9583dd"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01.log",
+      "bytes": 8109,
+      "sha256": "349e60a649357aa14aa97c83aa4d6f14a2be32bfbac3d0bafc79ded3494d4188",
+      "git_blob": "73392ea6a7fcae224b4f02664b362d5fb22994df"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-activation-comparison01.json.gz",
+      "bytes": 84356,
+      "sha256": "f3907e807f14befeab0ba7ef9409eef9d39c3b734e08e8d0af87d4bc173bffb1",
+      "git_blob": "2efb3f822945bc7d97c4e5274ee2548156512288"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-activation-comparison01.log",
+      "bytes": 478,
+      "sha256": "5aa12cbc1019e7684d1f949270fb97d8ac634d4dc15504b2423fec81034d23f2",
+      "git_blob": "2f163902582603e82d56eb47812277d86901717a"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-preparation-artifacts.json",
+      "bytes": 1861,
+      "sha256": "ab03a10b4c5c6c30069b8b5d0d7e5a244d6de5eac5808e1e0b9a500042e58da1",
+      "git_blob": "67b01160737db4f6d21a48439faa354dc8806512"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-preparation01.json.gz",
+      "bytes": 439135,
+      "sha256": "09412183bb01527a6fa2aeb23623b95af925767d5067bb363f10a2a8f8254a13",
+      "git_blob": "c68ee4a3a8479b59d72c5bd298212b1a1e285303"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-preparation01.log",
+      "bytes": 155,
+      "sha256": "8c9f7eefc8311a43f5ac3a7b8bc5d2508a871bd0e0096baaa7b6a1323abcaec5",
+      "git_blob": "c9af847034b8f1309ffd13ab9b97c71cb7714e89"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-root-source-review.json",
+      "bytes": 2174,
+      "sha256": "39e80a54e9d6572d1edd9952b6ab0cadc241dfa68de3627ddf15491aed9070b2",
+      "git_blob": "1bde8326232060aa32991b347952942f3f270564"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-scan01-cold.json",
+      "bytes": 603,
+      "sha256": "c684243851efa7e12e9b9e5c7f857532421c1954233a5d9d6e24acfe5c826843",
+      "git_blob": "19151bd4ebe9b6e53ef6f41e72cc680137a1fcf1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-scan01-cold.log",
+      "bytes": 146,
+      "sha256": "834112018b232ac8454d4741e9006210bc56f0cd091b4752b269b3868a5ebee9",
+      "git_blob": "4ffa4b1ab92d725b310a913eaaea828bc77e0123"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-scan01-ledger.jsonl.gz",
+      "bytes": 599863,
+      "sha256": "4c53542bc89575b799b9e3d8b5905ae3dfe9782aa954db9d9afdf2a07c83d839",
+      "git_blob": "4b5522bcc557c821bf41ca495efe3ea35d39fffc"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-scan01.json.gz",
+      "bytes": 48123,
+      "sha256": "1bbba3061689f8faaf8fadcf556c0097d2b190673ab063a675259c007508b2bb",
+      "git_blob": "288107a8f78ca8be929cfb753cc56b4a856ed16e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-scan01.log",
+      "bytes": 125,
+      "sha256": "cf296a56ce2733632e00a055ac835d6c57ce33cd30ccc83c5faaa24e4bbf8d8a",
+      "git_blob": "239eaabe45141e640e99604986d2f416c0e6af7e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-terminal-artifacts.json",
+      "bytes": 3450,
+      "sha256": "2a4386413a78337fe89d2cb936b0936fa544b07c3d4725ffa4a7b868ce17e586",
+      "git_blob": "5b3937bcfd2455171e7f4e3f968a3c0373caeff4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/finite-graph-clique-certificate-independent-sets-review.json",
+      "bytes": 1303,
+      "sha256": "98671f23c51db093564fd81df051a50099622357a7970be74737e8c43711bdee",
+      "git_blob": "72d6322dd8213701c8b3038456d504889beb6a43"
+    },
+    {
+      "path": "experiments/workspace/finite_graph_clique_certificate.py",
+      "bytes": 4746,
+      "sha256": "ef97e243a4140ca741097cb8c237d080e926d5f47f2ccca01abc662ff042834b",
+      "git_blob": "9a4ea806b882d30780eed4deb0dd0046e4652915"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_parity_cycle.py",
+      "bytes": 60817,
+      "sha256": "811941e6c062b43ea7e89b081fa357b728b173b2edbd157efe47d0f6f764adf9",
+      "git_blob": "d5626a85a4393b6a2d1c0fe2513eed2960ec3ae6"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_parity_cycle_exact.py",
+      "bytes": 14176,
+      "sha256": "2f10a42f546623cb1840d228101537e6f4f4bc584776407140ae0c36b08c99b7",
+      "git_blob": "9bcfb59a562660c3d3b585bea44b0c69c5420ad3"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_parity_cycle_v2.py",
+      "bytes": 64628,
+      "sha256": "ee77b1924a113a9deb648385eab9159ca07d43645b7ea388edb167efed1ccba1",
+      "git_blob": "1569ee17416b2487d455c7bc1669d3e056c06197"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_parity_cycle_v3.py",
+      "bytes": 64654,
+      "sha256": "cd347553b9979567df5c981b689ca1dd30399068a0329dad4285586a6f6ca880",
+      "git_blob": "dec1c19c111f248aff2eb0a8f81f187b3b06b716"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_parity_cycle_v4.py",
+      "bytes": 65078,
+      "sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e",
+      "git_blob": "8e24223f65addbf36ef223e70263d65188406484"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_independent_sets_review.py",
+      "bytes": 3723,
+      "sha256": "03f575f9309a81e8539cb7a4b51b22a522e453d6a093954c713368987006d71c",
+      "git_blob": "da6b81e996ea1beca8bebad549fc162bae38859b"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_model.py",
+      "bytes": 33899,
+      "sha256": "b3029a3a197ec31305f74dead2b28f51beaf219cb2e9e289dc8f250db42a6943",
+      "git_blob": "e18e0467b75fa317aee716efbd38f6cc1a986c19"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_query.py",
+      "bytes": 23025,
+      "sha256": "820f76ea30bff76e3c0d5d9b79601f6fba1ee11c0534676843315f575bafce39",
+      "git_blob": "ccdf3c994a3c51207385a5f374911dda245a4b13"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_query_replay.py",
+      "bytes": 13934,
+      "sha256": "cd6c2687419212929315bb0da2e21bcd987f1aeb69e8a3d8f33973c2d310b571",
+      "git_blob": "ac26bd49986904d3af8c41c98d931eecc653d0a3"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_runtime.py",
+      "bytes": 19809,
+      "sha256": "030163f019b93ee39124e9f3171caac1e4ad79227fde9a1e831c28a938b245f8",
+      "git_blob": "68c522949ab5fed3a32b699b1ce71351ed4dc439"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_zero_call_replay.py",
+      "bytes": 5864,
+      "sha256": "1b196e6b87519fbaf47767318e2cf4148379b805d6099283950677523b712f45",
+      "git_blob": "1b7bc6a3c1daf5953761cba31f4ce7e90df517db"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_edge_orbit_packing.py",
+      "bytes": 16028,
+      "sha256": "694803bd3255fc3259290dac498e7ff2fa9cc2fb400ef7db552cf064c9329129",
+      "git_blob": "ab4e3c1950c4f5007d6085803887be6a241ab731"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_edge_orbit_packing_preparation.py",
+      "bytes": 14641,
+      "sha256": "e8aae22865dfaaffe043a76c872aaf1212c74a6bbb8b26301f6b61dcb541efe5",
+      "git_blob": "ece9363d934c1d39bb1a04fe491d60a109394da4"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_pair_orbit_packing.py",
+      "bytes": 24357,
+      "sha256": "857987075a72476a471660f37f6a683ad2e11adfe0389fd4c9c15e7858bac788",
+      "git_blob": "baa133e1e7300331e08cb7ffef444d6eeeebaa25"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_pair_packing_activation_comparison.py",
+      "bytes": 6952,
+      "sha256": "3e37c7d96ce6a25cfd0434667811d14ba4f806caa95a8864e96594c3b86b3d49",
+      "git_blob": "a1d1fee6bc0764fc0fc027dcc9ab2a7c47a3dd64"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_parity_cycle.md",
+      "bytes": 7019,
+      "sha256": "4c9a359bd7df0aa7755b90c6982b4988ddfe0b89c96045b0e981bd0677ce3402",
+      "git_blob": "8369fd63734e2409c285970ba00939acc7ddc867"
+    },
+    {
+      "path": "research/root_prism_free_f0_character_external_rows.md",
+      "bytes": 8718,
+      "sha256": "1504cb7e3c70251e9afcafc7cdac5a57530da7ab5a7782bd6d4d1a3f28641f43",
+      "git_blob": "49cd651779096c009042906382870313e135e856"
+    },
+    {
+      "path": "research/root_prism_free_f0_character_external_rows_run01.md",
+      "bytes": 3489,
+      "sha256": "634ef1839f95e892a27c5ea71239dabc1d1f6987b49690dedee2b9e2f9bd2266",
+      "git_blob": "347a5bcd72de059dc1d1f9e0a9939b581a6ffcb5"
+    },
+    {
+      "path": "research/root_prism_free_f0_edge_orbit_packing.md",
+      "bytes": 4211,
+      "sha256": "59ba323e40a978c01a2dae8cb2a6af79868449b9c237523fa6e4180089b21274",
+      "git_blob": "a524dc5894ae83844bedc185196b648c1f70a48e"
+    },
+    {
+      "path": "research/root_prism_free_f0_pair_orbit_packing.md",
+      "bytes": 4448,
+      "sha256": "3172ea8c31382f8469ebc5286d8889b5ceb5103182436b2333b8a8551cd79e6c",
+      "git_blob": "215a1fd323f9b18451d70dd9664cd48d542848b8"
+    },
+    {
+      "path": "research/root_prism_free_f0_pair_orbit_packing_result.md",
+      "bytes": 4752,
+      "sha256": "decc215bf3a4a582cafed81a454888ed260008da568c4b93a05298d845440c34",
+      "git_blob": "36ffc12dbe14cacb85b0b810ba1142636f0cc009"
+    },
+    {
+      "path": "research/session-ab2f.md",
+      "bytes": 98093,
+      "sha256": "dd52f15ae403d43935fc8ce27c73c8ec7b49805ff9240beed7c16b5fb72d5352",
+      "git_blob": "7fad0393c7107104197e60ad93002793ef89ee23"
+    }
+  ],
+  "file_count_excluding_manifest": 106,
+  "bytes_excluding_manifest": 8927118,
+  "unrestricted_problem_resolved": false
+}

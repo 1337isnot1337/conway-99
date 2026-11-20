@@ -1,0 +1,35 @@
+{
+  "status": "PASS: complete read-only mathematical and source review",
+  "reviewed_source": "experiments/workspace/root_prism_free_f0_quadratic_allocation.py",
+  "reviewed_source_sha256": "d5b5e8fd8e24a6ece19c4fcd4982239d83e3d004376092976cc86c2de0b3571c",
+  "preparation": "experiments/logs/root-prism-free/f0-quadratic-allocation-preparation.json.gz",
+  "preparation_sha256": "7ab2ec935cdbbb7035a0fd95d5a7ca514aed508b7d5efbe953c5265176733589",
+  "metadata_counts_checked": {
+    "base_families": 24,
+    "actual_core_actions": 12,
+    "distinct_transported_quadratics": 288,
+    "saved_candidates": 153
+  },
+  "exact_necessity": [
+    "Multiplying each activated mixed row by its integer potential and summing gives sum_a d_a z_a = sum_ab w_ab y_ab.",
+    "For Boolean selectors, 0 <= y_ab <= z_a z_b. Dropping negative w terms gives Q(z) = sum_ab max(w_ab,0) z_a z_b - sum_a d_a z_a >= 0.",
+    "Assigning each positive edge weight to either endpoint gives a necessary signed linear selector inequality because z_endpoint >= z_a z_b.",
+    "At a fixed Boolean candidate, choosing an absent endpoint whenever one exists makes the linear capacity exactly the quadratic capacity. The resulting violation is exactly -Q(candidate).",
+    "Each allocation is a globally valid necessary linear inequality. Its discovery candidate is not an incidence assumption."
+  ],
+  "source_review": [
+    "quantities uses both endpoint potentials and every complete-domain eligible edge.",
+    "best_allocation subtracts each positive weight at exactly one endpoint and verifies its Boolean candidate value.",
+    "A moved inequality is evaluated by pulling the candidate back through the inverse core action; exported terms use the forward action.",
+    "domain reconstructs the 480 signatures, 68,394 edges, row targets and actual 12-element core group.",
+    "Saved candidates undergo exact Gram/motif checks; the scan does not choose or fix a new graph.",
+    "Existing linear inequalities are preserved; new clauses or solver restrictions are not silently inserted.",
+    "Pointwise best-allocation equality is explicitly limited to Boolean selectors; it is false for general fractional selector products."
+  ],
+  "subject_imported": false,
+  "full_domain_or_saved_scan_recomputed": false,
+  "optimizer_or_solver_called": false,
+  "author_control_results_repeated": false,
+  "scan_result_or_registry_context_numerically_audited": false,
+  "whole_component_excluded": false
+}

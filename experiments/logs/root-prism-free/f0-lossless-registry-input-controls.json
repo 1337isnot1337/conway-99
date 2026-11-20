@@ -1,0 +1,62 @@
+{
+  "status": "PASS: fixed raw registries decoded losslessly with exact original canonical hashes",
+  "reader_source_sha256": "fce582be152a5257352a9fd49536e8b26e6ba21a579514542c2a3e883e7d27e9",
+  "converter_source_sha256": "795836b0bff4e9ad55e1e2c44954d719058fcaec81e0a84dbd9fb668dafdcff2",
+  "transfer_file_sha256": "c990af1c45cd9683110ee293cb0f13f741a4ed96c16641dae18f3d521708b5a3",
+  "inputs": {
+    "individual": {
+      "compressed_sha256": "6acd86b609230632c42b345ba0d1742ca3a3155cf216271f74508acaa71f1e41",
+      "uncompressed_sha256": "fa5ad3e34890d481c8bfcf43c44f250377dfcbb999be3183306c1eaa118245f3",
+      "canonical_original_sha256": "bf3e9664fee91a8bfc3f6e178b6049f59f0955771c0f5f64b3203f5e42d8c452",
+      "record_count": 3948,
+      "statistics": {
+        "integer_values": 688272,
+        "tagged_large_integers": 0,
+        "maximum_integer_bits": 9
+      }
+    },
+    "shared": {
+      "compressed_sha256": "6ea36f93085ab07e641e5148fb9a297b9d9bdd9abd6ff36922fde5f112ccd71d",
+      "uncompressed_sha256": "ae7c6b922ca23fb50549e8ce63adab8013ebee33e46d05b1d3ddcb1d5310d3b7",
+      "canonical_original_sha256": "81fb002031c808c148038da31faa473e76177995ea049b4bd3cbfa5b1953da03",
+      "record_count": 456,
+      "statistics": {
+        "integer_values": 278736,
+        "tagged_large_integers": 5748,
+        "maximum_integer_bits": 80
+      }
+    },
+    "quadratic": {
+      "compressed_sha256": "29610083a8ce62eca87fb53e9cadbcdc5cca94cb8c24952a213cc19e876a8871",
+      "uncompressed_sha256": "c05a72ae2bce15a4d16e5d443c930df847ceace600b6c95ba3d854f939095724",
+      "canonical_original_sha256": "5d7be4b51a45de77be0b09373148632f6b55c5d22dd057167ea385d04f4f78b3",
+      "record_count": 38,
+      "statistics": {
+        "integer_values": 387559,
+        "tagged_large_integers": 8668,
+        "maximum_integer_bits": 81
+      }
+    }
+  },
+  "controls": {
+    "status": "PASS: lossless integer decoding and independent Python canonical reproduction",
+    "literal_cross_language_fixtures": 4,
+    "invalid_V8_values_rejected": 18,
+    "Python_fraction_exponent_nonfinite_or_duplicate_rejections": [
+      "1.5",
+      "-0.5",
+      "1e3",
+      "1E-2",
+      "NaN",
+      "Infinity",
+      "-Infinity",
+      "{\"a\":1,\"a\":2}"
+    ],
+    "numeric_looking_strings_preserved": true,
+    "escaped_and_Unicode_keys_checked": true,
+    "large_negative_integers_checked": true,
+    "maximum_fixture_integer_bits": 201,
+    "optimizer_called": false
+  },
+  "optimizer_called": false
+}

@@ -1,0 +1,121 @@
+{
+  "status": "free480-column base plus twelve necessary exterior-row cuts prepared; no query",
+  "source_sha256": "0a1739251220c3b27564cc9ea0d2e64bad4c9aa8db9a93182fc7cc91ea7c0353",
+  "base_model": "experiments/logs/root-prism-free/f0-incidence-case00-model.json",
+  "base_model_sha256": "16deda266149f5123a1db3833cfebf22d6bdfe4426b1424fcc51ccbfdc38f0a1",
+  "base_source_hashes": {
+    "root_prism_free_f0_incidence.py": "00cd6e683a8bfb602cfd29f8dbb3481be0f87df55f2963ae98613f2af9146971",
+    "root_prism_free_f0_components.py": "f1c3b49cd084dde9df8f421a79dfbf2233d58c07f03ebb53ef2b58449fed54f4",
+    "root_prism_free_f0_pair_clauses.py": "367b7f850d087067b547653d31bf4b25743f30934583252de1199cffb358daac"
+  },
+  "base_cnf_sha256": "80550d618fb253c3a5a5646477e17e06c81c8f4d17d6cddcc0db1ee0d28ee315",
+  "cut_source_sha256": "d9e70f8d0f979505b0c5f264969e3b72f300d1f2da0491b41b760301c9e666df",
+  "cut_certificate": "experiments/logs/root-prism-free/f0-first-design-exterior-row-certificate.json.gz",
+  "cut_certificate_sha256": "3b5c302f9a9e3bfce6175de7c73cb835cc89f88e63148de15d59085b1da974c0",
+  "old_incidence_result_sha256": "64d5411e04764b0d7e7157c47b67d759e536a401fee8fe36e274943f2fda4abf",
+  "formula": {
+    "primary_variables": 480,
+    "variables": 28308,
+    "clauses": 56994,
+    "literal_occurrences": 163716,
+    "base_clauses": 56550,
+    "added_guarded_clauses": 444,
+    "added_literal_occurrences": 24864,
+    "new_auxiliary_variables": 0,
+    "cut_count": 12,
+    "old_witness_cut_outcomes": [
+      {
+        "target_signature": 336,
+        "left": 5,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 337,
+        "left": 4,
+        "right": 2,
+        "holds": true
+      },
+      {
+        "target_signature": 360,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 390,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 404,
+        "left": 7,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 405,
+        "left": 5,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 427,
+        "left": 8,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 445,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 454,
+        "left": 7,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 455,
+        "left": 7,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 467,
+        "left": 6,
+        "right": 0,
+        "holds": true
+      },
+      {
+        "target_signature": 479,
+        "left": 0,
+        "right": 2,
+        "holds": false
+      }
+    ],
+    "old_witness_failed_guarded_clause_count": 1,
+    "old_witness_rejected": true,
+    "old_witness_or_its_complement_fixed": false,
+    "all480_original_selectors_free": true,
+    "exterior_edge_variables": 0
+  },
+  "cnf": "/tmp/conway99-f0-exterior-row-cut-overlay.cnf",
+  "cnf_sha256": "419a570047e7c1fd61cc2ddbeb6eade45af0a2570518c5fe1ea78954ad9142b0",
+  "cnf_bytes": 1004764,
+  "clause_suffix_sha256": "4c853e57f549b24e1f94585252899e9f08adb0836abddc203ca91ba6ded2757a",
+  "controls": {
+    "binary_weight_truncation_controls": 4096,
+    "guarded_threshold_truth_assignments": 1922
+  },
+  "scope": "globally prism-free SRG(99,14,1,2), x521=0, split18+18 triangle shell, one indexed component",
+  "fixed_incidence_design": false,
+  "graph_symmetry_constraints": false,
+  "SAT_scope": "necessary one-component incidence only; exterior edges and second component unspecified",
+  "UNSAT_scope": "component0 in the conditional globallyP=F=0 split18+18 case only",
+  "solver_called": false,
+  "seconds": 1.9128467180016742
+}

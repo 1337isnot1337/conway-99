@@ -1,0 +1,29 @@
+{
+  "status": "PASS: independent read-only dynamic symmetric-row source review",
+  "source_bindings": {
+    "root_prism_free_f0_symmetric_row_loop.py": "2d08cd3dac2269584f8fc91680566f4418f3e7afd6fed6c0b6cd2a5a9a53af2a",
+    "root_prism_free_f0_shared_row_separator.py": "7d8f3324826c1fa7fa05e79dbbee7c6e16b064dd01ef5e548160f6a7fe04368a",
+    "root_prism_free_f0_signed_threshold.py": "605b4984ef30374950d19eb66fe37465026e0719fa3a6cb73bfbe68c92e0b1ad",
+    "root_prism_free_f0_symmetric_selector_cut.py": "15ec937609b7de44b808e9de7053bb9ee080ddf732a3defd2b23577c026fe274"
+  },
+  "preparation_sha256": "ac320bcd92d1e801fc027ca7776ad97ebe978628b530caa67ceb5d770c992a55",
+  "cold_preflight_sha256": "1264c464902347531bef89bf6eb22c147af77ed83f6a4b9a0ae1d57a14fc17a0",
+  "review": [
+    "The current selected60 design restricts only a diagnostic shared-edge box. Every allowable unordered edge in the supplied full domain remains a variable in that box.",
+    "The1140 equations consist of60 degree-eight rows and1080 mixed rows. Each edge is shared by its endpoints, and explicit nonnegative upper-bound slacks enforce edge values at most one.",
+    "Exact rational feasibility is accepted only after every bound and equation is checked. Exact infeasibility is accepted only after all original and slack coefficients and the strict rhs sign are checked.",
+    "The conversion of equality and degree multipliers to eighteen-coordinate potentials uses weight-three columns and total mixed demand24; it preserves the strict shared-box gap.",
+    "Global lifting extends potentials by zero to all480 signatures and allocates every positive weight over all68394 eligible edges to an endpoint selector. The diagnostic selection determines a coefficient choice, not an antecedent.",
+    "Transported allocations use inverse order for internal ties, and are explicitly recomputed over the global edge domain; the twelve actions impose no automorphism constraint on a hypothetical graph.",
+    "Signed cuts are normalized only by a positive integer gcd and use the previously reviewed primary-literal substitution with a fresh true guard.",
+    "Each SAT candidate is checked against all existing individual and signed inequalities. Only a complete sixty-row exact box pass reaches the shared LP. A numerical or timeout outcome stops without a learned cut.",
+    "The reconstruct path rebuilds the initial formula, checks every candidate against its current prefix, replays every exact box or ray and global lift, and then regenerates the same appended clauses.",
+    "Incremental UNSAT remains uncertified until the separate fresh proof wrapper succeeds. Resource refusal cannot append an incomplete weighted cut; incomplete transport prefixes are explicitly marked and replayed."
+  ],
+  "scope": "The dynamic helper and complete main loop were read. The frozen signed adapter and activation-cut theorem were reviewed separately. No finite domain, CNF, LP, source control, numeric certificate, or proof was rebuilt here. The new proof wrapper was not reviewed in this artifact.",
+  "CNF_rebuilt": false,
+  "LP_called": false,
+  "SAT_solver_called": false,
+  "proof_replayed": false,
+  "numeric_certificate_independently_recomputed": false
+}

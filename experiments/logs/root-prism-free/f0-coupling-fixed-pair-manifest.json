@@ -1,0 +1,147 @@
+{
+  "status": "frozen exact coupling control and checked fixed-pair UNSAT pilot",
+  "scope": "global prism-freeness and x521=0, conditional split18+18 triangle shell",
+  "fractional_control": {
+    "model": "first saved design fixed, second complete domain free",
+    "candidate_variables": 5472,
+    "positive_weights": 2916,
+    "common_denominator": 144,
+    "full_Gram_entries_checked": 1521
+  },
+  "binary_pilot": {
+    "first_component": 0,
+    "second_component": 0,
+    "both_incidence_designs": "saved component0 SAT60-triple design",
+    "relative_fiber_alignment": [
+      0,
+      1,
+      2
+    ],
+    "primary_variables": 792,
+    "variables": 23100,
+    "clauses": 56096,
+    "query_limit_seconds": 60,
+    "solver_return_seconds": 0.29994882000028156,
+    "status": "UNSAT with direct DRAT and cold full-CNF/retained-proof replay",
+    "retained_input_clauses": 7447
+  },
+  "excluded_scope": "only this fixed pair of saved60-triple designs and identity fiber alignment",
+  "whole_component_or_split_case_excluded": false,
+  "graph_constructed": false,
+  "additional_queries_run": false,
+  "prior_dependency_manifest": "experiments/logs/root-prism-free/f0-components-incidence-pilot-manifest.json",
+  "prior_dependency_manifest_sha256": "ffe8c2614f64fb5befeb1e6b567680dc8a2239ec9e42070a9b1515f623129aa0",
+  "raw_discovery_proof_local_only": {
+    "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01/raw.drat",
+    "needed_for_replay": false
+  },
+  "artifacts": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_coupling.py",
+      "sha256": "5bb3ec13893aee488272dcb7372c12bddf68d28ae4a199cd170be9342d47df50",
+      "bytes": 13146
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_pair.py",
+      "sha256": "1fa7c4427539c89543fdf4994b267979d77bfc6a0e2e368bf84762cdf4b614c9",
+      "bytes": 20898
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_pair_independent_audit.py",
+      "sha256": "3aa3cb730cef541d31ae04d39f5ffedf0dabeb4e2d767152a6e034bdd1694e8c",
+      "bytes": 6370
+    },
+    {
+      "path": "research/root_prism_free_f0_coupling.md",
+      "sha256": "6c6d28d2c86e338fa5c7bf5899aa0ce0a4a6e7da12b715a8148125038ce421c2",
+      "bytes": 9761
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-coupling-certificate.json.gz",
+      "sha256": "bbe73089b6ae19b25ebb43597195ee81682202e3139e627fbc75db427a5c4cc7",
+      "bytes": 14915
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-coupling-generation.log",
+      "sha256": "af5023f918e65b19fd86cc9ac5fee0b2e3561d284d5df49f87f0a3fe485cdcf5",
+      "bytes": 389
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-coupling-replay.log",
+      "sha256": "0d80a5fcc56394d7242470ed0c5b3510fa0fece9c5c2f591e8accbc35d8e8640",
+      "bytes": 385
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-model.json",
+      "sha256": "db1765af0096c13a050c2817c0a367153a3fdec9ab4ae319cede8e8b6be234d3",
+      "bytes": 66276
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-preparation.log",
+      "sha256": "174f3ba0eb0d662c9658145419fc8bebee268abd8575f2359142acf62eb6984c",
+      "bytes": 2477
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-cold-model-replay.json",
+      "sha256": "51ee39fde7a4f4d1f8d7fec754a29ac86d8748ff2ea5f76ecfba21f1eceb8ebc",
+      "bytes": 318
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-cold-model-replay.log",
+      "sha256": "51ee39fde7a4f4d1f8d7fec754a29ac86d8748ff2ea5f76ecfba21f1eceb8ebc",
+      "bytes": 318
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-independent-audit.json",
+      "sha256": "fa52be27ae08b694d59a501ea4334374d5691595e8940c927d2a94aeb875c044",
+      "bytes": 1307
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-independent-audit.log",
+      "sha256": "fa52be27ae08b694d59a501ea4334374d5691595e8940c927d2a94aeb875c044",
+      "bytes": 1307
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01.log",
+      "sha256": "b48f63d5105c2aac20c349c26257858e97dbf5552b6f7a12981be3cac08fa0ef",
+      "bytes": 1702
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01/result.json",
+      "sha256": "b48f63d5105c2aac20c349c26257858e97dbf5552b6f7a12981be3cac08fa0ef",
+      "bytes": 1702
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01/retained.cnf",
+      "sha256": "6eb3ef91b627156c3de7cefc678e0388ada4007339ecce54607c08ab9d77caee",
+      "bytes": 110429
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01/retained.drat",
+      "sha256": "dc733cceeb42811a42995eadcf5cde2a5f95d5de7a1885ffff35fd8adb2056bd",
+      "bytes": 367188
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01/direct-drat.log",
+      "sha256": "288535a77191f0f61751ff0149e6ab7065d26eeeeb1a4edea805158c9732cbc8",
+      "bytes": 385
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01-replay.json",
+      "sha256": "06bc8a2ddc0946b76cad85c05ca1831c815e7e3fed0aff2778380e849721085b",
+      "bytes": 656
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01-replay.log",
+      "sha256": "06bc8a2ddc0946b76cad85c05ca1831c815e7e3fed0aff2778380e849721085b",
+      "bytes": 656
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fixed-pair-run01-replay.drat.log",
+      "sha256": "ac8314a60ee3b1743cf57629bd4b28bc552dc296a8f29fa57a578b2ee4686108",
+      "bytes": 382
+    }
+  ],
+  "artifact_count": 21,
+  "artifact_bytes": 620967
+}

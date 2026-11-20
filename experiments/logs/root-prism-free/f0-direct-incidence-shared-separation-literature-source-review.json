@@ -1,0 +1,84 @@
+{
+  "schema": "conway99.f0-direct-incidence-shared-separation-literature-source-review.v1",
+  "status": "PASS: complete source and mathematical review; no execution",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_incidence_shared_separation.py",
+    "sha256": "6c8703ed6dff75ad451cdb752bda61c84acfd0c51ca6779a9c38b7e0c0816132"
+  },
+  "preparation": {
+    "path": "experiments/logs/root-prism-free/f0-direct-incidence-shared-separation-preparation01/report.json",
+    "sha256": "b8b99f362372b990b69ac126448181c66d73e4cc06445d1a8e26f07fdf2c8bdb",
+    "owner_sha256": "fa89ee4051f5e163bfbb8c4517636dfd423fd2bdeec8be7da209a961302a17d5"
+  },
+  "source_dependencies_read": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_shared_reserved_fallback.py",
+      "sha256": "0685fc162e91a466ed033becb7d01259c4869f2afd9214474b4b0eae7dfcd066",
+      "scope": "complete source"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_shared_bounded_fallback.py",
+      "sha256": "46ff20ca4269b71b80c2fd7e3ba2fec4f369b7dca3d4e08272a935cdfde72f1a",
+      "scope": "dependency validation and phase replay"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_shared_deficit_separator.py",
+      "sha256": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf",
+      "scope": "complete domain, inventory and universal lift"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_bounded_shared_separator.py",
+      "sha256": "bbdf21247d98cff416f68492415a3db6ec5f98f47d1ebb9367acac1604192798",
+      "scope": "exact integer gap"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_symmetric_selector_cut.py",
+      "sha256": "15ec937609b7de44b808e9de7053bb9ee080ddf732a3defd2b23577c026fe274",
+      "scope": "complete endpoint-allocation function"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+      "scope": "owned process-group supervisor"
+    }
+  ],
+  "checks": {
+    "current_selection_and_complete_exterior_data_bound": true,
+    "baseline_signature_targets_and_all68394_eligible_edges_compared": true,
+    "no162_Y_zero_filter_or_point_zero_pruning": true,
+    "all12_actual_core_actions_check_graph_signatures_targets_and_edges": true,
+    "host_graph_symmetry_not_assumed": true,
+    "exact_gap": "The integer demand is the sum of every mixed-row potential times its required demand. An edge has the sum of the two endpoint contributions; its maximum box supply is its positive part. A strict demand-minus-positive-capacity gap certifies infeasibility of this fixed shared row box.",
+    "universal_lift": "Extend potentials by zero to all480 signatures. Each positive edge weight is allocated to one of its actual endpoints. Edge activation bounds that supply by the allocated endpoint selector, yielding a homogeneous selector inequality over the complete eligible domain. The chosen selection only determines a valid allocation and demonstrates a violation.",
+    "transport": "The inverse original order transports internal-edge tie breaking. All480 moved coefficients and the positive normalized gap are checked under each of the12 actions; positive gcd division preserves orientation.",
+    "one_reserved_sequence": "At most one original feasibility call, then at most one distinct bounded-potential fallback if unresolved, within the shared60-second cooperative budget. No original call after fallback or unchanged retry.",
+    "cuts_require_exact_gap_zero_cooperative_overrun_and_accepted_separate_cold": true,
+    "cold_reconstructs_exact_integer_gap_and_all12_cut_vectors": true,
+    "owner_checks_fresh_directory_exit0_reaping_report_hash_and_deadline": true,
+    "only_cold_owner_can_set_certified_new_cuts": true,
+    "assertions_required": true
+  },
+  "saved_preparation_scope": {
+    "primary_edges": 1219,
+    "equality_rows": 1140,
+    "standard_form_variables": 2438,
+    "standard_form_rows": 2359,
+    "standard_form_nonzeros": 12190,
+    "preparation_owner_seconds": 1.3484262540005147
+  },
+  "limitations": [
+    "The saved preparation counts are read from the bound record, not recomputed in this review.",
+    "The shared LP omits outside-pair common-neighbor caps; its exact fractional feasibility would not undo the separate checked Boolean exterior exclusion.",
+    "Numerical status alone is not a certificate. A late or unaccepted run/cold record does not certify new cuts.",
+    "Any certified cuts are necessary selector inequalities. They do not exclude all first incidences, the whole component, or the F0 case.",
+    "The complete parent arithmetic and proof dependencies remain those frozen by the existing separator chain."
+  ],
+  "review_operations": {
+    "subject_imports": 0,
+    "controls_repeated": 0,
+    "model_rebuilds": 0,
+    "proof_replays": 0,
+    "LP_calls": 0,
+    "SAT_calls": 0
+  }
+}

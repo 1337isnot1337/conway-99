@@ -1,0 +1,110 @@
+{
+  "status": "PASS: complete frozen-source review and independent adapter text/AST binding checks",
+  "reviewer_source_sha256": "8e735e26e12ab87209300cb8f9cf10047b73caae92e7ffeec79b124eb995e46d",
+  "subject_source_hashes": {
+    "root_prism_free_f0_joint_psd_clique_model.py": "5bef59a3831030047349a0f2d80b36fffb6aa99e8bfdc1f074d4b776143b459b",
+    "root_prism_free_f0_joint_psd_clique_exact.py": "f16d9648a396a4c2c78b68262ce4c767351bfd69bdf66237b49b35e0fb8752fc",
+    "root_prism_free_f0_joint_psd_clique_query.py": "577b120992399a0a0e958eafd0bd9d7a7344982bbb4788a60bebee7ec7437441",
+    "root_prism_free_f0_joint_psd_clique_replay.py": "5804a7d10271b20c7f096b3012bdc78ee56be3054f94887575454da1475cb79d",
+    "root_prism_free_f0_joint_psd_clique_native_audit.py": "cdc70cff604545a549382ac2c6677dfa7cd0bb9cfebcc6c28c8846e51383cab5",
+    "root_prism_free_f0_joint_psd_clique_reuse_control.py": "857597faf2f954b465a0b56f7f5b8fd250101b6449f83ca23053f38ffde94793"
+  },
+  "bound_record_hashes": {
+    "f0-joint-psd-clique-model01-preparation.json": "286382d259bb7d9e53c9af9c0e378369f15e29f803d1d553c58a044cc1e1f08f",
+    "f0-joint-psd-clique-model01-cold-replay.json": "da7dce5e6485a183b3e028ca72a5be5336137d3d7091d660af3187a6f4169bdc",
+    "f0-joint-psd-clique-query-preparation01.json": "2dd9ec779de923db89fd040fb171c803135986ae1e57ff64707840c024ea4148",
+    "f0-joint-psd-clique-query-preflight01.json": "7bc800b968c4d2d5ed0224d83e6337880ea8376c8490e05c8bcb89588ca0a17b",
+    "f0-joint-psd-clique-native-audit01.json": "3938d098e2347956a4b447eab497e9826d5a2ffdc5e42cb8bede84378c30168c",
+    "f0-joint-psd-clique-reuse-controls.json": "5ec84b5fb368a19d3d86c05e8722a3b54f75273625468daa1597d59561b96e43"
+  },
+  "complete_adapter_substitution_checks": [
+    {
+      "adapter": "query",
+      "ledger_sha256": "d89fa4eed1103ee692cc9d7d3e33fd67b3378e0f713802f71bc8917dd1fd0807",
+      "old_sha256": "d074b272ccf4f963b242ea6ba8308e83602d0a71d0d500f6e204a484545e9e7a",
+      "new_sha256": "577b120992399a0a0e958eafd0bd9d7a7344982bbb4788a60bebee7ec7437441",
+      "exact_replacement_occurrences": [
+        1,
+        1,
+        1,
+        1,
+        3,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "complete_text_and_AST_match": true
+    },
+    {
+      "adapter": "replay",
+      "ledger_sha256": "9b0a8cdcecd286ac322557c820533045007b82266bc18b5a93d704a20008f4fb",
+      "old_sha256": "29714f02e60957616da04f747be79e2add6984a0eb0bba34bbe9ac86808ae6e4",
+      "new_sha256": "5804a7d10271b20c7f096b3012bdc78ee56be3054f94887575454da1475cb79d",
+      "exact_replacement_occurrences": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "complete_text_and_AST_match": true
+    },
+    {
+      "adapter": "native-audit",
+      "ledger_sha256": "12b91295d6d1e1b226d7c79060daad03753e86ff0e89d041c50a780d6bfbbca9",
+      "old_sha256": "c9ff9687dfe0cedb87e40021f5ae5091112ef3b2668cc4a9226d35d0e5a78ba0",
+      "new_sha256": "cdc70cff604545a549382ac2c6677dfa7cd0bb9cfebcc6c28c8846e51383cab5",
+      "exact_replacement_occurrences": [
+        1,
+        1,
+        1,
+        1,
+        3
+      ],
+      "complete_text_and_AST_match": true
+    }
+  ],
+  "exact_phase_unchanged_except_ray_dimension": true,
+  "standalone_finite_box_integer_arithmetic_unchanged": true,
+  "mathematical_review": {
+    "prefix": "All15200 variables,6135 equalities,21629 old inequalities and27764 old scales remain unchanged.",
+    "PSD_rows": "The21 saved directions are reconstructed and evaluated exactly; only proved zero coordinates are removed, with a positive normalization divisor. No point coordinate is assumed zero.",
+    "edge_cliques": "Each literal bucket is a genuine neighbor clique: two chosen endpoints would have the center and two fixed sites as common neighbors. The inequality is sumY<=x_center, not a selector exclusion.",
+    "transports": "All12 actual core transports are checked per row. Repeated quotient edge coordinates are added by Counter; no host automorphism is assumed.",
+    "scale": "Every new coefficient and right side is divided by a positive dyadic scale and checked by exact Fraction comparison. The old scale prefix is retained.",
+    "query": "One IPM/no-crossover call, with180-second owned-child bound. Existing-ray extraction is guarded by getDualRayExist; absent rays cause UNKNOWN without another optimizer.",
+    "exact_acceptance": "Equality multipliers are unrestricted, inequality multipliers nonnegative. The unit-box minimum of the combined form is sum min(c_j,0); strict upper-minus-minimum negativity certifies infeasibility.",
+    "scope": "Only92 specified PSD directions are enforced. A numerical proposal is not exact feasibility, and a numerical infeasibility result is not an exclusion."
+  },
+  "reported_model_counts_not_recomputed_here": {
+    "variables": 15200,
+    "equalities": 6135,
+    "inequalities": 21908,
+    "rows": 28043,
+    "nonzeros": 1086559,
+    "appended_rows": 279,
+    "new_PSD_rows": 21,
+    "core_pair_clique_rows": 258
+  },
+  "native_transport_gate_hash_bound_not_rerun": true,
+  "subject_modules_imported": false,
+  "models_rebuilt": 0,
+  "censuses_repeated": 0,
+  "eigenscans": 0,
+  "optimizer_calls": 0,
+  "graph_or_component_exclusion_claimed": false
+}

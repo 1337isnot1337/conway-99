@@ -1,0 +1,74 @@
+{
+  "status": "PASS: old exact Boolean point passes all old rows and violates nine new Y zeros",
+  "source_sha256": "dd7f01826d8a304832cc371bac910f3d8fd71a8b9142e1d081a9d2d5b74842c0",
+  "inputs": {
+    "census": {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01.json.gz",
+      "sha256": "397e8bf110e03a5accb5e6c1f27b2fb5525100acb67427c66669e188e74159d1"
+    },
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "point": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model-point.json",
+      "sha256": "047417fc0e266bce4fa29a58b2483c16f6c3bd8549de941ab220245c5e8ba2c7"
+    }
+  },
+  "old_equalities_checked": 686,
+  "old_inequalities_checked": 11449,
+  "old_variable_bounds_checked": 5847,
+  "new_Y_zero_rows_checked": 162,
+  "common_denominator": "1854019811676736303924899757370339420637514913704062386488",
+  "new_violations": [
+    {
+      "original_variable": 295,
+      "edge_orbit": 253,
+      "positive_numerator": "45487387546648937942548304112577756699499698172569051618"
+    },
+    {
+      "original_variable": 1225,
+      "edge_orbit": 1183,
+      "positive_numerator": "11276844751011045096805582546485335316105394646451326951"
+    },
+    {
+      "original_variable": 2676,
+      "edge_orbit": 2634,
+      "positive_numerator": "2966565379721044596536832525248125133525117197594806920"
+    },
+    {
+      "original_variable": 3887,
+      "edge_orbit": 3845,
+      "positive_numerator": "77558889890332086834330719379962786874439890272847623746"
+    },
+    {
+      "original_variable": 4101,
+      "edge_orbit": 4059,
+      "positive_numerator": "26595857961571546500638094250708378309400853665565505726"
+    },
+    {
+      "original_variable": 4687,
+      "edge_orbit": 4645,
+      "positive_numerator": "150108563519158838413382856589119207930005430542230488342"
+    },
+    {
+      "original_variable": 5149,
+      "edge_orbit": 5107,
+      "positive_numerator": "6186528092732153098559016192325371760754387381120370597"
+    },
+    {
+      "original_variable": 5188,
+      "edge_orbit": 5146,
+      "positive_numerator": "35756773861224863952054147278450832158505104491349759419"
+    },
+    {
+      "original_variable": 5488,
+      "edge_orbit": 5446,
+      "positive_numerator": "6186528092732153098559016192325371760754387381120370597"
+    }
+  ],
+  "old_boolean_relaxation_strictly_strengthened": true,
+  "joint_second_moment_feasibility_or_infeasibility_not_claimed": true,
+  "optimizer_calls": 0,
+  "new_numerical_point_queries": 0
+}

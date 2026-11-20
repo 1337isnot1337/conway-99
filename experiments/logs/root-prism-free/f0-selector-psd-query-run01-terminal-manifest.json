@@ -1,0 +1,66 @@
+{
+  "schema": "f0-32-PSD-cut-query-run01-terminal-publication-v1",
+  "status": "UNKNOWN: no exact point or infeasibility certificate",
+  "preparation_publication_manifest_sha256": "51f5efb9e39a6cfe7a5f1a282a170b58009d33f3ece20f5614f87cd42b377d2a",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_query_archive.py",
+      "sha256": "922071a719269dcd0256a38f0ed1380d019a64041407cd6220447fd1039f3886",
+      "bytes": 3784
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-run01-archive.json.gz",
+      "sha256": "41ec1e625290a71150f3f31238e681a79293de6123912eb36da26fe49f7b8968",
+      "bytes": 174846
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-run01-archive-pack.json",
+      "sha256": "6c7baff165890e362ecf9c8fdae08957cf27b6c68a7451532b4e803d45d98c89",
+      "bytes": 306
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-run01-archive-restore.json",
+      "sha256": "3f0c943eb7d7f9ec625b1e309ffa5478bcc624def117790979a5e7aa3479921d",
+      "bytes": 938
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-run01-replay.json",
+      "sha256": "bc466ae0be7c450c4626b13af6a3514f66c6413bab545e22a5e309614c279b35",
+      "bytes": 1173
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-run01-archive-cold-replay.json",
+      "sha256": "bc466ae0be7c450c4626b13af6a3514f66c6413bab545e22a5e309614c279b35",
+      "bytes": 1173
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-run01-summary.json",
+      "sha256": "58b0d1b7dc11cab8860d93c9648d3d7b4288b0362ef3f84c4ee4edfb2d5193d6",
+      "bytes": 2297
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-query-independent-source-review.json",
+      "sha256": "4e8274324ab7e939ee1979a2201b7c603e90f6be2cd7367ba0f194d74821b538",
+      "bytes": 2328
+    },
+    {
+      "path": "research/root_prism_free_f0_selector_psd_query_run01.md",
+      "sha256": "24b959f8f33a8e36cc7ec689e0632fdb9c8a547925bd18b6255ae1daff562480",
+      "bytes": 3588
+    }
+  ],
+  "scope": {
+    "one_production_optimizer_call": true,
+    "exact_feasible_point_found": false,
+    "infeasibility_certificate_found": false,
+    "component_excluded": false,
+    "graph_constructed": false,
+    "all_original_acceptance_preserved": true,
+    "certified_PSD_directions": 32,
+    "whole_PSD_cone_enforced": false
+  },
+  "archive_all_seven_run_files_preserved": true,
+  "cold_restored_replay_byte_identical": true,
+  "raw_run_result_sha256": "c766de716a7c0f4c372894d9dd68811e90b2570304c6f687d01362f4d72595d0",
+  "additional_optimizer_or_eigendecomposition": false
+}

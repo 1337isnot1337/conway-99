@@ -1,0 +1,169 @@
+{
+  "schema": "conway99.five-root-conditioned-result-artifacts.v1",
+  "status": "FROZEN_COMPLETE_EIGHT_BLOCK_EXACT_QUERY_AND_COLD_REPLAY",
+  "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "root_types": [
+    26,
+    27,
+    28,
+    32,
+    33,
+    34,
+    35,
+    37
+  ],
+  "orders": [
+    56,
+    44,
+    26,
+    34,
+    34,
+    28,
+    19,
+    16
+  ],
+  "nullities": [
+    6,
+    9,
+    8,
+    10,
+    6,
+    7,
+    11,
+    8
+  ],
+  "exact_positive_semidefinite": true,
+  "preparation": {
+    "seconds": 3.039609396000742,
+    "tensor_nonzeros": 9127,
+    "host_controls": 131
+  },
+  "query": {
+    "invocations": 1,
+    "seconds": 0.06459765599720413,
+    "optimizer_calls": 0
+  },
+  "cold_replay": {
+    "passed": true,
+    "seconds": 0.038498706999234855,
+    "all_matrix_and_characteristic_coefficients": true
+  },
+  "six_root_family_included": false,
+  "unrestricted_existence_resolved": false,
+  "files": [
+    {
+      "path": "experiments/workspace/triangle_projector_five_root_conditioning.py",
+      "bytes": 16049,
+      "sha256": "578f8db7c51c7f5b934e7f7275b295a9a5908bf09d5f6a9d9662366914046e5c",
+      "git_blob": "9a99a6fbb100d7458b69e2022bd0ef063a470283"
+    },
+    {
+      "path": "experiments/workspace/triangle_projector_five_root_query.py",
+      "bytes": 8465,
+      "sha256": "ca578502aa0048428f2bb3a7a13b4d5fd969870adc6f82b1c92b7dbf804c7a54",
+      "git_blob": "e534b16ec97f773cdc353750af9b6d369d1aaa16"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_five_root_conditioning.md",
+      "bytes": 4581,
+      "sha256": "86b06e8ef033ec80a02fd97f4fb3a1b52dec1becf4364289ecef0ee03d76bbb9",
+      "git_blob": "3520656c231ee555cf029190ce3ec1ea4e3ec86a"
+    },
+    {
+      "path": "research/grids-and-triangles/triangle_projector_five_root_result.md",
+      "bytes": 1775,
+      "sha256": "983b1bf4b9fbee6beca4132f5b28160c6538b97806c7217195bd420cc57f6ce2",
+      "git_blob": "e355fcd4b54a15c0db25ae670a7d76e2113b70fb"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-five-root-triangle-query-preparation.json",
+      "bytes": 1214,
+      "sha256": "3377e13590cb00fc038d345cd206576189f297705b85c4098a308bb445a3d486",
+      "git_blob": "2fc0f3c18986c71c87413813c2cdfd538f961ef9"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-five-root-triangle-preparation.log",
+      "bytes": 2152,
+      "sha256": "14b6fe3a3e82df1b3b84698deb25c01655c5f08897318cf4aaf46ea898092ccf",
+      "git_blob": "fa9dfeaed226936bb375ef8f3b970444bb85ca34"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-five-root-triangle-query01.json",
+      "bytes": 247134,
+      "sha256": "bbdf949677fe0d2baae328677bb67dd907590d5362db0450a4a00ff248c67a63",
+      "git_blob": "0532466e371a9dab89f3fc2f23daed8dc6b01fe4"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-five-root-triangle-query01-replay.json",
+      "bytes": 3807,
+      "sha256": "b75a0c7e829094a7502e60419fa691cf96a97c152b7959d700a8f7aa2b680ffa",
+      "git_blob": "32fcd3851c813020e69628ff48d849af708e177d"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/preparation.json",
+      "bytes": 36092,
+      "sha256": "ed9e636277398aadb39077a344456412619bd40ea970717ebffdb148102ef73c",
+      "git_blob": "e3050d06b6dc23013826f22c6e55e3bc70526f62"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/model.json.gz",
+      "bytes": 41814,
+      "sha256": "395d56df140bcdc30554ef8bed48663d11f006abb5cd72f1d94aff018f216ff8",
+      "git_blob": "a2b3ac648280c2ee2fae6353922b21ef6294eb9f"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/root-26.json.gz",
+      "bytes": 12352,
+      "sha256": "d0491b2420a01ac7a6958109a9f170e938368d4f1b1a8147737df32c542be242",
+      "git_blob": "3af59571685208ccc0550055427a59678cf21144"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/root-27.json.gz",
+      "bytes": 8105,
+      "sha256": "d3ecc127a348c99d62721a5ecef86ce2f590d94592baa996e792ac243083904d",
+      "git_blob": "ab84abb57fd83f556e3f79b4874ee7407a2c2362"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/root-28.json.gz",
+      "bytes": 3103,
+      "sha256": "7a7b945469b0482e0beaafa544616a5e4c272a385fc5338357e1c0526e8fe95b",
+      "git_blob": "1aa987a0299d3837d855ad6b846ee308320e676d"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/root-32.json.gz",
+      "bytes": 4481,
+      "sha256": "3826e0265cd2c836adf9fc7ec7cf700c2c5b4f197e66a06ad0d35172d7de3519",
+      "git_blob": "31a4b885d6ea553763317e1d9454fd53dbb4ab45"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/root-33.json.gz",
+      "bytes": 5094,
+      "sha256": "83ecf3059aca3c9dba2f1ccf52be4d9de259b325b4ed278d54e65fc5b0db2979",
+      "git_blob": "c9b25b05467b4146caf7f3e0a1ae286dfde23d45"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/root-34.json.gz",
+      "bytes": 3692,
+      "sha256": "91b75d11e377f128c6c976caa1b4f864174d900a8662f2239b96e9d3135f26cc",
+      "git_blob": "3406c9ad584dd0bc944d16307fed5dad207cd738"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/root-35.json.gz",
+      "bytes": 1722,
+      "sha256": "98b0fe872e5ccbd6616cfe7cccf77913602d8e821e8023b615f533aef7f2d679",
+      "git_blob": "832eaae3f1e0dc18a8297aab81730d8a50dfd589"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-preparation01/root-37.json.gz",
+      "bytes": 1323,
+      "sha256": "7abb04ca0ec64cb15aaba05f9a54b31f7664dcf93dd9af165c2866f95660fdfa",
+      "git_blob": "7e87444bc479e57d2e47849715697070b065dab2"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/triangle-projector-five-root-conditioning-independent-source-review.json",
+      "bytes": 2248,
+      "sha256": "9512cdfd9a1ce196a0f8860858229013e33dac1ee5bea45eb9f05fa9b764c7ff",
+      "git_blob": "3e02377cbb5d367513c33a6741104eb0f5205086"
+    }
+  ]
+}

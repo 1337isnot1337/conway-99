@@ -1,0 +1,122 @@
+{
+  "schema": "conway99.f0.cap-one-forest-support-configuration.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_cap_one_forest_support_inventory_v8.js",
+    "sha256": "e3f706224343cbc625379f1d80c27c7b1550aad9cb644c18854286b0f0fdaf13",
+    "git_blob": "42e13f54a19d8e04a841b81ea7581dd70b3eeda7",
+    "bytes": 20085,
+    "lines": 257,
+    "mode": "100644"
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "bytes": 8304
+  },
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64_gzip",
+      "kind": "json"
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "bytes": 219390,
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "encoding": "base64_gzip",
+      "kind": "json"
+    },
+    "spectral_cold": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01.json",
+      "bytes": 13646,
+      "sha256": "e8d27725afb707867f6683604ff1f3123f8960305c721058f495883f23476349",
+      "git_blob": "38ec9167df27b86de0341f8387cc894c6d2ff8cc",
+      "mode": "100644",
+      "encoding": "utf-8",
+      "kind": "json"
+    },
+    "spectral_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-root-acceptance01.json",
+      "bytes": 2336,
+      "sha256": "0ddbc84223a4cd56ad94597bf9320b1bb2ebbf05f0965cf07216beaca465b42e",
+      "git_blob": "408c39a6be9880f07998c89b284d31121bfd942d",
+      "mode": "100644",
+      "encoding": "utf-8",
+      "kind": "json"
+    },
+    "native_root_acceptance": {
+      "bytes": 7706,
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116",
+      "encoding": "utf-8",
+      "kind": "json"
+    },
+    "native_cold": {
+      "bytes": 14259,
+      "git_blob": "2f13275d00aca2d1cc2add3414aa8c2ed4062568",
+      "mode": "100644",
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "sha256": "75e0150b0c0ed6f6b7c5d84c270790a4311a5a81382afe0a32e360dd2d126628",
+      "encoding": "utf-8",
+      "kind": "json"
+    },
+    "forest_theorem": {
+      "path": "research/root_prism_free_f0_common_neighbor_forest_extension.md",
+      "sha256": "66008cb63184240d897f55f2333bbb5153e26031cd4cb96c134767a9e5723cea",
+      "git_blob": "00281a95fec20834cac140d7b2f6bfa4edef20e1",
+      "bytes": 9724,
+      "mode": "100644",
+      "encoding": "utf-8",
+      "kind": "text"
+    },
+    "forest_review": {
+      "path": "experiments/logs/root-prism-free/f0-common-neighbor-forest-extension-independent-review01.json",
+      "sha256": "59879fd63bab3c81969e8ba978f172077ee37c1b9375093c2ecac38f982802ec",
+      "git_blob": "47d16703a6b9d69502ef294bb1eb71b2dac94e2b",
+      "bytes": 4714,
+      "encoding": "utf-8",
+      "kind": "json"
+    }
+  },
+  "limits": {
+    "inventory_ms": 30000,
+    "total_ms": 60000,
+    "report_bytes": 16777216,
+    "max_new_variables": 22992,
+    "max_new_rows": 91920,
+    "max_new_terms": 344400
+  },
+  "planned_main_calls": 1,
+  "automatic_retries": 0,
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "main_authorized": false,
+  "preparation_status": "SOURCE_AND_CONFIGURATION_PREPARED_ACTUAL_SUPPORT_ENUMERATION_UNRUN",
+  "complete_pair_count": 48,
+  "candidate_ids_checked_per_pair": 480,
+  "accepted_zero_union_size": 1956,
+  "old_literal_zeros": 1884,
+  "spectral_zeros": 132,
+  "spectral_overlap_with_old": 60,
+  "spectral_additional_zeros": 72,
+  "original_model_raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "original_variables": 68934,
+  "original_rows": 257594,
+  "support_scope": "Every candidate c other than a,b with both ORIGINAL eligible side edges; only unavailable or accepted proved-zero side edges are omitted. No triangle or disjoint-signature filter and no assumption on the anchor edge.",
+  "complete_dispositions": "All480 candidates for each of48 origins retain original side-edge IDs and every applicable availability/zero reason bit.",
+  "native_rows": "Exact ordered Boolean wedge AND+total+root linear rows after the preserved68934-variable/257594-row model; root rows have domain[-3,0], wedge lower[-2,0], upper/cap[-1,0], sum[0,0].",
+  "skip_rule": "Only m<=1 after acceptedzero removal; retain the complete allowed two-star forest and a parent/endpoint-activation receipt proving every root-omitted subset inequality by rerooting and restriction.",
+  "future_model_requires_independent_literal_completeness_check": true,
+  "future_model_requires_full_independent_native_replay": true,
+  "existing_model_changed": false,
+  "graph_or_component_exclusion_claimed": false
+}

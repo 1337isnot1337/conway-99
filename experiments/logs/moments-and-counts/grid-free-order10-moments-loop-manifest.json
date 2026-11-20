@@ -1,0 +1,90 @@
+{
+  "status": "frozen bounded loop; second round timed out; no exact feasibility conclusion",
+  "solver_rounds": 2,
+  "maximum_authorized_rounds": 6,
+  "seconds_per_round": 30,
+  "source_sha256": "549233611473b1c3558bb19a26d6dbeb532463123684e023963f05dab58ed4f4",
+  "files": {
+    "experiments/workspace/grid_free_order10_moments_loop.py": {
+      "sha256": "549233611473b1c3558bb19a26d6dbeb532463123684e023963f05dab58ed4f4",
+      "bytes": 14676
+    },
+    "research/grids-and-triangles/grid_free_order10_moments_loop.md": {
+      "sha256": "1ed91fbc6fcf720097f3cc5a45fe79b9fa26f443399c22355270d072af0d6251",
+      "bytes": 6044
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-preparation.json": {
+      "sha256": "bc52efaa911054ef463a16b3043f9a30921664cb1414c60847a84b775b219c97",
+      "bytes": 6879
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-preparation.log": {
+      "sha256": "ce6fa2ee61cbe9233b078bf7899b36753bbd0e497cc9d255c89eba2c4ebfe318",
+      "bytes": 2481
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-moments-loop.json": {
+      "sha256": "5030c57981c1d32e05c1c867082135e8706bb235a3f82253b552ebb682fc34fb",
+      "bytes": 16642
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-moments-loop.log": {
+      "sha256": "956581c668c2aecf1e9a43e882f6d0e8acc5e06eff5518f0f16dea06a120936a",
+      "bytes": 5166
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-proposal.json": {
+      "sha256": "d3ae3922d487c3b15e270a8aea5999a26cd034e51f6f34fce0b0c88edce7c416",
+      "bytes": 21486
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-separation.json": {
+      "sha256": "e37f6e9609c805121b412321015881c4c69c7a1f53a67d9ccf2b956fc3885ad4",
+      "bytes": 21231
+    },
+    "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-replay.log": {
+      "sha256": "8de0089c90d93d9e753bf8c55c33e18e0b061567925afda5dc141d24a793d495",
+      "bytes": 220
+    }
+  },
+  "extension_audit": {
+    "path": "experiments/logs/moments-and-counts/order10-reduction-audit.json",
+    "sha256": "dae01f55448e217e1a999215685f05444507354eb5a4f5e12864dd758b955fb0"
+  },
+  "initial_rows": 47625,
+  "final_rows": 47634,
+  "variables": 547,
+  "initial_nonzeros": 5427792,
+  "final_nonzeros": 5427993,
+  "initial_moment_cuts": 4,
+  "universal_count_cuts": 1,
+  "additional_exact_moment_cuts": 9,
+  "all_nine_exact_cuts_replayed": true,
+  "cached_blocks_examined": 1416,
+  "all_possible_PSD_inequalities_examined": false,
+  "count_witness": false,
+  "PSD_feasibility_certified": false,
+  "infeasibility_certificate": false,
+  "dual_extraction_performed": false,
+  "peak_process_rss_kib": 1269232,
+  "recorded_rounds": [
+    {
+      "round": 0,
+      "held_cuts": 5,
+      "rows": 47625,
+      "numerical_status": "HighsModelStatus.kOptimal",
+      "solver_seconds": 12.924531505999767,
+      "simplex_iterations": 294,
+      "proposal_path": "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-proposal.json",
+      "proposal_sha256": "d3ae3922d487c3b15e270a8aea5999a26cd034e51f6f34fce0b0c88edce7c416",
+      "separator_path": "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-separation.json",
+      "separator_sha256": "e37f6e9609c805121b412321015881c4c69c7a1f53a67d9ccf2b956fc3885ad4",
+      "exact_negative_blocks": 9,
+      "exact_separator_count": 9,
+      "fresh_cuts": 9
+    },
+    {
+      "round": 1,
+      "held_cuts": 14,
+      "rows": 47634,
+      "numerical_status": "HighsModelStatus.kInterrupt",
+      "solver_seconds": 30.04172466900127,
+      "simplex_iterations": 2917
+    }
+  ]
+}

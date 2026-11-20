@@ -1,0 +1,44 @@
+{
+  "schema": "conway99.independent-source-review.v1",
+  "status": "PASS: complete two-orbit profile source and mathematical review",
+  "reviewer": "literature_obstructions",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_two_orbit_profiles.py",
+    "sha256": "8673b7590d4245efe07ae7c7da5cc18563bc7d4cb9114a76c3f0d86c30ee8f17",
+    "complete_source_read": true
+  },
+  "record": {
+    "path": "experiments/logs/root-prism-free/f0-two-orbit-profiles01.json.gz",
+    "sha256": "6a1bc6d196358ecc618355bc64d6fe6a2b60be9fa9411afd29526c9f493995b9"
+  },
+  "checks": {
+    "population": "The frozen count-model equalities at rows 1 and 3 are checked literally as N0+N1=3 and N6+N7=3. Counts are literal selected-signature populations, so exhaustive combinations of three distinct members from each 24-member union cover every relevant restriction.",
+    "complete_literal_domain": "Both unions retain their actual 24 literal signatures. All 276 literal pairs are matched to the original pair-orbit map, and the complete set of pair orbits wholly contained in each union is included.",
+    "necessary_rejections": "A selected pair in any proved-zero original Z orbit is rejected. Every one of the 171 original unit-coefficient Gram capacities is also checked on the union subset. Nonnegative selections outside the union make these partial upper bounds necessary.",
+    "normalization": "The two selector counts and every surviving within/cross-pair count are incremented once per literal object. All six signed sums use the already fixed global character orientations; signs outside their own selector orbit contribute zero. No orbit-size division or host-graph symmetry assumption occurs.",
+    "projection": "Every admitted joint tuple is projected to the existing complete individual-orbit character tables with the exact count and signed namespaces. The joint table records which previous tuples have an extension, without claiming compatibility with other orbits.",
+    "multiplicity": "Triples are visited once in lexicographic combinations order. Count/signed tuple equality merges functions while preserving the exact number of literal preimages and the minimum literal representative.",
+    "scope": "The two tables impose necessary joint restrictions on the separate unions {0,1} and {6,7}. They do not realize a global incidence, exterior edges, or compatibility between these unions and the other 38 selector orbits."
+  },
+  "observed_saved_metadata": {
+    "unions": 2,
+    "triples_per_union": 2024,
+    "accepted_per_union": 512,
+    "joint_tuples_per_union": 176,
+    "count_columns_per_table": 22,
+    "signed_columns_per_table": 6,
+    "all_original_pair_orbits_per_table": 30,
+    "proved_zero_pair_orbits_per_table": 10,
+    "optimizer_calls": 0
+  },
+  "review_execution": {
+    "subject_imported": false,
+    "subset_enumeration_repeated": false,
+    "profile_projection_rebuilt": false,
+    "cold_replay_repeated": false,
+    "point_query": false,
+    "optimizer_calls": 0,
+    "performed": "Complete source reading, local source/record hash verification and saved metadata inspection only."
+  },
+  "gate_scope": "No source or mathematical blocker found. Reported enumeration counts were not independently regenerated in this review."
+}

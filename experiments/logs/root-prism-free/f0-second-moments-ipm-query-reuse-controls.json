@@ -1,0 +1,43 @@
+{
+  "status": "PASS: bounded method-change structure checks; no optimizer",
+  "bindings": {
+    "experiments/workspace/root_prism_free_f0_second_moments_reduced_query.py": "0348e3f8fb44adb6e0db186fe90eef8351b4271924faae678028ab1ca9471aad",
+    "experiments/workspace/root_prism_free_f0_second_moments_ipm_query.py": "c6f2658796459167b885b9f9f7ecbf75b6ba92808c4115e6962b806aafe786e7",
+    "experiments/workspace/root_prism_free_f0_second_moments_reduced_replay.py": "9cae35ba181c9ad3fd95f211a5b874ecaaeaa74b0bc2ef51310872ebe5c56efe",
+    "experiments/workspace/root_prism_free_f0_second_moments_ipm_replay.py": "9cc3dc19755d0eba4e2dd6cb81d7c77a5756bb4a1681c622f772128b78e0f050"
+  },
+  "driver_identical_function_ASTs": [
+    "helper",
+    "version_check",
+    "owned_child"
+  ],
+  "replay_identical_function_ASTs": [
+    "sha",
+    "canonical",
+    "objsha",
+    "imported",
+    "literal_domain",
+    "literal_point",
+    "preflight",
+    "main"
+  ],
+  "changed_driver_functions": [
+    "numerical",
+    "preparation",
+    "checked_preparation",
+    "query",
+    "controls",
+    "main"
+  ],
+  "changed_replay_functions": [
+    "load_bound",
+    "replay"
+  ],
+  "production_solver_run_call_sites": 1,
+  "single_CLI_entry_each": true,
+  "mathematical_matrix_changed": false,
+  "exact_helper_changed": false,
+  "full_acceptance_changed": false,
+  "optimizer_calls": 0,
+  "scope": "These checks identify the entire source-diff surface. They do not replace review of changed functions."
+}

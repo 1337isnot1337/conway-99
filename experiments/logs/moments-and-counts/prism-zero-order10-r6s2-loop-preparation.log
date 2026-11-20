@@ -1,0 +1,92 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 9,
+  "unique_integer_cuts": 9,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "complete-family prism-zero loop prepared; no optimizer called",
+  "source_sha256": "40838c0949db789308008a777b3c5433c47f27f2cc0229d2357775102f345933",
+  "dependency_hashes": {
+    "grid_free_order10_prism_zero_moments_loop.py": "a65dc6b31ebebe7bcd14398f685537f642081a7517c2e0ec94eb96246ad6e473",
+    "grid_free_order10_r6s2_point_scan.py": "7bb2542e4e69cadade0f096ee578252a804a1c0ff2e0e2d555ce943886654a11",
+    "grid_free_order10_r6s2.py": "3772c728ec764dbec0142865696bb747c06e47b29495964af867103618b75a6d",
+    "grid_free_order10_r6s2_scan.py": "ca16071dd21b7d0eed9e41d7bd08678cf5ea7b7863b8cac98a2969d230d088bd",
+    "grid_free_order10_r6s2_fresh_replay.py": "b7b5885509c84b30ee904a7dc78a63ac1ecdb3c973971fe23566dc1c2475c80a",
+    "grid_free_order10_r6s2_independent_audit.py": "46bbbf5521383fc14925644e1dcb82ebeca99094b5726b8f23e3d774aa6f643f",
+    "root_prism_free_edge_components.py": "c284c27a3a473559f837ea3d8de917de0a255dd69102fe672195fba1b35e0d00"
+  },
+  "inputs": {
+    "parent_preparation": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-ipm-zero-closure-preparation.json",
+    "seed_certificate": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-scan.json",
+    "seed_proof": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-fresh-replay.json",
+    "family_cache": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/order10-r6s2-full-cache.json"
+  },
+  "input_hashes": {
+    "parent_preparation": "fce82618e5beef610d70fadbf7b0e5d955a43496c05c3621b78ee270ff87c820",
+    "seed_certificate": "839b2de78eb081edbf6e39c1f0085f5f1d56ee787a7eed58ec39cb41c0fb3708",
+    "seed_proof": "286bd12ea30bee3825c97507fb5781f3ec36396eb580fc0c5ec58772c660b550",
+    "family_cache": "8f8d0b3e2e509fb617962f744e6df7ca56d401bc67a2916f16ab124dafb486d0"
+  },
+  "x521_zero": false,
+  "highs_version": "1.16.0",
+  "supported_options": {
+    "output_flag": false,
+    "threads": 1,
+    "presolve": "on",
+    "solver": "ipm",
+    "run_crossover": "off",
+    "time_limit": 120.0
+  },
+  "maximum_rounds": 6,
+  "maximum_solver_seconds_per_round": 120,
+  "maximum_seconds_per_new_family_scan": 180,
+  "threads": 1,
+  "stop_on_nonoptimal_or_incomplete_scan": true,
+  "stop_on_no_fresh_exact_cut": true,
+  "dual_extraction": false,
+  "PSD_feasibility_certified_by_scan": false,
+  "preparation_seconds": 20.374563765999483,
+  "peak_process_rss_kib": 1198868
+}
+{
+  "parent_numerical_model_sha256": "62664e9c7d7fd5abe9ca61585e10f0d3714bbd72509dca0e7a54d725cbd5943e",
+  "rows": 47664,
+  "columns": 547,
+  "nonzeros": 5438205,
+  "free_columns": 491,
+  "x521_zero": false,
+  "old_linear_cuts": 25,
+  "reconstructed_r6_induced_cuts": 18,
+  "appended_distinct_core_rows": 19,
+  "initial_cut_count": 44,
+  "initial_cut_coefficients_sha256": "30180e34e0ce580bfe4b36e4ac4b0bc1e831f48c9af2a8df22b286e63040edd2",
+  "numerical_model_sha256": "69371751e39bc177cb5efc867fb4905d86bcbc1b8b656288665fc65388837189",
+  "positive_DP_bounds_and_scalings_unchanged": true,
+  "unconditional_edge_component_row_included": true,
+  "full_r6s2_roots": 62,
+  "full_r8s1_roots": 916,
+  "old_family_blocks": 1416,
+  "root_or_flag_pruning_at_seed_point": false,
+  "reduced_cache_sha256": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+  "objective": "zero; pure feasibility"
+}

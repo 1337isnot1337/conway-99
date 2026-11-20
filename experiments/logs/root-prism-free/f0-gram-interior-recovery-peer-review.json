@@ -1,0 +1,45 @@
+{
+  "schema": "conway99.f0-gram-interior-recovery-peer-review.v1",
+  "reviewer": "/root/unrestricted_completion",
+  "status": "PASS: complete source review and independent certificate arithmetic",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_gram_interior_recovery.js",
+    "git_blob": "b5ab538e62c4b6492bc3e564093b23eac2a5b8c9",
+    "lines": 138
+  },
+  "certificate": {
+    "git_blob": "6396da7dd3d5fd1df30a88cc3ea847154d62ef38"
+  },
+  "mathematical_checks": [
+    "The Gram expression is 12I+2J−B²−B on the first component, with B² computed by exact bitset intersections of the complete 21-core.",
+    "Every transported binary incidence is checked directly against all Gram entries, population 60 and every saved motif pair. Therefore the averaging argument does not rely on an unchecked group-transitivity or graph-automorphism assumption.",
+    "Each of the 480 coordinates appears and is absent among the 1836 checked binary incidences because every numerator is strictly between zero and 1836. Thus the stated base constraints cannot force that selector to either Boolean value.",
+    "The weighted Gram replay and motif slacks directly verify the rational average. This does not include later capacity cuts or shared exterior-edge feasibility."
+  ],
+  "implementation_checks": [
+    "All bitwise operations are on core masks below 2^21 or component masks below 2^18; no signed 32-bit overflow changes popcount.",
+    "All combinatorial accumulations in this checker are well below Number.MAX_SAFE_INTEGER.",
+    "The Node wrapper computes SHA256 on the actual gzip bytes before decompression. The pure function accepts a digest-bound parsed-input interface; it is not by itself an input-byte hashing routine.",
+    "The wrapper locates repository inputs relative to the script path, independent of the current working directory.",
+    "The 480-column enumeration, signature transport, range checks, direct incidence checks and result scope are consistent."
+  ],
+  "independently_evaluated_certificate_controls": {
+    "selector_count": 480,
+    "numerator_sum": 110160,
+    "required_numerator_sum": 110160,
+    "common_denominator": 1836,
+    "minimum_numerator": 24,
+    "maximum_numerator": 851,
+    "all_numerators_safe_integers": true,
+    "all_coordinates_strictly_between_zero_and_one": true
+  },
+  "scope_limits": {
+    "complete_source_read": true,
+    "certificate_480_integer_array_checked": true,
+    "published_gzip_inputs_refetched_by_this_reviewer": false,
+    "full_1836_incidence_execution_repeated_by_this_reviewer": false,
+    "optimizer_or_solver_called": false,
+    "local_original_audit_recovered": false
+  },
+  "correction_required": false
+}

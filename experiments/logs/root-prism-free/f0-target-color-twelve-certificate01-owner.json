@@ -1,0 +1,63 @@
+{
+  "schema": "conway99.f0.target-color-twelve-owner.v1",
+  "status": "OWNED_COMPLETE_STRUCTURAL_TWELVE_TARGET_CERTIFICATE_ACCEPTED",
+  "report_accepted": true,
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01.json",
+    "sha256": "ba987fe7ff39fe088bc66cb2fbd9f81c4e17a0b457af70642bc1f61d37d6d1e3",
+    "bytes": 28398,
+    "git_blob": "c418e402626e0a2d216422ac62bef6165d962191"
+  },
+  "finalization": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-finalization.json",
+    "sha256": "965e521baa9818ee3bac1cfbf1bcc8b925b17d56e40ade86a78887c3234b51b8",
+    "bytes": 330,
+    "git_blob": "b2422be8453e66a48c6e2e9c538b68e3bd455c73"
+  },
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_target_color_twelve_certificate_v8.js",
+    "sha256": "dfb0764a29e53db9ba59b5fd291a45a612af0f690699b1892c195487014a152e",
+    "git_blob": "54fa064c0211d3cfa07214bf2304d7b0122b9cc9",
+    "bytes": 10514
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-configuration01.json",
+    "sha256": "d3067a6166a3c4b4a0f684df224afe5691182a780a267e6de828ca20d1b16ca2",
+    "git_blob": "9676d56ffaf8ae7be0094db062357e1be69ca0d5",
+    "bytes": 3283
+  },
+  "proof": {
+    "path": "research/root_prism_free_f0_target_color_twelve_bound.md",
+    "git_blob": "2864e837f22a38f37baf0535ed45c34163bd9415",
+    "sha256": "2e78b57ee726e7c301f3e73c4909c6547fdb2500eb0fc53f3d97be429436160c",
+    "bytes": 9695
+  },
+  "proof_scope_correction": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-proof-scope-clarification01.json",
+    "git_blob": "0a563436c20346f47f766c2ca6088671d62f4962",
+    "sha256": "cd53d25320c8b0859fec36428364de5b01b17b9e007035c5aa49b939aec883a6",
+    "bytes": 2702
+  },
+  "source_review": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-independent-source-review01.json",
+    "bytes": 6222,
+    "sha256": "9365c5c5278c09ed4f891879ebd42ec673b81f8afe7bc1ea67db5a93cdd63967",
+    "git_blob": "5f3382646abde6905bf7162f1ee97bbc83b02e8f"
+  },
+  "started_utc": "2026-11-20T00:09:01.462Z",
+  "elapsed_milliseconds": 2851,
+  "maximum_milliseconds": 45000,
+  "worker_maximum_milliseconds": 30000,
+  "within_budget": true,
+  "worker_invocations": 1,
+  "execution_environment": "pure V8",
+  "cooperative_deadline_checks": true,
+  "OS_child_constructed": false,
+  "hard_OS_preemption_claimed": false,
+  "assignment_enumerations": 0,
+  "native_solver_calls": 0,
+  "automatic_retries": 0,
+  "error": null,
+  "root_terminal_acceptance_required_before_native_use": true,
+  "execution_authority": "Root authorized this exact source/configuration and corrected proof after immutable independent full review, one30-second structural call under45-second outer bound."
+}

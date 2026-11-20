@@ -1,0 +1,112 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 9,
+  "unique_integer_cuts": 9,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{"starting_round": 0, "rows": 47664, "held_cuts": 44}
+{"file": "moments-3-3-512.pickle", "sha256": "74d5a043cb92ccdeb0c91e15d8f44de814a40196e761b550caace40201b89e53", "embedding_form": "ordinary", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-4-2-512.pickle", "sha256": "74b9c284950fd317f895aa75afda15d531ceeef8d1daba7572c7f26eef68ce79", "embedding_form": "ordinary", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-5-2-512.pickle", "sha256": "9af8134d9ab637c22da04614928bf25ba227c3b812a2a21a10ab0e06b482aa73", "embedding_form": "ordinary", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -5.014578598601096e-16}
+{"file": "moments-6-1-512.pickle", "sha256": "e1adfc383da37e534a873a022d2f439816676e748dc917e4a6d8fa3e4ffb18d7", "embedding_form": "ordinary", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -7.728382326705755e-18}
+{"file": "moments-7-1-512.pickle", "sha256": "725a1cda8796555cf7ee3ee174b2593b610731111ef3cc4f472355d3055eeab0", "embedding_form": "ordinary", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -6.438203385544634e-16}
+{"file": "induced-moments-3-3-512.pickle", "sha256": "d68282554d55346ae09d30d1a2d495ac15ed325f900e4a0185bd54073180cd38", "embedding_form": "induced", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-4-2-512.pickle", "sha256": "f2f8b43e64b08edfed79021aaa63b6bce4d57fe127d382a7fa6c5728bff16d5a", "embedding_form": "induced", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-5-2-512.pickle", "sha256": "f35f9d2c709d869924fac026ffb036e310f0967b933b36578ec0e1a53463feac", "embedding_form": "induced", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -5.389878285854374e-16}
+{"file": "induced-moments-6-1-512.pickle", "sha256": "13808003e8f24bd47b8da6169c65a1eccc205b2bc9c3be1c8b57b588a2ba37c5", "embedding_form": "induced", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -1.1669996652474737e-16}
+{"file": "induced-moments-7-1-512.pickle", "sha256": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc", "embedding_form": "induced", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.5341586961153707e-16}
+{"file": "induced-spectral-7.pickle", "sha256": "b38ced60f1632d8368f2b20e358ab3f43d2ecfedc90bbaac9c446ce0af14c502", "embedding_form": "induced", "blocks": 416, "largest_order": 135, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.1508983242465513e-15}
+{"file": "induced-schur-7.pickle", "sha256": "67cc16e42d9529c2155e5f80e73ea23a5defacaccac28150498218ae296058aa", "embedding_form": "induced", "blocks": 416, "largest_order": 128, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.9802322645069324e-08}
+{"status": "no exact violation found; PSD not certified", "blocks_examined": 1416, "exact_negative_block_count": 0, "unique_integer_cut_count": 0, "seconds": 0.8556128880009055, "peak_process_rss_kib": 1196976}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 0,
+  "unique_integer_cuts": 0,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "no exact separator in scanned blocks; PSD not certified",
+  "blocks_scanned": 916,
+  "complete_scan": true,
+  "exact_negative_block_count": 0,
+  "unique_integer_cut_count": 0,
+  "seconds": 4.193549395997252
+}
+{
+  "status": "exact r6s2 separators found",
+  "blocks_scanned": 62,
+  "complete_cached_family_scan": true,
+  "complete_selected55_scan": true,
+  "complete_full62_scan": true,
+  "exact_negative_block_count": 3,
+  "unique_integer_cut_count": 3,
+  "seconds": 6.5694223339996825
+}
+{"round": 0, "rows": 47664, "nonzeros": 5438205, "held_cuts": 44, "held_cut_coefficients_sha256": "30180e34e0ce580bfe4b36e4ac4b0bc1e831f48c9af2a8df22b286e63040edd2", "numerical_model_sha256": "69371751e39bc177cb5efc867fb4905d86bcbc1b8b656288665fc65388837189", "numerical_status": "HighsModelStatus.kOptimal", "highs_run_status": "HighsStatus.kOk", "solver_seconds": 14.308810881997488, "returned_data_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-solver-data.json.gz", "returned_data_sha256": "737a06ef645d6a96c5245738cf04e6ff7b475c978c3a64aff5c163f82301b385", "returned_value_valid": true, "returned_dual_valid": true, "solver_info": {"active_bound_norm": 0.0, "active_cost_norm": 0.0, "basis_validity": 0, "centring_status": 0, "crossover_iteration_count": 0, "dual_solution_status": 2, "ipm_iteration_count": 10, "max_complementarity_violation": 3.838198215143148e-15, "max_dual_infeasibility": 0.0, "max_dual_residual_error": 2.931473921576617e-19, "max_integrality_violation": "inf", "max_primal_infeasibility": 0.0, "max_primal_residual_error": 2.7755575615628914e-17, "max_relative_dual_infeasibility": 0.0, "max_relative_dual_residual_error": 2.931473921576617e-19, "max_relative_primal_infeasibility": 0.0, "max_relative_primal_residual_error": 2.7755575615628914e-17, "mip_dual_bound": 0.0, "mip_gap": "inf", "mip_node_count": -1, "num_complementarity_violations": 0, "num_dual_infeasibilities": 0, "num_dual_residual_errors": 0, "num_primal_infeasibilities": 0, "num_primal_residual_errors": 0, "num_relative_dual_infeasibilities": 0, "num_relative_dual_residual_errors": 0, "num_relative_primal_infeasibilities": 0, "num_relative_primal_residual_errors": 0, "objective_function_value": 0.0, "pdlp_iteration_count": 0, "primal_dual_integral": "-inf", "primal_dual_objective_error": 1.2430163513240905e-11, "primal_solution_status": 2, "qp_iteration_count": 0, "simplex_iteration_count": 0, "sum_dual_infeasibilities": 0.0, "sum_primal_infeasibilities": 0.0, "valid": true}, "proposal_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-proposal.json", "proposal_sha256": "96742aee00746e8489a3db567bc095b813a5a5226a06d9e467ed394d412f3822", "scans": [{"family": "old1416", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-old1416-separation.json", "certificate_sha256": "e756c6f9f605a16edc7f16987bb1982141ef0017afa87a8abccd41827b1038e8", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-old1416-replay.json", "replay_sha256": "337b9d9a435686eab5aa96f6d410e455c16ae8e93ebf5f6628dd8c3ca7ca6cfb", "complete_scan": true, "blocks_scanned": 1416, "exact_negative_blocks": 0, "unique_integer_cuts": 0}, {"family": "r8s1", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-r8s1-separation.json", "certificate_sha256": "d07e6b8c0cd909ad18692b7cc6ba1114dabab14f2035e71b2cc8938908143c38", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-r8s1-replay.json", "replay_sha256": "f31e3ecd8293776252851d4ec7e9833a4fc8bceb92819e4e880f7ebe638e1e83", "complete_scan": true, "blocks_scanned": 916, "exact_negative_blocks": 0, "unique_integer_cuts": 0}, {"family": "r6s2", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-r6s2-separation.json", "certificate_sha256": "fccbd4eeebba92b34f1f1fe69343633a59562f3e32817fc839aa29c490b65c19", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-r6s2-replay.json", "replay_sha256": "0d87eb7b7c7bacc75c2ee8efeff8a180d1aebae6f5381be1c55d65407902d8d9", "complete_scan": true, "blocks_scanned": 62, "exact_negative_blocks": 3, "unique_integer_cuts": 3}], "fresh_exact_cuts": 3, "duplicate_exact_separators": []}
+{"starting_round": 1, "rows": 47667, "held_cuts": 47}
+{"file": "moments-3-3-512.pickle", "sha256": "74d5a043cb92ccdeb0c91e15d8f44de814a40196e761b550caace40201b89e53", "embedding_form": "ordinary", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-4-2-512.pickle", "sha256": "74b9c284950fd317f895aa75afda15d531ceeef8d1daba7572c7f26eef68ce79", "embedding_form": "ordinary", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-5-2-512.pickle", "sha256": "9af8134d9ab637c22da04614928bf25ba227c3b812a2a21a10ab0e06b482aa73", "embedding_form": "ordinary", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -4.1259331496611893e-16}
+{"file": "moments-6-1-512.pickle", "sha256": "e1adfc383da37e534a873a022d2f439816676e748dc917e4a6d8fa3e4ffb18d7", "embedding_form": "ordinary", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.3061671575810385e-16}
+{"file": "moments-7-1-512.pickle", "sha256": "725a1cda8796555cf7ee3ee174b2593b610731111ef3cc4f472355d3055eeab0", "embedding_form": "ordinary", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.3397240132166894e-16}
+{"file": "induced-moments-3-3-512.pickle", "sha256": "d68282554d55346ae09d30d1a2d495ac15ed325f900e4a0185bd54073180cd38", "embedding_form": "induced", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-4-2-512.pickle", "sha256": "f2f8b43e64b08edfed79021aaa63b6bce4d57fe127d382a7fa6c5728bff16d5a", "embedding_form": "induced", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-5-2-512.pickle", "sha256": "f35f9d2c709d869924fac026ffb036e310f0967b933b36578ec0e1a53463feac", "embedding_form": "induced", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -5.462680117402796e-16}
+{"file": "induced-moments-6-1-512.pickle", "sha256": "13808003e8f24bd47b8da6169c65a1eccc205b2bc9c3be1c8b57b588a2ba37c5", "embedding_form": "induced", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.3577459343166095e-17}
+{"file": "induced-moments-7-1-512.pickle", "sha256": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc", "embedding_form": "induced", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.958803881927631e-16}
+{"file": "induced-spectral-7.pickle", "sha256": "b38ced60f1632d8368f2b20e358ab3f43d2ecfedc90bbaac9c446ce0af14c502", "embedding_form": "induced", "blocks": 416, "largest_order": 135, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.7767467767726073e-15}
+{"file": "induced-schur-7.pickle", "sha256": "67cc16e42d9529c2155e5f80e73ea23a5defacaccac28150498218ae296058aa", "embedding_form": "induced", "blocks": 416, "largest_order": 128, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -1.1920928975917939e-07}
+{"status": "no exact violation found; PSD not certified", "blocks_examined": 1416, "exact_negative_block_count": 0, "unique_integer_cut_count": 0, "seconds": 1.0083557710022433, "peak_process_rss_kib": 1228760}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 0,
+  "unique_integer_cuts": 0,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "no exact separator in scanned blocks; PSD not certified",
+  "blocks_scanned": 916,
+  "complete_scan": true,
+  "exact_negative_block_count": 0,
+  "unique_integer_cut_count": 0,
+  "seconds": 4.311017288000585
+}
+{
+  "status": "no exact separator in scanned cached blocks; PSD not certified",
+  "blocks_scanned": 62,
+  "complete_cached_family_scan": true,
+  "complete_selected55_scan": true,
+  "complete_full62_scan": true,
+  "exact_negative_block_count": 0,
+  "unique_integer_cut_count": 0,
+  "seconds": 8.828652662999957
+}
+{"round": 1, "rows": 47667, "nonzeros": 5439065, "held_cuts": 47, "held_cut_coefficients_sha256": "27f66961b5ed0fd3a35f784925f27088abaad7ed54111fc296ad514a966eaddd", "numerical_model_sha256": "6d4da5ffb9d9358a69a202d5876d3ee6b45de1c2036b921465c22700cd35606f", "numerical_status": "HighsModelStatus.kOptimal", "highs_run_status": "HighsStatus.kOk", "solver_seconds": 20.438716290998855, "returned_data_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-solver-data.json.gz", "returned_data_sha256": "86485f0a53862d2caf3bf2453c19a50045dd5927415a938c835ed0c4f90307c5", "returned_value_valid": true, "returned_dual_valid": true, "solver_info": {"active_bound_norm": 0.0, "active_cost_norm": 0.0, "basis_validity": 0, "centring_status": 0, "crossover_iteration_count": 0, "dual_solution_status": 2, "ipm_iteration_count": 10, "max_complementarity_violation": 1.4813297947768776e-15, "max_dual_infeasibility": 0.0, "max_dual_residual_error": 9.357059451290793e-20, "max_integrality_violation": "inf", "max_primal_infeasibility": 0.0, "max_primal_residual_error": 2.7755575615628914e-17, "max_relative_dual_infeasibility": 0.0, "max_relative_dual_residual_error": 9.357059451290793e-20, "max_relative_primal_infeasibility": 0.0, "max_relative_primal_residual_error": 2.7755575615628914e-17, "mip_dual_bound": 0.0, "mip_gap": "inf", "mip_node_count": -1, "num_complementarity_violations": 0, "num_dual_infeasibilities": 0, "num_dual_residual_errors": 0, "num_primal_infeasibilities": 0, "num_primal_residual_errors": 0, "num_relative_dual_infeasibilities": 0, "num_relative_dual_residual_errors": 0, "num_relative_primal_infeasibilities": 0, "num_relative_primal_residual_errors": 0, "objective_function_value": 0.0, "pdlp_iteration_count": 0, "primal_dual_integral": "-inf", "primal_dual_objective_error": 5.693952880089089e-12, "primal_solution_status": 2, "qp_iteration_count": 0, "simplex_iteration_count": 0, "sum_dual_infeasibilities": 0.0, "sum_primal_infeasibilities": 0.0, "valid": true}, "proposal_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-proposal.json", "proposal_sha256": "581371c89eee6ae95dc79726a208ef6e156bd5cca7d40e5b1dcd6dc1dfa552e5", "scans": [{"family": "old1416", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-old1416-separation.json", "certificate_sha256": "3677c5eb1c180a23af481d18f1ee0a8e48fa5e83caed953f82aa96c582ab35fd", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-old1416-replay.json", "replay_sha256": "337b9d9a435686eab5aa96f6d410e455c16ae8e93ebf5f6628dd8c3ca7ca6cfb", "complete_scan": true, "blocks_scanned": 1416, "exact_negative_blocks": 0, "unique_integer_cuts": 0}, {"family": "r8s1", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-r8s1-separation.json", "certificate_sha256": "3b5bbb4515672eb7b4f5bfa1f5aea9443936ac5de7c3dcbd35250ffe9b66765a", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-r8s1-replay.json", "replay_sha256": "f31e3ecd8293776252851d4ec7e9833a4fc8bceb92819e4e880f7ebe638e1e83", "complete_scan": true, "blocks_scanned": 916, "exact_negative_blocks": 0, "unique_integer_cuts": 0}, {"family": "r6s2", "certificate_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-r6s2-separation.json", "certificate_sha256": "f7f317148c469ebf743acc4b925d362c4ab9e5dbc4deeb7b1ac4ccd5b2f19b50", "replay_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-r6s2-replay.json", "replay_sha256": "a606c4d8bc65e5b48926ed146a1f84ec742284f1080c704410808f6ae5832068", "complete_scan": true, "blocks_scanned": 62, "exact_negative_blocks": 0, "unique_integer_cuts": 0}], "fresh_exact_cuts": 0, "duplicate_exact_separators": [], "rounded_counts_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-rounded-counts.json", "rounded_counts_sha256": "1e9c60d376b35a4b5bf41c06f7ae89036d431a9a05c1b498f08372154f236fa5", "rounded_count_status": "rounded point fails exact induced-count checks; real proposal retained", "exact_count_and_held_cut_witness": false}
+{
+  "status": "stopped with no fresh exact separator; PSD not certified",
+  "exact_count_witness": false,
+  "exact_infeasibility_certificate": false
+}

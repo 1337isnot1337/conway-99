@@ -1,0 +1,74 @@
+{
+  "status": "one-query symmetric case4 driver prepared; no optimizer called",
+  "source_sha256": "8baeb16c2a280101b94309ccec4900b8be8fe1a1909bac585f92bee114d28d09",
+  "sizing_source_sha256": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+  "sizing_preparation_sha256": "7172f8e1eea2944d768f54e3acb4e9ef9401b79c2757d309cb9fde6e05978189",
+  "integer_row_stream_sha256": "233c802009571ad234596e4eb3bd78f3cda55dda6808102d314fa487b8fa049a",
+  "row_label_stream_sha256": "5379017c8fb5e7ef591f08dc177ad3503ad3c6f91ca49ab83d940235388d5295",
+  "variables": 276792,
+  "rows": 590165,
+  "nonzeros": 4121379,
+  "selector_variables": 1214,
+  "shared_edge_variables": 275578,
+  "matrix_cache": "/tmp/conway99-case4-symmetric-lp.npz",
+  "matrix_cache_sha256": "7d122b87b33256ade2ce05847b66848f1763f11cf11a6edc6aa224960a9e5f15",
+  "matrix_cache_bytes": 5788962,
+  "exact_array_bindings": {
+    "data": {
+      "dtype": "<i8",
+      "shape": [
+        4121379
+      ],
+      "sha256": "744622055b06258c0e77f5647bc0db31e2433d813bb4b810b783a8009486b54c"
+    },
+    "indices": {
+      "dtype": "<i4",
+      "shape": [
+        4121379
+      ],
+      "sha256": "7fa413184870bd1d881caf328f6b453b5d8b667cf2714c05b58d26f50aba0a77"
+    },
+    "indptr": {
+      "dtype": "<i4",
+      "shape": [
+        276793
+      ],
+      "sha256": "c78fe3294e48ab1ccb82ad631524709c0134e711452906f435b0bfe83a7361db"
+    },
+    "sense": {
+      "dtype": "|u1",
+      "shape": [
+        590165
+      ],
+      "sha256": "5a1b4323e509d22d544d6fd7d324a6ab1a4461a47d19d463966d20f3d850c2c4"
+    },
+    "rhs": {
+      "dtype": "<i8",
+      "shape": [
+        590165
+      ],
+      "sha256": "c3894ead4a4fe030fbdb865ab9b58afb8ba21eeaf258c673e5fa9e68185111f2"
+    }
+  },
+  "integer_hash_bound_before_float_conversion": true,
+  "column_lower_bounds": 0,
+  "column_upper_bounds": "infinite; finite upper bounds are explicit rows",
+  "limits": {
+    "queries": 1,
+    "threads": 1,
+    "solve_seconds": 60,
+    "ray_construction_seconds": 15,
+    "combined_exact_ray_check_seconds": 60,
+    "maximum_common_denominator_bits": 4096
+  },
+  "controls": {
+    "exact_Farkas_positive_control": true,
+    "bad_sign_or_column_controls_rejected": 3,
+    "optimizer_or_solver_called": false
+  },
+  "initialization_seconds": 12.417110229998798,
+  "preparation_peak_rss_kib": 298216,
+  "exact_feasibility_claimed": false,
+  "LP_or_SAT_query_called": false,
+  "scope": "Only indexed35-core case4; numerical feasibility remains unverified, and an exclusion requires a complete exact Farkas check and cold replay."
+}

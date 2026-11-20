@@ -1,0 +1,158 @@
+{"chunk": 0, "root": 17, "classes": 205, "candidate_bound": 548990}
+{"chunk": 0, "root": 28, "classes": 26, "candidate_bound": 7487}
+{"chunk": 0, "root": 31, "classes": 25, "candidate_bound": 5286}
+{"chunk": 0, "root": 34, "classes": 28, "candidate_bound": 7786}
+{"chunk": 0, "root": 35, "classes": 19, "candidate_bound": 4015}
+{"chunk": 0, "root": 36, "classes": 35, "candidate_bound": 10115}
+{"chunk": 0, "root": 37, "classes": 16, "candidate_bound": 2026}
+{"completed_chunk": 0, "controls": 148, "seconds": 22.47376826799882}
+{"chunk": 1, "root": 18, "classes": 159, "candidate_bound": 305732}
+{"chunk": 1, "root": 20, "classes": 67, "candidate_bound": 51425}
+{"chunk": 1, "root": 21, "classes": 33, "candidate_bound": 12036}
+{"chunk": 1, "root": 26, "classes": 56, "candidate_bound": 40096}
+{"chunk": 1, "root": 29, "classes": 41, "candidate_bound": 16278}
+{"chunk": 1, "root": 30, "classes": 51, "candidate_bound": 23322}
+{"chunk": 1, "root": 32, "classes": 34, "candidate_bound": 12070}
+{"completed_chunk": 1, "controls": 161, "seconds": 20.251673230995948}
+{"chunk": 2, "root": 19, "classes": 111, "candidate_bound": 144308}
+{"chunk": 2, "root": 22, "classes": 113, "candidate_bound": 133298}
+{"chunk": 2, "root": 23, "classes": 79, "candidate_bound": 67095}
+{"chunk": 2, "root": 24, "classes": 72, "candidate_bound": 48468}
+{"chunk": 2, "root": 25, "classes": 48, "candidate_bound": 23348}
+{"chunk": 2, "root": 27, "classes": 44, "candidate_bound": 22931}
+{"chunk": 2, "root": 33, "classes": 34, "candidate_bound": 12070}
+{"completed_chunk": 2, "controls": 163, "seconds": 23.767878867001855}
+{
+  "status": "COMPLETE_ALL_21_FIVE_ROOT_TRIANGLE_KERNEL_AND_SCHUR_PREPARATION",
+  "source_sha256": "88fd70d5badf3b1cdf860123a066e870fb982b9377aa10de2384aeab029a89ba",
+  "product_source_sha256": "578f8db7c51c7f5b934e7f7275b295a9a5908bf09d5f6a9d9662366914046e5c",
+  "kernel_source_sha256": "fea5b560e4aeeb323da6e8cde2bc52571a3dc7499f0900a0a12b1f134d4a31c7",
+  "scope_source_sha256": "5a88cc3eab81b421e62cbcd22c6363431bc7a1056a23aae03b0425e69acefdd1",
+  "scope_sha256": "09d44f9ae753f23b400d168486cd54ca813b12857536488a8b3064995c390efb",
+  "old_Q_raw_sha256": "9011737fb1459d5c6c4db1dca51f777c49b3306b3ce27ca336096961ed768a06",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "completed_roots": [
+    17,
+    28,
+    31,
+    34,
+    35,
+    36,
+    37,
+    18,
+    20,
+    21,
+    26,
+    29,
+    30,
+    32,
+    19,
+    22,
+    23,
+    24,
+    25,
+    27,
+    33
+  ],
+  "completed_chunks": [
+    0,
+    1,
+    2
+  ],
+  "complete_21_root_coverage": true,
+  "count_point_loaded": false,
+  "optimizer_called": false,
+  "limits": {
+    "overall_seconds": 120.0,
+    "chunk_seconds": 60.0
+  },
+  "chunks": [
+    {
+      "chunk": 0,
+      "root_types": [
+        17,
+        28,
+        31,
+        34,
+        35,
+        36,
+        37
+      ],
+      "preparation_path": "chunk-0-preparation.json",
+      "preparation_sha256": "e51f402fac3347c68ca31eb3d47efa47889d0eb574d197e1e5fe1f25e4e42117",
+      "model_raw_sha256": "a02094bcdfa54cd27a39126930b4a7317a17215430b6b72f3b3ebf1cfee6dbc3",
+      "model_gzip_sha256": "e3b516185f70939168405f5c78b79f3f02921573d1c0cd516a25ec7521389c5a",
+      "controls": 148,
+      "seconds": 22.47376826799882
+    },
+    {
+      "chunk": 1,
+      "root_types": [
+        18,
+        20,
+        21,
+        26,
+        29,
+        30,
+        32
+      ],
+      "preparation_path": "chunk-1-preparation.json",
+      "preparation_sha256": "275fe4ae5c9b6121bcdcee110e8ee2411db9aa7f8f366f22f81698995056d890",
+      "model_raw_sha256": "cfb0daed1efb1102fe06608b0a43cd94e2c401c41417ae371424288ef3ed3afb",
+      "model_gzip_sha256": "c6c28a1ca0a77946b9f459431ee62183f546deb3595ed3e0cc9932ff9688fe3b",
+      "controls": 161,
+      "seconds": 20.251673230995948
+    },
+    {
+      "chunk": 2,
+      "root_types": [
+        19,
+        22,
+        23,
+        24,
+        25,
+        27,
+        33
+      ],
+      "preparation_path": "chunk-2-preparation.json",
+      "preparation_sha256": "d02afccfc8afdcf169ecb0269f8f730fb7ae7ac5b38f0439977519c2f3a745e3",
+      "model_raw_sha256": "9b5578d57b0dd6419d804f972be6b7f03186f6fa4fb7670c794fe7813cf3f69a",
+      "model_gzip_sha256": "0f2ac9ba4ced47a899e2b232f9ef8f949dbf94929bdab875deec8235b4b69d06",
+      "controls": 163,
+      "seconds": 23.767878867001855
+    }
+  ],
+  "classes": 1296,
+  "lower_entries_per_family": 64296,
+  "family_blocks": {
+    "minus": 21,
+    "plus": 21,
+    "scalar": 21,
+    "Q": 21,
+    "minus_schur": 21,
+    "plus_schur": 21
+  },
+  "family_nonzeros": {
+    "minus": 56506,
+    "plus": 108612,
+    "scalar": 108612,
+    "Q": 108612,
+    "minus_schur": 108018,
+    "plus_schur": 108273
+  },
+  "candidate_union_bound": 1498182,
+  "exact_stabilizer_divisions": 434448,
+  "coefficient_partition_identities": 108612,
+  "all_eight_old_Q_tensors_recovered": true,
+  "positive_root_Gram_leading_minors": 210,
+  "exact_inverse_entries": 1050,
+  "literal_host_controls": 472,
+  "model_raw_sha256": "88430ae5002742a0551c555a0798c07684c730932ee1d546864bf170105b76bd",
+  "model_gzip_sha256": "56620a3a04a298073ebd9c7988e6579805ceb997c1b1814b79f846767a028992",
+  "model_raw_bytes": 10030407,
+  "model_gzip_bytes": 2463580,
+  "constant_class_vector_is_not_assumed_to_be_a_kernel": true,
+  "point_query_requires_separate_gate": true,
+  "seconds": 69.11253744600253
+}
+

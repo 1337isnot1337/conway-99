@@ -1,0 +1,122 @@
+{
+  "schema": "conway99.f0-core-matching-blossom-query-preparation-artifacts.v1",
+  "status": "PREPARED_AND_COLD_PREFLIGHT_PASS; production query unrun",
+  "scope": "Minimal reviewed full-Fourier query/replay adaptation to the separately cold-checked 6854-row blossom overlay. No optimizer or production candidate in this package.",
+  "overlay_terminal_map_git_blob": "513ee62dcfd67bf3f13bc138d14ff1b53e002bdb",
+  "overlay_terminal_map_sha256": "e55b02c6b562b511da4c3e80e819ebac9994faa624218249e40d042bda760b6f",
+  "root_query_gate_sha256": "43d1235b238612965f5f763bfd1b4a81c22d0ec9b224a21a96f5c35238f53adb",
+  "production_gate_condition": "One query plus terminal cold only after direct540 first production query releases the heavy execution slot.",
+  "summary": {
+    "files": 14,
+    "bytes": 90935,
+    "variables": 32296,
+    "target_constraints": 65811,
+    "initial_constraints": 65694,
+    "external_pool_rows": 117,
+    "additional_blossom_rows": 6854,
+    "product_constraints": 16280,
+    "tables": 44,
+    "preflight_owner_seconds": 5.056838175994926,
+    "preflight_peak_RSS_KiB": 281860,
+    "optimizer_calls": 0,
+    "production_queries": 0
+  },
+  "limits": {
+    "owned_child_seconds": 300,
+    "cumulative_native_seconds": 180,
+    "native_calls": 12,
+    "appended_rows_per_candidate": 16,
+    "workers": 1,
+    "seed": 0,
+    "linearization_level": 0,
+    "probing_level": 0,
+    "strict_pool_prefix_growth": true,
+    "full_target_pass_is_provisional": true
+  },
+  "files": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-preflight01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-preflight01/child.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-preflight01/owner-result.json",
+      "bytes": 744,
+      "sha256": "2916fb9fe2ab16d423046ecc1252b6a909f5e3e6faebbc7aa8ace6bbb8b79220",
+      "git_blob_sha": "8b852307d38c0f3fc0e9337bc5da1874a045fad8"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-preflight01/report.json",
+      "bytes": 1088,
+      "sha256": "0a801a6c9d35897c48abf73cd5d696d4c50176fca2afa5dafa8fce153c52892a",
+      "git_blob_sha": "c8ebf096e33caac2265ba4d56ed4c62a3de99f93"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-preflight01/stages.json",
+      "bytes": 1327,
+      "sha256": "f5cd135cfe4179118af148f69853bbcfa1230e66059245ebcde154f8f7ad16bc",
+      "git_blob_sha": "be3011161daf8c6a96b913347cf6fa6dbce4529c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-preflight01/supervisor.json",
+      "bytes": 146,
+      "sha256": "ef8e20ccf3f4f75e9d85c0853fa80f6f4bfd84929aed80bb2bf923349ff8a91b",
+      "git_blob_sha": "1bb3f59ff01b75b7d0e1785226c665edf4a5e406"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-preparation01/preparation.json",
+      "bytes": 8289,
+      "sha256": "711705d98feaf8d3a9a361335d81b6a49e5ee1cf1408168af11969b8aef943b1",
+      "git_blob_sha": "4b86f167320d082d10ae7ca13a32a3033c0a0c99"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-reuse-controls.json",
+      "bytes": 2532,
+      "sha256": "52b9cf1a3b151eb4174d9ceda0b42682d95f772edda798dfe015b2028219c0bd",
+      "git_blob_sha": "a57ac7b44b586136680a145a48a2e1cc4661b297"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-root-gate01.json",
+      "bytes": 1924,
+      "sha256": "43d1235b238612965f5f763bfd1b4a81c22d0ec9b224a21a96f5c35238f53adb",
+      "git_blob_sha": "80a32213356cddf40c377c570cfa619a2e256268"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-substitutions.json",
+      "bytes": 5663,
+      "sha256": "f691cc652856e897de488c7005782904b5e52418a34b365c473592073bc7b5aa",
+      "git_blob_sha": "87a8f943ba2f7ed02ea7ba1eee8cc83ffd1f5dc6"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_query_reuse_control.py",
+      "bytes": 4401,
+      "sha256": "5ee1a0717d8b8e4aee287151cbe7ba0166aac036894c7573e62c4cd5b57a8585",
+      "git_blob_sha": "0d90c431d7054ddeb6bccc6a1a0c0f7c2eac3475"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_query.py",
+      "bytes": 39073,
+      "sha256": "67cd7853f00d5f99df7524046c30d72a1286106c2f5577a50d573cf1fa4a967b",
+      "git_blob_sha": "9b63942a55d2ef4bbf1a0eaf4ca48aefb617170b"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_replay.py",
+      "bytes": 19916,
+      "sha256": "baf3f134cf83c3a9f4410276ebbd570f89ec47a651dde96486c030043577e677",
+      "git_blob_sha": "ad6b6c6cdde4a877ea7d8dedd730c0262efe6133"
+    },
+    {
+      "path": "research/root_prism_free_f0_core_matching_blossom_query.md",
+      "bytes": 5832,
+      "sha256": "ad47be79677e7fe6fc03f289cf0ba964d6b612d737ce29df20e4917b67e2ee70",
+      "git_blob_sha": "da54cf82a9b5696967bacd6612b0dbe3593d5e57"
+    }
+  ]
+}

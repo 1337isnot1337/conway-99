@@ -1,0 +1,220 @@
+{
+  "schema": "conway99.f0.triangle-incidence-replay-independent-source-review.v1",
+  "status": "PASS_COMPLETE_PROTOBUF_CHECKER_SOURCE_AND_ACTUAL_RECEIPT_INTERFACE_REVIEW_UNRUN",
+  "reviewer": "master_continuation",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119",
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "bytes": 82846,
+    "lines": 1291
+  },
+  "source_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-independent-replay-source-contract01.json",
+    "git_blob": "1ac57f27233cd4322afd6cc5746e26452ba2659f",
+    "sha256": "8621d7ad581462d57428fed566c9c5ae9efe03270213005db06440e55dbcae2d",
+    "bytes": 8630
+  },
+  "current_producer_interface_read": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde",
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "bytes": 64900,
+    "scope": "Read the complete incidence/origin output, target-total receipt, prepare/ledger/manifest/report, worker and owner interfaces. This is not a duplicate complete producer review."
+  },
+  "full_subject_source_read": true,
+  "full_contract_read": true,
+  "mathematical_gate_pass": true,
+  "source_gate_pass": true,
+  "concrete_blockers": [],
+  "actual_native_configuration_frozen_or_executed_by_this_review": false,
+  "actual_configuration_review_required_before_execution": true,
+  "authoritative_receipts_read_and_rehashed": {
+    "parent_root": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+      "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd",
+      "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+      "bytes": 9294
+    },
+    "parent_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/report.json",
+      "bytes": 25026,
+      "sha256": "a1ddff45ae8a0a535154d6c9d433c6d3ce9eb9d8c3d7453ba024f9896ed08a1f",
+      "git_blob": "2e847f9b2513cfac977cb7929abf75454852a9a6",
+      "mode": "100644"
+    },
+    "parent_cold": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold/report.json",
+      "bytes": 20320,
+      "sha256": "d160fdf100b09557616c74a3380d9dac09d1076c8244536af23198da2be6a089",
+      "git_blob": "3a9739b3d19a5684accd6424e50027440e2e91d1",
+      "mode": "100644"
+    },
+    "parent_owner": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/owner.json",
+      "bytes": 1322,
+      "sha256": "c323ba1b8f77d23ae9af7496e48a92baa8b804153e1ae99e7a488c7155197037",
+      "git_blob": "530973430ba1618e89117138ccce4db7bbec2c35",
+      "mode": "100644"
+    },
+    "parent_cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold-owner/owner.json",
+      "bytes": 1949,
+      "sha256": "652e2f20d8087342790464e6500065fbf277decb07d6f03a40a45eb3ea7f8dd7",
+      "git_blob": "fe60a0cf7b8018956969d1cfc10694cbc62f0026",
+      "mode": "100644"
+    },
+    "literal_root": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-root-acceptance01.json",
+      "git_blob": "70ff31624e04962edd436ba9b1a62d611390cff0",
+      "sha256": "f5bfd2f0af981e9b8fd96931e78bda6d2648960e8d0ddd981e2777bae88afea0",
+      "bytes": 9201
+    },
+    "literal_report": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01.json",
+      "bytes": 5918,
+      "sha256": "1e5008561fd1a049c550913556856387ccde898073ff1fd46309735a4634c2bd",
+      "git_blob": "9741b71eb47ceb70396fec8e5b9c9c0152d0afba",
+      "mode": "100644"
+    },
+    "literal_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01-finalization.json",
+      "bytes": 367,
+      "sha256": "b490ae30d852cd7dafed69659edf0caa2ff623706504ee3df6b8d3fc84da42c4",
+      "git_blob": "802d455e91572e08fbc1be19445e78ed3c8c783e",
+      "mode": "100644"
+    },
+    "literal_owner": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01-owner.json",
+      "bytes": 2568,
+      "sha256": "ef85a1c0a72f33bf540403af6d46170ca02aa968aaef17f7a7241ce2bf07d522",
+      "git_blob": "7f0b4d85728535a70245e8b2654800cc29a02fbe",
+      "mode": "100644"
+    },
+    "target_root": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-root-acceptance01.json",
+      "git_blob": "f71469c7a5b9ac380ba6159f15a4121628028461",
+      "sha256": "10dd8fbfd42dc695bae9c83a3f61f7b9694d940a092e8e67e034781fd3eb0ebc",
+      "bytes": 14322
+    },
+    "target_report": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01.json",
+      "sha256": "ba987fe7ff39fe088bc66cb2fbd9f81c4e17a0b457af70642bc1f61d37d6d1e3",
+      "bytes": 28398,
+      "git_blob": "c418e402626e0a2d216422ac62bef6165d962191"
+    },
+    "target_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-finalization.json",
+      "sha256": "965e521baa9818ee3bac1cfbf1bcc8b925b17d56e40ade86a78887c3234b51b8",
+      "bytes": 330,
+      "git_blob": "b2422be8453e66a48c6e2e9c538b68e3bd455c73"
+    },
+    "target_owner": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-owner.json",
+      "sha256": "aa40a994ccf753025412e0b9266fa778001ad62bdf4070e9d51552ae7bc894a0",
+      "bytes": 2821,
+      "git_blob": "a5ba96e4cf281b8d200e88b28b15ef2491d98d5b"
+    },
+    "target_theorem_review": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-independent-source-review01.json",
+      "bytes": 6222,
+      "sha256": "9365c5c5278c09ed4f891879ebd42ec673b81f8afe7bc1ea67db5a93cdd63967",
+      "git_blob": "5f3382646abde6905bf7162f1ee97bbc83b02e8f"
+    }
+  },
+  "parent_model_raw_identity": {
+    "sha256": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6",
+    "bytes": 39306083,
+    "variables": 80730,
+    "rows": 297470,
+    "terms": 3310380,
+    "large_archive_fetched_or_decoded_in_this_review": false,
+    "whole_byte_checks_required_by_replay": true
+  },
+  "findings": [
+    {
+      "area": "Independent reconstruction boundary",
+      "result": "The checker imports only generated protobuf declarations for model decoding. It does not import the incidence extractor, append producer, native transport helper, CpModel or CpSolver. It starts from the accepted native AND constraints in reverse triangle order, then compares the saved indicator meanings and origins."
+    },
+    {
+      "area": "Complete triangle incidence",
+      "result": "All 5,364 Boolean triangle variables and all 21,456 exact AND ConstraintProtos are checked. The three decoded edge IDs must be distinct, in canonical order, and form exactly the saved triangle. All 84 original target equations and multiplicity one across the recorded triangle family are checked."
+    },
+    {
+      "area": "Side capacities",
+      "result": "The complete native-derived map has 6,300 edge incidences. Every target, singleton, and proposed side disposition is compared, including its exact upper-AND row origins. The 2,904 non-target side rows follow from lambda=1 and distinct third vertices; no sufficient Boolean redundancy label is used to discard a row."
+    },
+    {
+      "area": "Local capacities",
+      "result": "Every one of the 480 local dispositions is rebuilt. The 420 nonempty rows use exact k0 in {0,1}, disjoint first-component signatures, all 420 original degree rows and 1,260 selected mixed rows. These give overlap-zero degree (5+2*k0)*x; summed edge capacities and Boolean/integer rounding give sum(t)<=(2+k0)*x. The 60 empty rows remain recorded as tautologies."
+    },
+    {
+      "area": "Hash encodings and origins",
+      "result": "All seven complete literal digests are recomputed. Numeric row arrays use compact JSON without a trailing newline. The complete incidence-object digest preserves insertion order through a distinct ordered_json function, matching JSON.stringify. Sorted-key row-ledger/manifest JSON and per-family newline-delimited row hashes are separately checked."
+    },
+    {
+      "area": "Original overrun",
+      "result": "The exact 12,196 ms failed finalization and 17,209 ms failed owner remain UNACCEPTED. Neither the proposal inventory nor its descriptor/finalization/owner can be a successful authority. Separate literal report/root receipts, every row reconstructed from accepted native definitions, and future complete cold acceptance supply the row authority."
+    },
+    {
+      "area": "Twelve-bound theorem",
+      "result": "The checker reconstructs all 84 targets and their endpoint activations, all target colors, all original 171 Gram support positions, the 18 actual color Gram ConstraintProtos, and all seven structural conditions. Independent centers and one-color noncenter neighborhoods make selected private components stars, edges or singletons. The explicit exposed-leaf and shared-degree conditions give at most one attachment per component. Twelve private quota-one colors prove the bound."
+    },
+    {
+      "area": "Twelve-bound row and scope",
+      "result": "The row is rebuilt as [0,12,[[540+e,1],...]] in ascending target-edge order and compared with both accepted receipts and SHA256 36c10df91bd844086786344beb942a2fd271e2cb9fafc6712f9168d215a7a446. Its 16-vertex witness is checked only against at-most-one color quotas; the fractional control is also limited to color quotas and activations. No full-model feasibility or continuous nonredundancy is claimed."
+    },
+    {
+      "area": "Whole model preservation",
+      "result": "The final raw model must be exactly the entire accepted parent raw bytes followed by the suffix. Every old variable and constraint message is compared, every new ConstraintProto is compared in the complete model and suffix, and removing the appended constraints must recover every original parent byte. The suffix may contain only the 3,325 declared constraints. Extra names, enforcement, global metadata, variables or changed row order are rejected."
+    },
+    {
+      "area": "Native report and restoration interfaces",
+      "result": "The complete producer row ledger, all family origin schemas, target_total_check, preservation message digests, five preparation stages, artifacts, and restoration manifest agree with the checker expectations. The complete parent and suffix gzip copies are checked by exact decompression. Parent, preparation, child supervision and final owner references use exact path/SHA identities, with byte counts checked when present."
+    },
+    {
+      "area": "Execution contract",
+      "result": "Both checker modes are workers under an external owner. Controls use 10 seconds and replay 120 seconds, with required outer 15/135-second ownership. Output directories are fresh and files exclusive-create. The worker checks its deadline after complete report serialization/write and exits nonzero with a preserved error on failure. Actual configuration and root CI gates remain necessary."
+    },
+    {
+      "area": "Prepared controls",
+      "result": "Source-only inspection finds ten complete-message mutation rejection cases, all sixteen AND truth assignments, local integer-rounding cases and the exact large integer 2^53+1. Controls are not run in this review; their raw output must not be rounded through V8 Number."
+    }
+  ],
+  "expected_dimensions": {
+    "family_order": [
+      "side_edge",
+      "local_selector",
+      "global_target_total"
+    ],
+    "family_counts": {
+      "side_edge": 2904,
+      "local_selector": 420,
+      "global_target_total": 1
+    },
+    "family_terms": {
+      "side_edge": 10320,
+      "local_selector": 16512,
+      "global_target_total": 84
+    },
+    "new_variables": 0,
+    "replaced_rows": 0,
+    "appended_rows": 3325,
+    "appended_terms": 26916,
+    "variables": 80730,
+    "rows": 300795,
+    "total_terms": 3337296
+  },
+  "execution": {
+    "subject_imported": false,
+    "subject_compiled": false,
+    "controls_run": false,
+    "main_run": false,
+    "model_decoded": false,
+    "producer_executed": false,
+    "optimizer_calls": 0,
+    "new_signature_or_triangle_census_calls": 0
+  },
+  "native_execution_authorized_by_this_review": false,
+  "current_native_model_changed": false
+}

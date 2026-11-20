@@ -1,0 +1,78 @@
+{
+  "schema": "conway99.f0-fractional-recovery-preparation-manifest.v1",
+  "date_utc": "2026-11-19",
+  "status": "Structural and motif baseline preparation only; no optimizer",
+  "artifacts": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fractional_structural_recovery.js",
+      "git_blob": "3310e3ecc60267fd8a61a917774a9d60a60b32fb",
+      "sha256": "0a1beefc85a807d5073676b0de380ff714d855e8a9a84c8e6010786a18e39b2b",
+      "bytes": 16235
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fractional-structural-recovery.json",
+      "git_blob": "cd644ce7752845ba752ce9fb4a7c52221bc70aec",
+      "sha256": "0dcd7044bc74a14da3806de644c075c6d2e06c078dd1d23f9b9a4d2d29b019f4",
+      "bytes": 4629
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fractional_baseline_recovery.js",
+      "git_blob": "8602373ee0f21762c3660bd88b214856153ed91a",
+      "sha256": "2c7f4cf9965426d97eb025793d5912d2b51cc56dc9fced76fd66219333263af1",
+      "bytes": 12856
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fractional-baseline-recovery.json",
+      "git_blob": "0a9427beac8bfc4137cd1d5fced82050c86a0ee4",
+      "sha256": "3dbbbc343d5966a88ac9e2b87eb0cc31a4e7abdb2b715fa17aa4dcf87effe3d7",
+      "bytes": 2870
+    },
+    {
+      "path": "research/root_prism_free_f0_fractional_shared_projection.md",
+      "git_blob": "3416a7c33e6e8b5145e4836a331c6c7970559d02",
+      "sha256": "f2428011b285bc85d57e4fcaafd5c5f41e52fe7cdeefad68afae175b7649af19",
+      "bytes": 8832
+    }
+  ],
+  "input_blobs": [
+    {
+      "role": "literal core and twelve actions",
+      "git_blob": "fbe9445d9f247fbbfbaccff367b0ff05afb2442a",
+      "sha256": "ef4018f26c48e9eb90bf544d41678778d71b587994096383023c8836e70bca6e"
+    },
+    {
+      "role": "ninety certified motif pairs",
+      "git_blob": "41b0f73b9f6a0061d49859fbd4e32564cea2db17",
+      "sha256": "eed6ac5eb939bcce4ed7faae81942b30e6151e4d5b206b2c82bfb6c9a11d33bb"
+    },
+    {
+      "role": "known exact selector-interior control",
+      "git_blob": "6396da7dd3d5fd1df30a88cc3ea847154d62ef38",
+      "sha256": "98fa05d49c5a107b8d84236cd51018330bdf7759170f552a69aad146bac767e0"
+    }
+  ],
+  "structural_specification_sha256": "5b2a8715c9cad3217b72479dd12c733f5b8b73d878cbb70df154167b7e386525",
+  "baseline_specification_sha256": "32172068b93386040b2c3ef0a351d44cfb57484f3ad335ad28f9760516efe1bf",
+  "baseline_matrix_sha256": "30bd8808dcd0490fa9ae124abb2ef060cfc8bfcbc57b78eaac0a67fe89f0dd55",
+  "counts": {
+    "full_variables": 68874,
+    "quotient_variables": 5847,
+    "quotient_equalities": 686,
+    "quotient_inequalities": 11373,
+    "matrix_nonzeros": 57801
+  },
+  "replay": "The structural Node entry point accepts its literal input path. The baseline Node entry point takes the structural input, motif input and recovered interior-certificate paths as three explicit arguments; it verifies their Git blob hashes and the frozen structural module hash.",
+  "review_status": {
+    "structural_coordinator_source_and_independent_V8_replay": "PASS, reported by coordinator",
+    "baseline_review": "Pending",
+    "independent_peer_review": "Requested"
+  },
+  "limitations": {
+    "terminal_4404_cuts_included": false,
+    "earlier_12_weighted_rows_included": false,
+    "Boolean_normalized_cut_equivalence_claimed": false,
+    "optimizer_called": false,
+    "component_excluded": false,
+    "local_workspace_available": false
+  }
+}

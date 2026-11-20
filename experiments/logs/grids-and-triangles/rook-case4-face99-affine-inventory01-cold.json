@@ -1,0 +1,89 @@
+{
+  "status": "PASS: affine inventory cold replayed",
+  "source_sha256": "aff911d07c002d621933ef5371520a5d9c13842a278ab7ac4874279137d93207",
+  "certificate_gzip_sha256": "61288003fb0b4dae4e37d936cd9c6343e4cbfaec75076c14ea05fa4ede290929",
+  "certificate_raw_sha256": "06024df62d4723f287cce4abf6b3a6d26ae8a3e93e991e994c8843620af20528",
+  "certificate_bytes": 68278,
+  "all_native_equality_rows": 632,
+  "equality_family_counts": {
+    "Gram": 630,
+    "uncapped_row_cut": 2
+  },
+  "empty_equalities_after_substitution": 236,
+  "unique_nonempty_equality_rows": 396,
+  "unique_equality_nonzeros": 13706,
+  "arithmetic_proposal": {
+    "planned_prime_order": [
+      19,
+      601,
+      145463,
+      2,
+      3,
+      5,
+      7
+    ],
+    "priority_inconsistency_primes": [
+      19,
+      601,
+      145463
+    ],
+    "small_primes_already_proved_consistent": [
+      2,
+      3,
+      5,
+      7
+    ],
+    "dense_augmented_matrix_shape": [
+      396,
+      1116
+    ],
+    "dense_row_combination_witness_shape": [
+      396,
+      396
+    ],
+    "int64_matrix_plus_witness_bytes": 4790016,
+    "conservative_entry_updates_per_prime": 237105792,
+    "maximum_planned_prime": 145463,
+    "modular_vector_update_absolute_bound": 21159338906,
+    "modular_dense_dot_absolute_bound": 8379040603824,
+    "all_proposed_int64_arithmetic_bounds_below_2pow63": true,
+    "maximum_augmented_row_norm_squared": 331,
+    "augmented_minor_Hadamard_absolute_bit_bound": 945,
+    "elimination_started": false,
+    "proposed_modular_phase_seconds": 60,
+    "rational_rowspace_phase_requires_separate_gate": true,
+    "HNF_or_SNF_not_prepared_or_run": true
+  },
+  "saved_point_control": {
+    "denominator": 1661041997,
+    "prime_factorization": [
+      [
+        19,
+        1
+      ],
+      [
+        601,
+        1
+      ],
+      [
+        145463,
+        1
+      ]
+    ],
+    "all_factors_prime_by_complete_trial_division": true,
+    "all2271_native_rows_checked_exactly": true,
+    "all99_zeros_and_all1115_strictly_positive_coordinates_checked": true,
+    "point_values_are_not_affine_constraints": true,
+    "extended_t_is_not_an_affine_variable_or_constraint": true
+  },
+  "controls": {
+    "factorization_controls": 100,
+    "exact_zero_substitution_duplicate_and_inequality_controls": true,
+    "rational_modular_consistency_controls": 4,
+    "elimination_calls": 0
+  },
+  "elimination_calls": 0,
+  "optimizer_calls": 0,
+  "solver_calls": 0,
+  "seconds": 3.3900412149960175
+}

@@ -1,0 +1,75 @@
+{
+  "authorized_next_action": "One bounded eight-iteration append-only master under configuration04 and accepted preparation05, then its separate cold replay.",
+  "change": "Cache480 existing selector IntVar handles per append call; all coefficients, domains, validation and full protobuf checks remain.",
+  "complete_controller_diffs_read": [
+    "v4_to_v5",
+    "v5_to_v6"
+  ],
+  "complete_sources_read": [
+    "registry_v5",
+    "registry_v6"
+  ],
+  "inputs": {
+    "configuration": {
+      "bytes": 2570,
+      "path": "experiments/logs/root-prism-free/f0-direct-master-seed-configuration04.json",
+      "sha256": "a34afd815e2f95312e5afda0834cba889495b2d5a06815de6fdcce0f46299bcd"
+    },
+    "controller": {
+      "bytes": 34685,
+      "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v6.py",
+      "sha256": "094c143d63011c0fee6dab95e2850634fd70fb1f7564b8c3e682cb02ef2f21c8"
+    },
+    "helper": {
+      "bytes": 1770,
+      "path": "experiments/workspace/root_prism_free_f0_direct_master_registry_v6.py",
+      "sha256": "77b91c9bccc1bb34f1865a3fdf3edcc817b718c2111a6630b06e890676a0342b"
+    },
+    "original_preflight": {
+      "bytes": 10933,
+      "path": "experiments/logs/root-prism-free/f0-direct-master-preparation04/report.json",
+      "sha256": "8ab929ceb8a62b96f47913d2edde27ee1f1036a779b7934b751d58af6d4f009e"
+    },
+    "owner": {
+      "bytes": 484,
+      "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/owner.json",
+      "sha256": "cd36f44126f5da043618ba1c45ea243b7ce91dbb73a4b80099b760e31ca817a5"
+    },
+    "peer": {
+      "bytes": 2204,
+      "path": "experiments/logs/root-prism-free/f0-direct-master-v6-independent-source-review01.json",
+      "sha256": "0633dc13283e3b36f7e3c9444a7ae59bc81436a0807619a09bd6d36924aa7849"
+    },
+    "preflight": {
+      "bytes": 10934,
+      "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/report.json",
+      "sha256": "6471332627541231f98a86c088c30d16253343bd69087d1b2f4eff19e8c18234"
+    }
+  },
+  "limits": {
+    "CP_seconds_per_call": 60,
+    "CP_seconds_total": 180,
+    "cold_owner_seconds": 60,
+    "iterations": 8,
+    "owner_seconds": 300,
+    "shared_seconds_per_candidate": 60
+  },
+  "native_INFEASIBLE_is_unproved": true,
+  "native_byte_identity_to_accepted_preflight04": true,
+  "optimizer_calls_in_gate": 0,
+  "prefix": {
+    "additional_seed_rows": 12469,
+    "all253_parent_entries_preserved": true,
+    "all48_packing_and12168_shared_seed_rows_preserved": true,
+    "original_rows": 4681,
+    "registry_capacity": 16384,
+    "total_rows": 17150,
+    "total_terms": 2031768,
+    "variables": 540
+  },
+  "status": "PASS_ROOT_NATIVE_PREFLIGHT_AND_COMPLETE_SOURCE_GATE",
+  "unchanged_controller_function_bodies": 15,
+  "unchanged_prefix_retry": false,
+  "whole_component_excluded": false,
+  "whole_setup_speedup_claimed": false
+}

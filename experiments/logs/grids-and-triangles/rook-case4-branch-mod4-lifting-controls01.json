@@ -1,0 +1,250 @@
+{
+  "status": "PASS_EXHAUSTIVE_TINY_MOD4_LIFTING_AND_BRANCH_SUBSTITUTION_CONTROLS",
+  "dimensions": [
+    {
+      "rows": 1,
+      "originalVariables": 1,
+      "branchSubstitutions": 48
+    },
+    {
+      "rows": 1,
+      "originalVariables": 2,
+      "branchSubstitutions": 576
+    },
+    {
+      "rows": 2,
+      "originalVariables": 1,
+      "branchSubstitutions": 768
+    },
+    {
+      "rows": 2,
+      "originalVariables": 2,
+      "branchSubstitutions": 36864
+    }
+  ],
+  "systemBoxes": 38256,
+  "directMod4Assignments": 151392,
+  "orderedKernelBasisChecks": 144816,
+  "inconsistentBaseParityCases": 23596,
+  "changedIntegerWitnessRepresentativeChecks": 349680,
+  "allResiduesModulo4OfAAndbCoveredInDeclaredDimensions": true,
+  "namedControls": [
+    {
+      "name": "even equation supplies a new parity unit",
+      "A": [
+        [
+          2
+        ]
+      ],
+      "b": [
+        2
+      ],
+      "fixedState": [
+        -1
+      ],
+      "freeCoordinates": [
+        0
+      ],
+      "baseResidues": [
+        0,
+        1
+      ],
+      "mod4LiftableResidues": [
+        1
+      ]
+    },
+    {
+      "name": "mod2 consistent but mod4 impossible",
+      "A": [
+        [
+          4
+        ]
+      ],
+      "b": [
+        2
+      ],
+      "fixedState": [
+        -1
+      ],
+      "freeCoordinates": [
+        0
+      ],
+      "baseResidues": [
+        0,
+        1
+      ],
+      "mod4LiftableResidues": []
+    },
+    {
+      "name": "odd RHS prevents legal halving",
+      "A": [
+        [
+          2
+        ]
+      ],
+      "b": [
+        1
+      ],
+      "fixedState": [
+        -1
+      ],
+      "freeCoordinates": [
+        0
+      ],
+      "baseResidues": [],
+      "mod4LiftableResidues": []
+    },
+    {
+      "name": "a fixed Boolean zero is substituted exactly",
+      "A": [
+        [
+          1
+        ]
+      ],
+      "b": [
+        2
+      ],
+      "fixedState": [
+        0
+      ],
+      "freeCoordinates": [],
+      "baseResidues": [
+        0
+      ],
+      "mod4LiftableResidues": []
+    },
+    {
+      "name": "signed coefficients and integer division",
+      "A": [
+        [
+          -1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "b": [
+        0,
+        2
+      ],
+      "fixedState": [
+        -1,
+        -1
+      ],
+      "freeCoordinates": [
+        0,
+        1
+      ],
+      "baseResidues": [
+        0,
+        3
+      ],
+      "mod4LiftableResidues": [
+        3
+      ]
+    },
+    {
+      "name": "mod4 compatible does not mean Boolean feasible",
+      "A": [
+        [
+          1
+        ]
+      ],
+      "b": [
+        2
+      ],
+      "fixedState": [
+        -1
+      ],
+      "freeCoordinates": [
+        0
+      ],
+      "baseResidues": [
+        0
+      ],
+      "mod4LiftableResidues": [
+        0
+      ]
+    }
+  ],
+  "failureOfHalfOnlyBasisIndependence": {
+    "A": [
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        3
+      ]
+    ],
+    "b": [
+      0,
+      0,
+      0
+    ],
+    "firstBasis": [
+      3,
+      5
+    ],
+    "firstHalfOnlyResidues": [
+      0
+    ],
+    "secondBasis": [
+      5,
+      6
+    ],
+    "secondHalfOnlyResidues": [
+      0,
+      1
+    ],
+    "bothWithBaseResidues": [
+      0
+    ]
+  },
+  "incompleteKernelBasisCounterexample": {
+    "A": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "b": [
+      0,
+      2
+    ],
+    "incompleteBasis": [
+      1
+    ],
+    "admittedResidues": [
+      0,
+      2
+    ],
+    "completeBasis": [
+      1,
+      2
+    ],
+    "trueResidues": [
+      2
+    ]
+  },
+  "scope": "Tiny dimension-at-most-two systems plus named fixtures only; no Conway99 matrix or branch was read.",
+  "GaussianEliminationCalls": 0,
+  "nativeCalls": 0,
+  "optimizerCalls": 0,
+  "case187Calls": 0,
+  "elapsedMilliseconds": 2013,
+  "source": {
+    "path": "experiments/workspace/rook_case4_branch_mod4_lifting_controls.js",
+    "bytes": 8580,
+    "sha256": "e85c7c4b62807d22176780067bb8b63c97a6b9221008fa45679c2dab4d62305d",
+    "git_blob_sha": "54276ceacf0ba78c52a8a7cb3a937d719d1f9996"
+  }
+}

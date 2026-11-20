@@ -1,0 +1,72 @@
+{
+  "schema": "conway99.f0-fixed-selection-exterior-literature-source-review.v1",
+  "status": "PASS: complete read-only source and mathematical review",
+  "subject_source": {
+    "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior.py",
+    "sha256": "2c8a0f7f2bc2a219c994f42618585879e16a6d3a5809627b9aea25be40798160"
+  },
+  "preparation": {
+    "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-preparation01.json",
+    "sha256": "f7710c8c5b457fab53abe3710fc543e9aadd0017d36371379b813c65f0a8ef66"
+  },
+  "dependencies_read": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_first_design_exterior.py",
+      "sha256": "f0c5105526b9374935b4ba961859261249f44f2b311d98138ac3c8aeb5ed56cd",
+      "functions": [
+        "build",
+        "inspect",
+        "read_clauses"
+      ]
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+      "sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278",
+      "functions": [
+        "supervise"
+      ]
+    }
+  ],
+  "independently_read_AST_hashes": {
+    "build": "43c75642ca8cd212ccd1128e8d047642b4f0f59782b41403207f70919992621f",
+    "inspect": "7a6213d4aa4043d859e875a7a4ba1ef0ecdc8db642278a3599ee0719d1247d4e",
+    "read_clauses": "ccd1300384afc9266d738c30e0400f04c7a3062b81124f8f820325c568aaf2ff"
+  },
+  "checks": {
+    "source_and_preparation_file_hashes_match": true,
+    "selected_ids_are_exactly_60_distinct_sorted_integers_in_480_domain": true,
+    "all171_original_Gram_entries_plus_population_checked": true,
+    "degree8_and1080_mixed_demand_orientation": "For a selected exterior signature h, demand at core site i is 2-h_i-(D h)_i; every row has total24. The Boolean edge model imposes degree8 and every demand separately.",
+    "complete_selected_edge_domain": "All1770 unordered selected pairs are checked against the frozen original68394-edge domain. Mutual mixed support and core overlap determine eligibility; no162-Y-zero filtering is introduced.",
+    "symmetric_boolean_edge_model": "One shared edge variable per eligible unordered pair. Each common-neighbor auxiliary is equivalent to the conjunction of its two incident edge variables.",
+    "complete_pair_caps": "For every exterior pair a,b, A_ab+(A^2)_ab+|h_a intersection h_b|<=2. Overlap2 uses direct binary conflict clauses; positive capacities use exact at-most encoding.",
+    "capacity_cut_necessity": "For original eligible support S(a,i), demand*x_a<=sum_{b in S(a,i)}x_b follows from the required degree or mixed count and edge activation. For x_a=0 its left side is zero; for x_a=1 every required neighbor belongs to S. The emitted strict violation is demand minus the selected support size.",
+    "no_historical_selection_restriction": true,
+    "extracted_functions_execute_without_historical_inputs_or_coupling_load": true,
+    "historical_data_and_proof_receipts_bound_without_new_proof_replay": true,
+    "cold_rebuild_compares_complete_data_formula_and_CNF_or_capacity_record": true,
+    "owner_uses_fresh_directory_and_hash_bound_supervisor": true,
+    "child_errors_late_reports_and_timeouts_are_not_accepted": true,
+    "assertions_required_in_entrypoint": true
+  },
+  "limitations": [
+    "This review imports no subject module and rebuilds no candidate domain, CNF, proof or model.",
+    "The adapter is preparation/build/cold machinery. It contains no solver call or new UNSAT certificate.",
+    "A future SAT edge set requires the reused direct inspector; a future UNSAT claim requires an independently checked proof for that exact candidate formula.",
+    "The adapter rechecks the original172 selector equalities but does not assert current4416-cut acceptance or all selector motif exclusions. Complete candidate intake remains external.",
+    "It uses the full original eligible-edge domain and does not apply the162 proved-zero Y orbits.",
+    "Shared degree/mixed/cap feasibility does not construct the second component or a full99-vertex graph.",
+    "A failed fixed selection is not an exclusion of the whole F0 case."
+  ],
+  "review_operations": {
+    "source_reads": true,
+    "AST_hashes_only": true,
+    "subject_imports": 0,
+    "controls_repeated": 0,
+    "domain_rebuilds": 0,
+    "CNF_builds": 0,
+    "proof_checks": 0,
+    "solver_calls": 0,
+    "candidate_queries": 0
+  }
+}

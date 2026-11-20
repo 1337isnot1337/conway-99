@@ -1,0 +1,140 @@
+{
+  "status": "PASS",
+  "known_CRC32_vector": "123456789 -> cbf43926",
+  "roundtrip_controls": [
+    {
+      "name": "known fixed empty gzip",
+      "compressed_bytes": 20,
+      "uncompressed_bytes": 0,
+      "crc32": 0,
+      "blocks": 1
+    },
+    {
+      "name": "stored 0",
+      "compressed_bytes": 23,
+      "uncompressed_bytes": 0,
+      "crc32": 0,
+      "blocks": 1
+    },
+    {
+      "name": "stored 1",
+      "compressed_bytes": 24,
+      "uncompressed_bytes": 1,
+      "crc32": 3523407757,
+      "blocks": 1
+    },
+    {
+      "name": "stored 256",
+      "compressed_bytes": 279,
+      "uncompressed_bytes": 256,
+      "crc32": 1000840399,
+      "blocks": 1
+    },
+    {
+      "name": "stored 17+0+31",
+      "compressed_bytes": 81,
+      "uncompressed_bytes": 48,
+      "crc32": 2376483048,
+      "blocks": 3
+    },
+    {
+      "name": "fixed complete byte alphabet",
+      "compressed_bytes": 290,
+      "uncompressed_bytes": 256,
+      "crc32": 688229491,
+      "blocks": 1
+    },
+    {
+      "name": "fixed distance six copy",
+      "compressed_bytes": 27,
+      "uncompressed_bytes": 11,
+      "crc32": 2340565406,
+      "blocks": 1
+    },
+    {
+      "name": "fixed overlapping length 258 copy",
+      "compressed_bytes": 22,
+      "uncompressed_bytes": 259,
+      "crc32": 1340387007,
+      "blocks": 1
+    },
+    {
+      "name": "dynamic all three code-length repeats and overlap",
+      "compressed_bytes": 37,
+      "uncompressed_bytes": 13,
+      "crc32": 371362421,
+      "blocks": 1
+    }
+  ],
+  "rejection_controls": [
+    "base64 A",
+    "base64 AAA",
+    "base64 AA=A",
+    "base64 AB==",
+    "base64 AAB=",
+    "base64 AAAA$===",
+    "output bound",
+    "CRC32",
+    "ISIZE",
+    "method",
+    "reserved header flag",
+    "reserved block type",
+    "concatenated member",
+    "non-ASCII text"
+  ],
+  "optimizer_calls": 0,
+  "reader_source_sha256": "0d3727bcdddc20c13c2bac65933a43d1d374196708b0040c5371d1b6c59f5f22",
+  "control_source_sha256": "888053abfc534795cd75956095015f3e1a7046f54784d38d4996af4d0dca49aa",
+  "public_record": {
+    "source_sha256": "0d3727bcdddc20c13c2bac65933a43d1d374196708b0040c5371d1b6c59f5f22",
+    "source_git": "cb37f6ceec1609e819d7be3b31a79f41db219f91",
+    "compressed_sha256": "627577aea4a25c15e5d2846242adda9c6b7c97164b7ba47fb9a2cab5d3988fd8",
+    "compressed_git": "fafc89fc74e1d4a8e0ae1f7c7c3880c0b78fba2f",
+    "raw_sha256": "eada1b8ca3b2bf991de9b2323f154d16f1eb9b232e0299380c94d27b551a49fe",
+    "raw_git": "a09c2ffa2ff13fdfa43bb93251a2cdb3c902713b",
+    "seconds": 5.397,
+    "compressed_bytes": 320319,
+    "uncompressed_bytes": 2605132,
+    "crc32": 3505311536,
+    "blocks": 12,
+    "stored_blocks": 0,
+    "fixed_blocks": 0,
+    "dynamic_blocks": 12,
+    "keys": [
+      "Fourier_columns_in_a_b_coordinates",
+      "Gram_forms",
+      "H",
+      "active_one_dimensional_characters",
+      "active_two_dimensional_representations",
+      "block_inventory",
+      "complete_literal_unordered_pairs",
+      "correlation_Fourier_delta_checks",
+      "count_or_graph_feasibility_claimed",
+      "existing_one_dimensional_products",
+      "full_matrix_literal_coefficients_checked",
+      "group",
+      "inputs",
+      "limits",
+      "literal_transports",
+      "literal_unit_vector_inversion_checks",
+      "local_mask_tables_built_or_replaced",
+      "local_mask_tables_required_for_exact_literal_realization",
+      "missing_integer_Fourier_coordinates",
+      "native_model_constructed",
+      "new_scalar_Gram_identities",
+      "new_selector_subsets_enumerated",
+      "old_six_Gram_forms_recovered",
+      "optimizer_calls",
+      "original_pair_orbits",
+      "pair_histogram_equivalence_requires_all_active_irreps",
+      "proposed_full_lift_products",
+      "proposed_full_lift_variables_before_other_changes",
+      "scalar_products_using_diagonal_metric",
+      "schema",
+      "seconds",
+      "source_sha256",
+      "stabilizers",
+      "status"
+    ]
+  }
+}

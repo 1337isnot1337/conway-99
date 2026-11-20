@@ -1,0 +1,73 @@
+{
+  "schema": "f0-second-moments-ipm-query-publication-v1",
+  "status": "FROZEN PREPARATION; production optimizer not called",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_second_moments_ipm_query.py",
+      "bytes": 18291,
+      "sha256": "c6f2658796459167b885b9f9f7ecbf75b6ba92808c4115e6962b806aafe786e7",
+      "git_blob": "5891ee13db73498db8873f61ff51669fac640dfd"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_second_moments_ipm_replay.py",
+      "bytes": 9196,
+      "sha256": "9cc3dc19755d0eba4e2dd6cb81d7c77a5756bb4a1681c622f772128b78e0f050",
+      "git_blob": "ca1af221038d640ab70b9f2fa1448e9d205d2f62"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-ipm-query-preparation.json",
+      "bytes": 2443,
+      "sha256": "1f0ce9a5de0343217c9cae7b4f42899baae2929bf6c24c1ccd0484a0ddb300ea",
+      "git_blob": "8712bdfe87b866322b949565fb0eb264fd1f428c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-ipm-query-cold-preflight.json",
+      "bytes": 1203,
+      "sha256": "22c0c07f12f71d3b5c271e6b1d4341f5afd22419470c3b17f8e6548dc4dc662c",
+      "git_blob": "0c70a749c42fa87650d971bba994dcd261d4aefd"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-ipm-query-reuse-controls.json",
+      "bytes": 1483,
+      "sha256": "92565306ab64a6f194cae791b5d710b6cf47409bf98b8728b1f214c8f964a29a",
+      "git_blob": "4e5de540d9e85a71d3aaa50bb7fc57456baf5204"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-ipm-query-source-diff.txt",
+      "bytes": 9026,
+      "sha256": "19aad682eb37c8dde780c350dc1ef7ae765f115db2c51dd1ecd9dcfebe8c7f66",
+      "git_blob": "5c00e2c86c0616c7e7460ca314219c3ad9d08c16"
+    },
+    {
+      "path": "research/root_prism_free_f0_second_moments_ipm_query.md",
+      "bytes": 3912,
+      "sha256": "eb9d659ace4471b1c404419bacd95d9d247e5f6942e3a7aeb9bdafd8679ea649",
+      "git_blob": "e4eb5d9d3a9087191be954a87b384b8894930cf2"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-reduced-query-publication-manifest.json",
+      "bytes": 4616,
+      "sha256": "79af93ec20d60ce9b499389ba1640aad789134a13f661b914f4024622dfea851",
+      "git_blob": "091dea624d444b9f9582ded90f22b2aca582009e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-reduced-query-run01-terminal-manifest.json",
+      "bytes": 5021,
+      "sha256": "27432cd76bc1abff54840e1f63ebe58516b405d4f971af23ceea994fc703a497",
+      "git_blob": "666094ba461153f5d5150c47e27b8ffbefc6ac79"
+    }
+  ],
+  "query_scope": {
+    "method": "IPM with crossover",
+    "matrix_changed": false,
+    "full_exact_acceptance_retained": true,
+    "solver_calls": 1,
+    "numeric_including_setup_hard_seconds": 180,
+    "exact_hard_seconds": 60,
+    "automatic_retry": false,
+    "PSD_enforced": false,
+    "production_optimizer_calls": 0
+  }
+}

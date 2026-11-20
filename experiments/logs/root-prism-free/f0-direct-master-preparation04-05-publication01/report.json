@@ -1,0 +1,96 @@
+{
+  "compressed_model": {
+    "bytes": 3083428,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-model.pb.gz",
+    "sha256": "e18472c431b53c501ced22b926ed138f720469e514bfddf103efbe2ccb9d6465"
+  },
+  "compressed_registry": {
+    "bytes": 4411260,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation04-05-publication01/initial-registry.json.gz",
+    "sha256": "a923d6e9b1a32b30c671de9c6ab3116ec5cfebe64121120bdf54fb61522b155b"
+  },
+  "manifest": {
+    "bytes": 4888,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation04-05-publication01/manifest.json",
+    "sha256": "7397c844e025f85168334f7ad7ba7b0532130222b6fc6aa6e3d0c1a327282922"
+  },
+  "native_imports": 0,
+  "optimizer_calls": 0,
+  "preparation04_05_complete_native_and_registry_bytes_identical": true,
+  "preparation04_owner": {
+    "bytes": 484,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation04/owner.json",
+    "sha256": "f2e4f25da1712d6af4cce5cefe808fa543c3923dcf823341cb1a450aaeca90ba"
+  },
+  "preparation04_report": {
+    "bytes": 10933,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation04/report.json",
+    "sha256": "8ab929ceb8a62b96f47913d2edde27ee1f1036a779b7934b751d58af6d4f009e"
+  },
+  "preparation05_owner": {
+    "bytes": 484,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/owner.json",
+    "sha256": "cd36f44126f5da043618ba1c45ea243b7ce91dbb73a4b80099b760e31ca817a5"
+  },
+  "preparation05_report": {
+    "bytes": 10934,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/report.json",
+    "sha256": "6471332627541231f98a86c088c30d16253343bd69087d1b2f4eff19e8c18234"
+  },
+  "raw_model": {
+    "bytes": 24013622,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-model.pb",
+    "sha256": "6c92f28dc9bacf8fd41eebcde41f79884b73d137b1185af3215b1134f93f4f47"
+  },
+  "raw_registry": {
+    "bytes": 21145617,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-registry.json",
+    "sha256": "ecd75e20f5f39ec0dae1b52bdad06ccdc8005e925584c17d6766c01af5901b22"
+  },
+  "restoration_receipt": {
+    "existing_files_overwritten": false,
+    "files": [
+      {
+        "bytes": 5327821,
+        "path": "experiments/logs/root-prism-free/f0-direct-master-preparation04/actual-model.pb",
+        "sha256": "de9e9f0f9deb2e7dc1c41866c959c5264de2b7fef7d11d3c9c0d8772aa0bbe3e",
+        "status": "ALREADY_EXACT"
+      },
+      {
+        "bytes": 24013622,
+        "path": "experiments/logs/root-prism-free/f0-direct-master-preparation04/initial-model.pb",
+        "sha256": "6c92f28dc9bacf8fd41eebcde41f79884b73d137b1185af3215b1134f93f4f47",
+        "status": "ALREADY_EXACT"
+      },
+      {
+        "bytes": 21145617,
+        "path": "experiments/logs/root-prism-free/f0-direct-master-preparation04/initial-registry.json",
+        "sha256": "ecd75e20f5f39ec0dae1b52bdad06ccdc8005e925584c17d6766c01af5901b22",
+        "status": "ALREADY_EXACT"
+      },
+      {
+        "bytes": 5327821,
+        "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/actual-model.pb",
+        "sha256": "de9e9f0f9deb2e7dc1c41866c959c5264de2b7fef7d11d3c9c0d8772aa0bbe3e",
+        "status": "ALREADY_EXACT"
+      },
+      {
+        "bytes": 24013622,
+        "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-model.pb",
+        "sha256": "6c92f28dc9bacf8fd41eebcde41f79884b73d137b1185af3215b1134f93f4f47",
+        "status": "ALREADY_EXACT"
+      },
+      {
+        "bytes": 21145617,
+        "path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-registry.json",
+        "sha256": "ecd75e20f5f39ec0dae1b52bdad06ccdc8005e925584c17d6766c01af5901b22",
+        "status": "ALREADY_EXACT"
+      }
+    ],
+    "manifest_sha256": "7397c844e025f85168334f7ad7ba7b0532130222b6fc6aa6e3d0c1a327282922",
+    "optimizer_calls": 0,
+    "status": "PASS_COMPLETE_BYTE_EXACT_RESTORATION"
+  },
+  "source_targets_unchanged": true,
+  "status": "PASS_COMPLETE_PREPARATION04_05_EXACT_STORAGE_BINDINGS"
+}

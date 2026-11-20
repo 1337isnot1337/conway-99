@@ -1,0 +1,22 @@
+{
+  "schema": "conway99.rook.three-Gram-branch-batch-v2-root-gate.v1",
+  "status": "PASS: complete strengthened driver and actual preflight reviewed",
+  "source_sha256": "0226d59dc1ab724ee712dfdd2249aff34d5248db1f354f264a8726a2e1d2f3cc",
+  "preflight_sha256": "98a2a09b455069be847f0f44e4f0db0db4e6591f9cdda2e0c1530de4d2d1b2c2",
+  "scope_preparation_sha256": "ad3f2b14fd4f60b0d411cd5d920ec461cffed3ab7a0ddf68861b9500cad95ba3",
+  "scope_cold_sha256": "769a2536abf223d5b9f6aac27b50b0623f0976e955d153165e4c7b1fceac7e2c",
+  "kernel_sha256": "bb26762de18cad7107a2d49214af61947807528cb66a638efec2589cadf26216",
+  "checks": [
+    "All444 retained patterns belong to the complete2835-pattern weighted-support partition, with certified capacity exclusions bound separately.",
+    "Initial states use only the112 globally proved zeros and their exact weighted-support assignment. H42=5 is not a premise.",
+    "The original2271-row/28784-term native prefix is retained byte-for-byte in canonical form.",
+    "Five parity rows, the unconditional H42 upper bound and the44-term inequality are checked in all1214 original coordinates and appended, giving2278rows/29129terms.",
+    "The reviewed exact propagation, int64 bound checks and direct Python-integer trace replay are imported unchanged.",
+    "All444 initial boxes and the35,449,993 global activity bound are checked by the actual preflight.",
+    "Global units require complete replay of all444 branches. No partial prefix or empty survivor list produces vacuous units.",
+    "Case4 exclusion requires all444 branches to have checked contradictions; that would still not resolve the unrestricted graph problem."
+  ],
+  "allowed_execution": "After current F0query and terminal replay release the heavy slot, run one60second forward prefix with one second per branch and one separately bounded60second cold replay, each under the frozen90second child owner. Use fresh directories; no automatic retry.",
+  "optimizer_calls": 0,
+  "case4_excluded": false
+}

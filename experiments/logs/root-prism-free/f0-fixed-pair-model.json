@@ -1,0 +1,3934 @@
+{
+  "status": "fixed-both-design matching model prepared; main model not solved",
+  "source_hashes": {
+    "root_prism_free_f0_fixed_pair.py": "1fa7c4427539c89543fdf4994b267979d77bfc6a0e2e368bf84762cdf4b614c9",
+    "root_prism_free_f0_coupling.py": "5bb3ec13893aee488272dcb7372c12bddf68d28ae4a199cd170be9342d47df50",
+    "root_prism_free_f0_components.py": "f1c3b49cd084dde9df8f421a79dfbf2233d58c07f03ebb53ef2b58449fed54f4",
+    "root_prism_free_f0_pair_clauses.py": "367b7f850d087067b547653d31bf4b25743f30934583252de1199cffb358daac"
+  },
+  "coupling_certificate": "experiments/logs/root-prism-free/f0-coupling-certificate.json.gz",
+  "coupling_certificate_sha256": "bbe73089b6ae19b25ebb43597195ee81682202e3139e627fbc75db427a5c4cc7",
+  "fixed_incidence_result_sha256": "64d5411e04764b0d7e7157c47b67d759e536a401fee8fe36e274943f2fda4abf",
+  "scope": "one fixed pair of60-triple designs on component0, identity fiber alignment",
+  "whole_component_case_fixed_or_excluded": false,
+  "paired_domain_sha256": "ebd0c91eca96b147a379696a3d92bbf804bcd7a997fcd19990f927d258a82b39",
+  "formula": {
+    "primary_variables": 792,
+    "variables": 23100,
+    "clauses": 56096,
+    "first_row_cardinality_clauses": 2196,
+    "second_column_cardinality_clauses": 2196,
+    "cross_Gram_cardinality_clauses": 43524,
+    "packing_pair_clauses": 8180,
+    "constraint_coverage": [
+      {
+        "kind": "first row",
+        "indices": [
+          0
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          1
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          2
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          3
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          4
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          5
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          6
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          7
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          8
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          9
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          10
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          11
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          12
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          13
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          14
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          15
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          16
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          17
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          18
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          19
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          20
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          21
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          22
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          23
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          24
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          25
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          26
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          27
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          28
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          29
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          30
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          31
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          32
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          33
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          34
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          35
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          36
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          37
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          38
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          39
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          40
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          41
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          42
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          43
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          44
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          45
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          46
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          47
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          48
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          49
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          50
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          51
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          52
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          53
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          54
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          55
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          56
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          57
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          58
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "first row",
+        "indices": [
+          59
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          0
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          1
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          2
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          3
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          4
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          5
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          6
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          7
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          8
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          9
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          10
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          11
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          12
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          13
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          14
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          15
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          16
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          17
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          18
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          19
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          20
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          21
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          22
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          23
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          24
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          25
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          26
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          27
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          28
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          29
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          30
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          31
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          32
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          33
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          34
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          35
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          36
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          37
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          38
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          39
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          40
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          41
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          42
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          43
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          44
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          45
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          46
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          47
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          48
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          49
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          50
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          51
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          52
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          53
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          54
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          55
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          56
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          57
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          58
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "second column",
+        "indices": [
+          59
+        ],
+        "quota": 1,
+        "support": 6
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          0
+        ],
+        "quota": 1,
+        "support": 36
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          1
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          2
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          3
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          4
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          5
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          6
+        ],
+        "quota": 2,
+        "support": 40
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          7
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          8
+        ],
+        "quota": 2,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          9
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          10
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          11
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          12
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          13
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          14
+        ],
+        "quota": 2,
+        "support": 36
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          15
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          16
+        ],
+        "quota": 2,
+        "support": 36
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          0,
+          17
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          0
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          1
+        ],
+        "quota": 1,
+        "support": 13
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          2
+        ],
+        "quota": 1,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          3
+        ],
+        "quota": 1,
+        "support": 13
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          4
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          5
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          6
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          7
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          8
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          9
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          10
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          11
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          12
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          13
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          14
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          15
+        ],
+        "quota": 2,
+        "support": 22
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          16
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          1,
+          17
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          0
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          1
+        ],
+        "quota": 1,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          2
+        ],
+        "quota": 1,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          3
+        ],
+        "quota": 1,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          4
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          5
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          6
+        ],
+        "quota": 2,
+        "support": 32
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          7
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          8
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          9
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          10
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          11
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          12
+        ],
+        "quota": 2,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          13
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          14
+        ],
+        "quota": 2,
+        "support": 22
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          15
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          16
+        ],
+        "quota": 2,
+        "support": 22
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          2,
+          17
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          0
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          1
+        ],
+        "quota": 1,
+        "support": 13
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          2
+        ],
+        "quota": 1,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          3
+        ],
+        "quota": 1,
+        "support": 13
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          4
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          5
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          6
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          7
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          8
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          9
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          10
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          11
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          12
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          13
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          14
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          15
+        ],
+        "quota": 2,
+        "support": 22
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          16
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          3,
+          17
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          0
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          1
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          2
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          3
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          4
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          5
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          6
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          7
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          8
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          9
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          10
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          11
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          12
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          13
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          14
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          15
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          16
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          4,
+          17
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          0
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          1
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          2
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          3
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          4
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          5
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          6
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          7
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          8
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          9
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          10
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          11
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          12
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          13
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          14
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          15
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          16
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          5,
+          17
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          0
+        ],
+        "quota": 2,
+        "support": 40
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          1
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          2
+        ],
+        "quota": 2,
+        "support": 32
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          3
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          4
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          5
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          6
+        ],
+        "quota": 1,
+        "support": 36
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          7
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          8
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          9
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          10
+        ],
+        "quota": 1,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          11
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          12
+        ],
+        "quota": 2,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          13
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          14
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          15
+        ],
+        "quota": 2,
+        "support": 36
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          16
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          6,
+          17
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          0
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          1
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          2
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          3
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          4
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          5
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          6
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          7
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          8
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          9
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          10
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          11
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          12
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          13
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          14
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          15
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          16
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          7,
+          17
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          0
+        ],
+        "quota": 2,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          1
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          2
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          3
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          4
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          5
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          6
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          7
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          8
+        ],
+        "quota": 1,
+        "support": 13
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          9
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          10
+        ],
+        "quota": 1,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          11
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          12
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          13
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          14
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          15
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          16
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          8,
+          17
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          0
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          1
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          2
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          3
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          4
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          5
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          6
+        ],
+        "quota": 1,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          7
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          8
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          9
+        ],
+        "quota": 1,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          10
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          11
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          12
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          13
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          14
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          15
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          16
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          9,
+          17
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          0
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          1
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          2
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          3
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          4
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          5
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          6
+        ],
+        "quota": 1,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          7
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          8
+        ],
+        "quota": 1,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          9
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          10
+        ],
+        "quota": 1,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          11
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          12
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          13
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          14
+        ],
+        "quota": 2,
+        "support": 29
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          15
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          16
+        ],
+        "quota": 2,
+        "support": 29
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          10,
+          17
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          0
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          1
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          2
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          3
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          4
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          5
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          6
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          7
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          8
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          9
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          10
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          11
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          12
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          13
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          14
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          15
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          16
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          11,
+          17
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          0
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          1
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          2
+        ],
+        "quota": 2,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          3
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          4
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          5
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          6
+        ],
+        "quota": 2,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          7
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          8
+        ],
+        "quota": 2,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          9
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          10
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          11
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          12
+        ],
+        "quota": 1,
+        "support": 13
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          13
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          14
+        ],
+        "quota": 1,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          15
+        ],
+        "quota": 1,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          16
+        ],
+        "quota": 1,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          12,
+          17
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          0
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          1
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          2
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          3
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          4
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          5
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          6
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          7
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          8
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          9
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          10
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          11
+        ],
+        "quota": 2,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          12
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          13
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          14
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          15
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          16
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          13,
+          17
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          0
+        ],
+        "quota": 2,
+        "support": 36
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          1
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          2
+        ],
+        "quota": 2,
+        "support": 22
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          3
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          4
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          5
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          6
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          7
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          8
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          9
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          10
+        ],
+        "quota": 2,
+        "support": 29
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          11
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          12
+        ],
+        "quota": 1,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          13
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          14
+        ],
+        "quota": 1,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          15
+        ],
+        "quota": 1,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          16
+        ],
+        "quota": 1,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          14,
+          17
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          0
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          1
+        ],
+        "quota": 2,
+        "support": 22
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          2
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          3
+        ],
+        "quota": 2,
+        "support": 22
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          4
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          5
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          6
+        ],
+        "quota": 2,
+        "support": 36
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          7
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          8
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          9
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          10
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          11
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          12
+        ],
+        "quota": 1,
+        "support": 16
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          13
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          14
+        ],
+        "quota": 1,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          15
+        ],
+        "quota": 1,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          16
+        ],
+        "quota": 1,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          15,
+          17
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          0
+        ],
+        "quota": 2,
+        "support": 36
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          1
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          2
+        ],
+        "quota": 2,
+        "support": 22
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          3
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          4
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          5
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          6
+        ],
+        "quota": 2,
+        "support": 34
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          7
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          8
+        ],
+        "quota": 2,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          9
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          10
+        ],
+        "quota": 2,
+        "support": 29
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          11
+        ],
+        "quota": 2,
+        "support": 20
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          12
+        ],
+        "quota": 1,
+        "support": 17
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          13
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          14
+        ],
+        "quota": 1,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          15
+        ],
+        "quota": 1,
+        "support": 26
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          16
+        ],
+        "quota": 1,
+        "support": 25
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          16,
+          17
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          0
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          1
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          2
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          3
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          4
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          5
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          6
+        ],
+        "quota": 2,
+        "support": 30
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          7
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          8
+        ],
+        "quota": 2,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          9
+        ],
+        "quota": 2,
+        "support": 24
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          10
+        ],
+        "quota": 2,
+        "support": 27
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          11
+        ],
+        "quota": 2,
+        "support": 18
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          12
+        ],
+        "quota": 1,
+        "support": 15
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          13
+        ],
+        "quota": 1,
+        "support": 12
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          14
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          15
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          16
+        ],
+        "quota": 1,
+        "support": 21
+      },
+      {
+        "kind": "cross Gram",
+        "indices": [
+          17,
+          17
+        ],
+        "quota": 1,
+        "support": 18
+      }
+    ],
+    "packing_pairs_sha256": "3db7a85bc330ba35078137313c88907d86b482d92d4bbcf20596e9a6fcac1882",
+    "auxiliary_variables_begin_at": 793,
+    "row_quotas": 60,
+    "column_quotas": 60,
+    "cross_Gram_positions": 324,
+    "fixed_component_representatives": [
+      0,
+      0
+    ],
+    "second_fiber_alignment": [
+      0,
+      1,
+      2
+    ],
+    "fixed_design_on_both_sides": true,
+    "exterior_edge_variables": 0,
+    "additional_symmetry_assumptions": 0
+  },
+  "cnf": "/tmp/conway99-f0-fixed-pair.cnf",
+  "cnf_sha256": "af2adcaffbcca28aa0013405b9627a0e5bedf1cac3a6f4c0a83c18f17e899615",
+  "controls": {
+    "rook9_known_matching_positive_control": true,
+    "all_rook_control_permutations": 120,
+    "positive_permutations": 4,
+    "negative_permutations": 116,
+    "empty_matching_negative_control": true,
+    "main_fixed_pair_solved": false
+  },
+  "exact_fractional_control_scope": "larger fixed-first/all-second-domain model only",
+  "visible_motif_conflicts_beyond_core_overlap_not_encoded": true,
+  "SAT_scope": "full39-core incidence candidate; no exterior adjacency or full graph",
+  "UNSAT_scope": "this fixed incidence pair and fiber alignment only",
+  "elapsed_seconds": 2.6903607469976123
+}

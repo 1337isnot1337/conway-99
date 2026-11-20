@@ -1,0 +1,10 @@
+{
+  "status": "FAILED tiny native API probe; no optimizer",
+  "ortools_version": "9.15.6755",
+  "exit_code": 139,
+  "operation": "Parse a serialized two-variable product toy into a fresh CpModel internal proto, then get_int_var_from_proto_index and append a table.",
+  "precise_crash_operation_identified": false,
+  "production_model_changed": false,
+  "optimizer_calls": 0,
+  "replacement": "Build through the frozen public-constructor path before obtaining variable handles; validate the complete appended proto and compare every parent variable/constraint."
+}

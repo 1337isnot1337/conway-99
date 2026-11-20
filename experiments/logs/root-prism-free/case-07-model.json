@@ -1,0 +1,188 @@
+{
+  "status": "global-prism-free overlay prepared; no solve",
+  "scope": "globally prism-free SRG case; not every graph with a prism-free chosen root",
+  "case_index": 7,
+  "partition": [
+    2,
+    2,
+    2
+  ],
+  "previous_model": "experiments/logs/root-full-caps-anchor-max/case-07-model.json",
+  "previous_model_sha256": "64dbfd72f739a304e676f6114a17a2951341cf072da0f33ead6a114021258a3b",
+  "previous_cnf": "/tmp/conway-root-full-caps-anchor-max/case-07.cnf",
+  "previous_cnf_sha256": "d3158630bd82c517dd8f76175a0dd34438d20c104497b874c8fc576c754ed073",
+  "previous_variables": 982934,
+  "previous_clauses": 1976516,
+  "previous_batch": "experiments/logs/root-full-caps-anchor-max/run-01/batch.json",
+  "previous_batch_sha256": "6cc059f71a1868c6fe3f7122a7e89b959b87ef4c2fc6a4d5094e1ce3f31871a1",
+  "structure_certificate": "experiments/logs/root-prism-free/structure-certificate.json",
+  "structure_certificate_sha256": "7ca250ef33ff409fde71c4be00d92fc5af6b514b2a2b02b0766326c57ca90662",
+  "structure_source_sha256": "d3c72f72481b095086306c8cda3995b064b396e28200822ac4d479a582835904",
+  "raw_overlay_sha256": "05a7d5d559c00cb557001c6b80a64145dd6119ae2018f2ae1273d9c3b4d4bcf2",
+  "primary_edge_order_sha256": "6e766dafff29b9cb6d3cbe57b7aabf58499ca70469800ddc79f34e808d1ad4ac",
+  "new_clauses": 34440,
+  "new_variables": 0,
+  "variables": 982934,
+  "clauses": 2010956,
+  "cnf": "/tmp/conway-root-prism-free/case-07.cnf",
+  "cnf_sha256": "d8895c8e46d591f1cbfb41a5a1af8c414782dd677d8746207ed2268e645f36b4",
+  "matching_stabilizer_order": 384,
+  "matching_stabilizer_generators": 8,
+  "clause_invariance": [
+    {
+      "generator_image": [
+        2,
+        3,
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        1,
+        0,
+        3,
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edge_image_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        7,
+        4,
+        5,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edge_image_sha256": "67ee3964676e94bbb6148d281e8009b772d3a09af25f1f3ac173aa6e97b291cb",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        4,
+        7,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edge_image_sha256": "0f47f66a21235a751144e88410592adbd5a8879d576eb08f65c8b71de67bf2f2",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        10,
+        11,
+        8,
+        9
+      ],
+      "edge_image_sha256": "d305a3193d0eabfb066d2e603ffbda20a5355603c9d461b1d9e13ac21977a635",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        8,
+        11,
+        10
+      ],
+      "edge_image_sha256": "7f1f095e2e0b575c676bf3baef40c8de533a9e114c28169defb2fa0da2b4d97a",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        4,
+        5,
+        6,
+        7,
+        0,
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11
+      ],
+      "edge_image_sha256": "d573cb10c1b0d7760efbf43a2f836dc10237869663e399152b4482c48cca8848",
+      "preserved_clauses": 34440
+    },
+    {
+      "generator_image": [
+        0,
+        1,
+        2,
+        3,
+        8,
+        9,
+        10,
+        11,
+        4,
+        5,
+        6,
+        7
+      ],
+      "edge_image_sha256": "25aed8f1d5183b713656530ae1a2f113c4acdacd82e814eda0da4dbaed8e0bd2",
+      "preserved_clauses": 34440
+    }
+  ],
+  "source_hashes": {
+    "root_prism_free_overlay.py": "66111dfcf4118dd3d3927719a89f55b224fe840f1d0527b7314664b4bbd416b1",
+    "root_prism_free_solve.py": "02ca4500d39a30c775661f4a9efd8d27d4534e6fc757af2a0f6251022f4c8a0e",
+    "root_prism_free_certificate.py": "b89623b11152f327d217ff5d1e57c434db8efc54137f2a2af431366b5a36b857"
+  },
+  "all_previous_complete_caps_retained": true,
+  "all_previous_lex_and_anchor_clauses_retained": true,
+  "minimum_partition_normalization_added": false,
+  "graph_automorphism_assumptions": 0,
+  "solver_called": false,
+  "excludes_whole_old_same_index_case": false
+}

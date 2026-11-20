@@ -1,0 +1,32 @@
+{
+  "status": "independent full-baseline replay PASS",
+  "exit_code": 0,
+  "pilot_result": "experiments/logs/grids-and-triangles/complement-rook-core-deletion-pilot01.json",
+  "pilot_result_sha256": "c7f902eff5a56a46edaf31760f75ddbd54af894d3edc183d63de4cdd7d855b53",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-core-deletion-pilot01/design-1001-core-certificate.json",
+  "certificate_sha256": "4c090e2deecbc5e3da36e71bb8f8debec6399d5a1f90132df81923aefe925ee1",
+  "replay_log": "experiments/logs/grids-and-triangles/complement-rook-core-deletion-pilot01-full-replay.log",
+  "replay_log_sha256": "3d91f810428d61b81ef80829008fa83edc213afe1271527efcaa42572921ce06",
+  "replay_result": {
+    "status": "full baseline and explicit signed-unit CNF rebuilt; retained inclusion and DRAT verified",
+    "design_index": 1001,
+    "core_unit_cnf_sha256": "4b904becf32e58e1bc795c8262f2dfc593ceb85302955253312436239e8bf1ff",
+    "core_literals": 11,
+    "learned_selector_clause": [
+      -16,
+      -32,
+      -33,
+      -44,
+      -57,
+      -62,
+      -72,
+      -74,
+      -85,
+      -87,
+      -143
+    ],
+    "retained_input_clauses": 15276,
+    "base_constraints_unchanged": true,
+    "whole_core_exclusion": false
+  }
+}

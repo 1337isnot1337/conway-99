@@ -1,0 +1,41 @@
+{
+  "all_query_and_replay_source_lines_read": true,
+  "authorized_owned_queries": 1,
+  "authorized_terminal_cold_replays": 1,
+  "automatic_retry": false,
+  "bindings": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_query.py",
+      "sha256": "820f76ea30bff76e3c0d5d9b79601f6fba1ee11c0534676843315f575bafce39"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_query_replay.py",
+      "sha256": "cd6c2687419212929315bb0da2e21bcd987f1aeb69e8a3d8f33973c2d310b571"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-preparation01/preparation.json",
+      "sha256": "6e0812462e4ddb9b1b331d0652edc92d14da75dd4c975eb8dbc5c8cefcd95ba1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-preflight01.json",
+      "sha256": "41d9e155a23f7e40546b3e546e975b2ac6434a4fae28b4e95ff8faa58becb272"
+    }
+  ],
+  "checks": [
+    "One absolute180-second owner deadline covers imports, construction, model serialization, native calls and exact acceptance; unchanged checked supervisor kills/reaps incomplete children.",
+    "At most12 calls and16 added rows per returned rejected point. Every later call requires new exact violated rows from the fixed117-row target pool.",
+    "The actual serialized native model compares to all expected domains and the exact active target row list before each call.",
+    "Each returned integer vector is saved before response parsing, pool scanning or restored-parent acceptance.",
+    "A full count witness requires exact current-prefix, all117 dense rows, full target and restored original-parent evaluation. Graph/literal-incidence feasibility is never inferred.",
+    "Native INFEASIBLE remains unproved. UNKNOWN, errors, late results and saved-but-unchecked vectors are never promoted.",
+    "The cold replay verifies every saved model, chronological row append, candidate, violation and final acceptance without a solver.",
+    "One worker, seed zero and probing level zero are explicit algorithm settings; no unproved visitation cuts, objective or fixed candidate are introduced."
+  ],
+  "max_native_calls": 12,
+  "max_rows_per_candidate": 16,
+  "owner_seconds": 180,
+  "query_not_run_by_review": true,
+  "reviewer": "root",
+  "status": "PASS: complete owned query and chronological cold replay source review",
+  "terminal_cold_owner_seconds": 60
+}

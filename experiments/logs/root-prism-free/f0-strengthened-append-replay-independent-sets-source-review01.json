@@ -1,0 +1,124 @@
+{
+  "schema": "conway99.f0.strengthened-append-independent-sets-source-review.v1",
+  "status": "PASS_SOURCE_AND_AVAILABLE_ARTIFACT_SCHEMA_REVIEW",
+  "reviewer": "independent_sets",
+  "reviewed_source": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_append_replay.py",
+    "sha256": "8745e9eb5d7a9ced7658f4d052d7fc28c24d58a04e9f9b94514316b12e12a4d6",
+    "git_blob": "aa5a5842769ff4ab13ee99df5982f1c0dcab6090",
+    "bytes": 34830
+  },
+  "reviewed_configuration": {
+    "path": "experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json",
+    "sha256": "796e79978b113e49603b9cb60ddcda6bd829725eb4384d10640d74feb959ca0c",
+    "git_blob": "086e612eeb16c03833006421f218f9ff47e34f44",
+    "bytes": 13870
+  },
+  "complete_source_read": true,
+  "source_lines": 660,
+  "source_imported": false,
+  "review_scope": "Independent source reading and frozen artifact metadata/schema comparison only. This is not the native protobuf cold result.",
+  "inspected_bindings": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_strengthened_append_replay.py",
+      "sha256": "8745e9eb5d7a9ced7658f4d052d7fc28c24d58a04e9f9b94514316b12e12a4d6",
+      "git_blob": "aa5a5842769ff4ab13ee99df5982f1c0dcab6090",
+      "bytes": 34830
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json",
+      "sha256": "796e79978b113e49603b9cb60ddcda6bd829725eb4384d10640d74feb959ca0c",
+      "git_blob": "086e612eeb16c03833006421f218f9ff47e34f44",
+      "bytes": 13870
+    },
+    {
+      "name": "three_cold",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01-cold/report.json",
+      "sha256": "be7b4c812e50fa9575d961022e05f8cdbe2f414f9d5c4c522eecf23faa7bd214",
+      "bytes": 2656,
+      "git_blob": "dcec851aa83f81d33fb4c0ca4a7eae609d3b4b34"
+    },
+    {
+      "name": "four_root_acceptance",
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-root-acceptance01.json",
+      "bytes": 3576,
+      "sha256": "74341c2db1458b35a8b932bb7fbde28824b9eadf09cbe404e1d5bbf5a69150a9",
+      "git_blob": "25fdbb37f6bcde2da6c08d70a36ad4e3164892ab",
+      "mode": "100644"
+    },
+    {
+      "name": "four_certificate_replay",
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01.json",
+      "bytes": 135914,
+      "sha256": "5a3d211780e0a89158cc9442896b960759851f9bf78aed0f5750bb696a170c82",
+      "git_blob": "abe7c99ab4f4ef6f17dd2dec1b8124cca892f3d8",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates01.json",
+      "bytes": 272662,
+      "sha256": "4c3363d7f875c2bf401ed2fba9d508167a1ad618d9ad15e39d21e1d690662b2f",
+      "git_blob": "f9a2cb8034dd051bd9db9097e4a2ec80f481cc5a",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates01-finalization.json",
+      "bytes": 813,
+      "sha256": "04c208519361648ce0cf5553c02484d952cdac58c0bd42c4e79258e40c438019",
+      "git_blob": "4c300ded302df1ac366c94dc1cf84b7a50c32b04",
+      "mode": "100644"
+    }
+  ],
+  "findings": {
+    "signed_certificate_schema": "The actual accepted 252-certificate report has the fields and canonical decimal-string matrix/vector/quadratic values read by signed_rows. The primitive matrix is independently reconstructed from the pinned kernel and literal pair index, and all nine Python-integer terms are contracted before accepting a negative quadratic value.",
+    "signed_activation": "For a single present edge, its endpoint selectors are already active through parent edge guards. The isolated selector is retained explicitly. The native inequality is x_isolated + y_present - y_other1 - y_other2 <= 1, with conservative lower bound -2. All three one-edge masks map to the correct isolated selector.",
+    "signed_identity_and_provenance": "Actual edge IDs are recovered from the complete parent edge order. Parent triangle index, signatures, primitive-family hash, matrix, vector, row key, complete sorted origin lists, row indices and canonical row hash are checked. The 252 rows need individually valid negative forms; no completeness of the unused eight-pattern diagnostic is inferred.",
+    "complete_constraint_messages": "Each appended ConstraintProto is compared by complete serialization to a newly constructed linear-only expected message. This checks every index, coefficient, domain endpoint and unintended name/enforcement/oneof/unknown-field payload. Source controls explicitly cover these mutations but were not run in this review.",
+    "complete_parent_preservation": "The checker requires the raw native model to equal the complete accepted parent byte prefix followed by the complete saved suffix; both compressed archives must decode to those exact bytes. After all appended constraints are checked, deleting the suffix must serialize to the complete original parent bytes. Original variables, domains, names, rows and metadata are therefore preserved.",
+    "three_family_bindings": "The actual three-cold receipt agrees with the configured complete-inventory path, archive SHA/bytes and raw SHA. Its proposed row counts and canonical hashes match the checker's 1,224 one-edge and 57,996 path families. The checker explicitly reconstructs proposed rows from reason-4 ledger entries and verifies endpoint/origin fields; the large inventory was not independently reread in this source review.",
+    "four_current_authority": "The actual root acceptance binds the current complete reconstruction, artifact coefficient replay, finalization and standalone theorem review to the exact configuration inputs. The actual replay and root acceptance agree on 72,468 rows, 73,404 cases, 63,336 sufficient certificates, 49,458 omitted rows, 23,010 retained IDs and the retained-ID hash. The checker compares complete row/case masks and retained IDs and preserves all parent rows. It does not rely on the unavailable old four-selector cold.",
+    "scope_and_runtime": "The source imports only the protobuf decoder for model inspection, checks exact pinned OR-Tools/protobuf versions, rejects solver/model/producer imports, preserves unaccepted error output, and checks its 90-second deadline after report serialization. Actual syntax, controls, native construction and full protobuf replay remain separate gated work."
+  },
+  "expected_model": {
+    "variables": 68934,
+    "parent_rows": 168050,
+    "final_rows": 257594,
+    "family_order": [
+      "three_one_edge",
+      "three_path",
+      "four_retained",
+      "triangle_cover",
+      "spectral_edge_zero",
+      "signed_one_edge"
+    ],
+    "family_counts": {
+      "three_one_edge": 1224,
+      "three_path": 57996,
+      "four_retained": 23010,
+      "triangle_cover": 6990,
+      "spectral_edge_zero": 72,
+      "signed_one_edge": 252
+    },
+    "family_terms": {
+      "three_one_edge": 2448,
+      "three_path": 173988,
+      "four_retained": 401874,
+      "triangle_cover": 20970,
+      "spectral_edge_zero": 72,
+      "signed_one_edge": 1008
+    }
+  },
+  "limitations": [
+    "No Python source was imported or executed; no native protobuf model was decoded and no controls or arithmetic census were rerun.",
+    "Direct large-inventory retrieval was attempted but did not yield usable bytes: the three-selector gzip blob produced a UTF-8 decode error; the four-selector large blob returned a transport-closed error. This review therefore makes no new claim of independently rereading either complete raw inventory.",
+    "Native acceptance still requires the separately bounded actual checker run on the producer's accepted report, owner and model bytes."
+  ],
+  "source_imports": 0,
+  "controls_run": 0,
+  "model_builds": 0,
+  "protobuf_decodes": 0,
+  "case_censuses": 0,
+  "optimizer_calls": 0,
+  "branch_or_ref_mutations": 0,
+  "mathematical_or_source_blocker_found": false
+}

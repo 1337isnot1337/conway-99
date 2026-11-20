@@ -1,0 +1,56 @@
+{
+  "status": "fixed-both-design matching model prepared; main model not solved",
+  "source_hashes": {
+    "root_prism_free_f0_fixed_pair.py": "1fa7c4427539c89543fdf4994b267979d77bfc6a0e2e368bf84762cdf4b614c9",
+    "root_prism_free_f0_coupling.py": "5bb3ec13893aee488272dcb7372c12bddf68d28ae4a199cd170be9342d47df50",
+    "root_prism_free_f0_components.py": "f1c3b49cd084dde9df8f421a79dfbf2233d58c07f03ebb53ef2b58449fed54f4",
+    "root_prism_free_f0_pair_clauses.py": "367b7f850d087067b547653d31bf4b25743f30934583252de1199cffb358daac"
+  },
+  "coupling_certificate": "experiments/logs/root-prism-free/f0-coupling-certificate.json.gz",
+  "coupling_certificate_sha256": "bbe73089b6ae19b25ebb43597195ee81682202e3139e627fbc75db427a5c4cc7",
+  "fixed_incidence_result_sha256": "64d5411e04764b0d7e7157c47b67d759e536a401fee8fe36e274943f2fda4abf",
+  "scope": "one fixed pair of60-triple designs on component0, identity fiber alignment",
+  "whole_component_case_fixed_or_excluded": false,
+  "paired_domain_sha256": "ebd0c91eca96b147a379696a3d92bbf804bcd7a997fcd19990f927d258a82b39",
+  "cnf": "/tmp/conway99-f0-fixed-pair.cnf",
+  "cnf_sha256": "af2adcaffbcca28aa0013405b9627a0e5bedf1cac3a6f4c0a83c18f17e899615",
+  "controls": {
+    "rook9_known_matching_positive_control": true,
+    "all_rook_control_permutations": 120,
+    "positive_permutations": 4,
+    "negative_permutations": 116,
+    "empty_matching_negative_control": true,
+    "main_fixed_pair_solved": false
+  },
+  "exact_fractional_control_scope": "larger fixed-first/all-second-domain model only",
+  "visible_motif_conflicts_beyond_core_overlap_not_encoded": true,
+  "SAT_scope": "full39-core incidence candidate; no exterior adjacency or full graph",
+  "UNSAT_scope": "this fixed incidence pair and fiber alignment only",
+  "elapsed_seconds": 2.6903607469976123
+}
+{
+  "primary_variables": 792,
+  "variables": 23100,
+  "clauses": 56096,
+  "first_row_cardinality_clauses": 2196,
+  "second_column_cardinality_clauses": 2196,
+  "cross_Gram_cardinality_clauses": 43524,
+  "packing_pair_clauses": 8180,
+  "packing_pairs_sha256": "3db7a85bc330ba35078137313c88907d86b482d92d4bbcf20596e9a6fcac1882",
+  "auxiliary_variables_begin_at": 793,
+  "row_quotas": 60,
+  "column_quotas": 60,
+  "cross_Gram_positions": 324,
+  "fixed_component_representatives": [
+    0,
+    0
+  ],
+  "second_fiber_alignment": [
+    0,
+    1,
+    2
+  ],
+  "fixed_design_on_both_sides": true,
+  "exterior_edge_variables": 0,
+  "additional_symmetry_assumptions": 0
+}

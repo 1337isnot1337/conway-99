@@ -1,0 +1,78 @@
+{
+  "status": "FROZEN_POINT_INDEPENDENT_SMALL_ROOT_PREPARATION",
+  "source_commit": "a20ec755c7364c4b7a6e40317e5a7a745224679d",
+  "planned_checkpoint": "after checkpoint44",
+  "files": [
+    {
+      "path": "experiments/logs/moments-and-counts/order10-small-roots-public-extraction-request.json",
+      "git_blob": "a00bcf9304019e39ed3a07e576d6f07d22658f64"
+    },
+    {
+      "path": "experiments/workspace/small_roots_public_input_extract.py",
+      "git_blob": "d8b680080596a9725371ffb363b611232b2f0a43"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-small-roots-public-recovery-inputs.json",
+      "git_blob": "a2188e546dfa72363ef464c11bf89caeec547254",
+      "sha256": "6faade97d280df6b10552d8d4f71e5b80e7c5984ee8e069ade6a9dcc097e4d3e",
+      "bytes": 353844
+    },
+    {
+      "path": "experiments/workspace/small_roots_packing_moment_recovery_check.js",
+      "git_blob": "34085dd6833ab816968ede0ba4637e44713b37fc"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-small-roots-packing-moment-recovery-preparation.json",
+      "git_blob": "537b722f2dd4f964c5fa053d5398e41c60b4ed9d",
+      "bytes": 966589
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-small-roots-packing-moment-recovery-preparation-replay.json",
+      "git_blob": "4628c0eb9d39d5574d66a2219058229c4a25c2f7"
+    },
+    {
+      "path": "research/grids-and-triangles/small_roots_packing_moment_recovery_preparation.md",
+      "git_blob": "28a54d3b12650c8401bdbf8f80816d85d7cb082f"
+    }
+  ],
+  "published_dependencies": [
+    {
+      "path": "experiments/workspace/root49_packing_moment_recovery_check.js",
+      "git_blob": "d547df71ef544fc7e36a8580bc9f7bdc311d6871"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-other-roots-scope01.json",
+      "git_blob": "4bc0045ae1447160dbf667a1918e32a9f4e3c454"
+    }
+  ],
+  "summary": {
+    "roots": 32,
+    "raw_monomials": 4975,
+    "supported_monomials": 1035,
+    "structurally_zero_monomials": 3940,
+    "moment_orbits": 492,
+    "literal_completions": 1195,
+    "literal_unrooted_graph_classes": 294,
+    "catalogue_types": 294,
+    "fingerprint_groups": 294,
+    "ambiguous_fingerprint_groups": 0,
+    "product_rows": 2450,
+    "product_nonzeros": 2742,
+    "literal_type_isomorphism_comparisons": 1412,
+    "five_class_subsets_checked": 3987,
+    "direct_presence_normalization_controls": 46,
+    "synthetic_distribution_controls": 64
+  },
+  "execution": {
+    "status": "PASS",
+    "milliseconds": 996,
+    "source_git_blob": "34085dd6833ab816968ede0ba4637e44713b37fc"
+  },
+  "exact_cold_preparation_match": true,
+  "independent_algorithm_replay": false,
+  "count_point_loaded": false,
+  "optimizer_called": false,
+  "query_gate": "No remaining-32 count-point evaluation has been run; parent source/preparation review is required.",
+  "scope": "Complete necessary local high-mask presence moment models of population at most four; not a graph-existence certificate.",
+  "publication": "Blobs only; no tree, commit, ref, issue or shared-document mutation by this agent."
+}

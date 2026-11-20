@@ -1,0 +1,32 @@
+{
+  "status": "PASS: independent complete integer type census and vectorized two-column classification",
+  "audit_source_sha256": "58b4ed968093153817b849621f97a50b838753cb6e9f8dbd30df8d7192ab0065",
+  "subject_certificate_sha256": "fe09cb1f9a6544006f05646599258e6b806e2b8156cd6a8d8e4d43695b8826b6",
+  "input_hashes": {
+    "f0-pair-gram-certificate.json.gz": "edb85ff422222961e6bc9b36322b74bcfce455bca262d6e189d7768f9ac91c98",
+    "f0-pair-gram-model-preparation.json.gz": "7b870a9df98c855f75fcd0191b5fe03589d9458ad1e3f985ba77edb066be0c59",
+    "f0-pair-clauses.json.gz": "47e9d8f518fab10aee604f33df1f22c97b0d201a1af4180e4307553e4857672f",
+    "f0-pair-downdate-bounds.json": "443c87ca561fa28c343d0446afa6d65ad87ad7d1f754a54a1756e5fcca7b6dfb"
+  },
+  "independent_component_triples": 480,
+  "independent_component_types": 36134,
+  "ordered_type_combinations": 33578176,
+  "self_full_columns": 39168,
+  "distinct_unordered_full_column_pairs": 767046528,
+  "negative_unordered_pairs": 866448,
+  "negative_pairs_with_intersection_at_most_two": 0,
+  "all_negative_pairs_already_violate_triple_packing": true,
+  "allowed_pair_minimum_determinant_numerator": 613323123456,
+  "allowed_pair_minimum_type_ids": [
+    5017,
+    33498
+  ],
+  "allowed_pair_zero_determinant_unordered_count": 0,
+  "all32_count_and_type_categories_match_native_result": true,
+  "empty_new_predicate_archive_checked": true,
+  "subject_builder_or_classifier_imported": false,
+  "native_classifier_called": false,
+  "solver_called": false,
+  "integer_arithmetic": "NumPy int64 with independently checked integer bounds; no float reductions",
+  "elapsed_seconds": 7.3556864710008085
+}

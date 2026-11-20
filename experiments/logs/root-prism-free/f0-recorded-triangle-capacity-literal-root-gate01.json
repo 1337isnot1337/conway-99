@@ -1,0 +1,137 @@
+{
+  "schema": "conway99.f0.recorded-triangle-capacity-literal-root-gate.v1",
+  "status": "AUTHORIZE_ONE_COMPLETE_RECORDED_TRIANGLE_CAPACITY_LITERAL_REPLAY",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_capacity_literal_v8.js",
+    "bytes": 15720,
+    "sha256": "5cb224ef1a544eb23cc61d4d6a1a72e5266514c2483c26449945ab83abb9e615",
+    "git_blob": "4b04412df88f9e70565b4334eb6a5ea7d52a6f57",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-configuration01.json",
+    "bytes": 5028,
+    "sha256": "3a0b1987b52465d123eb2f580e6b5f9ff186bc3ba90eccdab801b26012d4f353",
+    "git_blob": "1551646157c02d4b5beba4b0fe1b51cbe4f5d9d7",
+    "mode": "100644"
+  },
+  "peer_review": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-independent-source-review01.json",
+    "bytes": 5429,
+    "sha256": "cd25e4ed8e5be45d2c693dc39866a7c07e0b632d11b09bb51924cc42cd93ebcd",
+    "git_blob": "25ba9a9d214ad724fbb9812dfe626b752bdaf606",
+    "mode": "100644"
+  },
+  "model_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "bytes": 9294,
+    "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+    "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd",
+    "mode": "100644"
+  },
+  "expected_branch_head": "8b15c3e403f3ca568c7913ffb6aaf721cce0fa26",
+  "maximum_verifier_calls": 1,
+  "producer_calls_allowed": 0,
+  "new_domain_or_triangle_census_calls_allowed": 0,
+  "native_model_builds_allowed": 0,
+  "optimizer_calls_allowed": 0,
+  "automatic_retries": 0,
+  "limits": {
+    "source_total_milliseconds": 30000,
+    "outer_owner_milliseconds": 45000,
+    "maximum_report_bytes": 65536
+  },
+  "required_source_status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_CAPACITY_ROWS",
+  "required_finalization_status": "PASS_COMPLETE_SERIALIZATION_WITHIN_DECLARED_BOUND",
+  "input_bindings": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64-gzip"
+    },
+    "indicator": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json",
+      "sha256": "8606d51ced038b40135fa22bc16d056873b80c16c26d2c34db7e24ac8effd2c7",
+      "git_blob": "8188edc640d4dd896df0e64c4e08db4c78627e96",
+      "bytes": 1056971,
+      "encoding": "utf-8"
+    },
+    "model_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+      "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+      "bytes": 33063,
+      "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+      "mode": "100644"
+    },
+    "model_root": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+      "bytes": 9294,
+      "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+      "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd"
+    },
+    "triangle_literal_root": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-root-acceptance01.json",
+      "bytes": 3019,
+      "sha256": "9d4e3a9b44a2140d95091425a346396ed84dd8d9d88f3a4e7fa3e67d47cd51d4",
+      "git_blob": "afb20e51c7fafb5719cb491af8037a3a4aeeacba",
+      "encoding": "utf-8"
+    },
+    "proposal": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01.json",
+      "sha256": "2f8eea3f1bb67c796ca8bc1deb06606d0e0c2f1948838128fbc30ed05b6eb09c",
+      "bytes": 2879184,
+      "git_blob": "8201fa6b57efd6be545a4465fdf80aa8c69bf30c",
+      "mode": "100644"
+    },
+    "proposal_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-finalization.json",
+      "sha256": "aa3eb24fa0b711cc751b31f299ccaf5f50302b134486b15a7f1cde9fb0ecc27c",
+      "bytes": 364,
+      "git_blob": "0efb7ed6e15f5cc153c0dbaa27b9e9575637f308",
+      "mode": "100644"
+    },
+    "proposal_owner": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-owner.json",
+      "sha256": "958f6ac9c21c103bfa663be687bbfde492858e7b4a62532886ca6daeb0e663d3",
+      "bytes": 2178,
+      "git_blob": "647c89b1901188ecf2fa4ea609d2115f6a4553ae",
+      "mode": "100644"
+    },
+    "row_descriptor": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-row-keys01.json",
+      "sha256": "0599b49e238d17186ffc112cc8f8d581880a13c2c5407bd7a52ad566433368e1",
+      "git_blob": "91b8c95924a9936760136b93d39df89e2f2d1d8f",
+      "bytes": 3723,
+      "mode": "100644"
+    },
+    "producer_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-configuration01.json",
+      "bytes": 3716,
+      "sha256": "bb11f3e22de3c601bd28c7add7317eea3b7552630c82bf0a13f567fcb5ede1f9",
+      "git_blob": "ab1f2f6e7daa6aea302a4d6b716f2cf68fb16ec6",
+      "mode": "100644"
+    },
+    "theorem_review": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-independent-source-review01.json",
+      "bytes": 8026,
+      "sha256": "ebc4e422b5283d3070425f70875fd59f49ed57ef50800fcc5a24f57d954cae1b",
+      "git_blob": "aeff91a3a8f7f23c3684a7f80e2fd6d1b1d332b7",
+      "mode": "100644"
+    },
+    "theorem_note": {
+      "path": "research/root_prism_free_f0_recorded_triangle_capacities.md",
+      "bytes": 13608,
+      "sha256": "73f9cd10ce8eb234ba99abc6345345a9816437c9889386a90b729e3a29f3ce43",
+      "git_blob": "f38d58afead80a5b65ff19062bfd604d1a9e8087",
+      "mode": "100644"
+    }
+  },
+  "original_producer_execution_remains_unaccepted": true,
+  "redundancy_claims_not_accepted_by_this_gate": true,
+  "cooperative_deadline_checks": true,
+  "hard_OS_preemption_claimed": false,
+  "scope": "Independent exact row verification only; no native model or graph-existence conclusion."
+}

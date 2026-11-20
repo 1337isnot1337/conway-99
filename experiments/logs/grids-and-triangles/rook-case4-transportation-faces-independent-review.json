@@ -1,0 +1,40 @@
+{
+  "schema": "conway99.rook-case4-transportation-independent-review.v1",
+  "status": "PASS_READ_ONLY_SOURCE_AND_MATHEMATICAL_REVIEW",
+  "reviewer": "literature_obstructions",
+  "sources": [
+    {
+      "path": "experiments/workspace/rook_transportation_faces.py",
+      "sha256": "9990f33f1c21a233668dbcc8de8a35bd5f3468de8c1225942f23a38bbac67741"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_transportation_faces.py",
+      "sha256": "c791b50870e68933a18af5ff0e59d3f9dff34088774a323299da326953d00206"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_transportation_faces.md",
+      "sha256": "923e9064a2f92158a644f41a969af2e67ec8d2c5f1796e6c0a760768b452b992"
+    }
+  ],
+  "checks": [
+    "Every original column is reconstructed from diagonal Gram supports and checked to meet each of the three grids exactly once. The 105 projections partition the original diagonal and marginal supports without symmetry constraints.",
+    "Each repeated-site cell is exactly a literal Gram support. Three-distinct-site cells use the original triple cap, or an original unit box for a singleton. All capacities preserve necessary real-weight conditions.",
+    "The Gram-only capacity M+1 does not restrict any flow of total M. A valid zero cut or deficient cut cannot use such an outgoing saturated capacity.",
+    "The cut sign is c(Q)-r(P)+sum_out capacity = sum_in flow + sum_out(capacity-flow). A negative value is impossible; value zero forces incoming cells zero. Saturated cells do not identify an individual selected member.",
+    "The original-row expansion recomputes all 1214 coefficients. Non-Gram inequality multipliers must be positive. Every negative column coefficient must have a recorded earlier zero proof; every new positive coefficient is forced zero.",
+    "Exact augmenting paths preserve nonnegative capacities and margins. Deficient cuts have rhs=maxflow-total. The residual-cycle criterion is complete for cells that can be positive in the projected transportation polytope.",
+    "Cold replay checks the signed cut proofs directly and validates the prior-zero induction from an empty premise set. It does not need to trust the generating flow.",
+    "Completed stages store all 105 terminal flows, whose exact margins and residual cycles are checked. This verifies closure only for the stated projections, not joint-incidence feasibility.",
+    "Event, stage, source, model, and timeout bookkeeping preserve partial results without claiming completeness. The maximum flow-call bound follows from at most 1214 zero-producing sweeps plus two terminal sweeps."
+  ],
+  "scope": {
+    "full_sources_and_note_read": true,
+    "source_hashes_checked": true,
+    "subject_sources_imported": false,
+    "domain_rebuilt": false,
+    "controls_repeated": false,
+    "flow_closure_repeated": false,
+    "terminal_result_arithmetic_replayed": false,
+    "optimizer_called": false
+  }
+}

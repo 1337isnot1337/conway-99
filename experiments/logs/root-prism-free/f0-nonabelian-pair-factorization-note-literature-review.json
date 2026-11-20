@@ -1,0 +1,31 @@
+{
+  "schema": "conway99.independent-proof-note-review.v1",
+  "status": "PASS: complete proof-note review",
+  "reviewer": "literature_obstructions",
+  "note": "research/root_prism_free_f0_nonabelian_pair_factorization.md",
+  "note_sha256": "8daaa71479b9ddb7fe72238d1ac9eb7e26a4664d44ed7865248c5396285a011f",
+  "companion_source_sha256": "790a929c65898d2a3bb038c9877d73dc022aa9c66d3983efe8a77ad833383871",
+  "companion_record_sha256": "627577aea4a25c15e5d2846242adda9c6b7c97164b7ba47fb9a2cab5d3988fd8",
+  "earlier_complete_source_review_sha256": "c39fcb87ac886463aa3124dc946fab387fb3a739951956f25848b476a9eba86b",
+  "checks": [
+    "For active representations, the local Fourier sum is independent of transport because the central stabilizer acts trivially. The stated inverse is the full quotient Fourier inverse and determines the literal subset once all coordinates belong to one saved local mask.",
+    "For distinct orbits, h maps to (h a_i,h g a_j) with fiber Hi intersect Hj: centrality removes the usual conjugation of Hj. Thus c(g)=d P_(gK), where K=Hi Hj, and d times |K| equals |Hi| times |Hj|. This is the exact factor cancellation in the cross identity, including size-six orbits.",
+    "With the convention F(rho)=sum_g f(g)rho(g), the correlation transform is the H-adjoint product of the two transforms. Multiplication by H gives the displayed X_i^T H X_j. No missing transpose or inverse remains in that formula.",
+    "Every representation nontrivial on K has zero transform. The active one-dimensional characters and full two-dimensional transforms exhaust G/K, so equality of all transforms gives equality of every cross-pair histogram coordinate.",
+    "Within one orbit, the identity coset is fixed by N_i. For non-self-inverse cosets the two inverse classes encode the same unordered pair count; for a self-inverse nonidentity coset both orientations give a factor two. These nonzero factors preserve injectivity, and the symmetric two-by-two transform retains the complete autocorrelation information.",
+    "The sufficiency statement correctly requires actual local-mask Fourier coordinates in one common frame, every active one-dimensional product family and both complete two-dimensional blocks. A partial Gram block or independent norm domains do not have that sufficiency.",
+    "If the retained moments are the common-group-orbit average of the recovered literal set, the original equality and every Boolean RLT product yield E[L]=0 and E[x_a L]=0. Their coefficient combination gives E[L squared]=0. A finite average of nonnegative squares can vanish only when every translate, including the original set, satisfies the equality.",
+    "The original second-moment source section constructing selector_rows and full_map explicitly forms all 172 selector equalities and every one of their 480 Boolean multipliers, removing only identically zero or exactly duplicate scaled rows. This read supports the RLT premise; no current native model or coefficient archive was rebuilt.",
+    "The note retains the parity a+b even through exact local-mask tables, distinguishes the proposed variable/product counts from performance claims, and leaves exterior Y realization and graph completion separate."
+  ],
+  "future_model_obligations": [
+    "Link each local profile and every active Fourier coordinate to one common saved literal mask.",
+    "Retain the complete original equality/RLT block or an exactly proved equivalent transport.",
+    "Check any accepted incidence directly against all 172 original selector equalities."
+  ],
+  "coefficient_construction_repeated": false,
+  "source_imported": false,
+  "new_selector_subsets_enumerated": 0,
+  "optimizer_calls": 0,
+  "count_or_graph_feasibility_claimed": false
+}

@@ -1,0 +1,20 @@
+{
+  "status": "PASS: complete reduced-driver AST transform and exact-phase reuse",
+  "source_sha256": {
+    "root_prism_free_f0_second_moments_reduced_exact.py": "0ade9c2f04415b325e7f217023dd072abaf4b8cdf60cd9fe07a2cfe93e416536",
+    "root_prism_free_f0_second_moments_reduced_query.py": "0348e3f8fb44adb6e0db186fe90eef8351b4271924faae678028ab1ca9471aad",
+    "root_prism_free_f0_second_moments_reduced_replay.py": "9cae35ba181c9ad3fd95f211a5b874ecaaeaa74b0bc2ef51310872ebe5c56efe"
+  },
+  "whole_driver_AST_matches": "Only helper binding/module name, nonzero count and explicit scope metadata differ from the frozen original.",
+  "unchanged_exact_functions": [
+    "recover_point",
+    "exact_phase"
+  ],
+  "unchanged_replay_function": "main",
+  "exactly_one_replay_CLI_entry": true,
+  "new_review_surface": [
+    "Reduced helper load/zero embedding/full original point acceptance",
+    "Cold reduced replay loader and original independent point adapter"
+  ],
+  "optimizer_calls": 0
+}

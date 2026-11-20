@@ -1,0 +1,65 @@
+{
+  "status": "complete point-independent transportation-face preparation; no case4 flow run",
+  "source_bindings": {
+    "wrapper_sha256": "c791b50870e68933a18af5ff0e59d3f9dff34088774a323299da326953d00206",
+    "exact_flow_source_sha256": "9990f33f1c21a233668dbcc8de8a35bd5f3468de8c1225942f23a38bbac67741",
+    "native_input_sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476",
+    "primary_inventory_sha256": "5a6af30f47826df629a3795ceea0a0a91b853cf8149860355ce1bd17ac0094b2"
+  },
+  "model_raw_sha256": "5d43970be8436fc51bef7a6eedec74e886b8e81f46f795d0ea3bd0b43d28ae91",
+  "model_gzip_sha256": "8a85c8bce28fb624b1c07fac97e26a93ef54b7e2b74792b414cafcefad5587a6",
+  "model_bytes": 405215,
+  "projections": 105,
+  "full_columns": 1214,
+  "core_vertices": 35,
+  "grid_pairs": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "domain_counts": {
+    "projected_column_occurrences": 16266,
+    "full_supported_cells": 1862,
+    "zero_total_projections": 3,
+    "cells_with_Gram_capacity": 320,
+    "cells_with_unit_box_capacity": 107,
+    "cells_with_triple_capacity": 1435
+  },
+  "every_literal_column_meets_each_grid_once": true,
+  "all630_Gram_rows_and1365_triple_supports_reconstructed": true,
+  "controls": {
+    "exhaustive_two_by_two_cases": 6885,
+    "feasible_cases": 1215,
+    "exact_infeasible_cut_controls": 5670,
+    "exact_zero_cut_controls": 2088,
+    "all_integer_box_flows_enumerated_for_truth": true,
+    "positive_three_by_three_residual_cycle_control": true,
+    "LP_or_SAT_optimizer_calls": 0
+  },
+  "limits": {
+    "forward_seconds": 60,
+    "replay_seconds": 60,
+    "maximum_zero_events": 1214,
+    "maximum_records_including_contradiction": 1215,
+    "maximum_flow_calls": 127680,
+    "maximum_augmentations_per_flow": 14
+  },
+  "initial_zero_premises": [],
+  "stages": [
+    "Gram_only",
+    "Gram_triple_and_unit_box"
+  ],
+  "case4_flow_run": false,
+  "LP_or_SAT_optimizer_called": false,
+  "case4_excluded": false,
+  "seconds": 1.5949999500007834
+}

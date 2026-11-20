@@ -1,0 +1,43 @@
+{
+  "canonical_model_sha256": "684b3a646a95d8404bf7b46a3ab170ef88b82e54fdb02aec3a34b8f9613847ae",
+  "controls": {
+    "optimizer_calls": 0,
+    "status": "PASS: signs, scaling, nonnegative implications and all114960 pair IDs"
+  },
+  "counts": {
+    "equalities": 5973,
+    "equality_families": {
+      "Gram": 18,
+      "mixed": 667,
+      "population": 1,
+      "selector RLT equality": 5287
+    },
+    "inequalities": 15719,
+    "inequality_families": {
+      "Boolean-normalized selector": 76,
+      "Y bounded by selector pair moment": 5805,
+      "Z lower Frechet bound": 9353,
+      "Z upper activation": 477,
+      "motif": 8
+    },
+    "nonzeros": 183702,
+    "original_variables": 15589,
+    "row_dispositions": {
+      "Frechet_selector_implications": 389,
+      "Y_activation_implications": 11365,
+      "Z_upper_lifted_implications": 17909,
+      "equality_rank_dependencies": 730,
+      "equality_retained": 5973,
+      "equality_zero_after_substitution": 462,
+      "inequality_box_tautologies": 740,
+      "inequality_retained": 15719
+    },
+    "variables": 15200
+  },
+  "elapsed_seconds": 8.839015469995502,
+  "matrix_sha256": "5e417221ed814a5a0dcb03e31820871113bcc0eb8af2856dd2ac493958d16f39",
+  "optimizer_calls": 0,
+  "reduced_model_sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf",
+  "source_sha256": "1f9549100f5bad7476fc21d1152e6637cac7f448987e57d7652204d5e8df279c",
+  "status": "PASS: exact equivalent reduction prepare"
+}

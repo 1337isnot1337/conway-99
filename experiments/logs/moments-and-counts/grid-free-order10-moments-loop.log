@@ -1,0 +1,35 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{"starting_round": 0, "held_cuts": 5}
+{"file": "moments-3-3-512.pickle", "sha256": "74d5a043cb92ccdeb0c91e15d8f44de814a40196e761b550caace40201b89e53", "embedding_form": "ordinary", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-4-2-512.pickle", "sha256": "74b9c284950fd317f895aa75afda15d531ceeef8d1daba7572c7f26eef68ce79", "embedding_form": "ordinary", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "moments-5-2-512.pickle", "sha256": "9af8134d9ab637c22da04614928bf25ba227c3b812a2a21a10ab0e06b482aa73", "embedding_form": "ordinary", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 1, "smallest_normalized_numeric_eigenvalue": -3.621284327967721e-06}
+{"file": "moments-6-1-512.pickle", "sha256": "e1adfc383da37e534a873a022d2f439816676e748dc917e4a6d8fa3e4ffb18d7", "embedding_form": "ordinary", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -4.163336342344337e-17}
+{"file": "moments-7-1-512.pickle", "sha256": "725a1cda8796555cf7ee3ee174b2593b610731111ef3cc4f472355d3055eeab0", "embedding_form": "ordinary", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -4.0245584642661925e-16}
+{"file": "induced-moments-3-3-512.pickle", "sha256": "d68282554d55346ae09d30d1a2d495ac15ed325f900e4a0185bd54073180cd38", "embedding_form": "induced", "blocks": 4, "largest_order": 18, "exact_negative_blocks": 2, "smallest_normalized_numeric_eigenvalue": -0.03221251831770581}
+{"file": "induced-moments-4-2-512.pickle", "sha256": "f2f8b43e64b08edfed79021aaa63b6bce4d57fe127d382a7fa6c5728bff16d5a", "embedding_form": "induced", "blocks": 9, "largest_order": 39, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": 0.0}
+{"file": "induced-moments-5-2-512.pickle", "sha256": "f35f9d2c709d869924fac026ffb036e310f0967b933b36578ec0e1a53463feac", "embedding_form": "induced", "blocks": 21, "largest_order": 242, "exact_negative_blocks": 5, "smallest_normalized_numeric_eigenvalue": -0.12088586845133449}
+{"file": "induced-moments-6-1-512.pickle", "sha256": "13808003e8f24bd47b8da6169c65a1eccc205b2bc9c3be1c8b57b588a2ba37c5", "embedding_form": "induced", "blocks": 55, "largest_order": 43, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.3369220308934e-16}
+{"file": "induced-moments-7-1-512.pickle", "sha256": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc", "embedding_form": "induced", "blocks": 203, "largest_order": 100, "exact_negative_blocks": 1, "smallest_normalized_numeric_eigenvalue": -0.0011820000605283765}
+{"file": "induced-spectral-7.pickle", "sha256": "b38ced60f1632d8368f2b20e358ab3f43d2ecfedc90bbaac9c446ce0af14c502", "embedding_form": "induced", "blocks": 416, "largest_order": 135, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -2.4231232018338602e-15}
+{"file": "induced-schur-7.pickle", "sha256": "67cc16e42d9529c2155e5f80e73ea23a5defacaccac28150498218ae296058aa", "embedding_form": "induced", "blocks": 416, "largest_order": 128, "exact_negative_blocks": 0, "smallest_normalized_numeric_eigenvalue": -3.3012716498227037e-15}
+{"status": "exact necessary PSD violations found", "blocks_examined": 1416, "exact_negative_block_count": 9, "unique_integer_cut_count": 9, "seconds": 1.0340301940013887, "peak_process_rss_kib": 1194816}
+{"round": 0, "held_cuts": 5, "rows": 47625, "numerical_status": "HighsModelStatus.kOptimal", "solver_seconds": 12.924531505999767, "simplex_iterations": 294, "proposal_path": "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-proposal.json", "proposal_sha256": "d3ae3922d487c3b15e270a8aea5999a26cd034e51f6f34fce0b0c88edce7c416", "separator_path": "experiments/logs/moments-and-counts/grid-free-order10-moments-loop-round0-separation.json", "separator_sha256": "e37f6e9609c805121b412321015881c4c69c7a1f53a67d9ccf2b956fc3885ad4", "exact_negative_blocks": 9, "exact_separator_count": 9, "fresh_cuts": 9}
+{"starting_round": 1, "held_cuts": 14}
+{"round": 1, "held_cuts": 14, "rows": 47634, "numerical_status": "HighsModelStatus.kInterrupt", "solver_seconds": 30.04172466900127, "simplex_iterations": 2917}
+{"status": "stopped on numerical solver status; no exact infeasibility conclusion", "rounds": 2, "held_cuts": 14, "exact_count_witness": false, "PSD_feasibility_certified": false}

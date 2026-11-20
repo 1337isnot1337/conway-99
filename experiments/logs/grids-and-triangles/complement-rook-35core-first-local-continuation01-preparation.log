@@ -1,0 +1,2214 @@
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0004-model.json",
+  "base_model_sha256": "43fc0c40a724f4c287df770fce58abc45835ee7534f2b7e5cd06d3baf380cfde",
+  "base_cnf_sha256": "e76d9cb74cc1b907c5af37fe224b278181d6e5d052de691f7d86cabb6b028b4d",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0004.json.gz",
+  "certificate_sha256": "a2d2c2962743b544adca599277f8939dcc41b80d31d5fcade7bbe7d1b44a934d",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0004-clauses.cnf",
+  "binary_fragment_sha256": "21785dd426a5cea2eba4c3690f9a55f8f32a36d069f64eefe56bca24d1e60556",
+  "case": {
+    "index": 4,
+    "local_set_orbit": 0,
+    "matching_index": 4,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 4,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "34b1170cbd47465bd2ba0442a4790d61d5030e4d139533ebb28f458b6b1a36fe",
+  "column_domain_sha256": "b6de27fe093824c8ee4b39c97756612c46cf8695da18099c1a4b93858cae0e1c",
+  "Gram_sha256": "183e232ee26668bfbb59ef2af77c0a4291c8ac9a796e8e911b7552cef2aa199e",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0004.cnf",
+  "cnf_sha256": "ce3ff730d7eefe9487ec844683899afca80e5372e0a5cc76f322dea520d8b803",
+  "formula": {
+    "primary_columns": 1214,
+    "variables": 107207,
+    "original_clauses": 218863,
+    "additional_binary_clauses": 30,
+    "clauses": 218893
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 3.215102445999946
+}
+{"prepared_case": {"case_index": 4, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0004-model.json", "model_sha256": "b73f9a54f2da4c596e6a4d7169f0cae5f997a6563af715f5b20ea66de3444a00", "cnf_sha256": "ce3ff730d7eefe9487ec844683899afca80e5372e0a5cc76f322dea520d8b803", "cnf_bytes": 3667583, "formula": {"primary_columns": 1214, "variables": 107207, "original_clauses": 218863, "additional_binary_clauses": 30, "clauses": 218893}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0004-author-direct-audit.json", "author_direct_audit_sha256": "974185fe9ad5e6e509ece978afda461ebc2fb7063dc26f5b66840892aaace24a"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0005-model.json",
+  "base_model_sha256": "5d85e593988dbb9974ffe666ce426080a33d39a9fe6ef1a4b769de951c457a72",
+  "base_cnf_sha256": "d0600d12a87a3147fed8ade3cf82e7fe54bf2fe01ab1f5c2c248105aa116e877",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0005.json.gz",
+  "certificate_sha256": "79b9f5cea9554f1cb37db862c09098d7e6a4a270cd1f0e8ca6fcd999d5a8339e",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0005-clauses.cnf",
+  "binary_fragment_sha256": "4bef4d0223e47f5e3f98b558208080cdc61dad9531801cf09a081b72d5b7edaa",
+  "case": {
+    "index": 5,
+    "local_set_orbit": 0,
+    "matching_index": 5,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "matching_orbit_representative": 5,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "a4f93895d5e462e6b2104984d11c233a32fc94bf04bc1a20d27baebe4edd273d",
+  "column_domain_sha256": "b66e4f8c361605005a9885bfc11221090344d4e3f3d0d998cae9b030ed984434",
+  "Gram_sha256": "c02fe2191801f5b4cdf2aed3ce7952a48559a255cefd285a0f4c55a18e24cc2a",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0005.cnf",
+  "cnf_sha256": "672017acdbc7423a055269a1866e0810a073e1802f0481abc65fea0d705a0cc5",
+  "formula": {
+    "primary_columns": 1157,
+    "variables": 101894,
+    "original_clauses": 207907,
+    "additional_binary_clauses": 92,
+    "clauses": 207999
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 2.6434824179996212
+}
+{"prepared_case": {"case_index": 5, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0005-model.json", "model_sha256": "88810286b0b0289f84a99465d4f1d73994ad58ed09c4056c84b7f6aa5c076345", "cnf_sha256": "672017acdbc7423a055269a1866e0810a073e1802f0481abc65fea0d705a0cc5", "cnf_bytes": 3458212, "formula": {"primary_columns": 1157, "variables": 101894, "original_clauses": 207907, "additional_binary_clauses": 92, "clauses": 207999}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0005-author-direct-audit.json", "author_direct_audit_sha256": "7964b749f1f77423535c775d0d48e4d97776cc5f1197c35485976dc183a3d76c"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0006-model.json",
+  "base_model_sha256": "1e5181073f25f10cd5ea26b6769f1fcf2ee3c9544ec21222710143fddf5ff9ee",
+  "base_cnf_sha256": "feb11347eb462a59caad68caec016ce9c1de4bd8a6cdf9bbc50e4d9ac3dd4cd0",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0006.json.gz",
+  "certificate_sha256": "5f3f95243e6566a19ff623e76db5affdedb43c9c41f85ce99a075d4887122db1",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0006-clauses.cnf",
+  "binary_fragment_sha256": "c99cfd1403c48c456814e145d0741ca8ab90ac3055d8b20fc8ec58cff17d9845",
+  "case": {
+    "index": 6,
+    "local_set_orbit": 0,
+    "matching_index": 6,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "matching_orbit_representative": 6,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "4a97c809883ee00e9f4e0916411f9f0a5827f62bf9b32311acf193a19ef1ab63",
+  "column_domain_sha256": "3b463a6b0df4f594ee5fac9ffb8fc3a0eaba85935d98270134cd1e76a67df7a0",
+  "Gram_sha256": "b2163c2e0aa44c64145bf0a2e4b5a93c6f352353ba858f1167d08a72a595a955",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0006.cnf",
+  "cnf_sha256": "b1fe34e87e5423273eb67465bdbc24dc7c417f146fa9be000d7eaa60fa328eeb",
+  "formula": {
+    "primary_columns": 1160,
+    "variables": 102127,
+    "original_clauses": 208391,
+    "additional_binary_clauses": 27,
+    "clauses": 208418
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 2.5266829329993925
+}
+{"prepared_case": {"case_index": 6, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0006-model.json", "model_sha256": "997749c08a2aaf4a95113e86506333e4c6dd5922f50c507b854dd249a23a4f90", "cnf_sha256": "b1fe34e87e5423273eb67465bdbc24dc7c417f146fa9be000d7eaa60fa328eeb", "cnf_bytes": 3466836, "formula": {"primary_columns": 1160, "variables": 102127, "original_clauses": 208391, "additional_binary_clauses": 27, "clauses": 208418}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0006-author-direct-audit.json", "author_direct_audit_sha256": "58237b394b98af552b0e0785355258a05978e478e64ed4c7b7dc5025b6398cfc"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0007-model.json",
+  "base_model_sha256": "542eab4ce16bb3fe569617758bb8c0209bf578ba2ce59142a00239476c6570ba",
+  "base_cnf_sha256": "7a305be5da7ff5cbe8a37866723d76866b5c4ac01abea3e8d2e9b164ee1bad3b",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0007.json.gz",
+  "certificate_sha256": "f0ef05ea0b5537ad4dfc81da95a78326a158ea135a6cfc6c52caf991ed91c4dc",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0007-clauses.cnf",
+  "binary_fragment_sha256": "db2ac73a6e6565f754c7dfc780486dd1de22e81c21cfc807315a5702fedfe6c6",
+  "case": {
+    "index": 7,
+    "local_set_orbit": 0,
+    "matching_index": 7,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        4
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "matching_orbit_representative": 7,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "fd490e2d8f4ade66341b1fc0c5ec8b0f94cbf46fde891fbee56309313d2a20d7",
+  "column_domain_sha256": "b27d98f73213d1b1a8cbe8494cd9f78cfde16ed398cb87907c781f1fef11cd0e",
+  "Gram_sha256": "a6b3a7a53c26654d9dece4dd415ebd1c007f54c816b1b84741dcbaead2c49fd1",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0007.cnf",
+  "cnf_sha256": "d7cca5336022e935bab4bb09c048d8be3ae9949b8cc3e9673bd4e2ec6091455a",
+  "formula": {
+    "primary_columns": 1230,
+    "variables": 108967,
+    "original_clauses": 222491,
+    "additional_binary_clauses": 86,
+    "clauses": 222577
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 2.8249972430021444
+}
+{"prepared_case": {"case_index": 7, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0007-model.json", "model_sha256": "d5bae84b0716399f1a10c04d409da544df66a5eb33bcc1dd36f6d8a53889f523", "cnf_sha256": "d7cca5336022e935bab4bb09c048d8be3ae9949b8cc3e9673bd4e2ec6091455a", "cnf_bytes": 3737905, "formula": {"primary_columns": 1230, "variables": 108967, "original_clauses": 222491, "additional_binary_clauses": 86, "clauses": 222577}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0007-author-direct-audit.json", "author_direct_audit_sha256": "3b52d6584bcc20d4f00527e177ae384ab1ed05f2dbc9494d15c79621f0807c64"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0011-model.json",
+  "base_model_sha256": "d4170d64e56bc68a683102dae7144cf0273672629665887d7a71e13123538892",
+  "base_cnf_sha256": "03274b8555fc030577a6f4147bee5d17dd0271543fce7dec492cca64c5793d04",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0011.json.gz",
+  "certificate_sha256": "40dcc8c19b58022daf56504755b1f52fc7940d8a2756c961d09c74358929caaf",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0011-clauses.cnf",
+  "binary_fragment_sha256": "db088bf8e227dc44a77311f4aab3277f88157b4c861e045aae940c0a5c61a76d",
+  "case": {
+    "index": 11,
+    "local_set_orbit": 0,
+    "matching_index": 11,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 11,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "3b0222869719d82979943cfcdb257b98218275a45f39c53f100fc98ccd2c1dd1",
+  "column_domain_sha256": "f4fe7f37b1d758468916f6f04ab423cb07c5f85ac92a59f73ae481e90362256b",
+  "Gram_sha256": "50d43294405db7cce14ea44231b223bc60f4e5059a240a9f55a47718e18750b4",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0011.cnf",
+  "cnf_sha256": "f1a16aec4b23772e0624494aeb392f54834d6b48c95d7acfd89443f08bffdac5",
+  "formula": {
+    "primary_columns": 1257,
+    "variables": 111431,
+    "original_clauses": 227564,
+    "additional_binary_clauses": 22,
+    "clauses": 227586
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 3.0016481170023326
+}
+{"prepared_case": {"case_index": 11, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0011-model.json", "model_sha256": "c02c53e4a281327ccdd74449617f6fe33315b5aed1c53670a822ae6561e1da10", "cnf_sha256": "f1a16aec4b23772e0624494aeb392f54834d6b48c95d7acfd89443f08bffdac5", "cnf_bytes": 3835034, "formula": {"primary_columns": 1257, "variables": 111431, "original_clauses": 227564, "additional_binary_clauses": 22, "clauses": 227586}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0011-author-direct-audit.json", "author_direct_audit_sha256": "9b7037fe775d5146f402ca489cda2698f17a6b5b0480637d5dd40e61ff0ee311"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0012-model.json",
+  "base_model_sha256": "504bb940d4e232c20dac085ee0e8f215b7412ad30d1132f864591aa7adf0432b",
+  "base_cnf_sha256": "ee904edcefa53feaee2542794e62f889d6a4831d1024396e5255c6b68f757988",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0012.json.gz",
+  "certificate_sha256": "6d80f084bc8d8a9bd6c52dadb984a1cf5b310db2781e037bfbaeddb1c7d04c15",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0012-clauses.cnf",
+  "binary_fragment_sha256": "4cb905e556f2ae7fd38c0a195993f2f6b15c4383f88e88451d52fe2f7592e031",
+  "case": {
+    "index": 12,
+    "local_set_orbit": 0,
+    "matching_index": 12,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "matching_orbit_representative": 12,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "ba50a565bd5e889eb099ef72bae96b6357f88cced223b10b922465d969e15944",
+  "column_domain_sha256": "be8531124acaa81836d1217306e41c483d38d6174d2f951aa1b601038032317e",
+  "Gram_sha256": "f765b185545d2fa30b69526910c7808aa05e5fb7ea160398b4727eb7bd0cd512",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0012.cnf",
+  "cnf_sha256": "c8e32781ce79c4804f0106b11149e855a40070d6ca5fee0b21ecb21d2b122d04",
+  "formula": {
+    "primary_columns": 1193,
+    "variables": 105329,
+    "original_clauses": 214972,
+    "additional_binary_clauses": 57,
+    "clauses": 215029
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 4.29991795100068
+}
+{"prepared_case": {"case_index": 12, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0012-model.json", "model_sha256": "6f29579ff24f49e6621a4d76441d2e533420473ede28d9e921062d5ac113ef96", "cnf_sha256": "c8e32781ce79c4804f0106b11149e855a40070d6ca5fee0b21ecb21d2b122d04", "cnf_bytes": 3592872, "formula": {"primary_columns": 1193, "variables": 105329, "original_clauses": 214972, "additional_binary_clauses": 57, "clauses": 215029}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0012-author-direct-audit.json", "author_direct_audit_sha256": "b2d2f246fbbcdc2d23f6c5dec3508cd829744493a16a20d583633fe47ac681fc"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0013-model.json",
+  "base_model_sha256": "4d42e07af88d9784f8876679a523a3daf8b5f52216395513b599ed8fc12b3190",
+  "base_cnf_sha256": "75f1be39928005dbe86fe47e198b20f4e7df66c28f860ab3b3fb2ce9216c3b36",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0013.json.gz",
+  "certificate_sha256": "98d86375a39dfd3e180423d5cb0a460a3e9a18612a8c9a6ccad341de45280a5e",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0013-clauses.cnf",
+  "binary_fragment_sha256": "0b679954d9a925a41101107f9d68fcdc22c2fc11cfe1f15f6ce99a85fd5824e5",
+  "case": {
+    "index": 13,
+    "local_set_orbit": 0,
+    "matching_index": 13,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "matching_orbit_representative": 13,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "0605eacf2d46f8743bd95a14731b77e53447fefc30b2ec6bd1475392ec6d3c1b",
+  "column_domain_sha256": "2534039c45c10569303cd5a99ae25fd242beae885fea1b139f1e832d6b73990d",
+  "Gram_sha256": "05b23fc330ab98b9d26a691ad2eaf79c8f53abdb6ce7c57e7d448ad1df1cb3b6",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0013.cnf",
+  "cnf_sha256": "6cfb807b87686a681450c168c15a5a303ac174f4910ee32d6cff63ebbd99b297",
+  "formula": {
+    "primary_columns": 1203,
+    "variables": 106351,
+    "original_clauses": 217092,
+    "additional_binary_clauses": 21,
+    "clauses": 217113
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 3.949321392999991
+}
+{"prepared_case": {"case_index": 13, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0013-model.json", "model_sha256": "e9baf17a3da37f0407f0823e23c419fe613f1bda88323ae75a856741d40498d9", "cnf_sha256": "6cfb807b87686a681450c168c15a5a303ac174f4910ee32d6cff63ebbd99b297", "cnf_bytes": 3633223, "formula": {"primary_columns": 1203, "variables": 106351, "original_clauses": 217092, "additional_binary_clauses": 21, "clauses": 217113}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0013-author-direct-audit.json", "author_direct_audit_sha256": "02788c74613058e1c78512d3236c4c91000ba53c55cf2e98080a1e36afb0b0da"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0014-model.json",
+  "base_model_sha256": "e9cfc8ce167d83ed9ba9334ad0cb93044f844375790bc2c91d4259f5115b3d0d",
+  "base_cnf_sha256": "aa75765d105442e566e877115fe5bb46a6b5ce8e4a1c46b61bd8d5494504af2e",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0014.json.gz",
+  "certificate_sha256": "ea259bd978e82935ebd8202e82526530361e61d0fe7ede954519f91935462996",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0014-clauses.cnf",
+  "binary_fragment_sha256": "f8b7f0ebbda6f5655bef3091a0678ad4df972f4b3a7250d5f2567eca40c52c3f",
+  "case": {
+    "index": 14,
+    "local_set_orbit": 0,
+    "matching_index": 14,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        5
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "matching_orbit_representative": 14,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "68d05394c150872434924fd005b71e4e2994622f99fd7902ddf6d2b01ab8b304",
+  "column_domain_sha256": "8842f32f2cc03243b3a54625f221832f8919b7519a7d1d3e987847d10a9a4a98",
+  "Gram_sha256": "4d857440090852646099286fd076b42a5b80dfba4a66953636ff192f79ef4331",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0014.cnf",
+  "cnf_sha256": "6b9e792325a5b078aed6d30d5d40fe65eb8b503c50b37a6f4fb5bebc9501d076",
+  "formula": {
+    "primary_columns": 1267,
+    "variables": 112508,
+    "original_clauses": 229773,
+    "additional_binary_clauses": 65,
+    "clauses": 229838
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 3.5593395980031346
+}
+{"prepared_case": {"case_index": 14, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0014-model.json", "model_sha256": "4461bfd09c97be7868dc06160924609a5b5b3bee3928b29219d708dcc1970295", "cnf_sha256": "6b9e792325a5b078aed6d30d5d40fe65eb8b503c50b37a6f4fb5bebc9501d076", "cnf_bytes": 3878156, "formula": {"primary_columns": 1267, "variables": 112508, "original_clauses": 229773, "additional_binary_clauses": 65, "clauses": 229838}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0014-author-direct-audit.json", "author_direct_audit_sha256": "dfa7635924b8df03f35204f0ddc88fabd9efd6f3720448fba061390459cee530"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0015-model.json",
+  "base_model_sha256": "ebc0ebe7fa0ce9bf719eef8f1bead11a6700d2bebb01c9248a24ebb1bd2be396",
+  "base_cnf_sha256": "1c7e74e5f301bac917400771cef6bea79028df159469fbf48629dc1ca8d65696",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0015.json.gz",
+  "certificate_sha256": "b09069802c575e03273f64fcd8eb04a0c00e0237748cab30d6ee4ffadf15c67b",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0015-clauses.cnf",
+  "binary_fragment_sha256": "1d7c15996c015f1e3e79f32a03cb059ec2cdb866de1f3b0e023c2d5002bd33ff",
+  "case": {
+    "index": 15,
+    "local_set_orbit": 0,
+    "matching_index": 15,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 15,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "fc29ad63beb8e8f931c8ddb2cbaf9477b17dac6c5e0867f31a4467bb49a31570",
+  "column_domain_sha256": "ddea58d601d46c1d56a159c11f60d48a65d9fc490cfa8a830e2b0054eca834d8",
+  "Gram_sha256": "50111133bb5c46fd8bb879bd4614a07504fdec48bbcecdeadbea0a80c1fb9322",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0015.cnf",
+  "cnf_sha256": "a7b0c2ffb2400ece83e2c9d2b02e71f461df79856df60cd3ae12e3caa5d666d8",
+  "formula": {
+    "primary_columns": 1286,
+    "variables": 114097,
+    "original_clauses": 233077,
+    "additional_binary_clauses": 8,
+    "clauses": 233085
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 4.635105968001881
+}
+{"prepared_case": {"case_index": 15, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0015-model.json", "model_sha256": "8ea0bdde93d11c7103e5f17b9245e9073983b6d89531cc28f95700c35e8209e5", "cnf_sha256": "a7b0c2ffb2400ece83e2c9d2b02e71f461df79856df60cd3ae12e3caa5d666d8", "cnf_bytes": 3941135, "formula": {"primary_columns": 1286, "variables": 114097, "original_clauses": 233077, "additional_binary_clauses": 8, "clauses": 233085}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0015-author-direct-audit.json", "author_direct_audit_sha256": "941f6ee7ac29d81ec42fafc64477417b1fca15f07adc9d540af2458763d26740"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0016-model.json",
+  "base_model_sha256": "d04d4d07dacb06150a7e6121f7df0b68bd9c70a70869a4434abf3a137a803aea",
+  "base_cnf_sha256": "1ba6d6f40641b15a99564c35f878c87f20b0497ab131816e8afc633d2d358610",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0016.json.gz",
+  "certificate_sha256": "ab693a62609e35df59adc4a60c7b451ffb8fb182b708ce0c04638f81bf9fe00f",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0016-clauses.cnf",
+  "binary_fragment_sha256": "d58402330983316fb9d8c17b0936c3d759693410f5fd32450b9d162f51944215",
+  "case": {
+    "index": 16,
+    "local_set_orbit": 0,
+    "matching_index": 16,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "matching_orbit_representative": 16,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "e944c0acb7527b65c9c9bf90db9eab5508a77d8d75463812a70e2ccc3da6560f",
+  "column_domain_sha256": "dc03765ae7a5aab7d434edabab0e3372368ff3d0f89e16e049d125685a812104",
+  "Gram_sha256": "ed5a4c220b883a17d3dd4157b7552e80b0987b0c90ff5f59322c8541603806a8",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0016.cnf",
+  "cnf_sha256": "ae334024470206f276f355df1638c0b0af36aa13303cce1cc85f4a4634f24aba",
+  "formula": {
+    "primary_columns": 1228,
+    "variables": 108684,
+    "original_clauses": 221914,
+    "additional_binary_clauses": 28,
+    "clauses": 221942
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 5.094870300999901
+}
+{"prepared_case": {"case_index": 16, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0016-model.json", "model_sha256": "33967aa4955acf625274d592080850f6ad7629699e4bedaf0c8748acff43d256", "cnf_sha256": "ae334024470206f276f355df1638c0b0af36aa13303cce1cc85f4a4634f24aba", "cnf_bytes": 3726108, "formula": {"primary_columns": 1228, "variables": 108684, "original_clauses": 221914, "additional_binary_clauses": 28, "clauses": 221942}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0016-author-direct-audit.json", "author_direct_audit_sha256": "8d88f0353f24334702c4272397eb315875af95d79b2d98e01f8a39f9b62e7fb7"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0017-model.json",
+  "base_model_sha256": "840a6eba986b56c20ef81c5b00a1700df9455b4fd1245dbd2121fc346a33e1ea",
+  "base_cnf_sha256": "421c95688693ed89dfe4fc03809e030eb6e2e811d51f70c2485fbfe1cfdd6f86",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0017.json.gz",
+  "certificate_sha256": "2e2e2dadf071a33a383bf60e9b981dd9ac562a9f0df0ee37e1e0518871794e5b",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0017-clauses.cnf",
+  "binary_fragment_sha256": "470237a2a7edf9fb4ec4ffc5cf5f9244879c1927a906ef644344403f256a80fa",
+  "case": {
+    "index": 17,
+    "local_set_orbit": 0,
+    "matching_index": 17,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 17,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "6b2d000b4c547fc96f62af015ad1ae886f2fd9ef07714a6f556f8248f5d4140b",
+  "column_domain_sha256": "7d61849d7dcfaf5f17778d75f6827d45fa0463cb1ba3d164f4325f521d2ccd0f",
+  "Gram_sha256": "5d2515df9e5668608e07e81495cbf0ac69d05b8f76ff96094f03dae15f4be4c5",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0017.cnf",
+  "cnf_sha256": "2b5c1591619b569da594e8c97162b4dcf4d128d67ee0bd51d30837418db3e1c7",
+  "formula": {
+    "primary_columns": 1330,
+    "variables": 118472,
+    "original_clauses": 242074,
+    "additional_binary_clauses": 10,
+    "clauses": 242084
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 4.308882647001155
+}
+{"prepared_case": {"case_index": 17, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0017-model.json", "model_sha256": "2538057e8b5b484114fd28f0c8ded71aa4356edbe800dc904dd68780579ff59e", "cnf_sha256": "2b5c1591619b569da594e8c97162b4dcf4d128d67ee0bd51d30837418db3e1c7", "cnf_bytes": 4114457, "formula": {"primary_columns": 1330, "variables": 118472, "original_clauses": 242074, "additional_binary_clauses": 10, "clauses": 242084}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0017-author-direct-audit.json", "author_direct_audit_sha256": "963e6ab78143d8e3852aa271efd539a9ad3152801e327a6093d2c3b49fd1bf67"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0018-model.json",
+  "base_model_sha256": "7427e09fa5841c803c54106fdb787e284c4831118c53141974c2c878ade5dc90",
+  "base_cnf_sha256": "4640cf5721dd63779848400175b448bbe151f2b079661c0342127838acadad8a",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0018.json.gz",
+  "certificate_sha256": "7cb2be607cd1fdbb7a82ae6a3cf648cd8402706497f8880288c7d377c3013b59",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0018-clauses.cnf",
+  "binary_fragment_sha256": "d47f97c1d8a319c4c9f04ac07b07379355c446323e3985aea34ed70ce8c0e56c",
+  "case": {
+    "index": 18,
+    "local_set_orbit": 0,
+    "matching_index": 18,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "matching_orbit_representative": 18,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "6aa54765155590ede7b2471dac5117923d5734ab1ee03e32419eddce60382063",
+  "column_domain_sha256": "bd8481829f7612fccdc10881e61a13e648f89bd238c06b81f4b243ce3697c1e9",
+  "Gram_sha256": "6515eb666937214682272182a37c373a3da09752db7e8697d05ead8941a6d585",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0018.cnf",
+  "cnf_sha256": "5add26e4d5ff6436aa51c92b2a8d4a857985fa6a32a38094207baba3868a7c63",
+  "formula": {
+    "primary_columns": 1265,
+    "variables": 112267,
+    "original_clauses": 229270,
+    "additional_binary_clauses": 26,
+    "clauses": 229296
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 4.546740156998567
+}
+{"prepared_case": {"case_index": 18, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0018-model.json", "model_sha256": "e2eb265bf23c529daa4414f9ade99f4c0c68701bbd54b0fc3843a6d5d9c41352", "cnf_sha256": "5add26e4d5ff6436aa51c92b2a8d4a857985fa6a32a38094207baba3868a7c63", "cnf_bytes": 3868025, "formula": {"primary_columns": 1265, "variables": 112267, "original_clauses": 229270, "additional_binary_clauses": 26, "clauses": 229296}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0018-author-direct-audit.json", "author_direct_audit_sha256": "1c6c88e89df66d3703c3355fb631f517b89256c6d3efa71c93461d7b5439b50f"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0019-model.json",
+  "base_model_sha256": "be7877de0b0b11c0d74a1f4a4404a090d52910cb23cea708b3ef7815524b8461",
+  "base_cnf_sha256": "9c2720996caf0c35651f960a508cc38120886039b527cc32cf0e43fcd6aa3831",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0019.json.gz",
+  "certificate_sha256": "54571f261bf75c93fd4c3489f2a74c7e46821a823e2f90a0e2779208f1716050",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0019-clauses.cnf",
+  "binary_fragment_sha256": "22234fa6d95c3d4a9e2ded61a0e580048b95996ba3d38254ea3448e57e41bf5b",
+  "case": {
+    "index": 19,
+    "local_set_orbit": 0,
+    "matching_index": 19,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "matching_orbit_representative": 19,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "7024e3193b34f0d3728212a0ed3277a07958124c66668dba53fe80549a819fe3",
+  "column_domain_sha256": "e1a2968e085de4bb8699152e7b5e2da1bde87b6122a442484751265e8ad6180a",
+  "Gram_sha256": "9681da4ca4715e392c534e4effa49a4cdfd3515668b6bb9820ea2a3f285693a5",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0019.cnf",
+  "cnf_sha256": "e0cfe2f12ffa2fc8879949fba5c791e59f76a5233813361c1a2b75a00d559949",
+  "formula": {
+    "primary_columns": 1271,
+    "variables": 112684,
+    "original_clauses": 230163,
+    "additional_binary_clauses": 6,
+    "clauses": 230169
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 3.9229845669979113
+}
+{"prepared_case": {"case_index": 19, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0019-model.json", "model_sha256": "0c25c89827ea8516dee69a88e1be7668c90c95363979217fd71f2e06c949de61", "cnf_sha256": "e0cfe2f12ffa2fc8879949fba5c791e59f76a5233813361c1a2b75a00d559949", "cnf_bytes": 3884817, "formula": {"primary_columns": 1271, "variables": 112684, "original_clauses": 230163, "additional_binary_clauses": 6, "clauses": 230169}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0019-author-direct-audit.json", "author_direct_audit_sha256": "3e124527f73f4d8ba98d78afed1dc376797f95b0a19f0a3da141292543ab7e7f"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0020-model.json",
+  "base_model_sha256": "dad67fb8685a964c10f346437da089291564c691a72bf71e06920d0fa5fef469",
+  "base_cnf_sha256": "1c7036fb1e5c51bd1c7c789de3b284809e8d09c81138c3290712cb81ee7c8517",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0020.json.gz",
+  "certificate_sha256": "98ab7a08a4089de51d96961f9118bb29390a690f5a5bd28dc1f25798a9a18496",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0020-clauses.cnf",
+  "binary_fragment_sha256": "b0223229db885bf2d340dd9cd86f2ce05b604df6c28372d035934cc82aa093ca",
+  "case": {
+    "index": 20,
+    "local_set_orbit": 0,
+    "matching_index": 20,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "matching_orbit_representative": 20,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "038f4c13fcd2c8f9b2a0bef5bb8f0c2c775e7c0cf49ef124cc96438d5649f77a",
+  "column_domain_sha256": "983a56e474b5d16abd5f2f53fe75bbf188289b1cdf3a983069255fdd31d227d6",
+  "Gram_sha256": "4de8f219c500cf6f8ca10123eb8888488d20d566f22019fe837e7aae21c779ed",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0020.cnf",
+  "cnf_sha256": "8aa5fda84e41e226b892dd6417354686b526adac3363f8c3b51557c1b5b4aa33",
+  "formula": {
+    "primary_columns": 1264,
+    "variables": 111904,
+    "original_clauses": 228542,
+    "additional_binary_clauses": 7,
+    "clauses": 228549
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 4.434177467999689
+}
+{"prepared_case": {"case_index": 20, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0020-model.json", "model_sha256": "8be95ab0d578cac3d4c1f9febeaf4babfee1bb3ca4dda2af70fe879dad82ded8", "cnf_sha256": "8aa5fda84e41e226b892dd6417354686b526adac3363f8c3b51557c1b5b4aa33", "cnf_bytes": 3853889, "formula": {"primary_columns": 1264, "variables": 111904, "original_clauses": 228542, "additional_binary_clauses": 7, "clauses": 228549}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0020-author-direct-audit.json", "author_direct_audit_sha256": "93d39d5eb8e3e9fac9a7617c3676fa05a5d96f96a32d1b8a42ef734c0d82c17d"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0022-model.json",
+  "base_model_sha256": "0f21e0b18ce03bc14c0682dd006352e685031a35acb7306da379f454918d53c6",
+  "base_cnf_sha256": "69334972991ff3c3f074dcd22f06a44db48011a9f794a431a211dad9d1d7e677",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0022.json.gz",
+  "certificate_sha256": "15eae78941311796b604bc1169ddaf6b3c90302fab00e6c854b7a709bf67ff60",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0022-clauses.cnf",
+  "binary_fragment_sha256": "b614fb22845992a7b611d4ab140c151e18376fa30ceacccfb11d18e64dd554b9",
+  "case": {
+    "index": 22,
+    "local_set_orbit": 0,
+    "matching_index": 22,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "matching_orbit_representative": 22,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "2c74231cc0f6d4736a3b02bc476b4154a5e809cb76b54d3929dcf8b15cbcc71e",
+  "column_domain_sha256": "1e94ae1514858c44427228dc78059e7eeb352f05ed0e2af2c94aeabe3b19be2e",
+  "Gram_sha256": "5a8e294865e2c9c4c21861f3b7c69255f912e4110bd78da3700b8dbbb8b1be50",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0022.cnf",
+  "cnf_sha256": "c5dd7691dfb26d14a28c90b56dd6bbf79879e6b817cc4638063a79ff23415802",
+  "formula": {
+    "primary_columns": 1291,
+    "variables": 114613,
+    "original_clauses": 234146,
+    "additional_binary_clauses": 8,
+    "clauses": 234154
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 3.935329989002639
+}
+{"prepared_case": {"case_index": 22, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0022-model.json", "model_sha256": "e0a6e828c2da272dadd729aa7006824c24801ca924ce4fd85c6656e7b968563e", "cnf_sha256": "c5dd7691dfb26d14a28c90b56dd6bbf79879e6b817cc4638063a79ff23415802", "cnf_bytes": 3961813, "formula": {"primary_columns": 1291, "variables": 114613, "original_clauses": 234146, "additional_binary_clauses": 8, "clauses": 234154}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0022-author-direct-audit.json", "author_direct_audit_sha256": "4aecddca32a2fad994b146e36abfb2bc75d4bea4d2d0b410012cf2b26458f84e"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0023-model.json",
+  "base_model_sha256": "48d5b9cc1e943b57ddbd1b08f7c780cd61071c2719842c79bcd2d4472b7cc523",
+  "base_cnf_sha256": "e52573d5782aadf29ed16c943664e67e7f9bb9c4d4077349aa34a4224e64a536",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0023.json.gz",
+  "certificate_sha256": "6f819f742e805a7faf8785d1f2b5876b7811efc4537dbcba3b95541019bcf4b9",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0023-clauses.cnf",
+  "binary_fragment_sha256": "bb9dacae22026cc9baadb5b0aefd8de200200d07a75341f9e6e7d4189f9e336c",
+  "case": {
+    "index": 23,
+    "local_set_orbit": 0,
+    "matching_index": 23,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        4
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "matching_orbit_representative": 23,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "7f39482c7fd1826202a4b477225d291ab439fd1a72c8d75ea3afa6b2eec27880",
+  "column_domain_sha256": "cafe8778ef02d2d6a5bb8a70ecd1b1c84b221947f8a025c7448a218e5437c59e",
+  "Gram_sha256": "34dc993cd386f3c61f435b96ef18f0531dc0fbd31ca6057aeaef4e12a8dfafd7",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0023.cnf",
+  "cnf_sha256": "3bfddeb09376c8e04d9f945eef07088d18ab54df01bdebce1702f46348e7c5d8",
+  "formula": {
+    "primary_columns": 1360,
+    "variables": 121353,
+    "original_clauses": 248039,
+    "additional_binary_clauses": 10,
+    "clauses": 248049
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 4.204924098998163
+}
+{"prepared_case": {"case_index": 23, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0023-model.json", "model_sha256": "f4f1c878f3f700d022c834488420181bb5c402d1d83dbb441d8c9cbe523733a1", "cnf_sha256": "3bfddeb09376c8e04d9f945eef07088d18ab54df01bdebce1702f46348e7c5d8", "cnf_bytes": 4229208, "formula": {"primary_columns": 1360, "variables": 121353, "original_clauses": 248039, "additional_binary_clauses": 10, "clauses": 248049}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0023-author-direct-audit.json", "author_direct_audit_sha256": "d1087a68f15c1d5d409b40a5c263e8e6822a35c9bf2c58ac48c040c32d4fca96"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0024-model.json",
+  "base_model_sha256": "f7126e474959c03b7b2bd5aa846c89724adcb38bc546ab3952f5629258005406",
+  "base_cnf_sha256": "87258b7cfbd67c77761c727604a1ab15fe29d7434bdf7c6b365189ac243a7ffe",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0024.json.gz",
+  "certificate_sha256": "9d6f54f7f17eeb7afeaccfc4651d9557fee5fdeca18bc67f19129e7a02f14195",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0024-clauses.cnf",
+  "binary_fragment_sha256": "f907b357cf01578b7804fb91e9be128a94ca9452dcb1cc4ab9592e46f4093456",
+  "case": {
+    "index": 24,
+    "local_set_orbit": 0,
+    "matching_index": 24,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        6
+      ]
+    ],
+    "matching_orbit_representative": 24,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "f07de3b1b4126261cc679f0862b054115ddccfc4f8074e74dc946c3305039feb",
+  "column_domain_sha256": "2f61d135456d64cb9c63b9e3a49709dc4319e4112d92483d4c4250f2648aa39d",
+  "Gram_sha256": "87fcdc8459cd2f2a980c07b053414b34376866e1d91ef56d7be4c3bbccb593b9",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0024.cnf",
+  "cnf_sha256": "49d0c65e743288bcc54a6706333462139c2aa32a18187fa00eb03fe5ee42047e",
+  "formula": {
+    "primary_columns": 1336,
+    "variables": 119091,
+    "original_clauses": 243355,
+    "additional_binary_clauses": 10,
+    "clauses": 243365
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 6.289318461997027
+}
+{"prepared_case": {"case_index": 24, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0024-model.json", "model_sha256": "9c5fd1923f8a927fdca9fe887441e7c22ebde08b46cb2b6a9a56538887b588c1", "cnf_sha256": "49d0c65e743288bcc54a6706333462139c2aa32a18187fa00eb03fe5ee42047e", "cnf_bytes": 4139153, "formula": {"primary_columns": 1336, "variables": 119091, "original_clauses": 243355, "additional_binary_clauses": 10, "clauses": 243365}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0024-author-direct-audit.json", "author_direct_audit_sha256": "3d6f847fc47004ae0ffa9544f2e2af4aaef422e7d07c8dad85181fdcc8c1a23a"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0025-model.json",
+  "base_model_sha256": "aa16553565fcbe152967267e62862f18c658e22c2afcf3a7eb78c012fcf1ff55",
+  "base_cnf_sha256": "424add9dc1c5b2fbf4d4c9cd57b35ae941a9aed78a149f9524ae4d16c0633f08",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0025.json.gz",
+  "certificate_sha256": "7b233057efdb74e07a57485a38040276a930363ce3ec0be115eacb09422d09c2",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0025-clauses.cnf",
+  "binary_fragment_sha256": "69c4ff750a1a22106ed9b36004e1bddebfcb634dfaa7fa4ccc89449b23f9e1ef",
+  "case": {
+    "index": 25,
+    "local_set_orbit": 0,
+    "matching_index": 25,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        6
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "matching_orbit_representative": 25,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "b909a5f967f95f26c530fe132649e3a0a8d599a615cafef8ce2473c2df089c00",
+  "column_domain_sha256": "8a8d184b1992c58023fc6ee78b2ca0e26b06d547ab0ae72cfe3b859da316ef93",
+  "Gram_sha256": "d72a70b103d524577fbb2eb45436cb38e17cc02104c04dabcfd4cf7330344675",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0025.cnf",
+  "cnf_sha256": "ab0e6073c893e41aee48f6e890a86fad6bc20b00d0e943e6e69e97acf20aa486",
+  "formula": {
+    "primary_columns": 1399,
+    "variables": 125145,
+    "original_clauses": 255824,
+    "additional_binary_clauses": 11,
+    "clauses": 255835
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 7.6532506170005945
+}
+{"prepared_case": {"case_index": 25, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0025-model.json", "model_sha256": "09b85f1f8509d01aa509bfc58e0a66dff9dcf70dbb74bbfa443363f323c6a46b", "cnf_sha256": "ab0e6073c893e41aee48f6e890a86fad6bc20b00d0e943e6e69e97acf20aa486", "cnf_bytes": 4379561, "formula": {"primary_columns": 1399, "variables": 125145, "original_clauses": 255824, "additional_binary_clauses": 11, "clauses": 255835}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0025-author-direct-audit.json", "author_direct_audit_sha256": "b43c373d49a77442039e63654aba42dbebafcbb0ae173c01702fb1cdb71083da"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0026-model.json",
+  "base_model_sha256": "533208a7f6b0153fb2508e985f6a3b7341a5b79eeec1e1e9223233408a6160b0",
+  "base_cnf_sha256": "f653103a7a64086087712f1deab13a10a1695c0bfd710104169a735271d9bc29",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0026.json.gz",
+  "certificate_sha256": "432419f181a1722582eb42519ac1ac8b06c95a0a4932c6d6bded7d839d89ee14",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0026-clauses.cnf",
+  "binary_fragment_sha256": "6af65d2c6e393e369fc8b01c30f539e7ca4c47b2346c96f9ec7cc12aee571873",
+  "case": {
+    "index": 26,
+    "local_set_orbit": 0,
+    "matching_index": 26,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ]
+    ],
+    "matching_orbit_representative": 26,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "6abeff68659fa328ca2a205455960aef9cafe95f991b7635139aae8097961da8",
+  "column_domain_sha256": "4d1dcb0bab73b9b33dce16a7d6e3331399711fc7066e8f259073fd22c60c2459",
+  "Gram_sha256": "5b4308aa6b770294ce0e20288c0caf29bf88ae994ac856c467e2cdc563a25c37",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0026.cnf",
+  "cnf_sha256": "08d4b7a2d6563f5dc409d40c8a8e7fedfd1ee3b13e76792a6ff941db4b490c0a",
+  "formula": {
+    "primary_columns": 1332,
+    "variables": 118474,
+    "original_clauses": 242108,
+    "additional_binary_clauses": 5,
+    "clauses": 242113
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 5.329865212999721
+}
+{"prepared_case": {"case_index": 26, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0026-model.json", "model_sha256": "d63d31b052de47848a2a98ddd8f2d9cd77f9b755e57f4336685919f66e6d6e45", "cnf_sha256": "08d4b7a2d6563f5dc409d40c8a8e7fedfd1ee3b13e76792a6ff941db4b490c0a", "cnf_bytes": 4115101, "formula": {"primary_columns": 1332, "variables": 118474, "original_clauses": 242108, "additional_binary_clauses": 5, "clauses": 242113}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0026-author-direct-audit.json", "author_direct_audit_sha256": "45a34724437292131632f3e264dab6b5e12b021593ee09cfcb44ba7f70d86a57"}}
+{
+  "status": "fresh original formula plus certified pair clauses prepared; not solved",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "prior_terminal_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-cases09-10-terminal-artifacts.json",
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "complete_remaining_case_list": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "census_artifact_manifest": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01-artifacts.json",
+  "census_artifact_manifest_sha256": "21c3aeddd103d6146699a0f0efc88b80e348c9f066db1402de9d81432994c185",
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0027-model.json",
+  "base_model_sha256": "c416c0001564ed0ccd7a95326fba09c97c026f47727caa5628a8d8af4bb66630",
+  "base_cnf_sha256": "502ef9268869fdc9010753888a68ff63f6854752da40b30abd9e4faee2f516d3",
+  "certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0027.json.gz",
+  "certificate_sha256": "a3148e2b22c8e13ca7a8cc192a23d049e2a61e0a15074fb4554f580945f58faf",
+  "binary_fragment": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-downdates01/case0027-clauses.cnf",
+  "binary_fragment_sha256": "04c3f2f7da33c431a610e0ee17e037e888e5e27f319bf2f611368825089e4ad2",
+  "case": {
+    "index": 27,
+    "local_set_orbit": 0,
+    "matching_index": 27,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "matching_orbit_representative": 27,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "4c8b6820f528632bbe924d8d82ee6f3a59ed357cda0de05ccd77e35d5ea3b480",
+  "column_domain_sha256": "494816f949200253cc0966250e738b2a0e0ec1ce00057d901b3c030cf2f4b1b5",
+  "Gram_sha256": "ce7f6a4eb63e6db84a13e7130d3910f992c1e62ce0c67f9f593bb6863bc13931",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-continuation01/case0027.cnf",
+  "cnf_sha256": "67fda172db1f2a2c249a53619f80a0ebff8f7021b9b43a388a0ae8e80ff704c1",
+  "formula": {
+    "primary_columns": 1325,
+    "variables": 117694,
+    "original_clauses": 240487,
+    "additional_binary_clauses": 5,
+    "clauses": 240492
+  },
+  "controls": {
+    "cold_original_CNF_hash_matched": true,
+    "all_exact_certificate_tests_replayed": true,
+    "every_added_clause_has_direct_integer_negative_vector": true,
+    "original_body_unchanged": true,
+    "new_variables": 0
+  },
+  "solver_implementation": "unmodified complement_rook_35core_incidence.solve",
+  "maximum_query_seconds_including_bootstrap": 60,
+  "scope": "one indexed35-core only; no fixed incidence or graph symmetry",
+  "preparation_seconds": 3.312830982999003
+}
+{"prepared_case": {"case_index": 27, "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0027-model.json", "model_sha256": "9f35c7a4863557f4c5d3f4b6dd379f520fa22b0795baf822984b09d76329328d", "cnf_sha256": "67fda172db1f2a2c249a53619f80a0ebff8f7021b9b43a388a0ae8e80ff704c1", "cnf_bytes": 4084193, "formula": {"primary_columns": 1325, "variables": 117694, "original_clauses": 240487, "additional_binary_clauses": 5, "clauses": 240492}, "author_direct_audit": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0027-author-direct-audit.json", "author_direct_audit_sha256": "97597247e9919c8b3170a724d2f2ca424d9f75c93676d8db4f048b5b68362b05"}}
+{
+  "status": "all20 exact overlays prepared and author-audited; no solver",
+  "complete": true,
+  "requested_cases": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "prior_excluded_cases": [
+    0,
+    1,
+    2,
+    3,
+    8,
+    9,
+    10,
+    21
+  ],
+  "prior_terminal_manifest_sha256": "72b8229ac724c43d43b50ef027c787400f84ed716194da5fd28ff462be3aa6a8",
+  "source_hashes": {
+    "complement_rook_35core_downdate_continuation.py": "832c5ad04b841c6399994b4d44cb1031c5057f077a4cdb9e1d7314aaad46c857",
+    "complement_rook_35core_downdate_continuation_audit.py": "a7464503574f21fbcbbfa933497fed62609208c5934efd3ae29a5e6eb8daa5da",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_35core_downdate_census.py": "6c13eab8c0a040bd03ba4b993f201e0802bf89c530bf254b4fc397999f6b95d6",
+    "complement_rook_35core_gram_downdate.py": "dd104a4e8b41138c566004b733bc572aa40b461ea2e03399fb1315df580aea8d"
+  },
+  "prepared_cases": [
+    4,
+    5,
+    6,
+    7,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "unprepared_cases": [],
+  "wall_budget_seconds": 120.0,
+  "solver_called": false,
+  "non_author_source_gate_required_before_queries": true,
+  "elapsed_seconds": 87.8707825599995
+}

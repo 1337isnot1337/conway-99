@@ -1,0 +1,22 @@
+{
+  "status": "PASS: coordinator full source and preparation review",
+  "reviewer": "root",
+  "reviewed_utc": "2026-11-19 08:25 UTC",
+  "authorized_runs": 1,
+  "maximum_wall_seconds": 60,
+  "thread_limit": 1,
+  "scope": "All 4543737 five-subsets on all 62 six-vertex roots at the frozen 48-cut integer count point",
+  "checks": [
+    "Complete colex and subset streams are bound to the full unpruned preparation.",
+    "The original guarded contraction bounds each int64 multiplication and Mobius transform.",
+    "The odd and even affine constants give exact integer lower and upper bounds for the missing fifth moment.",
+    "Negative samples are reconstructed with Python integers, all proper moments and induced-count automorphism multipliers.",
+    "A negative cached form remains optimizer-ineligible until a fresh literal product replay.",
+    "Completed batches are recorded atomically and incomplete scans remain UNKNOWN."
+  ],
+  "graph_existence_resolved": false,
+  "source": "experiments/workspace/grid_free_order10_five_boolean_extension_scan.py",
+  "source_sha256": "c7d48bcda5c0cd284676eb940664d90373827322ea6ec17464a7d6f52a93aa50",
+  "preparation": "experiments/logs/moments-and-counts/order10-five-boolean-extension-scan01-preparation.json",
+  "preparation_sha256": "1a7e07e6153ec5055688a357c8721c78c6f181d6fd11a197ade65b35a9b0cc88"
+}

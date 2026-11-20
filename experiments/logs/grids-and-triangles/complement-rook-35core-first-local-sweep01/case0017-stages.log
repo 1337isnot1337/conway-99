@@ -1,0 +1,131 @@
+{
+  "status": "exact35-core binary incidence formula prepared; main model not solved",
+  "source_hashes": {
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992"
+  },
+  "prefix_certificate": "experiments/logs/grids-and-triangles/complement-rook-35core-domains-prefix01/certificate.json",
+  "prefix_certificate_sha256": "a567f58470e42ab275bf330af30fa424786eb2243c568ba1c750b6bb5cc80a90",
+  "root_census_sha256": "832440adb66015b27d1d58dbd0cee5079f735f07553b24a789aeacbf994fe394",
+  "complete_index_cases": 2521,
+  "case": {
+    "index": 17,
+    "local_set_orbit": 0,
+    "matching_index": 17,
+    "selected_signatures": [
+      0,
+      1,
+      9,
+      10,
+      18,
+      20,
+      26,
+      27
+    ],
+    "matching": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        7
+      ]
+    ],
+    "matching_orbit_representative": 17,
+    "matching_orbit_size": 1,
+    "matching_transport_action_index": 0
+  },
+  "domain_record_sha256": "6b2d000b4c547fc96f62af015ad1ae886f2fd9ef07714a6f556f8248f5d4140b",
+  "column_domain_sha256": "7d61849d7dcfaf5f17778d75f6827d45fa0463cb1ba3d164f4325f521d2ccd0f",
+  "Gram_sha256": "5d2515df9e5668608e07e81495cbf0ac69d05b8f76ff96094f03dae15f4be4c5",
+  "cnf": "/tmp/conway-complement-rook-35core-first-local-case0017.cnf",
+  "cnf_sha256": "421c95688693ed89dfe4fc03809e030eb6e2e811d51f70c2485fbfe1cfdd6f86",
+  "controls": {
+    "small_counter_truth_assignments": 896,
+    "rook9_core_vertices": [
+      0,
+      1,
+      3,
+      4,
+      8
+    ],
+    "rook9_outside_vertices": [
+      2,
+      5,
+      6,
+      7
+    ],
+    "rook9_candidate_columns": 17,
+    "rook9_exact_incidence_positive_control": true,
+    "rook9_deleted_column_negative_control": true,
+    "main35core_solver_called": false
+  },
+  "population_and_attachment_counts_are_derived": [
+    64,
+    4,
+    40,
+    20
+  ],
+  "remaining_exterior_edge_variables": 0,
+  "graph_automorphism_assumptions": 0,
+  "additional_a_or_spectral_constraints": 0,
+  "selected_incidence_design_fixed": false,
+  "SAT_scope": "binary necessary incidence witness for one35-core; no exterior completion",
+  "UNSAT_scope": "one indexed35-core and its verified relabelings only",
+  "build_seconds": 1.0892344300009427
+}
+{
+  "primary_columns": 1330,
+  "variables": 118472,
+  "clauses": 242074,
+  "clause_counts": {
+    "Gram_equalities": 238189,
+    "original_signature_at_most_one": 3198,
+    "additional_core_triple_at_most_one": 687
+  },
+  "all_Gram_rows": 630,
+  "distinct_Gram_equations_including_empty_zero": 399,
+  "nontrivial_triple_capacity_rows": 1419,
+  "auxiliary_variables_begin_at": 1331
+}
+{
+  "status": "UNKNOWN; this35-core incidence feasibility remains unresolved",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0017-model.json",
+  "model_sha256": "840a6eba986b56c20ef81c5b00a1700df9455b4fd1245dbd2121fc346a33e1ea",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 17,
+  "cnf_sha256": "421c95688693ed89dfe4fc03809e030eb6e2e811d51f70c2485fbfe1cfdd6f86",
+  "requested_solver_seconds_including_bootstrap": 10,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 108088,
+  "bootstrap_seconds": 0.15737364099913975,
+  "solve_return_seconds": 10.199739542997122,
+  "solver_statistics": {
+    "restarts": 111,
+    "conflicts": 24217,
+    "decisions": 74684,
+    "propagations": 63715956
+  },
+  "elapsed_seconds": 10.249479540998436
+}
+{
+  "status": "cold formula rebuild and UNKNOWN binding checked; no exclusion",
+  "model_sha256": "840a6eba986b56c20ef81c5b00a1700df9455b4fd1245dbd2121fc346a33e1ea",
+  "cnf_sha256": "421c95688693ed89dfe4fc03809e030eb6e2e811d51f70c2485fbfe1cfdd6f86",
+  "case_index": 17,
+  "whole_complementary_core_excluded": false
+}

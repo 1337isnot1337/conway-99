@@ -1,0 +1,40 @@
+{
+  "schema": "conway99.f0.triangle-schur-independent-cold-root-gate.v1",
+  "status": "AUTHORIZED_ONE_BOUNDED_COMPLETE_REPLAY",
+  "reviewer": "root",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_schur_independent_cold.js",
+    "sha256": "cc15c3022af605c47c3ad6830066b26faa1ecb8adb07ad57d2b849f44a9f6db3",
+    "bytes": 19889,
+    "git_blob": "c55fc1f908798e9e774a1df34e29d2a153f08cf7",
+    "lines_read": 318
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-configuration01.json",
+    "sha256": "c363820f64f487ea7beb03f6b939fb8e855f0e6153dcba3b2e522784d275eae3",
+    "git_blob": "b5a031e89f56938f5032dad7d3699adcc634a85a"
+  },
+  "preparation": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-preparation01.json",
+    "sha256": "502ff4a3e7abf4e023d23fc3f7896c2b251c69653561cd0f8989904e44d0fbe2",
+    "git_blob": "caff461ac4ee681ddf521e1af54572107914accb"
+  },
+  "reviewed": [
+    "All complete raw and compressed input identities are checked before arithmetic.",
+    "The full eligible graph is rebuilt independently and every saved neighbor list compared.",
+    "Maximum-vertex lower-neighbor bitset intersections enumerate every triangle once, including word-boundary controls.",
+    "Both determinant families use all six permutation terms as BigInt, checked independently against Bareiss.",
+    "Every forward pair/triangle record, exact minor, count and extremum is compared after independent ordering.",
+    "The literal-zero classification is rebuilt directly from the accepted1884-edge overlay.",
+    "Partial failures return unaccepted status with progress; no retry or optimizer follows."
+  ],
+  "runs_authorized": 1,
+  "maximum_ms": 60000,
+  "maximum_report_bytes": 67108864,
+  "optimizer_calls_authorized": 0,
+  "native_model_builds_authorized": 0,
+  "heavy_arithmetic_slot_released_to": "independent_sets",
+  "root_followup": "Compare the independently regenerated entire zero-disposition ledger with the forward ledger after normalizing JSON key order.",
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

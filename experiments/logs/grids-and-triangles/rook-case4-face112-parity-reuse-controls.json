@@ -1,0 +1,103 @@
+{
+  "status": "FROZEN: complete text/AST transformation, no point scan",
+  "parent_sha256": "101595222904d8576bcadf430b3a2ff37e6060b8c8690f27437108294008f0da",
+  "source_sha256": "90447087ed53f80e77f903926b6a07db006daf741d4d54c82c23bc4bb67afc11",
+  "substitutions": [
+    {
+      "old": "RANK, DENOMINATOR, CANDIDATES = 286, 1661041997, 41041",
+      "new": "RANK, DENOMINATOR, CANDIDATES = 286, 145446009, 41041",
+      "count": 1
+    },
+    {
+      "old": "sha, canonical = mod.sha, mod.canonical",
+      "new": "sha, canonical = mod.sha, mod.canonical\n\nNEW_INPUTS = {\n    \"H2_Gram\": (BASE+\"rook-case4-face99-parity-face-certificate.json\", \"717c3e4103dd56bdd260f52b0f50c5a06f4245b834d92194357481d3163e229e\"),\n    \"zero663\": (BASE+\"rook-case4-face99-zero663-gram-capacity-certificate.json\", \"312d96f363eaad62c31ab685c50ec73f019a9d0742ddcbed9b1193a236113802\"),\n    \"model112\": (BASE+\"rook-case4-face112-model01/model.json\", \"018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f\"),\n    \"model112_cold\": (BASE+\"rook-case4-face112-model01-cold-replay.json\", \"26f063161cbf9c0beb139b392f0b46007254176c522308d3ed2d5e3ee3c2e703\"),\n    \"point112\": (BASE+\"rook-case4-face112-basis-run01/candidate.json\", \"bb81664e8ea9faec6878ee98ec36c5ae844535e805f78fabe7c475a1f83d8ebb\"),\n    \"point112_replay\": (BASE+\"rook-case4-face112-basis-run01-replay.json\", \"cda50fcd87c9e5009243b76442a953a0f1f6b6461baead3ecf296cce508a0c59\"),\n}\n\n\ndef new_json(key):\n    path, expected = NEW_INPUTS[key]\n    raw = (ROOT/path).read_bytes()\n    assert sha(raw) == expected\n    return json.loads(raw)\n\n\ndef zero_premises(native, old_zeros):\n    \"\"\"Expand the two short integer proofs on every original coordinate.\"\"\"\n    h2, c663, model, cold = (new_json(k) for k in (\"H2_Gram\", \"zero663\", \"model112\", \"model112_cold\"))\n    assert len(old_zeros) == 99 and old_zeros == sorted(set(old_zeros))\n    assert h2[\"prior_zero_columns\"] == c663[\"prior99_zero_columns\"] == old_zeros\n    assert cold[\"model_sha256\"] == NEW_INPUTS[\"model112\"][1] and cold[\"status\"].startswith(\"PASS\")\n    first, rhs = [0]*1214, 0\n    used = set()\n    for rec in h2[\"original_Gram_combination\"]:\n        i, multiplier = rec[\"original_native_row\"], rec[\"multiplier\"]\n        assert i not in used and 0 <= i < 630; used.add(i)\n        row = native[i]; assert row[\"lower\"] == row[\"upper\"]\n        rhs += multiplier*row[\"lower\"]\n        for a, c in row[\"terms\"]:\n            first[a] += multiplier*c\n    assert len(used) == 42 and rhs == h2[\"original_Gram_right_hand_side\"] == 1\n    assert first == h2[\"full_original_coefficients\"]\n    new12, support = set(h2[\"new_zero_columns\"]), set(h2[\"H2_support\"])\n    assert len(new12) == 12 and not (new12 & set(old_zeros)) and not (new12 & support)\n    for a in range(1214):\n        if a not in old_zeros:\n            assert first[a] == int(a in support) + 2*int(a in new12)\n    # Nonnegative integer x gives every new12 coordinate zero, and H2=1.\n    second, upper, used = [0]*1214, 0, set()\n    for rec in c663[\"original_Gram_combination\"]:\n        i, multiplier = rec[\"original_Gram_row\"], rec[\"multiplier\"]\n        assert i not in used and 0 <= i < 630; used.add(i)\n        row = native[i]; assert row[\"lower\"] == row[\"upper\"]\n        upper += multiplier*row[\"lower\"]\n        for a, c in row[\"terms\"]:\n            second[a] += multiplier*c\n    capacity = native[681]\n    assert capacity[\"terms\"] == [[a, 1] for a in [258, 259, 260, 261, 262]]\n    assert capacity[\"lower\"] == 0 and capacity[\"upper\"] == 1\n    upper += capacity[\"upper\"]\n    for a, c in capacity[\"terms\"]:\n        second[a] += c\n    assert len(used) == 143 and upper == c663[\"combined_upper_bound\"] == 5\n    assert second == c663[\"full_original_integer_coefficients\"] and second[663] == 6\n    assert 663 not in old_zeros and all(c >= 0 or a in old_zeros for a, c in enumerate(second))\n    # Thus nonnegative integer x663 satisfies 6*x663<=5 and is zero.\n    zeros = sorted(set(old_zeros) | new12 | {663})\n    assert len(zeros) == 112 and zeros == model[\"fixed_zero_columns\"]\n    assert model[\"integer_cover_ranges\"] == [[1, 1], [1, 1]]\n    return zeros, model, {\"old99_zero_premises\": old_zeros,\n        \"twelve_zeros_from42_original_Gram_rows\": sorted(new12),\n        \"zero663_from143_original_Gram_rows_plus_capacity681\": True,\n        \"all1214_coefficients_reexpanded_for_each_new_proof\": True,\n        \"new_zero_count\": 13, \"all_zero_count\": 112,\n        \"no_new_modular_elimination_or_point_evaluation\": True}\n",
+      "count": 1
+    },
+    {
+      "function": "load_domain",
+      "old": "def load_domain(deadline):\n    assert sha(Path(mod.__file__).read_bytes()) == MODULAR_SOURCE_SHA\n    assert sha(Path(parity.__file__).read_bytes()) == PARITY_SOURCE_SHA\n    inventory_bindings, data, native = mod.load_inventory()\n    control = mod.inv.checked_json(ROOT, PARITY_CONTROLS, PARITY_CONTROLS_SHA)\n    assert control[\"source_sha256\"] == PARITY_SOURCE_SHA and control[\"formula_cases\"] == 5938\n    assert control[\"case4_point_or_domain_read\"] is False and control[\"optimizer_calls\"] == 0\n    raw = (ROOT/PROOF_PATH).read_bytes()\n    assert sha(raw) == PROOF_SHA\n    plain = gzip.decompress(raw)\n    assert sha(plain) == PROOF_RAW_SHA\n    proof = json.loads(plain)\n    assert proof[\"prime\"] == 2\n    checked = mod.verify(data[\"equations\"], 1115, proof, deadline)\n    assert checked[\"rank\"] == RANK and checked[\"fixed_coordinates\"] == []\n    cold = mod.inv.checked_json(ROOT, MODULAR_COLD, MODULAR_COLD_SHA)\n    assert cold[\"status\"].startswith(\"PASS\") and cold[\"complete_all_planned_primes\"]\n    assert any(item[\"prime\"] == 2 and item[\"rank\"] == RANK for item in cold[\"completed\"])\n    # Point bytes are bound here, but their values are not parsed or used.\n    for key in (\"point\", \"point_replay\"):\n        path, expected = mod.inv.INPUTS[key]\n        assert sha((ROOT/path).read_bytes()) == expected\n    bindings = {\"source_sha256\": sha(Path(__file__).read_bytes()),\n        \"modular_source_sha256\": MODULAR_SOURCE_SHA, \"parity_helper_sha256\": PARITY_SOURCE_SHA,\n        \"parity_controls_sha256\": PARITY_CONTROLS_SHA, \"inventory\": inventory_bindings,\n        \"mod2_certificate_gzip_sha256\": PROOF_SHA, \"mod2_certificate_raw_sha256\": PROOF_RAW_SHA,\n        \"modular_cold_sha256\": MODULAR_COLD_SHA,\n        \"point\": {\"path\": mod.inv.INPUTS[\"point\"][0], \"sha256\": mod.inv.INPUTS[\"point\"][1]},\n        \"point_full_replay\": {\"path\": mod.inv.INPUTS[\"point_replay\"][0], \"sha256\": mod.inv.INPUTS[\"point_replay\"][1]}}\n    kept, zeros = data[\"original_column_ids\"], data[\"zero_columns\"]\n    basis = []\n    for i, (row, combination, pivot) in enumerate(zip(proof[\"reduced_rows\"], proof[\"row_combinations\"], proof[\"pivot_columns\"])):\n        tick(deadline)\n        assert all(v in (0, 1) for v in row+combination)\n        chosen = bitset(j for j, value in enumerate(combination) if value)\n        lifted = full_lift(chosen, data[\"equations\"], native, kept, zeros, 1214)\n        assert lifted[\"reduced_support_hex\"] == hex(bitset(j for j, value in enumerate(row[:-1]) if value))\n        assert lifted[\"parity_rhs\"] == row[-1]\n        basis.append({\"basis_index\": i, \"pivot_original_column\": kept[pivot], \"lift\": lifted})\n    return bindings, data, native, basis\n",
+      "new": "def load_domain(deadline):\n    assert sha(Path(mod.__file__).read_bytes()) == MODULAR_SOURCE_SHA\n    assert sha(Path(parity.__file__).read_bytes()) == PARITY_SOURCE_SHA\n    inventory_bindings, old_data, native = mod.load_inventory()\n    control = mod.inv.checked_json(ROOT, PARITY_CONTROLS, PARITY_CONTROLS_SHA)\n    assert control[\"source_sha256\"] == PARITY_SOURCE_SHA and control[\"formula_cases\"] == 5938\n    assert control[\"case4_point_or_domain_read\"] is False and control[\"optimizer_calls\"] == 0\n    raw = (ROOT/PROOF_PATH).read_bytes(); assert sha(raw) == PROOF_SHA\n    plain = gzip.decompress(raw); assert sha(plain) == PROOF_RAW_SHA\n    proof = json.loads(plain); assert proof[\"prime\"] == 2\n    checked = mod.verify(old_data[\"equations\"], 1115, proof, deadline)\n    assert checked[\"rank\"] == RANK and checked[\"fixed_coordinates\"] == []\n    cold = mod.inv.checked_json(ROOT, MODULAR_COLD, MODULAR_COLD_SHA)\n    assert cold[\"status\"].startswith(\"PASS\") and cold[\"complete_all_planned_primes\"]\n    assert any(item[\"prime\"] == 2 and item[\"rank\"] == RANK for item in cold[\"completed\"])\n    zeros, model, zero_check = zero_premises(native, old_data[\"zero_columns\"])\n    kept = [a for a in range(1214) if a not in set(zeros)]\n    assert len(kept) == 1102\n    # New point bytes are bound only. Its coordinate values enter scan/replay.\n    for key in (\"point112\", \"point112_replay\"):\n        path, expected = NEW_INPUTS[key]\n        assert sha((ROOT/path).read_bytes()) == expected\n    bindings = {\"source_sha256\": sha(Path(__file__).read_bytes()),\n        \"modular_source_sha256\": MODULAR_SOURCE_SHA, \"parity_helper_sha256\": PARITY_SOURCE_SHA,\n        \"parity_controls_sha256\": PARITY_CONTROLS_SHA, \"inventory\": inventory_bindings,\n        \"mod2_certificate_gzip_sha256\": PROOF_SHA, \"mod2_certificate_raw_sha256\": PROOF_RAW_SHA,\n        \"modular_cold_sha256\": MODULAR_COLD_SHA,\n        \"new_inputs\": {k: {\"path\": p, \"sha256\": h} for k, (p, h) in NEW_INPUTS.items()}}\n    basis = []\n    for i, (row, combination, pivot) in enumerate(zip(proof[\"reduced_rows\"], proof[\"row_combinations\"], proof[\"pivot_columns\"])):\n        tick(deadline)\n        assert all(v in (0, 1) for v in row+combination)\n        chosen = bitset(j for j, value in enumerate(combination) if value)\n        old_lift = full_lift(chosen, old_data[\"equations\"], native,\n                             old_data[\"original_column_ids\"], old_data[\"zero_columns\"], 1214)\n        assert old_lift[\"reduced_support_hex\"] == hex(bitset(j for j, value in enumerate(row[:-1]) if value))\n        assert old_lift[\"parity_rhs\"] == row[-1]\n        lifted = full_lift(chosen, old_data[\"equations\"], native, kept, zeros, 1214)\n        assert int(lifted[\"active_original_support_hex\"], 16) == int(old_lift[\"active_original_support_hex\"], 16) & bitset(kept)\n        assert lifted[\"full_integer_coefficients_sha256\"] == old_lift[\"full_integer_coefficients_sha256\"]\n        assert lifted[\"parity_rhs\"] == row[-1]\n        basis.append({\"basis_index\": i, \"pivot_original_column\": old_data[\"original_column_ids\"][pivot],\n                      \"pre_projection_active_support_hex\": old_lift[\"active_original_support_hex\"], \"lift\": lifted})\n    data = dict(old_data)\n    data.update(original_column_ids=kept, zero_columns=zeros, zero_proof_check=zero_check,\n                point_extra_unit_sums=model[\"integer_cover_live_original_supports\"],\n                point_extra_pair_bounds=model[\"added_pair_rows\"])\n    return bindings, data, native, basis\n"
+    },
+    {
+      "function": "candidates",
+      "old": "def candidates(basis):\n    assert len(basis) == RANK\n    identifier = 0\n    selections = [(i,) for i in range(RANK)]\n    selections.extend(combinations(range(RANK), 2))\n    pivot_mask = bitset(item[\"pivot_original_column\"] for item in basis)\n    for indices in selections:\n        active, combination, rhs, expected_pivots = 0, 0, 0, 0\n        for i in indices:\n            item = basis[i]\n            active ^= int(item[\"lift\"][\"active_original_support_hex\"], 16)\n            combination ^= int(item[\"lift\"][\"equation_combination_hex\"], 16)\n            rhs ^= item[\"lift\"][\"parity_rhs\"]\n            expected_pivots ^= 1 << item[\"pivot_original_column\"]\n        assert active & pivot_mask == expected_pivots\n        assert expected_pivots.bit_count() == len(indices) and active != 0\n        yield {\"id\": identifier, \"basis_indices\": list(indices), \"active_original_support_hex\": hex(active),\n               \"parity_rhs\": rhs, \"equation_combination_hex\": hex(combination)}\n        identifier += 1\n    assert identifier == CANDIDATES\n",
+      "new": "def candidates(basis):\n    assert len(basis) == RANK\n    identifier = 0\n    selections = [(i,) for i in range(RANK)]\n    selections.extend(combinations(range(RANK), 2))\n    for indices in selections:\n        active, combination, rhs = 0, 0, 0\n        for i in indices:\n            item = basis[i]\n            active ^= int(item[\"lift\"][\"active_original_support_hex\"], 16)\n            combination ^= int(item[\"lift\"][\"equation_combination_hex\"], 16)\n            rhs ^= item[\"lift\"][\"parity_rhs\"]\n        assert active != 0\n        yield {\"id\": identifier, \"basis_indices\": list(indices), \"active_original_support_hex\": hex(active),\n               \"parity_rhs\": rhs, \"equation_combination_hex\": hex(combination)}\n        identifier += 1\n    assert identifier == CANDIDATES\n"
+    },
+    {
+      "function": "ledger",
+      "old": "def ledger(basis, deadline):\n    digest, counts = hashlib.sha256(), Counter()\n    number = 0\n    for candidate in candidates(basis):\n        tick(deadline)\n        assert candidate[\"id\"] == number\n        digest.update(canonical(candidate)+b\"\\n\")\n        counts[int(candidate[\"active_original_support_hex\"], 16).bit_count()] += 1\n        number += 1\n    assert number == CANDIDATES\n    return {\"single_rows\": RANK, \"unordered_XOR_pairs\": RANK*(RANK-1)//2,\n        \"all_candidates\": number, \"distinct_candidate_equations\": number,\n        \"duplicates\": 0, \"nonzero_supports\": number,\n        \"distinctness_proof\": \"Distinct one/two-element subsets of the286 pivot coordinates remain visible in every corresponding support.\",\n        \"ledger_sha256\": digest.hexdigest(), \"support_size_histogram\": {str(k): v for k, v in sorted(counts.items())},\n        \"support_visits_in_one_complete_scan\": sum(k*v for k, v in counts.items()),\n        \"maximum_support_size\": max(counts),\n        \"conservative_integer_cost_bound\": (max(counts)+1)*DENOMINATOR}\n",
+      "new": "def ledger(basis, deadline):\n    digest, counts, seen = hashlib.sha256(), Counter(), set()\n    number = 0\n    for candidate in candidates(basis):\n        tick(deadline)\n        assert candidate[\"id\"] == number\n        equation = (candidate[\"active_original_support_hex\"], candidate[\"parity_rhs\"])\n        assert equation not in seen; seen.add(equation)\n        digest.update(canonical(candidate)+b\"\\n\")\n        counts[int(candidate[\"active_original_support_hex\"], 16).bit_count()] += 1\n        number += 1\n    assert number == CANDIDATES and len(seen) == CANDIDATES\n    assert min(counts) == 3 and max(counts) == 447 and sum(k*v for k, v in counts.items()) == 7236294\n    return {\"single_rows\": RANK, \"unordered_XOR_pairs\": RANK*(RANK-1)//2,\n        \"all_candidates\": number, \"distinct_candidate_equations\": len(seen),\n        \"duplicates\": 0, \"nonzero_supports\": number,\n        \"distinctness_proof\": \"Complete exact set comparison of support/RHS after112-zero substitution; the old pivot-visibility proof is not assumed.\",\n        \"ledger_sha256\": digest.hexdigest(), \"support_size_histogram\": {str(k): v for k, v in sorted(counts.items())},\n        \"support_visits_in_one_complete_scan\": sum(k*v for k, v in counts.items()),\n        \"maximum_support_size\": max(counts), \"minimum_support_size\": min(counts),\n        \"conservative_integer_cost_bound\": (max(counts)+1)*DENOMINATOR,\n        \"fixed_family_not_a_new_basis_for_all112_face_equalities\": True}\n"
+    },
+    {
+      "function": "saved_point",
+      "old": "def saved_point(data, native, deadline):\n    point = mod.inv.checked_json(ROOT, *mod.inv.INPUTS[\"point\"])\n    replay = mod.inv.checked_json(ROOT, *mod.inv.INPUTS[\"point_replay\"])\n    assert replay[\"status\"].startswith(\"PASS\") and replay[\"exact_point_replayed\"]\n    assert replay[\"candidate_sha256\"] == mod.inv.INPUTS[\"point\"][1]\n    den = int(point[\"common_denominator\"])\n    reduced = list(map(int, point[\"extended_numerators\"]))\n    assert den == DENOMINATOR and len(reduced) == 1116\n    full = [0]*1214\n    for a, value in zip(data[\"original_column_ids\"], reduced[:-1]):\n        assert 0 < value < den\n        full[a] = value\n    assert all(full[a] == 0 for a in data[\"zero_columns\"])\n    for i, row in enumerate(native):\n        tick(deadline)\n        value = sum(c*full[a] for a, c in row[\"terms\"])\n        assert row[\"lower\"]*den <= value <= row[\"upper\"]*den, (\"original native point row\", i)\n    return full, den\n",
+      "new": "def saved_point(data, native, deadline):\n    point, replay = new_json(\"point112\"), new_json(\"point112_replay\")\n    assert replay[\"status\"].startswith(\"PASS\") and replay[\"exact_point_replayed\"]\n    assert replay[\"candidate_sha256\"] == NEW_INPUTS[\"point112\"][1]\n    assert replay[\"full_face_rows_checked\"] == 167112 and replay[\"original_coordinate_covers_checked\"] == 178533\n    den = int(point[\"common_denominator\"])\n    reduced = list(map(int, point[\"extended_numerators\"]))\n    assert den == DENOMINATOR and len(reduced) == 1103 and reduced[-1] > 0\n    full = [0]*1214\n    for a, value in zip(data[\"original_column_ids\"], reduced[:-1]):\n        assert 0 < value < den and value >= reduced[-1]\n        full[a] = value\n    assert full == list(map(int, point[\"exact_check\"][\"original1214_selector_numerators\"]))\n    assert all(full[a] == 0 for a in data[\"zero_columns\"])\n    for i, row in enumerate(native):\n        tick(deadline)\n        value = sum(c*full[a] for a, c in row[\"terms\"])\n        assert row[\"lower\"]*den <= value <= row[\"upper\"]*den, (\"original native point row\", i)\n    for support in data[\"point_extra_unit_sums\"]:\n        assert sum(full[a] for a in support) == den\n    for a, b in data[\"point_extra_pair_bounds\"]:\n        assert full[a]+full[b] <= den\n    return full, den\n"
+    },
+    {
+      "old": "assert inventory[\"support_visits_in_one_complete_scan\"] <= 45760715",
+      "new": "assert inventory[\"support_visits_in_one_complete_scan\"] == 7236294",
+      "count": 1
+    },
+    {
+      "old": "assert inventory[\"conservative_integer_cost_bound\"] <= 1853722868652 < 2**41",
+      "new": "assert inventory[\"conservative_integer_cost_bound\"] == 65159812032 < 2**36",
+      "count": 1
+    },
+    {
+      "old": "\"schema\": \"rook-case4-face99-single-pair-parity-v1\"",
+      "new": "\"schema\": \"rook-case4-face112-fixed-single-pair-parity-v1\"",
+      "count": 1
+    },
+    {
+      "old": "\"surviving_coordinates\": 1115",
+      "new": "\"surviving_coordinates\": 1102",
+      "count": 1
+    },
+    {
+      "old": "\"original_equalities\": 632, \"distinct_nonempty_equations\": 396,",
+      "new": "\"original_equalities\": 632, \"distinct_nonempty_equations_before_projection\": 396,\n        \"new_zero_proofs\": data[\"zero_proof_check\"],",
+      "count": 1
+    },
+    {
+      "old": "\"scope\": \"Only the286 saved F2 basis rows and their40755 unordered pairwise XORs; necessary Boolean forbidden-vertex inequalities; no larger combinations.\"",
+      "new": "\"scope\": \"Only the286 saved F2 rows and their40755 unordered pairwise XORs, now projected through112 proved zeros. These are necessary Boolean forbidden-vertex inequalities; no new elimination, larger combination or completeness claim for all112-face parity consequences.\"",
+      "count": 1
+    },
+    {
+      "old": "\"all99_zero_premises_from_frozen_seed_only\": True",
+      "new": "\"all112_zero_premises_from_checked_old_seed_and_two_short_integer_proofs\": True",
+      "count": 1
+    },
+    {
+      "old": "assert spec[\"known_zero_columns\"] == data[\"zero_columns\"]",
+      "new": "assert spec[\"known_zero_columns\"] == data[\"zero_columns\"]\n    assert spec[\"new_zero_proofs\"] == data[\"zero_proof_check\"]",
+      "count": 1
+    }
+  ],
+  "new_functions": [
+    "new_json",
+    "zero_premises"
+  ],
+  "changed_functions": [
+    "load_domain",
+    "candidates",
+    "ledger",
+    "prepare",
+    "prepared",
+    "saved_point",
+    "replay"
+  ],
+  "unchanged_functions": [
+    "tick",
+    "bitset",
+    "sites",
+    "save",
+    "full_lift",
+    "controls",
+    "evaluate",
+    "cut_record",
+    "scan"
+  ],
+  "production_point_scans": 0,
+  "optimizer_calls": 0
+}

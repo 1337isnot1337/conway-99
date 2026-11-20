@@ -1,0 +1,45 @@
+{"iteration": 0, "status": "SAT incidence rejected by exact individual-row cuts", "new_individual_cuts": 12, "new_symmetric_cuts": 0, "elapsed_seconds": 4.84704418900219}
+{"iteration": 1, "status": "SAT incidence rejected by exact individual-row cuts", "new_individual_cuts": 24, "new_symmetric_cuts": 0, "elapsed_seconds": 6.071492939001473}
+{"iteration": 2, "status": "SAT incidence rejected by exact individual-row cuts", "new_individual_cuts": 48, "new_symmetric_cuts": 0, "elapsed_seconds": 7.7817927680007415}
+{"iteration": 3, "status": "SAT incidence rejected by exact individual-row cuts", "new_individual_cuts": 48, "new_symmetric_cuts": 0, "elapsed_seconds": 9.259775287999219}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "STOP: encoding resource limit; unresolved",
+  "source_sha256": "2d08cd3dac2269584f8fc91680566f4418f3e7afd6fed6c0b6cd2a5a9a53af2a",
+  "preparation": "experiments/logs/root-prism-free/f0-symmetric-row-loop-preparation.json.gz",
+  "preparation_sha256": "ac320bcd92d1e801fc027ca7776ad97ebe978628b530caa67ceb5d770c992a55",
+  "limits": {
+    "maximum_incidences": 20,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_threshold_states_per_cut": 250000,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000,
+    "shared_LP_seconds": 60
+  },
+  "fixed_incidence_or_second_component": false,
+  "visitation_blocks": false,
+  "whole_component_excluded": false,
+  "full_graph_completion": false,
+  "bootstrap_and_input_checks_seconds": 2.633303172999149,
+  "final_cnf": "experiments/logs/root-prism-free/f0-symmetric-row-loop-run01/final.cnf",
+  "final_cnf_sha256": "ed2ecaf317806b6a6d248d24daf3e7ca8b9b12445bf035af7a7e8300f773a42c",
+  "final_variables": 940264,
+  "final_clauses": 1681322,
+  "final_individual_cut_count": 168,
+  "final_symmetric_cut_count": 20,
+  "final_weighted_cut_count": 188,
+  "individual-registry": "experiments/logs/root-prism-free/f0-symmetric-row-loop-run01/individual-registry.json",
+  "individual-registry_sha256": "54b504bc39ac1f7b1dfe556970e71bf97afa946a96fac67d71f65b778889fa46",
+  "individual-encodings": "experiments/logs/root-prism-free/f0-symmetric-row-loop-run01/individual-encodings.json",
+  "individual-encodings_sha256": "109f20bea663ce623deeeb70946d3c2d0946f722c747e746d998427d2ad87478",
+  "symmetric-registry": "experiments/logs/root-prism-free/f0-symmetric-row-loop-run01/symmetric-registry.json",
+  "symmetric-registry_sha256": "a007de8c9c31fd1b75ba1ca76c74c6d5f6f1996b108bd0b58705ea7bdb1ce24c",
+  "symmetric-encodings": "experiments/logs/root-prism-free/f0-symmetric-row-loop-run01/symmetric-encodings.json",
+  "symmetric-encodings_sha256": "d932aee817a00661ae13913417ea66d4e83ff353d1719ce6b2df4c7e8b987c15",
+  "elapsed_seconds": 37.83008312799939,
+  "cooperative_overall_overrun_seconds": 0,
+  "peak_rss_kib": 701176
+}

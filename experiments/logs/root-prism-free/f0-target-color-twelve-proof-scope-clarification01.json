@@ -1,0 +1,51 @@
+{
+  "schema": "conway99.f0.target-color-twelve-proof-scope-clarification.v1",
+  "status": "PRESERVED_WORDING_ONLY_WITNESS_SCOPE_CORRECTION",
+  "original_note": {
+    "path": "research/root_prism_free_f0_target_color_twelve_bound_initial_scope.md",
+    "git_blob": "38f38fbecdb9e5414cd6a923affb139d4027226f",
+    "sha256": "6257e00119cb0d192adce59d42a7a8ed3199c7014fa6f3a5cec9be90b1eb454c",
+    "bytes": 9479
+  },
+  "current_note": {
+    "path": "research/root_prism_free_f0_target_color_twelve_bound.md",
+    "git_blob": "2864e837f22a38f37baf0535ed45c34163bd9415",
+    "sha256": "2e78b57ee726e7c301f3e73c4909c6547fdb2500eb0fc53f3d97be429436160c",
+    "bytes": 9695
+  },
+  "source_unchanged": {
+    "path": "experiments/workspace/root_prism_free_f0_target_color_twelve_certificate_v8.js",
+    "sha256": "dfb0764a29e53db9ba59b5fd291a45a612af0f690699b1892c195487014a152e",
+    "git_blob": "54fa064c0211d3cfa07214bf2304d7b0122b9cc9",
+    "bytes": 10514
+  },
+  "configuration_unchanged": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-configuration01.json",
+    "sha256": "d3067a6166a3c4b4a0f684df224afe5691182a780a267e6de828ca20d1b16ca2",
+    "git_blob": "9676d56ffaf8ae7be0094db062357e1be69ca0d5",
+    "bytes": 3283
+  },
+  "exact_replacements": [
+    [
+      "The value twelve is attained in the relaxation containing only the\neighteen core-edge color quotas and endpoint activations. That attaining\n",
+      "The value twelve is attained in the relaxation on the 84 target vertices\ncontaining only at-most-one inequalities for the eighteen colors and\nendpoint activations. That attaining\n"
+    ],
+    [
+      "## Exactness for the color-quota relaxation",
+      "## Exactness for the at-most-one-color relaxation"
+    ],
+    [
+      "every actual edge ID, all\neighteen color quotas, and the complete induced target-edge count of\n",
+      "every actual edge ID, all\neighteen at-most-one color inequalities, and the complete induced target-edge count of\n"
+    ],
+    [
+      "to zero. This attains (1) in the color-quota/activation relaxation.\n",
+      "to zero. This attains (1) in the restricted at-most-one-color/activation\nrelaxation. Shared colors (8,15) and (9,14) are unused. This sixteen-vertex\nwitness does not itself saturate all eighteen original Gram equalities.\n"
+    ]
+  ],
+  "complete_inverse_recovers_original_bytes": true,
+  "upper_bound_proof_changed": false,
+  "witness_or_input_changed": false,
+  "source_main_run": false,
+  "reason": "The sixteen-vertex witness satisfies at-most-one target-color inequalities; two shared colors are unused. The original wording could be read as claiming all eighteen original Gram equality sums were saturated."
+}

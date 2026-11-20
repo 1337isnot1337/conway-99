@@ -1,0 +1,219 @@
+{
+  "status": "PASS: all25 literal integer rows/gaps and11 held-PSD implications independently checked",
+  "source_sha256": "96c10a5f21c0c649117409efdd0aebcf246b3641dc801d08985933468ff67539",
+  "inputs": {
+    "source": {
+      "path": "experiments/workspace/root_prism_free_f0_selector_integer_refinement.py",
+      "sha256": "eb0c41c0448b43a4bd684c791d468e37b9c805c888b86383fb36b33da75560d5"
+    },
+    "record": {
+      "path": "experiments/logs/root-prism-free/f0-selector-integer-refinements01.json.gz",
+      "sha256": "68d5ea0ca4a9906e74319770924eb91f880e46cec0c3ed2ab269bb1debe7b339"
+    },
+    "old": {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-scan01.json.gz",
+      "sha256": "5c74497bb70d44bf2fac7002ed16b4657500c4af2518cab196684c9346449e79"
+    },
+    "new": {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan02.json.gz",
+      "sha256": "43e590c801ccb85e385253cc475ce6f6bdc09874d10b9c7571170cb2bd06d9a3"
+    },
+    "cache": {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-cache01.json.gz",
+      "sha256": "6d293340386e77e0bf0b0a7b006744523d75eb7e90ef0fd371c3eed5eb82801e"
+    },
+    "proposal": {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-query-run01/numerical.json",
+      "sha256": "bfe03cf2ec0f9d00ee7ff756112a61ab368404d4ed29c7b50377f01c5ae8327e"
+    }
+  },
+  "complete_mathematical_source_read": true,
+  "all48_integer_vectors_checked": true,
+  "identically_zero_orbit_mean_directions": 37,
+  "literal_nonzero_mean_directions_reexpanded": 11,
+  "all15200_positions_checked_per_held_row_implication": true,
+  "rows": [
+    {
+      "source": "new",
+      "index": 0,
+      "k": -1,
+      "row_sha256": "4c3a022959506cf7f9227f34dd640ab2f976f7d31934b6304b18142f77121985",
+      "exact_gap": "115935882641720879/288230376151711744"
+    },
+    {
+      "source": "new",
+      "index": 0,
+      "k": 0,
+      "row_sha256": "33c587772e8d046c6053e3bc2cbb4162e20a5a612f470cb1eb8f5c9347c46b9b",
+      "exact_gap": "204605981807299903/288230376151711744"
+    },
+    {
+      "source": "new",
+      "index": 1,
+      "k": -1,
+      "row_sha256": "fae8a43a98648df86b11dec2aa877638bf691ce662a13acaac7243a3aed7fb96",
+      "exact_gap": "1039479235120147446695/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 1,
+      "k": 0,
+      "row_sha256": "e28abd04b5fcd18c11748f82a8af10d145b03d6ce581a4af2d8a0687198b36b3",
+      "exact_gap": "1047572052220306145703/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 2,
+      "k": -1,
+      "row_sha256": "d92c8ed8448dc1362684aa00a23515d73fad4ebfe4403850a92e3bbcf4e4b4be",
+      "exact_gap": "8943646748066448571757/9223372036854775808"
+    },
+    {
+      "source": "new",
+      "index": 2,
+      "k": 0,
+      "row_sha256": "486977ba0cc5bd6173234de914f4164228f97d0502a4fbda7a47e8fb6cd2c87f",
+      "exact_gap": "8948526437156489247213/9223372036854775808"
+    },
+    {
+      "source": "new",
+      "index": 3,
+      "k": -1,
+      "row_sha256": "201843c5d0f06def32c72b239deb52a3f0960e0322253558141e9a6aa459b176",
+      "exact_gap": "284354785703560070573625/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 3,
+      "k": 0,
+      "row_sha256": "0d47f57cef6974b881412cac6ebac66ff616fda17ae5e2c89fb60385e2cf14af",
+      "exact_gap": "284354812203483060377401/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 4,
+      "k": -3,
+      "row_sha256": "01ac287906bda220bfd1c7b370818ca3bd525ba9760160b26d25a48cdf5d3f40",
+      "exact_gap": "2275338883761078892937355/9223372036854775808"
+    },
+    {
+      "source": "new",
+      "index": 4,
+      "k": -1,
+      "row_sha256": "05dae310de644875d7a28df5eb64ae314a938677e96167468db99cee6cbac99e",
+      "exact_gap": "2275320601132711820627083/9223372036854775808"
+    },
+    {
+      "source": "new",
+      "index": 4,
+      "k": 0,
+      "row_sha256": "f1df6dd963ff7ee6f34290916988c45227df2f444b5c1c9cb3137924a52610f0",
+      "exact_gap": "2275297624760473002308235/9223372036854775808"
+    },
+    {
+      "source": "new",
+      "index": 5,
+      "k": -1,
+      "row_sha256": "1e20f9ae3b89e83a4103d5ffe66a6f7d4225af1726b77b5122a1b6d61e4c1dfb",
+      "exact_gap": "72859881761952128373028363/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 5,
+      "k": 0,
+      "row_sha256": "919cc81b3e71d0d8b1c62898a4740a75801c5f403eb23f4ffcc4338f98ebda26",
+      "exact_gap": "72859907985684571614497035/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 5,
+      "k": 1,
+      "row_sha256": "eb2e5ce95ddd1e2e3c89edc84ffc21afd8804ceecda3fcb8ab4fbe6688ecdea7",
+      "exact_gap": "72859915762672941146414091/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 6,
+      "k": -2,
+      "row_sha256": "f7cba5d11bd246a7e1415020b362eec5537571d9d8b8593dd1a536aed6a45c36",
+      "exact_gap": "985278716360083286449/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 6,
+      "k": -1,
+      "row_sha256": "62fab1590056db99b36a6cc29677c7c7b9183bffc84b0c13636526ac15a7ac3b",
+      "exact_gap": "966857614197155555121/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 6,
+      "k": 0,
+      "row_sha256": "635e848af0c04ad47619809b5075313ee72f5ce172bce359af475806f906ddf8",
+      "exact_gap": "929989767960518272177/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 7,
+      "k": -1,
+      "row_sha256": "671d97ce6d5b281cde6cd367c271cecd3c3abb9c23ea728b9a1e5b9ecdef210d",
+      "exact_gap": "7971241814220756856975/9223372036854775808"
+    },
+    {
+      "source": "new",
+      "index": 7,
+      "k": 0,
+      "row_sha256": "9209458e02b4c0212513c873e199823e97e59928aa151a32fa880f8468e5ebe6",
+      "exact_gap": "7963129275693656638095/9223372036854775808"
+    },
+    {
+      "source": "new",
+      "index": 8,
+      "k": -1,
+      "row_sha256": "49b58c0129d644e065a083b25f8baf358fce0e84bac1a5e45719349598632b55",
+      "exact_gap": "255299722324900133545399/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 8,
+      "k": 0,
+      "row_sha256": "61ea9917c3c8074a60a2c34dda735f138f9c9d80d02a345ce83d1dcaa1dde387",
+      "exact_gap": "255295242225657178199479/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 9,
+      "k": -1,
+      "row_sha256": "180b2721ef38450244d00e21e346000544b156f6300e2bf9ecadc18981fa2ced",
+      "exact_gap": "4101534358583557338237257/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 9,
+      "k": 0,
+      "row_sha256": "4fdc7a56399f761d9f14e784769aad22ef6ea7eef6c2bd6b0ed9b939f15007bd",
+      "exact_gap": "4101521890870111658699081/18446744073709551616"
+    },
+    {
+      "source": "new",
+      "index": 10,
+      "k": -1,
+      "row_sha256": "df97cfe067e5d56af3d183c83fc59038bc8341c7189160bfd51a97386e4f2a73",
+      "exact_gap": "32790111621721764863516075/9223372036854775808"
+    },
+    {
+      "source": "new",
+      "index": 10,
+      "k": 0,
+      "row_sha256": "0716950c109c7a67aa320d51f65325055fcd2d4fbd02c50edee4abd7476d2059",
+      "exact_gap": "32790118422588405936887659/9223372036854775808"
+    }
+  ],
+  "scope": "Validity and exact old-proposal gaps only. No strict nonredundancy relative to all parent rows, current-model feasibility or graph exclusion is claimed.",
+  "subject_imported": false,
+  "old_controls_repeated": false,
+  "new_direction_search": false,
+  "optimizer_calls": 0,
+  "eigendecompositions": 0,
+  "seconds": 4.852161421003984
+}

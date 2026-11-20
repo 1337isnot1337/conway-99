@@ -1,0 +1,26 @@
+{
+  "status": "metadata-only correction; certificate algorithms unchanged",
+  "original_source_sha256": "edd903db520a6fee0f436f5161289c394d354e739d03afe4873c3d37e7ab626c",
+  "corrected_source_sha256": "cdc37c56d4e379fc3774a832d942fb4cfb2eb787746bfdd3f9071880e791ee1e",
+  "preserved_original_source": "experiments/workspace/finite_boolean_moment_certificates_v1.py",
+  "unchanged_function_ASTs": [
+    "canonical",
+    "digest",
+    "polynomial",
+    "features",
+    "evaluate",
+    "context",
+    "expectation",
+    "primitive",
+    "atom_summary",
+    "finish",
+    "constant_shift",
+    "zero_filter_penalty",
+    "replay"
+  ],
+  "only_changed_expression": {
+    "before": "'largest_control_coefficient_bits': huge.bit_length()",
+    "after": "'largest_control_coefficient_bits': (36*huge).bit_length()"
+  },
+  "reason": "The scale has202 bits, while the largest raw coefficient36*scale has207 bits."
+}

@@ -1,0 +1,140 @@
+{
+  "status": "PASS: joint cached scan prepared; no eigenscan or optimizer",
+  "source_sha256": "7441635b50e19846e48261614daf0a69a605cce8d32a15cd90f7a4cbafc1ce73",
+  "reused_source_sha256": {
+    "root_prism_free_f0_selector_psd_cuts.py": "64fa05e1947ac0e59801a400e0b9ee61e3c08691156025509c7390732db8bab2",
+    "root_prism_free_f0_full_core_schur_cuts.py": "c5489561a99de14cc0c68a3d05dbc8eb1eb3fc17e4a759b4c3d63f8d771f7d8e",
+    "root_prism_free_f0_graph_schur_kernels.py": "5be66e563e53b1efc378c8adbeb39b8ddbf24f4c97077e5d43c728260d9087be",
+    "root_prism_free_f0_full_core_schur_kernels.py": "141392693e8d4b7e140c329cfa4128b8794bd376713558394ef014975e2fc63f"
+  },
+  "inputs": {
+    "baseline": [
+      "f0-boolean-fractional-model.json.gz",
+      "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    ],
+    "full": [
+      "f0-second-moments-preparation02.json.gz",
+      "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    ],
+    "reduced": [
+      "f0-second-moments-reduced-model.json.gz",
+      "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf"
+    ],
+    "old_kernel": [
+      "f0-graph-schur-kernels01.json.gz",
+      "65f1ad0d0015a6eff3d97c676fb0e188f57f9dee00e9245758a28bab2069b40d"
+    ],
+    "kernel": [
+      "f0-full-core-schur-kernels01.json.gz",
+      "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1"
+    ],
+    "kernel_cold": [
+      "f0-full-core-schur-cuts-preparation01-cold-replay.json",
+      "5450f1fe4b61002d58f8926ae92ad48abba9f653b53bfa372cf550973248e919"
+    ],
+    "inverse_audit": [
+      "f0-full-core-schur-independent-audit.json",
+      "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75"
+    ],
+    "inverse_cold": [
+      "f0-full-core-schur-independent-audit-replay.json",
+      "a857d12d96798f4ad58d8fb8ebbac8b7980b1b672e480e89c19262588f904cf0"
+    ],
+    "model": [
+      "f0-schur-path-model03.json.gz",
+      "ad046fc05a4247a081b3cabb16693682fa5539ff557dd7b599f3c3a63e7303dd"
+    ],
+    "proposal": [
+      "f0-schur-path-query-run01/numerical.json",
+      "bfe03cf2ec0f9d00ee7ff756112a61ab368404d4ed29c7b50377f01c5ae8327e"
+    ]
+  },
+  "model_sha256": "7bc4682e3df009761c55d0740a30a0629d45e894807f79e3337fc1de4fa1aff3",
+  "matrix_sha256": "24da97cfaf7bdb6e73efcdf9b248d70f30e04443dada5a2c923ab112f10bc812",
+  "limits": {
+    "family_order": [
+      "selector",
+      "plus",
+      "minus"
+    ],
+    "matrix_orders": [
+      481,
+      480,
+      480
+    ],
+    "decompositions_per_family": 1,
+    "directions_per_family": 8,
+    "scales": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "maximum_vector_entry": 1024,
+    "retained_cuts_per_family": 16,
+    "retained_cuts_total": 48,
+    "attempts_per_family": 48,
+    "maximum_seconds": 60,
+    "time_limit_cooperative_between_operations": true
+  },
+  "cache_file_sha256": "6d293340386e77e0bf0b0a7b006744523d75eb7e90ef0fd371c3eed5eb82801e",
+  "cache_canonical_sha256": "9d33fca5771316d0b790447791a1a6aecb2a57eab9c052d06c6208c92fbadb8b",
+  "domain_sha256": "c585240d899b0781030cfcdceb84407c43bcd1537eb2f70d1e997432652f3d8a",
+  "existing_rows_sha256": "082a41bde796ae09ccae592a4452c36701adee60b9e875321f2dc12b07725622",
+  "existing_primitive_rows": 33899,
+  "existing_row_origins": 33899,
+  "controls": {
+    "status": "PASS: reused literal/full-orbit identities and new filtering controls",
+    "synthetic_exact_quadratic_checks": 6,
+    "positive_diagonal_moment_checks": 6,
+    "all12_vector_transports_by_family": 36,
+    "filter_outcomes_tested": 5,
+    "extreme_dynamic_range_scale_control": {
+      "minimum_nonzero_absolute_integer_coefficient": 1,
+      "maximum_absolute_integer_coefficient": 4503599627370495,
+      "minimum_signed_integer_coefficient": -4503599627370495,
+      "maximum_signed_integer_coefficient": 1,
+      "coefficient_ratio_exact": "4503599627370495",
+      "max_normalized_rule": {
+        "positive_power_of_two_scale": 2251799813685248,
+        "largest_coefficient_bits": 52,
+        "smallest_nonzero_scaled_absolute_coefficient": "1/2251799813685248",
+        "largest_scaled_absolute_coefficient": "4503599627370495/2251799813685248",
+        "binary64_conversion_exact": true,
+        "small_coefficients_may_still_affect_conditioning": true
+      },
+      "term_preserving_positive_dyadic_scale": 536870912,
+      "minimum_scaled_absolute_coefficient": "1/536870912",
+      "maximum_scaled_absolute_coefficient": "4503599627370495/536870912",
+      "target_minimum_scaled_coefficient": "1/536870912",
+      "binary64_conversion_exact": true,
+      "future_native_transport_audit_required": true
+    },
+    "controls_claimed_full_model_feasible": false,
+    "optimizer_calls": 0,
+    "eigendecompositions": 0
+  },
+  "all480_selectors_retained": true,
+  "fixed_zero_Z_orbits": 389,
+  "kernel_bounds": {
+    "plus": {
+      "Y": 13589544960,
+      "Z": 15904800768,
+      "all": 15904800768,
+      "x": 15577645056
+    },
+    "minus": {
+      "Y": 70390822993920,
+      "Z": 74489480085504,
+      "all": 109617346510848,
+      "x": 109617346510848
+    }
+  },
+  "selector_raw_bound": 37748736,
+  "kernel_reconstruction_performed": false,
+  "optimizer_calls": 0,
+  "eigendecompositions": 0,
+  "scope": "Necessary PSD directions for the global prism/F-free split18+18 component0 stratum; no point, exclusion or full-PSD claim."
+}

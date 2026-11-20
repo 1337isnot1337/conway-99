@@ -1,0 +1,27 @@
+In file included from /tmp/conway99-boost/usr/include/boost/multiprecision/number.hpp:29,
+                 from /tmp/conway99-boost/usr/include/boost/multiprecision/cpp_int.hpp:12,
+                 from experiments/workspace/mixed_spokes.cpp:11:
+/tmp/conway99-boost/usr/include/boost/container_hash/hash.hpp:131:33: warning: ‘template<class _Arg, class _Result> struct std::unary_function’ is deprecated [-Wdeprecated-declarations]
+  131 |         struct hash_base : std::unary_function<T, std::size_t> {};
+      |                                 ^~~~~~~~~~~~~~
+In file included from /usr/include/c++/14/string:49,
+                 from /usr/include/c++/14/bits/locale_classes.h:40,
+                 from /usr/include/c++/14/bits/ios_base.h:41,
+                 from /usr/include/c++/14/ios:44,
+                 from /usr/include/c++/14/ostream:40,
+                 from /usr/include/c++/14/iostream:41,
+                 from experiments/workspace/mixed_spokes.cpp:7:
+/usr/include/c++/14/bits/stl_function.h:117:12: note: declared here
+  117 |     struct unary_function
+      |            ^~~~~~~~~~~~~~
+mixed templates psd rank_pass quota rank nonsquare
+0 4 0 0 0 0 0
+2 0 0 0 0 0 0
+4 17 0 0 0 0 0
+6 68 8 0 0 0 0
+8 183 4 0 0 0 0
+10 354 1226 1 0 0 1
+12 980 825 2 2 0 0
+14 1686 432 2 2 0 0
+16 3224 488 0 0 0 0
+18 0 0 0 0 0 0

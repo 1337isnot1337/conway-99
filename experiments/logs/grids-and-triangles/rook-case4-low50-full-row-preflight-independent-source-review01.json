@@ -1,0 +1,53 @@
+{
+  "complete_source_lines_read": 418,
+  "complete_transport_lines_read": 246,
+  "concrete_blockers": [],
+  "configuration": {
+    "bytes": 12702,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low50-full-row-preflight-configuration01.json",
+    "sha256": "4b54ba63622e1a5d5121071983585707af6d6bae58fbb5b1158d6e7f22730b3a"
+  },
+  "configuration_input_source_control_hashes_rechecked": 17,
+  "controls_rerun": 0,
+  "existing_branch_cold": {
+    "bytes": 2820,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-run01/cold.json",
+    "sha256": "ea492ec530c512759b93d25afc6900a2468d1f221f75aac2eb39092bd8af73f3"
+  },
+  "existing_suffix_controls": {
+    "bytes": 806,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low50-full-row-stitch-controls01/report.json",
+    "sha256": "70417a0ad88afb536591600be79571d339482791cdbcfc352eac809f0811a086"
+  },
+  "full_matrix_loads": 0,
+  "limitations": [
+    "This is a source review of the frozen configuration and its accepted input receipts, not a new native preparation or an independent regeneration of the historical cover proofs.",
+    "A successful preparation establishes exact model transport and branch bounds only. It proves no additional branch exclusion and does not solve case 4 or the graph problem."
+  ],
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "review": [
+    "The frozen complete 166013-row base is followed by 1102 t-floor rows and the same six accepted registry rows. Every array prefix is compared by shape, dtype and raw-byte hash with the accepted 167121-row exact point matrix binding.",
+    "The six appended rows are the accepted 42-term capacity, 44-term strengthened capacity including two coefficients equal to 2, and four independently cold-checked pair nogoods. Original coordinates are mapped through the complete 1102-ID list.",
+    "The exact arithmetic is 166013+1102+6+6=167127 rows and 10769766+42+44+4*2=10769860 nonzeros. No old cover row is discarded.",
+    "The 50 branch records are exactly the hash-bound selected54 family after removing the four cold-certified exclusions. Each state is complete and its encoding and positive selected guard are checked.",
+    "All 1103 native column bounds are reset and read back for every branch. The artificial t column is fixed at zero throughout; all objective coefficients and objective offset are zero.",
+    "Signed integer coefficients and bounds are checked below 2^53 before float64 transport. The bounded native getter audit compares every row coefficient, column, pointer and endpoint, permitting only verified within-row ordering changes and the checked empty-row placeholder.",
+    "No source path calls a native run method. Native runtime zero and absence of a valid solution are checked. The accepted parent owner requires exit 0, reaping, no timeout, PASS status and elapsed preflight time at most 60 seconds under a 90-second owner.",
+    "The compressed output cache is written once to a fresh temporary filename and renamed. The declared disk reserve and raw-array payload accounting are explicit; actual native internal memory remains measured, not assumed."
+  ],
+  "reviewer": "master_review",
+  "schema": "conway99.rook-case4.low50-full-row-preflight-independent-source-review.v1",
+  "source": {
+    "bytes": 22652,
+    "path": "experiments/workspace/rook_case4_low50_full_row_preflight.py",
+    "sha256": "f994cf266882974325dd64c5516e639a5f54827f0a74f1813095661e84b80193"
+  },
+  "source_imports": 0,
+  "status": "PASS_SOURCE_BOUND_ZERO_SOLVE_PREFLIGHT_REVIEW",
+  "transport_source": {
+    "bytes": 11533,
+    "path": "experiments/workspace/rook_case4_full_native_transport.py",
+    "sha256": "70b08007e9d9cfc527731cb79ae4d35b6c634880c8096047246a4f056dcb4b86"
+  }
+}

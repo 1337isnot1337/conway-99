@@ -1,0 +1,60 @@
+{
+  "schema": "conway99.f0-core-matching-blossom-query-terminal-summary.v1",
+  "status": "UNKNOWN_NATIVE_BUDGET_OVERRUN",
+  "result": {
+    "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/result.json",
+    "sha256": "c7eebf3e0f2a64dbf6d9c69bfc6fccebdb063e9586327572506a74d2ce58d0f2"
+  },
+  "cold": {
+    "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01-cold/report.json",
+    "sha256": "4f02b48c97b52186b96ab0181a7b7aa1cc6169cf1d2431ec0e43e8b13dd4e433",
+    "status": "PASS: exact chronological lightweight terminal replay",
+    "owner_receipt_sha256": "5aec6bbf0b125de5598ef572b36f6433aca6903c3796fd3ddbad68962d21f8a5"
+  },
+  "preparation_sha256": "711705d98feaf8d3a9a361335d81b6a49e5ee1cf1408168af11969b8aef943b1",
+  "root_gate_sha256": "43d1235b238612965f5f763bfd1b4a81c22d0ec9b224a21a96f5c35238f53adb",
+  "frozen_model": {
+    "variables": 32296,
+    "target_constraints": 65811,
+    "initial_constraints": 65694,
+    "additional_blossom_rows": 6854,
+    "external_pool_rows": 117,
+    "initial_raw_sha256": "940e34316ed30532aee8c192947a7d69e54ccd7e9ebf8d85a3c4ada912a7331a",
+    "target_raw_sha256": "60de781b2b324c270bac9cec30c1adbc769631dc959c1a2e2414fbc5eef96ab6"
+  },
+  "outcome": {
+    "production_native_calls": 1,
+    "native_reported_status": "UNKNOWN",
+    "candidate_files": 0,
+    "provisional_full_target_calls": 0,
+    "appended_pool_rows": 0,
+    "cumulative_native_wall_seconds": 180.19452018599986,
+    "native_wall_limit_seconds": 180,
+    "native_budget_overrun_seconds": 0.19452018599986332,
+    "owner_seconds": 188.0800421840031,
+    "owner_limit_seconds": 300,
+    "owner_deadline_overrun_seconds": 0,
+    "cold_owner_seconds": 5.388631346999318,
+    "both_children_reaped": true,
+    "automatic_retry": false
+  },
+  "exact_scope": {
+    "all_native_records_and_complete_initial_prefix_cold_checked": true,
+    "terminal_status_preserved": true,
+    "count_feasibility_claimed": false,
+    "F0_excluded": false,
+    "literal_incidence_found": false,
+    "exterior_graph_found": false,
+    "no_production_vector_to_decode": true
+  },
+  "omitted_raw_duplicate": {
+    "path": "experiments/logs/root-prism-free/f0-core-matching-blossom-query-run01/call000/model.pb",
+    "bytes": 16955261,
+    "sha256": "940e34316ed30532aee8c192947a7d69e54ccd7e9ebf8d85a3c4ada912a7331a",
+    "retained_locally": true,
+    "archive_path": "experiments/logs/root-prism-free/f0-core-matching-blossom-native-overlay02/initial.pb.gz",
+    "archive_sha256": "1f633c70a669badb8d151a7696d744c194b8ed649b4a6f90a0ea7b8142efb7ee",
+    "archive_publication_map_git_blob": "513ee62dcfd67bf3f13bc138d14ff1b53e002bdb",
+    "lossless_restoration": "Decompress the already-published initial.pb.gz archive to the call000/model.pb path; the raw SHA-256 must match."
+  }
+}

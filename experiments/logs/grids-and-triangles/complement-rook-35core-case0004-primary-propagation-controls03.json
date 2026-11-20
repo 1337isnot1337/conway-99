@@ -1,0 +1,209 @@
+{
+  "status": "PASS: exact signed Boolean bounds, cover rules and reason-chain replay",
+  "source_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7",
+  "counts": {
+    "signed_row_partial_truth_assignments": 94500,
+    "guarded_cover_partial_truth_assignments": 2592
+  },
+  "satisfiable_chain": {
+    "status": "exact interval and guarded-cover fixed point",
+    "complete": true,
+    "records": [
+      {
+        "kind": "assignment",
+        "variable": 0,
+        "value": 0,
+        "forbidden_value": 1,
+        "origin": {
+          "family": "cover",
+          "id": 0
+        },
+        "prior_assignment_indices": []
+      },
+      {
+        "kind": "assignment",
+        "variable": 1,
+        "value": 1,
+        "forbidden_value": 0,
+        "conditional_minimum": 0,
+        "conditional_maximum": 0,
+        "original_minimum": 0,
+        "original_maximum": 1,
+        "origin": {
+          "family": "base_row",
+          "id": 0
+        },
+        "prior_assignment_indices": [
+          0
+        ]
+      },
+      {
+        "kind": "assignment",
+        "variable": 2,
+        "value": 0,
+        "forbidden_value": 1,
+        "conditional_minimum": 2,
+        "conditional_maximum": 2,
+        "original_minimum": 1,
+        "original_maximum": 2,
+        "origin": {
+          "family": "base_row",
+          "id": 1
+        },
+        "prior_assignment_indices": [
+          1
+        ]
+      },
+      {
+        "kind": "assignment",
+        "variable": 3,
+        "value": 0,
+        "forbidden_value": 1,
+        "origin": {
+          "family": "cover",
+          "id": 1
+        },
+        "prior_assignment_indices": [
+          2
+        ]
+      }
+    ],
+    "values": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "sweeps": 2
+  },
+  "inconsistent_chain": {
+    "status": "exact contradiction",
+    "complete": true,
+    "records": [
+      {
+        "kind": "assignment",
+        "variable": 0,
+        "value": 0,
+        "forbidden_value": 1,
+        "origin": {
+          "family": "cover",
+          "id": 0
+        },
+        "prior_assignment_indices": []
+      },
+      {
+        "kind": "assignment",
+        "variable": 1,
+        "value": 1,
+        "forbidden_value": 0,
+        "conditional_minimum": 0,
+        "conditional_maximum": 0,
+        "original_minimum": 0,
+        "original_maximum": 1,
+        "origin": {
+          "family": "base_row",
+          "id": 0
+        },
+        "prior_assignment_indices": [
+          0
+        ]
+      },
+      {
+        "kind": "assignment",
+        "variable": 2,
+        "value": 0,
+        "forbidden_value": 1,
+        "conditional_minimum": 2,
+        "conditional_maximum": 2,
+        "original_minimum": 1,
+        "original_maximum": 2,
+        "origin": {
+          "family": "base_row",
+          "id": 1
+        },
+        "prior_assignment_indices": [
+          1
+        ]
+      },
+      {
+        "kind": "assignment",
+        "variable": 3,
+        "value": 1,
+        "forbidden_value": 0,
+        "conditional_minimum": 0,
+        "conditional_maximum": 0,
+        "original_minimum": 0,
+        "original_maximum": 1,
+        "origin": {
+          "family": "base_row",
+          "id": 2
+        },
+        "prior_assignment_indices": []
+      },
+      {
+        "kind": "contradiction",
+        "origin": {
+          "family": "cover",
+          "id": 1
+        },
+        "prior_assignment_indices": [
+          2,
+          3
+        ]
+      }
+    ],
+    "values": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "sweeps": 1
+  },
+  "integer100_bit_control": {
+    "status": "exact interval and guarded-cover fixed point",
+    "complete": true,
+    "records": [
+      {
+        "kind": "assignment",
+        "variable": 0,
+        "value": 1,
+        "forbidden_value": 0,
+        "conditional_minimum": -633825300114114700748351602688,
+        "conditional_maximum": 0,
+        "original_minimum": -633825300114114700748351602688,
+        "original_maximum": 1267650600228229401496703205376,
+        "origin": {
+          "family": "base_row",
+          "id": 0
+        },
+        "prior_assignment_indices": []
+      },
+      {
+        "kind": "assignment",
+        "variable": 1,
+        "value": 0,
+        "forbidden_value": 1,
+        "conditional_minimum": 633825300114114700748351602688,
+        "conditional_maximum": 633825300114114700748351602688,
+        "original_minimum": 633825300114114700748351602688,
+        "original_maximum": 1267650600228229401496703205376,
+        "origin": {
+          "family": "base_row",
+          "id": 0
+        },
+        "prior_assignment_indices": [
+          0
+        ]
+      }
+    ],
+    "values": [
+      1,
+      0
+    ],
+    "sweeps": 2
+  },
+  "case4_closure_run": false,
+  "failed_literal_probing_run": false,
+  "solver_or_optimizer_called": false
+}

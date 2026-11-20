@@ -1,0 +1,117 @@
+{
+  "status": "UNKNOWN: no exact shared certificate before shared budget; unresolved",
+  "scope": "component0 first-incidence selections in globallyP=F=0 split18+18; second component and alignment unrestricted",
+  "result_sha256": "88c4858aa36aaf3af15f4b53ce41be5c1fee3d8f2c237a49e2df026f1228bd86",
+  "cold_replay_sha256": "95996661c85ce21aa4ac6af219a1e773d170b664170380ef7012deb78676ae98",
+  "final_formula": {
+    "primary_variables": 480,
+    "variables": 28308,
+    "clauses": 62334,
+    "literal_occurrences": 582612,
+    "base_variables": 28308,
+    "base_clauses": 56994,
+    "base_body_sha256": "04fb936521fb7cb9db7343ccb8abef31fcc38acc3e54dd7b9b626fd858757932",
+    "registered_individual_inequalities": 2640,
+    "registered_signed_inequalities": 276,
+    "explanation_clauses": 5340,
+    "new_auxiliary_variables": 0,
+    "all480_selectors_free": true,
+    "fixed_second_component_or_incidence": false,
+    "encoding": "necessary exact independent and population60 clause explanations only",
+    "registry_not_claimed_equivalent_to_finite_explanation_CNF": true
+  },
+  "final_cnf_sha256": "27e32a5d17bbad0b8101262b026d82fb8da82bed1ba13eb01b94fe64ebc42c1e",
+  "exact_counts": {
+    "checked_candidates": 81,
+    "registry_only_refinements": 19,
+    "row_passes": 62,
+    "exact_individual_obstructions": 121,
+    "exact_individual_boxes": 3599,
+    "exact_shared_rays": 8,
+    "exact_shared_points": 0
+  },
+  "shared_feasibility_calls": 9,
+  "bounded_fallback_calls": 0,
+  "elapsed_seconds": 182.69064599500052,
+  "cooperative_overall_overrun_seconds": 2.690645995000523,
+  "peak_rss_kib": 211152,
+  "all_raw_transcript_records": 253,
+  "raw_transcript_preserved_in_deterministic_archive": true,
+  "raw_CNF_committed": false,
+  "component_exclusion": false,
+  "fresh_proof_query_called": false,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_bounded_lazy_transcript_bundle.py",
+      "sha256": "65153e9dc7ba86c43d451a26abb8129b8deb9b1abdc5e8fc556ed6502f5a5fec",
+      "bytes": 9242
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-preparation-manifest.json",
+      "sha256": "6d84f312f216d2e2fe1b8d729fc9ca947af756f0162a400bebfce606b0e5378f",
+      "bytes": 5875
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-independent-source-review.json",
+      "sha256": "474ab0d43d10f5f3f1ba09424082b7005acddff3fa4270c1e2f891346fe82323",
+      "bytes": 2082
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-coordinator-review.json",
+      "sha256": "e58eaf65965d53d405f35c94e287e2c191075753db45f4dd04bf250d10744702",
+      "bytes": 2187
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01.log",
+      "sha256": "7bcaf4d041fd3e44ce3f509dffea5149dc89814e9bfb857ce7aaa12b2ae76193",
+      "bytes": 16423
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01-cold-replay.json",
+      "sha256": "95996661c85ce21aa4ac6af219a1e773d170b664170380ef7012deb78676ae98",
+      "bytes": 1375
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01-cold-replay.log",
+      "sha256": "95996661c85ce21aa4ac6af219a1e773d170b664170380ef7012deb78676ae98",
+      "bytes": 1375
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01-transcript.tar.gz",
+      "sha256": "17ab4829c18b94ce0e50ecf426b1ba211d127ae478fac7c310144699a32bc096",
+      "bytes": 4413940
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01-transcript-bundle.json",
+      "sha256": "6b7fdea075bd2f8ad6f580baa27e080e15843d4a939e81b59381fef1b243aff8",
+      "bytes": 60700
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01-bundle-build.json",
+      "sha256": "21ecfe878537c47b9429ccf257fc5287795bf1d8431eb50c8d4ab699f51dff09",
+      "bytes": 732
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01-bundle-build.log",
+      "sha256": "21ecfe878537c47b9429ccf257fc5287795bf1d8431eb50c8d4ab699f51dff09",
+      "bytes": 732
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01-bundle-replay.json",
+      "sha256": "6eda7f54db1017be87312acfcbae4bc41863d4a62ee07f867b7d99bbbcfd2f1c",
+      "bytes": 733
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-bounded-lazy-continuation-run01-bundle-replay.log",
+      "sha256": "6eda7f54db1017be87312acfcbae4bc41863d4a62ee07f867b7d99bbbcfd2f1c",
+      "bytes": 733
+    },
+    {
+      "path": "research/root_prism_free_f0_bounded_lazy_continuation_run01.md",
+      "sha256": "864fc901b2f831d25766d3bba13211b95595c6cb2c4bf2457902866e6c5b9200",
+      "bytes": 4804
+    }
+  ],
+  "file_count": 14,
+  "total_bytes": 4520933
+}

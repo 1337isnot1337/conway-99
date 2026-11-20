@@ -1,0 +1,12 @@
+{
+  "status": "CORRECTED before any optimizer: inherited previous99-row mapping count",
+  "old_source_sha256": "c370c674b1592d06dd0e4ea9bde45888e95171f849121c3c12b4f1ac9ac51ed7",
+  "new_source_sha256": "d06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7",
+  "old_preparation": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model01/preparation.json",
+  "scope": "The inherited field new_rows_without_previous_origin counted four old pair rows; H3 adds a fifth. All matrix terms/bounds, provenance, source inputs and current_row_to_previous data stay unchanged. Old source/model remain preserved and unqueried.",
+  "changes": [
+    "Set new_rows_without_previous_origin=5 in append metadata.",
+    "Check the actual five negative current_row_to_previous entries on load."
+  ],
+  "optimizer_calls": 0
+}

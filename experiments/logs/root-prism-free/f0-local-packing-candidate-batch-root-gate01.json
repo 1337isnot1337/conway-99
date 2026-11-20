@@ -1,0 +1,51 @@
+{
+  "all_models_rows_total": 2438,
+  "all_models_variables_total": 12698,
+  "authorized_once": {
+    "cold": "experiments/logs/root-prism-free/f0-local-packing-candidate-batch-run01-cold",
+    "run": "experiments/logs/root-prism-free/f0-local-packing-candidate-batch-run01"
+  },
+  "bindings": {
+    "configuration": {
+      "path": "experiments/logs/root-prism-free/f0-local-packing-candidate-batch-configuration01.json",
+      "sha256": "4c4b7861cb9fe4da7ceee4576c22e1dbe0273dd039d295f14f8ef18819e09abf"
+    },
+    "models": {
+      "path": "experiments/logs/root-prism-free/f0-local-packing-candidate-batch-preparation01/models.json",
+      "sha256": "c0b78a11f11268b50b0883fc2e48926ad2d60795b9060405931c3bd46fbd3e4b"
+    },
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-local-packing-candidate-batch-preparation01/report.json",
+      "sha256": "c0a87552d111c833cc5b993530490128338693d61cbefa8317f9db2d00250480"
+    },
+    "preparation_owner": {
+      "path": "experiments/logs/root-prism-free/f0-local-packing-candidate-batch-preparation01/owner.json",
+      "sha256": "d5e35baf3093762ed71dab58894e2b5ff892e294d5aabe3fc51b89a9731dd1a6"
+    },
+    "source": {
+      "path": "experiments/workspace/root_prism_free_f0_local_packing_candidate_batch.py",
+      "sha256": "d4b975f2a70b8a5ba4372c0cc226490e2ffb6962b8af25199d4686c5bd730472"
+    }
+  },
+  "limits": {
+    "cold_owner_seconds": 60,
+    "maximum_calls": 60,
+    "maximum_cumulative_native_seconds": 30,
+    "maximum_per_call_seconds": 1,
+    "owner_reserve_seconds": 5,
+    "run_owner_seconds": 60
+  },
+  "native_production_calls_in_this_review": 0,
+  "preparation_models": 60,
+  "review_findings": [
+    "The complete original68394-edge domain is reconstructed for every anchor; the prior178 context only provides unchanged literal data.",
+    "All60 anchors are the explicitly bound last incidence. Candidate selection chooses the numerical objective only; no selector premise enters any necessary cut.",
+    "At each anchor, the exact inequality follows from18 mixed equalities and153 nonnegative pair-capacity multipliers. Full eligible weights are recomputed with integer arithmetic.",
+    "Every retained base row and each actual core transport has strictly positive exact gap at its corresponding transported selection. Every integer row is retained independently of native status or numerical tolerances.",
+    "Separate cold checks saved models, all proposal records, rounding attempts, all full-domain coefficient contractions and all transported rows. Only an accepted cold owner exports certified rows.",
+    "Incomplete scans and native overrun retain explicit terminal meanings; no candidate, whole-component or local feasibility is inferred from failure to find a cut."
+  ],
+  "schema": "conway99.f0.local-packing-candidate-batch.root-source-gate.v1",
+  "source_lines_read": 439,
+  "status": "PASS_FULL_SOURCE_AND_MATHEMATICAL_REVIEW"
+}

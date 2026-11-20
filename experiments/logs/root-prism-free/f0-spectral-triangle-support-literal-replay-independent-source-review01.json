@@ -1,0 +1,91 @@
+{
+  "schema": "conway99.f0.spectral-triangle-support-literal-replay-independent-source-review.v1",
+  "status": "PASS_COMPLETE_SOURCE_METHOD_AND_ACTUAL_CONTROL_RECEIPT_REVIEW",
+  "reviewer": "/root/master_continuation",
+  "source": {
+    "path": "experiments/workspace/f0-spectral-triangle-support-independent-literal-replay-v8.js",
+    "git_blob": "6b0d0d02caed427df4cdab59ad3b3badae63a6ab",
+    "sha256": "456da9b26b97e71b574003230682dc0cff099ed10c6f394b8d0bef602d59d7c1",
+    "bytes": 22501
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-configuration01.json",
+    "git_blob": "a30827a02505adcf6ab27b3f0cccd37f783da0de",
+    "sha256": "8fda56ae53ce59ab0b252f6c3c955cc6855071c76aad6237cf71cffa8dc5caed",
+    "bytes": 5785
+  },
+  "actual_controls": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-controls01.json",
+    "git_blob": "1938646724951324cd4aa76662ce39293379bdaf",
+    "sha256": "f3f47a2871dc678dcea5ba03e34f7a630512c41255fb262806c174814dd41bb7",
+    "bytes": 655
+  },
+  "method": {
+    "path": "research/f0-spectral-triangle-support-independent-literal-replay.md",
+    "git_blob": "ea6e5bea0c8191609ba29f78007f1574326a8a85",
+    "sha256": "b94d8bf3689654404435f4bc08affefa8d7c7276d33f6631eb26cc9183d10fd2",
+    "bytes": 4805
+  },
+  "complete_290_source_lines_read": true,
+  "complete_configuration_method_and_controls_read": true,
+  "all_eleven_input_bindings_match_previously_verified_artifacts": true,
+  "no_forward_producer_import_or_call": true,
+  "independence_review": [
+    "Mixed quotas are independently reconstructed using literal set intersections with all 18 core-neighbor rows.",
+    "Eligible pairs are visited by descending larger endpoint and descending smaller endpoint, then sorted once into the canonical original ID order. All 480 neighbor lists and the complete 68394-edge hash are checked.",
+    "Supports are independently enumerated with the third vertex outermost through its literal disjoint-neighbor set, with each target anchored only at its smaller endpoint.",
+    "Every valid support is encountered and encountered once: both eligible side edges put its anchors in that third vertex's neighbor set, and the three literal signature-disjointness checks retain exactly the required triangles.",
+    "The constructor uses neither the saved support tables nor their counts to generate supports. It compares the complete independently generated lists afterward.",
+    "The author also wrote the forward implementation; that fact is explicitly disclosed. This is a separate complete peer source review, and the actual replay remains a separate gated run."
+  ],
+  "premise_and_completeness_review": [
+    "Every original literal-zero native index/variable/endpoint witness and every spectral-zero record is checked. The exact 1956-entry initial union preserves both origins of overlapping zeros.",
+    "All 132 conditional must-triangle targets, their original spectral indices and all 48 already-zero references are reconstructed from accepted premise lists.",
+    "Every one of the 10830 triangle records is bound by its complete accepted record-list hash, with literal endpoint and original eligibility checks. The determinant census is an accepted premise and is not rerun.",
+    "All 84 live-target tables are compared in full, including third selector, both original side-edge IDs and accepted cover index.",
+    "All surviving support indices are recomputed from accepted covers and the reconstructed zero set and compared exactly.",
+    "The complete terminal zero set, empty new-zero certificate/row list, one completed pass and every remaining target's nonempty live support are checked.",
+    "The required 6540 structural and 5364 surviving records are consistency assertions after complete reconstruction, not filters or truncation limits.",
+    "The complete normalized independent records receive a canonical value hash; the bound original ledger remains the explicit full-table artifact."
+  ],
+  "controls_review": {
+    "actual_status": "PASS_INDEPENDENT_LITERAL_SUPPORT_TINY_CONTROLS",
+    "systems": 6144,
+    "structural_records_compared": 6144,
+    "surviving_records_compared": 1880,
+    "quota_controls": 3,
+    "altered_ledger_rejections": 5,
+    "explicit_mutations": [
+      "omitted support",
+      "changed side-edge ID",
+      "changed cover index",
+      "omitted live index",
+      "omitted target table"
+    ],
+    "independent_scalar_small_graph_oracle": true,
+    "actual_case_main_calls": 0,
+    "controls_rerun_by_reviewer": false
+  },
+  "scope_review": [
+    "A pass establishes the exact recorded support fixed point and its complete literal universe.",
+    "A surviving support does not establish joint feasibility or a graph completion.",
+    "The later indicator native extension still needs exact row/variable reconstruction and independent complete native replay."
+  ],
+  "resource_review": {
+    "maximum_ms": 30000,
+    "maximum_report_bytes": 16777216,
+    "input_validation_and_report_serialization_in_measured_bound": true,
+    "required_report_status": "PASS_COMPLETE_INDEPENDENT_LITERAL_SUPPORT_REPLAY",
+    "required_finalization_status": "PASS_COMPLETE_LITERAL_REPLAY_AND_SERIALIZATION",
+    "complete_report_and_within_bounds_finalization_required": true,
+    "failures_and_overruns_are_unaccepted": true,
+    "no_automatic_retry": true
+  },
+  "concrete_blockers": [],
+  "reviewer_actual_case_main_calls": 0,
+  "reviewer_control_calls": 0,
+  "native_model_builds": 0,
+  "solver_calls": 0,
+  "actual_replay_execution_authorized_by_this_review": false,
+  "graph_or_component_exclusion_claimed": false
+}

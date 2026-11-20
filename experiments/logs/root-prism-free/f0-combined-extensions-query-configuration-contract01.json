@@ -1,0 +1,199 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-configuration-contract.v1",
+  "status": "SOURCE_FROZEN_ACTUAL_MODEL_BINDINGS_PENDING_NOT_RUNNABLE",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "source_reuse": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-explicit-source-reuse01.json",
+    "bytes": 28020,
+    "sha256": "a00fd7cc6c0d091355b3c8bbbb4df6ae0669d03054043afa2dc124f20b3cc843",
+    "git_blob": "b96ed25ce40ed051a5fe56897b07010796a22f82"
+  },
+  "expected_runtime_configuration_schema": "conway99.f0.combined-extensions-query-configuration.v1",
+  "fixed_configuration": {
+    "source_sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "variables": 80730,
+    "rows": 297470,
+    "limits": {
+      "solver_seconds": 600,
+      "native_allowance_seconds": 610,
+      "owner_seconds": 720,
+      "preparation_seconds": 60,
+      "preparation_owner_seconds": 75,
+      "finalization_reserve_seconds": 60
+    },
+    "parameters": {
+      "num_search_workers": 4,
+      "random_seed": 0,
+      "cp_model_presolve": true,
+      "cp_model_probing_level": 0,
+      "linearization_level": 0,
+      "symmetry_level": 0,
+      "max_time_in_seconds": 600,
+      "log_search_progress": true,
+      "log_to_stdout": true,
+      "log_to_response": true
+    },
+    "runtime": {
+      "cp_model_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+      "model_schema_sha256": "266b68151ffd6c9f5db22553442abd777031663d39e1cea649a8737f811d2eff",
+      "native_helper_sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735",
+      "ortools_version": "9.15.6755",
+      "parameter_schema_sha256": "644354522af4202900329fc55844364cf1bfa77333b7ceb98e9de4aa49036c52",
+      "protobuf_version": "6.33.6"
+    },
+    "sources": {
+      "base": {
+        "bytes": 15210,
+        "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+        "mode": "100644",
+        "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+        "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+      },
+      "supervisor": {
+        "bytes": 26760,
+        "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+        "mode": "100644",
+        "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+        "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+      },
+      "model_producer": {
+        "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+        "bytes": 38102,
+        "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+        "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b"
+      },
+      "model_cold": {
+        "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+        "bytes": 70788,
+        "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+        "git_blob": "be51ef6deca257d57b018c989d994804994004c1"
+      },
+      "model_ci": {
+        "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+        "bytes": 16246,
+        "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+        "git_blob": "06166151155be8a6cd46ec7a0b3e5989ed408dff"
+      }
+    },
+    "maximum_native_calls": 1,
+    "automatic_retries": 0,
+    "native_query_authorized_by_configuration_alone": false,
+    "separate_query_cold_required": true,
+    "native_INFEASIBLE_is_unproved": true,
+    "model_byte_changes_in_query": false,
+    "all_original_pair_caps_present_in_model": false,
+    "second_component_completion_present_in_model": false,
+    "candidate_format": "Plain JSON array of all80730 exact integers in accepted model order. Original selectors0..479 and eligible edges540..68933 retain their IDs; all inherited and new auxiliary domains are checked from the accepted protobuf.",
+    "feasible_vector_scope": "Only a witness for the complete combined exterior relaxation. All original selected-pair caps and a compatible second component are not certified by this query.",
+    "native_response_transport": "Preserve original UTF-8 native text and native primary/additional integer arrays before parsing. CpSolverResponse has no public binary-export method in the bound native wrapper; separately saved protobuf wire is reconstructed from that text."
+  },
+  "pending_runtime_fields": {
+    "model_raw_sha256": null,
+    "model_raw_bytes": null,
+    "inputs": {
+      "model": null,
+      "model_configuration": null,
+      "model_preparation": null,
+      "model_preparation_owner": null,
+      "model_cold": null,
+      "model_cold_owner": null,
+      "model_root_acceptance": null
+    }
+  },
+  "input_reference_contract": {
+    "required_fields": [
+      "path",
+      "sha256",
+      "bytes"
+    ],
+    "all_paths_within_repository": true,
+    "raw_model_identity_must_match_preparation_cold_and_root": true,
+    "compressed_archive_identity_must_match_preparation_and_cold_artifacts": true,
+    "all_owner_reports_bound_and_reaped_without_overrun": true
+  },
+  "acceptance_contract": {
+    "model_preparation": {
+      "schema": "conway99.f0.combined-extensions-native-preparation.v1",
+      "status": "PASS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_PREPARATION",
+      "worker_seconds": 120,
+      "owner_seconds": 135
+    },
+    "model_preparation_owner": {
+      "schema": "conway99.f0.combined-extensions-native-owner.v1",
+      "status": "PASS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_PREPARATION",
+      "mode": "prepare",
+      "report_accepted": true
+    },
+    "model_cold": {
+      "schema": "conway99.f0.combined-extensions-independent-cold.v1",
+      "status": "PASS_INDEPENDENT_COMPLETE_COMBINED_EXTENSIONS_NATIVE_MODEL",
+      "worker_seconds": 120,
+      "owner_seconds": 135
+    },
+    "model_cold_owner": {
+      "schema": "conway99.f0.combined-extensions-independent-ci-owner.v1",
+      "status": "OWNED_COMPLETE_COMBINED_EXTENSIONS_NATIVE_COLD_ACCEPTED",
+      "mode": "replay",
+      "report_accepted": true
+    },
+    "model_root_acceptance": {
+      "status": "ROOT_ACCEPTS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_MODEL_AND_INDEPENDENT_COLD",
+      "required_refs": [
+        "configuration",
+        "preparation",
+        "independent_cold",
+        "model_archive"
+      ],
+      "required_scalars": [
+        "model_raw_sha256",
+        "model_raw_bytes",
+        "variables",
+        "rows",
+        "optimizer_calls",
+        "native_query_authorized_by_this_receipt"
+      ]
+    },
+    "preflight_status": "PASS_COMBINED_EXTENSIONS_QUERY_PREFLIGHT",
+    "production_gate_status": "AUTHORIZE_ONE_COMBINED_EXTENSIONS_MODEL_QUERY",
+    "terminal_schema": "conway99.f0.combined-extensions-query-terminal.v1",
+    "owner_schema": "conway99.f0.combined-extensions-query-owner.v1",
+    "unknown_status": "UNKNOWN_COMBINED_EXTENSIONS_NATIVE",
+    "unproved_native_infeasible_status": "UNPROVED_NATIVE_INFEASIBLE",
+    "exact_vector_status": "EXACT_BOOLEAN_MODEL_VECTOR_AWAITING_INDEPENDENT_COLD",
+    "measured_native_overrun_status": "UNKNOWN_NATIVE_BUDGET_OVERRUN"
+  },
+  "inherited_output_files": [
+    "parameters.pbtxt",
+    "parameters.pb",
+    "parameter-schema.pb",
+    "model.pb",
+    "response-native.pbtxt",
+    "native-vectors.json",
+    "candidate.json",
+    "additional-candidate-NNN.json",
+    "response-stats.txt",
+    "response-reconstructed.pb",
+    "NAME-check.json",
+    "NAME-row-activities.json.gz",
+    "selection.json",
+    "selected-edges.json",
+    "result.json",
+    "owner.json",
+    "owned-start.json",
+    "owned-supervision.json",
+    "stages.json"
+  ],
+  "preflight_scope": "One zero-solve exact model/native transport; explicit parameter text/wire equality; pinned native response roundtrip controls; no CpSolver construction or solve.",
+  "production_gate_required_after_actual_preflight": true,
+  "independent_terminal_checker_written_by": "master_review",
+  "actual_control_runs": 0,
+  "actual_model_loads": 0,
+  "actual_preflight_calls": 0,
+  "actual_solver_calls": 0,
+  "current_model_changed": false
+}

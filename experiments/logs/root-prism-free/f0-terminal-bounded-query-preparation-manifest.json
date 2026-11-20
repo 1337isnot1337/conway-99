@@ -1,0 +1,61 @@
+{
+  "status": "frozen terminal bounded-only preparation and cold preflight; no query",
+  "scope": "one selected first incidence, second component and alignment unrestricted",
+  "parent_terminal_manifest_sha256": "fcdba71c12c9520d8d35fd3f519ec9478595006cd95dba5f3cb94dbc7f2d600a",
+  "source_sha256": "104d9c16fb7ad85f7f6d1dd80f23d8f559c9e584f24ba97a82f3ebe366767df6",
+  "preparation_sha256": "df2798c914ad99066d14f9e0902a90b080944e068bd8e859e7caf1450dececde",
+  "cold_preflight_sha256": "b53fa6e098ed42870dd79223ed91f8bbf61c8c5308215aca398a0c7117441adb",
+  "model": {
+    "capacity_variables": 1226,
+    "inequality_rows": 1226,
+    "model_sha256": "ffd339dad0efd917a684510643187ce899b587f47bad2890db484ab8a3643ec3",
+    "nonzeros": 8582,
+    "potential_variables": 1080,
+    "specification_sha256": "e66d36e5dfb3838f753f781f179764e921f6d2488915008c27be4e19a6c1ddad",
+    "variables": 2306
+  },
+  "candidate_sha256": "b37dc1249c9b38337a1692328cabde2c4499bdab26a16ec8a373a16ea0d560f0",
+  "original_feasibility_query_will_not_be_repeated": true,
+  "query_limits": {
+    "calls": 1,
+    "seconds_including_setup": 60,
+    "threads": 1,
+    "optimizer": "simplex"
+  },
+  "strict_exact_support_gap_required": true,
+  "component_exclusion": false,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_terminal_bounded_query.py",
+      "sha256": "104d9c16fb7ad85f7f6d1dd80f23d8f559c9e584f24ba97a82f3ebe366767df6",
+      "bytes": 13743
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-terminal-bounded-query-preparation.json.gz",
+      "sha256": "df2798c914ad99066d14f9e0902a90b080944e068bd8e859e7caf1450dececde",
+      "bytes": 40643
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-terminal-bounded-query-preparation.log",
+      "sha256": "75ac2e84c413cb972dc02644cb2d11834bffb13727747f3cf483b62cd8743b80",
+      "bytes": 2395
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-terminal-bounded-query-preflight.json",
+      "sha256": "b53fa6e098ed42870dd79223ed91f8bbf61c8c5308215aca398a0c7117441adb",
+      "bytes": 485
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-terminal-bounded-query-preflight.log",
+      "sha256": "b53fa6e098ed42870dd79223ed91f8bbf61c8c5308215aca398a0c7117441adb",
+      "bytes": 485
+    },
+    {
+      "path": "research/root_prism_free_f0_terminal_bounded_query.md",
+      "sha256": "3432f82459014fb3872233801fd2c708596902c3c1c72f6fc431d476e4639e64",
+      "bytes": 3598
+    }
+  ],
+  "file_count": 6,
+  "total_bytes": 61349
+}

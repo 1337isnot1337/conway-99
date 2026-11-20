@@ -1,0 +1,70 @@
+{
+  "schema": "conway99.rook.h5-full-row-propagation.kernel-source-review.v1",
+  "status": "PASS: focused propagation-kernel source and mathematical review",
+  "reviewer": "literature_obstructions",
+  "subject_path": "experiments/workspace/rook_case4_full_span_cover_h5_full_rows.py",
+  "subject_sha256": "ffc1f52e9de9a224fc730fdb2b1cc9a555ecfc54da31411ab203989d5aef45f5",
+  "reviewed_complete_bodies": [
+    "literal_bounds",
+    "Pool",
+    "propagate",
+    "verify_record"
+  ],
+  "additional_context_read": [
+    "native_rows",
+    "matrix",
+    "terminal_bad"
+  ],
+  "kernel_bindings": {
+    "literal_bounds": {
+      "source_sha256": "d0b6952a901a254b7020e3c93db5e11b17dc4498698aa3ce47e608ceb74310f5",
+      "ast_sha256": "f9a6f78d525c5e9dc976795770f8062151d466ed2e9c92751a0002bf151fa331",
+      "verbatim_original_review_matches_current": true
+    },
+    "Pool": {
+      "source_sha256": "3f22d69c9381c62b61b3f7b5df6aeab46966812f88886c8cb8606439578f721d",
+      "ast_sha256": "817dbe6cd05b2fbb7e57f27d5d4fd676d358be7739c3115d44faed2265cc6fce",
+      "verbatim_original_review_matches_current": true
+    },
+    "propagate": {
+      "source_sha256": "b1f61c2b511c9667292183725190561730cb6ac8de7605b0da13ae78b5617c6e",
+      "ast_sha256": "b59de77f66e32f6ba77066c7047aecb097e98aad511d7d6f471b5f510c7de479",
+      "verbatim_original_review_matches_current": true
+    },
+    "verify_record": {
+      "source_sha256": "c54af9eb36c5f4401f904ae569ff80054b217c1f64fa8f60fd811b77efb22b06",
+      "ast_sha256": "5741dd9e922b64dd9c4be0b8ee268c37cc2e8fe230afd5962ad7de2dab087834",
+      "verbatim_original_review_matches_current": true
+    }
+  },
+  "later_loader_revision": {
+    "observed_sha256": "4f9c7ee3f4bbc7f971278fcfe8c879d5290f18fa5d35897a25073dd96d5d2b40",
+    "reviewed_kernel_bodies_verbatim_unchanged": true,
+    "new_input_registry_and_proof_loader_reviewed": false,
+    "final_whole_driver_gate_claimed": false
+  },
+  "conclusions": [
+    "For the checked integer arrays and Boolean-box states, literal_bounds computes exact signed row minima/maxima; an override fixes only the named variable.",
+    "The Python-integer global bound nnz*maximum_coefficient + maximum_endpoint + maximum_coefficient <2^62 is established before the int64 reductions, absolute values, updates and endpoint gaps.",
+    "Nonempty-row start indices give correct reduceat extrema and maximum coefficients even when CSR contains empty rows; empty rows retain exact zero activity and are still checked for contradiction.",
+    "Strictly increasing columns within every row imply that each variable's CSC slice touches any affected row once. Therefore NumPy indexed increments cannot silently lose repeated updates.",
+    "Fixing a previously free variable updates its old min/max contribution to c*value exactly and decreases every affected free count once.",
+    "A row can exclude a value of a free bit only if one current endpoint gap is smaller than that coefficient's absolute value. The relevance filter uses at least that value, so it may include extra rows but cannot omit a forcing row.",
+    "The initial queue includes every potentially forcing row. After a force, every changed row is reconsidered, including the popped row. Unchanged rows cannot acquire a new force; pending flags suppress duplicates without losing updates.",
+    "Python-integer cold reasons prove each rejected opposite value directly. A claimed contradiction is checked from exact final intervals or both Boolean branches.",
+    "A claimed fixed point rechecks all row contradictions and every free bit in every potentially forcing row; a partial record certifies only its saved forced-literal prefix.",
+    "The result remains a local propagation statement under its separately bound initial assumptions, not a Boolean feasibility or global branch-exclusion claim without the declared checked contradiction."
+  ],
+  "limitations": [
+    "The full mutable premise loader, final active-cycle registry and supervisor are outside this focused review.",
+    "The final driver must bind the exact unchanged kernel bodies and its own input/registry proofs.",
+    "The integer input-array and -1/0/1 state preconditions belong to the bound loader; this review does not treat Pool as a parser for arbitrary malformed NumPy values."
+  ],
+  "execution": {
+    "subject_imported": false,
+    "controls_repeated": false,
+    "matrix_rebuilt": false,
+    "propagation_run": false,
+    "optimizer_calls": 0
+  }
+}

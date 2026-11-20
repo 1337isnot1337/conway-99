@@ -1,0 +1,50 @@
+{
+  "schema": "conway99.f0.four-exterior-cross-quota-certificate-replay-source-review.v1",
+  "status": "PASS_COMPLETE_ARTIFACT_REPLAY_SOURCE_REVIEW",
+  "reviewer": "master_continuation",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_certificate_replay_v8.js",
+    "bytes": 7923,
+    "sha256": "58d99a56edda4e92a967c2a1fafd9ec768f56232dabf98208d4826fb8116a219",
+    "git_blob_sha": "29b6da7ef5b763b33cd26628180608c460487c2a"
+  },
+  "complete_source_lines_read": 116,
+  "source_sha256_verified": true,
+  "inline_controls_read": true,
+  "inline_controls_executed_by_reviewer": false,
+  "actual_separate_controls_receipt_read": false,
+  "configuration_or_execution_wrapper_read": false,
+  "verify_executed_by_reviewer": false,
+  "report_under_review": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01.json",
+    "bytes": 10809436,
+    "sha256": "7e9df6f8798483bbe4be386f857b8997dffd08dd409080c258fde2b9bcbbfb22",
+    "git_blob_sha": "b41abfd71d80c163a6180f6ab5276bfbed1a9e2e"
+  },
+  "report_finalization": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01-finalization.json",
+    "bytes": 2856,
+    "sha256": "88fcdf559e197a221c3983e574423d945d35bb3dd6a502b67b566f5ede2d29bb",
+    "git_blob_sha": "7112bb771b656c79df81a145995306f0675fdac0"
+  },
+  "mathematical_checks": [
+    "The full original ordered row-key digest is required before any certificate classification is accepted.",
+    "The checker reconstructs all mixed quotas from the accepted core and signatures, and binds the original eligible-edge order by its accepted digest.",
+    "It uses center-neighbor traversal to rebuild each complete live star, independently of the producer's core-pair/shared-support enumeration.",
+    "Each saved case has the required orientation, core-pair premise, actual quotas and strict original order. Every live row has exactly one ordered origin, as forced by the accepted complete counts.",
+    "Expected recipe flags are derived from actual cross quotas. Each promised side must have exactly one saved certificate, and no extra side is accepted.",
+    "The sparse checker accumulates every coefficient from both original mixed equations, including shared edge multiplicity, then subtracts every target coefficient.",
+    "All selector and auxiliary-variable residuals must vanish; every edge residual must be nonnegative. Therefore the original target upper inequality follows by subtracting nonnegative edge terms from the two equalities.",
+    "Every saved row mask and every retained row ID is compared with the independently reconstructed complete certificate coverage. No row lacking a sufficient recipe is claimed nonredundant.",
+    "The five inline controls detect absent target support, wrong selector multiplier, wrong selector name and excessive target multiplicity, and verify accumulation of a repeated source-edge coefficient."
+  ],
+  "scope_and_required_outer_bindings": [
+    "verify accepts decoded objects; root's execution configuration must bind the exact report, successful finalization, domain, overlay, accepted parent model cold, checker and codec before calling it.",
+    "This review concerns source correctness. No artifact replay, deletion acceptance, native model construction or optimizer call was performed here.",
+    "The report field unproved_nonredundancy_of_retained_rows=false is read as no nonredundancy claim; retained rows are only those not covered by these two sufficient recipes."
+  ],
+  "concrete_blockers": [],
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "refs_updated": false
+}

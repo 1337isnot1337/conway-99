@@ -1,0 +1,53 @@
+{
+  "status": "FROZEN_REFINED_AND_INTEGER_FILTER_RECOVERY_SUPPORT_ADDENDUM",
+  "original_recovery_manifest_git_blob": "51dc549a4bb467af2589a2877c98c3ca4972f210",
+  "reason": "The standalone integer-filter replay requires its frozen preparation JSON. This addendum also preserves the original preparation/scan/replay logs and both coordinator gates.",
+  "restored_checkout_files": [
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-integer-filter-coordinator-review.json",
+      "sha256": "f7c0385f641a0e4541b1891689fa706e4124eaa544fb8a99026efd4497d8b769",
+      "bytes": 1052
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-integer-filter-manifest.json",
+      "sha256": "74ae9f0f8d565309d8608125cc5911c57efe41213b1efc3c6f44f0725d8dc4e0",
+      "bytes": 2226
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-integer-filter-preparation.json",
+      "sha256": "2c0a029e556b1e933d674b1236e405d127a3fffd35553223a876370befd5c141",
+      "bytes": 12300
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-integer-filter-preparation.log",
+      "sha256": "dbade070f185a330585ad69ecf78614335f3998b65347ec255c3884ab0f9ff95",
+      "bytes": 2208
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-integer-filter-scan01-replay.log",
+      "sha256": "9a7c1bdd12fb98f2feaea3e7e84ecfaafa842f7f68207c1226024356d870d9a0",
+      "bytes": 633
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-integer-filter-scan01.log",
+      "sha256": "f1eecb43d2b6d5e1006c4a25962e823bfb3efc66d72c404cf87749635f2c3206",
+      "bytes": 1659
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-refined-query-coordinator-review.json",
+      "sha256": "dca5a7ecef42c38e382f8001cd72892615560f0b959fb70f7dacef5d21f6c262",
+      "bytes": 1158
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-high-graph-refined-query-preparation.log",
+      "sha256": "1be4f04be81df38f04622c7fcf6ac087951b07acdccb9b9678812d4e0cf2bcf4",
+      "bytes": 11504
+    }
+  ],
+  "original_filter_result_sha256": "fc3de0d243afe6ad6130afc8be1c8d19d27cedec310a7f472c3307d579952157",
+  "original_filter_preparation_sha256": "2c0a029e556b1e933d674b1236e405d127a3fffd35553223a876370befd5c141",
+  "existing_manifest_modified": false,
+  "optimizer_called": false,
+  "domain_rebuilt": false,
+  "staging_policy": "Copy only absent destination files after checking all source and existing destination hashes; never overwrite a differing existing file."
+}

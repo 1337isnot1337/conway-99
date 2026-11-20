@@ -1,0 +1,178 @@
+{
+  "schema": "conway99.f0.recorded-triangle-spectral-gap-independent-literal-source-contract.v1",
+  "status": "FROZEN_SOURCE_AND_INPUT_PREPARATION_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_spectral_gap_replay_v8.js",
+    "bytes": 26731,
+    "sha256": "e9d66efc24f9f97600ec8155390c554aad066e8d25b54e7e9469a677da4fc129",
+    "git_blob_sha": "88f3061a75fe2aa872e2fb03e0c3af25bd2d81f4",
+    "lines": 406
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-configuration01.json",
+    "bytes": 9088,
+    "sha256": "d5ca57ef44ff64664d7c48a3b2b75ef3a4d3a8debff0f59d5c7aa1f689e3f0fb",
+    "git_blob_sha": "b0746cd47101cfbd70c4ca532d5d83de90c3e43a"
+  },
+  "owner_source": {
+    "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_spectral_gap_replay_owner_v8.js",
+    "bytes": 7666,
+    "sha256": "d21c2aa79f43bd4b52f4cbf6990e5ef4e18ac4e1075b0434cdc91b2fb7ddbe6b",
+    "git_blob_sha": "0ab4d687fcf9917306df3bdbcad9e4f87fc72851",
+    "lines": 117
+  },
+  "entry": {
+    "worker": "eval(sourceText).replay(payload, configurationText, sourceText, codecText, C)",
+    "owner": "eval(ownerSourceText).run(args, C, preserve)",
+    "args": [
+      "source_text",
+      "configuration_text",
+      "codec_text",
+      "wrapper_text",
+      "payload",
+      "gate_text",
+      "gate_ref",
+      "peer_review_text",
+      "peer_review_ref"
+    ],
+    "preserve_callback": "Preserve exact report/finalization/owner strings under distinct fresh store keys. Do not parse and reserialize publication bytes. Refuse overwriting a prior attempt.",
+    "one_worker_invocation": true,
+    "automatic_retries": 0
+  },
+  "gate": {
+    "schema": "conway99.f0.recorded-triangle-spectral-gap-independent-literal-root-gate.v1",
+    "status": "AUTHORIZE_ONE_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_GAP_LITERAL_REPLAY",
+    "required_refs": [
+      "source",
+      "configuration",
+      "codec",
+      "wrapper_source",
+      "peer_review"
+    ],
+    "exact_worker_invocations": 1,
+    "automatic_retries": 0,
+    "optimizer_calls": 0,
+    "native_model_changes_authorized": false,
+    "limits": {
+      "worker_milliseconds": 30000,
+      "outer_milliseconds": 45000,
+      "maximum_report_bytes": 65536,
+      "automatic_retries": 0
+    }
+  },
+  "report": {
+    "schema": "conway99.f0.recorded-triangle-spectral-gap-independent-literal-replay.v1",
+    "status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_GAP_LITERAL_REPLAY",
+    "complete": true,
+    "records_verified": 5364,
+    "failed_count": 3156,
+    "all_5364_records_independently_verified": true,
+    "all_seven_minors_per_record_independently_recomputed": true,
+    "complete_triangle_origins_and_target_incidence_checked": true,
+    "all_proposed_zero_and_cover_rows_checked": true,
+    "retained_arrays": [
+      "failed_triangle_indices"
+    ],
+    "hash_fields": [
+      "failed_triangle_indices_sha256",
+      "complete_record_value_sha256",
+      "proposed_indicator_zero_row_keys_sha256",
+      "proposed_triangle_cover_row_keys_sha256"
+    ],
+    "reference_fields": [
+      "source",
+      "configuration",
+      "forward_report",
+      "forward_finalization",
+      "forward_owner",
+      "forward_gate",
+      "input_bindings"
+    ],
+    "sorted_failed_triangle_indices": true,
+    "principal_minors_recomputed": 37548,
+    "target_tables_checked": 84,
+    "original_edges_checked": 68394,
+    "saved_neighbor_rows_checked": 480,
+    "accepted_indicator_start": 71382,
+    "accepted_indicator_count": 5364,
+    "forward_source_imported_or_executed": false,
+    "optimizer_calls": 0,
+    "native_imports": 0,
+    "new_domain_censuses": 0,
+    "graph_constructed": false,
+    "whole_component_excluded": false
+  },
+  "finalization": {
+    "schema": "conway99.f0.recorded-triangle-spectral-gap-independent-literal-finalization.v1",
+    "status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_GAP_REPLAY_AND_FINALIZATION",
+    "accepted": true,
+    "within_declared_bounds": true,
+    "report_complete": true,
+    "required_fields": [
+      "report_sha256",
+      "report_bytes",
+      "elapsed_through_report_hash_ms",
+      "maximum_ms",
+      "maximum_report_bytes",
+      "automatic_retries"
+    ],
+    "maximum_ms": 30000,
+    "maximum_report_bytes": 65536
+  },
+  "owner": {
+    "schema": "conway99.f0.recorded-triangle-spectral-gap-independent-literal-owner.v1",
+    "status": "OWNED_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_GAP_LITERAL_REPLAY_ACCEPTED",
+    "mode": "replay",
+    "accepted": true,
+    "report_accepted": true,
+    "worker_invocations": 1,
+    "worker_returned": true,
+    "complete_case_records": 5364,
+    "failed_count": 3156,
+    "worker_maximum_ms": 30000,
+    "outer_maximum_ms": 45000,
+    "exact_return_texts_preserved_before_publication": true,
+    "outer_started_before_factory_evaluation": true,
+    "OS_child_constructed": false,
+    "hard_OS_preemption_claimed": false,
+    "reference_fields": [
+      "source",
+      "configuration",
+      "root_gate",
+      "independent_source_review",
+      "wrapper_source",
+      "report",
+      "finalization",
+      "forward_report",
+      "forward_finalization",
+      "forward_owner"
+    ],
+    "elapsed_fields": [
+      "worker_elapsed_through_report_hash_ms",
+      "outer_elapsed_ms",
+      "outer_elapsed_through_first_owner_serialization_ms",
+      "texts_preserved_at_elapsed_ms"
+    ]
+  },
+  "prepared_inputs": {
+    "all17retrieved": true,
+    "all_saved_raw_or_archive_byte_identities_checked": true,
+    "compressed_inputs_decompressed_during_preparation": false,
+    "no_case_or_minor_arithmetic_performed": true
+  },
+  "controls": {
+    "exact_fixtures": 7,
+    "known_principal_minors": 49,
+    "simultaneous_relabeling_determinants": 42,
+    "prepared_but_unrun": true
+  },
+  "scope": {
+    "case_or_control_calls": 0,
+    "source_factory_evaluations": 0,
+    "native_model_builds": 0,
+    "optimizer_calls": 0,
+    "existing_native_model_changed": false,
+    "actual_case_slot_waiting_for_root_gate": true,
+    "passing_minor_test_does_not_establish_graph_feasibility": true
+  }
+}

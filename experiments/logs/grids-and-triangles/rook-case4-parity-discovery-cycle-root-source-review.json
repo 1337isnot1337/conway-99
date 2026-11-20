@@ -1,0 +1,37 @@
+{
+  "status": "PASS: full discovery/controller source review; one bounded continuation permitted",
+  "reviewer": "root",
+  "bindings": {
+    "discovery": {
+      "path": "experiments/workspace/rook_case4_parity_discovery.py",
+      "sha256": "672c5b5916ad823d7c89d566a68a49e3cf42f3a75e76d9144542cf4fe8a63bd7"
+    },
+    "controller": {
+      "path": "experiments/workspace/rook_case4_parity_discovery_cycle.py",
+      "sha256": "e697242576e83721481b171826a32bf57506e1204ff09659b8faefd2d6da261e"
+    },
+    "preparation": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-preparation01.json",
+      "sha256": "049f6a466ae3aff21900b1e16c7efe58f564d3cfdc592d9d465a1616714acc3c"
+    },
+    "preflight": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-preflight01.json",
+      "sha256": "c845fc38b06ec7131045f01318032591f229eca6d3b2e00fa346c5869adf9d92"
+    }
+  },
+  "checks": [
+    "The seed registry admits exactly the two separately replayed Gram cover proofs and preserves the original167115-row matrix prefix.",
+    "The numerical, exact-basis, full-point and arithmetic-cold functions are imported unchanged from reviewed v4, with every old source and runtime binding preserved.",
+    "The new envelope enforces two LP rounds, two fresh-point discoveries, six total added cuts and120 cumulative native seconds without mutating the imported globals.",
+    "Exact forbidden-distance screening agrees with literal controls. It guides discovery only; every accepted cut has a separate full original-Gram proof check.",
+    "Discovery stops after two complete cuts or45 cooperative seconds, with a60-second owner. Atomic cut records may be checked after an incomplete prefix. No exhaustion claim is made.",
+    "The independent per-record proof stage reads no RREF basis or evaluation transcript. It rebuilds the witness identity and positive point deficit on the112-zero face.",
+    "Only a cold-checked exact point can start the next discovery. Point keys prevent repeated-point work.",
+    "The latest point is bound to its accepted registry prefix; later rejecting cuts are recorded separately and never misrepresented as satisfied by that point.",
+    "Every optimizer result remains provisional until the unchanged full exact point or finite-box certificate checks pass. A case certificate does not settle the unrestricted graph problem.",
+    "Stage owners and a900-second whole-process-group guard preserve partial/error artifacts without retry."
+  ],
+  "source_review_only": true,
+  "new_optimizer_calls": 0,
+  "scope": "One append-only rook case-four continuation; no presumption of a Boolean incidence or global exclusion."
+}

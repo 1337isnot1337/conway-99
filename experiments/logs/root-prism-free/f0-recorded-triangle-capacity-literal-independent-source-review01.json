@@ -1,0 +1,86 @@
+{
+  "schema": "conway99.f0.recorded-triangle-capacity-literal-independent-source-review.v1",
+  "status": "PASS_COMPLETE_LITERAL_VERIFIER_SOURCE_AND_CONFIGURATION_REVIEW_UNRUN",
+  "reviewer": "master_review",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_capacity_literal_v8.js",
+    "bytes": 15720,
+    "sha256": "5cb224ef1a544eb23cc61d4d6a1a72e5266514c2483c26449945ab83abb9e615",
+    "git_blob": "4b04412df88f9e70565b4334eb6a5ea7d52a6f57",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-configuration01.json",
+    "bytes": 5028,
+    "sha256": "3a0b1987b52465d123eb2f580e6b5f9ff186bc3ba90eccdab801b26012d4f353",
+    "git_blob": "1551646157c02d4b5beba4b0fe1b51cbe4f5d9d7"
+  },
+  "complete_source_lines_read": 203,
+  "complete_configuration_read": true,
+  "mathematical_review": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-independent-source-review01.json",
+    "bytes": 8026,
+    "sha256": "ebc4e422b5283d3070425f70875fd59f49ed57ef50800fcc5a24f57d954cae1b",
+    "git_blob": "aeff91a3a8f7f23c3684a7f80e2fd6d1b1d332b7",
+    "mode": "100644"
+  },
+  "exact_actual_small_schemas_checked": {
+    "triangle_literal_root_sha256": "9d4e3a9b44a2140d95091425a346396ed84dd8d9d88f3a4e7fa3e67d47cd51d4",
+    "complete_literal_triangle_supports_accepted_for_future_native_preparation": true,
+    "row_descriptor_sha256": "0599b49e238d17186ffc112cc8f8d581880a13c2c5407bd7a52ad566433368e1",
+    "row_descriptor_actual_status": "SAVED_COMPLETE_ROW_KEY_DIGESTS_FROM_UNACCEPTED_METADATA_OVERRUN",
+    "failed_owner_sha256": "958f6ac9c21c103bfa663be687bbfde492858e7b4a62532886ca6daeb0e663d3",
+    "failed_finalization_sha256": "aa3eb24fa0b711cc751b31f299ccaf5f50302b134486b15a7f1cde9fb0ecc27c",
+    "failed_owner_and_finalization_preserved_without_waiver": true
+  },
+  "source_findings": [
+    "Source, codec and every input are bound by exact byte count, SHA256 and Git blob; compressed inputs also have exact decompressed raw hashes. The configured parent is the actually accepted80730-variable/297470-row model.",
+    "All480 saved neighbor lists are independently checked for order, uniqueness and reciprocity; their complete68394-edge lexicographic namespace must match the accepted edge-list hash. This replays saved metadata and does not enumerate new eligible signatures or triangles.",
+    "All5364 saved triangle records are checked for distinct sorted vertices, accepted original edge IDs, pairwise signature disjointness, unique target origins and complete ordered incidence. All84 target sets must match the independently derived edge incidence.",
+    "The verifier reconstructs every6300 full incidence record, including every native AND-upper index and exact target/singleton/proposed disposition. Exact value comparison covers the complete saved edge table.",
+    "Every2904 side row and420 local row is independently derived in declared order and compared with complete literal origins. It checks every60 empty local disposition and all3324 ordered exact integer keys with sorted distinct variables.",
+    "The7 digests cover the complete combined/side/local key arrays, complete edge-incidence array, side/local origin arrays and empty local list. The descriptor's4 supplied digests are checked; all7 are retained in the new report.",
+    "No redundancy certificate is trusted or repeated. Every proposal remains in scope regardless of Boolean implication classification. The old failed execution remains unaccepted; any successful result concerns this separate complete literal comparison only.",
+    "All key arithmetic uses small exact safe integers; bit operations touch only the accepted21-core namespace. Equality of structured records is canonical by sorted object keys; preserved digest conventions explicitly use JSON.stringify and the reviewed constructor field order."
+  ],
+  "report_contract": {
+    "schema": "conway99.f0.recorded-triangle-capacity-literal-replay.v1",
+    "status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_CAPACITY_ROWS",
+    "finalization_status": "PASS_COMPLETE_SERIALIZATION_WITHIN_DECLARED_BOUND",
+    "expected_counts": {
+      "saved_neighbor_rows": 480,
+      "original_edges": 68394,
+      "triangles": 5364,
+      "edge_incidences": 6300,
+      "target_equalities": 84,
+      "singleton_ANDs": 3312,
+      "side_rows": 2904,
+      "local_rows": 420,
+      "empty_locals": 60,
+      "appended_rows": 3324,
+      "appended_terms": 26832,
+      "resulting_rows": 300794
+    },
+    "original_failed_producer_remains_unaccepted": true,
+    "independent_complete_native_replay_still_required": true
+  },
+  "execution_qualification": {
+    "total_source_milliseconds_including_bindings_report_hash_and_serialization": 30000,
+    "outer_owner_milliseconds": 45000,
+    "maximum_report_bytes": 65536,
+    "root_gate_required_before_one_call": true,
+    "automatic_retry_authorized": false,
+    "codec_object_must_be_created_from_the_same_bound_codec_text": true,
+    "final_success_requires_complete_source_return_and_preserved_exact_report_and_finalization_texts": true
+  },
+  "execution_in_this_review": {
+    "source_factory_evaluated": false,
+    "verifier_run_calls": 0,
+    "producer_run_calls": 0,
+    "census_calls": 0,
+    "protobuf_model_decodes": 0,
+    "native_model_builds": 0,
+    "optimizer_calls": 0
+  },
+  "blockers": []
+}

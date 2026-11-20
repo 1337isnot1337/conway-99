@@ -1,0 +1,37 @@
+{
+  "status": "UNKNOWN; complete component0 pair remains unresolved",
+  "source_sha256": "5e7e3f39eb0a1e79892fdb7db5f356e723e749fc72280134b8de728d90dcf6f1",
+  "build_source_sha256": "071a6118501cf2ba6306c94ea3cf481b1949dcfdabcc66322d2f6ba4d2d4accc",
+  "model": "experiments/logs/root-prism-free/f0-pair-gram-built-model.json",
+  "model_sha256": "a87cac772964ec5af7415f327f0a2f52713ac9ca87767c1ae7b3ac0db2fa0728",
+  "cnf_sha256": "31a59090b935889b97515d20f5d03cdb02f5fc9b33a321ea30ded8b20c16b4b8",
+  "query_seconds_including_bootstrap": 180.0,
+  "proof_stage_hard_seconds_each": 120,
+  "solver": "glucose4",
+  "proof_enabled": true,
+  "assumptions": [],
+  "fixed_incidence_designs": false,
+  "graph_symmetry_constraints": false,
+  "full_graph_completion": false,
+  "complete_component_pair_excluded": false,
+  "elapsed_seconds": 181.917247278001,
+  "peak_process_rss_kib": 557360,
+  "bootstrap": {
+    "complete": true,
+    "clauses_loaded": 3173640,
+    "cnf_sha256": "31a59090b935889b97515d20f5d03cdb02f5fc9b33a321ea30ded8b20c16b4b8",
+    "budget_expired_during_bootstrap": false
+  },
+  "bootstrap_seconds": 10.361146658000507,
+  "solver_return_seconds": 181.3320384079998,
+  "cooperative_overrun_seconds": 1.3320384079997893,
+  "interrupt_callback_elapsed_seconds": [
+    180.00282778499968
+  ],
+  "solver_statistics": {
+    "restarts": 430,
+    "conflicts": 124029,
+    "decisions": 834495,
+    "propagations": 942577968
+  }
+}

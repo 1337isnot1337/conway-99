@@ -1,0 +1,94 @@
+{
+  "CpModel_constructed": false,
+  "CpSolver_constructed": false,
+  "automatic_retries": 0,
+  "cooperative_seconds": 90,
+  "optimizer_calls": 0,
+  "owner_seconds": 105,
+  "preliminary_receipt": {
+    "bytes": 1611,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01-cold/owned-start.json",
+    "sha256": "761818ef60a1a851016f620e0d0fe8042fe141724ad43336d3d1e62a9a4c78b8"
+  },
+  "producer_owner": {
+    "bytes": 577,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01/owner.json",
+    "sha256": "6f3560a9e2a1b8c9e4a798bd8a83c9ca5e0e884e43d97974dd5a2958f2cee10c"
+  },
+  "producer_report": {
+    "bytes": 1421,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01/report.json",
+    "sha256": "e14145c832819aba5299365ba54b1a5a064ba11b4791bd8c56ce40a7eb37ead5"
+  },
+  "report": {
+    "bytes": 2656,
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01-cold/report.json",
+    "sha256": "be7b4c812e50fa9575d961022e05f8cdbe2f414f9d5c4c522eecf23faa7bd214"
+  },
+  "report_accepted": true,
+  "root_gate": {
+    "bytes": 2035,
+    "path": "experiments/logs/root-prism-free/f0-literal-prism-transfer-independent-cold-root-gate01.json",
+    "sha256": "d6b806fe3f890792684436e83f9566cbf6ea6a21b08f4a8feb23751494a6a7a8"
+  },
+  "schema": "conway99.f0.literal-prism-transfer-cold-owner.v1",
+  "source": {
+    "bytes": 22801,
+    "path": "experiments/workspace/root_prism_free_f0_literal_prism_transfer_replay.py",
+    "sha256": "b0a37394b53a3d329436cd2e87bbc55f0e773c3a149aa788908f4cc6dd0e989e"
+  },
+  "status": "OWNED_COMPLETE_LITERAL_PRISM_TRANSFER_COLD_ACCEPTED",
+  "supervision": {
+    "artifacts": [
+      {
+        "bytes": 0,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01-cold/cold.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 94,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01-cold/cold.stdout.log",
+        "sha256": "355c1311bb429fc6d9cf03f9ed594645d154b6f4728fae381afeef56236f32d9"
+      },
+      {
+        "bytes": 1611,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01-cold/owned-start.json",
+        "sha256": "761818ef60a1a851016f620e0d0fe8042fe141724ad43336d3d1e62a9a4c78b8"
+      },
+      {
+        "bytes": 2656,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01-cold/report.json",
+        "sha256": "be7b4c812e50fa9575d961022e05f8cdbe2f414f9d5c4c522eecf23faa7bd214"
+      }
+    ],
+    "child_reaped": true,
+    "command": [
+      "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_literal_prism_transfer_replay.py",
+      "run",
+      "--directory",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01",
+      "--report-sha256",
+      "e14145c832819aba5299365ba54b1a5a064ba11b4791bd8c56ce40a7eb37ead5",
+      "--owner-sha256",
+      "6f3560a9e2a1b8c9e4a798bd8a83c9ca5e0e884e43d97974dd5a2958f2cee10c",
+      "--output",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/logs/root-prism-free/f0-boolean-shared-prism-transfer-inventory01-cold/report.json"
+    ],
+    "exit_code": 0,
+    "hard_seconds": 105,
+    "hard_timeout": false,
+    "new_process_group": true,
+    "seconds": 12.120969062991207
+  },
+  "supervisor_helper": {
+    "bytes": 25758,
+    "path": "experiments/workspace/rook_case4_box_hull_membership.py",
+    "sha256": "54330f430c0c4dae03a0298533121ce43482ceb295f54df715ad2f2180d3503c"
+  },
+  "supervisor_source": {
+    "bytes": 25552,
+    "path": "experiments/workspace/rook_case4_box_hull_membership_query.py",
+    "sha256": "aa557c7b99ec3de71e9ecde3f6f7dfa3ca71066a835086cdd3b3f2eb7be558e5"
+  }
+}

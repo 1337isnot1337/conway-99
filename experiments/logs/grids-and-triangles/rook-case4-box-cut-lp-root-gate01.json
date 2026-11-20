@@ -1,0 +1,81 @@
+{
+  "authorized_execution": {
+    "LP_rounds": 1,
+    "cold_stage_seconds": 60,
+    "cumulative_native_seconds": 120,
+    "exact_stage_seconds": 60,
+    "maximum_native_calls": 30,
+    "numerical_stage_seconds": 180,
+    "run_directory": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-run01",
+    "unchanged_retry": false,
+    "whole_owner_seconds": 360
+  },
+  "findings": [
+    "The six-entry registry retains all five accepted parity entries exactly and appends the separately justified eleven-term capacity. It uses a distinct proof kind, never a fabricated parity derivation.",
+    "The box proof binds accepted independent replay and complete prior branch replay, rechecks all191 box maxima, and expands the original three-Gram identity.",
+    "The complete167120-row old matrix prefix is byte-identical. The only appended row has unit coefficients on the stated eleven original selectors and bounds0..1.",
+    "Native preflight compares every initial coefficient, row bound, variable domain and max-min objective without solving.",
+    "The one numerical round retains the complete cover pool, saves proposals, and requires exact original-coordinate acceptance followed by a separate cold process for any point or contradiction.",
+    "Partial numerical, exact or cold outcomes remain unresolved. The prior point is marked accepted for five cuts until a full six-cut point passes cold replay."
+  ],
+  "inputs": {
+    "adapter": {
+      "path": "experiments/workspace/rook_case4_box_cut_lp_adapter.py",
+      "sha256": "7f574542d4fef61915337696bd6061d98ee4bdc3eb57709b7a698b3f4cb1ed07"
+    },
+    "controller": {
+      "path": "experiments/workspace/rook_case4_box_cut_lp_query.py",
+      "sha256": "b3260d9fa2f6dc320505e9206fff886011038f0d1201eea2d40164c43800f44c"
+    },
+    "peer_review": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-independent-source-review01.json",
+      "sha256": "a6aa96daf7e142c81ca373f67e2ba0bc77cc389856603098bc0394ba71ff8060"
+    },
+    "preflight": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-preflight01.json",
+      "sha256": "05fe7ac3f17b0dfe9329251aa017022db75e335538959e13033701fc9d1062a2"
+    },
+    "preflight_owner": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-preflight01-owner/supervisor.json",
+      "sha256": "34b91dcccbc4654f453796c02921266f73c3184f1473b27f097381c48248e9ff"
+    },
+    "preparation": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-preparation01.json",
+      "sha256": "99dc881f2c7139eb336e6792f0acba6ba6499fecbed12b5fc92d746142d6eaf0"
+    },
+    "preparation_owner": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-preparation01-owner/supervisor.json",
+      "sha256": "ed1ed52edcb309c091bf3b517f80c42a6a94fb8b010e145e90cf95ee7f517a04"
+    },
+    "proof": {
+      "path": "experiments/workspace/rook_case4_box_cut_lp_proof.py",
+      "sha256": "091946b8444aa1c3b49f2955b076e00f7241a96926a9b9d2a4afb210fe4067c3"
+    },
+    "reuse": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-box-cut-lp-adapter-reuse.json",
+      "sha256": "0aa11f61bdaab6976cdbdc2d01b524a2462239645a50c7ea8a75e726fde96f1d"
+    }
+  },
+  "mathematical_scope": "Necessary real selector relaxation of conditional rook case4;112 previously proved zeros, all other1102 selectors free. No Boolean incidence or unrestricted graph follows from a positive point.",
+  "model": {
+    "initial_native_rows": 3077,
+    "initial_native_terms": 28337,
+    "rows": 167121,
+    "selectors": 1102,
+    "terms": 10769766,
+    "variables": 1103
+  },
+  "review_optimizer_calls": 0,
+  "schema": "conway99.rook-case4.box-cut-lp.root-gate.v1",
+  "source_coverage": {
+    "changed_adapter_functions_read": [
+      "validate_registry",
+      "inspect_point"
+    ],
+    "controller_complete_lines": 391,
+    "proof_complete_lines": 156,
+    "unchanged_adapter_functions_AST_confirmed": 23
+  },
+  "status": "PASS_COMPLETE_SOURCE_REVIEW_AND_NATIVE_PREFLIGHT",
+  "whole_case_or_graph_exclusion_claimed": false
+}

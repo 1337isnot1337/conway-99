@@ -1,0 +1,33 @@
+{
+  "status": "UNKNOWN; globally prism-free case remains open",
+  "scope": "globally prism-free SRG case; not every graph with a prism-free chosen root",
+  "case_index": 7,
+  "partition": [
+    2,
+    2,
+    2
+  ],
+  "model": "experiments/logs/root-prism-free/case-07-model.json",
+  "model_sha256": "ab8d0f85e5aee65843a9233177e701b4c986392d6c95f919e2a8896623c593b7",
+  "cnf_path": "/tmp/conway-root-prism-free/case-07.cnf",
+  "cnf_sha256": "d8895c8e46d591f1cbfb41a5a1af8c414782dd677d8746207ed2268e645f36b4",
+  "solver": "glucose4",
+  "proof_enabled": true,
+  "requested_wall_budget_seconds": 60.0,
+  "budget_includes_cnf_parse_and_solver_bootstrap": true,
+  "complete_outside_caps": true,
+  "global_prism_clauses": 34440,
+  "minimum_partition_normalization_added": false,
+  "graph_automorphism_assumptions": 0,
+  "lazy_cuts": 0,
+  "excludes_whole_old_same_index_case": false,
+  "completed_witness": null,
+  "solve_return_seconds": 60.03022669500024,
+  "solver_statistics": {
+    "restarts": 646,
+    "conflicts": 140239,
+    "decisions": 460871,
+    "propagations": 400409970
+  },
+  "total_seconds": 60.228356476000044
+}

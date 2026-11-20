@@ -1,0 +1,134 @@
+{
+  "status": "higher-flag products prepared; cold literal controls PASS",
+  "source_sha256": "32b39c98538bd5358e64e7e794c9f6464704ea7f1fe9f6f171d9243f4af88a36",
+  "domain_source_sha256": "a2fb1b18940423cdd6d36bce91bac54cbe3eecc8622c2418642b8a9559c8c6f0",
+  "domain_path": "experiments/logs/moments-and-counts/order10-higher-flags-domains.json",
+  "domain_sha256": "ccee69da0b0fa9eb111143c6a97a791ab88c7d7ce7004d690ab2ec286c4c2144",
+  "catalogue_path": "/tmp/conway99-order10-catalogue.pickle",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "transport_source_sha256": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469",
+  "independent_oracle_sha256": "46bbbf5521383fc14925644e1dcb82ebeca99094b5726b8f23e3d774aa6f643f",
+  "full_overlap_stabilizer_checks": 890,
+  "cold_independent_lower_entries": 211,
+  "cold_entries_with_order_ten_terms": 25,
+  "both_product_orders_checked": true,
+  "all_overlap_multiplicities_retained": true,
+  "stabilizer_divisor_used": false,
+  "direct_rook_host_controls": [
+    {
+      "root_type": 2,
+      "flags": 4,
+      "root_embeddings": 36,
+      "maximum_labelled_flag_value": 2,
+      "first_moments": [
+        36,
+        0,
+        0,
+        72
+      ],
+      "second_moments": [
+        36,
+        0,
+        0,
+        144
+      ],
+      "all_matrix_entries_match_direct_host_counts": true
+    },
+    {
+      "root_type": 3,
+      "flags": 3,
+      "root_embeddings": 36,
+      "maximum_labelled_flag_value": 2,
+      "first_moments": [
+        36,
+        72,
+        72
+      ],
+      "second_moments": [
+        36,
+        144,
+        144
+      ],
+      "all_matrix_entries_match_direct_host_counts": true
+    },
+    {
+      "root_type": 16,
+      "flags": 15,
+      "root_embeddings": 72,
+      "maximum_labelled_flag_value": 1,
+      "first_moments": [
+        72,
+        72,
+        72,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second_moments": [
+        72,
+        72,
+        72,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_matrix_entries_match_direct_host_counts": true
+    }
+  ],
+  "prism_zero_projection": [
+    {
+      "root_type": 2,
+      "retained_flag_indices": [
+        0,
+        1,
+        2
+      ],
+      "prism_flag_indices": [
+        3
+      ],
+      "retained_order": 3
+    },
+    {
+      "root_type": 3,
+      "retained_flag_indices": [
+        0
+      ],
+      "prism_flag_indices": [
+        1,
+        2
+      ],
+      "retained_order": 1
+    }
+  ],
+  "full_r4s3_root_count": 9,
+  "full_r4s3_flags": 883,
+  "full_r4s3_lower_entries": 90240,
+  "full_r4s3_cache_generated": false,
+  "full_r2s4_lower_entries": 16,
+  "count_point_used": false,
+  "dense_reduction_loaded": false,
+  "optimizer_called": false,
+  "transport_checks": 2044,
+  "normalized_prefixes": 2039,
+  "raw_prefixes_used_only_for_transport_caching": 70,
+  "seconds": 5.241913271001977,
+  "peak_process_rss_kib": 178944
+}

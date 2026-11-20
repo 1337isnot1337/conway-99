@@ -1,0 +1,33 @@
+{
+  "schema": "conway99.f0-common-core-pair-edge-cliques-independent-source-review.v1",
+  "status": "PASS_SOURCE_AND_MATHEMATICAL_GATE",
+  "subject_source": "experiments/workspace/root_prism_free_f0_core_pair_edge_cliques.py",
+  "subject_sha256": "2721f32b6bc1778fb7bd4dd7b6893880e2fe0ef014323fb7365e20f02fbb1811",
+  "full_subject_source_read": true,
+  "proof_note": "research/root_prism_free_f0_core_pair_edge_cliques.md",
+  "checks": {
+    "edge_clique_theorem": "Two distinct neighbors a,c of exterior b containing both core sites i,j would have three distinct common neighbors b,i,j, impossible under the SRG cap. Activation handles x_b=0.",
+    "scope": "The new row constrains edges incident to b. It does not exclude the two endpoint signatures from coexisting elsewhere.",
+    "quota_definition": "q_ij uses the full fixed 21-core, including central common neighbors. The unknown other shell component has no edges to these fixed component sites.",
+    "q_at_most_one_pruning": "The existing lifted Gram row gives sum_a Z_ab=q_ij*x_b. Together with Y_ab<=Z_ab and nonnegative moments this dominates the live edge bucket. The diagonal term, if present, is nonnegative; an eligible neighbor bucket cannot have b itself.",
+    "mixed_at_most_one_pruning": "Every live edge contributes to both corresponding mixed equations. Their nonnegative residual terms dominate a subset when either target is at most one.",
+    "zero_edges": "Only the bound 162 known edge-orbit zeros are removed; this pruning retains the prism-free premise separately from the unconditional local clique theorem.",
+    "quotient": "Counter addition preserves multiplicities of coincident Y columns; the negative x column is disjoint from all edge columns.",
+    "transports": "Actual 21-core permutations are checked, induce all 480 signature permutations, close under composition, recover full selector and edge orbits, and map each retained bucket to the same quotient row.",
+    "degree": "The 18 mixed targets sum to 24 and each signature has size three, giving eight exterior neighbors at a selected center.",
+    "replay": "The cold replay rebuilds the mathematical cut record and compares canonical JSON; no numerical status is accepted."
+  },
+  "existing_lift_source_read": {
+    "source": "experiments/workspace/root_prism_free_f0_second_moments.py",
+    "inspected": "All 480 lifts of the 171 Gram equations and population equation; all 5,805 quotient Y<=Z edge links, covering 68,394 literal edges.",
+    "direct_replay_source": "experiments/workspace/root_prism_free_f0_second_moments_replay.py",
+    "inspected_replay": "Exact full-literal checks of mixed equations, lifted Gram equations and Y<=Z."
+  },
+  "inventory_counts_independently_recomputed": false,
+  "subject_imported": false,
+  "controls_repeated": false,
+  "census_rebuilt": false,
+  "point_loaded": false,
+  "optimizer_called": false,
+  "limitations": "This is a source and proof review. It does not rerun the inventory, controls, cut construction, or transports, and does not establish feasibility or infeasibility of a completion."
+}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_face112_h3_basis_reconstruction.py", line 393, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_face112_h3_basis_reconstruction.py", line 388, in main
+    record = replay(args.preparation, args.root, args.directory, args.output)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_face112_h3_basis_reconstruction.py", line 359, in replay
+    checked = inspect(root, spec, arrays, nums, den, deadline)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_face112_h3_basis_reconstruction.py", line 187, in inspect
+    tick(deadline)
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_face112_h3_basis_reconstruction.py", line 57, in tick
+    raise TimeoutError("bounded exact basis reconstruction/check")
+TimeoutError: bounded exact basis reconstruction/check

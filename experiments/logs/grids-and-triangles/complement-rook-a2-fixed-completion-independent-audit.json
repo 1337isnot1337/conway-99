@@ -1,0 +1,83 @@
+{
+  "status": "independent read-only source/domain audit PASS",
+  "source": "experiments/workspace/complement_rook_a2_fixed_completion.py",
+  "source_sha256": "a35492f002875c04fda2dbe78ef607a81c14fd9aba74deb582efdb3a4fbf5741",
+  "census": "experiments/logs/grids-and-triangles/complement-rook-a2-incidence-census.json",
+  "census_sha256": "9ba221cea49cea864a3e44074bcf1bc95c9cca2487929c8ce4204fafdaa36c7f",
+  "cases": [
+    {
+      "case_index": 0,
+      "covered_designs": 144,
+      "selected_signatures": 72,
+      "signature_sha256": "06cdd73d1ac0670d2ce3a8ddf9c49b28144a340b9b45c6783406a512006de022",
+      "eligible_edges": 1764,
+      "mixed_and_degree_counts": 1873,
+      "impossible_count_rows": 0,
+      "outside_pairs": 2556,
+      "overlap_counts": {
+        "2": 36,
+        "1": 684,
+        "0": 1836
+      },
+      "forward_paths": 83279,
+      "packing_clauses": 1395
+    },
+    {
+      "case_index": 1,
+      "covered_designs": 144,
+      "selected_signatures": 72,
+      "signature_sha256": "a72bebc62511419742c535f7d5b7f821ff7759232b0592f0555869f14a9570ee",
+      "eligible_edges": 1764,
+      "mixed_and_degree_counts": 1873,
+      "impossible_count_rows": 0,
+      "outside_pairs": 2556,
+      "overlap_counts": {
+        "2": 36,
+        "1": 684,
+        "0": 1836
+      },
+      "forward_paths": 83286,
+      "packing_clauses": 1388
+    },
+    {
+      "case_index": 2,
+      "covered_designs": 144,
+      "selected_signatures": 72,
+      "signature_sha256": "6208ca6c3a2150b8b4aa41c3618dc50c10c9824cff5374ea027dad0dd2c4b2c9",
+      "eligible_edges": 1764,
+      "mixed_and_degree_counts": 1873,
+      "impossible_count_rows": 0,
+      "outside_pairs": 2556,
+      "overlap_counts": {
+        "2": 36,
+        "1": 684,
+        "0": 1836
+      },
+      "forward_paths": 83291,
+      "packing_clauses": 1383
+    },
+    {
+      "case_index": 3,
+      "covered_designs": 144,
+      "selected_signatures": 72,
+      "signature_sha256": "ecbe706d49f2b9c99044c8da4f0a0276a0975c736bfd906da21e3ac2773cdb26",
+      "eligible_edges": 1764,
+      "mixed_and_degree_counts": 1873,
+      "impossible_count_rows": 0,
+      "outside_pairs": 2556,
+      "overlap_counts": {
+        "2": 36,
+        "1": 684,
+        "0": 1836
+      },
+      "forward_paths": 83292,
+      "packing_clauses": 1382
+    }
+  ],
+  "encoding_review": "same audited full-cap construction; fresh shared IDPool; impossible count rows imply empty clause; no symmetry or fractional-point restriction",
+  "row_sum_sufficiency": "degree14 and pair caps imply exact counts because196=98*2",
+  "coverage_dependency": "separately checked exhaustive incidence-census DRAT certificate; not rerun here",
+  "solver_called": false,
+  "CNF_rebuilt": false,
+  "proof_rebuilt": false
+}

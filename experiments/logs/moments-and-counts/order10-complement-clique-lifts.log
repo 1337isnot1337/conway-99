@@ -1,0 +1,42 @@
+{
+  "status": "complete coefficientwise clique-lift preparation",
+  "source_sha256": "24e1e2dba05de424098d92fd173a3987d2f97f84c038653aac2ad3a3d555eb37",
+  "census_source_sha256": "765f0ca7ca7ffcb16e6c518d80c70ffca99ba2c0c46d682077f1027ae47fe912",
+  "census_sha256": "365faacdf5144a85730aa03c1a2638ec782303051892d27bc6803790d058fdb4",
+  "domain_source_sha256": "4961411ec0f7671abb7e34c5dbd4ec257ac98f9bffcb745a408e979751179ed8",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "base_cache_sha256": "1b97bf97c8565c929061a6a795f4224c8f808f80a1e59daf48b055a5594f58bc",
+  "child_cache_sha256": "aecf7411230f718c8c3879c38ad39dcdb041ed07c58a799f8b044ebd0ab5028d",
+  "transport_source_sha256": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469",
+  "summary": {
+    "checked_high_mask_lifts": 5215,
+    "clique_selected_row_instances": 70359,
+    "coefficientwise_selected_row_entry_comparisons": 220138,
+    "conditional_lower_entry_products_upper_bound": 2635231,
+    "full_matrix_conditional_subtractions": 509306720,
+    "incompatible_ordered_rows_checked_empty": 48334,
+    "quotient_lower_conditional_subtractions": 165504056,
+    "remaining_quotient_lower_entries": 9554663,
+    "retained_conditional_lifts": 1965,
+    "triple_selected_row_instances": 4596
+  },
+  "per_root_cache_sizing": {
+    "largest_conditional_matrix_object_cells": 990000,
+    "largest_child_matrix_object_cells": 110962,
+    "largest_joint_matrix_object_cells": 1041253,
+    "largest_joint_cache_root_type": 100,
+    "illustrative_64_bytes_per_object_cell": 66640192,
+    "sizing_includes_two_working_matrices": true,
+    "illustrative_bytes_are_not_a_runtime_RSS_guarantee": true
+  },
+  "all_7189_clique_selected_rows_vanish_coefficientwise": true,
+  "all_530_triple_group_selected_rows_vanish_coefficientwise": true,
+  "no_superset_removed_due_to_other_quota_one_witness": true,
+  "new_product_tensors_generated": false,
+  "count_point_loaded": false,
+  "dense_reduction_loaded": false,
+  "optimizer_called": false,
+  "seconds": 3.3629842279988225,
+  "max_rss_kib": 200980
+}
+output_sha256 c92a8ad205545a75f67cdffc43011db21f687f14722109a03f2b34f6490c5c28

@@ -1,0 +1,48 @@
+{
+  "status": "read-only native phase inspection complete; phase time is not identifiable",
+  "response_sha256": "8307314033ad907e9a29136d0a5c698b51a6e49b610cc3f24bb9948e42fce3cf",
+  "child_log_sha256": "c31abf7f4546a865af031784907b7f9459550cb4ba9e5e437c99498666deca3c",
+  "sat_parameter_definition_binding": {
+    "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/sat_parameters_pb2.py",
+    "bytes": 27887,
+    "sha256": "618401e2f8489f40f688c0c0ca72fbadfd666db39409208615214ac19fc26d1a"
+  },
+  "installed_defaults": {
+    "log_search_progress": false,
+    "log_to_stdout": true,
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 2,
+    "cp_model_use_sat_presolve": true,
+    "max_presolve_iterations": 3,
+    "presolve_probing_deterministic_time_limit": 30.0,
+    "probing_deterministic_time_limit": 1.0,
+    "linearization_level": 1,
+    "symmetry_level": 2
+  },
+  "explicit_run_parameters": {
+    "max_time_in_seconds": 60,
+    "num_search_workers": 1
+  },
+  "search_progress_logging_enabled": false,
+  "solver_phase_log_markers_found": [],
+  "response_present_fields": {
+    "num_booleans": 1193,
+    "num_branches": 4074,
+    "num_binary_propagations": 164584,
+    "num_integer_propagations": 168658,
+    "wall_time": 63.301846444000006,
+    "user_time": 63.301846502000004,
+    "deterministic_time": 18.600650708694953,
+    "num_lp_iterations": 633,
+    "num_integers": 1193
+  },
+  "missing_information": [
+    "phase timings",
+    "presolve rule timing",
+    "probing time",
+    "main search entry time"
+  ],
+  "conclusion": "The response confirms propagation and LP work. Aggregate 4074 branches and zero conflicts do not determine whether most time was spent in presolve, probing, root processing, or main search.",
+  "model_solver_optimizer_or_reconstruction_called": false,
+  "followup_query_launched": false
+}

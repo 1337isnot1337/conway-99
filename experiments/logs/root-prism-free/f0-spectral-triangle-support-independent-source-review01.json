@@ -1,0 +1,163 @@
+{
+  "schema": "conway99.f0.spectral-triangle-support-independent-source-review.v1",
+  "status": "PASS_COMPLETE_SOURCE_AND_METHOD_REVIEW",
+  "reviewer": "/root/master_continuation",
+  "source": {
+    "path": "experiments/workspace/f0-spectral-triangle-support-v8.js",
+    "git_blob": "c1e7fb4b7fe8439fe727b974baff5013d0323b96",
+    "sha256": "030f5ebe67871ec7429ed3da223e8f9626cb7fd59aaaf2187f72cdd4bb98e091",
+    "bytes": 21284
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-configuration01.json",
+    "git_blob": "90717cccedaab6f778c19c64b0f9566adb933b4d",
+    "sha256": "c14d0bcb35d3ee393039fd6af0e7e74bce7625c523077428a61fd32c6adec456",
+    "bytes": 4383
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-controls01.json",
+    "git_blob": "6dd4da4ba3713b973db209d21dc3a76e0f82956a",
+    "sha256": "4e439b1e839d05772f6c59287849ed72a7ff57196c3c5bfa7b8d80a75eb010c3",
+    "bytes": 729
+  },
+  "method": {
+    "path": "research/f0-spectral-triangle-support.md",
+    "git_blob": "749527a9c5c938533ba999dd7add8505fc7c6ef0",
+    "sha256": "8acbfad75aaf058ebb6325bfb9b8557c94f4b30875e587c1e27d536f232e8cb9",
+    "bytes": 5414
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "bytes": 8304
+  },
+  "source_lines_read": 322,
+  "full_source_read": true,
+  "full_configuration_read": true,
+  "full_method_read": true,
+  "actual_control_receipt_read": true,
+  "all_seven_input_archive_or_text_hashes_reverified": true,
+  "both_gzip_raw_hashes_reverified": true,
+  "input_bindings": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64_gzip"
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "bytes": 219390,
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "encoding": "base64_gzip"
+    },
+    "spectral_cold": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01.json",
+      "bytes": 13646,
+      "sha256": "e8d27725afb707867f6683604ff1f3123f8960305c721058f495883f23476349",
+      "git_blob": "38ec9167df27b86de0341f8387cc894c6d2ff8cc",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "spectral_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-root-acceptance01.json",
+      "bytes": 2336,
+      "sha256": "0ddbc84223a4cd56ad94597bf9320b1bb2ebbf05f0965cf07216beaca465b42e",
+      "git_blob": "408c39a6be9880f07998c89b284d31121bfd942d",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "triangle_forward": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-census01.json",
+      "sha256": "7027feb1a77cb8131371bb10823ec7e5e8b6a33f5281a0b27881ee2f6b088155",
+      "bytes": 1600480,
+      "git_blob": "44f7d8c605a1f6fab51c89fed44b9233c8215b21",
+      "encoding": "utf-8"
+    },
+    "triangle_summary": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-summary01.json",
+      "sha256": "8e8fe47a1527cb6d779fd05e174449983f7c3beb2409a5edf80ed682a46cdcfc",
+      "bytes": 3967,
+      "git_blob": "8c15d7865d0226b584346ceee3f2e722d9dd3a00",
+      "encoding": "utf-8"
+    },
+    "triangle_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-acceptance01.json",
+      "bytes": 1177,
+      "sha256": "d010e64051397b5335ac859f094da7f34cd4f5882ff4c511d639bb04fa6fe12c",
+      "git_blob": "12a10b91d58311996bbfd8800cce3da0d3e0806a",
+      "mode": "100644",
+      "encoding": "utf-8"
+    }
+  },
+  "input_contract_review": [
+    "The accepted spectral cold and root acceptance bind the 132 conditional edge-present n=1 implications and 132 spectral zero records. They do not force an edge to be present.",
+    "The accepted triangle forward, cold summary and root acceptance bind the complete 10830 negative-triangle record list. The production loader rechecks its canonical hash and each record's negative determinant and nonnegative proper minors.",
+    "The 1884 literal zero records retain exact endpoint, original edge ID, native row index and variable index. Their union with spectral zeros retains both origins and must contain 1956 distinct edges.",
+    "The domain and overlay archive and raw hashes match the already accepted literal namespace. The source reconstructs all 68394 original edges from every mixed quota and compares every saved neighbor list."
+  ],
+  "mathematical_review": [
+    "If a must-triangle edge is present, exactly one exterior common neighbor exists. Every actual exterior triangle has three pairwise-disjoint first signatures: otherwise an adjacent pair has its shared core neighbor and the third exterior vertex as two common neighbors, contradicting lambda=1.",
+    "Every structurally possible third vertex is included by scanning all 480 signatures, excluding the two endpoints, checking pairwise disjointness and requiring both original eligible side edges. The independent in-source table checker uses literal set unions rather than bit-mask filtering.",
+    "A support is ruled out by its accepted triangle cover or an already established side-edge zero. A certificate accounts for every original support before its central edge is committed as zero.",
+    "Every derived-zero reference identifies a strictly earlier certificate in the evolving known-zero map. A mutually supporting cycle has no initial proof and is retained.",
+    "At most 132 targets can be newly eliminated; 132 passes with changes followed by one pass without changes suffice. Final surviving support indices are recomputed against the final zero set.",
+    "The fixed point concerns only this implication rule on the 132 accepted targets. A surviving support does not imply feasibility of an assignment or a completed graph.",
+    "The output native row [0,0,[[540+edge_id,1]]] enforces exactly the proved Boolean edge zero in the unchanged literal namespace."
+  ],
+  "implementation_review": {
+    "target_order": "Increasing original edge ID, with accepted premise indices preserved.",
+    "support_order": "Increasing third-selector ID; exact complete support tables are saved.",
+    "initial_zeros": "Sorted distinct original edge IDs, with all literal and spectral source-record origins retained.",
+    "no_circular_batch_commit": true,
+    "verifies_certificate_before_commit": true,
+    "complete_support_coverage_checked": true,
+    "terminal_supports_checked_against_final_zeros": true,
+    "original_domain_not_pruned": true,
+    "symmetry_assumption_added": false,
+    "unused_diagnostic_pattern_and_path_data": true,
+    "no_optimizer_or_native_model": true
+  },
+  "controls_review": {
+    "method": "Read the complete controls implementation and its frozen actual receipt; did not execute either.",
+    "synthetic_systems": 2176,
+    "boolean_assignments": 135168,
+    "admissible_assignments": 20105,
+    "derived_zero_truth_checks": 17368,
+    "explicit_mutual_support_cycle_preserved": true,
+    "sequential_dependency_chain_checked": true,
+    "rejected_mutations": [
+      "Missing support reason",
+      "Future or self dependency authority index",
+      "Unlisted triangle cover",
+      "Changed native variable index",
+      "Incomplete structural support table"
+    ],
+    "actual_case_supports_enumerated_by_reviewer": 0
+  },
+  "resource_and_acceptance_review": {
+    "declared_limit_ms": 30000,
+    "declared_report_bytes": 16777216,
+    "measured_interval_includes_input_validation_and_report_serialization": true,
+    "bound_applies_to_complete_finalization": true,
+    "required_report_status": "PASS_COMPLETE_TARGETED_SUPPORT_FIXED_POINT",
+    "required_finalization_status": "PASS_COMPLETE_SUPPORT_CHECK_AND_SERIALIZATION",
+    "required_finalization_within_declared_bounds": true,
+    "partial_or_over_budget_results_do_not_establish_completeness": true,
+    "preserved_certificate_prefix_requires_separate_acceptance": true,
+    "one_main_only_no_automatic_retry": true
+  },
+  "concrete_blockers": [],
+  "reviewer_main_calls": 0,
+  "reviewer_control_calls": 0,
+  "reviewer_native_calls": 0,
+  "reviewer_optimizer_calls": 0,
+  "newly_accepted_edge_zeros": 0,
+  "production_execution_authorized_by_this_review": false,
+  "graph_or_component_exclusion_claimed": false
+}

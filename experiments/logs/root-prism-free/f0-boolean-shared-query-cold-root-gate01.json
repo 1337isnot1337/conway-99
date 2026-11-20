@@ -1,0 +1,28 @@
+{
+  "all_331_source_lines_read": true,
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-independent-controls01.json",
+    "sha256": "a109c50fe935684b1250a5497c82de06ab7666115791ef22430c808b31c5b545"
+  },
+  "limits": {
+    "automatic_retries": 0,
+    "cold_seconds": 120,
+    "optimizer_calls": 0,
+    "owner_seconds": 135
+  },
+  "required_terminal_bindings": "Explicit result and owner SHA256 arguments must match the immutable completed run records; no running or partial result is accepted.",
+  "requires_root_slot_release_before_launch": true,
+  "review": [
+    "Accepted full model and concrete preflight are reused by exact hashes; no producer or native model/solver is imported.",
+    "Check successful reaped production owner, exact parameter wire/text/schema, runtime file hashes, response wire/text and recorded status priority.",
+    "Enumerate all primary and additional vectors, including empty additional vectors. Compare every interval domain, exact integer row activity and saved check result.",
+    "Preserve UNKNOWN, overrun, invalid-vector and unproved-infeasibility labels. No graph or whole component result follows."
+  ],
+  "run_directory": "experiments/logs/root-prism-free/f0-boolean-shared-query-run01",
+  "schema": "conway99.f0.boolean-shared-query-cold-root-gate.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_boolean_shared_query_replay.py",
+    "sha256": "6dfea9bff6b169d44d633154b8ceb1a57b5f4cf71be104b7973205f7dfa49683"
+  },
+  "status": "AUTHORIZED_AFTER_COMPLETED_PRODUCTION_OWNER_AND_ROOT_SLOT_RELEASE"
+}

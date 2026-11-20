@@ -1,0 +1,207 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-ci-explicit-source-reuse.v1",
+  "status": "FROZEN_COMPLETE_SOURCE_ONLY_ADAPTATION_UNRUN",
+  "parent": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query_ci.py",
+    "git_blob": "0bcbc9db71ff64ba9b440990c52e3f87ba0b7daf",
+    "sha256": "22d20e4a931b5ae069bdead464399b4f5f9773c441f3ed0f9829df6403f80a90",
+    "bytes": 17023
+  },
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci.py",
+    "bytes": 17160,
+    "sha256": "a6a048ab3f385e04ab157971eb70ad1f56ba7515cc5c0887a29ac12c97d5910a",
+    "git_blob": "182b9cbd13f3033edca5431dc7c578e1fbec3e87"
+  },
+  "query_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py",
+    "bytes": 39635,
+    "sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "git_blob": "7295da45c769913e7bb8b6b408abac551880a29a"
+  },
+  "independent_terminal_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "git_blob": "5191a03e92e6ab9f1039eeb791518baebdec4661",
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "bytes": 37638
+  },
+  "substitution_count": 6,
+  "substitutions": [
+    {
+      "label": "fresh driver description",
+      "before": "\"\"\"CI driver for one gated combined-model query and one terminal replay.",
+      "after": "\"\"\"CI driver for one gated triangle-incidence query and one terminal replay.",
+      "count": 1
+    },
+    {
+      "label": "pin fresh query source",
+      "before": "QUERY_SHA = \"bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a\"",
+      "after": "QUERY_SHA = \"c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34\"\nCOLD_SHA = \"303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4\"",
+      "count": 1
+    },
+    {
+      "label": "new row count",
+      "before": "VARIABLES, ROWS = 80730, 297470",
+      "after": "VARIABLES, ROWS = 80730, 300795",
+      "count": 1
+    },
+    {
+      "label": "fresh schema namespace",
+      "before": "combined-extensions-query",
+      "after": "triangle-incidence-query",
+      "count": 4
+    },
+    {
+      "label": "fresh gate and pass namespaces",
+      "before": "COMBINED_EXTENSIONS",
+      "after": "TRIANGLE_INCIDENCE",
+      "count": 4
+    },
+    {
+      "label": "pin actual independent checker",
+      "before": "        # The exact future cold/configuration are bound by the root gate below.",
+      "after": "        assert request[\"terminal_cold_source\"][\"sha256\"] == COLD_SHA\n        # The exact future configuration is bound by the root gate below.",
+      "count": 1
+    }
+  ],
+  "complete_result_equals_frozen_source": true,
+  "function_comparison_method": "Complete top-level function text including separating newlines, without import/AST/compilation.",
+  "functions": [
+    {
+      "name": "sha",
+      "unchanged": true,
+      "parent_text_bytes": 59,
+      "successor_text_bytes": 59,
+      "parent_text_sha256": "413ac7f645e109b3a54f00409138433758a58647d566bbb941c6d3b95bbd3c33",
+      "successor_text_sha256": "413ac7f645e109b3a54f00409138433758a58647d566bbb941c6d3b95bbd3c33"
+    },
+    {
+      "name": "canonical",
+      "unchanged": true,
+      "parent_text_bytes": 124,
+      "successor_text_bytes": 124,
+      "parent_text_sha256": "e34322fd63f6b2f3e6395895f92194be59373a1d30466a74342609674d01713f",
+      "successor_text_sha256": "e34322fd63f6b2f3e6395895f92194be59373a1d30466a74342609674d01713f"
+    },
+    {
+      "name": "resolve",
+      "unchanged": true,
+      "parent_text_bytes": 107,
+      "successor_text_bytes": 107,
+      "parent_text_sha256": "298e856a135f53a14db8a31fa20a527cfe767db30fecde8fc2952496cad64d31",
+      "successor_text_sha256": "298e856a135f53a14db8a31fa20a527cfe767db30fecde8fc2952496cad64d31"
+    },
+    {
+      "name": "read",
+      "unchanged": true,
+      "parent_text_bytes": 197,
+      "successor_text_bytes": 197,
+      "parent_text_sha256": "39be3e655139ede6354e4366002381d01e4d97f3eb645e5351618cca8b0a2574",
+      "successor_text_sha256": "39be3e655139ede6354e4366002381d01e4d97f3eb645e5351618cca8b0a2574"
+    },
+    {
+      "name": "binding",
+      "unchanged": true,
+      "parent_text_bytes": 169,
+      "successor_text_bytes": 169,
+      "parent_text_sha256": "a12fb533c08c3ff3de4e7c755cb456c340c2ebaebed9200ce60442a61a57a77a",
+      "successor_text_sha256": "a12fb533c08c3ff3de4e7c755cb456c340c2ebaebed9200ce60442a61a57a77a"
+    },
+    {
+      "name": "same_ref",
+      "unchanged": true,
+      "parent_text_bytes": 244,
+      "successor_text_bytes": 244,
+      "parent_text_sha256": "b9d839ad137644326209d2c44a7dd960179640b79b80d01db873a2e699028104",
+      "successor_text_sha256": "b9d839ad137644326209d2c44a7dd960179640b79b80d01db873a2e699028104"
+    },
+    {
+      "name": "save",
+      "unchanged": true,
+      "parent_text_bytes": 149,
+      "successor_text_bytes": 149,
+      "parent_text_sha256": "bee24cca8d8730b031ec45a2d39239d1b2ad8fd2fae653f951c451b0a9cd8530",
+      "successor_text_sha256": "bee24cca8d8730b031ec45a2d39239d1b2ad8fd2fae653f951c451b0a9cd8530"
+    },
+    {
+      "name": "owner_pass",
+      "unchanged": true,
+      "parent_text_bytes": 433,
+      "successor_text_bytes": 433,
+      "parent_text_sha256": "d6e3bc85a8a5400fa943ae4be85d5743d2b77b2b404b7af4c38e8fa3d020d318",
+      "successor_text_sha256": "d6e3bc85a8a5400fa943ae4be85d5743d2b77b2b404b7af4c38e8fa3d020d318"
+    },
+    {
+      "name": "supervisor_module",
+      "unchanged": true,
+      "parent_text_bytes": 300,
+      "successor_text_bytes": 300,
+      "parent_text_sha256": "b5b9887fcbeab6fd73293be4a0926a77c89e1a8743b7ec1166a3d28e7051d41e",
+      "successor_text_sha256": "b5b9887fcbeab6fd73293be4a0926a77c89e1a8743b7ec1166a3d28e7051d41e"
+    },
+    {
+      "name": "owned_cold",
+      "unchanged": false,
+      "parent_text_bytes": 2923,
+      "successor_text_bytes": 2922,
+      "parent_text_sha256": "13821aea45015b6a1da7161f4b9d7bd09ff5bf2917d5d7414a87f3b9d69d935c",
+      "successor_text_sha256": "4ab683babbe10a6f60106281f2b65deb82d530c55a44b4ae33e0e301010ad233"
+    },
+    {
+      "name": "run",
+      "unchanged": false,
+      "parent_text_bytes": 11160,
+      "successor_text_bytes": 11216,
+      "parent_text_sha256": "3880386deb3d495329bfbf512a9eecfd3ed2de646fa16e1bbb08790eeed2f946",
+      "successor_text_sha256": "741b28ab264012f892eb7a0288a2298f1a66a7506727a4d277ee2570de538724"
+    }
+  ],
+  "unchanged_functions": [
+    "sha",
+    "canonical",
+    "resolve",
+    "read",
+    "binding",
+    "same_ref",
+    "save",
+    "owner_pass",
+    "supervisor_module"
+  ],
+  "changed_functions": [
+    "owned_cold",
+    "run"
+  ],
+  "changed_function_scope": {
+    "owned_cold": "Only the owner schema namespace is changed.",
+    "run": "Only request/result/configuration/gate/PASS namespaces and an exact checker-source hash assertion are changed."
+  },
+  "same_owned_limits": {
+    "query_owner_seconds": 720,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 900
+  },
+  "response_and_error_preservation_unchanged": true,
+  "one_query_and_one_independent_terminal_replay": true,
+  "automatic_retries": 0,
+  "preserved_intermediate": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci_unrun_draft01.py",
+    "bytes": 17160,
+    "sha256": "c7ce283f58332ebb8311130f042650027ce55dcc81ac44ed891594d107fa11b7",
+    "git_blob": "9473b8c7495022d4288baf09cadcdea5e94d2ace"
+  },
+  "receipt_correction": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-root-receipt-correction01.json",
+    "bytes": 3260,
+    "sha256": "53ab2e9a49389885144f8691f0ebcda3b5ecc75623f49a3cb4e05e94683b19e7",
+    "git_blob": "effe304afb362cbf200869c4832daef51f08a6c0"
+  },
+  "source_imports": 0,
+  "compilations": 0,
+  "controls_runs": 0,
+  "preflight_runs": 0,
+  "model_decodes": 0,
+  "optimizer_calls": 0,
+  "actual_configuration_created": false,
+  "actual_request_or_workflow_created": false
+}

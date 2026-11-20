@@ -1,0 +1,146 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-replay-independent-source-review.v1",
+  "status": "PASS_COMPLETE_INDEPENDENT_QUERY_CHECKER_SOURCE_AND_INTERFACE_REVIEW",
+  "reviewer": "independent_sets",
+  "bindings": {
+    "parent_checker": {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query_replay.py",
+      "git_blob": "dd46bac35f833c578f477a2c8345f43382bec4f8",
+      "sha256": "a1db1e18c96e3d674d795900ed2011302d266eb26f67332fcb286804f1d84ef8",
+      "bytes": 35012
+    },
+    "checker": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+      "git_blob": "5191a03e92e6ab9f1039eeb791518baebdec4661",
+      "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+      "bytes": 37638
+    },
+    "checker_adaptation": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-independent-replay-adaptation01.json",
+      "git_blob": "d554f5e61d184d55140f5e3fa623899e37c1461f",
+      "sha256": "81a2da5d12c73c7359c5668bd4e06987ecdc856e112ed2b01b3db158f2bb26cf",
+      "bytes": 36813
+    },
+    "checker_contract": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-independent-replay-source-contract01.json",
+      "git_blob": "6e33646cb7daa2970428919610d23afa4ae827cb",
+      "sha256": "cc0d9f963f4379c3e6307e0c9028059dfc995590a1e838efda520ebea20369ce",
+      "bytes": 8886
+    },
+    "runner": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py",
+      "bytes": 39628,
+      "sha256": "d7e5307f0554cc308dbdf26dd3225b3cdb9d2628b9261b9896bbb9698ec83d0e",
+      "git_blob": "fc4bedae06976c50d6efafaa80d3155aa397aee4"
+    },
+    "runner_contract": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-source-preparation01.json",
+      "bytes": 9232,
+      "sha256": "9c20f84a30da094e3b4de0b0ba8707ea7eaec999fdbe2045eef8293ec8418202",
+      "git_blob": "08fbeef1253b00a5444bcf40bb60f535df0f4580"
+    },
+    "native_producer": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+      "bytes": 64900,
+      "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+      "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+    },
+    "native_checker": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+      "bytes": 82846,
+      "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+      "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+    },
+    "native_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+      "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+      "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+      "bytes": 24503
+    },
+    "corrected_native_ci": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+      "bytes": 17497,
+      "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+      "git_blob": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a"
+    },
+    "query_ci": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci.py",
+      "bytes": 17160,
+      "sha256": "c7ce283f58332ebb8311130f042650027ce55dcc81ac44ed891594d107fa11b7",
+      "git_blob": "9473b8c7495022d4288baf09cadcdea5e94d2ace"
+    }
+  },
+  "reviewed_source": {
+    "complete_current_checker_read": true,
+    "bytes": 37638,
+    "nonempty_terminal_line_count": 619,
+    "includes_main_and_CLI": true,
+    "complete_parent_to_successor_reconstruction": true,
+    "exact_substitutions": 22,
+    "function_comparison": "Complete top-level function text, no AST/import/compilation.",
+    "unchanged_functions": [
+      "canonical",
+      "sha",
+      "binding",
+      "read",
+      "reject_constant",
+      "value",
+      "same_ref",
+      "save",
+      "native_absent",
+      "interval_contains",
+      "exact_vector",
+      "supervisor_pass"
+    ],
+    "changed_functions": [
+      "clock",
+      "terminal_status",
+      "read_model",
+      "check_runtime_and_parameters",
+      "controls",
+      "replay",
+      "main"
+    ]
+  },
+  "findings": [
+    "The seven-input accepted-model loader binds the new producer, independent native checker, corrected CI, exact configuration, preparation/cold reports and owners, and planned root acceptance interface. It checks the unchanged combined-parent restoration and all three appended row families.",
+    "The loader uses actual fields emitted by native checker 1bf43879. It does not require a runtime dictionary, preparation_source, authorities, producer_imports, native_imports, or protobuf_decoder_only from that native cold. Runtime/model descriptor identity comes from the query configuration, native preparation and the decoder's own descriptor.",
+    "The original edge slice is exactly [540,68934), even though all 80730 variables remain. All 68394 edge names, Boolean domains and complete order hash are checked.",
+    "The repeated subsolver parameter uses .extend in exact declared order no_lp, quick_restart_no_lp, portfolio_no_lp. Four workers and three full subsolvers are explicit. Complete parameter text/wire messages and pinned runtime hashes are compared.",
+    "Integer validation is unchanged from the accepted parent: every value must have exact Python int type, every variable interval is checked, and every complete linear row activity is computed by indexed Python-integer multiplication and addition. All saved activity bytes and all primary/additional vectors are compared.",
+    "Response text and reconstructed wire must encode the same complete response. Native vector snapshots, status, all candidate file names and values, selection and original-edge extraction are checked against it.",
+    "The checker independently rederives UNKNOWN, native-overrun, unproved-INFEASIBLE, model-invalid, missing-vector and rejected-vector statuses. No status or model vector is promoted to a full graph or component exclusion.",
+    "The query, preflight and independent owners must bind the declared inputs and have accepted, reaped, stopped process groups within their budgets. Final checker serialization is included in its own 10/120-second worker checks, with inherited 15/135-second external owners.",
+    "Unlike the native-model checker, this query checker intentionally emits producer_imports and native_imports as zero in both controls and main; the fresh query CI's inherited checks therefore match its actual output. All controls/main CLI arguments and PASS/status fields match the frozen runner and fresh CI."
+  ],
+  "mathematical_scope": {
+    "model_variables": 80730,
+    "model_rows": 300795,
+    "model_terms": 3337296,
+    "query_native_calls_maximum": 1,
+    "solver_seconds": 600,
+    "measured_native_allowance_seconds": 610,
+    "query_owner_seconds": 720,
+    "terminal_checker_seconds": 120,
+    "external_terminal_owner_seconds": 135,
+    "full_graph_claim": false,
+    "whole_component_exclusion_claim": false,
+    "native_INFEASIBLE_is_unproved": true
+  },
+  "limits_of_review": {
+    "source_review_only": true,
+    "actual_new_model_build_acceptance_pending": true,
+    "actual_runnable_query_configuration_not_created_by_this_review": true,
+    "no_actual_receipt_or_preflight_acceptance_claim": true,
+    "root_receipt_contract_checked_against_parent_supplied_fields": true,
+    "source_imports": 0,
+    "compilations": 0,
+    "controls_runs": 0,
+    "model_decodes": 0,
+    "model_builds": 0,
+    "optimizer_calls": 0,
+    "terminal_replays": 0,
+    "future_actual_configuration_and_owned_preflight_required": true,
+    "production_authorized_by_this_review": false
+  }
+}

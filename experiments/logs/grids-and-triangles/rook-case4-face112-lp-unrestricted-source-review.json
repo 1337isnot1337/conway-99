@@ -1,0 +1,111 @@
+{
+  "status": "PASS: complete builder/driver source read and independent exact reuse/binding review",
+  "review_source_sha256": "4bd52398816b68d40adcfbff62f3a8d15bca77821559ae3c6c9ac6f6a3c83d0e",
+  "bindings": {
+    "builder": {
+      "path": "experiments/workspace/rook_case4_face112_model.py",
+      "sha256": "8cfae2fc990e293f47029da2dc5a4d66b864e2547777d6a142de424133361da7"
+    },
+    "driver": {
+      "path": "experiments/workspace/rook_case4_face112_cover_generation.py",
+      "sha256": "e0e245f1cfc20ff4e5eef7f148ee57b7a97af5829094bf57a0ff9247784942bc"
+    },
+    "parent_driver": {
+      "path": "experiments/workspace/rook_case4_face99_parity_cover_generation.py",
+      "sha256": "c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd"
+    },
+    "premise_loader": {
+      "path": "experiments/workspace/rook_case4_face112_primary_closure_v3.py",
+      "sha256": "405f732445043762db0c52cbc0cfdc159dcb945351925afdcc57af7c9606b3f9"
+    },
+    "premise_review": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-primary-closure-unrestricted-source-review.json",
+      "sha256": "1719ecbda683e4f0b2aa1d3b6c18ee9db9c0ae79acff1f2618022e60be10ccc4"
+    },
+    "model": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-model01/model.json",
+      "sha256": "018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f"
+    },
+    "cold": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-model01-cold-replay.json",
+      "sha256": "26f063161cbf9c0beb139b392f0b46007254176c522308d3ed2d5e3ee3c2e703"
+    },
+    "preparation": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-generation-preparation.json",
+      "sha256": "a9ae876612b63682f24fe4141916339be8650fed4d9737a93b9a8991e14ab31e"
+    },
+    "preflight": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-generation-preflight.json",
+      "sha256": "4c424e42710ddfee32e9d8ca0f46b7cd2e3a47ce30de52a73be7dbbd7d319601"
+    },
+    "ledger": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-generation-substitutions.json",
+      "sha256": "834d5e2af57ec8963845c6ace76cc3f6d008bb67c0cfa113dd92c7096dbc17b0"
+    },
+    "author_reuse_record": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-generation-reuse-controls.json",
+      "sha256": "894d56b7bff5ae7e1751368c25a6229cdadbb131a1c2e56d16fe512994d2bf7c"
+    }
+  },
+  "independent_complete_text_substitutions_checked": 18,
+  "AST_identical_functions_after_only_scope_updates": [
+    "canonical",
+    "checked_preparation",
+    "controls",
+    "digest",
+    "expanded_numeric",
+    "extend",
+    "full_float_matrix",
+    "initial_row_ids",
+    "inspect_numeric_point",
+    "main",
+    "prepare",
+    "reconstruct_bound",
+    "reconstruct_primal",
+    "replay",
+    "row_ids_hash",
+    "run",
+    "runtime_binding",
+    "save"
+  ],
+  "fresh_functions_read_completely": [
+    "cold_arrays",
+    "definition",
+    "load_inputs",
+    "preflight_replay",
+    "source_bindings"
+  ],
+  "complete_builder_and_driver_read": true,
+  "mathematical_review": [
+    "The premise loader rederives the 112 zeros, both integer unit sums and four pair capacities; no numerical selector or saved witness is fixed.",
+    "All 2271 original native rows and 178533 original coordinate covers are reconstructed. Only proved-zero substitution and real unit-box tautologies remove obligations.",
+    "For a zero cover target the remaining positive sum is nonnegative. For a live target, the projected cover has the same lower bound and a box-valid finite upper bound.",
+    "The two unit sums and four pair capacities are retained explicitly; integer validity is distinguished from preservation of the older real relaxation.",
+    "The native prefix, complete cover pool and always-active suffix partition all 167112 extended rows. The extension 0 <= x_j-t <= 1 with unit boxes preserves original feasibility at t=0.",
+    "Prefix row-duals/rays are expanded by original row ID with zeros elsewhere. An exact subset finite-box certificate applies to every full-model feasible point.",
+    "Rational primal acceptance checks every extended row and restores all original 1214 coordinates with proved zeros; numerical status alone proves neither feasibility nor exclusion.",
+    "Preflight binds the already completed exact model replay; terminal replay still reconstructs all original arrays and validates every appended-cover prefix and certificate.",
+    "Run, bound/primal reconstruction and terminal replay are unchanged after the explicit scope strings. No optimizer call is introduced by the new preparation or cold-record reuse."
+  ],
+  "limits": {
+    "maximum_run_calls": 30,
+    "cumulative_solver_and_existing_ray_seconds": 120,
+    "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+    "maximum_new_cover_rows_per_call": 512,
+    "maximum_total_added_cover_rows": 14848,
+    "threads": 1,
+    "violation_tolerance": 1e-07,
+    "combined_exact_reconstruction_seconds": 60,
+    "cold_exact_check_seconds": 60,
+    "maximum_rational_common_denominator_bits": 4096
+  },
+  "scope_limits": [
+    "This is a source and mathematical review, not an independent matrix rebuild or native execution.",
+    "Author preparation/cold/control results are hash-bound and not repeated.",
+    "No query outcome or case exclusion is asserted by this review."
+  ],
+  "subject_sources_imported": false,
+  "author_controls_repeated": false,
+  "model_or_CNF_rebuilt": false,
+  "optimizer_calls": 0
+}

@@ -1,0 +1,208 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-independent-replay-preparation.v1",
+  "status": "SOURCE_FROZEN_ACTUAL_QUERY_CONFIGURATION_AND_OUTPUTS_PENDING_NOT_RUNNABLE",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query_replay.py",
+    "bytes": 35012,
+    "sha256": "a1db1e18c96e3d674d795900ed2011302d266eb26f67332fcb286804f1d84ef8",
+    "git_blob": "dd46bac35f833c578f477a2c8345f43382bec4f8",
+    "lines": 572
+  },
+  "source_reuse": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-replay-explicit-source-reuse01.json",
+    "bytes": 26686,
+    "sha256": "934bd1fefb2cd9382b26994db191cad859e818967534a71aed855bad089ca384",
+    "git_blob": "d01f0f58bcb6a91298bf7e382f7ac77b2c42151f"
+  },
+  "intended_query_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "runtime_configuration_schema": "conway99.f0.combined-extensions-query-configuration.v1",
+  "terminal_report_schema": "conway99.f0.combined-extensions-query-independent-cold.v1",
+  "statuses": {
+    "controls": "PASS_COMBINED_EXTENSIONS_QUERY_INDEPENDENT_INTEGER_AND_RESPONSE_CONTROLS",
+    "run": "PASS_INDEPENDENT_COMBINED_EXTENSIONS_QUERY_TERMINAL_REPLAY",
+    "error": "ERROR_INDEPENDENT_COMBINED_EXTENSIONS_QUERY_REPLAY"
+  },
+  "cli": {
+    "controls": "python experiments/workspace/root_prism_free_f0_combined_extensions_query_replay.py controls --output CONTROL_REPORT",
+    "run": "python experiments/workspace/root_prism_free_f0_combined_extensions_query_replay.py run --output COLD_REPORT --configuration CFG --configuration-sha256 CFG_SHA256 --directory QUERY_DIRECTORY --result-sha256 RESULT_SHA256 --owner-sha256 OWNER_SHA256 --gate QUERY_GATE --gate-sha256 QUERY_GATE_SHA256",
+    "internally_supervised": false,
+    "required_assertions": true,
+    "output_files_exclusive_create": true,
+    "error_file_suffix": ".error.json"
+  },
+  "external_ownership": {
+    "controls_worker_seconds": 10,
+    "controls_owner_seconds": 15,
+    "main_worker_seconds": 120,
+    "main_owner_seconds": 135,
+    "full_worker_exit_zero_required": true,
+    "child_reaped_required": true,
+    "owned_process_group_stopped_required": true,
+    "report_source_and_configuration_and_gate_must_match": true,
+    "terminal_ci_owner_schema": "conway99.f0.combined-extensions-query-independent-ci-owner.v1"
+  },
+  "fixed_query_values": {
+    "source_sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "variables": 80730,
+    "rows": 297470,
+    "limits": {
+      "solver_seconds": 600,
+      "native_allowance_seconds": 610,
+      "owner_seconds": 720,
+      "preparation_seconds": 60,
+      "preparation_owner_seconds": 75,
+      "finalization_reserve_seconds": 60
+    },
+    "parameters": {
+      "num_search_workers": 4,
+      "random_seed": 0,
+      "cp_model_presolve": true,
+      "cp_model_probing_level": 0,
+      "linearization_level": 0,
+      "symmetry_level": 0,
+      "max_time_in_seconds": 600,
+      "log_search_progress": true,
+      "log_to_stdout": true,
+      "log_to_response": true
+    },
+    "runtime": {
+      "cp_model_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+      "model_schema_sha256": "266b68151ffd6c9f5db22553442abd777031663d39e1cea649a8737f811d2eff",
+      "native_helper_sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735",
+      "ortools_version": "9.15.6755",
+      "parameter_schema_sha256": "644354522af4202900329fc55844364cf1bfa77333b7ceb98e9de4aa49036c52",
+      "protobuf_version": "6.33.6"
+    },
+    "sources": {
+      "base": {
+        "bytes": 15210,
+        "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+        "mode": "100644",
+        "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+        "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+      },
+      "supervisor": {
+        "bytes": 26760,
+        "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+        "mode": "100644",
+        "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+        "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+      },
+      "model_producer": {
+        "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+        "bytes": 38102,
+        "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+        "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b"
+      },
+      "model_cold": {
+        "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+        "bytes": 70788,
+        "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+        "git_blob": "be51ef6deca257d57b018c989d994804994004c1"
+      },
+      "model_ci": {
+        "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+        "bytes": 16246,
+        "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+        "git_blob": "06166151155be8a6cd46ec7a0b3e5989ed408dff"
+      }
+    },
+    "maximum_native_calls": 1,
+    "automatic_retries": 0,
+    "native_query_authorized_by_configuration_alone": false,
+    "separate_query_cold_required": true,
+    "native_INFEASIBLE_is_unproved": true,
+    "model_byte_changes_in_query": false,
+    "all_original_pair_caps_present_in_model": false,
+    "second_component_completion_present_in_model": false,
+    "candidate_format": "Plain JSON array of all80730 exact integers in accepted model order. Original selectors0..479 and eligible edges540..68933 retain their IDs; all inherited and new auxiliary domains are checked from the accepted protobuf.",
+    "feasible_vector_scope": "Only a witness for the complete combined exterior relaxation. All original selected-pair caps and a compatible second component are not certified by this query.",
+    "native_response_transport": "Preserve original UTF-8 native text and native primary/additional integer arrays before parsing. CpSolverResponse has no public binary-export method in the bound native wrapper; separately saved protobuf wire is reconstructed from that text."
+  },
+  "pending_actual_bindings": {
+    "query_configuration": null,
+    "accepted_model_raw_sha256": null,
+    "accepted_model_raw_bytes": null,
+    "accepted_new_native_model_root_receipt": null,
+    "accepted_query_preflight_report": null,
+    "accepted_query_preflight_owner": null,
+    "query_root_gate": null,
+    "query_result": null,
+    "query_owner": null
+  },
+  "required_report_fields": [
+    "source",
+    "configuration",
+    "root_gate",
+    "query_result",
+    "query_owner",
+    "query_source",
+    "model_cold",
+    "model_root_acceptance",
+    "model_raw_sha256",
+    "model_raw_bytes",
+    "variables",
+    "rows",
+    "native_answer_classification",
+    "native_status",
+    "query_native_calls",
+    "query_native_seconds",
+    "query_native_overrun_seconds",
+    "returned_vectors_independently_checked",
+    "vectors",
+    "complete_parameters_checked",
+    "complete_response_messages_checked",
+    "all_available_native_vectors_and_saved_row_activities_checked",
+    "graph_constructed",
+    "whole_component_excluded",
+    "original_pair_caps_checked",
+    "second_component_completion_checked",
+    "native_INFEASIBLE_is_unproved",
+    "producer_imports",
+    "native_imports",
+    "CpModel_constructed",
+    "CpSolver_constructed",
+    "optimizer_calls",
+    "maximum_seconds",
+    "seconds_before_serialization"
+  ],
+  "independent_arithmetic": {
+    "complete_variable_domains": true,
+    "complete_linear_row_integer_activities": true,
+    "producer_imports": 0,
+    "native_solver_imports": 0,
+    "source_imports": 0,
+    "protobuf_decode_only": true,
+    "original_edge_slice": [
+      540,
+      68934
+    ],
+    "all_nonempty_primary_and_all_additional_vectors": true,
+    "Python_int_required_bools_and_floats_rejected": true,
+    "full_original_native_text_and_reconstructed_wire_and_native_vector_snapshot_compared": true,
+    "saved_activity_raw_bytes_compared": true,
+    "actual_auxiliary_domains_from_accepted_model": true
+  },
+  "source_preparation_only": {
+    "compile_calls": 0,
+    "controls_calls": 0,
+    "actual_model_loads": 0,
+    "actual_preflight_calls": 0,
+    "query_calls": 0,
+    "terminal_replay_calls": 0,
+    "optimizer_calls": 0
+  },
+  "mathematical_scope": {
+    "graph_constructed": false,
+    "whole_component_excluded": false,
+    "original_pair_caps_checked": false,
+    "second_component_completion_checked": false,
+    "native_INFEASIBLE_is_unproved": true,
+    "UNKNOWN_is_no_exclusion": true
+  }
+}

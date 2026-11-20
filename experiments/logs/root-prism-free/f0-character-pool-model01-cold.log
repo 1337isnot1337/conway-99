@@ -1,0 +1,42 @@
+{
+  "status": "PASS: cold exact domain, omission, row-map and native coefficient replay",
+  "source_sha256": "b3029a3a197ec31305f74dead2b28f51beaf219cb2e9e289dc8f250db42a6943",
+  "preparation_sha256": "ed912b419cdfe1a4b4b228382ec1cfbb58a7688476c06ea14e851a3290992f30",
+  "plan_sha256": "b3179e520d5913530c7d3cfae27529b5717be26c763de024b725c38959aa2aef",
+  "models": {
+    "target": {
+      "variables": 18444,
+      "constraints": 34398,
+      "constraint_types": {
+        "linear": 31066,
+        "int_prod": 3288,
+        "table": 44
+      },
+      "linear_terms": 1308492,
+      "maximum_linear_absolute_box_sum": 16269245368499,
+      "all_row_coefficients_endpoints_and_product_domains_fit_signed64": true,
+      "every_variable_and_constraint_compared_exactly": true,
+      "objective_hints_assumptions_enforcements_or_strategy_added": false
+    },
+    "initial": {
+      "variables": 18444,
+      "constraints": 34281,
+      "constraint_types": {
+        "linear": 30949,
+        "int_prod": 3288,
+        "table": 44
+      },
+      "linear_terms": 242130,
+      "maximum_linear_absolute_box_sum": 9000,
+      "all_row_coefficients_endpoints_and_product_domains_fit_signed64": true,
+      "every_variable_and_constraint_compared_exactly": true,
+      "objective_hints_assumptions_enforcements_or_strategy_added": false
+    }
+  },
+  "parent_complete_cold_bound": "fd86705f404e899869234d67916c2178d77acfb9c2b847571fb897cc5f785e18",
+  "old_proof_censuses_or_solver_calls_repeated": false,
+  "controls_repeated": false,
+  "optimizer_calls": 0,
+  "CpSolver_constructed": false,
+  "seconds": 4.437673724998604
+}

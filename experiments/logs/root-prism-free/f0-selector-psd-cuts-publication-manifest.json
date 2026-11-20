@@ -1,0 +1,33 @@
+{
+  "schema": "f0-selector-psd-cuts-preparation-publication-v1",
+  "status": "FROZEN EXACT PREPARATION; no production spectral scan or optimizer",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_psd_cuts.py",
+      "bytes": 19526,
+      "sha256": "64fa05e1947ac0e59801a400e0b9ee61e3c08691156025509c7390732db8bab2",
+      "git_blob": "b34f5dc142e8d8e3707ddaf7129edff8f8f0923e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-psd-cuts-preparation.json",
+      "bytes": 1758,
+      "sha256": "1e9de6de2fb86809ebdedc751b2e7a5942ce4cf47c211421e65b530cb2f350cf",
+      "git_blob": "edf7c4ded4fc03db2b7595b6b527c40e1fd0859b"
+    },
+    {
+      "path": "research/root_prism_free_f0_selector_psd_cuts.md",
+      "bytes": 5996,
+      "sha256": "3e029f196d9941c1da7d199bc67c46cb1941e8197865a3debae18b04189ba768",
+      "git_blob": "5aab45c97bfba7755d938621ab8d2fe52148b1f2"
+    }
+  ],
+  "dependencies": [
+    {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-reduction-publication-manifest.json",
+      "bytes": 3607,
+      "sha256": "9eebc6076c74f3374037aef2359dbf775441f8d9a6a955fa6a9fcaf6b156bfaf",
+      "git_blob": "e05d7b2793eaf98920676f97f9b81ca74e00900c"
+    }
+  ],
+  "scope": "Only augmented481-selector moment PSD; exact vector validity independent of proposing point feasibility; no LP mutation or model exclusion."
+}

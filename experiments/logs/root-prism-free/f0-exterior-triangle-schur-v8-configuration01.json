@@ -1,0 +1,64 @@
+{
+  "schema": "conway99.f0.exterior-triangle-schur-v8-configuration.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_schur_v8.js",
+    "sha256": "c1ce569b071d244f45aadd95569f695dc72c3a7c131b6290bc36026689da6afd",
+    "bytes": 8465,
+    "git_blob": "a7f9e880e008460a2dd510fca2f30e0813b19ed3"
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "bytes": 8304
+  },
+  "inputs": {
+    "domain": {
+      "name": "domain",
+      "archive_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "archive_git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "archive_bytes": 52094,
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "raw_bytes": 547862
+    },
+    "kernels": {
+      "name": "kernels",
+      "archive_sha256": "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1",
+      "archive_git_blob": "eb5103adaeeb66fd424f672272f35e0516da1c44",
+      "archive_bytes": 453951,
+      "raw_sha256": "a963a88606a9fad78576d711f6ef7bf67eb03032176cebc2af5af700ea7c6708",
+      "raw_bytes": 1405171
+    },
+    "independent_kernel_audit": {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit.json",
+      "sha256": "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75",
+      "bytes": 4489,
+      "git_blob": "a7ed9d7d07e7b48e3facb4fd651451e1a872880a"
+    }
+  },
+  "controls": {
+    "status": "PASS_TRIANGLE_DETERMINANT_CONTROLS",
+    "matrices": 729,
+    "negative": 258,
+    "zero": 213,
+    "positive": 258,
+    "explicit_examples": 3
+  },
+  "maximum_ms": 60000,
+  "maximum_records_per_family": 500000,
+  "runs_authorized": 1,
+  "optimizer_calls_authorized": 0,
+  "execution": "Pure JavaScript V8 isolate using retrieved committed data; no unavailable execution environment or Pyroam",
+  "scope": "Complete pairwise-disjoint signature triangles with all three original eligible edges. Check all proper minors and both exact3x3 determinants. No oldzero/path pruning; novelty unclaimed.",
+  "review": {
+    "reviewer": "master_review",
+    "complete_draft_read": true,
+    "draft_sha256": "12d43541bc6745e9c5ae1fb25404117afe9914ab33d0422138c218e9d55f8177",
+    "exact_repairs_applied": [
+      "replace115440argument spread with loop",
+      "prove Number exactness bound using BigInt"
+    ],
+    "other_mathematical_blockers_reported": []
+  },
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

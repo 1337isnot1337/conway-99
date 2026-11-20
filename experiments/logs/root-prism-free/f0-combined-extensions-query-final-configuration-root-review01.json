@@ -1,0 +1,80 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-final-configuration-root-review.v1",
+  "status": "PASS_COMPLETE_ACTUAL_CONFIGURATION_AND_ACCEPTED_NATIVE_RECEIPT_BINDINGS",
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration01.json",
+    "bytes": 6112,
+    "sha256": "3211efaf7c13917b36c3e47eedf3fc42e761f74b39ce8fcb4330d47a7072f2af",
+    "git_blob": "4fdd5c09bbc7416a850ed265597e5dfac89bb236",
+    "mode": "100644"
+  },
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "source_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-independent-source-review01.json",
+    "bytes": 5869,
+    "sha256": "5051e866228b138e6b26ab454d4d24f335d874ba11bf6992fbf17cd46be56468",
+    "git_blob": "68587d5fda74adca5bac006cb69139f70f7e1775",
+    "mode": "100644"
+  },
+  "root_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-root-source-review01.json",
+    "bytes": 3644,
+    "sha256": "0b3595a4afd2fa0b25d5b6c8e0e59a743841236f58a4dc35b29a58add0fd4543",
+    "git_blob": "4d8cd081d01ce23d40c41fc7b473f9eca236e944",
+    "mode": "100644"
+  },
+  "configuration_binding": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration-binding01.json",
+    "bytes": 9936,
+    "sha256": "f840caac3c600eeb567c40d1277d46b182465300cc05572e7fd52c3925b28123",
+    "git_blob": "ed2d84faa12c0e7816ba7e2e94f3c6320caa6dee",
+    "mode": "100644"
+  },
+  "model_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "bytes": 9294,
+    "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+    "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd",
+    "mode": "100644"
+  },
+  "checks": {
+    "all_fixed_configuration_fields_equal_frozen_contract": true,
+    "all_seven_input_refs_exactly_match_actual_accepted_artifacts": true,
+    "all_five_helper_source_refs_match_frozen_contract": true,
+    "full_raw_model_identity_matches_root_and_native_receipts": true,
+    "no_placeholder_fields": true
+  },
+  "all_actual_native_reports_and_owners_read_by_root": true,
+  "complete_raw_and_archive_bytes_previously_hash_verified_by_root": true,
+  "all_actual_combined_row_preservation_and_extension_counts_compared": true,
+  "parameters": {
+    "num_search_workers": 4,
+    "random_seed": 0,
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "symmetry_level": 0,
+    "max_time_in_seconds": 600,
+    "log_search_progress": true,
+    "log_to_stdout": true,
+    "log_to_response": true
+  },
+  "limits": {
+    "solver_seconds": 600,
+    "native_allowance_seconds": 610,
+    "owner_seconds": 720,
+    "preparation_seconds": 60,
+    "preparation_owner_seconds": 75,
+    "finalization_reserve_seconds": 60
+  },
+  "independent_terminal_source_prepared_for_later_production": true,
+  "preflight_calls": 0,
+  "optimizer_calls": 0,
+  "authorizes_execution": false,
+  "remaining_gate": "One zero-solve preflight; actual preflight acceptance and a separate gate are required before a production query."
+}

@@ -1,0 +1,34 @@
+{
+  "status": "PASS: literal native count/product proto replay",
+  "source_sha256": "528f480b08adc5f1040807eec3eb96a75a8ea755eee28aec234f9d660034ff42",
+  "mathematical_source_sha256": "147ad92071ced273139993b09633c298b7a4a8ed9298e68103f970a8f01b7a66",
+  "specification": {
+    "path": "experiments/logs/root-prism-free/f0-population-products02-specification.json.gz",
+    "sha256": "c83ebbc1d0d4e9b5ec5ccd60ed5e52ea2be2cb24f1de570f6bff8bb158d42e0c"
+  },
+  "proto": {
+    "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/model.pb",
+    "sha256": "aa43ef31991213634b0cc812b61a5d1247c1915c6690def64a54247854ee8589",
+    "bytes": 11588655
+  },
+  "ortools_version": "9.15.6755",
+  "installed_cp_model_source_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+  "controls": {
+    "repeated": false
+  },
+  "checks": {
+    "all15941_integer_variable_domains_checked": true,
+    "all28647_linear_rows_checked": true,
+    "all903_product_constraints_checked": true,
+    "linear_nonzeros_checked": 1279413,
+    "maximum_absolute_linear_box_sum": 16410372831576,
+    "maximum_product_upper": 144,
+    "all_proto_int64_ranges_checked": true,
+    "objective_hints_assumptions_enforcement_literals_or_search_strategy_present": false
+  },
+  "seconds": 7.608220202993834,
+  "optimizer_calls": 0,
+  "CpSolver_constructed": false,
+  "count_or_graph_feasibility_claimed": false,
+  "scope": "All count variables free; 903 deterministic products and 25 integer refinements. Root selector-profile tables are a separate later overlay."
+}

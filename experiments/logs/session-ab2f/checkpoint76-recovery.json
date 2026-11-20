@@ -1,0 +1,47 @@
+{
+  "complete_publication_follows_in_checkpoint_manifest": 76,
+  "historical_observation": {
+    "bytes": 5536,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-observed-terminal-receipts.json",
+    "sha256": "03707b57601dccd8371236e3d4fd09863532e0fcbb1a4de2e377d6f137f5f0e1"
+  },
+  "historical_observation_map": {
+    "bytes": 6688,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-observed-terminal-artifacts.json",
+    "sha256": "c871a5fe97cb3f30b07dfe85627b9fc528e4de8eecf3715cb8403244c85a06c0"
+  },
+  "history": "The managed execution environment was unavailable during run03 publication. Both the native terminal and complete cold terminal had already completed. After the environment returned, explicit interpreter and git paths worked while the default wrappers did not return promptly. The cause is not determined.",
+  "interrupted_packaging_directory_reused": false,
+  "local_head_and_tracked_clean_rechecked": true,
+  "mathematical_result_changed_by_recovery": false,
+  "native_or_cold_repeated_for_recovery": false,
+  "parent_commit": "d616b2c3412e222c81fa2452bb2b2903cf9daa6b",
+  "recorded_utc": "2026-11-19T20:02:44.277237+00:00",
+  "restoration": "These two historical records were restored byte-for-byte from their uploaded Git blobs. Original terminal receipts were read from their existing files, not reconstructed from the observation.",
+  "schema": "conway99.session-ab2f.checkpoint76-recovery.v1",
+  "status": "RECOVERED_ORIGINAL_TERMINALS_HASH_MATCH",
+  "verified_kernel_map": {
+    "bytes": 3161,
+    "path": "experiments/logs/root-prism-free/f0-shared-rational-kernel-artifacts.json",
+    "sha256": "7515d611acdc89fb4e501dadcb62e1f663a7e252d79c0f12d58cec78fd2ecc91"
+  },
+  "verified_original_results": [
+    {
+      "bytes": 10837,
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/result.json",
+      "sha256": "5192b4cf6a3149522f1c9f771e19a0571cf9ea50169eb151a343f7913e197e25"
+    },
+    {
+      "bytes": 10959,
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-cold/report.json",
+      "sha256": "5f6edb6d7d7927f2094b55aa99cdff55e7358c3adffa09163809e192cf48f70e"
+    }
+  ],
+  "verified_preparation_map": {
+    "bytes": 14074,
+    "path": "experiments/logs/root-prism-free/f0-direct-master-continuation03-preparation-artifacts.json",
+    "sha256": "4457cb31d5b10a0869fc299be8e8431da0715fd618824843c867d54873f9d582"
+  },
+  "working_git": "/usr/bin/git",
+  "working_python": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python"
+}

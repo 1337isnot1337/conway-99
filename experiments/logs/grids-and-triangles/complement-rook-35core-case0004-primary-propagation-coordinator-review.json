@@ -1,0 +1,27 @@
+{
+  "status": "PASS: complete exact interval, guarded-cover propagation and sequential reason replay source reviewed",
+  "source_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7",
+  "preparation_sha256": "7e242554f2fea7d9d0da8543c8760534ff461e21ae5689208352551c8e4df2d2",
+  "reviewed_checks": [
+    "Signed Boolean extrema include the contribution of every free or assigned variable",
+    "A value is excluded only when its conditional exact interval misses original bounds",
+    "Every cover uses the full frozen guarded positive support",
+    "All 2271 base rows, all 178533 covers and fourteen initial proved units remain present",
+    "Every recorded reason refers only to earlier assignments and an original constraint",
+    "No variable may be assigned twice and all arithmetic uses Python integers",
+    "The separate verifier reconstructs conditional extrema without row_event",
+    "A complete fixed point requires direct rechecking of both values of every remaining free row variable and every cover",
+    "No native presolve inference or failed-literal probe is a proof premise"
+  ],
+  "authorized_run": {
+    "closure_calls": 1,
+    "forward_seconds": 60,
+    "maximum_primary_assignments": 1214,
+    "maximum_records": 1215,
+    "maximum_sweeps": 1215,
+    "automatic_retries": 0
+  },
+  "required_after_run": "Save all bindings and reason records, then perform the separate exact sequential replay. Partial timeout claims only recorded implications.",
+  "solver_or_optimizer_called_by_review": false,
+  "case4_excluded_before_run": false
+}

@@ -1,0 +1,120 @@
+{
+  "schema": "conway99.f0.triangle-incidence-ci-independent-source-review.v1",
+  "status": "PASS_COMPLETE_CORRECTED_CI_DRIVER_AND_ACTUAL_CONFIGURATION_INTERFACE_REVIEW_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+    "git_blob_sha": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a",
+    "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+    "bytes": 17497
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+    "git_blob_sha": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+    "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+    "bytes": 24503
+  },
+  "producer": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "git_blob_sha": "dcb63e7900ba4b588e8ed767ce60be2323797cde",
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "bytes": 64900
+  },
+  "checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob_sha": "a7c3cb08bd93b67caad943162fe9d8de73689119",
+    "bytes": 82846,
+    "lines": 1291
+  },
+  "checker_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-independent-replay-source-contract01.json",
+    "git_blob_sha": "1ac57f27233cd4322afd6cc5746e26452ba2659f",
+    "sha256": "8621d7ad581462d57428fed566c9c5ae9efe03270213005db06440e55dbcae2d",
+    "bytes": 8630
+  },
+  "previous_unrun_driver": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci_unrun_draft01.py",
+    "git_blob_sha": "888e1f5a409709cd7967fc07824fe3ab3fbf379b",
+    "sha256": "a3289affb6590af7a6279bf788752396189d88afbbf763aae93d11e7da55fc15",
+    "bytes": 17245
+  },
+  "inherited_driver": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+    "git_blob_sha": "06166151155be8a6cd46ec7a0b3e5989ed408dff",
+    "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+    "bytes": 16246
+  },
+  "complete_corrected_driver_read": true,
+  "complete_actual_configuration_read": true,
+  "corrected_source_lines": 300,
+  "configuration_inputs": 23,
+  "configuration_sources": 6,
+  "configuration_success_authorities": 16,
+  "configuration_reference_links": 60,
+  "discovered_and_repaired_blocker": {
+    "stale_field_accesses": [
+      "report.producer_imports",
+      "report.native_imports"
+    ],
+    "failure_if_run": "The new checker does not emit these old combined-checker fields; either cold phase would raise KeyError after a successful worker.",
+    "repaired_before_execution": true,
+    "original_driver_preserved": true,
+    "frozen_checker_unchanged": true,
+    "replacement_both_modes": [
+      "native_model_builds == 0",
+      "native_optimizer_constructed is False",
+      "native_query_run is False"
+    ],
+    "retained_both_modes": [
+      "CpModel_constructed is False",
+      "CpSolver_constructed is False"
+    ],
+    "additional_replay_checks": [
+      "original_extractor_or_literal_producer_imported is False",
+      "native_transport_or_preparation_producer_imported is False"
+    ],
+    "exact_two_replacement_reconstruction_verified": true
+  },
+  "findings": [
+    "Request and root gate bind the exact driver, producer, checker, configuration and fixed supervisor before execution. The full dependency manifest is hashed before the first phase and again after successful replay.",
+    "There is exactly one producer controls call, one prepare call, one separate checker controls call and one complete checker replay. No retry, automatic rebuild or solver query exists.",
+    "Producer modes retain their own process-group ownership. Independent modes are separately supervised with explicit zero return code, complete child reap and stopped process group, bounded owner time, preserved preliminary/final receipts and matching source/configuration references.",
+    "The checker CLI matches the driver exactly: controls and replay both take configuration/path SHA and fresh directory; replay additionally receives preparation directory plus exact report/owner SHA. Owner directories are distinct from worker output directories.",
+    "The controls report fields now match the frozen checker. Replay acceptance additionally compares all final dimensions, three family counts and term counts, complete parent preservation, row/literal hashes and raw model identities.",
+    "The complete accepted original parent identity remains39306083 bytes/SHA2961c95c...,80730 variables/297470 rows. The final model has80730 variables/300795 rows/3337296 terms, with no variable or old-row replacement.",
+    "The final retention path includes append-rows.json.gz, complete model/suffix archives, restoration metadata, all worker/owner/error receipts, supervisor and stage files. Pipeline terminal records are preserved in finally.",
+    "The configuration has exactly23 input aliases,6 sources,16 successful status authorities and60 reference links. All four original failed extractor records remain data and are excluded from successful authorities.",
+    "Configuration families, offsets, limits, runtime pins, corrected proof/review identities and current producer/checker hashes match the source contract. The two-family literal hashes remain separate from the full three-family row hashes.",
+    "Root gate/request/workflow are still required before execution. This source review does not accept any model build or cold result."
+  ],
+  "ownership_and_limits": {
+    "producer_controls_worker_seconds": 10,
+    "producer_controls_owner_seconds": 15,
+    "producer_prepare_worker_seconds": 120,
+    "producer_prepare_owner_seconds": 135,
+    "independent_controls_worker_seconds": 10,
+    "independent_controls_owner_seconds": 15,
+    "independent_replay_worker_seconds": 120,
+    "independent_replay_owner_seconds": 135,
+    "complete_driver_seconds": 420,
+    "automatic_retries": 0,
+    "optimizer_calls": 0,
+    "producer_owner_processes_reaped": true,
+    "independent_worker_process_groups_reaped_and_stopped_required": true
+  },
+  "scope": {
+    "driver_executed": false,
+    "producer_imported_or_executed": false,
+    "checker_imported_or_executed": false,
+    "configuration_loaded_by_subject_source": false,
+    "controls_run": false,
+    "native_model_decoded": false,
+    "large_parent_archive_or_domain_census_reread": false,
+    "full60_link_runtime_traversal_repeated": false,
+    "comparison_basis": "Complete source and actual configuration declaration review, exact frozen interface comparison and previously read/hash-bound authority receipts. All runtime input hashes and links remain required in the actual one-shot pipeline.",
+    "raw_large_integer_controls_export_required": true,
+    "native_query_authorized": false
+  },
+  "concrete_remaining_blockers": [],
+  "source_and_configuration_gate_pass": true
+}

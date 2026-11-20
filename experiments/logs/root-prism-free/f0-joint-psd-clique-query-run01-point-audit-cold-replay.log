@@ -1,0 +1,160 @@
+{
+  "status": "PASS: all mathematical residuals evaluated exactly; terminal UNKNOWN unchanged",
+  "mode": "replay",
+  "source_sha256": "eebaa32087136f601fa9996943f1e2f958129dc2fa1f7c056a66aef854f03036",
+  "record_sha256": "0d159468ea5d14557d97a78064241ca2cb935524c9ba95729ddc25d66bedbc91",
+  "record_canonical_sha256": "1c98d201826d6a4985d2cae822f3dc17bf73f17519e0dbac67766881aff02e96",
+  "rows": 28043,
+  "variables": 15200,
+  "bounds_all_hold": true,
+  "exact_matrix_and_box_feasible_at_this_vector": false,
+  "by_kind": {
+    "equality": {
+      "rows": 6135,
+      "exact_violations": 6135,
+      "threshold_counts": [
+        {
+          "threshold": "1/1000000",
+          "raw_strictly_above": 6134,
+          "scaled_strictly_above": 6134
+        },
+        {
+          "threshold": "1/100000000",
+          "raw_strictly_above": 6135,
+          "scaled_strictly_above": 6135
+        },
+        {
+          "threshold": "1/1000000000",
+          "raw_strictly_above": 6135,
+          "scaled_strictly_above": 6135
+        },
+        {
+          "threshold": "1/1000000000000",
+          "raw_strictly_above": 6135,
+          "scaled_strictly_above": 6135
+        },
+        {
+          "threshold": "1/1000000000000000",
+          "raw_strictly_above": 6135,
+          "scaled_strictly_above": 6135
+        }
+      ]
+    },
+    "inequality": {
+      "rows": 21908,
+      "exact_violations": 1110,
+      "threshold_counts": [
+        {
+          "threshold": "1/1000000",
+          "raw_strictly_above": 1110,
+          "scaled_strictly_above": 1110
+        },
+        {
+          "threshold": "1/100000000",
+          "raw_strictly_above": 1110,
+          "scaled_strictly_above": 1110
+        },
+        {
+          "threshold": "1/1000000000",
+          "raw_strictly_above": 1110,
+          "scaled_strictly_above": 1110
+        },
+        {
+          "threshold": "1/1000000000000",
+          "raw_strictly_above": 1110,
+          "scaled_strictly_above": 1110
+        },
+        {
+          "threshold": "1/1000000000000000",
+          "raw_strictly_above": 1110,
+          "scaled_strictly_above": 1110
+        }
+      ]
+    }
+  },
+  "largest_raw": {
+    "equality": {
+      "combined_row": 3645,
+      "kind": "equality",
+      "within_kind_row": 3645,
+      "family": "selector RLT equality",
+      "terms": 38,
+      "scale": 1,
+      "signed_residual_numerator": "170935018645199680192",
+      "raw_violation": {
+        "numerator": "2670859666331245003",
+        "denominator": "576460752303423488",
+        "float_description": 4.633202964224393
+      },
+      "scaled_violation": {
+        "numerator": "2670859666331245003",
+        "denominator": "576460752303423488",
+        "float_description": 4.633202964224393
+      }
+    },
+    "inequality": {
+      "combined_row": 21881,
+      "kind": "inequality",
+      "within_kind_row": 15746,
+      "family": "augmented selector PSD",
+      "terms": 8459,
+      "scale": 33554432,
+      "signed_residual_numerator": "21064362551396627194891840",
+      "raw_violation": {
+        "numerator": "329130664865572299920185",
+        "denominator": "576460752303423488",
+        "float_description": 570950.6910061631
+      },
+      "scaled_violation": {
+        "numerator": "329130664865572299920185",
+        "denominator": "19342813113834066795298816",
+        "float_description": 0.017015656560843084
+      }
+    }
+  },
+  "largest_scaled": {
+    "equality": {
+      "combined_row": 3645,
+      "kind": "equality",
+      "within_kind_row": 3645,
+      "family": "selector RLT equality",
+      "terms": 38,
+      "scale": 1,
+      "signed_residual_numerator": "170935018645199680192",
+      "raw_violation": {
+        "numerator": "2670859666331245003",
+        "denominator": "576460752303423488",
+        "float_description": 4.633202964224393
+      },
+      "scaled_violation": {
+        "numerator": "2670859666331245003",
+        "denominator": "576460752303423488",
+        "float_description": 4.633202964224393
+      }
+    },
+    "inequality": {
+      "combined_row": 27777,
+      "kind": "inequality",
+      "within_kind_row": 21642,
+      "family": "joint PSD",
+      "terms": 8067,
+      "scale": 1024,
+      "signed_residual_numerator": "6486236282577578114048",
+      "raw_violation": {
+        "numerator": "6334215119704666127",
+        "denominator": "36028797018963968",
+        "float_description": 175.8097867206228
+      },
+      "scaled_violation": {
+        "numerator": "6334215119704666127",
+        "denominator": "36893488147419103232",
+        "float_description": 0.1716892448443582
+      }
+    }
+  },
+  "substantive_by_descriptive_threshold": 7245,
+  "terminal_status_preserved": "UNKNOWN: numerical proposal only; no existing dual ray",
+  "optimizer_calls": 0,
+  "eigendecompositions": 0,
+  "seconds": 11.838324911994277
+}

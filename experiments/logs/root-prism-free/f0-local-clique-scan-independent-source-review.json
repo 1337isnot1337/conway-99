@@ -1,0 +1,32 @@
+{
+  "status": "PASS: independent complete-source and mathematical review of corrected local clique scanner",
+  "reviewer": "independent_sets",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_local_clique_scan.py",
+    "sha256": "6971e3631461929355eb565cbfa002bd14ea33dc64bcfccdfde659688fb03dd8"
+  },
+  "preparation": {
+    "path": "experiments/logs/root-prism-free/f0-local-clique-scan01-preparation.json",
+    "sha256": "39fe2821ef5bc6deab8b82c5d46fdcba4b6cd5dac9d9f4ea69b145a753077b4e"
+  },
+  "review_scope": [
+    "Read the complete corrected source and frozen preparation, without importing or executing the subject",
+    "The literal signature adjacency bits are checked against each actual neighbor set, then transported through the explicit inverse map before search",
+    "Witness replay checks every clique pair using original literal signature IDs, independently of the local search conversion",
+    "At most one Boolean incident edge in a conflict clique, together with endpoint activation, implies sum of its incident edges <= selected center",
+    "Averaging actual core transports yields the displayed quotient inequality; Counter preserves repeated edge-orbit coefficients, and no orbit-size division is appropriate",
+    "Reordering preserves the conflict graph; intersecting all selected adjacency sets maintains a clique and self-loop absence ensures greedy termination",
+    "Each of three deterministic orders starts every singleton seed; total planned trials 34974, with a cooperative 30-second cap and explicit partial status",
+    "Float hexadecimal values are converted losslessly to one dyadic denominator; all retained gaps are checked by arbitrary-precision integer contraction",
+    "Parent-row deduplication, maximum128 retained rows, and nonfeasibility/nonoptimality scope are correct",
+    "Replay certifies retained and saved-best clique witnesses plus exact gaps; it does not independently rerun all greedy trials or certify a maximum-weight clique"
+  ],
+  "failed_first_attempt": "The prior literal/local indexing mismatch was caught by preparation before any trial; this report covers only the corrected bound source",
+  "assumed_prior_certificates": "Necessity and complete domain of the frozen local-conflict inventory are inherited from its bound production and complementary cold-prefix/suffix certificates; no domain reconstruction was repeated",
+  "subject_imported": false,
+  "graph_or_domain_rebuilt": false,
+  "control_repeated": false,
+  "search_run": false,
+  "optimizer_calls": 0,
+  "mathematical_blocker_found": false
+}

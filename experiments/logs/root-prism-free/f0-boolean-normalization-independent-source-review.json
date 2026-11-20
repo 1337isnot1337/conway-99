@@ -1,0 +1,16 @@
+{
+  "status": "PASS: independent read-only Boolean-normalization source/math review",
+  "source_path": "experiments/workspace/root_prism_free_f0_boolean_normalization.js",
+  "source_sha256": "e5e880d3d7a114ad8e61447e126fd0502f4597af1a7f14eb9ffdc4a79274ece6",
+  "checks": {
+    "guarded_rows": "At guard0 both original and normalized rows are tautologies. At guard1, capping each positive weight at the demand preserves a Boolean threshold. Dividing by the gcd of the capped weights and taking the ceiling of demand/gcd is exact; the guard coefficient is correctly excluded from that gcd.",
+    "shared_rows": "For sum(c_j*x_j)<=0, convert positive coefficients to complementary literals and use threshold D=sum(c_j>0)c_j. Each positive coefficient is at most D, so capping leaves it unchanged and the capped-weight gcd divides D. Expansion back to signed selectors therefore has exactly zero RHS.",
+    "edge_cases": "Empty guarded support forces the guard absent. An all-nonpositive shared row is a tautology. Integer arithmetic is BigInt throughout.",
+    "scope": "These transformations are equivalent for Boolean selectors. They may strengthen the real unit-box relaxation, so they must not be described as equivalent real-LP row compression."
+  },
+  "full_source_read": true,
+  "controls_reexecuted": false,
+  "model_rebuilt": false,
+  "optimizer_called": false,
+  "observed_soundness_blockers": []
+}

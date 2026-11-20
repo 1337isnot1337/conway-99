@@ -1,0 +1,18 @@
+{
+  "status": "PASS: read-only compact certificate reduction and replay logic review",
+  "source_sha256": "f028ab32a304c518a417a727697afbd96333a6699fbcb5787af3a6a3e0bbf9c7",
+  "certificate_sha256": "591fb8967425ed29686c3d76a5d9e7720854a239f86f38c3c1508dc7e977b861",
+  "reviewed_points": [
+    "cold_original binds original source, complete domain record and regenerated original CNF hash",
+    "every retained input outside the original formula is identified by exact canonical clause comparison",
+    "each additional clause has two distinct negative primary literals in the reconstructed attachment order",
+    "the full35 integer quadratic remainder is recomputed directly; rounded-vector generation is not trusted",
+    "found==needed covers every non-original retained input and introduces no hidden clause",
+    "separately checked retained DRAT proves the original formula plus those necessary Gram cuts inconsistent"
+  ],
+  "scope": "indexed cases9 and10 only; no whole-local-set conclusion",
+  "CNF_rebuilt": false,
+  "solver_called": false,
+  "proof_replayed": false,
+  "negative_values_independently_recomputed": false
+}

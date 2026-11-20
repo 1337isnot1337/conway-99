@@ -1,0 +1,23 @@
+{
+  "status": "PASS: complete native-box bound helper and model source review",
+  "reviewer": "independent_sets",
+  "subject_source_sha256": "df6a043f5a1f9f958536ff6c5b847b3b659c7701e609a30049b24582939ecc60",
+  "scope": "Read the complete helper, native-row construction,72-pattern objective ordering, certificate replay and controls. No source import, model reconstruction, controls or optimizer repeated.",
+  "checked": [
+    "For arbitrary signed rational u, choosing the upper row endpoint for u>=0 and the lower endpoint for u<0 gives a valid upper bound. The positive residual correction includes every unit-box coordinate, including variables absent from the objective or from the multiplier support.",
+    "No dual-feasibility premise is used. Positive common-denominator and gcd normalization preserve the exact inequality. Negative bound proves infeasibility because every listed objective is nonnegative. A bound below1 on a singleton proves a Boolean zero; below2 on a pair excludes only simultaneous selection.",
+    "Every retained row is an original native row or one of the two separately proved integer parity equalities. Proved-zero substitution and omitted rows use exact real-box extrema. The164181 coordinate-cover pool is intentionally omitted, making this a valid necessary relaxation.",
+    "The first72 objectives are all32 common-support singletons plus all40 A-times-B pairs. They form a complete disjoint assignment cover once both parity sums equal1. The following1071 singleton objectives cover every surviving coordinate outside the common support.",
+    "Neighbor/orbit symmetry is not imposed. No positive selector is fixed. The complete objective inventory has1143 members and the model retains1103 distinct variables.",
+    "Certificate replay recomputes every row and box contribution and the entire residual hash from integer multipliers, denominator and the bound model."
+  ],
+  "limitations": [
+    "This is a source gate only; no saved production bound or numerical outcome was evaluated.",
+    "The separate numerical driver, timeout handling and any batch-exhaustion conclusion are outside this review.",
+    "The model need not have a Boolean or real feasible point; preparation and a failed search for a bound establish neither."
+  ],
+  "subject_imported": false,
+  "model_rebuilt": false,
+  "controls_repeated": false,
+  "optimizer_calls": 0
+}

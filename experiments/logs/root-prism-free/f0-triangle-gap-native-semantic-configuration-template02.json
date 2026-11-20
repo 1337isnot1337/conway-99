@@ -1,0 +1,575 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-semantic-configuration-template.v1",
+  "status": "NOT_AN_EXECUTABLE_NATIVE_CONFIGURATION_PENDING_ONLY_EXACT_LITERAL_REFERENCES",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b"
+  },
+  "base_configuration": {
+    "schema": "conway99.f0.triangle-gap-native-configuration.v1",
+    "source_sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "layout": {
+      "parent_variables": 80730,
+      "parent_rows": 300795,
+      "new_variables": 0,
+      "replaced_rows": 0,
+      "appended_rows": 3156,
+      "appended_terms": 3156,
+      "gap_triangle_zero_start": 300795,
+      "variables": 80730,
+      "rows": 303951,
+      "triangle_variable_start": 71382,
+      "triangle_variables": 5364
+    },
+    "family_order": [
+      "gap_triangle_zero"
+    ],
+    "expected_family_counts": {
+      "gap_triangle_zero": 3156
+    },
+    "expected_family_terms": {
+      "gap_triangle_zero": 3156
+    },
+    "runtime": {
+      "ortools": "9.15.6755",
+      "protobuf": "6.33.6",
+      "model_schema_sha256": "266b68151ffd6c9f5db22553442abd777031663d39e1cea649a8737f811d2eff",
+      "cp_model_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+      "native_helper_sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735"
+    },
+    "limits": {
+      "controls_worker_seconds": 10,
+      "controls_owner_seconds": 15,
+      "prepare_worker_seconds": 120,
+      "prepare_owner_seconds": 135
+    },
+    "inputs": {
+      "parent_model": {
+        "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/model.pb.gz",
+        "bytes": 5690176,
+        "sha256": "3a84ccb555ebc28c5ba7cc0d2f2d5bacec9de48c9c8b8e6380278e1222cbe7f2",
+        "git_blob": "7a069862cfedca531b2f3acfd9da284b1e11f948",
+        "mode": "100644"
+      },
+      "parent_configuration": {
+        "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+        "bytes": 24503,
+        "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+        "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+        "mode": "100644"
+      },
+      "parent_report": {
+        "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/report.json",
+        "bytes": 23939,
+        "sha256": "f7be6afd05ae3ac32fbf6c768e7c3cb4decd830be18bef548f16b7e142d3d00f",
+        "git_blob": "117b739356e011bd74503f92a41aaf3a0e4e48c5",
+        "mode": "100644"
+      },
+      "parent_owner": {
+        "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/owner.json",
+        "bytes": 1311,
+        "sha256": "b5368c3ba810f06f56f4b8bb2c0e8db8b52c683d6d0cdbeee6aa5190185489ec",
+        "git_blob": "b4b2a776e096bc506744eb2fc466f8ec9b203082",
+        "mode": "100644"
+      },
+      "parent_cold": {
+        "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold/report.json",
+        "bytes": 16627,
+        "sha256": "a9e9f97f5e437ebb65091c7b693ae3af93e682573f3ca743d39ec74d6dd20953",
+        "git_blob": "90c26ca5b6def071a349a9482a6639f3c32d60d1",
+        "mode": "100644"
+      },
+      "parent_cold_owner": {
+        "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-owner/owner.json",
+        "bytes": 1912,
+        "sha256": "e48634509d4246f20638fc500611d41ec0591fe65d0765a22bdf60c408f74607",
+        "git_blob": "05cbd3eb0eef1d72a12dc54a5e250ba110aa2dd3",
+        "mode": "100644"
+      },
+      "parent_root_acceptance": {
+        "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-root-acceptance01.json",
+        "bytes": 14417,
+        "sha256": "bb744c426034992ddae1702cdb479e61d17d9a2fa5da2a614f4d6c15643908f0",
+        "git_blob": "c40bf305e72dedec3d42cdfc862ca436380ebf76"
+      },
+      "gap_report": {
+        "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-minors01.json",
+        "bytes": 2569247,
+        "sha256": "31789e7cb6012e8d0f3545170bfa19daec752027b4cd1c7a6bc013749cc146f1",
+        "git_blob": "2f0d27b2c2bd2d9e61ddcb4c11ae41168a206ee5"
+      }
+    },
+    "sources": {
+      "base": {
+        "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+        "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2",
+        "bytes": 15210,
+        "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70"
+      },
+      "supervisor": {
+        "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+        "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+        "bytes": 26760,
+        "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+      },
+      "parent_producer": {
+        "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+        "bytes": 64900,
+        "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+        "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+      },
+      "parent_cold": {
+        "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+        "bytes": 82846,
+        "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+        "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+      },
+      "gap_literal": {
+        "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_spectral_gap_replay_v8.js",
+        "bytes": 26731,
+        "sha256": "e9d66efc24f9f97600ec8155390c554aad066e8d25b54e7e9469a677da4fc129",
+        "git_blob": "88f3061a75fe2aa872e2fb03e0c3af25bd2d81f4"
+      },
+      "checker": {
+        "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+        "bytes": 52501,
+        "sha256": "d663daa9b3db161710228de58351ca665485a9716784b15955638baf7629ad07",
+        "git_blob": "a930f650fd886299e2645f123be6f54a4f56e217"
+      }
+    },
+    "authorities": [
+      {
+        "input": "parent_report",
+        "expected_status": "PASS_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_PREPARATION"
+      },
+      {
+        "input": "parent_owner",
+        "expected_status": "PASS_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_PREPARATION"
+      },
+      {
+        "input": "parent_cold",
+        "expected_status": "PASS_INDEPENDENT_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_MODEL"
+      },
+      {
+        "input": "parent_cold_owner",
+        "expected_status": "PASS_TRIANGLE_INCIDENCE_EXTERNAL_COLD_REPLAY"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "expected_status": "ROOT_ACCEPTS_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_MODEL_AND_INDEPENDENT_COLD"
+      },
+      {
+        "input": "gap_report",
+        "expected_status": "COMPLETE_EXACT_RECORDED_TRIANGLE_SPECTRAL_GAP_TEST"
+      },
+      {
+        "input": "gap_literal_report",
+        "expected_status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_GAP_LITERAL_REPLAY"
+      },
+      {
+        "input": "gap_literal_finalization",
+        "expected_status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_GAP_REPLAY_AND_FINALIZATION"
+      },
+      {
+        "input": "gap_literal_owner",
+        "expected_status": "OWNED_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_GAP_LITERAL_REPLAY_ACCEPTED"
+      }
+    ],
+    "authority_links": [
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "preparation"
+        ],
+        "target": "parent_report"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "independent_cold"
+        ],
+        "target": "parent_cold"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "model_archive"
+        ],
+        "target": "parent_model"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "owners",
+          "preparation"
+        ],
+        "target": "parent_owner"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "owners",
+          "independent_cold"
+        ],
+        "target": "parent_cold_owner"
+      },
+      {
+        "input": "parent_report",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_report",
+        "fields": [
+          "artifacts",
+          "model_archive"
+        ],
+        "target": "parent_model"
+      },
+      {
+        "input": "parent_cold",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_cold",
+        "fields": [
+          "preparation_report"
+        ],
+        "target": "parent_report"
+      },
+      {
+        "input": "parent_cold",
+        "fields": [
+          "preparation_owner"
+        ],
+        "target": "parent_owner"
+      },
+      {
+        "input": "parent_cold",
+        "fields": [
+          "artifacts",
+          "model_archive"
+        ],
+        "target": "parent_model"
+      },
+      {
+        "input": "parent_owner",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_owner",
+        "fields": [
+          "report"
+        ],
+        "target": "parent_report"
+      },
+      {
+        "input": "parent_cold_owner",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_cold_owner",
+        "fields": [
+          "report"
+        ],
+        "target": "parent_cold"
+      },
+      {
+        "input": "gap_literal_report",
+        "fields": [
+          "forward_report"
+        ],
+        "target": "gap_report"
+      },
+      {
+        "input": "gap_literal_owner",
+        "fields": [
+          "report"
+        ],
+        "target": "gap_literal_report"
+      },
+      {
+        "input": "gap_literal_owner",
+        "fields": [
+          "finalization"
+        ],
+        "target": "gap_literal_finalization"
+      },
+      {
+        "input": "gap_literal_owner",
+        "fields": [
+          "forward_report"
+        ],
+        "target": "gap_report"
+      },
+      {
+        "input": "gap_literal_root_acceptance",
+        "fields": [
+          "parent_native_root_acceptance"
+        ],
+        "target": "parent_root_acceptance"
+      },
+      {
+        "input": "gap_literal_root_acceptance",
+        "fields": [
+          "forward_report"
+        ],
+        "target": "gap_report"
+      },
+      {
+        "input": "gap_literal_root_acceptance",
+        "fields": [
+          "report"
+        ],
+        "target": "gap_literal_report"
+      },
+      {
+        "input": "gap_literal_root_acceptance",
+        "fields": [
+          "finalization"
+        ],
+        "target": "gap_literal_finalization"
+      },
+      {
+        "input": "gap_literal_root_acceptance",
+        "fields": [
+          "owner"
+        ],
+        "target": "gap_literal_owner"
+      }
+    ],
+    "proofs": [
+      {
+        "path": "research/root_prism_free_f0_recorded_triangle_spectral_gap.md",
+        "bytes": 6731,
+        "sha256": "6e892e3a544f0ff38932cbec6abfa8ff77e09b56cea46926dcc8121c95b16d11",
+        "git_blob": "f4e2821e25e3d46c27cd61603892660a0b34c54d"
+      },
+      {
+        "path": "research/root_prism_free_f0_spectral_gap_pair_minor.md",
+        "bytes": 13581,
+        "sha256": "169a4b0c8ba1381302d0eeacb449599a5e4913cd6a55a24bb711e5d4126829ce",
+        "git_blob": "168ca05d66609a2ac7027d3958a4f22c63385e1c"
+      }
+    ],
+    "reviews": [
+      {
+        "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-source-review01.json",
+        "git_blob": "b22eeae7894ca1d1c13e05514581325f2d334715",
+        "sha256": "ead0eefc0dd201a62c94cf1479b081fdf8f57bbfa8b0cab308bc7a50be370974",
+        "bytes": 6275
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-minor-independent-review01.json",
+        "bytes": 6211,
+        "sha256": "9132b5b87497a608e40ea07361257c963731a5dc758f41ba1d9605726af18099",
+        "git_blob": "4358f7123e3459d78d0efc1670da8031c1fc989d"
+      }
+    ],
+    "optimizer_calls": 0,
+    "automatic_retries": 0,
+    "native_query_authorized": false,
+    "independent_complete_protobuf_replay_required": true,
+    "scope": "Preserve the complete accepted incidence model and append exactly3156 independently certified existing triangle-indicator zeros. Fixed F0 globally prism-free/F-free split18+18; no other-component selection or alignment, query, new variable or old-row edit."
+  },
+  "required_input_aliases": [
+    "parent_model",
+    "parent_configuration",
+    "parent_report",
+    "parent_owner",
+    "parent_cold",
+    "parent_cold_owner",
+    "parent_root_acceptance",
+    "gap_report",
+    "gap_literal_report",
+    "gap_literal_finalization",
+    "gap_literal_owner",
+    "gap_literal_root_acceptance"
+  ],
+  "required_source_aliases": [
+    "base",
+    "supervisor",
+    "parent_producer",
+    "parent_cold",
+    "gap_literal",
+    "checker"
+  ],
+  "pending_insertions": {
+    "input_refs": [
+      "gap_literal_report",
+      "gap_literal_finalization",
+      "gap_literal_owner",
+      "gap_literal_root_acceptance"
+    ],
+    "source_refs": [],
+    "authority_status": {
+      "input": "gap_literal_root_acceptance",
+      "instruction": "Use the actual completed root acceptance status, require ROOT_ACCEPTS_ prefix; append one authority entry."
+    },
+    "optional_additional_reviews": "Append only actual frozen native producer/checker source review refs; do not insert placeholders."
+  },
+  "validation_performed_now": {
+    "actual_existing_authority_links_checked": 16,
+    "known_authority_links": [
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "preparation"
+        ],
+        "target": "parent_report"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "independent_cold"
+        ],
+        "target": "parent_cold"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "model_archive"
+        ],
+        "target": "parent_model"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "owners",
+          "preparation"
+        ],
+        "target": "parent_owner"
+      },
+      {
+        "input": "parent_root_acceptance",
+        "fields": [
+          "owners",
+          "independent_cold"
+        ],
+        "target": "parent_cold_owner"
+      },
+      {
+        "input": "parent_report",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_report",
+        "fields": [
+          "artifacts",
+          "model_archive"
+        ],
+        "target": "parent_model"
+      },
+      {
+        "input": "parent_cold",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_cold",
+        "fields": [
+          "preparation_report"
+        ],
+        "target": "parent_report"
+      },
+      {
+        "input": "parent_cold",
+        "fields": [
+          "preparation_owner"
+        ],
+        "target": "parent_owner"
+      },
+      {
+        "input": "parent_cold",
+        "fields": [
+          "artifacts",
+          "model_archive"
+        ],
+        "target": "parent_model"
+      },
+      {
+        "input": "parent_owner",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_owner",
+        "fields": [
+          "report"
+        ],
+        "target": "parent_report"
+      },
+      {
+        "input": "parent_cold_owner",
+        "fields": [
+          "configuration"
+        ],
+        "target": "parent_configuration"
+      },
+      {
+        "input": "parent_cold_owner",
+        "fields": [
+          "report"
+        ],
+        "target": "parent_cold"
+      }
+    ],
+    "actual_existing_statuses_checked": 6,
+    "parent_producer_and_cold_source_ids_compared_with_actual_configuration_reports": true,
+    "future_literal_links_checked_against_frozen_source_contract_and_root_normalization_contract": true,
+    "future_case_outcomes_not_claimed": true,
+    "dummy_hashes_written": false,
+    "source_or_native_execution": false
+  },
+  "root_instantiation_steps": [
+    "Insert exact verified report/finalization/owner/root refs after the independent literal replay is accepted.",
+    "Append the actual gap_literal_root_acceptance expected status to authorities.",
+    "Optionally append the completed native source reviews; preserve every existing binding.",
+    "Require exactly12 inputs, exactly6 sources, exactly10 authorities and all25 links to resolve against their actual records.",
+    "Serialize base_configuration as the actual f0-triangle-gap-native-configuration01.json and freeze its exact bytes/hash.",
+    "Review/gate the actual configuration before controls or prepare."
+  ],
+  "no_config_file_or_hash_invented": true,
+  "refs_mutated": false,
+  "supersedes_preparation_template": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-semantic-configuration-template01.json",
+    "bytes": 17444,
+    "sha256": "7bbfaed7eca2945639cf97af836419894fc34a355f612090d6ddbee9916cb269",
+    "git_blob": "02f772596f2dd69c14409beaddb98cd95c078c09"
+  },
+  "adaptation": "Only insert the actual frozen checker source; no native input/model semantics, limits or existing bindings change."
+}

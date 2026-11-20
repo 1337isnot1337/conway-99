@@ -1,0 +1,155 @@
+{
+  "schema": "conway99.f0.triangle-support-literal-replay-root-gate.v1",
+  "status": "AUTHORIZE_ONE_COMPLETE_SEPARATE_LITERAL_SUPPORT_REPLAY",
+  "source": {
+    "path": "experiments/workspace/f0-spectral-triangle-support-independent-literal-replay-v8.js",
+    "sha256": "456da9b26b97e71b574003230682dc0cff099ed10c6f394b8d0bef602d59d7c1",
+    "git_blob": "6b0d0d02caed427df4cdab59ad3b3badae63a6ab",
+    "bytes": 22501,
+    "lines": 290
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-configuration01.json",
+    "git_blob": "a30827a02505adcf6ab27b3f0cccd37f783da0de",
+    "sha256": "8fda56ae53ce59ab0b252f6c3c955cc6855071c76aad6237cf71cffa8dc5caed",
+    "bytes": 5785
+  },
+  "codec": {
+    "path": "experiments/workspace/conway99_outage_exact_codec_v8.js",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "bytes": 8304
+  },
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64_gzip"
+    },
+    "overlay": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "bytes": 219390,
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "encoding": "base64_gzip"
+    },
+    "spectral_cold": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01.json",
+      "bytes": 13646,
+      "sha256": "e8d27725afb707867f6683604ff1f3123f8960305c721058f495883f23476349",
+      "git_blob": "38ec9167df27b86de0341f8387cc894c6d2ff8cc",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "spectral_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-root-acceptance01.json",
+      "bytes": 2336,
+      "sha256": "0ddbc84223a4cd56ad94597bf9320b1bb2ebbf05f0965cf07216beaca465b42e",
+      "git_blob": "408c39a6be9880f07998c89b284d31121bfd942d",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "triangle_forward": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-census01.json",
+      "sha256": "7027feb1a77cb8131371bb10823ec7e5e8b6a33f5281a0b27881ee2f6b088155",
+      "bytes": 1600480,
+      "git_blob": "44f7d8c605a1f6fab51c89fed44b9233c8215b21",
+      "encoding": "utf-8"
+    },
+    "triangle_summary": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-summary01.json",
+      "sha256": "8e8fe47a1527cb6d779fd05e174449983f7c3beb2409a5edf80ed682a46cdcfc",
+      "bytes": 3967,
+      "git_blob": "8c15d7865d0226b584346ceee3f2e722d9dd3a00",
+      "encoding": "utf-8"
+    },
+    "triangle_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-acceptance01.json",
+      "bytes": 1177,
+      "sha256": "d010e64051397b5335ac859f094da7f34cd4f5882ff4c511d639bb04fa6fe12c",
+      "git_blob": "12a10b91d58311996bbfd8800cce3da0d3e0806a",
+      "mode": "100644",
+      "encoding": "utf-8"
+    },
+    "support_ledger": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01.json",
+      "sha256": "0103baa3822afaae8992e2be6517e6a173615a937a721e3e5a83c724cdc89e86",
+      "git_blob": "7a516562bbdbe26c8bc25c0d7eb1654a6efd79d2",
+      "bytes": 429105,
+      "encoding": "utf-8"
+    },
+    "support_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01-finalization.json",
+      "sha256": "1d3e3bb3850c75dd7ae79a6139493d39cede82f7faeb2dfa107de11e25aa9aae",
+      "git_blob": "a72df53d4fcf855fc6203a2220ebab60a066f250",
+      "bytes": 386,
+      "encoding": "utf-8"
+    },
+    "support_gate": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-root-gate01.json",
+      "sha256": "d1179db268413caabeaddc85e007bab7698ffc89887153699fbdc5a2ae5f1a14",
+      "git_blob": "5f023d4003dfc3844f45315cfe4c01f7c24e277c",
+      "bytes": 5222,
+      "encoding": "utf-8"
+    },
+    "support_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-configuration01.json",
+      "sha256": "c14d0bcb35d3ee393039fd6af0e7e74bce7625c523077428a61fd32c6adec456",
+      "git_blob": "90717cccedaab6f778c19c64b0f9566adb933b4d",
+      "bytes": 4383,
+      "encoding": "utf-8"
+    }
+  },
+  "actual_controls": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-controls01.json",
+    "sha256": "f3f47a2871dc678dcea5ba03e34f7a630512c41255fb262806c174814dd41bb7",
+    "git_blob": "1938646724951324cd4aa76662ce39293379bdaf",
+    "bytes": 655
+  },
+  "method": {
+    "path": "research/f0-spectral-triangle-support-independent-literal-replay.md",
+    "sha256": "b94d8bf3689654404435f4bc08affefa8d7c7276d33f6631eb26cc9183d10fd2",
+    "git_blob": "ea6e5bea0c8191609ba29f78007f1574326a8a85",
+    "bytes": 4805
+  },
+  "independent_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-literal-replay-independent-source-review01.json",
+    "bytes": 5711,
+    "sha256": "d76d07c47a2fbd678761fb3b75f93682394c42df638fc93c71be895a01e66d90",
+    "git_blob": "240132bc913533e506b049e359482ad44a001aad",
+    "mode": "100644"
+  },
+  "root_complete_configuration_method_controls_and_source_review_read": true,
+  "root_relies_on_complete_independent_290_line_source_review": true,
+  "same_author_as_forward_disclosed": true,
+  "separately_written_representation_and_enumeration_reviewed": true,
+  "maximum_main_calls": 1,
+  "maximum_ms": 30000,
+  "maximum_report_bytes": 16777216,
+  "required_report_status": "PASS_COMPLETE_INDEPENDENT_LITERAL_SUPPORT_REPLAY",
+  "required_finalization_status": "PASS_COMPLETE_LITERAL_REPLAY_AND_SERIALIZATION",
+  "acceptance_requires_complete_report_and_passing_within_bounds_finalization": true,
+  "preserve_report_and_finalization_before_hashing": true,
+  "automatic_retries": 0,
+  "maximum_native_model_builds": 0,
+  "maximum_optimizer_calls": 0,
+  "heavy_arithmetic_slot": "Assigned exclusively to /root/independent_sets after completion and release of both star and forest inventory slots.",
+  "expected_after_complete_reconstruction": {
+    "initial_zeros": 1956,
+    "targets": 132,
+    "already_zero_targets": 48,
+    "live_targets": 84,
+    "structural_records": 6540,
+    "surviving_records": 5364
+  },
+  "report_path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-replay01.json",
+  "finalization_path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-replay01-finalization.json",
+  "scope": "Complete independent literal reconstruction and comparison of the saved support fixed point; counts do not restrict the enumerator.",
+  "future_native_model_use_requires_full_separate_native_replay": true,
+  "existing_native_model_changed": false,
+  "graph_or_component_exclusion_authorized": false
+}

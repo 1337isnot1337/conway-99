@@ -1,0 +1,87 @@
+{
+  "acceptance_findings": [
+    "Each CP query exports the public native model and compares it byte for byte with the original frozen prefix plus the complete exact registry.",
+    "Every returned solution vector is saved before original-domain and extra-row inspection. Matching and shared-row certificates precede any registry transition.",
+    "The cold path reconstructs every called prefix and directly checks saved candidate arithmetic, matching witnesses, shared certificates, and exact registry additions.",
+    "A later call requires a strictly larger registry. No arbitrary visit block, objective, hint, selector fixing or same-prefix retry is present.",
+    "The complete proposed batch must fit the declared integer and row bounds. Refusal preserves the proposal and stops without discarding rows.",
+    "Native INFEASIBLE, UNKNOWN, overruns and unaccepted owner results are not promoted to a mathematical exclusion. The accepted cold result validates artifacts only."
+  ],
+  "blockers": [],
+  "files": {
+    "experiments/logs/root-prism-free/f0-direct-master-json-boundary-repair01.json": "63a60ca005cae7d18b85459bbdf08751e0a1b1b394a36ba663e07bfe058483f4",
+    "experiments/logs/root-prism-free/f0-direct-master-matching-json-repair01.json": "26fb21aa752ea1707188a656e7dfef512db5628f99f6939cc02b7dc8bc3852eb",
+    "experiments/logs/root-prism-free/f0-direct-master-preparation02/owner.json": "64233931cacaab448bd4aa4aa89b0e82c54f3b6a61abc6f63357fbd89c97d94b",
+    "experiments/logs/root-prism-free/f0-direct-master-preparation02/report.json": "0015e0d034f57d13a378d188fb4cc7ec5bf357d12911148835a58e3f1e86c19f",
+    "experiments/logs/root-prism-free/f0-direct-master-registry-literature-source-review.json": "c950620db8997f7a0a444a648de77976636a4b41f4c7ed0a902e10cd14026ecf",
+    "experiments/logs/root-prism-free/f0-direct-master-seed-configuration02.json": "544b6d2eb9f5bf6df98e8ba0a5c250220734c55a6f862a27236d55c697370703",
+    "experiments/workspace/root_prism_free_f0_direct_master_continuation_v2.py": "51ebb261a596df2e6cd3d541e174fd65cd34ba807287c429171ecd9755cb81d6",
+    "experiments/workspace/root_prism_free_f0_direct_master_continuation_v3.py": "7b828cd3b5c34c846b97913e25bdb860bc7e75afdd7645701503f4a9760b2784",
+    "experiments/workspace/root_prism_free_f0_direct_master_registry_v3.py": "9b5746f3cc6817515d36fb8236bb5e26d78825187914d36a3da9f1ed1f616393"
+  },
+  "limits": {
+    "cold_owner_seconds": 60,
+    "cumulative_CP_seconds": 180,
+    "maximum_iterations": 8,
+    "owner_seconds": 300,
+    "per_CP_call_seconds": 60,
+    "shared_sequence_seconds": 60
+  },
+  "review_actions": {
+    "CP_calls": 0,
+    "LP_calls": 0,
+    "SAT_calls": 0,
+    "domain_rebuilds": 0,
+    "model_rebuilds": 0,
+    "native_imports": 0,
+    "old_proof_rechecks": 0,
+    "subject_imports": 0
+  },
+  "reviewer_lane": "master_review",
+  "schema": "conway99.f0.direct-master-v3.independent-source-review.v1",
+  "serialization_checks": {
+    "changed_matching_pair_is_rejected_by_complete_canonical_comparison": true,
+    "guarded_cover_complete_canonical_comparison_retains_all_fields_except_seconds": true,
+    "matching_tuple_pairs_equal_saved_JSON_after_complete_canonicalization": true,
+    "other_controller_fresh_saved_comparisons_are_JSON_native_or_explicitly_canonical": true
+  },
+  "source_coverage": "Complete final controller and complete registry read; full v2-to-v3 diff inspected; controller function AST comparison checked independently. Prior exact seed certificates are bound by their saved hashes and existing cold reports.",
+  "status": "PASS_FINAL_CONTROLLER_SOURCE_AND_EXACT_PREFLIGHT_TRANSITION",
+  "transition_checks": {
+    "all17_seed_configuration_input_hashes_verified": true,
+    "changed_functions": [
+      "preparation_check",
+      "replay"
+    ],
+    "complete_definition_compared_except_explicit_old_source_sha256": true,
+    "model_rebuilt_or_native_parsed": false,
+    "old_preparation_is_not_relabelled_as_new_source_execution": true,
+    "preparation02_exact_source_report_owner_hashes_pinned": true,
+    "replay_AST_equals_single_canonical_matching_comparison_substitution": true,
+    "saved_model_rows": 4718,
+    "saved_raw_model_and_gzip_hashes_verified": true,
+    "saved_registry_hash_and37_rows_verified": true,
+    "unchanged_functions": [
+      "digest",
+      "canonical",
+      "value_sha",
+      "save",
+      "helper",
+      "definition",
+      "prefix_snapshot",
+      "initialize",
+      "prepare",
+      "inspect_candidate",
+      "run",
+      "worker",
+      "owned"
+    ]
+  },
+  "workflow_scope": {
+    "approved_preparation_path": "experiments/logs/root-prism-free/f0-direct-master-preparation02",
+    "current_v3_prepare_mode_is_not_a_replacement_for_pinned_preparation02": true,
+    "production_or_cold_execution_authority": "Root gate required separately.",
+    "unrestricted_problem_solution": false,
+    "whole_component_exclusion": false
+  }
+}

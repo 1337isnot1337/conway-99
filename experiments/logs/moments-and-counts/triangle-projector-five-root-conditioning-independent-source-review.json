@@ -1,0 +1,24 @@
+{
+  "status": "PASS: complete constructor source and mathematical normalization reviewed",
+  "subject_path": "experiments/workspace/triangle_projector_five_root_conditioning.py",
+  "subject_sha256": "578f8db7c51c7f5b934e7f7275b295a9a5908bf09d5f6a9d9662366914046e5c",
+  "reviewer_lane": "independent_sets",
+  "checked": {
+    "domain_coverage": "The frozen scope binds all eight triangle-containing five-vertex roots and every triangle class meeting each root.",
+    "ordered_overlap_coverage": "Each ordered pair of labelled outside extensions has one partial injection; shared masks are checked and every exclusive cross edge is enumerated.",
+    "induced_union_coverage": "The literal root and both flags fix every edge except exclusive cross edges. Every completed union is classified back to both original classes.",
+    "Schur_kernel": "For positive definite core-triangle Gram C, det(C)Q(U,V)-q_U^T adj(C)q_V is positive semidefinite. Cross values depend only on the retained class.",
+    "stabilizer_normalization": "For each ordered unlabelled triangle pair, independent slot labellings contribute stabilizer(left)*stabilizer(right), also when the triangles overlap. Division is made only after collecting each full induced graph type.",
+    "induced_count_factor": "Each literal union contributes Aut(union) times its induced unlabelled count; no root-automorphism division is introduced.",
+    "same_class_order": "Same-class products already include both orders when appropriate; no additional factor of two is required.",
+    "core_triangle_rows": "The constructor checks all conditioned core-triangle class rows vanish coefficientwise.",
+    "controls_independence": "The direct small-host checker enumerates labelled roots and ordered actual triangle pairs separately from the partial-injection tensor construction.",
+    "bounded_scope": "Incomplete preparation cannot assert full tensor coverage; this source has no point-query or optimizer mode."
+  },
+  "subject_imported": false,
+  "domain_or_tensor_rebuilt": false,
+  "controls_repeated": false,
+  "count_point_evaluated": false,
+  "optimizer_called": false,
+  "scope": "Source and algebra review only; no independent replay of the reported tensor or host-control arithmetic."
+}

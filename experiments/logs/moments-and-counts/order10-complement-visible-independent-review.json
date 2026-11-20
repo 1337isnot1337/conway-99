@@ -1,0 +1,17 @@
+{
+  "status": "read-only mathematical and complete-source review PASS",
+  "reviewed_source": "experiments/workspace/grid_free_order10_complement_visible_domains.py",
+  "reviewed_source_sha256": "d89248dce73849059afa12cf1c731f31dcafa8a0769ccde3b25574c67ec4c54a",
+  "pair_criterion": "For a mutual nonedge, the only new pair-cap failures are >=3 common root neighbors or two new vertices exhausting a root-pair residual quota1. Individual masks already satisfy every single-extension cap. Adding the edge cannot repair a cap failure.",
+  "incremental_clique_coverage": "A new maximal clique containing v is contained in {v} union (C intersection N(v)) for an old maximal clique C extending its old part; maximality gives equality. Cliques omitting v are covered by old maximal cliques. Inclusion-maximal filtering therefore preserves complete coverage.",
+  "empty_domain_control": "The initial singleton family containing the empty clique yields the constant-only base on an empty high-mask domain.",
+  "root_transport": "Actual root automorphisms are fully enumerated and generator closure is checked; explicit mask and clique transports preserve adjacency and classification. This does not assume a hypothetical graph automorphism.",
+  "quota_one_redundancy_scope": "Uses the SRG residual pair-count identity and complete child PSD family, including the size-two mask class. No claim that unrelated child PSD blocks alone imply the identity.",
+  "selected_row_quotient": "High-mask counts are binary and clique sums are at most1. The complement localizer is PSD and selected rows vanish. New incompatible conditional rows are explicitly checked empty, with individual selected-row identities bound to the older coefficientwise certificate.",
+  "coverage_status_review": "Interrupted or failed root processing preserves an explicit prefix; complete replay requires208 roots, no error and no timeout.",
+  "reported_counts_independently_recomputed": false,
+  "catalogue_loaded": false,
+  "clique_enumerations_rerun": false,
+  "point_scan_or_optimizer_called": false,
+  "full_tensor_or_coefficientwise_lift_audit_performed": false
+}

@@ -1,0 +1,22 @@
+{
+  "status": "OBSERVED_PRE_CHILD_PREPARATION_AUDIT01_ENOSPC",
+  "failed_owner_path": "experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preparation-audit01-owner",
+  "exec_exit_code": 1,
+  "exec_wall_time_seconds": 0.086232299,
+  "observed_output": "Traceback (most recent call last):\n  File \"<stdin>\", line 8, in <module>\n  File \"/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/rook_case4_box_hull_membership_query.py\", line 311, in owned\n    directory.mkdir(parents=True, exist_ok=True)\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/pathlib.py\", line 1311, in mkdir\n    os.mkdir(self, mode)\nOSError: [Errno 28] No space left on device: '/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/logs/grids-and-triangles/rook-case4-low54-native-lp-preparation-audit01-owner'\n",
+  "owner_receipt_created": false,
+  "child_created": false,
+  "mathematical_result": false,
+  "native_or_optimizer_calls": 0,
+  "following_filesystem_observation": {
+    "block_size": 4096,
+    "total_blocks": 16500619,
+    "free_blocks": 900097,
+    "available_blocks": 57141,
+    "total_inodes": 4194304,
+    "free_inodes": 3409525
+  },
+  "cause_beyond_observed_errno_not_established": true,
+  "preserved_fresh_continuation": "rook-case4-low54-native-lp-preparation-audit02.json"
+}
+

@@ -1,0 +1,23 @@
+{
+  "status": "read-only mathematical/source and small complete edge-domain review PASS",
+  "reviewed_source_hashes": {
+    "root_prism_free_f0_row_box_design_exterior.py": "ee064ece3bde366809e23837b75a5aaa8c480421532004049e90671d8e5fd6cf",
+    "root_prism_free_f0_row_box_design_linear.py": "c0d9e70f98e94176bf78bc518b41270940b930ab69cf34b26f42b71ff31a0871"
+  },
+  "saved_candidate_sha256": "9e38e41273ad247021854236a56a4e9dd0cdc74b7156867904b7d19fe2d64e46",
+  "independently_reconstructed_shared_edges": 1220,
+  "mixed_equations": 1080,
+  "degree_equations": 60,
+  "physical_nonzeros_from_endpoint_weights": 9760,
+  "upper_slack_standard_form_shape": [
+    2360,
+    2440
+  ],
+  "edge_coverage": "Every unordered pair of the60 selected columns is tested for overlap<=1 and positive quotas at both endpoints; the same edge variable enters both rows. No second incidence is fixed.",
+  "Farkas_orientation": "For nonnegative edge and slack variables, upper-row multipliers must be nonnegative; primary coefficients are summed equation multipliers plus their upper multiplier; every coefficient must be nonnegative and the complete RHS product negative.",
+  "point_acceptance": "Each rational point is accepted only after all1220 bounds and1140 equalities pass exactly; numerical optimization alone is not a feasibility certificate.",
+  "potential_conversion": "v_ai=-3*r_mixed_ai-r_degree_a gives weighted demand=-3 times the equation RHS product. Each shared edge weight is at most3 times its nonnegative upper multiplier, so the verified Farkas inequality implies strictly positive support-function gap.",
+  "scope": "Only this saved first incidence. Exact point means symmetric fractional mixed/degree feasibility; it does not test pair caps or integrality. A contradiction does not exclude all first incidences.",
+  "optimizer_or_solver_called": false,
+  "CNF_or_proof_rebuilt": false
+}

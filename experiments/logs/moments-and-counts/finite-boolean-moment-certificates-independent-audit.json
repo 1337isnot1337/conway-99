@@ -1,0 +1,158 @@
+{
+  "status": "PASS: independent finite Boolean moment arithmetic and full source review",
+  "source_sha256": "863ccbebbead3514b0fe1a3616dc0f98ea1cbe7ee62ebcd3866d45264c0a8da2",
+  "subject_source_sha256": "cdc37c56d4e379fc3774a832d942fb4cfb2eb787746bfdd3f9071880e791ee1e",
+  "preserved_v1_source_sha256": "edd903db520a6fee0f436f5161289c394d354e739d03afe4873c3d37e7ab626c",
+  "controls02_sha256": "638ff62d231bcc1dc023a18078b050bfef925e2941942b15147fd2e471a7a8d4",
+  "metadata_correction": {
+    "entire_source_AST_unchanged_except_metadata_expression": true,
+    "old_scale_bit_length": 202,
+    "actual_largest_raw_coefficient_bits": 207
+  },
+  "hand_cases": [
+    {
+      "constant_subtracted": 2,
+      "penalty": 2,
+      "primitive": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          -2
+        ],
+        [
+          4,
+          -3
+        ],
+        [
+          5,
+          2
+        ]
+      ],
+      "divisor": 1,
+      "atom_values": [
+        3,
+        1,
+        0,
+        0,
+        3,
+        1,
+        0,
+        0
+      ],
+      "moment_value": -4,
+      "retained_count": 6
+    },
+    {
+      "constant_subtracted": 4,
+      "penalty": 3,
+      "primitive": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -2
+        ]
+      ],
+      "divisor": 1,
+      "atom_values": [
+        0,
+        2,
+        1,
+        1
+      ],
+      "moment_value": -2,
+      "retained_count": 1
+    },
+    {
+      "constant_subtracted": 0,
+      "penalty": 2,
+      "primitive": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "divisor": 2,
+      "atom_values": [
+        0,
+        0,
+        1
+      ],
+      "moment_value": -5,
+      "retained_count": 0
+    }
+  ],
+  "large_integer_gcd_control": {
+    "constant_subtracted": 2658455991569831745807614120560689158,
+    "penalty": 2658455991569831745807614120560689158,
+    "primitive": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        -2
+      ],
+      [
+        4,
+        -3
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "divisor": 1329227995784915872903807060280344579,
+    "atom_values": [
+      3,
+      1,
+      0,
+      0,
+      3,
+      1,
+      0,
+      0
+    ],
+    "moment_value": -4,
+    "retained_count": 6
+  },
+  "signed_ceiling_controls": 324,
+  "sparse_term_and_feature_evaluation_identities_checked": true,
+  "reviewed_mathematics": [
+    "The constant monomial is1 on every atom. Subtracting minimum m changes unnormalized expectation by-m*moments[0].",
+    "q is a sum of exact-zero monomials, hence nonnegative on atoms and has zero supplied expectation.",
+    "M=max(0,max_removed ceil((m-p)/q)) makes p-m+M*q nonnegative on every full-domain atom.",
+    "Empty retained domain uses m=0; the same full-domain check still proves the resulting inequality.",
+    "A positive gcd divides every coefficient and the exact expectation; the zero polynomial uses gcd1.",
+    "Term-subset evaluation and enumeration of present-atom features coincide for degree-bounded masks, including noncontiguous bits.",
+    "A negative exact supplied expectation contradicts a nonnegative measure supported on the supplied complete atom domain."
+  ],
+  "assumptions_and_limits": [
+    "The caller must separately prove that the supplied nonempty atom list is a complete necessary domain.",
+    "The caller must separately prove the graph-product interpretation of the moment coordinates.",
+    "The helper accepts Python integer nonnegative moments, positive population, and degree at most4.",
+    "Replay certifies the final polynomial and repair identity; minimality of shift/penalty and the method label are not needed for validity."
+  ],
+  "subject_module_imported": false,
+  "subject_controls_rerun": false,
+  "optimizer_or_solver_called": false,
+  "LP_tensor_or_graph_domain_built": false
+}

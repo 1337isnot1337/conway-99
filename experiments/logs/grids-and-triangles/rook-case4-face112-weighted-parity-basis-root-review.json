@@ -1,0 +1,24 @@
+{
+  "all_source_lines_read": true,
+  "authorized_cold_replays": 1,
+  "authorized_exact_children": 1,
+  "automatic_retry": false,
+  "checks": [
+    "813 candidate x_j=t aliases are proposal assumptions only.",
+    "All 290 active rows and their sides come from the saved basis; full original-column restoration is explicit.",
+    "Exact acceptance includes all 167115 rows, all 2271 original native rows, all 178533 original covers and both new weighted inequalities.",
+    "The unchanged supervisor permits one 60-second exact child; failed or incomplete arithmetic remains UNKNOWN.",
+    "The separate replay performs no elimination and compares all saved exact acceptance fields."
+  ],
+  "cold_seconds": 60,
+  "explicit_substitutions_reapplied": 20,
+  "hard_child_seconds": 60,
+  "optimizer_calls": 0,
+  "preparation": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-preparation01/preparation.json",
+  "preparation_sha256": "38250abd08bfb5186fd78d98b38d85ef16dca8ea8c7371c89e318528c5d2c383",
+  "reviewer": "root",
+  "source": "experiments/workspace/rook_case4_face112_weighted_parity_basis_reconstruction.py",
+  "source_sha256": "7668aeb593bb46644a233b4cbfeb7663743c67529105003a0ece62d28fbbed6c",
+  "status": "PASS: complete saved-basis source review and exact narrow-delta binding",
+  "unchanged_function_ASTs_checked": 12
+}

@@ -1,0 +1,79 @@
+{"probe": 0, "column": 556, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 3.9403639340016525}
+{"probe": 1, "column": 554, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 7.986375101001613}
+{"probe": 2, "column": 1078, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 12.1181293059999}
+{"probe": 3, "column": 972, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 16.344550787001936}
+{"probe": 4, "column": 443, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 19.666522932999214}
+{"probe": 5, "column": 431, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 22.236899420000555}
+{"probe": 6, "column": 633, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 25.882888059000834}
+{"probe": 7, "column": 896, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 29.660369060999074}
+{"probe": 8, "column": 575, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 34.47405659400101}
+{"probe": 9, "column": 627, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 37.871996152000065}
+{"probe": 10, "column": 1113, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 42.097296171999915}
+{"probe": 11, "column": 359, "status": "exact contradiction", "new_unit": 359, "elapsed_seconds": 42.516010463001294}
+{"probe": 12, "column": 945, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 46.59066030699978}
+{"probe": 13, "column": 566, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 50.3306517029996}
+{"probe": 14, "column": 555, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 53.52384036700096}
+{"probe": 15, "column": 909, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 57.191130839000834}
+{"probe": 16, "column": 624, "status": "exact interval and guarded-cover fixed point", "new_unit": null, "elapsed_seconds": 60.198077811000985}
+{
+  "status": "partial coverage: requested batch budget reached",
+  "source_sha256": "492f870124a146d77dd054d7e5898b39d60195c828a10f5648d9185e015e9365",
+  "scope_source_sha256": "65808c886e17f00d9e98955fdb2bca70c5fae464e351f404e7d898829204236f",
+  "rule_source_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7",
+  "preparation_sha256": "c73b25212d5ea248e800ce46abbb12b046e6ca75e5b6848ae71cdcebb8c7ffc5",
+  "scope_preparation_sha256": "38023613faa4de991eb1d4cef375cb6ea1661b7be6b6379f25ab920ddad5cc0e",
+  "limits": {
+    "maximum_probes": 32,
+    "seconds_per_probe": 5,
+    "requested_batch_seconds": 60,
+    "stop_on_partial_trace": true,
+    "solver_or_optimizer_calls": 0
+  },
+  "candidate_count": 1200,
+  "planned_columns": [
+    556,
+    554,
+    1078,
+    972,
+    443,
+    431,
+    633,
+    896,
+    575,
+    627,
+    1113,
+    359,
+    945,
+    566,
+    555,
+    909,
+    624,
+    1120,
+    598,
+    922,
+    646,
+    563,
+    892,
+    670,
+    442,
+    376,
+    1148,
+    1076,
+    641,
+    956,
+    652,
+    928
+  ],
+  "proved_absent_columns_beyond14": [
+    359
+  ],
+  "all1200_candidates_covered": false,
+  "planned32_prefix_complete": false,
+  "failed_literal_probing_run": true,
+  "solver_or_optimizer_called": false,
+  "case4_exclusion_promoted": false,
+  "full_graph_completion_found": false,
+  "elapsed_seconds": 60.19963845299935,
+  "peak_rss_kib": 78180,
+  "cooperative_budget_overrun_seconds": 0.19963978300074814
+}

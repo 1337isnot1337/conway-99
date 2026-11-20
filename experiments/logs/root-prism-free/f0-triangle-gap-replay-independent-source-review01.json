@@ -1,0 +1,130 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-replay-independent-source-review.v1",
+  "status": "PASS_COMPLETE_TRIANGLE_GAP_NATIVE_REPLAY_SOURCE_AND_PRODUCER_INTERFACE_REVIEW",
+  "reviewer": "master_continuation",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+    "bytes": 52759,
+    "sha256": "8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f",
+    "git_blob": "ca84307dec2b412d209344840da7d30538707e4a"
+  },
+  "prior_complete_draft": {
+    "sha256": "d663daa9b3db161710228de58351ca665485a9716784b15955638baf7629ad07",
+    "git_blob": "a930f650fd886299e2645f123be6f54a4f56e217",
+    "bytes": 52501,
+    "lines": 807
+  },
+  "read_scope": {
+    "all_prior_807_lines_read": true,
+    "final_810_line_source_bound": true,
+    "final_change": "One three-line equality check in inspect_exports binds native_transport.native_raw_sha256 and native_transport.native_raw_bytes to the complete independently inspected raw model.",
+    "exact_inverse_change_recovers_all_prior_source_bytes": true,
+    "source_compiled": false,
+    "source_imported": false,
+    "controls_executed": false,
+    "model_constructed": false,
+    "native_query_executed": false
+  },
+  "producer": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b"
+  },
+  "producer_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-producer-source-contract01.json",
+    "bytes": 10492,
+    "sha256": "8801a341f7a29ec964415f1a0ceab175eb1bfe678e0a2b66b09cd9b5f3feebcc",
+    "git_blob": "17520fb93fe6bf3cb9156e27143471085fe203c7"
+  },
+  "actual_configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-configuration01.json",
+    "git_blob": "316a4c3aaac63ebd8a0caca560814151014d5c0c",
+    "sha256": "dc60f13b81bf12a197e897d5cdfd4fe57540f071d385bb4df4e24ff580954a9f",
+    "bytes": 14242
+  },
+  "accepted_parent_root": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-root-acceptance01.json",
+    "bytes": 14417,
+    "sha256": "bb744c426034992ddae1702cdb479e61d17d9a2fa5da2a614f4d6c15643908f0",
+    "git_blob": "c40bf305e72dedec3d42cdfc862ca436380ebf76"
+  },
+  "actual_literal_inputs": {
+    "report": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01.json",
+      "bytes": 24136,
+      "sha256": "6fbf1ab7cac847439e6e21e7a4df40c070e9a0e89aad5a55267f86da566a1bee",
+      "git_blob": "ce11025e36cd562463d84c26b086af247890ed45",
+      "mode": "100644"
+    },
+    "finalization": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01-finalization.json",
+      "bytes": 457,
+      "sha256": "4ccae618d2a7e80f46e44847d0ba3769f8b0109a9882dc4b30fc9a2f4a9d5bfd",
+      "git_blob": "0892627e553d2c1ca1d585422ded13822cd44654",
+      "mode": "100644"
+    },
+    "owner": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-independent-literal-replay01-owner.json",
+      "bytes": 3576,
+      "sha256": "ec7948bb21f4c9126da97fd4c4b47b690d344cd7d1f0800cec39d1fdef6f08a5",
+      "git_blob": "5ed2d35b34c5ad379881162413118dc2fa705dbc",
+      "mode": "100644"
+    },
+    "root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-literal-root-acceptance01.json",
+      "bytes": 37723,
+      "sha256": "cb33ecf2589c44dae627b3828c20a11369255051fc951c11bf27cdeeaad86897",
+      "git_blob": "12f21da0c28544d4bf23bada0e50b082c97d0d95",
+      "mode": "100644"
+    }
+  },
+  "checked_source_interfaces": [
+    "The checker imports only standard-library modules and protobuf definitions. It neither imports nor executes the producer, CpModel, CpSolver, or the spectral forward/literal workers.",
+    "Exactly twelve input aliases and six source aliases are pinned. Current producer, base transport, supervisor, accepted parent sources, independent literal worker, and final checker have matching actual SHA256, byte length and Git blob identities.",
+    "Accepted parent configuration, preparation, owner, independent cold, independent cold owner and root receipt agree on the complete 80730-variable, 300795-row, 3337296-term parent; clean supervision and successful bounded owners are required.",
+    "The actual independent spectral report, finalization, owner and normalized root acceptance have every field consumed by the checker. They bind the accepted forward table, all 5364 records, all 37548 principal minors, exact origins and both proposed key families.",
+    "All and only 3156 rejected triangle indices are derived from the forward record classifications and compared with the independent literal list, its SHA256, its zero-row keys and the root's accepted list.",
+    "For each rejected triangle the checker reconstructs the triangle first from the actual parent AND rows and native variable messages, then compares the forward vertices, edge IDs, indicator identity and complete origin. This checks the producer's forward-first construction from the opposite direction.",
+    "Every old variable and old constraint message must remain exact. The full new raw model must equal the complete accepted parent raw bytes followed by the independently serialized 3156-row suffix; removing the suffix must recover the complete original parent.",
+    "All new constraints are nameless, unenforced, sorted single-variable linear equalities with coefficient one and domain [0,0]. No new variable or old-row modification is allowed.",
+    "The complete ordered append ledger and canonical JSON-plus-newline encoding, raw/gzip hashes, row origins, family JSON and JSONL hashes, restoration manifest, model descriptor and per-message digests are compared exactly.",
+    "The producer's initial owner receipt, supervisor result, owned receipt, final owner and stage sequence are bound to the actual configuration, source, report and successful reaped child. Error artifacts, nonzero exit, incomplete stages or deadline overruns do not yield acceptance.",
+    "The final added guard binds the nested native transport receipt to the complete raw model already checked by the replay. The accepted base transport actually emits these two exact fields.",
+    "Controls and replay remain worker-only modes, with separate CI ownership. The worker checks its 10-second or 120-second bound after report serialization and writing, and exits unsuccessfully on an overrun even if a PASS-shaped report was written."
+  ],
+  "prepared_controls_reviewed": {
+    "executed_in_this_review": false,
+    "scope": "Synthetic mutation rejection for original variable/row changes, added-row coefficient/domain/name/enforcement/order changes, suffix global metadata, upper/lower AND changes; all sixteen AND/zero assignments; exact integer transport beyond 2^53.",
+    "controls_pass_string": "PASS_TRIANGLE_GAP_INDEPENDENT_REPLAY_CONTROLS",
+    "replay_pass_string": "PASS_INDEPENDENT_COMPLETE_TRIANGLE_GAP_NATIVE_MODEL"
+  },
+  "actual_metadata_checks": {
+    "complete_small_parent_and_literal_input_texts_rehashed": 11,
+    "configured_source_texts_rehashed": 6,
+    "authority_statuses_compared": 10,
+    "authority_links_resolved_and_compared": 25,
+    "literal_failed_count": 3156,
+    "literal_failed_triangle_indices_sha256": "cb049b7390dfd13617d01675b0cce593377ba5bebfc6084767a49033f7ad4dbe",
+    "literal_zero_row_keys_sha256": "68cbeeb785a7d68e7141464bd3c9c9274bebddcd33875ea4c843494f2da44b4c",
+    "parent_raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8",
+    "parent_raw_bytes": 39512348,
+    "parent_archive_identity_checked_against_accepted_receipts": true,
+    "parent_archive_bytes_refetched_in_this_review": false
+  },
+  "issues": [
+    {
+      "issue": "Nested native transport raw hash and byte count were not explicitly compared with the independently decoded full model in the initial checker draft.",
+      "resolution": "Root added the exact three-line equality guard before execution. The complete inverse delta and actual transport field names were checked.",
+      "resolved": true
+    }
+  ],
+  "unresolved_blockers": [],
+  "runtime_scope": "This is source and actual-receipt interface review. It is not a completed controls run, model build, native cold acceptance, optimizer result, or exclusion. Complete archive byte checks remain mandatory in the separately gated native phases.",
+  "optimizer_calls": 0,
+  "native_imports": 0,
+  "producer_imports": 0,
+  "refs_mutated": false,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

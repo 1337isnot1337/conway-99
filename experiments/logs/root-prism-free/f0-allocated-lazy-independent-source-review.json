@@ -1,0 +1,42 @@
+{
+  "status": "PASS: independent changed-path source review and unchanged-gate AST comparison",
+  "source_hashes": {
+    "root_prism_free_f0_allocated_lazy_seed.py": "dfbb7a9b28f1077918672094a549fd15f59bcd7f3547f95be1a14d941ca0adab",
+    "root_prism_free_f0_allocated_lazy_continuation.py": "46b30a4e7c64db612cff606bd56aa05da44356547f617e977a8fa17ac0da4c8d",
+    "root_prism_free_f0_allocated_lazy_continuation_certificate.py": "1ca1ba702f7e50aa49dba01cc6fe34bdb1f64c106abc0c5438d9c2aa397d318f",
+    "root_prism_free_f0_bounded_lazy_continuation.py": "361484188521fc5c741be4aa8a7e1a10a9b4e76116ae51d8d9e76b272bc78dd2",
+    "root_prism_free_f0_bounded_lazy_continuation_certificate.py": "a234af13fe68e33ce16d4eb70b45a147e8d804be6fbe59c608f71c98020209db"
+  },
+  "unchanged_gate_functions_independently_compared": [
+    "save_gzip",
+    "check_sources",
+    "formula",
+    "inspect_candidate",
+    "symmetric_candidates",
+    "explain_candidate",
+    "add_row_cuts",
+    "bound_record",
+    "replay_batch"
+  ],
+  "full_proof_wrapper_identical_after_one_import_change": true,
+  "read_only_source_review": [
+    "The seed rechecks the2640 individual and288 signed inequalities, including the12 separately certified gap64 cuts.",
+    "All5340 parent explanation clauses and the exact62334-clause parent prefix remain; new seed explanations are proved from retained integer cuts.",
+    "No selector or second incidence is fixed. Candidate records supply controls and separation proposals only.",
+    "Initial SAT state is reconstructed from the hash-bound direct-cut prefix plus all exact explanation records; the potential portfolio is separately bound.",
+    "Every candidate passes the full current linear registry before all retained quadratic potentials are evaluated.",
+    "A negative quadratic value creates only a checked endpoint-allocation inequality and exact explanation clauses; it is not a visitation block.",
+    "Future shared potentials enter the portfolio only through the checked full-domain lift and complete core-action orbit.",
+    "Cold reconstruction regenerates each quadratic evaluation, registration, explanation batch and final registry in chronological order.",
+    "UNKNOWN and resource limits stop with unresolved status. Incremental UNSAT remains uncertified until the unchanged fresh-proof/retained-input/DRAT wrapper succeeds."
+  ],
+  "support_helper_review": {
+    "path": "experiments/logs/root-prism-free/f0-reserved-quadratic-helpers-independent-review.json",
+    "sha256": "fb685d9711fa1f91ab89cf8d00f5d3b2a905ea66b649c2365719f5e7d2dc7e19"
+  },
+  "subject_imported": false,
+  "controls_or_preflight_repeated": false,
+  "CNF_or_registry_reconstructed": false,
+  "optimizer_or_solver_called": false,
+  "production_outcome_claimed": false
+}

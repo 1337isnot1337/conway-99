@@ -1,0 +1,41 @@
+{
+  "status": "PASS: complete exact substitution ledger and AST reuse checked without subject imports",
+  "control_source_sha256": "5c6d3c4e59103c4e5d5600fc7f043a00d016ba6d10a6417253931902b5005046",
+  "parent_driver_sha256": "c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd",
+  "child_driver_sha256": "e0e245f1cfc20ff4e5eef7f148ee57b7a97af5829094bf57a0ff9247784942bc",
+  "substitution_ledger_sha256": "834d5e2af57ec8963845c6ace76cc3f6d008bb67c0cfa113dd92c7096dbc17b0",
+  "exact_text_substitutions": 18,
+  "AST_identical_functions_after_three_scope_string_updates": [
+    "canonical",
+    "checked_preparation",
+    "controls",
+    "digest",
+    "expanded_numeric",
+    "extend",
+    "full_float_matrix",
+    "initial_row_ids",
+    "inspect_numeric_point",
+    "main",
+    "prepare",
+    "reconstruct_bound",
+    "reconstruct_primal",
+    "replay",
+    "row_ids_hash",
+    "run",
+    "runtime_binding",
+    "save"
+  ],
+  "functions_requiring_fresh_read": [
+    "cold_arrays",
+    "definition",
+    "load_inputs",
+    "preflight_replay",
+    "source_bindings"
+  ],
+  "native_calls_run_loop_exact_bound_primal_and_terminal_replay_algorithms_unchanged": true,
+  "limits_options_and_native_helper_alias_unchanged": true,
+  "preflight_change": "Bind the just-completed full model cold replay instead of repeating the identical base rebuild; terminal exact replay still cold-rebuilds all inputs.",
+  "subject_sources_imported": false,
+  "model_or_CNF_rebuilt": false,
+  "optimizer_calls": 0
+}

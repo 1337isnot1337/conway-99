@@ -1,0 +1,36 @@
+{
+  "schema": "f0-boolean-normalization-controls-v1",
+  "source_path": "experiments/workspace/root_prism_free_f0_boolean_normalization.js",
+  "source_sha256": "e5e880d3d7a114ad8e61447e126fd0502f4597af1a7f14eb9ffdc4a79274ece6",
+  "execution_environment": "functions.exec V8",
+  "result": {
+    "status": "PASS: exact Boolean-equivalence and strict fractional controls",
+    "individual_boolean_assignments": 74896,
+    "shared_boolean_assignments": 41371,
+    "large_integer_assignments": 12,
+    "largest_control_coefficient_bits": 89,
+    "strict_fractional_examples": [
+      {
+        "name": "guarded weight cap",
+        "denominator": 5,
+        "raw_numerator": "0",
+        "normalized_violation_numerator": "6"
+      },
+      {
+        "name": "guarded integer ceiling",
+        "denominator": 2,
+        "raw_numerator": "0",
+        "normalized_violation_numerator": "1"
+      },
+      {
+        "name": "shared complement weight cap",
+        "denominator": 5,
+        "raw_numerator": "0",
+        "normalized_violation_numerator": "3"
+      }
+    ],
+    "optimizer_called": false
+  },
+  "full_registry_test_included": false,
+  "optimizer_called": false
+}

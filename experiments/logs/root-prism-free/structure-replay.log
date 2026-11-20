@@ -1,0 +1,55 @@
+{
+  "status": "exact globally-prism-free local reduction and partial controls PASS",
+  "source_sha256": "d3c72f72481b095086306c8cda3995b064b396e28200822ac4d479a582835904",
+  "root_builder_sha256": "1e064dc0bcffa6c77fbbfbfd9513fb6d0cedfc0f291ac347cdecff7729951419",
+  "scope": "globally prism-free SRG only; no graph or exclusion obtained",
+  "primary_edge_order_sha256": "6e766dafff29b9cb6d3cbe57b7aabf58499ca70469800ddc79f34e808d1ad4ac",
+  "primary_variables": 3486,
+  "four_edge_clauses": 34440,
+  "clauses_per_root_axis": [
+    4920,
+    4920,
+    4920,
+    4920,
+    4920,
+    4920,
+    4920
+  ],
+  "clause_path": "experiments/logs/root-prism-free/near-axis-clauses.cnf.gz",
+  "raw_clause_cnf_sha256": "05a7d5d559c00cb557001c6b80a64145dd6119ae2018f2ae1273d9c3b4d4bcf2",
+  "compressed_clause_cnf_sha256": "2e7a23d57754fc90c5794ce40d71efb7997ac1829c281ac52684892324e1a3bb",
+  "small_characterization_control": {
+    "complete_small_configurations": 216,
+    "prism_free_configurations": 22,
+    "characterization_and_cap_implication": "PASS"
+  },
+  "spectral_trace_control": {
+    "formal_integer_m_values_checked": 85,
+    "prism_free_projector_traces": [
+      [
+        -4,
+        "-27"
+      ],
+      [
+        -2,
+        "18/5"
+      ],
+      [
+        0,
+        "7"
+      ],
+      [
+        3,
+        "72/5"
+      ],
+      [
+        12,
+        "2"
+      ]
+    ],
+    "prism_free_trace_C3H": 5544,
+    "prism_free_trace_C4H": 35784,
+    "scope": "exact necessary identities, not a feasible complete adjacency matrix"
+  },
+  "solver_called": false
+}

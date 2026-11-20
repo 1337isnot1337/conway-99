@@ -1,0 +1,263 @@
+{
+  "status": "r6s2 exact domains and small controls prepared; no large blocks generated",
+  "source_sha256": "3772c728ec764dbec0142865696bb747c06e47b29495964af867103618b75a6d",
+  "catalogue_path": "/tmp/conway99-order10-catalogue.pickle",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "witness_path": "experiments/logs/moments-and-counts/prism-zero-order10-ipm-zero-closure-round0-rounded-counts.json",
+  "witness_sha256": "3f75ad72024829c91995f3b22d50f89cd709af6b6d9d3b0806c5ee05f3097326",
+  "transport_source_sha256": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469",
+  "existing_flag_source_sha256": "5f0df28750f1d1871072d8e3b25f8c8b6a51fc2ab2eeb26f24cf2e262a5494d1",
+  "root_order": 6,
+  "maximum_free_vertices_per_flag": 2,
+  "maximum_product_order": 10,
+  "flag_rule": "each free vertex has degree at least3 inside its whole flag, including the mutual edge",
+  "free_labels_quotiented": "one representative under permutations of only the free labels",
+  "variables_count_labelled_embeddings": true,
+  "binary_diagonal_shortcut_used": false,
+  "root_count": 62,
+  "nontrivial_root_blocks": 62,
+  "maximum_full_flag_count": 1248,
+  "full_family_lower_entries": 3913479,
+  "strict_root_degree_subfamily_maximum": 738,
+  "fixed_size_limit": 512,
+  "selected_root_types": [
+    41,
+    42,
+    43,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "selected_blocks": 55,
+  "selected_lower_entries": 1042819,
+  "selected_maximum_flags": 495,
+  "selected_zero_count_roots": [
+    99
+  ],
+  "point_dependent_flag_or_root_pruning": false,
+  "oversize_root_types": [
+    38,
+    39,
+    40,
+    44,
+    45,
+    46,
+    64
+  ],
+  "overlap_injection_counts": {
+    "0,0": [
+      1
+    ],
+    "0,1": [
+      1
+    ],
+    "0,2": [
+      1
+    ],
+    "1,0": [
+      1
+    ],
+    "1,1": [
+      1,
+      1
+    ],
+    "1,2": [
+      1,
+      2
+    ],
+    "2,0": [
+      1
+    ],
+    "2,1": [
+      1,
+      2
+    ],
+    "2,2": [
+      1,
+      4,
+      2
+    ]
+  },
+  "direct_rook_controls": {
+    "status": "direct R9 overlap-product controls PASS",
+    "cases": [
+      {
+        "host_subset_for_root": [
+          0,
+          4,
+          8
+        ],
+        "root_type": 4,
+        "root_order": 3,
+        "flag_count": 5,
+        "root_embeddings": 36,
+        "maximum_flag_value": 2,
+        "nonbinary_diagonal_examples": [
+          {
+            "flag_index": 2,
+            "masks": [
+              3,
+              5
+            ],
+            "edge": 1,
+            "first_moment": 72,
+            "second_moment": 144,
+            "labelled_embedding_form": [
+              [
+                32,
+                1
+              ],
+              [
+                304,
+                1
+              ]
+            ],
+            "admissible_completion_counts_by_overlap": {
+              "0": 1,
+              "2": 1
+            }
+          },
+          {
+            "flag_index": 3,
+            "masks": [
+              3,
+              6
+            ],
+            "edge": 1,
+            "first_moment": 72,
+            "second_moment": 144,
+            "labelled_embedding_form": [
+              [
+                32,
+                1
+              ],
+              [
+                304,
+                1
+              ]
+            ],
+            "admissible_completion_counts_by_overlap": {
+              "0": 1,
+              "2": 1
+            }
+          },
+          {
+            "flag_index": 4,
+            "masks": [
+              5,
+              6
+            ],
+            "edge": 1,
+            "first_moment": 72,
+            "second_moment": 144,
+            "labelled_embedding_form": [
+              [
+                32,
+                1
+              ],
+              [
+                304,
+                1
+              ]
+            ],
+            "admissible_completion_counts_by_overlap": {
+              "0": 1,
+              "2": 1
+            }
+          }
+        ],
+        "exact_matrix_sha256": "72948fb991a83b8370ec9321421cd40264ea302c36b3159c49b667648cd293cd",
+        "passed": true
+      },
+      {
+        "host_subset_for_root": [
+          0,
+          1,
+          5
+        ],
+        "root_type": 5,
+        "root_order": 3,
+        "flag_count": 3,
+        "root_embeddings": 72,
+        "maximum_flag_value": 1,
+        "nonbinary_diagonal_examples": [],
+        "exact_matrix_sha256": "76f5c15b7f37f8bc07165270bc68f4041b89e71f919f0cd26adf66e928653f58",
+        "passed": true
+      },
+      {
+        "host_subset_for_root": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "root_type": 99,
+        "root_order": 6,
+        "flag_count": 4,
+        "root_embeddings": 72,
+        "maximum_flag_value": 1,
+        "nonbinary_diagonal_examples": [],
+        "exact_matrix_sha256": "3e175b349c4ab4661ea53c56440b2cb51dae6dc28a7ba883eddc6116594cb5d9",
+        "passed": true
+      }
+    ]
+  },
+  "small_control_moment_entries_built": 34,
+  "verified_transports": 15081,
+  "optimizer_called": false,
+  "dense_reduction_loaded": false,
+  "large_family_generation_or_scan_started": false,
+  "seconds": 3.619437940997159,
+  "peak_process_rss_kib": 168568
+}

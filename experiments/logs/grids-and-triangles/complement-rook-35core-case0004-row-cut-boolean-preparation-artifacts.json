@@ -1,0 +1,107 @@
+{
+  "status": "complete60-cut Boolean overlay and cold exact preflight frozen; no incidence query",
+  "case_index": 4,
+  "formula": {
+    "primary_columns": 1214,
+    "variables": 134852,
+    "clauses": 261071,
+    "original_variables": 107207,
+    "original_clauses": 218863,
+    "certified_Gram_conflict_clauses": 30,
+    "exact_exterior_row_cuts": 60,
+    "weighted_threshold_clauses": 42178,
+    "weighted_threshold_auxiliary_variables": 27645,
+    "weighted_threshold_branch_states": 27716,
+    "largest_cut_branch_states": 13352,
+    "largest_cut_auxiliary_variables": 13345,
+    "largest_normalized_demand": 885,
+    "threshold_demand_histogram": {
+      "1": 26,
+      "2": 11,
+      "3": 7,
+      "4": 3,
+      "5": 3,
+      "7": 2,
+      "8": 3,
+      "15": 1,
+      "27": 1,
+      "39": 1,
+      "86": 1,
+      "885": 1
+    },
+    "forced_absent_columns": [
+      1080,
+      1081
+    ],
+    "actual_cut_complete_input_control_assignments": 586,
+    "unchanged_original_clause_body_sha256": "3941a91cefacff9c6d8fa4e2b37f7ee728a40d875dd764418823e66314980c6d",
+    "added_clause_body_sha256": "5cdd890941eeb578594f45dcfe0f4728d3d58793e4f2bc35dc1290a8ef5f4261"
+  },
+  "artifacts": [
+    {
+      "path": "experiments/workspace/complement_rook_35core_case0004_row_cut_boolean.py",
+      "sha256": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+      "bytes": 22164
+    },
+    {
+      "path": "research/grids-and-triangles/complement_rook_35core_case0004_row_cut_boolean.md",
+      "sha256": "3cfe31645e95b028e5bf10598822710a06f3ae6d4bf01c44724d822d7d5f791c",
+      "bytes": 7305
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-model.json",
+      "sha256": "51268b36baee6ba62c7925ab85a18724d5e9b28006cb2a62f6bd3228f862346a",
+      "bytes": 265259
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-preparation-progress.json",
+      "sha256": "6a3090d0f82726bb081ab3be1a15090f956a25065f0dbd737f4a55e283bbc229",
+      "bytes": 1881
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-preparation.log",
+      "sha256": "f32da726d20699794607b5143b6966559703021ac66e624e648168b985b8cc5d",
+      "bytes": 6850
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-preflight.json",
+      "sha256": "9482cabcb5fc0a615fd6cfc57c0394f1678fc9830ed73e39460b1769cd4009b1",
+      "bytes": 2424
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-cut-boolean-preflight.log",
+      "sha256": "9482cabcb5fc0a615fd6cfc57c0394f1678fc9830ed73e39460b1769cd4009b1",
+      "bytes": 2424
+    }
+  ],
+  "artifact_count": 7,
+  "total_bytes": 308307,
+  "dependencies": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-loop-terminal-artifacts.json",
+      "sha256": "135971dbd77911fb114fe9b8c96c514e687638d25104082d639fbe57c61679c9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0004-model.json",
+      "sha256": "43fc0c40a724f4c287df770fce58abc45835ee7534f2b7e5cd06d3baf380cfde"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_weighted_threshold.py",
+      "sha256": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-weighted-threshold-controls.json",
+      "sha256": "665e0d2841b177771c5a29b8860472076b5155cd615e543a1613c49a0ccca38a"
+    }
+  ],
+  "temporary_CNF": {
+    "path": "/tmp/conway99-case4-row-cut-boolean.cnf",
+    "sha256": "b0ca3f15a6d2c9e27f82af783cb62c1ecc27376e53f5820105c49d6fd7b72738",
+    "bytes": 4564801,
+    "omitted_from_publication": true,
+    "cold_replay_reconstructs_complete_formula": true
+  },
+  "main_solver_queries": 0,
+  "non_author_gate_required_before_query": true,
+  "scope": "Only indexed35-core case4. No feasibility, whole-local-set exclusion, or graph completion claimed."
+}

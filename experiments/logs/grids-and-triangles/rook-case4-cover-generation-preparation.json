@@ -1,0 +1,255 @@
+{
+  "status": "bounded complete-pool row generation prepared; no optimizer called",
+  "source_bindings": {
+    "driver_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+    "frozen_maxmin_sha256": "f5c664a20983a9a5f8a6601fe67f1d00aed701b29751b77b543ee3aa3afdd322",
+    "frozen_exact_helper_sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7",
+    "frozen_recovery_sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+    "frozen_compression_sha256": "293787214bb7ad4c20a60ef03d8d2c0eee8f1142d3b015f80d285cc6a9ad1164"
+  },
+  "runtime_binding": {
+    "empty_existing_ray_check": true,
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy_version": "2.3.5",
+    "highspy_package_version": "1.16.0",
+    "native_HiGHS_version": "1.16.0",
+    "highspy_init_sha256": "38e439b7aba304fb9ee78c3c732bc0b16e79bb864c841a1f95471330cdb47865",
+    "highspy_native_binary_name": "_core.cpython-312-x86_64-linux-gnu.so",
+    "highspy_native_binary_sha256": "70da2435537fba263414987fa7289649e74551981edf5d57df1f727a110e27c3",
+    "scipy_version": "1.17.0"
+  },
+  "definition": {
+    "complete_original_maxmin_model": {
+      "base_model_sha256": "9373396621ff2a713200c9832d9da82801b51f1c674233eaa81a1587a9f29b42",
+      "base_array_npz_sha256": "fb9ba6b1185f7796e39ac2904f077ad58238e89b0445305a22238c0374dd158f",
+      "base_integer_stream_sha256": "444835c4d3c466dc9bb5c71646da13bf98e6eefdb3a492c51bcf54185b8919d5",
+      "selectors": 1156,
+      "variables_including_t": 1157,
+      "rows": 175364,
+      "nonzeros": 11871194,
+      "t_column": 1156,
+      "original_rows": 174208,
+      "added_extension_rows": 1156,
+      "extension_rule": "row174208+j has +1 at selector j,-1 at t, and bounds[0,1]",
+      "variable_lower": 0,
+      "variable_upper": 1,
+      "objective": "minimize -t (equivalently maximize t)",
+      "minimization_cost_at_t": -1,
+      "other_costs": 0,
+      "matrix_array_bindings": {
+        "coefficients": {
+          "dtype": "<i8",
+          "shape": [
+            11871194
+          ],
+          "sha256": "eef24c79fe909cd1bfc65dbd12ce285a036315153ff18bbeebb79a017edea52f"
+        },
+        "column_indices": {
+          "dtype": "<i4",
+          "shape": [
+            11871194
+          ],
+          "sha256": "0e5a4694c8c47050747d20ccb356dac28336a763c75416a6a7dc15a39fa30312"
+        },
+        "row_pointers": {
+          "dtype": "<i8",
+          "shape": [
+            175365
+          ],
+          "sha256": "14709425dfab7fdc0b235bcfc9e6594c813dd52f64335ac0a25c4fa0554cfbe0"
+        },
+        "row_lower": {
+          "dtype": "<i8",
+          "shape": [
+            175364
+          ],
+          "sha256": "8c34b58d842ee8d8b4bc980fd0094dcac58b13e6f51b0de9c8b315d0ddfdcc6d"
+        },
+        "row_upper": {
+          "dtype": "<i8",
+          "shape": [
+            175364
+          ],
+          "sha256": "840ca7651fcb7f9f836f1e16faccc67d399d1bccc1340e7eed88853d131713d7"
+        },
+        "original_column_ids": {
+          "dtype": "<u2",
+          "shape": [
+            1156
+          ],
+          "sha256": "ac0edb4f56978063963dd35b2de154d9e1fc3265849e379ea1785f4acde31fbf"
+        }
+      },
+      "original_support_restriction_added": false,
+      "new_fixed_selector_assumptions_added": false,
+      "graph_symmetry_restriction_added": false
+    },
+    "complete_original_maxmin_model_sha256": "550972cca292015d484287228700402642d1e3eb52ea3d1b89ed0b74f83dff0c",
+    "compression_certificate_sha256": "ecd80cb44cfc6464bab1e8c711229bef2a7da9d9334900f24d422d6a46841834",
+    "compression_certificate_decompressed_sha256": "f25952503b94cdad6ac8fe9e20ff0fbba380ceebf2dec87118ce34fdf280c6f7",
+    "compression_replay": {
+      "status": "PASS: every original row accounted for and every omission directly implied",
+      "input_rows_checked": 174208,
+      "unchanged_native_rows": 1992,
+      "input_cover_rows_checked": 172216,
+      "retained_cover_rows": 125429,
+      "removed_cover_rows": 46787,
+      "retained_rows": 127421,
+      "retained_nonzeros": 8483109,
+      "omission_rule_counts": {
+        "Gram_unit_box": 45762,
+        "same_guard_subset": 1011,
+        "weighted_same_guard": 14
+      },
+      "same_guard_identical_support_witnesses": 0,
+      "final_same_guard_antichain_checked": true,
+      "equivalent_over_all_real_unit_box_points": true,
+      "optimizer_called": false,
+      "case4_excluded": false
+    },
+    "retained_cover_pool_count": 125429,
+    "retained_cover_pool_original_ID_sha256": "e142063b9535f21a0cf9d3b0d13f6ce31f1e0e706122cf2b3c9091c9ab73644f",
+    "initial_rows": 3148,
+    "initial_rows_original_ID_sha256": "57feca5c66963f14354297431a1e691d2ff9351cdc2c63e5bac4ddd503cb53fc",
+    "initial_row_ranges": [
+      [
+        0,
+        1992
+      ],
+      [
+        174208,
+        175364
+      ]
+    ],
+    "initial_nonzeros": 29312,
+    "maximum_active_rows": 17996,
+    "all_original_rows_required_for_rational_primal_acceptance": 175364,
+    "only_original_rows_may_be_added": true,
+    "numerical_row_selection": "at most512 unseen covers, greatest violation first, ties by original row ID",
+    "subset_ray_scope": "a checked finite-box certificate using an active subset is valid for the complete LP",
+    "basis_policy": "one persistent native solver; appendRows without reset or reload",
+    "no_new_selector_assumptions_or_symmetry": true,
+    "limits": {
+      "maximum_run_calls": 30,
+      "cumulative_solver_and_existing_ray_seconds": 120,
+      "numerical_phase_wall_seconds_including_bootstrap_and_scans": 180,
+      "maximum_new_cover_rows_per_call": 512,
+      "maximum_total_added_cover_rows": 14848,
+      "threads": 1,
+      "violation_tolerance": 1e-07,
+      "combined_exact_reconstruction_seconds": 60,
+      "cold_exact_check_seconds": 60,
+      "maximum_rational_common_denominator_bits": 4096,
+      "preparation_compression_decode_seconds": 60
+    },
+    "native_options": [
+      [
+        "output_flag",
+        true
+      ],
+      [
+        "log_to_console",
+        false
+      ],
+      [
+        "threads",
+        1
+      ],
+      [
+        "parallel",
+        "off"
+      ],
+      [
+        "solver",
+        "simplex"
+      ],
+      [
+        "presolve",
+        "on"
+      ],
+      [
+        "random_seed",
+        0
+      ]
+    ]
+  },
+  "definition_sha256": "02132919c8fe0e7f07e5a780ef4a8128fac8a7e96e0b5cd187199496fc47456c",
+  "controls": {
+    "native_rows_checked_without_optimization": 4,
+    "nonmonotone_original_row_ID_insertion_checked": true,
+    "tie_break_batch_and_seen_row_controls": 3,
+    "local_to_global_multiplier_control": true,
+    "finite_box_controls": {
+      "sharp_maxmin_half_control": true,
+      "exact_zero_face_control": true,
+      "finite_upper_bound_Farkas_control": true,
+      "invalid_rational_points_rejected": 3,
+      "optimizer_called": false
+    },
+    "optimizer_calls": 0
+  },
+  "fixed_zero_original_columns": [
+    235,
+    241,
+    252,
+    258,
+    263,
+    302,
+    309,
+    315,
+    329,
+    335,
+    342,
+    348,
+    352,
+    353,
+    354,
+    355,
+    356,
+    359,
+    363,
+    367,
+    368,
+    371,
+    375,
+    385,
+    387,
+    388,
+    392,
+    396,
+    397,
+    398,
+    400,
+    404,
+    408,
+    410,
+    413,
+    415,
+    417,
+    420,
+    424,
+    428,
+    430,
+    435,
+    437,
+    439,
+    442,
+    457,
+    459,
+    461,
+    465,
+    552,
+    553,
+    645,
+    869,
+    873,
+    957,
+    1080,
+    1081,
+    1167
+  ],
+  "production_optimizer_calls": 0,
+  "case4_excluded": false,
+  "seconds": 10.8542621029992,
+  "peak_rss_kib": 456724
+}

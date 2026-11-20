@@ -1,0 +1,43 @@
+{
+  "status": "PASS: exact-deficit continuation source/model review; one bounded run authorized",
+  "reviewer": "coordinator /root",
+  "source_sha256": {
+    "root_prism_free_f0_shared_deficit_separator.py": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf",
+    "root_prism_free_f0_deficit_row_loop.py": "27b10330125ca5586512e2a4d3f8a297cf203dbb05e246bda4820240d03e940e",
+    "root_prism_free_f0_deficit_row_loop_certificate.py": "f023da2322053bd15c844f6c8c3c63d54feb3e5ed8ed51b1df0f6cb18319d419"
+  },
+  "preparation_sha256": "8884d196447a51e6104e473794a402cd2c0ab54465207355face9f20041faa08",
+  "cold_preflight_sha256": "da258180298c0add9bc1d2adff5b08ca186df960ab35f257fd7fc025be586acc",
+  "full_CNF_sha256": "2c528bfce40ea18b82949fbb45dcb05f683096c8c9ab2dd94583e238ab458cb3",
+  "variables": 208836,
+  "clauses": 1476450,
+  "checks": [
+    "Read complete differences from the previously reviewed helper and loop.",
+    "Read complete proof-wrapper difference; only description and imported continuation changed.",
+    "Free equality multipliers are exact dyadic values; upper-bound multipliers are recomputed as exact nonnegative deficits.",
+    "Every proposed ray still passes the full integer column-sign and strictly negative RHS verifier.",
+    "Reconstruction recipe is replayed; the prior UNKNOWN remains unchanged.",
+    "All348 individual and36 signed inequalities have complete prior certificate/prefix replay and unchanged carry encoding.",
+    "The complete cold preflight agrees on source, model and full CNF.",
+    "All480 selectors stay free with every second component and alignment unspecified."
+  ],
+  "authorized_limits": {
+    "SAT_seconds_per_call": 10,
+    "maximum_formula_clauses": 2000000,
+    "maximum_formula_variables": 1000000,
+    "maximum_incidences": 20,
+    "maximum_threshold_states_per_cut": 250000,
+    "overall_seconds": 180,
+    "row_pass_seconds": 60,
+    "shared_LP_seconds": 60
+  },
+  "conditional_proof_gate": {
+    "only_after_incremental_UNSAT": true,
+    "fresh_solver_seconds": 60,
+    "direct_DRAT_seconds": 60,
+    "cold_rebuild_and_DRAT_seconds": 60,
+    "retained_input_inclusion_required": true
+  },
+  "solver_called_in_review": false,
+  "component_excluded": false
+}

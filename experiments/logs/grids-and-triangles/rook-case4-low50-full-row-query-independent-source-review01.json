@@ -1,0 +1,60 @@
+{
+  "all_source_lines_read": {
+    "exact_helper": 343,
+    "independent_cold": 319,
+    "query": 346
+  },
+  "concrete_blockers": [],
+  "configuration": {
+    "bytes": 13178,
+    "path": "experiments/logs/grids-and-triangles/rook-case4-low50-full-row-query-configuration01.json",
+    "sha256": "1420c4a2b7dff1248ea53083ffeba31dcf7a42755810db50603f46130b633626"
+  },
+  "configuration_source_input_control_references_rehashed": 27,
+  "controls_repeated": false,
+  "full_matrix_loads": 0,
+  "limitations": [
+    "Source review only: no source import, matrix load, control rerun or optimizer call was performed.",
+    "The historical branch and matrix proofs are reused by their accepted immutable receipts; their large original traces were not repeated.",
+    "An accepted exact prefix is a certificate result, not a claim that the entire production phase completed within every requested native allowance.",
+    "No whole case or graph exclusion follows unless the independently checked stated cover obligations are actually all discharged; this driver always leaves case4_excluded and whole_graph_problem_resolved false."
+  ],
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "review": [
+    "The query retains the accepted complete 167127-row matrix with 10769860 nonzeros and all 1103 columns. Every cached array and its complete accepted 167121-row prefix is bound by raw-byte hashes; the six appended rows are reconstructed in original coordinates.",
+    "All 191 complete surviving box states and the original branch-cover receipts are rebound. The original three Gram rows give H27+2Q=3 with weights 1,2,3, proving the positive singleton/pair guards imply the corresponding full conditioned box.",
+    "Every attempted low branch resets and reads back all 1103 bounds including t=0, then performs exactly one explicit native run. The old basis may be reused but no returned feasible point is accepted. Dual rays are requested only after the existing-ray check reports one.",
+    "Lossless NPZ records preserve ray, column values and complete basis statuses before exact interpretation. Native status is a proposal only. There is no feedback, extra ray solve or retry.",
+    "For a signed integer multiplier, the exact upper endpoint is the original row upper bound for positive signs and lower bound for negative signs. Python integers form every combined coefficient; its minimum over the entire box is exact. Only a strict positive gap yields an exclusion.",
+    "The independent cold imports none of the producer/helper/native optimizer. It reconstructs the 1214-coordinate vector directly from CSR rows, handles the fixed floor coefficient separately, and checks every signed endpoint, box bound, coefficient, gap and branch ancestry.",
+    "A checked singleton guard exclusion yields one global selector zero. Only all 50 new low exclusions plus the four accepted prior exclusions eliminate the complete 54-box low family and imply every coordinate in Q is zero. The 137 high boxes remain unqueried.",
+    "Complete newline-terminated transcript prefixes can be checked after a forward timeout or error. Partial trailing bytes and forward resource overruns remain reported. The independent cold must itself pass and exit successfully before the outer result accepts any exact prefix."
+  ],
+  "reviewer": "master_review",
+  "schema": "conway99.rook-case4.low50-full-row-query-independent-source-review.v1",
+  "source_imports": 0,
+  "sources": {
+    "cold": {
+      "bytes": 18225,
+      "path": "experiments/workspace/rook_case4_low50_full_row_replay.py",
+      "sha256": "5220f81f611050cf4ffdb4f1ed364367fa04d2f4c8c26486180fefc49fc5108d"
+    },
+    "helper": {
+      "bytes": 17351,
+      "path": "experiments/workspace/rook_case4_low50_full_row_exact.py",
+      "sha256": "660d57964f06933cc193496fb81d5d12305df2efe97d78a4878e73487090f5b7"
+    },
+    "query": {
+      "bytes": 21259,
+      "path": "experiments/workspace/rook_case4_low50_full_row_query.py",
+      "sha256": "41a13efa184daee0e387e3fc1eedaf5e67346f795e9aeb3bfc2a6e26c6cb12c5"
+    },
+    "transport": {
+      "bytes": 11533,
+      "path": "experiments/workspace/rook_case4_full_native_transport.py",
+      "sha256": "70b08007e9d9cfc527731cb79ae4d35b6c634880c8096047246a4f056dcb4b86"
+    }
+  },
+  "status": "PASS_COMPLETE_SOURCE_BOUND_FULL50_QUERY_AND_EXACT_COLD_REVIEW"
+}

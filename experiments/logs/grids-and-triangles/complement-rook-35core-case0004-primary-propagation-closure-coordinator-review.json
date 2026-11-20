@@ -1,0 +1,23 @@
+{
+  "status": "PASS: source and fixed preparation reviewed",
+  "source_sha256": "7e39e8a675dffedd77f545d30e534a5f47129ec8e0a22c7265afadc74759225c",
+  "preparation_sha256": "f3db48a0133be1d35c247453c74041c510d2791ac52149c7c78f3c8caf4cc4d8",
+  "reviewed_checks": [
+    "Full wrapper source read",
+    "Inputs bind the reviewed exact interval and cover rules",
+    "Every assignment receives a prior-state integer reason",
+    "Separate trace replay checks all recorded implications",
+    "Complete fixed point requires all original rows and covers",
+    "Partial timeout claims no fixed point",
+    "No native presolve messages or failed-literal probes used"
+  ],
+  "authorized_run": {
+    "closure_calls": 1,
+    "closure_seconds": 60,
+    "optimizer_calls": 0,
+    "automatic_retries": 0
+  },
+  "solver_or_optimizer_called_by_review": false,
+  "whole_case_exclusion_before_run": false,
+  "required_after_run": "Freeze result and perform the separate exact replay. UNKNOWN remains unresolved."
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "conway99.f0.triangle-schur-independent-cold.v1",
+  "status": "PREPARED_BINDINGS_AND_SMALL_CONTROLS_ONLY",
+  "source_sha256": "cc15c3022af605c47c3ad6830066b26faa1ecb8adb07ad57d2b849f44a9f6db3",
+  "configuration_sha256": "c363820f64f487ea7beb03f6b939fb8e855f0e6153dcba3b2e522784d275eae3",
+  "inputs": {
+    "domain": {
+      "repository": "1337isnot1337/conway-99",
+      "ref": "cd7e6404f37861003dcdd0fe1757bb2543ebd6fb",
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "encoding": "gzip-base64",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "raw_bytes": 547862,
+      "archive_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "archive_bytes": 52094
+    },
+    "kernels": {
+      "repository": "1337isnot1337/conway-99",
+      "ref": "cd7e6404f37861003dcdd0fe1757bb2543ebd6fb",
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-kernels01.json.gz",
+      "encoding": "gzip-base64",
+      "git_blob": "eb5103adaeeb66fd424f672272f35e0516da1c44",
+      "raw_sha256": "a963a88606a9fad78576d711f6ef7bf67eb03032176cebc2af5af700ea7c6708",
+      "raw_bytes": 1405171,
+      "archive_sha256": "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1",
+      "archive_bytes": 453951
+    },
+    "overlay": {
+      "repository": "1337isnot1337/conway-99",
+      "ref": "cd7e6404f37861003dcdd0fe1757bb2543ebd6fb",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "encoding": "gzip-base64",
+      "git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "raw_sha256": "bfdbdb641325f289fc844b6f430f6b0585584cf2b356a50e4a06b0fd78e69aee",
+      "raw_bytes": 1262434,
+      "archive_sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "archive_bytes": 219390
+    },
+    "audit": {
+      "repository": "1337isnot1337/conway-99",
+      "ref": "cd7e6404f37861003dcdd0fe1757bb2543ebd6fb",
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit.json",
+      "encoding": "utf-8",
+      "git_blob": "a7ed9d7d07e7b48e3facb4fd651451e1a872880a",
+      "raw_sha256": "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75",
+      "raw_bytes": 4489
+    },
+    "forward": {
+      "repository": "1337isnot1337/conway-99",
+      "encoding": "utf-8",
+      "git_blob": "44f7d8c605a1f6fab51c89fed44b9233c8215b21",
+      "raw_sha256": "7027feb1a77cb8131371bb10823ec7e5e8b6a33f5281a0b27881ee2f6b088155",
+      "raw_bytes": 1600480
+    }
+  },
+  "controls": {
+    "status": "PASS_SMALL_INDEPENDENT_CONTROLS",
+    "symmetric_integer_matrices": 15625,
+    "large_integer_matrices": 3,
+    "maximum_control_entry_bits": 104,
+    "explicit_named_determinants": 3,
+    "all_four_vertex_graphs": 64,
+    "cross_word_graphs": 1,
+    "zero_edge_masks": 8,
+    "invalid_inputs_rejected": 3,
+    "case_triangles_enumerated": 0,
+    "seconds": 0.094
+  },
+  "full_case_domain_reconstructed": false,
+  "case_minors_evaluated": 0,
+  "case_triangles_enumerated": 0,
+  "optimizer_calls": 0,
+  "main_requires_separate_source_gate": true,
+  "seconds": 8.449
+}

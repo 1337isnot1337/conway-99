@@ -1,0 +1,55 @@
+{
+  "status": "exact repaired shared-row ray and all12 universal selector transports PASS",
+  "source_sha256": "4a214635d5ba1ec73477a3acdfd36c30cb65be3c4c4fb662ee19a615388c07d3",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_carry_row_loop.py": "ec85c752a5d3c5538250e0099286dcbad674e23ef9572f72bbd3ca72fb5ef403",
+    "root_prism_free_f0_shared_row_separator.py": "7d8f3324826c1fa7fa05e79dbbee7c6e16b064dd01ef5e548160f6a7fe04368a"
+  },
+  "frozen_terminal_result": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/result.json",
+  "frozen_terminal_result_sha256": "ecc80a941a1b0d9e152788167210a5e8b7936f28b03ee50c35658895b453d3d3",
+  "frozen_terminal_status_unchanged": "UNKNOWN: numerical infeasibility without an exact ray; unresolved",
+  "candidate": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration08/candidate.json",
+  "candidate_sha256": "ccb685f6ab13993a398f685201bd36309a841400df729f725afa632c878e1175",
+  "numerical_shared_result": "experiments/logs/root-prism-free/f0-carry-row-loop-run01/iteration08/shared-rows.json",
+  "numerical_shared_result_sha256": "0982995b7a090152a9c7bfb7deb80c59108a2100a3da1347e1cb0ac3204ad0a2",
+  "inventory": {
+    "primary_edges": 1228,
+    "equations": 1140,
+    "standard_form_rows": 2368,
+    "standard_form_variables": 2456,
+    "standard_form_nonzeros": 12280,
+    "data_sha256": "0cb4337602aeff41d340285a60bf19fbfa516e5c30ef84fad2e3389e6c82c6ec",
+    "rows_sha256": "03830e188d56da8a56fb9d4fb337b5f7a1cbb2ca07a7385b9ffe5f52b756d433"
+  },
+  "reconstruction": {
+    "free_multiplier_orientation": -1,
+    "rounding_scale": 1,
+    "numeric_inputs_interpreted_as_exact_dyadic_rationals": true,
+    "rounding": "nearest integer, ties to even",
+    "upper_multiplier_rule": "max(0,-sum of integer equality coefficients on that primary column)",
+    "whole_vector_common_gcd_removed": true,
+    "numerical_upper_multipliers_discarded": true
+  },
+  "exact_ray_check": {
+    "rhs_dot_product": -26,
+    "minimum_primary_coefficient": 0,
+    "minimum_upper_slack_coefficient": 0,
+    "nonzero_row_multipliers": 1013,
+    "maximum_absolute_multiplier": 7618,
+    "orientation": "E^T ray>=0 and rhs^T ray<0 for every nonnegative primary and upper slack"
+  },
+  "controls": {
+    "infeasible_box_positive_control": true,
+    "feasible_box_integer_multiplier_controls": 5832,
+    "optimizer_or_solver_called": false
+  },
+  "new_optimizer_or_solver_called": false,
+  "fixed_candidate_excluded": true,
+  "whole_component_excluded": false,
+  "full_graph_constructed": false,
+  "existing_formula_or_result_modified": false,
+  "potential_gap": 78,
+  "universal_normalized_gap": 26,
+  "complete_transports": 12,
+  "certificate_sha256": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5"
+}

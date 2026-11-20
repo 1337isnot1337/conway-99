@@ -1,0 +1,37 @@
+{
+  "status": "PASS: read-only source and mathematical review of disjoint-guard aggregation",
+  "source": {
+    "path": "experiments/workspace/rook_case4_face112_disjoint_guard_cuts.py",
+    "sha256": "171955320ea6b20fadaa8b2bb6a14d82dbd4476c3bc45c902392d824dac17eaa"
+  },
+  "certificate": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-disjoint-guard-cuts01.json",
+    "sha256": "9ef2b90b12a08911970952fca73da4d788f99997e71349433d54429c02c49efc"
+  },
+  "owner_replay": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-disjoint-guard-cuts01-replay.json",
+    "sha256": "1300434903fa41f05f993eb1bc9943947e65a061920033f22767c783dfe6429c"
+  },
+  "complete_source_read": true,
+  "checks": [
+    "Every retained implication refers to a saved assignment event from a complete trace with a bound cold-reason replay. The old interrupted trace is excluded from the completed branch registry.",
+    "All31 singleton guards are a subset of the same nonnegative unit-sum support, so their selected sum is at most one; no claim that one of these31 must occur is used.",
+    "For Boolean target t, guards forcing t=0 imply sum(guards)+t<=1; guards forcing t=1 imply sum(guards)<=t. These implications require the stated Boolean scope.",
+    "A target equal to its own positive guard supplies only a tautological implication and is removed. A negative self-guard would contradict the checked positive assumption and is rejected.",
+    "Dropping a negative-target row already covered by a positive unit-coefficient native capacity is valid after the proved zero substitutions. Its remaining nonnegative support bounds every subset by one.",
+    "Literal indices, forward/cold bindings, source/preparation hashes and branch assumption lists are checked before aggregation. Exact duplicate term lists retain all proof records.",
+    "All2428 target/value choices are accounted for. Only singleton guards produce these rows; paired branch assumptions are not silently converted into single-literal guards.",
+    "The reported lack of new uniform literals and the positive-point scan are separate outcomes; neither is a Boolean feasibility certificate."
+  ],
+  "independently_repeated": {
+    "subject_import": false,
+    "branch_scope_rebuild": false,
+    "propagation": false,
+    "trace_reason_replay": false,
+    "cut_derivation_run": false,
+    "point_scan": false,
+    "optimizer": false
+  },
+  "scope": "Source/math gate only. This review relies on the immutable prior branch and cold-reason certificates and does not independently rerun them.",
+  "soundness_blocker_found": false
+}

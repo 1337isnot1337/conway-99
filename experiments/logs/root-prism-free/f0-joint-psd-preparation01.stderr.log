@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 574, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 555, in main
+    result = prepare(args.cache)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 353, in prepare
+    cache = project_cache()
+            ^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_joint_psd_scan.py", line 195, in project_cache
+    assert sha(canonical(adjacency)) == old["core_sha256"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,486 @@
+{
+  "status": "exact complete case4 exterior-row domains and bounded discovery plan prepared; no query",
+  "source_sha256": "db88ab6af3b151dc233519efb052d1fc20bd40b251e01a61558a3c93ac709977",
+  "model_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "model_bytes": 257290,
+  "counts": {
+    "columns": 1214,
+    "candidate_unordered_pairs": 736291,
+    "eligible_unordered_edges": 275578,
+    "directed_neighbor_entries": 551156,
+    "neighbor_count_min": 214,
+    "neighbor_count_max": 866,
+    "column_weight_histogram": {
+      "3": 16,
+      "4": 616,
+      "5": 582
+    },
+    "exterior_degree_histogram": {
+      "9": 582,
+      "10": 616,
+      "11": 16
+    },
+    "pilot_targets": 32,
+    "proposal_positive_columns": 291,
+    "pilot_total_neighbor_variables": 17477,
+    "pilot_total_matrix_nonzeros": 94158
+  },
+  "controls": {
+    "rook9_exact_exterior_rows": 4,
+    "rook9_all_six_coordinates_checked": true,
+    "rook9_integer_positive_potentials_checked": 1116,
+    "signed_product_activation_controls": 3375,
+    "solver_or_optimizer_called": false
+  },
+  "pilot_plan": [
+    {
+      "target_column": 32,
+      "original_signature_and_attachment": [
+        35,
+        0
+      ],
+      "proposal_value": 0.9277723842952795,
+      "core_neighbors": 3,
+      "exterior_degree": 11,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 640,
+      "matrix_nonzeros": 3441,
+      "neighbors_with_positive_proposal_capacity": 175
+    },
+    {
+      "target_column": 175,
+      "original_signature_and_attachment": [
+        75,
+        1
+      ],
+      "proposal_value": 0.8890681354800014,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 645,
+      "matrix_nonzeros": 3493,
+      "neighbors_with_positive_proposal_capacity": 172
+    },
+    {
+      "target_column": 183,
+      "original_signature_and_attachment": [
+        77,
+        0
+      ],
+      "proposal_value": 0.8485099522522835,
+      "core_neighbors": 3,
+      "exterior_degree": 11,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 643,
+      "matrix_nonzeros": 3468,
+      "neighbors_with_positive_proposal_capacity": 172
+    },
+    {
+      "target_column": 792,
+      "original_signature_and_attachment": [
+        190,
+        32
+      ],
+      "proposal_value": 0.7572980982773305,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 391,
+      "matrix_nonzeros": 2060,
+      "neighbors_with_positive_proposal_capacity": 110
+    },
+    {
+      "target_column": 827,
+      "original_signature_and_attachment": [
+        198,
+        64
+      ],
+      "proposal_value": 0.6714991872985123,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 598,
+      "matrix_nonzeros": 3269,
+      "neighbors_with_positive_proposal_capacity": 147
+    },
+    {
+      "target_column": 412,
+      "original_signature_and_attachment": [
+        126,
+        4
+      ],
+      "proposal_value": 0.6656902386196598,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 676,
+      "matrix_nonzeros": 3727,
+      "neighbors_with_positive_proposal_capacity": 174
+    },
+    {
+      "target_column": 924,
+      "original_signature_and_attachment": [
+        210,
+        2
+      ],
+      "proposal_value": 0.6305510430238078,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 691,
+      "matrix_nonzeros": 3820,
+      "neighbors_with_positive_proposal_capacity": 177
+    },
+    {
+      "target_column": 618,
+      "original_signature_and_attachment": [
+        155,
+        130
+      ],
+      "proposal_value": 0.6252677500707755,
+      "core_neighbors": 5,
+      "exterior_degree": 9,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 463,
+      "matrix_nonzeros": 2452,
+      "neighbors_with_positive_proposal_capacity": 112
+    },
+    {
+      "target_column": 775,
+      "original_signature_and_attachment": [
+        185,
+        128
+      ],
+      "proposal_value": 0.6100798125006992,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 433,
+      "matrix_nonzeros": 2317,
+      "neighbors_with_positive_proposal_capacity": 114
+    },
+    {
+      "target_column": 285,
+      "original_signature_and_attachment": [
+        105,
+        0
+      ],
+      "proposal_value": 0.5934626229149392,
+      "core_neighbors": 3,
+      "exterior_degree": 11,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 648,
+      "matrix_nonzeros": 3491,
+      "neighbors_with_positive_proposal_capacity": 172
+    },
+    {
+      "target_column": 107,
+      "original_signature_and_attachment": [
+        58,
+        16
+      ],
+      "proposal_value": 0.5924805240674408,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 645,
+      "matrix_nonzeros": 3506,
+      "neighbors_with_positive_proposal_capacity": 161
+    },
+    {
+      "target_column": 294,
+      "original_signature_and_attachment": [
+        108,
+        1
+      ],
+      "proposal_value": 0.5924805240674273,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 451,
+      "matrix_nonzeros": 2374,
+      "neighbors_with_positive_proposal_capacity": 139
+    },
+    {
+      "target_column": 20,
+      "original_signature_and_attachment": [
+        32,
+        128
+      ],
+      "proposal_value": 0.5895770170818182,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 567,
+      "matrix_nonzeros": 3063,
+      "neighbors_with_positive_proposal_capacity": 151
+    },
+    {
+      "target_column": 1184,
+      "original_signature_and_attachment": [
+        245,
+        1
+      ],
+      "proposal_value": 0.5828273757996891,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 566,
+      "matrix_nonzeros": 3055,
+      "neighbors_with_positive_proposal_capacity": 141
+    },
+    {
+      "target_column": 85,
+      "original_signature_and_attachment": [
+        50,
+        16
+      ],
+      "proposal_value": 0.560166999302196,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 423,
+      "matrix_nonzeros": 2246,
+      "neighbors_with_positive_proposal_capacity": 116
+    },
+    {
+      "target_column": 1195,
+      "original_signature_and_attachment": [
+        249,
+        34
+      ],
+      "proposal_value": 0.5477947397924173,
+      "core_neighbors": 5,
+      "exterior_degree": 9,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 395,
+      "matrix_nonzeros": 2083,
+      "neighbors_with_positive_proposal_capacity": 105
+    },
+    {
+      "target_column": 551,
+      "original_signature_and_attachment": [
+        147,
+        64
+      ],
+      "proposal_value": 0.5465684974381113,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 704,
+      "matrix_nonzeros": 3881,
+      "neighbors_with_positive_proposal_capacity": 180
+    },
+    {
+      "target_column": 725,
+      "original_signature_and_attachment": [
+        172,
+        4
+      ],
+      "proposal_value": 0.5276878360496347,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 624,
+      "matrix_nonzeros": 3362,
+      "neighbors_with_positive_proposal_capacity": 161
+    },
+    {
+      "target_column": 223,
+      "original_signature_and_attachment": [
+        88,
+        128
+      ],
+      "proposal_value": 0.5251401858766418,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 549,
+      "matrix_nonzeros": 2954,
+      "neighbors_with_positive_proposal_capacity": 149
+    },
+    {
+      "target_column": 60,
+      "original_signature_and_attachment": [
+        44,
+        8
+      ],
+      "proposal_value": 0.5233289384283752,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 564,
+      "matrix_nonzeros": 3043,
+      "neighbors_with_positive_proposal_capacity": 149
+    },
+    {
+      "target_column": 1024,
+      "original_signature_and_attachment": [
+        224,
+        8
+      ],
+      "proposal_value": 0.5207576196149337,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 590,
+      "matrix_nonzeros": 3226,
+      "neighbors_with_positive_proposal_capacity": 158
+    },
+    {
+      "target_column": 189,
+      "original_signature_and_attachment": [
+        79,
+        8
+      ],
+      "proposal_value": 0.5141447982340499,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 446,
+      "matrix_nonzeros": 2353,
+      "neighbors_with_positive_proposal_capacity": 126
+    },
+    {
+      "target_column": 1178,
+      "original_signature_and_attachment": [
+        244,
+        65
+      ],
+      "proposal_value": 0.5112432772601399,
+      "core_neighbors": 5,
+      "exterior_degree": 9,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 461,
+      "matrix_nonzeros": 2435,
+      "neighbors_with_positive_proposal_capacity": 122
+    },
+    {
+      "target_column": 628,
+      "original_signature_and_attachment": [
+        156,
+        33
+      ],
+      "proposal_value": 0.5084405493852131,
+      "core_neighbors": 5,
+      "exterior_degree": 9,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 458,
+      "matrix_nonzeros": 2427,
+      "neighbors_with_positive_proposal_capacity": 124
+    },
+    {
+      "target_column": 226,
+      "original_signature_and_attachment": [
+        89,
+        64
+      ],
+      "proposal_value": 0.5069890452073424,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 624,
+      "matrix_nonzeros": 3367,
+      "neighbors_with_positive_proposal_capacity": 153
+    },
+    {
+      "target_column": 112,
+      "original_signature_and_attachment": [
+        59,
+        32
+      ],
+      "proposal_value": 0.4948572741454531,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 631,
+      "matrix_nonzeros": 3403,
+      "neighbors_with_positive_proposal_capacity": 174
+    },
+    {
+      "target_column": 542,
+      "original_signature_and_attachment": [
+        146,
+        1
+      ],
+      "proposal_value": 0.48487189888347915,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 583,
+      "matrix_nonzeros": 3174,
+      "neighbors_with_positive_proposal_capacity": 146
+    },
+    {
+      "target_column": 96,
+      "original_signature_and_attachment": [
+        53,
+        2
+      ],
+      "proposal_value": 0.4834148474888869,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 440,
+      "matrix_nonzeros": 2310,
+      "neighbors_with_positive_proposal_capacity": 123
+    },
+    {
+      "target_column": 70,
+      "original_signature_and_attachment": [
+        46,
+        8
+      ],
+      "proposal_value": 0.4766710615716247,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 613,
+      "matrix_nonzeros": 3310,
+      "neighbors_with_positive_proposal_capacity": 166
+    },
+    {
+      "target_column": 197,
+      "original_signature_and_attachment": [
+        82,
+        4
+      ],
+      "proposal_value": 0.46533019824102895,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 406,
+      "matrix_nonzeros": 2130,
+      "neighbors_with_positive_proposal_capacity": 119
+    },
+    {
+      "target_column": 490,
+      "original_signature_and_attachment": [
+        136,
+        65
+      ],
+      "proposal_value": 0.4629651494200981,
+      "core_neighbors": 5,
+      "exterior_degree": 9,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 337,
+      "matrix_nonzeros": 1786,
+      "neighbors_with_positive_proposal_capacity": 92
+    },
+    {
+      "target_column": 331,
+      "original_signature_and_attachment": [
+        116,
+        16
+      ],
+      "proposal_value": 0.4569278906756429,
+      "core_neighbors": 4,
+      "exterior_degree": 10,
+      "row_coordinates": 36,
+      "possible_neighbor_columns": 572,
+      "matrix_nonzeros": 3132,
+      "neighbors_with_positive_proposal_capacity": 150
+    }
+  ],
+  "elapsed_seconds": 1.0349086569985957
+}

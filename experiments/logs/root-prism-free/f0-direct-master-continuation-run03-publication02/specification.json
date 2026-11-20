@@ -1,0 +1,86 @@
+[
+  {
+    "base_codec": "identity",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-model.pb.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--initial-model.pb.gz.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/initial-model.pb.gz",
+    "verify_target_gzip": true
+  },
+  {
+    "base_codec": "identity",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-model.pb.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--iteration-00--prefix.pb.gz.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-00/prefix.pb.gz",
+    "verify_target_gzip": true
+  },
+  {
+    "base_codec": "identity",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-model.pb.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--iteration-01--prefix.pb.gz.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-01/prefix.pb.gz",
+    "verify_target_gzip": true
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-literal-model01/model.pb.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--actual-model.pb.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/actual-model.pb",
+    "verify_target_gzip": false
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation05/initial-model.pb.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--initial-model.pb.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/initial-model.pb",
+    "verify_target_gzip": false
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-00/prefix.pb.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--iteration-00--prefix.pb.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-00/prefix.pb",
+    "verify_target_gzip": false
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-01/prefix.pb.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--iteration-01--prefix.pb.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-01/prefix.pb",
+    "verify_target_gzip": false
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation04-05-publication01/initial-registry.json.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--initial-registry.json.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/initial-registry.json",
+    "verify_target_gzip": false
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation04-05-publication01/initial-registry.json.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--iteration-00--registry-prefix.json.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-00/registry-prefix.json",
+    "verify_target_gzip": false
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation04-05-publication01/initial-registry.json.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--iteration-01--registry-prefix.json.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-01/registry-prefix.json",
+    "verify_target_gzip": false
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation04-05-publication01/initial-registry.json.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03--registry.json.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/registry.json",
+    "verify_target_gzip": false
+  },
+  {
+    "base_codec": "gzip",
+    "base_path": "experiments/logs/root-prism-free/f0-direct-master-preparation04-05-publication01/initial-registry.json.gz",
+    "suffix_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-publication02/f0-direct-master-continuation-run03-cold--replayed-registry.json.suffix.bin",
+    "target_path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-cold/replayed-registry.json",
+    "verify_target_gzip": false
+  }
+]

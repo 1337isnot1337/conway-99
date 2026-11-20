@@ -1,0 +1,26 @@
+{
+  "status": "PASS: all128 retained clique rows are existing exact equalities on the proved zero face",
+  "source_sha256": "0d210a3eade44faf8b4419eca6349e23c79ad60884b14e5cf6ff60e29c023fbe",
+  "inputs": {
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-model03.json.gz",
+      "sha256": "ad046fc05a4247a081b3cabb16693682fa5539ff557dd7b599f3c3a63e7303dd"
+    },
+    "rows": {
+      "path": "experiments/logs/root-prism-free/f0-local-clique-scan01.json",
+      "sha256": "f19b34f16e23f3cef0ec764935c5d43fb0fda638fb80e1c074b15ef3207cc9c5"
+    },
+    "proof": {
+      "path": "experiments/logs/root-prism-free/f0-local-clique-scan01-redundancy.json",
+      "sha256": "909fcb07b6c161c0f13feaa49c3a9eeb2051ac2fddae90dbbdf4f2f50f508af5"
+    }
+  },
+  "retained_rows_checked": 128,
+  "coefficients_checked": 1945600,
+  "exact_parent_equality_consequences": 128,
+  "owner_source_imported": false,
+  "clique_search_repeated": false,
+  "optimizer_calls": 0,
+  "seconds": 2.8475211639961344,
+  "scope": "The128 retained rows provide no new restriction. No independence claim is made for unretained candidates or unsearched cliques."
+}

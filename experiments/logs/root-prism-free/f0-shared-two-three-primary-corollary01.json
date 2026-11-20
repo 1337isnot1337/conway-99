@@ -1,0 +1,76 @@
+{
+  "all_prime_feasibility_claimed": false,
+  "certified_ranks": {
+    "independent_half_even_classes_mod_unit_span": 18,
+    "mod2": 7713,
+    "mod3": 7731,
+    "rational": 7731
+  },
+  "graph_constructed": false,
+  "inputs": {
+    "mod2_independent": {
+      "path": "experiments/logs/root-prism-free/f0-shared-mod2-projection-independent01.json",
+      "sha256": "b9681565811ee38866303a482811675704064a5d0745708d30586e83916b702d"
+    },
+    "mod3_independent": {
+      "path": "experiments/logs/root-prism-free/f0-shared-mod3-projection-independent01.json",
+      "sha256": "c9708a77fa7aa80e5fa31d4b9d4929766bf5656b7b7c901aa29a74c975035124"
+    },
+    "mod4_cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-shared-mod4-run01-cold/owner.json",
+      "sha256": "eb1345f0fb177ec838075753fb8ebc2c081d772c8a5ef42846874496f1ce1eb3"
+    },
+    "mod4_independent_cold": {
+      "path": "experiments/logs/root-prism-free/f0-shared-mod4-run01-cold/report.json",
+      "sha256": "addda32b70e0bde2444ab39b9535d5c08e6565867e86295f09663d6c76ae2083"
+    },
+    "mod4_owner": {
+      "path": "experiments/logs/root-prism-free/f0-shared-mod4-run01/owner.json",
+      "sha256": "fc449d82aa4edf8c58ea7900b6fd1e61d515bad8dfb48bc9f95283dee1437263"
+    },
+    "mod4_report": {
+      "path": "experiments/logs/root-prism-free/f0-shared-mod4-run01/report.json",
+      "sha256": "1a106db963058c58d30b00c9baa4113cc24a0e49d77c20b0b1d1078f32af3b75"
+    },
+    "rational_kernel_cold": {
+      "path": "experiments/logs/root-prism-free/f0-shared-rational-kernel01-cold.json",
+      "sha256": "45d90993f1c78af166d2db8e886754a883592f492ee9bea92cead2790b6b7e3a"
+    }
+  },
+  "integral_realizability_claimed": false,
+  "matrix": {
+    "activation_bounds_included": false,
+    "all_eligible_edges_present": true,
+    "degree_rows": 480,
+    "edge_columns": 68394,
+    "mixed_rows": 8640,
+    "rows": 9120
+  },
+  "new_elimination_or_optimizer_calls": 0,
+  "nonzero_smith_factor_valuations": {
+    "valuation2_at_least_two": 0,
+    "valuation2_one": 18,
+    "valuation2_zero": 7713,
+    "valuation3_positive": 0
+  },
+  "open_constraints": [
+    "primes at least five",
+    "nonnegative edge variables",
+    "edge activation on selected signatures",
+    "edge upper bounds",
+    "integer edge variables",
+    "Boolean adjacency and full graph realization"
+  ],
+  "peer_publication_review_pending": true,
+  "proof": [
+    "Over the rationals, each degree row and its RHS equal one third of the sum of its eighteen mixed rows and RHSs. The complete rational mixed-kernel certificate therefore also gives rank 7731 and exact rational compatibility for the degree-plus-mixed system.",
+    "Let U be the row span modulo two. Let H contain the binary vectors w for which 2w lies in the original row module modulo four. U is contained in H. In Smith coordinates, dim(H/U) equals the number of nonzero Smith factors with 2-adic valuation exactly one.",
+    "The independent cold directly checks eighteen original-row combinations equal to 2w modulo four and proves that their w classes are independent modulo U. Thus at least eighteen factors have valuation one. The 7713 factors visible modulo two and these eighteen exhaust rational rank 7731, so no nonzero factor is divisible by four.",
+    "The full degree-plus-mixed rank modulo three is 7731, equal to rational rank. Consequently no nonzero Smith factor is divisible by three.",
+    "For an integral selector obeying exact Gram equations, the rational-kernel identities force all zero Smith-coordinate RHSs to vanish exactly. The complete modulo-two projection ensures the transformed RHS is even at each of the eighteen even Smith factors. Degree equations add no modulo-two obstruction because each is the sum of its eighteen mixed equations modulo two.",
+    "Divide each nonzero Smith-coordinate RHS by its Smith factor. At an even factor, cancel a factor two from the numerator first. Every remaining denominator is coprime to six. Transforming back by the integer unimodular column map preserves that property. Reducing these rationals modulo 2^r*3^s gives the claimed solutions."
+  ],
+  "statement": "For every integral selector vector satisfying the exact original Gram and population equations, the unrestricted degree-plus-mixed edge equality system has a rational solution with every denominator coprime to six. It therefore has a solution modulo every modulus 2^r*3^s, for nonnegative r and s.",
+  "status": "EXACT_TWO_AND_THREE_PRIMARY_COROLLARY_FROM_ACCEPTED_CERTIFICATES",
+  "whole_component_excluded": false
+}

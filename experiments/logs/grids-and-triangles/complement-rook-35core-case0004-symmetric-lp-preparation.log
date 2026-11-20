@@ -1,0 +1,94 @@
+{
+  "status": "complete exact case4 symmetric exterior-edge LP sizing; no query",
+  "source_sha256": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+  "previous_source_sha256": "b8992691bf5e56bfdc84450de64c36f43dbd3c0927973f334e00ce2d50f0c16a",
+  "row_loop_result_sha256": "9b0713b668e2c0ae47139007cdf6ad8961be2fb0e9caf2b42e0193a5528ecaa6",
+  "row_loop_exact_replay_sha256": "0de66ba641844b5ff0b942cc0d1f5c79c5236d41a6eee48b26d3a6694c22ba93",
+  "row_domain_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "original_CNF_sha256": "e76d9cb74cc1b907c5af37fe224b278181d6e5d052de691f7d86cabb6b028b4d",
+  "original_real_model_sha256": "18e7b79a7e83c1c40f0c0c29301703400f26b42401f0b07a2f21783a298119a6",
+  "primary_selector_variables": 1214,
+  "shared_edge_variables": 275578,
+  "total_LP_variables_without_explicit_slacks": 276792,
+  "zero_based_edge_variable_rule": "variable1214+index for edges[index]",
+  "edge_domain_sha256": "622101ef0206963442869bcd2bdc4c86f4dc3eae3d56e1a12371223fa2531468",
+  "retained_exact_row_cut_count": 60,
+  "retained_binary_no_good_count": 30,
+  "counts": {
+    "physical_rows": 590165,
+    "equalities": 37507,
+    "upper_inequalities": 552658,
+    "physical_matrix_nonzeros": 4121379,
+    "zero_mixed_identities_omitted": 6594,
+    "all_mixed_positions_covered": 42490,
+    "all_degree_positions_covered": 1214,
+    "maximum_absolute_integer_coefficient": 1217,
+    "positive_mixed_quotas_with_empty_y_support": [],
+    "family_rows": {
+      "Gram equality": 397,
+      "additional triple capacity": 12,
+      "certified binary no-good": 30,
+      "column upper bound": 1214,
+      "exact exterior-row inequality": 60,
+      "exterior degree row": 1214,
+      "first endpoint activation": 275578,
+      "mixed exterior row": 35896,
+      "original signature capacity": 186,
+      "second endpoint activation": 275578
+    },
+    "family_nonzeros": {
+      "Gram equality": 14986,
+      "additional triple capacity": 208,
+      "certified binary no-good": 60,
+      "column upper bound": 1214,
+      "exact exterior-row inequality": 4324,
+      "exterior degree row": 552370,
+      "first endpoint activation": 551156,
+      "mixed exterior row": 2444707,
+      "original signature capacity": 1198,
+      "second endpoint activation": 551156
+    }
+  },
+  "integer_row_stream_sha256": "233c802009571ad234596e4eb3bd78f3cda55dda6808102d314fa487b8fa049a",
+  "row_label_stream_sha256": "5379017c8fb5e7ef591f08dc177ad3503ad3c6f91ca49ab83d940235388d5295",
+  "row_stream_format": "per row: little-endian signed64(sense,rhs,nnz,(column,coefficient)*); sense0 equality,1 upper",
+  "variable_lower_bounds": 0,
+  "explicit_variable_upper_bounds": "none; selector upper rows plus edge activation imply<=1",
+  "explicit_slack_standard_form": {
+    "rows": 590165,
+    "variables": 829450,
+    "nonzeros": 4674037,
+    "nonnegative_slacks": 552658
+  },
+  "array_memory_bytes": {
+    "CSC_float64_int32": 50563720,
+    "CSC_float64_int64": 68156408,
+    "cost_and_column_and_row_bounds_float64": 16085648,
+    "COO_float64_int32_if_materialized": 65942064,
+    "CSC32_plus_basic_vectors": 66649368,
+    "COO32_plus_CSC32_plus_basic_vectors": 132591432,
+    "excludes_solver_internal_copies_factorization_and_Python_objects": true
+  },
+  "all_coefficients_exactly_representable_in_float64": true,
+  "complete_general_row_stream_recomputed": true,
+  "sparse_solver_matrix_allocated": false,
+  "symmetry_equalities_on_graph_or_incidence": false,
+  "edge_symmetry": "One variable per unordered pair, reused at both endpoints",
+  "pair_caps_added": false,
+  "LP_or_SAT_query_called": false,
+  "sixty_cut_SAT_alternative_preserved_without_encoding_or_query": true,
+  "controls": {
+    "rook9_complete_shared_edge_control": true,
+    "rook9_mixed_equations_checked": 20,
+    "rook9_degree_equations_checked": 4,
+    "rook9_endpoint_inequalities_checked": 4,
+    "each_shared_edge_counted_at_exactly_two_endpoints": true,
+    "strictly_stronger_than_independent_degree_boxes_control": true,
+    "path_control_is_only_an_algebraic_example_not_a_Conway_core": true,
+    "optimizer_or_solver_called": false
+  },
+  "scope": "Necessary fractional relaxation of actual completions of indexed35-core case4; all original margins/capacities,30 binary no-goods and60 row cuts retained. No feasibility or exclusion claim."
+}
+output_sha256 7172f8e1eea2944d768f54e3acb4e9ef9401b79c2757d309cb9fde6e05978189
+elapsed_seconds 16.35071568800049
+peak_rss_kib 123296

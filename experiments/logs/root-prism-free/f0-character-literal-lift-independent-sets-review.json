@@ -1,0 +1,73 @@
+{
+  "status": "PASS: complete source and mathematical scope review",
+  "review_source_sha256": "30e5339eb5e75c53c5918f4f4435dfd96959f861f5cd4d7fe7e471a882c44d9e",
+  "bindings": {
+    "domain_source": {
+      "path": "experiments/workspace/root_prism_free_f0_character_literal_lift.py",
+      "sha256": "3bf7f92502592bcda0b4dc71868a6745888c608b26d3f8e42f2771cf180c7252",
+      "bytes": 26203,
+      "lines_read": 478
+    },
+    "CSP_source": {
+      "path": "experiments/workspace/root_prism_free_f0_literal_lift_csp.py",
+      "sha256": "15f139b54d5daebd5adbd4e4d475ff9a9734a52725abd7ac130984b5328fabfb",
+      "bytes": 10025,
+      "lines_read": 230
+    },
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-character-literal-lift-preparation01.json.gz",
+      "sha256": "241cd14c61b465025c72ffcaa65af8e5c48e9e5a0eda7ea7d252e9d74b22db1e",
+      "bytes": 456696
+    },
+    "cold": {
+      "path": "experiments/logs/root-prism-free/f0-character-literal-lift-preparation01-cold.json",
+      "sha256": "6cebe725527eaf28f3d075a3ad9741fcbcf50cdedd42107bdc5ebcbe857da72f",
+      "bytes": 1058
+    }
+  },
+  "reviewed_source_lines": 708,
+  "checked_saved_inventory": {
+    "accepted_literal_masks": 64144,
+    "all_production_candidates_queried": 0,
+    "binary_constraints": 861,
+    "candidate_choice_pair_bound_from_per_orbit_maxima": 70596,
+    "candidate_literal_histogram_visit_bound": 4519476,
+    "cross_literal_pairs": 112392,
+    "cross_pair_orbits": 9384,
+    "literal_selectors": 480,
+    "maximum_domain_size": 12,
+    "optimizer_calls": 0,
+    "original_pair_orbits": 9742,
+    "proved_zero_pair_orbits": 389,
+    "refined_tuples": 19331,
+    "selector_orbits": 42,
+    "tuple_preimage_histogram": {
+      "1": 418,
+      "12": 300,
+      "3": 17280,
+      "6": 1237,
+      "9": 96
+    },
+    "within_pair_orbits": 358
+  },
+  "findings": [
+    "The42 disjoint selector orbits cover all480 literal selectors; every local subset is enumerated in its fixed literal order.",
+    "Local deletions use only proved pair zeros and necessary original Gram capacities. Every admitted profile retains every subset preimage; signed characters retain their original orientation.",
+    "The original9742 pair orbits partition all114960 literal pairs. Every pair orbit belongs either to one local table or one fixed unordered pair of selector orbits.",
+    "Each of the861 binary relations compares the complete literal cross-pair histogram with the candidate target. Omitting zero entries from both dictionaries still enforces every zero target exactly.",
+    "The count-column projection distinguishes Z populations from exterior Y populations and inserts all389 proved-zero pair targets explicitly.",
+    "Arc-consistency deletions require absence of support in another current domain. Every replayed deletion is checked against the domains produced by prior deletions only.",
+    "A split enumerates all current values in canonical order. UNSAT replay requires all children to be UNSAT and no unknown leaf; a partial tree cannot exclude the candidate.",
+    "A returned assignment is checked directly, then all N, original Z and signed L populations are reconstructed from the literal selection.",
+    "All172 original selector equalities are reported separately. A selector-moment lift that fails one of those rows is not promoted to an incidence solution.",
+    "CSP rejection concerns only the fixed count assignment. Acceptance realizes selector moments only; exterior Y edges and a complete graph remain outside this model."
+  ],
+  "no_source_level_blocker_found": true,
+  "subject_imported": false,
+  "domain_or_tables_rebuilt": false,
+  "controls_repeated": false,
+  "CSP_search_called": false,
+  "production_candidate_evaluated": false,
+  "optimizer_called": false,
+  "scope": "Full source reading plus saved hashes/inventory binding; no independent census or mathematical-result execution."
+}

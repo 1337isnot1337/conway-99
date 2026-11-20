@@ -1,0 +1,54 @@
+{
+  "status": "complete a=2 fixed-incidence model built; not yet solved",
+  "case_index": 0,
+  "equivalent_designs": 144,
+  "selected_signature_sha256": "06cdd73d1ac0670d2ce3a8ddf9c49b28144a340b9b45c6783406a512006de022",
+  "census_path": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/grids-and-triangles/complement-rook-a2-incidence-census.json",
+  "census_sha256": "9ba221cea49cea864a3e44074bcf1bc95c9cca2487929c8ce4204fafdaa36c7f",
+  "census_cnf": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/complement-rook-a2-incidence-census.cnf",
+  "census_cnf_sha256": "5556871541f03f1a422426b82f50916481360035fa4a219dffd2833eddc42843",
+  "census_proof": "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/complement-rook-a2-incidence-census.drat",
+  "census_proof_sha256": "ade7412576070f5fb674f55541868261b5a16164475ec0495b4fc13f303dee68",
+  "cnf_path": "/tmp/rook-a2-replay-55tocsdn/full.cnf",
+  "cnf_sha256": "19b9e81b5783f4caa46acef6ec0afcf0b4afae469610d331482bdcb36408d6c0",
+  "domain_sha256": "bb57835b1c0eb89985f89f5381f943c823b004ab6013f0d083fdf1604e15444c",
+  "core_vertices": 27,
+  "outside_vertices": 72,
+  "edge_variables": 1764,
+  "distinct_mixed_and_degree_counts": 1873,
+  "impossible_count_rows": [],
+  "base_variables": 77970,
+  "base_clauses": 158018,
+  "outside_pairs": 2556,
+  "duplicate_zero_caps": 36,
+  "packing_clauses": 1395,
+  "path_variables": 83279,
+  "variables": 298617,
+  "clauses": 593759,
+  "symmetry_clauses": 0,
+  "orbit_equalities": 0,
+  "lazy_cuts": 0,
+  "full_outside_caps": true,
+  "controls": {
+    "status": "exact pass",
+    "forward_path_cardinality_cases": 3069
+  },
+  "build_seconds": 5.041950843999075
+}
+
+c parsing input formula with 298617 variables and 289 clauses
+
+c finished parsing
+
+c detected empty clause; start verification via backward checking
+
+c 286 of 289 clauses in core                            
+
+c 39 of 40 lemmas in core using 1208 resolution steps
+
+c 0 RAT lemmas in core; 1 redundant literals in core lemmas
+
+s VERIFIED
+
+c verification time: 0.194 seconds
+{"status": "full a=2 case CNF rebuilt; retained inclusion and DRAT verified", "case_index": 0, "excluded_equivalent_designs": 144, "total_a2_incidence_orbits": 4, "whole_complementary_rook_case_excluded": false, "full_cnf_sha256": "19b9e81b5783f4caa46acef6ec0afcf0b4afae469610d331482bdcb36408d6c0", "variables": 298617, "clauses": 593759, "retained_clauses": 289, "symmetry_clauses": 0, "lazy_cuts": 0}

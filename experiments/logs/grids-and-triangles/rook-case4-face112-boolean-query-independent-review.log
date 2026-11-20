@@ -1,0 +1,78 @@
+{
+  "status": "PASS: complete query source and proof-acceptance review",
+  "reviewer_source_sha256": "b32b544ece80bdc81c7cfe54d565ecbe89171421c66ca23ec6c44942e561af8c",
+  "parent_source": {
+    "path": "experiments/workspace/rook_case4_face99_boolean_query.py",
+    "sha256": "b47b9c962cb62dd367dde4ddbaa37cc08d18c39ea33e4aeeaba3be83d84a8fd9"
+  },
+  "subject_source": {
+    "path": "experiments/workspace/rook_case4_face112_boolean_query.py",
+    "sha256": "c79ff548abf28ee4300b974e3f4a4e864647a4690b5ab3c8b8b0efa920c7f4b9"
+  },
+  "substitution_ledger_sha256": "daafb4894e3ce4e2e4053914527e8bbb255fb6abfcab1e75d58a70bad9ed0bbc",
+  "query_preparation_sha256": "7039ecf70eb0ec50d21f537c9979cf157223a3214dc7b82fb6bd11f4c00b9c7c",
+  "overlay_review_sha256": "740a45f4996bb1ff7b8589309856e6f7e9e553697ba44cda3830496c47f607bc",
+  "complete_text_and_AST_substitution_match": true,
+  "replacement_occurrences": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "changed_function_ASTs": [
+    "retained_inclusion",
+    "prepare",
+    "inspect_selected",
+    "solve",
+    "replay"
+  ],
+  "unchanged_protected_function_ASTs": [
+    "resource_caps",
+    "checker_binding",
+    "run_checker",
+    "checked",
+    "child"
+  ],
+  "limits": {
+    "production_queries": 1,
+    "automatic_retries": 0,
+    "owned_child_wall_seconds_including_imports_bootstrap_solve_and_export": 180,
+    "direct_DRAT_seconds": 60,
+    "cold_DRAT_seconds": 60,
+    "checker_timeout_grace_seconds": 5,
+    "tiny_DRAT_seconds": 10,
+    "child_address_space_bytes": 3221225472,
+    "child_single_file_hard_bytes": 268435456,
+    "accepted_binary_proof_bytes": 67108864,
+    "accepted_text_proof_bytes": 134217728,
+    "retained_CNF_bytes": 134217728,
+    "retained_proof_bytes": 134217728,
+    "retained_distinct_input_clauses": 250000
+  },
+  "review": {
+    "scope": "One query of the complete indexed case 4 incidence formula; no candidate, symmetry or positive-pattern assumption is added.",
+    "SAT": "The prior full native inspector remains. The selected set must avoid all 112 zeros, meet both parity supports once, meet the 86-column support twice, and use at most one member of pair (259,590).",
+    "attribution": "The six boundaries split the exact original, conflict, weighted, cover, prior-unit and new-constraint suffixes. Duplicate input clauses are assigned to their first available family.",
+    "timeout": "The unchanged parent watchdog owns the child deadline, persists UNKNOWN and reaps the child. A failed or timed-out child cannot exclude the case.",
+    "proof": "Appending a terminal empty clause does not bypass checking. Direct DRAT, exact retained-input inclusion, cold full-formula reconstruction and a second DRAT check are required before exclusion.",
+    "resource_bounds": "The unchanged proof-export, memory and file limits refuse oversized results. No fallback solve or automatic retry is present.",
+    "cold_scope": "The full original encoder is bound to its published cold certificate; the new cold replay reconstructs the overlay and every new premise."
+  },
+  "preparation_and_tiny_checker_records_hash_bound_not_rerun": true,
+  "subject_imports": 0,
+  "CNF_rebuilds": 0,
+  "native_or_domain_censuses": 0,
+  "solver_calls": 0,
+  "DRAT_calls": 0,
+  "case4_excluded": false
+}

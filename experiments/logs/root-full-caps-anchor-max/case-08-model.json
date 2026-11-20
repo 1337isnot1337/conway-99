@@ -1,0 +1,137 @@
+{
+  "status": "maximum-anchor case CNF built; no solve",
+  "analysis": "experiments/logs/root-full-caps-lex/analysis.json",
+  "analysis_sha256": "1abd9986f9d9a44743f4d56d58e876d24aa2b7a6f8a98ed34a92698a7a191bb8",
+  "source_hashes": {
+    "root_full_caps_lex.py": "736ccdd9060144eded621dc409a7ebd8ff4f3c3fb081ba606994c05a3f24a848",
+    "root_full_caps_lex_coverage.py": "9f5ca4aed852b5fbf29a65dd02244bc83a5ceab99254e4d66c831da6ac16c27a"
+  },
+  "case": {
+    "index": 8,
+    "partition": [
+      2,
+      4
+    ],
+    "stabilizer_order": 32,
+    "generator_count": 4,
+    "generators": [
+      {
+        "kind": "rotation",
+        "component": 0,
+        "image": [
+          2,
+          3,
+          0,
+          1,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "moved_primary_coordinates": 2604,
+        "edge_image_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+        "lex_right_sha256": "4404cf4f5b7f2901f45df076a66a613080083c515ecaeaf955cd5d33d6779f9e",
+        "added_variables": 2603,
+        "added_clauses": 7810
+      },
+      {
+        "kind": "reflection",
+        "component": 0,
+        "image": [
+          1,
+          0,
+          3,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "moved_primary_coordinates": 2684,
+        "edge_image_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+        "lex_right_sha256": "3c87717986393d1d1837758764cf9c6d440a69d135df31da1a74d1925c480d98",
+        "added_variables": 2683,
+        "added_clauses": 8050
+      },
+      {
+        "kind": "rotation",
+        "component": 1,
+        "image": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          4,
+          5
+        ],
+        "moved_primary_coordinates": 3418,
+        "edge_image_sha256": "0b6a55be75d0e2ec2ded66c4e5ad05a941da4470e9ed141eed919200a72fb6f2",
+        "lex_right_sha256": "39f7cec4ee04b5794f4110b5846242ecf20f900d3977a65db9f071b76bfa6779",
+        "added_variables": 3417,
+        "added_clauses": 10252
+      },
+      {
+        "kind": "reflection",
+        "component": 1,
+        "image": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          4,
+          11,
+          10,
+          9,
+          8,
+          7,
+          6
+        ],
+        "moved_primary_coordinates": 3360,
+        "edge_image_sha256": "a9a880593ef9f6605593e7288530bb171587a16917dcc60b5c4a662e3ecf7a4d",
+        "lex_right_sha256": "a9a880593ef9f6605593e7288530bb171587a16917dcc60b5c4a662e3ecf7a4d",
+        "added_variables": 3359,
+        "added_clauses": 10078
+      }
+    ],
+    "base_cnf_sha256": "d692d5439b0512ed7878868491ef1c0f00203eb33bc4aa6f72de90845c9bb860",
+    "base_variables": 960414,
+    "base_clauses": 1908864,
+    "added_variables": 12062,
+    "added_clauses": 36190,
+    "total_variables": 972476,
+    "total_clauses": 1945054
+  },
+  "cnf": "/tmp/conway-root-full-caps-anchor-max/case-08.cnf",
+  "cnf_sha256": "7258c064da41b85d31d728b8aeaebe84f631910d78043827e22c70ef42f78c3c",
+  "original_batch": "experiments/logs/root-full-caps/run-01/batch.json",
+  "original_batch_sha256": "5a475b70655e057060884639ab304de372d21cadbd47a3fce61d7ec8c6e9c549",
+  "lex_pilot_batch": "experiments/logs/root-full-caps-lex/run-01/batch.json",
+  "lex_pilot_batch_sha256": "15310657ad2efab7c6762a1242f6978abe00e06e5b004c1715e7bafba46734b1",
+  "maximum_anchor_certificate": "experiments/logs/root-full-caps-anchor-max/anchor-max-certificate.json",
+  "maximum_anchor_certificate_sha256": "fb69de72737a2fa0e5ec8dc3d86d76ba4de55b97ec6661455e81953f00ba8737",
+  "scope": "new maximum-anchor normalization case; not the entire old same-index case",
+  "maximum_near_count": 0,
+  "maximum_anchor_clauses": 84,
+  "variables": 972476,
+  "clauses": 1945138,
+  "lex_cnf_sha256": "28aae243368bcd0852a585dfc0ac8b1eccb04c1fe51bf3652dfa59d2dbba254b",
+  "run_support_source_hashes": {
+    "root_full_caps_anchor_max_solve.py": "9328695b5ee14bc48a1dd270f7a3a65299a2d1d870d01e9f5337b22102a7256d",
+    "root_full_caps_anchor_max_certificate.py": "4781a0c87f4d12c94b63847c912303959fc1416d5a64a889630a3829648cb1d9"
+  }
+}

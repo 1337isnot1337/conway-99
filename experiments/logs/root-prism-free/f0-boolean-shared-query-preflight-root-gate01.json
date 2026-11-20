@@ -1,0 +1,26 @@
+{
+  "CpSolver_constructions": 0,
+  "all_344_source_lines_read": true,
+  "authorized_mode": "prepare",
+  "automatic_retries": 0,
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-configuration01.json",
+    "sha256": "dcd8e3f99c8773e5150deb2542600a34e56058f5ca3144f7f537b7c1e64ac693"
+  },
+  "optimizer_calls": 0,
+  "owner_seconds": 60,
+  "production_query_authorized": false,
+  "review": [
+    "Complete model and accepted independent cold are bound by exact hashes. All168050 mathematical rows remain unchanged.",
+    "Preflight tests parameter and response text/wire transports, signed and empty rows, large integers, invalid domains, wrong rows and noninteger vectors.",
+    "The same public native model transport must reproduce all33451907 accepted model bytes before any future solve.",
+    "Run path has at most one180-second call with one worker and a300-second owner; every returned vector is saved before interpretation and every variable domain and linear row is inspected with integer arithmetic.",
+    "Native INFEASIBLE remains unproved; time overruns and malformed vectors are explicit. Full graph existence is never inferred from this relaxation."
+  ],
+  "schema": "conway99.f0.boolean-shared-query-preflight-root-gate.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_boolean_shared_query.py",
+    "sha256": "d4f08d6eb893b88ec33dcbef50ddae90799cbca5d49f8d6b5bd7332f0ad09999"
+  },
+  "status": "AUTHORIZED_ONE_ZERO_SOLVE_QUERY_PREFLIGHT"
+}

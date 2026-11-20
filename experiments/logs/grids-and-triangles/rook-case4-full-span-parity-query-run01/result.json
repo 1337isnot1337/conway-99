@@ -1,0 +1,61 @@
+{
+  "case4_excluded": false,
+  "child_result_sha256": "07a40d5f1591d3ed80bafb49810b2a6d102247d24d5f8c1ded919bf5ed867935",
+  "driver_source_sha256": "3a66af1c2500eebdb36001a004628460f936efc60584d411a2dbdc37d4a928da",
+  "elapsed_seconds": 8.432813323001028,
+  "limits": {
+    "cold_seconds": 60,
+    "maximum_response_bytes": 4194304,
+    "native_calls": 1,
+    "native_seconds": 60,
+    "owned_child_seconds": 120,
+    "retries": 0,
+    "workers": 1
+  },
+  "model_preparation_sha256": "0b2de700e4cd088ffb7a52726b0aef4cf8e3d0eeb4ade2d2dfacdf9dc7dbdd90",
+  "native_INFEASIBLE_certificate_accepted": false,
+  "owned_process": {
+    "SIGKILL_sent_at_deadline": false,
+    "UNKNOWN_persisted_before_kill": false,
+    "child_reaped": true,
+    "elapsed_seconds": 8.422046603001945,
+    "log": "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01/child.log",
+    "log_sha256": "1f4335fa9bbafacb381f6ee247bc9d9857f51004f6ffa46183df7e9c0a786915",
+    "pid": 6,
+    "requested_wall_seconds": 120,
+    "returncode": 0,
+    "timed_out": false
+  },
+  "production_children": 1,
+  "proto_sha256": "8b8f94b7b1e700c6b71744d5e6d94a814aa84638f7e412c588918a0fd497180f",
+  "query_preparation_sha256": "3200a0fbfbe6f2212a65515a68431459bf76717226f089451b1ad707035c8360",
+  "retries": 0,
+  "saved_artifacts": [
+    {
+      "bytes": 1108,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01/child-result.json",
+      "sha256": "07a40d5f1591d3ed80bafb49810b2a6d102247d24d5f8c1ded919bf5ed867935"
+    },
+    {
+      "bytes": 9387,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01/child.log",
+      "sha256": "1f4335fa9bbafacb381f6ee247bc9d9857f51004f6ffa46183df7e9c0a786915"
+    },
+    {
+      "bytes": 11859,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01/cut.json",
+      "sha256": "f9080c52f570d3a9eabf461eabd6ef4dde6ac2fc2454ecc75367fe658d9e3fd7"
+    },
+    {
+      "bytes": 17843,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01/native-vector.json",
+      "sha256": "efa476b2e0fd9c1f32cf9eb64b93e29fe81bd0fc2249c49490336bc95853fed5"
+    },
+    {
+      "bytes": 30191,
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01/response.txt",
+      "sha256": "518f0f5c1f9ba708e4dd7a5dfe9d467e4e4c5b9d98c64298732d94fd182c5556"
+    }
+  ],
+  "status": "EXACT_VIOLATED_PARITY_CUT: owner replay passed"
+}

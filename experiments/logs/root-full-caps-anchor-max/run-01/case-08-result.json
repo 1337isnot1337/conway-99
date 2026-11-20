@@ -1,0 +1,31 @@
+{
+  "status": "unknown at wall budget; this maximum-anchor case remains open",
+  "case_index": 8,
+  "partition": [
+    2,
+    4
+  ],
+  "model": "experiments/logs/root-full-caps-anchor-max/case-08-model.json",
+  "model_sha256": "a90cf3e26d2fee141081e2d3d91d8ab9bef9194aeacf7686e865fe9401191411",
+  "cnf_path": "/tmp/conway-root-full-caps-anchor-max/case-08.cnf",
+  "cnf_sha256": "7258c064da41b85d31d728b8aeaebe84f631910d78043827e22c70ef42f78c3c",
+  "solver": "glucose4",
+  "proof_enabled": true,
+  "normalization": "maximum near-anchor count; new case in an exhaustive union",
+  "excludes_old_same_index_case": false,
+  "requested_wall_budget_seconds": 60.0,
+  "budget_includes_cnf_parse_and_solver_bootstrap": true,
+  "full_outside_caps": true,
+  "lex_generators": 4,
+  "graph_automorphism_assumptions": 0,
+  "lazy_cuts": 0,
+  "completed_witness": null,
+  "solve_return_seconds": 60.202245427999515,
+  "solver_statistics": {
+    "restarts": 405,
+    "conflicts": 125344,
+    "decisions": 352829,
+    "propagations": 346780507
+  },
+  "total_seconds": 60.404103524000675
+}

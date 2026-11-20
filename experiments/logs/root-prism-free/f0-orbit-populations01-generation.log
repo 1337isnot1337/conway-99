@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_orbit_population_lift.py", line 366, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_orbit_population_lift.py", line 361, in main
+    report = prepare(args.output_prefix.resolve(), args.seconds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_orbit_population_lift.py", line 294, in prepare
+    domain, pairs = domains(baseline, moments, old, reduced, deadline)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_orbit_population_lift.py", line 159, in domains
+    assert zeros_z == old["fixed_zero_original_variables"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

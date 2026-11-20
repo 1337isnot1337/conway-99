@@ -1,0 +1,45 @@
+{
+  "status": "PASS: cold original-row and literal-cover replay",
+  "source_bindings": {
+    "driver": {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_search.py",
+      "sha256": "6569f2c12b6ff02df34346b9f67f4426e7933a0999fd13bf32ea01e32d7d44c0"
+    },
+    "exact_builder": {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_model.py",
+      "sha256": "3869c9aa63a596421a7fefebc492d90159b6ac8edf0739a0995254bcfd5c4301"
+    },
+    "model": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-model01.json",
+      "sha256": "195bf6c2c274100686087fd71a22f488f7aaee28025e39e490d7751bffcbceb6"
+    },
+    "owned_child_supervisor": {
+      "path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+      "sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278"
+    },
+    "inherited_supervisor_controls": {
+      "path": "experiments/logs/root-prism-free/f0-local41-batch02-preparation.json",
+      "sha256": "57bf84bdf102444aad209bf9c7fd5e62c1fc4f7bf584fa3fac8d0b75e71627ae"
+    },
+    "supervisor_review": {
+      "path": "experiments/logs/root-prism-free/f0-local41-batch-independent-source-review.json",
+      "sha256": "56c3f59565b6b211e4f659f3310f50676160b0631701e2addae323a0ab43bad4"
+    }
+  },
+  "result": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01/result.json",
+    "sha256": "cd6cdf9f9cd6e2ac5ff058112ab30a31bc1bb6426ef560143dd053326fc2d8bc"
+  },
+  "preparation": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-query-preparation01/preparation.json",
+    "sha256": "f6d28c3a44ab75dc27a3005577aee4cf0f0be01d9056cc9e1e4f3c3fb97edfac"
+  },
+  "completed_calls_replayed": [],
+  "exact_incidence_accepted": false,
+  "all2618_original_integer_rows_checked_per_saved_point": true,
+  "all178533_original_covers_checked_per_saved_point": true,
+  "new_optimizer_calls": 0,
+  "case4_excluded": false,
+  "full_graph_completion_claimed": false,
+  "seconds": 3.4023804539974662
+}

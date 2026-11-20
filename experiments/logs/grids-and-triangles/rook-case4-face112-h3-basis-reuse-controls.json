@@ -1,0 +1,133 @@
+{
+  "status": "PASS: exact complete source delta; no optimizer or production elimination",
+  "parent_path": "experiments/workspace/rook_case4_face112_basis_reconstruction.py",
+  "parent_sha256": "6e8ac4d29fa14bf9c1ba2793a3f86c1e53854995cecb4bd30ae7e193352f3ee4",
+  "new_path": "experiments/workspace/rook_case4_face112_h3_basis_reconstruction.py",
+  "new_sha256": "f764dbe84cc137f6c489100b6b499af1e6c893c3c6781dd3d96bf7d29ba02b34",
+  "numeric_cold_path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01-replay.json",
+  "numeric_cold_sha256": "e682e859b538e97a40786c445fa628cc26dd3a962172d0308b29d0cab48a2de5",
+  "explicit_substitutions": [
+    {
+      "before": "\"\"\"One bounded exact reconstruction of the saved face112 basis; no optimizer.\n\nThe816 x_j=t rows are candidate-point assumptions, not new universal faces.\nAcceptance checks all167112 face rows and all original1214-coordinate rows, both unit sums and all four pair bounds.\nPreparation records the287-square integer system without eliminating it.\n\"\"\"",
+      "after": "\"\"\"One exact reconstruction of the saved complete112-plus-H3 basis.\n\nThe815 x_j=t aliases are candidate-point assumptions, not universal faces.\nAcceptance checks all167113 face rows and all original1214-coordinate rows,\nboth unit sums, all four pair bounds and the new H3 range. Preparation\nrecords the288-square integer system without eliminating it; no optimizer.\n\"\"\"",
+      "occurrences": 1
+    },
+    {
+      "before": "import rook_case4_face112_model as face",
+      "after": "import rook_case4_face112_h3_model_v2 as face",
+      "occurrences": 1
+    },
+    {
+      "before": "(\"experiments/workspace/rook_case4_face112_model.py\", \"8cfae2fc990e293f47029da2dc5a4d66b864e2547777d6a142de424133361da7\")",
+      "after": "(\"experiments/workspace/rook_case4_face112_h3_model_v2.py\", \"d06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7\")",
+      "occurrences": 1
+    },
+    {
+      "before": "(BASE+\"rook-case4-face112-model01/model.json\", \"018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f\")",
+      "after": "(BASE+\"rook-case4-face112-h3-model02/model.json\", \"1928eb76274865e219747f631fee2d7a327ed7acd3a845986844be13c9e34265\")",
+      "occurrences": 1
+    },
+    {
+      "before": "(BASE+\"rook-case4-face112-model01/arrays.npz\", \"276db9d80b2772ab6829daf7459b19043a08996dc2b45ff8769534548b8b8ca3\")",
+      "after": "(BASE+\"rook-case4-face112-h3-model02/arrays.npz\", \"4e2de2786d3036cf995953791192500cb4aaa5b0c5079f3d97ea465a4cf64e46\")",
+      "occurrences": 1
+    },
+    {
+      "before": "(BASE+\"rook-case4-face112-generation-run01/iteration-00-numeric.json.gz\", \"8276a6d8b8a7d6c6dbfbcf2ce914add06d34a7618281d14be4a3f4d670f0f579\")",
+      "after": "(BASE+\"rook-case4-face112-h3-generation-run01/iteration-00-numeric.json.gz\", \"eda071f5ebcbf4e80574af4ef7031b31d1f74002d3a3fe9ee234ce3c7f7df8b7\")",
+      "occurrences": 1
+    },
+    {
+      "before": "(BASE+\"rook-case4-face112-generation-run01/result.json\", \"37b9488d027464f437db0228569338d49c0e1fddbd173c95523938681c4f3ce0\")",
+      "after": "(BASE+\"rook-case4-face112-h3-generation-run01/result.json\", \"328abe5e6413d2e76e943e04d1cfa225b57aa0f574eb26ccf9fca3314382192d\")",
+      "occurrences": 1
+    },
+    {
+      "before": "(BASE+\"rook-case4-face112-generation-run01-replay.json\", \"e6db315ca8b8e5337623e8ef27a15f24a761f77d2981e6fe66a1c0483b506665\")",
+      "after": "(BASE+\"rook-case4-face112-h3-generation-run01-replay.json\", \"e682e859b538e97a40786c445fa628cc26dd3a962172d0308b29d0cab48a2de5\")",
+      "occurrences": 1
+    },
+    {
+      "before": "NUMERIC_RAW_SHA = \"795e1b3cc098bd174a20eb720aab80ec53e040366d6404e17b4ea14e91413f4e\"",
+      "after": "NUMERIC_RAW_SHA = \"e9e4d5e735b5e99bf3d35405423d739cf7d2abf142d3c7408e8a4a2bc7ce647c\"",
+      "occurrences": 1
+    },
+    {
+      "before": "SELECTORS, BASE_ROWS, FULL_ROWS = 1102, 166010, 167112",
+      "after": "SELECTORS, BASE_ROWS, FULL_ROWS = 1102, 166011, 167113",
+      "occurrences": 1
+    },
+    {
+      "before": "VARIABLES, DIMENSION, ALIASES = 1103, 287, 816",
+      "after": "VARIABLES, DIMENSION, ALIASES = 1103, 288, 815",
+      "occurrences": 1
+    },
+    {
+      "before": "assert (0 <= row < NATIVE_ROWS and kind == 0) or (row == COVER_END and kind == 2)",
+      "after": "assert ((0 <= row < NATIVE_ROWS and kind == 0) or\n                (row == COVER_END and kind == 2) or\n                (row == BASE_ROWS-1 and kind == 4))",
+      "occurrences": 1
+    },
+    {
+      "before": "assert dict(sides) == {\"HighsBasisStatus.kLower\": 155, \"HighsBasisStatus.kUpper\": 132}",
+      "after": "assert dict(sides) == {\"HighsBasisStatus.kLower\": 157, \"HighsBasisStatus.kUpper\": 131}\n    assert [r[\"original_face_row\"] for r in rows if r[\"row_origin_kind\"] != 0] == [COVER_END, BASE_ROWS-1]\n    assert model[\"third_parity_cover_range\"] == [1,3]",
+      "occurrences": 1
+    },
+    {
+      "before": "\"schema\": \"rook-case4-face112-artifact-only-basis-v1\"",
+      "after": "\"schema\": \"rook-case4-face112-H3-artifact-only-basis-v1\"",
+      "occurrences": 1
+    },
+    {
+      "before": "\"all167112_rows_and_original1214_model_required\": True",
+      "after": "\"all167113_rows_and_original1214_model_required\": True",
+      "occurrences": 1
+    },
+    {
+      "before": "\"all_four_pair_bounds\": model[\"added_pair_rows\"]}",
+      "after": "\"all_four_pair_bounds\": model[\"added_pair_rows\"],\n            \"third_parity_cover_support\": model[\"third_parity_cover_original_support\"],\n            \"third_parity_cover_range\": [1,3]}",
+      "occurrences": 1
+    },
+    {
+      "before": "    for a, b in spec[\"all_four_pair_bounds\"]:\n        assert restored[a] + restored[b] <= den\n    inventory, metadata, registry",
+      "after": "    for a, b in spec[\"all_four_pair_bounds\"]:\n        assert restored[a] + restored[b] <= den\n    assert spec[\"third_parity_cover_range\"] == [1,3] and len(spec[\"third_parity_cover_support\"]) == 27\n    assert den <= sum(restored[a] for a in spec[\"third_parity_cover_support\"]) <= 3*den\n    inventory, metadata, registry",
+      "occurrences": 1
+    },
+    {
+      "before": "\"both_parity_equalities_checked\": True, \"all_four_pair_bounds_checked\": True,",
+      "after": "\"both_parity_equalities_checked\": True, \"all_four_pair_bounds_checked\": True,\n            \"third_parity_cover_original27_support_checked\": True,",
+      "occurrences": 1
+    },
+    {
+      "before": "PREPARED_ARTIFACT_ONLY_287_SQUARE_RECONSTRUCTION_NO_ELIMINATION",
+      "after": "PREPARED_ARTIFACT_ONLY_288_SQUARE_RECONSTRUCTION_NO_ELIMINATION",
+      "occurrences": 1
+    }
+  ],
+  "complete_text_equality_after_recorded_substitutions": true,
+  "AST_identical_functions": [
+    "sha",
+    "canonical",
+    "save",
+    "tick",
+    "bindings",
+    "fold",
+    "controls",
+    "prepared",
+    "solve_child",
+    "query",
+    "replay",
+    "main"
+  ],
+  "changed_functions": [
+    "proposal",
+    "inspect",
+    "prepare"
+  ],
+  "changed_only_status_function": "prepare",
+  "linear_solve_and_owned_child_and_replay_unchanged": true,
+  "hard_child_seconds": 60,
+  "maximum_output_integer_bits": 4096,
+  "aliases_are_proposal_only": true,
+  "optimizer_calls": 0,
+  "production_linear_systems_solved": 0
+}

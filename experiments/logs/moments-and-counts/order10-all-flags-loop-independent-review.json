@@ -1,0 +1,67 @@
+{
+  "status": "read-only complete-family loop integration review PASS",
+  "subject_source": "experiments/workspace/grid_free_order10_all_flags_loop.py",
+  "subject_source_sha256": "5d35db0ab5b950426699718f8c0761f600d11ea79777f60aee24bff97afce45d",
+  "previous_source_sha256": "40838c0949db789308008a777b3c5433c47f27f2cc0229d2357775102f345933",
+  "input_hashes_read_back": [
+    {
+      "name": "prior_preparation",
+      "path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop-preparation.json",
+      "sha256": "916f3112831e781eadc55c107331f08db7fbfdee4a9f93df916ebb2e9be1c5fa"
+    },
+    {
+      "name": "prior_loop",
+      "path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01.json",
+      "sha256": "08366598ad71e2942e1cd1ea877616bd85c636f87a2c607e991834016a61644b"
+    },
+    {
+      "name": "prior_cut_certificate",
+      "path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-r6s2-separation.json",
+      "sha256": "fccbd4eeebba92b34f1f1fe69343633a59562f3e32817fc839aa29c490b65c19"
+    },
+    {
+      "name": "prior_cut_replay",
+      "path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-new-cuts-independent-replay.json",
+      "sha256": "c3be5a6bf23cbf2e81badf6d8ec176f6eb87182cbb8b8856acaa311e9dfa553d"
+    },
+    {
+      "name": "higher_cut_certificate",
+      "path": "experiments/logs/moments-and-counts/order10-higher-flags-r4s3-scan.json",
+      "sha256": "c70c9efc5588e0c15b9899770a137b37937f2037456f02e6b58077bb6165bcab"
+    },
+    {
+      "name": "higher_cut_replay",
+      "path": "experiments/logs/moments-and-counts/order10-higher-flags-r4s3-fresh-replay.json",
+      "sha256": "0a6a50182903345149d9d6c61df745bb175bdeeb28bcd5bf0ba4cefa83c32802"
+    },
+    {
+      "name": "higher_cache",
+      "path": "experiments/logs/moments-and-counts/order10-higher-flags-full-cache.json",
+      "sha256": "b5c076fabeee3d88c89f738bdd7f746bab9a8071acee0632dbe37137eddc47b8"
+    }
+  ],
+  "static_copy_checks": {
+    "proposal_record_identical": true,
+    "rounded_check_identical": true,
+    "run_identical_after_removing_only_higher11_scanner_tuple": true,
+    "removed_tuple": "('higher11', bundle['higher'], 'unique_core_cuts')"
+  },
+  "checks": [
+    "Frozen44-cut parent is rebuilt with exact preparation/model/cut-list equality before extension.",
+    "Three prior r6 cuts are independently bound, reduced from induced forms with positive gcd, and compared to both47-cut terminal coefficients and exact dyadic negative values.",
+    "The39-term C4 form is independently bound and reduced without fixed-width products; its repaired-point induced and core evaluations agree with -101639192.",
+    "The four extra cuts are distinct from each other and the original44, giving exactly48 necessary core inequalities.",
+    "The x521-zero mode copies the column upper bounds and changes only coordinate521 from1 to0 in normalized units; the original positive DP scaling, all rows, and zero lower bound remain.",
+    "All2394 prior blocks and all11 higher blocks are retained, giving2405 scanned blocks; higher cache requires full11 coverage.",
+    "Every accepted separator is replayed exactly before row insertion; old58-coordinate cuts are padded by492 zero entries.",
+    "Nonoptimal LP status stops before scans; incomplete family scans and absence of fresh exact cuts stop the loop with explicitly unresolved or non-PSD-certified scope.",
+    "Rounded count acceptance requires all original exact count tests, required zeros, and held-cut evaluations; no PSD or graph claim is made for it.",
+    "Numerical infeasibility is never promoted to an exact contradiction; raw solver data and any finite returned proposal are preserved."
+  ],
+  "not_performed": [
+    "model assemble or dense reduction load",
+    "LP solve",
+    "moment scan or tensor generation"
+  ],
+  "material_limit": "This is a source/input-binding audit. It does not independently reproduce the numerical matrix hash or run the prepared model."
+}

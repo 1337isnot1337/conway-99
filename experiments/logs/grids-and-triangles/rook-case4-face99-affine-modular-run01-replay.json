@@ -1,0 +1,67 @@
+{
+  "status": "PASS: exact Python-integer affine rowspace and conclusion replay",
+  "bindings": {
+    "source_sha256": "c09b76ed3570ca0fec17c2446a8222cb9c556ad5664f665adf38a5f473b188db",
+    "inventory_source_sha256": "aff911d07c002d621933ef5371520a5d9c13842a278ab7ac4874279137d93207",
+    "inventory_dependency_source_hashes": {
+      "rook_case4_complete_lp_recovery.py": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6",
+      "rook_case4_transportation_seed.py": "9eedacb4b62db8ad7058e291d04f83141fca306971ed278a58548ead4cd1e8a1"
+    },
+    "inventory_gzip_sha256": "61288003fb0b4dae4e37d936cd9c6343e4cbfaec75076c14ea05fa4ede290929",
+    "inventory_raw_sha256": "06024df62d4723f287cce4abf6b3a6d26ae8a3e93e991e994c8843620af20528",
+    "inventory_cold_sha256": "96f8a1f6e5f09a6a5978bf6ffd1ac06dd1e59a8d8d34fb104337ab25fc8dbc6f"
+  },
+  "result_sha256": "e45439adddd20ddf8ec564ffe7eae3a733475ca1e281998fe42f7133b9779f7a",
+  "completed": [
+    {
+      "prime": 19,
+      "kind": "consistent_complete_rowspace",
+      "rank": 286,
+      "fixed_coordinates": 0
+    },
+    {
+      "prime": 601,
+      "kind": "consistent_complete_rowspace",
+      "rank": 286,
+      "fixed_coordinates": 0
+    },
+    {
+      "prime": 145463,
+      "kind": "consistent_complete_rowspace",
+      "rank": 286,
+      "fixed_coordinates": 0
+    },
+    {
+      "prime": 2,
+      "kind": "consistent_complete_rowspace",
+      "rank": 286,
+      "fixed_coordinates": 0
+    },
+    {
+      "prime": 3,
+      "kind": "consistent_complete_rowspace",
+      "rank": 286,
+      "fixed_coordinates": 0
+    },
+    {
+      "prime": 5,
+      "kind": "consistent_complete_rowspace",
+      "rank": 286,
+      "fixed_coordinates": 0
+    },
+    {
+      "prime": 7,
+      "kind": "consistent_complete_rowspace",
+      "rank": 286,
+      "fixed_coordinates": 0
+    }
+  ],
+  "complete_all_planned_primes": true,
+  "binary_unit_conclusions": [],
+  "case4_obstruction_verified": false,
+  "pending_unverified_proposal_used": false,
+  "elimination_calls": 0,
+  "optimizer_calls": 0,
+  "solver_calls": 0,
+  "seconds": 3.0767071559967007
+}

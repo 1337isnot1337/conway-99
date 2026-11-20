@@ -1,0 +1,17 @@
+{
+  "status": "PASS: parent persisted UNKNOWN then killed and reaped owned child",
+  "process": {
+    "pid": 6,
+    "returncode": -9,
+    "timed_out": true,
+    "UNKNOWN_persisted_before_kill": true,
+    "SIGKILL_sent_at_deadline": true,
+    "child_reaped": true,
+    "requested_wall_seconds": 0.1,
+    "elapsed_seconds": 0.10852819899810129,
+    "log": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-coordinate-cover-cadical-controls01/watchdog/child.log",
+    "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "persisted_UNKNOWN_sha256": "720966938aeec8275e4e47a3ab68a1db740b41cab55cbd634e455e1757ec62ed",
+  "solver_or_optimizer_called": false
+}

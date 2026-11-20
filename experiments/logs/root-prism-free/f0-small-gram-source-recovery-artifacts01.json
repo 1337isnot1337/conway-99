@@ -1,0 +1,147 @@
+{
+  "schema": "conway99.f0.small-Gram-outage-source-recovery.v1",
+  "status": "SOURCE_RECOVERY_COMPLETE; native artifacts and cold reports still unavailable",
+  "repository_full_name": "1337isnot1337/conway-99",
+  "runtime_status": "unavailable",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_small_gram_query.py",
+      "sha256": "96762358c4fc81d0099214aafff2672e9b785dbc32e450809e34511ffa380994",
+      "git_blob": "3e9099c647656473f5257602b95a62c807f1c3e7",
+      "bytes": 33276
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_small_gram_replay.py",
+      "sha256": "ab12da8031883fe9bf98c455c1bcd2521ee104491715b6cdf78e965562da541d",
+      "git_blob": "5f06e86fa9678aed8cab7286f4b71b73d0511691",
+      "bytes": 17573
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-small-gram-query-substitutions01.json",
+      "sha256": "d71e8c19b8d2e74321e25da5dd6c27c3db2832d314a8fc5aa016247d5eca6c01",
+      "git_blob": "22afe5066019828bb393a4ef44dcc85d534f79d1",
+      "bytes": 4917
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_small_gram_overlay.py",
+      "sha256": "6499c03316c355825e446083c442a52d73b9447c899daf37fcd5a144bbf2e996",
+      "git_blob": "32fe12763505031bfb4685c6dbe4e77fb04e8a86",
+      "bytes": 24216
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_small_gram_query_reuse.py",
+      "sha256": "1abedfd03a870207b9c61174be37d5efcb1835ab2b36660b94636496ef62e317",
+      "git_blob": "2009bacfa8a5837e5e1cdaa8a78f858da1aed1bd",
+      "bytes": 4037
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-small-gram-query-preparation01/preparation.json",
+      "sha256": "a13234cceaabb88f0a12e69ce6b3c0b8706e86382e4b6e772cf46fe131cc7547",
+      "git_blob": "6391743d960961a57eff4c2323cd4eea87db24f7",
+      "bytes": 6847,
+      "recovery": "Exact byte reconstruction verified against pre-outage SHA256; no native controls rerun"
+    }
+  ],
+  "unexecuted_draft": {
+    "path": "experiments/workspace/root_prism_free_f0_full_fourier_specification.py",
+    "sha256": "e22badc7cacd870898a5f077b5cc82db2b929d3d20704b7cf8103a74639a6915",
+    "git_blob": "d3e4f3f3bbd858858c71d71bfa9088bdbf93b9dc",
+    "bytes": 27816,
+    "status": "UNEXECUTED_DRAFT; preserved submitted patch text; local patch acknowledgment not received"
+  },
+  "hash_verification": {
+    "helper_git_blob": "e1e7eda6a06a4a4d5079ab149fb4c95429dc594f",
+    "method": "V8 UTF-8 SHA256 and Git blob SHA1",
+    "published_parent_sources_reverified": true,
+    "all_six_recovered_files_match_observed_pre_outage_SHA256": true,
+    "new_full_Fourier_draft_has_no_local_execution_or_hash_confirmation": true
+  },
+  "observed_before_outage": {
+    "small_model": {
+      "variables": 18450,
+      "full_constraints": 34405,
+      "initial_constraints": 34288,
+      "external_pool": 117,
+      "added_observables": 6,
+      "added_definitions": 6,
+      "added_joint_table_rows": 610,
+      "native_preparation_owner_seconds": 9.554895883004065,
+      "cold_owner_seconds": 2.93566318199737,
+      "optimizer_calls": 0
+    },
+    "query": {
+      "preparation_status": "PASS",
+      "preflight_status": "PASS",
+      "preflight_owner_seconds": 2.4474015640007565,
+      "production_started": false
+    },
+    "unrecovered_local_files": [
+      {
+        "path": "experiments/logs/root-prism-free/f0-small-gram-overlay01/report.json",
+        "sha256": "224dd72d226a8726c5d10c33af805a3db9ef15140bdd15c919fa9254364a6b0f"
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-small-gram-overlay01-cold/report.json",
+        "sha256": "d6195feceb5a9376ab7beca2fe09fd0c0ac9509384c8aa9fd18ae1c62f684fc7"
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-small-gram-overlay01/plan.json.gz",
+        "sha256": "5d4ca6ab3985c205f06ac66c40169f278b07fadbb6238c884a3c1f05e78f8908"
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-small-gram-overlay01/target.pb.gz",
+        "sha256": "6ef2c06bafb6166a0c46ffded39302ca30b185cf434824988a75e6f81002c9b7",
+        "raw_sha256": "3e8748382a5a43c387cfb471e7c90b8907cf2d88423d1787a3034c97aea574f3"
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-small-gram-overlay01/initial.pb.gz",
+        "sha256": "0c26ff06b4fa42ce54a235f97df46201a0119da26a3a99c5750441f9505f223c",
+        "raw_sha256": "b4f96ceb8affca2c3a0e0fcea545e981a07007ff414fbc2bf885f945744ef275"
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-small-gram-query-reuse-controls01.json",
+        "sha256": "75b75fc258ca1ac07aa61b2c2dba2e1576b5b1cbcddc559a254a4f0adb14f78a"
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-small-gram-query-preflight01/report.json",
+        "sha256": "996a98335fb43ce46a68d9069957e2f57adfcd45a7a4a766a27e94d4fafad606"
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-small-gram-overlay-preparation-artifacts01.json",
+        "sha256": "c8c6ccc210e4f09b02ea031531a41029c0a62a0b3f3cb54c519b42f964f822ed"
+      }
+    ],
+    "missing_files_recreated_as_execution_records": false
+  },
+  "full_Fourier_scope": {
+    "coordinate_order": "central_plus then central_minus, root column_index, a then b",
+    "a_definition": "2*x-y",
+    "b_definition": "y",
+    "coordinates": [
+      18444,
+      18764
+    ],
+    "products": [
+      18764,
+      31756
+    ],
+    "full_variables": 31756,
+    "full_target_constraints": 54037,
+    "initial_constraints": 53920,
+    "complete_Gram_links": 6496,
+    "products_added": 12992,
+    "original_selector_equalities": 172,
+    "nonempty_equalities_appended": 151,
+    "literal_zero_tautologies": 21,
+    "local_tables_to_extend": 42,
+    "saved_masks_to_use": 64144,
+    "new_subset_census": false,
+    "local_patch_acknowledged": false,
+    "source_run": false,
+    "native_model_built": false,
+    "optimizer_calls": 0,
+    "literal_4416_cut_radix_layer": "Separate root-owned future overlay, absent from this base"
+  },
+  "refs_trees_commits_mutated": false,
+  "scope": "No count witness, Boolean incidence, exterior graph or exclusion follows from this recovery. Completed local checks are reported as captured observations; their unavailable output bytes have not been inferred."
+}

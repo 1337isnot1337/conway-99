@@ -1,0 +1,27 @@
+{
+  "status": "PASS: full induced-graph query source, normalization and exact acceptance reviewed",
+  "source_sha256": "97490da5a7f39ff1e9d20ac9f5124e8552cfe8c715ac0f6017a2ad6e4fec8eda",
+  "preparation_sha256": "2b2929dcdab9a36acc08b6f5882a681ea1805eafc01393081a67257da3e9e01c",
+  "model_sha256": "290e8c3902416bd2a71a878eca973865f4aad00a2deea31bb82d48c98ec95c2e",
+  "reviewed_checks": [
+    "All200 rows,18427 distinct columns and157711 full columns retain bound integer coefficients",
+    "Every literal RHS equals orbit size times full automorphism order times induced count",
+    "The full column checksum, all73 presence aggregates and exact unimodular rank minor replay",
+    "Primal support reconstruction uses exact rational weights and checks all200 equations",
+    "Uniform root-label averaging recovers each individual pattern moment without host symmetry",
+    "A proposed separator subtracts its exact full-domain minimum and checks every original column",
+    "Integer contractions use a complete absolute-sum bound or Python integers",
+    "Direct count form and primitive gcd remain exact",
+    "No automatic second optimizer or production retry exists"
+  ],
+  "authorized_run": {
+    "production_backend_calls": 1,
+    "solver_and_ray_seconds": 30,
+    "exact_stage_seconds": 60,
+    "threads": 1,
+    "automatic_retries": 0
+  },
+  "required_after_run": "Freeze numerical output before exact acceptance. Cold-replay exact witness or full-domain separator. A count cut requires independent literal audit before optimizer use.",
+  "optimizer_called_by_review": false,
+  "graph_or_unrestricted_contradiction_before_run": false
+}

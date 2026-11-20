@@ -1,0 +1,41 @@
+{
+  "status": "PASS: complete basic-table and signed-character native overlay source review",
+  "subjects": {
+    "basic_overlay_source": {
+      "path": "experiments/workspace/root_prism_free_f0_population_profile_cpsat.py",
+      "sha256": "a5b4485f4f30cdcb640d7cb63a5d4b1df4828e8f092f164fdad5a4a21260a67b"
+    },
+    "signed_overlay_source": {
+      "path": "experiments/workspace/root_prism_free_f0_character_cpsat.py",
+      "sha256": "879cdb9be48f9377dd6bccd078f26a568d12467385e9ecb1d5b260cc56ff64e7"
+    },
+    "basic_cold": {
+      "path": "experiments/logs/root-prism-free/f0-population-profile-cpsat01-cold/report.json",
+      "sha256": "de7dd1b32377755f9a1748553507909d001f5bc7984044ce4c290a351623a485"
+    },
+    "signed_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-character-cpsat01/report.json",
+      "sha256": "e15c4bfcf7adaabb60258e3cffa8046eb0cd97843ae8787a24b356011d7b8a5f"
+    },
+    "signed_cold": {
+      "path": "experiments/logs/root-prism-free/f0-character-cpsat01-cold/report.json",
+      "sha256": "fd86705f404e899869234d67916c2178d77acfb9c2b847571fb897cc5f785e18"
+    }
+  },
+  "raw_proto_sha256": "5b43e3c026dbe71fcc8d072aa1790b80f7a81312e7b1ebf36a37612b2f726eeb",
+  "checks": [
+    "The basic overlay preserves every old variable and all29550 old constraints, then appends all42 tables with their exact5733 tuples.",
+    "The signed overlay preserves the complete15941-variable29592-constraint basic prefix. Its118 local signed IDs map to fresh15941..16058;2385 fresh product targets occupy16059..18443.",
+    "Signed bounds are balanced half-orbit ranges. Cross-product targets allow both signs; square targets are nonnegative. Every possible factor product lies in the recorded target box.",
+    "The2417 added linear equations have exactly the saved signed count coefficients and32 original-Gram propagation rows. The largest new absolute row-box sum is276; all inherited int64 range checks remain active.",
+    "Every signed int_prod has one target and exactly the two intended signed factors, with unit coefficients and zero offsets. The maximum absolute new product is36.",
+    "The42 new positive allowed-assignment tables use actual count columns followed by translated signed IDs and preserve all19331 joint tuples exactly. No character sign is chosen independently of the table.",
+    "The standalone serialized-proto checker compares every old prefix and every new domain, coefficient, product and tuple. Native validation and cold checks pass.",
+    "Exact witness acceptance uses Python integers and checks all18444 domains, both product families, both table layers,32 signed Gram equations,25 refinements and the restored complete15200-variable parent.",
+    "No objective, search hint, assumption, fixed selector or graph-automorphism restriction is introduced; no feasibility claim follows from preparation."
+  ],
+  "optimizer_calls": 0,
+  "controls_repeated": false,
+  "production_driver_reviewed": false,
+  "scope": "Source and frozen-preflight gate for the native formulation; the forthcoming owned query driver remains a separate gate."
+}

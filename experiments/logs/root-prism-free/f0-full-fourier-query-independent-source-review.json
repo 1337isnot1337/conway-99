@@ -1,0 +1,83 @@
+{
+  "controls_repeated": 0,
+  "ledger_sha256": "d32bbacfe4c2801b8f019340cc61d2fdcf934b24a4b52dc59a60a3cc2becb1df",
+  "mathematical_and_runtime_findings": [
+    "The archived initial model is checked as the exact 58840-row subset of the 58957-row target on all 32296 unchanged variable domains; the external registry contains the complementary 117 rows.",
+    "Each later native call requires an earlier exactly rejected candidate and a strictly larger prefix containing only original target rows; selection remains the first at most16 violated pool IDs.",
+    "The per-call native limit is clipped by the remaining180 cumulative measured solve seconds and remaining300 owner seconds, with an8-second finalization reserve. The owner retains its independent hard deadline and reap path.",
+    "Every returned integer vector is saved atomically before response-text parsing, prefix arithmetic, external-row scans or provisional acceptance. Deadline and cumulative-budget overruns preserve it without promotion.",
+    "The unchanged Python-integer evaluator checks domains, linear rows, two-factor products and allowed tables. The unchanged pool scan uses exact signed integer contractions.",
+    "A full target pass remains provisional and requires the separate restored-parent arithmetic receipt and literal decoder. Native infeasibility, a partial record or an UNKNOWN response is never an F0 exclusion.",
+    "The replay reconstructs chronological target-row prefixes, checks actual saved protobufs, repeats candidate arithmetic and row selection, and independently sums all recorded native-call wall times. Pending and late candidates remain unaccepted.",
+    "The lightweight owner preparation binding avoids archive duplication; the search and replay children still check the complete source/input configuration before native data use."
+  ],
+  "model_rebuilds": 0,
+  "native_solver_calls": 0,
+  "point_or_terminal_replay_calls": 0,
+  "review_source_sha256": "638505f0bf8df17dc05f96edb416670d73ae5c723e5cbb861cf1627f1963c5de",
+  "scope": "Source-only review. The target's mathematical necessity and native construction remain bound to their prior independent preparation/cold gates.",
+  "sources": {
+    "query": {
+      "bytes": 38796,
+      "complete_text_and_AST_match": true,
+      "function_inventory": {
+        "added": [
+          "native_budget_controls",
+          "native_time_budget",
+          "owner_preparation_binding"
+        ],
+        "changed": [
+          "check_preparation",
+          "configuration",
+          "construct_initial",
+          "load_target",
+          "native_parameters",
+          "provisional_record",
+          "reuse_controls",
+          "run",
+          "worker"
+        ],
+        "removed": [],
+        "unchanged": [
+          "canonical",
+          "choose_rows",
+          "evaluate_proto",
+          "file_sha",
+          "load_source",
+          "native_parameter_controls",
+          "pool_scan",
+          "save",
+          "sha"
+        ]
+      },
+      "old_source_sha256": "f3f704371307da14ab035eed1b2a7345bb1725babf0f01cc8e06d5b7e26475e7",
+      "ordered_substitutions": 35,
+      "path": "experiments/workspace/root_prism_free_f0_full_fourier_query.py",
+      "sha256": "a8eff9c09fdd2a31482d23e3c83b11424fab32462e9b1431c3d899b6b8034955"
+    },
+    "replay": {
+      "bytes": 19906,
+      "complete_text_and_AST_match": true,
+      "function_inventory": {
+        "added": [],
+        "changed": [
+          "owned",
+          "replay"
+        ],
+        "removed": [],
+        "unchanged": [
+          "artifact",
+          "read_record",
+          "sha"
+        ]
+      },
+      "old_source_sha256": "9aad245010f752f26f57566eaa2e3730200898f5f32e242c1ca32b4a98c023e7",
+      "ordered_substitutions": 16,
+      "path": "experiments/workspace/root_prism_free_f0_full_fourier_replay.py",
+      "sha256": "9a072b04151e4a150d1627171c16c7dd33d87a49a6817157d1766aeddab062a1"
+    }
+  },
+  "status": "PASS: complete query and replay source review with independent text/AST delta audit",
+  "subject_imports": 0,
+  "whole_subject_sources_read": true
+}

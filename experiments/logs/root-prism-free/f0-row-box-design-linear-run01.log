@@ -1,0 +1,31 @@
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "exact integer symmetric-row Farkas contradiction; fixed first design only",
+  "source_sha256": "c0d9e70f98e94176bf78bc518b41270940b930ab69cf34b26f42b71ff31a0871",
+  "preparation_sha256": "68a325d1367db1b270fb311c614d99eaa147129a748b727fc40201f7573fd432",
+  "model_sha256": "1a75d60173991252b55892a911a5470e4e5074992916ead7ffc8d9df0c298b79",
+  "candidate_sha256": "9e38e41273ad247021854236a56a4e9dd0cdc74b7156867904b7d19fe2d64e46",
+  "requested_total_seconds": 60.0,
+  "optimizer_calls": 1,
+  "exact_linear_feasibility": false,
+  "exact_fixed_design_infeasibility": true,
+  "binary_or_full_graph_constructed": false,
+  "whole_component_excluded": false,
+  "requested_optimizer_seconds": 57.40708264600107,
+  "numerical_status": "HighsModelStatus.kInfeasible",
+  "optimizer_return_seconds": 3.54561099700004,
+  "exact_ray_check": {
+    "rhs_dot_product": -2,
+    "minimum_primary_coefficient": 0,
+    "minimum_upper_slack_coefficient": 0,
+    "nonzero_row_multipliers": 58,
+    "maximum_absolute_multiplier": 5,
+    "orientation": "E^T ray>=0 and rhs^T ray<0 for every nonnegative primary and upper slack"
+  },
+  "ray_reconstruction": {
+    "rounding_scale": 3
+  },
+  "elapsed_seconds": 4.1011982780000835,
+  "cooperative_budget_overrun_seconds": 0
+}

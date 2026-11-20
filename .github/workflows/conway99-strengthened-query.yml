@@ -1,0 +1,224 @@
+name: Conway 99 strengthened Boolean query
+
+on:
+  push:
+    branches: [research/global-constraints-ab2f]
+    paths:
+      - .github/workflows/conway99-strengthened-query.yml
+      - experiments/logs/root-prism-free/f0-strengthened-query-ci-request01.json
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: conway99-strengthened-native-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  one-bounded-query-and-independent-cold:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - name: Check out the accepted model and exact query authority
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/workflows/conway99-strengthened-query.yml
+            /experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json
+            /experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json
+            /experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json
+            /experiments/logs/root-prism-free/f0-strengthened-native-ci01/model.pb.gz
+            /experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json
+            /experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json
+            /experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json
+            /experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json
+            /experiments/logs/root-prism-free/f0-strengthened-query-ci-request01.json
+            /experiments/logs/root-prism-free/f0-strengthened-query-ci-root-source-review01.json
+            /experiments/logs/root-prism-free/f0-strengthened-query-independent-source-review01.json
+            /experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-acceptance01.json
+            /experiments/logs/root-prism-free/f0-strengthened-query-preflight01/owner.json
+            /experiments/logs/root-prism-free/f0-strengthened-query-preflight01/parameter-schema.pb
+            /experiments/logs/root-prism-free/f0-strengthened-query-preflight01/parameters.pb
+            /experiments/logs/root-prism-free/f0-strengthened-query-preflight01/parameters.pbtxt
+            /experiments/logs/root-prism-free/f0-strengthened-query-preflight01/report.json
+            /experiments/logs/root-prism-free/f0-strengthened-query-replay-independent-source-review02.json
+            /experiments/logs/root-prism-free/f0-strengthened-query-root-gate01.json
+            /experiments/workspace/root_prism_free_f0_boolean_shared_model.py
+            /experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py
+            /experiments/workspace/root_prism_free_f0_strengthened_append.py
+            /experiments/workspace/root_prism_free_f0_strengthened_append_replay.py
+            /experiments/workspace/root_prism_free_f0_strengthened_query.py
+            /experiments/workspace/root_prism_free_f0_strengthened_query_ci.py
+            /experiments/workspace/root_prism_free_f0_strengthened_query_replay.py
+      - name: Verify the one-call gate and every dependency before execution
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, os, pathlib, sys
+          assert sys.version_info[:2] == (3, 12)
+          assert os.environ['GITHUB_RUN_ATTEMPT'] == '1'
+          root = pathlib.Path.cwd().resolve()
+          def read(ref):
+              path = (root / ref['path']).resolve()
+              path.relative_to(root)
+              raw = path.read_bytes()
+              assert hashlib.sha256(raw).hexdigest() == ref['sha256'], ref['path']
+              assert len(raw) == ref['bytes'], ref['path']
+              return raw
+          def same(first, second):
+              assert (first['path'], first['sha256']) == (second['path'], second['sha256'])
+              assert read(first) == read(second)
+          request_path = pathlib.Path('experiments/logs/root-prism-free/f0-strengthened-query-ci-request01.json')
+          request = json.loads(request_path.read_bytes())
+          assert request['schema'] == 'conway99.f0.strengthened-boolean-query-ci-request.v1'
+          assert request['query_gate']['path'] == 'experiments/logs/root-prism-free/f0-strengthened-query-root-gate01.json'
+          gate = json.loads(read(request['query_gate']))
+          event = json.loads(pathlib.Path(os.environ['GITHUB_EVENT_PATH']).read_bytes())
+          assert event['before'] == gate['expected_parent']
+          assert event['ref'] == 'refs/heads/research/global-constraints-ab2f'
+          assert gate['status'] == 'AUTHORIZE_ONE_STRENGTHENED_BOOLEAN_MODEL_QUERY'
+          assert gate['maximum_native_calls'] == request['maximum_native_calls'] == 1
+          assert gate['automatic_retries'] == request['automatic_retries'] == 0
+          assert gate['independent_terminal_cold_required'] is True
+          assert request['model_raw_sha256'] == gate['model_raw_sha256'] == '4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2'
+          assert request['limits'] == {'query_owner_seconds': 300, 'cold_controls_owner_seconds': 15, 'cold_main_owner_seconds': 135, 'driver_seconds': 480}
+          for gate_key, request_key in (
+              ('source', 'query_source'), ('configuration', 'query_configuration'),
+              ('terminal_cold_source', 'terminal_cold_source'), ('ci_driver_source', 'source'),
+              ('preflight_report', 'preflight_report'), ('preflight_owner', 'preflight_owner'),
+              ('preflight_root_acceptance', 'preflight_root_acceptance'), ('workflow', 'workflow')):
+              same(gate[gate_key], request[request_key])
+          assert request['workflow']['path'] == '.github/workflows/conway99-strengthened-query.yml'
+          assert request['source']['path'] == 'experiments/workspace/root_prism_free_f0_strengthened_query_ci.py'
+          assert request['query_source']['path'] == 'experiments/workspace/root_prism_free_f0_strengthened_query.py'
+          assert request['terminal_cold_source']['path'] == 'experiments/workspace/root_prism_free_f0_strengthened_query_replay.py'
+          assert request['query_configuration']['path'] == 'experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json'
+          assert request['preflight_directory'] == 'experiments/logs/root-prism-free/f0-strengthened-query-preflight01'
+          assert request['query_directory'] == 'experiments/logs/root-prism-free/f0-strengthened-query-run01'
+          assert request['cold_directory'] == 'experiments/logs/root-prism-free/f0-strengthened-query-run01-cold'
+          assert request['driver_report'] == 'experiments/logs/root-prism-free/f0-strengthened-query-ci01-run.json'
+          expected_paths = set([".github/workflows/conway99-strengthened-query.yml","experiments/logs/root-prism-free/f0-strengthened-boolean-query-configuration01.json","experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json","experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json","experiments/logs/root-prism-free/f0-strengthened-native-ci01/model.pb.gz","experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json","experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json","experiments/logs/root-prism-free/f0-strengthened-native-configuration01.json","experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json","experiments/logs/root-prism-free/f0-strengthened-query-ci-request01.json","experiments/logs/root-prism-free/f0-strengthened-query-ci-root-source-review01.json","experiments/logs/root-prism-free/f0-strengthened-query-independent-source-review01.json","experiments/logs/root-prism-free/f0-strengthened-query-preflight-root-acceptance01.json","experiments/logs/root-prism-free/f0-strengthened-query-preflight01/owner.json","experiments/logs/root-prism-free/f0-strengthened-query-preflight01/parameter-schema.pb","experiments/logs/root-prism-free/f0-strengthened-query-preflight01/parameters.pb","experiments/logs/root-prism-free/f0-strengthened-query-preflight01/parameters.pbtxt","experiments/logs/root-prism-free/f0-strengthened-query-preflight01/report.json","experiments/logs/root-prism-free/f0-strengthened-query-replay-independent-source-review02.json","experiments/logs/root-prism-free/f0-strengthened-query-root-gate01.json","experiments/workspace/root_prism_free_f0_boolean_shared_model.py","experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py","experiments/workspace/root_prism_free_f0_strengthened_append.py","experiments/workspace/root_prism_free_f0_strengthened_append_replay.py","experiments/workspace/root_prism_free_f0_strengthened_query.py","experiments/workspace/root_prism_free_f0_strengthened_query_ci.py","experiments/workspace/root_prism_free_f0_strengthened_query_replay.py"])
+          dependencies = gate['dependencies']
+          assert len({entry['path'] for entry in dependencies}) == len(dependencies)
+          assert {entry['path'] for entry in dependencies} | {str(request_path), request['query_gate']['path']} == expected_paths
+          for entry in dependencies:
+              raw = read(entry)
+              path = pathlib.Path(entry['path'])
+              if path.suffix == '.py':
+                  compile(raw.decode('utf-8'), str(path), 'exec')
+          cfg = json.loads(read(request['query_configuration']))
+          assert cfg['source_sha256'] == request['query_source']['sha256'] == 'b38d3e8c054d1a34e27f4cc5184553746edb6fd1f39e02f26b2a3c89f689d288'
+          assert request['terminal_cold_source']['sha256'] == '44d8bbba6f61fae1a27faa9fa516353b02dbcc53c9cbedd39c5574adb48a5ee3'
+          assert request['source']['sha256'] == '1d9f29fad341c4736cb75e91b8a5b98791606112055dcca65503abd51a12440e'
+          assert request['query_configuration']['sha256'] == '4dedc66ded53ed813a0eef7a0ad366afe1093f5f5120b0d24ff5276497df3077'
+          assert cfg['native_query_authorized_by_configuration_alone'] is False
+          assert cfg['maximum_native_calls'] == 1 and cfg['automatic_retries'] == 0
+          assert gate['parameters'] == cfg['parameters']
+          assert gate['limits'] == cfg['limits'] == {'solver_seconds': 175, 'native_allowance_seconds': 180, 'owner_seconds': 300, 'preparation_seconds': 60, 'preparation_owner_seconds': 75, 'finalization_reserve_seconds': 60}
+          same(cfg['sources']['supervisor'], request['supervisor_source'])
+          same(gate['model_cold'], cfg['inputs']['model_cold'])
+          for ref in list(cfg['inputs'].values()) + list(cfg['sources'].values()):
+              read(ref)
+          acceptance = json.loads(read(request['preflight_root_acceptance']))
+          assert acceptance['schema'] == 'conway99.f0.strengthened-query-preflight-root-acceptance.v1'
+          assert acceptance['status'] == 'ROOT_ACCEPTS_EXACT_ZERO_SOLVE_STRENGTHENED_QUERY_PREFLIGHT'
+          for acceptance_key, request_key in (('source', 'query_source'), ('configuration', 'query_configuration'),
+                                               ('report', 'preflight_report'), ('owner', 'preflight_owner')):
+              same(acceptance[acceptance_key], request[request_key])
+          assert acceptance['model_raw_sha256'] == request['model_raw_sha256']
+          assert acceptance['parameters'] == cfg['parameters']
+          assert acceptance['optimizer_calls'] == 0 and acceptance['CpSolver_constructed'] is False
+          assert acceptance['production_query_authorized_by_this_receipt'] is False
+          report, owner = json.loads(read(request['preflight_report'])), json.loads(read(request['preflight_owner']))
+          assert report['status'] == owner['status'] == 'PASS_STRENGTHENED_BOOLEAN_QUERY_PREFLIGHT'
+          same(owner['report'], request['preflight_report'])
+          for record in (report, owner):
+              same(record['source'], request['query_source'])
+              same(record['configuration'], request['query_configuration'])
+              assert record['production_solve_calls'] == record['optimizer_calls'] == 0
+              assert record['CpSolver_constructed'] is False
+          assert owner['report_accepted'] is True and owner['deadline_overrun_seconds'] == 0
+          assert owner['seconds'] <= owner['maximum_seconds'] == 75
+          supervision = owner['supervision']
+          assert supervision['status'] == 'CHILD_EXITED' and supervision['returncode'] == 0
+          assert supervision['child_reaped'] is True and supervision['owned_process_group_stopped'] is True
+          for key in ('parameters_text', 'parameters_wire', 'parameter_schema'):
+              read(report['parameters'][key])
+          print(json.dumps({'gate': 'PASS', 'maximum_native_calls': 1, 'automatic_retries': 0, 'dependency_count': len(dependencies)}))
+          PY
+      - name: Install the pinned native and protobuf runtime
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv .ci-strengthened-query-venv
+          .ci-strengthened-query-venv/bin/python -m pip install --disable-pip-version-check --only-binary=:all: ortools==9.15.6755 protobuf==6.33.6
+          .ci-strengthened-query-venv/bin/python -m pip freeze > experiments/logs/root-prism-free/f0-strengthened-query-ci01-runtime-packages.txt
+      - name: Invoke the frozen production driver once
+        shell: bash
+        run: |
+          set -euo pipefail
+          .ci-strengthened-query-venv/bin/python - <<'PY'
+          import hashlib, pathlib, subprocess, sys
+          request = pathlib.Path('experiments/logs/root-prism-free/f0-strengthened-query-ci-request01.json')
+          request_sha256 = hashlib.sha256(request.read_bytes()).hexdigest()
+          subprocess.run([sys.executable, 'experiments/workspace/root_prism_free_f0_strengthened_query_ci.py',
+                          '--request', str(request), '--request-sha256', request_sha256], check=True)
+          PY
+      - name: Export exact query and independent replay records
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64, gzip, hashlib, json, pathlib
+          directories = [
+              pathlib.Path('experiments/logs/root-prism-free/f0-strengthened-query-run01'),
+              pathlib.Path('experiments/logs/root-prism-free/f0-strengthened-query-run01-cold')]
+          selected = set()
+          for directory in directories:
+              if directory.is_dir():
+                  selected.update(path for path in directory.rglob('*') if path.is_file() and path.name != 'model.pb')
+          for name in ('f0-strengthened-query-ci01-run.json',
+                       'f0-strengthened-query-ci01-run-query.stdout.log',
+                       'f0-strengthened-query-ci01-run-query.stderr.log',
+                       'f0-strengthened-query-ci01-runtime-packages.txt'):
+              path = pathlib.Path('experiments/logs/root-prism-free') / name
+              if path.is_file():
+                  selected.add(path)
+          files, total = [], 0
+          for path in sorted(selected):
+              raw = path.read_bytes()
+              total += len(raw)
+              assert total <= 16 << 20, ('raw export bound', total, str(path))
+              files.append({'path': str(path), 'bytes': len(raw),
+                            'sha256': hashlib.sha256(raw).hexdigest(),
+                            'base64': base64.b64encode(raw).decode('ascii')})
+          bundle = {'schema': 'conway99.public_strengthened_query_bundle.v1', 'files': files,
+                    'raw_file_bytes': total, 'maximum_native_calls': 1,
+                    'automatic_retries': 0, 'duplicate_model_omitted_from_log_bundle': True}
+          raw_bundle = json.dumps(bundle, sort_keys=True, separators=(',', ':')).encode('ascii')
+          encoded = base64.b64encode(gzip.compress(raw_bundle, compresslevel=6, mtime=0)).decode('ascii')
+          assert len(encoded) <= 20 << 20, ('encoded export bound', len(encoded))
+          print('CONWAY99_STRENGTHENED_QUERY_BUNDLE_BEGIN')
+          for offset in range(0, len(encoded), 4096):
+              print(encoded[offset:offset+4096])
+          print('CONWAY99_STRENGTHENED_QUERY_BUNDLE_END')
+          PY
+      - name: Retain every output including the complete transported model
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: conway99-strengthened-query-${{ github.sha }}
+          path: |
+            experiments/logs/root-prism-free/f0-strengthened-query-run01/
+            experiments/logs/root-prism-free/f0-strengthened-query-run01-cold/
+            experiments/logs/root-prism-free/f0-strengthened-query-ci01-run.json
+            experiments/logs/root-prism-free/f0-strengthened-query-ci01-run-query.stdout.log
+            experiments/logs/root-prism-free/f0-strengthened-query-ci01-run-query.stderr.log
+            experiments/logs/root-prism-free/f0-strengthened-query-ci01-runtime-packages.txt
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30

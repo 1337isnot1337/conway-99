@@ -1,0 +1,54 @@
+{
+  "status": "EXACT_ROOT42_INTEGER_ATOM_DISTRIBUTION",
+  "preparation_manifest_git_blob": "5e7cc8be064a8fc7a82524e136d88411b747b798",
+  "files": [
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-packing-moment-interval-result.json",
+      "git_blob": "233ed73fae5f80b3dc23b126c1528db64a8b6f31"
+    },
+    {
+      "path": "experiments/workspace/root42_packing_moment_interval_replay.js",
+      "git_blob": "6017c3a8b7e91ccf348de3bcd78ff33802bb8f56"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-root42-packing-moment-interval-replay.json",
+      "git_blob": "369ea5b53e5d05a56d956216cb6415fa7cad75e4"
+    },
+    {
+      "path": "research/grids-and-triangles/root42_packing_moment_interval_result.md",
+      "git_blob": "0fb7a5c912cfc359f08af7ec876b837c19f79274"
+    }
+  ],
+  "point_git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+  "source_git_blob": "9f78b4b3075d3f5c991ce47379e593d11f7f992b",
+  "independent_prequery_review": {
+    "source_git_blob": "c49f2e121f0994b18a53bdc8f55a7ad8bfbe0562",
+    "report_git_blob": "516f27cd863795db7653336bc75175f85470e206"
+  },
+  "interval": {
+    "lower": "0",
+    "upper": "9794",
+    "integer_modulus": 2,
+    "chosen_fifth_moment": "0"
+  },
+  "positive_atoms": 241,
+  "zero_atoms": 12,
+  "labelled_root_mass": "55883520",
+  "reduced_probability_denominator": "27941760",
+  "exact_individual_equations": 253,
+  "exact_quotient_equations": 23,
+  "stabilizer_divisibilities": 253,
+  "query_execution": {
+    "status": "COMPLETE",
+    "milliseconds": 659,
+    "source_git_blob": "9f78b4b3075d3f5c991ce47379e593d11f7f992b",
+    "optimizer_called": false
+  },
+  "independent_artifact_replay_execution": {
+    "status": "PASS",
+    "milliseconds": 44
+  },
+  "optimizer_called": false,
+  "scope": "Complete high-mask presence moment model for root42 at the fixed count point. No full high-edge distribution or graph construction.",
+  "publication": "Blobs only; parent owns publication."
+}

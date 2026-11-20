@@ -1,0 +1,87 @@
+{
+  "schema": "conway99.f0.triangle-incidence-native-configuration-independent-source-review.v1",
+  "status": "PASS_COMPLETE_ACTUAL_NATIVE_CONFIGURATION_SOURCE_AND_DESCRIPTOR_COMPARISON",
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+    "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+    "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+    "bytes": 24503
+  },
+  "producer": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "bytes": 64900,
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+  },
+  "checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "bytes": 82846,
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+  },
+  "source_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration-contract01.json",
+    "bytes": 32464,
+    "sha256": "2ff5f896281f11d76032ea6312b45a3e64b073ac46cd7440e9e4da183c61d01e",
+    "git_blob": "87a738b4dd196ee0124784cf1ceb2d81a0ea7251"
+  },
+  "native_ci": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+    "bytes": 17497,
+    "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+    "git_blob": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a"
+  },
+  "read_scope": {
+    "actual_configuration_complete": true,
+    "producer_source_complete": true,
+    "checker_configuration_and_input_output_interfaces": true,
+    "native_ci_complete_external_owner_and_relevant_invocation_acceptance_interfaces": true,
+    "separate_full_CI_source_review_owned_by_master_review": true,
+    "current_native_model_bytes_read": false,
+    "all23_input_bytes_freshly_rehashed_by_this_review": false,
+    "exact23_input_descriptors_compared_to_previously_read_immutable_authorities": true
+  },
+  "checks": {
+    "source_sha256_matches_frozen_producer": true,
+    "exact23_input_aliases_and_descriptors": true,
+    "exact6_source_aliases_and_descriptors": true,
+    "exact16_successful_status_authorities": true,
+    "complete60_authority_links": true,
+    "exact_three_family_layout_and_counts": true,
+    "parent_variables": 80730,
+    "parent_rows": 297470,
+    "variables": 80730,
+    "rows": 300795,
+    "appended_rows": 3325,
+    "appended_terms": 26916,
+    "total_terms": 3337296,
+    "runtime_matches_pinned_accepted_parent": true,
+    "controls_worker_owner_seconds": [
+      10,
+      15
+    ],
+    "prepare_worker_owner_seconds": [
+      120,
+      135
+    ],
+    "all_three_required_theorem_files_present": true,
+    "first_two_family_literal_hash_scope_preserved": true,
+    "accepted_twelve_bound_is_separate_third_family": true,
+    "four_failed_extractor_records_retained_as_untrusted_inputs": true,
+    "four_failed_extractor_records_excluded_from_successful_authorities": true,
+    "no_query_optimizer_retry_authority_added": true,
+    "native_ci_external_owner_fields_match_future_query_intake": true
+  },
+  "limits_of_acceptance": [
+    "This is a source/metadata configuration review. It does not replace the later per-file hash checks, controls, native construction or full protobuf replay.",
+    "Actual native model outputs and the new native root acceptance do not yet exist.",
+    "The separate corrected CI source gate remains required before execution."
+  ],
+  "source_imports": 0,
+  "controls_run": 0,
+  "actual_model_loads": 0,
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "concrete_blockers": [],
+  "native_execution_authorized_by_this_review": false
+}

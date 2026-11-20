@@ -1,0 +1,35 @@
+{
+  "CpSolver_constructed": false,
+  "all_source_read": true,
+  "expected_inventory": {
+    "Boolean_edges": 68394,
+    "degree_rows": 480,
+    "endpoint_rows": 136788,
+    "mixed_rows": 8640,
+    "parent_rows": 17162,
+    "parent_variables": 540,
+    "rows": 163070,
+    "variables": 68934
+  },
+  "mathematical_checks": [
+    "The complete 540-variable, 17162-row parent is decoded and copied, then recovered by deleting only the appended rows and variables. The recovered protobuf must serialize to the exact original 24078662 parent bytes.",
+    "All 68394 eligible unordered edges receive one Boolean variable, indexed 540 plus its complete sorted edge-domain index. No edge is omitted because of a later motif constraint.",
+    "For Boolean x and y, each endpoint row -1 <= y-x <= 0 imposes y <= x; its lower endpoint is valid and redundant. Both endpoint rows are present for every edge.",
+    "Each degree equation is sum_incident y = 8*x_a. Each mixed equation is sum_incident_to_site_i y = q_a[i]*x_a. Zero targets and explicit empty rows are retained with the correct zero equality.",
+    "The signature and target rules are independently derived from the core by the producer, and the complete eligible edge set is compared to the frozen domain neighbors.",
+    "The appended rows contain no selector fixing, graph symmetry, objective, hint, or assumption. Parent bytes preserve all previously accepted selector constraints.",
+    "The public text-protobuf transport compares the full exported binary bytes with the intended protobuf and checks native model validation; its tiny control includes an integer coefficient above the binary64 exact range, an empty row, and rejection of an invalid variable index."
+  ],
+  "model_builds": 0,
+  "no_mathematical_blocker_found": true,
+  "optimizer_calls": 0,
+  "reviewer": "master_review",
+  "scope": "Source review of the base only. The full independent cold will separately compare actual frozen protobuf bytes and proof-bound overlay mappings after the overlay references are fixed.",
+  "source": {
+    "lines": 283,
+    "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+    "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+  },
+  "source_imports": 0,
+  "status": "PASS_INDEPENDENT_BOOLEAN_SHARED_BASE_SOURCE_REVIEW"
+}

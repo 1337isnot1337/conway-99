@@ -1,0 +1,76 @@
+{
+  "status": "PASS: complete structural plus motif baseline prepared; terminal selector cuts not included",
+  "scope": "Necessary fractional first-component-zero model in the global prism-free/F-free split-shell stratum; no second incidence fixed",
+  "motif_input_git_blob": "41b0f73b9f6a0061d49859fbd4e32564cea2db17",
+  "motif_source_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+  "counts": {
+    "variables": 5847,
+    "selector_orbits": 42,
+    "edge_orbits": 5805,
+    "full_equalities": 8812,
+    "full_inequalities": 136878,
+    "full_rows": 145690,
+    "quotient_equalities": 686,
+    "quotient_inequalities": 11373,
+    "quotient_rows": 12059,
+    "full_motif_rows": 90,
+    "motif_orbits": 8,
+    "literal_motif_rows": 8,
+    "equality_nonzeros": 35056,
+    "inequality_nonzeros": 22745
+  },
+  "motif_orbit_histogram": {
+    "6": 1,
+    "12": 7
+  },
+  "motif_burnside_fixed_points": [
+    90,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2
+  ],
+  "controls": {
+    "all_1080_literal_motif_transports_checked": true,
+    "literal_rational_motif_evaluation_checks": 360,
+    "all_full_rows_have_explicit_quotient_maps": true
+  },
+  "bindings": {
+    "motif_pairs_sha256": "0ea68fc0c3a17439c9aaf65e989074fe0118594f4100987f9a7a59426061e12e",
+    "motif_orbits_sha256": "a96bae59c992aef0bdd8982d9cfbf35c489c6739fc2a40e588b67ce40fa340bd",
+    "matrix_sha256": "30bd8808dcd0490fa9ae124abb2ef060cfc8bfcbc57b78eaac0a67fe89f0dd55",
+    "coverage_sha256": "6a221fa8a3137ff37e9f3c2c641ff67bcc08c751a18d6195dd348242abc2689d",
+    "baseline_specification_sha256": "32172068b93386040b2c3ef0a351d44cfb57484f3ad335ad28f9760516efe1bf"
+  },
+  "limitations": {
+    "earlier_12_weighted_cuts_included": false,
+    "terminal_4404_selector_cuts_included": false,
+    "equivalence_to_Boolean_normalized_cut_registry_claimed": false,
+    "optimizer_called": false,
+    "feasible_shared_point_found": false,
+    "component_excluded": false
+  },
+  "interior_control": {
+    "status": "PASS: exact positive selector projection and rejected zero-edge extension",
+    "interior_certificate_git_blob": "6396da7dd3d5fd1df30a88cc3ea847154d62ef38",
+    "selector_denominator": 1836,
+    "selector_bounds_Gram_population_and_90_motifs_pass": true,
+    "zero_edge_extension_full_mixed_failures": 7884,
+    "zero_edge_extension_quotient_mixed_failures": 667,
+    "feasible_shared_point_claimed": false
+  },
+  "source_path": "experiments/workspace/root_prism_free_f0_fractional_baseline_recovery.js",
+  "source_sha256": "2c7f4cf9965426d97eb025793d5912d2b51cc56dc9fced76fd66219333263af1",
+  "literal_input_sha256": [
+    "ef4018f26c48e9eb90bf544d41678778d71b587994096383023c8836e70bca6e",
+    "eed6ac5eb939bcce4ed7faae81942b30e6151e4d5b206b2c82bfb6c9a11d33bb",
+    "98fa05d49c5a107b8d84236cd51018330bdf7759170f552a69aad146bac767e0"
+  ]
+}

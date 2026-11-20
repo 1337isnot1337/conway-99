@@ -1,0 +1,22 @@
+{"metadata": {"scope": "necessary real incidence, mixed-edge, and core-pair-packing relaxation", "candidate_signatures": 252, "eligible_edges": 20934, "group_order": 144, "selector_orbits": 3, "edge_orbits": 179, "variables": 182, "equalities": 54, "inequalities": 517, "selector_representative_triples": [[0, 4, 1], [0, 4, 2], [0, 4, 8]], "selector_orbit_sizes": [72, 144, 36], "equality_types": {"gram": 3, "mixed": 48, "degree": 3}, "inequality_types": {"selector_upper": 3, "activation": 265, "core_pair_packing": 249}, "model_sha256": "a7c9b8f40b82e4065405124880b3afdf4d57ee3528f9e235b367959a2f568832"}}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "exact optimum of the stated real relaxation certified",
+  "numerical_status": "HighsModelStatus.kOptimal",
+  "seconds": 0.009608719001334975,
+  "requested_seconds": 10,
+  "upper_bound": [
+    36,
+    1
+  ],
+  "point_check": {
+    "status": "exact real joint relaxation feasible",
+    "fractional_variables": 16,
+    "maximum_denominator": 4
+  },
+  "point_a": [
+    36,
+    1
+  ]
+}

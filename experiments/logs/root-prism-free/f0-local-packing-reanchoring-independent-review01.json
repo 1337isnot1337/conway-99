@@ -1,0 +1,106 @@
+{
+  "checks": [
+    "All five input file hashes and the complete saved potential bank agree.",
+    "Recomputed all 5760 demands and all saved attempt rows with ordinary integer arithmetic.",
+    "Recomputed every positive-demand full-neighbor coefficient, normalized row, capped row, origin and row hash independently.",
+    "The twelve resulting rows equal exactly the original accepted row set."
+  ],
+  "counts": {
+    "additional_rows": 0,
+    "anchor_potential_pairs": 5760,
+    "anchors": 480,
+    "distinct_rows": 12,
+    "original_rows": 12,
+    "positive_demand_pairs": 12,
+    "positive_demands": {
+      "1": 12
+    },
+    "potentials": 12
+  },
+  "positive_pairs_anchor_demand_support": [
+    [
+      0,
+      178,
+      1,
+      69
+    ],
+    [
+      1,
+      284,
+      1,
+      69
+    ],
+    [
+      2,
+      36,
+      1,
+      69
+    ],
+    [
+      3,
+      326,
+      1,
+      69
+    ],
+    [
+      4,
+      110,
+      1,
+      69
+    ],
+    [
+      5,
+      235,
+      1,
+      69
+    ],
+    [
+      6,
+      172,
+      1,
+      69
+    ],
+    [
+      7,
+      263,
+      1,
+      69
+    ],
+    [
+      8,
+      48,
+      1,
+      69
+    ],
+    [
+      9,
+      318,
+      1,
+      69
+    ],
+    [
+      10,
+      131,
+      1,
+      69
+    ],
+    [
+      11,
+      240,
+      1,
+      69
+    ]
+  ],
+  "result_sha256": "15a44c19ffa4ac1fd5e4235cdb307b5b422d015d9c2879ccb46cc678728a1492",
+  "review_actions": {
+    "full_eligible_domain_rebuilt": false,
+    "native_imports": 0,
+    "optimizer_calls": 0,
+    "subject_imports": 0
+  },
+  "schema": "conway99.f0.local-packing-reanchoring.independent-review.v1",
+  "scope": "No additional positive-demand row is supplied by this finite bank. This does not exclude other integer potentials.",
+  "source_sha256": "461681344650c0905067ac6acb0a1c87d3225869595042be8f25acef650466cc",
+  "status": "PASS_EXACT_DEMAND_AND_ROW_RECOMPUTATION",
+  "theorem": "For x_a=1, multiply mixed equations by v and each common-core-pair packing inequality by nonnegative mu. Drop negative adjusted neighbor coefficients and use y_ab <= x_b. For x_a=0 the inequality is automatic. Positive weights can be capped at the positive demand for binary selectors without changing truth. No anchor automorphism hypothesis is needed."
+}

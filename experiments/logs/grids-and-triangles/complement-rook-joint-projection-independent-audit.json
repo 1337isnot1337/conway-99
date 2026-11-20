@@ -1,0 +1,32 @@
+{
+  "status": "independent full labeled real-constraint and group audit PASS",
+  "source_sha256": "76519f9d58055a4932a0eaade79fd0fae2d0e4e35f0e50d0fbfee1d3ffbc7f4e",
+  "audited_source_hashes": {
+    "complement_rook_joint_projection.py": "30152ae282bee2c08bc8c7e579279a0d07475e57f351c1cbca7b399e8f38c601",
+    "complement_rook_a_incidence.py": "785ac205a8bb2b63fc21649eff3bcdc94fbc103ce6d1f3b7d473153d60567e19",
+    "complement_rook_a_incidence_census.py": "51d42992c6c7495ecb012e19f3ed84edd9dbd5699bd7aa3e25f75c58069cb694",
+    "two_rook_tip_overlap_joint_lp.py": "f2383404a88a455ac13c6018e6ddab332a45a016da4dd83359da8ff1f7f0c246"
+  },
+  "certificate_path": "experiments/logs/grids-and-triangles/complement-rook-joint-projection.json",
+  "certificate_sha256": "e5f03e703dff8cb5e4e458e2a2dbc8d8d5eb4089fcff7f401b0838529b40a0c3",
+  "complete_signatures": 252,
+  "complete_eligible_edges": 20934,
+  "group_order": 144,
+  "selector_orbit_sizes": [
+    72,
+    144,
+    36
+  ],
+  "edge_orbits": 179,
+  "lifted_population": 72,
+  "gram_entries_checked": 729,
+  "activation_inequalities_checked": 41868,
+  "mixed_equations_checked": 6804,
+  "degree_equations_checked": 252,
+  "core_pair_packing_inequalities_checked": 88452,
+  "exact_point_scale": 4,
+  "point_objective": 36,
+  "analytic_upper_bound": 36,
+  "averaging_argument": "the full real system and objective are invariant under144 core relabelings; averaging any graph point preserves every equality and inequality",
+  "scope": "the stated real relaxation has optimum36; this is not a binary graph or incidence completion"
+}

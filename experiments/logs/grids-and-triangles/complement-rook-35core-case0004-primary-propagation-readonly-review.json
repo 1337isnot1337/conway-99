@@ -1,0 +1,23 @@
+{
+  "status": "PASS: independent source and mathematical review of exact signed-row/guarded-cover propagation and reason replay",
+  "subject_source": "experiments/workspace/complement_rook_35core_case0004_primary_propagation.py",
+  "subject_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7",
+  "reviewer_lane": "unrestricted_completion",
+  "checks": {
+    "row_extrema": "free signed Boolean coefficient contributes min(0,c) to the lower endpoint and max(0,c) to the upper endpoint; conditioning a value subtracts that old contribution and adds c*value",
+    "deductions": "a literal is inferred only when the opposite value makes the interval disjoint from the original row bounds; a contradiction uses disjoint unconditional intervals",
+    "cover_rule": "inactive guard or a selected cover member satisfies the implication; empty remaining cover forces the guard false, or contradicts a true guard; a true guard with one remaining member forces that member true",
+    "inventory": "all630 Gram,186 multiplicity,1365 triple,30 binary Gram-conflict and60 signed row-cut constraints retained; signed terms combined exactly; upper bounds on cut rows are valid Boolean maxima",
+    "reason_chain": "every record lists the earlier assigned variables in its support; verifier reconstructs the original necessary row, conditions the forbidden value and recomputes integer extrema without row_event",
+    "monotone_termination": "only unassigned variables can receive values; at most1214 assignments plus one terminal contradiction; finite sweeps reach a fixed point or preserve a partial exact trace at timeout",
+    "complete_replay": "a complete noncontradictory trace rechecks both values of every unassigned row variable and every guarded cover; no completeness beyond interval/cover propagation claimed",
+    "proof_scope": "no numerical or native-solver inference is trusted; arithmetic uses Python integers; zero records or fixed-point status do not imply a graph completion"
+  },
+  "limits": [
+    "Read-only source review, not an independent replay of the178533-cover ledger or a production closure",
+    "Did not rerun the published exhaustive controls or construct a case4 model"
+  ],
+  "subject_imported": false,
+  "case4_closure_run": false,
+  "solver_or_optimizer_called": false
+}

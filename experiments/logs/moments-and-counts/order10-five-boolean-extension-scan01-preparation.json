@@ -1,0 +1,321 @@
+{
+  "status": "prepared exact five-Boolean extension scan; no current-point contraction",
+  "source_sha256": "c7d48bcda5c0cd284676eb940664d90373827322ea6ec17464a7d6f52a93aa50",
+  "extension_source_sha256": "b71adc6a56216e2fb211ab30f94711e65c667435cfbd59e49943329383253c9f",
+  "extension_domain_sha256": "d53285b4629cfe4f34d361a7caadd96c35d9825b48b71ab7fff518fd1dcab3a1",
+  "four_boolean_domain_sha256": "5fd508dba5bcda5aeb8231ab39dd6b68df5c55ffffebb98b7344e874155bef35",
+  "contraction_source_sha256": "5a97b204d8830af614f22c6e72f6ca4c120ec5c6a31320b4b8841c7e0ce19286",
+  "integer_count_point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "cache_index_sha256": "8f8d0b3e2e509fb617962f744e6df7ca56d401bc67a2916f16ab124dafb486d0",
+  "cache_parts": [
+    {
+      "path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-blocks.pickle.gz",
+      "sha256": "84d69eb567b961f8cdce332f66b152a2cac803feb50a5a7b161d67479b31fb5c",
+      "root_types": [
+        41,
+        42,
+        43,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-seven-blocks.pickle.gz",
+      "sha256": "e12e59749eebbf53fbd314e8063bc402900abf54c80016cd9e1cee99ce1a2447",
+      "root_types": [
+        38,
+        39,
+        40,
+        44,
+        45,
+        46,
+        64
+      ]
+    }
+  ],
+  "family_source_sha256": "3772c728ec764dbec0142865696bb747c06e47b29495964af867103618b75a6d",
+  "root_count": 62,
+  "expected_summary": {
+    "five_subsets": 4543737,
+    "dense_moment_entries": 774546,
+    "monomial_product_row_references": 327655,
+    "inherited_sparse_coefficient_reads": 229779,
+    "batch_count_at_50000": 132,
+    "high_masks": 829,
+    "roots_with_five_subsets": 48,
+    "roots_without_five_subsets": 14,
+    "maximum_high_masks": 42,
+    "maximum_root_dense_moment_entries": 124314,
+    "maximum_root_five_subsets": 850668,
+    "monomials_by_degree": {
+      "0": 62,
+      "1": 829,
+      "2": 9118,
+      "3": 85492,
+      "4": 679045
+    }
+  },
+  "workload": {
+    "affine_atom_constants": 145399584,
+    "proper_moment_lookups": 140855847,
+    "mobius_subtractions": 363498960,
+    "implicit_opposite_parity_atom_pairs": 1163196672,
+    "already_four_atom_pairs_hamming_1": 363498960,
+    "new_pairs_hamming_3": 726997920,
+    "new_pairs_hamming_5": 72699792,
+    "new_pairs_hamming_3_or_5": 799697712,
+    "cached_product_rows_available": 3913479,
+    "sparse_product_coefficient_reads_for_selected_monomials": 229779,
+    "sparse_product_read_count_source": "inherited frozen four-Boolean tensor ledger; tensors not reloaded",
+    "batch_size": 50000,
+    "batch_proper_moments_int64_bytes": 12800000,
+    "batch_affine_constants_int64_bytes": 12800000,
+    "batch_input_indices_int64_bytes": 2000000,
+    "maximum_root_dense_moment_int64_bytes": 994512,
+    "numpy_temporary_and_python_tuple_memory_not_included_in_array_bounds": true,
+    "full_cache_loading_memory_not_included_in_array_bounds": true,
+    "no_array_of_all_implicit_pair_constraints_is_needed": true
+  },
+  "arithmetic": {
+    "integer_type_for_saved_forms": "unbounded Python integers",
+    "integer_type_for_array_batch": "signed int64 after exact bounds",
+    "tensor_contraction_requirement": "same positive-data, used-column, coefficient-row-sum guards as frozen four-Boolean scan",
+    "maximum_product_entry_symbol": "A",
+    "maximum_proper_moment_symbol": "M",
+    "proper_moment_bound": "M <= 4*A",
+    "maximum_transform_intermediate_absolute_value": "32*M <= 128*A",
+    "maximum_interval_gap_absolute_value": "64*M <= 256*A",
+    "maximum_atom_row_sum_partial_absolute_value": "1024*M <= 4096*A",
+    "required_batch_guard": "1024*M <= 2^63-1, checked as Python integers before subtraction",
+    "failed_bound_behavior": "stop with incomplete status; never use approximate arithmetic",
+    "zero_root_policy": "do not skip; every five-subset interval is still checked",
+    "colex_rank_bound": "0 <= rank < C(h,k), h <= 42, k <= 4",
+    "integer_interval_endpoints_imply_integer_fifth_moment": true
+  },
+  "required_zero_coordinates": [
+    1,
+    9,
+    41,
+    42,
+    43,
+    44,
+    46,
+    52,
+    53,
+    56,
+    57,
+    171,
+    173,
+    175,
+    178,
+    180,
+    199,
+    204,
+    233,
+    237,
+    275,
+    279,
+    294,
+    303,
+    311,
+    314,
+    320,
+    341,
+    346,
+    349,
+    379,
+    385,
+    391,
+    406,
+    413,
+    430,
+    432,
+    438,
+    444,
+    446,
+    452,
+    456,
+    457,
+    460,
+    463,
+    466,
+    486,
+    500,
+    503,
+    509,
+    512,
+    514,
+    521,
+    531,
+    540,
+    541,
+    542,
+    546,
+    548
+  ],
+  "held_cut_count": 48,
+  "maximum_wall_seconds": 60,
+  "thread_limit": 1,
+  "batch_size": 50000,
+  "negative_sampling": {
+    "first_per_root": 7,
+    "worst_per_root": 1,
+    "maximum_distinct_normalized_forms_saved": 64,
+    "all_sampled_examples_reconstructed_before_saved_form_cap": true
+  },
+  "no_point_zero_pruning": true,
+  "roots_without_five_subsets_retained": true,
+  "partial_completed_batch_counts_preserved": true,
+  "negative_forms_require_fresh_literal_product_replay": true,
+  "current_count_point_read_for_binding_only": true,
+  "current_point_scan_performed": false,
+  "new_product_tensors_generated": false,
+  "reduced_matrix_loaded": false,
+  "optimizer_or_eigensystem_called": false,
+  "controls": {
+    "synthetic_cache_extraction_controls": [
+      {
+        "negative_signed_atoms": [
+          0,
+          7
+        ],
+        "synthetic_automorphism_multiplier": 1,
+        "interval": [
+          2,
+          0
+        ],
+        "raw_value": -2,
+        "primitive_value": -2,
+        "normalized_form_sha256": "8aa156ca3174c2cdd2f61577a02a03b7ae3d9ea45ede4c6c08c8ca93e15fb00a"
+      },
+      {
+        "negative_signed_atoms": [
+          0,
+          7
+        ],
+        "synthetic_automorphism_multiplier": 2,
+        "interval": [
+          4,
+          0
+        ],
+        "raw_value": -4,
+        "primitive_value": -2,
+        "normalized_form_sha256": "8aa156ca3174c2cdd2f61577a02a03b7ae3d9ea45ede4c6c08c8ca93e15fb00a"
+      },
+      {
+        "negative_signed_atoms": [
+          0,
+          7
+        ],
+        "synthetic_automorphism_multiplier": 17,
+        "interval": [
+          34,
+          0
+        ],
+        "raw_value": -34,
+        "primitive_value": -2,
+        "normalized_form_sha256": "8aa156ca3174c2cdd2f61577a02a03b7ae3d9ea45ede4c6c08c8ca93e15fb00a"
+      },
+      {
+        "negative_signed_atoms": [
+          0,
+          31
+        ],
+        "synthetic_automorphism_multiplier": 1,
+        "interval": [
+          0,
+          -2
+        ],
+        "raw_value": -2,
+        "primitive_value": -2,
+        "normalized_form_sha256": "e82218dfd93c510a919f4def9d79e7b94f505f21119c9ff31cab482e6e9a96ba"
+      },
+      {
+        "negative_signed_atoms": [
+          0,
+          31
+        ],
+        "synthetic_automorphism_multiplier": 2,
+        "interval": [
+          0,
+          -4
+        ],
+        "raw_value": -4,
+        "primitive_value": -2,
+        "normalized_form_sha256": "e82218dfd93c510a919f4def9d79e7b94f505f21119c9ff31cab482e6e9a96ba"
+      },
+      {
+        "negative_signed_atoms": [
+          0,
+          31
+        ],
+        "synthetic_automorphism_multiplier": 17,
+        "interval": [
+          0,
+          -34
+        ],
+        "raw_value": -34,
+        "primitive_value": -2,
+        "normalized_form_sha256": "e82218dfd93c510a919f4def9d79e7b94f505f21119c9ff31cab482e6e9a96ba"
+      }
+    ],
+    "normalization_divisors_checked": [
+      1,
+      2,
+      17
+    ],
+    "first_and_worst_sampling_controls": 3,
+    "synthetic_cache_is_not_a_graph_product_certificate": true
+  }
+}

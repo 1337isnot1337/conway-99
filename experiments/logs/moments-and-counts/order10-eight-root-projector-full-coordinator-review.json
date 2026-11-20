@@ -1,0 +1,32 @@
+{
+  "status": "coordinator source and mathematical review PASS",
+  "reviewer": "coordinator; not the source author",
+  "sources": [
+    {
+      "path": "experiments/workspace/grid_free_order10_projector_full_scan.py",
+      "sha256": "943bd7d44aec5d00e5f55355747d0b8df07ac824c1a6eb21569a61eeacb5366f"
+    },
+    {
+      "path": "experiments/workspace/grid_free_order10_projector_integer_classes.py",
+      "sha256": "1367a004222f5c38aefc45b55aa2abedb5ac95e8afd936eba2ad55161720966c"
+    },
+    {
+      "path": "research/grids-and-triangles/grid_free_order10_projector_full_scan.md",
+      "sha256": "e7d4d9ac2493a5952ca01ac2d10275bda869051aae4ecf258ea94b9e1648114d"
+    },
+    {
+      "path": "research/grids-and-triangles/grid_free_order10_projector_integer_classes.md",
+      "sha256": "d59a38001d5b566e067e2bc206ad4c44ed53ee50b05bec9746475d8c2a345e3b"
+    }
+  ],
+  "checks": [
+    "Complete driver and integer-class source read independently by coordinator.",
+    "Full scan retains all four blocks for every root and commits only complete roots.",
+    "Python integer contractions and exact nine-kernel checks precede numerical separation.",
+    "Complete no-separator result is not an exact PSD certificate.",
+    "Second-moment projector identity and coefficientwise division by seven checked algebraically.",
+    "Integer minimizing-shift proof covers every shift; zero roots remain included."
+  ],
+  "independent_full_numerical_scan_repeated": false,
+  "unrestricted_resolution_claimed": false
+}

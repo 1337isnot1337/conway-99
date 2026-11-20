@@ -1,0 +1,59 @@
+{
+  "automatic_retries": 0,
+  "optimizer_calls": 0,
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-run01-cold/report.json",
+    "sha256": "4e82b71311d72424443fbb62c3c07b8ca0f7f274f85ef9189f3ef1b70f0681e8"
+  },
+  "report_accepted": true,
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-cold-root-gate01.json",
+    "sha256": "5cd8ca4af9263e15a18231403eab9bca1f748994800b1be66e582f168fd69842"
+  },
+  "schema": "conway99.f0.support-skew-gauge-independent-cold-owner.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_support_skew_gauge_replay.py",
+    "sha256": "e0365fdbdd43e75dbaf23eccb0f676a3099aed06b7ed1a1c88016fcff64827e8"
+  },
+  "status": "OWNED_COMPLETE_INDEPENDENT_GAUGE_REPLAY_ACCEPTED",
+  "supervision": {
+    "artifacts": [
+      {
+        "bytes": 0,
+        "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-run01-cold/cold.stderr.log",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "bytes": 102,
+        "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-run01-cold/cold.stdout.log",
+        "sha256": "1b620f02ba406c6221dd607deaa6cdc0aecb168517c9d5f3213f461c7dd37836"
+      },
+      {
+        "bytes": 44900,
+        "path": "experiments/logs/root-prism-free/f0-support-skew-gauge-run01-cold/report.json",
+        "sha256": "4e82b71311d72424443fbb62c3c07b8ca0f7f274f85ef9189f3ef1b70f0681e8"
+      }
+    ],
+    "child_reaped": true,
+    "command": [
+      "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_support_skew_gauge_replay.py",
+      "run",
+      "--output",
+      "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/logs/root-prism-free/f0-support-skew-gauge-run01-cold/report.json"
+    ],
+    "exit_code": 0,
+    "hard_seconds": 135,
+    "hard_timeout": false,
+    "new_process_group": true,
+    "seconds": 26.937303421989782
+  },
+  "supervisor_helper": {
+    "path": "experiments/workspace/rook_case4_box_hull_membership.py",
+    "sha256": "54330f430c0c4dae03a0298533121ce43482ceb295f54df715ad2f2180d3503c"
+  },
+  "supervisor_source": {
+    "path": "experiments/workspace/rook_case4_box_hull_membership_query.py",
+    "sha256": "aa557c7b99ec3de71e9ecde3f6f7dfa3ca71066a835086cdd3b3f2eb7be558e5"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": "UNSAT with direct DRAT; cold domain/formula rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001-model.json",
+  "model_sha256": "5bf64ad5bce96c589dbfdc8e95f9c3b6d0a1f339d1eef738597527fe0eb8c5d2",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 1,
+  "cnf_sha256": "3fc77029bd6346f343907c5c4a59b500c97722ccee2b4ebfaf9ed17820d8a7cc",
+  "requested_solver_seconds_including_bootstrap": 10,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 93272,
+  "bootstrap_seconds": 0.1548367959985626,
+  "solve_return_seconds": 0.9608085660001962,
+  "solver_statistics": {
+    "restarts": 15,
+    "conflicts": 4641,
+    "decisions": 12428,
+    "propagations": 9301742
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/raw.drat",
+  "raw_proof_sha256": "13bab1c2b905826580fe387de1dff113a913b757352da9255b5e491913474d87",
+  "raw_proof_lines": 21420,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/retained.cnf",
+    "cnf_sha256": "2c3c5ab5b4c7b834984a7b8bf0ccbddae96c60700f37670629a8522cede99b2c",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/retained.drat",
+    "proof_sha256": "fe47a2fee85aca4873684c2fc33ef75c0e047430d57ef4dad933a97969a47768",
+    "input_clauses": 9308,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/direct-drat.log",
+    "checker_log_sha256": "7d2060a53b5119f5ffca4fea882314552acd8967ba1d9d27240fd995960807e8"
+  },
+  "elapsed_seconds": 1.4821712779994414
+}

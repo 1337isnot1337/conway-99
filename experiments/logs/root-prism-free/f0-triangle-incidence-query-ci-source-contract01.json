@@ -1,0 +1,270 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-ci-source-contract.v1",
+  "status": "FROZEN_INACTIVE_SOURCE_CONTRACT_WAITING_FOR_ACTUAL_NATIVE_ACCEPTANCE_AND_QUERY_PREFLIGHT",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci.py",
+    "bytes": 17160,
+    "sha256": "a6a048ab3f385e04ab157971eb70ad1f56ba7515cc5c0887a29ac12c97d5910a",
+    "git_blob": "182b9cbd13f3033edca5431dc7c578e1fbec3e87"
+  },
+  "source_reuse": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-ci-explicit-source-reuse01.json",
+    "bytes": 8077,
+    "sha256": "87be05fa1a2d8225b754f8b082c5d368dfffda724ec7aa6a8dc34444b29bc3f6",
+    "git_blob": "e5399414de4fe333fb0d1684129fdcdf46eef04f"
+  },
+  "parent_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query_ci.py",
+    "git_blob": "0bcbc9db71ff64ba9b440990c52e3f87ba0b7daf",
+    "sha256": "22d20e4a931b5ae069bdead464399b4f5f9773c441f3ed0f9829df6403f80a90",
+    "bytes": 17023
+  },
+  "query_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py",
+    "bytes": 39635,
+    "sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "git_blob": "7295da45c769913e7bb8b6b408abac551880a29a"
+  },
+  "query_source_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-source-preparation02.json",
+    "bytes": 10183,
+    "sha256": "84d6ab1cefabeba5299e2d5ec1428b3376ec2d4f5be1a04b6040eb033e159cdf",
+    "git_blob": "d0f3cc21df94372a4ddef039078be3e6623ab28b"
+  },
+  "terminal_cold_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "git_blob": "5191a03e92e6ab9f1039eeb791518baebdec4661",
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "bytes": 37638
+  },
+  "terminal_cold_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-independent-replay-source-contract01.json",
+    "git_blob": "6e33646cb7daa2970428919610d23afa4ae827cb",
+    "sha256": "cc0d9f963f4379c3e6307e0c9028059dfc995590a1e838efda520ebea20369ce",
+    "bytes": 8886
+  },
+  "terminal_cold_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-replay-independent-source-review01.json",
+    "bytes": 7784,
+    "sha256": "844a7f9d3fff39b70c3d0e87298a59df380a2d9dc30ef9eeadfb24552550ac6a",
+    "git_blob": "d7657e42ecb36d715fe2fdd8cb5c6043db3cc822"
+  },
+  "supervisor_source": {
+    "bytes": 26760,
+    "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+    "mode": "100644",
+    "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+    "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+  },
+  "cli": [
+    "python",
+    "SOURCE",
+    "--request",
+    "REQUEST_JSON",
+    "--request-sha256",
+    "REQUEST_SHA256"
+  ],
+  "assertions_required": true,
+  "request": {
+    "schema": "conway99.f0.triangle-incidence-query-ci-request.v1",
+    "intended_path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-ci-request01.json",
+    "required_reference_fields": [
+      "source",
+      "query_source",
+      "terminal_cold_source",
+      "query_configuration",
+      "query_gate",
+      "preflight_report",
+      "preflight_owner",
+      "supervisor_source"
+    ],
+    "required_scalar_fields": [
+      "model_raw_sha256",
+      "limits",
+      "maximum_native_calls",
+      "automatic_retries",
+      "preflight_directory",
+      "query_directory",
+      "cold_directory",
+      "driver_report"
+    ],
+    "limits": {
+      "query_owner_seconds": 720,
+      "cold_controls_owner_seconds": 15,
+      "cold_main_owner_seconds": 135,
+      "driver_seconds": 900
+    },
+    "maximum_native_calls": 1,
+    "automatic_retries": 0,
+    "fresh_directories_required": [
+      "query_directory",
+      "cold_directory"
+    ],
+    "directories_must_be_distinct_and_not_contain_each_other": true,
+    "source_pin": "a6a048ab3f385e04ab157971eb70ad1f56ba7515cc5c0887a29ac12c97d5910a",
+    "query_source_pin": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "terminal_cold_source_pin": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4"
+  },
+  "query_configuration": {
+    "schema": "conway99.f0.triangle-incidence-query-configuration.v1",
+    "variables": 80730,
+    "rows": 300795,
+    "source_sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "actual_model_raw_sha256_pending": true,
+    "native_query_authorized_by_configuration_alone": false
+  },
+  "root_gate": {
+    "status": "AUTHORIZE_ONE_TRIANGLE_INCIDENCE_MODEL_QUERY",
+    "reference_fields_compared": [
+      "source",
+      "configuration",
+      "terminal_cold_source",
+      "ci_driver_source",
+      "preflight_report",
+      "preflight_owner",
+      "model_cold"
+    ],
+    "limits_and_complete_parameters_must_equal_configuration": true,
+    "independent_terminal_cold_required": true,
+    "actual_root_gate_pending": true
+  },
+  "preflight": {
+    "status": "PASS_TRIANGLE_INCIDENCE_QUERY_PREFLIGHT",
+    "accepted_report_and_owner_required": true,
+    "owner_seconds": 75,
+    "optimizer_calls": 0,
+    "production_solve_calls": 0,
+    "CpSolver_constructed": false,
+    "exact_source_configuration_and_raw_model_binding": true,
+    "actual_preflight_pending": true
+  },
+  "query_stage": {
+    "cli_mode": "run",
+    "owner_seconds": 720,
+    "at_most_one_driver_invocation": true,
+    "returned_native_calls_allowed": [
+      0,
+      1
+    ],
+    "solver_seconds": 600,
+    "measured_native_allowance_seconds": 610,
+    "finalization_reserve_seconds": 60,
+    "full_source_hash_and_root_gate_bound": true,
+    "query_owner_process_returncode_required": 0,
+    "query_owner_process_reaped_required": true,
+    "status_is_retained_without_feasibility_inference": true
+  },
+  "cold_controls": {
+    "cli": [
+      "python",
+      "CHECKER",
+      "controls",
+      "--output",
+      "OUTPUT"
+    ],
+    "worker_seconds": 10,
+    "owner_seconds": 15,
+    "status": "PASS_TRIANGLE_INCIDENCE_QUERY_INDEPENDENT_INTEGER_AND_RESPONSE_CONTROLS",
+    "required_output_flags": {
+      "producer_imports": 0,
+      "native_imports": 0,
+      "optimizer_calls": 0,
+      "CpModel_constructed": false,
+      "CpSolver_constructed": false
+    }
+  },
+  "cold_main": {
+    "cli": [
+      "python",
+      "CHECKER",
+      "run",
+      "--configuration",
+      "CONFIG",
+      "--configuration-sha256",
+      "CONFIG_SHA",
+      "--directory",
+      "QUERY_DIRECTORY",
+      "--result-sha256",
+      "RESULT_SHA",
+      "--owner-sha256",
+      "OWNER_SHA",
+      "--gate",
+      "GATE",
+      "--gate-sha256",
+      "GATE_SHA",
+      "--output",
+      "OUTPUT"
+    ],
+    "worker_seconds": 120,
+    "owner_seconds": 135,
+    "status": "PASS_INDEPENDENT_TRIANGLE_INCIDENCE_QUERY_TERMINAL_REPLAY",
+    "schema": "conway99.f0.triangle-incidence-query-independent-cold.v1",
+    "matched_output_fields": [
+      "source",
+      "configuration",
+      "root_gate",
+      "query_result",
+      "query_owner",
+      "query_native_calls",
+      "native_answer_classification",
+      "returned_vectors_independently_checked"
+    ],
+    "required_output_flags": {
+      "producer_imports": 0,
+      "native_imports": 0,
+      "optimizer_calls": 0,
+      "CpModel_constructed": false,
+      "CpSolver_constructed": false,
+      "graph_constructed": false,
+      "whole_component_excluded": false
+    }
+  },
+  "external_cold_owner": {
+    "schema": "conway99.f0.triangle-incidence-query-independent-ci-owner.v1",
+    "statuses_match_corresponding_cold_report": true,
+    "files": [
+      "owned-start.json",
+      "owned-supervision.json",
+      "owner.json"
+    ],
+    "preliminary_report_accepted": false,
+    "accepted_owner_requires_report_hash_source_configuration_gate_and_supervision": true,
+    "successful_child_returncode": 0,
+    "child_reaped": true,
+    "owned_process_group_stopped": true,
+    "deadline_overrun_seconds": 0
+  },
+  "driver_terminal": {
+    "schema": "conway99.f0.triangle-incidence-query-ci-result.v1",
+    "accepted_status": "PASS_ONE_BOUNDED_QUERY_AND_INDEPENDENT_TERMINAL_REPLAY",
+    "error_status": "ERROR_QUERY_CI_PIPELINE",
+    "overrun_status": "UNKNOWN_QUERY_CI_DRIVER_BUDGET_OVERRUN",
+    "measured_complete_driver_bound_seconds": 900,
+    "phase_owner_seconds_total": 870,
+    "remaining_driver_margin_seconds": 30,
+    "driver_has_no_new_hard_watchdog": true,
+    "workflow_job_timeout_and_complete_export_are_root_owned": true,
+    "all_response_candidate_error_and_owner_files_remain_unchanged": true,
+    "driver_finally_binds_available_terminal_subset_and_never_deletes_files": true,
+    "workflow_must_export_complete_query_and_cold_directories": true
+  },
+  "scope": {
+    "source_imports": 0,
+    "compilations": 0,
+    "controls_runs": 0,
+    "preflight_runs": 0,
+    "model_decodes": 0,
+    "model_builds": 0,
+    "optimizer_calls": 0,
+    "actual_query_configuration_created": false,
+    "actual_ci_request_created": false,
+    "active_workflow_created": false,
+    "refs_changed": false,
+    "automatic_retries": 0,
+    "native_INFEASIBLE_is_unproved": true,
+    "graph_constructed": false,
+    "whole_component_excluded": false,
+    "root_owns_all_actual_model_config_gate_request_workflow_bindings": true,
+    "no_execution_authorized_by_this_contract": true
+  }
+}

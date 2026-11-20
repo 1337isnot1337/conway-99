@@ -1,0 +1,155 @@
+{
+  "status": "Frozen preparation for one bounded three-family PSD scan",
+  "scan_source": "experiments/workspace/root_prism_free_f0_joint_psd_zero_scan.py",
+  "source_sha256": "555ce146b2f7ae05641872d2bd3b8a9a86f690680d1c82e2f32e6ea4640114b7",
+  "proposal_sha256": "bfe03cf2ec0f9d00ee7ff756112a61ab368404d4ed29c7b50377f01c5ae8327e",
+  "model_canonical_sha256": "7bc4682e3df009761c55d0740a30a0629d45e894807f79e3337fc1de4fa1aff3",
+  "limits": {
+    "seconds": 60,
+    "decompositions": 3,
+    "directions_per_family": 8,
+    "scales": [
+      1,
+      4,
+      16,
+      64,
+      256,
+      1024
+    ],
+    "retained_per_family": 16,
+    "retained_total": 48
+  },
+  "scope": "Preparation and controls only. The one authorized scan has its separate result; no optimizer is authorized by this package.",
+  "cache_reconstructed_kernels": false,
+  "parent_unit_Z_substitutions": 389,
+  "additional_explicit_Y_zero_substitutions": 162,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_scan.py",
+      "sha256": "7441635b50e19846e48261614daf0a69a605cce8d32a15cd90f7a4cbafc1ce73",
+      "bytes": 31195
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_scan_preparation_attempt01.py",
+      "sha256": "85d5de3e65b9536983a934c393f5e0d25a9bfad915fe4a48ca1e019f23ec3a55",
+      "bytes": 31224
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_joint_psd_zero_scan.py",
+      "sha256": "555ce146b2f7ae05641872d2bd3b8a9a86f690680d1c82e2f32e6ea4640114b7",
+      "bytes": 22070
+    },
+    {
+      "path": "research/root_prism_free_f0_joint_psd_scan.md",
+      "sha256": "0e204d0c513ff34d92579ccedcbf16612794000d18ef7850c3b151f8e20f301f",
+      "bytes": 6242
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-cache01.json.gz",
+      "sha256": "6d293340386e77e0bf0b0a7b006744523d75eb7e90ef0fd371c3eed5eb82801e",
+      "bytes": 2694677
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-filter01.json.gz",
+      "sha256": "621cd3c6a00f7375c67fc696a293fc6e2f25883c17c5253496fd83ba1172a5a1",
+      "bytes": 1422704
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-independent-source-review.json",
+      "sha256": "139ed07e4b778e57e3d7d2d8741d7d4c54ec88271562d2d1af643216f122c8d8",
+      "bytes": 2544
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation01-failure.json",
+      "sha256": "5ec303e745d2373ad4d302aa6dd426af3fe960bb30693445dbc4945e5c12a5fa",
+      "bytes": 616
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation01.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation01.stderr.log",
+      "sha256": "fd3f66ec424a00f4b8bf2e18785066e28f47895f1f4c0b2af8b53fba63a24d53",
+      "bytes": 861
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation02-failure.json",
+      "sha256": "4ec39e91820209f726cb64d236f4d512920057b8329051638624320755c55eee",
+      "bytes": 596
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation02.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation02.stderr.log",
+      "sha256": "c63e97bcaae7dabc7bd4277811e633fed082ab37c0d06f7b75f961256a9104aa",
+      "bytes": 1114
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation03.json",
+      "sha256": "94a4b20c380836c4e430d1a551c55a547c03c6a119680d74e73723193112082e",
+      "bytes": 5368
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation03.log",
+      "sha256": "987d6e3e35c0a032bd401c916543e9d3c4c345907a2aa85ba8bc67d4a47dab9c",
+      "bytes": 207
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation03.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation03-cold-replay.json",
+      "sha256": "e0c8e127ff72714705d7c178b4418e30c5f2cad50bed992a8a8d97b38145a2b4",
+      "bytes": 2579
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation03-cold-replay.log",
+      "sha256": "6f7b52def824cdd03188d98d1e7c9d65295add155695129c3e2cbfdce5b7d2a8",
+      "bytes": 220
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-preparation03-cold-replay.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation01.json",
+      "sha256": "ff6d7394539372aecd39728740cd77f20eec020387c98d0beeb36f5fed870993",
+      "bytes": 4531
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation01.log",
+      "sha256": "6db6cfa128b368ff4a68dfacc208cd3abed18644742f055c66a61b540034ad8b",
+      "bytes": 216
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation01.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation01-cold-replay.json",
+      "sha256": "ee2d720d7c596307450ec9ccf366ff278abe40820773577bf73797745614ac23",
+      "bytes": 3380
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation01-cold-replay.log",
+      "sha256": "e0b6d5b12a69f14c1d5c7b1433ecc47f2a3443754e0d9cdd9cfd829f95e3e45e",
+      "bytes": 213
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-preparation01-cold-replay.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ],
+  "files_count": 25,
+  "total_bytes": 4230557
+}

@@ -1,0 +1,47 @@
+{
+  "status": "PASS: reduced exact/replay adapters and complete IPM driver/replay differences reviewed",
+  "bindings": {
+    "reduced_exact": {
+      "path": "experiments/workspace/root_prism_free_f0_second_moments_reduced_exact.py",
+      "sha256": "0ade9c2f04415b325e7f217023dd072abaf4b8cdf60cd9fe07a2cfe93e416536"
+    },
+    "reduced_replay": {
+      "path": "experiments/workspace/root_prism_free_f0_second_moments_reduced_replay.py",
+      "sha256": "9cae35ba181c9ad3fd95f211a5b874ecaaeaa74b0bc2ef51310872ebe5c56efe"
+    },
+    "reduced_driver": {
+      "path": "experiments/workspace/root_prism_free_f0_second_moments_reduced_query.py",
+      "sha256": "0348e3f8fb44adb6e0db186fe90eef8351b4271924faae678028ab1ca9471aad"
+    },
+    "IPM_driver": {
+      "path": "experiments/workspace/root_prism_free_f0_second_moments_ipm_query.py",
+      "sha256": "c6f2658796459167b885b9f9f7ecbf75b6ba92808c4115e6962b806aafe786e7"
+    },
+    "IPM_replay": {
+      "path": "experiments/workspace/root_prism_free_f0_second_moments_ipm_replay.py",
+      "sha256": "9cc3dc19755d0eba4e2dd6cb81d7c77a5756bb4a1681c622f772128b78e0f050"
+    },
+    "reuse_control": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-reduced-query-reuse-controls.json",
+      "sha256": "b3c3b5870e0731ca87d1da63631b159422883275134d3bf0ef7be620a2ad6c1e"
+    }
+  },
+  "reviewer_lane": "independent_sets",
+  "checks": {
+    "reduced_model_binding": "All file, canonical model, matrix and source digests are checked; dimensions are15200 variables/21692 rows/183702 terms.",
+    "fixed_coordinates": "All389 omitted coordinates are checked against literal original singleton zero equalities; the kept map is the sorted exact complement.",
+    "primal_acceptance": "Every reduced rational point is checked, zero-expanded, and passed to the unchanged full original acceptance gate. Numerical face guesses never enter acceptance as assumptions.",
+    "ray_acceptance": "The unchanged exact finite-box Farkas checker uses the reduced matrix. Cold replay rebuilds the exact reduction before accepting a ray; actual original incidences project into that matrix.",
+    "cold_scope": "No production driver/helper is imported by the cold replay. The literal-domain and full point checker remain the original independent versions.",
+    "IPM_difference": "The complete source diff changes only numerical method/crossover, explicit180-second child budget with3-second output reserve, statistics, matching source/preparation bindings and method metadata.",
+    "exact_phase_unchanged": "The IPM version retains the reduced exact helper and all original exact acceptance conditions.",
+    "single_call": "The production numerical path keeps one Highs.run call and the existing-ray guard; timeouts cannot become exact conclusions.",
+    "PSD_scope": "Neither the reduced linear model nor this query claims to enforce or certify the optional PSD blocks."
+  },
+  "subject_modules_imported": false,
+  "matrix_or_reduction_rebuilt": false,
+  "AST_control_reexecuted": false,
+  "tiny_controls_repeated": false,
+  "optimizer_called": false,
+  "scope": "Read-only adapter/diff gate. The mathematical dependency-removal proof was reviewed by the coordinator; this report does not independently rerun that certificate."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS: independent read-only complete driver review",
+  "subject": "experiments/workspace/rook_case4_cover_generation.py",
+  "subject_sha256": "6fb1b38194b8a5614ab7db219150dcc458f307b8a1dfb20f6fd55cd77b6325f2",
+  "reviewer": "unrestricted_completion",
+  "scope": {
+    "complete_subject_source_read": true,
+    "subject_imported": false,
+    "optimizer_called": false,
+    "model_rebuilt": false,
+    "controls_rerun": false,
+    "dependencies_reaudited_in_full": false
+  },
+  "checks": [
+    "Initial row IDs contain all1992 native rows and every max-min extension; later additions are unique IDs from the frozen retained original-cover pool.",
+    "CSR row extraction, appendRows and the explicit local-to-original ID list use the same insertion order; mathematical rows are unchanged.",
+    "Every numerical primal is scanned against the full original-plus-extension matrix; discovery only appends the most violated unrepresented original cover rows.",
+    "Only a numerically optimal valid finite primal can trigger another run. Nonoptimal, infeasible, nonfinite and no-new-row outcomes stop numerical refinement.",
+    "At most30 run calls,29 batches of512 rows,120 cumulative solver/existing-ray seconds and180 numerical-phase seconds are accounted for. Timers are cooperative; overruns remain recorded.",
+    "The existing-ray guard precedes getDualRay; no absent-ray recovery LP is called.",
+    "Subset dual multipliers are expanded to the complete original row indexing with zeros elsewhere; exact finite-box certificates use only active original rows and therefore remain necessary for the full LP.",
+    "Rational primal reconstruction and cold replay require every original uncompressed row and unit-box bound, regardless of compression or active prefix.",
+    "Replay reconstructs the full arrays, compression accounting, chronological row additions, original row hashes and exact certificate arithmetic.",
+    "Case exclusion is promoted only after an exact negative finite-box bound; zero-face and rational-feasibility conclusions remain separate."
+  ],
+  "qualifications": [
+    "This report reviews source and mathematical scope. It does not independently reconstruct the compression certificate or native arrays.",
+    "The numerical phase budget starts after checked input replay, as recorded by the driver; its deadline includes native bootstrap and full scans.",
+    "The source preserves one native solver across additions, but this audit makes no numerical convergence or throughput claim."
+  ]
+}

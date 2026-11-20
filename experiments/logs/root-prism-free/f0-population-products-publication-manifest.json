@@ -1,0 +1,194 @@
+{
+  "status": "FROZEN:903-product mathematical/native preparation and independent42-profile-table audit; no production query",
+  "counts": {
+    "block_link_nonzeros": 10298,
+    "linear_nonzeros": 1279413,
+    "linear_rows_including_links": 28647,
+    "native_constraints": 29550,
+    "native_product_constraints": 903,
+    "primary_variables": 15038,
+    "refinement_nonzeros": 189283,
+    "variables_with_product_auxiliaries": 15941
+  },
+  "specification": {
+    "bytes": 894268,
+    "canonical_sha256": "343ffe75d52c683d2138cefc805f808622649b1608045f144e1e42471809f7bc",
+    "path": "experiments/logs/root-prism-free/f0-population-products02-specification.json.gz",
+    "sha256": "c83ebbc1d0d4e9b5ec5ccd60ed5e52ea2be2cb24f1de570f6bff8bb158d42e0c"
+  },
+  "native_proto": {
+    "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/model.pb",
+    "sha256": "aa43ef31991213634b0cc812b61a5d1247c1915c6690def64a54247854ee8589",
+    "bytes": 11588655
+  },
+  "native_proto_published_as_lossless_gzip": true,
+  "mathematical_preparation_seconds": 121.33813295800064,
+  "cooperative_preparation_limit_seconds": 120,
+  "recorded_preparation_overrun_seconds": 1.3381329580006422,
+  "corrected_invocation_uses_identical_source_and_identical_specification_bytes": true,
+  "original_linear_parent_preserved": true,
+  "PSD_directions_retained": 92,
+  "integer_refinements_retained": 25,
+  "selector_profile_tables_included_in_native_parent": false,
+  "independent_profile_audit": {
+    "literal_subsets": 155904,
+    "accepted": 64144,
+    "profiles": 5733,
+    "subject_imported": false
+  },
+  "optimizer_calls": 0,
+  "CpSolver_constructed": false,
+  "count_or_graph_feasibility_claimed": false,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_population_products.py",
+      "sha256": "147ad92071ced273139993b09633c298b7a4a8ed9298e68103f970a8f01b7a66",
+      "bytes": 19538,
+      "git_blob_sha1": "5196612c79e0433bab36c2e0f45c33064f89dfa1"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_population_products_cpsat.py",
+      "sha256": "528f480b08adc5f1040807eec3eb96a75a8ea755eee28aec234f9d660034ff42",
+      "bytes": 9858,
+      "git_blob_sha1": "8e1a0d9844a383db713838b27448383b89b50ad6"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_population_products_archive.py",
+      "sha256": "49669f268b3de6f941bb451aec9ccb786c916f30ce01670352537adf3e8920e8",
+      "bytes": 2910,
+      "git_blob_sha1": "3cbecdba9f00bbb9bacc72388806217770b22690"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_profiles_independent_audit.py",
+      "sha256": "6ddc534f5f6750d1ead27de40f25a2378227296d81bba7a6981004bfb2f2309f",
+      "bytes": 8442,
+      "git_blob_sha1": "1cc2c893d87868eae7aedd1352ffcf600e1ba1ee"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products01-generation.log",
+      "sha256": "d9847daf1d560b41a3e8bc2098cef08197c4a5c5f7eb721b3cf5b812b98e2ed3",
+      "bytes": 1128,
+      "git_blob_sha1": "00ae49249e600f6304482cb0d7a3fdabf3a4e701"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products01-output-path-failure.json",
+      "sha256": "f92e4cf52ccb58cdc808eb049e6ef07ae9d4d57802554f7893047633411c07c7",
+      "bytes": 840,
+      "git_blob_sha1": "dcf3839b4ba1a8608baa29af8899bc753bae23de"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products01-specification.json.gz",
+      "sha256": "c83ebbc1d0d4e9b5ec5ccd60ed5e52ea2be2cb24f1de570f6bff8bb158d42e0c",
+      "bytes": 894268,
+      "git_blob_sha1": "acac22c6d04dc5ed61e8e26ddf2d682ef0ee6cf5"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products02-specification.json.gz",
+      "sha256": "c83ebbc1d0d4e9b5ec5ccd60ed5e52ea2be2cb24f1de570f6bff8bb158d42e0c",
+      "bytes": 894268,
+      "git_blob_sha1": "acac22c6d04dc5ed61e8e26ddf2d682ef0ee6cf5"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products02-preparation.json",
+      "sha256": "6f5c66de4925c77eff63abea287e723d71be62318b6f4dca6197dbdf3c453915",
+      "bytes": 1549,
+      "git_blob_sha1": "ab1c859723ea783c6a3281657d595a97f1315f1e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products02-generation.log",
+      "sha256": "790308d3eab6fab8e6652a5af7c9d1c22f44a5c753ce4332ea867755dc5b0dcb",
+      "bytes": 1786,
+      "git_blob_sha1": "eb9524bf3f9ad8e1d22b4b047ccb3c5f539e9bad"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/report.json",
+      "sha256": "8a1ed187e68de4bcfe1a9e1948f971125b45612bfc3b3fadbfe607826a51e91a",
+      "bytes": 1681,
+      "git_blob_sha1": "63fd7ed2c04d618310d08af35b881a5a0ef12563"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/model.pb.gz",
+      "sha256": "37f744fd78fde8f3d6ca28ea4bcc63205299fb8c947b5212667ee08212b5f266",
+      "bytes": 4650249,
+      "git_blob_sha1": "b55f2d8c03d75abf59db81da95928af9edab64d4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/archive.json",
+      "sha256": "320a3c18c6ae8f972a4bce26ac4b6ba2428b882926293d208479504ef3af0542",
+      "bytes": 579,
+      "git_blob_sha1": "4f5b230ed98b79bd3c0a7a1988555909312e4e2f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/archive-check.json",
+      "sha256": "9eba7273af53dd941625ffe6821304e630a235afc3f7b0417391ccd21c7b6099",
+      "bytes": 520,
+      "git_blob_sha1": "aaaa0c10994043a34362fa763e9055a6bd2be515"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/archive-cold.json",
+      "sha256": "1f117ad903415a313daa1085d09eaae4716fb68d16195d65b4918beb00e9fd87",
+      "bytes": 519,
+      "git_blob_sha1": "f7689e0a903f394ea2e93a3dd2cd7886ba3d2d71"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/toy-cross.pb",
+      "sha256": "869dc39348aaf158eb6ef35349fc6ce0871b486159a3322ffca68eb8ab1546d7",
+      "bytes": 89,
+      "git_blob_sha1": "1e6c8a4e0bd8fd0e3db6a6a3ca14a04603da6a49"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/toy-diagonal.pb",
+      "sha256": "83f73eabd5cec7a8fc7a1bbb04fcf3bccbf59d2e124259b0a69de97207818bc2",
+      "bytes": 91,
+      "git_blob_sha1": "23f08ec4e34d65cc9320b837835a5eba88f755d7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-generation.log",
+      "sha256": "8a1ed187e68de4bcfe1a9e1948f971125b45612bfc3b3fadbfe607826a51e91a",
+      "bytes": 1681,
+      "git_blob_sha1": "63fd7ed2c04d618310d08af35b881a5a0ef12563"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-cold/report.json",
+      "sha256": "fb287608e94737614fd58d51405855a551867cf121f201586b1c860ff4508930",
+      "bytes": 1564,
+      "git_blob_sha1": "6c84053cce1803730ecad7916dd8650f0a11bf62"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-cold.log",
+      "sha256": "fb287608e94737614fd58d51405855a551867cf121f201586b1c860ff4508930",
+      "bytes": 1564,
+      "git_blob_sha1": "6c84053cce1803730ecad7916dd8650f0a11bf62"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-archive.log",
+      "sha256": "9eba7273af53dd941625ffe6821304e630a235afc3f7b0417391ccd21c7b6099",
+      "bytes": 520,
+      "git_blob_sha1": "aaaa0c10994043a34362fa763e9055a6bd2be515"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-archive-cold.log",
+      "sha256": "1f117ad903415a313daa1085d09eaae4716fb68d16195d65b4918beb00e9fd87",
+      "bytes": 519,
+      "git_blob_sha1": "f7689e0a903f394ea2e93a3dd2cd7886ba3d2d71"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles-independent-audit.json",
+      "sha256": "e532fe58350ad856104333fba05b8601d776cbb98b76b3ce855ce8fa2a4be9a2",
+      "bytes": 5830,
+      "git_blob_sha1": "ba29b8868068aba25c2b52e515cbde94dc9fd6ad"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles-independent-audit.log",
+      "sha256": "3d536a78be8f8b8fc88d7a2295b75e043447cf3ea74d6f44d6f299f6f3ee7421",
+      "bytes": 278,
+      "git_blob_sha1": "2a42b260ac46e8381e294b69463ac0f3efddcf9f"
+    },
+    {
+      "path": "research/root_prism_free_f0_population_products.md",
+      "sha256": "14d4adb474d0a1d51348a817b862ae31adea182d712251c4da34f68141410d5a",
+      "bytes": 9626,
+      "git_blob_sha1": "0e46734f5468597b7ef4501d966e3c6b0068ad23"
+    }
+  ]
+}

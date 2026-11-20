@@ -1,0 +1,12 @@
+{
+  "status": "SAFE PREPARATION FAILURE: discarded tautology coefficient refused before output",
+  "source_sha256": "e88c92e0eaa521f300cc69fbdbc1d4e5be801bbd5ea4f8ea280a1cd3551e2d88",
+  "preserved_source": "experiments/workspace/root_prism_free_f0_boolean_fractional_model_v1.js",
+  "exit_code": 1,
+  "error": "safe exact numerical coefficient",
+  "cause": "The first assembler converted all quotient rows to binary64 before discarding exact unit-box tautologies. Some discarded tautologies contain large integers.",
+  "preparation_output_written": false,
+  "optimizer_called": false,
+  "correction": "The corrected assembler keeps every coefficient in BigInt through tautology classification. Only the 76 nontrivial quotient rows are converted after exact safety checks.",
+  "corrected_source_sha256": "250cae6a3358d04df1f558ab4f31a641919718e59ffc7039438114de56425b8d"
+}

@@ -1,0 +1,24 @@
+{
+  "status": "ERROR: serialization at first spectral checkpoint",
+  "exit_code": 1,
+  "source_sha256": "555ce146b2f7ae05641872d2bd3b8a9a86f690680d1c82e2f32e6ea4640114b7",
+  "preserved_partial_result": {
+    "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan01.json.gz",
+    "sha256": "833ee46b0e247cd2b35d1138a85090aa4f084356abbdc8bf56ceee7029fa64e5"
+  },
+  "stderr": {
+    "path": "experiments/logs/root-prism-free/f0-joint-psd-zero-scan01.stderr.log",
+    "sha256": "f79e5011ada6621da26763eb283537ffb6a5d0364e2d6790024be7abe6975087"
+  },
+  "observed_scope": "The traceback reaches the first direction checkpoint after numerical decomposition. The saved initial RUNNING record is stale and its zero decomposition count does not describe actual runtime. No cut or eigenvalue data survived to disk.",
+  "retained_certificate_claimed": false,
+  "optimizer_calls": 0,
+  "retry_authorized_by_this_record": false,
+  "repair": {
+    "new_source": "experiments/workspace/root_prism_free_f0_joint_psd_zero_scan_v2.py",
+    "new_source_sha256": "3bb5b68da04e94944688b71d7900f064c4b4d246f5c02f4a1569d7e094932cea",
+    "old_text": "\"minimum_is_numerical_zero_scale\": abs(eigenvalues[0]) <= tolerance})",
+    "new_text": "\"minimum_is_numerical_zero_scale\": bool(abs(eigenvalues[0]) <= tolerance)})",
+    "mathematical_or_budget_change": false
+  }
+}

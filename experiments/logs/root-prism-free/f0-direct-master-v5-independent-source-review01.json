@@ -1,0 +1,129 @@
+{
+  "blockers": [],
+  "bound_inputs": [
+    {
+      "bytes": 2559,
+      "name": "legacy_configuration",
+      "path": "experiments/logs/root-prism-free/f0-direct-master-seed-configuration03.json",
+      "sha256": "554e22f12d986b1b045b03b517d801ef7785f51d45efc65852a76a9932eaa52e"
+    },
+    {
+      "bytes": 11530,
+      "name": "parent_cold",
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run02-cold/report.json",
+      "sha256": "10f7e1475f824243f39a5143b58273fd418a33b149c22eda288845ef306bd3c0"
+    },
+    {
+      "bytes": 506,
+      "name": "parent_cold_owner",
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run02-cold/owner.json",
+      "sha256": "54528881fdbaf2466b3254454f95ff5dbdae7fe751cee17f4b317aee4fe2a0ca"
+    },
+    {
+      "bytes": 497,
+      "name": "parent_owner",
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run02/owner.json",
+      "sha256": "95b28ed7c450726bf8c9cbc9fa555dd980c07f55d2c5adf0e09474b8bd50d5f7"
+    },
+    {
+      "bytes": 405458,
+      "name": "parent_registry",
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run02/registry.json",
+      "sha256": "b19c520815cb657184625ee8c7cd57b794364a71eff9fcfb57f0e7429604a11b"
+    },
+    {
+      "bytes": 405458,
+      "name": "parent_replayed_registry",
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run02-cold/replayed-registry.json",
+      "sha256": "b19c520815cb657184625ee8c7cd57b794364a71eff9fcfb57f0e7429604a11b"
+    },
+    {
+      "bytes": 10903,
+      "name": "parent_result",
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run02/result.json",
+      "sha256": "523e97193a187652ebfe7feb7b8a644284220b435da472941863689e71e94c6c"
+    },
+    {
+      "bytes": 33511,
+      "name": "reanchoring_cold",
+      "path": "experiments/logs/root-prism-free/f0-local-packing-new-bank-reanchoring02-cold.json",
+      "sha256": "d3db8b43f7f3b52fc3c65fcd7c2da0bc12e762a8c425a6a3b929504ba9d9a948"
+    },
+    {
+      "bytes": 2516088,
+      "name": "shared_census_cold",
+      "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02-independent-cold.json.gz",
+      "sha256": "c5eca2313768571598d9d402723f2308ac5f1b0bb1c7c44212a0ce2abb3301f2"
+    },
+    {
+      "bytes": 3783912,
+      "name": "shared_census_export",
+      "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring02/certified-selector-cuts.json.gz",
+      "sha256": "26e0883d145b13593b2a005b1b5bc6fc86fe423bf3dd18452561e64f803efcde"
+    },
+    {
+      "bytes": 2049,
+      "name": "shared_census_peer",
+      "path": "experiments/logs/root-prism-free/f0-shared-single-anchor-reanchoring-peer-source-review01.json",
+      "sha256": "2a24f8672ec7f798f8d2fe8c93f6d0e92681e4522dcef82c0f9866ccabb3b4af"
+    },
+    {
+      "bytes": 59549,
+      "name": "reanchoring_certificate",
+      "path": "experiments/logs/root-prism-free/f0-local-packing-new-bank-reanchoring02.json.gz",
+      "sha256": "3eaf4ceae4a3c7489cbcc1479b2ce732922ce00bdc923ceb1624bf7465b67715"
+    }
+  ],
+  "changed_controller_functions": [
+    "definition",
+    "initialize"
+  ],
+  "checked": [
+    "Full new registry wrapper read. It preserves253 accepted parent entries and provenance, appends all48 packing rows, then all12168 accepted shared reanchorings with complete row provenance; every old prefix equality is asserted.",
+    "Both run02 owner receipts and complete cold registry hash are explicitly bound. The accepted shared census cold raw and compressed hashes, source, compact export, configuration, bank, complete census, dominance and peer review are linked.",
+    "Exact export row order is compared against every independently checked cold row. Each appended capped-row key equals its provenance key, and the total distinct count is asserted12469.",
+    "New add_rows function AST equals frozen v3, but its own module globals explicitly use16384. Imported legacy globals remain256; no inherited function using256 is applied to the enlarged registry.",
+    "Coefficient normalization, finite integer domain bounds, complete native append and exact candidate validation are unchanged frozen functions. Only add_rows uses the larger row cap.",
+    "Complete controller diff read; all13 other function ASTs, including run, replay, ownership and preparation_check, are identical to v4. definition adds the explicit cap; initialize changes only stage text.",
+    "Eight-iteration,300-second owner,180-second cumulative CP,60-second per-call, shared, preparation and cold limits remain unchanged. Registry growth cannot silently drop or replace previous rows."
+  ],
+  "controls_rerun": 0,
+  "identical_controller_functions": [
+    "digest",
+    "canonical",
+    "value_sha",
+    "save",
+    "helper",
+    "prefix_snapshot",
+    "preparation_check",
+    "prepare",
+    "inspect_candidate",
+    "run",
+    "replay",
+    "worker",
+    "owned"
+  ],
+  "initial_registry_rows": 12469,
+  "native_linear_rows": 17150,
+  "native_model_imports": 0,
+  "new_registry_bound": 16384,
+  "optimizer_calls": 0,
+  "reviewer": "master_review",
+  "schema": "conway99.f0.direct-master-v5.independent-source-review.v1",
+  "scope": "Source review only; production still requires accepted current-source optimizer-free preparation and root gate.",
+  "sources": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_direct_master_registry_v5.py",
+      "sha256": "af36bd758df4eb694443a5762c55804027396c68c84e8d15a6399110e75d6fd4"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v5.py",
+      "sha256": "8a3ed24dbf4ff16768e24d608bfd2dc57e8d0db879cb707a28df09dd528d9801"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-seed-configuration04.json",
+      "sha256": "a34afd815e2f95312e5afda0834cba889495b2d5a06815de6fdcce0f46299bcd"
+    }
+  ],
+  "status": "PASS_COMPLETE_NEW_WRAPPER_AND_CONTROLLER_DIFF_NO_SOURCE_BLOCKER"
+}

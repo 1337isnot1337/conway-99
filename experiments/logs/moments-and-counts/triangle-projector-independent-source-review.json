@@ -1,0 +1,35 @@
+{
+  "status": "PASS: independent complete source and mathematical review",
+  "source_path": "experiments/workspace/triangle_incidence_projector_moments.py",
+  "source_sha256": "1e7a8b7380314d6dfd8ff05954a13662bc011378f5759ad675ec1bc281fa19e9",
+  "preparation_path": "/workspace/scratch/ab2f4d4412fd/triangle-projector-preparation01/preparation.json",
+  "preparation_sha256": "a1cb370ae269f0df249309d91c83b4b8d8ef7e30e97952c323b3539b3edb6890",
+  "model_raw_sha256": "2df4f8ad6453ec7af232692518b651f964289b57c752a8881b4f57054e84c17a",
+  "model_gzip_sha256": "d7faf588344d4ffb7ac31eff1e15553db485deb1f0293272a5a583997c162563",
+  "reported_domains": {
+    "root_types": 9,
+    "classes": 352,
+    "lower_entries": 7524,
+    "tensor_nonzeros": 88084
+  },
+  "mathematical_checks": [
+    "For Conway parameters, point-triangle incidence B satisfies BB^T=7I+A. Its inverse is [21(6I-A)+2J]/630, so210I-(1/3)B^T[21(6I-A)+2J]B is PSD.",
+    "Its triangle-pair entries are120 on the diagonal,-20 for one shared vertex, and7c-6 for disjoint triangles with c cross edges. Root-disjoint triangle classes give PSD compressions, and summing labelled root embeddings preserves PSD.",
+    "All triangle root masks are enumerated; nonzero repeated or overlapping masks would violate the visible adjacent cap. Only repeated zero masks are allowed. The recorded free-label stabilizer is not used as a divisor.",
+    "The induced-subset tensor counts actual unlabelled triangle sets and every labelled root map inside each representative graph. Different-class unordered triangle pairs contribute once to a lower-triangle entry; same-class distinct pairs contribute twice. Diagonal triangle pairs contribute once. No extra Aut or factorial normalization is needed.",
+    "For real symmetric M, det(tI+M) has all coefficients nonnegative exactly when M is PSD: a negative eigenvalue would give a positive polynomial root, impossible with nonnegative coefficients and positive leading term.",
+    "The Fraction elimination maintains a congruence on the remaining block. A negative diagonal or a zero-diagonal nonzero off-diagonal gives a rational negative direction; integer scaling and a direct full quadratic check validate it.",
+    "The final induced-count contraction doubles off-diagonal entries, verifies the full quadratic value exactly, and divides by a positive coefficient gcd. Every accepted separator is an exact necessary linear count inequality."
+  ],
+  "byte_bindings_checked": true,
+  "scope": {
+    "subject_imported": false,
+    "catalogue_rebuilt": false,
+    "tensor_rebuilt": false,
+    "host_controls_rerun": false,
+    "characteristic_polynomial_repeated": false,
+    "count_point_loaded": false,
+    "optimizer_called": false
+  },
+  "qualification": "The author preparation controls were read and bound, not rerun. This gate approves the finite exact query logic; it reports no outcome at the count point."
+}

@@ -1,0 +1,71 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-ci-independent-source-review.v1",
+  "status": "PASS_COMPLETE_TRIANGLE_GAP_NATIVE_CI_SOURCE_AND_INTERFACE_REVIEW",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_ci.py",
+    "bytes": 17279,
+    "sha256": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+    "git_blob": "52c27afcedea73b474b8874581ccba4a5f1a1a93"
+  },
+  "producer": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b"
+  },
+  "producer_contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-producer-source-contract01.json",
+    "bytes": 10492,
+    "sha256": "8801a341f7a29ec964415f1a0ceab175eb1bfe678e0a2b66b09cd9b5f3feebcc",
+    "git_blob": "17520fb93fe6bf3cb9156e27143471085fe203c7"
+  },
+  "checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+    "bytes": 52501,
+    "sha256": "d663daa9b3db161710228de58351ca665485a9716784b15955638baf7629ad07",
+    "git_blob": "a930f650fd886299e2645f123be6f54a4f56e217",
+    "review_scope": "Output/CLI and gap_check interface excerpts only; the separate full checker source review belongs to master_continuation."
+  },
+  "reviewer": "/root/master_review",
+  "full_driver_lines_read": 299,
+  "complete_producer_interface_read": true,
+  "checker_control_replay_cli_report_fields_read": true,
+  "constants": {
+    "parent_raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8",
+    "parent_raw_bytes": 39512348,
+    "variables": 80730,
+    "rows": 303951,
+    "total_terms": 3340452,
+    "family_counts": {
+      "gap_triangle_zero": 3156
+    },
+    "family_terms": {
+      "gap_triangle_zero": 3156
+    }
+  },
+  "checks": [
+    "Request and root gate bind the exact driver, producer, checker, configuration and supervisor, one native preparation, zero optimizer calls, no retries and the declared limits.",
+    "Every gate dependency is byte/hash checked before execution and again after all four phases.",
+    "All six worker/owner directories are distinct, absent before invocation and non-nested; terminal output is exclusive-create.",
+    "The producer controls/prepare CLI, required PASS strings, source/config references and native-model flags match the complete frozen producer.",
+    "Each producer owner requires explicit zero child return, reaped child and stopped process group under 15/135-second ownership.",
+    "The independent checker is a separate process under the pinned supervisor. Controls use 10/15 seconds; complete replay uses 120/135 seconds. Its CLI and required no-native/import flags match the inspected checker output.",
+    "The driver compares total terms, family counts/terms, complete original-message preservation, full row-key digest, exact gap_check dictionary and complete model raw identity across producer and checker.",
+    "The independent restoration must equal the pinned 39,512,348-byte parent. Final status is granted only after all four phases and rehashing all dependencies.",
+    "Finally retains existing report, owner, error, restoration, model/suffix/row-ledger archives, initial/owned receipts, supervisor and stages even when a later phase fails.",
+    "The driver has a 420-second acceptance limit, no automatic rebuild, query, solver, parameter sweep or retry."
+  ],
+  "source_execution": {
+    "imported": false,
+    "compiled": false,
+    "controls_run": false,
+    "model_constructed": false,
+    "optimizer_calls": 0
+  },
+  "concrete_blockers": [],
+  "qualifications": [
+    "This is a complete driver source review and targeted producer/checker interface comparison, not a duplicate full mathematical review of the independent native checker.",
+    "The top-level elapsed limit is an acceptance bound; the actual phase processes are bounded by the reused process-group supervisors and the later CI job timeout.",
+    "Actual configuration/request/gate and successful native preparation plus separate replay remain required."
+  ]
+}

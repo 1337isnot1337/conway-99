@@ -1,0 +1,208 @@
+{
+  "status": "exact retained-family attribution and finite partial-matching coverage; no new solve",
+  "source_sha256": "b06321403bb790f0503dd6c0c602bbd27801f7dc61bee4d337a31ce14f019b11",
+  "original_model_sha256": "84793fff0bfbb7bcbeb5b50974dfefad596b4dc72fa35619190eb1b871082883",
+  "original_cnf_sha256": "1f6089828e644e52b2aaebb0d082ec6e9410a6101b26cae9300894f74a8bc80e",
+  "retained_cnf_sha256": "a8c4127d12996380d0ccfe54d9ceacdba0331897a8cc99e48cb636dfcdcd2ec2",
+  "retained_inputs": 23913,
+  "counter_groups_in_full_formula": 595,
+  "retained_clause_attribution_rule": "least indexed group among all exact clause occurrences",
+  "retained_inputs_with_multiple_possible_groups": 0,
+  "retained_input_counts_by_assigned_family": {
+    "Gram": 23222,
+    "original_signature_multiplicity": 147,
+    "additional_core_triple": 544
+  },
+  "assigned_groups_by_family": {
+    "Gram": 361,
+    "original_signature_multiplicity": 33,
+    "additional_core_triple": 11
+  },
+  "Gram_coordinate_type_counts": {
+    "LL": 20,
+    "RL": 60,
+    "RS": 31,
+    "RT": 64,
+    "SL": 58,
+    "ST": 64,
+    "TL": 64
+  },
+  "core_coordinates_in_assigned_Gram_and_triple_groups": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34
+  ],
+  "retained_primary_column_count": 1286,
+  "retained_original_signature_count": 202,
+  "minimal_partial_matchings_covered_by_six_verified_cases": [
+    {
+      "edges": [
+        [
+          0,
+          2
+        ]
+      ],
+      "covered_cases": [
+        0,
+        1
+      ]
+    },
+    {
+      "edges": [
+        [
+          1,
+          2
+        ]
+      ],
+      "covered_cases": [
+        8,
+        21
+      ]
+    },
+    {
+      "edges": [
+        [
+          4,
+          6
+        ]
+      ],
+      "covered_cases": [
+        0,
+        1,
+        8,
+        21
+      ]
+    },
+    {
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          1,
+          5
+        ]
+      ],
+      "covered_cases": [
+        2,
+        3
+      ]
+    },
+    {
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "covered_cases": [
+        2
+      ]
+    },
+    {
+      "edges": [
+        [
+          0,
+          4
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "covered_cases": [
+        3
+      ]
+    },
+    {
+      "edges": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          7
+        ]
+      ],
+      "covered_cases": [
+        2
+      ]
+    },
+    {
+      "edges": [
+        [
+          1,
+          5
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "covered_cases": [
+        3
+      ]
+    }
+  ],
+  "scope": {
+    "case2_only_for_counter_attribution": true,
+    "omitted_counter_does_not_remove_domain_dependence": true,
+    "partial_matching_coverage_is_not_a_new_individual_case_exclusion": true,
+    "solver_called": false,
+    "new_proof_claim": false
+  },
+  "elapsed_seconds": 1.7204572560003726
+}

@@ -1,0 +1,8712 @@
+{
+  "status": "POINT_INDEPENDENT_ROOT49_PREPARATION_PASS",
+  "source_git_blob": "d547df71ef544fc7e36a8580bc9f7bdc311d6871",
+  "bindings": {
+    "commit": "a20ec755c7364c4b7a6e40317e5a7a745224679d",
+    "extraction_git_blob": "e37ba84dab96432460fd4360af0d4de673be1649",
+    "scope_git_blob": "4bc0045ae1447160dbf667a1918e32a9f4e3c454",
+    "scope_sha256": "fd577aca265beb46bee2206ea8d474edcd048d6d0bdc12f4d4d7d4709e607142",
+    "arrays_sha256": "4af4af187681c33af2ce0d64fc1e7c3e7afb30e37eec181c741776883d602533",
+    "tensors_sha256": "84d69eb567b961f8cdce332f66b152a2cac803feb50a5a7b161d67479b31fb5c",
+    "point_git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+    "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+  },
+  "root_type": 49,
+  "root_rows": [
+    48,
+    32,
+    32,
+    32,
+    1,
+    15
+  ],
+  "high_masks": [
+    19,
+    21,
+    22,
+    25,
+    26,
+    28,
+    50,
+    52,
+    56
+  ],
+  "high_mask_uniqueness_reason": "Distinct vertices with the same mask of size at least three would have at least three common neighbors.",
+  "coefficient_normalization": "The sole cached coefficient is 1 in labelled induced embeddings; its coefficient in unlabelled induced counts is Aut(F).",
+  "catalogue_identity_scope": "Catalogue IDs are read from frozen unique-term product rows. All local type/isomorphism consistency and automorphism factors are checked literally; the global catalogue is not regenerated.",
+  "all_pair_edges_forbidden": true,
+  "pair_cases": [
+    {
+      "masks": [
+        19,
+        21
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": false
+    },
+    {
+      "masks": [
+        19,
+        22
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          6
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        19,
+        25
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": false
+    },
+    {
+      "masks": [
+        19,
+        26
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          6
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        19,
+        28
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          6
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        19,
+        50
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        19,
+        52
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        19,
+        56
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        21,
+        22
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          6
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        21,
+        25
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": false
+    },
+    {
+      "masks": [
+        21,
+        26
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          6
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        21,
+        28
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          6
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        21,
+        50
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        21,
+        52
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        21,
+        56
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        22,
+        25
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        22,
+        26
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          6,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        22,
+        28
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          6,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        22,
+        50
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          1,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        22,
+        52
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          2,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        22,
+        56
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          5,
+          6
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        25,
+        26
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          6
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        25,
+        28
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          6
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        25,
+        50
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        25,
+        52
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        25,
+        56
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          0,
+          7
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        26,
+        28
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          6,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        26,
+        50
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          1,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        26,
+        52
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          5,
+          6
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        26,
+        56
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          3,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        28,
+        50
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          5,
+          6
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        28,
+        52
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          2,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        28,
+        56
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          3,
+          7
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "nonedge_allowed": true
+    },
+    {
+      "masks": [
+        50,
+        52
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": false
+    },
+    {
+      "masks": [
+        50,
+        56
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": false
+    },
+    {
+      "masks": [
+        52,
+        56
+      ],
+      "edge_forbidden_witness": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "nonedge_allowed": false
+    }
+  ],
+  "complete_raw_monomials": 256,
+  "complete_supported_monomials": 80,
+  "complete_unsupported_monomials": 176,
+  "supported": [
+    {
+      "atom_index": 0,
+      "global_atom_code": 0,
+      "masks": [],
+      "root_orbit": 0,
+      "literal_graph_rows": [
+        48,
+        32,
+        32,
+        32,
+        1,
+        15
+      ],
+      "cached_product_rows": [
+        0
+      ],
+      "catalogue_type": 49,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 6,
+      "induced_count_coefficient": 6
+    },
+    {
+      "atom_index": 1,
+      "global_atom_code": 32,
+      "masks": [
+        19
+      ],
+      "root_orbit": 1,
+      "literal_graph_rows": [
+        112,
+        96,
+        32,
+        32,
+        65,
+        15,
+        19
+      ],
+      "cached_product_rows": [
+        1
+      ],
+      "catalogue_type": 201,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 2,
+      "global_atom_code": 64,
+      "masks": [
+        21
+      ],
+      "root_orbit": 1,
+      "literal_graph_rows": [
+        112,
+        32,
+        96,
+        32,
+        65,
+        15,
+        21
+      ],
+      "cached_product_rows": [
+        3
+      ],
+      "catalogue_type": 201,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 3,
+      "global_atom_code": 128,
+      "masks": [
+        22
+      ],
+      "root_orbit": 2,
+      "literal_graph_rows": [
+        48,
+        96,
+        96,
+        32,
+        65,
+        15,
+        22
+      ],
+      "cached_product_rows": [
+        6
+      ],
+      "catalogue_type": 194,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 4,
+      "global_atom_code": 160,
+      "masks": [
+        19,
+        22
+      ],
+      "root_orbit": 3,
+      "literal_graph_rows": [
+        112,
+        224,
+        160,
+        32,
+        193,
+        15,
+        19,
+        22
+      ],
+      "cached_product_rows": [
+        3403
+      ],
+      "catalogue_type": 996,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 5,
+      "global_atom_code": 192,
+      "masks": [
+        21,
+        22
+      ],
+      "root_orbit": 3,
+      "literal_graph_rows": [
+        112,
+        160,
+        224,
+        32,
+        193,
+        15,
+        21,
+        22
+      ],
+      "cached_product_rows": [
+        4656
+      ],
+      "catalogue_type": 996,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 6,
+      "global_atom_code": 512,
+      "masks": [
+        25
+      ],
+      "root_orbit": 1,
+      "literal_graph_rows": [
+        112,
+        32,
+        32,
+        96,
+        65,
+        15,
+        25
+      ],
+      "cached_product_rows": [
+        10
+      ],
+      "catalogue_type": 201,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 7,
+      "global_atom_code": 640,
+      "masks": [
+        22,
+        25
+      ],
+      "root_orbit": 4,
+      "literal_graph_rows": [
+        176,
+        96,
+        96,
+        160,
+        193,
+        15,
+        22,
+        25
+      ],
+      "cached_product_rows": [
+        5356
+      ],
+      "catalogue_type": 1001,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 8,
+      "global_atom_code": 1024,
+      "masks": [
+        26
+      ],
+      "root_orbit": 2,
+      "literal_graph_rows": [
+        48,
+        96,
+        32,
+        96,
+        65,
+        15,
+        26
+      ],
+      "cached_product_rows": [
+        15
+      ],
+      "catalogue_type": 194,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 9,
+      "global_atom_code": 1056,
+      "masks": [
+        19,
+        26
+      ],
+      "root_orbit": 3,
+      "literal_graph_rows": [
+        112,
+        224,
+        32,
+        160,
+        193,
+        15,
+        19,
+        26
+      ],
+      "cached_product_rows": [
+        3486
+      ],
+      "catalogue_type": 996,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 10,
+      "global_atom_code": 1088,
+      "masks": [
+        21,
+        26
+      ],
+      "root_orbit": 4,
+      "literal_graph_rows": [
+        112,
+        160,
+        96,
+        160,
+        193,
+        15,
+        21,
+        26
+      ],
+      "cached_product_rows": [
+        4753
+      ],
+      "catalogue_type": 1001,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 11,
+      "global_atom_code": 1152,
+      "masks": [
+        22,
+        26
+      ],
+      "root_orbit": 5,
+      "literal_graph_rows": [
+        48,
+        224,
+        96,
+        160,
+        193,
+        15,
+        22,
+        26
+      ],
+      "cached_product_rows": [
+        5460
+      ],
+      "catalogue_type": 983,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 12,
+      "global_atom_code": 1216,
+      "masks": [
+        21,
+        22,
+        26
+      ],
+      "root_orbit": 6,
+      "literal_graph_rows": [
+        112,
+        416,
+        224,
+        288,
+        449,
+        15,
+        21,
+        22,
+        26
+      ],
+      "cached_product_rows": [
+        4661
+      ],
+      "catalogue_type": 6210,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 13,
+      "global_atom_code": 1536,
+      "masks": [
+        25,
+        26
+      ],
+      "root_orbit": 3,
+      "literal_graph_rows": [
+        112,
+        160,
+        32,
+        224,
+        193,
+        15,
+        25,
+        26
+      ],
+      "cached_product_rows": [
+        6670
+      ],
+      "catalogue_type": 996,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 14,
+      "global_atom_code": 1664,
+      "masks": [
+        22,
+        25,
+        26
+      ],
+      "root_orbit": 6,
+      "literal_graph_rows": [
+        176,
+        352,
+        96,
+        416,
+        449,
+        15,
+        22,
+        25,
+        26
+      ],
+      "cached_product_rows": [
+        5361
+      ],
+      "catalogue_type": 6210,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 15,
+      "global_atom_code": 4096,
+      "masks": [
+        28
+      ],
+      "root_orbit": 2,
+      "literal_graph_rows": [
+        48,
+        32,
+        96,
+        96,
+        65,
+        15,
+        28
+      ],
+      "cached_product_rows": [
+        21
+      ],
+      "catalogue_type": 194,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 16,
+      "global_atom_code": 4128,
+      "masks": [
+        19,
+        28
+      ],
+      "root_orbit": 4,
+      "literal_graph_rows": [
+        112,
+        96,
+        160,
+        160,
+        193,
+        15,
+        19,
+        28
+      ],
+      "cached_product_rows": [
+        3570
+      ],
+      "catalogue_type": 1001,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 17,
+      "global_atom_code": 4160,
+      "masks": [
+        21,
+        28
+      ],
+      "root_orbit": 3,
+      "literal_graph_rows": [
+        112,
+        32,
+        224,
+        160,
+        193,
+        15,
+        21,
+        28
+      ],
+      "cached_product_rows": [
+        4851
+      ],
+      "catalogue_type": 996,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 18,
+      "global_atom_code": 4224,
+      "masks": [
+        22,
+        28
+      ],
+      "root_orbit": 5,
+      "literal_graph_rows": [
+        48,
+        96,
+        224,
+        160,
+        193,
+        15,
+        22,
+        28
+      ],
+      "cached_product_rows": [
+        5565
+      ],
+      "catalogue_type": 983,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 19,
+      "global_atom_code": 4256,
+      "masks": [
+        19,
+        22,
+        28
+      ],
+      "root_orbit": 6,
+      "literal_graph_rows": [
+        112,
+        224,
+        416,
+        288,
+        449,
+        15,
+        19,
+        22,
+        28
+      ],
+      "cached_product_rows": [
+        3409
+      ],
+      "catalogue_type": 6210,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 20,
+      "global_atom_code": 4608,
+      "masks": [
+        25,
+        28
+      ],
+      "root_orbit": 3,
+      "literal_graph_rows": [
+        112,
+        32,
+        160,
+        224,
+        193,
+        15,
+        25,
+        28
+      ],
+      "cached_product_rows": [
+        6786
+      ],
+      "catalogue_type": 996,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 21,
+      "global_atom_code": 4736,
+      "masks": [
+        22,
+        25,
+        28
+      ],
+      "root_orbit": 6,
+      "literal_graph_rows": [
+        176,
+        96,
+        352,
+        416,
+        449,
+        15,
+        22,
+        25,
+        28
+      ],
+      "cached_product_rows": [
+        5362
+      ],
+      "catalogue_type": 6210,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 22,
+      "global_atom_code": 5120,
+      "masks": [
+        26,
+        28
+      ],
+      "root_orbit": 5,
+      "literal_graph_rows": [
+        48,
+        96,
+        160,
+        224,
+        193,
+        15,
+        26,
+        28
+      ],
+      "cached_product_rows": [
+        7260
+      ],
+      "catalogue_type": 983,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 23,
+      "global_atom_code": 5152,
+      "masks": [
+        19,
+        26,
+        28
+      ],
+      "root_orbit": 6,
+      "literal_graph_rows": [
+        112,
+        224,
+        288,
+        416,
+        449,
+        15,
+        19,
+        26,
+        28
+      ],
+      "cached_product_rows": [
+        3492
+      ],
+      "catalogue_type": 6210,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 24,
+      "global_atom_code": 5184,
+      "masks": [
+        21,
+        26,
+        28
+      ],
+      "root_orbit": 6,
+      "literal_graph_rows": [
+        112,
+        160,
+        352,
+        416,
+        449,
+        15,
+        21,
+        26,
+        28
+      ],
+      "cached_product_rows": [
+        4759
+      ],
+      "catalogue_type": 6210,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 25,
+      "global_atom_code": 5248,
+      "masks": [
+        22,
+        26,
+        28
+      ],
+      "root_orbit": 7,
+      "literal_graph_rows": [
+        48,
+        224,
+        352,
+        416,
+        449,
+        15,
+        22,
+        26,
+        28
+      ],
+      "cached_product_rows": [
+        5466
+      ],
+      "catalogue_type": 6202,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 12,
+      "induced_count_coefficient": 12
+    },
+    {
+      "atom_index": 26,
+      "global_atom_code": 268435456,
+      "masks": [
+        50
+      ],
+      "root_orbit": 8,
+      "literal_graph_rows": [
+        48,
+        96,
+        32,
+        32,
+        65,
+        79,
+        50
+      ],
+      "cached_product_rows": [
+        28
+      ],
+      "catalogue_type": 166,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 27,
+      "global_atom_code": 268435488,
+      "masks": [
+        19,
+        50
+      ],
+      "root_orbit": 9,
+      "literal_graph_rows": [
+        112,
+        224,
+        32,
+        32,
+        193,
+        143,
+        19,
+        50
+      ],
+      "cached_product_rows": [
+        3655
+      ],
+      "catalogue_type": 843,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 4,
+      "induced_count_coefficient": 4
+    },
+    {
+      "atom_index": 28,
+      "global_atom_code": 268435520,
+      "masks": [
+        21,
+        50
+      ],
+      "root_orbit": 10,
+      "literal_graph_rows": [
+        112,
+        160,
+        96,
+        32,
+        193,
+        143,
+        21,
+        50
+      ],
+      "cached_product_rows": [
+        4950
+      ],
+      "catalogue_type": 853,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 29,
+      "global_atom_code": 268435584,
+      "masks": [
+        22,
+        50
+      ],
+      "root_orbit": 11,
+      "literal_graph_rows": [
+        48,
+        224,
+        96,
+        32,
+        193,
+        143,
+        22,
+        50
+      ],
+      "cached_product_rows": [
+        5671
+      ],
+      "catalogue_type": 780,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 30,
+      "global_atom_code": 268435648,
+      "masks": [
+        21,
+        22,
+        50
+      ],
+      "root_orbit": 12,
+      "literal_graph_rows": [
+        112,
+        416,
+        224,
+        32,
+        449,
+        271,
+        21,
+        22,
+        50
+      ],
+      "cached_product_rows": [
+        4663
+      ],
+      "catalogue_type": 5259,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 31,
+      "global_atom_code": 268435968,
+      "masks": [
+        25,
+        50
+      ],
+      "root_orbit": 10,
+      "literal_graph_rows": [
+        112,
+        160,
+        32,
+        96,
+        193,
+        143,
+        25,
+        50
+      ],
+      "cached_product_rows": [
+        6903
+      ],
+      "catalogue_type": 853,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 32,
+      "global_atom_code": 268436096,
+      "masks": [
+        22,
+        25,
+        50
+      ],
+      "root_orbit": 13,
+      "literal_graph_rows": [
+        176,
+        352,
+        96,
+        160,
+        449,
+        271,
+        22,
+        25,
+        50
+      ],
+      "cached_product_rows": [
+        5363
+      ],
+      "catalogue_type": 5476,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 33,
+      "global_atom_code": 268436480,
+      "masks": [
+        26,
+        50
+      ],
+      "root_orbit": 11,
+      "literal_graph_rows": [
+        48,
+        224,
+        32,
+        96,
+        193,
+        143,
+        26,
+        50
+      ],
+      "cached_product_rows": [
+        7381
+      ],
+      "catalogue_type": 780,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 34,
+      "global_atom_code": 268436544,
+      "masks": [
+        21,
+        26,
+        50
+      ],
+      "root_orbit": 13,
+      "literal_graph_rows": [
+        112,
+        416,
+        96,
+        160,
+        449,
+        271,
+        21,
+        26,
+        50
+      ],
+      "cached_product_rows": [
+        4760
+      ],
+      "catalogue_type": 5476,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 35,
+      "global_atom_code": 268436992,
+      "masks": [
+        25,
+        26,
+        50
+      ],
+      "root_orbit": 12,
+      "literal_graph_rows": [
+        112,
+        416,
+        32,
+        224,
+        449,
+        271,
+        25,
+        26,
+        50
+      ],
+      "cached_product_rows": [
+        6677
+      ],
+      "catalogue_type": 5259,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 36,
+      "global_atom_code": 268439552,
+      "masks": [
+        28,
+        50
+      ],
+      "root_orbit": 14,
+      "literal_graph_rows": [
+        48,
+        160,
+        96,
+        96,
+        193,
+        143,
+        28,
+        50
+      ],
+      "cached_product_rows": [
+        7750
+      ],
+      "catalogue_type": 812,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 37,
+      "global_atom_code": 268439584,
+      "masks": [
+        19,
+        28,
+        50
+      ],
+      "root_orbit": 15,
+      "literal_graph_rows": [
+        112,
+        352,
+        160,
+        160,
+        449,
+        271,
+        19,
+        28,
+        50
+      ],
+      "cached_product_rows": [
+        3577
+      ],
+      "catalogue_type": 5648,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 38,
+      "global_atom_code": 268439616,
+      "masks": [
+        21,
+        28,
+        50
+      ],
+      "root_orbit": 16,
+      "literal_graph_rows": [
+        112,
+        288,
+        224,
+        160,
+        449,
+        271,
+        21,
+        28,
+        50
+      ],
+      "cached_product_rows": [
+        4858
+      ],
+      "catalogue_type": 5682,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 39,
+      "global_atom_code": 268439680,
+      "masks": [
+        22,
+        28,
+        50
+      ],
+      "root_orbit": 17,
+      "literal_graph_rows": [
+        48,
+        352,
+        224,
+        160,
+        449,
+        271,
+        22,
+        28,
+        50
+      ],
+      "cached_product_rows": [
+        5572
+      ],
+      "catalogue_type": 5208,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 40,
+      "global_atom_code": 268440064,
+      "masks": [
+        25,
+        28,
+        50
+      ],
+      "root_orbit": 16,
+      "literal_graph_rows": [
+        112,
+        288,
+        160,
+        224,
+        449,
+        271,
+        25,
+        28,
+        50
+      ],
+      "cached_product_rows": [
+        6793
+      ],
+      "catalogue_type": 5682,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 41,
+      "global_atom_code": 268440192,
+      "masks": [
+        22,
+        25,
+        28,
+        50
+      ],
+      "root_orbit": 18,
+      "literal_graph_rows": [
+        176,
+        608,
+        352,
+        416,
+        961,
+        527,
+        22,
+        25,
+        28,
+        50
+      ],
+      "cached_product_rows": [
+        7853
+      ],
+      "catalogue_type": 45876,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 42,
+      "global_atom_code": 268440576,
+      "masks": [
+        26,
+        28,
+        50
+      ],
+      "root_orbit": 17,
+      "literal_graph_rows": [
+        48,
+        352,
+        160,
+        224,
+        449,
+        271,
+        26,
+        28,
+        50
+      ],
+      "cached_product_rows": [
+        7267
+      ],
+      "catalogue_type": 5208,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 43,
+      "global_atom_code": 268440640,
+      "masks": [
+        21,
+        26,
+        28,
+        50
+      ],
+      "root_orbit": 18,
+      "literal_graph_rows": [
+        112,
+        672,
+        352,
+        416,
+        961,
+        527,
+        21,
+        26,
+        28,
+        50
+      ],
+      "cached_product_rows": [
+        7847
+      ],
+      "catalogue_type": 45876,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 44,
+      "global_atom_code": 1073741824,
+      "masks": [
+        52
+      ],
+      "root_orbit": 8,
+      "literal_graph_rows": [
+        48,
+        32,
+        96,
+        32,
+        65,
+        79,
+        52
+      ],
+      "cached_product_rows": [
+        36
+      ],
+      "catalogue_type": 166,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 45,
+      "global_atom_code": 1073741856,
+      "masks": [
+        19,
+        52
+      ],
+      "root_orbit": 10,
+      "literal_graph_rows": [
+        112,
+        96,
+        160,
+        32,
+        193,
+        143,
+        19,
+        52
+      ],
+      "cached_product_rows": [
+        3741
+      ],
+      "catalogue_type": 853,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 46,
+      "global_atom_code": 1073741888,
+      "masks": [
+        21,
+        52
+      ],
+      "root_orbit": 9,
+      "literal_graph_rows": [
+        112,
+        32,
+        224,
+        32,
+        193,
+        143,
+        21,
+        52
+      ],
+      "cached_product_rows": [
+        5050
+      ],
+      "catalogue_type": 843,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 4,
+      "induced_count_coefficient": 4
+    },
+    {
+      "atom_index": 47,
+      "global_atom_code": 1073741952,
+      "masks": [
+        22,
+        52
+      ],
+      "root_orbit": 11,
+      "literal_graph_rows": [
+        48,
+        96,
+        224,
+        32,
+        193,
+        143,
+        22,
+        52
+      ],
+      "cached_product_rows": [
+        5778
+      ],
+      "catalogue_type": 780,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 48,
+      "global_atom_code": 1073741984,
+      "masks": [
+        19,
+        22,
+        52
+      ],
+      "root_orbit": 12,
+      "literal_graph_rows": [
+        112,
+        224,
+        416,
+        32,
+        449,
+        271,
+        19,
+        22,
+        52
+      ],
+      "cached_product_rows": [
+        3411
+      ],
+      "catalogue_type": 5259,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 49,
+      "global_atom_code": 1073742336,
+      "masks": [
+        25,
+        52
+      ],
+      "root_orbit": 10,
+      "literal_graph_rows": [
+        112,
+        32,
+        160,
+        96,
+        193,
+        143,
+        25,
+        52
+      ],
+      "cached_product_rows": [
+        7021
+      ],
+      "catalogue_type": 853,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 50,
+      "global_atom_code": 1073742464,
+      "masks": [
+        22,
+        25,
+        52
+      ],
+      "root_orbit": 13,
+      "literal_graph_rows": [
+        176,
+        96,
+        352,
+        160,
+        449,
+        271,
+        22,
+        25,
+        52
+      ],
+      "cached_product_rows": [
+        5364
+      ],
+      "catalogue_type": 5476,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 51,
+      "global_atom_code": 1073742848,
+      "masks": [
+        26,
+        52
+      ],
+      "root_orbit": 14,
+      "literal_graph_rows": [
+        48,
+        96,
+        160,
+        96,
+        193,
+        143,
+        26,
+        52
+      ],
+      "cached_product_rows": [
+        7503
+      ],
+      "catalogue_type": 812,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 52,
+      "global_atom_code": 1073742880,
+      "masks": [
+        19,
+        26,
+        52
+      ],
+      "root_orbit": 16,
+      "literal_graph_rows": [
+        112,
+        224,
+        288,
+        160,
+        449,
+        271,
+        19,
+        26,
+        52
+      ],
+      "cached_product_rows": [
+        3494
+      ],
+      "catalogue_type": 5682,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 53,
+      "global_atom_code": 1073742912,
+      "masks": [
+        21,
+        26,
+        52
+      ],
+      "root_orbit": 15,
+      "literal_graph_rows": [
+        112,
+        160,
+        352,
+        160,
+        449,
+        271,
+        21,
+        26,
+        52
+      ],
+      "cached_product_rows": [
+        4761
+      ],
+      "catalogue_type": 5648,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 54,
+      "global_atom_code": 1073742976,
+      "masks": [
+        22,
+        26,
+        52
+      ],
+      "root_orbit": 17,
+      "literal_graph_rows": [
+        48,
+        224,
+        352,
+        160,
+        449,
+        271,
+        22,
+        26,
+        52
+      ],
+      "cached_product_rows": [
+        5468
+      ],
+      "catalogue_type": 5208,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 55,
+      "global_atom_code": 1073743360,
+      "masks": [
+        25,
+        26,
+        52
+      ],
+      "root_orbit": 16,
+      "literal_graph_rows": [
+        112,
+        160,
+        288,
+        224,
+        449,
+        271,
+        25,
+        26,
+        52
+      ],
+      "cached_product_rows": [
+        6678
+      ],
+      "catalogue_type": 5682,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 56,
+      "global_atom_code": 1073743488,
+      "masks": [
+        22,
+        25,
+        26,
+        52
+      ],
+      "root_orbit": 18,
+      "literal_graph_rows": [
+        176,
+        352,
+        608,
+        416,
+        961,
+        527,
+        22,
+        25,
+        26,
+        52
+      ],
+      "cached_product_rows": [
+        7606
+      ],
+      "catalogue_type": 45876,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 57,
+      "global_atom_code": 1073745920,
+      "masks": [
+        28,
+        52
+      ],
+      "root_orbit": 11,
+      "literal_graph_rows": [
+        48,
+        32,
+        224,
+        96,
+        193,
+        143,
+        28,
+        52
+      ],
+      "cached_product_rows": [
+        7875
+      ],
+      "catalogue_type": 780,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 58,
+      "global_atom_code": 1073745952,
+      "masks": [
+        19,
+        28,
+        52
+      ],
+      "root_orbit": 13,
+      "literal_graph_rows": [
+        112,
+        96,
+        416,
+        160,
+        449,
+        271,
+        19,
+        28,
+        52
+      ],
+      "cached_product_rows": [
+        3578
+      ],
+      "catalogue_type": 5476,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 59,
+      "global_atom_code": 1073746432,
+      "masks": [
+        25,
+        28,
+        52
+      ],
+      "root_orbit": 12,
+      "literal_graph_rows": [
+        112,
+        32,
+        416,
+        224,
+        449,
+        271,
+        25,
+        28,
+        52
+      ],
+      "cached_product_rows": [
+        6794
+      ],
+      "catalogue_type": 5259,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 60,
+      "global_atom_code": 1073746944,
+      "masks": [
+        26,
+        28,
+        52
+      ],
+      "root_orbit": 17,
+      "literal_graph_rows": [
+        48,
+        96,
+        416,
+        224,
+        449,
+        271,
+        26,
+        28,
+        52
+      ],
+      "cached_product_rows": [
+        7268
+      ],
+      "catalogue_type": 5208,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 61,
+      "global_atom_code": 1073746976,
+      "masks": [
+        19,
+        26,
+        28,
+        52
+      ],
+      "root_orbit": 18,
+      "literal_graph_rows": [
+        112,
+        224,
+        800,
+        416,
+        961,
+        527,
+        19,
+        26,
+        28,
+        52
+      ],
+      "cached_product_rows": [
+        7958
+      ],
+      "catalogue_type": 45876,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 62,
+      "global_atom_code": 17179869184,
+      "masks": [
+        56
+      ],
+      "root_orbit": 8,
+      "literal_graph_rows": [
+        48,
+        32,
+        32,
+        96,
+        65,
+        79,
+        56
+      ],
+      "cached_product_rows": [
+        45
+      ],
+      "catalogue_type": 166,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 63,
+      "global_atom_code": 17179869216,
+      "masks": [
+        19,
+        56
+      ],
+      "root_orbit": 10,
+      "literal_graph_rows": [
+        112,
+        96,
+        32,
+        160,
+        193,
+        143,
+        19,
+        56
+      ],
+      "cached_product_rows": [
+        3828
+      ],
+      "catalogue_type": 853,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 64,
+      "global_atom_code": 17179869248,
+      "masks": [
+        21,
+        56
+      ],
+      "root_orbit": 10,
+      "literal_graph_rows": [
+        112,
+        32,
+        96,
+        160,
+        193,
+        143,
+        21,
+        56
+      ],
+      "cached_product_rows": [
+        5151
+      ],
+      "catalogue_type": 853,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 65,
+      "global_atom_code": 17179869312,
+      "masks": [
+        22,
+        56
+      ],
+      "root_orbit": 14,
+      "literal_graph_rows": [
+        48,
+        96,
+        96,
+        160,
+        193,
+        143,
+        22,
+        56
+      ],
+      "cached_product_rows": [
+        5886
+      ],
+      "catalogue_type": 812,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 66,
+      "global_atom_code": 17179869344,
+      "masks": [
+        19,
+        22,
+        56
+      ],
+      "root_orbit": 16,
+      "literal_graph_rows": [
+        112,
+        224,
+        160,
+        288,
+        449,
+        271,
+        19,
+        22,
+        56
+      ],
+      "cached_product_rows": [
+        3412
+      ],
+      "catalogue_type": 5682,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 67,
+      "global_atom_code": 17179869376,
+      "masks": [
+        21,
+        22,
+        56
+      ],
+      "root_orbit": 16,
+      "literal_graph_rows": [
+        112,
+        160,
+        224,
+        288,
+        449,
+        271,
+        21,
+        22,
+        56
+      ],
+      "cached_product_rows": [
+        4665
+      ],
+      "catalogue_type": 5682,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 68,
+      "global_atom_code": 17179869696,
+      "masks": [
+        25,
+        56
+      ],
+      "root_orbit": 9,
+      "literal_graph_rows": [
+        112,
+        32,
+        32,
+        224,
+        193,
+        143,
+        25,
+        56
+      ],
+      "cached_product_rows": [
+        7140
+      ],
+      "catalogue_type": 843,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 4,
+      "induced_count_coefficient": 4
+    },
+    {
+      "atom_index": 69,
+      "global_atom_code": 17179869824,
+      "masks": [
+        22,
+        25,
+        56
+      ],
+      "root_orbit": 15,
+      "literal_graph_rows": [
+        176,
+        96,
+        96,
+        416,
+        449,
+        271,
+        22,
+        25,
+        56
+      ],
+      "cached_product_rows": [
+        5365
+      ],
+      "catalogue_type": 5648,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 70,
+      "global_atom_code": 17179870208,
+      "masks": [
+        26,
+        56
+      ],
+      "root_orbit": 11,
+      "literal_graph_rows": [
+        48,
+        96,
+        32,
+        224,
+        193,
+        143,
+        26,
+        56
+      ],
+      "cached_product_rows": [
+        7626
+      ],
+      "catalogue_type": 780,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 71,
+      "global_atom_code": 17179870240,
+      "masks": [
+        19,
+        26,
+        56
+      ],
+      "root_orbit": 12,
+      "literal_graph_rows": [
+        112,
+        224,
+        32,
+        416,
+        449,
+        271,
+        19,
+        26,
+        56
+      ],
+      "cached_product_rows": [
+        3495
+      ],
+      "catalogue_type": 5259,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 72,
+      "global_atom_code": 17179870272,
+      "masks": [
+        21,
+        26,
+        56
+      ],
+      "root_orbit": 13,
+      "literal_graph_rows": [
+        112,
+        160,
+        96,
+        416,
+        449,
+        271,
+        21,
+        26,
+        56
+      ],
+      "cached_product_rows": [
+        4762
+      ],
+      "catalogue_type": 5476,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 73,
+      "global_atom_code": 17179870336,
+      "masks": [
+        22,
+        26,
+        56
+      ],
+      "root_orbit": 17,
+      "literal_graph_rows": [
+        48,
+        224,
+        96,
+        416,
+        449,
+        271,
+        22,
+        26,
+        56
+      ],
+      "cached_product_rows": [
+        5469
+      ],
+      "catalogue_type": 5208,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 74,
+      "global_atom_code": 17179870400,
+      "masks": [
+        21,
+        22,
+        26,
+        56
+      ],
+      "root_orbit": 18,
+      "literal_graph_rows": [
+        112,
+        416,
+        224,
+        800,
+        961,
+        527,
+        21,
+        22,
+        26,
+        56
+      ],
+      "cached_product_rows": [
+        7722
+      ],
+      "catalogue_type": 45876,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 75,
+      "global_atom_code": 17179873280,
+      "masks": [
+        28,
+        56
+      ],
+      "root_orbit": 11,
+      "literal_graph_rows": [
+        48,
+        32,
+        96,
+        224,
+        193,
+        143,
+        28,
+        56
+      ],
+      "cached_product_rows": [
+        8001
+      ],
+      "catalogue_type": 780,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    },
+    {
+      "atom_index": 76,
+      "global_atom_code": 17179873312,
+      "masks": [
+        19,
+        28,
+        56
+      ],
+      "root_orbit": 13,
+      "literal_graph_rows": [
+        112,
+        96,
+        160,
+        416,
+        449,
+        271,
+        19,
+        28,
+        56
+      ],
+      "cached_product_rows": [
+        3579
+      ],
+      "catalogue_type": 5476,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 77,
+      "global_atom_code": 17179873344,
+      "masks": [
+        21,
+        28,
+        56
+      ],
+      "root_orbit": 12,
+      "literal_graph_rows": [
+        112,
+        32,
+        224,
+        416,
+        449,
+        271,
+        21,
+        28,
+        56
+      ],
+      "cached_product_rows": [
+        4860
+      ],
+      "catalogue_type": 5259,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 78,
+      "global_atom_code": 17179873408,
+      "masks": [
+        22,
+        28,
+        56
+      ],
+      "root_orbit": 17,
+      "literal_graph_rows": [
+        48,
+        96,
+        224,
+        416,
+        449,
+        271,
+        22,
+        28,
+        56
+      ],
+      "cached_product_rows": [
+        5574
+      ],
+      "catalogue_type": 5208,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 1,
+      "induced_count_coefficient": 1
+    },
+    {
+      "atom_index": 79,
+      "global_atom_code": 17179873440,
+      "masks": [
+        19,
+        22,
+        28,
+        56
+      ],
+      "root_orbit": 18,
+      "literal_graph_rows": [
+        112,
+        224,
+        416,
+        800,
+        961,
+        527,
+        19,
+        22,
+        28,
+        56
+      ],
+      "cached_product_rows": [
+        8083
+      ],
+      "catalogue_type": 45876,
+      "labelled_embedding_coefficient": 1,
+      "unrooted_automorphisms": 2,
+      "induced_count_coefficient": 2
+    }
+  ],
+  "unsupported": [
+    {
+      "masks": [
+        19,
+        21
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        3407
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        3408
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        3410
+      ]
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        3493
+      ]
+    },
+    {
+      "masks": [
+        19,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        3663
+      ]
+    },
+    {
+      "masks": [
+        19,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        3664
+      ]
+    },
+    {
+      "masks": [
+        19,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        3750
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        4660
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        4662
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        4664
+      ]
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        4859
+      ]
+    },
+    {
+      "masks": [
+        21,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        4958
+      ]
+    },
+    {
+      "masks": [
+        21,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        4959
+      ]
+    },
+    {
+      "masks": [
+        21,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        5059
+      ]
+    },
+    {
+      "masks": [
+        22,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        5467
+      ]
+    },
+    {
+      "masks": [
+        22,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        5573
+      ]
+    },
+    {
+      "masks": [
+        22,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        5679
+      ]
+    },
+    {
+      "masks": [
+        22,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        5680
+      ]
+    },
+    {
+      "masks": [
+        22,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        5787
+      ]
+    },
+    {
+      "masks": [
+        25,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        6676
+      ]
+    },
+    {
+      "masks": [
+        25,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        6679
+      ]
+    },
+    {
+      "masks": [
+        25,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        6795
+      ]
+    },
+    {
+      "masks": [
+        25,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        6911
+      ]
+    },
+    {
+      "masks": [
+        25,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        6912
+      ]
+    },
+    {
+      "masks": [
+        25,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7030
+      ]
+    },
+    {
+      "masks": [
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7269
+      ]
+    },
+    {
+      "masks": [
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7389
+      ]
+    },
+    {
+      "masks": [
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7390
+      ]
+    },
+    {
+      "masks": [
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7512
+      ]
+    },
+    {
+      "masks": [
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7758
+      ]
+    },
+    {
+      "masks": [
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7759
+      ]
+    },
+    {
+      "masks": [
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7884
+      ]
+    },
+    {
+      "masks": [
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        25
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        21,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        6752
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        6868
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        6985
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        7103
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        7222
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7342
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": [
+        7463
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7585
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7708
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7832
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7957
+      ]
+    },
+    {
+      "masks": [
+        19,
+        22,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        22,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        22,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        25,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7833
+      ]
+    },
+    {
+      "masks": [
+        19,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        8084
+      ]
+    },
+    {
+      "masks": [
+        19,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        19,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        6766
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        6882
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        6999
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        7117
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": [
+        7236
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7356
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7477
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7599
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7846
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": [
+        7971
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        8097
+      ]
+    },
+    {
+      "masks": [
+        21,
+        22,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        22,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        22,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        25,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7972
+      ]
+    },
+    {
+      "masks": [
+        21,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        8098
+      ]
+    },
+    {
+      "masks": [
+        21,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        21,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7363
+      ]
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7484
+      ]
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7729
+      ]
+    },
+    {
+      "masks": [
+        22,
+        25,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7978
+      ]
+    },
+    {
+      "masks": [
+        22,
+        25,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        8104
+      ]
+    },
+    {
+      "masks": [
+        22,
+        25,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        25,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        25,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7854
+      ]
+    },
+    {
+      "masks": [
+        22,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7979
+      ]
+    },
+    {
+      "masks": [
+        22,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        8105
+      ]
+    },
+    {
+      "masks": [
+        22,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        22,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        25,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7865
+      ]
+    },
+    {
+      "masks": [
+        25,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": [
+        7990
+      ]
+    },
+    {
+      "masks": [
+        25,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": [
+        8116
+      ]
+    },
+    {
+      "masks": [
+        25,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        25,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        25,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        25,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        25,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        25,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        25,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        26,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        26,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        26,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        26,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": []
+    },
+    {
+      "masks": [
+        28,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      },
+      "cached_product_rows": []
+    }
+  ],
+  "maximum_population": 4,
+  "five_subset_exclusion_witnesses": [
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        25,
+        26
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        25,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        25,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        25,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        25,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        22,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        25,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        21,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        25,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        22,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        25,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        19,
+        26,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        26,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        26,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        26,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        19,
+        28,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        26,
+        28
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        26,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        26,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        26,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        25,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        21,
+        22,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        25,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          0,
+          4
+        ],
+        "adjacency": 1,
+        "common_neighbors": 2
+      }
+    },
+    {
+      "masks": [
+        21,
+        26,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        26,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        26,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        21,
+        26,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        21,
+        28,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        28,
+        50
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        28,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        28,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        26,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        25,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          4,
+          5
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        22,
+        26,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        26,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        26,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        26,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          1,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        22,
+        28,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          2,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        25,
+        26,
+        28,
+        50,
+        52
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        25,
+        26,
+        28,
+        50,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        25,
+        26,
+        28,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 4
+      }
+    },
+    {
+      "masks": [
+        25,
+        26,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        25,
+        28,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    },
+    {
+      "masks": [
+        26,
+        28,
+        50,
+        52,
+        56
+      ],
+      "visible_violation": {
+        "pair": [
+          3,
+          4
+        ],
+        "adjacency": 0,
+        "common_neighbors": 3
+      }
+    }
+  ],
+  "complete_actual_root_automorphisms": [
+    [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      1,
+      3,
+      2,
+      4,
+      5
+    ],
+    [
+      0,
+      2,
+      1,
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      2,
+      3,
+      1,
+      4,
+      5
+    ],
+    [
+      0,
+      3,
+      1,
+      2,
+      4,
+      5
+    ],
+    [
+      0,
+      3,
+      2,
+      1,
+      4,
+      5
+    ]
+  ],
+  "orbits": [
+    {
+      "orbit": 0,
+      "representative": 0,
+      "members": [
+        0
+      ],
+      "size": 1
+    },
+    {
+      "orbit": 1,
+      "representative": 1,
+      "members": [
+        1,
+        2,
+        6
+      ],
+      "size": 3
+    },
+    {
+      "orbit": 2,
+      "representative": 3,
+      "members": [
+        3,
+        8,
+        15
+      ],
+      "size": 3
+    },
+    {
+      "orbit": 3,
+      "representative": 4,
+      "members": [
+        4,
+        5,
+        9,
+        13,
+        17,
+        20
+      ],
+      "size": 6
+    },
+    {
+      "orbit": 4,
+      "representative": 7,
+      "members": [
+        7,
+        10,
+        16
+      ],
+      "size": 3
+    },
+    {
+      "orbit": 5,
+      "representative": 11,
+      "members": [
+        11,
+        18,
+        22
+      ],
+      "size": 3
+    },
+    {
+      "orbit": 6,
+      "representative": 12,
+      "members": [
+        12,
+        14,
+        19,
+        21,
+        23,
+        24
+      ],
+      "size": 6
+    },
+    {
+      "orbit": 7,
+      "representative": 25,
+      "members": [
+        25
+      ],
+      "size": 1
+    },
+    {
+      "orbit": 8,
+      "representative": 26,
+      "members": [
+        26,
+        44,
+        62
+      ],
+      "size": 3
+    },
+    {
+      "orbit": 9,
+      "representative": 27,
+      "members": [
+        27,
+        46,
+        68
+      ],
+      "size": 3
+    },
+    {
+      "orbit": 10,
+      "representative": 28,
+      "members": [
+        28,
+        31,
+        45,
+        49,
+        63,
+        64
+      ],
+      "size": 6
+    },
+    {
+      "orbit": 11,
+      "representative": 29,
+      "members": [
+        29,
+        33,
+        47,
+        57,
+        70,
+        75
+      ],
+      "size": 6
+    },
+    {
+      "orbit": 12,
+      "representative": 30,
+      "members": [
+        30,
+        35,
+        48,
+        59,
+        71,
+        77
+      ],
+      "size": 6
+    },
+    {
+      "orbit": 13,
+      "representative": 32,
+      "members": [
+        32,
+        34,
+        50,
+        58,
+        72,
+        76
+      ],
+      "size": 6
+    },
+    {
+      "orbit": 14,
+      "representative": 36,
+      "members": [
+        36,
+        51,
+        65
+      ],
+      "size": 3
+    },
+    {
+      "orbit": 15,
+      "representative": 37,
+      "members": [
+        37,
+        53,
+        69
+      ],
+      "size": 3
+    },
+    {
+      "orbit": 16,
+      "representative": 38,
+      "members": [
+        38,
+        40,
+        52,
+        55,
+        66,
+        67
+      ],
+      "size": 6
+    },
+    {
+      "orbit": 17,
+      "representative": 39,
+      "members": [
+        39,
+        42,
+        54,
+        60,
+        73,
+        78
+      ],
+      "size": 6
+    },
+    {
+      "orbit": 18,
+      "representative": 41,
+      "members": [
+        41,
+        43,
+        56,
+        61,
+        74,
+        79
+      ],
+      "size": 6
+    }
+  ],
+  "quotient_coefficients": [
+    [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      1,
+      1,
+      2,
+      2,
+      3,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1,
+      1,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "local_graph_type_isomorphism_comparisons": 372,
+  "automorphism_controls": 7,
+  "same_degree_nonisomorphism_controls": 1,
+  "direct_normalization_controls": [
+    {
+      "masks": [],
+      "host_rows": [
+        48,
+        32,
+        32,
+        32,
+        1,
+        15
+      ],
+      "directly_counted_root_embeddings": 6,
+      "unrooted_automorphisms": 6
+    },
+    {
+      "masks": [
+        19
+      ],
+      "host_rows": [
+        112,
+        96,
+        32,
+        32,
+        65,
+        15,
+        19
+      ],
+      "directly_counted_root_embeddings": 2,
+      "unrooted_automorphisms": 2
+    },
+    {
+      "masks": [
+        19,
+        22
+      ],
+      "host_rows": [
+        112,
+        224,
+        160,
+        32,
+        193,
+        15,
+        19,
+        22
+      ],
+      "directly_counted_root_embeddings": 1,
+      "unrooted_automorphisms": 1
+    },
+    {
+      "masks": [
+        21,
+        22,
+        26
+      ],
+      "host_rows": [
+        112,
+        416,
+        224,
+        288,
+        449,
+        15,
+        21,
+        22,
+        26
+      ],
+      "directly_counted_root_embeddings": 1,
+      "unrooted_automorphisms": 1
+    },
+    {
+      "masks": [
+        22,
+        25,
+        28,
+        50
+      ],
+      "host_rows": [
+        176,
+        608,
+        352,
+        416,
+        961,
+        527,
+        22,
+        25,
+        28,
+        50
+      ],
+      "directly_counted_root_embeddings": 2,
+      "unrooted_automorphisms": 2
+    }
+  ],
+  "deterministic_distribution_controls": 80,
+  "point_loaded": false,
+  "optimizer_called": false
+}

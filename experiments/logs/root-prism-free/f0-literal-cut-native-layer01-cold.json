@@ -1,0 +1,101 @@
+{
+  "schema": "conway99.f0.literal-layer-independent-replay.v1",
+  "status": "PASS: every literal cut and inverse link independently replayed",
+  "source_sha256": "5ff42605875628362849f73bb5cbcc7e4950bf072a3cb40a27114d386656c883",
+  "producer_sha256": "f9af8c9fcafcc070533cc5ad65c788023e782520dcea4a1a3ac46d3636a0badb",
+  "preparation_sha256": "7a6786d7e3871eddcb1d635b662f1d1d0fc960c51de1e878007ee62b000d22ba",
+  "layer_sha256": "dcb44159712f9c9a4f61cc61950c23d62b804a0d57709ca43afb33e3711d2b33",
+  "layer_raw_sha256": "baa27810f7f95c32a5fb88285186f28c52b3812064bbf5ab09cd8fa52b2912c8",
+  "literal_archive_sha256": "051282b7c8256fa3cad6edd9e9490290cfdfa5f6bef46b609bc32bdd63189b63",
+  "literal_archive_raw_sha256": "3877ba7ec41c4f85f2d1623cfc5d20fa0d258c8c8319fa5dcd7313f580ac305e",
+  "specification_sha256": "929703b3a685f95fb28bc6553aef02d5c7f6c879628154c62b8ecfa7d69ba8d5",
+  "counts": {
+    "original_rows": 4416,
+    "original_terms": 442308,
+    "inverse_links": 480,
+    "direct_rows": 4404,
+    "radix_rows": 12,
+    "radix_equalities": 36,
+    "radix_auxiliaries": 60,
+    "added_native_rows": 4920,
+    "added_native_terms": 456084,
+    "final_variables": 32296
+  },
+  "arithmetic": {
+    "maximum_sum_absolute_term_bounds": "783727900923",
+    "whole_final_variable_domain_sum": "38655626228"
+  },
+  "actual_radix_row_synthetic_patterns": {
+    "satisfying": 48,
+    "violating": 0,
+    "total": 48,
+    "production_candidates": 0
+  },
+  "radix_contraction_checks": [
+    {
+      "original_row_sha256": "f0fb95f26b5bb43dc1abee82c61f92ed8ad933c61fb80ae3a2e488c8a95f61aa",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "7a3761c48601f5b77e3715cc065c2e8ce10547daed6aef7ad528e40f2855e951",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "d34822c21b6e78df5d572b4ffb0c9e94d3dc46c223e9acb7d94fcfe4eb78e293",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "4d7b879547b41808917b414134bbb852e3e26254dc3def304364a0338468957f",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "d350d1030ab93ff253c2ae855fcab58acaacdbc5e9daa8df8b29964f41672963",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "16458c1ced504bd25ba3c22fa1522221f6f7ae115a799b71ab2321d23a604a30",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "f10bfa16ac83b7739d94e7067a2171a8c82a595e6b3f4c92720e0e7d1626e776",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "c6f09722a6ca3aabf91913182579b377ad5bb1862a5ecbfc419949c251f63201",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "4552c725472905952a487053de1de0caf1accde58b18434104e54d7e75774e1a",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "c4c536ecbeec47358300e9bd49d9a1060aeb9e03a3beab9042e33dfc3bbfbcfd",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "d470f00e95b46d78cee476c00a06f1b3f04be395364efcd2224d872c6bb3b68f",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    },
+    {
+      "original_row_sha256": "a1c3fda88f65b05b12bff3b14be71bf98a1a868e5e25fe6b74cc1640d7507ca8",
+      "coefficients": 480,
+      "carry_cancellations": 2
+    }
+  ],
+  "seconds": 5.657,
+  "optimizer_calls": 0,
+  "native_model_built": false,
+  "native_model_validator_executed": false,
+  "scope": "Exact finite layer only. Native integration, candidate acceptance, exterior edges and unrestricted graph existence remain separate."
+}

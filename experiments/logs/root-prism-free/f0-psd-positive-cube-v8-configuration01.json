@@ -1,0 +1,151 @@
+{
+  "schema": "conway99.f0.psd-positive-cube-configuration.v1",
+  "sources": {
+    "self": {
+      "path": "experiments/workspace/root_prism_free_f0_psd_positive_cube_census_v8.js",
+      "bytes": 24074,
+      "sha256": "8643c9d3bf1ae6175b315a8a7300c7c34c668fe16e41162f79994f0b341e694a",
+      "git_blob_sha": "9bfc7aa719d97bc23f6457e2729b24825ef1f7ab",
+      "lines": 270
+    },
+    "codec": {
+      "bytes": 8304,
+      "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+      "git_blob_sha": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+      "path": "experiments/workspace/conway99_outage_exact_codec_v8.js"
+    },
+    "parent": {
+      "bytes": 8465,
+      "sha256": "c1ce569b071d244f45aadd95569f695dc72c3a7c131b6290bc36026689da6afd",
+      "git_blob_sha": "a7f9e880e008460a2dd510fca2f30e0813b19ed3",
+      "path": "experiments/workspace/root_prism_free_f0_triangle_schur_v8.js"
+    },
+    "parent_cold": {
+      "bytes": 19889,
+      "sha256": "cc15c3022af605c47c3ad6830066b26faa1ecb8adb07ad57d2b849f44a9f6db3",
+      "git_blob_sha": "c55fc1f908798e9e774a1df34e29d2a153f08cf7",
+      "path": "experiments/workspace/root_prism_free_f0_triangle_schur_independent_cold.js"
+    },
+    "guard": {
+      "bytes": 4336,
+      "sha256": "59b722060098ff95aa57775a3198d62b82ea700e2d636897f32788307a2268ac",
+      "git_blob_sha": "f60140dc6c973c8623ea83c1bfa120bca78e75ed",
+      "path": "experiments/workspace/root_prism_free_f0_psd_cube_guards_v8.js"
+    }
+  },
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "name": "domain",
+      "archive_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "archive_git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "archive_bytes": 52094,
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "raw_bytes": 547862
+    },
+    "kernels": {
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-kernels01.json.gz",
+      "name": "kernels",
+      "archive_sha256": "a49b8309032b2c599c637285f4a4584bb7d55659640e594df1e6fdd50bf826c1",
+      "archive_git_blob": "eb5103adaeeb66fd424f672272f35e0516da1c44",
+      "archive_bytes": 453951,
+      "raw_sha256": "a963a88606a9fad78576d711f6ef7bf67eb03032176cebc2af5af700ea7c6708",
+      "raw_bytes": 1405171
+    },
+    "audit": {
+      "bytes": 4489,
+      "sha256": "d8031c629bfb9f5b050c55e218b872aa68a0de08a84abff99da5e029fe572c75",
+      "git_blob_sha": "a7ed9d7d07e7b48e3facb4fd651451e1a872880a",
+      "path": "experiments/logs/root-prism-free/f0-full-core-schur-independent-audit.json"
+    },
+    "parent_forward": {
+      "bytes": 1600480,
+      "sha256": "7027feb1a77cb8131371bb10823ec7e5e8b6a33f5281a0b27881ee2f6b088155",
+      "git_blob_sha": "44f7d8c605a1f6fab51c89fed44b9233c8215b21",
+      "path": "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-census01.json"
+    },
+    "parent_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-configuration01.json",
+      "bytes": 2596,
+      "sha256": "32a7dd094c2a40fa467016c9bc5185e3b57a629759d511120ce211d04b261cfd",
+      "git_blob_sha": "e742a5ad2df735a2958b175d59b64d81c82f8c05"
+    },
+    "parent_cold": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold01.json",
+      "bytes": 5447714,
+      "sha256": "5436baf4d22a0d6b929162176029a1defa13ecb4446f2436655b22aa1b2de9c1",
+      "git_blob_sha": "58d2facfff6e29f2d8d5b2e8232f072758a3cc1c"
+    },
+    "parent_cold_configuration": {
+      "bytes": 3875,
+      "sha256": "c363820f64f487ea7beb03f6b939fb8e855f0e6153dcba3b2e522784d275eae3",
+      "git_blob_sha": "b5a031e89f56938f5032dad7d3699adcc634a85a",
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-configuration01.json"
+    },
+    "guard_controls": {
+      "bytes": 812,
+      "sha256": "1a887a883bc8560803f073915736ff4d7e0d7c11a0849da3652fc0cc90f50462",
+      "git_blob_sha": "3ae04f38d6593d2c95c83f7d25bc8e2c23bb23cb",
+      "path": "experiments/logs/root-prism-free/f0-psd-cube-guard-v8-controls01.json"
+    }
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-controls01.json",
+    "bytes": 895,
+    "sha256": "1709285bfdbbbb59dddd3ca115f5c1f44f117577b2cafcb4a3afe630db1463d8",
+    "git_blob_sha": "b6411bf6d09608707290aea07930e6de0f2bfce4"
+  },
+  "old_edge_zero_pruning": false,
+  "positive_cubes_only": true,
+  "limits": {
+    "maximum_ms": 60000,
+    "maximum_triangles": 10830,
+    "maximum_patterns": 86640,
+    "maximum_cube_origins": 32490,
+    "maximum_unique_rows": 32490,
+    "maximum_serialized_bytes": 33554432
+  },
+  "expected": {
+    "original_eligible_edges": 68394,
+    "parent_disjoint_eligible_triangles": 1179048,
+    "complete_negative_triples": 10830,
+    "matrices": 173280,
+    "principal_minors": 1212960,
+    "negative_list_value_sha256": "60dd838a427e23b5d3c773e7eb8ecb9852e77a88bd0d9e1ac647e51be7965ff8"
+  },
+  "execution": {
+    "main_requires_root_and_peer_source_gate": true,
+    "main_runs_authorized_by_this_preparation": 0,
+    "planned_main_runs": 1,
+    "retries": 0,
+    "arithmetic": "BigInt in both families for all seven principal minors",
+    "environment": "Pure JavaScript V8 isolate; no local process or external executor",
+    "cooperative_time_bound_ms": 60000,
+    "native_model_builds": 0,
+    "optimizer_calls": 0
+  },
+  "scope": {
+    "selectors_all_one_for_pattern_classification": true,
+    "edge_bits": [
+      "ab",
+      "ac",
+      "bc"
+    ],
+    "all_eight_patterns_per_triple": true,
+    "positive_only_cubes": true,
+    "old_zero_rows_removed_before_PSD_classification": false,
+    "old_path_or_prism_rows_used": false,
+    "all_full_universe_positive_cubes_contain_pattern111": true,
+    "parent_complete_negative_list_cold_required": true,
+    "PSD_compatibility_is_not_graph_feasibility": true,
+    "coverage_of_every_forbidden_pattern_claimed": false,
+    "zero_and_single_edge_positive_cubes_require_selector_guards": true,
+    "two_edge_paths_homogenized_to_center_selector": true,
+    "literal_row_dedup_includes_full_terms_and_bounds": true,
+    "all_cube_origins_and_minimality_witnesses_preserved": true,
+    "each_parent_triangle_cover_has_explicit_linear_dominance_witness": true,
+    "newness_against_existing_constraints_unclaimed": true
+  },
+  "intended_result_path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01.json",
+  "intended_finalization_path": "experiments/logs/root-prism-free/f0-psd-positive-cube-v8-census01-finalization.json"
+}

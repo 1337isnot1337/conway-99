@@ -1,0 +1,29 @@
+{
+  "status": "PASS: independent read-only mathematical and API review",
+  "subject_source": "experiments/workspace/grid_free_order10_r6s2_point_scan.py",
+  "subject_source_sha256": "7bb2542e4e69cadade0f096ee578252a804a1c0ff2e0e2d555ce943886654a11",
+  "reviewer_lane": "unrestricted_completion",
+  "cache_coverage": [
+    "Distinct normalized admissible flags have exactly the prepared complete-domain cardinality for every cached root.",
+    "Root rows, catalogue types, flag degree and cap conditions, tensor shape, positive integer coefficients, and f0*fi identity rows are checked.",
+    "Combined and per-part cache hashes, producer hashes, exact root sets, and absence of duplicate roots are bound.",
+    "Complete cached-family, selected55-family, and full62-family statuses are distinct. The count-loop assembly separately requires all62 roots."
+  ],
+  "exact_sign_gate": [
+    "A candidate direction is accepted only after its full integer quadratic form is strictly negative.",
+    "The induced count form and core count form use positive gcd normalization, with exact value identities checked.",
+    "The stored proposal value is an exact rational number and is strictly negative.",
+    "Replay reconstructs every accepted quadratic and count form and checks all stored cut coefficients."
+  ],
+  "scope_checks": [
+    "No binary diagonal identity is imposed on a two-free flag. Cached products supply the complete diagonal entries.",
+    "Only identically zero exact matrix rows may be removed by the inherited direction finder.",
+    "Timeout leaves complete_scan false; a scan without a confirmed negative direction is not a PSD certificate.",
+    "The FullScanner constructor and scan/replay schemas match the reviewed grid_free_order10_r6s2_loop.py call sites."
+  ],
+  "scanner_imported_or_run": false,
+  "dense_reduction_loaded": false,
+  "tensor_construction_rebuilt": false,
+  "optimizer_called": false,
+  "claim": "No soundness or coverage defect found in the reviewed source. This is a code and mathematical reduction audit, not an independent replay of a new numerical scan."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "FAILED_PREPARATION: equivalent serialized data had differing Python dictionary key types",
+  "source_snapshot": "experiments/workspace/root_prism_free_f0_schur_path_model_v1.py",
+  "source_sha256": "76f8259821214fc256c830fdc69fdc7120457590343649d02d4f1ec50de0eb44",
+  "model_saved": false,
+  "optimizer_calls": 0,
+  "cause": "The census control histogram has integer Python keys; JSON reload has string keys. Direct object equality fails, while the entire canonical JSON bytes match exactly.",
+  "correction": "Use the complete canonical JSON equality already used by the frozen census replay. No mathematical data changes.",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_schur_path_model.py",
+      "sha256": "76f8259821214fc256c830fdc69fdc7120457590343649d02d4f1ec50de0eb44"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_schur_path_model_v1.py",
+      "sha256": "76f8259821214fc256c830fdc69fdc7120457590343649d02d4f1ec50de0eb44"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-model01-preparation.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-model01-preparation.stderr.log",
+      "sha256": "832fce11c1e2ef41d1ee7e1d671815c2b3caf72f84d9ed100a64c0538a065a64"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-schur-path-model01-representation-diagnostic.json",
+      "sha256": "79a6086f5894baa6a62da64a3df3753ecec437f5de4112468d67fa29830d633e"
+    }
+  ]
+}

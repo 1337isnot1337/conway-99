@@ -1,0 +1,56 @@
+{
+  "status": "cold full domain/original-CNF/30 exact conflicts/60 exact thresholds replay PASS",
+  "model_sha256": "51268b36baee6ba62c7925ab85a18724d5e9b28006cb2a62f6bd3228f862346a",
+  "source_hashes": {
+    "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+    "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "base_cnf_sha256": "e76d9cb74cc1b907c5af37fe224b278181d6e5d052de691f7d86cabb6b028b4d",
+  "cnf_sha256": "b0ca3f15a6d2c9e27f82af783cb62c1ecc27376e53f5820105c49d6fd7b72738",
+  "case_index": 4,
+  "formula": {
+    "primary_columns": 1214,
+    "variables": 134852,
+    "clauses": 261071,
+    "original_variables": 107207,
+    "original_clauses": 218863,
+    "certified_Gram_conflict_clauses": 30,
+    "exact_exterior_row_cuts": 60,
+    "weighted_threshold_clauses": 42178,
+    "weighted_threshold_auxiliary_variables": 27645,
+    "weighted_threshold_branch_states": 27716,
+    "largest_cut_branch_states": 13352,
+    "largest_cut_auxiliary_variables": 13345,
+    "largest_normalized_demand": 885,
+    "threshold_demand_histogram": {
+      "1": 26,
+      "2": 11,
+      "3": 7,
+      "4": 3,
+      "5": 3,
+      "7": 2,
+      "8": 3,
+      "15": 1,
+      "27": 1,
+      "39": 1,
+      "86": 1,
+      "885": 1
+    },
+    "forced_absent_columns": [
+      1080,
+      1081
+    ],
+    "actual_cut_complete_input_control_assignments": 586,
+    "unchanged_original_clause_body_sha256": "3941a91cefacff9c6d8fa4e2b37f7ee728a40d875dd764418823e66314980c6d",
+    "added_clause_body_sha256": "5cdd890941eeb578594f45dcfe0f4728d3d58793e4f2bc35dc1290a8ef5f4261"
+  },
+  "all60_integer_potential_certificates_rechecked": true,
+  "all_original_clauses_preserved": true,
+  "whole_local_set_excluded": false,
+  "full_graph": false
+}

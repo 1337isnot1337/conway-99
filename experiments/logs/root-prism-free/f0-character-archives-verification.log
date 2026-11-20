@@ -1,0 +1,45 @@
+{
+  "status": "PASS: all four native byte targets match their lossless archives",
+  "source_sha256": "46420b87ac917246370cee06242613d75a862a40d2d399f415a263345057b214",
+  "mode": "verify",
+  "targets": [
+    {
+      "archive": "experiments/logs/root-prism-free/f0-population-products-cpsat01/model.pb.gz",
+      "archive_sha256": "37f744fd78fde8f3d6ca28ea4bcc63205299fb8c947b5212667ee08212b5f266",
+      "target": "experiments/logs/root-prism-free/f0-population-products-cpsat01/model.pb",
+      "target_sha256": "aa43ef31991213634b0cc812b61a5d1247c1915c6690def64a54247854ee8589",
+      "bytes": 11588655,
+      "already_present_and_equal": true,
+      "restored": false
+    },
+    {
+      "archive": "experiments/logs/root-prism-free/f0-population-profile-cpsat01/model.pb.gz",
+      "archive_sha256": "e1bd3e50c48f0a600a202aabbeecc80627fc4b6b1096ef32cdd8c17c8ed7d431",
+      "target": "experiments/logs/root-prism-free/f0-population-profile-cpsat01/model.pb",
+      "target_sha256": "500ab3e32622fe59eb45044a5d2610b087c030786df821ee06b85c8f0f3d21ef",
+      "bytes": 11647585,
+      "already_present_and_equal": true,
+      "restored": false
+    },
+    {
+      "archive": "experiments/logs/root-prism-free/f0-character-cpsat01/model.pb.gz",
+      "archive_sha256": "81acda719e5d7a65ccfeb95bcd956785ee9283d60630aed2f8933599933f3f57",
+      "target": "experiments/logs/root-prism-free/f0-character-cpsat01/model.pb",
+      "target_sha256": "5b43e3c026dbe71fcc8d072aa1790b80f7a81312e7b1ebf36a37612b2f726eeb",
+      "bytes": 12498481,
+      "already_present_and_equal": true,
+      "restored": false
+    },
+    {
+      "archive": "experiments/logs/root-prism-free/f0-character-cpsat01/model.pb.gz",
+      "archive_sha256": "81acda719e5d7a65ccfeb95bcd956785ee9283d60630aed2f8933599933f3f57",
+      "target": "experiments/logs/root-prism-free/f0-character-query-run01/constructed-model.pb",
+      "target_sha256": "5b43e3c026dbe71fcc8d072aa1790b80f7a81312e7b1ebf36a37612b2f726eeb",
+      "bytes": 12498481,
+      "already_present_and_equal": true,
+      "restored": false
+    }
+  ],
+  "optimizer_calls": 0,
+  "existing_files_overwritten": false
+}

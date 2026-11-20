@@ -1,0 +1,45 @@
+{
+  "schema": "conway99.exact_original_coordinate_replay.v1",
+  "status": "PASS: independent upper-five identity and complete native-capacity subset replay",
+  "checker_sha256": "4af37aa58a948e27124d42f5bb9bd9f6e410ede54af3f0e9fbf4e23d64cef525",
+  "native_sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476",
+  "face_sha256": "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3",
+  "proof_sha256": "1655bac4e5a5a558e58e0a685aa4dc94489ef5bfb8f065afe43ac8a6ddcd3b1f",
+  "projection_sha256": "795aaaba3743f3930c1c6c3e2cb69123704bf581669ff9690ef74804b6d5c8d9",
+  "arithmetic": {
+    "all_original_coordinates_checked": 1214,
+    "parity_rows": 50,
+    "parity_rhs": 81,
+    "upper_rows": 4,
+    "upper_rhs": 5,
+    "positive_residual_columns": 38,
+    "new_conditional_zeros": 31,
+    "new_conditional_H_zeros": [
+      28,
+      80,
+      807,
+      1016,
+      1017
+    ]
+  },
+  "census": {
+    "original_projected_rows_before_dedup": 142,
+    "extension_tests": 68995,
+    "counts": [
+      1,
+      42,
+      524,
+      2302,
+      2903,
+      996,
+      0,
+      0
+    ],
+    "method": "Every feasible subset is generated from its unique saved increasing prefix; direct original-row evaluation checks each extension."
+  },
+  "tampered_proofs_rejected": 4,
+  "seconds": 3.523,
+  "optimizer_calls": 0,
+  "full_coordinate_cover_census_repeated": false,
+  "scope": "Necessary H projection only. It does not prove any retained H subset extends, exclude H=5, or exclude case4."
+}

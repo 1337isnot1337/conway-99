@@ -1,0 +1,89 @@
+name: Conway 99 complete rook LP preparation
+
+on:
+  push:
+    branches: [research/global-constraints-ab2f]
+    paths:
+      - .github/workflows/conway99-rook-lp-prepare.yml
+      - experiments/logs/session-ab2f/rook-case4-complete-lp-prepare-request.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: conway99-rook-lp-prepare-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  complete-preparation:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Check out the reviewed source and public inputs
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/workspace/rook_case4_complete_lp_recovery.py
+            /experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json
+            /experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lazy-native-model.json
+            /experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lazy-native-registry.bin.gz
+            /experiments/logs/session-ab2f/rook-case4-complete-lp-recovery-expected.json
+            /experiments/logs/session-ab2f/rook-case4-complete-lp-recovery-root-gate.json
+            /experiments/logs/session-ab2f/rook-case4-complete-lp-prepare-request.json
+            /experiments/workspace/rook_case4_gram_native_evaluation.js
+            /experiments/logs/session-ab2f/rook-case4-gram-support-result.json
+      - name: Check the frozen preparation gate
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, pathlib
+          folder = pathlib.Path("experiments/logs/session-ab2f")
+          expected = json.loads((folder / "rook-case4-complete-lp-recovery-expected.json").read_text())
+          gate = json.loads((folder / "rook-case4-complete-lp-recovery-root-gate.json").read_text())
+          request = json.loads((folder / "rook-case4-complete-lp-prepare-request.json").read_text())
+          source = pathlib.Path(expected["source"]["path"])
+          assert hashlib.sha256(source.read_bytes()).hexdigest() == expected["source"]["sha256"] == gate["source_sha256"]
+          assert gate["optimizer_allowed"] is False and request["optimizer_allowed"] is False
+          assert request["mode"] == "prepare-and-cold-replay"
+          compile(source.read_text(), str(source), "exec")
+          PY
+      - name: Install the pinned array dependency
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m venv "$RUNNER_TEMP/conway99-rook-env"
+          "$RUNNER_TEMP/conway99-rook-env/bin/python" -m pip install --disable-pip-version-check numpy==2.3.5
+      - name: Prepare every exact row and replay from public inputs
+        shell: bash
+        run: |
+          set -euo pipefail
+          "$RUNNER_TEMP/conway99-rook-env/bin/python" experiments/workspace/rook_case4_complete_lp_recovery.py prepare --directory "$RUNNER_TEMP/conway99-rook-preparation"
+          "$RUNNER_TEMP/conway99-rook-env/bin/python" experiments/workspace/rook_case4_complete_lp_recovery.py replay --model "$RUNNER_TEMP/conway99-rook-preparation/model.json" --output "$RUNNER_TEMP/conway99-rook-preparation/cold.json"
+          node experiments/workspace/rook_case4_gram_native_evaluation.js experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json experiments/logs/session-ab2f/rook-case4-gram-support-result.json "$RUNNER_TEMP/conway99-rook-preparation/gram-native-evaluation.json"
+      - name: Print durable exact preparation records
+        if: always()
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import os, pathlib, sys
+          folder = pathlib.Path(os.environ["RUNNER_TEMP"]) / "conway99-rook-preparation"
+          for name in ("model.json", "preparation.json", "cold.json", "gram-native-evaluation.json"):
+              path = folder / name
+              if path.is_file():
+                  tag = name.replace(".", "_").replace("-", "_").upper()
+                  sys.stdout.write("CONWAY99_ROOK_" + tag + "_BEGIN\n")
+                  sys.stdout.write(path.read_text())
+                  sys.stdout.write("CONWAY99_ROOK_" + tag + "_END\n")
+          PY
+      - name: Retain the complete exact matrix and reports
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: conway99-rook-preparation-${{ github.sha }}
+          path: ${{ runner.temp }}/conway99-rook-preparation/
+          if-no-files-found: error
+          retention-days: 7

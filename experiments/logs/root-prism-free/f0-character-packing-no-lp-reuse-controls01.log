@@ -1,0 +1,54 @@
+{
+  "checks": {
+    "query": {
+      "AST_identical_functions": [
+        "canonical",
+        "choose_rows",
+        "construct_initial",
+        "evaluate_proto",
+        "file_sha",
+        "load_source",
+        "load_target",
+        "pool_scan",
+        "provisional_record",
+        "run",
+        "save",
+        "sha",
+        "worker"
+      ],
+      "added_functions": [
+        "native_parameter_controls"
+      ],
+      "changed_functions": [
+        "check_preparation",
+        "configuration",
+        "native_parameters",
+        "reuse_controls"
+      ],
+      "source_sha256": "f3f704371307da14ab035eed1b2a7345bb1725babf0f01cc8e06d5b7e26475e7",
+      "whole_AST_transformation_passed": true,
+      "whole_text_transformation_passed": true
+    },
+    "replay": {
+      "AST_identical_functions": [
+        "artifact",
+        "owned",
+        "read_record",
+        "sha"
+      ],
+      "added_functions": [],
+      "changed_functions": [
+        "replay"
+      ],
+      "source_sha256": "9aad245010f752f26f57566eaa2e3730200898f5f32e242c1ca32b4a98c023e7",
+      "whole_AST_transformation_passed": true,
+      "whole_text_transformation_passed": true
+    }
+  },
+  "ledger_sha256": "db440f4b0f80fce0c4800b90e9b2e3d2ccb6c41ac95d28f9733c2b19d6934c29",
+  "model_reconstruction": false,
+  "optimizer_calls": 0,
+  "source_sha256": "d5a878b531ca41f7dbe3413e64975bc20888147ad5ab81ef4b528d2deffd0721",
+  "status": "PASS: complete no-LP parameter/provenance source delta",
+  "subject_imports": false
+}

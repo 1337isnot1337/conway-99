@@ -1,0 +1,39 @@
+{
+  "status": "coordinator review PASS; one bounded scan authorized",
+  "files": [
+    {
+      "path": "experiments/workspace/grid_free_order10_four_boolean_domains.py",
+      "sha256": "52ab6687063ca4e16930013cbb159658337e8f8ce007f3d82c1d39d3c9a042d6"
+    },
+    {
+      "path": "experiments/workspace/grid_free_order10_four_boolean_scan.py",
+      "sha256": "5a97b204d8830af614f22c6e72f6ca4c120ec5c6a31320b4b8841c7e0ce19286"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-four-boolean-domains.json.gz",
+      "sha256": "5fd508dba5bcda5aeb8231ab39dd6b68df5c55ffffebb98b7344e874155bef35"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-four-boolean-scan01-preparation.json",
+      "sha256": "bc4f2a425518f493a672869d57f3134e80e1ebb0f448ce60235cf947cb9bf697"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-four-boolean-independent-review.json",
+      "sha256": "a1ff1c8aadcd77bb03e23659aabd309a53d071d8a5d4b83458afb4a070ebd952"
+    }
+  ],
+  "review": [
+    "complete high-mask and both-edge pair domains checked",
+    "distinct high masks force distinct free labels; no off-diagonal factor or automorphism divisor",
+    "all679054 maximal marginals cover every at-most-four marginal",
+    "all327655 existing product-row references are frozen and cold-replayed",
+    "positive exact contraction bounds and1024-product-value transform bound protect int64 arithmetic",
+    "all atom sums must reproduce exact root count; negative forms require separate literal replay"
+  ],
+  "authorized": {
+    "scans": 1,
+    "seconds": 60,
+    "optimizer_calls": 0
+  },
+  "no_graph_existence_claim": true
+}

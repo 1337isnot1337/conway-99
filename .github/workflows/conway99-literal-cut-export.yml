@@ -1,0 +1,44 @@
+name: Conway 99 exact literal cut export
+
+on:
+  push:
+    branches: [research/global-constraints-ab2f]
+    paths:
+      - .github/workflows/conway99-literal-cut-export.yml
+      - experiments/logs/root-prism-free/f0-literal-cut-export-request01.json
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: conway99-literal-cut-export-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  exact-export:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Check out the frozen public input and reviewed export source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /experiments/workspace/conway99_f0_literal_rows_export.py
+            /experiments/logs/root-prism-free/f0-literal-cut-export-request01.json
+            /experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz
+      - name: Export exact rows with a sixty-second process bound
+        shell: bash
+        run: |
+          set -euo pipefail
+          timeout --signal=TERM 60s python3 experiments/workspace/conway99_f0_literal_rows_export.py --directory "$RUNNER_TEMP/conway99-literal-cut-export"
+      - name: Retain the exported exact rows and source-bound report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: conway99-literal-cut-export-${{ github.sha }}
+          path: ${{ runner.temp }}/conway99-literal-cut-export/
+          if-no-files-found: error
+          retention-days: 7

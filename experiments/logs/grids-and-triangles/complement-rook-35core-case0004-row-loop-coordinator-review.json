@@ -1,0 +1,24 @@
+{
+  "status": "complete continuation source and mathematical scope review PASS",
+  "source_sha256": "b8992691bf5e56bfdc84450de64c36f43dbd3c0927973f334e00ce2d50f0c16a",
+  "preparation_sha256": "57d1e671267ff35f8226c140a248f76076239575ba38517d332a9f6daa2cd7a9",
+  "reviewed": [
+    "All397 original equality rows, prior capacity bounds and30 no-goods retained.",
+    "Every new inequality uses the full exact eligible domain and positive integer row demand.",
+    "Standard form adds a distinct nonnegative slack to each less-than-or-equal row.",
+    "Exact Farkas replay checks nonnegative primary and slack coefficients and strictly negative right-hand-side sum.",
+    "Floating points and sanitized-support gaps are discovery only; no exact feasibility claim.",
+    "All positive sanitized-support rows are visited unless the explicit60-second or nonoptimal-status stop applies.",
+    "Replay binds the cut prefix used by every global LP and verifies all integer cuts."
+  ],
+  "authorized_query_scope": {
+    "matching_case": 4,
+    "maximum_rounds": 5,
+    "requested_total_seconds": 60,
+    "maximum_global_query_seconds": 10,
+    "maximum_row_query_seconds": 2,
+    "SAT_queries": 0
+  },
+  "source_or_result_mutated": false,
+  "solver_or_optimizer_called": false
+}

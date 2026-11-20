@@ -1,0 +1,143 @@
+{
+  "schema": "conway99.source_review.v1",
+  "status": "PASS: exact full Fourier specification source review; finite preparation authorized",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_full_fourier_specification.py",
+    "sha256": "e22badc7cacd870898a5f077b5cc82db2b929d3d20704b7cf8103a74639a6915"
+  },
+  "source_read_in_full": true,
+  "supervisor": {
+    "path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+    "sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278"
+  },
+  "dependencies": [
+    {
+      "kind": "SOURCES",
+      "name": "algebra",
+      "path": "experiments/workspace/root_prism_free_f0_nonabelian_pair_factorization.py",
+      "sha256": "790a929c65898d2a3bb038c9877d73dc022aa9c66d3983efe8a77ad833383871"
+    },
+    {
+      "kind": "SOURCES",
+      "name": "inverse",
+      "path": "experiments/workspace/root_prism_free_f0_character_literal_lift.py",
+      "sha256": "3bf7f92502592bcda0b4dc71868a6745888c608b26d3f8e42f2771cf180c7252"
+    },
+    {
+      "kind": "SOURCES",
+      "name": "parent",
+      "path": "experiments/workspace/root_prism_free_f0_character_y_domain_overlay.py",
+      "sha256": "ff08cbcaec6787d5821af57526a708e1758007970bec58c86584bcd3d76904dd"
+    },
+    {
+      "kind": "SOURCES",
+      "name": "supervisor",
+      "path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+      "sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "algebra",
+      "path": "experiments/logs/root-prism-free/f0-nonabelian-pair-factorization01.json.gz",
+      "sha256": "627577aea4a25c15e5d2846242adda9c6b7c97164b7ba47fb9a2cab5d3988fd8"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "algebra_source_review",
+      "path": "experiments/logs/root-prism-free/f0-nonabelian-pair-factorization-literature-review.json",
+      "sha256": "c39fcb87ac886463aa3124dc946fab387fb3a739951956f25848b476a9eba86b"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "algebra_note_review",
+      "path": "experiments/logs/root-prism-free/f0-nonabelian-pair-factorization-note-literature-review.json",
+      "sha256": "49a6c199098c8f76591efe6bbb602373093f9267d7b6cc524a53eca9d6c8dd09"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "scope",
+      "path": "experiments/logs/root-prism-free/f0-two-dimensional-moments-scope01.json",
+      "sha256": "948e256945fc817cc75ea46c969c055b21e61832a4f2177c481884e73338223f"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "inverse",
+      "path": "experiments/logs/root-prism-free/f0-character-literal-lift-preparation01.json.gz",
+      "sha256": "241cd14c61b465025c72ffcaa65af8e5c48e9e5a0eda7ea7d252e9d74b22db1e"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "inverse_cold",
+      "path": "experiments/logs/root-prism-free/f0-character-literal-lift-preparation01-cold.json",
+      "sha256": "6cebe725527eaf28f3d075a3ad9741fcbcf50cdedd42107bdc5ebcbe857da72f"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "characters",
+      "path": "experiments/logs/root-prism-free/f0-character-populations01.json.gz",
+      "sha256": "139d06a3383f8fc79d677972ce052ce29966e8b3406e7d1e7d1077aea7c2cef6"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "moments",
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+      "sha256": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "phase",
+      "path": "experiments/logs/root-prism-free/f0-character-phase-normalization01.json",
+      "sha256": "737389ccfd5290072e8dd4cb12a63bfa3a6cae2d10a6ece2793c0a891aff7e04"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "phase_cold",
+      "path": "experiments/logs/root-prism-free/f0-character-phase-normalization01-cold.json",
+      "sha256": "56c67d0049db09454abc33d2801a9a66edb0b75e120df8c5f6c07f9ce65fb36b"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "parent_plan",
+      "path": "experiments/logs/root-prism-free/f0-character-y-domain-overlay01/plan.json.gz",
+      "sha256": "4d3a13718cdac9fcf68b119a1cd1ba009edeb21c7257d4498d5ebdf18954acc4"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "parent_preparation",
+      "path": "experiments/logs/root-prism-free/f0-character-y-domain-overlay01/report.json",
+      "sha256": "a4a543b35bdd22357eef39524ff8015e0d4d274547c046205c806a5f52e92061"
+    },
+    {
+      "kind": "INPUTS",
+      "name": "parent_cold",
+      "path": "experiments/logs/root-prism-free/f0-character-y-domain-overlay01-cold/report.json",
+      "sha256": "851a2a4a292a891de7b38eb08212fd1a604cf72cc09dbef3af97768ebe8e21be"
+    }
+  ],
+  "checked_on_source": [
+    "The320 new coordinates use central_plus then central_minus, saved column_index, a then b.",
+    "Every local table extends the complete saved masks and projects to the exact old profile table.",
+    "Literal-unit identities and the same group action on every orbit enforce a common frame; no independent sign fixing is added.",
+    "All6496 two-dimensional Gram forms are retained, with12992 scalar products using 2v^THw=a(v)a(w)+3b(v)b(w).",
+    "The480 literal inverse rows are checked on every orbit unit vector.",
+    "All172 original equations retain inverse certificates;151 nonempty rows are appended and21 literal tautologies are recorded.",
+    "The saved original domains remain an immutable prefix. Every new coefficient, domain and conservative activity is checked before export.",
+    "Preparation and cold reconstruction each have a60-second owned child. The source never creates a native solver or model."
+  ],
+  "declared_result_counts": {
+    "variables": 31756,
+    "target_constraints": 54037,
+    "initial_constraints": 53920,
+    "external_pool_constraints": 117
+  },
+  "source_execution_before_gate": false,
+  "maximum_owned_children": 2,
+  "maximum_seconds_each": 60,
+  "native_model_build_allowed": false,
+  "optimizer_calls_allowed": 0,
+  "limitations": [
+    "The native table replacement and full parent-proto equality must be checked in a separate overlay.",
+    "The4416 literal inequalities need the separate exact direct/radix layer.",
+    "Exterior edges and unrestricted graph existence remain unresolved."
+  ]
+}

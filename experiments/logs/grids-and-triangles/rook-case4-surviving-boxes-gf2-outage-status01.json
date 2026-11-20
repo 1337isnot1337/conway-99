@@ -1,0 +1,91 @@
+{
+  "task": "rook all187-box GF(2) preparation",
+  "environment": "explicitly unavailable",
+  "mathematical_case_run": "not requested or run",
+  "preparation02": {
+    "status": "PASS observed",
+    "seconds": 0.8778298300021561,
+    "source": {
+      "path": "experiments/workspace/rook_case4_surviving_boxes_gf2_preparation_v2.py",
+      "sha256": "8e0da48378ce31a675faae8453e23d7e610e5b3a3b6e18b7e26d2d828899dbbd",
+      "bytes": 23925
+    },
+    "preparation": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-surviving-boxes-gf2-preparation02/preparation.json",
+      "sha256": "96bd0100cb2e792bddc9b7b7d713a885c7e4124a6019a7cac56a325d6700cc0b",
+      "bytes": 4721
+    },
+    "specification": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-surviving-boxes-gf2-preparation02/specification.json.gz",
+      "sha256": "92c76adbc19e92ab22d414874b00dec0b2d8e913d13e97eb36b54928e7aff747",
+      "bytes": 123246
+    },
+    "controls": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-surviving-boxes-gf2-preparation02/controls.json",
+      "sha256": "e9e30a60e29389fcbf38d824880cf74ed997fe39ad7953bcca1ca010cf50184c",
+      "bytes": 195
+    },
+    "global_integer_equalities": 633,
+    "surviving_boxes": 187,
+    "low_boxes": 50,
+    "high_boxes": 137,
+    "prior_forward_and_cold_files_bound": 520,
+    "case_eliminations": 0,
+    "Gaussian_eliminations": 0,
+    "optimizer_calls": 0
+  },
+  "failure01": {
+    "source": {
+      "path": "experiments/workspace/rook_case4_surviving_boxes_gf2_preparation.py",
+      "sha256": "1f0795b29f31e57a6c02684d8423d61497e6349a2b8a70daba1e26dd31349d54",
+      "bytes": 23890
+    },
+    "failure": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-surviving-boxes-gf2-preparation01/failure.json",
+      "sha256": "e70bf434e06d278cf12af0d1905309be955d8ee0c4bdc8b7beba8a2ae3b85458",
+      "bytes": 727
+    },
+    "repair": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-surviving-boxes-gf2-state-codec-repair01.json",
+      "sha256": "002598c01a72afeeb13e6364022ba00aabd81a61425cc4c1770cf6c53a3adb2e",
+      "bytes": 1061
+    },
+    "known_exit_code": 1,
+    "session": 66823,
+    "reaped": true,
+    "diagnostic": "Saved state hashes require bytes(255 if v == '?' else int(v) for v in state), not ASCII.",
+    "case_eliminations": 0
+  },
+  "new_sources": [
+    {
+      "path": "experiments/workspace/rook_case4_surviving_boxes_gf2.py",
+      "status": "apply_patch write and narrow update returned success; final raw hash unobserved"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_surviving_boxes_gf2_replay.py",
+      "status": "apply_patch write and narrow update returned success; final raw hash unobserved"
+    }
+  ],
+  "pending_control_attempt": {
+    "functions_cell": "g4:6",
+    "status": "exec tool failed at process creation/resume; no output, receipt, or child session observed",
+    "error": "exec_command failed: CreateProcess: exec-server transport disconnected; failed to resume exec-server session: recovery timed out after 45s",
+    "command": "PYTHONDONTWRITEBYTECODE=1 PYTHONOPTIMIZE=0 /usr/bin/timeout --signal=TERM --kill-after=2s 40s /workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python -u experiments/workspace/rook_case4_surviving_boxes_gf2.py prepare --preparation experiments/logs/grids-and-triangles/rook-case4-surviving-boxes-gf2-preparation02/preparation.json --configuration experiments/logs/grids-and-triangles/rook-case4-surviving-boxes-gf2-configuration01.json",
+    "configuration_or_controls_written": "unconfirmed; not inspected",
+    "production_elimination_in_command": false
+  },
+  "exact_source_bytes_in_V8": false,
+  "raw_receipts_reconstructed": false,
+  "planned_limits": {
+    "forward_seconds": 60,
+    "forward_owner_seconds": 90,
+    "cold_seconds": 60,
+    "cold_owner_seconds": 90,
+    "maximum_raw_transcript_bytes": 67108864,
+    "automatic_retries": 0,
+    "new_unit_feedback": false
+  },
+  "publication_status": "Local rook187 preparation and new sources are uncommitted; this record does not claim their raw bytes are uploaded.",
+  "root_checkpoint": "cd7e6404f37861003dcdd0fe1757bb2543ebd6fb",
+  "intended_recovery_path": "experiments/logs/grids-and-triangles/rook-case4-surviving-boxes-gf2-outage-status01.json"
+}

@@ -1,0 +1,192 @@
+{
+  "status": "complete empty-root packing matrix and exact-zero filter preparation; no LP",
+  "complete": true,
+  "root_type": 38,
+  "source_sha256": "8e0ceb67d345456058ae2adac42326214f9386914bfb08b8df90f223a7c9cb04",
+  "packing_domain_sha256": "27c27163aa7429d75df5d430072ece5dd045df2d54caa8a6d57a28db45db0a71",
+  "packing_source_sha256": "0887869f50f0684f99bc000fd804f5400cfe59c2a5e322633d1d9b00fdf36637",
+  "boolean_domain_source_sha256": "52ab6687063ca4e16930013cbb159658337e8f8ce007f3d82c1d39d3c9a042d6",
+  "contraction_source_sha256": "5a97b204d8830af614f22c6e72f6ca4c120ec5c6a31320b4b8841c7e0ce19286",
+  "integer_count_point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "exact_certificate_helper_sha256": "cdc37c56d4e379fc3774a832d942fb4cfb2eb787746bfdd3f9071880e791ee1e",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "cache_index_sha256": "8f8d0b3e2e509fb617962f744e6df7ca56d401bc67a2916f16ab124dafb486d0",
+  "requested_preparation_seconds": 60,
+  "artifacts": {
+    "matrix": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-matrix.npz",
+      "sha256": "04cfedd33c5e908cfad04b713b9078ed48254ec15dcdab5fb915fa58d83daeba",
+      "bytes": 7464965
+    },
+    "moments": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-moments.npz",
+      "sha256": "d9013bc79adf4d488f40c4e0949de292435cd987d08c4db84d918ebb00d6f12c",
+      "bytes": 390567
+    },
+    "filters": {
+      "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-features02-filters.npz",
+      "sha256": "e5dc1e7c5a3ffce980f3b126b37d36d55db6091ead798d295e1571aca224e7f5",
+      "bytes": 745482
+    }
+  },
+  "optimizer_called": false,
+  "feasibility_query_run": false,
+  "new_product_tensors_generated": false,
+  "reduced_count_matrix_loaded": false,
+  "outside_edges_assigned": false,
+  "symmetry_assumptions_imposed": false,
+  "graph_existence_resolved": false,
+  "controls": {
+    "literal_boolean_columns_checked": 511,
+    "literal_one_entries_checked": 9151,
+    "class_counts_checked": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "independent_complete_monomial_containment_comparison": true
+  },
+  "atom_file": {
+    "path": "experiments/logs/moments-and-counts/order10-high-mask-packing-atoms02.uint64",
+    "sha256": "44c8155340f6dbaba575689ba35a8e97ccd329456e2db0ecf0730d5f97368589",
+    "format": "sorted little-endian uint64; each bit is a universal high-class index",
+    "bytes": 1056496
+  },
+  "monomials_by_degree": [
+    1,
+    42,
+    861,
+    11480,
+    111930
+  ],
+  "degree_offsets": [
+    0,
+    1,
+    43,
+    904,
+    12384,
+    124314
+  ],
+  "feature_order": "degree blocks; increasing combinatorial colex rank within each degree",
+  "matrix_entry": "1 exactly when the row monomial is contained in the column atom",
+  "high_masks": [
+    7,
+    11,
+    13,
+    14,
+    15,
+    19,
+    21,
+    22,
+    23,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    35,
+    37,
+    38,
+    39,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63
+  ],
+  "universal_class_bit_count": 42,
+  "stage": "complete preparation",
+  "seconds": 7.644227705997764,
+  "peak_rss_kib": 298200,
+  "matrix_array_sha256": {
+    "indices": "46bbe6f8f092633f41913466d510c94325a87ad5f953590260a1e3646b4a2333",
+    "indptr": "1c94a1f2ab8f5e7d300e8a3c9d9b987d4f4d2ff73f24341bac906765fcf62fc2",
+    "monomial_masks": "388cc90d3bb5d26015041ea39eafbceb797ada0769248d4541da2049acb7434e",
+    "atom_codes": "44c8155340f6dbaba575689ba35a8e97ccd329456e2db0ecf0730d5f97368589"
+  },
+  "matrix_format": "CSC with implicit coefficient one at every stored entry; int32 indices and pointers",
+  "cache_part": {
+    "path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-seven-blocks.pickle.gz",
+    "sha256": "e12e59749eebbf53fbd314e8063bc402900abf54c80016cd9e1cee99ce1a2447",
+    "root_types": [
+      38,
+      39,
+      40,
+      44,
+      45,
+      46,
+      64
+    ]
+  },
+  "contraction_bounds": {
+    "maximum_coefficient_row_sum": 15,
+    "maximum_labelled_embedding": 72926995680,
+    "safe_contraction_bound": 1093904935200,
+    "maximum_cached_product_value": 72926995680,
+    "safe_transform_and_row_sum_bound": 74677243576320
+  },
+  "product_reference_sha256": "3c566fc3bbac1377300bc2c069fb983a180743cf0f15b5e06dec736e6dbbc5f4",
+  "moment_array_sha256": "871b97e30ba4c802893b65630ccb7b38a3fe131c53e88bb4ad6500597df616f5",
+  "maximum_moment": 72926995680,
+  "labelled_embedding_normalization": "Aut(type) times the saved unlabeled induced count; no free-label divisor",
+  "summary": {
+    "baseline_shape": [
+      124314,
+      132062
+    ],
+    "baseline_nnz": 5804664,
+    "baseline_supported_rows": 32969,
+    "visible_shape": [
+      124314,
+      90776
+    ],
+    "visible_nnz": 4463060,
+    "visible_supported_rows": 17903,
+    "exact_zero_moment_rows": 106411,
+    "positive_moment_rows": 17903,
+    "baseline_columns_removed_by_zero_moments": 41286,
+    "baseline_columns_surviving_zero_moments": 90776,
+    "visible_columns_removed_by_zero_moments": 0,
+    "zero_filtered_shape": [
+      17903,
+      90776
+    ],
+    "zero_filtered_nnz": 4463060,
+    "positive_rows_without_filtered_support": 0,
+    "root_labelled_embedding_mass": 72926995680,
+    "maximum_zero_features_in_one_atom": 27,
+    "every_removed_column_has_an_exact_zero_feature_witness": true,
+    "zero_filter_applies_only_to_bound_integer_point": true,
+    "status": "matrix and exact-zero filters prepared; feasibility has not been tested"
+  },
+  "future_weight_domain": "nonnegative weights without upper bounds; constant row fixes their total mass",
+  "future_zero_filter_certificate": "Use the bound finite_boolean_moment_certificates.zero_filter_penalty helper and check every full structurally allowed atom.",
+  "future_constant_shift_certificate": "Use the bound finite_boolean_moment_certificates.constant_shift helper on every full structurally allowed atom.",
+  "fresh_literal_product_replay_required_for_any_future_cut": true,
+  "timed_out": false
+}

@@ -1,0 +1,38 @@
+{
+  "status": "PASS: three-selector candidate-scan source and mathematics review",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_three_selector_scan.py",
+    "sha256": "def73142c54ea432589ba05d9f9f1d1f3378676786c661928986d2eeae05bf50"
+  },
+  "bound_formula_source": {
+    "path": "experiments/workspace/root_prism_free_f0_three_selector_inequalities.py",
+    "sha256": "1b3f77db3479971b51b40b0f48246d3944dd14c963cae2c77959c4400bd3d3bb"
+  },
+  "review_scope": "Read the complete scanner and the literal-row/domain mapping of the frozen scope source. Performed only a direct static coefficient-norm check of the258 saved clique rows. No subject import, point preparation, scan, domain reconstruction, or optimizer was run.",
+  "checks": [
+    "The triangle inequality Zab+Zbc-Zac<=x_b and perimeter inequality x_a+x_b+x_c-Zab-Zbc-Zac<=1 hold on all Boolean triples. Averaging preserves both; the numeric proposal need not itself be feasible.",
+    "The dense selector/pair arrays and literal_row use the same original-to-reduced map, pair_id ordering, offset5847 and389 explicit zero variables. The anchor is b in both the dense triangle formula and exact row.",
+    "Each representative anchor has C(479,2)=114481 unordered other-selector pairs. The42 representative anchors cover every literal centered row under the previously verified core action. Perimeter duplicates are permitted and coefficient rows are deduplicated.",
+    "At most8 numerical candidates per anchor/family are considered; exact positive-gap acceptance and parent-row dedup precede the final64-row-per-family cap. The routine does not claim exact completeness of unretained or numerically nonpositive rows.",
+    "Every finite binary floating coordinate is converted with as_integer_ratio. The maximum power-of-two denominator is a valid exact common denominator, including subnormals and signed values. Exact gaps are Python-integer expressions against the unscaled mathematical rows.",
+    "All258 saved clique inequalities have coefficient l1 norm at most13 and RHS0, confirming the stated13*max_numerator+denominator gap bound. This was checked directly from the hash-bound saved rows, without rebuilding them.",
+    "The exact replay reconstructs each retained literal row, verifies its full dyadic gap, parent nonmembership and dedup, and recomputes all258 clique gaps. It explicitly does not certify numerical maxima or unretained rows.",
+    "The30-second numerical scan deadline is cooperative and checked between anchors. A partial anchor prefix remains labeled partial; no exact feasibility or case exclusion follows from a negative scan."
+  ],
+  "static_clique_check": {
+    "file_sha256": "728f3de4ed0febf90f4062820b5a58c8e31335ebc7e65d354872c7bc8d38370e",
+    "rows": 258,
+    "max_coefficient_l1": 13,
+    "maximum_absolute_rhs": 0
+  },
+  "limits": {
+    "anchors": 42,
+    "pairs_per_anchor_per_family": 114481,
+    "planned_array_evaluations_per_family": 4808202,
+    "max_candidates_per_anchor_per_family": 8,
+    "max_exact_new_rows_per_family": 64
+  },
+  "point_evaluated": false,
+  "optimizer_calls": 0,
+  "case_exclusion_claimed": false
+}

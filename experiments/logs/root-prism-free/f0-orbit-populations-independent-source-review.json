@@ -1,0 +1,54 @@
+{
+  "status": "PASS: source-only review of the complete orbit-population lift and finite-field certificate logic",
+  "subjects": {
+    "modular": {
+      "path": "experiments/workspace/root_prism_free_f0_orbit_population_modular.py",
+      "sha256": "947ff977b8b060296f05fbbae6734c67e73534c6fc371becda064f36047e9bf0"
+    },
+    "lift": {
+      "path": "experiments/workspace/root_prism_free_f0_orbit_population_lift_v2.py",
+      "sha256": "f02edb406adbd3d2e3fbcf6b68b917cf4eb6fe9cffad6778b1e94a5f85122e7d"
+    },
+    "owner_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-preparation.json",
+      "sha256": "239b8ae3651fe4fa327151e50a3214680079c6c07de589c6a27b43f20aeac34a"
+    }
+  },
+  "reviewed_entire_sources": true,
+  "independent_reasoning": [
+    "The twelve relabelings are verified core actions with a closed selector action group. Orbit transitivity and stabilizer multiplicities justify averaged coordinates v_j=N_j/s_j without assuming an automorphism of the unknown graph.",
+    "Literal selector, edge and distinct-pair objects partition into complete orbits. Exact counts N_j are integers between0 and s_j for an actual incidence and edge assignment; their averages satisfy the previously certified invariant model.",
+    "Substitution v_j=N_j/s_j followed by multiplication by12 gives coefficient12*c_j/s_j and RHS12*b. Every observed orbit size divides12; division by the positive gcd including RHS preserves the real row. Bounds become0<=N_j<=s_j.",
+    "The389 previously proved Z zeros and162 proved Y zeros are substituted through the bound reduction maps. All92 PSD directions remain present; no new variable identification or nonlinear block-population identity is imposed.",
+    "An individual equality with coefficient gcd not dividing RHS proves an integer obstruction. Absence of such an obstruction is not integer feasibility.",
+    "The GF3 add3 truth table represents residues1 and2 in disjoint finite bit planes; complements are always intersected with finite operand planes. Swapping planes multiplies by2 and correctly normalizes/subtracts pivots.",
+    "Every elimination step updates row provenance with the same finite-field operation. An inconsistent result is accepted only after direct expansion over every original variable and the RHS.",
+    "Largest-index pivots make ascending pivot order valid for modular back-substitution with free coordinates zero. Every returned point is checked against all original equalities.",
+    "Rank metadata has an echelon/provenance artifact for the owner's independent rank replay. A modular point itself certifies consistency but does not establish bounded integer, real full-model or graph feasibility.",
+    "The saved selector control intentionally checks only selector/RLT averaging and leaves mixed rows, selector cuts and PSD rows unclaimed."
+  ],
+  "source_level_resource_scope": "The preparation deadline is cooperative; checks occur at stated domain/row/reduction boundaries. The code does not implement a hard process watchdog for every load, serialization or final point check. The saved49.72-second preparation is within its declared120-second allowance.",
+  "observed_owner_metadata": {
+    "variables": 15038,
+    "rows": 27719,
+    "equalities": 5973,
+    "inequalities": 21746,
+    "nonzeros": 1079832,
+    "physical_PSD_directions": 92,
+    "reported_GF2_rank": 5117,
+    "reported_GF3_rank": 5138,
+    "reported_equality_gcd_obstructions": 0
+  },
+  "independently_repeated": {
+    "subject_import": false,
+    "domain_census": false,
+    "model_rebuild": false,
+    "modular_controls": false,
+    "production_elimination": false,
+    "rank_replay": false,
+    "optimizer": false
+  },
+  "scope": "This report is a mathematical/source gate and checks the saved metadata bindings. It does not replace the owner's artifact-only all-row and echelon replay.",
+  "soundness_blocker_found": false,
+  "whole_graph_problem_resolved": false
+}

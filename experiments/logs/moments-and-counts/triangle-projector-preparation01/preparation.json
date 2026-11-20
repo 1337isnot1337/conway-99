@@ -1,0 +1,91 @@
+{
+  "status": "COMPLETE_POINT_INDEPENDENT_TRIANGLE_PROJECTOR_PREPARATION",
+  "source_sha256": "1e7a8b7380314d6dfd8ff05954a13662bc011378f5759ad675ec1bc281fa19e9",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "model_raw_sha256": "2df4f8ad6453ec7af232692518b651f964289b57c752a8881b4f57054e84c17a",
+  "model_gzip_sha256": "d7faf588344d4ffb7ac31eff1e15553db485deb1f0293272a5a583997c162563",
+  "model_raw_bytes": 1279090,
+  "model_gzip_bytes": 303776,
+  "root_types": 9,
+  "classes": 352,
+  "lower_entries": 7524,
+  "tensor_nonzeros": 88084,
+  "block_orders": [
+    51,
+    51,
+    44,
+    33,
+    51,
+    39,
+    27,
+    23,
+    33
+  ],
+  "census": {
+    "diagonal": 175,
+    "disjoint_0": 2189,
+    "disjoint_1": 10418,
+    "disjoint_2": 10308,
+    "disjoint_3": 1377,
+    "intersection": 1956,
+    "root_labelled_decompositions": 123740
+  },
+  "small_host_controls": [
+    {
+      "kind": "diagonal",
+      "graph_type": 115,
+      "host_order": 7,
+      "all_9_blocks_equal": true,
+      "root_labelled_ordered_triangle_pairs_used": true
+    },
+    {
+      "kind": "disjoint_0",
+      "graph_type": 7919,
+      "host_order": 10,
+      "all_9_blocks_equal": true,
+      "root_labelled_ordered_triangle_pairs_used": true
+    },
+    {
+      "kind": "disjoint_1",
+      "graph_type": 7920,
+      "host_order": 10,
+      "all_9_blocks_equal": true,
+      "root_labelled_ordered_triangle_pairs_used": true
+    },
+    {
+      "kind": "disjoint_2",
+      "graph_type": 7929,
+      "host_order": 10,
+      "all_9_blocks_equal": true,
+      "root_labelled_ordered_triangle_pairs_used": true
+    },
+    {
+      "kind": "disjoint_3",
+      "graph_type": 8609,
+      "host_order": 10,
+      "all_9_blocks_equal": true,
+      "root_labelled_ordered_triangle_pairs_used": true
+    },
+    {
+      "kind": "intersection",
+      "graph_type": 1316,
+      "host_order": 9,
+      "all_9_blocks_equal": true,
+      "root_labelled_ordered_triangle_pairs_used": true
+    }
+  ],
+  "golay_control": {
+    "status": "PASS: actual Golay point-triangle incidence and inverse identities",
+    "vertices": 243,
+    "triangles": 891,
+    "projector_rank": 648,
+    "projector_scale": 990,
+    "literal_lower_entries_checked": 397386,
+    "exact_integer_matrix_arithmetic": true,
+    "optimizer_called": false
+  },
+  "seconds": 10.797422064002603,
+  "count_point_loaded": false,
+  "optimizer_called": false,
+  "query_requires_separate_review": true
+}

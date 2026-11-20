@@ -1,0 +1,388 @@
+{
+  "status": "PASS: all direct mixed-site and common-core-pair alternatives checked",
+  "source_sha256": "34c946aa734b10838078a44b56155567ce3fde260f6efa7942857cb97a91cfcd",
+  "inputs": {
+    "domain": [
+      "f0-boolean-fractional-model.json.gz",
+      "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    ],
+    "graphs": [
+      "f0-edge-orbit-packing-preparation01.json.gz",
+      "2d581d92545eb1d8718960471fe8c4bfe191a6a80a9f9d5d22754dc4afe0ec18"
+    ],
+    "graph_cold": [
+      "f0-edge-orbit-packing-census-preparation01.json",
+      "3561840ec929ad68a6b4e22df8f6cad5e9a604b9828b9bc4cd63bdfa8654cdd0"
+    ],
+    "audit": [
+      "f0-endpoint-star-capacities-implication-audit01.json.gz",
+      "9928c3937576444bb6bbc33e3b5bc8631effe06ffbaede1f5aa4061483c35595"
+    ]
+  },
+  "records": [
+    {
+      "row": {
+        "capacity": 1,
+        "count_column": 2855,
+        "endpoint_orbit": 27,
+        "family": "Y",
+        "object_orbit": 2910,
+        "raw_degree": 2,
+        "terms": [
+          [
+            27,
+            -1
+          ],
+          [
+            2855,
+            1
+          ]
+        ],
+        "upper": 0
+      },
+      "all_literal_stars": [
+        {
+          "endpoint": 57,
+          "other_endpoints": [
+            109,
+            126
+          ],
+          "common_core_sites": [
+            1
+          ],
+          "mixed_target_values": [
+            1
+          ],
+          "quota_one_sites": [
+            1
+          ],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 115,
+          "other_endpoints": [
+            35,
+            42
+          ],
+          "common_core_sites": [
+            0
+          ],
+          "mixed_target_values": [
+            1
+          ],
+          "quota_one_sites": [
+            0
+          ],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 191,
+          "other_endpoints": [
+            236,
+            245
+          ],
+          "common_core_sites": [
+            3
+          ],
+          "mixed_target_values": [
+            1
+          ],
+          "quota_one_sites": [
+            3
+          ],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 220,
+          "other_endpoints": [
+            165,
+            177
+          ],
+          "common_core_sites": [
+            2
+          ],
+          "mixed_target_values": [
+            1
+          ],
+          "quota_one_sites": [
+            2
+          ],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 282,
+          "other_endpoints": [
+            323,
+            327
+          ],
+          "common_core_sites": [
+            5
+          ],
+          "mixed_target_values": [
+            1
+          ],
+          "quota_one_sites": [
+            5
+          ],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 308,
+          "other_endpoints": [
+            270,
+            285
+          ],
+          "common_core_sites": [
+            4
+          ],
+          "mixed_target_values": [
+            1
+          ],
+          "quota_one_sites": [
+            4
+          ],
+          "common_core_pair_available": false
+        }
+      ],
+      "implied_by_original_mixed_quota_one_equalities": true
+    },
+    {
+      "row": {
+        "capacity": 1,
+        "count_column": 2917,
+        "endpoint_orbit": 29,
+        "family": "Y",
+        "object_orbit": 2975,
+        "raw_degree": 2,
+        "terms": [
+          [
+            29,
+            -1
+          ],
+          [
+            2917,
+            1
+          ]
+        ],
+        "upper": 0
+      },
+      "all_literal_stars": [
+        {
+          "endpoint": 63,
+          "other_endpoints": [
+            236,
+            245
+          ],
+          "common_core_sites": [
+            3
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 122,
+          "other_endpoints": [
+            323,
+            327
+          ],
+          "common_core_sites": [
+            5
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 185,
+          "other_endpoints": [
+            109,
+            126
+          ],
+          "common_core_sites": [
+            1
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 228,
+          "other_endpoints": [
+            270,
+            285
+          ],
+          "common_core_sites": [
+            4
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 275,
+          "other_endpoints": [
+            35,
+            42
+          ],
+          "common_core_sites": [
+            0
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 299,
+          "other_endpoints": [
+            165,
+            177
+          ],
+          "common_core_sites": [
+            2
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        }
+      ],
+      "implied_by_original_mixed_quota_one_equalities": false
+    },
+    {
+      "row": {
+        "capacity": 1,
+        "count_column": 2935,
+        "endpoint_orbit": 23,
+        "family": "Y",
+        "object_orbit": 2993,
+        "raw_degree": 2,
+        "terms": [
+          [
+            23,
+            -1
+          ],
+          [
+            2935,
+            1
+          ]
+        ],
+        "upper": 0
+      },
+      "all_literal_stars": [
+        {
+          "endpoint": 50,
+          "other_endpoints": [
+            323,
+            327
+          ],
+          "common_core_sites": [
+            5
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 135,
+          "other_endpoints": [
+            236,
+            245
+          ],
+          "common_core_sites": [
+            3
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 171,
+          "other_endpoints": [
+            270,
+            285
+          ],
+          "common_core_sites": [
+            4
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 241,
+          "other_endpoints": [
+            109,
+            126
+          ],
+          "common_core_sites": [
+            1
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 259,
+          "other_endpoints": [
+            165,
+            177
+          ],
+          "common_core_sites": [
+            2
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        },
+        {
+          "endpoint": 316,
+          "other_endpoints": [
+            35,
+            42
+          ],
+          "common_core_sites": [
+            0
+          ],
+          "mixed_target_values": [
+            2
+          ],
+          "quota_one_sites": [],
+          "common_core_pair_available": false
+        }
+      ],
+      "implied_by_original_mixed_quota_one_equalities": false
+    }
+  ],
+  "additional_mixed_implications": 1,
+  "remaining_count_columns": [
+    2917,
+    2935
+  ],
+  "total518_rows_with_simple_implication_witness": 516,
+  "full_model_nonredundance_claimed": false,
+  "case_clique_searches": 0,
+  "optimizer_calls": 0,
+  "seconds": 1.0254835590021685
+}

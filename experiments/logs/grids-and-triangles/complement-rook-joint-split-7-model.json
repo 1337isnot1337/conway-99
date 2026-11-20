@@ -1,0 +1,50 @@
+{
+  "status": "existing full joint model plus exactly two selected-signature units prepared",
+  "case_index": 7,
+  "representative_tips": [
+    2,
+    8
+  ],
+  "covered_tip_pairs": 4,
+  "signature_indices": [
+    1,
+    6
+  ],
+  "selected_signature_units": [
+    2,
+    7
+  ],
+  "additional_clauses": [
+    [
+      2
+    ],
+    [
+      7
+    ]
+  ],
+  "base_model_manifest": "experiments/logs/grids-and-triangles/two-rook-tip-boundary-joint-3943553752-model.json",
+  "base_manifest_sha256": "b24ccb4fec17f267cbb28bf507ea55b8ab7ca3b8c70d25cf9adca11ddf01444e",
+  "base_cnf_path": "/tmp/conway-two-rook-tip-boundary-3943553752.cnf",
+  "base_cnf_sha256": "4beaccae679e2014ab0a3cf105ca1f65f326b6453ed6502d7e2d65cbede2a162",
+  "coverage_path": "experiments/logs/grids-and-triangles/complement-rook-duplicate-row-coverage.json",
+  "coverage_sha256": "36237668d01da0173a2dfaa5d87339f8e212399cd5b391d78f952fd2b0cf3c7d",
+  "base_domain_sha256": "0d1c7f6333adf459988db46d6cb02fb086b7aa135121a9650df30b891235554d",
+  "variables": 1156482,
+  "clauses": 2575730,
+  "split_cnf_sha256": "d727f35f137eee1a84618f82d6c6b2ad519bc2f9f220c942a2a223912ed8f3d1",
+  "source_hashes": {
+    "complement_rook_joint_split.py": "4de968aab5ff6ab5248a56a7bcf484a60493ddfc5ec855a47657c749db4b637b",
+    "complement_rook_a_incidence.py": "785ac205a8bb2b63fc21649eff3bcdc94fbc103ce6d1f3b7d473153d60567e19",
+    "complement_rook_duplicate_row_projection.py": "8cc529d12ef897234e1d04bab388e54e88186c7163c8182ece6a518a2a082bc6",
+    "complement_rook_row_projection.py": "0b55e2e10339449a3472cfaa7064a29c00cab5e2c79f40806a5d4a7950917344",
+    "complement_rook_a_incidence_census.py": "51d42992c6c7495ecb012e19f3ed84edd9dbd5699bd7aa3e25f75c58069cb694"
+  },
+  "signature_variables": 252,
+  "edge_variables": 20934,
+  "full_outside_caps_imposed": false,
+  "extra_a_bound_added": false,
+  "orbit_equalities": 0,
+  "fixed_incidence_witnesses": 0,
+  "lazy_cuts": 0,
+  "assembly": "parse bound base CNF and append exactly the two singleton clauses in saved order"
+}

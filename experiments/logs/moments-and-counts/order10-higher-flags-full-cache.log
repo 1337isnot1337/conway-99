@@ -1,0 +1,45 @@
+{
+  "format": 1,
+  "family": "complete induced labelled r4s3 and r2s4 blocks",
+  "source_sha256": "5d1af5a24c9a509e35b9aeb47e47bd97eb01c09eb51fad32c2a72ceb87075c86",
+  "domain_path": "experiments/logs/moments-and-counts/order10-higher-flags-domains.json",
+  "domain_sha256": "ccee69da0b0fa9eb111143c6a97a791ab88c7d7ce7004d690ab2ec286c4c2144",
+  "catalogue_path": "/tmp/conway99-order10-catalogue.pickle",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "product_source_sha256": "32b39c98538bd5358e64e7e794c9f6464704ea7f1fe9f6f171d9243f4af88a36",
+  "point_independent_tensors": true,
+  "root_or_flag_zero_pruning": false,
+  "prism_zero_projection_applied_to_cache": false,
+  "r4s3_root_types": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "r2s4_root_types": [
+    2,
+    3
+  ],
+  "full_root_count": 11,
+  "full_flag_count": 890,
+  "full_lower_entries": 90256,
+  "seed_cut_independent_replay_path": "experiments/logs/moments-and-counts/order10-higher-flags-r4s3-fresh-replay.json",
+  "seed_cut_independent_replay_sha256": "0a6a50182903345149d9d6c61df745bb175bdeeb28bcd5bf0ba4cefa83c32802",
+  "cache_parts": [
+    {
+      "kind": "r4s3_tensor_cache",
+      "path": "experiments/logs/moments-and-counts/order10-higher-flags-r4s3-blocks.pickle.gz",
+      "sha256": "7707ae4036a0f5889a6356e6d658e742aa969d7385652cb2635418607c6aa943"
+    },
+    {
+      "kind": "r2s4_symbolic_products",
+      "path": "experiments/logs/moments-and-counts/order10-higher-flags-products-preparation.json",
+      "sha256": "07d6e6b22fe77c784a5540672c245cb21691707edf209c53cf722eb101a8197f"
+    }
+  ]
+}

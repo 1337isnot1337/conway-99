@@ -1,0 +1,116 @@
+{
+  "CpSolver_construction_authorized": false,
+  "active_builder_sha256": "062737362b889823c8fd2c068bcdd08feac2737214cc7bbd1f3802ec31ea6c71",
+  "base_builder_sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2",
+  "complete_eligible_Boolean_edges": 68394,
+  "control_owner_seconds": 30,
+  "degree_rows": 480,
+  "endpoint_activation_rows": 136788,
+  "expected_base_rows": 163070,
+  "expected_base_variables": 68934,
+  "expected_final_rows": 168050,
+  "expected_final_variables": 68934,
+  "expected_parent_rows": 17162,
+  "expected_parent_variables": 540,
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4"
+    },
+    "parent_cold": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-cold/report.json",
+      "sha256": "5f6edb6d7d7927f2094b55aa99cdff55e7358c3adffa09163809e192cf48f70e"
+    },
+    "parent_cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-cold/owner.json",
+      "sha256": "273541e952bfb451596e0ebc73c5d9974cce5b33f11817fbff355566b2cd16a1"
+    },
+    "parent_iteration": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-01/iteration.json",
+      "sha256": "e9f1db58a677ffdd35a8288a1c3480d00aeff6a832beac034d1ce3a65653a4b0"
+    },
+    "parent_model": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/iteration-01/prefix.pb.gz",
+      "sha256": "921f9e823520f321968295cc0873c969c32742c13b7caf7b1ab6cdf67cbf27dd"
+    },
+    "parent_owner": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/owner.json",
+      "sha256": "cff5c1a4465ee5a1a99cba74af9a52f2a3fc0e9c593d48a9d7651c7ad31252c9"
+    },
+    "parent_run": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/result.json",
+      "sha256": "5192b4cf6a3149522f1c9f771e19a0571cf9ea50169eb151a343f7913e197e25"
+    },
+    "registry": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03/registry.json",
+      "sha256": "c8873283cd403b6d85fe63f0073d3ec51f4d3e9047aa5ec5310d7a5402869797"
+    },
+    "replayed_registry": {
+      "path": "experiments/logs/root-prism-free/f0-direct-master-continuation-run03-cold/replayed-registry.json",
+      "sha256": "c8873283cd403b6d85fe63f0073d3ec51f4d3e9047aa5ec5310d7a5402869797"
+    }
+  },
+  "literal_core_pair_clique_rows": 3096,
+  "mixed_rows_including_empty_rows": 8640,
+  "model_phase_seconds": 90,
+  "motif_and_clique_overlay_in_successor_source": true,
+  "motif_zero_rows": 1884,
+  "native_query_authorized": false,
+  "overlay_inputs": {
+    "actions": {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-kernels01.json.gz",
+      "sha256": "65f1ad0d0015a6eff3d97c676fb0e188f57f9dee00e9245758a28bab2069b40d"
+    },
+    "clique_cold": {
+      "path": "experiments/logs/root-prism-free/f0-core-pair-edge-cliques01-replay.json",
+      "sha256": "98f2ac73c5a5da4733648e12782b02e4e784353db1aced9615bc2752dcc941e0"
+    },
+    "cliques": {
+      "path": "experiments/logs/root-prism-free/f0-core-pair-edge-cliques01.json.gz",
+      "sha256": "728f3de4ed0febf90f4062820b5a58c8e31335ebc7e65d354872c7bc8d38370e"
+    },
+    "motif_cold": {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01-replay.json",
+      "sha256": "8c789598c08ba94f7693c5fb0cb4793446a76bc9b0a7d926cc3c2b89ee22436d"
+    },
+    "motifs": {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01.json.gz",
+      "sha256": "397e8bf110e03a5accb5e6c1f27b2fb5525100acb67427c66669e188e74159d1"
+    }
+  },
+  "overlay_row_order": [
+    "exact complete frozen base",
+    "zero rows by increasing literal edge ID",
+    "clique rows by center then lexicographic core pair"
+  ],
+  "parent_model_raw_sha256": "fcc1f092f60338a791bf497bb8c9e76200d51260133aa2bc4ef1274bd1ecb9ec",
+  "parent_registry_value_sha256": "85bc3f6a4748b85e110bc37c783da269cb5b735a2bca0484e9ba11e7f9c98f4d",
+  "preparation_owner_seconds": 120,
+  "proof_sources": {
+    "cliques": {
+      "path": "experiments/workspace/root_prism_free_f0_core_pair_edge_cliques.py",
+      "sha256": "2721f32b6bc1778fb7bd4dd7b6893880e2fe0ef014323fb7365e20f02fbb1811"
+    },
+    "motifs": {
+      "path": "experiments/workspace/root_prism_free_f0_edge_motif_census.py",
+      "sha256": "b9c5556bd503d72d2508bb03eb8d1b6be9ebadb0e0c25a1b79cec9870bc79009"
+    }
+  },
+  "schema": "conway99.f0.boolean-shared-model-configuration.v1",
+  "tentative_model_phase_seconds": 90,
+  "tentative_preparation_owner_seconds": 120,
+  "transport_controls": {
+    "configuration": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-model-configuration01.json",
+      "sha256": "e3ec62ae3b9bb6d98170960c4ef24b4c18a0cea07dc0e53ee8301a29d343dba0"
+    },
+    "owner": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/owner.json",
+      "sha256": "82976dd169322906b7ef1ba9ed114cd1f81081eb058b09772bafd26e5622dcfb"
+    },
+    "report": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/report.json",
+      "sha256": "a66a0a6b514cdc94d6873ae4314f8e9d83c21d10925380e10fa7859e419390ca"
+    }
+  }
+}

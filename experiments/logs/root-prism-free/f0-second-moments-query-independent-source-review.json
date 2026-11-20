@@ -1,0 +1,29 @@
+{
+  "status": "PASS: complete exact-helper and native-query source review",
+  "reviewer": "/root/independent_sets",
+  "subjects": {
+    "experiments/workspace/root_prism_free_f0_second_moments_exact.py": "3986ac84e6d891a0dc362db05f7785ae4294fe58a31a6241f0b63721de5868cd",
+    "experiments/workspace/root_prism_free_f0_second_moments_query.py": "e79b4d42c2e9b530c01f41d11e71bd904ab9533ca46e0f0347c5fd98602b728d"
+  },
+  "preparation_path": "experiments/logs/root-prism-free/f0-second-moments-query-preparation.json",
+  "preparation_sha256": "b08ec24d7fa5928b825b556f24dd23cab92e3fd54a1df1861ff2a039bb7a86e7",
+  "method": "Entire two sources read; exact source/preparation bytes hashed. No import or reconstruction.",
+  "checks": {
+    "model_binding": "The complete model, integer row data and preserved baseline prefix are hash-bound before floating conversion. The matrix has15589 variables,7165 equality rows,46122 upper rows and279627 nonzeros.",
+    "numerical_conversion": "Every input coefficient and RHS is checked as exactly representable. Unit variable bounds and equality/upper-row orientations are retained; objective is zero.",
+    "finite_box_Farkas": "For free equality multipliers and nonnegative upper-row multipliers, the combined inequality is c*x<=rhs. Unit-box minimization gives min(c*x)=-sum(max(-c,0)); hence rhs+sum(max(-c,0))<0 is a correct exact contradiction test.",
+    "active_face": "Tight numerical unit differences and near-bound coordinates are proposal-only equalities. Exact conflicts reject the proposal. No such equality changes the production model.",
+    "modular_minor": "The65521 minor proves only nonsingularity of the selected square subsystem. The modular products fit int64. No rational rank equality is assumed; rounded free coordinates remain proposals.",
+    "exact_primal_acceptance": "The recovered common-denominator point is checked on every quotient row, the full baseline, all4416 Boolean selector rows, all literal pair bounds, all RLT equalities, certified zero pairs and Y<=Z. The full650350-row and183834-bound acceptance is independent of the selected active face.",
+    "scope": "A passing linear point does not certify the separately prepared PSD conditions. The source keeps this distinction explicit.",
+    "native_call_bound": "At most one Highs.run call is made. Existing-ray extraction is guarded by getDualRayExist. Numerical values, statuses and basis are saved; an unverified native infeasibility is never a conclusion.",
+    "owned_processes": "The numerical child has a65-second hard ceiling for the60-second stage, and the exact child a60-second ceiling. subprocess.run timeout kills and reaps the owned child. Timeout/error records do not promote partial proofs.",
+    "resource_scope": "Active-face columns, free coordinates, dense cells and output integer bits have explicit bounds. Native exact operations are additionally bounded by the owned exact child; no blanket intermediate-integer bit cap is claimed."
+  },
+  "preparation_counts_and_limits_read": true,
+  "model_or_source_imported": false,
+  "model_rebuilt": false,
+  "controls_repeated": false,
+  "optimizer_called": false,
+  "independent_point_or_ray_replay_performed": false
+}

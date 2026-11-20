@@ -1,0 +1,152 @@
+{
+  "schema": "conway99.six-root-conditioned-preparation-plan.v1",
+  "status": "FROZEN_POINT_INDEPENDENT_PLAN",
+  "source": "experiments/workspace/triangle_projector_six_root_conditioning.py",
+  "source_sha256": "3a01408b78323129146d0856fe81231d867461eaee422536bc7e87a8c8a9fdd5",
+  "scope_sha256": "78e62efc423f7acd498368207607c5dfc5572dd1840accebe46c38141aeb331f",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "root_types": [
+    50,
+    51,
+    52,
+    53,
+    60,
+    62,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    76,
+    77,
+    79,
+    80,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    90,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99
+  ],
+  "block_orders": [
+    220,
+    176,
+    110,
+    52,
+    139,
+    86,
+    150,
+    122,
+    114,
+    77,
+    78,
+    43,
+    75,
+    91,
+    50,
+    109,
+    92,
+    75,
+    44,
+    74,
+    57,
+    47,
+    53,
+    60,
+    36,
+    24,
+    44,
+    39,
+    26,
+    11
+  ],
+  "classes": 2374,
+  "lower_entries": 127647,
+  "largest_block": 220,
+  "complete_candidate_upper_bound": 2967175,
+  "chunks": [
+    {
+      "index": 0,
+      "roots": [
+        50,
+        94,
+        95,
+        97,
+        98,
+        99
+      ],
+      "bound": 668994
+    },
+    {
+      "index": 1,
+      "roots": [
+        51,
+        62,
+        72,
+        79,
+        85,
+        86
+      ],
+      "bound": 595870
+    },
+    {
+      "index": 2,
+      "roots": [
+        67,
+        71,
+        80,
+        84,
+        88,
+        90
+      ],
+      "bound": 577880
+    },
+    {
+      "index": 3,
+      "roots": [
+        60,
+        69,
+        76,
+        77,
+        93,
+        96
+      ],
+      "bound": 574887
+    },
+    {
+      "index": 4,
+      "roots": [
+        52,
+        53,
+        68,
+        70,
+        83,
+        87
+      ],
+      "bound": 549544
+    }
+  ],
+  "limits": {
+    "overall_seconds": 180,
+    "per_chunk_seconds": 60,
+    "thread_count": 1
+  },
+  "checkpoints": {
+    "each_completed_root": true,
+    "each_completed_chunk": true,
+    "controls_per_chunk": true,
+    "preserve_incomplete_result": true
+  },
+  "count_point_loaded": false,
+  "optimizer_called": false,
+  "point_query_included": false
+}

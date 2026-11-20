@@ -1,0 +1,77 @@
+{
+  "schema": "conway99.session-ab2f.checkpoint80-recovery.v1",
+  "status": "PARTIAL_EXACT_RECOVERY_AND_NEW_V8_RESEARCH",
+  "parent_commit": "cd7e6404f37861003dcdd0fe1757bb2543ebd6fb",
+  "runtime_unavailable": true,
+  "branch_worktree_local_state_not_changed_during_outage": true,
+  "publication_method": "Verified Git blobs and a fresh leased ref update. Local fetch/index reconciliation is pending runtime recovery.",
+  "native_preparation": {
+    "status": "Producer completed before outage; root rehashed and read recovered terminal records",
+    "rows": 299738,
+    "variables": 68934,
+    "owner_seconds": 28.94095356098842,
+    "raw_sha256": "540a30d40b3361451edcfb77175a7e74f8ebef061dd03c859aba7bacc91b22df",
+    "source_available_in_this_checkpoint": false,
+    "configuration_recovered_exactly": true,
+    "small_terminal_files_recovered": 9,
+    "missing_contents": [
+      {
+        "bytes": 2064027,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-native-preparation01-publication01/model.pb.gz.suffix",
+        "sha256": "31b3e6da2ebdf82c37b0404ca334af5caa6ad8f8acdbe763451931972d5c8527"
+      },
+      {
+        "bytes": 7009483,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-native-preparation01/model.pb.gz",
+        "sha256": "69371a3eebd59f7f8621d1ecf6ea0ea02ac9a3e5653a78a1acef723bd4828a35"
+      },
+      {
+        "bytes": 43230459,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-native-preparation01/model.pb",
+        "sha256": "540a30d40b3361451edcfb77175a7e74f8ebef061dd03c859aba7bacc91b22df"
+      }
+    ],
+    "independent_main_cold_executed": false,
+    "native_query_executed": false
+  },
+  "four_exterior": {
+    "pre_outage_inventory_rows": 72468,
+    "pre_outage_terms": 1250496,
+    "publication": "Incomplete; see checkpoint80-four-exterior-pending-manifest.json",
+    "standalone_full_local_proof_included": true,
+    "standalone_proof_independently_reviewed": true,
+    "failed_original_cold_outer_metadata_receipt_preserved_by_hash": true,
+    "metadata_resolution_acceptance_does_not_replace_missing_file_bytes": true
+  },
+  "rook": {
+    "remaining_cover_boxes": 187,
+    "new_case_exclusions": 0,
+    "prepared_global_integer_equalities": 633,
+    "parity_sweep_executed": false,
+    "new_controller_control_terminal_unconfirmed": true,
+    "mod4_mathematical_lifting_proof_and_tiny_controls_included": true,
+    "case_specific_mod4_calculation_executed": false
+  },
+  "new_triangle_work": {
+    "forward_complete": true,
+    "independent_complete_replay": "prepared separately; not in this checkpoint",
+    "triangle_count": 1179048,
+    "plus_negative": 10830,
+    "minus_negative": 0,
+    "old_literal_zero_rejected": 3840,
+    "remaining_after_that_test": 6990,
+    "other_redundancy_tests_claimed": false,
+    "full_pattern_or_positive_cube_scan_executed": false
+  },
+  "no_graph_constructed": true,
+  "no_whole_case_excluded": true,
+  "no_unrestricted_solution": true,
+  "recovery_instructions": [
+    "Preserve the unavailable checkout and every existing run directory.",
+    "Fetch the published branch and inspect exact file hashes before any local index reconciliation.",
+    "Recover and hash the missing original four-exterior files and model suffix; do not overwrite or relabel their receipts.",
+    "Run the append independent replay only after its full pinned input set is available and a fresh root execution gate is recorded.",
+    "Inspect the unconfirmed rook tiny-control attempt before deciding whether a new invocation is needed.",
+    "Do not repeat the unchanged original168050-row query or infer feasibility from an UNKNOWN result."
+  ]
+}

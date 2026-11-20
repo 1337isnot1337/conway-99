@@ -1,0 +1,398 @@
+{
+  "Boolean_edge_variables": 68394,
+  "all1884prism_witnesses_independently_checked": true,
+  "all258by12transport_mappings_independently_checked": true,
+  "all73440core_pair_buckets_independently_checked": true,
+  "all_appended_rows_independently_reconstructed": 150888,
+  "complete_native_model_byte_comparison": true,
+  "complete_original_parent_rows": 17162,
+  "complete_original_parent_variables": 540,
+  "complete_original_selector_registry_rows": 12481,
+  "degree_rows": 480,
+  "endpoint_rows": 136788,
+  "explicit_empty_mixed_rows": 756,
+  "file_count": 51,
+  "files": [
+    {
+      "bytes": 15210,
+      "git_blob_sha": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+    },
+    {
+      "bytes": 18040,
+      "git_blob_sha": "086e30caac2cadd4dd18d332857b6e84f89699b5",
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model_v2.py",
+      "sha256": "062737362b889823c8fd2c068bcdd08feac2737214cc7bbd1f3802ec31ea6c71"
+    },
+    {
+      "bytes": 27882,
+      "git_blob_sha": "c8d3622955873ed14186eef1f5247eae512cbbb4",
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model_replay.py",
+      "sha256": "81a2ce4b5ccf72e0e169cd4d3c371341aa2fea448bb407e0069f0783e217ef18"
+    },
+    {
+      "bytes": 21161,
+      "git_blob_sha": "adca53695cbaef454718d168d110d281f5eabc4e",
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_query.py",
+      "sha256": "d4f08d6eb893b88ec33dcbef50ddae90799cbca5d49f8d6b5bd7332f0ad09999"
+    },
+    {
+      "bytes": 5336,
+      "git_blob_sha": "7b7f6c41f7d5c1aa419b9dd57e12f18db909f1ca",
+      "path": "research/root_prism_free_f0_boolean_shared_model.md",
+      "sha256": "dffda2f49c092cca497f249e5c15ac2e7cca205cb4a9c3b29fb29a512a428abc"
+    },
+    {
+      "bytes": 2848,
+      "git_blob_sha": "75840c2f39776dfea63482c93b343bb01b8d56af",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-model-configuration01.json",
+      "sha256": "e3ec62ae3b9bb6d98170960c4ef24b4c18a0cea07dc0e53ee8301a29d343dba0"
+    },
+    {
+      "bytes": 5351,
+      "git_blob_sha": "6cea22fa3cb128321c7384c01dc0cede1b01bd42",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-model-configuration02.json",
+      "sha256": "7b35ad5aa8b66323b8cd5a30fc6f1265d56d59b2477426b9e1794b3f7aa82a9a"
+    },
+    {
+      "bytes": 3467,
+      "git_blob_sha": "ae8265747db21bac413789e4e933dcc75b76357f",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-configuration01.json",
+      "sha256": "dcd8e3f99c8773e5150deb2542600a34e56058f5ca3144f7f537b7c1e64ac693"
+    },
+    {
+      "bytes": 2329,
+      "git_blob_sha": "82dc79c36bc42be47201b473db74136ed82fa9b7",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-base-independent-source-review01.json",
+      "sha256": "5b0251f0ed172e7ae388104572b81e9afd8a1146838b1933415048714a371af8"
+    },
+    {
+      "bytes": 2388,
+      "git_blob_sha": "7cd8e4dd1c9ddebec0904be756642f7966b9f69e",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-overlay-independent-source-review01.json",
+      "sha256": "d0cd4393af9e5122332d15b1306e598c9b1b3a53acdae98385af1e19361a0356"
+    },
+    {
+      "bytes": 550,
+      "git_blob_sha": "292e98214b3ab24a89bfa6e7b39b88ec6ca3701e",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-independent-controls01.json",
+      "sha256": "56c356240c2a19dc3e01c36b5cebaa713bf809aeca163bb8dcfdae142975a7e6"
+    },
+    {
+      "bytes": 6378,
+      "git_blob_sha": "a2ecaf5f77fefd97390a26bb29b28cacc364c523",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation-root-gate01.json",
+      "sha256": "474a18fc684de31bb064407003ef46ff9b71315024401eb336ce100b41db3a77"
+    },
+    {
+      "bytes": 2117,
+      "git_blob_sha": "2d8c6020602dec1c64e7cd0cb1332d0d6b8fd6a2",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-independent-cold-root-gate01.json",
+      "sha256": "515bae037b4cb22aa09c9a677cc4a4898a77574e48d95fd3b9685f0471adb166"
+    },
+    {
+      "bytes": 1517,
+      "git_blob_sha": "e9d4fd9671b0e258e7be15099e5a1d7a5dd96065",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preflight-root-gate01.json",
+      "sha256": "3de4844b7dd7d859a12a3176d42a51e370288039cc33e739bbab20b566078c07"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/child.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/child.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 260,
+      "git_blob_sha": "37e2b3c801d47e967bf7f3a40f23342dd57b19d6",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/invalid-control.pb",
+      "sha256": "556a38a3cf7977ea0c96ace680d77d2d684cfa775ab2446b815769baa4c2d45c"
+    },
+    {
+      "bytes": 543,
+      "git_blob_sha": "6c55925a92fdd84d8252146dc63f7921f155e2bd",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/owner.json",
+      "sha256": "82976dd169322906b7ef1ba9ed114cd1f81081eb058b09772bafd26e5622dcfb"
+    },
+    {
+      "bytes": 1005,
+      "git_blob_sha": "9488f04a9c877a71c091662cc0283614b5f36fdb",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/report.json",
+      "sha256": "a66a0a6b514cdc94d6873ae4314f8e9d83c21d10925380e10fa7859e419390ca"
+    },
+    {
+      "bytes": 125,
+      "git_blob_sha": "9a769d7db272c7cb100700a610e2fa76041f9727",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/supervisor.json",
+      "sha256": "e1cfb3a35984c97828ff9f075ccbcd8406933443b8273b502e2f97da84f717b0"
+    },
+    {
+      "bytes": 260,
+      "git_blob_sha": "33ad366e554b0de567f9385dbd9b7308ffc4ceee",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-controls01/valid-control.pb",
+      "sha256": "a5083f21657c17c497dbd769eca123b3f03fd6be1e325dc64610bc4cfd323897"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/child.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/child.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4960256,
+      "git_blob_sha": "42147e11629fd28e5678fb0b47ed39b867a0c76d",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/model.pb.gz",
+      "sha256": "5d2e705f10f5a04f593a486ca271f0a6e06dc981c95ffc977054c6fdce906036"
+    },
+    {
+      "bytes": 219390,
+      "git_blob_sha": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183"
+    },
+    {
+      "bytes": 613,
+      "git_blob_sha": "6550192c39c259419c5c61c5f216093ef2f6b1bd",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/owner.json",
+      "sha256": "1235205d26e3df428e83b666a5f7145db6c66f8c40677ec41a0ba9a86e601b5f"
+    },
+    {
+      "bytes": 2371,
+      "git_blob_sha": "ca7493b3de152e283a20649b0f5b51989cfc2b4f",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/report.json",
+      "sha256": "ecdc3405f803d8e5815dba2555f4c9884018de69aff0b756a132e26c0a0a8471"
+    },
+    {
+      "bytes": 144,
+      "git_blob_sha": "5539ed16f7c8020b30bc96d1ce68a315b65e855e",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/stages.json",
+      "sha256": "186c2a28c23dcb5865efe0313459e10f7583afeacc52ab6998abad0ad18b84a5"
+    },
+    {
+      "bytes": 124,
+      "git_blob_sha": "637bd344e95496e995e15051aca45b47dfc7e6ac",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/supervisor.json",
+      "sha256": "4b6fa369ef808ae81a29a85a9e09796b83f02c35fec4207a1c402dc12340ea0f"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/cold.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 91,
+      "git_blob_sha": "a8fbaec4be3489525fea195a39f669d4386adc45",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/cold.stdout.log",
+      "sha256": "df38fbf4fa32edda57ea282569f7ba2c264490c8b8dcae3492788c53ccb1cff4"
+    },
+    {
+      "bytes": 978,
+      "git_blob_sha": "889b014257d131065844a485c9001116add35434",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owned-initial-receipt.json",
+      "sha256": "1f31e0fb8a395c757e3f9f75af3623ba630965f433c40b934cca70adb0da852e"
+    },
+    {
+      "bytes": 1388,
+      "git_blob_sha": "93776d961797c1e6a6b4128de2b151214fa538fe",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owner-snapshot-resolution.json",
+      "sha256": "98ce6c33c441f57fa958c8d3581cce37c27c56cd701f488a4c24ab26b313cc49"
+    },
+    {
+      "bytes": 2753,
+      "git_blob_sha": "47ae46061672792d37bc43c6fa810ba4af64867c",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owner.json",
+      "sha256": "ccd6e7ffa5d46d35ab4d65efdfd2fb87922ebcddfa6fbe03d326c98f0784edd2"
+    },
+    {
+      "bytes": 2974,
+      "git_blob_sha": "7fa121b51f40647e9bba288dd443cc5bb9d68f9d",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/report.json",
+      "sha256": "a907d1c0f51f893166f32b1aab136d885b412cf0aecbdfed2a938fdaaf373efb"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-publication01/empty-model-suffix.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 931,
+      "git_blob_sha": "60b4cd493b0d8a4301e11b77b51f898003ade388",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-publication01/manifest.json",
+      "sha256": "cafc50e1a393af130c10102effeea3078795c06aa611c52c06b339dd40f247d5"
+    },
+    {
+      "bytes": 410,
+      "git_blob_sha": "95aaaf96a31846ee13f439a9df77f68ae4b6e487",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-publication01/restoration-report.json",
+      "sha256": "69d7d14eb95ce3ec7e9345d60da927846552ca8ff59eff61c7221f96f84a477a"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/child.stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/child.stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 572,
+      "git_blob_sha": "be8550ee2e63881350e374a0c8aa27566c87d44e",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/owner.json",
+      "sha256": "cec3baf75378a2f8a40be96a45d64ce1d187f5bd4e7540dbff5831cb69c0f674"
+    },
+    {
+      "bytes": 15472,
+      "git_blob_sha": "4c90e2fcaafc88fa2514ddae1fd0c72c992adcbe",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/parameter-schema.pb",
+      "sha256": "644354522af4202900329fc55844364cf1bfa77333b7ceb98e9de4aa49036c52"
+    },
+    {
+      "bytes": 31,
+      "git_blob_sha": "e640f1154400626ba53c10cf597f4aeadf450fb7",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/parameters.pb",
+      "sha256": "44ef20593adc77f4ab58218b34c80e9d33540599886d2dfda94a869b8f2781f7"
+    },
+    {
+      "bytes": 178,
+      "git_blob_sha": "9fdf4ff2625caf6246654c5f053157d5972158a7",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/parameters.pbtxt",
+      "sha256": "2453fb5144bd7c8265af3ed0cbb9d107579f0dcd60a237619a32a970953b7c51"
+    },
+    {
+      "bytes": 2129,
+      "git_blob_sha": "d92c96fa69cef660369e5340db32ed296af6da6d",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/report.json",
+      "sha256": "2a40d71a0ea8ac7030fdd598df89d9bd8f9bd17355d6b0c27d5e07490573bff5"
+    },
+    {
+      "bytes": 125,
+      "git_blob_sha": "04e240dfca3cedccaca8dd6ea3dd4764281658d8",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/supervisor.json",
+      "sha256": "8eff2eb79a555e580aa2f7b362e5c0a86a7e0663de0c7ed418c54fdfc88d8039"
+    },
+    {
+      "bytes": 0,
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01-publication01/empty-model-suffix.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 929,
+      "git_blob_sha": "2e499226f9cea99aaa0ef2ee7b5a710bddd302e1",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01-publication01/manifest.json",
+      "sha256": "16706eaefeb721252a038a4b89d26c11b50fae6740b79f7156c36ac9ab7fe257"
+    },
+    {
+      "bytes": 409,
+      "git_blob_sha": "d94ee41ecbc7d6294323594e7d3c2f4b099d5253",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01-publication01/restoration-report.json",
+      "sha256": "ac9f96b424d99c983837906e5b5f9483d7d1411675083f769e0facd88743a1b1"
+    },
+    {
+      "bytes": 2610,
+      "git_blob_sha": "b85dc843efa43619edee6715493b3bcf2bc4e23c",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-independent-source-review01.json",
+      "sha256": "ebbb4e473112ef8f6d1cb4ce35024a8478fbdea248796e33a6047ef452c43f97"
+    },
+    {
+      "bytes": 2752,
+      "git_blob_sha": "7469a681ddcccf4f25d8d918b1a94acf48d4ddda",
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-root-gate01.json",
+      "sha256": "0a3a143a60292c133773de78ede15702695dd4b82b897c516a2b26f2771f0d64"
+    }
+  ],
+  "graph_constructed": false,
+  "historical_cold_owner_inventory_snapshot_preserved": true,
+  "historical_snapshot_path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owned-initial-receipt.json",
+  "historical_snapshot_resolution_path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-cold/owner-snapshot-resolution.json",
+  "independent_model_cold_owner_sha256": "ccd6e7ffa5d46d35ab4d65efdfd2fb87922ebcddfa6fbe03d326c98f0784edd2",
+  "independent_model_cold_report_sha256": "a907d1c0f51f893166f32b1aab136d885b412cf0aecbdfed2a938fdaaf373efb",
+  "literal_core_pair_clique_rows": 3096,
+  "mixed_rows": 8640,
+  "model_raw_bytes": 33451907,
+  "model_raw_sha256": "4505234d13039159c3191918f7db729819ad6ed25f46e538d91975466d660e83",
+  "native_INFEASIBLE_is_unproved": true,
+  "native_preparation_owner_sha256": "1235205d26e3df428e83b666a5f7145db6c66f8c40677ec41a0ba9a86e601b5f",
+  "native_preparation_report_sha256": "ecdc3405f803d8e5815dba2555f4c9884018de69aff0b756a132e26c0a0a8471",
+  "native_query_gate_included": true,
+  "native_query_outcome_included": false,
+  "prism_zero_rows": 1884,
+  "query_preflight_owner_sha256": "cec3baf75378a2f8a40be96a45d64ce1d187f5bd4e7540dbff5831cb69c0f674",
+  "query_preflight_report_sha256": "2a40d71a0ea8ac7030fdd598df89d9bd8f9bd17355d6b0c27d5e07490573bff5",
+  "raw_model_bytes_recoverable": 66903814,
+  "raw_model_copies_recoverable_without_duplicate_Git_blobs": 2,
+  "research_note": "research/root_prism_free_f0_boolean_shared_model.md",
+  "restoration_helper": {
+    "path": "experiments/workspace/exact_prefix_suffix_artifacts.py",
+    "sha256": "b1d5fb68cbbbdbad7ef7a59b31d9ec842fd17bc3269638a41b9e90be65f6324a"
+  },
+  "restorations": [
+    {
+      "command": "python experiments/workspace/exact_prefix_suffix_artifacts.py restore --manifest experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-publication01/manifest.json",
+      "manifest": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01-publication01/manifest.json",
+      "manifest_sha256": "cafc50e1a393af130c10102effeea3078795c06aa611c52c06b339dd40f247d5",
+      "source_gzip": {
+        "bytes": 4960256,
+        "codec": "gzip",
+        "decoded": {
+          "bytes": 33451907,
+          "sha256": "4505234d13039159c3191918f7db729819ad6ed25f46e538d91975466d660e83"
+        },
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/model.pb.gz",
+        "sha256": "5d2e705f10f5a04f593a486ca271f0a6e06dc981c95ffc977054c6fdce906036"
+      },
+      "suffix_bytes": 0,
+      "target": {
+        "bytes": 33451907,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/model.pb",
+        "sha256": "4505234d13039159c3191918f7db729819ad6ed25f46e538d91975466d660e83"
+      }
+    },
+    {
+      "command": "python experiments/workspace/exact_prefix_suffix_artifacts.py restore --manifest experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01-publication01/manifest.json",
+      "manifest": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01-publication01/manifest.json",
+      "manifest_sha256": "16706eaefeb721252a038a4b89d26c11b50fae6740b79f7156c36ac9ab7fe257",
+      "source_gzip": {
+        "bytes": 4960256,
+        "codec": "gzip",
+        "decoded": {
+          "bytes": 33451907,
+          "sha256": "4505234d13039159c3191918f7db729819ad6ed25f46e538d91975466d660e83"
+        },
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/model.pb.gz",
+        "sha256": "5d2e705f10f5a04f593a486ca271f0a6e06dc981c95ffc977054c6fdce906036"
+      },
+      "suffix_bytes": 0,
+      "target": {
+        "bytes": 33451907,
+        "path": "experiments/logs/root-prism-free/f0-boolean-shared-query-preparation01/model.pb",
+        "sha256": "4505234d13039159c3191918f7db729819ad6ed25f46e538d91975466d660e83"
+      }
+    }
+  ],
+  "rows": 168050,
+  "schema": "conway99.f0.boolean-shared-preparation-artifacts.v1",
+  "status": "COMPLETE_EXACT_BOOLEAN_MODEL_COLD_AND_ONE_CALL_PREFLIGHT",
+  "total_bytes": 5334397,
+  "variables": 68934,
+  "whole_component_excluded": false
+}

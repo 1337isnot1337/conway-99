@@ -1,0 +1,182 @@
+{
+  "schema": "conway99.f0-local-conflict-artifacts.v1",
+  "status": "FROZEN_COMPLETE_PRODUCTION_AND_COMPLETE_COLD_REPLAY",
+  "repository": "1337isnot1337/conway-99",
+  "file_count": 16,
+  "total_bytes": 2165996,
+  "source_sha256": "6e7a638c0c9045f82aceb37d4eceb749ad8911be4b65abeb52dd7be829f18036",
+  "coverage": {
+    "representative_centers": 42,
+    "literal_centers": 480,
+    "neighbor_variables_untied": true,
+    "mixed_quotas_per_center": 18,
+    "local_exterior_degree": 8,
+    "point_loaded": false,
+    "optimizer_calls": 0,
+    "maximal_clique_search": false,
+    "odd_cycle_search": false,
+    "local_feasibility_solve": false
+  },
+  "production": {
+    "seconds": 7.331973371001368,
+    "record_sha256": "cbfdad339ab84cb7eeb6b221e10be3c4c1db4fb70932de3a28e62ee4642cb7e0",
+    "record_raw_sha256": "8db1e5eaa05b4573dff5c582425651973c43238059a77c834b2bbd3bac1dbbe2"
+  },
+  "cold_replay": {
+    "first_attempt_status": "TIMEOUT_WITH_20_COMPLETE_MATCHING_CENTERS",
+    "prefix_sha256": "4717dc11e6f40007d58befc3ae968ceaaadb805c0548f797817846b3a0843be9",
+    "supplemental_authorized_suffix_centers": 22,
+    "suffix_status": "PASS",
+    "suffix_seconds": 4.385070097996504,
+    "suffix_sha256": "ae85e2c9cbe19b72ad23231c6ee28ac135098eb078088780d4bd0988bd28cb5e",
+    "already_completed_centers_recomputed": 0,
+    "full_record_equality": true
+  },
+  "findings": {
+    "literal_path_conflicts": 61476,
+    "path_conflicts_covered_by_recorded_base_and_core_cliques": 3480,
+    "new_path_conflicts": 57996,
+    "motif_conflict_center_incidences": 14832,
+    "motif_incidences_covered_by_recorded_homogeneous_layers": 5328,
+    "remaining_semantic_motif_incidences": 9504,
+    "representative_triangles_with_new_path_edges": 72045,
+    "representative_triangles_with_new_motif_edges": 4826,
+    "graph_degeneracy_range": [
+      46,
+      64
+    ]
+  },
+  "scope": "Listed local necessary conflicts only. No claim of local or graph infeasibility, full constraint completeness, or independence of newly counted clique inequalities.",
+  "independent_three_selector_review_included": true,
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_local_conflict_inventory.py",
+      "bytes": 27271,
+      "sha256": "6e7a638c0c9045f82aceb37d4eceb749ad8911be4b65abeb52dd7be829f18036",
+      "git_blob_sha": "a3a7b01d3507f75807e3d6c6d2adaf70deb826d9",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_local_conflict_suffix_replay.py",
+      "bytes": 5502,
+      "sha256": "8a11e514ae7c8b56c001411ea7df8ee82a4e216a641584227ac8e13185829687",
+      "git_blob_sha": "e88c0d68ade5301fdd0b381445a2da2d502a1a48",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "research/root_prism_free_f0_local_conflict_inventory.md",
+      "bytes": 5269,
+      "sha256": "0490927540766fec6b5190a6cc085afe7fd82630157f3994c9babaa47dcd7c82",
+      "git_blob_sha": "60181bbf2414bab6338ac772c9824a3a2abf0ad1",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "research/root_prism_free_f0_local_conflict_inventory_result.md",
+      "bytes": 4167,
+      "sha256": "97ed2fff19932b5329cc429646cb5912c18aef09dca47915dc7e0e28dcb463bc",
+      "git_blob_sha": "f4ccb51800d4e91b75f360e0e416546d2ae0e565",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-model-preparation.json",
+      "bytes": 40862,
+      "sha256": "a1cd24f263b9712aeb7f4ecb1b69467f698c83527199c4fc063a3c63ccee5406",
+      "git_blob_sha": "fb497db87f089a9fee656c899ed86cec6f7b4077",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-preparation.json",
+      "bytes": 1239,
+      "sha256": "e9cf69b76d7aa39ee2d470c03101129dd32cdbbe68d5b39ebe2cd39568b4b8ad",
+      "git_blob_sha": "2b8ae78c86b168df0f81da12efd1a451d65e7321",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-preparation.log",
+      "bytes": 1239,
+      "sha256": "e9cf69b76d7aa39ee2d470c03101129dd32cdbbe68d5b39ebe2cd39568b4b8ad",
+      "git_blob_sha": "2b8ae78c86b168df0f81da12efd1a451d65e7321",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01.json.gz",
+      "bytes": 411016,
+      "sha256": "cbfdad339ab84cb7eeb6b221e10be3c4c1db4fb70932de3a28e62ee4642cb7e0",
+      "git_blob_sha": "a12e450c7039a38183133765af25fc21fda40df9",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-result.json",
+      "bytes": 470,
+      "sha256": "ee18fe2575911029d77ec22d774a939caa5f31c327d9f3f061af9ea2cb675e5d",
+      "git_blob_sha": "6465ef143701c212b5f499028acbd90fdf70321b",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01.log",
+      "bytes": 470,
+      "sha256": "ee18fe2575911029d77ec22d774a939caa5f31c327d9f3f061af9ea2cb675e5d",
+      "git_blob_sha": "6465ef143701c212b5f499028acbd90fdf70321b",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-summary.json",
+      "bytes": 26765,
+      "sha256": "59686bce7c37936634e08bdb18eb58b3d699b9f0b7e88fc7e163b184a1cac668",
+      "git_blob_sha": "13254475d2ceb89afde8a2b6d0702874eed9a4a0",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-replay.json",
+      "bytes": 1630970,
+      "sha256": "4717dc11e6f40007d58befc3ae968ceaaadb805c0548f797817846b3a0843be9",
+      "git_blob_sha": "cacb4a18a688c65c7aaa4ad4f3868ffa300a5fa3",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-replay.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-suffix-replay.json",
+      "bytes": 3589,
+      "sha256": "ae85e2c9cbe19b72ad23231c6ee28ac135098eb078088780d4bd0988bd28cb5e",
+      "git_blob_sha": "3b3930505b73b932aeaf5151e16ff3badda64f47",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-local-conflict-inventory01-suffix-replay.log",
+      "bytes": 3589,
+      "sha256": "ae85e2c9cbe19b72ad23231c6ee28ac135098eb078088780d4bd0988bd28cb5e",
+      "git_blob_sha": "3b3930505b73b932aeaf5151e16ff3badda64f47",
+      "mode": "100644",
+      "type": "blob"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-three-selector-inequalities-independent-source-review.json",
+      "bytes": 3578,
+      "sha256": "9709536c1a25c85dcef8b97c104e0d98b6bcce3a7ebf46cb63f82df6595a5f14",
+      "git_blob_sha": "26e909c464e6ed2cf8ca5cbadad315426fb3a938",
+      "mode": "100644",
+      "type": "blob"
+    }
+  ],
+  "remote_mutations": "Git blobs only. No tree, commit, branch, issue or ref was changed by this agent."
+}

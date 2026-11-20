@@ -1,0 +1,659 @@
+{
+  "status": "higher-flag products prepared; cold literal controls PASS",
+  "source_sha256": "32b39c98538bd5358e64e7e794c9f6464704ea7f1fe9f6f171d9243f4af88a36",
+  "domain_source_sha256": "a2fb1b18940423cdd6d36bce91bac54cbe3eecc8622c2418642b8a9559c8c6f0",
+  "domain_path": "experiments/logs/moments-and-counts/order10-higher-flags-domains.json",
+  "domain_sha256": "ccee69da0b0fa9eb111143c6a97a791ab88c7d7ce7004d690ab2ec286c4c2144",
+  "catalogue_path": "/tmp/conway99-order10-catalogue.pickle",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "transport_source_sha256": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469",
+  "independent_oracle_sha256": "46bbbf5521383fc14925644e1dcb82ebeca99094b5726b8f23e3d774aa6f643f",
+  "full_overlap_stabilizer_checks": 890,
+  "cold_independent_lower_entries": 211,
+  "cold_entries_with_order_ten_terms": 25,
+  "both_product_orders_checked": true,
+  "all_overlap_multiplicities_retained": true,
+  "stabilizer_divisor_used": false,
+  "small_r2s4_symbolic_blocks": [
+    {
+      "root_type": 2,
+      "flag_rows": [
+        [
+          0,
+          0
+        ],
+        [
+          12,
+          48,
+          25,
+          37,
+          38,
+          26
+        ],
+        [
+          40,
+          48,
+          56,
+          21,
+          14,
+          7
+        ],
+        [
+          52,
+          56,
+          25,
+          38,
+          7,
+          11
+        ]
+      ],
+      "stabilizers": [
+        1,
+        2,
+        1,
+        1
+      ],
+      "entries": [
+        {
+          "flag_indices": [
+            0,
+            0
+          ],
+          "labelled_embedding_terms": [
+            [
+              2,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1
+          }
+        },
+        {
+          "flag_indices": [
+            1,
+            0
+          ],
+          "labelled_embedding_terms": [
+            [
+              98,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1
+          }
+        },
+        {
+          "flag_indices": [
+            1,
+            1
+          ],
+          "labelled_embedding_terms": [
+            [
+              98,
+              2
+            ],
+            [
+              1200,
+              4
+            ],
+            [
+              48790,
+              1
+            ],
+            [
+              48797,
+              8
+            ],
+            [
+              48829,
+              4
+            ],
+            [
+              48859,
+              8
+            ],
+            [
+              48952,
+              4
+            ],
+            [
+              48954,
+              8
+            ],
+            [
+              48962,
+              2
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 35,
+            "2": 4,
+            "4": 2
+          }
+        },
+        {
+          "flag_indices": [
+            2,
+            0
+          ],
+          "labelled_embedding_terms": [
+            [
+              95,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1
+          }
+        },
+        {
+          "flag_indices": [
+            2,
+            1
+          ],
+          "labelled_embedding_terms": [
+            [
+              1222,
+              2
+            ],
+            [
+              6384,
+              4
+            ],
+            [
+              48397,
+              1
+            ],
+            [
+              48527,
+              4
+            ],
+            [
+              48785,
+              2
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 7,
+            "1": 4,
+            "2": 2
+          }
+        },
+        {
+          "flag_indices": [
+            2,
+            2
+          ],
+          "labelled_embedding_terms": [
+            [
+              95,
+              1
+            ],
+            [
+              6366,
+              2
+            ],
+            [
+              6447,
+              1
+            ],
+            [
+              6448,
+              2
+            ],
+            [
+              6449,
+              2
+            ],
+            [
+              6465,
+              1
+            ],
+            [
+              6520,
+              1
+            ],
+            [
+              6530,
+              2
+            ],
+            [
+              6531,
+              2
+            ],
+            [
+              6533,
+              1
+            ],
+            [
+              45714,
+              1
+            ],
+            [
+              45716,
+              1
+            ],
+            [
+              48323,
+              2
+            ],
+            [
+              48325,
+              2
+            ],
+            [
+              48351,
+              2
+            ],
+            [
+              48353,
+              2
+            ],
+            [
+              48762,
+              4
+            ],
+            [
+              48771,
+              4
+            ],
+            [
+              48870,
+              1
+            ],
+            [
+              48872,
+              1
+            ],
+            [
+              48940,
+              2
+            ],
+            [
+              48941,
+              4
+            ],
+            [
+              48951,
+              4
+            ],
+            [
+              48952,
+              2
+            ],
+            [
+              48953,
+              4
+            ],
+            [
+              48954,
+              4
+            ],
+            [
+              48958,
+              4
+            ],
+            [
+              48959,
+              2
+            ],
+            [
+              48960,
+              2
+            ],
+            [
+              48962,
+              2
+            ],
+            [
+              48964,
+              2
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 52,
+            "1": 14,
+            "4": 1
+          }
+        },
+        {
+          "flag_indices": [
+            3,
+            0
+          ],
+          "labelled_embedding_terms": [
+            [
+              99,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1
+          }
+        },
+        {
+          "flag_indices": [
+            3,
+            1
+          ],
+          "labelled_embedding_terms": [
+            [
+              47797,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1
+          }
+        },
+        {
+          "flag_indices": [
+            3,
+            2
+          ],
+          "labelled_embedding_terms": [
+            [
+              6517,
+              2
+            ],
+            [
+              6528,
+              2
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "1": 4
+          }
+        },
+        {
+          "flag_indices": [
+            3,
+            3
+          ],
+          "labelled_embedding_terms": [
+            [
+              99,
+              1
+            ],
+            [
+              1223,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "2": 1,
+            "4": 1
+          }
+        }
+      ]
+    },
+    {
+      "root_type": 3,
+      "flag_rows": [
+        [
+          2,
+          1
+        ],
+        [
+          14,
+          49,
+          25,
+          37,
+          38,
+          26
+        ],
+        [
+          42,
+          49,
+          56,
+          21,
+          14,
+          7
+        ]
+      ],
+      "stabilizers": [
+        1,
+        2,
+        1
+      ],
+      "entries": [
+        {
+          "flag_indices": [
+            0,
+            0
+          ],
+          "labelled_embedding_terms": [
+            [
+              3,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1
+          }
+        },
+        {
+          "flag_indices": [
+            1,
+            0
+          ],
+          "labelled_embedding_terms": [
+            [
+              99,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1
+          }
+        },
+        {
+          "flag_indices": [
+            1,
+            1
+          ],
+          "labelled_embedding_terms": [
+            [
+              99,
+              2
+            ],
+            [
+              48791,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1,
+            "4": 2
+          }
+        },
+        {
+          "flag_indices": [
+            2,
+            0
+          ],
+          "labelled_embedding_terms": [
+            [
+              99,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1
+          }
+        },
+        {
+          "flag_indices": [
+            2,
+            1
+          ],
+          "labelled_embedding_terms": [
+            [
+              1223,
+              2
+            ],
+            [
+              48400,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "0": 1,
+            "2": 2
+          }
+        },
+        {
+          "flag_indices": [
+            2,
+            2
+          ],
+          "labelled_embedding_terms": [
+            [
+              99,
+              1
+            ],
+            [
+              6519,
+              1
+            ],
+            [
+              6521,
+              3
+            ],
+            [
+              6533,
+              3
+            ],
+            [
+              6534,
+              1
+            ]
+          ],
+          "accepted_completions_by_overlap": {
+            "1": 8,
+            "4": 1
+          }
+        }
+      ]
+    }
+  ],
+  "direct_rook_host_controls": [
+    {
+      "root_type": 2,
+      "flags": 4,
+      "root_embeddings": 36,
+      "maximum_labelled_flag_value": 2,
+      "first_moments": [
+        36,
+        0,
+        0,
+        72
+      ],
+      "second_moments": [
+        36,
+        0,
+        0,
+        144
+      ],
+      "all_matrix_entries_match_direct_host_counts": true
+    },
+    {
+      "root_type": 3,
+      "flags": 3,
+      "root_embeddings": 36,
+      "maximum_labelled_flag_value": 2,
+      "first_moments": [
+        36,
+        72,
+        72
+      ],
+      "second_moments": [
+        36,
+        144,
+        144
+      ],
+      "all_matrix_entries_match_direct_host_counts": true
+    },
+    {
+      "root_type": 16,
+      "flags": 15,
+      "root_embeddings": 72,
+      "maximum_labelled_flag_value": 1,
+      "first_moments": [
+        72,
+        72,
+        72,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "second_moments": [
+        72,
+        72,
+        72,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_matrix_entries_match_direct_host_counts": true
+    }
+  ],
+  "prism_zero_projection": [
+    {
+      "root_type": 2,
+      "retained_flag_indices": [
+        0,
+        1,
+        2
+      ],
+      "prism_flag_indices": [
+        3
+      ],
+      "retained_order": 3
+    },
+    {
+      "root_type": 3,
+      "retained_flag_indices": [
+        0
+      ],
+      "prism_flag_indices": [
+        1,
+        2
+      ],
+      "retained_order": 1
+    }
+  ],
+  "full_r4s3_root_count": 9,
+  "full_r4s3_flags": 883,
+  "full_r4s3_lower_entries": 90240,
+  "full_r4s3_cache_generated": false,
+  "full_r2s4_lower_entries": 16,
+  "count_point_used": false,
+  "dense_reduction_loaded": false,
+  "optimizer_called": false,
+  "transport_checks": 2044,
+  "normalized_prefixes": 2039,
+  "raw_prefixes_used_only_for_transport_caching": 70,
+  "seconds": 5.241913271001977,
+  "peak_process_rss_kib": 178944
+}

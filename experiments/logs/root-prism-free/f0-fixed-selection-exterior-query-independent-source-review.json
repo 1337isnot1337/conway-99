@@ -1,0 +1,47 @@
+{
+  "schema": "conway99.f0.fixed-selection-exterior-query.independent-source-review.v1",
+  "status": "PASS: complete source-only query, proof, cold replay and process ownership review",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+    "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+    "lines_read": 492
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-fixed-selection-exterior-query-configuration01.json",
+    "sha256": "3d9a7873be11b0121da1b7b8640c6cd32c5d7a2f1651e45ab6c8e4ba9c1c337a"
+  },
+  "additional_source_read": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior.py",
+      "sha256": "2c8a0f7f2bc2a219c994f42618585879e16a6d3a5809627b9aea25be40798160",
+      "scope": "source binding, AST extraction, reused_api and build paths"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_first_design_exterior.py",
+      "sha256": "f0c5105526b9374935b4ba961859261249f44f2b311d98138ac3c8aeb5ed56cd",
+      "scope": "complete reused build, inspect and read_clauses functions"
+    }
+  ],
+  "findings": {
+    "frozen_model_and_selection": "The query binds the actual model/CNF, exact60-element selection, builder preparation, passed complete-model cold report and accepted cold owner. It does not invoke the historical selection loader or fix the second component.",
+    "single_native_call": "The source constructs one proof-enabled Glucose4 instance, with no assumptions or retries. Its60-second native allowance starts before native imports/CNF parsing/bootstrap. The180-second process-group owner bounds all query work. An initialization or solve overrun remains UNKNOWN.",
+    "durable_candidate": "A complete raw SAT assignment is saved before full-clause and exact-primary inspection. Acceptance requires one signed value for every CNF variable, every clause satisfied, and the reused inspector's240-edge degree8/mixed1080/pair1770 checks. The conclusion is a partial exterior graph only.",
+    "proof_acceptance": "Raw UNSAT is unverified. Direct acceptance requires the pinned checker, normal zero exit, no timeout or budget overrun, and an exact standalone s VERIFIED line. The source saves the raw proof and the retained-input/trimmed-proof artifacts.",
+    "retained_input_scope": "The parser yields an empty clause for a line0. Counter inclusion compares every retained clause, including multiplicity, against the complete frozen formula after literal-order normalization. It cannot silently discard an empty retained clause.",
+    "cold_proof_scope": "Cold mode rebuilds the complete fixed-selection data/CNF from the frozen selection and checks exact formula/hash equality. It binds the accepted query owner and direct check, rechecks retained-clause inclusion in the rebuilt formula, then invokes the checker separately on retained inputs/proof.",
+    "selector_cut": "Only an accepted cold owner with both proof passes emits sum of the60 selected selector bits <=59. Its stated population60 premise makes the cut exclude exactly this first-component selection. There is no whole-component or whole-graph exclusion claim.",
+    "owner_acceptance": "Normal zero exit, accepted matching report hash, elapsed-time gate and child reaping are all required. Late/partial/error files remain preserved but cannot emit a certified cut.",
+    "process_group": "The owner starts a new session and kills its own process group in final cleanup. The direct checker inherits that group and also has its own timeout/kill/reap path, so a hard owner timeout does not intentionally leave a checker running.",
+    "resource_scope": "Saved CNF and proof sizes are explicitly limited to64MiB and256MiB. These are artifact-size limits, not a claim of a hard memory-allocation cap. Cold has a60-second owner including its rebuild and remaining checker allowance."
+  },
+  "execution_scope": {
+    "subject_imports": 0,
+    "native_imports": 0,
+    "model_builds": 0,
+    "preflight_or_controls_rerun": 0,
+    "solver_calls": 0,
+    "proof_checks": 0
+  },
+  "inherited_scope": "Necessity and completeness of the fixed-selection formula remain inherited from the frozen builder/cold/source gates. This report reviews the new query/replay and its actually reused parser/inspector, without recomputation.",
+  "production_driver_review_only": true
+}

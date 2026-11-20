@@ -1,0 +1,159 @@
+{
+  "status": "PASS: exact full-core Schur corrections; no point query",
+  "seconds": 7.025284337003541,
+  "source_sha256": "0988a97703673a2ef2d6f8afb204e06edba14bb9065c0c2361e5ac79840fb6a9",
+  "families": [
+    {
+      "family": "plus",
+      "rank21": 20,
+      "selected_core_vertices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "selected_core_positive_LDL_pivots": [
+        "28",
+        "180/7",
+        "513/20",
+        "408/19",
+        "432/17",
+        "21",
+        "351/14",
+        "264/13",
+        "2007/88",
+        "5049/223",
+        "27615/1496",
+        "206568/9205",
+        "104247/5738",
+        "2520/143",
+        "6057/280",
+        "464913/21536",
+        "342228/17219",
+        "599067/28519",
+        "1253880/66563",
+        "810/43"
+      ],
+      "triangle_schur": [
+        [
+          "12",
+          "-6",
+          "-6"
+        ],
+        [
+          "-6",
+          "12",
+          "-6"
+        ],
+        [
+          "-6",
+          "-6",
+          "12"
+        ]
+      ],
+      "residual_cross_vectors_checked": 480,
+      "all_115440_full_vs_old_kernel_entries_checked": true,
+      "old_saved_kernel_entries_checked": 115440,
+      "correction": "dot(d_a,d_b)/2",
+      "coefficient_common_denominator": 60,
+      "positive_common_divisor": 1,
+      "primitive_kernel_maximum_absolute_coefficient": 1238,
+      "primitive_kernel_maximum_coefficient_bits": 11,
+      "safe_raw_orbit_bound_at_vector1024": 31155290112,
+      "primitive_kernel_sha256": "91017b1ad1ea6ff3433e91030586ec820f939a158f8cf3aab0cbf77e4ef574ed"
+    },
+    {
+      "family": "minus",
+      "rank21": 21,
+      "selected_core_vertices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "selected_core_positive_LDL_pivots": [
+        "42",
+        "561/14",
+        "660/17",
+        "473/12",
+        "1650/43",
+        "77/2",
+        "264/7",
+        "297/8",
+        "110/3",
+        "110/3",
+        "363/10",
+        "2632/75",
+        "92565/2632",
+        "26234/765",
+        "34320/1009",
+        "4279/130",
+        "7471244/227565",
+        "15778763/509403",
+        "4155250/130403",
+        "45721663/1511000",
+        "652652/21577"
+      ],
+      "triangle_schur": [
+        [
+          "1221/41",
+          "1089/82",
+          "1089/82"
+        ],
+        [
+          "1089/82",
+          "1221/41",
+          "1089/82"
+        ],
+        [
+          "1089/82",
+          "1089/82",
+          "1221/41"
+        ]
+      ],
+      "residual_cross_vectors_checked": 480,
+      "all_115440_full_vs_old_kernel_entries_checked": true,
+      "old_saved_kernel_entries_checked": 115440,
+      "correction": "77/410+11*dot(d_a,d_b)/24",
+      "coefficient_common_denominator": 254280,
+      "positive_common_divisor": 11,
+      "primitive_kernel_maximum_absolute_coefficient": 791964,
+      "primitive_kernel_maximum_coefficient_bits": 20,
+      "safe_raw_orbit_bound_at_vector1024": 19930426638336,
+      "primitive_kernel_sha256": "3ec5835de875dc50cb9f349deb2bbd9bd16457657917b2e267a444d38e642b3d"
+    }
+  ]
+}

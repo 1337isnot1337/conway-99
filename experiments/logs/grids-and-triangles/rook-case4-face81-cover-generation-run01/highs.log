@@ -1,0 +1,42 @@
+LP has 3117 rows; 1134 cols; 28624 nonzeros
+Coefficient ranges:
+  Matrix  [1e+00, 1e+03]
+  Cost    [1e+00, 1e+00]
+  Bound   [1e+00, 1e+00]
+  RHS     [1e+00, 6e+04]
+Presolving model
+3117 rows, 1134 cols, 28624 nonzeros 0s
+Considering dependency of 390 equations in 1128 variables with 14222 nonzeros
+Dependent equations search removed 108 equations and 6358 nonzeros
+2803 rows, 1128 cols, 21068 nonzeros 0s
+Presolve reductions: rows 2803(-314); columns 1128(-6); nonzeros 21068(-7556) 
+Solving the presolved LP
+Choosing to use dual simplex solver
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0     0.0000000000e+00 Ph1: 0(0) 0.0s
+      11763     2.7755575616e-17 Pr: 0(0) 3.4s
+Performed postsolve
+Solving the original LP from the solution after postsolve
+Model status        : Optimal
+Simplex   iterations: 11763
+Objective value     :  1.4233194926e-15
+P-D objective error :  5.0738549732e-16
+HiGHS run time      :          3.40
+LP has 3121 rows; 1134 cols; 28696 nonzeros
+Coefficient ranges:
+  Matrix  [1e+00, 1e+03]
+  Cost    [1e+00, 1e+00]
+  Bound   [1e+00, 1e+00]
+  RHS     [1e+00, 6e+04]
+Solving LP with useful basis so presolve not used
+Choosing to use dual simplex solver
+Using dual simplex solver
+  Iteration        Objective     Infeasibilities num(sum)
+          0     5.7524121276e-05 Pr: 4(0.725433); Du: 0(4.97636e-06) 3.5s
+         21     8.6042284408e-16 Pr: 0(0) 3.5s
+Model status        : Optimal
+Simplex   iterations: 21
+Objective value     :  2.5124324409e-15
+P-D objective error :  1.5964984456e-15
+HiGHS run time      :          3.53

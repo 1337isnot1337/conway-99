@@ -1,0 +1,77 @@
+{
+  "schema": "conway99.f0.target-color-twelve-configuration.v1",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_target_color_twelve_certificate_v8.js",
+    "sha256": "dfb0764a29e53db9ba59b5fd291a45a612af0f690699b1892c195487014a152e",
+    "git_blob": "54fa064c0211d3cfa07214bf2304d7b0122b9cc9",
+    "bytes": 10514
+  },
+  "codec": {
+    "git_blob": "2aba8a06fa7f326fc4cf8f7f3f1f1e4b4df95ee0",
+    "sha256": "fbccc2396bfbe6085576f02468ef0acd23182445837c02abd5d05e00b9e87a00",
+    "bytes": 8304
+  },
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64-gzip"
+    },
+    "indicator": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json",
+      "sha256": "8606d51ced038b40135fa22bc16d056873b80c16c26d2c34db7e24ac8effd2c7",
+      "git_blob": "8188edc640d4dd896df0e64c4e08db4c78627e96",
+      "bytes": 1056971,
+      "encoding": "utf-8"
+    },
+    "triangle_literal_root": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-root-acceptance01.json",
+      "bytes": 3019,
+      "sha256": "9d4e3a9b44a2140d95091425a346396ed84dd8d9d88f3a4e7fa3e67d47cd51d4",
+      "git_blob": "afb20e51c7fafb5719cb491af8037a3a4aeeacba",
+      "encoding": "utf-8"
+    },
+    "total_bound_review": {
+      "path": "experiments/logs/root-prism-free/f0-must-triangle-total-independent-review01.json",
+      "bytes": 27211,
+      "sha256": "84572d32b842a905db9b08efe91be0fbf3fb8c1185ead6b782d9f6555f4eed3d",
+      "git_blob": "4fdaa03c481c57af8b55922be9b8f17d6658fd4c",
+      "encoding": "utf-8"
+    },
+    "combined_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+      "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+      "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+      "bytes": 33063,
+      "encoding": "utf-8"
+    }
+  },
+  "limits": {
+    "total_milliseconds": 30000,
+    "maximum_report_bytes": 1048576
+  },
+  "scope": "One exact check of the fixed84-edge colored-graph structure, its twelve-bound proof conditions, a color-feasible attaining witness, and a fractional color-only control. No assignment enumeration, new domain census, native model or optimizer.",
+  "expected": {
+    "target_edges": 84,
+    "target_vertices": 84,
+    "private_vertices": 72,
+    "shared_vertices": 12,
+    "private_colors": 12,
+    "shared_colors": 6,
+    "centers": 12,
+    "exposed_private_vertices": 24,
+    "bound": 12,
+    "witness_edges": 12
+  },
+  "original_selector_source": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_literal_model.py",
+    "git_blob": "3c5e9c810af89818a6da0417e1bdb9a878f896c3",
+    "sha256": "b500336db29820777afb59076384a48382fa54453fce5b232a072719893cea40",
+    "bytes": 33344
+  },
+  "no_execution_before_independent_full_source_and_theorem_review": true,
+  "no_native_append_authorized": true
+}

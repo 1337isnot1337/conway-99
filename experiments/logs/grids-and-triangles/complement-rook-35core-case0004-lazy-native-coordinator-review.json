@@ -1,0 +1,32 @@
+{
+  "status": "PASS: full native registry, prefix and loop sources reviewed",
+  "loop_source_sha256": "4d84924c8c25192312ce41298f66e2746d5c283f39ee95616dd11483148bdb48",
+  "preparation_sha256": "eb2f6e6ba0ec3fdb9e0496f16ffa26e7c59f95ae3d98ec86aa5223d2cc1f6d6e",
+  "model_sha256": "aeb636198cb0b9749e2142a596404181edf92923d55d5bdf764a8f9432439b68",
+  "cold_replay_sha256": "ad169d4dece65473c87e814338741923ce12b5a8b655379d35051dabfe029571",
+  "reviewed_checks": [
+    "All 2271 base constraints and 14 proved units are encoded initially",
+    "The complete external registry replays the frozen 178533 covers",
+    "Every complete Boolean candidate is checked against the full base and all registered covers",
+    "Each appended clause is a newly violated registered cover; no visitation block is introduced",
+    "Clause and literal limits are checked before any batch mutation and include all initial units",
+    "Chronological clause order is distinguished from membership and actual native proto bytes are checked",
+    "Every accepted candidate passes the complete frozen incidence inspector",
+    "UNKNOWN and INFEASIBLE stop without an exclusion claim",
+    "The owned-child watchdog preserves UNKNOWN before termination and reaps the child",
+    "Cold replay reconstructs all prefixes and candidate decisions without a solver"
+  ],
+  "authorized_run": {
+    "native_calls": 8,
+    "solver_seconds_per_call": 10,
+    "requested_child_seconds": 120,
+    "hard_parent_seconds": 180,
+    "workers": 1,
+    "inserted_cover_clauses": 25000,
+    "inserted_cover_literals": 2000000
+  },
+  "production_children": 1,
+  "automatic_retries": 0,
+  "finite_prefix_equivalent_to_full_registry": false,
+  "backend_status_is_an_exclusion_certificate": false
+}

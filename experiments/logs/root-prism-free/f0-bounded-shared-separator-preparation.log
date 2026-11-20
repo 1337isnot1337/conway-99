@@ -1,0 +1,49 @@
+{
+  "status": "bounded shared separator prepared; no optimizer call",
+  "source_sha256": "bbdf21247d98cff416f68492415a3db6ec5f98f47d1ebb9367acac1604192798",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_exterior_row_box_separation.py": "60366da662c74ee8d3ca367dc532c16b652952101fa5725a3248fc5a53a773bd",
+    "root_prism_free_f0_shared_deficit_separator.py": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf",
+    "root_prism_free_f0_lazy_continuation_transcript_bundle.py": "0152cfcc6d2b22be3714bd43a3b643301ec7a7fbf485a6728e66306ca16c10ec"
+  },
+  "parent_unknown_result_sha256": "3bb89930202266409acfce6ca52949b5c370928216ce64e9123e22daf5f9e593",
+  "parent_cold_replay_sha256": "7bd045ab660f3aedd2bd9c514c9e2fa8a91a4f07f415cebba2c133adc73b2330",
+  "parent_terminal_manifest_sha256": "a71e03191ed2eee685f0992923e84ad6e9900aebfc40c9ad00f29a2d639caa0d",
+  "model": {
+    "variables": 2300,
+    "potential_variables": 1080,
+    "positive_capacity_variables": 1220,
+    "inequality_rows": 1220,
+    "nonzeros": 8540,
+    "all_coefficients_integer": true,
+    "model_sha256": "c433fa3d8dc960dfec9860efc11d919da6c7f9741d5b15f7d53edd6aac8087c6",
+    "zero_potential_is_an_exact_feasible_point": true
+  },
+  "exact_domain_checks": {
+    "all480_signature_weights3_and_target_sums24": true,
+    "all60_actual_degree_rows_exactly_one_third_sum_of_mixed_rows": true,
+    "all324_component_Gram_entries_checked": true,
+    "all90_motif_conflicts_checked": true,
+    "all1356_registry_inequalities_and2448_primary_explanations_hold": true,
+    "candidate_sha256": "2773097763db646eae68a586bf763b585482e2f888814930453f24fd76dd7305",
+    "unknown_shared_record_sha256": "2b7b8796a2642dc77ebea1126582c9a39497f35530856b35084c183ff75fe3b7",
+    "original_shared_inventory": {
+      "primary_edges": 1220,
+      "equations": 1140,
+      "standard_form_rows": 2360,
+      "standard_form_variables": 2440,
+      "standard_form_nonzeros": 12200,
+      "data_sha256": "b5c0e2ab7e6b8130d2af32c8bfbcce2b4120a57f2ee0bb362c58018c35ae625c",
+      "rows_sha256": "40ad64af6e99c755aca4e48dd07436869a455374607ece250bb03b75081af7cf"
+    }
+  },
+  "maximum_query_seconds": 60,
+  "requested_optimizer": "simplex",
+  "threads": 1,
+  "save_returned_potentials_on_every_status": true,
+  "strict_integer_support_gap_required": true,
+  "getDualRay_not_used": true,
+  "original_feasibility_query_repeated": false,
+  "optimizer_or_solver_called": false,
+  "seconds": 1.3530071659988607
+}

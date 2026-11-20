@@ -1,0 +1,449 @@
+{
+  "status": "COMPLETE_TWO_EDGE_PRISM_COST_AND_REDUNDANCY_INVENTORY",
+  "source_sha256": "0d722525b142d6c4c23476540e368950e265c7efe99a654d24bb7fbb1b441960",
+  "inputs": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "edge_zeros": {
+      "path": "experiments/logs/root-prism-free/f0-edge-motif-census01.json.gz",
+      "sha256": "397e8bf110e03a5accb5e6c1f27b2fb5525100acb67427c66669e188e74159d1"
+    }
+  },
+  "controls": {
+    "all_twenty_three_vertex_prism_splits": {
+      "3": 2,
+      "2": 12,
+      "1": 6
+    },
+    "all_twelve_path_splits_have_the_same_literal_pattern": [
+      {
+        "outside": [
+          0,
+          1,
+          3
+        ],
+        "a_b_c": [
+          1,
+          0,
+          3
+        ],
+        "x_y_z": [
+          2,
+          5,
+          4
+        ],
+        "triangle_order": [
+          1,
+          0,
+          2,
+          3,
+          5,
+          4
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          0,
+          1,
+          4
+        ],
+        "a_b_c": [
+          0,
+          1,
+          4
+        ],
+        "x_y_z": [
+          2,
+          5,
+          3
+        ],
+        "triangle_order": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          3
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          0,
+          2,
+          3
+        ],
+        "a_b_c": [
+          2,
+          0,
+          3
+        ],
+        "x_y_z": [
+          1,
+          4,
+          5
+        ],
+        "triangle_order": [
+          2,
+          0,
+          1,
+          3,
+          4,
+          5
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          0,
+          2,
+          5
+        ],
+        "a_b_c": [
+          0,
+          2,
+          5
+        ],
+        "x_y_z": [
+          1,
+          4,
+          3
+        ],
+        "triangle_order": [
+          0,
+          2,
+          1,
+          5,
+          4,
+          3
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          0,
+          3,
+          4
+        ],
+        "a_b_c": [
+          4,
+          3,
+          0
+        ],
+        "x_y_z": [
+          5,
+          2,
+          1
+        ],
+        "triangle_order": [
+          4,
+          3,
+          5,
+          0,
+          2,
+          1
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          0,
+          3,
+          5
+        ],
+        "a_b_c": [
+          5,
+          3,
+          0
+        ],
+        "x_y_z": [
+          4,
+          1,
+          2
+        ],
+        "triangle_order": [
+          5,
+          3,
+          4,
+          0,
+          1,
+          2
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          1,
+          2,
+          4
+        ],
+        "a_b_c": [
+          2,
+          1,
+          4
+        ],
+        "x_y_z": [
+          0,
+          3,
+          5
+        ],
+        "triangle_order": [
+          2,
+          1,
+          0,
+          4,
+          3,
+          5
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          1,
+          2,
+          5
+        ],
+        "a_b_c": [
+          1,
+          2,
+          5
+        ],
+        "x_y_z": [
+          0,
+          3,
+          4
+        ],
+        "triangle_order": [
+          1,
+          2,
+          0,
+          5,
+          3,
+          4
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          1,
+          3,
+          4
+        ],
+        "a_b_c": [
+          3,
+          4,
+          1
+        ],
+        "x_y_z": [
+          5,
+          2,
+          0
+        ],
+        "triangle_order": [
+          3,
+          4,
+          5,
+          1,
+          2,
+          0
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          1,
+          4,
+          5
+        ],
+        "a_b_c": [
+          5,
+          4,
+          1
+        ],
+        "x_y_z": [
+          3,
+          0,
+          2
+        ],
+        "triangle_order": [
+          5,
+          4,
+          3,
+          1,
+          0,
+          2
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          2,
+          3,
+          5
+        ],
+        "a_b_c": [
+          3,
+          5,
+          2
+        ],
+        "x_y_z": [
+          4,
+          1,
+          0
+        ],
+        "triangle_order": [
+          3,
+          5,
+          4,
+          2,
+          1,
+          0
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      },
+      {
+        "outside": [
+          2,
+          4,
+          5
+        ],
+        "a_b_c": [
+          4,
+          5,
+          2
+        ],
+        "x_y_z": [
+          3,
+          0,
+          1
+        ],
+        "triangle_order": [
+          4,
+          5,
+          3,
+          2,
+          0,
+          1
+        ],
+        "induced_rows": [
+          38,
+          13,
+          19,
+          50,
+          44,
+          25
+        ]
+      }
+    ],
+    "activation_compatible_prism_free_boolean_assignments": 12,
+    "activation_compatible_forbidden_path_assignment": 1
+  },
+  "oriented_component_path_count": 108,
+  "unrestricted_eligible_exterior_path_pair_bound": 19673442,
+  "eligible_edges": 68394,
+  "known_zero_edge_orbits": 162,
+  "known_zero_literal_edges": 1884,
+  "all480_signatures_retained": true,
+  "census": {
+    "eligible_center_core_patterns": 7128,
+    "nonempty_raw_pattern_buckets": 1584,
+    "literal_pattern_configurations_before_pruning": 107520,
+    "known_Y_zero_redundant_configurations": 8724,
+    "common_site_quota_one_redundant_configurations": 34296,
+    "third_site_quota_one_redundant_configurations": 2988,
+    "retained_literal_pattern_configurations_upper_bound_on_distinct_rows": 61512,
+    "nonempty_retained_pattern_buckets": 996,
+    "signature_bucket_members_inspected": 15996
+  },
+  "production_literal_paths_enumerated": 0,
+  "distinct_literal_paths_or_quotient_rows_not_yet_counted": true,
+  "quotient_requires_combining_repeated_Y_variables": true,
+  "point_loaded": false,
+  "optimizer_calls": 0,
+  "other_component_and_alignment_free": true,
+  "scope": "All three-exterior two-edge prism patterns counted by bucket cardinalities; no complete cut census or point result.",
+  "seconds": 0.952331182998023,
+  "record_sha256": "52a618d43128001625b337578bcd3ae4beb4fc0e2552031ab9013a77a32711db",
+  "record_raw_sha256": "c66da07968e58918c86808fc4a19f6a0eac023b7f97d4d35d5b37d15a27d97ce",
+  "record_bytes": 19793
+}

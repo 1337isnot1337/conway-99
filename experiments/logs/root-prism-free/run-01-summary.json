@@ -1,0 +1,104 @@
+{
+  "status": "terminal four-case pilot bindings checked; all four UNKNOWN",
+  "scope": "globally prism-free SRG case; not every graph with a prism-free chosen root",
+  "batch_path": "experiments/logs/root-prism-free/run-01/batch.json",
+  "batch_sha256": "6e3b46cea3f2cfeaef84236e8bfde57caf0796823be91de8c3a3c78e9e2eb028",
+  "started_utc": "2026-11-19T04:47:40.467043+00:00",
+  "finished_utc": "2026-11-19T04:51:46.062606+00:00",
+  "elapsed_seconds": 245.5938724810003,
+  "requested_seconds_per_case": 60,
+  "cases": [
+    {
+      "case_index": 7,
+      "partition": [
+        2,
+        2,
+        2
+      ],
+      "status": "UNKNOWN; globally prism-free case remains open",
+      "variables": 982934,
+      "clauses": 2010956,
+      "cnf_sha256": "d8895c8e46d591f1cbfb41a5a1af8c414782dd677d8746207ed2268e645f36b4",
+      "model_sha256": "ab8d0f85e5aee65843a9233177e701b4c986392d6c95f919e2a8896623c593b7",
+      "result_sha256": "06336e6b171550ffa8f19ab2defc495490130e2c36b827a0c7ff1d508ccdb210",
+      "log_sha256": "c7cb77107b082389c7579beade7c4487f72719097399bd9403485748257a6d62",
+      "seconds": 60.228356476000044,
+      "statistics": {
+        "restarts": 646,
+        "conflicts": 140239,
+        "decisions": 460871,
+        "propagations": 400409970
+      }
+    },
+    {
+      "case_index": 8,
+      "partition": [
+        2,
+        4
+      ],
+      "status": "UNKNOWN; globally prism-free case remains open",
+      "variables": 972476,
+      "clauses": 1979578,
+      "cnf_sha256": "d32b65ff37554df4f2d5dda7d95bf8e72e25b420759c6984301fd9b1662446f2",
+      "model_sha256": "f4c43a48b206534eb88a78191e992cd96013f4932e85d4d1aa46896ae08bfadf",
+      "result_sha256": "7e3a0de19cfe1eb7345bd843ca5edf0896ef6326434ac7807d2d1e47081b03d2",
+      "log_sha256": "c57d65d12c65155e2a8208c4b2f1b3708ae7202bf3fd6bec4e705addfb29f2d1",
+      "seconds": 60.321845876000225,
+      "statistics": {
+        "restarts": 307,
+        "conflicts": 112709,
+        "decisions": 334737,
+        "propagations": 246942971
+      }
+    },
+    {
+      "case_index": 9,
+      "partition": [
+        3,
+        3
+      ],
+      "status": "UNKNOWN; globally prism-free case remains open",
+      "variables": 976525,
+      "clauses": 1991726,
+      "cnf_sha256": "3492ab0bc08fd44978c205d242a5d57f5c0498545caab56c7b9af9a78ad13d00",
+      "model_sha256": "5c17410e3e64b078d35f54d632c60e9463d169ad191f7ee7e0d86552bf5c8030",
+      "result_sha256": "87f57e377d7a983e58b72ef5bf357de9da8c7fe9f408a5ddf3b29e41e8865e72",
+      "log_sha256": "403452850df8fbb0126eba2b7b82796f152341ac424eb74688d2666718310d35",
+      "seconds": 60.44171796699993,
+      "statistics": {
+        "restarts": 523,
+        "conflicts": 153122,
+        "decisions": 471643,
+        "propagations": 373868452
+      }
+    },
+    {
+      "case_index": 10,
+      "partition": [
+        6
+      ],
+      "status": "UNKNOWN; globally prism-free case remains open",
+      "variables": 967338,
+      "clauses": 1964162,
+      "cnf_sha256": "95b54ba116bde146244befda799d5f2fa14c7ceef7d91a66e8c75237852d0e85",
+      "model_sha256": "d6f8f37e33d98adff33cd67b959c1d0e5c93a040425817afd7701cbe02b4a781",
+      "result_sha256": "8033c07b2e77c4535485c33bc9405b8f0c579b5ea6e0e14cb87a9beb05138947",
+      "log_sha256": "f1c538ec3666d5c80c786c77a6f06f5f3b71d96bd7013949c4a5ffade9fc1c14",
+      "seconds": 60.22018698200009,
+      "statistics": {
+        "restarts": 608,
+        "conflicts": 157720,
+        "decisions": 434885,
+        "propagations": 420529755
+      }
+    }
+  ],
+  "independent_read_only_audit": "experiments/logs/root-prism-free/independent-read-only-review.json",
+  "independent_read_only_audit_sha256": "aa4d470064753583ca8404fd17fd96208cd0abe286b995782a64b322a20a9f08",
+  "new_graphs": 0,
+  "UNSAT_returns": 0,
+  "checked_UNSAT_proofs": 0,
+  "cases_excluded": 0,
+  "minimum_partition_constraints_added": false,
+  "further_solver_continuation_started": false
+}

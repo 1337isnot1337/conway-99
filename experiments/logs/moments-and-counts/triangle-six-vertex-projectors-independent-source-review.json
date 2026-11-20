@@ -1,0 +1,26 @@
+{
+  "status": "PASS: complete read-only six-root delta and mathematical source review",
+  "subject_path": "experiments/workspace/triangle_six_vertex_projectors.py",
+  "subject_sha256": "0749e9850d52949d73eb5ac03ca6111c769accbba15ecd62bd2846e87ea2eaf8",
+  "reviewed_parent_path": "experiments/workspace/triangle_all_five_vertex_projectors.py",
+  "reviewed_parent_sha256": "88fd70d5badf3b1cdf860123a066e870fb982b9377aa10de2384aeab029a89ba",
+  "whole_subject_read": true,
+  "full_diff_read": true,
+  "AST_identical_functions": [
+    "root_maps"
+  ],
+  "checks": {
+    "coverage": "All 30 triangle-containing six-root domains, 2374 classes and five disjoint chunks are explicitly bound; no all-62-root claim.",
+    "union_products": "The existing six-root product enumerator is hash-bound. Root-plus-two intersecting triangles has order at most ten; all product terms divide by the two exact outside-label stabilizers.",
+    "old_Q": "Every one of the thirty conditioned-Q tensors is checked coefficientwise against the frozen prior; class order and positive scalar support are matched.",
+    "Schur": "Both root Gram matrices are checked positive by exact leading minors before inversion. Cross q_i sums the literal vertex-projector entries over the triangle, including d on root intersection. The minus factor nine enters the common denominator before positive gcd reduction; plus uses factor one.",
+    "diagonal_and_overlap": "Shared vertices use the literal diagonal projector term. Root-contained triangles have exactly zero conditioned rows, checked in the generated block.",
+    "normalization": "Each union contributes catalogue automorphism count divided by the two class stabilizers; first moments use one stabilizer. The coefficient partition identity checks the four unconditioned families.",
+    "controls_and_stops": "Direct finite-host embedding sums and all six families are compared. Incomplete/error statuses never claim complete coverage; point-independent preparation calls no optimizer.",
+    "scope": "This is a source/math gate, relying on the frozen six-root product enumerator; it does not independently regenerate domains, products, tensors or finite-host controls."
+  },
+  "subject_imports": 0,
+  "tensor_rebuilds": 0,
+  "optimizer_calls": 0,
+  "controls_repeated": false
+}

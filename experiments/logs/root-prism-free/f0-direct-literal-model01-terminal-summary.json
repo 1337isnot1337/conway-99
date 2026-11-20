@@ -1,0 +1,135 @@
+{
+  "candidate_count": 0,
+  "cold_owner_seconds": 13.789852105001046,
+  "cold_owner_sha256": "2da83ed1808634d2bf02e7ef44465ad38c4f198fde9202d719d4b2596c22e863",
+  "cold_report_accepted": true,
+  "cold_report_sha256": "2c67cbf7eaae08cad0bfd6d47c32de0606b91486a2731f452806de0c3add8254",
+  "complete_saved_plan_and_protobuf_byte_equality": true,
+  "counts": {
+    "direct_cut_rows": 4404,
+    "explicit_extra_zero_rows": 0,
+    "external_pool": 0,
+    "linear_constraints": 4681,
+    "linear_terms": 454152,
+    "literal_Booleans": 480,
+    "literal_zero_equations": 21,
+    "motifs": 90,
+    "nonempty_equations": 151,
+    "original_cuts": 4416,
+    "original_equations": 172,
+    "products": 0,
+    "radix_auxiliaries": 60,
+    "radix_rows": 36,
+    "tables": 0,
+    "variables": 540,
+    "zero_pair_implications": 4410
+  },
+  "mathematical_exclusion_claimed": false,
+  "maximum_linear_absolute_box_activity": 783727900923,
+  "native_public_constructor_byte_identity": true,
+  "no_unchanged_preparation_retry": true,
+  "optimizer_calls": 0,
+  "outputs": {
+    "model": {
+      "bytes": 708071,
+      "path": "experiments/logs/root-prism-free/f0-direct-literal-model01/model.pb.gz",
+      "raw_bytes": 5327821,
+      "raw_sha256": "de9e9f0f9deb2e7dc1c41866c959c5264de2b7fef7d11d3c9c0d8772aa0bbe3e",
+      "sha256": "34724b46df693d930de465d2d3b7473ae8742a322aa7006e21e0aa780f1c1bd6"
+    },
+    "plan": {
+      "bytes": 1422843,
+      "path": "experiments/logs/root-prism-free/f0-direct-literal-model01/plan.json.gz",
+      "raw_bytes": 6312806,
+      "raw_sha256": "4d8ab190ce417a29ef9eb9a0fefcc03f5f608855e38826188d64aaf0e80c82a8",
+      "sha256": "bd921d7d8f16c64bd866e0ec319b1cc3db37450cf5a6c884a37a9f40044c48d7"
+    }
+  },
+  "preparation_child_report_sha256": "36521e821a363281d2792f115dce6577fb4f27dd40309a08f27160a527f73a62",
+  "preparation_child_report_status": "PASS: direct540 exact model and native validation; no solve",
+  "preparation_child_seconds": 55.984405278999475,
+  "preparation_owner_overrun_seconds": 0.8802061629976379,
+  "preparation_owner_report_accepted": false,
+  "preparation_owner_seconds": 60.88020360399969,
+  "preparation_owner_sha256": "c5a7826dcd4260830730801ea9457dca2766c5cc1a643adf7a06951e4532b156",
+  "preparation_owner_status": "UNKNOWN_HARD_DEADLINE",
+  "raw_duplicate_restoration": {
+    "archive_path": "experiments/logs/root-prism-free/f0-direct-literal-model01/model.pb.gz",
+    "archive_sha256": "34724b46df693d930de465d2d3b7473ae8742a322aa7006e21e0aa780f1c1bd6",
+    "bytes": 5327821,
+    "path": "experiments/logs/root-prism-free/f0-direct-literal-model01/native-model.pb",
+    "restored_complete_bytes_compared": true,
+    "retained_locally": true,
+    "sha256": "de9e9f0f9deb2e7dc1c41866c959c5264de2b7fef7d11d3c9c0d8772aa0bbe3e"
+  },
+  "root_source_gate_sha256": "03eb052cc54eb49269c9b8682bbe17887e36f9290a383173cc865e08958b973a",
+  "schema": "conway99.f0.direct-literal-model-terminal-summary.v1",
+  "source_sha256": "b500336db29820777afb59076384a48382fa54453fce5b232a072719893cea40",
+  "stages": [
+    {
+      "elapsed_seconds": 1.009997504297644e-06,
+      "memory": {
+        "current_rss_KiB": 12968,
+        "peak_rss_KiB": 13456
+      },
+      "stage": "started"
+    },
+    {
+      "elapsed_seconds": 4.070252685000014,
+      "memory": {
+        "current_rss_KiB": 27292,
+        "peak_rss_KiB": 126484
+      },
+      "stage": "all172_original_rows_90_motifs_and4410_zero_implications_checked"
+    },
+    {
+      "elapsed_seconds": 11.962395414993807,
+      "memory": {
+        "current_rss_KiB": 112920,
+        "peak_rss_KiB": 318484
+      },
+      "stage": "all4416_cut_rows_remapped_and_full_retained_layer_restored"
+    },
+    {
+      "elapsed_seconds": 12.196943867995287,
+      "memory": {
+        "current_rss_KiB": 112920,
+        "peak_rss_KiB": 318484
+      },
+      "stage": "direct540_mathematical_plan_complete"
+    },
+    {
+      "elapsed_seconds": 12.198417595995124,
+      "memory": {
+        "current_rss_KiB": 112920,
+        "peak_rss_KiB": 318484
+      },
+      "stage": "before_native_import"
+    },
+    {
+      "elapsed_seconds": 13.886195805993339,
+      "memory": {
+        "current_rss_KiB": 144532,
+        "peak_rss_KiB": 318484
+      },
+      "stage": "native_import_complete"
+    },
+    {
+      "elapsed_seconds": 14.246919167999295,
+      "memory": {
+        "current_rss_KiB": 167012,
+        "peak_rss_KiB": 318484
+      },
+      "stage": "exact_protobuf_complete"
+    },
+    {
+      "elapsed_seconds": 55.98226455799886,
+      "memory": {
+        "current_rss_KiB": 153564,
+        "peak_rss_KiB": 318484
+      },
+      "stage": "native_validation_and_complete_export_byte_identity_passed"
+    }
+  ],
+  "status": "COMPLETE_RAW_NATIVE_PREPARATION_AND_SEPARATE_EXACT_COLD_PASS; original owner timeout preserved"
+}

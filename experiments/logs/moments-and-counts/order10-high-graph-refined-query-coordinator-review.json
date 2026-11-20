@@ -1,0 +1,18 @@
+{
+  "status": "PASS: refined high-graph moment query source reviewed",
+  "bindings": {
+    "experiments/workspace/grid_free_order10_high_graph_refined_query.py": "5fc9c533dcbd9705228723a8273d975ba26118eac359c63e6392534b7c8cb6e2",
+    "experiments/logs/moments-and-counts/order10-high-graph-refined-query-preparation.json": "3ca0eb7504fb587a5ed69ee6083c3ca92b93be1f86ce8727f075a860af889199"
+  },
+  "checks": [
+    "Retained every full graph not removed by a direct exact certificate.",
+    "Verified the retained-ID partition and lossless feature deduplication.",
+    "Preserved the original 200 exact moment equations and labelled-root normalization.",
+    "Selected each representative from surviving full graph IDs.",
+    "Reused the checked exact rational support and finite-table separator routines.",
+    "Required both exact projector polynomials and integer-incidence checks on a positive support.",
+    "Required a fresh direct check of all exclusions before accepting a strict separator."
+  ],
+  "authorized_experiment": "one prepared 30-second primal/ray call, 60-second exact stage, and separate cold replay",
+  "optimizer_run_by_review": false
+}

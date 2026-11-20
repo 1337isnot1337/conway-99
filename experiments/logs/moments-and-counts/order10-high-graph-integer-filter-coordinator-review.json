@@ -1,0 +1,17 @@
+{
+  "status": "PASS: complete shifted integer-incidence filter source reviewed",
+  "bindings": {
+    "experiments/workspace/grid_free_order10_high_graph_integer_filter.py": "29b7778bcb0838bc6e2062e530798d85ef3057ed7801e9e49b23498dd07115a1",
+    "experiments/logs/moments-and-counts/order10-high-graph-integer-filter-preparation.json": "2c0a029e556b1e933d674b1236e405d127a3fffd35553223a876370befd5c141"
+  },
+  "checks": [
+    "Derived the necessary inequality from integer exterior incidences.",
+    "Checked the full-core first and second moment formulas.",
+    "Checked both 200-feature contractions and the exact count normalization.",
+    "Verified that floor(first moment / outside population) minimizes the shifted quadratic.",
+    "Checked the complete original ID traversal, timeout retention and projector intersection.",
+    "Required direct integer full-core certificates for every removed column."
+  ],
+  "authorized_experiment": "one prepared 60-second complete-domain scan followed by removal replay",
+  "optimizer_run_by_review": false
+}

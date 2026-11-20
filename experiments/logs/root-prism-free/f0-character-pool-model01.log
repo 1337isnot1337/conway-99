@@ -1,0 +1,94 @@
+{
+  "status": "PASS: full target and initial external-row model prepared; no optimizer",
+  "source_sha256": "b3029a3a197ec31305f74dead2b28f51beaf219cb2e9e289dc8f250db42a6943",
+  "plan": {
+    "path": "experiments/logs/root-prism-free/f0-character-pool-model01/plan.json.gz",
+    "sha256": "b3179e520d5913530c7d3cfae27529b5717be26c763de024b725c38959aa2aef",
+    "bytes": 457772
+  },
+  "parent_proto_sha256": "5b43e3c026dbe71fcc8d072aa1790b80f7a81312e7b1ebf36a37612b2f726eeb",
+  "models": {
+    "target": {
+      "raw_proto_sha256": "0612fd82507ac454209ba5f376654248461fc8c0506b9a4a382f5e628487d9ae",
+      "raw_proto_bytes": 12742352,
+      "archive": {
+        "path": "experiments/logs/root-prism-free/f0-character-pool-model01/target.pb.gz",
+        "sha256": "1a26b2ec303121e44d0100a586c568ba85387137341ccd503471a6994cba1a2f",
+        "bytes": 4790189
+      },
+      "checks": {
+        "variables": 18444,
+        "constraints": 34398,
+        "constraint_types": {
+          "linear": 31066,
+          "int_prod": 3288,
+          "table": 44
+        },
+        "linear_terms": 1308492,
+        "maximum_linear_absolute_box_sum": 16269245368499,
+        "all_row_coefficients_endpoints_and_product_domains_fit_signed64": true,
+        "every_variable_and_constraint_compared_exactly": true,
+        "objective_hints_assumptions_enforcements_or_strategy_added": false
+      },
+      "native_validation": ""
+    },
+    "initial": {
+      "raw_proto_sha256": "36bd4fe3650ede346bab0885abcb9cef7a96cb0e150dffc8fcf51bbe695e7d4d",
+      "raw_proto_bytes": 3973028,
+      "archive": {
+        "path": "experiments/logs/root-prism-free/f0-character-pool-model01/initial.pb.gz",
+        "sha256": "5710bf3f31c076d8afa4cfc6f2207123d25d53d19dcc284607102de1a3f22dac",
+        "bytes": 501575
+      },
+      "checks": {
+        "variables": 18444,
+        "constraints": 34281,
+        "constraint_types": {
+          "linear": 30949,
+          "int_prod": 3288,
+          "table": 44
+        },
+        "linear_terms": 242130,
+        "maximum_linear_absolute_box_sum": 9000,
+        "all_row_coefficients_endpoints_and_product_domains_fit_signed64": true,
+        "every_variable_and_constraint_compared_exactly": true,
+        "objective_hints_assumptions_enforcements_or_strategy_added": false
+      },
+      "native_validation": ""
+    }
+  },
+  "domain_summary": {
+    "table_coordinates": 496,
+    "table_changed_coordinates": 304,
+    "product_targets": 3288,
+    "product_changed_coordinates": 3288,
+    "census_coordinates": 46,
+    "census_changed_coordinates": 46,
+    "all_changed_coordinates": 3638,
+    "target_domains_with_holes": 3355,
+    "fixed_coordinates": 0
+  },
+  "omitted_implied_basic_tables": 42,
+  "retained_refined_tables": 42,
+  "new_joint_tables": 2,
+  "common_phase_normalization_rows": 2,
+  "first_joint_table_tuples_after_phase": 44,
+  "coupled_census_count_domains": 46,
+  "external_dense_rows": 117,
+  "full_target_retains_all_dense_rows": true,
+  "controls": {
+    "status": "PASS",
+    "signed_product_square_table_and_domain_assignments": 1625,
+    "feasible_assignments": 5,
+    "public_constructor_transcription_checked": true,
+    "integer_domain_holes_and_negative_values_checked": true,
+    "optimizer_calls": 0,
+    "CpSolver_constructed": false
+  },
+  "ortools_version": "9.15.6755",
+  "installed_cp_model_source_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+  "optimizer_calls": 0,
+  "CpSolver_constructed": false,
+  "count_or_graph_feasibility_claimed": false,
+  "seconds": 14.639126706999377
+}

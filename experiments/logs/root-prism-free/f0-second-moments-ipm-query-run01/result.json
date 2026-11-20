@@ -1,0 +1,39 @@
+{
+  "status": "UNKNOWN: no exact point or infeasibility certificate",
+  "model_sha256": "684b3a646a95d8404bf7b46a3ab170ef88b82e54fdb02aec3a34b8f9613847ae",
+  "model_file_sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf",
+  "source_sha256": "c6f2658796459167b885b9f9f7ecbf75b6ba92808c4115e6962b806aafe786e7",
+  "helper_source_sha256": "0ade9c2f04415b325e7f217023dd072abaf4b8cdf60cd9fe07a2cfe93e416536",
+  "requested_lp_seconds": 180.0,
+  "lp_hard_limit_seconds": 180.0,
+  "numerical_method": "ipm",
+  "run_crossover": "on",
+  "numerical_output_reserve_seconds": 3,
+  "requested_exact_seconds": 60.0,
+  "exact_hard_limit_seconds": 60.0,
+  "production_optimizer_calls_authorized": 1,
+  "exact_phase_calls_authorized": 1,
+  "baseline_only": false,
+  "fixed_selector_point": false,
+  "second_selector_moment_linear_system": true,
+  "PSD_constraints_enforced": false,
+  "equivalent_reduced_representation": true,
+  "original_full_point_acceptance_retained": true,
+  "preparation_file_sha256": "1f0ce9a5de0343217c9cae7b4f42899baae2929bf6c24c1ccd0484a0ddb300ea",
+  "no_component_exclusion_without_independent_exact_replay": true,
+  "numerical_process": {
+    "exit_code": 0,
+    "hard_timeout": false,
+    "elapsed_seconds": 162.67707154700474
+  },
+  "numerical_file_sha256": "20674e3a41842e42232df60e24abf3f34a5a5c8ec9a16a258d4906bb58562fd9",
+  "optimizer_calls_recorded": 1,
+  "numerical_status": "HighsModelStatus.kOptimal",
+  "exact_process": {
+    "exit_code": 0,
+    "hard_timeout": false,
+    "elapsed_seconds": 2.3368834940047236
+  },
+  "exact_file_sha256": "f7e63bf885aaf69b5ebe836d979819ae493b67d51c2e853d7b2ba3a02e136a29",
+  "elapsed_seconds": 165.08998586300004
+}

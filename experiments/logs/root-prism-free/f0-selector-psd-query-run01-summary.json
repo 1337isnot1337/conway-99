@@ -1,0 +1,77 @@
+{
+  "status": "UNKNOWN: no exact point or infeasibility certificate",
+  "model_sha256": "d098a4b84405823aa38e9d2def7b675c6166507f7350937f1dc0f65af7274dcd",
+  "run_result_sha256": "c766de716a7c0f4c372894d9dd68811e90b2570304c6f687d01362f4d72595d0",
+  "numerical_sha256": "ca7ebcb40ea0b02054a79f6f6acb83f1f227325f7669b0b9336e3beed6fce5bf",
+  "exact_sha256": "183d8640fcea05cfb7f480a611341e224b5de15f45be6c5d62b022277020ca73",
+  "numerical_status": "HighsModelStatus.kOptimal",
+  "value_valid": true,
+  "dual_valid": true,
+  "basis_valid": true,
+  "iterations": {
+    "ipm_iterations": 29,
+    "crossover_iterations": 9823,
+    "simplex_iterations": 0
+  },
+  "processes": {
+    "numerical": {
+      "exit_code": 0,
+      "hard_timeout": false,
+      "elapsed_seconds": 176.39435501700063
+    },
+    "exact": {
+      "exit_code": 0,
+      "hard_timeout": false,
+      "elapsed_seconds": 3.9088761009988957
+    }
+  },
+  "total_seconds": 180.40964570199867,
+  "limits": {
+    "numerical_including_setup": 180,
+    "separate_exact_phase": 60,
+    "active_face_columns": 1600
+  },
+  "exact_reconstruction_stop": "active-face column resource bound",
+  "direct_proposals": [
+    {
+      "maximum_denominator": 1000,
+      "failures": {
+        "bounds": 0,
+        "equalities": 5952,
+        "inequalities": 0
+      }
+    },
+    {
+      "maximum_denominator": 1000000,
+      "rejected": "point denominator resource bound"
+    },
+    {
+      "maximum_denominator": 1000000000,
+      "rejected": "point denominator resource bound"
+    }
+  ],
+  "preserved_arrays": {
+    "column_values": 15200,
+    "row_values": 21724,
+    "column_basis_status": 15200,
+    "row_basis_status": 21724
+  },
+  "counts": {
+    "variables": 15200,
+    "equalities": 5973,
+    "inequalities": 15751,
+    "nonzeros": 380052,
+    "certified_PSD_directions": 32,
+    "full_original_acceptance_rows": 650350,
+    "full_original_acceptance_bounds": 183834
+  },
+  "cold_replay": "f0-selector-psd-query-run01-replay.json",
+  "archive": "f0-selector-psd-query-run01-archive.json.gz",
+  "full_PSD_cone_enforced": false,
+  "exact_feasible_point_found": false,
+  "infeasibility_certificate_found": false,
+  "component_excluded": false,
+  "graph_constructed": false,
+  "production_optimizer_calls": 1,
+  "additional_optimizer_or_scan": false
+}

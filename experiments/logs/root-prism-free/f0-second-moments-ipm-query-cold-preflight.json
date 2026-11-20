@@ -1,0 +1,33 @@
+{
+  "status": "PASS: cold equivalent model and independent full replay preflight; no optimizer",
+  "source_sha256": "9cc3dc19755d0eba4e2dd6cb81d7c77a5756bb4a1681c622f772128b78e0f050",
+  "model_file_sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf",
+  "model_sha256": "684b3a646a95d8404bf7b46a3ab170ef88b82e54fdb02aec3a34b8f9613847ae",
+  "matrix_sha256": "5e417221ed814a5a0dcb03e31820871113bcc0eb8af2856dd2ac493958d16f39",
+  "driver_sha256": "c6f2658796459167b885b9f9f7ecbf75b6ba92808c4115e6962b806aafe786e7",
+  "helper_sha256": "0ade9c2f04415b325e7f217023dd072abaf4b8cdf60cd9fe07a2cfe93e416536",
+  "cold_reduction_rebuilt": true,
+  "literal_domain": {
+    "selectors": 480,
+    "edges": 68394,
+    "pairs": 114960,
+    "zeros": 4410,
+    "original_equalities": 172
+  },
+  "reduced_variables": 15200,
+  "reduced_rows": 21692,
+  "original_full_point_acceptance": {
+    "rows": 650350,
+    "bounds": 183834
+  },
+  "controls": {
+    "status": "PASS",
+    "feasible_multiplier_controls": 153,
+    "strict_controls": 2,
+    "large_integer_bits": 132,
+    "negative_multiplier_rejected": true,
+    "production_optimizer_calls": 0
+  },
+  "optimizer_calls": 0,
+  "PSD_checked": false
+}

@@ -1,0 +1,33 @@
+{
+  "schema": "independent-source-review-v1",
+  "status": "PASS: full source and mathematical scope review; no execution",
+  "reviewer": "unrestricted_completion",
+  "subjects": {
+    "experiments/workspace/rook_case4_face99_boolean_overlay.py": "906a2cab0dcb6b23b6c35a9f0cd6a63a80b3dae27d8ca935892e37f2a0f89918",
+    "experiments/workspace/rook_case4_face99_boolean_query.py": "b47b9c962cb62dd367dde4ddbaa37cc08d18c39ea33e4aeeaba3be83d84a8fd9"
+  },
+  "reviewed": [
+    "Complete264-line overlay source and complete414-line query/proof source.",
+    "Negative DIMACS unit orientation -a-1 for zero-based selector columns.",
+    "The exact99-zero seed is rederived before added85 units are accepted; old14 unit columns must be a subset.",
+    "Suffix assembly preserves all old439604 clause bytes, recovers the old full-file hash, introduces no auxiliaries and checks all literal/count metadata.",
+    "All1214 original selectors remain in the CNF; certified zero units leave1115 potentially nonzero coordinates.",
+    "Source/model/CNF/runtime/checker bindings precede the single production solve; preparation does not call the production solver.",
+    "The180-second owned child covers bootstrap, one solve, and export, with no assumptions or automatic retry.",
+    "OS address-space and file caps, accepted proof-size limits, and checker timeouts cannot promote an unchecked UNSAT answer.",
+    "SAT requires the unchanged full primary inspector plus all99 certified zeros and remains a partial incidence witness.",
+    "Direct DRAT is followed by retained-clause inclusion; cold replay independently rebuilds the whole bound formula and repeats retained inclusion/DRAT.",
+    "Only the cold verified result can claim exclusion of indexed35-core case4; no claim about every core or a completed graph is made.",
+    "Timeouts, child failures, resource refusals, unchecked proofs and exceptions retain unresolved/error scope."
+  ],
+  "limits_of_review": [
+    "The original seed identities and earlier complete-CNF encoding are dependencies reviewed previously; neither was re-executed here.",
+    "No full source AST comparison with a parent runner is claimed.",
+    "No native runtime, CNF construction, Boolean control, candidate, solver or proof check was rerun."
+  ],
+  "subject_imports": 0,
+  "model_rebuilds": 0,
+  "optimizer_calls": 0,
+  "solver_queries": 0,
+  "proof_checks": 0
+}

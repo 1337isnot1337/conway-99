@@ -1,0 +1,56 @@
+{
+  "schema": "conway99.f0.combined-extensions-ci-independent-source-review.v1",
+  "status": "PASS_COMPLETE_SOURCE_AND_PRODUCER_INTERFACE_REVIEW",
+  "reviewed_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+    "bytes": 16246,
+    "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+    "git_blob": "06166151155be8a6cd46ec7a0b3e5989ed408dff",
+    "lines": 284
+  },
+  "prior_fully_read_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+    "bytes": 16139,
+    "sha256": "284e2f657907501ead198fccff7b2a5fdc90dce6a8daa2bb099cc4a592ecaab3",
+    "git_blob": "f7b5555f0681cfc50f6773b6479202943304f45f"
+  },
+  "exact_delta": {
+    "kind": "one insertion into retained existing artifact filename tuple",
+    "byte_offset": 15188,
+    "inserted_ascii": ", \"initial-owner.json\",\n                             \"owned-receipt.json\", \"supervisor.json\", \"stages.json\"",
+    "bytes": 107,
+    "inverse_change_recovers_complete_prior_bytes": true,
+    "no_execution_or_status_logic_changed": true
+  },
+  "producer_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model.py",
+    "sha256": "4f15fa971a54511457af357301f5fba738f105d9da8c7b349272e71cb3703216",
+    "git_blob": "24dc2b48d1fab3d900ef905e719c815eed676765",
+    "bytes": 38094,
+    "lines": 735,
+    "mode": "100644"
+  },
+  "findings": [
+    "The complete driver and exact retention-only successor were read. The successor adds initial-owner.json, owned-receipt.json, supervisor.json and stages.json to already existing terminal artifact retention.",
+    "Both owned producer CLI invocations match the frozen builder: controls|prepare --configuration CFG --configuration-sha256 SHA --directory OUT.",
+    "Producer controls and preparation report status strings match PASS_COMBINED_EXTENSIONS_MODEL_CONTROLS and PASS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_PREPARATION. Each final producer owner repeats the report PASS status only after report_accepted, exact source/configuration/report references, zero child exit, reaping, stopped process group and no owner overrun.",
+    "The builder exposes flat model_raw_sha256 and model_raw_bytes, variables80730, rows297470, source and configuration references as required. Controls set CpModel_constructed false; prepare sets it true. CpSolver_constructed, native_optimizer_constructed and native_query_run are false and optimizer_calls is zero.",
+    "The request binds driver, producer, checker, configuration, root gate and pinned supervisor. Every unique gate dependency is read before phases and rehashed after all phases; source/configuration identities are checked again against each terminal report and owner.",
+    "Exactly one producer controls, one producer prepare, one independent controls and one independent replay invocation can occur. There is no retry, prepare-after-failure, model query or solver construction path in this driver.",
+    "The checker is invoked as a separate Python process and receives exact saved preparation report/owner hashes. The driver imports only the pinned process supervisor, not either mathematical producer or checker. Independent checker controls and replay have separate supervised owners and exact output directories.",
+    "All output directories must be new, distinct and nonnested. Driver logs, report and owner receipts use exclusive-create. Terminal metadata is preserved in finally after a phase exception; existing producer model/patch/suffix/manifest and owner records are retained by exact binding.",
+    "Limits match the declared interface: producer owners15/135 seconds, independent owners15/135, checker worker clocks10/120. The whole driver checks a420-second elapsed allowance and reserves time before starting later phases. This is source review, not evidence of a completed timed run.",
+    "Successful final acceptance compares producer and independent model raw identity and requires exact restoration to the accepted38,374,405-byte parent with SHA4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2."
+  ],
+  "scope": {
+    "configuration_and_request_not_yet_frozen": true,
+    "workflow_not_reviewed_by_this_record": true,
+    "checker_source_remains_separately_reviewed": true,
+    "actual_controls_run": false,
+    "actual_model_builds": 0,
+    "actual_replays": 0,
+    "optimizer_calls": 0,
+    "concrete_blockers": [],
+    "mathematical_result_claimed": false
+  }
+}

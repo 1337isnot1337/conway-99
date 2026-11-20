@@ -1,0 +1,29 @@
+{
+  "schema": "conway99.f0.literal-layer-failed-attempt.v1",
+  "status": "FAILED_BEFORE_OUTPUT: original row-index assumption rejected",
+  "source_sha256": "7ebd036068fe6bc799a804abfeca37e3c4fbcf66f6d615fa2510615b1ca7d8ff",
+  "exit_code": 1,
+  "error": "AssertionError: digits == 3 and 4404 <= row_id < 4416",
+  "observed_large_rows": [
+    4164,
+    4165,
+    4166,
+    4167,
+    4168,
+    4169,
+    4170,
+    4171,
+    4172,
+    4173,
+    4174,
+    4175
+  ],
+  "digits_for_each_large_row": 3,
+  "terms_for_each_large_row": 480,
+  "absolute_activity_bits_for_each_large_row": 86,
+  "output_directory_created": false,
+  "optimizer_calls": 0,
+  "native_model_built": false,
+  "historical_source_review_did_not_detect_input_row_position_error": true,
+  "correction": "Use row IDs4164..4175 for the twelve radix records and the complement for all4404direct records."
+}

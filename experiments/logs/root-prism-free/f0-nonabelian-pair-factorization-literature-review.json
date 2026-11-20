@@ -1,0 +1,28 @@
+{
+  "schema": "conway99.independent-source-review.v1",
+  "status": "PASS: complete source and mathematical review",
+  "reviewer": "literature_obstructions",
+  "source": "experiments/workspace/root_prism_free_f0_nonabelian_pair_factorization.py",
+  "source_sha256": "790a929c65898d2a3bb038c9877d73dc022aa9c66d3983efe8a77ad833383871",
+  "record": "experiments/logs/root-prism-free/f0-nonabelian-pair-factorization01.json.gz",
+  "record_sha256": "627577aea4a25c15e5d2846242adda9c6b7c97164b7ba47fb9a2cab5d3988fd8",
+  "owner_sha256": "84a52a8970dd151df88b482c262d889f5b28941dc161e5cc2f4b26795fb42b94",
+  "complete_source_lines_read": 278,
+  "checks": [
+    "The fixed literal action and anchor transports use one common group numbering. The source compares all 144 action products and the saved signed orientations.",
+    "The only nontrivial anchor stabilizer is the central subgroup {0,6}. A representation active on a size-six orbit is trivial on that subgroup, so changing a transport by its stabilizer does not change its matrix. Relative pair coordinates consequently live on G/(Hi Hj), with no unproved host-graph symmetry assumption.",
+    "For distinct selector orbits, the coefficient of x_a x_b is rho(t_a)^T H rho(t_b)=H rho(t_a^-1 t_b). Literal endpoint order follows the two selector-orbit indices even when the unordered global pair ID sorts endpoints numerically. No factor two or orbit-size division belongs in this cross block.",
+    "Within one selector orbit, x_a squared contributes N_i H. Each unordered distinct pair contributes H rho(g)+H rho(g^-1). The source checks the transpose identity before retaining the three entries of that symmetric two-by-two diagonal block.",
+    "The unit-vector and quotient delta identities are the exact character form of Fourier inversion. The active one-dimensional characters together with all entries of the active two-dimensional transforms recover relative correlation counts. For a diagonal block, the correlation is inverse-symmetric and the retained symmetric matrix entries contain its full two-dimensional transform.",
+    "All 903 selector-orbit blocks cover all 114,960 literal unordered pairs and all 9,742 original pair orbits. The source checks coefficient constancy and multiplicity on each orbit, records every proved-zero term separately, and recovers the earlier six plus forms by their actual labels.",
+    "For integer vectors (x,y) and (u,v), a=2x-y and b=y give 2 B = a_i a_j + 3 b_i b_j. The reported 320 coordinates, 6,496 scalar Gram forms and 12,992 scalar products match the 84- and 76-column multiplicity blocks.",
+    "Exact pair-histogram realization requires the local mask tables to supply all Fourier coordinates in the same frame, as the record states. Merely satisfying generic rank or product equations without those local domains is not claimed sufficient. Arbitrary mixtures of unrelated literal assignments need not preserve the nonlinear factorization."
+  ],
+  "future_integration_obligation": "The integer change of coordinates has inverse x=(a+b)/2, y=b. Therefore a and b have equal parity. Exact local-mask coordinate tables enforce this automatically; if any weaker future coordinate domain is used, this parity must be retained explicitly.",
+  "record_inventory_recomputed": false,
+  "source_imported": false,
+  "literal_coefficient_construction_repeated": false,
+  "new_selector_subsets_enumerated": 0,
+  "optimizer_calls": 0,
+  "count_or_graph_feasibility_claimed": false
+}

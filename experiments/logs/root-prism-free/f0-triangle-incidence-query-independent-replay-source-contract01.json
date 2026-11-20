@@ -1,0 +1,231 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-independent-replay-source-contract.v1",
+  "status": "FROZEN_SOURCE_ONLY_CONTRACT_WAITING_FOR_ACTUAL_NATIVE_MODEL_ACCEPTANCE",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "git_blob_sha": "5191a03e92e6ab9f1039eeb791518baebdec4661",
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "bytes": 37638,
+    "lines": 620
+  },
+  "adaptation": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-independent-replay-adaptation01.json",
+    "bytes": 36813,
+    "sha256": "81a2da5d12c73c7359c5668bd4e06987ecdc856e112ed2b01b3db158f2bb26cf",
+    "git_blob_sha": "d554f5e61d184d55140f5e3fa623899e37c1461f"
+  },
+  "cli": {
+    "controls": [
+      "python",
+      "SOURCE",
+      "controls",
+      "--output",
+      "OUTPUT_JSON"
+    ],
+    "run": [
+      "python",
+      "SOURCE",
+      "run",
+      "--output",
+      "OUTPUT_JSON",
+      "--configuration",
+      "CONFIGURATION",
+      "--configuration-sha256",
+      "CONFIGURATION_SHA256",
+      "--directory",
+      "QUERY_DIRECTORY",
+      "--result-sha256",
+      "RESULT_SHA256",
+      "--owner-sha256",
+      "OWNER_SHA256",
+      "--gate",
+      "ROOT_GATE",
+      "--gate-sha256",
+      "ROOT_GATE_SHA256"
+    ]
+  },
+  "execution": {
+    "worker_only": true,
+    "external_supervision_required": true,
+    "controls_worker_seconds": 10,
+    "controls_owner_seconds": 15,
+    "run_worker_seconds": 120,
+    "run_owner_seconds": 135,
+    "maximum_terminal_replays": 1,
+    "automatic_retries": 0,
+    "assertions_required": true,
+    "source_import_or_compile_performed": false,
+    "controls_performed": false,
+    "model_decode_performed": false,
+    "optimizer_calls": 0
+  },
+  "output": {
+    "path": "The exact --output path; exclusive creation. The worker does not create its own owner receipt.",
+    "error_path": "The --output filename with .error.json appended; preserves traceback and source binding before re-raising.",
+    "controls_status": "PASS_TRIANGLE_INCIDENCE_QUERY_INDEPENDENT_INTEGER_AND_RESPONSE_CONTROLS",
+    "run_schema": "conway99.f0.triangle-incidence-query-independent-cold.v1",
+    "run_status": "PASS_INDEPENDENT_TRIANGLE_INCIDENCE_QUERY_TERMINAL_REPLAY",
+    "error_status": "ERROR_INDEPENDENT_TRIANGLE_INCIDENCE_QUERY_REPLAY",
+    "controls_required_fields": [
+      "large_integer",
+      "all_explicit_parameter_text_wire_roundtrip_checked",
+      "repeated_subsolver_order_and_full_worker_count_checked",
+      "producer_imports",
+      "native_imports",
+      "optimizer_calls",
+      "CpModel_constructed",
+      "CpSolver_constructed"
+    ],
+    "main_required_fields": [
+      "source",
+      "configuration",
+      "root_gate",
+      "query_result",
+      "query_owner",
+      "query_source",
+      "model_cold",
+      "model_root_acceptance",
+      "model_raw_sha256",
+      "model_raw_bytes",
+      "variables",
+      "rows",
+      "native_answer_classification",
+      "native_status",
+      "query_native_calls",
+      "query_native_seconds",
+      "query_native_overrun_seconds",
+      "returned_vectors_independently_checked",
+      "vectors",
+      "complete_parameters_checked",
+      "complete_response_messages_checked",
+      "all_available_native_vectors_and_saved_row_activities_checked",
+      "graph_constructed",
+      "whole_component_excluded",
+      "original_pair_caps_checked",
+      "second_component_completion_checked",
+      "native_INFEASIBLE_is_unproved",
+      "producer_imports",
+      "native_imports",
+      "CpModel_constructed",
+      "CpSolver_constructed",
+      "optimizer_calls",
+      "maximum_seconds",
+      "seconds_before_serialization",
+      "peak_rss_KiB"
+    ],
+    "exact_integer_publication": "Preserve output JSON bytes. The controls contain 18014398509481987, which must not be parsed and reserialized through JavaScript Number."
+  },
+  "configuration": {
+    "schema": "conway99.f0.triangle-incidence-query-configuration.v1",
+    "intended_path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-configuration01.json",
+    "input_keys": [
+      "model",
+      "model_configuration",
+      "model_preparation",
+      "model_preparation_owner",
+      "model_cold",
+      "model_cold_owner",
+      "model_root_acceptance"
+    ],
+    "source_keys": [
+      "base",
+      "supervisor",
+      "model_producer",
+      "model_cold",
+      "model_ci"
+    ],
+    "maximum_native_calls": 1,
+    "automatic_retries": 0,
+    "native_query_authorized_by_configuration_alone": false,
+    "actual_new_model_hash_and_receipts_pending": true,
+    "actual_runnable_configuration_created": false
+  },
+  "native_model_contract": {
+    "variables": 80730,
+    "rows": 300795,
+    "total_terms": 3337296,
+    "original_edge_range_start": 540,
+    "original_edge_range_stop_exclusive": 68934,
+    "parent_variables": 80730,
+    "parent_rows": 297470,
+    "parent_raw_bytes": 39306083,
+    "parent_raw_sha256": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6",
+    "new_variables": 0,
+    "replaced_rows": 0,
+    "appended_rows": 3325,
+    "appended_terms": 26916,
+    "family_order": [
+      "side_edge",
+      "local_selector",
+      "global_target_total"
+    ],
+    "family_counts": {
+      "side_edge": 2904,
+      "local_selector": 420,
+      "global_target_total": 1
+    },
+    "family_terms": {
+      "side_edge": 10320,
+      "local_selector": 16512,
+      "global_target_total": 84
+    },
+    "native_cold_owner_schema": "conway99.f0.triangle-incidence-external-cold-owner.v1",
+    "native_cold_owner_status": "PASS_TRIANGLE_INCIDENCE_EXTERNAL_COLD_REPLAY",
+    "root_schema": "conway99.f0.triangle-incidence-native-root-acceptance.v1",
+    "root_status": "ROOT_ACCEPTS_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_MODEL_AND_INDEPENDENT_COLD",
+    "original_failed_extractor_execution_accepted": false,
+    "current_native_build_acceptance_pending": true
+  },
+  "query_contract": {
+    "gate_status": "AUTHORIZE_ONE_TRIANGLE_INCIDENCE_MODEL_QUERY",
+    "terminal_schema": "conway99.f0.triangle-incidence-query-terminal.v1",
+    "owner_schema": "conway99.f0.triangle-incidence-query-owner.v1",
+    "preflight_status": "PASS_TRIANGLE_INCIDENCE_QUERY_PREFLIGHT",
+    "unknown_status": "UNKNOWN_TRIANGLE_INCIDENCE_NATIVE",
+    "limits": {
+      "solver_seconds": 600,
+      "native_allowance_seconds": 610,
+      "owner_seconds": 720,
+      "preparation_seconds": 60,
+      "preparation_owner_seconds": 75,
+      "finalization_reserve_seconds": 60
+    },
+    "parameters": {
+      "num_search_workers": 4,
+      "num_full_subsolvers": 3,
+      "subsolvers": [
+        "no_lp",
+        "quick_restart_no_lp",
+        "portfolio_no_lp"
+      ],
+      "random_seed": 0,
+      "cp_model_presolve": true,
+      "cp_model_probing_level": 0,
+      "linearization_level": 0,
+      "symmetry_level": 0,
+      "max_time_in_seconds": 600,
+      "log_search_progress": true,
+      "log_to_stdout": true,
+      "log_to_response": true
+    },
+    "repeated_parameter_population": "Use expected.subsolvers.extend(setting); ordinary scalar parameters use setattr. Compare entire text/wire/protobuf messages, including list order.",
+    "portfolio_change_scope": "This is an explicit parameter change from the earlier unrestricted default full-worker list. It is not a pure comparison of changed rows."
+  },
+  "verification": [
+    "Hash-bind the query source/configuration/root gate, preserved preflight records, immutable model archive, accepted native construction and complete native replay receipts.",
+    "Decode the accepted full CpModelProto using protobuf only. Check raw bytes, descriptor identity, variables, rows, original edge names/domains and full original edge order.",
+    "Check final and preliminary owner receipts, successful child exit/reaping/process-group stop, query-call count, measured native clock, budget overrun classification and exact parameters.",
+    "Decode saved response wire and text, reconstruct snapshots, and compare every primary and additional returned vector with the saved candidate records.",
+    "Use Python integers to check each returned value's exact integer type, every variable domain interval and every complete linear row activity. Compare the saved activity archive byte-for-byte.",
+    "Preserve UNKNOWN, model errors, overruns and native INFEASIBLE with their explicit non-proof classifications. No vector or candidate silently supplies graph feasibility."
+  ],
+  "scope": {
+    "no_producer_or_native_transport_imports": true,
+    "no_CpModel_or_CpSolver_construction": true,
+    "optimizer_calls": 0,
+    "original_pair_caps_rechecked": false,
+    "second_component_completion_checked": false,
+    "whole_component_exclusion_claimed": false,
+    "accepted_vector_is_only_a_partial_model_witness_until_original_checks_pass": true
+  }
+}

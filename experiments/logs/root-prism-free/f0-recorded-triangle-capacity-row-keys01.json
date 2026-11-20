@@ -1,0 +1,87 @@
+{
+  "schema": "conway99.f0.recorded-triangle-capacity-row-key-descriptor.v1",
+  "status": "SAVED_COMPLETE_ROW_KEY_DIGESTS_FROM_UNACCEPTED_METADATA_OVERRUN",
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01.json",
+    "sha256": "2f8eea3f1bb67c796ca8bc1deb06606d0e0c2f1948838128fbc30ed05b6eb09c",
+    "bytes": 2879184,
+    "git_blob": "8201fa6b57efd6be545a4465fdf80aa8c69bf30c"
+  },
+  "finalization": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-finalization.json",
+    "sha256": "aa3eb24fa0b711cc751b31f299ccaf5f50302b134486b15a7f1cde9fb0ecc27c",
+    "bytes": 364,
+    "git_blob": "0efb7ed6e15f5cc153c0dbaa27b9e9575637f308"
+  },
+  "owner": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-owner.json",
+    "sha256": "958f6ac9c21c103bfa663be687bbfde492858e7b4a62532886ca6daeb0e663d3",
+    "bytes": 2178,
+    "git_blob": "647c89b1901188ecf2fa4ea609d2115f6a4553ae"
+  },
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_capacity_inventory_v8.js",
+    "sha256": "3357917e76a94f2c79fdc5a65e00a3413ad1e019c63e4d5ae3400f7978f12699",
+    "git_blob": "a68bba4532f1e4efa41d47cc38865ce8d3d780d5",
+    "bytes": 14882
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-configuration01.json",
+    "bytes": 3716,
+    "sha256": "bb11f3e22de3c601bd28c7add7317eea3b7552630c82bf0a13f567fcb5ede1f9",
+    "git_blob": "ab1f2f6e7daa6aea302a4d6b716f2cf68fb16ec6"
+  },
+  "source_review": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-independent-source-review01.json",
+    "bytes": 8026,
+    "sha256": "ebc4e422b5283d3070425f70875fd59f49ed57ef50800fcc5a24f57d954cae1b",
+    "git_blob": "aeff91a3a8f7f23c3684a7f80e2fd6d1b1d332b7"
+  },
+  "theorem_note": {
+    "path": "research/root_prism_free_f0_recorded_triangle_capacities.md",
+    "bytes": 13608,
+    "sha256": "73f9cd10ce8eb234ba99abc6345345a9816437c9889386a90b729e3a29f3ce43",
+    "git_blob": "f38d58afead80a5b65ff19062bfd604d1a9e8087"
+  },
+  "row_keys_sha256": "9e7d7387a389e31232799697b7228976dfb4ae22980bf0a6ecc3885456e93b43",
+  "family_row_keys_sha256": {
+    "side_edge": "b8c8e2967bbebae3036e30e142a34b1969b560609cfcf83802bcfb8cb636356e",
+    "local_selector": "0204d653b732885307d617f5099955dab71af0de4103ea9e81f743c9d874b175"
+  },
+  "complete_edge_incidence_sha256": "cb0dbf9916faa8041c02bf911954bbaf60ec55b4e404d8874704e539a51b3115",
+  "family_order": [
+    "side_edge",
+    "local_selector"
+  ],
+  "family_row_counts": {
+    "side_edge": 2904,
+    "local_selector": 420
+  },
+  "family_term_counts": {
+    "side_edge": 10320,
+    "local_selector": 16512
+  },
+  "row_key_encoding": "SHA256 of JSON.stringify(exact ordered key array), UTF-8, no trailing newline",
+  "row_key_schema": "[lower, upper, sorted distinct [native_variable_index, exact integer coefficient] terms]",
+  "proposed_namespace": {
+    "variables": 80730,
+    "parent_rows": 297470,
+    "appended_rows": 3324,
+    "proposed_total_rows": 300794,
+    "edge_variable_offset": 540,
+    "triangle_variable_offset": 71382,
+    "new_variables": 0
+  },
+  "source_inventory_milliseconds": 8374,
+  "source_finalization_milliseconds": 12196,
+  "outer_owner_milliseconds": 17209,
+  "declared_milliseconds": 10000,
+  "original_run_accepted": false,
+  "original_report_is_untrusted_proposal_table": true,
+  "independent_reconstruction_from_previously_accepted_indicator_data_required": true,
+  "overrun_waived_or_relabelled": false,
+  "extractor_rerun_performed": false,
+  "projection_only_no_new_derivation": true,
+  "native_model_changed": false,
+  "optimizer_calls": 0
+}

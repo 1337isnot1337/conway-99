@@ -1,0 +1,124 @@
+{
+  "status": "PREPARED_NOT_QUERIED_CORE_TRIANGLE_CONDITIONING",
+  "query_source_sha256": "cd167c52b7b646a64e4faf58816212d427d1c280a45070e77a5eb8b0a29abb43",
+  "builder_source_sha256": "7fb335261db4c828bfc477c2525bc7bc098eac5ce7dab6941892256b8a48886c",
+  "model_preparation_sha256": "a01a4e845fcff7a4a2c0edbe9542248f33205640f385463e853821353e8bc65a",
+  "model_raw_sha256": "8bd186531a14656a2ecf06857742532b26ff53fa3fb4f75cc2b6bd8322e51ef6",
+  "model_gzip_sha256": "8f398368e80ff36cba74969c8526b660c21155476b7d3cd58e0f0b7c81aeb9a0",
+  "immutable_point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "root_types": [
+    14,
+    15
+  ],
+  "block_orders": [
+    41,
+    34
+  ],
+  "lower_entries": 1456,
+  "tensor_nonzeros": 11211,
+  "preparation_seconds": 5.295661491996725,
+  "constructor_small_host_controls": 19,
+  "independent_ten_vertex_host_controls": 6,
+  "ten_vertex_controls_source_sha256": "d9876c51fc1fe40d730a3d475b94e2a70f62967397ff912a2c47550795e5320e",
+  "ten_vertex_controls_seconds": 8.137927884003147,
+  "query_controls": {
+    "status": "PASS_EXACT_CONTRACTION_PSD_AND_NEGATIVE_FORM_CONTROLS",
+    "examples": [
+      {
+        "matrix": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "PSD": true,
+        "charpoly": [
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "matrix": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "PSD": false,
+        "charpoly": [
+          -3,
+          2,
+          1
+        ],
+        "integer_vector": [
+          -2,
+          1
+        ],
+        "value": -3,
+        "primitive_form": [
+          [
+            0,
+            "4"
+          ],
+          [
+            1,
+            "-8"
+          ],
+          [
+            2,
+            "1"
+          ]
+        ]
+      },
+      {
+        "matrix": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "PSD": false,
+        "charpoly": [
+          -1,
+          0,
+          1
+        ],
+        "integer_vector": [
+          1,
+          -1
+        ],
+        "value": -2,
+        "primitive_form": [
+          [
+            1,
+            "-1"
+          ]
+        ]
+      }
+    ],
+    "count_point_loaded": false,
+    "optimizer_called": false
+  },
+  "limits": {
+    "point_query_invocations": 1,
+    "query_wall_seconds": 30,
+    "optimizer_calls": 0,
+    "whole_tensor_regenerations": 0
+  },
+  "query_started": false,
+  "count_point_loaded": false,
+  "requires_final_driver_gate": true
+}

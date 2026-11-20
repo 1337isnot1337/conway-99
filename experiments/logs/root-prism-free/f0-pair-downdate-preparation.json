@@ -1,0 +1,73 @@
+{
+  "status": "exact complete type input and int64 bounds prepared; classification not run",
+  "source_sha256": "a17b7c8f8a7526398fc0da6ead18da2228e27e89a85b759ff0c3b6076da9b979",
+  "native_source_sha256": "b4cc2fc3d2a9c363d9d14c719741d725da8e9337f40bbe1fcbfbf1e79e2fa802",
+  "model_preparation_sha256": "7b870a9df98c855f75fcd0191b5fe03589d9458ad1e3f985ba77edb066be0c59",
+  "bounds_sha256": "443c87ca561fa28c343d0446afa6d65ad87ad7d1f754a54a1756e5fcca7b6dfb",
+  "compressed_input": "experiments/logs/root-prism-free/f0-pair-downdate-types.txt.gz",
+  "compressed_input_sha256": "fa27be0b395d9dfa92444eda7c83e277cdf8afb5744e6487c7ee2e0460e9144e",
+  "raw_input_sha256": "60f71498934e2b604c9b716fab3c5523774ccf94e3296486e2658380a637f1e0",
+  "raw_input_bytes": 2044161,
+  "component_pair_types": 36134,
+  "represented_component_ordered_pairs": 230400,
+  "compatible_ordered_type_combinations": 33578176,
+  "represented_full_ordered_pairs_including_self": 1534132224,
+  "self_full_columns": 39168,
+  "nonself_full_unordered_pairs": 767046528,
+  "classification_flags": [
+    "same_component_selector",
+    "intersection_at_least_three",
+    "quota_one_local_pair",
+    "quota_one_cross_pair",
+    "existing_component_motif"
+  ],
+  "arithmetic_bounds": {
+    "status": "exact signed-int64 bounds established before complete type classification",
+    "Gram_certificate_sha256": "edb85ff422222961e6bc9b36322b74bcfce455bca262d6e189d7768f9ac91c98",
+    "type_preparation_sha256": "7b870a9df98c855f75fcd0191b5fe03589d9458ad1e3f985ba77edb066be0c59",
+    "full_denominator": 4577040,
+    "component_denominator": 2288520,
+    "full_column_numerator_range": [
+      2240036,
+      3242772
+    ],
+    "positive_slack_range": [
+      1334268,
+      2337004
+    ],
+    "component_bilinear_numerator_range": [
+      -342896,
+      858218
+    ],
+    "profile_dot_range": [
+      -2,
+      2
+    ],
+    "direct_cross_numerator_range": [
+      -1702148,
+      3610868
+    ],
+    "cross_square_direct_upper": 13038367713424,
+    "slack_product_upper": 5461587696016,
+    "conservative_determinant_absolute_upper": 18499955409440,
+    "Cauchy_cross_square_upper": 10515570243984,
+    "full_denominator_square": 20949295161600,
+    "int64_max": 9223372036854775807,
+    "compatible_ordered_type_combinations": 33578176,
+    "represented_ordered_full_column_pairs_including_self": 1534132224,
+    "component_type_multiplicity_maximum": 24,
+    "proof": "Integer endpoint bounds follow from the frozen complete single-column screen, exact component table range, and profile deviations of squared norm0 or2. Positive quotient gives the additional exact Cauchy bound. No floating-point operation is used.",
+    "full_pair_classification_performed": false,
+    "solver_called": false
+  },
+  "controls": {
+    "actual_incidence_positive_pairs": 3,
+    "duplicate_column_negative_Schur_numerator": -3,
+    "duplicate_column_direct_negative_value": -2,
+    "duplicate_self_control_not_exported_as_a_distinct_column_conflict": true,
+    "solver_called": false
+  },
+  "no_fixed_incidence_designs": true,
+  "no_graph_symmetry_assumption": true,
+  "elapsed_seconds": 41.41249315299865
+}

@@ -1,0 +1,34 @@
+{"case": 6, "bootstrap_seconds": 3.1462153769989527, "remaining_seconds": 26.853786288000265}
+{
+  "status": "UNKNOWN at budget; no point or exclusion",
+  "case_index": 6,
+  "representative_tips": [
+    2,
+    7
+  ],
+  "covered_tip_pairs": 2,
+  "manifest_path": "experiments/logs/grids-and-triangles/complement-rook-joint-split-6-model.json",
+  "manifest_sha256": "ae902894a880caae435a98d59ed9ea69fdb28de2a8229677519e67e1800a7006",
+  "split_cnf_sha256": "7d82dc2d03bb200d7d59a2c84ffefa0dbf5ecd4f2dfc5df2fc61c69f7dc75f61",
+  "selected_signature_units": [
+    2,
+    6
+  ],
+  "requested_seconds": 30.0,
+  "budget_includes_parse_and_bootstrap": true,
+  "solver": "glucose4",
+  "proof_enabled": true,
+  "full_outside_caps_imposed": false,
+  "extra_a_bound_added": false,
+  "lazy_cuts_added": 0,
+  "bootstrap_seconds": 3.1462153769989527,
+  "solve_return_seconds": 30.023748027999318,
+  "solver_statistics": {
+    "restarts": 88,
+    "conflicts": 15375,
+    "decisions": 88430,
+    "propagations": 124388062
+  },
+  "total_seconds": 30.235162412000136,
+  "peak_process_rss_kib": 677828
+}

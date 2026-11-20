@@ -1,0 +1,18 @@
+{
+  "status": "ERROR_BEFORE_ANY_CUT_EVALUATION",
+  "source": {
+    "path": "experiments/workspace/rook_case4_face112_disjoint_guard_point.py",
+    "sha256": "29d671c3184674421e49ebcc7fca9a2c7e689736d3da104c3e437f449d87cacc"
+  },
+  "cuts_sha256": "9ef2b90b12a08911970952fca73da4d788f99997e71349433d54429c02c49efc",
+  "point_sha256": "bb81664e8ea9faec6878ee98ec36c5ae844535e805f78fabe7c475a1f83d8ebb",
+  "error_type": "AssertionError",
+  "cause": "The point stores its common denominator and selector numerators as canonical decimal strings; v1 expected JSON integers.",
+  "failure_location": "The denominator assertion before the cut loop.",
+  "rows_evaluated": 0,
+  "optimizer_calls": 0,
+  "propagation_calls": 0,
+  "original_source_preserved": true,
+  "original_stdout_log_preserved": true,
+  "correction": "Separate v2 accepts canonical decimal strings or exact JSON integers, never floating point."
+}

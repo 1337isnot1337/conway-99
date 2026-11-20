@@ -1,0 +1,100 @@
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 4,
+  "unique_integer_cuts": 4,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+{
+  "status": "exact exported-row cut algebra replay PASS",
+  "selected_cut": "denominator36_simplification",
+  "upper_bounds_used": 0,
+  "value_at_published_point": -2564720,
+  "scope": "Cached-form provenance is bound to export; this replay checks the saved exact row algebra."
+}
+{
+  "status": "exact integer-vector PSD cut replay PASS",
+  "negative_blocks": 9,
+  "unique_integer_cuts": 9,
+  "LP_called": false,
+  "numerical_eigensystems_recomputed": false,
+  "passing_blocks_PSD_certified": false
+}
+Running HiGHS 1.16.0 (git hash: f3f113d): Copyright (c) 2026 under MIT licence terms
+Includes third-party software components, see THIRD_PARTY_NOTICES.md for full details
+{
+  "status": "x521-zero count-face model prepared; no optimization run",
+  "source_sha256": "cc89194289b24882bf22f7a5945516fa57897c9d2607e527d94100ab5e9d57dd",
+  "parent_source_sha256": "a65dc6b31ebebe7bcd14398f685537f642081a7517c2e0ec94eb96246ad6e473",
+  "parent_preparation_path": "experiments/logs/moments-and-counts/prism-zero-order10-ipm-zero-closure-preparation.json",
+  "parent_preparation_sha256": "fce82618e5beef610d70fadbf7b0e5d955a43496c05c3621b78ee270ff87c820",
+  "small_controls": {
+    "exact_scaled_assignments": 125,
+    "assignments_on_face": 25,
+    "input_bounds_not_mutated": true,
+    "positive_DP_scales_unchanged": true,
+    "all_row_evaluations_unchanged": true,
+    "optimizer_called": false
+  },
+  "parent_positive_control": {
+    "path": "experiments/logs/moments-and-counts/prism-zero-order10-ipm-zero-closure-round0-rounded-counts.json",
+    "sha256": "3f75ad72024829c91995f3b22d50f89cd709af6b6d9d3b0806c5ee05f3097326",
+    "exact_induced_counts_checked": 48965,
+    "original_equations_checked": 180445,
+    "held_cuts_checked": 25,
+    "minimum_cut_value": 629575,
+    "x521": 116,
+    "satisfies_parent_model": true,
+    "satisfies_new_face": false
+  },
+  "cache": {
+    "path": "/tmp/conway99-prism-zero-x521-face-model.pickle",
+    "sha256": "49f1ddc347ad48ba98f5acc1095dab0b31fe1baad4073178f9242e961bea7447",
+    "bytes": 287334097
+  },
+  "highs_version": "1.16.0",
+  "supported_options": {
+    "output_flag": false,
+    "threads": 1,
+    "presolve": "on",
+    "solver": "ipm",
+    "run_crossover": "off",
+    "time_limit": 120.0
+  },
+  "maximum_solver_calls": 1,
+  "maximum_solver_seconds": 120,
+  "infeasibility_requires_exact_certificate": true,
+  "feasibility_requires_exact_count_replay": true,
+  "scope": "globally prism-free count relaxation with x521=0; not a graph search",
+  "optimizer_called": false,
+  "preparation_seconds": 23.807341413998074,
+  "peak_process_rss_kib": 1195556
+}
+{
+  "rows": 47645,
+  "stored_columns": 547,
+  "free_columns": 490,
+  "nonzeros": 5430251,
+  "parent_numerical_model_sha256": "62664e9c7d7fd5abe9ca61585e10f0d3714bbd72509dca0e7a54d725cbd5943e",
+  "numerical_model_sha256": "2b4b89146c8be779db343b053a0fa7600a14b71cd376d9572d4bf8ee4967b8e4",
+  "only_changed_column_index": 518,
+  "only_changed_ordinary_coordinate": 521,
+  "changed_numerical_bound": {
+    "old_lower": 0,
+    "old_upper": 1,
+    "new_lower": 0,
+    "new_upper": 0
+  },
+  "ordinary_coordinate_DP_scale": 19404,
+  "all_DP_scales_sha256": "98292219d9dc8f877cadbee3238ab56561ac12f0651c79ec5736518309144a5d",
+  "positive_DP_bounds_and_scalings_unchanged": true,
+  "all_rows_and_rhs_unchanged": true,
+  "exact_seed_cuts": 25,
+  "seed_coefficients_sha256": "0f7e172bea4c0b5c5fa61d72b4e1b33253e49b0da5a308c515b8597fc91cee07",
+  "restoring_one_bound_reproduces_parent_hash": true,
+  "additional_motif_inequality_added": false,
+  "additional_zero_propagation_added": false,
+  "fixed_order_nine_point": false,
+  "objective": "zero; pure feasibility"
+}

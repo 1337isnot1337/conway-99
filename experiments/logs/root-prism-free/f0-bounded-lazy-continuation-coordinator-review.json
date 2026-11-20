@@ -1,0 +1,37 @@
+{
+  "status": "PASS: full new seed and shared helper reviewed; runner and proof ASTs retain checked behavior",
+  "input_sha256": {
+    "seed": "4fee27c4fc99297d40cc24bf7adadcd4839df6e37ffc3bc1426cb368113c2715",
+    "shared_helper": "46ff20ca4269b71b80c2fd7e3ba2fec4f369b7dca3d4e08272a935cdfde72f1a",
+    "runner": "361484188521fc5c741be4aa8a7e1a10a9b4e76116ae51d8d9e76b272bc78dd2",
+    "preparation": "a6a5e69927400cca6f469141d44b2ee6f8e2500ac680d9ddf82d13aa2538f91b",
+    "cold": "7a18c04196576f4987331c15ab964eacb789627fc26cca34957ad2aabf1b88e4",
+    "AST_controls": "16dede0809d531e369d0906844842a05467ff03ecd554f2648e431edf86f57fb"
+  },
+  "retained_inequalities": 1356,
+  "added_exact_inequalities": 12,
+  "initial_inequalities": 1368,
+  "retained_parent_explanations": 2448,
+  "added_seed_explanations": 24,
+  "initial_CNF_sha256": "71a0a9306664001dcda1c68b1635cbc42e9525ac3133dd3a40ae9b09a0ec0c39",
+  "reviewed_checks": [
+    "Direct integer validation preserves every individual potential and all fifteen shared families",
+    "All parent clauses are retained and their exact original CNF hash is reproduced",
+    "The last candidate is rejected only by new exact gap33 consequences and is neither fixed nor preferred",
+    "The shared helper makes at most one feasibility call and one distinct bounded-potential call within its shared budget",
+    "No zero or numerical shared result is promoted to an exact conclusion",
+    "Both child records and all returned potentials are preserved before exact reconstruction",
+    "Every exact gap is lifted across the complete eligible edge domain and all twelve core actions",
+    "The entire runner and proof wrapper retain their previous checked ASTs after declared binding and status changes"
+  ],
+  "authorized_run": {
+    "continuation_queries": 1,
+    "overall_seconds": 180,
+    "maximum_SAT_refinement_calls": 1000,
+    "maximum_row_passes": 100,
+    "shared_seconds_per_candidate": 60,
+    "automatic_retries": 0
+  },
+  "conditional_UNSAT_gate": "Only incremental UNSAT permits one fresh proof query; an accepted exclusion requires retained-input and independent proof replay.",
+  "whole_component_excluded_before_run": false
+}

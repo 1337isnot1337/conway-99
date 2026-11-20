@@ -1,0 +1,40 @@
+{
+  "status": "PASS: complete owned CP-SAT query and cold replay source gate",
+  "subjects": {
+    "query": {
+      "path": "experiments/workspace/root_prism_free_f0_character_query.py",
+      "sha256": "847d85ee005899924b3b79a094389a1a799de57c0e6e16f3f68721a8f24acee2"
+    },
+    "replay": {
+      "path": "experiments/workspace/root_prism_free_f0_character_query_replay.py",
+      "sha256": "495c4055612e1321db194decd1e1b0da129e2b587ef8ccdbac420815687f4b89"
+    },
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-character-query-preparation01/preparation.json",
+      "sha256": "c480e2df6dbec03d95d3c8c1f387933b28c7e212c9e86a33d0b7f349451d4384"
+    },
+    "preflight": {
+      "path": "experiments/logs/root-prism-free/f0-character-query-preflight01.json",
+      "sha256": "6622cb3f7783224f56d1b350664916b15155d8232b596445ddcbb8248bd50124"
+    }
+  },
+  "checks": [
+    "Configuration checks every source/model/runtime binding and the passed independent native overlay gate before a production run.",
+    "The180-second owned child includes all imports, input reads, public model construction, serialization, the single solve and exact acceptance. The unchanged supervisor kills and reaps failed/late children.",
+    "The constructed production proto must have exactly the prepared5b43e3c0 hash before solve. One worker and seed0 are set; an8-second finalization reserve is subtracted from remaining native time.",
+    "Every returned primary, signed and auxiliary coordinate is saved as an integer. Only FEASIBLE/OPTIMAL plus the full Python-integer inspector can produce an exact count witness.",
+    "Native INFEASIBLE is labeled UNPROVED_NATIVE_INFEASIBLE. No numerical status excludes F0 or certifies a literal incidence or graph.",
+    "The parent accepts only a successfully exited child inside its deadline. Errors, hard deadlines and late children cannot produce accepted feasibility.",
+    "Cold replay imports no CpSolver, reads the frozen native proto, checks preparation and terminal bindings, and independently evaluates every native constraint with Python integers for an accepted point.",
+    "The fixed preparation has no production solve; source review repeats neither the native controls nor the cold preflight."
+  ],
+  "production_runs_authorized": 1,
+  "maximum_owned_production_seconds": 180,
+  "cold_replays_authorized": 1,
+  "cold_outer_wall_limit_seconds": 60,
+  "cold_execution_note": "Run the standalone replay under the already checked owned supervisor; preserve a partial or failed replay instead of retrying it unchanged.",
+  "optimizer_calls_in_this_review": 0,
+  "controls_repeated": false,
+  "F0_excluded": false,
+  "graph_or_incidence_claimed": false
+}

@@ -1,0 +1,46 @@
+{
+  "status": "PASS: read-only exact clause adapter/source review",
+  "subject": {
+    "path": "experiments/workspace/root_prism_free_f0_lazy_clauses.py",
+    "sha256": "cef5448b012be57277b87297d2e3ec2c017ccea1336080f4c40c2594f2ab7640",
+    "bytes": 15767
+  },
+  "related_source_bindings": [
+    {
+      "path": "experiments/workspace/integer_cut_clause_explanations.py",
+      "sha256": "f57d51b8be3fefd7a5d1035c52cc5758c719adb6a79d16a0909f1a54fdaa59f3",
+      "bytes": 8904
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_lazy_registry.py",
+      "sha256": "9a9a2c40241dc3899b9692568a2ee4127d17d5a4b8c33972dfd9b59a57e43478",
+      "bytes": 15399
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_lazy_row_loop.py",
+      "sha256": "7b8301c96329ecbc6610c3dd74809793029e2e13d57027c7b7f9756bfd859e07",
+      "bytes": 31956
+    }
+  ],
+  "checked": [
+    "Each clause falsifying assignment is minimized against the exact signed integer inequality, with zero RHS and strict positive lower bound.",
+    "Population60 follows by summing the18 diagonal Gram quotas10, with each signature occurring in exactly3 diagonal supports.",
+    "Coefficient transport and literal transport both use the same verified zero-based signature image; literal signs and the480-variable universe are preserved.",
+    "The independent explanation retains all negative free coefficients in its lower bound. The population explanation includes zero-coefficient selectable variables.",
+    "Both explanation families are generated and each transported clause is checked again; no unknown-graph automorphism equality is imposed.",
+    "Deduplication is on complete canonical literal lists and retains their necessary-constraint status.",
+    "Resource refusal occurs before clause-state mutation. Accepted records increment only the primary clause list; variable count remains unchanged.",
+    "Registry and clause prefixes have distinct append-only bindings; replay regenerates explanations and checks refused batches without modifying the prefix.",
+    "Dynamic symmetric cut insertion assumes a proved cut. The inspected caller executes exact shared-row replay and universal lifting before insertion."
+  ],
+  "scope": [
+    "Read the entire adapter and exact integer explanation helper.",
+    "Read registry cut orientation and population derivation, plus targeted loop insertion/replay paths.",
+    "The separate732-cut registry validity audit belongs to the literature agent.",
+    "Did not regenerate the1212 prepared clauses, rebuild any CNF, run controls, solve, optimize, or check a DRAT proof."
+  ],
+  "subject_module_imported": false,
+  "solver_queries": 0,
+  "optimizer_queries": 0,
+  "CNF_rebuilds": 0
+}

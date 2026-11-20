@@ -1,0 +1,54 @@
+{
+  "schema": "conway99.triangle-vertex-projector-query-preparation.v1",
+  "status": "PREPARED_NO_POINT_QUERY",
+  "source_path": "experiments/workspace/triangle_vertex_projector_query.py",
+  "source_sha256": "c2529d20935733c835a24b2600dd195c439f68f2cf258c9eb48325ff466516d3",
+  "builder_path": "experiments/workspace/triangle_vertex_projector_moments.py",
+  "builder_sha256": "fea5b560e4aeeb323da6e8cde2bc52571a3dc7499f0900a0a12b1f134d4a31c7",
+  "tensor_preparation": "experiments/logs/moments-and-counts/triangle-vertex-projector-preparation01/preparation.json",
+  "tensor_preparation_sha256": "71d57c17d2c1e6b034b6511206246db3fc3abd6046bf40d992e447887163f29c",
+  "model_raw_sha256": "c71ff13d3ac029d44d656e7a7468d7871ce499ec28cc7a2b1a7c7dd11fc9a8f9",
+  "model_gzip_sha256": "7dfb0f2d60e81c920d38d8b3c558c9e57ec326ab97010ede251689f284907149",
+  "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df",
+  "families": {
+    "minus": 9,
+    "plus": 9,
+    "minus_conditioned": 2,
+    "plus_conditioned": 2
+  },
+  "blocks": 22,
+  "distinct_classes": 574,
+  "matrix_coordinates": 1298,
+  "lower_entries": 45292,
+  "query_tensor_terms": 228816,
+  "controls": {
+    "preparation_sha256": "71d57c17d2c1e6b034b6511206246db3fc3abd6046bf40d992e447887163f29c",
+    "controls": 37,
+    "host_orders": {
+      "4": 9,
+      "5": 2,
+      "6": 6,
+      "7": 6,
+      "8": 5,
+      "9": 5,
+      "10": 4
+    },
+    "labelled_root_embeddings": 18580,
+    "ordered_triangle_pairs": 72406,
+    "literal_factorization_checks": 105
+  },
+  "exact_coefficient_partition_identities": 135819,
+  "query_limits": {
+    "invocations": 1,
+    "seconds": 30,
+    "threads": 1,
+    "cold_replay_after_query": true
+  },
+  "arithmetic": "Python-integer count contractions and exact coefficients of det(tI+M); all matrices retained. Negative directions require exact vector and induced-form contraction.",
+  "no_point_zero_pruning": true,
+  "original_Q_artifacts_unchanged": true,
+  "count_point_contracted": false,
+  "optimizer_called": false,
+  "graph_existence_resolved": false,
+  "coordinator_source_and_preparation_review_required": true
+}

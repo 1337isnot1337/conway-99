@@ -1,0 +1,20 @@
+{
+  "schema": "conway99.f0.core-blossom-query-root-gate.v1",
+  "status": "PASS: complete source delta, unchanged control flow and actual preflight reviewed",
+  "query_sha256": "67cd7853f00d5f99df7524046c30d72a1286106c2f5577a50d573cf1fa4a967b",
+  "replay_sha256": "baf3f134cf83c3a9f4410276ebbd570f89ec47a651dde96486c030043577e677",
+  "preparation_sha256": "711705d98feaf8d3a9a361335d81b6a49e5ee1cf1408168af11969b8aef943b1",
+  "preflight_sha256": "0a801a6c9d35897c48abf73cd5d696d4c50176fca2afa5dafa8fce153c52892a",
+  "reuse_controls_sha256": "52b9cf1a3b151eb4174d9ceda0b42682d95f772edda798dfe015b2028219c0bd",
+  "checks": [
+    "Complete text differences from the already reviewed full-Fourier query and replay are model/source/hash bindings, target/initial row counts, report schema labels and the actual cold-receipt key.",
+    "The exact evaluator, 117-row scanner, strict-prefix rule, native parameters, budget calculation and owned finalization remain unchanged.",
+    "The new target has 65811 rows and the initial model 65694. All 32296 variable IDs and 117 pool IDs are retained.",
+    "The accepted cold preflight checks the actual target and initial archives, complete variable domains, row embedding and every external-row hash.",
+    "Every returned integer vector must be saved before exact checking. A full-target pass remains provisional until separate original-parent and literal acceptance.",
+    "An UNKNOWN result or an unproved native INFEASIBLE status does not exclude F0. No unchanged retry is allowed."
+  ],
+  "allowed_execution": "One query with a 300-second owner and 180 cumulative native seconds, one worker, seed zero, no LP linearization, at most 12 strictly growing prefixes and 16 violated pool rows per refinement. Run after the first direct540 production query releases the heavy slot, then perform one separate bounded terminal cold replay.",
+  "optimizer_calls": 0,
+  "F0_excluded": false
+}

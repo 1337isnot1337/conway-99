@@ -1,0 +1,58 @@
+{"phase": "starting", "elapsed_seconds": 0.3196465020009782}
+{"phase": "full_cover_ledger_replayed", "elapsed_seconds": 15.300598656001966, "clauses": 178533}
+{"phase": "adding_native_covers", "elapsed_seconds": 17.310147225001856, "cover_constraints": 16384}
+{"phase": "adding_native_covers", "elapsed_seconds": 18.145745487003296, "cover_constraints": 32768}
+{"phase": "adding_native_covers", "elapsed_seconds": 19.130507867001143, "cover_constraints": 49152}
+{"phase": "adding_native_covers", "elapsed_seconds": 19.930203340001754, "cover_constraints": 65536}
+{"phase": "adding_native_covers", "elapsed_seconds": 20.690594874002272, "cover_constraints": 81920}
+{"phase": "adding_native_covers", "elapsed_seconds": 21.482380971003295, "cover_constraints": 98304}
+{"phase": "adding_native_covers", "elapsed_seconds": 23.31694027600315, "cover_constraints": 114688}
+{"phase": "adding_native_covers", "elapsed_seconds": 24.381746426002792, "cover_constraints": 131072}
+{"phase": "adding_native_covers", "elapsed_seconds": 25.353074849001132, "cover_constraints": 147456}
+{"phase": "adding_native_covers", "elapsed_seconds": 26.32639035500324, "cover_constraints": 163840}
+{"phase": "starting_one_60_second_solve", "elapsed_seconds": 27.47339262300011, "variables": 1214, "constraints": 180804}
+{
+  "status": "UNKNOWN: bounded native search unresolved",
+  "query_preparation_sha256": "e222ebdad0db2706fe5decdd454d1de3369f476ff3118165f6f68a0e1c003ef0",
+  "source_hashes": {
+    "complement_rook_35core_case0004_coordinate_cover_cadical.py": "1921f71964795d819e0369c9679dc1526df97c29bb1920a932c7ca449ba3de25",
+    "complement_rook_35core_case0004_coordinate_cover_overlay.py": "5597089c00a15f72927f31c8b05f5a6bed1198a0d7ebc16aacaeb6cd39cb1c4a",
+    "complement_rook_35core_case0004_coordinate_cover_query.py": "eb352386f55c5a1fd6ddb9c692ad934d8eef87904c00e86122172dc1ebc1f9d8",
+    "complement_rook_35core_case0004_coordinate_covers.py": "f4692deb00982e7f3a3153faafc2cc6084db0c5827ff12d11beaf5e3d493357a",
+    "complement_rook_35core_case0004_intrinsic_rows.py": "24eb86e47e6f5a741721fe9174e7d3762bc74edd290c89d489dd5ddedb900c11",
+    "complement_rook_35core_case0004_native_cpsat.py": "4462dae913abcb736c5ba5f7cffc3f3e7d50b748826cab3c89fffbfd3bd0e3eb",
+    "complement_rook_35core_case0004_native_cpsat_query.py": "63e4b7ce073973dd184ad94185e7475d449d72f5a6013f3d5fc8d1d1edf82601",
+    "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+    "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "native_model_sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476",
+  "binary_proto_sha256": "b98aa8f1b6ea6e156e5bccb19b88080e543e9514e9797627813a684ff3d7fc73",
+  "case4_excluded": false,
+  "full_graph_completion_found": false,
+  "production_solve_calls": 1,
+  "phase": "starting_one_60_second_solve",
+  "phase_values": {
+    "variables": 1214,
+    "constraints": 180804
+  },
+  "elapsed_seconds": 91.0878719100001,
+  "child_peak_rss_kib": 1504460,
+  "reconstruction_seconds": 27.4733689900022,
+  "solver_parameter_text": "max_time_in_seconds: 60\nnum_search_workers: 1",
+  "solve_stage_elapsed_seconds": 63.3214005430018,
+  "backend_status_code": 0,
+  "backend_status": "UNKNOWN",
+  "backend_statistics": {
+    "conflicts": 0,
+    "branches": 4074,
+    "wall_time": 63.301846444000006,
+    "user_time": 63.301846502000004
+  },
+  "response_file": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-run01/response.txt",
+  "response_sha256": "8307314033ad907e9a29136d0a5c698b51a6e49b610cc3f24bb9948e42fce3cf"
+}

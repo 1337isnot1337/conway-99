@@ -1,0 +1,31 @@
+{
+  "checked_steps": [
+    "Quota-one mixed equalities and nonnegative Boolean edge variables give L<=x_b and R<=x_c; consequently L,R are each zero or one.",
+    "When y_bc=0 the homogeneous row follows immediately. When y_bc=1 activation forces x_b=x_c=1, and any violation requires one selected side endpoint on each side.",
+    "T membership excludes both side endpoints from b,c. If the side endpoints coincide, edge ab has distinct common neighbors i and c, contradicting the adjacent-pair upper bound one.",
+    "With distinct side endpoints, all six vertices are distinct; the two stated triangles and matching edges are forced. There are exactly six other cross edges.",
+    "The exclusions ij,ic,bj follow from explicit premises. The exclusions ad,ac,bd follow respectively from two common neighbors i/j, i/c, and j/b on an edge that would be present.",
+    "The resulting six-vertex induced graph is precisely a triangular prism, contradicting the branch hypothesis. No unproved nonedge, alignment or completed-graph symmetry is assumed.",
+    "Moving the two selectors to the left gives the claimed native upper bound, and the lower endpoint -2 follows from nonnegative edge terms and Boolean selectors.",
+    "The local proof uses core nonadjacency but not the count of other common core neighbors. The existing G_ij=2 restriction is correctly identified as a finite-census restriction, not an additional premise needed by this proof.",
+    "Convex combinations of valid Boolean embeddings satisfy the row. This is correctly distinguished from implication by the currently saved continuous relaxation."
+  ],
+  "complete_text_read": true,
+  "concrete_blockers": [],
+  "native_model_replay_claimed": false,
+  "new_finite_census_performed": false,
+  "optimizer_calls": 0,
+  "proof": {
+    "bytes": 5754,
+    "git_blob": "07e7a9ac0a4c475c7e4872029ac1cc2f59858e09",
+    "sha256": "d3ed501a913f41d7a1b737768740df569b3b6de0e22c56dafa81d4612bc27bc4"
+  },
+  "reviewer": "master_review",
+  "schema": "conway99.f0.four-exterior-prism-standalone-proof-independent-review.v1",
+  "source_context": {
+    "prior_source_review_sha256": "beaaccbdffce36e4a828d37bce60db988be3a08bf053cda15d3676cf91313e95",
+    "producer_sha256": "774f0f82e6e0773ed49661df7b1ae517fd9680afdc46d883cc684b669c0c663a"
+  },
+  "status": "PASS_COMPLETE_STANDALONE_FOUR_EXTERIOR_PRISM_PROOF",
+  "whole_component_excluded": false
+}

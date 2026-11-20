@@ -1,0 +1,59 @@
+{
+  "status": "COMPLETE_EXACT_REAL_LP_ROW_COMPRESSION",
+  "source_sha256": "293787214bb7ad4c20a60ef03d8d2c0eee8f1142d3b015f80d285cc6a9ad1164",
+  "input_npz_sha256": "fb9ba6b1185f7796e39ac2904f077ad58238e89b0445305a22238c0374dd158f",
+  "optimizer_called": false,
+  "case4_excluded": false,
+  "controls": {
+    "exact_fractional_grid_points": 27,
+    "duplicate_strict_subset_and_distinct_guard_control": true,
+    "optimizer_called": false
+  },
+  "same_guard_stage": {
+    "retained_covers_before_native_screen": 170968,
+    "removed_covers": 1248,
+    "subset_comparisons": 12832741
+  },
+  "native_screen": {
+    "Gram_rows_available": 396,
+    "eligible_weighted_rows": 13,
+    "minimal_covers_removed": 45539,
+    "witness_counts": {
+      "Gram_unit_box": 45525,
+      "weighted_same_guard": 14
+    }
+  },
+  "verified_counts": {
+    "status": "PASS: every original row accounted for and every omission directly implied",
+    "input_rows_checked": 174208,
+    "unchanged_native_rows": 1992,
+    "input_cover_rows_checked": 172216,
+    "retained_cover_rows": 125429,
+    "removed_cover_rows": 46787,
+    "retained_rows": 127421,
+    "retained_nonzeros": 8483109,
+    "omission_rule_counts": {
+      "Gram_unit_box": 45762,
+      "same_guard_subset": 1011,
+      "weighted_same_guard": 14
+    },
+    "same_guard_identical_support_witnesses": 0,
+    "final_same_guard_antichain_checked": true,
+    "equivalent_over_all_real_unit_box_points": true,
+    "optimizer_called": false,
+    "case4_excluded": false
+  },
+  "certificate": {
+    "path": "certificate.json.gz",
+    "sha256": "ecd80cb44cfc6464bab1e8c711229bef2a7da9d9334900f24d422d6a46841834",
+    "decompressed_sha256": "f25952503b94cdad6ac8fe9e20ff0fbba380ceebf2dec87118ce34fdf280c6f7",
+    "decompressed_bytes": 2168919
+  },
+  "arrays": {
+    "path": "arrays.npz",
+    "sha256": "82f97f6694b6b3648f19651d43546dcaecfc1a97736afd30ce470b2b2bcd968c",
+    "bytes": 4234427
+  },
+  "elapsed_seconds": 27.455388989998028,
+  "peak_rss_kib": 413152
+}

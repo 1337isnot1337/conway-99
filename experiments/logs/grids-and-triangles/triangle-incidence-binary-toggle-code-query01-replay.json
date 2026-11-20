@@ -1,0 +1,40 @@
+{
+  "status": "PASS_EXACT_TRIANGLE_TOGGLE_CODE_BOUND_REPLAY",
+  "bindings": {
+    "source_sha256": "90fa29ba6d87c1ba7ce4d2cda98ffad70a1be7cf17b2c48415fbfb332978e139",
+    "parent_bindings": {
+      "source_sha256": "8befdefb75ff4b4fbaee717d6ad5255f441f4ad2eed62bc8464f3efe6ff5025b",
+      "exact_arithmetic_helper_sha256": "c2cf228e0e6858b56d642c42227bed5d21913fe2ff2f88b15d82d03d4c35a001",
+      "chain_collision_source_sha256": "34bfb0832a6f1bf49db3ee6e39dd68baf4e1ce650f62723992f344f6421bed57",
+      "chain_collision_report_sha256": "c2e4fcda3a4f578a75ed2c01a47e816807c4ac4ee4a50d3518fb2c4d479937ef"
+    },
+    "replacement_source_sha256": "993fcdb85f2e4c50e5bb86a86d4a8a5a2ae75b3e0bac85453a25f6b4234e3c62",
+    "replacement_controls_sha256": "e3014b321d39dd444d66427b3b24633a5743c99b31ebc846c064e803b4f500c5",
+    "additional_controls": {
+      "experiments/workspace/triangle_incidence_binary_toggle_words.py": "98b30dc02d75849886167c48360586dfb8ac7086ab367a9212adbca6036dfd80",
+      "experiments/logs/grids-and-triangles/triangle-incidence-binary-toggle-controls.json": "017bb982b0129ae80140ea17cc26fdaa826ae012fbc3afab57e88e3fe5c016ce",
+      "experiments/workspace/triangle_incidence_binary_toggle_six_controls.py": "d3f8cffd6e762779c26802881a4e5811103b7771277000bd71ea36d85f500486",
+      "experiments/logs/grids-and-triangles/triangle-incidence-binary-toggle-six-controls.json": "9daf7e574e7cf1bfdfe08034a0e4943950ae67ed24c26ec79f4877fa58ce0d68"
+    }
+  },
+  "result_sha256": "9248b18c7da13191fe2250c0efc83c5c4d742848940c93cd6e830dc898e7a610",
+  "certificate": {
+    "exact_code_size_upper_bound": "52183040/17817",
+    "binary_kernel_dimension_upper_bound": 11,
+    "binary_incidence_rank_lower_bound": 88,
+    "dual_column_slacks": [
+      "0",
+      "573440/481059",
+      "229376/481059",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "all109_dual_signs_and_seven_columns_checked": true,
+    "exact_primal_objective": "52183040/17817",
+    "exact_LP_optimum": true,
+    "all109_primal_rows_and_seven_bounds_checked": true
+  },
+  "optimizer_calls": 0
+}

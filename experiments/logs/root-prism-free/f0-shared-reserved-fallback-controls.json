@@ -1,0 +1,19 @@
+{
+  "status": "reserved shared schedule and exact-only acceptance controls PASS",
+  "source_sha256": "0685fc162e91a466ed033becb7d01259c4869f2afd9214474b4b0eae7dfcd066",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_shared_bounded_fallback.py": "46ff20ca4269b71b80c2fd7e3ba2fec4f369b7dca3d4e08272a935cdfde72f1a"
+  },
+  "schedule": {
+    "original_if_remaining_at_least": 20,
+    "original_maximum_seconds": 10,
+    "original_fraction_denominator": 4,
+    "otherwise_bounded_only": true,
+    "original_after_bounded": false
+  },
+  "boundary_schedule_cases": 13,
+  "exact_status_cases": 3,
+  "bounded_model_and_integer_reconstruction_unchanged": true,
+  "same_input_timing_comparison_claimed": false,
+  "optimizer_or_solver_called": false
+}

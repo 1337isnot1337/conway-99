@@ -1,0 +1,32 @@
+{
+  "status": "PASS: pre-production native-runtime binding correction",
+  "parent_v3_sha256": "cd347553b9979567df5c981b689ca1dd30399068a0329dad4285586a6f6ca880",
+  "current_v4_sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e",
+  "changed_functions": [
+    "numeric_stage",
+    "numeric_records",
+    "replay_numeric",
+    "cycle_child"
+  ],
+  "unchanged_function_count": 34,
+  "all_mathematical_helpers_and_acceptance_unchanged": true,
+  "exact_substitutions": [
+    [
+      "result[\"runtime_binding\"] = old.runtime_binding()",
+      "result[\"runtime_binding\"] = old.runtime_binding()\n        flight = checked_ref(state[\"native_preflight\"])\n        assert flight[\"source_bindings\"] == source_bindings()\n        assert result[\"runtime_binding\"] == flight[\"runtime_binding\"], \"native runtime differs from frozen preflight\""
+    ],
+    [
+      "\"native_seconds_before\", \"carried_covers\"):",
+      "\"native_seconds_before\", \"carried_covers\", \"native_preflight\"):"
+    ],
+    [
+      "result, records = numeric_records(state, arrays)\n    matrix = float_matrix(arrays)",
+      "result, records = numeric_records(state, arrays)\n    assert result[\"runtime_binding\"] == checked_ref(state[\"native_preflight\"])[\"runtime_binding\"]\n    matrix = float_matrix(arrays)"
+    ],
+    [
+      "numeric_state_path = directory/f\"state-numeric-{result['LP_rounds']:02d}.json\"",
+      "numeric_state[\"native_preflight\"] = record_ref(preflight)\n            numeric_state_path = directory/f\"state-numeric-{result['LP_rounds']:02d}.json\""
+    ]
+  ],
+  "production_calls_before_correction": 0
+}

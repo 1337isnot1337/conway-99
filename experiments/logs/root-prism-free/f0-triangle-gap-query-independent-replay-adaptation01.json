@@ -1,0 +1,213 @@
+{
+  "schema": "conway99.f0.triangle-gap-query-independent-replay-source-adaptation.v1",
+  "status": "EXACT_TEXT_SUCCESSOR_PREPARED_WITHOUT_EXECUTION",
+  "parent": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "bytes": 37638,
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "git_blob": "5191a03e92e6ab9f1039eeb791518baebdec4661"
+  },
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_query_replay.py",
+    "bytes": 37127,
+    "sha256": "d1756716e217191f62eafcfaa358d67ef89c1f6159afa13696741dd40477b592",
+    "git_blob": "e5cd87397b382668e2bdcb79e0b60840c85059f1"
+  },
+  "ordered_exact_substitutions": [
+    {
+      "label": "Hyphenated namespace and descriptive text",
+      "from": "triangle-incidence",
+      "to": "triangle-gap",
+      "occurrences": 14
+    },
+    {
+      "label": "Uppercase status namespace",
+      "from": "TRIANGLE_INCIDENCE",
+      "to": "TRIANGLE_GAP",
+      "occurrences": 12
+    },
+    {
+      "label": "Deadline description",
+      "from": "triangle incidence query replay",
+      "to": "triangle gap query replay",
+      "occurrences": 1
+    },
+    {
+      "label": "Accepted immediate parent identity and dimensions",
+      "from": "BASE_RAW_SHA = \"2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6\"\nBASE_RAW_BYTES, BASE_VARIABLES, BASE_ROWS = 39306083, 80730, 297470",
+      "to": "BASE_RAW_SHA = \"56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8\"\nBASE_RAW_BYTES, BASE_VARIABLES, BASE_ROWS = 39512348, 80730, 300795",
+      "occurrences": 1
+    },
+    {
+      "label": "Final dimension and only appended family",
+      "from": "VARIABLES, ROWS = 80730, 300795\nFAMILY_ORDER = [\"side_edge\", \"local_selector\", \"global_target_total\"]\nFAMILY_COUNTS = dict(zip(FAMILY_ORDER, [2904, 420, 1]))\nFAMILY_TERMS = dict(zip(FAMILY_ORDER, [10320, 16512, 84]))",
+      "to": "VARIABLES, ROWS = 80730, 303951\nFAMILY_ORDER = [\"gap_triangle_zero\"]\nFAMILY_COUNTS = {\"gap_triangle_zero\": 3156}\nFAMILY_TERMS = {\"gap_triangle_zero\": 3156}",
+      "occurrences": 1
+    },
+    {
+      "label": "Native producer pin",
+      "from": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+      "to": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+      "occurrences": 1
+    },
+    {
+      "label": "Final native checker pin",
+      "from": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+      "to": "8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f",
+      "occurrences": 1
+    },
+    {
+      "label": "Native CI pin",
+      "from": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+      "to": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+      "occurrences": 1
+    },
+    {
+      "label": "Native root driver source and parent receipt",
+      "from": "    assert root[\"complete_original_parent_bytes_recovered\"] is True\n",
+      "to": "    assert root[\"complete_original_parent_bytes_recovered\"] is True\n    assert root[\"parent_raw_sha256\"] == BASE_RAW_SHA and root[\"parent_raw_bytes\"] == BASE_RAW_BYTES\n    same_ref(root[\"driver_source\"], cfg[\"sources\"][\"model_ci\"])\n",
+      "occurrences": 1
+    },
+    {
+      "label": "New cold no-import flag",
+      "from": "cold[\"original_extractor_or_literal_producer_imported\"]",
+      "to": "cold[\"spectral_producer_or_literal_checker_imported\"]",
+      "occurrences": 1
+    },
+    {
+      "label": "Native accepted-model proof receipt adaptation",
+      "from": "    for field in (\"row_keys_sha256\", \"family_row_keys_sha256\", \"family_row_jsonl_sha256\", \"literal_hashes\"):\n        assert prep[field] == cold[field]\n    assert cold[\"base_restoration_sha256\"] == BASE_RAW_SHA and cold[\"base_restoration_bytes\"] == BASE_RAW_BYTES\n    assert cold[\"parent_variables\"] == BASE_VARIABLES and cold[\"parent_rows\"] == BASE_ROWS\n    assert cold[\"new_variables\"] == cold[\"replaced_rows\"] == 0\n    assert cold[\"appended_rows\"] == 3325 and cold[\"appended_terms\"] == sum(FAMILY_TERMS.values()) == 26916\n    assert cold[\"total_terms\"] == prep[\"total_terms\"] == 3337296\n    assert prep[\"term_change\"] == 26916 and cold[\"parent_total_terms\"] == prep[\"parent_total_terms\"] == 3310380\n    for flag in (\"complete_original_parent_bytes_recovered\", \"all_original_variable_and_constraint_messages_preserved\",\n                 \"all_appended_complete_constraint_messages_independently_checked\",\n                 \"complete_row_origins_and_lossless_restoration_checked\",\n                 \"all_side_and_nonempty_local_proposals_retained\",\n                 \"global_target_total_row_independently_checked\",\n                 \"all_seven_literal_hashes_rederived_from_native_AND_meanings\"):\n        assert cold[flag] is True\n    assert cold[\"original_failed_extractor_execution_accepted\"] is False\n    assert cold[\"original_extractor_overrun_waived\"] is False\n    assert cold[\"Boolean_implication_classification_used_to_prune\"] is False\n    same_ref(prep[\"independent_literal_root_acceptance\"], model_cfg[\"inputs\"][\"incidence_root_acceptance\"])\n    same_ref(cold[\"independent_literal_root_acceptance\"], model_cfg[\"inputs\"][\"incidence_root_acceptance\"])\n    same_ref(prep[\"target_total_root_acceptance\"], model_cfg[\"inputs\"][\"target_total_root_acceptance\"])\n    same_ref(cold[\"target_total_root_acceptance\"], model_cfg[\"inputs\"][\"target_total_root_acceptance\"])\n    assert prep[\"preservation\"] == cold[\"preservation\"] and prep[\"restoration\"] == cold[\"restoration\"]\n    assert prep[\"incidence_check\"] == cold[\"incidence_check\"]\n    assert cold[\"incidence_check\"][\"complete_edges\"] == 6300\n    assert cold[\"incidence_check\"][\"existing_AND_constraints\"] == 21456\n    assert cold[\"incidence_check\"][\"existing_target_equalities\"] == 84\n    assert cold[\"incidence_check\"][\"singleton_side_edges\"] == 3312\n    assert cold[\"target_total_check\"][\"all_seven_structural_conditions_rechecked\"] is True\n    assert cold[\"target_total_check\"][\"Boolean_bound\"] == 12\n    assert cold[\"target_total_check\"][\"original_Gram_rows_rechecked\"] == 18\n    assert cold[\"target_total_check\"][\"original_endpoint_rows_rechecked\"] == 168\n",
+      "to": "    for field in (\"row_keys_sha256\", \"family_row_keys_sha256\", \"family_row_jsonl_sha256\", \"gap_check\"):\n        assert prep[field] == cold[field]\n    assert cold[\"base_restoration_sha256\"] == BASE_RAW_SHA and cold[\"base_restoration_bytes\"] == BASE_RAW_BYTES\n    assert cold[\"parent_variables\"] == BASE_VARIABLES and cold[\"parent_rows\"] == BASE_ROWS\n    assert cold[\"new_variables\"] == cold[\"replaced_rows\"] == 0\n    assert cold[\"appended_rows\"] == cold[\"appended_terms\"] == sum(FAMILY_TERMS.values()) == 3156\n    assert cold[\"total_terms\"] == prep[\"total_terms\"] == root[\"total_terms\"] == 3340452\n    assert prep[\"term_change\"] == 3156 and cold[\"parent_total_terms\"] == prep[\"parent_total_terms\"] == 3337296\n    for flag in (\"complete_original_parent_bytes_recovered\", \"all_original_variable_and_constraint_messages_preserved\",\n                 \"all_appended_complete_constraint_messages_independently_checked\",\n                 \"complete_row_origins_and_lossless_restoration_checked\",\n                 \"all_3156_certified_zero_rows_retained\", \"native_AND_meanings_recovered_independently\"):\n        assert cold[flag] is True\n    assert cold[\"spectral_arithmetic_repeated\"] is False\n    same_ref(cold[\"parent_root_acceptance\"], model_cfg[\"inputs\"][\"parent_root_acceptance\"])\n    for record in (prep, cold):\n        same_ref(record[\"gap_literal_root_acceptance\"], model_cfg[\"inputs\"][\"gap_literal_root_acceptance\"])\n    assert prep[\"preservation\"] == cold[\"preservation\"] and prep[\"restoration\"] == cold[\"restoration\"]\n    gap_check = cold[\"gap_check\"]\n    assert type(gap_check[\"failed_triangle_indices_sha256\"]) is str\n    assert re.fullmatch(\"[0-9a-f]{64}\", gap_check[\"failed_triangle_indices_sha256\"])\n    assert gap_check == {\n        \"forward_records_bound\": 5364, \"complete_failed_indices\": 3156,\n        \"failed_triangle_indices_sha256\": gap_check[\"failed_triangle_indices_sha256\"],\n        \"native_indicator_messages_checked\": 3156, \"native_edge_variable_messages_checked\": 9468,\n        \"complete_native_AND_messages_checked\": 12624, \"all_certified_zeros_retained\": True,\n        \"spectral_minor_recomputations\": 0, \"old_family_reconstructions\": 0}\n",
+      "occurrences": 1
+    }
+  ],
+  "substitution_count": 11,
+  "exact_forward_and_inverse_text_reconstruction_checked": true,
+  "function_text_comparisons": [
+    {
+      "name": "canonical",
+      "unchanged": true,
+      "parent_sha256": "43cf15500ba5fb7bd96ac7f0426159b09fa880eb04a326cdfc77007265ef1bfe",
+      "new_sha256": "43cf15500ba5fb7bd96ac7f0426159b09fa880eb04a326cdfc77007265ef1bfe"
+    },
+    {
+      "name": "sha",
+      "unchanged": true,
+      "parent_sha256": "d41609d967cf1415af635774d407295df5f352d32b53d6a926cd38dfdab7c74d",
+      "new_sha256": "d41609d967cf1415af635774d407295df5f352d32b53d6a926cd38dfdab7c74d"
+    },
+    {
+      "name": "binding",
+      "unchanged": true,
+      "parent_sha256": "a12fb533c08c3ff3de4e7c755cb456c340c2ebaebed9200ce60442a61a57a77a",
+      "new_sha256": "a12fb533c08c3ff3de4e7c755cb456c340c2ebaebed9200ce60442a61a57a77a"
+    },
+    {
+      "name": "read",
+      "unchanged": true,
+      "parent_sha256": "f5c17efad5e2f03c5c42d9ecaf4788d291cac9b584d858c277b6ee938bc1a999",
+      "new_sha256": "f5c17efad5e2f03c5c42d9ecaf4788d291cac9b584d858c277b6ee938bc1a999"
+    },
+    {
+      "name": "reject_constant",
+      "unchanged": true,
+      "parent_sha256": "aac73aad92f16ac4ac07afe8d6e1905c4a94c191d1c182ddbfdf94713cf12f57",
+      "new_sha256": "aac73aad92f16ac4ac07afe8d6e1905c4a94c191d1c182ddbfdf94713cf12f57"
+    },
+    {
+      "name": "value",
+      "unchanged": true,
+      "parent_sha256": "3d696a35849f5bb81200431d871e77839b92b564f3fdee0badc293334fb008fe",
+      "new_sha256": "3d696a35849f5bb81200431d871e77839b92b564f3fdee0badc293334fb008fe"
+    },
+    {
+      "name": "same_ref",
+      "unchanged": true,
+      "parent_sha256": "07f781d2c599721a0b71374d41f009c1dc8f47ad1dd48396c90c0a41d7abba57",
+      "new_sha256": "07f781d2c599721a0b71374d41f009c1dc8f47ad1dd48396c90c0a41d7abba57"
+    },
+    {
+      "name": "save",
+      "unchanged": true,
+      "parent_sha256": "80ee4a5fe707ab16913b891307653f1bb15aeb7ed8fcab7de6f165009ba256d6",
+      "new_sha256": "80ee4a5fe707ab16913b891307653f1bb15aeb7ed8fcab7de6f165009ba256d6"
+    },
+    {
+      "name": "clock",
+      "unchanged": false,
+      "parent_sha256": "cb5272b292c30f38abc20282e5df604ae96a2ed5eb60ce451a99b53700e93c37",
+      "new_sha256": "cdcb8c16d926e2007d0ae99c8d2f22d99e426a1c34f770da652b38a0b8747e49"
+    },
+    {
+      "name": "native_absent",
+      "unchanged": true,
+      "parent_sha256": "d57a3f11320918364addf5477b8b0c07ec7707632e0a960f2be67f9085414131",
+      "new_sha256": "d57a3f11320918364addf5477b8b0c07ec7707632e0a960f2be67f9085414131"
+    },
+    {
+      "name": "interval_contains",
+      "unchanged": true,
+      "parent_sha256": "c6914056ac7513e97e3714a56015fae3726b8d71187054b92b709eef23997afc",
+      "new_sha256": "c6914056ac7513e97e3714a56015fae3726b8d71187054b92b709eef23997afc"
+    },
+    {
+      "name": "exact_vector",
+      "unchanged": true,
+      "parent_sha256": "f3236a7eb7e221e2b0d0df11d1a0912245a7514014e7f4c4ba777e7662561de0",
+      "new_sha256": "f3236a7eb7e221e2b0d0df11d1a0912245a7514014e7f4c4ba777e7662561de0"
+    },
+    {
+      "name": "terminal_status",
+      "unchanged": false,
+      "parent_sha256": "ee4dd65036dba24b94ffaef002864c5fcf77ce7a071652799a68ded53e7622ac",
+      "new_sha256": "1e88d89cb228422345481f44bd89811a890189d76ec1006638c406ec7c0691fd"
+    },
+    {
+      "name": "supervisor_pass",
+      "unchanged": true,
+      "parent_sha256": "2c2a5d86b1cd167e69d3368b154b0d492fe67866e44520c0e1c6a08bd5ccadb4",
+      "new_sha256": "2c2a5d86b1cd167e69d3368b154b0d492fe67866e44520c0e1c6a08bd5ccadb4"
+    },
+    {
+      "name": "read_model",
+      "unchanged": false,
+      "parent_sha256": "d25f80a57ef8eaeed3a3643c35f38f2ad8b1f77fc8005a76fb4dc8698855e651",
+      "new_sha256": "d24df254c62cf1a88689ca2061d8fddcd693ae05c55bac5096e4f61f7b9312bb"
+    },
+    {
+      "name": "check_runtime_and_parameters",
+      "unchanged": true,
+      "parent_sha256": "9e7d9fe84a9239037761a0398ff0702c238cd5117ecbbb89021d7547ca4ca8a2",
+      "new_sha256": "9e7d9fe84a9239037761a0398ff0702c238cd5117ecbbb89021d7547ca4ca8a2"
+    },
+    {
+      "name": "controls",
+      "unchanged": false,
+      "parent_sha256": "67643043e2da030aebf192f0887552bff376c44b972c88a36976277ba91f7691",
+      "new_sha256": "3ec001f1f6b3bc9810d66334ddd766028675bb3a0c2d34c22ac96b23b27aa218"
+    },
+    {
+      "name": "replay",
+      "unchanged": false,
+      "parent_sha256": "e60cf95b4c8ebe9b5d5d69f1eabbb063935276398a042193dc3bd708a7de2dd7",
+      "new_sha256": "a343e5651ce5985f465541ab5fa2824a26a3e1be54ff7ac65aca3ed6939c0a11"
+    },
+    {
+      "name": "main",
+      "unchanged": false,
+      "parent_sha256": "267e5887037a6009728c3f38c8825cffea55e2ed550ce509524168ad24190c43",
+      "new_sha256": "dee99322ae8a4c5c5ac2de2fe1ffa2145c097617c921c868b30a92690fcef75b"
+    }
+  ],
+  "unchanged_function_count": 13,
+  "changed_function_count": 6,
+  "method": "Apply each ordered exact from/to substitution to the prior UTF-8 source with the stated occurrence count. Apply the substitutions in reverse to recover every prior byte. Function comparisons are exact source-text slices, not claims of Python AST execution.",
+  "execution": {
+    "source_imported": false,
+    "source_compiled": false,
+    "controls_run": false,
+    "native_model_decoded": false,
+    "optimizer_calls": 0
+  },
+  "scope": "Only model receipt binding, schema/status namespaces and dimensions change. Complete exact arithmetic and response/parameter verification are reused unchanged."
+}

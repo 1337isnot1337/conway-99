@@ -1,0 +1,376 @@
+{
+  "schema": "rook-case4-full-span-cycle-terminal-manifest-v1",
+  "status": "UNRESOLVED: no exact cut from bounded full-span call",
+  "source_sha256": "ddf52b6807e9759337e14c0baff94bbaa9be5c599eaa8bb287277330eab4ec15",
+  "preparation": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-preparation01.json",
+    "bytes": 104582,
+    "sha256": "6be18862b4555fed0d78c404937e46512eab7d3fb3361e78cbde8af6f30c543a",
+    "expected_git_blob": "8555f9957475198b2c5eb245360a95420b5a1801"
+  },
+  "preflight": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-preflight01.json",
+    "bytes": 21338,
+    "sha256": "91e03dc16eb854b0a31e8b892b5f483bc81037d07e711d9a0d3577751894e6c2",
+    "expected_git_blob": "c6a81cb862716e9fb3aee1be198ce3431d46b87e"
+  },
+  "LP_rounds": 2,
+  "separation_calls": 2,
+  "new_cuts": 1,
+  "final_registry_count": 5,
+  "accepted_point_cut_prefix": 5,
+  "accepted_extended_rows": 167120,
+  "case_exclusion": false,
+  "parity_span_exhaustion": false,
+  "automatic_retries": 0,
+  "files": [
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/controller.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/controller.stdout.log",
+      "bytes": 98,
+      "sha256": "9496c56e9cd0b370559219ba7929c033f260741ea828c86db415a4a8aa518962",
+      "expected_git_blob": "d83506d3df6cc249d35083a63a3b3216dbde4b13"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-00/basis-proposal.json.gz",
+      "bytes": 22967,
+      "sha256": "54c1a2a8f98a6b79f72b92981fe645629d5f1584b8b03a3df599006051aeb28a",
+      "expected_git_blob": "b76e4be00e05ba49796e514357e9e32619e1061c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-00/candidate.json",
+      "bytes": 43524,
+      "sha256": "ed1cf9541eb8d4222de0a172c24d32d004d2ef8cf26471ec003d92c075889b06",
+      "expected_git_blob": "c06e1810945622133f8414b4efdf3acb7486907a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-00/cold.json",
+      "bytes": 1142,
+      "sha256": "e7da9988daa60fcb65710fa8afe456e83fcb9946281c03a6ec1db1527766275c",
+      "expected_git_blob": "213c8c8349fb7c69b6572305cc38d2cc6055873d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-00/exact.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-00/exact.stdout.log",
+      "bytes": 99,
+      "sha256": "177d7b475b2433abf92ea44b512a42bf010affd6a9e3f6d3a632e2f5b056b599",
+      "expected_git_blob": "33c15e88dd99deb862c4576ade715df9400de1a0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-00/exact_cold.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-00/exact_cold.stdout.log",
+      "bytes": 100,
+      "sha256": "2c8a19bc0e5621e2a0f2ecb560796d14935d75bd691d8e7229233b31d9b71108",
+      "expected_git_blob": "11cc132a0127c50f38582ff539fd31683f743f1a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-00/result.json",
+      "bytes": 7538,
+      "sha256": "bea69d7957b03cb2f1edd231f27ffb7d333381340c71e82713daa33af1e67a54",
+      "expected_git_blob": "4d92bfe23c2f7b2bdfafd5e2c63bfb0dff9e613e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-01/basis-proposal.json.gz",
+      "bytes": 22911,
+      "sha256": "a5bea2798748f1615ec92ef4f843c4c8304410eaf014ddefbb354e9f637e0f6c",
+      "expected_git_blob": "3ba7b134816ba0a6ec70291c640aaf139c8eee1d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-01/candidate.json",
+      "bytes": 41400,
+      "sha256": "819d0e909ecf7e357404eb063ba744bc8e4c0e38e0ee63848b1712b02b248b04",
+      "expected_git_blob": "f622d6c05f34598e38f05521faff41fe4b3c0523"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-01/cold.json",
+      "bytes": 1143,
+      "sha256": "cd59a3db0586c02a204fe8e3f23df4970b72416ff235319060a8fa1cb34e5bb8",
+      "expected_git_blob": "acbed6363a1110831dbcec039d6c8f64051953e2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-01/exact.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-01/exact.stdout.log",
+      "bytes": 99,
+      "sha256": "c138c7a2152538431aa8212e5efdabad582d3fe9b02a0f8668b8c11a44126a52",
+      "expected_git_blob": "549640226f73181e009a7899aabeb40a2f83686b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-01/exact_cold.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-01/exact_cold.stdout.log",
+      "bytes": 101,
+      "sha256": "43631f37786bcb8528f920be658c60af9f85d2b47c1a4fed0b2da11d89f1f7ec",
+      "expected_git_blob": "0bc72d2fe8bbb4af28c721cfeb2f628d9d8ddd3b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/exact-01/result.json",
+      "bytes": 7698,
+      "sha256": "6d9eb5e8460b0ee59f5dfc77a5fd71e28d0b9ff5e35aa1127810f78cb9d30354",
+      "expected_git_blob": "99337d544002fb085d5f5a1c1646dba3edc94c24"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-00/highs.log",
+      "bytes": 1023,
+      "sha256": "28268b63630ea0f7badba13583060bd4d2caa16d914dbd2eb50168537487c22a",
+      "expected_git_blob": "3e8ee51e63f6e88a20077ea71b7d50f56d078488"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-00/numeric-00.json.gz",
+      "bytes": 26133,
+      "sha256": "424972049fcf8cb3e4a0d7b089b2625857c54750f023b567f442b3cecc78f1b0",
+      "expected_git_blob": "4b644eb09501c320afc5d163308ee8bb83ffe9d9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-00/numeric.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-00/numeric.stdout.log",
+      "bytes": 256,
+      "sha256": "6fb51c525c4473b2b39a25387f01ca51c031e67f902083902edd1a15560fa3d8",
+      "expected_git_blob": "27a4fbfaff1e486e94764cd8ad186a7d97552c1f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-00/result.json",
+      "bytes": 3065,
+      "sha256": "ac383b25df2da16f99d6fa74c1968004c4adff4ce9de064fac464b165ccda743",
+      "expected_git_blob": "7e49a27ea72ac7848a4a18d003f3a4e064519580"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-01/highs.log",
+      "bytes": 1023,
+      "sha256": "a22006edbacf04f2d26bcff22a363821bc6cc44069b9fe9e33a9e7306d250da1",
+      "expected_git_blob": "c5cc926784198ba3ffdb209757efe413e85e35e1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-01/numeric-00.json.gz",
+      "bytes": 26070,
+      "sha256": "220c038e76ec047a24697bfe4f7587321db68d40fb0439d20d7a48286419e56a",
+      "expected_git_blob": "0f09bf350d87efc748fa9a571db28e077de19a98"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-01/numeric.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-01/numeric.stdout.log",
+      "bytes": 256,
+      "sha256": "ea7027abd3e292c98fe198f82b92312d030b835df8a63032f637af262f34c846",
+      "expected_git_blob": "a68c80b852878d7f51a4e83d42e8046dedf5f3a8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/numeric-01/result.json",
+      "bytes": 3066,
+      "sha256": "23eddd53884db72abc3c47cdae6df1d9f908bd56749bf2a8fe3dbefec10c0113",
+      "expected_git_blob": "b38d6a02e9c6a5196c61a5405e539ac123fe29ae"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/result.json",
+      "bytes": 147336,
+      "sha256": "408da79724822a1197fbda868fe73e5de70fd36b2b55a448716be2573944df32",
+      "expected_git_blob": "ded14a422da25eb9fe8a653f0625917cde0dc90d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/cut.json",
+      "bytes": 4012,
+      "sha256": "498058a2dbf5eab0e8460f7e46af29c5ce10ea42894d755ae846d0c24c2efa07",
+      "expected_git_blob": "c7e00f9cfbb5dca587ce8f2085e3463628631a3d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/model.pb",
+      "bytes": 165787,
+      "sha256": "a8121166990eddd2fec4d378523739da2f42481deb5a0a77b1065be7326355d3",
+      "expected_git_blob": "2192a51bda1d33c1c22d40597bf49c66bd2bf442"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/native-vector.json",
+      "bytes": 5626,
+      "sha256": "b698de0c65b71e0df0c88726fc92686483be5b6bce71ba80b2aeccffb9141242",
+      "expected_git_blob": "76476907866ae7904ad465c90dac87d6f4f17da1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/proof.json",
+      "bytes": 6715,
+      "sha256": "06365dcbe4f51983105e8d59802a699fd059685d7541a6ea7784e639b74a78e6",
+      "expected_git_blob": "68033be441618fc40472a559a2098358739dc803"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/response.txt",
+      "bytes": 30184,
+      "sha256": "120b5defb0790029f524e40018870ad7baa99e02c00cc7a3fed8144034c1fb1d",
+      "expected_git_blob": "cf35dbb0f72f0452edc0cd6b01086d146580d004"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/result.json",
+      "bytes": 3796,
+      "sha256": "e8b5a5c201f5094b50b94a040e839c217f76b6c5a99e20ca6c95c37fba6d52c9",
+      "expected_git_blob": "7558a8919f2ffbe5397c1baf4941fa4480dfc55d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/separate.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/separate.stdout.log",
+      "bytes": 9484,
+      "sha256": "979eaeec82ea3c01f5deefc112991a556f66db20f57e181425f2ef7603a53609",
+      "expected_git_blob": "095dbb600b1b940a269a48c6ac2693385b5da4f6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/separation_cold.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/separation_cold.stdout.log",
+      "bytes": 106,
+      "sha256": "54e412f66e18de90dc620c567aa941bce4b57dfef73272ec76ba56f775304f33",
+      "expected_git_blob": "9071286345955fc4d7330b3302c7d45abec34bec"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/specification.json.gz",
+      "bytes": 75657,
+      "sha256": "958dacb47c84559f823cad72ea3695864799a7335e958b0f9b52d6247aedf74c",
+      "expected_git_blob": "b6f50b063b8e7dfc791f75ef705c1304c602e603"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/model.pb",
+      "bytes": 164891,
+      "sha256": "5e9aa7d6f92934fbb1ad52b1c0561b5901431756c0de625651f2cbf6b08c821a",
+      "expected_git_blob": "3e85b1388f3a5bdc7393534f350680e1189fe20c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/proof.json",
+      "bytes": 1946,
+      "sha256": "5115c08ba091e0dcbfe2d667644895229ab523d13445bab03fdd59c46dce41d1",
+      "expected_git_blob": "2c83875126264fef70dd9b9555f91c02b4ce76bc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/response.txt",
+      "bytes": 266,
+      "sha256": "34e38704efdb1e7cd64e5e295f56d9d477ad59f9f3c83998cb88fff9a0d06bc5",
+      "expected_git_blob": "f22fe324ff4df797e8a43dc8730200f6dc974a31"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/result.json",
+      "bytes": 3431,
+      "sha256": "8a8f5628ec010e8c6f116d862eaa09bd4bd580a9a00101a313d2f2ff72543080",
+      "expected_git_blob": "69b73fcbe5d7b77e88966a1cd27d07fa4e6de872"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/separate.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/separate.stdout.log",
+      "bytes": 9386,
+      "sha256": "cc905c9a6ee4aabd8226dc42ecd24f2bb4b131ea3379bb2ff218a5057006ea83",
+      "expected_git_blob": "31b50a3096fc8e24157194472d175a6b639fc24e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/separation_cold.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "expected_git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/separation_cold.stdout.log",
+      "bytes": 106,
+      "sha256": "55eb2c2dd8c7115bdbbd0f70f20696da375d4f67f70565ef082872f83f9c01aa",
+      "expected_git_blob": "baa643ab0cf6b862e408481ce54c22e8750ce4f1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-01/specification.json.gz",
+      "bytes": 75101,
+      "sha256": "7fae14b32a61e82dceb323b6eaf1f65877a78337062ccc587a14a71b271681ef",
+      "expected_git_blob": "f72481b5897eef56bb622c715813aa4775597c19"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/state-exact-00.json",
+      "bytes": 108065,
+      "sha256": "fded9db920a7630dba00a00569911b1ade53afe9004050ce8928b29621d26bf7",
+      "expected_git_blob": "d54747c670e04eca4ee8e063ed98d2971a41cd2d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/state-exact-01.json",
+      "bytes": 128775,
+      "sha256": "5a24da81527ebaf17193a90c03c61e9a3ab66e7afbd2ec0a90669c40c7d914dd",
+      "expected_git_blob": "75f568515bb610449b6913742d2f98984bc3af2e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/state-numeric-00.json",
+      "bytes": 107847,
+      "sha256": "733241f909e9f0e3e6a374cec41652560425526f4340daf19b80b9d4f8e5d758",
+      "expected_git_blob": "936d655af2c5ef6aad0e3f9f892a773c2edc981e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/state-numeric-01.json",
+      "bytes": 128557,
+      "sha256": "309323d8cde5fc3cb8b407ae1316fa77d5bf3f46afb0d4828fb52da95e652875",
+      "expected_git_blob": "d939307cab8fade3e1236bbfb8dd60a592b94a8c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/state-separation-00.json",
+      "bytes": 107847,
+      "sha256": "a613c6d5d98e5255c9199e541cc37c40775b2e33866f990931fa251d76ffe4b1",
+      "expected_git_blob": "195ff53bca7a57454abdf7ffd05dc18209bbcd30"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/state-separation-01.json",
+      "bytes": 128556,
+      "sha256": "47973c426cb5b25211404f61ec8a8d6695ce8be2bbf6870c03acc3d0e0c1c762",
+      "expected_git_blob": "9948d7c463c2c55348bb4d0d8355922e8ad68f76"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/supervisor.json",
+      "bytes": 8118,
+      "sha256": "cbe549fa32b910bc2ff9f8f04294d8d42357885e0e4795d1d8e01124713ecb98",
+      "expected_git_blob": "52243387db2f2887658a4c5a6816ef87783be96f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01-bindings.json",
+      "bytes": 8088,
+      "sha256": "e19e9cf1585ef885a633f50af391712d99f5e1b117fa95f36c729ead9985ebf6",
+      "expected_git_blob": "75a5448a49bceb3057524d15cfce4ac262f7b985"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_full_span_cycle_run01.md",
+      "bytes": 3364,
+      "sha256": "046b76db24a43a467d7c23702255fc67dec289170a5fa78bba8eaf6013f53039",
+      "expected_git_blob": "216acac237f0c957e04017bd3a12148c9f5ed7b6"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "status": "coordinator full source and mathematical review PASS",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_row_box_design_linear.py",
+      "sha256": "c0d9e70f98e94176bf78bc518b41270940b930ab69cf34b26f42b71ff31a0871"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_symmetric_selector_cut.py",
+      "sha256": "15ec937609b7de44b808e9de7053bb9ee080ddf732a3defd2b23577c026fe274"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-row-box-design-linear-run01.json",
+      "sha256": "96486063f18150392852eeddd55e7e023b4987e0b2233d3fd133c88168de29f9"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-row-box-design-linear-run01-replay.json",
+      "sha256": "b73b97d938ec9cbc5754d09361eccd7967f68da063d199eb183c2462953ad393"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-symmetric-selector-cut-certificate.json.gz",
+      "sha256": "3aea5e48c4a35eb7e023708231f3dbf585634c25de25484f364276041260f846"
+    },
+    {
+      "path": "research/symmetric_exterior_row_cuts.md",
+      "sha256": "8cbf2906752b5882cc8639323f2a07f4da8aebb265670159a838122eaab6a923"
+    }
+  ],
+  "review": [
+    "all 1140 fixed degree/mixed rows and 1220 eligible shared edges rebuilt by an independent standard-library source",
+    "upper multipliers nonnegative, every standard-form column nonnegative, rhs -2",
+    "degree multipliers absorbed into 18 row-potential coordinates using each neighbor triple size3",
+    "all 480 signatures and 68394 eligible edges reconstructed; all positive weights allocated to one endpoint",
+    "boundary positives allocated outside the saved set; resulting inequality valid for every incidence selection",
+    "all twelve core automorphisms independently generated and coefficient/allocation transports checked",
+    "saved demand15 minus internal capacity9 gives rawgap6; coefficientgcd3 gives selector violation2"
+  ],
+  "scope": "third saved first-component incidence excluded with second component/alignment unspecified; component0 remains open",
+  "independent_source_review_not_an_additional_solver_or_census": true
+}

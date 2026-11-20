@@ -1,0 +1,56 @@
+{
+  "audit_source_sha256": "9ce4502d0b1d20e27c071cf5c50226bd13a98313b7fb8c1217fea1f8af644944",
+  "basis_witnesses_checked": 286,
+  "case4_exclusion_claimed": false,
+  "column_basis_coefficients_checked": 315172,
+  "eliminations_repeated": 0,
+  "exact_rank": 286,
+  "inputs": {
+    "basis": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-parity-preparation01/basis.json.gz",
+      "ad03018a2bb30dfb79fb126b76aa9863b16217eeb42f0b1e78fdaabde610c00d"
+    ],
+    "native": [
+      "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    ],
+    "point": [
+      "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-run02/exact-01/candidate.json",
+      "23de7244e4e4efb1ef82ff649008b1236bb389888ffbb923edf4017cfe1bc2e3"
+    ],
+    "point_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-run02/exact-01/cold.json",
+      "a043d06fc2df9cc6c87c240bc3799a87e997abb31c7755c97dc12b3ba396bc49"
+    ],
+    "zero_model": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+      "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+    ],
+    "zero_model_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01-cold-replay.json",
+      "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+    ]
+  },
+  "kept_coordinates": 1102,
+  "native_XOR_rows_checked": 1104,
+  "native_constraints_checked": 2208,
+  "native_model_rebuilds": 0,
+  "native_variables_checked": 2491,
+  "native_weighted_terms_checked": 2204,
+  "optimizer_calls": 0,
+  "original_Gram_equations_checked": 630,
+  "original_coordinates": 1214,
+  "original_equation_span_representations_checked": 630,
+  "original_row_terms_in_basis_witnesses": 10015,
+  "parity_searches": 0,
+  "point_Gram_check": true,
+  "preparation_sha256": "0b2de700e4cd088ffb7a52726b0aef4cf8e3d0eeb4ade2d2dfacdf9dc7dbdd90",
+  "proto_sha256": "8b8f94b7b1e700c6b71744d5e6d94a814aa84638f7e412c588918a0fd497180f",
+  "proved_zero_premises": 112,
+  "seconds": 0.538413672002207,
+  "specification_sha256": "3a6b0181421629e2fb220720ef801c1b4458842bda4533911103a2d3ef3386a7",
+  "status": "PASS: independent coefficient, witness, rank-certificate and native-proto audit",
+  "subject_imports": 0,
+  "subject_source_sha256": "893c7b0ba5d849daf29ed6a5668fb937efda854103d99812e84a68df66f27207",
+  "zero_proof_scope": "uses source-bound previously accepted112-zero model; does not rederive that ancestry"
+}

@@ -1,0 +1,37 @@
+{
+  "acceptance_qualification": "A later successful arithmetic report is usable only with this wrapper's successful terminal finalization and the separately required root gate. This source review does not assert that the main computation has run or succeeded.",
+  "checks": [
+    "The wrapper checks the exact configuration SHA256 before evaluating the certificate producer.",
+    "Producer and codec texts are bound by byte count, SHA256, and Git blob SHA.",
+    "The returned candidate report and its complete JSON serialization are preserved before terminal acceptance.",
+    "The serialized report must contain only ASCII and must be at most 16777216 bytes.",
+    "Elapsed time measured from entry must be strictly below 60000 milliseconds after the complete report serialization and ASCII scan.",
+    "Acceptance requires complete=true, the fixed PASS_252_PROVIDED_SINGLE_EDGE_PSD_CERTIFICATES status, and exactly 252 certified records.",
+    "Any failed condition yields an explicitly unaccepted finalization and preserves any available candidate report and serialized text.",
+    "The wrapper makes no full-pattern-completeness claim; the underlying source only certifies the 252 supplied targets."
+  ],
+  "concrete_blockers": [],
+  "frozen_configuration_sha256": "a42abc4489fcc8738539ffa05a24eeb4eb0d1f8fd5d9ab7b31716ea52678f4d4",
+  "limits": {
+    "automatic_retries": 0,
+    "maximum_ms": 60000,
+    "maximum_report_bytes": 16777216,
+    "publication_hashing_in_timed_main": false
+  },
+  "native_model_builds": 0,
+  "optimizer_calls": 0,
+  "prior_review": {
+    "bytes": 4334,
+    "git_blob": "88ad5ead3fbc7328c376a4c1097b8dc0fcf49e56",
+    "path": "experiments/logs/root-prism-free/f0-single-edge-schur-certificates-independent-source-review01.json",
+    "sha256": "e68b2364f6e09f04f39f82d5fe68c07be7b726dbe0fbc83872b8de57aeb17434"
+  },
+  "review_scope": "Complete 2179-byte outer runner source only; no main computation, controls, or native import performed.",
+  "reviewed_runner": {
+    "bytes": 2179,
+    "git_blob": "170a904eb1ed60c3c7aa5eb556faadcbc72f5286",
+    "sha256": "4823023f37e06836b20c6730bd0a4818e128ebff47e1048c76a1d59326a9cc08"
+  },
+  "schema": "conway99.f0.single-edge-schur.outer-runner-source-review.v1",
+  "status": "PASS_OUTER_TIME_ACCEPTANCE_QUALIFICATION_RESOLVED"
+}

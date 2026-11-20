@@ -1,0 +1,3119 @@
+{
+  "status": "PASS: original143 Gram rows plus signature capacity force x663=0 on the prior99-zero face",
+  "source_sha256": "a6ac979c47622ba9773f47195da5b113eb7db3517e355ae2b246b825569a7991",
+  "inputs": {
+    "native": {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "sha256": "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    },
+    "seed": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-transportation-seed-certificate.json",
+      "sha256": "64d8e375280bc067097913de2dd6e2995c19de2a4807f63cecdcd80b811a85cf"
+    },
+    "H2_Gram_proposal": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-parity-face-certificate.json",
+      "sha256": "717c3e4103dd56bdd260f52b0f50c5a06f4245b834d92194357481d3163e229e"
+    },
+    "663_Gram_proposal": {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face111-native-bounds-independent-replay.json",
+      "sha256": "5e1e01b8c5f3c5747292d65e6938263afe7a72bfff68b00ee29cf2f41b23b2a3"
+    }
+  },
+  "authoritative_final_premises": [
+    "original630 Gram equations",
+    "original signature96 capacity row51",
+    "prior99 certified zero columns",
+    "nonnegative coordinates",
+    "integer coordinate x663"
+  ],
+  "prior99_zero_columns": [
+    101,
+    115,
+    121,
+    126,
+    133,
+    140,
+    145,
+    149,
+    235,
+    241,
+    252,
+    258,
+    263,
+    302,
+    309,
+    315,
+    329,
+    335,
+    342,
+    348,
+    352,
+    353,
+    354,
+    355,
+    356,
+    359,
+    363,
+    367,
+    368,
+    371,
+    375,
+    385,
+    387,
+    388,
+    392,
+    396,
+    397,
+    398,
+    400,
+    404,
+    408,
+    410,
+    413,
+    415,
+    417,
+    420,
+    424,
+    428,
+    430,
+    435,
+    437,
+    439,
+    442,
+    457,
+    459,
+    461,
+    465,
+    552,
+    553,
+    645,
+    772,
+    779,
+    783,
+    788,
+    793,
+    799,
+    804,
+    809,
+    816,
+    822,
+    828,
+    841,
+    848,
+    869,
+    873,
+    923,
+    926,
+    928,
+    931,
+    934,
+    937,
+    941,
+    955,
+    957,
+    959,
+    963,
+    966,
+    970,
+    973,
+    977,
+    1021,
+    1027,
+    1034,
+    1041,
+    1054,
+    1061,
+    1080,
+    1081,
+    1167
+  ],
+  "original_Gram_combination": [
+    {
+      "original_Gram_row": 48,
+      "core_pair": [
+        1,
+        14
+      ],
+      "quota": 2,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 57,
+      "core_pair": [
+        1,
+        23
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 59,
+      "core_pair": [
+        1,
+        25
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 63,
+      "core_pair": [
+        1,
+        29
+      ],
+      "quota": 1,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 79,
+      "core_pair": [
+        2,
+        12
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 80,
+      "core_pair": [
+        2,
+        13
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 82,
+      "core_pair": [
+        2,
+        15
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 85,
+      "core_pair": [
+        2,
+        18
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 90,
+      "core_pair": [
+        2,
+        23
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 92,
+      "core_pair": [
+        2,
+        25
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 94,
+      "core_pair": [
+        2,
+        27
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 97,
+      "core_pair": [
+        2,
+        30
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 98,
+      "core_pair": [
+        2,
+        31
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 99,
+      "core_pair": [
+        2,
+        32
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 100,
+      "core_pair": [
+        2,
+        33
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 101,
+      "core_pair": [
+        2,
+        34
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 110,
+      "core_pair": [
+        3,
+        11
+      ],
+      "quota": 2,
+      "multiplier": -4
+    },
+    {
+      "original_Gram_row": 115,
+      "core_pair": [
+        3,
+        16
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 116,
+      "core_pair": [
+        3,
+        17
+      ],
+      "quota": 2,
+      "multiplier": -4
+    },
+    {
+      "original_Gram_row": 117,
+      "core_pair": [
+        3,
+        18
+      ],
+      "quota": 1,
+      "multiplier": 4
+    },
+    {
+      "original_Gram_row": 118,
+      "core_pair": [
+        3,
+        19
+      ],
+      "quota": 1,
+      "multiplier": 4
+    },
+    {
+      "original_Gram_row": 119,
+      "core_pair": [
+        3,
+        20
+      ],
+      "quota": 1,
+      "multiplier": 4
+    },
+    {
+      "original_Gram_row": 121,
+      "core_pair": [
+        3,
+        22
+      ],
+      "quota": 1,
+      "multiplier": 4
+    },
+    {
+      "original_Gram_row": 122,
+      "core_pair": [
+        3,
+        23
+      ],
+      "quota": 1,
+      "multiplier": 3
+    },
+    {
+      "original_Gram_row": 123,
+      "core_pair": [
+        3,
+        24
+      ],
+      "quota": 1,
+      "multiplier": 4
+    },
+    {
+      "original_Gram_row": 124,
+      "core_pair": [
+        3,
+        25
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 125,
+      "core_pair": [
+        3,
+        26
+      ],
+      "quota": 1,
+      "multiplier": 4
+    },
+    {
+      "original_Gram_row": 150,
+      "core_pair": [
+        4,
+        20
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 153,
+      "core_pair": [
+        4,
+        23
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 155,
+      "core_pair": [
+        4,
+        25
+      ],
+      "quota": 1,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 159,
+      "core_pair": [
+        4,
+        29
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 169,
+      "core_pair": [
+        5,
+        9
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 175,
+      "core_pair": [
+        5,
+        15
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 176,
+      "core_pair": [
+        5,
+        16
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 178,
+      "core_pair": [
+        5,
+        18
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 180,
+      "core_pair": [
+        5,
+        20
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 190,
+      "core_pair": [
+        5,
+        30
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 191,
+      "core_pair": [
+        5,
+        31
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 192,
+      "core_pair": [
+        5,
+        32
+      ],
+      "quota": 2,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 193,
+      "core_pair": [
+        5,
+        33
+      ],
+      "quota": 2,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 194,
+      "core_pair": [
+        5,
+        34
+      ],
+      "quota": 2,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 199,
+      "core_pair": [
+        6,
+        10
+      ],
+      "quota": 2,
+      "multiplier": 4
+    },
+    {
+      "original_Gram_row": 203,
+      "core_pair": [
+        6,
+        14
+      ],
+      "quota": 2,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 212,
+      "core_pair": [
+        6,
+        23
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 214,
+      "core_pair": [
+        6,
+        25
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 217,
+      "core_pair": [
+        6,
+        28
+      ],
+      "quota": 1,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 218,
+      "core_pair": [
+        6,
+        29
+      ],
+      "quota": 1,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 231,
+      "core_pair": [
+        7,
+        14
+      ],
+      "quota": 2,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 237,
+      "core_pair": [
+        7,
+        20
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 240,
+      "core_pair": [
+        7,
+        23
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 245,
+      "core_pair": [
+        7,
+        28
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 246,
+      "core_pair": [
+        7,
+        29
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 254,
+      "core_pair": [
+        8,
+        10
+      ],
+      "quota": 2,
+      "multiplier": 4
+    },
+    {
+      "original_Gram_row": 264,
+      "core_pair": [
+        8,
+        20
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 267,
+      "core_pair": [
+        8,
+        23
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 272,
+      "core_pair": [
+        8,
+        28
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 273,
+      "core_pair": [
+        8,
+        29
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 292,
+      "core_pair": [
+        9,
+        22
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 293,
+      "core_pair": [
+        9,
+        23
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 295,
+      "core_pair": [
+        9,
+        25
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 297,
+      "core_pair": [
+        9,
+        27
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 298,
+      "core_pair": [
+        9,
+        28
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 299,
+      "core_pair": [
+        9,
+        29
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 302,
+      "core_pair": [
+        9,
+        32
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 313,
+      "core_pair": [
+        10,
+        18
+      ],
+      "quota": 1,
+      "multiplier": -4
+    },
+    {
+      "original_Gram_row": 315,
+      "core_pair": [
+        10,
+        20
+      ],
+      "quota": 1,
+      "multiplier": -3
+    },
+    {
+      "original_Gram_row": 316,
+      "core_pair": [
+        10,
+        21
+      ],
+      "quota": 1,
+      "multiplier": -4
+    },
+    {
+      "original_Gram_row": 317,
+      "core_pair": [
+        10,
+        22
+      ],
+      "quota": 1,
+      "multiplier": -3
+    },
+    {
+      "original_Gram_row": 318,
+      "core_pair": [
+        10,
+        23
+      ],
+      "quota": 1,
+      "multiplier": -3
+    },
+    {
+      "original_Gram_row": 319,
+      "core_pair": [
+        10,
+        24
+      ],
+      "quota": 1,
+      "multiplier": -4
+    },
+    {
+      "original_Gram_row": 320,
+      "core_pair": [
+        10,
+        25
+      ],
+      "quota": 1,
+      "multiplier": -3
+    },
+    {
+      "original_Gram_row": 321,
+      "core_pair": [
+        10,
+        26
+      ],
+      "quota": 1,
+      "multiplier": -4
+    },
+    {
+      "original_Gram_row": 323,
+      "core_pair": [
+        10,
+        28
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 324,
+      "core_pair": [
+        10,
+        29
+      ],
+      "quota": 2,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 327,
+      "core_pair": [
+        10,
+        32
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 341,
+      "core_pair": [
+        11,
+        22
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 342,
+      "core_pair": [
+        11,
+        23
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 347,
+      "core_pair": [
+        11,
+        28
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 348,
+      "core_pair": [
+        11,
+        29
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 351,
+      "core_pair": [
+        11,
+        32
+      ],
+      "quota": 2,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 354,
+      "core_pair": [
+        12,
+        12
+      ],
+      "quota": 8,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 360,
+      "core_pair": [
+        12,
+        18
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 361,
+      "core_pair": [
+        12,
+        19
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 366,
+      "core_pair": [
+        12,
+        24
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 367,
+      "core_pair": [
+        12,
+        25
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 368,
+      "core_pair": [
+        12,
+        26
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 370,
+      "core_pair": [
+        12,
+        28
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 374,
+      "core_pair": [
+        12,
+        32
+      ],
+      "quota": 2,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 377,
+      "core_pair": [
+        13,
+        13
+      ],
+      "quota": 6,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 382,
+      "core_pair": [
+        13,
+        18
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 385,
+      "core_pair": [
+        13,
+        21
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 388,
+      "core_pair": [
+        13,
+        24
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 389,
+      "core_pair": [
+        13,
+        25
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 390,
+      "core_pair": [
+        13,
+        26
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 392,
+      "core_pair": [
+        13,
+        28
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 393,
+      "core_pair": [
+        13,
+        29
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 396,
+      "core_pair": [
+        13,
+        32
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 403,
+      "core_pair": [
+        14,
+        18
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 405,
+      "core_pair": [
+        14,
+        20
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 412,
+      "core_pair": [
+        14,
+        27
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 413,
+      "core_pair": [
+        14,
+        28
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 415,
+      "core_pair": [
+        14,
+        30
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 416,
+      "core_pair": [
+        14,
+        31
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 418,
+      "core_pair": [
+        14,
+        33
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 425,
+      "core_pair": [
+        15,
+        20
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 427,
+      "core_pair": [
+        15,
+        22
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 428,
+      "core_pair": [
+        15,
+        23
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 430,
+      "core_pair": [
+        15,
+        25
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 434,
+      "core_pair": [
+        15,
+        29
+      ],
+      "quota": 2,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 437,
+      "core_pair": [
+        15,
+        32
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 442,
+      "core_pair": [
+        16,
+        18
+      ],
+      "quota": 1,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 443,
+      "core_pair": [
+        16,
+        19
+      ],
+      "quota": 1,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 444,
+      "core_pair": [
+        16,
+        20
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 445,
+      "core_pair": [
+        16,
+        21
+      ],
+      "quota": 1,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 446,
+      "core_pair": [
+        16,
+        22
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 448,
+      "core_pair": [
+        16,
+        24
+      ],
+      "quota": 1,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 452,
+      "core_pair": [
+        16,
+        28
+      ],
+      "quota": 1,
+      "multiplier": 2
+    },
+    {
+      "original_Gram_row": 453,
+      "core_pair": [
+        16,
+        29
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 456,
+      "core_pair": [
+        16,
+        32
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 462,
+      "core_pair": [
+        17,
+        20
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 464,
+      "core_pair": [
+        17,
+        22
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 465,
+      "core_pair": [
+        17,
+        23
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 471,
+      "core_pair": [
+        17,
+        29
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 507,
+      "core_pair": [
+        19,
+        32
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 517,
+      "core_pair": [
+        20,
+        27
+      ],
+      "quota": 2,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 518,
+      "core_pair": [
+        20,
+        28
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 519,
+      "core_pair": [
+        20,
+        29
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 520,
+      "core_pair": [
+        20,
+        30
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 521,
+      "core_pair": [
+        20,
+        31
+      ],
+      "quota": 2,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 522,
+      "core_pair": [
+        20,
+        32
+      ],
+      "quota": 2,
+      "multiplier": -2
+    },
+    {
+      "original_Gram_row": 524,
+      "core_pair": [
+        20,
+        34
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 539,
+      "core_pair": [
+        22,
+        22
+      ],
+      "quota": 7,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 549,
+      "core_pair": [
+        22,
+        32
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 561,
+      "core_pair": [
+        23,
+        32
+      ],
+      "quota": 2,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 572,
+      "core_pair": [
+        24,
+        32
+      ],
+      "quota": 2,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 577,
+      "core_pair": [
+        25,
+        27
+      ],
+      "quota": 2,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 578,
+      "core_pair": [
+        25,
+        28
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 579,
+      "core_pair": [
+        25,
+        29
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 580,
+      "core_pair": [
+        25,
+        30
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 583,
+      "core_pair": [
+        25,
+        33
+      ],
+      "quota": 2,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 584,
+      "core_pair": [
+        25,
+        34
+      ],
+      "quota": 1,
+      "multiplier": 1
+    },
+    {
+      "original_Gram_row": 591,
+      "core_pair": [
+        26,
+        32
+      ],
+      "quota": 1,
+      "multiplier": -1
+    },
+    {
+      "original_Gram_row": 609,
+      "core_pair": [
+        29,
+        29
+      ],
+      "quota": 10,
+      "multiplier": 1
+    }
+  ],
+  "original_capacity": {
+    "original_signature_row": 51,
+    "original_native_row": 681,
+    "signature": 96,
+    "support": [
+      258,
+      259,
+      260,
+      261,
+      262
+    ],
+    "multiplier": 1,
+    "lower": 0,
+    "upper": 1
+  },
+  "full_original_integer_coefficients": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -2,
+    -2,
+    -2,
+    0,
+    -2,
+    0,
+    0,
+    0,
+    -2,
+    0,
+    0,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    3,
+    3,
+    1,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    2,
+    0,
+    2,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    6,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    3,
+    3,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    2,
+    2,
+    2,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    3,
+    3,
+    1,
+    3,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    2,
+    2,
+    0,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    0,
+    0,
+    2
+  ],
+  "combined_upper_bound": 5,
+  "target_column": 663,
+  "target_coefficient": 6,
+  "negative_original_coefficients_on_prior_zeros_only": [
+    [
+      121,
+      -2
+    ],
+    [
+      145,
+      -2
+    ],
+    [
+      258,
+      -2
+    ],
+    [
+      396,
+      -2
+    ],
+    [
+      397,
+      -2
+    ],
+    [
+      398,
+      -2
+    ],
+    [
+      400,
+      -2
+    ],
+    [
+      404,
+      -2
+    ]
+  ],
+  "surviving_nonnegative_terms": [
+    [
+      1,
+      2
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      26,
+      2
+    ],
+    [
+      33,
+      2
+    ],
+    [
+      47,
+      2
+    ],
+    [
+      75,
+      2
+    ],
+    [
+      76,
+      2
+    ],
+    [
+      77,
+      2
+    ],
+    [
+      176,
+      2
+    ],
+    [
+      177,
+      2
+    ],
+    [
+      178,
+      2
+    ],
+    [
+      203,
+      2
+    ],
+    [
+      213,
+      2
+    ],
+    [
+      228,
+      2
+    ],
+    [
+      236,
+      2
+    ],
+    [
+      247,
+      2
+    ],
+    [
+      264,
+      2
+    ],
+    [
+      269,
+      2
+    ],
+    [
+      273,
+      2
+    ],
+    [
+      303,
+      2
+    ],
+    [
+      310,
+      2
+    ],
+    [
+      316,
+      2
+    ],
+    [
+      322,
+      2
+    ],
+    [
+      343,
+      2
+    ],
+    [
+      349,
+      2
+    ],
+    [
+      357,
+      2
+    ],
+    [
+      364,
+      2
+    ],
+    [
+      378,
+      2
+    ],
+    [
+      379,
+      2
+    ],
+    [
+      382,
+      2
+    ],
+    [
+      407,
+      2
+    ],
+    [
+      409,
+      2
+    ],
+    [
+      463,
+      2
+    ],
+    [
+      537,
+      2
+    ],
+    [
+      538,
+      2
+    ],
+    [
+      539,
+      2
+    ],
+    [
+      540,
+      2
+    ],
+    [
+      541,
+      2
+    ],
+    [
+      590,
+      1
+    ],
+    [
+      591,
+      1
+    ],
+    [
+      592,
+      3
+    ],
+    [
+      593,
+      3
+    ],
+    [
+      594,
+      1
+    ],
+    [
+      595,
+      3
+    ],
+    [
+      609,
+      2
+    ],
+    [
+      616,
+      2
+    ],
+    [
+      619,
+      2
+    ],
+    [
+      620,
+      2
+    ],
+    [
+      626,
+      2
+    ],
+    [
+      627,
+      2
+    ],
+    [
+      630,
+      2
+    ],
+    [
+      633,
+      2
+    ],
+    [
+      634,
+      2
+    ],
+    [
+      635,
+      2
+    ],
+    [
+      641,
+      2
+    ],
+    [
+      642,
+      2
+    ],
+    [
+      646,
+      2
+    ],
+    [
+      649,
+      2
+    ],
+    [
+      650,
+      2
+    ],
+    [
+      652,
+      2
+    ],
+    [
+      654,
+      2
+    ],
+    [
+      655,
+      2
+    ],
+    [
+      656,
+      2
+    ],
+    [
+      657,
+      2
+    ],
+    [
+      658,
+      2
+    ],
+    [
+      659,
+      2
+    ],
+    [
+      660,
+      2
+    ],
+    [
+      661,
+      2
+    ],
+    [
+      662,
+      2
+    ],
+    [
+      663,
+      6
+    ],
+    [
+      667,
+      2
+    ],
+    [
+      670,
+      2
+    ],
+    [
+      730,
+      1
+    ],
+    [
+      731,
+      3
+    ],
+    [
+      732,
+      3
+    ],
+    [
+      733,
+      3
+    ],
+    [
+      762,
+      2
+    ],
+    [
+      763,
+      2
+    ],
+    [
+      764,
+      2
+    ],
+    [
+      765,
+      2
+    ],
+    [
+      781,
+      2
+    ],
+    [
+      782,
+      2
+    ],
+    [
+      801,
+      2
+    ],
+    [
+      802,
+      2
+    ],
+    [
+      803,
+      2
+    ],
+    [
+      1063,
+      2
+    ],
+    [
+      1064,
+      2
+    ],
+    [
+      1065,
+      2
+    ],
+    [
+      1066,
+      2
+    ],
+    [
+      1067,
+      2
+    ],
+    [
+      1125,
+      1
+    ],
+    [
+      1126,
+      1
+    ],
+    [
+      1127,
+      3
+    ],
+    [
+      1128,
+      3
+    ],
+    [
+      1129,
+      1
+    ],
+    [
+      1130,
+      3
+    ],
+    [
+      1177,
+      2
+    ],
+    [
+      1179,
+      2
+    ],
+    [
+      1180,
+      2
+    ],
+    [
+      1183,
+      2
+    ],
+    [
+      1210,
+      2
+    ],
+    [
+      1213,
+      2
+    ]
+  ],
+  "surviving_coefficient_histogram": {
+    "0": 1013,
+    "1": 7,
+    "2": 85,
+    "3": 9,
+    "6": 1
+  },
+  "exact_target_real_upper_bound": [
+    5,
+    6
+  ],
+  "integer_consequence": "6*x663 <= 5 and x663 is nonnegative integer, hence x663=0",
+  "H1_equality_used_as_premise": false,
+  "H2_equality_used_as_premise": false,
+  "twelve_later_zeros_used_as_premises": false,
+  "other_coordinate_upper_bounds_used": false,
+  "proposal_multipliers_must_be_trusted_for_acceptance": false,
+  "all1214_original_coefficients_checked": true,
+  "old99_zero_proofs_rederived": false,
+  "optimizer_calls": 0,
+  "numerical_point_used": false,
+  "case4_excluded": false
+}

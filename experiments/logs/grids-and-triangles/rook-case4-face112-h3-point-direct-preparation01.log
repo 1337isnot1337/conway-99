@@ -1,0 +1,53 @@
+{
+  "status": "PREPARED: independent direct arithmetic; no case point evaluation",
+  "source_sha256": "cdf6360fd04c81280d597aa150bb3b0205de0207aa8c81f914331ceff0ed5a92",
+  "input_bindings": {
+    "model": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/model.json",
+      "1928eb76274865e219747f631fee2d7a327ed7acd3a845986844be13c9e34265"
+    ],
+    "arrays": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/arrays.npz",
+      "4e2de2786d3036cf995953791192500cb4aaa5b0c5079f3d97ea465a4cf64e46"
+    ],
+    "model_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02-cold-replay.json",
+      "56864810924bacb6b331db728a4ce32810d8e6f2dfe7c196e0a73e0b2f583a97"
+    ],
+    "numerical_cold": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01-replay.json",
+      "e682e859b538e97a40786c445fa628cc26dd3a962172d0308b29d0cab48a2de5"
+    ],
+    "candidate": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-basis-run01/candidate.json",
+      "cecacaaa1cb6974dd898f1d2b69be32a06e44e9b89a1b45e35717bc347d3b4e8"
+    ],
+    "native": [
+      "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+      "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+    ],
+    "covers": [
+      "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lazy-native-registry.bin.gz",
+      "c32e31d9ce6ec6168cea1c9f6c6ea4165a2ca7a8f2144a59a31e5a1d6da7b543"
+    ],
+    "failed_cold_log": [
+      "experiments/logs/grids-and-triangles/rook-case4-face112-h3-basis-run01-replay.log",
+      "a00941c98b51f697db63b2349ebfc2689b5119a866c5cbc691c75be9347dd433"
+    ]
+  },
+  "seconds_limit": 60,
+  "model_rebuilt": false,
+  "subject_source_imported": false,
+  "optimizer_calls": 0,
+  "linear_solve_calls": 0,
+  "exact_point_verified": false,
+  "numpy_version": "2.3.5",
+  "controls": {
+    "signed_sparse_rows_compared_with_Python_integers": 224,
+    "original_cover_bit_positions_checked": 1214,
+    "unsafe_integer_arithmetic_refused": true,
+    "optimizer_calls": 0
+  },
+  "point_values_evaluated": false,
+  "elapsed_seconds": 1.5362675489959656
+}

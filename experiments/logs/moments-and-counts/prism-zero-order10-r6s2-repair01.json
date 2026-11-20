@@ -1,0 +1,453 @@
+{
+  "status": "exact count and 47-cut integer witness found",
+  "source_sha256": "6fd464abd1c7803a9767579ba405ca84b727f5fa193c391cacd3604c12ec0b45",
+  "input_sha256": {
+    "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round1-rounded-counts.json": "1e9c60d376b35a4b5bf41c06f7ae89036d431a9a05c1b498f08372154f236fa5",
+    "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01.json": "08366598ad71e2942e1cd1ea877616bd85c636f87a2c607e991834016a61644b",
+    "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/grid-free-order10-scaled-preparation.json": "b469897acd15b6078664625191005454e8bac56ae76318d57fd804089bcf8e50",
+    "/tmp/conway99-order10-reduced.pickle": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+    "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/grid_free_order10_scaled.py": "12409f5ea1932d549cb69d9ca83e8cd4bd53d173b1a6ef136f9cdee6c095fc16"
+  },
+  "ordinary_prefix_coordinates_fixed": 58,
+  "required_zero_coordinates": [
+    1,
+    9,
+    41,
+    42,
+    43,
+    44,
+    46,
+    52,
+    53,
+    56,
+    57,
+    171,
+    173,
+    175,
+    178,
+    180,
+    199,
+    204,
+    233,
+    237,
+    275,
+    279,
+    294,
+    303,
+    311,
+    314,
+    320,
+    341,
+    346,
+    349,
+    379,
+    385,
+    391,
+    406,
+    413,
+    430,
+    432,
+    438,
+    444,
+    446,
+    452,
+    456,
+    457,
+    460,
+    463,
+    466,
+    486,
+    500,
+    503,
+    509,
+    512,
+    514,
+    531,
+    540,
+    541,
+    542,
+    546,
+    548
+  ],
+  "maximum_absolute_coordinate_change": 8,
+  "candidate_coordinates": [
+    360,
+    362,
+    364,
+    378,
+    381,
+    384,
+    389,
+    390,
+    395,
+    404,
+    414,
+    419,
+    420,
+    421,
+    424,
+    425,
+    426,
+    427,
+    510,
+    517,
+    525,
+    526,
+    527,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    543,
+    544,
+    545,
+    547,
+    549
+  ],
+  "failing_induced_type": 48668,
+  "failing_graph_rows": [
+    272,
+    224,
+    928,
+    704,
+    257,
+    518,
+    522,
+    14,
+    21,
+    108
+  ],
+  "initial_failing_count": -4,
+  "failing_induced_form": [
+    [
+      2,
+      -80
+    ],
+    [
+      48,
+      -2
+    ],
+    [
+      49,
+      -8
+    ],
+    [
+      52,
+      -2
+    ],
+    [
+      54,
+      -6
+    ],
+    [
+      55,
+      -2
+    ],
+    [
+      360,
+      1
+    ],
+    [
+      362,
+      1
+    ],
+    [
+      364,
+      -1
+    ],
+    [
+      378,
+      2
+    ],
+    [
+      379,
+      2
+    ],
+    [
+      381,
+      2
+    ],
+    [
+      384,
+      -2
+    ],
+    [
+      389,
+      -1
+    ],
+    [
+      390,
+      -2
+    ],
+    [
+      391,
+      -2
+    ],
+    [
+      395,
+      1
+    ],
+    [
+      404,
+      2
+    ],
+    [
+      414,
+      2
+    ],
+    [
+      419,
+      2
+    ],
+    [
+      420,
+      -2
+    ],
+    [
+      421,
+      -3
+    ],
+    [
+      424,
+      3
+    ],
+    [
+      425,
+      2
+    ],
+    [
+      426,
+      -3
+    ],
+    [
+      427,
+      -2
+    ],
+    [
+      509,
+      2
+    ],
+    [
+      510,
+      2
+    ],
+    [
+      517,
+      -2
+    ],
+    [
+      525,
+      -4
+    ],
+    [
+      526,
+      -3
+    ],
+    [
+      527,
+      -2
+    ],
+    [
+      533,
+      -3
+    ],
+    [
+      534,
+      -4
+    ],
+    [
+      535,
+      -2
+    ],
+    [
+      536,
+      -3
+    ],
+    [
+      537,
+      -4
+    ],
+    [
+      538,
+      4
+    ],
+    [
+      539,
+      6
+    ],
+    [
+      542,
+      3
+    ],
+    [
+      543,
+      4
+    ],
+    [
+      544,
+      6
+    ],
+    [
+      545,
+      6
+    ],
+    [
+      547,
+      -16
+    ],
+    [
+      549,
+      -20
+    ]
+  ],
+  "fixed_width_evaluation_bound": 460014583710,
+  "held_cuts": 47,
+  "trials": [
+    {
+      "coordinate": 360,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 362,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 364,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 378,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 381,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 384,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 389,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 390,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 395,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 404,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 414,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 419,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 420,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 421,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 424,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 425,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 426,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 427,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 510,
+      "delta": 1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 517,
+      "delta": -1,
+      "negative_induced_rows": 1,
+      "negative_held_cuts": 0
+    },
+    {
+      "coordinate": 525,
+      "delta": -1,
+      "negative_induced_rows": 0,
+      "negative_held_cuts": 0
+    }
+  ],
+  "exact_count_witness": true,
+  "PSD_feasibility_certified": false,
+  "optimizer_called": false,
+  "graph_constructed": false,
+  "repair": {
+    "coordinate": 525,
+    "delta": -1,
+    "before": 119,
+    "after": 118
+  },
+  "repaired_failing_count": 0,
+  "witness_path": "experiments/logs/moments-and-counts/prism-zero-order10-r6s2-repair01-witness.json",
+  "witness_sha256": "190c779b4a8758d9df90ccc13a54538d8e120710e224b9150dd3aa4b591bd53d",
+  "minimum_held_cut_value": 3193,
+  "x521": 88,
+  "seconds": 11.597151493002457,
+  "peak_process_rss_kib": 1174548
+}

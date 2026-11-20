@@ -1,0 +1,63 @@
+{
+  "status": "COMPLETE_EXACT_TWO_VERTEX_PSD_CENSUS",
+  "source_sha256": "7a035d583f2d2be643a3de98f4f4df4a83c07f5f8c5b62bcb6c9567788702f7f",
+  "all480_selectors_retained": true,
+  "all114960_pairs_retained": true,
+  "eligible_adjacency_states": 183354,
+  "census": {
+    "plus_nonedge_positive": 114960,
+    "minus_nonedge_positive": 114960,
+    "already_fixed_zero_pairs": 4410,
+    "active_pairs": 110550,
+    "plus_edge_positive": 68382,
+    "minus_edge_positive": 68394,
+    "plus_edge_negative": 12
+  },
+  "minimum_determinants": {
+    "plus": {
+      "nonedge": {
+        "determinant": 98187,
+        "pair": [
+          336,
+          390
+        ],
+        "pair_orbit": 8895,
+        "already_fixed_zero": true
+      },
+      "edge": {
+        "determinant": -33477,
+        "pair": [
+          0,
+          76
+        ],
+        "pair_orbit": 75,
+        "already_fixed_zero": false
+      }
+    },
+    "minus": {
+      "nonedge": {
+        "determinant": 45289065064320,
+        "pair": [
+          342,
+          345
+        ],
+        "pair_orbit": 9231,
+        "already_fixed_zero": true
+      },
+      "edge": {
+        "determinant": 40325434369440,
+        "pair": [
+          11,
+          370
+        ],
+        "pair_orbit": 2572,
+        "already_fixed_zero": false
+      }
+    }
+  },
+  "new_active_pair_state_exclusions": 12,
+  "optimizer_calls": 0,
+  "point_loaded": false,
+  "graph_existence_resolved": false,
+  "scope": "Two-by-two principal minors only; no larger PSD or graph feasibility claim."
+}

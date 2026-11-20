@@ -1,0 +1,27 @@
+{
+  "status": "PASS_COMPLETE_SUPERVISOR_CONTROLS_NO_QUERY",
+  "production_queries": 0,
+  "old_successful_controls_repeated": 0,
+  "fresh_controls": [
+    {
+      "name": "exit3",
+      "status": "ERROR_CHILD_EXIT",
+      "production_outcome_accepted": false,
+      "returncode": 3,
+      "child_reaped": true,
+      "seconds": 0.032475453001097776
+    },
+    {
+      "name": "deadline",
+      "status": "UNKNOWN_HARD_DEADLINE",
+      "production_outcome_accepted": false,
+      "returncode": -9,
+      "child_reaped": true,
+      "seconds": 0.10155523800494848
+    }
+  ],
+  "runner_source_sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278",
+  "helper_source_sha256": "fa2568be85c35da9b2ce7db6db3a4d04a4750167eedbb59526cbe5a0bda431ba",
+  "preparation_initialization_seconds": 0.0779347650022828,
+  "query_preparation_sha256": "57bf84bdf102444aad209bf9c7fd5e62c1fc4f7bf584fa3fac8d0b75e71627ae"
+}

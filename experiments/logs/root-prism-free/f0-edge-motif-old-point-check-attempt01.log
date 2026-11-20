@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_edge_motif_point_check.py", line 78, in <module>
+    main()
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_edge_motif_point_check.py", line 63, in main
+    result = build()
+             ^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99-resume/experiments/workspace/root_prism_free_f0_edge_motif_point_check.py", line 35, in build
+    assert matrix["lower"][j]*den <= x <= matrix["upper"][j]*den
+           ~~~~~~~~~~~~~~~^^^
+TypeError: 'int' object is not subscriptable

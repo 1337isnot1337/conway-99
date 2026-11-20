@@ -1,0 +1,32 @@
+{
+  "status": "PASS: twelve proved signed cuts give exact independent and population clause explanations",
+  "source_sha256": "b6f701949f31a09892d8b2211e9fc64d1fb7d1fa9a2ed6775185542980c350c4",
+  "helper_sha256": "f57d51b8be3fefd7a5d1035c52cc5758c719adb6a79d16a0909f1a54fdaa59f3",
+  "frozen_inputs": {
+    "f0-carry-row-loop-run01-shared-ray-repair.json.gz": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+    "f0-carry-row-loop-run01-shared-ray-repair-independent-audit.json": "e67e932377d757928b12b0d4e4612afceff2141e92c827e919bd0f59ce4b5df1",
+    "f0-exterior-row-domains02.json.gz": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+    "f0-incidence-case00-model.json": "16deda266149f5123a1db3833cfebf22d6bdfe4426b1424fcc51ccbfdc38f0a1"
+  },
+  "summary": {
+    "independent_literal_occurrences": 5352,
+    "cardinality_literal_occurrences": 720
+  },
+  "population_premise": {
+    "value": 60,
+    "Gram_diagonal_equations": 18,
+    "each_diagonal_margin": 10,
+    "each_selector_multiplicity_in_diagonal_sum": 3,
+    "derivation": "Sum the eighteen exact diagonal Gram equations: 3*sum(z)=180.",
+    "complete_original_Gram_position_coverage_checked": true,
+    "original_incidence_model_sha256": "16deda266149f5123a1db3833cfebf22d6bdfe4426b1424fcc51ccbfdc38f0a1"
+  },
+  "new_auxiliary_variables": 0,
+  "candidate_falsifies_every_corresponding_clause": true,
+  "inequalities_are_not_replaced_in_any_existing_formula": true,
+  "clauses_are_weaker_consequences_not_complete_PB_encodings": true,
+  "optimizer_or_solver_called": false,
+  "component_excluded": false
+}
+seconds 1.2453070529991237
+output_sha256 f06b7658ea4447bd785bab8fe2b4df87472c97944b85703ef7491dc54460b455

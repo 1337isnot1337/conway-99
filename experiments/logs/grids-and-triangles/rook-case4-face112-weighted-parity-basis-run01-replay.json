@@ -1,0 +1,48 @@
+{
+  "status": "PASS: full exact selector point and positive t replayed",
+  "bindings": {
+    "source_sha256": "7668aeb593bb46644a233b4cbfeb7663743c67529105003a0ece62d28fbbed6c",
+    "inputs": {
+      "builder": {
+        "path": "experiments/workspace/rook_case4_face112_weighted_parity_model.py",
+        "sha256": "06463fe26a178b9e0d1a004f47c474c6463bf52b769699c8481047dbc01a6300"
+      },
+      "recovery": {
+        "path": "experiments/workspace/rook_case4_complete_lp_recovery.py",
+        "sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6"
+      },
+      "model": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+        "sha256": "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+      },
+      "arrays": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/arrays.npz",
+        "sha256": "59a06470793e6959a67ae30dfb29ecf0de4c8aa74661e1335d7676aa612c1e7e"
+      },
+      "numeric": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-generation-run01/iteration-00-numeric.json.gz",
+        "sha256": "b024197a41afb7412b5010deafcf136cbf1bf3ca1b08aed2ffd1965e4cb9ee00"
+      },
+      "terminal": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-generation-run01/result.json",
+        "sha256": "c6537ce8337084ab131991b2608e59fa37fa38ae59f9c9f478e01dd2e5c6892d"
+      },
+      "cold_replay": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-generation-run01-replay.json",
+        "sha256": "00591861439cf247245dbba5c16b7e5e10d8528a3d2139d6cce5c27a1c4e6866"
+      }
+    },
+    "python_flint_version": "0.9.0"
+  },
+  "terminal_sha256": "c3b2de1f474cbd72cbc7088226e6a04558b80fd8b4b0282b9814166d78bc1740",
+  "exact_point_replayed": true,
+  "linear_solve_called": false,
+  "optimizer_called": false,
+  "candidate_sha256": "3cd4d391e5b372f6ff0d2df11ebd16fccec1b7122527864fef76e33eae72312b",
+  "common_denominator_bits": 29,
+  "full_face_rows_checked": 167115,
+  "original_native_rows_checked": 2271,
+  "original_coordinate_covers_checked": 178533,
+  "binary_graph_claimed": false,
+  "elapsed_seconds": 12.995075593004003
+}

@@ -1,0 +1,65 @@
+{
+  "status": "PASS: one-call IPM/crossover second-moment query prepared; no optimizer",
+  "source_sha256": "c6f2658796459167b885b9f9f7ecbf75b6ba92808c4115e6962b806aafe786e7",
+  "helper_source_sha256": "0ade9c2f04415b325e7f217023dd072abaf4b8cdf60cd9fe07a2cfe93e416536",
+  "model_file_sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf",
+  "model_sha256": "684b3a646a95d8404bf7b46a3ab170ef88b82e54fdb02aec3a34b8f9613847ae",
+  "matrix_sha256": "5e417221ed814a5a0dcb03e31820871113bcc0eb8af2856dd2ac493958d16f39",
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "highspy": "1.16.0",
+    "python-flint": "0.9.0"
+  },
+  "counts": {
+    "variables": 15200,
+    "equalities": 5973,
+    "inequalities": 15719,
+    "nonzeros": 183702,
+    "full_rows_required_for_point_acceptance": 650350,
+    "full_bounds_required_for_point_acceptance": 183834
+  },
+  "controls": {
+    "status": "PASS: exact point, ray, alias-face and modular controls",
+    "feasible_box_multiplier_checks": 153,
+    "strict_infeasible_controls": 3,
+    "negative_inequality_multiplier_rejected": true,
+    "large_multiplier_bits": 131,
+    "positive_point_control": true,
+    "deleted_mass_negative_control": true,
+    "active_face_exact_solve_control": true,
+    "modular_row_swap_control": true,
+    "literal_second_moment_controls": {
+      "positive_binary_mixture": true,
+      "invalid_moment_mutations_rejected": 5,
+      "excess_Y_rejected": true,
+      "Frechet_lower_bound_control": true,
+      "production_model_feasibility_claimed": false
+    },
+    "active_face_limits": {
+      "columns": 1600,
+      "free_coordinates": 64,
+      "dense_cells": 8000000
+    },
+    "optimizer_calls": 0,
+    "zero_embedding_control": true,
+    "wrong_zero_coordinate_rejected": true,
+    "unchanged_arithmetic_helper_sha256": "3986ac84e6d891a0dc362db05f7785ae4294fe58a31a6241f0b63721de5868cd",
+    "original_full_point_acceptance_retained": true
+  },
+  "empty_existing_ray_guard_control": true,
+  "limits": {
+    "production_Highs_run_calls": 1,
+    "lp_seconds_including_setup": 180,
+    "owned_lp_child_hard_seconds": 180,
+    "numerical_output_reserve_seconds": 3,
+    "exact_phase_calls": 1,
+    "owned_exact_child_hard_seconds": 60
+  },
+  "numerical_basis_saved": true,
+  "numerical_method": "ipm",
+  "run_crossover": "on",
+  "active_face_is_only_a_proposal": true,
+  "PSD_constraints_enforced": false,
+  "optimizer_calls": 0
+}

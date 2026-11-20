@@ -1,0 +1,70 @@
+{
+  "status": "EXACT_COMPLETE_SMALL_ROOT_MOMENT_DISTRIBUTIONS",
+  "preparation_manifest_git_blob": "968f9da6554f71ca13c3cb177f0b7b5a25bd40a4",
+  "files": [
+    {
+      "path": "experiments/logs/moments-and-counts/order10-small-roots-packing-moment-recovery-result.json",
+      "git_blob": "c87f5b759a000f0fa2a8ad197bf6a82b9fc538c4"
+    },
+    {
+      "path": "experiments/workspace/small_roots_packing_moment_recovery_replay.js",
+      "git_blob": "f56bb705385d64fae612b4dd03c5d1c72699e171"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-small-roots-packing-moment-recovery-replay.json",
+      "git_blob": "f1ab196c6a140e31d3a69c6d51007d33877d91ac"
+    },
+    {
+      "path": "research/grids-and-triangles/small_roots_packing_moment_recovery_result.md",
+      "git_blob": "2baa88ede9ffbfe06f43ded0a82caf20b8df0b25"
+    }
+  ],
+  "input_bindings": {
+    "commit": "a20ec755c7364c4b7a6e40317e5a7a745224679d",
+    "dependency_git_blob": "d547df71ef544fc7e36a8580bc9f7bdc311d6871",
+    "input_git_blob": "a2188e546dfa72363ef464c11bf89caeec547254",
+    "extraction_request_git_blob": "a00bcf9304019e39ed3a07e576d6f07d22658f64",
+    "scope_git_blob": "4bc0045ae1447160dbf667a1918e32a9f4e3c454",
+    "arrays_sha256": "4af4af187681c33af2ce0d64fc1e7c3e7afb30e37eec181c741776883d602533",
+    "tensors_sha256": "84d69eb567b961f8cdce332f66b152a2cac803feb50a5a7b161d67479b31fb5c",
+    "point_git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+    "point_sha256": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+  },
+  "query_execution": {
+    "status": "COMPLETE",
+    "milliseconds": 1099,
+    "source_git_blob": "34085dd6833ab816968ede0ba4637e44713b37fc",
+    "point_git_blob": "c881dae3be05cf289fcc45a99d72c405ac863c46",
+    "optimizer_called": false
+  },
+  "replay_execution": {
+    "status": "PASS",
+    "milliseconds": 108
+  },
+  "direct_replay_summary": {
+    "roots": 32,
+    "positive_mass_roots": 31,
+    "zero_mass_roots": 1,
+    "atoms": 1035,
+    "positive_atoms": 954,
+    "zero_atoms": 81,
+    "quotient_equations": 492,
+    "raw_presence_monomials": 4975,
+    "unsupported_zero_monomials": 3940,
+    "five_mask_exclusions": 3987,
+    "product_partitions_replayed": 2290
+  },
+  "combined_with_published_root49": {
+    "roots": 33,
+    "atoms": 1115,
+    "root_orbit_equations": 511,
+    "positive_atoms": 1028,
+    "zero_atoms": 87,
+    "negative_atoms": 0,
+    "root49_result_git_blob": "1b80dd8bc11ac4e396d987431fd93e56f9a04eb1"
+  },
+  "exact_integer_arithmetic": true,
+  "optimizer_called": false,
+  "scope": "All structural high-mask presence models with maximum population at most four at the immutable count point. No graph existence or full exterior completion claim.",
+  "publication": "Blobs only; parent owns publication and shared documentation."
+}

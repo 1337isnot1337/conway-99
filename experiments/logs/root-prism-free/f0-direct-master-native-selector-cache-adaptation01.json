@@ -1,0 +1,31 @@
+{
+  "accepted_parent_preparation": {
+    "owner_sha256": "f2e4f25da1712d6af4cce5cefe808fa543c3923dcf823341cb1a450aaeca90ba",
+    "report_sha256": "8ab929ceb8a62b96f47913d2edde27ee1f1036a779b7934b751d58af6d4f009e"
+  },
+  "all_controller_function_ASTs_identical": true,
+  "all_timing_bounds_unchanged": true,
+  "complete_controller_diff": "--- experiments/workspace/root_prism_free_f0_direct_master_continuation_v5.py\n+++ experiments/workspace/root_prism_free_f0_direct_master_continuation_v6.py\n@@ -17,8 +17,8 @@\n import time\n \n ROOT = Path(__file__).resolve().parents[2]\n-HELPER = (\"experiments/workspace/root_prism_free_f0_direct_master_registry_v5.py\",\n-          \"af36bd758df4eb694443a5762c55804027396c68c84e8d15a6399110e75d6fd4\")\n+HELPER = (\"experiments/workspace/root_prism_free_f0_direct_master_registry_v6.py\",\n+          \"77b91c9bccc1bb34f1865a3fdf3edcc817b718c2111a6630b06e890676a0342b\")\n ITERATIONS, OWNER_SECONDS, TOTAL_CP_SECONDS = 8, 300, 180\n CALL_SECONDS, SHARED_SECONDS, PREP_SECONDS, COLD_SECONDS, RESERVE = 60, 60, 60, 60, 8\n \n",
+  "controller": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v6.py",
+    "sha256": "094c143d63011c0fee6dab95e2850634fd70fb1f7564b8c3e682cb02ef2f21c8"
+  },
+  "controller_function_count": 15,
+  "initial_raw_native_sha256_required": "6c92f28dc9bacf8fd41eebcde41f79884b73d137b1185af3215b1134f93f4f47",
+  "native_change": "Cache exactly the480 existing selector IntVars once per append call; retain weighted expressions, exact domains, model validation and complete protobuf equality.",
+  "optimizer_calls": 0,
+  "original_or_added_rows_changed": 0,
+  "parent_controller": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_continuation_v5.py",
+    "sha256": "8a3ed24dbf4ff16768e24d608bfd2dc57e8d0db879cb707a28df09dd528d9801"
+  },
+  "parent_preparation_not_relabelled": true,
+  "registry_cap_unchanged": 16384,
+  "registry_wrapper": {
+    "path": "experiments/workspace/root_prism_free_f0_direct_master_registry_v6.py",
+    "sha256": "77b91c9bccc1bb34f1865a3fdf3edcc817b718c2111a6630b06e890676a0342b"
+  },
+  "schema": "conway99.f0.direct-master.native-selector-cache-adaptation.v1",
+  "seed_configuration_unchanged": "a34afd815e2f95312e5afda0834cba889495b2d5a06815de6fdcce0f46299bcd",
+  "status": "FROZEN_CACHE_ONLY_SOURCE_ADAPTATION"
+}

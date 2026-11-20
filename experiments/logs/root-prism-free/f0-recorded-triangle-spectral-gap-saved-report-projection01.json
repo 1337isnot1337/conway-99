@@ -1,0 +1,602 @@
+{
+  "schema": "conway99.f0.recorded-triangle-gap-saved-report-projection.v1",
+  "status": "EXACT_PROJECTION_OF_SAVED_COMPLETE_REPORT_NO_NEW_MINOR_ARITHMETIC",
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-minors01.json",
+    "bytes": 2569247,
+    "sha256": "31789e7cb6012e8d0f3545170bfa19daec752027b4cd1c7a6bc013749cc146f1",
+    "git_blob": "2f0d27b2c2bd2d9e61ddcb4c11ae41168a206ee5"
+  },
+  "counts": {
+    "negative_diagonal": 0,
+    "negative_pair_minor": 0,
+    "negative_determinant_only": 3156,
+    "all_principal_minors_nonnegative": 2208,
+    "passes_with_zero_determinant": 0
+  },
+  "targets": [
+    {
+      "target_edge_id": 30,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 193,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 363,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 471,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 1241,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 1385,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 1564,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 1675,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 2409,
+      "tested": 48,
+      "rejected": 44,
+      "compatible": 4
+    },
+    {
+      "target_edge_id": 2499,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 2817,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 2962,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 3650,
+      "tested": 48,
+      "rejected": 44,
+      "compatible": 4
+    },
+    {
+      "target_edge_id": 3731,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 4042,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 4181,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 4917,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 5101,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 5858,
+      "tested": 48,
+      "rejected": 44,
+      "compatible": 4
+    },
+    {
+      "target_edge_id": 5871,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 6155,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 6306,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 7084,
+      "tested": 48,
+      "rejected": 44,
+      "compatible": 4
+    },
+    {
+      "target_edge_id": 7107,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 9985,
+      "tested": 50,
+      "rejected": 48,
+      "compatible": 2
+    },
+    {
+      "target_edge_id": 9990,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 10523,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 10524,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 10554,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 11025,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 12391,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 12392,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 12449,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 15559,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 18563,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 18571,
+      "tested": 50,
+      "rejected": 48,
+      "compatible": 2
+    },
+    {
+      "target_edge_id": 20650,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 21635,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 24553,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 25269,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 25351,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 25474,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 26195,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 26276,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 26389,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 27146,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 27249,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 27345,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 28097,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 28202,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 38681,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 38813,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 38864,
+      "tested": 48,
+      "rejected": 44,
+      "compatible": 4
+    },
+    {
+      "target_edge_id": 38887,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 39516,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 39624,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 39694,
+      "tested": 48,
+      "rejected": 44,
+      "compatible": 4
+    },
+    {
+      "target_edge_id": 39720,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 40802,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 42814,
+      "tested": 50,
+      "rejected": 48,
+      "compatible": 2
+    },
+    {
+      "target_edge_id": 42831,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 43001,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 43509,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 45135,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 46811,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 46815,
+      "tested": 50,
+      "rejected": 48,
+      "compatible": 2
+    },
+    {
+      "target_edge_id": 47548,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 47704,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 47805,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 48205,
+      "tested": 60,
+      "rejected": 52,
+      "compatible": 8
+    },
+    {
+      "target_edge_id": 48358,
+      "tested": 77,
+      "rejected": 38,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 48450,
+      "tested": 78,
+      "rejected": 39,
+      "compatible": 39
+    },
+    {
+      "target_edge_id": 48938,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 48996,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 49076,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 49535,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 49611,
+      "tested": 59,
+      "rejected": 24,
+      "compatible": 35
+    },
+    {
+      "target_edge_id": 49682,
+      "tested": 59,
+      "rejected": 28,
+      "compatible": 31
+    },
+    {
+      "target_edge_id": 56904,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 57851,
+      "tested": 50,
+      "rejected": 48,
+      "compatible": 2
+    },
+    {
+      "target_edge_id": 57869,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 58653,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 59873,
+      "tested": 65,
+      "rejected": 36,
+      "compatible": 29
+    },
+    {
+      "target_edge_id": 59882,
+      "tested": 50,
+      "rejected": 48,
+      "compatible": 2
+    }
+  ],
+  "targets_with_no_compatible_recorded_triangle": [],
+  "first_rejected": {
+    "triangle_index": 0,
+    "vertices": [
+      0,
+      91,
+      325
+    ],
+    "edge_ids": [
+      16,
+      170,
+      25269
+    ],
+    "indicator_variable": 71382,
+    "origin": {
+      "target_edge_id": 25269,
+      "support_table_index": 39,
+      "support_index": 0
+    },
+    "matrix_entries": [
+      "1174",
+      "1174",
+      "1306",
+      "-392",
+      "-256",
+      "-1066"
+    ],
+    "principal_minors": [
+      "1174",
+      "1174",
+      "1306",
+      "1224612",
+      "1467708",
+      "396888",
+      "-25628400"
+    ],
+    "negative_minor_mask": 64,
+    "classification": "negative_determinant_only"
+  },
+  "first_compatible": {
+    "triangle_index": 1,
+    "vertices": [
+      0,
+      91,
+      479
+    ],
+    "edge_ids": [
+      16,
+      252,
+      25351
+    ],
+    "indicator_variable": 71383,
+    "origin": {
+      "target_edge_id": 25351,
+      "support_table_index": 40,
+      "support_index": 0
+    },
+    "matrix_entries": [
+      "1174",
+      "1174",
+      "1102",
+      "-392",
+      "104",
+      "-1030"
+    ],
+    "principal_minors": [
+      "1174",
+      "1174",
+      "1102",
+      "1224612",
+      "1282932",
+      "232848",
+      "175309920"
+    ],
+    "negative_minor_mask": 0,
+    "classification": "all_principal_minors_nonnegative"
+  },
+  "independent_terminal_acceptance": false,
+  "native_model_changed": false
+}

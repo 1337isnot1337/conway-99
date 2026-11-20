@@ -1,0 +1,63 @@
+{
+  "schema": "conway99.immutable-git-blob-publication-map.v1",
+  "status": "COMPLETE_QUERY_CI_AND_INACTIVE_PREFLIGHT_TEMPLATE_SOURCE_PREPARATION",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query_ci.py",
+      "bytes": 17023,
+      "sha256": "22d20e4a931b5ae069bdead464399b4f5f9773c441f3ed0f9829df6403f80a90",
+      "git_blob": "0bcbc9db71ff64ba9b440990c52e3f87ba0b7daf"
+    },
+    {
+      "path": "experiments/workspace/conway99-combined-extensions-query-preflight.template.yml",
+      "bytes": 7173,
+      "sha256": "0a6882055c55f31a8f3bbc3ddf638e97f82317ced88b303b51224254eb70bfd1",
+      "git_blob": "259fecfea606673887a0e8bd632dd8b3a935a1c0"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-ci-explicit-source-reuse01.json",
+      "bytes": 13991,
+      "sha256": "a96006d8260e13fd6101aa48dabc6488f5ec980583fbc951764b63d0139d6dc4",
+      "git_blob": "22bb3fc3eac2544250d8f1215d9cc5d2187fd86c"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-ci-and-preflight-contract01.json",
+      "bytes": 5539,
+      "sha256": "cf922bb355d8d63e2712b92a3bcf8bce2942f7eecb70ea2e2dc0732acefe5982",
+      "git_blob": "091cf3344e81093c2f70fd10021c3170a3a64210"
+    }
+  ],
+  "parent_production_driver": {
+    "path": "experiments/workspace/root_prism_free_f0_strengthened_query_ci.py",
+    "git_blob": "9a698de577a4f132a8e8af3e9c818b7f7b01c391",
+    "bytes": 17129,
+    "sha256": "1d9f29fad341c4736cb75e91b8a5b98791606112055dcca65503abd51a12440e"
+  },
+  "parent_preflight_workflow": {
+    "path": ".github/workflows/conway99-strengthened-query-preflight.yml",
+    "git_blob": "f0477394c2629b775a673d3d2b67f1ebfc61d65d",
+    "bytes": 8068,
+    "sha256": "b18e74b599705b961f1e26cff99fbfa3d08fbbdac843ebc73d725f063cf44be9"
+  },
+  "query_runner_package": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-source-contract-git-blobs01.json",
+    "bytes": 1930,
+    "sha256": "035c7c133b6f9990224de534d7fc7710a140baf80f07481c85af76a32cf2af99",
+    "git_blob": "6260526a1cf52409ce168bf7b544f62e37aaf5d7"
+  },
+  "actual_runnable_configuration_or_request_created": false,
+  "old_consumed_sources_and_workflows_changed": false,
+  "actual_Python_or_YAML_execution": 0,
+  "native_calls": 0,
+  "workflow_runs": 0,
+  "branch_or_ref_mutations": 0,
+  "finalization_owner": "root",
+  "independent_terminal_checker_owner": "master_review",
+  "remaining_requirements": [
+    "actual accepted model and root receipt bindings",
+    "finalized query configuration",
+    "finalized sparse preflight workflow dependency list",
+    "source reviews and one zero-solve gate",
+    "actual preflight acceptance and separate production gate"
+  ]
+}

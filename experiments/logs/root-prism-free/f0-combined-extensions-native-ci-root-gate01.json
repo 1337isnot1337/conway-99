@@ -1,0 +1,511 @@
+{
+  "schema": "conway99.f0.combined-extensions-native-ci-root-gate.v1",
+  "status": "AUTHORIZE_ONE_COMBINED_EXTENSIONS_NATIVE_PREPARATION_AND_SEPARATE_COLD",
+  "expected_parent": "7588119e427ea17cad06436ae46915bd695c316a",
+  "expected_ref": "refs/heads/research/global-constraints-ab2f",
+  "driver_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+    "bytes": 16246,
+    "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+    "git_blob": "06166151155be8a6cd46ec7a0b3e5989ed408dff",
+    "mode": "100644",
+    "lines": 284
+  },
+  "producer_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+    "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+    "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b",
+    "bytes": 38102,
+    "lines": 735,
+    "mode": "100644"
+  },
+  "cold_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+    "bytes": 70788,
+    "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+    "git_blob": "be51ef6deca257d57b018c989d994804994004c1",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+    "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+    "bytes": 33063,
+    "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+    "mode": "100644"
+  },
+  "supervisor_source": {
+    "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+    "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+    "bytes": 26760,
+    "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+  },
+  "workflow": {
+    "path": ".github/workflows/conway99-combined-extensions-native-prepare.yml",
+    "bytes": 16086,
+    "sha256": "fa2e104ba469fd59d69de6c40f83bd65645532ab0ef39f0dcb36c9d4c9bb05c6",
+    "git_blob": "9f3af4be8bd7274f92e208ab25ec5752ae0e3106",
+    "mode": "100644"
+  },
+  "source_reviews": {
+    "producer": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-builder-root-source-review01.json",
+      "bytes": 4660,
+      "sha256": "2dbcfd409a96fe1fb3ac6326d4d11111595d69317397cebc124a6acafc8237f3",
+      "git_blob": "2f662c206e9ebb053f0c1e6c04f78203da097688",
+      "mode": "100644"
+    },
+    "checker": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-replay-independent-source-review01.json",
+      "sha256": "bbb8fc6c9f00c781b4ae37252c9b37e95df7087268e8b76774786e8b186a19d1",
+      "git_blob": "ddac8c7b29ece7d9fec04196827f48b92082cd84",
+      "bytes": 11898
+    },
+    "driver": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-ci-independent-source-review01.json",
+      "bytes": 4495,
+      "sha256": "3cb370dd21842bf56ab67a756c1a45e45a0bd392ce45ff96825adbe8b6c9ba7e",
+      "git_blob": "2faf9f0ac642e264b14c71709ad091766b6b6be4"
+    }
+  },
+  "configuration_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-final-configuration-independent-review01.json",
+    "bytes": 21458,
+    "sha256": "08906c6ec60ea561312efbf2ba717919dff2285b377075767db991420e93d8b9",
+    "git_blob": "a31b3950e2951f110f06e569c03cb04086a7bc42",
+    "mode": "100644"
+  },
+  "workflow_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-workflow-independent-review01.json",
+    "bytes": 12512,
+    "sha256": "c19123be1318193c6aa2f0edca368d344d9d2812512b655556b0d2cd8778d264",
+    "git_blob": "ea41f567eadf389894bc3d937180666e9a530b01",
+    "mode": "100644"
+  },
+  "limits": {
+    "controls_owner_seconds": 15,
+    "prepare_owner_seconds": 135,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 420
+  },
+  "variables": 80730,
+  "rows": 297470,
+  "base_model_raw_sha256": "4a9b24ab1a0a1758ffedab226a9c45fe7765fafc40e76e23a039c9ccd098aee2",
+  "base_model_raw_bytes": 38374405,
+  "native_model_builds_allowed": 1,
+  "independent_complete_replays_allowed": 1,
+  "producer_controls_allowed": 1,
+  "independent_controls_allowed": 1,
+  "optimizer_calls_allowed": 0,
+  "automatic_retries": 0,
+  "native_query_allowed": false,
+  "dependencies": [
+    {
+      "path": ".github/workflows/conway99-combined-extensions-native-prepare.yml",
+      "bytes": 16086,
+      "sha256": "fa2e104ba469fd59d69de6c40f83bd65645532ab0ef39f0dcb36c9d4c9bb05c6",
+      "git_blob": "9f3af4be8bd7274f92e208ab25ec5752ae0e3106",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-boolean-shared-native-preparation01/overlay-proof.json.gz",
+      "bytes": 219390,
+      "sha256": "4f75f8480ac0e73572a19affc9f17df9f54a9b3aefbeef62832c13bffb8fc183",
+      "git_blob": "663f13eb70c8a5cffa94aeef140304281f6c4697",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-replay01-finalization.json",
+      "bytes": 337,
+      "sha256": "6584c968180f28af5cc8592fb058caadd625fa0d75c10d676927409d7551c598",
+      "git_blob": "8dd8eab7ad37427eaa49be25f730d83de007d18e",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-replay01.json",
+      "bytes": 7241,
+      "sha256": "302067bb4677572bbbf389e3ca9b814c718814f0406b9178bf546b6e72bbd732",
+      "git_blob": "882b4c5a976e1fb29c99d7957570957b7c7e7e31",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-independent-literal-root-acceptance01.json",
+      "bytes": 5162,
+      "sha256": "276a38e996f4b8de365270bdd72c79dd5488ce0061c831847204d6082ce18b6d",
+      "git_blob": "a96a69969025516d9fc078ddfba7eb02dba098f5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory-independent-source-review01.json",
+      "bytes": 6354,
+      "sha256": "694b848c97511d9c8f835d3373d1f4513f32bc1e9a4739bd7b9df0a8c56d5803",
+      "git_blob": "b96d7f515a0365629aee35770ea7f61988b6181a",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory01-finalization.json",
+      "bytes": 312,
+      "sha256": "63b5d93729047ceced23110eba891d84679fb649297313bab24823c759755418",
+      "git_blob": "c965363402cd2c476b7574c5c6187739f96d190b",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory01-terminal-binding.json",
+      "bytes": 3407,
+      "sha256": "58b37386a767919fa4bbde0827ed2356d320237427abf7b5a31a3cf97bbfaf54",
+      "git_blob": "21f85adec67346dc05e67473fbde769ba6963cac",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory01.json",
+      "bytes": 1855217,
+      "sha256": "83d0822e59f3ad2f27d6611800b90e2333702118c617bd764156b3683c376515",
+      "git_blob": "97c854827a76e48b72154da39e59519622210721",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-builder-adaptation01.json",
+      "bytes": 1490,
+      "sha256": "84cd74d9ebd27f19fa0c93b1447f3cab5b912b6d0fd4c7829e16e26aab6593b7",
+      "git_blob": "fa7d25cd9dc62ccf60dfe0992803d5d9f7f20e96",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-builder-root-source-review01.json",
+      "bytes": 4660,
+      "sha256": "2dbcfd409a96fe1fb3ac6326d4d11111595d69317397cebc124a6acafc8237f3",
+      "git_blob": "2f662c206e9ebb053f0c1e6c04f78203da097688",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-ci-independent-source-review01.json",
+      "bytes": 4495,
+      "sha256": "3cb370dd21842bf56ab67a756c1a45e45a0bd392ce45ff96825adbe8b6c9ba7e",
+      "git_blob": "2faf9f0ac642e264b14c71709ad091766b6b6be4",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-final-configuration-independent-review01.json",
+      "bytes": 21458,
+      "sha256": "08906c6ec60ea561312efbf2ba717919dff2285b377075767db991420e93d8b9",
+      "git_blob": "a31b3950e2951f110f06e569c03cb04086a7bc42",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-independent-replay-metadata-repair01.json",
+      "bytes": 3110,
+      "sha256": "c5b944ddcfab62cb1cdae42cd3a1e6f0fd050f77ec208133851ee8409a5cb6ae",
+      "git_blob": "12d2a8ab9942212d7fee9144f93745ae61fc296a",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+      "bytes": 33063,
+      "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+      "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-workflow-independent-review01.json",
+      "bytes": 12512,
+      "sha256": "c19123be1318193c6aa2f0edca368d344d9d2812512b655556b0d2cd8778d264",
+      "git_blob": "ea41f567eadf389894bc3d937180666e9a530b01",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-replay-independent-source-review01.json",
+      "bytes": 11898,
+      "sha256": "bbb8fc6c9f00c781b4ae37252c9b37e95df7087268e8b76774786e8b186a19d1",
+      "git_blob": "ddac8c7b29ece7d9fec04196827f48b92082cd84",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-common-neighbor-forest-extension-independent-review01.json",
+      "bytes": 4714,
+      "sha256": "59879fd63bab3c81969e8ba978f172077ee37c1b9375093c2ecac38f982802ec",
+      "git_blob": "47d16703a6b9d69502ef294bb1eb71b2dac94e2b",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-exterior-triangle-schur-v8-census01.json",
+      "bytes": 1600480,
+      "sha256": "7027feb1a77cb8131371bb10823ec7e5e8b6a33f5281a0b27881ee2f6b088155",
+      "git_blob": "44f7d8c605a1f6fab51c89fed44b9233c8215b21",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01-finalization.json",
+      "bytes": 856,
+      "sha256": "05cdcd83ae7a7c93b2afd810c3c2dd8d109818ed369bb9a45f7d342da6fd7a11",
+      "git_blob": "893cd662ab4bd8ac86470921dee7f39f93e6cd9d",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-certificate-replay01.json",
+      "bytes": 135914,
+      "sha256": "5a3d211780e0a89158cc9442896b960759851f9bf78aed0f5750bb696a170c82",
+      "git_blob": "abe7c99ab4f4ef6f17dd2dec1b8124cca892f3d8",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01-finalization.json",
+      "bytes": 2856,
+      "sha256": "88fcdf559e197a221c3983e574423d945d35bb3dd6a502b67b566f5ede2d29bb",
+      "git_blob": "7112bb771b656c79df81a145995306f0675fdac0",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-independent01.json",
+      "bytes": 10809436,
+      "sha256": "7e9df6f8798483bbe4be386f857b8997dffd08dd409080c258fde2b9bcbbfb22",
+      "git_blob": "b41abfd71d80c163a6180f6ab5276bfbed1a9e2e",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-root-acceptance01.json",
+      "bytes": 3576,
+      "sha256": "74341c2db1458b35a8b932bb7fbde28824b9eadf09cbe404e1d5bbf5a69150a9",
+      "git_blob": "25fdbb37f6bcde2da6c08d70a36ad4e3164892ab",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-independent-source-review01.json",
+      "bytes": 5930,
+      "sha256": "60bc79e4d64a2e7f2993a4d8908a7bf526ccab725c3fdf58aaaec0f559cb6007",
+      "git_blob": "691252853fa37dcfc536060f3648adf96b25b9ac",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-independent-source-review02.json",
+      "bytes": 1832,
+      "sha256": "9154cf86580e5064d8bbd23dba50d14bb9f8adc7b0dd0fbbb35edf7f8e824cb3",
+      "git_blob": "46f5cc2a3ade0de0ccadba83ecddafba7a8df55a",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory01-finalization.json",
+      "bytes": 348,
+      "sha256": "0ce007feb9bba740240d7b0fb2f506deb0571f90152ffa47ad841597c16b50fe",
+      "git_blob": "7d513643652031ad55b11bc6c33fa516a71c45c5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-inventory01.json",
+      "bytes": 1903849,
+      "sha256": "f522a8aa9ae699660a36dc78a97ca63bfe19bf97c4a075362a8951db0db71df3",
+      "git_blob": "f832577546031f48359dcb583b22f1cfd834a65a",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-four-exterior-star-channel-root-terminal-review01.json",
+      "bytes": 3148,
+      "sha256": "99b4af1990c0707a2dcfe54e9b895d12801793cdd8f2c2998b97506500d2e895",
+      "git_blob": "164720a24be6b724f24399b99738845ec9638678",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01.json",
+      "bytes": 13646,
+      "sha256": "e8d27725afb707867f6683604ff1f3123f8960305c721058f495883f23476349",
+      "git_blob": "38ec9167df27b86de0341f8387cc894c6d2ff8cc",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-root-acceptance01.json",
+      "bytes": 2336,
+      "sha256": "0ddbc84223a4cd56ad94597bf9320b1bb2ebbf05f0965cf07216beaca465b42e",
+      "git_blob": "408c39a6be9880f07998c89b284d31121bfd942d",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-replay01-finalization.json",
+      "bytes": 275,
+      "sha256": "28200b4782e3392a8d0a3c60b4c03c2f3146608588fb460cac93b2a7cd9b2eed",
+      "git_blob": "46c68111e912d19beeddb82a8e5a15a6421ceea6",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-replay01.json",
+      "bytes": 5090,
+      "sha256": "52c75dea2f4ef93fb7881eb76e1e02f7b652058ecc2a6a02248bcdbdae05faeb",
+      "git_blob": "06bfec7ae8e9817e58fc885f7611364daaebecb4",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-root-acceptance01.json",
+      "bytes": 3019,
+      "sha256": "9d4e3a9b44a2140d95091425a346396ed84dd8d9d88f3a4e7fa3e67d47cd51d4",
+      "git_blob": "afb20e51c7fafb5719cb491af8037a3a4aeeacba",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-independent-source-review01.json",
+      "bytes": 6185,
+      "sha256": "abfcd108cc5137aacba5adc1072aab5c2f861f06be3ccab90ec13f69fbedd0c3",
+      "git_blob": "d75ce6691a9055069883b414ef16a7d7867b3502",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01-finalization.json",
+      "bytes": 263,
+      "sha256": "7c2839765c4ac7ac70193d839879d599a6ccb625a0b80b716614528fe66af018",
+      "git_blob": "1039ec250addcd6c847500b14746ee47921861f3",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json",
+      "bytes": 1056971,
+      "sha256": "8606d51ced038b40135fa22bc16d056873b80c16c26d2c34db7e24ac8effd2c7",
+      "git_blob": "8188edc640d4dd896df0e64c4e08db4c78627e96",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-root-artifact-review01.json",
+      "bytes": 2365,
+      "sha256": "6341a518ad6f066e9ab76560029020ce0e9a57f3394a403dfd459a8f6f61f4c8",
+      "git_blob": "53fa3c854604ef9ae595d67e3fdaf1e833d423cf",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01-finalization.json",
+      "bytes": 386,
+      "sha256": "1d3e3bb3850c75dd7ae79a6139493d39cede82f7faeb2dfa107de11e25aa9aae",
+      "git_blob": "a72df53d4fcf855fc6203a2220ebab60a066f250",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-ledger01.json",
+      "bytes": 429105,
+      "sha256": "0103baa3822afaae8992e2be6517e6a173615a937a721e3e5a83c724cdc89e86",
+      "git_blob": "7a516562bbdbe26c8bc25c0d7eb1654a6efd79d2",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-literal-replay-independent-source-review01.json",
+      "bytes": 5711,
+      "sha256": "d76d07c47a2fbd678761fb3b75f93682394c42df638fc93c71be895a01e66d90",
+      "git_blob": "240132bc913533e506b049e359482ad44a001aad",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/report.json",
+      "bytes": 14259,
+      "sha256": "75e0150b0c0ed6f6b7c5d84c270790a4311a5a81382afe0a32e360dd2d126628",
+      "git_blob": "2f13275d00aca2d1cc2add3414aa8c2ed4062568",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01-cold/run/owner.json",
+      "bytes": 1134,
+      "sha256": "e9f1e4fdb7277c6759be465dea97d1e01c7e1337bb18e05347062fa7aa378931",
+      "git_blob": "29a4ffa3fde0aaed50b0b70de772afb45933de86",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/model.pb.gz",
+      "bytes": 5739710,
+      "sha256": "060bada9bda2a7ddfcdf52f1bf0307ede34ecd6dd933f5617d0435f197dabb27",
+      "git_blob": "b0c81d2579cb28cef19976197e9079ff018d650c",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/owner.json",
+      "bytes": 972,
+      "sha256": "d162e054ff0f80208f199403869b1109f97cde67add39e3d4bc4de01731532be",
+      "git_blob": "65556017f9e658cee0fe27987b590c1cc7a25ede",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-ci01/report.json",
+      "bytes": 12613,
+      "sha256": "114823082c6d3696fe6f53ae0979d0c375b9f13ffa94071fa9093d195633fcd7",
+      "git_blob": "5180767826e0edcdc4d14bbc40b41934dd8dfd1c",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-strengthened-native-root-acceptance01.json",
+      "bytes": 7706,
+      "sha256": "1c09b33189f337c90759a6339716fee001efe0b7b6c3727f8a0ec41e8a141116",
+      "git_blob": "e618d86a3eabd43b3fb94ba63287ddf5fa47f68d",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-triangle-schur-independent-cold-root-acceptance01.json",
+      "bytes": 1177,
+      "sha256": "d010e64051397b5335ac859f094da7f34cd4f5882ff4c511d639bb04fa6fe12c",
+      "git_blob": "12a10b91d58311996bbfd8800cce3da0d3e0806a",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "bytes": 15210,
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2",
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+      "bytes": 16246,
+      "sha256": "484282d2633d3b60d0007bae23436bbee6e7ad33c9569d635f5b15b35cd44bdb",
+      "git_blob": "06166151155be8a6cd46ec7a0b3e5989ed408dff",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+      "bytes": 38102,
+      "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+      "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+      "bytes": 70788,
+      "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+      "git_blob": "be51ef6deca257d57b018c989d994804994004c1",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "bytes": 26760,
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_common_neighbor_forest_extension.md",
+      "bytes": 9724,
+      "sha256": "66008cb63184240d897f55f2333bbb5153e26031cd4cb96c134767a9e5723cea",
+      "git_blob": "00281a95fec20834cac140d7b2f6bfa4edef20e1",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_four_exterior_prism_outage_proof.md",
+      "bytes": 5754,
+      "sha256": "d3ed501a913f41d7a1b737768740df569b3b6de0e22c56dafa81d4612bc27bc4",
+      "git_blob": "07e7a9ac0a4c475c7e4872029ac1cc2f59858e09",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_four_exterior_star_channels.md",
+      "bytes": 9044,
+      "sha256": "a7f4e2c32f782fa580211c8bd1ba2b6b32e095c3ea793af54ab405e19f34ca7b",
+      "git_blob": "0930f7652e0af0f2e91372f9dcdf159785858af2",
+      "mode": "100644"
+    }
+  ],
+  "phase_owners_must_reap_children_and_stop_process_groups": true,
+  "driver_bound_is_total_acceptance_bound_with_separately_owned_phases": true,
+  "outer_workflow_timeout_minutes": 12,
+  "exact_original_output_bytes_must_be_preserved": true,
+  "model_requires_complete_native_replay_and_root_terminal_acceptance": true,
+  "prior_native_query_status": "UNKNOWN_WITH_NO_VECTOR",
+  "prior_query_gate_reused": false,
+  "graph_or_component_exclusion_claimed": false
+}

@@ -1,0 +1,71 @@
+{
+  "status": "independent fresh product and core reduction replay PASS",
+  "source_sha256": "2b0b442fcf799dc716e58d3fdcbfc9f9484d651448658cd2eb1547d983ca1945",
+  "input_sha256": {
+    "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-loop01-round0-r6s2-separation.json": "fccbd4eeebba92b34f1f1fe69343633a59562f3e32817fc839aa29c490b65c19",
+    "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/logs/moments-and-counts/prism-zero-order10-r6s2-blocks.pickle.gz": "84d69eb567b961f8cdce332f66b152a2cac803feb50a5a7b161d67479b31fb5c",
+    "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/grid_free_order10_r6s2_independent_audit.py": "46bbbf5521383fc14925644e1dcb82ebeca99094b5726b8f23e3d774aa6f643f",
+    "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/grid_free_order10_scaled.py": "12409f5ea1932d549cb69d9ca83e8cd4bd53d173b1a6ef136f9cdee6c095fc16",
+    "/tmp/conway99-order10-reduced.pickle": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65"
+  },
+  "proposal_sha256": "96742aee00746e8489a3db567bc095b813a5a5226a06d9e467ed394d412f3822",
+  "required_blocks": 3,
+  "required_supported_entries": 15979,
+  "completed_blocks": [
+    {
+      "root_type": 96,
+      "supported_flags": 18,
+      "products_reconstructed": 171,
+      "induced_terms": 16,
+      "exact_primitive_core_value": [
+        -91673288403223471,
+        281474976710656
+      ],
+      "all_supported_tensor_entries_match": true,
+      "induced_form_matches": true,
+      "core_form_matches": true,
+      "exact_negative_value_matches": true
+    },
+    {
+      "root_type": 76,
+      "supported_flags": 67,
+      "products_reconstructed": 2278,
+      "induced_terms": 809,
+      "exact_primitive_core_value": [
+        -92746102400123057216111,
+        1125899906842624
+      ],
+      "all_supported_tensor_entries_match": true,
+      "induced_form_matches": true,
+      "core_form_matches": true,
+      "exact_negative_value_matches": true
+    },
+    {
+      "root_type": 81,
+      "supported_flags": 164,
+      "products_reconstructed": 13530,
+      "induced_terms": 628,
+      "exact_primitive_core_value": [
+        -1647433470156681593272603,
+        562949953421312
+      ],
+      "all_supported_tensor_entries_match": true,
+      "induced_form_matches": true,
+      "core_form_matches": true,
+      "exact_negative_value_matches": true
+    }
+  ],
+  "complete": true,
+  "maximum_seconds": 120.0,
+  "producer_product_builder_called": false,
+  "saved_tensor_used_only_for_comparison": true,
+  "reduced_forms_reconstructed_with_Python_integers": true,
+  "optimizer_called": false,
+  "eigensystems_computed": false,
+  "PSD_feasibility_certified": false,
+  "graph_constructed": false,
+  "timed_out": false,
+  "products_reconstructed": 15979,
+  "seconds": 9.73591653100084,
+  "peak_process_rss_kib": 1173472
+}

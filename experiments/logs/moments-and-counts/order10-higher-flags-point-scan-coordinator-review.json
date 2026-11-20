@@ -1,0 +1,23 @@
+{
+  "status": "read-only mathematical and API review PASS",
+  "subject_source": "experiments/workspace/grid_free_order10_higher_flags_point_scan.py",
+  "subject_source_sha256": "5d1af5a24c9a509e35b9aeb47e47bd97eb01c09eb51fad32c2a72ceb87075c86",
+  "reviewed_full_source": true,
+  "checks": [
+    "All nine r4s3 and both r2s4 domains match the frozen complete domain records.",
+    "The original nine-root cache remains unchanged and unpruned.",
+    "The two symbolic blocks retain every lower-triangle position and labelled stabilizer factor.",
+    "First moments remain labelled embedding counts; no stabilizer division is made.",
+    "Full-overlap diagonal terms equal the explicit root-fixing stabilizer.",
+    "Matrix contraction uses exact integer tensor coefficients and exact dyadic proposal numerators.",
+    "A numerical direction is exported only after exact negative contraction and reduced-form agreement.",
+    "All gcd normalizations are positive.",
+    "Replay checks the saved integer direction, induced form, reduced form, and exact rational value.",
+    "Complete-scan status is separate from any assertion of positive semidefiniteness."
+  ],
+  "new_tensor_generation": false,
+  "dense_reduction_loaded": false,
+  "optimizer_called": false,
+  "independent_reconstruction_of_every_tensor_entry": false,
+  "scope": "source review; independent product controls and cut reconstructions remain separate certificates"
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "conway99.f0.triangle-gap-native-ci-request.v1",
+  "mode": "one-preparation-and-independent-cold",
+  "driver_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_ci.py",
+    "bytes": 17279,
+    "sha256": "bb35593aacf5f71540e2399b2880c8fe15ef074d946a4a96cc529da613c9d048",
+    "git_blob": "52c27afcedea73b474b8874581ccba4a5f1a1a93",
+    "mode": "100644"
+  },
+  "producer_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_model.py",
+    "bytes": 32732,
+    "sha256": "a3512a083ec480d36b823273ec7ba7eb3f47ff05efaed4a3b0e62346e4fba36c",
+    "git_blob": "a80ed491df4bafe566be246521fa9cd7abb80d1b",
+    "mode": "100644"
+  },
+  "cold_source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_gap_replay.py",
+    "bytes": 52759,
+    "sha256": "8881d15ce768ca14f8c06d0e00803989a19d49bc3be55bba4e6fbca43e1dd87f",
+    "git_blob": "ca84307dec2b412d209344840da7d30538707e4a",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-configuration01.json",
+    "bytes": 14242,
+    "sha256": "dc60f13b81bf12a197e897d5cdfd4fe57540f071d385bb4df4e24ff580954a9f",
+    "git_blob": "316a4c3aaac63ebd8a0caca560814151014d5c0c",
+    "mode": "100644"
+  },
+  "supervisor_source": {
+    "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+    "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+    "bytes": 26760,
+    "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+  },
+  "gate": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci-root-gate01.json",
+    "bytes": 16148,
+    "sha256": "c4838cf7575659ad1a8161d3535ae0e75673f9543be8eb33c1fcb0d9cc00e717",
+    "git_blob": "d483bb07fa326c59767681b924a00620b9f5b0c1",
+    "mode": "100644"
+  },
+  "base_model_raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8",
+  "limits": {
+    "controls_owner_seconds": 15,
+    "prepare_owner_seconds": 135,
+    "cold_controls_owner_seconds": 15,
+    "cold_main_owner_seconds": 135,
+    "driver_seconds": 420
+  },
+  "native_model_builds_allowed": 1,
+  "optimizer_calls_allowed": 0,
+  "native_query_allowed": false,
+  "automatic_retries": 0,
+  "directories": {
+    "controls": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci01-controls",
+    "prepare": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci01",
+    "cold_controls": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci01-cold-controls",
+    "cold_replay": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci01-cold",
+    "cold_controls_owner": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci01-cold-controls-owner",
+    "cold_replay_owner": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci01-cold-owner"
+  },
+  "result_path": "experiments/logs/root-prism-free/f0-triangle-gap-native-ci01-run.json"
+}

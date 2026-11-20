@@ -1,0 +1,178 @@
+{
+  "status": "COMPLETE_THIRTY_SIX_ROOT_TRIANGLE_KERNEL_AND_SCHUR_PREPARATION",
+  "source_sha256": "0749e9850d52949d73eb5ac03ca6111c769accbba15ecd62bd2846e87ea2eaf8",
+  "product_source_sha256": "3a01408b78323129146d0856fe81231d867461eaee422536bc7e87a8c8a9fdd5",
+  "kernel_source_sha256": "fea5b560e4aeeb323da6e8cde2bc52571a3dc7499f0900a0a12b1f134d4a31c7",
+  "scope_source_sha256": "d25c7cfdb94fa79f0100990752a3c941011dd62e230c02b71472657f715f1b65",
+  "scope_sha256": "78e62efc423f7acd498368207607c5dfc5572dd1840accebe46c38141aeb331f",
+  "old_Q_raw_sha256": "3474f83d65a7fd4ffbc84b124b147f8cafc6ab4b0fcd2ed3ba3c39eed58d1550",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "completed_roots": [
+    50,
+    94,
+    95,
+    97,
+    98,
+    99,
+    51,
+    62,
+    72,
+    79,
+    85,
+    86,
+    67,
+    71,
+    80,
+    84,
+    88,
+    90,
+    60,
+    69,
+    76,
+    77,
+    93,
+    96,
+    52,
+    53,
+    68,
+    70,
+    83,
+    87
+  ],
+  "completed_chunks": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "complete_thirty_root_coverage": true,
+  "only_triangle_containing_roots": true,
+  "all_62_roots_covered": false,
+  "count_point_loaded": false,
+  "optimizer_called": false,
+  "limits": {
+    "overall_seconds": 180.0,
+    "chunk_seconds": 60.0
+  },
+  "chunks": [
+    {
+      "chunk": 0,
+      "root_types": [
+        50,
+        94,
+        95,
+        97,
+        98,
+        99
+      ],
+      "preparation_path": "chunk-0-preparation.json",
+      "preparation_sha256": "1fbd0299c57fd6eeff2271df7b0f7b68804d5f37d5c8d72b32c1e4ea0ab76d24",
+      "model_raw_sha256": "90d3c3765451119da96bc5e783d06eb99e08b5f978d5ff5c680417aaf9b601db",
+      "model_gzip_sha256": "a55bca41e62545df2c2028db150b1ffd69989ae04e683d1f373a63097e7f0c54",
+      "controls": 115,
+      "seconds": 34.34015195500251
+    },
+    {
+      "chunk": 1,
+      "root_types": [
+        51,
+        62,
+        72,
+        79,
+        85,
+        86
+      ],
+      "preparation_path": "chunk-1-preparation.json",
+      "preparation_sha256": "f3c53599a961c9d11e88a98fab5e9fa21b969adf6480e71d833c931b29741809",
+      "model_raw_sha256": "1e71add7176a7d9496f507fa5004ac17d23b07ebe3811544b354753aaa9e12f2",
+      "model_gzip_sha256": "56671dc76a221c54a406104983275bf3d53fc2991b5a2eb8592d38677d456edf",
+      "controls": 156,
+      "seconds": 30.95747384299466
+    },
+    {
+      "chunk": 2,
+      "root_types": [
+        67,
+        71,
+        80,
+        84,
+        88,
+        90
+      ],
+      "preparation_path": "chunk-2-preparation.json",
+      "preparation_sha256": "14efb0ede005fb7e841ec972ddf104a65237bce020da06fd4e1626dfb3e697ed",
+      "model_raw_sha256": "6cfc16a89368c9ddf95dc882e48f96875922da852bad7f56cb66d0afdc6054da",
+      "model_gzip_sha256": "9f6f95d0a1c0d2507f12228823c643897160e855bcd943c8f9ce7b215666aeef",
+      "controls": 163,
+      "seconds": 31.528581535996636
+    },
+    {
+      "chunk": 3,
+      "root_types": [
+        60,
+        69,
+        76,
+        77,
+        93,
+        96
+      ],
+      "preparation_path": "chunk-3-preparation.json",
+      "preparation_sha256": "933ec5c52321f0cdfd2b8ee8225014ae5a334a20ff7f75e57c54fc7c33952465",
+      "model_raw_sha256": "bbc3cc597ae57f71ed54fdd2c97f27a007393519a19047c527d73b68263371bb",
+      "model_gzip_sha256": "b93c6a042dd6ae8aefe793ec189066a80013713335c40ad5731d9e5e75bfb890",
+      "controls": 153,
+      "seconds": 34.257270460002474
+    },
+    {
+      "chunk": 4,
+      "root_types": [
+        52,
+        53,
+        68,
+        70,
+        83,
+        87
+      ],
+      "preparation_path": "chunk-4-preparation.json",
+      "preparation_sha256": "6b862f19e1858558fee8ec433f0948cc2964fad2c83a0cfe818871512837814c",
+      "model_raw_sha256": "62934903e363cc85f718ab0fcf7acd9ca945adb8201766e2e6f3b33cf029d087",
+      "model_gzip_sha256": "1a8c8da1a559834b7efae32dab207599009c3001b832325d6e4b8389b7b5c068",
+      "controls": 169,
+      "seconds": 33.098824193002656
+    }
+  ],
+  "classes": 2374,
+  "lower_entries_per_family": 127647,
+  "family_blocks": {
+    "minus": 30,
+    "plus": 30,
+    "scalar": 30,
+    "Q": 30,
+    "minus_schur": 30,
+    "plus_schur": 30
+  },
+  "family_nonzeros": {
+    "minus": 124084,
+    "plus": 239743,
+    "scalar": 239743,
+    "Q": 239743,
+    "minus_schur": 236020,
+    "plus_schur": 236971
+  },
+  "candidate_union_bound": 2967175,
+  "exact_stabilizer_divisions": 958972,
+  "coefficient_partition_identities": 239743,
+  "all_thirty_old_Q_tensors_recovered": true,
+  "scalar_support_matches_prior_positive_union_census": true,
+  "positive_root_Gram_leading_minors": 360,
+  "exact_inverse_entries": 2160,
+  "literal_host_controls": 756,
+  "model_raw_sha256": "c0c518ad5c4446a3318261bfa4664b4c7299542e08af9b43471152f8bcf1bfc4",
+  "model_gzip_sha256": "865fd8b034387d297ea0bdac4774e5d370c621b46720f241d3733b5b02d34a67",
+  "model_raw_bytes": 23497393,
+  "model_gzip_bytes": 6090305,
+  "constant_class_vector_is_not_assumed_to_be_a_kernel": true,
+  "point_query_requires_separate_gate": true,
+  "seconds": 172.11447084599786
+}

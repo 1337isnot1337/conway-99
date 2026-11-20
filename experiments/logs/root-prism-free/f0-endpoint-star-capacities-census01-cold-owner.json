@@ -1,0 +1,19 @@
+{
+  "status": "CHILD_EXIT",
+  "child_exit_code": 0,
+  "command": [
+    "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+    "experiments/workspace/root_prism_free_f0_endpoint_star_capacities.py",
+    "replay",
+    "--preparation",
+    "experiments/logs/root-prism-free/f0-endpoint-star-capacities-preparation01.json",
+    "--record",
+    "experiments/logs/root-prism-free/f0-endpoint-star-capacities-census01.json.gz",
+    "--output",
+    "experiments/logs/root-prism-free/f0-endpoint-star-capacities-census01-cold.json"
+  ],
+  "wall_limit_seconds": 60,
+  "elapsed_seconds": 4.622586889003287,
+  "automatic_retry": false,
+  "log_sha256": "cdfe3e17d4fbcf6a930a29d3f91a4cb7ad21e85a4601765baf76f2e5d430d1f7"
+}

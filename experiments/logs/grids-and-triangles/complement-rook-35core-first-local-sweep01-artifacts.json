@@ -1,0 +1,786 @@
+{
+  "status": "terminal28-matching coverage:5 verified exclusions,23 UNKNOWN, exact conditional edge clause and144 images",
+  "dependencies": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-preparation-artifacts.json",
+      "sha256": "3a3cac27c8750838950f64251bb855ff33fa7878636aef83b02d142ae176f034"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-incidence-case0000-pilot01-artifacts.json",
+      "sha256": "072b3b642b097e801b58f8132503d4998bdee0457033283e889baf0dae7d6bee"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-Gram-control01-artifacts.json",
+      "sha256": "277ff428d661e03453aab768d78e1da42b94a4b566e0087642aff2156a8600de"
+    }
+  ],
+  "files": [
+    {
+      "path": "experiments/workspace/complement_rook_35core_first_local_sweep.py",
+      "bytes": 10171,
+      "sha256": "247952d65c5adcfac5c4c3309a1f63b482843f7ee39fc4cf5f0184d8e36350bc"
+    },
+    {
+      "path": "experiments/workspace/complement_rook_35core_matching_cover.py",
+      "bytes": 15303,
+      "sha256": "35fc4cd51f500f04df4627623747bb2daa307f28b54dddfc225ca5d65301b3fc"
+    },
+    {
+      "path": "research/grids-and-triangles/complement_rook_35core_first_local_sweep.md",
+      "bytes": 7071,
+      "sha256": "48698ea087b57d6d0b7e3359b5c41fe87f813005edc710a35064f6cf8019e632"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01-prepare.log",
+      "bytes": 518,
+      "sha256": "c76635d9ec49cfd588c138eeb593674d187fd69bfa7e21c66d4e8f2ff06dd770"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-isomorphism-scout.json",
+      "bytes": 14868,
+      "sha256": "4d2b7da8372a3c1d9d48873a30c10576b7b595fa1c97b3bff8ff490e86326862"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-matching-cover.json",
+      "bytes": 674534,
+      "sha256": "106cbf443bb42be51f46a3a70b324d1e5089f3fa55d830c6857c7243fa0d3a79"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-matching-cover-clauses.cnf",
+      "bytes": 5205,
+      "sha256": "0445460dc5fe0d008ff7cf91bcd10eb099af98391afae41474a6853631ca3683"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-matching-cover-generation.log",
+      "bytes": 489,
+      "sha256": "dcd5e53f8051dfef54963d7c03e2894bed14a92173e3fde42f5c2e71599a0a86"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-matching-cover-replay.log",
+      "bytes": 489,
+      "sha256": "dcd5e53f8051dfef54963d7c03e2894bed14a92173e3fde42f5c2e71599a0a86"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01-segment01.log",
+      "bytes": 8850,
+      "sha256": "38115fb311f4a8c892232fe403a1a1ee572d97d3d653ff1ef973eb96f1d1775c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01-segment02.log",
+      "bytes": 8860,
+      "sha256": "56f82ce9f15a621f16ac27ad0ea5dc319ce75ccf64126d8f361b7683c382e37c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01-segment03.log",
+      "bytes": 8945,
+      "sha256": "ce5a7ca5123c0bf194111bfa1b2972f13dacbd83ce60f54ec512db4a8eb01083"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01-segment04.log",
+      "bytes": 3756,
+      "sha256": "69b9a2f596b54209eb7605d76f96a70492d1f9dab98af6ab830b5f76506c0b03"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/direct-drat.log",
+      "bytes": 388,
+      "sha256": "7d2060a53b5119f5ffca4fea882314552acd8967ba1d9d27240fd995960807e8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/result.json",
+      "bytes": 1943,
+      "sha256": "493a893f2ec6db425b6d1fbc577bbf9913d304d69ad22465861a491310f9a60f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/retained.cnf",
+      "bytes": 147233,
+      "sha256": "2c3c5ab5b4c7b834984a7b8bf0ccbddae96c60700f37670629a8522cede99b2c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/retained.drat",
+      "bytes": 357162,
+      "sha256": "fe47a2fee85aca4873684c2fc33ef75c0e047430d57ef4dad933a97969a47768"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001-cold-replay.drat.log",
+      "bytes": 383,
+      "sha256": "9d264351072d4e29adfbb6d2c22be78a2dc91e3b80bf07530b1f7d4779117300"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001-cold-replay.json",
+      "bytes": 612,
+      "sha256": "901049fb28dda073bf4018f46a0e083fae18674c69ec0e04e5a412ede621586f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001-model.json",
+      "bytes": 304050,
+      "sha256": "5bf64ad5bce96c589dbfdc8e95f9c3b6d0a1f339d1eef738597527fe0eb8c5d2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001-stages.log",
+      "bytes": 5605,
+      "sha256": "18393c6db87d77ca3f57ddb6b626c9ad06332e2c7a0d8149d4c569dc160c2dcc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0002/result.json",
+      "bytes": 961,
+      "sha256": "6f3243f6f66db6fb4d1eea3aaa6911854577f30c6804b15afaa680caae84df90"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0002-cold-replay.json",
+      "bytes": 316,
+      "sha256": "b440f4e319a398d00f1f87aac651c1c3e4f7e907003ac1eaae6cb2e5c061e264"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0002-model.json",
+      "bytes": 319897,
+      "sha256": "84793fff0bfbb7bcbeb5b50974dfefad596b4dc72fa35619190eb1b871082883"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0002-stages.log",
+      "bytes": 4327,
+      "sha256": "06d76c25ae3b1781f8cc6fc67d7bb64c09cc3456179b1558e529814f57fffe66"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003/direct-drat.log",
+      "bytes": 392,
+      "sha256": "776067b31315e58c5e674c57c9ff22d48bf009593961faf77e798aaf43a8b9d4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003/result.json",
+      "bytes": 1946,
+      "sha256": "bce6f692db3cabd2b4be4249264e9cfa2f995cb17da80227b9fea83295b5e19d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003/retained.cnf",
+      "bytes": 348338,
+      "sha256": "ef0f2d19f9ed0556a274292f25b00f3cdb89a5fa19be97be8eb57e0f382d779d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003/retained.drat",
+      "bytes": 3094372,
+      "sha256": "ed2404890222aacfdc93f5fa0a52cf8b8623a1da383d60f11dc5e0fc0781758a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003-cold-replay.drat.log",
+      "bytes": 389,
+      "sha256": "90ef81a242d6d7940c1d3d6e874aa431196429d9e71fd18aff4226c0aacb39ec"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003-cold-replay.json",
+      "bytes": 613,
+      "sha256": "a0569c45293db3dfd7f6c674daa5e97efd85fae00ae3ba92e527bef00b6c5952"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003-model.json",
+      "bytes": 305410,
+      "sha256": "45c49ce9765cb1a70157e7d0bfaec3227632090285b7d296c22bcac0a3ec9dc1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003-stages.log",
+      "bytes": 5608,
+      "sha256": "8a085ba8043e24cbe5fdc856a34a822684fa5d73249f58f6517ed0e7de0d2c5b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0004/result.json",
+      "bytes": 965,
+      "sha256": "f9f8616c6cd6c1f95eea5e08c81015d9de750b4f3796282e7679c4e0230640e5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0004-cold-replay.json",
+      "bytes": 316,
+      "sha256": "0e7107241ba678d4ded2b86b9e8790d5d62b409c0fface8b6680274779902f5b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0004-model.json",
+      "bytes": 313587,
+      "sha256": "43fc0c40a724f4c287df770fce58abc45835ee7534f2b7e5cd06d3baf380cfde"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0004-stages.log",
+      "bytes": 4331,
+      "sha256": "eca3b1ada320a13bd49a415b47dca72183f27458275729cea976c285fa9dfd68"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0005/result.json",
+      "bytes": 964,
+      "sha256": "14474f4ee925c2edab3184df7ee334bb79076d9fdb46ce2a1ca1e836b792d813"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0005-cold-replay.json",
+      "bytes": 316,
+      "sha256": "40e3259eb36a7937d4da64aab4e402f26fb49208616e74d35f7faf73a5cfbf8d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0005-model.json",
+      "bytes": 305822,
+      "sha256": "5d85e593988dbb9974ffe666ce426080a33d39a9fe6ef1a4b769de951c457a72"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0005-stages.log",
+      "bytes": 4330,
+      "sha256": "5c58d9f32ba7a0106b0225e7cd004a980b93155aecc674d68b06cbaac62f5e10"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0006/result.json",
+      "bytes": 966,
+      "sha256": "e67fa9019ae10054d64edc2d74312047a01aa8ff744d41762c15ecea76650041"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0006-cold-replay.json",
+      "bytes": 316,
+      "sha256": "0bfd370a05eaf9e0ae2bf0d90ab3d08ec9d2119fff6aff3035d260027f9bdb43"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0006-model.json",
+      "bytes": 307702,
+      "sha256": "1e5181073f25f10cd5ea26b6769f1fcf2ee3c9544ec21222710143fddf5ff9ee"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0006-stages.log",
+      "bytes": 4332,
+      "sha256": "d6272410626d0db454fe3133ec7893479371f8f23ef47f07c690629a2a0570b1"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0007/result.json",
+      "bytes": 965,
+      "sha256": "064ded8561e8583c3ac29e0511a16bb8e0e73b22b11ca0f3dd54cb6155b15eac"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0007-cold-replay.json",
+      "bytes": 316,
+      "sha256": "e329babf9e0c2ba96f85595d7d0b42e934481b2fd5f9faece03ee38a64e16dc8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0007-model.json",
+      "bytes": 314801,
+      "sha256": "542eab4ce16bb3fe569617758bb8c0209bf578ba2ce59142a00239476c6570ba"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0007-stages.log",
+      "bytes": 4331,
+      "sha256": "60d8264f819311797c9961a376d72df717568e989e4aa5893bb697f4816e0ecc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008/direct-drat.log",
+      "bytes": 388,
+      "sha256": "40b5414c03bbefe579d9b4734648357f9de4541eddaec5edf21c5711de010b3c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008/result.json",
+      "bytes": 1944,
+      "sha256": "34040d4487da81614f75f581ed65d6dc25cccf2bcf84070665c764eb1a1619df"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008/retained.cnf",
+      "bytes": 214942,
+      "sha256": "750507fc9497915db362e21e6a2890d34bee36203e1630514de13f74d05a5a00"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008/retained.drat",
+      "bytes": 510315,
+      "sha256": "c334c809af70fd4082a928f1d5f17da745b9d0266c51f797a6bc57f5a6f319ca"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008-cold-replay.drat.log",
+      "bytes": 385,
+      "sha256": "1cfd54ce7d97ae88401b0be5b9b9af85b51a2cc36589f704d239198bee933bee"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008-cold-replay.json",
+      "bytes": 613,
+      "sha256": "debb3266458eb997f47ee884d8c2490152ff78226f640443469ded05a9d928fb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008-model.json",
+      "bytes": 300351,
+      "sha256": "05e7941f6ab205ab424346e5f9d747215fe96676a67cbd030c1d0336467acc79"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008-stages.log",
+      "bytes": 5606,
+      "sha256": "803b9ea77d014d40b105475658772fb85dc96add74bf1ea861973e1d0133ef05"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0009/result.json",
+      "bytes": 961,
+      "sha256": "4408337d28a9f28764f326d633de139febf2c0340a09f0e911654d6d664bc847"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0009-cold-replay.json",
+      "bytes": 316,
+      "sha256": "e5013302ccf8f7d355c807af55c32a77680a65c3e5b11b2931ad192a5809a19f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0009-model.json",
+      "bytes": 319026,
+      "sha256": "ed7ea0ad72e414fea7cd51cd7ae7a2610f0d4501c171e67b3eead9391d57f0ee"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0009-stages.log",
+      "bytes": 4326,
+      "sha256": "974fe7bca505f3fd1d1808dddc073c6a5ffba13c07712b8062aef0ae3c27e6cc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0010/result.json",
+      "bytes": 962,
+      "sha256": "560a80096b1917a1f00e08d7f6fe888bf01a9476baa70d6183bad94507edbb2e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0010-cold-replay.json",
+      "bytes": 317,
+      "sha256": "dbdf44d26680136fe5475dc572e87257ba9ca60208d7ca614aeb309860ae2228"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0010-model.json",
+      "bytes": 304730,
+      "sha256": "861d5ea402b0af0040dc0b3cfd408d18ef4f348b6307dc875e9c7a81ca72d336"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0010-stages.log",
+      "bytes": 4331,
+      "sha256": "73776e6bc20d16f2c1e8051f5f03135e30dc6e6a1097837d04b046b93731fc5a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0011/result.json",
+      "bytes": 964,
+      "sha256": "08090dcfb09082224e085311d4cc1c95b3756fdf476efd21436559309acdf3aa"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0011-cold-replay.json",
+      "bytes": 317,
+      "sha256": "79c55d81f1d76502fc554200b3dd9fdc321c154577afcd126678074924e961f4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0011-model.json",
+      "bytes": 317179,
+      "sha256": "d4170d64e56bc68a683102dae7144cf0273672629665887d7a71e13123538892"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0011-stages.log",
+      "bytes": 4334,
+      "sha256": "40d8b35a8219a21b3ed8af6e979e097f9ad798e130938181e3baa5f11ad9a6b8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0012/result.json",
+      "bytes": 964,
+      "sha256": "00a570bb916412df3b90c03ec7bf0559b7d0c28e778758f8157983640c424540"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0012-cold-replay.json",
+      "bytes": 317,
+      "sha256": "c401188d3192f77ffcda5dae1167b70009c7276206deaccb2cd6a337fa7dff5d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0012-model.json",
+      "bytes": 310082,
+      "sha256": "504bb940d4e232c20dac085ee0e8f215b7412ad30d1132f864591aa7adf0432b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0012-stages.log",
+      "bytes": 4333,
+      "sha256": "720f051de777d5cee32722154e6a07c1c0ba58082465dfdca487e0069a956049"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0013/result.json",
+      "bytes": 965,
+      "sha256": "9858d7241b578cd323fc8579dc7aaea72b102a2bcd20c7f6c7ff3b2010977f4c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0013-cold-replay.json",
+      "bytes": 317,
+      "sha256": "4d561901f59ac77fb5ab858750d5f257fafcee2f3786c0e58fa180c27d0bc408"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0013-model.json",
+      "bytes": 311098,
+      "sha256": "4d42e07af88d9784f8876679a523a3daf8b5f52216395513b599ed8fc12b3190"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0013-stages.log",
+      "bytes": 4335,
+      "sha256": "8e73047c2ad0611ee33f0cc45d3674d2422af8ace8bbae913d1238482f3e797a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0014/result.json",
+      "bytes": 964,
+      "sha256": "e3e5ff9bea3cbc1d159d4a2be97294e7eb2c0ab7a7aefe3ec9d6e8ae8f66e1c4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0014-cold-replay.json",
+      "bytes": 317,
+      "sha256": "d04a6e567a136983a11d1257891a3bddf6ce94c91359ce4d035f4c210854aee3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0014-model.json",
+      "bytes": 318915,
+      "sha256": "e9cfc8ce167d83ed9ba9334ad0cb93044f844375790bc2c91d4259f5115b3d0d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0014-stages.log",
+      "bytes": 4334,
+      "sha256": "b51bc71bb1f3e5fe5f22ec0533bc1a43ff5bd1d7c0d20be1e1a0a7fed0813504"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0015/result.json",
+      "bytes": 964,
+      "sha256": "a15b0a534b6588788e37b2521c4640f432f8615850088eee64f81995be321ca9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0015-cold-replay.json",
+      "bytes": 317,
+      "sha256": "2f349e6b35562f6adf20cd1745df792e1466181c5051c37e0f36cdf0e864a66e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0015-model.json",
+      "bytes": 322061,
+      "sha256": "ebc0ebe7fa0ce9bf719eef8f1bead11a6700d2bebb01c9248a24ebb1bd2be396"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0015-stages.log",
+      "bytes": 4334,
+      "sha256": "e5ae8a1233f8be9a859e8cf9721a508737194f8f1da955c4b4a16abfb27e1229"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0016/result.json",
+      "bytes": 967,
+      "sha256": "80525f5df353995bb489555883c8404a0ae694d2e6ba21007ba8bc3ec407d0c4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0016-cold-replay.json",
+      "bytes": 317,
+      "sha256": "73a53b7cf4a9c096becdff6ffbbf4f69007869ddc2b8bebbcef44b2ddbe3b1e7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0016-model.json",
+      "bytes": 314078,
+      "sha256": "d04d4d07dacb06150a7e6121f7df0b68bd9c70a70869a4434abf3a137a803aea"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0016-stages.log",
+      "bytes": 4337,
+      "sha256": "8a9eebc8eb7e8ae9d79ca0e69825d44eb7dc1a556113643d83a7b359c254748c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0017/result.json",
+      "bytes": 967,
+      "sha256": "515a7614ff4c4f487d3d6542feab1dcc54006a5d6e181f3365ddae7ee6580446"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0017-cold-replay.json",
+      "bytes": 317,
+      "sha256": "1a398318a65b10a18fb5782636a05d892ecdc16d12f66a529361e587b620a625"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0017-model.json",
+      "bytes": 325880,
+      "sha256": "840a6eba986b56c20ef81c5b00a1700df9455b4fd1245dbd2121fc346a33e1ea"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0017-stages.log",
+      "bytes": 4337,
+      "sha256": "503cb40c4273d7365a07e25b74d6fb9cd2ed42bf9e1c075986c1e45805119d97"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0018/result.json",
+      "bytes": 965,
+      "sha256": "7cf575f549cfebad797399212ac8e01c5e1c2e0486eb8dddf31870cb8aa6cfc8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0018-cold-replay.json",
+      "bytes": 317,
+      "sha256": "e4e88e4a3480f4fcaf7210db7381202480134b9aa13f924904b7a987d9922129"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0018-model.json",
+      "bytes": 318389,
+      "sha256": "7427e09fa5841c803c54106fdb787e284c4831118c53141974c2c878ade5dc90"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0018-stages.log",
+      "bytes": 4335,
+      "sha256": "bbb9284d174fdd5e603ed355a13a6eb689184232c04952d28ece81be6ccf7ea3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0019/result.json",
+      "bytes": 966,
+      "sha256": "f91f3c678a7d3cbacc9832741a641f6ddfd48adf09108b9e43edaf131a61d2c6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0019-cold-replay.json",
+      "bytes": 317,
+      "sha256": "051cf8efc3fd4d20a6e2b19950b9cab599e8d1e06c8884f5374e1ccb39a68138"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0019-model.json",
+      "bytes": 320753,
+      "sha256": "be7877de0b0b11c0d74a1f4a4404a090d52910cb23cea708b3ef7815524b8461"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0019-stages.log",
+      "bytes": 4336,
+      "sha256": "47884a37ab840d24997b2a46816c9e3119ea57013ec7990dbb1c79ba7c6536c0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0020/result.json",
+      "bytes": 966,
+      "sha256": "a0873b29ee037034c4dbf197cc21df23c45b4a3b727be3f1d5fd9c2b5c56b4fe"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0020-cold-replay.json",
+      "bytes": 317,
+      "sha256": "ce4018ae5f53d7dcf5b7d8fdade9d0469bf575b860eafc1d5be61b0d889d308c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0020-model.json",
+      "bytes": 321254,
+      "sha256": "dad67fb8685a964c10f346437da089291564c691a72bf71e06920d0fa5fef469"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0020-stages.log",
+      "bytes": 4336,
+      "sha256": "0f388d552aaac364a64dab49e4231fe967a1a483ef70a13bed0b3673d0ae2452"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021/direct-drat.log",
+      "bytes": 392,
+      "sha256": "ee1255afdc25a4c5366bf052b06a5263ee376f8948843063e116dabe2304a202"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021/result.json",
+      "bytes": 1946,
+      "sha256": "910c0e1aae9404d500610fa4f73f6d24a524930dbd2880d5c1526bdbcabb200d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021/retained.cnf",
+      "bytes": 269435,
+      "sha256": "0d3364899e907293c037adf44ef600fca49dc982fba28a2bbf819dacb43adea9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021/retained.drat",
+      "bytes": 1683016,
+      "sha256": "d7c9db0e0314dc1c89bfc0db2400872b6d0c135add2415e228a642b92a9e1865"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021-cold-replay.drat.log",
+      "bytes": 388,
+      "sha256": "b90f80b4b7fdf4a9c238f05f72fe341b28984754e419fb94ebe9cb8e1f0a2d97"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021-cold-replay.json",
+      "bytes": 615,
+      "sha256": "f2f03f78e61511bdc3ae5357306e13e9e15a631246af0d1d016dc52bfd8e42c8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021-model.json",
+      "bytes": 309907,
+      "sha256": "782d676f8962900cd34de617ce3013ed799a23643d1000c158cc4a1e89f4e12f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021-stages.log",
+      "bytes": 5614,
+      "sha256": "ba0538dd75142d0a258df38961717a1c1338eff4e34e767de8ad6d4c87efb07a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0022/result.json",
+      "bytes": 966,
+      "sha256": "a6daab73d11a4202264c679b02fe6678492838b3e8eff38d09dd1e8cfc21e85b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0022-cold-replay.json",
+      "bytes": 317,
+      "sha256": "18ffa97e7744d86c407b07244242b5900ad622b8c1ad8924306f08f111fb93c0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0022-model.json",
+      "bytes": 322999,
+      "sha256": "0f21e0b18ce03bc14c0682dd006352e685031a35acb7306da379f454918d53c6"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0022-stages.log",
+      "bytes": 4335,
+      "sha256": "e4f0e83bebdec83b89e17fad4247dafa7ead6a6866427620678561cbdc60ee6b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0023/result.json",
+      "bytes": 964,
+      "sha256": "5c58ce45ee2bec7fe5c3a1f5c2768a89af0982ad336c9ba9e2fa24d9d194d640"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0023-cold-replay.json",
+      "bytes": 317,
+      "sha256": "81d4117eb77b280bec8280d1f968146af46684747efab9bf75dba09b2c0ac6e7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0023-model.json",
+      "bytes": 330296,
+      "sha256": "48d5b9cc1e943b57ddbd1b08f7c780cd61071c2719842c79bcd2d4472b7cc523"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0023-stages.log",
+      "bytes": 4334,
+      "sha256": "d56d6c28a1ab484900ffb5282f5308c19457e9e04022debd8eebed8f0d9e1d61"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0024/result.json",
+      "bytes": 967,
+      "sha256": "11ecd2eb493a25bfb4fe5ddde7a7b50f3e996362cbf8e8d76a04658ba420a33e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0024-cold-replay.json",
+      "bytes": 317,
+      "sha256": "015066014a19d126627c7a1cca59263f4534651f0d13e5fb4801901997b6cd99"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0024-model.json",
+      "bytes": 326658,
+      "sha256": "f7126e474959c03b7b2bd5aa846c89724adcb38bc546ab3952f5629258005406"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0024-stages.log",
+      "bytes": 4337,
+      "sha256": "890b3612dc7e1b97289b63a1bfa98640904f2d32f095e1788807aece1b11eadc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0025/result.json",
+      "bytes": 967,
+      "sha256": "e48775e7c54a3f49d79445e704dfed327053ee13341aaa75af4998153abed41b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0025-cold-replay.json",
+      "bytes": 317,
+      "sha256": "8a1bc01cfe3da3967f296d172aeb4e1f9b999551cff0d70c06b2acf972c80ba8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0025-model.json",
+      "bytes": 334470,
+      "sha256": "aa16553565fcbe152967267e62862f18c658e22c2afcf3a7eb78c012fcf1ff55"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0025-stages.log",
+      "bytes": 4336,
+      "sha256": "ca5930c6184cd3d3d0b9cf3526829a27931b1ab991f60195cf8adcce29a2d1eb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0026/result.json",
+      "bytes": 961,
+      "sha256": "423f6dffb3ce27014886ebcbfd89d1d76e84ca575a37f2b897a8a2c13f8e714d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0026-cold-replay.json",
+      "bytes": 317,
+      "sha256": "882124d8f73e6867dcd031eaaaa5cb7338af47fa7d11cea2b2a542276d910e42"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0026-model.json",
+      "bytes": 327812,
+      "sha256": "533208a7f6b0153fb2508e985f6a3b7341a5b79eeec1e1e9223233408a6160b0"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0026-stages.log",
+      "bytes": 4331,
+      "sha256": "9046b62780c2cf852ba2ab4bf7fc8f72fb58c7c1afc05a79a5e58b14155a4ccf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0027/result.json",
+      "bytes": 967,
+      "sha256": "787e8b7c01af4b7a9f70a26aead79211bd684297f9fcabba4430e5ff939aba8f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0027-cold-replay.json",
+      "bytes": 317,
+      "sha256": "7b584aa1437f56496585c1d7000f705eb8a775fa3432dc0e6eb03e80e84161e2"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0027-model.json",
+      "bytes": 328305,
+      "sha256": "c416c0001564ed0ccd7a95326fba09c97c026f47727caa5628a8d8af4bb66630"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0027-stages.log",
+      "bytes": 4337,
+      "sha256": "7a48457d2ff40383884e60f6a9e00b34edec8bdb6d23847a6a17233ea7e3c66f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/manifest.json",
+      "bytes": 26495,
+      "sha256": "11a57a333b5b4fe9299fd153ea85391d7acd88fd719f341728267750f146c6fb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/progress.json",
+      "bytes": 31455,
+      "sha256": "586feeabf2490c895f5eb37492880e593b8f35a27b16fd1cef80f35b09ad911d"
+    }
+  ],
+  "file_count": 139,
+  "total_bytes": 16162246,
+  "verified_case_indices": [
+    0,
+    1,
+    3,
+    8,
+    21
+  ],
+  "UNKNOWN_case_indices": [
+    2,
+    4,
+    5,
+    6,
+    7,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "conditional_forbidden_edge_signature_indices": [
+    18,
+    26
+  ],
+  "edge_cover_case_indices": [
+    0,
+    1,
+    8,
+    21
+  ],
+  "distinct_nonsubsumed_seven_literal_clauses": 144,
+  "whole_local_set_excluded": false,
+  "whole_complementary_core_excluded": false,
+  "old_weak_joint_CNF_entailment_claimed": false,
+  "raw_proofs_not_required_for_publication": [
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0001/raw.drat",
+      "bytes": 1127506,
+      "sha256": "13bab1c2b905826580fe387de1dff113a913b757352da9255b5e491913474d87"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0003/raw.drat",
+      "bytes": 6803164,
+      "sha256": "3f971dd7ab1ee7beb294d380de0acaa9eb6dd5826b0385679bfd9a499e28c550"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0008/raw.drat",
+      "bytes": 988532,
+      "sha256": "9ac601f3a41464c22803367928e231d29a816626aa45cf7541dd913d8ecacf0d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-sweep01/case0021/raw.drat",
+      "bytes": 3629673,
+      "sha256": "fcae37aa553d171bb0e97221eae3c647ba7cf10483d80df941487a28400e4f22"
+    }
+  ],
+  "solver_return_seconds_sum_for27_new_cases": 255.7144528490062,
+  "maximum_solver_return_seconds_for10_requested": 15.308360905000882
+}

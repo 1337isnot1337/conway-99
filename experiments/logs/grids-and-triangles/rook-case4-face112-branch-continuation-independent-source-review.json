@@ -1,0 +1,38 @@
+{
+  "status": "PASS: full continuation source review; explicit disjoint unfinished scope",
+  "reviewer": "root",
+  "source_path": "experiments/workspace/rook_case4_face112_branch_continue.py",
+  "source_sha256": "71e27c5a8b0ff9e268979637d45f6e919806e3653228ece88b69764834d9f478",
+  "preparation_path": "experiments/logs/grids-and-triangles/rook-case4-face112-branch-continuation01-preparation.json",
+  "preparation_sha256": "6d307ce3cea403d8ba4f37b3b1acd78bf9bc7111ab620a3a22c275f7d49e7ca5",
+  "complete_source_read": true,
+  "scope": {
+    "old_complete_forward_never_repeated": 50,
+    "new_forward": 14,
+    "old_complete_cold_never_repeated": 28,
+    "old_unchecked_cold": 22,
+    "new_cold_maximum": 14,
+    "only_partial_restart": 55
+  },
+  "unchanged_engine_and_supervisor": true,
+  "unchanged2390rows_and178533covers": true,
+  "authorized_owned_children": {
+    "forward": [
+      60,
+      65
+    ],
+    "cold-old": [
+      60,
+      60
+    ],
+    "cold-new": [
+      60,
+      60
+    ]
+  },
+  "control_runs_repeated": false,
+  "source_review_production_calls": 0,
+  "all_assignments_conditional_on_positive_branch_assumptions": true,
+  "no_branch_exclusion_without_full_exact_trace_replay": true,
+  "case4_excluded": false
+}

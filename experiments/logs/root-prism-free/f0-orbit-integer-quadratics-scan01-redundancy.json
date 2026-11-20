@@ -1,0 +1,803 @@
+{
+  "status": "PASS: the sole retained orbit-population candidate is an existing exact equality consequence",
+  "source_sha256": "24a0b0a7954f198e52084c75f010fe6473f82bc14674d11e062492043d08443c",
+  "inputs": {
+    "scan": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-integer-quadratics-scan01.json.gz",
+      "sha256": "5491abae33fb6faa79b006fe8b789df801ad289ec42167d3c53ec9041627aa51"
+    },
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "moments": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+      "sha256": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    },
+    "reduced": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-reduced-model.json.gz",
+      "sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf"
+    },
+    "parent": {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01.json.gz",
+      "sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69"
+    }
+  },
+  "selected_orbit_union": [
+    6,
+    7
+  ],
+  "literal_support": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    144,
+    145,
+    146,
+    147,
+    148,
+    149,
+    150,
+    151
+  ],
+  "original_Gram_rows": [
+    5,
+    20,
+    37
+  ],
+  "original_lifted_rows": 72,
+  "population_identity": "L=3",
+  "lifted_identity": "R=L^2-3L=2P-2L=0",
+  "target_identity": "3L-P-6=2*(L-3)-R/2=0",
+  "all_literal_to_parent_matches": [
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "core_pair": [
+          0,
+          5
+        ]
+      },
+      "parent_equality_row": 3,
+      "exact_factor": "1",
+      "combination_weight": "2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 24,
+        "full_RLT_row": 4133
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 25,
+        "full_RLT_row": 4305
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 26,
+        "full_RLT_row": 4477
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 27,
+        "full_RLT_row": 4649
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 28,
+        "full_RLT_row": 4821
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 29,
+        "full_RLT_row": 4993
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 30,
+        "full_RLT_row": 5165
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 31,
+        "full_RLT_row": 5337
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 80,
+        "full_RLT_row": 13765
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 81,
+        "full_RLT_row": 13937
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 82,
+        "full_RLT_row": 14109
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 83,
+        "full_RLT_row": 14281
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 84,
+        "full_RLT_row": 14453
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 85,
+        "full_RLT_row": 14625
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 86,
+        "full_RLT_row": 14797
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 87,
+        "full_RLT_row": 14969
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 144,
+        "full_RLT_row": 24773
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 145,
+        "full_RLT_row": 24945
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 146,
+        "full_RLT_row": 25117
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 147,
+        "full_RLT_row": 25289
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 148,
+        "full_RLT_row": 25461
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 149,
+        "full_RLT_row": 25633
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 150,
+        "full_RLT_row": 25805
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 5,
+        "anchor": 151,
+        "full_RLT_row": 25977
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "core_pair": [
+          1,
+          3
+        ]
+      },
+      "parent_equality_row": 3,
+      "exact_factor": "1",
+      "combination_weight": "2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 24,
+        "full_RLT_row": 4148
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 25,
+        "full_RLT_row": 4320
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 26,
+        "full_RLT_row": 4492
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 27,
+        "full_RLT_row": 4664
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 28,
+        "full_RLT_row": 4836
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 29,
+        "full_RLT_row": 5008
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 30,
+        "full_RLT_row": 5180
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 31,
+        "full_RLT_row": 5352
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 80,
+        "full_RLT_row": 13780
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 81,
+        "full_RLT_row": 13952
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 82,
+        "full_RLT_row": 14124
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 83,
+        "full_RLT_row": 14296
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 84,
+        "full_RLT_row": 14468
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 85,
+        "full_RLT_row": 14640
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 86,
+        "full_RLT_row": 14812
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 87,
+        "full_RLT_row": 14984
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 144,
+        "full_RLT_row": 24788
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 145,
+        "full_RLT_row": 24960
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 146,
+        "full_RLT_row": 25132
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 147,
+        "full_RLT_row": 25304
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 148,
+        "full_RLT_row": 25476
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 149,
+        "full_RLT_row": 25648
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 150,
+        "full_RLT_row": 25820
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 20,
+        "anchor": 151,
+        "full_RLT_row": 25992
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "core_pair": [
+          2,
+          4
+        ]
+      },
+      "parent_equality_row": 3,
+      "exact_factor": "1",
+      "combination_weight": "2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 24,
+        "full_RLT_row": 4165
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 25,
+        "full_RLT_row": 4337
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 26,
+        "full_RLT_row": 4509
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 27,
+        "full_RLT_row": 4681
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 28,
+        "full_RLT_row": 4853
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 29,
+        "full_RLT_row": 5025
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 30,
+        "full_RLT_row": 5197
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 31,
+        "full_RLT_row": 5369
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 80,
+        "full_RLT_row": 13797
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 81,
+        "full_RLT_row": 13969
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 82,
+        "full_RLT_row": 14141
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 83,
+        "full_RLT_row": 14313
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 84,
+        "full_RLT_row": 14485
+      },
+      "parent_equality_row": 1494,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 85,
+        "full_RLT_row": 14657
+      },
+      "parent_equality_row": 1481,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 86,
+        "full_RLT_row": 14829
+      },
+      "parent_equality_row": 1624,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 87,
+        "full_RLT_row": 15001
+      },
+      "parent_equality_row": 1611,
+      "exact_factor": "-1",
+      "combination_weight": "-1/2"
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 144,
+        "full_RLT_row": 24805
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 145,
+        "full_RLT_row": 24977
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 146,
+        "full_RLT_row": 25149
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 147,
+        "full_RLT_row": 25321
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 148,
+        "full_RLT_row": 25493
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 149,
+        "full_RLT_row": 25665
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 150,
+        "full_RLT_row": 25837
+      },
+      "zero_after389_proved_substitutions": true
+    },
+    {
+      "origin": {
+        "original_Gram_row": 37,
+        "anchor": 151,
+        "full_RLT_row": 26009
+      },
+      "zero_after389_proved_substitutions": true
+    }
+  ],
+  "parent_equality_multipliers": [
+    [
+      3,
+      "6"
+    ],
+    [
+      1481,
+      "6"
+    ],
+    [
+      1494,
+      "6"
+    ],
+    [
+      1611,
+      "6"
+    ],
+    [
+      1624,
+      "6"
+    ]
+  ],
+  "all15200_target_coefficients_checked": true,
+  "rhs_checked": true,
+  "dyadic_gap": "15/72057594037927936",
+  "new_nonredundant_rows_retained": 0,
+  "optimizer_calls": 0,
+  "conclusion": "The complete1764-form scan gives no new retained inequality; one tiny equality residual is explained exactly."
+}

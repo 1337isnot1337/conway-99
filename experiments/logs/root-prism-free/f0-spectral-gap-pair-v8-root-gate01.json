@@ -1,0 +1,75 @@
+{
+  "schema": "conway99.f0.spectral-gap-pair-root-gate.v1",
+  "status": "AUTHORIZED_ONE_BOUNDED_COMPLETE_PAIR_STATE_CENSUS",
+  "reviewer": "root",
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-v8-configuration01.json",
+    "bytes": 4360,
+    "sha256": "f162e5f9a7d3fd50703816701e352c62ffb75db2e49852394d134b433cacc0fb",
+    "git_blob": "0a5378fa623270486463f6b2332cbcb97c1aef06",
+    "mode": "100644"
+  },
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_spectral_gap_pair_census_v8.js",
+    "bytes": 8072,
+    "sha256": "0babfb05881141e10d1ad0eb2bba6d6df839b83291fd6f29af2ec2fccafbf242",
+    "git_blob": "83167462867c95957756c6c3bcd700b9ebfeda59",
+    "mode": "100644"
+  },
+  "runner": {
+    "path": "experiments/workspace/root_prism_free_f0_spectral_gap_pair_runner_v8.js",
+    "bytes": 2346,
+    "sha256": "81bc2f44d5339f1d986530f6276666768432ab57fa530b4cd756683869d2cb09",
+    "git_blob": "0e1ccd92a12b576a3ebaf7c156b12b65d0114306",
+    "mode": "100644"
+  },
+  "theorem": {
+    "path": "research/root_prism_free_f0_spectral_gap_pair_minor.md",
+    "bytes": 13581,
+    "sha256": "169a4b0c8ba1381302d0eeacb449599a5e4913cd6a55a24bb711e5d4126829ce",
+    "git_blob": "168ca05d66609a2ac7027d3958a4f22c63385e1c",
+    "mode": "100644"
+  },
+  "independent_math_review": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-minor-independent-review01.json",
+    "bytes": 6211,
+    "sha256": "9132b5b87497a608e40ea07361257c963731a5dc758f41ba1d9605726af18099",
+    "git_blob": "4358f7123e3459d78d0efc1670da8031c1fc989d",
+    "mode": "100644"
+  },
+  "independent_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-census-independent-source-review01.json",
+    "bytes": 4523,
+    "sha256": "00b7b49be2119efe8c5d7bb36aa29eff0065945d8a25b3bb28416cb85980073c",
+    "git_blob": "28ed0d012bd75ec33b02283c8dfe52e60cb88ef2",
+    "mode": "100644"
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-v8-controls01.json",
+    "bytes": 612,
+    "sha256": "1ea99a7256277c455ae2ed12a84a666c95071b607c473ccbf883cb890337f14b",
+    "git_blob": "7c71a1634b444cd01064510a7efa8f0352f6fadc",
+    "mode": "100644"
+  },
+  "complete_source_theorem_reviews_controls_and_runner_read": true,
+  "checks": [
+    "Conditioning the scaled projection and the omitted-component bound establish a gap for the actual S, before averaging.",
+    "N=60S, B=2N-180R+30eta^Teta and all entry signs/scales checked.",
+    "Every original pair and each conservative integer n state is retained; every proposed row has its selector/edge guard.",
+    "The wrapper rechecks exact archive/raw identities and source/codec identities; source also binds every primitive kernel entry and eligible-neighbor list.",
+    "Full compact state arrays are preserved. Publication hashing is separate from the 60-second arithmetic/serialization bound."
+  ],
+  "runs_authorized": 1,
+  "limits": {
+    "census_ms": 30000,
+    "wrapper_ms": 60000,
+    "maximum_input_raw_bytes": 67108864,
+    "maximum_report_bytes": 33554432,
+    "automatic_retries": 0
+  },
+  "independent_numerical_acceptance_still_required": true,
+  "optimizer_calls_authorized": 0,
+  "native_model_builds_authorized": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

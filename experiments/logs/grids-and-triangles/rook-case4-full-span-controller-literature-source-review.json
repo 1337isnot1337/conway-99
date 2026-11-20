@@ -1,0 +1,87 @@
+{
+  "schema": "conway99.rook.full-span-controller.source-review.v1",
+  "status": "PASS: independent read-only controller and dynamic-separator source gate",
+  "reviewer": "literature_obstructions",
+  "subject": {
+    "controller": {
+      "git_blob": "e28627202b5f541e43d3b7e4341bca11cf2e6ed6",
+      "sha256": "ddf52b6807e9759337e14c0baff94bbaa9be5c599eaa8bb287277330eab4ec15",
+      "bytes": 28307,
+      "complete_source_read": true
+    },
+    "dynamic_separator": {
+      "path": "experiments/workspace/rook_case4_full_span_parity_dynamic.py",
+      "git_blob": "bc6d7ac1592c7e15b8a42ec972e64ba6b70b9457",
+      "sha256": "ce200386980da082fef8370956f7a546b12e1c9e8979288b5d48a0843a924dd8",
+      "complete_source_read": true
+    },
+    "inherited_cycle": {
+      "path": "experiments/workspace/rook_case4_parity_cycle_v4.py",
+      "git_blob": "8e24223f65addbf36ef223e70263d65188406484",
+      "sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e",
+      "review_scope": "Read the source bindings, original domain, registry/state validation, matrix assembly, numerical call loop and accounting, exact acceptance and finite-box classification, numerical replay, exact cold replay, and state serialization used by this controller."
+    }
+  },
+  "checks": [
+    {
+      "name": "seed and accepted prefix",
+      "result": "The immutable 167115-row prefix is retained. The initial point has exactly three accepted registered cuts; the fourth seed is bound to its separate strict-negative cut proof. The registry has four entries without falsely claiming that the old point satisfies all four."
+    },
+    {
+      "name": "point provenance",
+      "result": "accepted_point binds candidate and cold hashes, cold result and state, exact registry-prefix digest, full row count, original1214 rational coordinates and inherited source bindings. The dynamic separator additionally requires accepted_count equal to the current registry length."
+    },
+    {
+      "name": "exact acceptance",
+      "result": "The numerical stage cannot accept a point or exclusion. A point is promoted only after the inherited exact stage and separate cold stage, including every extended row, 2271 original native rows, all178533 original covers, fixed zeros, strict positivity and all registered cuts. A finite-box certificate requires its separate exact arithmetic replay."
+    },
+    {
+      "name": "append-only cut provenance",
+      "result": "Each new separator entry requires a successful separate proof stage, direct original-Gram parity reconstruction and strict rational violation. Row keys must be new. Later rejecting cuts retain the source point and its earlier accepted prefix; accepted-row counts are updated only after a new exact point."
+    },
+    {
+      "name": "dynamic model scope",
+      "result": "The full286-row parity span, 112-zero domain and2491 Boolean native variables are unchanged. Only the documented point-dependent weights, parity-nearest bits and bound are transported. The native proto comparison permits only rows1103 and2207 to change; all other2206 constraints and all variables remain equal."
+    },
+    {
+      "name": "integer and cut normalization",
+      "result": "Dynamic weights and total box activity must fit the declared signed integer bound. The exact nearest-forbidden conversion is valid: a strictly violated one-flip witness has a unique support coordinate with weight greater than half the total nearest distance, so its forbidden vertex equals the canonical minimizer. The normalized inequality is separately checked from original Gram rows."
+    },
+    {
+      "name": "native limits",
+      "result": "At most four LP rounds and four separator calls are possible. The inherited numerical loop uses at most30 calls per round and subtracts prior recorded runtime from the shared120-second native LP allowance before each call. Requested bounds are checked again in cold replay. The controller caps total LP calls at120. Each separator is one60-second, one-worker call. Actual overruns are recorded and prevent a later call once the budget is exhausted."
+    },
+    {
+      "name": "owned processes and partial outcomes",
+      "result": "Each stage has a subprocess timeout: numerical180s, exact60s, exact cold60s, separator120s and separator cold10s. subprocess.run kills and waits for a timed-out direct child. The outer1860-second owner creates a new process session and kills/reaps the process group on its hard deadline or an exception. Timed-out/nonzero/incomplete stages are not promoted and do not trigger retries."
+    },
+    {
+      "name": "final replay scope",
+      "result": "verify checks saved supervisor, states, stage artifacts, registry proof references and exact point-prefix ancestry. It intentionally does not rerun optimizers, full-span searches, numerical scans or exact solves; the individual bound cold reports carry the arithmetic acceptance."
+    },
+    {
+      "name": "old cut limit",
+      "result": "The inherited maximum_new_cuts is64, so the new maximum of eight registry entries is valid. State scan slots continue to use the inherited value; no stale smaller-cut limit blocks this controller."
+    }
+  ],
+  "declared_limits": {
+    "LP_rounds": 4,
+    "separations": 4,
+    "maximum_registry_cuts": 8,
+    "native_LP_calls": 120,
+    "cumulative_native_LP_seconds": 120,
+    "native_separator_seconds_per_call": 60,
+    "threads": 1,
+    "maximum_declared_child_seconds": 1720,
+    "whole_cycle_hard_seconds": 1860,
+    "automatic_retries": 0
+  },
+  "scope_limits": [
+    "This is a source-only gate, not an execution or record-reconstruction report.",
+    "No subject module was imported; no runtime, model, tensor, native optimizer, point scan, or control suite was run.",
+    "Previously frozen original-model and arithmetic proof helpers remain explicit dependencies; this review did not rederive their data.",
+    "Native INFEASIBLE or UNKNOWN in the parity separator does not certify parity-span exhaustion or exclude case4.",
+    "An exact positive rational selector point is not a binary incidence or graph realization.",
+    "An unchecked, missing or interrupted exact/cold stage cannot justify a mathematical outcome."
+  ]
+}

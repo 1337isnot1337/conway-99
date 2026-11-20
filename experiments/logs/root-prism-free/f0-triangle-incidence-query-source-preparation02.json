@@ -1,0 +1,258 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-source-preparation.v1",
+  "status": "FROZEN_QUERY_SOURCE_CONTRACT_WITHOUT_ACTUAL_NATIVE_OUTPUT_CONFIGURATION",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py",
+    "bytes": 39635,
+    "sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+    "git_blob": "7295da45c769913e7bb8b6b408abac551880a29a"
+  },
+  "parent_source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "independent_terminal_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "git_blob": "5191a03e92e6ab9f1039eeb791518baebdec4661",
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "bytes": 37638
+  },
+  "intended_configuration_path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-configuration01.json",
+  "configuration_schema": "conway99.f0.triangle-incidence-query-configuration.v1",
+  "source_sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+  "variables": 80730,
+  "rows": 300795,
+  "total_terms": 3337296,
+  "limits": {
+    "solver_seconds": 600,
+    "native_allowance_seconds": 610,
+    "owner_seconds": 720,
+    "preparation_seconds": 60,
+    "preparation_owner_seconds": 75,
+    "finalization_reserve_seconds": 60
+  },
+  "parameters": {
+    "num_search_workers": 4,
+    "random_seed": 0,
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "symmetry_level": 0,
+    "subsolvers": [
+      "no_lp",
+      "quick_restart_no_lp",
+      "portfolio_no_lp"
+    ],
+    "num_full_subsolvers": 3,
+    "max_time_in_seconds": 600,
+    "log_search_progress": true,
+    "log_to_stdout": true,
+    "log_to_response": true
+  },
+  "sources": {
+    "base": {
+      "bytes": 15210,
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+    },
+    "supervisor": {
+      "bytes": 26760,
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+    },
+    "model_producer": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+      "bytes": 64900,
+      "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+      "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+    },
+    "model_cold": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+      "bytes": 82846,
+      "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+      "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+    },
+    "model_ci": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+      "bytes": 17497,
+      "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+      "git_blob": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a"
+    }
+  },
+  "known_input_bindings": {
+    "model_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+      "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+      "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+      "bytes": 24503
+    }
+  },
+  "complete_input_aliases": [
+    "model",
+    "model_configuration",
+    "model_preparation",
+    "model_preparation_owner",
+    "model_cold",
+    "model_cold_owner",
+    "model_root_acceptance"
+  ],
+  "pending_actual_input_aliases": [
+    "model",
+    "model_preparation",
+    "model_preparation_owner",
+    "model_cold",
+    "model_cold_owner",
+    "model_root_acceptance"
+  ],
+  "native_model_raw_identity_pending": true,
+  "required_accepted_native_root": {
+    "schema": "conway99.f0.triangle-incidence-native-root-acceptance.v1",
+    "status": "ROOT_ACCEPTS_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_MODEL_AND_INDEPENDENT_COLD",
+    "required_refs": [
+      "configuration",
+      "preparation",
+      "independent_cold",
+      "driver",
+      "driver_source",
+      "owners.preparation",
+      "owners.independent_cold",
+      "model_archive"
+    ],
+    "required_dimensions": {
+      "variables": 80730,
+      "rows": 300795,
+      "total_terms": 3337296
+    },
+    "required_flags": {
+      "complete_original_parent_bytes_recovered": true,
+      "optimizer_calls": 0,
+      "native_query_authorized_by_this_receipt": false
+    },
+    "reference_meanings": {
+      "driver": "The actual native CI terminal JSON; its field keeps the prior receipt convention.",
+      "driver_source": "The corrected native CI Python source descriptor ab120aaa; the runner compares it to sources.model_ci."
+    }
+  },
+  "required_native_preparation": {
+    "report_schema": "conway99.f0.triangle-incidence-native-preparation.v1",
+    "report_status": "PASS_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_PREPARATION",
+    "owner_schema": "conway99.f0.triangle-incidence-native-owner.v1",
+    "owner_status": "PASS_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_PREPARATION",
+    "worker_seconds": 120,
+    "owner_seconds": 135,
+    "mode": "prepare"
+  },
+  "required_native_cold": {
+    "report_schema": "conway99.f0.triangle-incidence-independent-cold.v1",
+    "report_status": "PASS_INDEPENDENT_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_MODEL",
+    "owner_schema": "conway99.f0.triangle-incidence-external-cold-owner.v1",
+    "owner_status": "PASS_TRIANGLE_INCIDENCE_EXTERNAL_COLD_REPLAY",
+    "worker_seconds": 120,
+    "owner_seconds": 135,
+    "mode": "replay",
+    "exact_owner_source": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+      "bytes": 17497,
+      "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+      "git_blob": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a"
+    }
+  },
+  "candidate_scope": "Only the complete accepted exterior relaxation. A checked native vector is not a full graph or second-component realization.",
+  "original_selector_range": [
+    0,
+    480
+  ],
+  "original_edge_range": [
+    540,
+    68934
+  ],
+  "all_variables_checked": 80730,
+  "all_linear_rows_checked": 300795,
+  "row_arithmetic": "Python arbitrary-precision integer sums over every variable domain and every complete linear row.",
+  "preflight_contract": {
+    "cli_mode": "prepare",
+    "status": "PASS_TRIANGLE_INCIDENCE_QUERY_PREFLIGHT",
+    "worker_seconds": 60,
+    "owner_seconds": 75,
+    "optimizer_calls": 0,
+    "checks": [
+      "Accepted model and all exact root/preparation/cold ownership links.",
+      "The entire explicit parameter descriptor, ordered repeated subsolvers, native text and reconstructed wire.",
+      "Native model parse/validate/export identical to the accepted model bytes.",
+      "Large signed integer and all-vector response transport controls; no solver construction."
+    ]
+  },
+  "production_gate_status": "AUTHORIZE_ONE_TRIANGLE_INCIDENCE_MODEL_QUERY",
+  "terminal_schema": "conway99.f0.triangle-incidence-query-terminal.v1",
+  "owner_schema": "conway99.f0.triangle-incidence-query-owner.v1",
+  "cli": {
+    "modes": [
+      "prepare",
+      "run"
+    ],
+    "internal_modes": [
+      "_prepare",
+      "_run"
+    ],
+    "required": [
+      "--configuration",
+      "--directory"
+    ],
+    "production_required": [
+      "--preparation",
+      "--gate",
+      "--gate-sha256"
+    ],
+    "internal_deadline_flag": "--deadline",
+    "assertions_required": true
+  },
+  "terminal_status_rules": {
+    "native_unknown": "UNKNOWN_TRIANGLE_INCIDENCE_NATIVE",
+    "native_infeasible": "UNPROVED_NATIVE_INFEASIBLE",
+    "native_budget_overrun": "UNKNOWN_NATIVE_BUDGET_OVERRUN",
+    "too_little_remaining_owner": "UNKNOWN_INSUFFICIENT_REMAINING_OWNER_BUDGET_NO_CALL",
+    "exact_vector": "EXACT_BOOLEAN_MODEL_VECTOR_AWAITING_INDEPENDENT_COLD",
+    "hard_owner_timeout": "UNKNOWN_HARD_DEADLINE"
+  },
+  "durable_response_contract": {
+    "native_text_before_parse": "response-native.pbtxt",
+    "all_native_integer_arrays_before_parse": "native-vectors.json",
+    "primary_and_every_additional_vector_files_before_parse": true,
+    "response_wire_is_reconstructed_from_native_text": true,
+    "original_native_binary_export_available": false,
+    "all_returned_vectors_and_full_activity_arrays_preserved": true,
+    "all_response_logging_enabled": true
+  },
+  "repeated_parameter_assignment": "expected.subsolvers.extend(value); scalar fields use setattr. Full native text/wire equality and list order are required.",
+  "inherited_query_function_unchanged": true,
+  "inherited_exact_vector_function_unchanged": true,
+  "automatic_retries": 0,
+  "maximum_native_calls": 1,
+  "model_byte_changes_in_query": false,
+  "actual_query_configuration_created": false,
+  "actual_model_output_hashes_invented": false,
+  "separate_native_model_acceptance_required": true,
+  "separate_zero_solve_preflight_required": true,
+  "separate_production_gate_required": true,
+  "separate_independent_terminal_cold_required": true,
+  "no_query_or_preflight_authorized_by_this_record": true,
+  "explicit_source_reuse": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-explicit-source-reuse02.json",
+    "bytes": 69963,
+    "sha256": "9d92b5b91f72b697fe1eec3a479aa5109f8b254199e7b3e37bcbc9d9164431ba",
+    "git_blob": "bc0d4c0a4fe02bc24e5a713dcdb348a033d57075"
+  },
+  "preserved_unrun_predecessor": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_unrun_draft02.py",
+    "bytes": 39628,
+    "sha256": "d7e5307f0554cc308dbdf26dd3225b3cdb9d2628b9261b9896bbb9698ec83d0e",
+    "git_blob": "fc4bedae06976c50d6efafaa80d3155aa397aee4"
+  },
+  "root_receipt_interface_corrected_before_any_preflight": true
+}

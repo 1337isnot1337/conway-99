@@ -1,0 +1,124 @@
+{
+  "parent_path": "experiments/workspace/rook_case4_face99_parity_cover_generation.py",
+  "parent_sha256": "c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd",
+  "child_path": "experiments/workspace/rook_case4_face112_cover_generation.py",
+  "substitutions": [
+    {
+      "label": "module_scope",
+      "before": "\"\"\"Bounded complete-pool generation with two proved integer parity covers.\n\nAll1966 parent native rows, the two new covers and1115 max-min rows start\nactive. Every one of165969 retained coordinate covers remains in the pool.\nThe old model, queries and saved point remain frozen. Exact acceptance checks\nthe full169052-row matrix and every proof needed for the original domain.\nNo proposed basis, candidate or symmetry assumption restricts the model.\n\"\"\"",
+      "after": "\"\"\"Bounded full-pool generation on the proved 112-zero case4 face.\n\nAll 1,960 retained original native rows, both unit sums, four certified\npair capacities and 1,102 max-min rows start active. All 164,044 remaining\ncoordinate covers stay in the pool. Exact acceptance checks the full\n167,112-row matrix and the original-coordinate proof bindings.\nNo candidate, basis, positive-selector or symmetry assumption is added.\n\"\"\"",
+      "occurrences": 1
+    },
+    {
+      "label": "builder_import",
+      "before": "import rook_case4_face99_parity_model as builder",
+      "after": "import rook_case4_face112_model as builder",
+      "occurrences": 1
+    },
+    {
+      "label": "builder_hash",
+      "before": "BUILDER_SHA = 'e5479fb9f51405a85c8c2586e862f451f451810f298130af345f4a974e91c7ea'",
+      "after": "BUILDER_SHA = '8cfae2fc990e293f47029da2dc5a4d66b864e2547777d6a142de424133361da7'",
+      "occurrences": 1
+    },
+    {
+      "label": "reviewed_parent_hash",
+      "before": "PARENT_DRIVER_SHA = '53baba0038f51dd8439d14b27378663febc45cf90917ecb26524e0f6f275adbf'",
+      "after": "PARENT_DRIVER_SHA = 'c7459874bed464e062caee2fe23be9221cfde03ae979a33f8d54e1a305fb07fd'",
+      "occurrences": 1
+    },
+    {
+      "label": "model_hash",
+      "before": "BASE_MODEL_SHA = 'f2e73a9ea39927f3c42bec4648cffbbc2c98b2c2bfd1effd688a08d980d0b41a'",
+      "after": "BASE_MODEL_SHA = '018882c8cea2a8cb9c2fc73a433d40973d20588bc5accb0fb8b0165fddc4337f'",
+      "occurrences": 1
+    },
+    {
+      "label": "array_hash",
+      "before": "BASE_NPZ_SHA = '83b44951a8bf8bb5a8d142e1e63b35f19ee1ce6e38744f3933c0f1b14fbdcb12'",
+      "after": "BASE_NPZ_SHA = '276db9d80b2772ab6829daf7459b19043a08996dc2b45ff8769534548b8b8ca3'",
+      "occurrences": 1
+    },
+    {
+      "label": "stream_and_cold_binding",
+      "before": "BASE_STREAM_SHA = '504533469c6359c7c9a1693db7a18c6c62d2ba617f33322495585c8226b14135'",
+      "after": "BASE_STREAM_SHA = 'a3201523bbd3c70bab8206808c5b004010a84006de0641965dc0cdb79cd6cb9e'\nBASE_COLD_PATH = 'experiments/logs/grids-and-triangles/rook-case4-face112-model01-cold-replay.json'\nBASE_COLD_SHA = '26f063161cbf9c0beb139b392f0b46007254176c522308d3ed2d5e3ee3c2e703'",
+      "occurrences": 1
+    },
+    {
+      "label": "dimensions",
+      "before": "SELECTORS, BASE_ROWS, VARIABLES, ROWS, NONZEROS = 1115, 167937, 1116, 169052, 11014372",
+      "after": "SELECTORS, BASE_ROWS, VARIABLES, ROWS, NONZEROS = 1102, 166010, 1103, 167112, 10769371",
+      "occurrences": 1
+    },
+    {
+      "label": "pool_end",
+      "before": "PARENT_ROWS, NEW_PARITY_ROWS = 167935, 2",
+      "after": "PARENT_ROWS, NEW_PARITY_ROWS = 166004, 2",
+      "occurrences": 1
+    },
+    {
+      "label": "native_and_pool",
+      "before": "NATIVE, COVER_POOL = 1966, 165969",
+      "after": "NATIVE, COVER_POOL = 1960, 164044",
+      "occurrences": 1
+    },
+    {
+      "label": "source_bindings",
+      "before": "def source_bindings():\n    assert digest(Path(builder.__file__).read_bytes()) == BUILDER_SHA\n    assert digest(Path(__file__).with_name('rook_case4_face99_cover_generation.py').read_bytes()) == PARENT_DRIVER_SHA\n    assert digest(Path(previous.__file__).read_bytes()) == PREVIOUS_SHA\n    assert digest(Path(frozen.__file__).read_bytes()) == MAXMIN_SHA\n    old = previous.source_bindings()\n    current = builder.source_bindings()\n    for key in LIMITS:\n        assert LIMITS[key] == previous.LIMITS[key]\n    return {'driver_sha256':digest(Path(__file__).read_bytes()),\n        'exact_face_builder_sha256':BUILDER_SHA,\n        'previous_face99_driver_sha256':PARENT_DRIVER_SHA,\n        'direct_integer_cover_source_sha256':current['direct_integer_cover_verifier_sha256'],\n        'unchanged_native_row_assembly_and_call_helper_sha256':PREVIOUS_SHA,\n        'frozen_serialization_runtime_helper_sha256':MAXMIN_SHA,\n        'frozen_exact_helper_sha256':old['frozen_exact_helper_sha256'],\n        'frozen_recovery_sha256':current['published_input_recovery_sha256'],\n        'zero_seed_source_sha256':current['exact_zero_seed_source_sha256'],\n        'zero_seed_certificate_sha256':current['exact_zero_seed_certificate_sha256']}\n\n",
+      "after": "def source_bindings():\n    assert digest(Path(builder.__file__).read_bytes()) == BUILDER_SHA\n    assert digest(Path(__file__).with_name('rook_case4_face99_parity_cover_generation.py').read_bytes()) == PARENT_DRIVER_SHA\n    assert digest(Path(previous.__file__).read_bytes()) == PREVIOUS_SHA\n    assert digest(Path(frozen.__file__).read_bytes()) == MAXMIN_SHA\n    old = previous.source_bindings()\n    current = builder.source_bindings()\n    for key in LIMITS:\n        assert LIMITS[key] == previous.LIMITS[key]\n    return {'driver_sha256':digest(Path(__file__).read_bytes()),\n        'exact_face_builder_sha256':BUILDER_SHA,\n        'reviewed_parent_generation_driver_sha256':PARENT_DRIVER_SHA,\n        'complete112_premise_loader_sha256':current['complete_premise_loader_sha256'],\n        'unchanged_native_row_assembly_and_call_helper_sha256':PREVIOUS_SHA,\n        'frozen_serialization_runtime_helper_sha256':MAXMIN_SHA,\n        'frozen_exact_helper_sha256':old['frozen_exact_helper_sha256'],\n        'frozen_recovery_sha256':current['published_input_recovery_sha256'],\n        'bound_audit_sha256':builder.INPUTS['bound_audit'][1],\n        'complete_base_cold_replay_sha256':BASE_COLD_SHA}\n\n",
+      "occurrences": 1
+    },
+    {
+      "label": "load_inputs",
+      "before": "def load_inputs(model_path,arrays_path):\n    source_bindings()\n    assert digest(model_path.read_bytes()) == BASE_MODEL_SHA\n    assert digest(arrays_path.read_bytes()) == BASE_NPZ_SHA\n    model,base = builder.load(model_path,arrays_path)\n    assert model['canonical_integer_stream_sha256'] == BASE_STREAM_SHA\n    pool = list(range(NATIVE,PARENT_ROWS))\n    assert len(pool) == COVER_POOL\n    assert model['added_integer_cover_row_ids'] == [PARENT_ROWS,PARENT_ROWS+1]\n    assert model['added_integer_covers'] == NEW_PARITY_ROWS\n    arrays = extend(base)\n    return model,base,arrays,pool\n\n\n",
+      "after": "def load_inputs(model_path,arrays_path):\n    source_bindings()\n    assert digest(model_path.read_bytes()) == BASE_MODEL_SHA\n    assert digest(arrays_path.read_bytes()) == BASE_NPZ_SHA\n    model,base = builder.load(model_path,arrays_path)\n    assert model['canonical_integer_stream_sha256'] == BASE_STREAM_SHA\n    pool = list(range(NATIVE,PARENT_ROWS))\n    assert len(pool) == COVER_POOL\n    assert model['added_integer_cover_row_ids'] == [PARENT_ROWS,PARENT_ROWS+1]\n    assert model['added_integer_covers'] == NEW_PARITY_ROWS\n    assert model['integer_cover_ranges'] == [[1,1],[1,1]]\n    assert model['added_pair_row_ids'] == list(range(BASE_ROWS-4,BASE_ROWS))\n    assert model['added_pair_rows'] == [[259,590],[259,591],[259,593],[259,732]]\n    arrays = extend(base)\n    return model,base,arrays,pool\n\n",
+      "occurrences": 1
+    },
+    {
+      "label": "definition",
+      "before": "def definition(model,arrays,pool):\n    math = {'base_model_sha256':BASE_MODEL_SHA,'base_array_npz_sha256':BASE_NPZ_SHA,\n        'base_integer_stream_sha256':BASE_STREAM_SHA,\n        'selectors':SELECTORS,'variables_including_t':VARIABLES,\n        'rows':ROWS,'nonzeros':NONZEROS,'t_column':SELECTORS,\n        'original_rows':BASE_ROWS,'added_extension_rows':SELECTORS,\n        'extension_rule':'row167937+j has +1 at selector j,-1 at t, bounds[0,1]',\n        'variable_lower':0,'variable_upper':1,\n        'objective':'minimize -t (equivalently maximize t)',\n        'matrix_array_bindings':frozen.matrix_binding(arrays),\n        'fixed_zero_original_columns':model['fixed_zero_columns'],\n        'proved_face_only':True,'new_selector_assumptions_added':False,\n        'symmetry_restriction_added':False}\n    initial=initial_row_ids()\n    initial_nnz=sum(int(arrays['row_pointers'][r+1]-arrays['row_pointers'][r]) for r in initial)\n    assert len(initial)==3083 and initial_nnz==28291\n    assert len(initial)==len(set(initial)) and not set(initial).intersection(pool)\n    assert set(initial)|set(pool)==set(range(ROWS))\n    spec={'complete_original_maxmin_model':math,\n        'complete_original_maxmin_model_sha256':digest(canonical(math)),\n        'retained_cover_pool_count':len(pool),\n        'retained_cover_pool_original_ID_sha256':row_ids_hash(pool),\n        'all_remaining_covers_in_pool_without_compression':True,\n        'initial_rows':len(initial),'initial_rows_original_ID_sha256':row_ids_hash(initial),\n        'initial_row_ranges':[[0,NATIVE],[PARENT_ROWS,ROWS]],\n        'always_active_new_integer_covers':[PARENT_ROWS,PARENT_ROWS+1],\n        'new_cover_original_Gram_row_counts':[33,35],\n        'new_cover_original_odd_right_hand_sides':[45,47],\n        'initial_nonzeros':initial_nnz,\n        'maximum_active_rows':len(initial)+LIMITS['maximum_total_added_cover_rows'],\n        'all_original_rows_required_for_rational_primal_acceptance':ROWS,\n        'only_original_rows_may_be_added':True,\n        'numerical_row_selection':'at most512 unseen covers, greatest violation first, ties by original row ID',\n        'subset_ray_scope':'an exact finite-box certificate on an active subset applies to the entire face LP',\n        'basis_policy':'one persistent native solver; appendRows without reset or reload',\n        'original1214_restoration_rule':'insert zero at every one of the99 proved-zero columns',\n        'no_new_selector_assumptions_or_symmetry':True,\n        'limits':LIMITS,'native_options':OPTIONS}\n    return spec,digest(canonical(spec))\n\n",
+      "after": "def definition(model,arrays,pool):\n    math = {'base_model_sha256':BASE_MODEL_SHA,'base_array_npz_sha256':BASE_NPZ_SHA,\n        'base_integer_stream_sha256':BASE_STREAM_SHA,\n        'selectors':SELECTORS,'variables_including_t':VARIABLES,\n        'rows':ROWS,'nonzeros':NONZEROS,'t_column':SELECTORS,\n        'original_rows':BASE_ROWS,'added_extension_rows':SELECTORS,\n        'extension_rule':'row166010+j has +1 at selector j,-1 at t, bounds[0,1]',\n        'variable_lower':0,'variable_upper':1,\n        'objective':'minimize -t (equivalently maximize t)',\n        'matrix_array_bindings':frozen.matrix_binding(arrays),\n        'fixed_zero_original_columns':model['fixed_zero_columns'],\n        'proved_face_only':True,'new_selector_assumptions_added':False,\n        'symmetry_restriction_added':False}\n    initial=initial_row_ids()\n    initial_nnz=sum(int(arrays['row_pointers'][r+1]-arrays['row_pointers'][r]) for r in initial)\n    assert len(initial)==3068 and initial_nnz==27942\n    assert len(initial)==len(set(initial)) and not set(initial).intersection(pool)\n    assert set(initial)|set(pool)==set(range(ROWS))\n    spec={'complete_original_maxmin_model':math,\n        'complete_original_maxmin_model_sha256':digest(canonical(math)),\n        'retained_cover_pool_count':len(pool),\n        'retained_cover_pool_original_ID_sha256':row_ids_hash(pool),\n        'all_remaining_covers_in_pool_without_compression':True,\n        'initial_rows':len(initial),'initial_rows_original_ID_sha256':row_ids_hash(initial),\n        'initial_row_ranges':[[0,NATIVE],[PARENT_ROWS,ROWS]],\n        'always_active_proved_parity_equalities':[PARENT_ROWS,PARENT_ROWS+1],\n        'always_active_certified_pair_rows':list(range(BASE_ROWS-4,BASE_ROWS)),\n        'unit_sum_ranges':[[1,1],[1,1]],'certified_pair_original_columns':model['added_pair_rows'],\n        'complete_premise_input_bindings':model['proof_input_bindings'],\n        'initial_nonzeros':initial_nnz,\n        'maximum_active_rows':len(initial)+LIMITS['maximum_total_added_cover_rows'],\n        'all_original_rows_required_for_rational_primal_acceptance':ROWS,\n        'only_original_rows_may_be_added':True,\n        'numerical_row_selection':'at most512 unseen covers, greatest violation first, ties by original row ID',\n        'subset_ray_scope':'an exact finite-box certificate on an active subset applies to the entire face LP',\n        'basis_policy':'one persistent native solver; appendRows without reset or reload',\n        'original1214_restoration_rule':'insert zero at every one of the112 proved-zero columns',\n        'no_new_selector_assumptions_or_symmetry':True,\n        'limits':LIMITS,'native_options':OPTIONS}\n    return spec,digest(canonical(spec))\n\n",
+      "occurrences": 1
+    },
+    {
+      "label": "cold_arrays",
+      "before": "def cold_arrays(model,base,arrays,root):\n    rebuilt_model,rebuilt_base=builder.build(root)\n    builder.compare_model(model,rebuilt_model)\n    assert set(base)==set(rebuilt_base)\n    for key in base:\n        assert np.array_equal(base[key],rebuilt_base[key]),('cold face array',key)\n    rebuilt=extend(rebuilt_base)\n    assert frozen.matrix_binding(rebuilt)==frozen.matrix_binding(arrays)\n    return rebuilt\n\n",
+      "after": "def cold_arrays(model,base,arrays,root):\n    rebuilt_model,rebuilt_base=builder.build(root)\n    for key,value in rebuilt_model.items():\n        if key not in ('numpy_version','python_version'):\n            assert model[key] == value,('cold face model',key)\n    assert set(base)==set(rebuilt_base)\n    for key in base:\n        assert np.array_equal(base[key],rebuilt_base[key]),('cold face array',key)\n    rebuilt=extend(rebuilt_base)\n    assert frozen.matrix_binding(rebuilt)==frozen.matrix_binding(arrays)\n    return rebuilt\n\n",
+      "occurrences": 1
+    },
+    {
+      "label": "preflight_replay",
+      "before": "def preflight_replay(preparation,model_path,arrays_path,root,output):\n    assert not output.exists()\n    started=time.monotonic()\n    prepared,model,base,arrays,pool=checked_preparation(preparation,model_path,arrays_path,False)\n    cold_arrays(model,base,arrays,root)\n    control=controls()\n    assert control==prepared['controls']\n    report={'status':'PASS: full published-input face rebuild, all covers and native assembly controls',\n        'source_bindings':source_bindings(),'preparation_sha256':digest(preparation.read_bytes()),\n        'definition_sha256':prepared['definition_sha256'],\n        'original_rows':BASE_ROWS,'extended_rows':ROWS,\n        'retained_cover_pool_count':len(pool),'all_input_arrays_rebuilt':True,\n        'optimizer_calls':0,'case4_excluded':False,\n        'seconds':time.monotonic()-started,\n        'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}\n    save(output,report)\n    print(json.dumps(report,indent=2),flush=True)\n\n\n",
+      "after": "def preflight_replay(preparation,model_path,arrays_path,root,output):\n    assert not output.exists()\n    started=time.monotonic()\n    prepared,model,base,arrays,pool=checked_preparation(preparation,model_path,arrays_path,False)\n    raw=(root/BASE_COLD_PATH).read_bytes()\n    assert digest(raw)==BASE_COLD_SHA\n    cold=json.loads(raw)\n    assert cold['status'].startswith('PASS:')\n    assert cold['model_sha256']==BASE_MODEL_SHA\n    assert cold['source_bindings']==builder.source_bindings()\n    assert cold['canonical_integer_stream_sha256']==BASE_STREAM_SHA\n    assert cold['arrays']['sha256']==BASE_NPZ_SHA\n    assert (cold['columns'],cold['rows'],cold['nonzeros'])==(SELECTORS,BASE_ROWS,builder.NONZEROS)\n    assert cold['all_omission_witnesses_replayed'] and cold['all_row_column_transports_checked']\n    control=controls()\n    assert control==prepared['controls']\n    report={'status':'PASS: frozen complete cold model bound; extended arrays, pool partition and native assembly controls checked',\n        'source_bindings':source_bindings(),'preparation_sha256':digest(preparation.read_bytes()),\n        'definition_sha256':prepared['definition_sha256'],\n        'original_rows':BASE_ROWS,'extended_rows':ROWS,\n        'retained_cover_pool_count':len(pool),'all_input_arrays_loaded_and_hashed':True,\n        'prior_complete_cold_replay_sha256':BASE_COLD_SHA,'duplicate_base_rebuild_performed':False,\n        'terminal_exact_acceptance_still_rebuilds_all_inputs':True,\n        'optimizer_calls':0,'case4_excluded':False,\n        'seconds':time.monotonic()-started,\n        'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}\n    save(output,report)\n    print(json.dumps(report,indent=2),flush=True)\n\n",
+      "occurrences": 1
+    },
+    {
+      "label": "preparation_scope",
+      "before": "bounded full-pool face99 generation with two proved integer covers prepared; no optimizer",
+      "after": "bounded full-pool face112 generation with two unit sums and four pair capacities prepared; no optimizer",
+      "occurrences": 1
+    },
+    {
+      "label": "certificate_scope",
+      "before": "complete case4 real selector relaxation on the proved99-zero face with every parent native row, coordinate cover and both proved integer parity covers",
+      "after": "complete case4 real selector relaxation on the proved112-zero face with every original native row, coordinate cover, both proved unit sums and four certified pair capacities",
+      "occurrences": 1
+    },
+    {
+      "label": "replay_scope",
+      "before": "PASS: complete face99-plus-two-cover matrix, exact zero and integer proofs, bounded prefix transcript",
+      "after": "PASS: complete face112 matrix, exact zero/equality/pair proofs and bounded prefix transcript",
+      "occurrences": 1
+    }
+  ],
+  "changed_function_bodies_beyond_scope_literals": [
+    "source_bindings",
+    "load_inputs",
+    "definition",
+    "cold_arrays",
+    "preflight_replay"
+  ],
+  "native_call_run_exact_acceptance_and_terminal_replay_algorithms_changed": false,
+  "preflight_change": "Bind the just-completed full model cold replay instead of repeating the identical base rebuild; terminal exact replay still cold-rebuilds all inputs."
+}

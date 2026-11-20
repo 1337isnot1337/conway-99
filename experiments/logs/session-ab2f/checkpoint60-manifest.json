@@ -1,0 +1,602 @@
+{
+  "schema": "conway99.checkpoint-manifest.v1",
+  "checkpoint": 60,
+  "parent_commit": "7740c08427712fc50083560006b1dc06d71526c3",
+  "scope": [
+    "Complete exact F0 within-selector-orbit profile tables and independent literal audit",
+    "Prepared F0 integer population-product formulation with native CP-SAT validation and cold proto replay; no production query",
+    "Append-only rook H3 LP preparation, single unresolved numerical query and cold replay",
+    "Distinct binary rook incidence search: one hard-deadline UNKNOWN and prescribed cold replay"
+  ],
+  "graph_or_global_nonexistence_claimed": false,
+  "files": [
+    {
+      "path": "STATE.md",
+      "bytes": 110697,
+      "sha256": "a03c515b5703458b1e27e73bf1d986c23696755babdab0cb7ced69a902460589",
+      "git_blob": "aa535354641b751e7d6d4e477f61abca40939856"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-disjoint-guard-cuts-independent-sets-source-review.json",
+      "bytes": 2616,
+      "sha256": "507b613e02320cbe83a7a3f54a1e0535559bda658d975bd24667390f2261ce43",
+      "git_blob": "d2d78850b688ce5539b0180c196e5786ad76c388"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-branch-diagnostic01-failure.json",
+      "bytes": 592,
+      "sha256": "4d7d7293a86515fe4b1d4de13cbdf39cd8898fc09287a111330edad8e556f9d9",
+      "git_blob": "6ca3f13ba50f21c154588dd5c549213c9fe27fa3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-branch-diagnostic02.json",
+      "bytes": 85040,
+      "sha256": "79f1782888ac1b59ed985ef4cd92cc5f8e25a8b8090faa5dd5637ff3f8385804",
+      "git_blob": "14e4e0ca95ac0a4007671197017cb8c6a6d05912"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-git-blobs.json",
+      "bytes": 7943,
+      "sha256": "c8d948c71e786a6af75b400df60f624d1e1bceec5793421041cf60d9ccce19dc",
+      "git_blob": "8f66afe62070b4ed1b033a002b4cc7dec889ce20"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-preflight.json",
+      "bytes": 1964,
+      "sha256": "77d18d055f690b8042c56fe17abe209e00783498e4447a9d8eb5a361ed557e1a",
+      "git_blob": "2be4024e0001520b246db1eca06b3aee1e0e88db"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-preparation-manifest.json",
+      "bytes": 5350,
+      "sha256": "f636d7d8acb9f663e6ced446a0787fba27e7a72fbe486430bb3383e002e31a08",
+      "git_blob": "e4dacf4894da4898e359140a1b4b7ae8453dfe8f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-preparation.json",
+      "bytes": 14005,
+      "sha256": "7086d9db5eb728dcf934318c13611e66439eab2a062f4f0d05c57a1ef7acb5d1",
+      "git_blob": "b07cc695c00795c82acb426facdcdbac4838f92d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-reuse-controls.json",
+      "bytes": 8063,
+      "sha256": "33235226370f246569a012ed6c629b38141d8b1dea5a69a6354fb5810a273954",
+      "git_blob": "e63066b76d708836e6d86476d3d9f06cfada94cf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01-console.log",
+      "bytes": 2795,
+      "sha256": "65ac70a289810d641e69e6fa003a2e62d894d1b5c049d4fc17cfb31f79467845",
+      "git_blob": "ada0a47f2a055f5fa11c715f60a4cad5fd31f3fa"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01-replay.json",
+      "bytes": 2045,
+      "sha256": "e682e859b538e97a40786c445fa628cc26dd3a962172d0308b29d0cab48a2de5",
+      "git_blob": "48d09666ef63195590a5c56e10b179a1876468dc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01-replay.log",
+      "bytes": 2045,
+      "sha256": "e682e859b538e97a40786c445fa628cc26dd3a962172d0308b29d0cab48a2de5",
+      "git_blob": "48d09666ef63195590a5c56e10b179a1876468dc"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01/highs.log",
+      "bytes": 1023,
+      "sha256": "27c2120a8d0c8087382ddb9eebc9b6ab2b2acb713653e541a77524664466e041",
+      "git_blob": "f100c3975cfadc719e23f4b5cafa2efd5f46c9bf"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01/iteration-00-numeric.json.gz",
+      "bytes": 25899,
+      "sha256": "eda071f5ebcbf4e80574af4ef7031b31d1f74002d3a3fe9ee234ce3c7f7df8b7",
+      "git_blob": "964dbfd004340b7c4c91df92b2dc89c043b60f57"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01/result.json",
+      "bytes": 12078,
+      "sha256": "328abe5e6413d2e76e943e04d1cfa225b57aa0f574eb26ccf9fca3314382192d",
+      "git_blob": "9e49f53f1a3c08f5df45162963b8a3183e01c062"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-terminal-manifest.json",
+      "bytes": 8413,
+      "sha256": "a00287cf14e1ec168da30c3f9670831ac30e181f27c8031ea473ba4f0ba6c54c",
+      "git_blob": "9d3a427ece73fe882f04cfa76644704da9c75dad"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model-metadata-correction.json",
+      "bytes": 828,
+      "sha256": "23c5486caec43679ab1d4c2a81adbe20d34dac4ac0c95291f1987ff6b7aa2f9c",
+      "git_blob": "f708f906b67b92ced9444c30f0600129525bd0bd"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model01/arrays.npz",
+      "bytes": 5347757,
+      "sha256": "4e2de2786d3036cf995953791192500cb4aaa5b0c5079f3d97ea465a4cf64e46",
+      "git_blob": "ff1d469ceeeae4dfe2fab1cfe14dc0d37b9df241"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model01/model.json",
+      "bytes": 597894,
+      "sha256": "eda2ba676da5d05cd3a230c54a0d01c76b5fbfcb101d06241f6b31232327ce57",
+      "git_blob": "cb7a25f683ccb5cedcb471431411c9539064aab9"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model01/preparation.json",
+      "bytes": 1468,
+      "sha256": "f8090c21b76bca1763dc3d6a0736960ab160a3027bd956e65eec55759960abc3",
+      "git_blob": "259d9b49198598d3d987f3333f3e9e7e90455754"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02-cold-replay.json",
+      "bytes": 1464,
+      "sha256": "56864810924bacb6b331db728a4ce32810d8e6f2dfe7c196e0a73e0b2f583a97",
+      "git_blob": "6a04710e1a24b72fcb28e7579b614f51bf98059b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/arrays.npz",
+      "bytes": 5347757,
+      "sha256": "4e2de2786d3036cf995953791192500cb4aaa5b0c5079f3d97ea465a4cf64e46",
+      "git_blob": "ff1d469ceeeae4dfe2fab1cfe14dc0d37b9df241"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/model.json",
+      "bytes": 597893,
+      "sha256": "1928eb76274865e219747f631fee2d7a327ed7acd3a845986844be13c9e34265",
+      "git_blob": "13702fa4a382c248e5bac58acd5a5d2f96713492"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/preparation.json",
+      "bytes": 1467,
+      "sha256": "d736874ddb450fb1a312563631a976049919170b2c0575dcaac3f5d222629725",
+      "git_blob": "7d05cb7e56d1683713e2551c6eb89510858b03f3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-unrestricted-source-review.json",
+      "bytes": 2610,
+      "sha256": "07bc7d4a3d6a8ba614ef2654ce1bdf4ce1bfcb97c3588dbd547fb759eff5f7ca",
+      "git_blob": "f4398a84ecff155b31b2dc414dac447e1c436d80"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-unrestricted-source-review.log",
+      "bytes": 277,
+      "sha256": "74f60c62f810d1e7f091b04f0721aa5189775a0ea550879c883a9e303165def5",
+      "git_blob": "560bdc7482ccf6fbf723fa7dfebb146eedc44bb7"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-model-preflight01-failure.json",
+      "bytes": 661,
+      "sha256": "ff1581ba44d087e33b97f1bdde05d21b96c8f62309a32cc0eaba133a99e1c0e2",
+      "git_blob": "08f88a7004f754d006c8fb4a4a7ae940c35802a3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-model01-preparation.json",
+      "bytes": 637,
+      "sha256": "785cc677946a4a01665d2fa9d44d72d9058ac13e3e2d2d321b18152caf2524cf",
+      "git_blob": "632edccadd924f07728b209a9c13ba6c37cb5dc8"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-model01-replay.json",
+      "bytes": 583,
+      "sha256": "3a86d6221410f8faeda62bbe5b425c8f0b16b767206c0d4ad0558c2a370e0d28",
+      "git_blob": "30c4d53a1bd181ddaaf1c998def89f2012068e7a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-model01.json",
+      "bytes": 4201648,
+      "sha256": "195bf6c2c274100686087fd71a22f488f7aaee28025e39e490d7751bffcbceb6",
+      "git_blob": "661a6e38364283b13fcaa12864f8e2dffd3b623b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-preparation-artifacts.json",
+      "bytes": 6889,
+      "sha256": "e7b41a706cd59cc9ed3378aed0afdbd9717a69be88b4e435e4fbe38dcdb753fe",
+      "git_blob": "d6ee67276c4a4eab28862e4a6b7b6de0f40bf4f3"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-query-preparation01/native-preflight.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-query-preparation01/preparation.json",
+      "bytes": 5410,
+      "sha256": "f6d28c3a44ab75dc27a3005577aee4cf0f0be01d9056cc9e1e4f3c3fb97edfac",
+      "git_blob": "089a4dd262f5deb3501ffbf218b38e5d502f3ef4"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-query-preparation01/tiny-controls/cover-sequence.log",
+      "bytes": 3056,
+      "sha256": "7f4ad7824e96c54c794ff2738993f67aae21d6a6b7ddbe12fb0dd3a6da8c7757",
+      "git_blob": "219c8a0e72db1eaf6f0a8c702725afa27819e161"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-query-preparation01/tiny-controls/integer-infeasible.log",
+      "bytes": 1383,
+      "sha256": "0369deafc0e655125432c0a3dcff5090ddc23a949264a3be676e636565b4a707",
+      "git_blob": "f3e7a2d6db58feab968bce3f8bc5fc3f83765551"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-root-driver-review.json",
+      "bytes": 2911,
+      "sha256": "df99e7ed05c4f16714dbc3b2487ad65300643ad4c59d13d08a251a66f6729772",
+      "git_blob": "360bbee2a4b6c9bc1265d24e526d3ae84d5d0724"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01-cold/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01-cold/child.stdout.log",
+      "bytes": 171,
+      "sha256": "82484e34695eb7a723698dd2744ea6da1e43360fb5d7384be095a6cbe85a1aea",
+      "git_blob": "c9002373f1149a876e9568940ce6d8f26845477a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01-cold/cold-report.json",
+      "bytes": 2068,
+      "sha256": "ac9fe40a5cd28f38f79767078cc381da3a579a425cd2f5a2bee35879a21593d4",
+      "git_blob": "6f730a29460562aef271b42053ef604f927fa721"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01-cold/result.json",
+      "bytes": 777,
+      "sha256": "70795b320acda8007bebfb5065c3c68367c9f354ab51fbf73e0e593cd1f6194a",
+      "git_blob": "7a4561d1758926d8944b26892ba86f6548cf1905"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01-cold/supervisor.json",
+      "bytes": 147,
+      "sha256": "e6e36fc538cad418b0b3d1a8925bed0e18c8e1fe63e446f234ee44ad123c114f",
+      "git_blob": "a3d7c9e0e72dceec9e4010e2dea1a3a9398428eb"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01/child-result.json",
+      "bytes": 2427,
+      "sha256": "ee85616510d75e8aa7fe4a4b98286869b965a76d95056feda0c1c507783f4bbb",
+      "git_blob": "0c13d24f2734ad1d52d6ac8bb0dc177c42de5691"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01/child.stdout.log",
+      "bytes": 171,
+      "sha256": "82484e34695eb7a723698dd2744ea6da1e43360fb5d7384be095a6cbe85a1aea",
+      "git_blob": "c9002373f1149a876e9568940ce6d8f26845477a"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01/highs.log",
+      "bytes": 6201,
+      "sha256": "ef2c78b93c3dec3eecf152509bc26166c8abd208bc41955d74cbc7812c06b4a2",
+      "git_blob": "8b5f48b05a074ada0542795ed1d1eba730917e4f"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01/result.json",
+      "bytes": 2387,
+      "sha256": "cd6cdf9f9cd6e2ac5ff058112ab30a31bc1bb6426ef560143dd053326fc2d8bc",
+      "git_blob": "e6bd8cacb62f0c845a8d9ddba831356a863261e5"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-run01/supervisor.json",
+      "bytes": 157,
+      "sha256": "2bca340ef8f5847341175e344e0d30bc67e357b08d52b1dc45e61a926d6adb88",
+      "git_blob": "ca77a1f1e94daf6c5dcc1bffc3b728c86e65fa88"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-terminal-artifacts.json",
+      "bytes": 4012,
+      "sha256": "9e6bb8305dbf9b1b19a7ecc4073898277fa4792140030a279a12cf3109c7fc91",
+      "git_blob": "525daf5c94c89ab6d68f781e0fc1a75581302614"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-unrestricted-source-review.json",
+      "bytes": 2030,
+      "sha256": "bfadbdcddebfac7175bb5457345f2bd6fb33950582f7cf96b107a634169b12a8",
+      "git_blob": "559bc0583e8f26d1f753399364f4877b416aa914"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-highs-binary-unrestricted-source-review.log",
+      "bytes": 286,
+      "sha256": "bcd367dfdcad7385f0b797af61190fe705f7015cf52954b802e9429149371375",
+      "git_blob": "9078c30d4a7de354fa039df9a1ff3d1baf099bf4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-archive-cold.log",
+      "bytes": 519,
+      "sha256": "1f117ad903415a313daa1085d09eaae4716fb68d16195d65b4918beb00e9fd87",
+      "git_blob": "f7689e0a903f394ea2e93a3dd2cd7886ba3d2d71"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-archive.log",
+      "bytes": 520,
+      "sha256": "9eba7273af53dd941625ffe6821304e630a235afc3f7b0417391ccd21c7b6099",
+      "git_blob": "aaaa0c10994043a34362fa763e9055a6bd2be515"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-cold.log",
+      "bytes": 1564,
+      "sha256": "fb287608e94737614fd58d51405855a551867cf121f201586b1c860ff4508930",
+      "git_blob": "6c84053cce1803730ecad7916dd8650f0a11bf62"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-cold/report.json",
+      "bytes": 1564,
+      "sha256": "fb287608e94737614fd58d51405855a551867cf121f201586b1c860ff4508930",
+      "git_blob": "6c84053cce1803730ecad7916dd8650f0a11bf62"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01-generation.log",
+      "bytes": 1681,
+      "sha256": "8a1ed187e68de4bcfe1a9e1948f971125b45612bfc3b3fadbfe607826a51e91a",
+      "git_blob": "63fd7ed2c04d618310d08af35b881a5a0ef12563"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/archive-check.json",
+      "bytes": 520,
+      "sha256": "9eba7273af53dd941625ffe6821304e630a235afc3f7b0417391ccd21c7b6099",
+      "git_blob": "aaaa0c10994043a34362fa763e9055a6bd2be515"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/archive-cold.json",
+      "bytes": 519,
+      "sha256": "1f117ad903415a313daa1085d09eaae4716fb68d16195d65b4918beb00e9fd87",
+      "git_blob": "f7689e0a903f394ea2e93a3dd2cd7886ba3d2d71"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/archive.json",
+      "bytes": 579,
+      "sha256": "320a3c18c6ae8f972a4bce26ac4b6ba2428b882926293d208479504ef3af0542",
+      "git_blob": "4f5b230ed98b79bd3c0a7a1988555909312e4e2f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/model.pb.gz",
+      "bytes": 4650249,
+      "sha256": "37f744fd78fde8f3d6ca28ea4bcc63205299fb8c947b5212667ee08212b5f266",
+      "git_blob": "b55f2d8c03d75abf59db81da95928af9edab64d4"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/report.json",
+      "bytes": 1681,
+      "sha256": "8a1ed187e68de4bcfe1a9e1948f971125b45612bfc3b3fadbfe607826a51e91a",
+      "git_blob": "63fd7ed2c04d618310d08af35b881a5a0ef12563"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/toy-cross.pb",
+      "bytes": 89,
+      "sha256": "869dc39348aaf158eb6ef35349fc6ce0871b486159a3322ffca68eb8ab1546d7",
+      "git_blob": "1e6c8a4e0bd8fd0e3db6a6a3ca14a04603da6a49"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-cpsat01/toy-diagonal.pb",
+      "bytes": 91,
+      "sha256": "83f73eabd5cec7a8fc7a1bbb04fcf3bccbf59d2e124259b0a69de97207818bc2",
+      "git_blob": "23f08ec4e34d65cc9320b837835a5eba88f755d7"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-git-blobs.json",
+      "bytes": 9270,
+      "sha256": "0a6d8e3655cc5e9665a1714a317f450f9bf5cf8006afd07b288785a30e3a1b67",
+      "git_blob": "c6cfce6d83d78ec6af0aa9fa14066db27bf04fd1"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products-publication-manifest.json",
+      "bytes": 8652,
+      "sha256": "4713f992e52b3eebbc5fa2cab09ff7d7cb73502735c2e54edad3457ca4af6fc5",
+      "git_blob": "7d97eb7cb0417a9c4672de59e9f09f28388d9870"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products01-generation.log",
+      "bytes": 1128,
+      "sha256": "d9847daf1d560b41a3e8bc2098cef08197c4a5c5f7eb721b3cf5b812b98e2ed3",
+      "git_blob": "00ae49249e600f6304482cb0d7a3fdabf3a4e701"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products01-output-path-failure.json",
+      "bytes": 840,
+      "sha256": "f92e4cf52ccb58cdc808eb049e6ef07ae9d4d57802554f7893047633411c07c7",
+      "git_blob": "dcf3839b4ba1a8608baa29af8899bc753bae23de"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products01-specification.json.gz",
+      "bytes": 894268,
+      "sha256": "c83ebbc1d0d4e9b5ec5ccd60ed5e52ea2be2cb24f1de570f6bff8bb158d42e0c",
+      "git_blob": "acac22c6d04dc5ed61e8e26ddf2d682ef0ee6cf5"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products02-generation.log",
+      "bytes": 1786,
+      "sha256": "790308d3eab6fab8e6652a5af7c9d1c22f44a5c753ce4332ea867755dc5b0dcb",
+      "git_blob": "eb9524bf3f9ad8e1d22b4b047ccb3c5f539e9bad"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products02-preparation.json",
+      "bytes": 1549,
+      "sha256": "6f5c66de4925c77eff63abea287e723d71be62318b6f4dca6197dbdf3c453915",
+      "git_blob": "ab1c859723ea783c6a3281657d595a97f1315f1e"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-population-products02-specification.json.gz",
+      "bytes": 894268,
+      "sha256": "c83ebbc1d0d4e9b5ec5ccd60ed5e52ea2be2cb24f1de570f6bff8bb158d42e0c",
+      "git_blob": "acac22c6d04dc5ed61e8e26ddf2d682ef0ee6cf5"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles-independent-audit.json",
+      "bytes": 5830,
+      "sha256": "e532fe58350ad856104333fba05b8601d776cbb98b76b3ce855ce8fa2a4be9a2",
+      "git_blob": "ba29b8868068aba25c2b52e515cbde94dc9fd6ad"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles-independent-audit.log",
+      "bytes": 278,
+      "sha256": "3d536a78be8f8b8fc88d7a2295b75e043447cf3ea74d6f44d6f299f6f3ee7421",
+      "git_blob": "2a42b260ac46e8381e294b69463ac0f3efddcf9f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles01-cold.json",
+      "bytes": 419,
+      "sha256": "cb10cd7dc77236d9caed7c7b8a410a33f7b998bea8d257b500d3c9f8561a76f8",
+      "git_blob": "5ca4e995328c970447dcc801da68bf958b9c67fe"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-orbit-profiles01.json.gz",
+      "bytes": 75171,
+      "sha256": "93c891e7eef037e5869e5c8e13c3cf31d0ad253cb6caf5cd38930b09715e085d",
+      "git_blob": "0c9659c91161ad1a5037a0ae9e06e3f989689d95"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-selector-profile-domains01.json",
+      "bytes": 101486,
+      "sha256": "0e307bbe9e39fe4e80e7f5dc3db84dbb62e5b855ac66c753e5b5111ee8b3dbf6",
+      "git_blob": "4f3a1a6372b682024d5c12d0cfc5fbde9a932b3f"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_branch_diagnostic.py",
+      "bytes": 7816,
+      "sha256": "604c0aeb985b633092d04d262b465ac1d0e1870c746a5b7ddb4f0e4a5693c645",
+      "git_blob": "84a5fcb9085c803c2a0f68a3ca269419aa7a9725"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_branch_diagnostic_v2.py",
+      "bytes": 8010,
+      "sha256": "857e07c5f671a6b9a4bd61732bb818961a9bd56ccf9e870ec79f4b50c293608b",
+      "git_blob": "a7168f1ea46adad7f53411401572dc8b6afdcf45"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_cover_generation.py",
+      "bytes": 36037,
+      "sha256": "655696089ce7f4b4fac3aabccbe1492f5f55c8c4670d3942b6b2cc251734e900",
+      "git_blob": "0109c87104a6e44b44845c7cfb98a066ef04c407"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_model.py",
+      "bytes": 13488,
+      "sha256": "c370c674b1592d06dd0e4ea9bde45888e95171f849121c3c12b4f1ac9ac51ed7",
+      "git_blob": "5f42166135f05635f30ef0c0afd832504e15601f"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_model_v2.py",
+      "bytes": 13652,
+      "sha256": "d06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7",
+      "git_blob": "b617a526958ecb25767885a57cd7190ea24befe4"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_unrestricted_source_review.py",
+      "bytes": 4007,
+      "sha256": "05ba9a7afa80780aadea3b8f8dbea2c40e7d012074762db21d1e4e1e05d18052",
+      "git_blob": "24855d03540f49d239d402a540669d2eb29489e1"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_model.py",
+      "bytes": 17186,
+      "sha256": "3869c9aa63a596421a7fefebc492d90159b6ac8edf0739a0995254bcfd5c4301",
+      "git_blob": "f31ebec349b03db1fc0850bd51f2032e7e7242bb"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_model_preflight_v1.py",
+      "bytes": 17310,
+      "sha256": "66f901a35a1f33d565a3a6324429b61faaafe511955e117a65d8ef07de974443",
+      "git_blob": "d64e24a952992523c966f6a4841ba1e7bef1f836"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_search.py",
+      "bytes": 30384,
+      "sha256": "6569f2c12b6ff02df34346b9f67f4426e7933a0999fd13bf32ea01e32d7d44c0",
+      "git_blob": "81600562e4426ed912d2e082986b469e3492eb6e"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_highs_binary_unrestricted_source_review.py",
+      "bytes": 3484,
+      "sha256": "6f438c7149061b8e5eba68a4353f70711d8d511b04a0a2eeac8d6ae8290a1d09",
+      "git_blob": "3845dc1c95488ecd0d24a9acfa08aaee26e553ee"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_population_products.py",
+      "bytes": 19538,
+      "sha256": "147ad92071ced273139993b09633c298b7a4a8ed9298e68103f970a8f01b7a66",
+      "git_blob": "5196612c79e0433bab36c2e0f45c33064f89dfa1"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_population_products_archive.py",
+      "bytes": 2910,
+      "sha256": "49669f268b3de6f941bb451aec9ccb786c916f30ce01670352537adf3e8920e8",
+      "git_blob": "3cbecdba9f00bbb9bacc72388806217770b22690"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_population_products_cpsat.py",
+      "bytes": 9858,
+      "sha256": "528f480b08adc5f1040807eec3eb96a75a8ea755eee28aec234f9d660034ff42",
+      "git_blob": "8e1a0d9844a383db713838b27448383b89b50ad6"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_orbit_profiles.py",
+      "bytes": 11156,
+      "sha256": "4e8d8c15024798bb83e4c10b64c9cf78fdc905e3e9f2d453ec7f28ca80b7f1ba",
+      "git_blob": "ab8e8087e19e160b104d9b9d7c31d97f5e9d642d"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_profile_domains.py",
+      "bytes": 4394,
+      "sha256": "9dc85340a965a79935ad643a7efa1d9ef9a3388a9d059fea56265310c438b46d",
+      "git_blob": "880cb4439f35680a7eaf246f9f6269c0b1dcb626"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_selector_profiles_independent_audit.py",
+      "bytes": 8442,
+      "sha256": "6ddc534f5f6750d1ead27de40f25a2378227296d81bba7a6981004bfb2f2309f",
+      "git_blob": "1cc2c893d87868eae7aedd1352ffcf600e1ba1ee"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face112_h3_generation_terminal.md",
+      "bytes": 2192,
+      "sha256": "e4d0cfcbd2bb41e5e54adf9107b90e19a75545b476bf9bf90825e6a70244ec8a",
+      "git_blob": "e7c352f38d98a8e0abe47c4f7c3a7ec36fdd93b9"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face112_h3_lp_preparation.md",
+      "bytes": 5276,
+      "sha256": "7b07fb4181b1f04b2352a7293700c78e7be4693b69eda3c78ff3a917da89aef7",
+      "git_blob": "2d2ea5a196dcf360e6a58f0ee8af037e63d29d77"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face112_highs_binary_search.md",
+      "bytes": 6446,
+      "sha256": "25b8a7d58063e279e2384cc9f1458e859e9899ba5a5134be16a4d03f4fe47818",
+      "git_blob": "4a33b7bf7a79c3140ef71cd8ccea6ab4b95d6ad4"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face112_highs_binary_terminal.md",
+      "bytes": 1882,
+      "sha256": "10f07d394c030637ff1c9f811247cf9b8ffd994e9d3286adff082c5170665cda",
+      "git_blob": "71aa97cbc720ba7fa3149dddb18d0117955b5ddd"
+    },
+    {
+      "path": "research/root_prism_free_f0_population_products.md",
+      "bytes": 9626,
+      "sha256": "14d4adb474d0a1d51348a817b862ae31adea182d712251c4da34f68141410d5a",
+      "git_blob": "0e46734f5468597b7ef4501d966e3c6b0068ad23"
+    },
+    {
+      "path": "research/root_prism_free_f0_selector_orbit_profiles.md",
+      "bytes": 4867,
+      "sha256": "a480bebf47652d7747dfbe84df3b40dc54363b320594f72d26f7cf028936adb3",
+      "git_blob": "b7a95de085ab17636cfaec505d7407ad437e932c"
+    },
+    {
+      "path": "research/session-ab2f.md",
+      "bytes": 91030,
+      "sha256": "6c3a3ee78949166e3e25d06f0b3fea621693df09a028db9d8dddd37037d01db9",
+      "git_blob": "f7c7ae641f3855b02fcdbc0a35f56d8e9575b917"
+    }
+  ]
+}

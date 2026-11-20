@@ -1,0 +1,66 @@
+{
+  "status": "exact interval and guarded-cover fixed point",
+  "source_sha256": "7e39e8a675dffedd77f545d30e534a5f47129ec8e0a22c7265afadc74759225c",
+  "rule_source_sha256": "3e4b8a5118c0ee8e37aee03d5f265128b53af9ae8ffc169393fe2d731062d8f7",
+  "preparation_sha256": "f3db48a0133be1d35c247453c74041c510d2791ac52149c7c78f3c8caf4cc4d8",
+  "inventory_preparation_sha256": "7e242554f2fea7d9d0da8543c8760534ff461e21ae5689208352551c8e4df2d2",
+  "initial_unit_clause_ids": [
+    57694,
+    57695,
+    57696,
+    57697,
+    69160,
+    85421,
+    85422,
+    97857,
+    131790,
+    132176,
+    143605,
+    160945,
+    160946,
+    172697
+  ],
+  "exact_reason_replay": {
+    "all_records_checked": 14,
+    "contradiction": false,
+    "complete_fixed_point_rechecked": true
+  },
+  "summary": {
+    "proved_absent_columns": [
+      352,
+      353,
+      354,
+      355,
+      439,
+      552,
+      553,
+      645,
+      869,
+      873,
+      957,
+      1080,
+      1081,
+      1167
+    ],
+    "proved_selected_columns": [],
+    "new_absent_columns_beyond14_initial_units": [],
+    "new_selected_columns": [],
+    "new_assignments": 0,
+    "trace_records": 14,
+    "sweeps": 1,
+    "complete_under_these_rules": true,
+    "contradiction": false
+  },
+  "inventory_reconstruction_seconds": 0.6828995609976118,
+  "requested_closure_seconds": 60,
+  "closure_seconds": 0.25947348199770204,
+  "reason_and_fixed_point_check_seconds": 1.7515571660005662,
+  "total_seconds": 2.6943907579989173,
+  "peak_rss_kib": 77280,
+  "native_presolve_messages_used_as_premises": false,
+  "failed_literal_probing_run": false,
+  "solver_or_optimizer_called": false,
+  "case4_exclusion_promoted": false,
+  "full_graph_completion_found": false
+}
+result_sha256 eda7932e5821b4418ec7e8a4b420091d51993c8df35e18c3e788a810be4ac6d0

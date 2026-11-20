@@ -1,0 +1,62 @@
+{
+  "status": "fixed new60 incidence; symmetric LP and complete partial-cap CNF prepared, no query",
+  "source_sha256": "ee064ece3bde366809e23837b75a5aaa8c480421532004049e90671d8e5fd6cf",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_incidence.py": "00cd6e683a8bfb602cfd29f8dbb3481be0f87df55f2963ae98613f2af9146971",
+    "root_prism_free_f0_first_design_exterior.py": "f0c5105526b9374935b4ba961859261249f44f2b311d98138ac3c8aeb5ed56cd"
+  },
+  "candidate_sha256": "9e38e41273ad247021854236a56a4e9dd0cdc74b7156867904b7d19fe2d64e46",
+  "row_boxes_sha256": "dfaee7888eccfa0f673212e054e9824f4aac9256e745a282574ef758b7e79519",
+  "incidence_cold_replay_sha256": "8640b7b338277389966a0097d4496f04dcbf4da286fccc8f3f8917d7f245453a",
+  "complete_row_domain_sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+  "LP_inventory": {
+    "undirected_primary_variables": 1220,
+    "equations": 1140,
+    "degree_equations": 60,
+    "mixed_equations": 1080,
+    "primary_lower_bound": 0,
+    "primary_upper_bound": 1,
+    "equation_nonzeros": 9760,
+    "explicit_upper_slack_standard_form_rows": 2360,
+    "explicit_upper_slack_standard_form_variables": 2440,
+    "explicit_upper_slack_standard_form_nonzeros": 12200,
+    "pair_caps_in_linear_relaxation": false,
+    "rows_sha256": "dcb3a9455a507cda9c6576f0ca7a282e5248f1017ce1eec3977c1a82ca75d7cf"
+  },
+  "formula": {
+    "primary_variables": 1220,
+    "variables": 164939,
+    "clauses": 423130,
+    "literals": 957704,
+    "constraints": {
+      "degree_rows": 60,
+      "degree_clauses": 62720,
+      "mixed_Gram_rows": 1080,
+      "mixed_Gram_clauses": 29980,
+      "common_neighbor_variables": 47437,
+      "positive_capacity_pair_clauses": 328784,
+      "outside_pair_caps": 1770,
+      "zero_capacity_pair_clauses": 1646
+    }
+  },
+  "cnf": "/tmp/conway99-f0-row-box-design-exterior.cnf",
+  "cnf_sha256": "9934d68eb3205bdc69c6e24b81fa98fbeefe4b180919fef85995a7341f66648a",
+  "cnf_bytes": 6936223,
+  "controls": {
+    "nine_rook_mixed_equations": 20,
+    "nine_rook_outside_pair_caps": 6,
+    "nine_rook_outside_degrees": [
+      2,
+      2,
+      2,
+      2
+    ],
+    "optimizer_or_solver_called": false
+  },
+  "scope": "one saved first-component0 incidence; second component and alignment/incidence free",
+  "fixed_second_component_or_graph_symmetry": false,
+  "all_first_incidences_or_component0_excluded": false,
+  "full_graph_constructed": false,
+  "optimizer_or_SAT_called": false,
+  "seconds": 1.436071575000824
+}

@@ -1,0 +1,31 @@
+{
+  "status": "PASS_COLD_EXACT_CONDITIONED_QUERY_REPLAY",
+  "source_sha256": "cd167c52b7b646a64e4faf58816212d427d1c280a45070e77a5eb8b0a29abb43",
+  "result_sha256": "176a4f6974754833eca479cfee4a7d93442d8c6d462a105611f07fd0b092dff4",
+  "bindings": {
+    "helper_source": "1e7a8b7380314d6dfd8ff05954a13662bc011378f5759ad675ec1bc281fa19e9",
+    "builder_source": "7fb335261db4c828bfc477c2525bc7bc098eac5ce7dab6941892256b8a48886c",
+    "preparation": "a01a4e845fcff7a4a2c0edbe9542248f33205640f385463e853821353e8bc65a",
+    "model_gzip": "8f398368e80ff36cba74969c8526b660c21155476b7d3cd58e0f0b7c81aeb9a0",
+    "model_raw": "8bd186531a14656a2ecf06857742532b26ff53fa3fb4f75cc2b6bd8322e51ef6",
+    "point": "0b78eb2cfc0966f66d72b083f71315e4a079e4b25f59f276c58dd93d189b49df"
+  },
+  "blocks": [
+    {
+      "root_type": 14,
+      "order": 41,
+      "exact_positive_semidefinite": true,
+      "nullity": 17
+    },
+    {
+      "root_type": 15,
+      "order": 34,
+      "exact_positive_semidefinite": true,
+      "nullity": 16
+    }
+  ],
+  "complete_two_block_coverage": true,
+  "tensor_generation_repeated": false,
+  "optimizer_called": false,
+  "seconds": 0.0482970259981812
+}

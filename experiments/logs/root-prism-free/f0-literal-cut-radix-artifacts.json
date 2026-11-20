@@ -1,0 +1,57 @@
+{
+  "schema": "conway99.f0.literal-cut-radix.artifacts.v1",
+  "status": "FROZEN: exact generic utility, complete synthetic controls and proof",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_radix.js",
+      "sha256": "e484e0e374e5579c75f3bfe9bdac2fa837acf75525d42d6c8f231a560856446c",
+      "git_blob": "6fb50f9233e3b388d08334f53f7bc0d9052408ff",
+      "bytes": 18444
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_radix_controls.js",
+      "sha256": "50453251663287a33196c78df5f078ea8ff78cce98f2f8297943249f587cf7ad",
+      "git_blob": "ef53785091dfd6d13372804c91fb0a03a73819de",
+      "bytes": 14798
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-literal-cut-radix-controls01.json",
+      "sha256": "3c234fa7e6ad8e0af15a234142f730fb9cf3011d39d2d966d6ee1c5622e44797",
+      "git_blob": "fd192460bfe1ffcc21523bdc80c32fa3bbd6ac9c",
+      "bytes": 5894
+    },
+    {
+      "path": "research/root_prism_free_f0_literal_cut_radix.md",
+      "sha256": "1664ef66f8ae89df87e8e3a2d2f4f05ed55ce3899ca0f43dd06d9bfd756d0cfd",
+      "git_blob": "235026fdc64dac1b386644d64e844644f7997fcc",
+      "bytes": 9139
+    }
+  ],
+  "scope": {
+    "generic_row_equivalence_proved": true,
+    "declared_synthetic_controls_complete": true,
+    "original_4416_row_archive_loaded": false,
+    "full_model_transport_performed": false,
+    "native_model_validator_executed": false,
+    "optimizer_calls": 0,
+    "repo_refs_changed": false
+  },
+  "result_summary": {
+    "small_rows": 1750,
+    "small_boolean_assignments": 14000,
+    "small_satisfying_assignments": 7950,
+    "small_rejected_assignments": 6050,
+    "bruteforce_rows": 236,
+    "bruteforce_boolean_assignments": 944,
+    "bruteforce_auxiliary_assignments": 21688,
+    "bruteforce_unique_witnesses": 538,
+    "large_rows": 7,
+    "large_assignments": 56,
+    "constant_rows": 33,
+    "malformed_inputs_rejected": 18,
+    "encoding_mutations_rejected": 22,
+    "witness_mutations_rejected": 7,
+    "wide_row_assignments": 4
+  },
+  "remaining_gate": "Root source/proof review and a separately bound actual literal-row transport remain required."
+}

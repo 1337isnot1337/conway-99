@@ -1,0 +1,58 @@
+{
+  "status": "PASS: exact Gram-equality coefficient shift and all twelve transports",
+  "source_sha256": "bfae134830c0fe3a6e8f2296bc26c35724046aedef71d677e48e9cecc9d7bb93",
+  "pilot_source_sha256": "b6f701949f31a09892d8b2211e9fc64d1fb7d1fa9a2ed6775185542980c350c4",
+  "carry_source_sha256": "942efb35d35429d88d7cc9c3bc14aa7a116972186f60abeebe50db89214ec75f",
+  "frozen_inputs": {
+    "f0-carry-row-loop-run01-shared-ray-repair.json.gz": "96e945d1211147e2ad13ed3468f51d72bd3ef87319ca33153eda6248e0b5c7c5",
+    "f0-carry-row-loop-run01-shared-ray-repair-independent-audit.json": "e67e932377d757928b12b0d4e4612afceff2141e92c827e919bd0f59ce4b5df1",
+    "f0-exterior-row-domains02.json.gz": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+    "f0-incidence-case00-model.json": "16deda266149f5123a1db3833cfebf22d6bdfe4426b1424fcc51ccbfdc38f0a1"
+  },
+  "maximum_passes": 20,
+  "last_pass_index": 16,
+  "coordinate_descent_stopped_at_a_fixed_point": true,
+  "heuristic_objective": [
+    "coefficient_L1_norm",
+    "coefficient_weight_bit_count",
+    "largest_absolute_coefficient"
+  ],
+  "original_objective": [
+    805330,
+    2743,
+    8493
+  ],
+  "shifted_objective": [
+    229498,
+    1670,
+    7437
+  ],
+  "distinct_nonempty_Gram_equalities": 150,
+  "nonzero_Gram_multipliers": 148,
+  "original_encoding": {
+    "auxiliary_variables": 5488,
+    "clauses": 43735,
+    "literal_occurrences": 174769,
+    "normalized_demand": 9663,
+    "normalized_weight_sum": 805330,
+    "weight_gcd": 1,
+    "gate_definition_sha256": "9bddd988d21001e1f8a523a72cb54c6d0fba3cea1f58ca7786ab65036ba81019"
+  },
+  "shifted_encoding": {
+    "auxiliary_variables": 3342,
+    "clauses": 26583,
+    "literal_occurrences": 106177,
+    "normalized_demand": 63691,
+    "normalized_weight_sum": 229498,
+    "weight_gcd": 1,
+    "gate_definition_sha256": "1f65755454ca5460466e8fcf2762a595fcc216364a8dd791e2ea037b484d629e"
+  },
+  "exact_violation_margin_preserved": 26,
+  "point_is_not_a_hypothesis_of_the_shifted_inequality": true,
+  "all_original_Gram_equalities_are_existing_model_premises": true,
+  "existing_formula_changed": false,
+  "optimizer_or_solver_called": false,
+  "component_excluded": false
+}
+seconds 3.5850992470004712
+output_sha256 580442e8c3404a15685270fd139d565ae1924ac37edd8cad0d8975cfb23554ba

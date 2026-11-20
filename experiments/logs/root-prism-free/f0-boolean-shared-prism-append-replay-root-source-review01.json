@@ -1,0 +1,32 @@
+{
+  "schema": "conway99.f0.prism-append-replay-root-source-review.v1",
+  "status": "PASS_SOURCE_REVIEW_ONLY_MAIN_REPLAY_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_boolean_shared_prism_append_replay.py",
+    "bytes": 20304,
+    "sha256": "ca9eafb42072d60287dc256813f0ee8e6914a8a9fa8169156847dda4fc91e77f",
+    "git_blob": "a949ea9535d9ff77e83af6c461d7e3d848f77620",
+    "mode": "100644"
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-boolean-shared-prism-append-independent-controls01.json",
+    "bytes": 412,
+    "sha256": "9d3917c6623e07fb11b3a3701981788bb09e907bd730adfe418f663cc41654d2",
+    "git_blob": "b2bbedfeb914e0232a61015ab5c13b1100de5d10",
+    "mode": "100644"
+  },
+  "complete_source_lines_read": 318,
+  "checks": [
+    "Every appended row is compared as complete serialized ConstraintProto, including metadata and unknown fields.",
+    "The original parent must be a full raw byte prefix, and removal of all appended constraints must serialize to exactly the parent.",
+    "All original variable names, domains and model metadata are preserved by the full parent comparison.",
+    "The exact three-exterior and original four-exterior orders, terms and origins bind the accepted finite family receipts.",
+    "The failed four-exterior outer receipt remains failed; the independent metadata resolution is required explicitly.",
+    "The 90-second construction-stage bound is distinct from the120-second preparation owner, which includes gzip packaging.",
+    "Controls reject24 row mutations including hidden protobuf fields; no producer or CpModel/CpSolver is imported."
+  ],
+  "recovered_terminal_files_root_rehashed": 9,
+  "accepted_native_append_cold": false,
+  "native_queries_authorized": 0,
+  "runtime": "Unavailable. This source review does not execute or accept the main replay."
+}

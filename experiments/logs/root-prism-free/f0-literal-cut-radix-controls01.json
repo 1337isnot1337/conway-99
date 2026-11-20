@@ -1,0 +1,174 @@
+{
+  "schema": "conway99.signed-radix-controls-execution.v1",
+  "source_bindings": {
+    "utility": {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_radix.js",
+      "sha256": "e484e0e374e5579c75f3bfe9bdac2fa837acf75525d42d6c8f231a560856446c",
+      "git_blob": "6fb50f9233e3b388d08334f53f7bc0d9052408ff"
+    },
+    "controls": {
+      "path": "experiments/workspace/root_prism_free_f0_literal_cut_radix_controls.js",
+      "sha256": "50453251663287a33196c78df5f078ea8ff78cce98f2f8297943249f587cf7ad",
+      "git_blob": "ef53785091dfd6d13372804c91fb0a03a73819de"
+    }
+  },
+  "execution": {
+    "engine": "functions.exec V8",
+    "owned_process_or_native_solver": false,
+    "complete_declared_run": true,
+    "automatic_retries": 0
+  },
+  "result": {
+    "schema": "conway99.signed-radix-controls.v1",
+    "status": "PASS: complete declared synthetic radix controls",
+    "utility_sha256": "e484e0e374e5579c75f3bfe9bdac2fa837acf75525d42d6c8f231a560856446c",
+    "scope": "synthetic utility controls only",
+    "actual_4416_rows_loaded": false,
+    "native_model_built": false,
+    "native_solver_calls": 0,
+    "native_model_validator_executed": false,
+    "declared_seconds": 30,
+    "counts": {
+      "small_rows": 1750,
+      "small_boolean_assignments": 14000,
+      "small_satisfying_assignments": 7950,
+      "small_rejected_assignments": 6050,
+      "bruteforce_rows": 236,
+      "bruteforce_boolean_assignments": 944,
+      "bruteforce_auxiliary_assignments": 21688,
+      "bruteforce_unique_witnesses": 538,
+      "large_rows": 7,
+      "large_assignments": 56,
+      "constant_rows": 33,
+      "malformed_inputs_rejected": 18,
+      "encoding_mutations_rejected": 22,
+      "witness_mutations_rejected": 7,
+      "wide_row_assignments": 4
+    },
+    "small_decision_ledger_sha256": "352571120a7ad96f2cb0ebbd7b4cf866022e0d7d20cf19737597c78c191606d0",
+    "bruteforce_decision_ledger_sha256": "85985b3e35bd112cb5710c0f403cf397fad65ef781c6953999c5d7e23a9e8966",
+    "large_cases": [
+      {
+        "original_row_sha256": "ccded10b6f6e6327c24aa668e432ec3d34bd26547f7bb16b644146492d70870d",
+        "digits": 3,
+        "coefficient_bits": [
+          78
+        ],
+        "rhs_bits": 78,
+        "satisfying_assignments": 4,
+        "maximum_residual_absolute_bound": "5689194390"
+      },
+      {
+        "original_row_sha256": "ba6f5bcb70f950bcb26a3ac6d229942b359ed8da3b863abd3a748a5f9a555b19",
+        "digits": 3,
+        "coefficient_bits": [
+          78
+        ],
+        "rhs_bits": 78,
+        "satisfying_assignments": 4,
+        "maximum_residual_absolute_bound": "5689194391"
+      },
+      {
+        "original_row_sha256": "97c8ff2f20d1006e63218c29a7733054e0c8f80666ed44710643d6e0ca00c409",
+        "digits": 3,
+        "coefficient_bits": [
+          78,
+          78
+        ],
+        "rhs_bits": 1,
+        "satisfying_assignments": 6,
+        "maximum_residual_absolute_bound": "6762936215"
+      },
+      {
+        "original_row_sha256": "7ef34dec4d0037c9bb2aa97fa39a15dbbdf8e3a03f614db598fdffeb6701fbe6",
+        "digits": 7,
+        "coefficient_bits": [
+          78,
+          78,
+          202
+        ],
+        "rhs_bits": 151,
+        "satisfying_assignments": 4,
+        "maximum_residual_absolute_bound": "7836678106"
+      },
+      {
+        "original_row_sha256": "2215f5e8613bf7bfaec2c1be297ed3fb157b22020962c7e129844176cc6d1130",
+        "digits": 7,
+        "coefficient_bits": [
+          202,
+          202,
+          78
+        ],
+        "rhs_bits": 130,
+        "satisfying_assignments": 2,
+        "maximum_residual_absolute_bound": "8910419894"
+      },
+      {
+        "original_row_sha256": "a1b72f78f59f424aa9f384310178a7a44dfff3be1c3118155838b80725d841f3",
+        "digits": 4,
+        "coefficient_bits": [
+          91
+        ],
+        "rhs_bits": 1,
+        "satisfying_assignments": 8,
+        "maximum_residual_absolute_bound": "4294967298"
+      },
+      {
+        "original_row_sha256": "dab6884708ecc1ed453415ab64193b8f2b6bfd5a08883e7fa00c20d682eb7e69",
+        "digits": 4,
+        "coefficient_bits": [
+          1
+        ],
+        "rhs_bits": 91,
+        "satisfying_assignments": 8,
+        "maximum_residual_absolute_bound": "4294967298"
+      }
+    ],
+    "supplied_large_coefficient": {
+      "value": "151115862703648029875148",
+      "bits": 78
+    },
+    "wide_row": {
+      "digits": 3,
+      "native_audit": {
+        "limbs": [
+          {
+            "limb": 0,
+            "minimum_activity": "-775241596688",
+            "maximum_activity": "776315338511",
+            "interval_width": "1551556935199",
+            "sum_absolute_term_bounds": "1034013376031",
+            "residual_absolute_bound": "1035087117854"
+          },
+          {
+            "limb": 1,
+            "minimum_activity": "-775241597170",
+            "maximum_activity": "776315338993",
+            "interval_width": "1551556936163",
+            "sum_absolute_term_bounds": "1034013376513",
+            "residual_absolute_bound": "1034013376513"
+          },
+          {
+            "limb": 2,
+            "minimum_activity": "-482",
+            "maximum_activity": "1073742305",
+            "interval_width": "1073742787",
+            "sum_absolute_term_bounds": "1073742305",
+            "residual_absolute_bound": "1073742305"
+          }
+        ],
+        "maximum_sum_absolute_term_bounds": "1034013376513",
+        "maximum_residual_absolute_bound": "1035087117854",
+        "universal_residual_bound": "1035087118336",
+        "new_variable_domain_sum": "3221227397",
+        "full_existing_model_domain_sum_checked": false,
+        "native_model_validator_executed": false
+      }
+    },
+    "small_boolean_domain_complete": true,
+    "tiny_auxiliary_projection_complete": true,
+    "auxiliary_witness_unique_in_all_bruteforce_controls": true,
+    "phase": "complete",
+    "elapsed_milliseconds": 6073
+  }
+}

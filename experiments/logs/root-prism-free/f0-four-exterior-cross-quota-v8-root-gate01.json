@@ -1,0 +1,54 @@
+{
+  "schema": "conway99.f0.four-exterior-cross-quota-root-gate.v1",
+  "status": "AUTHORIZED_ONE_BOUNDED_COMPLETE_RECONSTRUCTION",
+  "reviewer": "root",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_four_exterior_cross_quota_v8.js",
+    "bytes": 5171,
+    "sha256": "28a3178b1b800e88e587780833abeb0aea0948bc62da6e03756f225afec3e86d",
+    "git_blob": "2fbb46f5a60204d8e8b5873874ef4c7385e97048",
+    "mode": "100644"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-v8-configuration01.json",
+    "bytes": 2900,
+    "sha256": "6d39de0864b80d0eb6fd97fb516db3afd9988bc2d6d7c200d47db543ed22283c",
+    "git_blob": "74b5c52e46281444e9b635746c90d9631ca5d432",
+    "mode": "100644"
+  },
+  "controls": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-v8-controls01.json",
+    "bytes": 633,
+    "sha256": "c92fa1c91260e5cceada8eb449ab68af2eac7e540b668e50f3c996ae3600bc00",
+    "git_blob": "fa3c9ee00aa8a3083ac53bc9007ac2d07c13cbd8",
+    "mode": "100644"
+  },
+  "independent_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-four-exterior-cross-quota-v8-independent-source-review01.json",
+    "bytes": 3997,
+    "sha256": "b413ff77ccecea862540b429277a0c09941b92f716ed2c74ecc252bcc6139fcb",
+    "git_blob": "f448dec24ed416542595cb43cab8e799b281d46d",
+    "mode": "100644"
+  },
+  "complete_source_configuration_review_read": true,
+  "verified": [
+    "Source and codec byte/SHA/Git identities.",
+    "Both mixed-equation certificates and native row offsets.",
+    "Original complete ordered row-key digest is an acceptance requirement in addition to all counts.",
+    "All complete row keys, origins and proposed proofs are retained.",
+    "Input archive/raw identities must be freshly decoded and verified before main."
+  ],
+  "limits": {
+    "census_ms": 30000,
+    "wrapper_ms": 60000,
+    "serialized_report_bytes": 67108864,
+    "automatic_retries": 0
+  },
+  "runs_authorized": 1,
+  "automatic_retries": 0,
+  "optimizer_calls_authorized": 0,
+  "native_model_builds_authorized": 0,
+  "mathematical_acceptance": "New quota disposition requires a separate independent check before changing a native model.",
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

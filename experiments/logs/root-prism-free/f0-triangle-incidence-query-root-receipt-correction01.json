@@ -1,0 +1,73 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-root-receipt-source-correction.v1",
+  "status": "FROZEN_UNRUN_EXACT_ONE_LINE_RUNNER_AND_PIN_CORRECTION",
+  "reason": "The root native-model receipt preserves driver as the actual CI terminal JSON and adds driver_source for the corrected Python CI source.",
+  "runner": {
+    "before": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_unrun_draft02.py",
+      "bytes": 39628,
+      "sha256": "d7e5307f0554cc308dbdf26dd3225b3cdb9d2628b9261b9896bbb9698ec83d0e",
+      "git_blob": "fc4bedae06976c50d6efafaa80d3155aa397aee4"
+    },
+    "after": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py",
+      "bytes": 39635,
+      "sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+      "git_blob": "7295da45c769913e7bb8b6b408abac551880a29a"
+    },
+    "substitution": {
+      "before": "    same_reference(root_acceptance[\"driver\"], cfg[\"sources\"][\"model_ci\"])",
+      "after": "    same_reference(root_acceptance[\"driver_source\"], cfg[\"sources\"][\"model_ci\"])",
+      "count": 1,
+      "line": 151
+    },
+    "changed_lines": 1
+  },
+  "ci": {
+    "before": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci_unrun_draft01.py",
+      "bytes": 17160,
+      "sha256": "c7ce283f58332ebb8311130f042650027ce55dcc81ac44ed891594d107fa11b7",
+      "git_blob": "9473b8c7495022d4288baf09cadcdea5e94d2ace"
+    },
+    "after": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_ci.py",
+      "bytes": 17160,
+      "sha256": "a6a048ab3f385e04ab157971eb70ad1f56ba7515cc5c0887a29ac12c97d5910a",
+      "git_blob": "182b9cbd13f3033edca5431dc7c578e1fbec3e87"
+    },
+    "substitution": {
+      "before": "QUERY_SHA = \"d7e5307f0554cc308dbdf26dd3225b3cdb9d2628b9261b9896bbb9698ec83d0e\"",
+      "after": "QUERY_SHA = \"c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34\"",
+      "count": 1
+    },
+    "changed_lines": 1
+  },
+  "unchanged_terminal_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "git_blob": "5191a03e92e6ab9f1039eeb791518baebdec4661",
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "bytes": 37638
+  },
+  "unchanged_checker_review": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-replay-independent-source-review01.json",
+    "bytes": 7784,
+    "sha256": "844a7f9d3fff39b70c3d0e87298a59df380a2d9dc30ef9eeadfb24552550ac6a",
+    "git_blob": "d7657e42ecb36d715fe2fdd8cb5c6043db3cc822"
+  },
+  "preservation": {
+    "earlier_placeholder_draft_path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_unrun_draft01.py",
+    "earlier_placeholder_draft_sha256": "371d8a23a156bda11751644a9477822f2d2d0ed8a13325710828ea0a06fdcb28",
+    "d7_source_preserved_under_distinct_unrun_draft02": true,
+    "consumed_sources_modified": false
+  },
+  "source_imports": 0,
+  "compilations": 0,
+  "controls_runs": 0,
+  "model_decodes": 0,
+  "preflight_runs": 0,
+  "optimizer_calls": 0,
+  "native_queries": 0,
+  "actual_native_model_acceptance_pending": true,
+  "no_execution_authorized_by_this_record": true
+}

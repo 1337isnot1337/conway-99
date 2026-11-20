@@ -1,0 +1,91 @@
+{
+  "schema": "conway99.f0.combined-extensions-query-preflight-workflow-root-review.v1",
+  "status": "PASS_COMPLETE_TEMPLATE_AND_EXACT_ACTUAL_PREFLIGHT_WORKFLOW_REVIEW",
+  "workflow": {
+    "path": ".github/workflows/conway99-combined-extensions-query-preflight.yml",
+    "bytes": 9121,
+    "sha256": "19aa3d9a606a187e6b86f269e8cf3d383b5505680529308fea387edf96e0ba1b",
+    "git_blob": "f51016f90d8ebad9a943c39b65736f4e7e326f7b",
+    "mode": "100644"
+  },
+  "source_template": {
+    "path": "experiments/workspace/conway99-combined-extensions-query-preflight.template.yml",
+    "bytes": 7173,
+    "sha256": "0a6882055c55f31a8f3bbc3ddf638e97f82317ced88b303b51224254eb70bfd1",
+    "git_blob": "259fecfea606673887a0e8bd632dd8b3a935a1c0"
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration01.json",
+    "bytes": 6112,
+    "sha256": "3211efaf7c13917b36c3e47eedf3fc42e761f74b39ce8fcb4330d47a7072f2af",
+    "git_blob": "4fdd5c09bbc7416a850ed265597e5dfac89bb236",
+    "mode": "100644"
+  },
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "bytes": 38105,
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "git_blob": "054d93e150fe010e78d5aef27208f6e0ab7eb79d"
+  },
+  "independent_source_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-independent-source-review01.json",
+    "bytes": 5869,
+    "sha256": "5051e866228b138e6b26ab454d4d24f335d874ba11bf6992fbf17cd46be56468",
+    "git_blob": "68587d5fda74adca5bac006cb69139f70f7e1775",
+    "mode": "100644"
+  },
+  "root_configuration_review": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-final-configuration-root-review01.json",
+    "bytes": 3378,
+    "sha256": "d3f0e75f7dd362886c759dd511541bb0c5e746fd09cb3169e1845a3448e02584",
+    "git_blob": "fc38ac8c5546505838cc7a89de96dd589cf9fdd4",
+    "mode": "100644"
+  },
+  "full_template_source_read": true,
+  "exact_adaptations": [
+    "Remove two inactive-template comment lines",
+    "Replace complete sparse checkout token with22 exact dependency/control paths",
+    "Replace configuration token with its accepted actual path",
+    "Check event.after against GITHUB_SHA in addition to the parent/ref/attempt guards"
+  ],
+  "sparse_checkout_paths": [
+    ".github/workflows/conway99-combined-extensions-query-preflight.yml",
+    "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold-owner/owner.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold/report.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/model.pb.gz",
+    "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/owner.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/report.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration-binding01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-query-configuration01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-query-final-configuration-root-review01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-query-independent-source-review01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-request01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-root-gate01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-workflow-root-review01.json",
+    "experiments/logs/root-prism-free/f0-combined-extensions-query-root-source-review01.json",
+    "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+    "experiments/workspace/root_prism_free_f0_combined_extensions_ci.py",
+    "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+    "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+    "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py"
+  ],
+  "all_twelve_configuration_inputs_and_helpers_included": true,
+  "all_executed_python_sources_bound_and_compiled_before_preflight": true,
+  "original_model_archive_and_receipts_bound_before_native_transport": true,
+  "one_preflight_owner_seconds": 75,
+  "preflight_phase_seconds": 60,
+  "optimizer_calls_allowed": 0,
+  "automatic_retries": 0,
+  "workflow_timeout_minutes": 5,
+  "read_only_permissions_and_immutable_actions": true,
+  "native_response_and_integer_controls_are_inherited_from_reviewed_source": true,
+  "exact_original_preflight_output_bytes_preserved_in_bundle": true,
+  "all_outputs_including_full_model_uploaded": true,
+  "no_production_gate_in_this_workflow": true,
+  "actual_gate_request_values_require_final_root_binding_check": true,
+  "actual_compilation_or_preflight_performed": false,
+  "blockers": []
+}

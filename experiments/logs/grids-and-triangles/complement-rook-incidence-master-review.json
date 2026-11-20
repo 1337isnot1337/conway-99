@@ -1,0 +1,51 @@
+{
+  "status": "independent dense domain and master completeness review PASS",
+  "review_source_sha256": "6f8fb187ba7b625755bb7a3ef63cf3f2348549a64f8e80c07c926cb94dea16ed",
+  "manifest": "experiments/logs/grids-and-triangles/complement-rook-incidence-master-model.json",
+  "manifest_sha256": "c0d896d2f4ff1ef8a6a4dc172137724744293ee089719ad662eb0bc649921836",
+  "reviewed_source_hashes": {
+    "complement_rook_incidence_master.py": "01476233b9cf838e2d45d0583dcd0c5cc6bd3a3c5226164a36ed2e1d4cfd6594",
+    "complement_rook_incidence_master_certificate.py": "f5ddd52ab89f6911dc522bbd83f894466719b72890a192fd2d4387aebf2db15c",
+    "complement_rook_joint_split.py": "4de968aab5ff6ab5248a56a7bcf484a60493ddfc5ec855a47657c749db4b637b",
+    "complement_rook_a_incidence.py": "785ac205a8bb2b63fc21649eff3bcdc94fbc103ce6d1f3b7d473153d60567e19",
+    "two_rook_iso_joint_integer.py": "6f62d78af4dfca5e141e0541b4572433a08b628f474e972288ce38a18032202e"
+  },
+  "core_order": 27,
+  "candidate_triples_examined": 729,
+  "admissible_signatures": 252,
+  "full_gram_entries_checked": 729,
+  "margin_equations": 180,
+  "margin_histogram": [
+    [
+      0,
+      1,
+      2,
+      36
+    ],
+    [
+      0,
+      2,
+      1,
+      72
+    ],
+    [
+      1,
+      2,
+      1,
+      72
+    ]
+  ],
+  "diagonal_margins_derived": 27,
+  "implied_population": 72,
+  "master_variables": 1332,
+  "master_clauses": 2520,
+  "master_cnf_sha256": "9145f5a1e7f5c2e7a482a9d38baa86f4c39949482baf172d73e0ac8e3989ec9f",
+  "oracle_variables": 1156482,
+  "oracle_clauses": 2575728,
+  "oracle_edge_variables": 20934,
+  "full_signed_assumptions_checked": 252,
+  "signed_cut_truth_table_cases": 256,
+  "solver_called": false,
+  "large_CNF_parsed_or_rebuilt": false,
+  "new_graph_or_exclusion_claimed": false
+}

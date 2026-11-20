@@ -1,0 +1,127 @@
+{
+  "schema": "conway99.f0-local41-batch-preparation.v1",
+  "runner_source_sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278",
+  "builder": {
+    "path": "experiments/workspace/root_prism_free_f0_local_neighbors.py",
+    "sha256": "cf3f4e250ce9c33bbc3c1c0714f0188de012d0d4d36ae32d427d15771349a6e9"
+  },
+  "models_directory": "experiments/logs/root-prism-free/f0-local41-preparation02",
+  "models_preparation_sha256": "2213372cd8615df2c177c08d7dfd034812eeb385a75266ada1403d331d765976",
+  "ordered_centers": [
+    336,
+    50,
+    37,
+    57,
+    63,
+    53,
+    47,
+    2,
+    39,
+    33,
+    354,
+    52,
+    10,
+    32,
+    51,
+    45,
+    40,
+    34,
+    8,
+    38,
+    41,
+    43,
+    58,
+    345,
+    9,
+    342,
+    339,
+    25,
+    344,
+    338,
+    347,
+    24,
+    343,
+    11,
+    356,
+    35,
+    46,
+    36,
+    346,
+    0,
+    44
+  ],
+  "reused_center": 355,
+  "reused_result_binding": {
+    "path": "experiments/logs/root-prism-free/f0-local-center355-pilot01/result.json",
+    "sha256": "691770408d6af35c86cd06004344b51159dbd6ba8ceafd2b185b5764ee37cd0e"
+  },
+  "reused_replay_binding": {
+    "path": "experiments/logs/root-prism-free/f0-local-center355-pilot01-replay/result.json",
+    "sha256": "d7f61ccc7b2916d545fab07443104fe8d01a9b71368248ed063fb1361730b217"
+  },
+  "maximum_seconds_per_child": 5,
+  "maximum_batch_seconds": 60,
+  "maximum_production_solve_calls": 41,
+  "maximum_calls_per_center": 1,
+  "solver": "Glucose4",
+  "proof_enabled": true,
+  "threads_per_child": 1,
+  "child_deadline_includes_imports_loading_initialization_and_raw_writes": true,
+  "batch_deadline_includes_parent_native_checks": true,
+  "preflight_file_hash_checks_outside_batch_clock": true,
+  "UNKNOWN_persisted_before_kill_and_reap": true,
+  "partial_proofs_never_accepted": true,
+  "matching_constraints_added": false,
+  "literal_neighbor_bits_untied": true,
+  "UNSAT_requires_fresh_CNF_and_separate_DRAT_check": true,
+  "scope": "Complete 41 unqueried local projections; SAT is not graph completion.",
+  "preparation_initialization_seconds": 0.0779347650022828,
+  "supervisor_controls": [
+    {
+      "name": "exit0",
+      "status": "CHILD_EXITED",
+      "production_outcome_accepted": false,
+      "returncode": 0,
+      "child_reaped": true,
+      "seconds": 0.692669192001631
+    },
+    {
+      "name": "exit3",
+      "status": "ERROR_CHILD_EXIT",
+      "production_outcome_accepted": false,
+      "returncode": 3,
+      "child_reaped": true,
+      "seconds": 0.032475453001097776
+    },
+    {
+      "name": "deadline",
+      "status": "UNKNOWN_HARD_DEADLINE",
+      "production_outcome_accepted": false,
+      "returncode": -9,
+      "child_reaped": true,
+      "seconds": 0.10155523800494848
+    }
+  ],
+  "supervisor_control_continuation": {
+    "helper_source_sha256": "fa2568be85c35da9b2ce7db6db3a4d04a4750167eedbb59526cbe5a0bda431ba",
+    "prior_success": {
+      "path": "experiments/logs/root-prism-free/f0-local41-batch01-controls/exit0/supervisor.json",
+      "sha256": "1eb5eb54c00527bf8f1273a33b40495a17bae4823a737c939f554cdff96a3b0e"
+    },
+    "prior_failure": {
+      "path": "experiments/logs/root-prism-free/f0-local41-batch01-preparation-failure.json",
+      "sha256": "2ac53294b1a05cd81755bcf427b77da8a5d5f8d3423613a849d03a925e03966d"
+    },
+    "fresh_records": [
+      {
+        "path": "experiments/logs/root-prism-free/f0-local41-batch02-controls/exit3/supervisor.json",
+        "sha256": "851023edeb532ea7569f4d7a39df0c85b1ac0368e6514df1090caae48c93bdba"
+      },
+      {
+        "path": "experiments/logs/root-prism-free/f0-local41-batch02-controls/deadline/supervisor.json",
+        "sha256": "1b2d902ceee929b5b0a8a86f644a67e3955eb598dba8219b890c3544dfd9ec27"
+      }
+    ]
+  },
+  "production_queries": 0
+}

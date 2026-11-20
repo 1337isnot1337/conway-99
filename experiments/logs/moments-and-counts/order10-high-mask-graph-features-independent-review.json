@@ -1,0 +1,38 @@
+{
+  "status": "PASS: independent source and normalization review plus saved-array checks",
+  "subject_source": "experiments/workspace/grid_free_order10_high_mask_graph_features.py",
+  "subject_source_sha256": "e5f8ae3388375c9cb84a2689917acdaf3973d0c2c2553c01647b5807c36ad934",
+  "subject_result_sha256": "fc5c2876dfdbfe6b9237a0ebfa610742fda9e3127bd00d6b0676e6e2ee576596",
+  "query_source_sha256": "97490da5a7f39ff1e9d20ac9f5124e8552cfe8c715ac0f6017a2ad6e4fec8eda",
+  "query_preparation_sha256": "2b2929dcdab9a36acc08b6f5882a681ea1805eafc01393081a67257da3e9e01c",
+  "checks": {
+    "all_feature_source_read": true,
+    "involutive_adjacent_root_generators_rechecked": 5,
+    "predecessor_transport_direction": "each saved generator maps its child to its parent because it is an involution",
+    "matrix_update_has_no_repeated_index_pairs": "each update uses distinct full graph columns",
+    "coefficient_meaning": "number of free subsets in the rooted induced-pattern orbit",
+    "identical_column_quotient": "one mass may be assigned to its saved representative graph",
+    "individual_pattern_uniform_lift": "coefficient divided by root-label orbit size",
+    "root_label_group_order": 720,
+    "host_graph_automorphism_not_assumed": true,
+    "row_rank_proof": "distinct same-degree patterns give identity diagonal blocks; lower degree containment is triangular"
+  },
+  "independently_replayed_saved_array_checks": {
+    "full_column_map_checks": 157711,
+    "full_matrix_sha256_replayed": "ad7860b8e1851dcea3647595950df1cf5b98d2fd5c68c6d672ba2eee6e1fe5e2",
+    "full_matrix_nonzeros": 7291472,
+    "distinct_matrix_nonzeros": 782041,
+    "presence_rows_checked_on_every_full_column": 73,
+    "degree_partitions_checked_on_every_distinct_column": 5,
+    "exact_row_rank_from_unimodular_minor": 200,
+    "maximum_column_sum": 386,
+    "fresh_graph_enumeration_or_product_tensor": false
+  },
+  "limits": {
+    "fresh_graph_census_repeated": false,
+    "fresh_product_tensors_built": false,
+    "all_literal_subset_counts_recomputed": false,
+    "production_optimizer_called": false,
+    "graph_existence_resolved": false
+  }
+}

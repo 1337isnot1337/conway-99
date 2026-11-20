@@ -1,0 +1,236 @@
+{
+  "adapter": {
+    "bytes": 33316,
+    "path": "experiments/workspace/rook_case4_box_cut_lp_adapter.py",
+    "sha256": "7f574542d4fef61915337696bd6061d98ee4bdc3eb57709b7a698b3f4cb1ed07"
+  },
+  "changed_functions": [
+    "validate_registry",
+    "inspect_point"
+  ],
+  "function_checks": [
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "save",
+      "new_sha256": "736f75140f378049c13ecf5161faa1325474241423783f934cebd9a8d7de7c18",
+      "old_sha256": "736f75140f378049c13ecf5161faa1325474241423783f934cebd9a8d7de7c18"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "save_gzip",
+      "new_sha256": "af25688ece436ab4becdffc48e3743e3a19bc12277793629b52abad1d2137339",
+      "old_sha256": "af25688ece436ab4becdffc48e3743e3a19bc12277793629b52abad1d2137339"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "read_record",
+      "new_sha256": "3959542085f32a8171de86ec2ac7ab1d90a6b0b3840a24d898fddab7fae42aba",
+      "old_sha256": "3959542085f32a8171de86ec2ac7ab1d90a6b0b3840a24d898fddab7fae42aba"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "record_ref",
+      "new_sha256": "a8c10cb7f425cb9357db3fa05fc77ea79e71eab110a0c2145150d50ee0e5e596",
+      "old_sha256": "a8c10cb7f425cb9357db3fa05fc77ea79e71eab110a0c2145150d50ee0e5e596"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "checked_ref",
+      "new_sha256": "56ec1013547967c21d0afcdd73d2a712efca34b97f3556052d0ed8eaa02144d4",
+      "old_sha256": "56ec1013547967c21d0afcdd73d2a712efca34b97f3556052d0ed8eaa02144d4"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "source_bindings",
+      "new_sha256": "e1b172ac51e015d99d950ced0b9da39b2327a46bcf44115b6e45ff4176627977",
+      "old_sha256": "e1b172ac51e015d99d950ced0b9da39b2327a46bcf44115b6e45ff4176627977"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "read_input",
+      "new_sha256": "2ecb26c3effa4bf8c97f05fa26adf3c9b526740cc136d0edc9eddb05a751b6b6",
+      "old_sha256": "2ecb26c3effa4bf8c97f05fa26adf3c9b526740cc136d0edc9eddb05a751b6b6"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "point_data",
+      "new_sha256": "c9300a8dfecbe3baa11150cbe7e4aadd2f129ac600bb1d3fe59104802b337dfa",
+      "old_sha256": "c9300a8dfecbe3baa11150cbe7e4aadd2f129ac600bb1d3fe59104802b337dfa"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "domain",
+      "new_sha256": "7b0c72035a877b421ed54765b351d5fe49f5b1275f2acb83ab3403111f1d6383",
+      "old_sha256": "7b0c72035a877b421ed54765b351d5fe49f5b1275f2acb83ab3403111f1d6383"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "with_point",
+      "new_sha256": "aa7daa8f5c7fda6df97b2c804fbcb7c11bd0e1a0cfc9d3e1c76e5f8177bb8e9d",
+      "old_sha256": "aa7daa8f5c7fda6df97b2c804fbcb7c11bd0e1a0cfc9d3e1c76e5f8177bb8e9d"
+    },
+    {
+      "identical_ast": false,
+      "identical_text": false,
+      "name": "validate_registry",
+      "new_sha256": "0ab084e9842bb92314a38bd93965bf5e11129922f6de98d52085bb9ba75dd3a0",
+      "old_sha256": "f43a89f1567aeeb1d5c5df0303b65ed9f3cc87d4f0530fb988783221884144ce"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "load_matrix",
+      "new_sha256": "da18aa424d3bc7e7843f19143bc277c6db00a21bac73911c3a6c9f1ad374cede",
+      "old_sha256": "da18aa424d3bc7e7843f19143bc277c6db00a21bac73911c3a6c9f1ad374cede"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "checked_state",
+      "new_sha256": "57939cc3e4910e87e5d9f43daccc97de27f4df51b8051c18352ed1dd119a48b8",
+      "old_sha256": "57939cc3e4910e87e5d9f43daccc97de27f4df51b8051c18352ed1dd119a48b8"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "numerical_scan",
+      "new_sha256": "e8b91df98e3bf786e19f02a5a94b390175e7ce965c8d2ec3eb38273858ced25d",
+      "old_sha256": "e8b91df98e3bf786e19f02a5a94b390175e7ce965c8d2ec3eb38273858ced25d"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "float_matrix",
+      "new_sha256": "2a9ad10a90989b6820f4ed6e7a420f94f15858711eb546aab9ec3d371c4a6edb",
+      "old_sha256": "2a9ad10a90989b6820f4ed6e7a420f94f15858711eb546aab9ec3d371c4a6edb"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "initial_rows",
+      "new_sha256": "9ef7a62b07cb2b9df652bcbdc47b25aec0a0090cd679e256d7d26daf74759b74",
+      "old_sha256": "9ef7a62b07cb2b9df652bcbdc47b25aec0a0090cd679e256d7d26daf74759b74"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "numeric_stage",
+      "new_sha256": "55860268e923b28816517e4a8aa67aa23d3f6368e11ed40d0861ad8fdbd2ac3f",
+      "old_sha256": "55860268e923b28816517e4a8aa67aa23d3f6368e11ed40d0861ad8fdbd2ac3f"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "numeric_records",
+      "new_sha256": "ec568a89bbf448d67854cd7d7a512d1adb38334257460182a27dd22d99d809d7",
+      "old_sha256": "ec568a89bbf448d67854cd7d7a512d1adb38334257460182a27dd22d99d809d7"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "expanded_numeric",
+      "new_sha256": "876362d36d682cd7ad67a5cfce0b5a3047e5560c3466d5a7b3b3781295f9b801",
+      "old_sha256": "876362d36d682cd7ad67a5cfce0b5a3047e5560c3466d5a7b3b3781295f9b801"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "finite_bound",
+      "new_sha256": "db5672ce679487e06c2c1ea829c9744f3197bda45ded5727c600c6412edb118b",
+      "old_sha256": "db5672ce679487e06c2c1ea829c9744f3197bda45ded5727c600c6412edb118b"
+    },
+    {
+      "identical_ast": false,
+      "identical_text": false,
+      "name": "inspect_point",
+      "new_sha256": "d2b104314d5a77004ad4304b8c58585766ae502eb7ef7456349923683426783c",
+      "old_sha256": "3250aba7ef631b7a1f69c6b21f247b2adfa71ccc2d367ad83d38ee414d69fb9f"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "exact_stage",
+      "new_sha256": "bdd1b51cc2da409f3e3b554ee0c6161766a03e9821d87e13c36ac1bf4254cb32",
+      "old_sha256": "bdd1b51cc2da409f3e3b554ee0c6161766a03e9821d87e13c36ac1bf4254cb32"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "replay_numeric",
+      "new_sha256": "59301ad56fcba7570a7f998fd2dcb69a8493195bb93758239ed53199e888e07d",
+      "old_sha256": "59301ad56fcba7570a7f998fd2dcb69a8493195bb93758239ed53199e888e07d"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "exact_cold",
+      "new_sha256": "702e6561dd2e00d96592993c6876bdec180d2da112be9603ac7f071a8632a778",
+      "old_sha256": "702e6561dd2e00d96592993c6876bdec180d2da112be9603ac7f071a8632a778"
+    },
+    {
+      "identical_ast": true,
+      "identical_text": true,
+      "name": "state_payload",
+      "new_sha256": "e356ac20e3920797a08ba9a120903f32c71597a0327f33ae5195665137a91892",
+      "old_sha256": "e356ac20e3920797a08ba9a120903f32c71597a0327f33ae5195665137a91892"
+    }
+  ],
+  "header_substitutions": [
+    [
+      "module_docstring",
+      "\"\"\"Bounded proof-producing case4 parity / LP / saved-basis cycle.\n\nPreparation only constructs exact inventories and tiny controls. Production\nstarts with a fresh parity scan of the accepted seed point. At most two new\nLP rounds are possible, each justified by new exact violated parity rows.\nAll167115 existing extended rows remain an immutable prefix. No face,\ncandidate alias or numerical support is ever imposed as a universal fact.\n\"\"\"",
+      "\"\"\"Single-round LP kernels with a distinct exact branch-box proof kind.\n\nThe numerical, basis, finite-box and cold functions are source-identical to\nthe reviewed v4 implementations, apart from registry proof dispatch and\naccurate acceptance metadata. No old module is modified. This module has\nno scan, multi-round cycle, or CLI production entry point.\n\"\"\""
+    ],
+    [
+      "proof_import",
+      "import rook_case4_face112_h3_weighted_parity as weighted\n",
+      "import rook_case4_face112_h3_weighted_parity as weighted\nimport rook_case4_box_cut_lp_proof as box_proof\n"
+    ],
+    [
+      "proof_source_binding",
+      "SOURCES = {\n",
+      "SOURCES = {\n    \"box_proof\": (\"experiments/workspace/rook_case4_box_cut_lp_proof.py\", \"091946b8444aa1c3b49f2955b076e00f7241a96926a9b9d2a4afb210fe4067c3\"),\n"
+    ]
+  ],
+  "identical_functions": 23,
+  "inspection_metadata_substitution": [
+    "            \"appended_signed_parity_rows_checked\": len(registry),\n",
+    "            \"appended_signed_parity_rows_checked\": sum(\"proof_kind\" not in e for e in registry),\n            \"appended_box_cover_rows_checked\": sum(e.get(\"proof_kind\") == box_proof.PROOF_KIND for e in registry),\n            \"appended_proved_rows_checked\": len(registry),\n"
+  ],
+  "native_calls": 0,
+  "old": {
+    "path": "experiments/workspace/rook_case4_parity_cycle_v4.py",
+    "sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e"
+  },
+  "old_arithmetic_kernel_still_imported_by_hash": true,
+  "old_files_modified": false,
+  "proof": {
+    "path": "experiments/workspace/rook_case4_box_cut_lp_proof.py",
+    "sha256": "091946b8444aa1c3b49f2955b076e00f7241a96926a9b9d2a4afb210fe4067c3"
+  },
+  "source_sha256": "6d09bcd0b12fe937d8aa0f108b0a4c9747565bef6382ea8b5cd3b60688f1fae3",
+  "status": "PASS_COMPLETE_SOURCE_EXTRACTION_AND_EXPLICIT_TWO_FUNCTION_DELTA",
+  "subject_imports": 0,
+  "validator_substitutions": [
+    [
+      "fixed_registry",
+      "    assert len(registry) <= LIMITS[\"maximum_new_cuts\"]\n",
+      "    assert len(registry) <= LIMITS[\"maximum_new_cuts\"]\n    assert registry == box_proof.frozen_registry() and len(registry) == 6\n"
+    ],
+    [
+      "distinct_proof_dispatch",
+      "        nums, den = point_data(entry[\"source_point\"])\n        checked = exact.verify_cut(entry[\"certificate\"], data[\"gram\"], data[\"zeros\"], nums, den, deadline)\n",
+      "        if entry.get(\"proof_kind\") == box_proof.PROOF_KIND:\n            checked = box_proof.verify_entry(entry, data[\"gram\"], data[\"zeros\"], deadline)\n        else:\n            assert \"proof_kind\" not in entry\n            nums, den = point_data(entry[\"source_point\"])\n            checked = exact.verify_cut(entry[\"certificate\"], data[\"gram\"], data[\"zeros\"], nums, den, deadline)\n"
+    ]
+  ]
+}

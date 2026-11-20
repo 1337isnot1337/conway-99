@@ -1,0 +1,25 @@
+{
+  "status": "Complete induced high-graph census prepared, no optimizer",
+  "scope_sha256": "9733b52563e5b1937937b196ad9edeb738c141c2ca8041c27e501ca3f5cc2c94",
+  "source": "experiments/workspace/grid_free_order10_high_mask_graph_count.cpp",
+  "source_sha256": "f0d73f1661629dc72998668dc16d74aa309f1bdb75c0b6b1b7b3e0d53e0e2e79",
+  "binary_sha256": "abffa4666348ee820f91d80b1fe40afe964d8031f5ac5c89b9decaafeb2d9568",
+  "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+  "compile_flags": [
+    "-O3",
+    "-std=c++20"
+  ],
+  "input": "experiments/logs/moments-and-counts/order10-high-mask-graph-count01-input.txt",
+  "input_sha256": "7abeaf60014c2efeb46847afc970ab92bdc9d79282bc14bdb093b1f063f7a539",
+  "atom_representatives": 249,
+  "covered_packing_atoms": 90776,
+  "unpruned_assignment_bound": 1092841119,
+  "requested_seconds": 30,
+  "deadline_check_every_nodes": 4096,
+  "initial_edge_domain": "All pairs with at most one common root neighbor",
+  "pruning": "All root-high and high-high common-neighbor caps, plus high-degree upper bounds",
+  "complete_graph_claim": false,
+  "count_only": true,
+  "induced_graph_edge_assignments_saved": false,
+  "brute_force_literal_controls_required_before_accepting_counts": true
+}

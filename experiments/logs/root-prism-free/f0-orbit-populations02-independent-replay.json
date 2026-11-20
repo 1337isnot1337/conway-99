@@ -1,0 +1,81 @@
+{
+  "status": "PASS: independent full orbit/lift/point/rank replay",
+  "source_sha256": "78ba45784e64264f2144aabef6fe12c177f11c55967151548ee57af9672a86cb",
+  "inputs": {
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-preparation.json",
+      "sha256": "239b8ae3651fe4fa327151e50a3214680079c6c07de589c6a27b43f20aeac34a"
+    },
+    "domains": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-domains.json.gz",
+      "sha256": "4f079468530dba0746512cc4afce01666b2a63a2c8f35f66a4660a4fe3bab8ab"
+    },
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-model.json.gz",
+      "sha256": "aa46e2ca9df7a5838926385e06a86acda041c8455ac3422ae1e7b0a5c4ce5437"
+    },
+    "arithmetic": {
+      "path": "experiments/logs/root-prism-free/f0-orbit-populations02-arithmetic.json.gz",
+      "sha256": "78c2bd93cfd70f8129b628a291a6416e275188c692403c3cb4a3b9bce5ea9d2e"
+    },
+    "baseline": {
+      "path": "experiments/logs/root-prism-free/f0-boolean-fractional-model.json.gz",
+      "sha256": "703206929c9c85a40ac4ddcbfb1708c716c288482cf50c77a32249404e35b782"
+    },
+    "moments": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-preparation02.json.gz",
+      "sha256": "404d91da35c798ba248887c22a7500957947e24b71d5197dc44432460e6d219e"
+    },
+    "old_reduction": {
+      "path": "experiments/logs/root-prism-free/f0-second-moments-reduced-model.json.gz",
+      "sha256": "73a50b431ac69ad57e10cff9aabe5c0b7d69ee075e95710b461f62b33fe2bbcf"
+    },
+    "zero": {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-zero-model01.json.gz",
+      "sha256": "da9b2062f9102a0487bc5fb88b2e009c1a228cbc2d2c39264135808bb3467ffb"
+    },
+    "parent": {
+      "path": "experiments/logs/root-prism-free/f0-joint-psd-clique-model01.json.gz",
+      "sha256": "43fff7283308cc2ed1be0936fae4b4f7b264c5961f6e6a4c9a81d123836e4f69"
+    },
+    "actions": {
+      "path": "experiments/logs/root-prism-free/f0-fractional-structural-recovery-input.json",
+      "sha256": "ef4018f26c48e9eb90bf544d41678778d71b587994096383023c8836e70bca6e"
+    }
+  },
+  "all15589_orbit_sizes_and_both_column_maps_checked": true,
+  "all27719_rows_and1079832_terms_checked_by_integer_cross_products": true,
+  "all6135_full15200_equalities_checked_by_independent_denominator_clearing": true,
+  "all92_PSD_directions_retained": true,
+  "maximum_absolute_row_box_sum_or_rhs": "16410372831576",
+  "maximum_row_box_sum_bits": 44,
+  "individual_gcd_contradictions": [],
+  "finite_fields": [
+    {
+      "prime": 2,
+      "status": "PASS: complete modular point and both exact rank bounds",
+      "all_equalities_checked": 5973,
+      "rank": 5117,
+      "original_row_combination_terms": 147220,
+      "ordinary_sparse_integer_terms_accumulated": 2594145,
+      "rank_upper_bound_reductions": 505069,
+      "integer_or_bounded_count_feasibility_claimed": false
+    },
+    {
+      "prime": 3,
+      "status": "PASS: complete modular point and both exact rank bounds",
+      "all_equalities_checked": 5973,
+      "rank": 5138,
+      "original_row_combination_terms": 138711,
+      "ordinary_sparse_integer_terms_accumulated": 1989331,
+      "rank_upper_bound_reductions": 526225,
+      "integer_or_bounded_count_feasibility_claimed": false
+    }
+  ],
+  "subject_builder_or_modular_helper_imported": false,
+  "optimizer_calls": 0,
+  "eigendecompositions": 0,
+  "integer_model_feasibility_or_exclusion_claimed": false,
+  "seconds": 28.558442210000067,
+  "cooperative_limit_seconds": 120.0
+}

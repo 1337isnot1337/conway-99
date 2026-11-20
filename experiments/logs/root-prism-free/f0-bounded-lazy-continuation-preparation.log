@@ -1,0 +1,82 @@
+{
+  "status": "free480 bounded-fallback lazy continuation from1368 proved cuts prepared; no incidence/LP query",
+  "source_sha256": "361484188521fc5c741be4aa8a7e1a10a9b4e76116ae51d8d9e76b272bc78dd2",
+  "dependency_source_hashes": {
+    "root_prism_free_f0_bounded_lazy_seed.py": "4fee27c4fc99297d40cc24bf7adadcd4839df6e37ffc3bc1426cb368113c2715",
+    "root_prism_free_f0_shared_bounded_fallback.py": "46ff20ca4269b71b80c2fd7e3ba2fec4f369b7dca3d4e08272a935cdfde72f1a",
+    "root_prism_free_f0_lazy_clauses.py": "cef5448b012be57277b87297d2e3ec2c017ccea1336080f4c40c2594f2ab7640",
+    "root_prism_free_f0_lazy_registry.py": "9a9a2c40241dc3899b9692568a2ee4127d17d5a4b8c33972dfd9b59a57e43478",
+    "root_prism_free_f0_incidence_row_loop.py": "5f4f536052f97ba725f10ebb77e7f55b0e94c57947e643e97d7df6915e762352",
+    "root_prism_free_f0_shared_deficit_separator.py": "6bc6944ed00713d384251ab54e54684e6f5ea29300f9ff243df5282f522375bf"
+  },
+  "exact_registry": "experiments/logs/root-prism-free/f0-bounded-lazy-terminal-registry.json.gz",
+  "exact_registry_sha256": "b761423e5fa45a9f893988586fd7e5a89414d8902c94530a1532cb91472f1a01",
+  "adapter_controls_sha256": "ea051c6f6fe6d573e785fd72a4ff21a3b31123db8e53e0ed992105036647bd32",
+  "adapter_controls": {
+    "status": "PASS: exact explanation adapter, all finite transports and population semantics",
+    "base_explanation_pairs": 353,
+    "transported_exact_implications": 4236,
+    "explicit_boolean_implication_checks": 22662,
+    "primary_only": true,
+    "optimizer_or_solver_called": false,
+    "source_sha256": "cef5448b012be57277b87297d2e3ec2c017ccea1336080f4c40c2594f2ab7640",
+    "dependency_source_hashes": {
+      "integer_cut_clause_explanations.py": "f57d51b8be3fefd7a5d1035c52cc5758c719adb6a79d16a0909f1a54fdaa59f3",
+      "root_prism_free_f0_lazy_registry.py": "9a9a2c40241dc3899b9692568a2ee4127d17d5a4b8c33972dfd9b59a57e43478"
+    }
+  },
+  "limits": {
+    "maximum_SAT_refinement_calls": 1000,
+    "maximum_row_passes": 100,
+    "SAT_seconds_per_call": 10,
+    "row_pass_seconds": 60,
+    "shared_LP_seconds": 60,
+    "overall_seconds": 180,
+    "maximum_formula_variables": 1000000,
+    "maximum_formula_clauses": 2000000
+  },
+  "formula": {
+    "primary_variables": 480,
+    "variables": 28308,
+    "clauses": 59466,
+    "literal_occurrences": 369552,
+    "base_variables": 28308,
+    "base_clauses": 56994,
+    "base_body_sha256": "04fb936521fb7cb9db7343ccb8abef31fcc38acc3e54dd7b9b626fd858757932",
+    "registered_individual_inequalities": 1188,
+    "registered_signed_inequalities": 180,
+    "explanation_clauses": 2472,
+    "new_auxiliary_variables": 0,
+    "all480_selectors_free": true,
+    "fixed_second_component_or_incidence": false,
+    "encoding": "necessary exact independent and population60 clause explanations only",
+    "registry_not_claimed_equivalent_to_finite_explanation_CNF": true
+  },
+  "initial_snapshot": {
+    "individual_cuts": 1188,
+    "symmetric_cuts": 180,
+    "registry_state_sha256": "f13ae6a29bfb4a76080f3706af226e1dd6e1e406571250636b8059aa7a8d3502",
+    "clauses": 59466,
+    "variables": 28308,
+    "explanation_clauses": 2472,
+    "clause_state_sha256": "1735a7bd6ce8baf2940572174eceb1000c94fd529422fc6fc2950256ba72156a"
+  },
+  "cnf": "/tmp/conway99-f0-bounded-lazy-continuation.cnf",
+  "cnf_sha256": "71a0a9306664001dcda1c68b1635cbc42e9525ac3133dd3a40ae9b09a0ec0c39",
+  "cnf_bytes": 1844326,
+  "scope": "all first-incidence selections for component0 in globallyP=F=0 split18+18; second component unrestricted",
+  "no_visitation_blocks_or_graph_symmetry": true,
+  "complete_registry_evaluated_before_any_LP": true,
+  "row_LP_only_after_all_registry_inequalities_hold": true,
+  "shared_LP_only_after_complete60_exact_individual_boxes": true,
+  "stop_conditions": [
+    "incremental UNSAT requiring fresh proof",
+    "UNKNOWN or uncertified result",
+    "exact symmetric row-box feasibility",
+    "resource/time/SAT-call/row-pass limit",
+    "error"
+  ],
+  "no_Gram_equality_shifts": true,
+  "optimizer_or_incidence_solver_called": false,
+  "seconds": 26.31952699500107
+}

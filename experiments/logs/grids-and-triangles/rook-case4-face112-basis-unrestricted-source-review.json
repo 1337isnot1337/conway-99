@@ -1,0 +1,51 @@
+{
+  "status": "PASS: full source read and independent complete basis-wrapper delta review",
+  "review_source_sha256": "c8dd36b7eea28435bc0c5b011fe0b62496a15d9f40dd63ce05331db003990d38",
+  "subject_source": {
+    "path": "experiments/workspace/rook_case4_face112_basis_reconstruction.py",
+    "sha256": "6e8ac4d29fa14bf9c1ba2793a3f86c1e53854995cecb4bd30ae7e193352f3ee4"
+  },
+  "parent_source": {
+    "path": "experiments/workspace/rook_case4_face99_basis_reconstruction.py",
+    "sha256": "1cbeb11b23e0033fa23d10ce24aedf1585ad0119d0433f296febf722231a67b6"
+  },
+  "substitution_ledger": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-face112-basis-reuse-controls.json",
+    "sha256": "0141115ab384080268289544db58d25b0a29637cb9513f7d4909afe4dcfbb93f"
+  },
+  "all_text_substitutions_independently_checked": 21,
+  "fresh_functions_completely_read": [
+    "proposal",
+    "inspect"
+  ],
+  "AST_unchanged_functions": [
+    "sha",
+    "canonical",
+    "save",
+    "tick",
+    "bindings",
+    "fold",
+    "controls",
+    "prepared",
+    "prepare",
+    "solve_child",
+    "query",
+    "replay",
+    "main"
+  ],
+  "mathematical_findings": [
+    "The816 saved nonbasic lower extension rows impose x_j=t only as candidate reconstruction assumptions. No universal selector restriction or exclusion follows from failure of this face.",
+    "The287 remaining active rows use their actual lower/upper endpoints. Allowing the recorded H1 equality alongside original native rows is valid for this proposal; all other binding and alias checks remain exact.",
+    "Folding aliases sums coefficients at t, and the remaining variable list includes t last. Restoration fills aliases from the exact t coordinate and checks every candidate square equation.",
+    "Acceptance requires all166010 base face rows plus1102 extension inequalities, all2271 original native rows, all178533 original covers, both unit sums, allfour pair bounds,112 zeros and original1214 unit bounds.",
+    "The inspector demands positive t, exact population64 and rational integer arithmetic. Numerical basis validity merely proposes the square system; only full exact acceptance can promote its point.",
+    "The single Dixon solve, one owned60-second child,4096-bit output cap and full cold replay are AST-identical. Singular, timed-out or rejected reconstructions remain UNKNOWN; no optimizer is called."
+  ],
+  "source_entirely_read": true,
+  "subject_imported": false,
+  "controls_repeated": false,
+  "matrix_or_native_model_rebuilt": false,
+  "exact_linear_solves": 0,
+  "optimizer_calls": 0,
+  "terminal_point_or_cold_arithmetic_independently_repeated": false
+}

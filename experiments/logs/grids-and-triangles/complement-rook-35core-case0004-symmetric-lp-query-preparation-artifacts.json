@@ -1,0 +1,49 @@
+{
+  "status": "frozen one-query driver and complete cold integer preflight; no optimizer called",
+  "artifacts": [
+    {
+      "path": "experiments/workspace/complement_rook_35core_case0004_symmetric_lp_query.py",
+      "sha256": "8baeb16c2a280101b94309ccec4900b8be8fe1a1909bac585f92bee114d28d09",
+      "bytes": 22490
+    },
+    {
+      "path": "research/grids-and-triangles/complement_rook_35core_case0004_symmetric_lp_query.md",
+      "sha256": "e2d1a29ecba172e5d7dd2ec59065934c22b8f247f8b6180aba002a62af001bba",
+      "bytes": 3699
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-symmetric-lp-query-model.json",
+      "sha256": "4d9d765c41cd93ff86c7b00a9149e5c2964b38198e584b62cb4f9cfdd8015e98",
+      "bytes": 2572
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-symmetric-lp-query-preparation.log",
+      "sha256": "4d9d765c41cd93ff86c7b00a9149e5c2964b38198e584b62cb4f9cfdd8015e98",
+      "bytes": 2572
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-symmetric-lp-query-preflight.json",
+      "sha256": "b40fde8a975d19aa46c05541ff060c759a2ccbad957cf43f342f2e4e0c4639b6",
+      "bytes": 478
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-symmetric-lp-query-preflight.log",
+      "sha256": "b40fde8a975d19aa46c05541ff060c759a2ccbad957cf43f342f2e4e0c4639b6",
+      "bytes": 478
+    }
+  ],
+  "artifact_count": 6,
+  "total_bytes": 32289,
+  "dependency_manifest": {
+    "path": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-symmetric-lp-artifacts.json",
+    "sha256": "16cf2af6d7948650efe700678cb60f853bb6a027284e1dda2fa63f765d1d81af"
+  },
+  "temporary_cache": {
+    "path": "/tmp/conway99-case4-symmetric-lp.npz",
+    "sha256": "7d122b87b33256ade2ce05847b66848f1763f11cf11a6edc6aa224960a9e5f15",
+    "bytes": 5788962,
+    "omitted_from_publication": true,
+    "cold_replay_rebuilds_arrays_without_cache": true
+  },
+  "LP_or_SAT_query_called": false
+}

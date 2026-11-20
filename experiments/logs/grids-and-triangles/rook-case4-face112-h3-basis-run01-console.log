@@ -1,0 +1,46 @@
+{
+  "status": "EXACT_FULL_SELECTOR_POINT: independent replay pending",
+  "bindings": {
+    "source_sha256": "f764dbe84cc137f6c489100b6b499af1e6c893c3c6781dd3d96bf7d29ba02b34",
+    "inputs": {
+      "builder": {
+        "path": "experiments/workspace/rook_case4_face112_h3_model_v2.py",
+        "sha256": "d06dfcadee54deeb81c244c9e11c80bd8687fdc682dcd01e274130fab1a0e2b7"
+      },
+      "recovery": {
+        "path": "experiments/workspace/rook_case4_complete_lp_recovery.py",
+        "sha256": "e577327c9cc2471f119c755a49a179b9f94f1004a22de80152a4114787a7eec6"
+      },
+      "model": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/model.json",
+        "sha256": "1928eb76274865e219747f631fee2d7a327ed7acd3a845986844be13c9e34265"
+      },
+      "arrays": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-model02/arrays.npz",
+        "sha256": "4e2de2786d3036cf995953791192500cb4aaa5b0c5079f3d97ea465a4cf64e46"
+      },
+      "numeric": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01/iteration-00-numeric.json.gz",
+        "sha256": "eda071f5ebcbf4e80574af4ef7031b31d1f74002d3a3fe9ee234ce3c7f7df8b7"
+      },
+      "terminal": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01/result.json",
+        "sha256": "328abe5e6413d2e76e943e04d1cfa225b57aa0f574eb26ccf9fca3314382192d"
+      },
+      "cold_replay": {
+        "path": "experiments/logs/grids-and-triangles/rook-case4-face112-h3-generation-run01-replay.json",
+        "sha256": "e682e859b538e97a40786c445fa628cc26dd3a962172d0308b29d0cab48a2de5"
+      }
+    },
+    "python_flint_version": "0.9.0"
+  },
+  "preparation_sha256": "5931e8da38a24ac8af5e51738a424e6f3e877651bebfa36d114661f679ab4975",
+  "hard_exact_child_seconds": 60,
+  "automatic_retry": false,
+  "optimizer_calls": 0,
+  "exact_point_found": true,
+  "case4_excluded": false,
+  "child_exit_code": 0,
+  "child_result_sha256": "f2c150789350f5e51b0215b089ab6e60260ff2c733cbb99dae2e85881667214d",
+  "elapsed_child_seconds": 13.425676244005444
+}

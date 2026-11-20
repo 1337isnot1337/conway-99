@@ -1,0 +1,66 @@
+{
+  "status": "PASS: narrow zero-call failure replay; terminal ERROR unchanged",
+  "source_sha256": "1b196e6b87519fbaf47767318e2cf4148379b805d6099283950677523b712f45",
+  "bindings": {
+    "query": {
+      "path": "experiments/workspace/root_prism_free_f0_character_pool_query.py",
+      "sha256": "820f76ea30bff76e3c0d5d9b79601f6fba1ee11c0534676843315f575bafce39"
+    },
+    "supervisor_source": {
+      "path": "experiments/workspace/root_prism_free_f0_local_neighbors_batch.py",
+      "sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278"
+    },
+    "preparation": {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-preparation01/preparation.json",
+      "sha256": "6e0812462e4ddb9b1b331d0652edc92d14da75dd4c975eb8dbc5c8cefcd95ba1"
+    },
+    "preflight": {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-preflight01.json",
+      "sha256": "41d9e155a23f7e40546b3e546e975b2ac6434a4fae28b4e95ff8faa58becb272"
+    },
+    "root_gate": {
+      "path": "experiments/logs/root-prism-free/f0-character-pool-query-root-source-review.json",
+      "sha256": "efd0c6750982c10b9869462b9f9633af7e396c6bd04b7369449ede72ae3e2df6"
+    }
+  },
+  "artifacts": {
+    "child.stderr.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "child.stdout.log": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "progress.json": {
+      "sha256": "f2638b5ec82da81928d7a5e7f343a28446c8696229a5a0b60f388addc885c54f",
+      "bytes": 494
+    },
+    "result.json": {
+      "sha256": "481700e73395a83275aa247d2ba1cc54c073799b6fd8592a3f2b2d66ff2d24c3",
+      "bytes": 749
+    },
+    "supervisor.json": {
+      "sha256": "91823fd85c7eafcb8b25bb9c05a6c6412265f16581b23ae61b9faafa95db7434",
+      "bytes": 151
+    }
+  },
+  "terminal_status": "ERROR_CHILD_EXIT",
+  "child_returncode": -9,
+  "owner_seconds": 3.785589920997154,
+  "supervisor_seconds": 3.739240279996011,
+  "last_durable_stage": "UNKNOWN_BEFORE_INITIALIZATION",
+  "native_solve_calls": 0,
+  "zero_call_basis": "The hash-bound reviewed runner creates a call directory and durable pre-call record before every native solve. No call directory exists; the initial zero-call progress is unchanged.",
+  "failure_cause": "Unconfirmed. Signal9 alone does not identify an out-of-memory kill or a solver outcome.",
+  "earlier_complete_preflight_bound_not_repeated": "41d9e155a23f7e40546b3e546e975b2ac6434a4fae28b4e95ff8faa58becb272",
+  "model_or_plan_archives_loaded": false,
+  "subject_sources_imported": false,
+  "model_or_mathematical_reconstruction_repeated": false,
+  "optimizer_calls": 0,
+  "count_feasibility_claimed": false,
+  "literal_incidence_or_graph_claimed": false,
+  "F0_excluded": false,
+  "retry_performed": false,
+  "seconds": 0.006260294001549482
+}

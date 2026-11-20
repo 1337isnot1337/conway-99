@@ -1,0 +1,116 @@
+{
+  "status": "PASS: complete signed-character native overlay replay",
+  "source_sha256": "879cdb9be48f9377dd6bccd078f26a568d12467385e9ecb1d5b260cc56ff64e7",
+  "parent_source_sha256": "a5b4485f4f30cdcb640d7cb63a5d4b1df4828e8f092f164fdad5a4a21260a67b",
+  "inputs": {
+    "parent_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-population-profile-cpsat01/report.json",
+      "sha256": "6e8ffe6be93bae81e4cf2b0879520453166082796eaf6055c9e21b5ee8bb6305"
+    },
+    "parent_cold": {
+      "path": "experiments/logs/root-prism-free/f0-population-profile-cpsat01-cold/report.json",
+      "sha256": "de7dd1b32377755f9a1748553507909d001f5bc7984044ce4c290a351623a485"
+    },
+    "product_review": {
+      "path": "experiments/logs/root-prism-free/f0-population-products-root-source-review.json",
+      "sha256": "643c8b2b832c317c83f69d22690161bf47d4e4800920b9155a3a6aad01b543f0"
+    },
+    "characters": {
+      "path": "experiments/logs/root-prism-free/f0-character-populations01.json.gz",
+      "sha256": "139d06a3383f8fc79d677972ce052ce29966e8b3406e7d1e7d1077aea7c2cef6"
+    },
+    "character_cold": {
+      "path": "experiments/logs/root-prism-free/f0-character-populations01-cold.json",
+      "sha256": "1fdc14c0bda54f0b5e63b23a3b7d5f85d9afd92ea418b4931d53b644444e814b"
+    },
+    "character_review": {
+      "path": "experiments/logs/root-prism-free/f0-character-populations-literature-review.json",
+      "sha256": "f5164ac7a59cd75c9fdd3c74364e772701038c9c8347c15ae9b6c7990c110149"
+    },
+    "gram": {
+      "path": "experiments/logs/root-prism-free/f0-character-Gram-equalities01.json",
+      "sha256": "084764b528f9a75269c8e21bb0b55b480a552022b024db72a4357aca083770c7"
+    },
+    "gram_cold": {
+      "path": "experiments/logs/root-prism-free/f0-character-Gram-equalities01-cold.json",
+      "sha256": "482ccc5f26d4668ef1f45fab6200eeb2328b92e0b949b7e026052c1354cd1f7f"
+    },
+    "gram_review": {
+      "path": "experiments/logs/root-prism-free/f0-character-Gram-literature-review.json",
+      "sha256": "3e5c3b3e834f3f33f2043397d168a36e94e6355a45c38a57e5065547e0abdddb"
+    }
+  },
+  "parent_proto_sha256": "500ab3e32622fe59eb45044a5d2610b087c030786df821ee06b85c8f0f3d21ef",
+  "raw_proto_sha256": "5b43e3c026dbe71fcc8d072aa1790b80f7a81312e7b1ebf36a37612b2f726eeb",
+  "raw_proto_bytes": 12498481,
+  "archive": {
+    "path": "experiments/logs/root-prism-free/f0-character-cpsat01/model.pb.gz",
+    "sha256": "81acda719e5d7a65ccfeb95bcd956785ee9283d60630aed2f8933599933f3f57",
+    "bytes": 4792656
+  },
+  "namespaces": {
+    "original_counts": [
+      0,
+      15038
+    ],
+    "trivial_products": [
+      15038,
+      15941
+    ],
+    "signed_populations": [
+      15941,
+      16059
+    ],
+    "signed_products": [
+      16059,
+      18444
+    ]
+  },
+  "checks": {
+    "parent_checks": {
+      "parent_checks": {
+        "all15941_integer_variable_domains_checked": true,
+        "all28647_linear_rows_checked": true,
+        "all903_product_constraints_checked": true,
+        "linear_nonzeros_checked": 1279413,
+        "maximum_absolute_linear_box_sum": 16410372831576,
+        "maximum_product_upper": 144,
+        "all_proto_int64_ranges_checked": true,
+        "objective_hints_assumptions_enforcement_literals_or_search_strategy_present": false
+      },
+      "all_parent_variables_and29550_constraints_unchanged": true,
+      "tables_checked": 42,
+      "tuples_checked": 5733,
+      "tuple_integer_entries": 55307,
+      "variables": 15941,
+      "constraints": 29592,
+      "objective_hints_assumptions_or_strategy_added": false
+    },
+    "all15941_parent_variables_and29592_constraints_unchanged": true,
+    "signed_variables_checked": 118,
+    "new_product_auxiliaries_checked": 2385,
+    "new_linear_rows_checked": 2417,
+    "new_linear_terms": 29075,
+    "maximum_new_linear_absolute_box_sum": 276,
+    "maximum_new_absolute_product": 36,
+    "new_product_constraints_checked": 2385,
+    "new_joint_tables_checked": 42,
+    "new_joint_tuples_checked": 19331,
+    "new_joint_integer_entries": 245246,
+    "variables": 18444,
+    "constraints": 34436,
+    "all_int64_ranges_checked": true,
+    "objective_hints_assumptions_or_strategy_added": false
+  },
+  "controls": {
+    "repeated": false
+  },
+  "ortools_version": "9.15.6755",
+  "all92_old_PSD_directions_preserved": true,
+  "all25_integer_refinements_preserved": true,
+  "character_Gram_independent_strength_claimed": false,
+  "optimizer_calls": 0,
+  "CpSolver_constructed": false,
+  "count_or_graph_feasibility_claimed": false,
+  "seconds": 7.094803252999554
+}

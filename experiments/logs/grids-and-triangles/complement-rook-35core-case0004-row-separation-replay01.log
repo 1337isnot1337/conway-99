@@ -1,0 +1,26 @@
+{
+  "status": "complete domain binding and all retained integer row inequalities replay PASS",
+  "source_sha256": "a5a7f1a950de22e310484ec17c098eaaf19915b556d71cec67b191c4a1a79339",
+  "model_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "result_sha256": "e758fffa8bbeb80f0fc2edd3bdb9b9fc8b992a27303679df9d9658f0c9aa18f3",
+  "checked_inequalities": [
+    {
+      "target_column": 85,
+      "positive_demand": 15,
+      "positive_terms": 129,
+      "max_abs_integer_coordinate": 12,
+      "numerical_proposal_gap": 4.061463042556052
+    },
+    {
+      "target_column": 628,
+      "positive_demand": 2,
+      "positive_terms": 96,
+      "max_abs_integer_coordinate": 2,
+      "numerical_proposal_gap": 0.11415466996529555
+    }
+  ],
+  "numerical_statuses_only_bound_not_recomputed": true,
+  "optimizer_or_SAT_called": false,
+  "exact_proposal_feasibility_claimed": false,
+  "full_graph_or_case_exclusion": false
+}

@@ -1,0 +1,21 @@
+{
+  "status": "complete shared-edge row domain and exact LP certificate replay PASS",
+  "source_sha256": "c0d9e70f98e94176bf78bc518b41270940b930ab69cf34b26f42b71ff31a0871",
+  "preparation_sha256": "68a325d1367db1b270fb311c614d99eaa147129a748b727fc40201f7573fd432",
+  "result_sha256": "96486063f18150392852eeddd55e7e023b4987e0b2233d3fd133c88168de29f9",
+  "model_sha256": "1a75d60173991252b55892a911a5470e4e5074992916ead7ffc8d9df0c298b79",
+  "exact_linear_feasibility": false,
+  "exact_fixed_design_infeasibility": true,
+  "point_check": null,
+  "ray_check": {
+    "rhs_dot_product": -2,
+    "minimum_primary_coefficient": 0,
+    "minimum_upper_slack_coefficient": 0,
+    "nonzero_row_multipliers": 58,
+    "maximum_absolute_multiplier": 5,
+    "orientation": "E^T ray>=0 and rhs^T ray<0 for every nonnegative primary and upper slack"
+  },
+  "optimizer_or_solver_called": false,
+  "whole_component_excluded": false,
+  "binary_or_full_graph_constructed": false
+}

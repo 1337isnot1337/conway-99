@@ -1,0 +1,601 @@
+{
+  "status": "PASS: native cardinality/linear/clause controls and genuine rook incidence control",
+  "source_hashes": {
+    "complement_rook_35core_case0004_coordinate_cover_overlay.py": "5597089c00a15f72927f31c8b05f5a6bed1198a0d7ebc16aacaeb6cd39cb1c4a",
+    "complement_rook_35core_case0004_coordinate_cover_query.py": "eb352386f55c5a1fd6ddb9c692ad934d8eef87904c00e86122172dc1ebc1f9d8",
+    "complement_rook_35core_case0004_coordinate_covers.py": "f4692deb00982e7f3a3153faafc2cc6084db0c5827ff12d11beaf5e3d493357a",
+    "complement_rook_35core_case0004_intrinsic_rows.py": "24eb86e47e6f5a741721fe9174e7d3762bc74edd290c89d489dd5ddedb900c11",
+    "complement_rook_35core_case0004_native_cpsat.py": "4462dae913abcb736c5ba5f7cffc3f3e7d50b748826cab3c89fffbfd3bd0e3eb",
+    "complement_rook_35core_case0004_row_cut_boolean.py": "2b231f418645d13c18fa4995277858e9b4fe5b770000e7ea742b5e5336fbfe45",
+    "complement_rook_35core_case0004_symmetric_lp.py": "458e6306ba9c1efe09d7ce9b13e26554c48b3fa1083bffbc0ef0f0ff2601af52",
+    "complement_rook_35core_domains.py": "429208cf9764b84617bf10b60c55cbfc6a224c4b8a07f2754e46be8aa7e54897",
+    "complement_rook_35core_incidence.py": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+    "complement_rook_local_star_census.py": "cdb846aecb9d4df2bd817befd7f45741757133ace6fe2589173f16f062215992",
+    "complement_rook_projector_schur.py": "8c88eb59b331cac3a087b9f49b579013c5ab0d3ac6ec0d44401e22a3edf0d567",
+    "root_prism_free_f0_weighted_threshold.py": "a0c4b38d7787c8e6565ab122e0fdf41655ea40a9f0f218c0f860cd59d3f05144"
+  },
+  "runtime_binding": {
+    "python_version": "3.12.14",
+    "python_implementation": "CPython",
+    "ortools_version": "9.15.6755",
+    "protobuf_version": "6.33.6",
+    "files": [
+      {
+        "path": "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3.12",
+        "bytes": 30894944,
+        "sha256": "fa67443527ed9647f760d807e2a38f26340757123e643c4639cf273ed15d5ea7"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/python/cp_model.py",
+        "bytes": 85456,
+        "sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/python/cp_model_helper.cpython-312-x86_64-linux-gnu.so",
+        "bytes": 2849136,
+        "sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/cp_model_pb2.py",
+        "bytes": 16168,
+        "sha256": "ac12f9549e96ff7f496846144c794d7cb17d869fccb6d050896787226e48209e"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/sat/sat_parameters_pb2.py",
+        "bytes": 27887,
+        "sha256": "618401e2f8489f40f688c0c0ca72fbadfd666db39409208615214ac19fc26d1a"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/google/_upb/_message.abi3.so",
+        "bytes": 401520,
+        "sha256": "3a60308c1b67d8f21cc2cf5058a01a4e36a35c09d03d31f95a90a7c73b56ffe2"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libCbc.so.2",
+        "bytes": 1413992,
+        "sha256": "c4be8dc3d5f38faa0c49ced5dea178e5157dd090ee53ea9126cccb6a739de687"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libCbcSolver.so.2",
+        "bytes": 1210104,
+        "sha256": "9752b8afaa3d753b4dfa15e918acca116b557bdd431bf52ebc6bcf1143a8c21f"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libCgl.so.0",
+        "bytes": 1305936,
+        "sha256": "6fe97d8fe512b7e8cc36d92de74d808dd35d6b393ac02b7071f65673ad5f5a1c"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libClp.so.1",
+        "bytes": 2102920,
+        "sha256": "7eb2d5f0d4f009435f55c72046de051195b64b17f324907a6edfd6a3334b4294"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libClpSolver.so.1",
+        "bytes": 543632,
+        "sha256": "b90b768c611e87c5e5eb8a8157fec250f879779c4bad692427c0671efca7ddeb"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libCoinUtils.so.2",
+        "bytes": 1514304,
+        "sha256": "912442a7b3564d50e80f2b0a4f242812ba238fc15de67eba8f026dc0ee9e1686"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libOsi.so.0",
+        "bytes": 421744,
+        "sha256": "f025e824d17b3930cd284cf8bd1512ed28a6f2de45415db555250cff853b038f"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libOsiCbc.so.2",
+        "bytes": 95744,
+        "sha256": "4140676d66394fe618c08b86b0d94986b1a6d1afc794041588743cd58693adf7"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libOsiClp.so.1",
+        "bytes": 426720,
+        "sha256": "6231babd5db1bdbb8129311cc1004caa6fbbb5f6fe9e6da2accdc399c1244a12"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_base.so.2508.0.0",
+        "bytes": 25888,
+        "sha256": "d77f85c899eb00ba6f9723427c44d797f77ccd24cc6c0543f11a071a12622e6f"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_city.so.2508.0.0",
+        "bytes": 15904,
+        "sha256": "6bbf9644308a5f8c147083bf86b363e76d9feb7c623b4dbd662e4734c7e470fe"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_civil_time.so.2508.0.0",
+        "bytes": 31640,
+        "sha256": "51f754596a44ac9ce6f3229126ff324cfe74ed26e2ee1a239ad26539567d2db9"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_cord.so.2508.0.0",
+        "bytes": 153584,
+        "sha256": "9e0b944d2076edc7793c27e68f59642ca16cf65c8a43645ff61e5c6dc9f3b92c"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_cord_internal.so.2508.0.0",
+        "bytes": 92240,
+        "sha256": "f45ad5f14b3f2a08fbee5801ad8011012121acf68b131551901085fa90146716"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_cordz_functions.so.2508.0.0",
+        "bytes": 16672,
+        "sha256": "d58e4dd53f2323582f1841173ee3fde152aa3f6c291cdeede75704ba81150162"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_cordz_handle.so.2508.0.0",
+        "bytes": 22456,
+        "sha256": "9fe611bb439b820f58a05bd4adbabb1b3777cacf491430ed74c7149d1cad105c"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_cordz_info.so.2508.0.0",
+        "bytes": 28696,
+        "sha256": "f847831ddca7095c872f06592644703a0e925d8eb85e3fcf8befe66ca88a9033"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_crc32c.so.2508.0.0",
+        "bytes": 25048,
+        "sha256": "30aa6531a4265bdbaa5f545d315f6adbddc99342767dd2609a5065ed30d70baa"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_crc_cord_state.so.2508.0.0",
+        "bytes": 36600,
+        "sha256": "d00894b416b0e797c905fd9633e785083042776e3aef33fd63a3b053a3a061f2"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_crc_cpu_detect.so.2508.0.0",
+        "bytes": 16552,
+        "sha256": "3210473121c7cbafeb5e8483b8a33bf06d55c016e6d69eaa205d7ad8c8303a7e"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_crc_internal.so.2508.0.0",
+        "bytes": 27680,
+        "sha256": "07aae25211b8edb3377de8f24350e77e74e66ee8f375b9200c4294a7b10422c7"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_debugging_internal.so.2508.0.0",
+        "bytes": 28672,
+        "sha256": "413c758bd95486ec31e72389ff13d081f25b3e5cd3bb9f183886a37d077ac6ba"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_decode_rust_punycode.so.2508.0.0",
+        "bytes": 15944,
+        "sha256": "b39acd5a6a3cdba802fdb7d3ea6f64c901741143fe0aa534f8764d662858bdd4"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_demangle_internal.so.2508.0.0",
+        "bytes": 72968,
+        "sha256": "548a98eb374b53c64f30cd65bb8b66ee676dca352d4feae2df2edfcd208e9438"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_demangle_rust.so.2508.0.0",
+        "bytes": 28496,
+        "sha256": "2cd595a0b09a3a0fa696d5e66cb56e5ab424d293dbb124e416350e230edd7426"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_die_if_null.so.2508.0.0",
+        "bytes": 16792,
+        "sha256": "6621925ced300f0419b63658ff2a7e689b5f07c0dda9213225e0e70fc6d4ae93"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_examine_stack.so.2508.0.0",
+        "bytes": 16704,
+        "sha256": "aa20c3c304b4cc5a5f643870b52b4b78b6ab79144ff5618854a139b62483dd81"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_exponential_biased.so.2508.0.0",
+        "bytes": 16120,
+        "sha256": "116b77d5ac15aaba6db1ab3c98ce6812ebd8d12afaf0a0473a3b515101f6c5cf"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_commandlineflag.so.2508.0.0",
+        "bytes": 16272,
+        "sha256": "2d74ef82dadab9a21bca0161d0535745797ae06503efc81d6d3813eaa37a77b0"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_commandlineflag_internal.so.2508.0.0",
+        "bytes": 16344,
+        "sha256": "1eee110ece47a5766b965c3bd97ebfc493d00a1beb10ba3eef8bc30bc891c2f0"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_config.so.2508.0.0",
+        "bytes": 30024,
+        "sha256": "350662c8f445e9d75393d4d7eca3bdb2b3502bfb79d6ce71920b604e795294b8"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_internal.so.2508.0.0",
+        "bytes": 51640,
+        "sha256": "d4a6ee77f5ccdaf53f705ae7146eb7ad466f618516f4974f951d3c222cbd7653"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_marshalling.so.2508.0.0",
+        "bytes": 56248,
+        "sha256": "908ad6a218f87e40abf4ec4c45db9334b243aee2b4d7e42d1d0cb5c8b6618f37"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_parse.so.2508.0.0",
+        "bytes": 94872,
+        "sha256": "1635d18ba42db44be9fed372dba096c2909776a100dab47f0e4bdeee7b971bde"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_private_handle_accessor.so.2508.0.0",
+        "bytes": 16624,
+        "sha256": "b8dff71b6091eedba3a9a8c43830f610f04f2156fd8ca993510a639311f26eb7"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_program_name.so.2508.0.0",
+        "bytes": 17696,
+        "sha256": "253d677711afd144510279fe3128c8cf8f8d9cbf653652c34e2d76755043a323"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_reflection.so.2508.0.0",
+        "bytes": 59792,
+        "sha256": "7053e1842de38369cd7f598e55f4bfca94a1a573123b626466285c72d7e0b7c6"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_usage.so.2508.0.0",
+        "bytes": 21448,
+        "sha256": "4b420385eade115ac70166d432d7ba7083dc33456c69432bd15ad83e8165d268"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_flags_usage_internal.so.2508.0.0",
+        "bytes": 65656,
+        "sha256": "4afc8332ef69af4e21bf6abdc5189dfe17764b8e2febd3a30cadcd1e38e3f364"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_graphcycles_internal.so.2508.0.0",
+        "bytes": 36472,
+        "sha256": "0bb90cdafec03bd56891c16057324bc6f5f14c1b462e001ca8914c17bb2e53a4"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_hash.so.2508.0.0",
+        "bytes": 16328,
+        "sha256": "da2ce4b119428b5cf591d6506b53462437820fda4e77cc3773aa4fa9ec779992"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_hashtablez_sampler.so.2508.0.0",
+        "bytes": 24608,
+        "sha256": "b5a88326256bb1890a4e6c18952eb8ae3229be6b45e1af29a600c1dd17d801c0"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_int128.so.2508.0.0",
+        "bytes": 27512,
+        "sha256": "26416f568a30afa9db84fd68505ae790e1daaf5b2f2716e6fc5835470f0a79f9"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_kernel_timeout_internal.so.2508.0.0",
+        "bytes": 21896,
+        "sha256": "b3d2eba388645c1ee706bfafed4ffd0ce62ac2c47aae2aee8383d553f426e346"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_leak_check.so.2508.0.0",
+        "bytes": 16192,
+        "sha256": "1292fac94ea9611389c026af359c32f9a7bb38d87bcbe39a0878e45d2c700dd2"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_entry.so.2508.0.0",
+        "bytes": 21616,
+        "sha256": "75eeea7fff37538b3d6f24f5cffada5b2ce14c807e12694e2d4ebddae96c63b1"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_flags.so.2508.0.0",
+        "bytes": 34952,
+        "sha256": "22b989db84ae40b9ac6a644905142d756a541afe5f37ee984df44a86f725fb07"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_globals.so.2508.0.0",
+        "bytes": 24032,
+        "sha256": "2265a44848886f91524b4ad6ffd1691e760b3a27e8fb5df208444c1d87e7ef18"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_initialize.so.2508.0.0",
+        "bytes": 15896,
+        "sha256": "5f472456bc23ce8f4345625a966ea4d83357255e43dd22dc6e6cec52711baac9"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_check_op.so.2508.0.0",
+        "bytes": 38888,
+        "sha256": "1577d97e70ecd6f4123453aa4e78adf8d5aad25d3a9529085639f12a5b84124c"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_conditions.so.2508.0.0",
+        "bytes": 16192,
+        "sha256": "288cf7ede39fa6d4df436e34d4d3ed7b9d034d24bc04d51d331cd1d6e327b937"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_fnmatch.so.2508.0.0",
+        "bytes": 15768,
+        "sha256": "6a8626e3d07f67d1e522432e21ee0db1778bbebcf2c341532b86a327b3dc2019"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_format.so.2508.0.0",
+        "bytes": 17704,
+        "sha256": "f67964fc0cfd5bea95d2e8d33651db55146e075a1871173bd181c50c48685402"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_globals.so.2508.0.0",
+        "bytes": 17688,
+        "sha256": "3b4bbfcb5a01c8376f062a7af6d13d22de2376eebed41d32231fa57ddfa5b397"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_log_sink_set.so.2508.0.0",
+        "bytes": 25536,
+        "sha256": "0c496a7060eb9272fe21dbffb2eebd517b69f235f93d575edfcf2355ee71e3d0"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_message.so.2508.0.0",
+        "bytes": 70976,
+        "sha256": "350a0e2f4e0a8cdc742e6276b726e09b31da926ce9bd83089e3c327f6d49b287"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_nullguard.so.2508.0.0",
+        "bytes": 15736,
+        "sha256": "6f52a2880191b2e6d76612b27b55c0ea60705412e3c2021c70603dbe3f4e21a2"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_proto.so.2508.0.0",
+        "bytes": 16384,
+        "sha256": "9d90b1a2e82e46ead8d6abd983afc02295fb5d8fb615d21d27d6c2883e8b92cf"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_internal_structured_proto.so.2508.0.0",
+        "bytes": 16168,
+        "sha256": "0be2f7a1f3460d437055eed4a763d27bedc810dafae959708b3927e18a8d5ed7"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_severity.so.2508.0.0",
+        "bytes": 16040,
+        "sha256": "7f1a233c30c44634f73be41ccc02153235755cc5bb3705d1b30372f72048ee0b"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_log_sink.so.2508.0.0",
+        "bytes": 16064,
+        "sha256": "820bccec8340cc5609994d43a8c1fded5bc1f88188396526698812ad8dc78891"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_malloc_internal.so.2508.0.0",
+        "bytes": 23488,
+        "sha256": "9bd38204f6a3c53ed44820eb90727996ea300a45dd7cf4b83264be3645347a46"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_distributions.so.2508.0.0",
+        "bytes": 16728,
+        "sha256": "6155a1f3888c3ade4f3e2f8ba9cfac7f382cc1dc7b286043d48c8776a4d1c75b"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_internal_entropy_pool.so.2508.0.0",
+        "bytes": 22176,
+        "sha256": "f5d464ae266d4289b1c6647f4f2edda675f6ee8af25e000611b069e5f6ba5790"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_internal_platform.so.2508.0.0",
+        "bytes": 19776,
+        "sha256": "2304dddcaf66e0ba59c26a3970d80de23eabb60be391d855f01ac38e81355f30"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_internal_randen.so.2508.0.0",
+        "bytes": 16896,
+        "sha256": "dd682e99662677a1a6034153f90626dfb8b2624dde8f75c0830dc4b44da9b4c1"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_internal_randen_hwaes.so.2508.0.0",
+        "bytes": 15648,
+        "sha256": "5fd7ee7981c386493572c5a306bc590d38c5f376bed5b4270169bc92b5d0dec9"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_internal_randen_hwaes_impl.so.2508.0.0",
+        "bytes": 16144,
+        "sha256": "0b1a6208d581602153e0aadf353eaf55f648e3d0b73383fde32d9607f03d5e53"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_internal_randen_slow.so.2508.0.0",
+        "bytes": 20264,
+        "sha256": "e62c16cf35ce5daf0b74dc29b216518d4df29985eeb59e916e9274a2c38004f0"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_internal_seed_material.so.2508.0.0",
+        "bytes": 17112,
+        "sha256": "32788b27abad45b069fae26c4d4566826b234b4eeed44636021166885de2509a"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_seed_gen_exception.so.2508.0.0",
+        "bytes": 16656,
+        "sha256": "cc67d27d8754788fd23ab078903092635a23e47d6f169cfbfeb1bf2a702622d1"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_random_seed_sequences.so.2508.0.0",
+        "bytes": 16416,
+        "sha256": "c9b11187ccbb68008f252c8e8882b4416905e4caac7156fcfda5da3782f4629e"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_raw_hash_set.so.2508.0.0",
+        "bytes": 45968,
+        "sha256": "40e5614650659cb1f33d79da2c32f8c66935f27a76b8de421a68fcb2b2b01f44"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_raw_logging_internal.so.2508.0.0",
+        "bytes": 17736,
+        "sha256": "7d65179cf75277e208462d2e532933097924c6223b1c0f8031fafe3271bfdd00"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_spinlock_wait.so.2508.0.0",
+        "bytes": 16112,
+        "sha256": "56d4a2c9dc4c2590d3846ef06888586f0e3898f7cf5713a13cc47255a6e71b1c"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_stacktrace.so.2508.0.0",
+        "bytes": 21488,
+        "sha256": "c69e2be6743da92472801ef0961731b461552503e33e5c1cc7114fee27dad0cf"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_status.so.2508.0.0",
+        "bytes": 56392,
+        "sha256": "73d08e43e51fc3cd5bdc18f32cb23f898c2dc7fe9fc88e396ec18d378568a0da"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_statusor.so.2508.0.0",
+        "bytes": 23704,
+        "sha256": "e3935801a15452751ab89786514df8b3fbf348515271e836793e551292ec156f"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_str_format_internal.so.2508.0.0",
+        "bytes": 148296,
+        "sha256": "5a86f649ebf4baad79ed221c8a5524de1a13384534133fbd3d2c75542af29692"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_strerror.so.2508.0.0",
+        "bytes": 17064,
+        "sha256": "8a3d601f706417bca0af06815de881c5d9aaacc01ae0c2ecd138a23879f3b9f3"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_string_view.so.2508.0.0",
+        "bytes": 15440,
+        "sha256": "6e5bb04d49f0873955f69ddd6b5383b6e2d97b1d825357c7d6fd60f2477e30d3"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_strings.so.2508.0.0",
+        "bytes": 177056,
+        "sha256": "8527cde2586b1a60ef46976371357cc7747f35188b150de4456340592d0a9116"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_strings_internal.so.2508.0.0",
+        "bytes": 23728,
+        "sha256": "37f21a8913f475105e50d20c07ba97673a0ac4bf03a2cff75727eb94bb735ebf"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_symbolize.so.2508.0.0",
+        "bytes": 44040,
+        "sha256": "91297fd6e466bee85ac17a7907f413c97b56118d2978bee038373130e29be033"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_synchronization.so.2508.0.0",
+        "bytes": 75400,
+        "sha256": "dbcc802c14752ef291cb054b5df3f6625c4ec4c95436b884f91b9d1af54e87ce"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_throw_delegate.so.2508.0.0",
+        "bytes": 25592,
+        "sha256": "7938bcdccd693d325d5cf3218ec51d216c0515fe0d16ff0a613978e4fa1ecb2c"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_time.so.2508.0.0",
+        "bytes": 110680,
+        "sha256": "d82031d83996d1bc8805b164329b86e7fbb2977617337faa4e2ad846e7435eb6"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_time_zone.so.2508.0.0",
+        "bytes": 156728,
+        "sha256": "9da99ca5a3d8b4312950cfbdf41777d2b54cdc05622c3457b17eb945d62f52b9"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_tracing_internal.so.2508.0.0",
+        "bytes": 15800,
+        "sha256": "514f99cd1c62526bf95e93afc4af1ea6be6508633808dd2e2c6c96653460bfff"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_utf8_for_code_point.so.2508.0.0",
+        "bytes": 15816,
+        "sha256": "50c8f3c8923fb8cfc3aeda6beeddf301c0458c6a5a040d45280c4ddeec063d35"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libabsl_vlog_config_internal.so.2508.0.0",
+        "bytes": 37280,
+        "sha256": "3b672700fed89a9cfe0167fbbc1248bd7739ce99687adc908e90083d4f1a04d8"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libbz2.so.1",
+        "bytes": 103888,
+        "sha256": "a3fcfee6efa9db9e9c29a9ac0d23873c0cd9f2e785d578eddea0a523d11fd781"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libhighs.so.1",
+        "bytes": 5206408,
+        "sha256": "f1950bebd88b271821c7924527021b738a2a6c1cd4516cf97463a0f5e8f82973"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libortools.so.9",
+        "bytes": 33175344,
+        "sha256": "5190e6d7e163ac2975abb9d582b6d405396621f8a15f2ac7c3de3d50d6276887"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libprotobuf.so.33.1.0",
+        "bytes": 4215768,
+        "sha256": "6686e3ef64b47c93e990335672d9e62028c7f471efcfbb0520836e9054561da0"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libre2.so.11",
+        "bytes": 592216,
+        "sha256": "cab89b5bbe3f27ce9596f2676645c6b00fe5b1ef9cd98f2d08984cddb316a56c"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libscip.so.10.0",
+        "bytes": 13804440,
+        "sha256": "b574f5d16450a97c4a5a8d7f0584c8bfc0c9e42e9e2a00871200474cf235a119"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libutf8_validity.so.33.1.0",
+        "bytes": 22009,
+        "sha256": "cfa54ab5a0e54c294a4e0719c49aa75c1c0ff7f7df0ef4aece836d76f936e5fb"
+      },
+      {
+        "path": "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/lib/python3.12/site-packages/ortools/.libs/libz.so.1",
+        "bytes": 129520,
+        "sha256": "04732421a545f37615865d44a17cc34c018d5c53565e7412e6e9e06b4eb4a57f"
+      }
+    ],
+    "runtime_installed_or_modified_by_this_source": false
+  },
+  "truth_assignments_by_family": {
+    "cardinality": 32,
+    "weighted": 16,
+    "cover": 8,
+    "empty_guard": 2
+  },
+  "tiny_solver_queries": 60,
+  "rook9_core_sites": [
+    0,
+    1,
+    3,
+    4,
+    8
+  ],
+  "rook9_outside_sites": [
+    2,
+    5,
+    6,
+    7
+  ],
+  "rook9_candidate_masks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8,
+    10,
+    12,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    24,
+    26,
+    28
+  ],
+  "rook9_selected_column_ids": [
+    11,
+    13,
+    15,
+    16
+  ],
+  "rook9_all25_Gram_positions_checked": true,
+  "rook9_positive_control": true,
+  "rook9_deleted_column_negative_control": true,
+  "main_case4_solver_queries": 0,
+  "elapsed_seconds": 1.4087198489978618
+}

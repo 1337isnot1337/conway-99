@@ -1,0 +1,32 @@
+{
+  "status": "INCOMPLETE_SUPERVISOR_CONTROLS_NO_PRODUCTION_QUERY",
+  "runner_source_sha256": "b8e5323f92fa105ff2c0ed5b1667ac25d7c92f85f8cac45b170ddc56208f8278",
+  "controls": {
+    "exit0": {
+      "path": "experiments/logs/root-prism-free/f0-local41-batch01-controls/exit0/supervisor.json",
+      "sha256": "1eb5eb54c00527bf8f1273a33b40495a17bae4823a737c939f554cdff96a3b0e",
+      "result": {
+        "status": "CHILD_EXITED",
+        "production_outcome_accepted": false,
+        "returncode": 0,
+        "child_reaped": true,
+        "seconds": 0.692669192001631
+      }
+    },
+    "exit3": {
+      "path": "experiments/logs/root-prism-free/f0-local41-batch01-controls/exit3/supervisor.json",
+      "sha256": "a1f80f9422d5674e5bc91c18609f6fb25c038c622180a934ab404f88e26e85b7",
+      "result": {
+        "status": "UNKNOWN_HARD_DEADLINE",
+        "production_outcome_accepted": false,
+        "returncode": 3,
+        "child_reaped": true,
+        "seconds": 4.361716977000469
+      }
+    }
+  },
+  "initialization_timing_retained": false,
+  "query_preparation_created": false,
+  "production_queries": 0,
+  "reason": "The exit3 child exited3 and was reaped, but the parent resumed after its2-second deadline and correctly classified the outcome UNKNOWN; the preparation assertion stopped before the kill-control."
+}

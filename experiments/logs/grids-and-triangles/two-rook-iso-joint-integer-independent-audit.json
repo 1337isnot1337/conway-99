@@ -1,0 +1,34 @@
+{
+  "status": "independent domain, mathematical reduction, and CNF binding pass",
+  "source_sha256": "6f62d78af4dfca5e141e0541b4572433a08b628f474e972288ce38a18032202e",
+  "cnf_sha256": "c2c22ac69a93bae270d23906670b24cab87f270c6db579076a0b91560d3c4e1e",
+  "core_vertices": 27,
+  "candidate_signatures": 168,
+  "signature_selection_variables": 168,
+  "candidate_edge_variables": 9846,
+  "activation_clauses": 19692,
+  "gram_cardinality_requests": 189,
+  "conditional_cardinality_requests": 4552,
+  "conditional_quotas": [
+    0,
+    1,
+    2,
+    11
+  ],
+  "conditional_request_calls": {
+    "equals": 189,
+    "atmost": 4384,
+    "atleast": 4384
+  },
+  "packing_clauses_independently_reconstructed": 62692,
+  "total_cnf_variables": 525986,
+  "total_cnf_clauses": 1151148,
+  "conditional_controls": {
+    "settings": 58,
+    "complete_boolean_assignments": 37888
+  },
+  "fixed_incidence_witness_used": false,
+  "orbit_identifications_used": false,
+  "lazy_cuts_used_in_audited_cnf": false,
+  "scope": "audits the necessary full case48 integer model; DRAT replay is a separate required check"
+}

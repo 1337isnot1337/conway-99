@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/complement_rook_35core_case0004_primary_propagation.py", line 410, in <module>
+    prepare(args.output.resolve(), args.controls.resolve())
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/complement_rook_35core_case0004_primary_propagation.py", line 375, in prepare
+    rows, raw, units, bindings = load_inventory()
+                                 ^^^^^^^^^^^^^^^^
+  File "/workspace/scratch/ab2f4d4412fd/conway-99/experiments/workspace/complement_rook_35core_case0004_primary_propagation.py", line 107, in load_inventory
+    assert inventory['primary_variables'] == N and inventory['case'] == 4
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

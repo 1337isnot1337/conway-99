@@ -1,0 +1,62 @@
+{
+  "schema": "conway99.f0.Fourier-literal-decoder.recovered-artifacts.v1",
+  "status": "VERBATIM_RECOVERY: preparation and completed cold records recovered from restored local files",
+  "restored_checkout_head": "ce9c3583514d7460801cee0c9d6ea273cc42f05e",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_fourier_literal_decoder.py",
+      "sha256": "94a7246f1aaf1715fab1c05b98519570bc4ac7e370c77ad7a03353ec06aa0d3f",
+      "git_blob": "0fcda28c98209022cbb51cb512fb65f5c0b04f15",
+      "bytes": 31094,
+      "role": "previously recovered exact source"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fourier-literal-decoder-preparation01.json",
+      "sha256": "073e074ce272a542d9ae6e20456523678f9c6496ac09193b5598ace27953bffc",
+      "git_blob": "411efe2591fb0aa41d878b7738b652e0c87c5e54",
+      "bytes": 69491,
+      "role": "verbatim recovered local bytes"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fourier-literal-decoder-preparation01-cold.json",
+      "sha256": "0015f4e0b7052eebf526a3601da1e15ebfb04b8cb7bed9a0ad19d54401acdde7",
+      "git_blob": "e7cc00317277f19e624c68203766dc1b0146b0bc",
+      "bytes": 355,
+      "role": "verbatim recovered local bytes"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fourier-literal-decoder-preparation01.log",
+      "sha256": "f5b45fd5950de5aa39fb3e1ebbe33b7648e2d779064b7ff8e73131f03dddbebd",
+      "git_blob": "336f131b6dc9b60f4a4cc087a1a3a3876491187e",
+      "bytes": 176,
+      "role": "verbatim recovered local bytes"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-fourier-literal-decoder-preparation01-cold.log",
+      "sha256": "06e7e14241ec79aa232ac1e50665ebc1fed149a793a7872ecdfe4eba18de1423",
+      "git_blob": "acaaff28a1163876f7f47bbb915dd467b87205da",
+      "bytes": 194,
+      "role": "verbatim recovered local bytes"
+    }
+  ],
+  "historical_execution": {
+    "preparation_status": "PREPARED_ABSTRACT_DECODER_ONLY",
+    "preparation_seconds": 6.114417470998887,
+    "cold_status": "PASS: complete abstract decoder preparation replay",
+    "cold_seconds": 18.59974943099951,
+    "existing_masks_replayed": 64144,
+    "optimizer_calls": 0,
+    "production_candidates_checked": 0
+  },
+  "recovery_actions": {
+    "source_hash_checked": true,
+    "captured_preparation_hash_matched": true,
+    "cold_binds_preparation_and_source": true,
+    "actual_bytes_uploaded": true,
+    "preparation_repeated": false,
+    "cold_repeated": false,
+    "records_reconstructed_from_summary": false,
+    "repo_refs_changed": false
+  },
+  "scope": "Abstract decoder preparation only. No production native schema/specification or accepted count candidate is bound."
+}

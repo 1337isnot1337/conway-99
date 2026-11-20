@@ -1,0 +1,35 @@
+{
+  "status": "coordinator complete source and primary specification review PASS",
+  "sources": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_exterior_row_cut_overlay.py",
+      "sha256": "0a1739251220c3b27564cc9ea0d2e64bad4c9aa8db9a93182fc7cc91ea7c0353"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_first_design_exterior_row_audit.py",
+      "sha256": "d9e70f8d0f979505b0c5f264969e3b72f300d1f2da0491b41b760301c9e666df"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-cut-overlay-model.json",
+      "sha256": "15d924357d89ab74f554ffa58a8da7559f7f5684711bf57e49f2eb23dcbccb7b"
+    }
+  ],
+  "checks": [
+    "Complete overlay source read; all480 original incidence selectors remain free.",
+    "Exact56550-clause original prefix is rebuilt and hash checked.",
+    "Only444 primary guarded clauses are appended; no auxiliary or fixed-design assumption is added.",
+    "The integer potential, full eligible domain, weighted inequality, binary truncation and all12 core transports were reviewed.",
+    "Coordinator independently reconstructed every coefficient of the base55-term inequality and verified the full-domain row control.",
+    "Guarded encoding is equivalent to weight1/weight2 total at least2 when its target selector is present.",
+    "SAT inspection checks the original incidence and every new inequality; UNSAT needs direct and separate cold retained-proof checks.",
+    "The source distinguishes cooperative solver time, proof-check failure, UNKNOWN and certified exclusions."
+  ],
+  "authorized_query": {
+    "fresh_queries": 1,
+    "requested_seconds_including_bootstrap": 60,
+    "direct_checker_seconds": 60,
+    "separate_cold_checker_seconds": 60,
+    "assumptions": []
+  },
+  "unrestricted_graph_exclusion_claimed": false
+}

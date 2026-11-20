@@ -1,0 +1,49 @@
+{
+  "status": "case4 full-LP and complete-positive-row loop prepared; no optimizer called",
+  "source_sha256": "b8992691bf5e56bfdc84450de64c36f43dbd3c0927973f334e00ce2d50f0c16a",
+  "dependency_source_hashes": {
+    "complement_rook_35core_case0004_lp.py": "cba1a71b01cb48e33bfd0a82113b35d3c5b846176dfb244369660d8762320d02",
+    "complement_rook_35core_case0004_exterior_rows.py": "db88ab6af3b151dc233519efb052d1fc20bd40b251e01a61558a3c93ac709977",
+    "complement_rook_35core_case0004_row_separation.py": "a5a7f1a950de22e310484ec17c098eaaf19915b556d71cec67b191c4a1a79339"
+  },
+  "base_model": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-lp-model.json.gz",
+  "base_model_sha256": "18e7b79a7e83c1c40f0c0c29301703400f26b42401f0b07a2f21783a298119a6",
+  "row_domain_sha256": "10377b5494b8d39e3b41f400b39af485c1db44d06232e1c03663a07f530e8628",
+  "initial_result": "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-row-separation-run01.json",
+  "initial_result_sha256": "e758fffa8bbeb80f0fc2edd3bdb9b9fc8b992a27303679df9d9658f0c9aa18f3",
+  "initial_inventory": {
+    "equations": 397,
+    "inequalities": 1444,
+    "standard_form_rows": 1841,
+    "standard_form_variables": 2658,
+    "standard_form_nonzeros": 19337,
+    "row_inventory_sha256": "1defb9fc2516d620feb536b087c2169fb93e47c235055712d8275a945ce6ae72"
+  },
+  "primary_columns": 1214,
+  "fixed_prior_binary_no_goods": 30,
+  "full_candidate_row_universe": 1214,
+  "eligible_unordered_edges": 275578,
+  "maximum_rounds": 5,
+  "maximum_requested_total_seconds": 60,
+  "maximum_global_LP_seconds": 10,
+  "maximum_row_LP_seconds": 2,
+  "threads": 1,
+  "proposal_rule": "values<1e-9 become0; values>1-1e-9 become1; all other values unchanged",
+  "row_order": "every positive sanitized proposal column, in increasing column order",
+  "cut_acceptance": "exact integer products and positive RHS; normalized numerical gap>1e-8",
+  "cuts_not_binary_weight_capped": true,
+  "infeasibility_gate": "exact integer Farkas replay against every full current standard-form column",
+  "stop_conditions": [
+    "no new checked integer separator on the complete positive support",
+    "global LP infeasible, with exact certificate required for exclusion",
+    "first nonoptimal LP, error, total time budget, or five completed rounds"
+  ],
+  "controls": {
+    "integer_Farkas_positive_control": true,
+    "invalid_ray_controls_rejected": 4,
+    "optimizer_or_solver_called": false
+  },
+  "SAT_queries": 0,
+  "scope": "Only indexed35-core case4. Numerical points are discovery proposals; they are not exact feasible points. Any actual-graph exclusion requires a checked Farkas ray."
+}
+preparation_sha256 57d1e671267ff35f8226c140a248f76076239575ba38517d332a9f6daa2cd7a9

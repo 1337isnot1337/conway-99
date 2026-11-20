@@ -1,0 +1,21 @@
+{
+  "status": "CHILD_EXIT",
+  "child_exit_code": 0,
+  "command": [
+    "/workspace/scratch/ab2f4d4412fd/conway-99/.venv/bin/python",
+    "experiments/workspace/root_prism_free_f0_edge_orbit_packing.py",
+    "replay",
+    "--preparation",
+    "experiments/logs/root-prism-free/f0-edge-orbit-packing-census-preparation01.json",
+    "--record",
+    "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01.json.gz",
+    "--ledger",
+    "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01-ledger.jsonl.gz",
+    "--output",
+    "experiments/logs/root-prism-free/f0-edge-orbit-packing-scan01-cold.json"
+  ],
+  "wall_limit_seconds": 60,
+  "elapsed_seconds": 5.280743879004149,
+  "automatic_retry": false,
+  "log_sha256": "1619245f422d797fb580d62195d4f076e2ec9451c29e8452c89cd7aff8d1394b"
+}

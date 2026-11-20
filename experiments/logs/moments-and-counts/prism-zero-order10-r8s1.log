@@ -1,0 +1,71 @@
+{"positive_roots_scanned": 64, "exact_negative_blocks": 0, "unique_core_cuts": 0}
+{"positive_roots_scanned": 128, "exact_negative_blocks": 0, "unique_core_cuts": 0}
+{"positive_roots_scanned": 192, "exact_negative_blocks": 0, "unique_core_cuts": 0}
+{"positive_roots_scanned": 256, "exact_negative_blocks": 0, "unique_core_cuts": 0}
+{"positive_roots_scanned": 320, "exact_negative_blocks": 0, "unique_core_cuts": 0}
+{"positive_roots_scanned": 384, "exact_negative_blocks": 0, "unique_core_cuts": 0}
+{"positive_roots_scanned": 448, "exact_negative_blocks": 0, "unique_core_cuts": 0}
+{"positive_roots_scanned": 512, "exact_negative_blocks": 1, "unique_core_cuts": 1}
+{"positive_roots_scanned": 576, "exact_negative_blocks": 3, "unique_core_cuts": 3}
+{"positive_roots_scanned": 640, "exact_negative_blocks": 4, "unique_core_cuts": 4}
+{"positive_roots_scanned": 704, "exact_negative_blocks": 6, "unique_core_cuts": 6}
+{"positive_roots_scanned": 768, "exact_negative_blocks": 10, "unique_core_cuts": 10}
+{"positive_roots_scanned": 832, "exact_negative_blocks": 11, "unique_core_cuts": 11}
+{"positive_roots_scanned": 896, "exact_negative_blocks": 11, "unique_core_cuts": 11}
+{
+  "source_sha256": "77e27f09dde9a9c2d57082a60abbab5ac7698875856c7856fe1dc376d6998469",
+  "catalogue_path": "/tmp/conway99-order10-catalogue.pickle",
+  "catalogue_sha256": "1e1afe93518b0b3707031eed987b19e49bb237ea85e9165ae0f25f2b07a82057",
+  "reduced_cache_path": "/tmp/conway99-order10-reduced.pickle",
+  "reduced_cache_sha256": "0ad45482ea273b3412e8d308d47eabab366678f4a7e446e4a9f32791c563af65",
+  "witness_path": "experiments/logs/moments-and-counts/prism-zero-repair-witness.json",
+  "witness_sha256": "62faca107e3f5a7f560c009133e2da563aa16619382b7778f7ff53aa1cd75db7",
+  "root_order": 8,
+  "outside_flag_size": 1,
+  "induced": true,
+  "maximum_generation_seconds": 180.0,
+  "optimizer_called": false,
+  "direct_rook_controls": {
+    "status": "direct R9 rooted-product controls passed",
+    "cases": [
+      {
+        "omitted_pair": [
+          0,
+          1
+        ],
+        "root_type": 306,
+        "root_embeddings": 72,
+        "flags": 3,
+        "exact_matrix_sha256": "76f5c15b7f37f8bc07165270bc68f4041b89e71f919f0cd26adf66e928653f58",
+        "passed": true
+      },
+      {
+        "omitted_pair": [
+          0,
+          4
+        ],
+        "root_type": 304,
+        "root_embeddings": 72,
+        "flags": 11,
+        "exact_matrix_sha256": "1ca0a521c46fc20846dcc38acec2367aebb2881f98b84636c1da947bbb7663f2",
+        "passed": true
+      }
+    ]
+  },
+  "root_count": 916,
+  "PSD_feasibility_certified": false,
+  "status": "exact order-ten moment violations found",
+  "timed_out": false,
+  "completed_root_scan": true,
+  "positive_roots_scanned": 897,
+  "exact_negative_blocks": 11,
+  "unique_core_cut_count": 11,
+  "explicit_transports_checked": 38256,
+  "generated_cache_path": "experiments/logs/moments-and-counts/prism-zero-order10-r8s1-blocks.pickle.gz",
+  "generated_cache_sha256": "0667656a93f7482fa3a5641bf0cc24b86a3649e03462b0a4dcf21d202454b30c",
+  "generated_cache_bytes": 3087710,
+  "lower_entries": 1362135,
+  "tensor_nonzeros": 1137843,
+  "seconds": 50.33688866299963,
+  "peak_process_rss_kib": 1320760
+}

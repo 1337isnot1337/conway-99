@@ -1,0 +1,70 @@
+{
+  "schema": "rook-case4-face99-boolean-preparation-manifest-v1",
+  "status": "Frozen preparation and review package; production outcome is separate",
+  "files": [
+    {
+      "path": "experiments/workspace/rook_case4_face99_boolean_overlay.py",
+      "bytes": 12987,
+      "sha256": "906a2cab0dcb6b23b6c35a9f0cd6a63a80b3dae27d8ca935892e37f2a0f89918",
+      "git_blob_sha1": "69bb93bc2753cdc4422fa92ca7594e1d80c67a4a"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face99_boolean_query.py",
+      "bytes": 23315,
+      "sha256": "b47b9c962cb62dd367dde4ddbaa37cc08d18c39ea33e4aeeaba3be83d84a8fd9",
+      "git_blob_sha1": "b282e8425790ae642b52d59a7e2c076714cd29d7"
+    },
+    {
+      "path": "research/grids-and-triangles/rook_case4_face99_boolean_preparation.md",
+      "bytes": 5556,
+      "sha256": "ef49623cbbd27833a2a42a8ef12293b69b39ac2130be5d7e67e6fd4228ad2463",
+      "git_blob_sha1": "c99bc9030266771168744bf8c650b2cda61e3927"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation01/model.json",
+      "bytes": 18019,
+      "sha256": "7fddef049fd12b511556e473970999b255f41b3571d74c04fc734b29c9047c7f",
+      "git_blob_sha1": "b4af0acc21b462a1d202577f8fd5217d86f8276e"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation01/progress.json",
+      "bytes": 1889,
+      "sha256": "dbd572f33034185aa58259d05ab1da76e20dd40cb1c16b79f899c86a83fbb882",
+      "git_blob_sha1": "6c85b3465863fdcd294783c2d8fc070c7b00f3df"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-preparation01-cold.json",
+      "bytes": 2066,
+      "sha256": "58809ef709f19e2648e5ff531a8f36f5216f8f614ce572cfb767a2b3ab997d15",
+      "git_blob_sha1": "3c65cb58594e4c349200477cf78617ac655dfd9b"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-query-preparation.json",
+      "bytes": 19565,
+      "sha256": "561bd87e8dd3befde4e5d7e2c0b7f06e56955ee76d5297dbce3ba1da3f3cc664",
+      "git_blob_sha1": "32888ee8b3e67cdf4b17bee15732796d37b72864"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-query-controls01/tiny-drat.log",
+      "bytes": 358,
+      "sha256": "bef103b4e42a9956ab3ce2aeefc4801c53b5c741e8daa3dc401d04042e436c70",
+      "git_blob_sha1": "27d3e5bc0055a86bd246df040afa6092ee91cf5d"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face99-boolean-independent-source-review.json",
+      "bytes": 2389,
+      "sha256": "50f3da5869ea57d24ec03a46c76ec778cf91e3993b1cb52198c77073a2ba1aa0",
+      "git_blob_sha1": "7306d583babdf990e24574b06f2f23b8fc2d4aeb"
+    }
+  ],
+  "base_CNF_sha256": "5a805a4e302bf2a91aa3cb4d39aeaddb4759b7f9695633de18cfb0fa6d5883a2",
+  "new_CNF_sha256": "f3467d02ca6763391668c0cdac0a395dab23688d831b25107fcf04ea1c94ac22",
+  "unchanged_original_clauses": 439604,
+  "new_negative_primary_units": 85,
+  "variables": 134852,
+  "clauses": 439689,
+  "no_new_auxiliaries": true,
+  "scope": "Only indexed35-core case4; preparation is not an exclusion or graph witness.",
+  "large_CNF_included": false,
+  "large_CNF_reconstructable_from_frozen_sources": true
+}

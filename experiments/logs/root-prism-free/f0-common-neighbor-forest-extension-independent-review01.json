@@ -1,0 +1,67 @@
+{
+  "schema": "conway99.f0.common-neighbor-forest-extension-independent-review.v1",
+  "status": "PASS_COMPLETE_CONDITIONAL_POLYHEDRAL_THEOREM",
+  "reviewer": "/root/master_continuation",
+  "theorem": {
+    "path": "research/root_prism_free_f0_common_neighbor_forest_extension.md",
+    "git_blob": "00281a95fec20834cac140d7b2f6bfa4edef20e1",
+    "sha256": "66008cb63184240d897f55f2333bbb5153e26031cd4cb96c134767a9e5723cea",
+    "bytes": 9724
+  },
+  "full_note_read": true,
+  "statement_review": {
+    "hypothesis": "A fixed pair a,b has the accepted unconditional cap of at most one common exterior neighbor in every Boolean completion; original selector and edge endpoint bounds are retained.",
+    "support_scope": "The theorem holds for any finite set C of distinct candidates other than the anchors. Full n_ab<=1 requires a complete possible-common-neighbor support; a smaller set gives only its partial cap.",
+    "ambient_edges": "Only listed ac,bc edges enter the argument. The edge ab and edges inside C may exist.",
+    "real_projection": "Auxiliaries z_c and Z are continuous. Their projection equals all root-omitted forest inequalities over every subset of C.",
+    "integer_projection": "Boolean original selectors and edge variables force z_c=AND(u_c,v_c). Declaring those auxiliaries Boolean preserves this integer projection.",
+    "mixed_integrality_limit": "No equality is claimed when original variables are real but z remains integral."
+  },
+  "proofs_checked": [
+    "A simple cycle among the listed K2,C edges must be a 4-cycle and would create two common neighbors. Thus the listed active graph is a forest; active and inactive roots both give the stated selector-homogeneous inequality.",
+    "For w_c=u_c+v_c-t_c, maximizing the arbitrary-subset sum gives P=sum max(0,w_c). The anchor-root families are exactly P<=A and P<=B.",
+    "For root d, the subset must contain d; its maximum is e_d+P-p_d. This includes the empty selection of other candidates.",
+    "Every feasible extension has z_c>=p_c and Z=sum z. The root-d left side is e_d+sum_{c!=d}z_c; replacing these other coordinates by p_c is monotone. The apparent negative self coefficient cancels exactly.",
+    "For the reverse inclusion, choose z_c=p_c and Z=P. Endpoint activation gives p_c<=u_c and p_c<=v_c, and the remaining inequalities are exactly the subset maxima.",
+    "At Boolean originals, zero in either side edge forces z_c=0; both side edges one force t_c=1 and z_c=1. The anchor caps and root rows are equivalent to the listed cap-one condition.",
+    "If one side edge is unavailable or proved zero, p_c=z_c=0. Its root row follows from the other endpoint bound and the opposite anchor cap. Removing that candidate's extension variables and local rows preserves the complete real projection, without removing its original selector or other edge.",
+    "For empty support all forest rows follow from endpoint activation; no auxiliary is needed."
+  ],
+  "explicit_examples_checked_by_algebra": [
+    {
+      "example": "One candidate, A=B=t=1, u=v=3/4",
+      "result": "All forest rows hold and continuous z lies in [1/2,3/4], while no Boolean z exists."
+    },
+    {
+      "example": "Two candidates, A=B=1/2, t_c=1, t_d=1/2, all four side edges=1/2",
+      "result": "The lower/upper auxiliary bounds and anchor caps permit Z=1/2, but the root-c inequality has left side 3/2 and right side 1. The root rows cannot be omitted from the real theorem."
+    },
+    {
+      "example": "K2,3 with all selectors=1 and all six side edges=3/4",
+      "result": "Every C4 forest row is tight at 3<=3; the three-candidate subset row fails at 9/2<=4. Larger subsets strengthen the C4-only real relaxation."
+    }
+  ],
+  "size_review": {
+    "support_size_symbol": "m>=1",
+    "auxiliaries": "m+1",
+    "linear_rows_excluding_variable_domains": "4m+3",
+    "coefficient_occurrences": "15m+5",
+    "term_derivation": "4m in lower bounds; 4m in edge upper bounds; m+1 in the sum equality; 4 in the anchor caps; 6m in root rows.",
+    "empty_support_separately_handled": true
+  },
+  "evidence_scope": {
+    "accepted_pair_census": "experiments/logs/root-prism-free/f0-spectral-gap-pair-independent-cold01.json",
+    "accepted_pair_census_sha256": "e8d27725afb707867f6683604ff1f3123f8960305c721058f495883f23476349",
+    "accepted_cap_one_pair_count": 48,
+    "count_imported_from_accepted_receipt_not_recomputed": true,
+    "complete_graph_hull_claimed": false,
+    "original_model_nonredundancy_claimed": false
+  },
+  "concrete_blockers": [],
+  "support_census_calls": 0,
+  "optimizer_calls": 0,
+  "native_model_builds": 0,
+  "solver_calls": 0,
+  "current_model_changed": false,
+  "graph_or_component_exclusion_claimed": false
+}

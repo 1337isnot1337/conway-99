@@ -1,0 +1,36 @@
+{
+  "all_sources_read": true,
+  "authorized_saved_prefix_cold_replays": 1,
+  "authorized_scan_calls": 1,
+  "automatic_retries": 0,
+  "bindings": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_pair_orbit_packing.py",
+      "sha256": "857987075a72476a471660f37f6a683ad2e11adfe0389fd4c9c15e7858bac788"
+    },
+    {
+      "path": "experiments/workspace/finite_graph_clique_certificate.py",
+      "sha256": "ef97e243a4140ca741097cb8c237d080e926d5f47f2ccca01abc662ff042834b"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-pair-orbit-packing-preparation01.json.gz",
+      "sha256": "09412183bb01527a6fa2aeb23623b95af925767d5067bb363f10a2a8f8254a13"
+    }
+  ],
+  "checks": [
+    "All9353 retained pair orbits are covered;389 removed zero orbits remain explicit. Current variable IDs and domains come from the frozen full target plan.",
+    "Compatibility uses literal endpoint unions and handles shared endpoints. The old4410 zero pairs are retained, with4320 quota-one and90 prior binary-motif premises distinguished.",
+    "All finite graphs use the actual core action. Anchor-neighborhood reduction follows vertex transitivity of those graphs, not symmetry of a hypothetical graph.",
+    "Exact clique certificates give all reachable deletion/neighborhood recurrence values plus an attaining clique; replay verifies the recurrence without search.",
+    "The producer uses bitset conflicts; cold replay reconstructs every graph independently from literal endpoint unions and then verifies every saved clique certificate.",
+    "Streaming preserves every completed prefix with a64MiB uncompressed ledger bound. Partial/error outcomes do not claim complete coverage or exclusion.",
+    "Bounds are compared with current explicit domains only; no independence from all old linear constraints is claimed."
+  ],
+  "cold_cooperative_seconds": 60,
+  "maximum_output_bytes": 67108864,
+  "optimizer_calls": 0,
+  "reviewer": "root",
+  "scan_cooperative_seconds": 60,
+  "scheduling": "Start after the isolated F0 lightweight initialization diagnostic has released its slot.",
+  "status": "PASS: complete clique-kernel and retained-Z census source review"
+}

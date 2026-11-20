@@ -1,0 +1,21 @@
+{
+  "status": "coordinator full streamed source and actual-model binding review PASS",
+  "source_sha256": "071a6118501cf2ba6306c94ea3cf481b1949dcfdabcc66322d2f6ba4d2d4accc",
+  "model_sha256": "a87cac772964ec5af7415f327f0a2f52713ac9ca87767c1ae7b3ac0db2fa0728",
+  "cold_replay_sha256": "9a54b51965994fdc216ef8d8f7e82218c868b9219fe70678b234b9334d6c60a1",
+  "actual_CNF_sha256": "31a59090b935889b97515d20f5d03cdb02f5fc9b33a321ea30ded8b20c16b4b8",
+  "actual_variables": 1478076,
+  "actual_clauses": 3173640,
+  "checks": [
+    "complete source/specification and column-order binding",
+    "monotone disjoint auxiliary allocation with exact per-counter size comparisons",
+    "five clause-group hashes and full actual file hash",
+    "SAT inspector checks every primary constraint and all1521Gram entries",
+    "all1770outside overlaps and4851known caps checked on60distinctcolumns",
+    "visibleP/F motifs cannot be destroyed by adding unmodeled chords",
+    "correct240remaining exterior edges and restricted incidence scope"
+  ],
+  "coordinator_rebuilt_full_CNF": false,
+  "owner_cold_complete_rebuild_passed": true,
+  "solver_called": false
+}

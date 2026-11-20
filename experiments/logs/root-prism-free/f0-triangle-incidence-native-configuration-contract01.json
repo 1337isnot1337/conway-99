@@ -1,0 +1,1029 @@
+{
+  "schema": "conway99.f0.triangle-incidence-native-source-contract.v1",
+  "status": "SOURCE_AND_INTERFACE_CONTRACT_ONLY_NO_ACTUAL_CONFIGURATION",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "bytes": 64900,
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+  },
+  "independent_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "bytes": 82846,
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+  },
+  "accepted_parent_root": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "bytes": 9294,
+    "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+    "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd"
+  },
+  "incidence_literal_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-root-acceptance01.json",
+    "bytes": 9201,
+    "sha256": "f5bfd2f0af981e9b8fd96931e78bda6d2648960e8d0ddd981e2777bae88afea0",
+    "git_blob": "70ff31624e04962edd436ba9b1a62d611390cff0"
+  },
+  "target_total_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-root-acceptance01.json",
+    "bytes": 14322,
+    "sha256": "10dd8fbfd42dc695bae9c83a3f61f7b9694d940a092e8e67e034781fd3eb0ebc",
+    "git_blob": "f71469c7a5b9ac380ba6159f15a4121628028461"
+  },
+  "intended_configuration_path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+  "configuration_owner": "root",
+  "configuration_schema": "conway99.f0.triangle-incidence-native-configuration.v1",
+  "required_input_aliases": [
+    "parent_model",
+    "parent_configuration",
+    "parent_report",
+    "parent_owner",
+    "parent_cold",
+    "parent_cold_owner",
+    "parent_root_acceptance",
+    "domain",
+    "indicator_inventory",
+    "incidence_inventory",
+    "incidence_finalization",
+    "incidence_owner",
+    "incidence_terminal_binding",
+    "incidence_root_acceptance",
+    "incidence_theorem_review",
+    "incidence_literal_report",
+    "incidence_literal_finalization",
+    "incidence_literal_owner",
+    "target_total_report",
+    "target_total_finalization",
+    "target_total_owner",
+    "target_total_root_acceptance",
+    "target_total_theorem_review"
+  ],
+  "required_source_aliases": [
+    "base",
+    "supervisor",
+    "parent_producer",
+    "parent_cold",
+    "incidence_producer",
+    "checker"
+  ],
+  "required_proofs": [
+    {
+      "path": "research/root_prism_free_f0_recorded_triangle_capacities.md",
+      "bytes": 13608,
+      "sha256": "73f9cd10ce8eb234ba99abc6345345a9816437c9889386a90b729e3a29f3ce43",
+      "git_blob": "f38d58afead80a5b65ff19062bfd604d1a9e8087",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_target_color_twelve_bound.md",
+      "git_blob": "2864e837f22a38f37baf0535ed45c34163bd9415",
+      "sha256": "2e78b57ee726e7c301f3e73c4909c6547fdb2500eb0fc53f3d97be429436160c",
+      "bytes": 9695
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-proof-scope-clarification01.json",
+      "git_blob": "0a563436c20346f47f766c2ca6088671d62f4962",
+      "sha256": "cd53d25320c8b0859fec36428364de5b01b17b9e007035c5aa49b939aec883a6",
+      "bytes": 2702
+    }
+  ],
+  "source_sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+  "layout": {
+    "parent_variables": 80730,
+    "parent_rows": 297470,
+    "new_variables": 0,
+    "replaced_rows": 0,
+    "appended_rows": 3325,
+    "appended_terms": 26916,
+    "side_edge_start": 297470,
+    "local_selector_start": 300374,
+    "global_target_total_start": 300794,
+    "variables": 80730,
+    "rows": 300795,
+    "triangle_variable_start": 71382,
+    "triangle_variables": 5364
+  },
+  "family_order": [
+    "side_edge",
+    "local_selector",
+    "global_target_total"
+  ],
+  "expected_family_counts": {
+    "side_edge": 2904,
+    "local_selector": 420,
+    "global_target_total": 1
+  },
+  "expected_family_terms": {
+    "side_edge": 10320,
+    "local_selector": 16512,
+    "global_target_total": 84
+  },
+  "parent_total_terms": 3310380,
+  "total_terms": 3337296,
+  "literal_digest_scope": "Exactly the first two families, all 6300 incidence records, all side/local origin projections and all 60 empty local selectors.",
+  "expected_literal_hashes": {
+    "row_keys_sha256": "9e7d7387a389e31232799697b7228976dfb4ae22980bf0a6ecc3885456e93b43",
+    "side_row_keys_sha256": "b8c8e2967bbebae3036e30e142a34b1969b560609cfcf83802bcfb8cb636356e",
+    "local_row_keys_sha256": "0204d653b732885307d617f5099955dab71af0de4103ea9e81f743c9d874b175",
+    "complete_edge_incidence_sha256": "cb0dbf9916faa8041c02bf911954bbaf60ec55b4e404d8874704e539a51b3115",
+    "side_records_sha256": "baecfd597f40bda652679008e4e707c4f03a51a440b9654ed47efbe0b7927e4c",
+    "local_records_sha256": "4cc9111bd631177214674852b045f9484ce31f9cdc7b0642dcb04618496dc9d6",
+    "local_empty_sha256": "468827a8c8c4156ec272d1110ddf8d589d94b8b0ed7e72f50ce7956365fd7efe"
+  },
+  "expected_single_target_row_sha256": "36c10df91bd844086786344beb942a2fd271e2cb9fafc6712f9168d215a7a446",
+  "runtime": {
+    "ortools": "9.15.6755",
+    "protobuf": "6.33.6",
+    "model_schema_sha256": "266b68151ffd6c9f5db22553442abd777031663d39e1cea649a8737f811d2eff",
+    "cp_model_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+    "native_helper_sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735"
+  },
+  "limits": {
+    "controls_worker_seconds": 10,
+    "controls_owner_seconds": 15,
+    "prepare_worker_seconds": 120,
+    "prepare_owner_seconds": 135
+  },
+  "producer_cli": {
+    "modes": [
+      "controls",
+      "prepare"
+    ],
+    "required_arguments": [
+      "--configuration",
+      "--configuration-sha256",
+      "--directory"
+    ],
+    "internal_only_arguments": [
+      "--worker",
+      "--deadline"
+    ],
+    "assertions_required": true,
+    "statuses": {
+      "controls": "PASS_TRIANGLE_INCIDENCE_MODEL_CONTROLS",
+      "prepare": "PASS_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_PREPARATION"
+    },
+    "report_schemas": {
+      "controls": "conway99.f0.triangle-incidence-model-controls.v1",
+      "prepare": "conway99.f0.triangle-incidence-native-preparation.v1"
+    },
+    "owner_schema": "conway99.f0.triangle-incidence-native-owner.v1",
+    "accepted_owner_requires": "Exact successful worker status, returncode zero, reaped/stopped process group, accepted report and no owner overrun.",
+    "no_solver_mode": true
+  },
+  "independent_checker_cli": {
+    "modes": [
+      "controls",
+      "replay"
+    ],
+    "required_arguments": [
+      "--configuration",
+      "--configuration-sha256",
+      "--directory"
+    ],
+    "replay_only_required_arguments": [
+      "--preparation-directory",
+      "--report-sha256",
+      "--owner-sha256"
+    ],
+    "internally_owned": false,
+    "external_owner_required": true,
+    "worker_seconds": {
+      "controls": 10,
+      "replay": 120
+    },
+    "external_owner_seconds": {
+      "controls": 15,
+      "replay": 135
+    },
+    "statuses": {
+      "controls": "PASS_TRIANGLE_INCIDENCE_INDEPENDENT_REPLAY_CONTROLS",
+      "replay": "PASS_INDEPENDENT_COMPLETE_TRIANGLE_INCIDENCE_NATIVE_MODEL"
+    },
+    "report_schemas": {
+      "controls": "conway99.f0.triangle-incidence-independent-controls.v1",
+      "replay": "conway99.f0.triangle-incidence-independent-cold.v1"
+    },
+    "native_modules_or_producer_imported": false
+  },
+  "stage_order": [
+    "accepted_parent_and_all_proposal_receipts",
+    "all_unfiltered_capacities_and_target_total_row_rebuilt",
+    "constraint_only_suffix_and_whole_parent_preservation",
+    "public_native_transport_and_exact_export",
+    "lossless_archives_full_row_ledger_and_manifest"
+  ],
+  "artifact_names": {
+    "model": "model.pb",
+    "model_archive": "model.pb.gz",
+    "suffix_archive": "suffix.pb.gz",
+    "row_ledger": "append-rows.json.gz",
+    "restoration_manifest": "restoration-manifest.json"
+  },
+  "row_ledger_schema": "conway99.f0.triangle-incidence-appended-row-ledger.v1",
+  "row_origin_forms": {
+    "side_edge": [
+      "family",
+      "proposal_index",
+      "native_row_index",
+      "edge_id",
+      "endpoints",
+      "triangle_indices",
+      "third_selectors"
+    ],
+    "local_selector": [
+      "family",
+      "proposal_index",
+      "native_row_index",
+      "selector",
+      "k0",
+      "triangle_indices"
+    ],
+    "global_target_total": [
+      "family",
+      "proposal_index",
+      "native_row_index",
+      "target_edge_ids",
+      "target_count",
+      "upper_bound"
+    ]
+  },
+  "target_origin_values": {
+    "family": "global_target_total",
+    "proposal_index": 0,
+    "native_row_index": 300794,
+    "target_count": 84,
+    "upper_bound": 12,
+    "target_edge_ids": "All 84 accepted target IDs, sorted numerically."
+  },
+  "digest_conventions": {
+    "row_keys_sha256": "SHA256 of compact sorted-key JSON of the entire 3325-key array, no newline.",
+    "family_row_keys_sha256": "Same convention for each full family array.",
+    "family_row_jsonl_sha256": "Compact row-key JSON plus newline for each row, concatenated within each family.",
+    "literal_hashes": "Exactly the seven accepted two-family digests; incidence objects use the explicitly prescribed insertion order.",
+    "global_target_single_row": "SHA256 of the single [0,12,84-terms] key, not of a one-row array."
+  },
+  "restoration_schema": "conway99.f0.triangle-incidence-restoration.v1",
+  "suffix_format": "CpModelProto containing only 3325 appended linear constraints in declared order.",
+  "original_extractor_status": {
+    "report_is_untrusted_proposal_data": true,
+    "original_execution_accepted": false,
+    "finalization_milliseconds": 12196,
+    "finalization_limit": 10000,
+    "owner_milliseconds": 17209,
+    "owner_limit": 10000,
+    "failed_records_required": [
+      "incidence_inventory",
+      "incidence_finalization",
+      "incidence_owner",
+      "incidence_terminal_binding"
+    ],
+    "failed_records_excluded_from_successful_authority_requirements": true,
+    "separate_successful_literal_receipts_required": true,
+    "overrun_waived": false
+  },
+  "controls_prepared_but_unrun": {
+    "exact_large_integer": "2^54+3",
+    "original_signed_domain": [
+      -7,
+      9
+    ],
+    "named_empty_parent_constraint": true,
+    "complete_parent_and_constraint_suffix_reversal": true,
+    "mutation_rejections": 7,
+    "shared_edge_incidence": true,
+    "side_boolean_cases": 8,
+    "local_boolean_cases": 64,
+    "global_count_boolean_cases": 8,
+    "insertion_order_digest_control": true
+  },
+  "all_original_variables_and_rows_preserved": true,
+  "new_variables": 0,
+  "replaced_rows": 0,
+  "implication_classification_used_to_remove_rows": false,
+  "all_inputs_and_sources_need_existing_exact_files": true,
+  "actual_native_configuration_created": false,
+  "actual_native_model_built": false,
+  "python_compilation_or_controls_completed": false,
+  "optimizer_calls": 0,
+  "automatic_retries": 0,
+  "native_query_authorized": false,
+  "independent_complete_protobuf_replay_required": true,
+  "root_controls_all_execution_gates_and_repository_refs": true,
+  "inputs": {
+    "parent_model": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/model.pb.gz",
+      "bytes": 5632144,
+      "sha256": "afeadb94ffa6fba0465a3dbe0094f4c7f7c156de8d7aa5f24a8fcfa38d275542",
+      "git_blob": "a2fce7642eb1d155b0e658e3a612d1007c0bf653",
+      "mode": "100644"
+    },
+    "parent_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+      "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+      "bytes": 33063,
+      "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+      "mode": "100644"
+    },
+    "parent_report": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/report.json",
+      "bytes": 25026,
+      "sha256": "a1ddff45ae8a0a535154d6c9d433c6d3ce9eb9d8c3d7453ba024f9896ed08a1f",
+      "git_blob": "2e847f9b2513cfac977cb7929abf75454852a9a6",
+      "mode": "100644"
+    },
+    "parent_owner": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/owner.json",
+      "bytes": 1322,
+      "sha256": "c323ba1b8f77d23ae9af7496e48a92baa8b804153e1ae99e7a488c7155197037",
+      "git_blob": "530973430ba1618e89117138ccce4db7bbec2c35",
+      "mode": "100644"
+    },
+    "parent_cold": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold/report.json",
+      "bytes": 20320,
+      "sha256": "d160fdf100b09557616c74a3380d9dac09d1076c8244536af23198da2be6a089",
+      "git_blob": "3a9739b3d19a5684accd6424e50027440e2e91d1",
+      "mode": "100644"
+    },
+    "parent_cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01-cold-owner/owner.json",
+      "bytes": 1949,
+      "sha256": "652e2f20d8087342790464e6500065fbf277decb07d6f03a40a45eb3ea7f8dd7",
+      "git_blob": "fe60a0cf7b8018956969d1cfc10694cbc62f0026",
+      "mode": "100644"
+    },
+    "parent_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+      "bytes": 9294,
+      "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+      "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd"
+    },
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64-gzip"
+    },
+    "indicator_inventory": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json",
+      "sha256": "8606d51ced038b40135fa22bc16d056873b80c16c26d2c34db7e24ac8effd2c7",
+      "git_blob": "8188edc640d4dd896df0e64c4e08db4c78627e96",
+      "bytes": 1056971,
+      "encoding": "utf-8"
+    },
+    "incidence_inventory": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01.json",
+      "sha256": "2f8eea3f1bb67c796ca8bc1deb06606d0e0c2f1948838128fbc30ed05b6eb09c",
+      "bytes": 2879184,
+      "git_blob": "8201fa6b57efd6be545a4465fdf80aa8c69bf30c",
+      "mode": "100644"
+    },
+    "incidence_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-finalization.json",
+      "sha256": "aa3eb24fa0b711cc751b31f299ccaf5f50302b134486b15a7f1cde9fb0ecc27c",
+      "bytes": 364,
+      "git_blob": "0efb7ed6e15f5cc153c0dbaa27b9e9575637f308",
+      "mode": "100644"
+    },
+    "incidence_owner": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-owner.json",
+      "sha256": "958f6ac9c21c103bfa663be687bbfde492858e7b4a62532886ca6daeb0e663d3",
+      "bytes": 2178,
+      "git_blob": "647c89b1901188ecf2fa4ea609d2115f6a4553ae",
+      "mode": "100644"
+    },
+    "incidence_terminal_binding": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-row-keys01.json",
+      "sha256": "0599b49e238d17186ffc112cc8f8d581880a13c2c5407bd7a52ad566433368e1",
+      "git_blob": "91b8c95924a9936760136b93d39df89e2f2d1d8f",
+      "bytes": 3723,
+      "mode": "100644"
+    },
+    "incidence_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-root-acceptance01.json",
+      "bytes": 9201,
+      "sha256": "f5bfd2f0af981e9b8fd96931e78bda6d2648960e8d0ddd981e2777bae88afea0",
+      "git_blob": "70ff31624e04962edd436ba9b1a62d611390cff0"
+    },
+    "incidence_theorem_review": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-independent-source-review01.json",
+      "bytes": 8026,
+      "sha256": "ebc4e422b5283d3070425f70875fd59f49ed57ef50800fcc5a24f57d954cae1b",
+      "git_blob": "aeff91a3a8f7f23c3684a7f80e2fd6d1b1d332b7",
+      "mode": "100644"
+    },
+    "incidence_literal_report": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01.json",
+      "bytes": 5918,
+      "sha256": "1e5008561fd1a049c550913556856387ccde898073ff1fd46309735a4634c2bd",
+      "git_blob": "9741b71eb47ceb70396fec8e5b9c9c0152d0afba",
+      "mode": "100644"
+    },
+    "incidence_literal_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01-finalization.json",
+      "bytes": 367,
+      "sha256": "b490ae30d852cd7dafed69659edf0caa2ff623706504ee3df6b8d3fc84da42c4",
+      "git_blob": "802d455e91572e08fbc1be19445e78ed3c8c783e",
+      "mode": "100644"
+    },
+    "incidence_literal_owner": {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01-owner.json",
+      "bytes": 2568,
+      "sha256": "ef85a1c0a72f33bf540403af6d46170ca02aa968aaef17f7a7241ce2bf07d522",
+      "git_blob": "7f0b4d85728535a70245e8b2654800cc29a02fbe",
+      "mode": "100644"
+    },
+    "target_total_report": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01.json",
+      "sha256": "ba987fe7ff39fe088bc66cb2fbd9f81c4e17a0b457af70642bc1f61d37d6d1e3",
+      "bytes": 28398,
+      "git_blob": "c418e402626e0a2d216422ac62bef6165d962191"
+    },
+    "target_total_finalization": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-finalization.json",
+      "sha256": "965e521baa9818ee3bac1cfbf1bcc8b925b17d56e40ade86a78887c3234b51b8",
+      "bytes": 330,
+      "git_blob": "b2422be8453e66a48c6e2e9c538b68e3bd455c73"
+    },
+    "target_total_owner": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-owner.json",
+      "bytes": 2821,
+      "sha256": "aa40a994ccf753025412e0b9266fa778001ad62bdf4070e9d51552ae7bc894a0",
+      "git_blob": "a5ba96e4cf281b8d200e88b28b15ef2491d98d5b",
+      "mode": "100644"
+    },
+    "target_total_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-root-acceptance01.json",
+      "bytes": 14322,
+      "sha256": "10dd8fbfd42dc695bae9c83a3f61f7b9694d940a092e8e67e034781fd3eb0ebc",
+      "git_blob": "f71469c7a5b9ac380ba6159f15a4121628028461"
+    },
+    "target_total_theorem_review": {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-independent-source-review01.json",
+      "bytes": 6222,
+      "sha256": "9365c5c5278c09ed4f891879ebd42ec673b81f8afe7bc1ea67db5a93cdd63967",
+      "git_blob": "5f3382646abde6905bf7162f1ee97bbc83b02e8f"
+    }
+  },
+  "sources": {
+    "base": {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2",
+      "bytes": 15210,
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70"
+    },
+    "supervisor": {
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3",
+      "bytes": 26760,
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42"
+    },
+    "parent_producer": {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_model_v2.py",
+      "bytes": 38102,
+      "sha256": "18de36bc0b741f13578fbd2be43580a9bf3c1440f68918c3a63f37e65d7fc12b",
+      "git_blob": "962c9b2e68d262a7bd8c53370b2f7e03cda8ff5b"
+    },
+    "parent_cold": {
+      "path": "experiments/workspace/root_prism_free_f0_combined_extensions_replay_v2.py",
+      "bytes": 70788,
+      "sha256": "d955a93a7bf112f3c79ae9c6ffdd9f093b9b8d1f58df3ea25fe1bfba56f6b5e2",
+      "git_blob": "be51ef6deca257d57b018c989d994804994004c1",
+      "mode": "100644"
+    },
+    "incidence_producer": {
+      "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_capacity_inventory_v8.js",
+      "sha256": "3357917e76a94f2c79fdc5a65e00a3413ad1e019c63e4d5ae3400f7978f12699",
+      "git_blob": "a68bba4532f1e4efa41d47cc38865ce8d3d780d5",
+      "bytes": 14882
+    },
+    "checker": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+      "bytes": 82846,
+      "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+      "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+    }
+  },
+  "authorities": [
+    {
+      "input": "parent_report",
+      "expected_status": "PASS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_PREPARATION"
+    },
+    {
+      "input": "parent_owner",
+      "expected_status": "PASS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_PREPARATION"
+    },
+    {
+      "input": "parent_cold",
+      "expected_status": "PASS_INDEPENDENT_COMPLETE_COMBINED_EXTENSIONS_NATIVE_MODEL"
+    },
+    {
+      "input": "parent_cold_owner",
+      "expected_status": "OWNED_COMPLETE_COMBINED_EXTENSIONS_NATIVE_COLD_ACCEPTED"
+    },
+    {
+      "input": "parent_root_acceptance",
+      "expected_status": "ROOT_ACCEPTS_COMPLETE_COMBINED_EXTENSIONS_NATIVE_MODEL_AND_INDEPENDENT_COLD"
+    },
+    {
+      "input": "indicator_inventory",
+      "expected_status": "PASS_EXACT_SHARED_TRIANGLE_INDICATOR_INVENTORY"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "expected_status": "ROOT_ACCEPTS_COMPLETE_RECORDED_TRIANGLE_CAPACITY_LITERAL_ROWS"
+    },
+    {
+      "input": "incidence_theorem_review",
+      "expected_status": "PASS_COMPLETE_MATHEMATICAL_AND_FROZEN_EXTRACTOR_SOURCE_REVIEW_UNRUN"
+    },
+    {
+      "input": "incidence_literal_report",
+      "expected_status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_CAPACITY_ROWS"
+    },
+    {
+      "input": "incidence_literal_finalization",
+      "expected_status": "PASS_COMPLETE_SERIALIZATION_WITHIN_DECLARED_BOUND"
+    },
+    {
+      "input": "incidence_literal_owner",
+      "expected_status": "PASS_COMPLETE_INDEPENDENT_RECORDED_TRIANGLE_CAPACITY_LITERAL_EXECUTION"
+    },
+    {
+      "input": "target_total_report",
+      "expected_status": "PASS_EXACT_STRUCTURAL_TWELVE_TARGET_BOUND_AND_COLOR_WITNESS"
+    },
+    {
+      "input": "target_total_finalization",
+      "expected_status": "PASS_COMPLETE_STRUCTURAL_CERTIFICATE_SERIALIZATION"
+    },
+    {
+      "input": "target_total_owner",
+      "expected_status": "OWNED_COMPLETE_STRUCTURAL_TWELVE_TARGET_CERTIFICATE_ACCEPTED"
+    },
+    {
+      "input": "target_total_root_acceptance",
+      "expected_status": "ROOT_ACCEPTS_EXACT_BOOLEAN_TWELVE_TARGET_BOUND"
+    },
+    {
+      "input": "target_total_theorem_review",
+      "expected_status": "PASS_COMPLETE_TWELVE_BOUND_PROOF_AND_FROZEN_SOURCE_REVIEW_UNRUN"
+    }
+  ],
+  "authority_links": [
+    {
+      "input": "parent_root_acceptance",
+      "fields": [
+        "configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "parent_root_acceptance",
+      "fields": [
+        "preparation"
+      ],
+      "target": "parent_report"
+    },
+    {
+      "input": "parent_root_acceptance",
+      "fields": [
+        "independent_cold"
+      ],
+      "target": "parent_cold"
+    },
+    {
+      "input": "parent_root_acceptance",
+      "fields": [
+        "model_archive"
+      ],
+      "target": "parent_model"
+    },
+    {
+      "input": "parent_root_acceptance",
+      "fields": [
+        "owners",
+        "preparation"
+      ],
+      "target": "parent_owner"
+    },
+    {
+      "input": "parent_root_acceptance",
+      "fields": [
+        "owners",
+        "independent_cold"
+      ],
+      "target": "parent_cold_owner"
+    },
+    {
+      "input": "parent_report",
+      "fields": [
+        "configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "parent_owner",
+      "fields": [
+        "configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "parent_cold",
+      "fields": [
+        "configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "parent_cold_owner",
+      "fields": [
+        "configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "parent_owner",
+      "fields": [
+        "report"
+      ],
+      "target": "parent_report"
+    },
+    {
+      "input": "parent_cold",
+      "fields": [
+        "preparation_report"
+      ],
+      "target": "parent_report"
+    },
+    {
+      "input": "parent_cold",
+      "fields": [
+        "preparation_owner"
+      ],
+      "target": "parent_owner"
+    },
+    {
+      "input": "parent_cold_owner",
+      "fields": [
+        "report"
+      ],
+      "target": "parent_cold"
+    },
+    {
+      "input": "parent_configuration",
+      "fields": [
+        "inputs",
+        "domain"
+      ],
+      "target": "domain"
+    },
+    {
+      "input": "parent_configuration",
+      "fields": [
+        "inputs",
+        "triangle_inventory"
+      ],
+      "target": "indicator_inventory"
+    },
+    {
+      "input": "incidence_inventory",
+      "fields": [
+        "input_bindings",
+        "domain"
+      ],
+      "target": "domain"
+    },
+    {
+      "input": "incidence_inventory",
+      "fields": [
+        "input_bindings",
+        "indicator"
+      ],
+      "target": "indicator_inventory"
+    },
+    {
+      "input": "incidence_inventory",
+      "fields": [
+        "input_bindings",
+        "combined_configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "incidence_owner",
+      "fields": [
+        "report"
+      ],
+      "target": "incidence_inventory"
+    },
+    {
+      "input": "incidence_owner",
+      "fields": [
+        "finalization"
+      ],
+      "target": "incidence_finalization"
+    },
+    {
+      "input": "incidence_terminal_binding",
+      "fields": [
+        "report"
+      ],
+      "target": "incidence_inventory"
+    },
+    {
+      "input": "incidence_terminal_binding",
+      "fields": [
+        "finalization"
+      ],
+      "target": "incidence_finalization"
+    },
+    {
+      "input": "incidence_terminal_binding",
+      "fields": [
+        "owner"
+      ],
+      "target": "incidence_owner"
+    },
+    {
+      "input": "incidence_terminal_binding",
+      "fields": [
+        "source_review"
+      ],
+      "target": "incidence_theorem_review"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "report"
+      ],
+      "target": "incidence_literal_report"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "finalization"
+      ],
+      "target": "incidence_literal_finalization"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "owner"
+      ],
+      "target": "incidence_literal_owner"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "model_root_acceptance"
+      ],
+      "target": "parent_root_acceptance"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "domain"
+      ],
+      "target": "domain"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "indicator"
+      ],
+      "target": "indicator_inventory"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "model_configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "model_root"
+      ],
+      "target": "parent_root_acceptance"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "proposal"
+      ],
+      "target": "incidence_inventory"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "proposal_finalization"
+      ],
+      "target": "incidence_finalization"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "proposal_owner"
+      ],
+      "target": "incidence_owner"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "row_descriptor"
+      ],
+      "target": "incidence_terminal_binding"
+    },
+    {
+      "input": "incidence_root_acceptance",
+      "fields": [
+        "input_bindings",
+        "theorem_review"
+      ],
+      "target": "incidence_theorem_review"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "domain"
+      ],
+      "target": "domain"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "indicator"
+      ],
+      "target": "indicator_inventory"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "model_configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "model_root"
+      ],
+      "target": "parent_root_acceptance"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "proposal"
+      ],
+      "target": "incidence_inventory"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "proposal_finalization"
+      ],
+      "target": "incidence_finalization"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "proposal_owner"
+      ],
+      "target": "incidence_owner"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "row_descriptor"
+      ],
+      "target": "incidence_terminal_binding"
+    },
+    {
+      "input": "incidence_literal_report",
+      "fields": [
+        "input_bindings",
+        "theorem_review"
+      ],
+      "target": "incidence_theorem_review"
+    },
+    {
+      "input": "incidence_literal_owner",
+      "fields": [
+        "report"
+      ],
+      "target": "incidence_literal_report"
+    },
+    {
+      "input": "incidence_literal_owner",
+      "fields": [
+        "finalization"
+      ],
+      "target": "incidence_literal_finalization"
+    },
+    {
+      "input": "target_total_root_acceptance",
+      "fields": [
+        "report"
+      ],
+      "target": "target_total_report"
+    },
+    {
+      "input": "target_total_root_acceptance",
+      "fields": [
+        "finalization"
+      ],
+      "target": "target_total_finalization"
+    },
+    {
+      "input": "target_total_root_acceptance",
+      "fields": [
+        "owner"
+      ],
+      "target": "target_total_owner"
+    },
+    {
+      "input": "target_total_root_acceptance",
+      "fields": [
+        "peer_review"
+      ],
+      "target": "target_total_theorem_review"
+    },
+    {
+      "input": "target_total_root_acceptance",
+      "fields": [
+        "model_root_acceptance"
+      ],
+      "target": "parent_root_acceptance"
+    },
+    {
+      "input": "target_total_report",
+      "fields": [
+        "inputs",
+        "domain"
+      ],
+      "target": "domain"
+    },
+    {
+      "input": "target_total_report",
+      "fields": [
+        "inputs",
+        "indicator"
+      ],
+      "target": "indicator_inventory"
+    },
+    {
+      "input": "target_total_report",
+      "fields": [
+        "inputs",
+        "combined_configuration"
+      ],
+      "target": "parent_configuration"
+    },
+    {
+      "input": "target_total_owner",
+      "fields": [
+        "report"
+      ],
+      "target": "target_total_report"
+    },
+    {
+      "input": "target_total_owner",
+      "fields": [
+        "finalization"
+      ],
+      "target": "target_total_finalization"
+    },
+    {
+      "input": "target_total_owner",
+      "fields": [
+        "source_review"
+      ],
+      "target": "target_total_theorem_review"
+    }
+  ],
+  "exact_input_collection_instructions": "Copy these23 exact input descriptors and6 source descriptors into the root-owned actual configuration; retain all16 successful status authorities and the complete authority_links list. The4 failed extractor records remain inputs but are not successful authorities.",
+  "actual_configuration_created": false
+}

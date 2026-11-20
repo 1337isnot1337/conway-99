@@ -1,0 +1,73 @@
+{
+  "blockers": [],
+  "independent_method": [
+    "No producer, original helper or native module imported. Reconstruct all targets, domains,172 Gram/population rows and every original edge coefficient from the frozen domain.",
+    "Insert the original Gram rows first; encode edge, selector and constant columns in one matrix; process shared rows in reverse order and eliminate highest pivots. This differs from the producers lowest-pivot elimination with separate RHS/proof tracking.",
+    "The independent F3 addition uses a different XOR-based two-plane formula; all9 scalar coefficient combinations are checked. Each bit coordinate is independent.",
+    "There are no new selector pivots after processing all original rows. OverF2 rank(combined)=7845=7713+132; overF3 rank(combined)=7863=7731+132. Therefore every projected selector congruence is in the original Gram row span."
+  ],
+  "independent_source": {
+    "path": "experiments/workspace/root_prism_free_f0_shared_prime_projection_independent.py",
+    "sha256": "8a02c4ffcf473df48bbd0f55001f5d8ccc4cda0ec9b9ded62e650708095f5696"
+  },
+  "native_imports": 0,
+  "optimizer_calls": 0,
+  "producer_imports": 0,
+  "results": [
+    {
+      "augmented_rank": 7845,
+      "edge_rank": 7713,
+      "gram_rank": 132,
+      "independent_result": {
+        "path": "experiments/logs/root-prism-free/f0-shared-mod2-projection-independent01.json",
+        "sha256": "b9681565811ee38866303a482811675704064a5d0745708d30586e83916b702d"
+      },
+      "modulus": 2,
+      "original_result": [
+        "experiments/logs/root-prism-free/f0-shared-mod2-projection01/report.json",
+        "e794dfc28b83296833d158e0732e9b786f430f7c682f294d171a74dc2cb7eebc"
+      ],
+      "original_source": [
+        "experiments/workspace/root_prism_free_f0_shared_mod2_projection.py",
+        "a548fe26b54a559909bece50df984e0755d9321adc7e8a41d0b6e836c8b34fd5"
+      ],
+      "rows": 8640,
+      "seconds": 1.4704250689974288
+    },
+    {
+      "augmented_rank": 7863,
+      "edge_rank": 7731,
+      "gram_rank": 132,
+      "independent_result": {
+        "path": "experiments/logs/root-prism-free/f0-shared-mod3-projection-independent01.json",
+        "sha256": "c9708a77fa7aa80e5fa31d4b9d4929766bf5656b7b7c901aa29a74c975035124"
+      },
+      "modulus": 3,
+      "original_result": [
+        "experiments/logs/root-prism-free/f0-shared-mod3-projection01/report.json",
+        "5f0ea9fa1e83856e24637eaa736625ccd0a38b56f70c7a3cce9403d255e96512"
+      ],
+      "original_source": [
+        "experiments/workspace/root_prism_free_f0_shared_mod3_projection.py",
+        "1911a2b75fd22f5eda3dad0303d26663bc03819b14bdeae945ef89ba3833b5f7"
+      ],
+      "rows": 9120,
+      "seconds": 5.762318773995503
+    }
+  ],
+  "reviewer": "master_review",
+  "schema": "conway99.f0.shared-prime-projections.independent-review.v1",
+  "scope": [
+    "Finite negative result for these exact linear equation families overF2 andF3 only.",
+    "No claim about other primes, nonlinear constraints, Boolean feasibility, the whole component or the99-graph problem."
+  ],
+  "source_checks": [
+    "Read the complete original modulo-two and modulo-three producers. The reconstructed21-core targets and full68394-edge domain match the shared equations; no selected incidence or graph symmetry is imposed.",
+    "Every mixed equation is sum_b h_b(i)*z_ab=q_a(i)*x_a. Modulo-three additionally includes all480 explicit degree equations sum_b z_ab=8*x_a; modulo-two degree follows by summing the18 mixed equations since each h_b has weight3.",
+    "Original F2 XOR elimination tracks row multipliers and selector consequences exactly. Original F3 disjoint-plane addition, negation, normalized pivots, degree/mixed row order and RHS conventions are correct.",
+    "Gram quota is12*delta_ij+2-(C^2)_ij-C_ij. Its augmented constant is minus quota; population contributes sum x=60.",
+    "Both producer dependency counts reconcile with total rows minus edge rank. Their zero/nonzero dependency split is producer telemetry; the independent check uses a different basis and does not assert reproducing that split.",
+    "No new retained identities exist in these results, so an empty certificate list alone would not establish completeness. The independent full augmented-rank calculation supplies the separate completeness check."
+  ],
+  "status": "PASS_BOTH_COMPLETE_SOURCE_REVIEWS_AND_INDEPENDENT_AUGMENTED_RANKS"
+}

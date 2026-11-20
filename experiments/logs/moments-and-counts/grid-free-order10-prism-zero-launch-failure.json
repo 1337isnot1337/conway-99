@@ -1,0 +1,17 @@
+{
+  "status": "pre-optimization metadata equality failure; no solver call",
+  "solver_calls": 0,
+  "exit_code": 1,
+  "cause": "base_fixed_coordinates was a list of tuples in memory and a list of lists after JSON reload",
+  "failed_assertion": "assert metadata == saved[model]",
+  "source_line": 237,
+  "files": {
+    "experiments/workspace/grid_free_order10_prism_zero.py": "88f0510c0eb9c5898c2c3e0631c92cdcf17830048e98b6fe45707108f211498a",
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-preparation.json": "30fb5fa290e4c7a7e1852ee21faaf176722ba3e63eac2c12a25ed3b0c12e17c6",
+    "experiments/logs/moments-and-counts/grid-free-order10-prism-zero-run.log": "5eb4199faead4a256be54d5197ac024024924460c52336df04cdc35193ccbbcf"
+  },
+  "replacement_source": "experiments/workspace/grid_free_order10_prism_zero_v2.py",
+  "replacement_source_sha256": "ec972814b45828107d9c97f7c94e9760fef7973b360f3af7da8c8a33bc4e1ab3",
+  "replacement_change": "normalize base_fixed_coordinates pairs to lists before preparation and equality comparison",
+  "mathematical_outcome": null
+}

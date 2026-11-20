@@ -1,0 +1,60 @@
+{"phase": "reusable proof-free oracle ready", "bootstrap_seconds": 4.480606383000122}
+{"design": 0, "a": 11, "already_excluded_a_le_2": false, "phase": "oracle assumptions solve"}
+{"design": 0, "phase": "fresh explicit-core proof", "core_literals": 40}
+{"design": 0, "phase": "fresh core UNSAT; checking DRAT", "core_literals": 40, "proof_seconds": 5.945806607000122}
+{"design": 0, "status": "UNSAT pattern certified; signed cut added to master", "a": 11, "oracle_seconds": 0.12791319000098156, "defective_pairs": null, "certified_core_size": 40}
+{"design": 1, "a": 14, "already_excluded_a_le_2": false, "phase": "oracle assumptions solve"}
+{"design": 1, "phase": "fresh explicit-core proof", "core_literals": 35}
+{"design": 1, "phase": "fresh core UNSAT; checking DRAT", "core_literals": 35, "proof_seconds": 4.638950951000879}
+{"design": 1, "status": "UNSAT pattern certified; signed cut added to master", "a": 14, "oracle_seconds": 0.03488732400001027, "defective_pairs": null, "certified_core_size": 35}
+{"design": 2, "a": 12, "already_excluded_a_le_2": false, "phase": "oracle assumptions solve"}
+{"design": 2, "phase": "fresh explicit-core proof", "core_literals": 29}
+{"design": 2, "phase": "fresh core UNSAT; checking DRAT", "core_literals": 29, "proof_seconds": 5.6264898409990565}
+{"design": 2, "status": "UNSAT pattern certified; signed cut added to master", "a": 12, "oracle_seconds": 0.09511591600130487, "defective_pairs": null, "certified_core_size": 29}
+{"design": 3, "a": 17, "already_excluded_a_le_2": false, "phase": "oracle assumptions solve"}
+{"design": 3, "phase": "fresh explicit-core proof", "core_literals": 42}
+{"design": 3, "phase": "fresh core UNSAT; checking DRAT", "core_literals": 42, "proof_seconds": 5.571523892000187}
+{"design": 3, "status": "UNSAT pattern certified; signed cut added to master", "a": 17, "oracle_seconds": 0.1917168269992544, "defective_pairs": null, "certified_core_size": 42}
+{"design": 4, "a": 17, "already_excluded_a_le_2": false, "phase": "oracle assumptions solve"}
+{"design": 4, "phase": "fresh explicit-core proof", "core_literals": 41}
+{"design": 4, "phase": "fresh core UNSAT; checking DRAT", "core_literals": 41, "proof_seconds": 5.5878323139986605}
+{"design": 4, "status": "UNSAT pattern certified; signed cut added to master", "a": 17, "oracle_seconds": 0.13421709899921552, "defective_pairs": null, "certified_core_size": 41}
+{"design": 5, "a": 17, "already_excluded_a_le_2": false, "phase": "oracle assumptions solve"}
+{"design": 5, "phase": "fresh explicit-core proof", "core_literals": 42}
+{"design": 5, "phase": "fresh core UNSAT; checking DRAT", "core_literals": 42, "proof_seconds": 8.479609694000828}
+{"design": 5, "status": "UNSAT pattern certified; signed cut added to master", "a": 17, "oracle_seconds": 0.15088199300043925, "defective_pairs": null, "certified_core_size": 42}
+{"design": 6, "a": 19, "already_excluded_a_le_2": false, "phase": "oracle assumptions solve"}
+{"design": 6, "phase": "fresh explicit-core proof", "core_literals": 41}
+{"design": 6, "phase": "fresh core UNSAT; checking DRAT", "core_literals": 41, "proof_seconds": 7.344991001999006}
+{"design": 6, "status": "UNSAT pattern certified; signed cut added to master", "a": 19, "oracle_seconds": 0.23646218700014288, "defective_pairs": null, "certified_core_size": 41}
+{"design": 7, "a": 18, "already_excluded_a_le_2": false, "phase": "oracle assumptions solve"}
+{"design": 7, "phase": "fresh explicit-core proof", "core_literals": 39}
+{"design": 7, "phase": "fresh core UNSAT; checking DRAT", "core_literals": 39, "proof_seconds": 5.584523474000889}
+{"design": 7, "status": "UNSAT pattern certified; signed cut added to master", "a": 18, "oracle_seconds": 0.14828260499962198, "defective_pairs": null, "certified_core_size": 39}
+{
+  "status": "eight-design pilot limit; no exhaustion or class exclusion",
+  "manifest": "experiments/logs/grids-and-triangles/complement-rook-incidence-master-model.json",
+  "manifest_sha256": "c0d896d2f4ff1ef8a6a4dc172137724744293ee089719ad662eb0bc649921836",
+  "scope": "baseline master plus certified signed cuts and separately marked partial-SAT visitation blocks",
+  "maximum_designs": 8,
+  "oracle_seconds": 10,
+  "extra_a_bound_added": false,
+  "Schur_clauses_added": 0,
+  "full_outside_caps_imposed": false,
+  "whole_core_exclusion_established": false,
+  "peak_process_rss_kib": 1108584,
+  "oracle_bootstrap_seconds": 4.480606383000122,
+  "master_final_statistics": {
+    "restarts": 8,
+    "conflicts": 14,
+    "decisions": 343,
+    "propagations": 12953
+  },
+  "oracle_final_statistics": {
+    "restarts": 9,
+    "conflicts": 1093,
+    "decisions": 43539,
+    "propagations": 4171182
+  },
+  "total_seconds": 146.99513699800082
+}

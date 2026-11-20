@@ -1,0 +1,28 @@
+{
+  "status": "PASS: complete combined-model source and row-bookkeeping review",
+  "reviewer": "independent_sets",
+  "source": "experiments/workspace/root_prism_free_f0_schur_motif_model.py",
+  "source_sha256": "077e371e399346ab513ac41a717b181a3e11285ccda38600f12586f61b4375f5",
+  "preparation_sha256": "0d33e191f21cfcf993760cf0abfb9e99bcae38d36c71dc6f60675425d5ca7dfa",
+  "owner_cold_replay_sha256": "3395a7353e134e289fde671fa48e8d3477377df1b7cab0ffcb3c815ff48c1a06",
+  "mathematical_model_sha256": "92d6a65bcfffd3f5c6f2518b5fe4d1ebefb874eb6e72e15229a690ee9198ae19",
+  "matrix_sha256": "74a83420ac5585a0fa840092aa64d5b7c6732a0f42a32a10adb6af4df504c364",
+  "scope": "Read-only source and saved metadata review. No import, mathematical reconstruction, controls, census, eigenscan, optimizer or query was repeated.",
+  "checks": [
+    "The full15200-variable parent matrix is deep-copied and both old equality and inequality prefixes are compared exactly. All inherited unit-box bounds and32 selector-PSD cuts remain.",
+    "The162 edge-zero equalities use the unchanged original Y indices. Every orbit member has a direct induced-prism witness; the witness set equals all1884 edges in those orbits. No unknown exterior edge is set to a value to create a witness.",
+    "All17 old18 and22 full21 Schur directions are rederived from their frozen exact kernels and compared with their saved certificate fields. Direction validity does not require the proposing numerical point to be feasible.",
+    "The old cut() function uses integer kernel numerators only, so applying it to the full21 kernel does not require the denominator alias used by the separate gap-evaluation routine.",
+    "The715 mixed prism rows are regenerated from the fully reviewed complete prism census. Each proof input retains its own provenance even if its mathematical row matches an inherited or earlier row.",
+    "Deduplication compares the exact sorted coefficient list and right-hand side. It drops only identical inequalities; no numerical tolerance, sign reversal or unexplained rescaling is used.",
+    "Appending162 equalities moves combined inequality indices but leaves the inequality-scale list in place. The final combination concatenates all6135 equality scales with all16505 inequality scales, and every certificate receives its final combined-row index.",
+    "Inherited scales remain unchanged. New scales are positive powers of two, and every coefficient and right-hand side passes exact Fraction comparison against binary64 conversion. The ray pullback divides a scaled-row multiplier by its scale.",
+    "The saved inventory15200 variables/22640 rows/889906 nonzeros is consistent with6135 equalities,16505 inequalities,39 new distinct Schur rows and715 new mixed rows. The construction adds no graph-symmetry or fixed-selector assumption."
+  ],
+  "limitations": [
+    "This gate covers the model builder, not the later numerical query or exact-ray adapter.",
+    "The underlying domain, inherited model, inverse certificates and motif proof packages remain frozen dependencies.",
+    "Only the retained finite Schur directions are added; no entire PSD cone or model-feasibility result is claimed. Small minus-kernel gaps are not credited as independent strength."
+  ],
+  "blocking_issues_found": []
+}

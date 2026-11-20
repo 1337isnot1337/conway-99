@@ -1,0 +1,40 @@
+{
+  "status": "PASS: exact real-moment S6 quotient normalization and complete-source review",
+  "source_sha256": "59af3f038c1f2795d03d11a80eaee363832f748bcc9863245b8237c71d8d73cd",
+  "result_sha256": "a6ca65e8edeb1d4545e89c28833bf7526c693ce6066ec5b6f15a47d31853c61d",
+  "arrays_sha256": "83a798951206e812ffb8e5c687e96f93e8df42cedfd097420058df82a18732f6",
+  "literal_small_root_generator_group_check": {
+    "permutations": 720,
+    "maximum_adjacent_transposition_distance": 15
+  },
+  "source_checks": {
+    "five_true_adjacent_root_transpositions_generate_all_S6": true,
+    "class_maps_preserve42high_masks_and_are_involutions": true,
+    "complete_baseline_visible_atom_and_all_monomial_closure_checked": true,
+    "BFS_predecessors_and_generator_closure_certify_complete_orbits": true,
+    "int8_depth_safe_by_S6_maximum_word_length15": true,
+    "exact_moment_constancy_checked_on_all_five_generators": true,
+    "coefficient_C_counts_row_orbit_monomials_in_representative_atom": true,
+    "RHS_sums_all_labelled_moments_in_row_orbit": true,
+    "quotient_variables_are_total_atom_orbit_mass_not_per_atom_mass": true,
+    "independent_literal_D_counts_validate_sizeO_timesC_equals_sizeR_timesD": true,
+    "uniform_lift_mass_divided_by_atom_orbit_size_recovers_all_original_moments": true,
+    "constant_row_is_allones_with_original_positive_root_mass": true,
+    "zero_rows_removed_only_after_all_zero_coefficients_and_zero_RHS_checked": true,
+    "RHS_sums_use_Python_int_then_checked_int64_and_products_are_bounded": true,
+    "no_host_graph_automorphism_or_integer_weight_assumption": true
+  },
+  "reported_shape": [
+    73,
+    249
+  ],
+  "reported_full_shape": [
+    500,
+    249
+  ],
+  "reported_nnz": 3951,
+  "scope": "Source/mathematical audit, exact S6 generator control, and saved result/array bindings. No feature or quotient reconstruction, tensor load, optimizer, or point feasibility test. Exact equivalence concerns nonnegative real moment weights; it does not assert integer-weight equivalence.",
+  "subject_imported": false,
+  "quotient_rebuilt": false,
+  "optimizer_or_solver_called": false
+}

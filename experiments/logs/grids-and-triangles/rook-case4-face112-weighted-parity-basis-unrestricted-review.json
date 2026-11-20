@@ -1,0 +1,46 @@
+{
+  "status": "PASS: weighted-parity saved-basis source-only delta review",
+  "reviewer": "unrestricted_completion",
+  "bindings": [
+    {
+      "path": "experiments/workspace/rook_case4_face112_h3_basis_reconstruction.py",
+      "sha256": "f764dbe84cc137f6c489100b6b499af1e6c893c3c6781dd3d96bf7d29ba02b34"
+    },
+    {
+      "path": "experiments/workspace/rook_case4_face112_weighted_parity_basis_reconstruction.py",
+      "sha256": "7668aeb593bb46644a233b4cbfeb7663743c67529105003a0ece62d28fbbed6c"
+    },
+    {
+      "path": "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-reuse-controls.json",
+      "sha256": "b2accb68168329ed914a5bf5cb6dd1e90f1912d689ad42dbfb04b9e57ac73acc"
+    }
+  ],
+  "complete_new_proposal_and_inspector_read": true,
+  "complete_text_substitutions_independently_checked": 20,
+  "AST_identical_functions": [
+    "bindings",
+    "canonical",
+    "controls",
+    "fold",
+    "main",
+    "prepared",
+    "query",
+    "replay",
+    "save",
+    "sha",
+    "solve_child",
+    "tick"
+  ],
+  "checks": {
+    "basis_scope": "The813 x_j=t aliases and290 active equalities are proposal restrictions for one rational point, not universally valid faces. Saved active IDs and bound sides are checked before the exact square is formed.",
+    "new_rows": "The selected non-native rows are the inherited first unit equality, H3 and second weighted parity row, with their original row kinds and endpoints. Both weighted rows remain mandatory in complete acceptance even though only one enters the square.",
+    "acceptance": "All166013 base rows and1102 max-min extensions are checked exactly, then all2271 original native rows,178533 original covers, both unit sums, four pair bounds, H3 and both new original-coordinate parity rows. Exact denominator and numerator limits are unchanged.",
+    "reuse": "The solver child, owned60-second supervisor, replay and alias controls are unchanged; no extra optimizer or universal selector restriction is introduced."
+  },
+  "subject_imported": false,
+  "model_or_basis_rebuilt": false,
+  "controls_repeated": false,
+  "linear_system_solved": false,
+  "optimizer_calls": 0,
+  "scope": "Source/math delta only; the saved point and its cold arithmetic are not recomputed."
+}

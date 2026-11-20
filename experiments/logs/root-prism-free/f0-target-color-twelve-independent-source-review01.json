@@ -1,0 +1,104 @@
+{
+  "schema": "conway99.f0.target-color-twelve-independent-source-review.v1",
+  "status": "PASS_COMPLETE_TWELVE_BOUND_PROOF_AND_FROZEN_SOURCE_REVIEW_UNRUN",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_target_color_twelve_certificate_v8.js",
+    "git_blob_sha": "54fa064c0211d3cfa07214bf2304d7b0122b9cc9",
+    "sha256": "dfb0764a29e53db9ba59b5fd291a45a612af0f690699b1892c195487014a152e",
+    "bytes": 10514
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-configuration01.json",
+    "git_blob_sha": "9676d56ffaf8ae7be0094db062357e1be69ca0d5",
+    "sha256": "d3067a6166a3c4b4a0f684df224afe5691182a780a267e6de828ca20d1b16ca2",
+    "bytes": 3283
+  },
+  "proof": {
+    "path": "research/root_prism_free_f0_target_color_twelve_bound.md",
+    "git_blob_sha": "2864e837f22a38f37baf0535ed45c34163bd9415",
+    "sha256": "2e78b57ee726e7c301f3e73c4909c6547fdb2500eb0fc53f3d97be429436160c",
+    "bytes": 9695
+  },
+  "proof_scope_correction": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-proof-scope-clarification01.json",
+    "git_blob_sha": "0a563436c20346f47f766c2ca6088671d62f4962",
+    "sha256": "cd53d25320c8b0859fec36428364de5b01b17b9e007035c5aa49b939aec883a6",
+    "bytes": 2702
+  },
+  "review_scope": {
+    "full_source_lines": 141,
+    "full_configuration_read": true,
+    "full_corrected_proof_read": true,
+    "complete_wording_inverse_verified": true,
+    "source_evaluated": false,
+    "controls_run": false,
+    "actual_case_check_run": false,
+    "domain_reenumerated": false,
+    "native_model_built": false,
+    "optimizer_calls": 0
+  },
+  "mathematical_checks": [
+    "Each target signature's unique fixed-component edge is a color with an original Gram equality of right-hand side one. Discarding nonnegative outside-target terms gives at most one selected target vertex per color.",
+    "Twelve private colors imply at most twelve selected private target vertices. All eighteen color supports and their exact original/native Gram row indices are recomputed by the source; prior accepted eighteen-bound review binds the original native map.",
+    "For every noncenter, all private neighbors have one color, so any selected noncenter has selected private degree at most one. Centers are independent, hence every selected private component is a center-star, a noncenter edge, or a singleton.",
+    "A center is unexposed and has at most one exposed private neighbor. No private edge joins two exposed vertices. Consequently each selected private component has at most one exposed vertex.",
+    "Every private vertex has at most one shared neighbor, so the preceding component has at most one shared attachment edge. This separate per-vertex condition is necessary and explicitly checked.",
+    "A private component K has |K|-1 internal edges and at most one shared attachment. Summing e(K)+e(K,S) <= |K| counts every target edge exactly once because shared-shared edges are forbidden. A shared vertex joining multiple private components does not invalidate this charging.",
+    "Endpoint activations imply sum of actual Boolean target edges is at most the induced selected target-edge count. Combining with the twelve private color quotas yields sum y <= 12.",
+    "The proposed native row [0,12,[[540+e,1],...]] uses every accepted target edge exactly once in increasing original edge-ID order. Its lower bound follows from Boolean edge nonnegativity."
+  ],
+  "source_checks": {
+    "all_seven_local_conditions_explicit": true,
+    "complete_target_graph_not_selected_witness_only": true,
+    "original_Gram_supports_rebuilt_over_all480_signatures": true,
+    "no_graph_symmetry_or_selector_fix_added": true,
+    "selected_witness_checks_all18_at_most_one_quotas": true,
+    "selected_witness_checks_all12_private_colors_attained": true,
+    "selected_witness_checks_complete_induced_edge_count": true,
+    "fractional_control_uses_exact_denominator_six_numerators": true,
+    "exact_input_bytes_SHA256_Git_blob_and_domain_raw_SHA_checked": true,
+    "current_combined_indicator_and_domain_links_checked": true,
+    "full_existing_native_edge_mapping_reused_from_accepted_indicator_and_prior_18_bound_review": true,
+    "no_new_native_decode_or_full_domain_census_claim": true
+  },
+  "witness_scope": {
+    "selected_target_vertices": 16,
+    "attained_target_edges": 12,
+    "relaxation": "Only at-most-one inequalities for the eighteen target colors and target endpoint activations.",
+    "unused_shared_colors": [
+      [
+        8,
+        15
+      ],
+      [
+        9,
+        14
+      ]
+    ],
+    "all18_original_Gram_equalities_saturated_by_this_witness": false,
+    "non_target_fillers_checked": false,
+    "full_parent_model_feasible_claimed": false,
+    "fractional_color_only_edge_sum": 14,
+    "full_model_nonredundancy_claimed": false
+  },
+  "execution_contract": {
+    "maximum_total_milliseconds": 30000,
+    "maximum_report_bytes": 1048576,
+    "includes_input_bindings_report_serialization_and_hash": true,
+    "overrun_finalization_preserved_as_unaccepted": true,
+    "caller_must_bind_exact_codec_factory_bytes_from_configuration": true,
+    "caller_must_preserve_both_returned_texts_before_publication": true,
+    "source_runtime_does_not_itself_check_cfg_original_selector_source_file": "The exact original formula/native ordering is already bound by the accepted eighteen-bound review; this property is provenance rather than a new runtime import.",
+    "no_assignment_enumeration": true
+  },
+  "limitations": [
+    "This review establishes the general implication and frozen source scope. The literal finite conditions still require the one separately gated actual call.",
+    "The stronger Boolean bound need not be a continuous consequence of the color/activation relaxation; the exact fractional control deliberately violates twelve while satisfying that restricted relaxation.",
+    "Native row inclusion requires separate root acceptance and independent complete native message verification. No current model or query is changed."
+  ],
+  "concrete_blockers": [],
+  "mathematical_gate_pass": true,
+  "source_gate_pass": true,
+  "native_build_authorized": false,
+  "query_authorized": false
+}

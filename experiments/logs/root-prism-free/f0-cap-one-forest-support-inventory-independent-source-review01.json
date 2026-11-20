@@ -1,0 +1,100 @@
+{
+  "schema": "conway99.f0.cap-one-forest-inventory-independent-source-review.v1",
+  "status": "PASS_COMPLETE_LITERAL_SUPPORT_AND_FOREST_ENCODING_SOURCE_REVIEW",
+  "reviewer": "/root/master_continuation",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_cap_one_forest_support_inventory_v8.js",
+    "git_blob": "42e13f54a19d8e04a841b81ea7581dd70b3eeda7",
+    "sha256": "e3f706224343cbc625379f1d80c27c7b1550aad9cb644c18854286b0f0fdaf13",
+    "bytes": 20085
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-inventory-configuration01.json",
+    "git_blob": "0623a753bf0086cf1e8628e722ddbea73aa2cf62",
+    "sha256": "064ed107041ab9843e49ec2a80d2c5b32608504eced8f8fa361a483f8fe7f538",
+    "bytes": 5527
+  },
+  "actual_controls": {
+    "path": "experiments/logs/root-prism-free/f0-cap-one-forest-support-controls01.json",
+    "git_blob": "c2551df9508f209275bd3a2dac4d2e68e9b58159",
+    "sha256": "f257dd99fe0d133c87b00e3c715e0b679dce0b687fd2df17584cb46363be017b",
+    "bytes": 1402
+  },
+  "theorem": {
+    "path": "research/root_prism_free_f0_common_neighbor_forest_extension.md",
+    "sha256": "66008cb63184240d897f55f2333bbb5153e26031cd4cb96c134767a9e5723cea",
+    "git_blob": "00281a95fec20834cac140d7b2f6bfa4edef20e1",
+    "bytes": 9724,
+    "mode": "100644",
+    "encoding": "utf-8",
+    "kind": "text"
+  },
+  "theorem_review": {
+    "path": "experiments/logs/root-prism-free/f0-common-neighbor-forest-extension-independent-review01.json",
+    "sha256": "59879fd63bab3c81969e8ba978f172077ee37c1b9375093c2ecac38f982802ec",
+    "git_blob": "47d16703a6b9d69502ef294bb1eb71b2dac94e2b",
+    "bytes": 4714,
+    "encoding": "utf-8",
+    "kind": "json"
+  },
+  "complete_257_source_lines_read": true,
+  "complete_configuration_and_actual_control_receipt_read": true,
+  "all_eight_input_hash_bindings_match_previously_verified_artifacts": true,
+  "full_original_native_model_not_rebuilt_or_decoded": true,
+  "literal_support_review": [
+    "The 48 origins are the complete accepted unconditional cap-one class, with exact original edge IDs and overlap-zero anchor signatures.",
+    "Every candidate ID from 0 through 479 receives availability and old/spectral-zero reason bits, including all applicable reasons.",
+    "Live support requires only a distinct third vertex and two original eligible side edges outside the accepted 1956-zero union.",
+    "There is no disjoint-signature or triangle-cover filter on the third vertex and no assumption on the central anchor-edge value.",
+    "The source reconstructs all original mixed quotas, all 68394 original edges and every saved neighbor list.",
+    "The zero union preserves all 1884 literal and 132 spectral origins, including the 60 overlapping records. The current accepted native model already contains the 72 additional zeros."
+  ],
+  "encoding_review": [
+    "For each retained pair, z_c has Boolean domain and encodes the two-edge common-neighbor AND using the selector-homogeneous lower row and both edge upper rows.",
+    "Z equals the sum of z_c, is bounded by both anchor selectors, and each candidate-root row is u_c+v_c+Z-z_c-A-B<=0.",
+    "Declared lower domains [-2,0], [-1,0] and [-3,0] are redundant Boolean-box lower bounds and do not strengthen the intended inequalities.",
+    "All variable identities, complete row keys and pair/candidate origins are emitted in deterministic order.",
+    "The per-pair counts m+1 variables, 4m+3 rows and 15m+5 terms agree exactly with the reviewed theorem.",
+    "The global capacity bounds 22992 variables, 91920 rows and 344400 terms follow from 48 pairs and at most 478 third candidates; overflow rejects rather than truncates."
+  ],
+  "skip_certificate_review": [
+    "Only a support of size at most one is skipped.",
+    "The saved allowed graph includes every available nonzero side edge, including candidates with only one available side. It excludes the anchor edge.",
+    "With at most one common neighbor this full two-star graph is a forest. The source rejects a cycle and saves a complete parent orientation.",
+    "Each oriented edge cites its child endpoint activation at native row 17162+2*edge_id+side. This formula was checked against the pinned base builder's endpoint order.",
+    "Rerooting the requested root's tree and restricting to any candidate subset gives an injective assignment of every retained edge to a nonroot selector. Summing those activation rows proves every required subset forest inequality continuously.",
+    "No selector positivity, triangle theorem or additional row family is needed for the skip proof."
+  ],
+  "mathematical_scope": [
+    "The real projection theorem refers to relaxed auxiliary bounds; Boolean original variables force the common-neighbor AND and Boolean Z.",
+    "This is a representation of a valid additional cap-one consequence. It is not a proof that the previous native relaxation already implies the new family.",
+    "A later combined model must assign disjoint offsets to auxiliaries from separately prepared families and independently verify the resulting complete native rows.",
+    "Future model use still requires a separate literal-support completeness check and a full independent native replay."
+  ],
+  "controls_review": {
+    "actual_receipt_status": "PASS_SOURCE_BOUND_SYNTHETIC_FOREST_CONTROLS",
+    "activated_grid_assignments": 793,
+    "binary_assignments": 64,
+    "exact_native_row_key_contractions": 8287,
+    "one_common_neighbor_forest_and_two_common_neighbor_cycle_checked": true,
+    "mixed_integrality_and_larger_subset_examples_checked": true,
+    "actual_case_inputs_supplied_to_controls": false,
+    "controls_rerun_by_reviewer": false
+  },
+  "resource_review": {
+    "inventory_phase_ms": 30000,
+    "total_ms_including_serialization": 60000,
+    "report_bytes": 16777216,
+    "separate_inventory_phase_elapsed_field_recorded": true,
+    "required_report_status": "PASS_COMPLETE_48_PAIR_FOREST_SUPPORT_AND_LITERAL_ROW_INVENTORY",
+    "required_finalization_status": "PASS_COMPLETE_FOREST_INVENTORY_AND_SERIALIZATION",
+    "within_declared_bounds_required": true
+  },
+  "concrete_blockers": [],
+  "reviewer_actual_inventory_calls": 0,
+  "reviewer_control_calls": 0,
+  "native_model_builds": 0,
+  "native_model_decodes": 0,
+  "solver_calls": 0,
+  "graph_or_component_exclusion_claimed": false
+}

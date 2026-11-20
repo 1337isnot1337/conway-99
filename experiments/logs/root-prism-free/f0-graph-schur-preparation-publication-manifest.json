@@ -1,0 +1,67 @@
+{
+  "schema": "f0-graph-schur-preparation-publication-manifest-v1",
+  "status": "PREPARED_AND_COLD_REPLAYED_NO_SCAN",
+  "files": [
+    {
+      "path": "experiments/workspace/root_prism_free_f0_graph_schur_kernels.py",
+      "bytes": 15550,
+      "sha256": "5be66e563e53b1efc378c8adbeb39b8ddbf24f4c97077e5d43c728260d9087be",
+      "git_blob_sha1": "cfd67cf7e37ba0148a562fd8a2fdadf14191efbb"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_graph_schur_cuts.py",
+      "bytes": 27234,
+      "sha256": "45ce5c3cd1dffa1eaef611b4aa31964244d87e2f2c5078b99b417aa4ffb8edb5",
+      "git_blob_sha1": "f74bae76b95b1ee272cf7255de87a6db0f8cf691"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-kernels01.json.gz",
+      "bytes": 522873,
+      "sha256": "65f1ad0d0015a6eff3d97c676fb0e188f57f9dee00e9245758a28bab2069b40d",
+      "git_blob_sha1": "92634a1c2c1482cf2d32322fe66310a73c3fd583"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-kernels01-preparation.json",
+      "bytes": 5774,
+      "sha256": "371a52a7716dfef4daa941bf1816e55a68881399369319957ca29b04c91c8918",
+      "git_blob_sha1": "7307d3718700fbc28b8410bf7feb2ef72f68508f"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-kernels01-cold-replay.json",
+      "bytes": 5778,
+      "sha256": "eb6ba7154865438aa12bbc7b66697a1ac80fab1a59a7001402043a5809abce2f",
+      "git_blob_sha1": "78f81f85a7aefca927592f97aa42ed4ff16d9664"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-preparation01.json",
+      "bytes": 3222,
+      "sha256": "301bc2e10b79139b14fe3ab79098128c4b3d907c745f3d7536d50da0dfc6e4d5",
+      "git_blob_sha1": "51bfdf0a55b88070775649ca1253c71d06290b56"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-graph-schur-cuts-preparation01-cold-replay.json",
+      "bytes": 737,
+      "sha256": "f68ab0f532635d9a213e548148a4955068627d87e296c3f257ac3a073cb62899",
+      "git_blob_sha1": "23e23d81dceab95fdd97659b8a2ef4db6139b495"
+    },
+    {
+      "path": "research/root_prism_free_f0_graph_schur_cuts.md",
+      "bytes": 10257,
+      "sha256": "e78bff4ad0c02a6d9ae82c9eabbaa35cd7e9811a8ac3527ec0b99dbb98c64fba",
+      "git_blob_sha1": "dc9166115256933bf61dde3dd52fc04e4302f89d"
+    }
+  ],
+  "conditional_scope": "Component0 of a globally prism-free and F-free split18+18 edge shell; second component/alignment free.",
+  "optimizer_calls": 0,
+  "eigendecompositions": 0,
+  "scope_notes": [
+    "Both graph-projector Schur kernels checked in all480 coordinates.",
+    "The numerical proposal is not certified feasible.",
+    "Separate source review and runtime gate required before bounded scan.",
+    "No new linear optimizer query authorized by this package."
+  ],
+  "dependencies": {
+    "model_sha256": "d098a4b84405823aa38e9d2def7b675c6166507f7350937f1dc0f65af7274dcd",
+    "proposal_sha256": "ca7ebcb40ea0b02054a79f6f6acb83f1f227325f7669b0b9336e3beed6fce5bf"
+  }
+}

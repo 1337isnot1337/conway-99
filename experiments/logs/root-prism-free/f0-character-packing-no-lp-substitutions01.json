@@ -1,0 +1,93 @@
+{
+  "prior_terminal_cold_sha256": "4f832c2e74c4cf7a87a9a5a9ecad76753176f5a0e994ecaa654da041739146f9",
+  "prior_terminal_result_sha256": "6e5df281ae93f7d9160c4ad4e23cd47fe654435417d025fdf4eb3863d43b33db",
+  "query": {
+    "new_path": "experiments/workspace/root_prism_free_f0_character_packing_no_lp_query.py",
+    "new_sha256": "f3f704371307da14ab035eed1b2a7345bb1725babf0f01cc8e06d5b7e26475e7",
+    "parent_path": "experiments/workspace/root_prism_free_f0_character_packing_light_query.py",
+    "parent_sha256": "255cc48bb3f5e8bbbcb8180b9cb024c5e92ce171dc29befbf35d0657ec196a69",
+    "substitutions": [
+      {
+        "new": "\"\"\"No-LP lightweight exact external-row search on the final Z+Y domain target.",
+        "occurrences": 1,
+        "old": "\"\"\"Lightweight exact external-row search on the final Z+Y domain target."
+      },
+      {
+        "new": "SOURCES = {\n    \"prior_light_query\": (\"root_prism_free_f0_character_packing_light_query.py\", \"255cc48bb3f5e8bbbcb8180b9cb024c5e92ce171dc29befbf35d0657ec196a69\"),\n",
+        "occurrences": 1,
+        "old": "SOURCES = {\n"
+      },
+      {
+        "new": "INPUTS = {\n    \"prior_light_query_root_review\": (\"f0-character-packing-light-query-root-source-review.json\", \"e91a974d74f8303c7554e79b249cc541be144d83674a37ed390bfec6451d351e\"),\n",
+        "occurrences": 1,
+        "old": "INPUTS = {\n"
+      },
+      {
+        "new": "\"schema\": \"conway99.f0-packing-no-lp-query.v1\"",
+        "occurrences": 1,
+        "old": "\"schema\": \"conway99.f0-packing-light-query.v1\""
+      },
+      {
+        "new": "\"num_search_workers\": 1, \"random_seed\": 0, \"cp_model_probing_level\": 0, \"linearization_level\": 0,",
+        "occurrences": 1,
+        "old": "\"num_search_workers\": 1, \"random_seed\": 0, \"cp_model_probing_level\": 0,"
+      },
+      {
+        "new": "PASS: no-LP lightweight packing-query preparation; no optimizer",
+        "occurrences": 2,
+        "old": "PASS: lightweight packing-query preparation; no optimizer"
+      },
+      {
+        "new": "    params.cp_model_probing_level = 0\n    params.linearization_level = 0\n",
+        "occurrences": 1,
+        "old": "    params.cp_model_probing_level = 0\n"
+      },
+      {
+        "new": "    tree = ast.parse(Path(__file__).read_text())\n    functions = {n.name: n for n in tree.body if isinstance(n, ast.FunctionDef)}\n    native = functions[\"native_parameters\"]\n    delta = ast.dump(ast.parse(\"params.linearization_level = 0\").body[0], include_attributes=False)\n    positions = [i for i, n in enumerate(native.body) if ast.dump(n, include_attributes=False) == delta]\n    assert len(positions) == 1\n    native.body.pop(positions[0])\n    current = {name: ast.dump(n, include_attributes=False) for name, n in functions.items()}",
+        "occurrences": 1,
+        "old": "    current = {n.name: ast.dump(n, include_attributes=False) for n in ast.parse(Path(__file__).read_text()).body\n               if isinstance(n, ast.FunctionDef)}"
+      },
+      {
+        "new": "            \"native_parameter_delta\": \"Only explicit linearization_level=0; all old fields unchanged.\",\n            \"installed_parameter_controls\": native_parameter_controls(),\n            \"subject_model_modules_imported\": False, \"optimizer_calls\": 0}",
+        "occurrences": 1,
+        "old": "            \"subject_model_modules_imported\": False, \"optimizer_calls\": 0}"
+      },
+      {
+        "new": "\ndef native_parameter_controls():\n    \"\"\"Check installed native fields and text/wire serialization, without a solver.\"\"\"\n    from google.protobuf import text_format\n    from ortools.sat import sat_parameters_pb2\n    from ortools.sat.python import cp_model\n    import ortools\n    assert ortools.__version__ == \"9.15.6755\"\n    assert file_sha(Path(cp_model.__file__)) == CP_MODEL_SHA\n    field = sat_parameters_pb2.SatParameters.DESCRIPTOR.fields_by_name[\"linearization_level\"]\n    checks = []\n    for seconds in (0.25, 10.0, 172.0):\n        native = native_parameters(cp_model.cmh, seconds)\n        assert native.linearization_level == 0\n        text = str(native)\n        parsed = sat_parameters_pb2.SatParameters()\n        text_format.Parse(text, parsed)\n        expected = {\"num_search_workers\": 1, \"random_seed\": 0,\n                    \"cp_model_probing_level\": 0, \"linearization_level\": 0,\n                    \"max_time_in_seconds\": seconds, \"log_search_progress\": True,\n                    \"log_to_stdout\": True}\n        assert {f.name: value for f, value in parsed.ListFields()} == expected\n        assert parsed.HasField(\"linearization_level\") and parsed.linearization_level == 0\n        wire = parsed.SerializeToString(deterministic=True)\n        restored = sat_parameters_pb2.SatParameters()\n        restored.ParseFromString(wire)\n        assert restored == parsed\n        checks.append({\"seconds\": seconds, \"exact_explicit_fields\": expected,\n                       \"text_sha256\": sha(text.encode()), \"wire_sha256\": sha(wire)})\n    return {\"status\": \"PASS\", \"installed_version\": ortools.__version__,\n            \"field_number\": field.number, \"field_type\": field.type,\n            \"installed_default_linearization_level\": field.default_value,\n            \"roundtrips\": checks, \"CpSolver_constructed\": False,\n            \"model_constructed\": False, \"optimizer_calls\": 0}\n\n\ndef load_target(prepared, stage=None):\n",
+        "occurrences": 1,
+        "old": "def load_target(prepared, stage=None):\n"
+      }
+    ]
+  },
+  "replay": {
+    "new_path": "experiments/workspace/root_prism_free_f0_character_packing_no_lp_replay.py",
+    "new_sha256": "9aad245010f752f26f57566eaa2e3730200898f5f32e242c1ca32b4a98c023e7",
+    "parent_path": "experiments/workspace/root_prism_free_f0_character_packing_light_replay.py",
+    "parent_sha256": "2f233b33d551d90c7af3db17aba9a43f1b564f812f4211b42418550a4730ebf8",
+    "substitutions": [
+      {
+        "new": "\"\"\"Owned cold preflight/terminal replay for the no-LP lightweight packing query.",
+        "occurrences": 1,
+        "old": "\"\"\"Owned cold preflight/terminal replay for the lightweight packing query."
+      },
+      {
+        "new": "import root_prism_free_f0_character_packing_no_lp_query as query",
+        "occurrences": 1,
+        "old": "import root_prism_free_f0_character_packing_light_query as query"
+      },
+      {
+        "new": "QUERY_SHA = \"f3f704371307da14ab035eed1b2a7345bb1725babf0f01cc8e06d5b7e26475e7\"",
+        "occurrences": 1,
+        "old": "QUERY_SHA = \"255cc48bb3f5e8bbbcb8180b9cb024c5e92ce171dc29befbf35d0657ec196a69\""
+      },
+      {
+        "new": "        assert parameters.num_search_workers == 1 and parameters.random_seed == 0\n        assert parameters.HasField(\"linearization_level\") and parameters.linearization_level == 0\n",
+        "occurrences": 1,
+        "old": "        assert parameters.num_search_workers == 1 and parameters.random_seed == 0\n"
+      }
+    ]
+  },
+  "schema": "conway99.f0-no-lp-complete-source-substitutions.v1",
+  "unchanged_initial_proto_sha256": "9d1e6a031d5c2c83a47982477d51b34fba42edf1bbcdae1bccfa9906745badfe",
+  "unchanged_target_proto_sha256": "a738d318b6b8de471ee7383f1e6ea11949eed8f8ccf4892814fa2eac268ed153"
+}

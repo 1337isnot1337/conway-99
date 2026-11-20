@@ -1,0 +1,36 @@
+{
+  "status": "UNSAT with direct DRAT; cold domain/formula rebuild and proof replay required",
+  "model": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-preparation/case0014-model.json",
+  "model_sha256": "4461bfd09c97be7868dc06160924609a5b5b3bee3928b29219d708dcc1970295",
+  "source_sha256": "3440d21fb9d41f6146cdf5b8ef4f61feb513da9cb10e7775f3b085863a3949cf",
+  "case_index": 14,
+  "cnf_sha256": "6b9e792325a5b078aed6d30d5d40fe65eb8b503c50b37a6f4fb5bebc9501d076",
+  "requested_solver_seconds_including_bootstrap": 60.0,
+  "requested_direct_checker_seconds": 60,
+  "assumptions": [],
+  "whole_complementary_core_excluded": false,
+  "full_graph_completion_found": false,
+  "peak_process_rss_kib": 150852,
+  "bootstrap_seconds": 0.3393500819984183,
+  "solve_return_seconds": 19.67174264499772,
+  "solver_statistics": {
+    "restarts": 124,
+    "conflicts": 31279,
+    "decisions": 65742,
+    "propagations": 89807466
+  },
+  "terminal_empty_clause_appended": false,
+  "raw_proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/raw.drat",
+  "raw_proof_sha256": "fd7ecbc2c185e48eb34d73797bd239bff7c518d358036cc9c4e9ff275c297427",
+  "raw_proof_lines": 70321,
+  "retained_certificate": {
+    "cnf": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/retained.cnf",
+    "cnf_sha256": "4b5054f3b2110fd7bb28f37e366466a9ebeee5a64d3e63aa97d20093f75b3b79",
+    "proof": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/retained.drat",
+    "proof_sha256": "dab40c4846cf6c915aaf71669f56daa4bd0514611a474eb4d23d06aa8b6f77e5",
+    "input_clauses": 26030,
+    "checker_log": "experiments/logs/grids-and-triangles/complement-rook-35core-first-local-continuation01-run/case0014/direct-drat.log",
+    "checker_log_sha256": "0666c0b3156ddf2126c138d19c78a96c7bd6d749a16aa6a9f133c386a77b75f5"
+  },
+  "elapsed_seconds": 27.493246931000613
+}

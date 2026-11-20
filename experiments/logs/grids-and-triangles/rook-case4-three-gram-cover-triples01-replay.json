@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "definition": {
+    "source_sha256": "2e0595aac394727266582f42fda11b3fca14339cf59948e7e2daacf458a45efe",
+    "inputs": {
+      "native": [
+        "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+        "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+      ],
+      "model": [
+        "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+        "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+      ],
+      "cut": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/cut.json",
+        "498058a2dbf5eab0e8460f7e46af29c5ce10ea42894d755ae846d0c24c2efa07"
+      ],
+      "cut_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-run01/separation-00/proof.json",
+        "06365dcbe4f51983105e8d59802a699fd059685d7541a6ea7784e639b74a78e6"
+      ]
+    },
+    "seconds": 10,
+    "scope": "All C(27,3) triples; original 2211 nonnegative native upper capacities only",
+    "omitted_signed_native_rows": 60,
+    "full_coordinate_cover_rows_loaded": false,
+    "optimizer_calls": 0
+  },
+  "result_sha256": "aeb570f6a61f0cd71bf2cfef83e112a0f6b344f90abcbd41f22ee3f382e0fca2",
+  "triples_checked": 2925,
+  "original_coordinate_identity_checked": 1214,
+  "rejected_witnesses": 2562,
+  "surviving_triples_checked_against_every_projected_row": 363,
+  "optimizer_calls": 0,
+  "seconds": 9.143340615999477
+}

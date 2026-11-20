@@ -1,0 +1,56 @@
+{
+  "schema": "conway99.f0.triangle-indicator-root-artifact-review.v1",
+  "status": "PASS_EXACT_INDICATOR_ARTIFACT_IDENTITIES_PENDING_LITERAL_SUPPORT_REPLAY",
+  "inventory": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json",
+    "sha256": "8606d51ced038b40135fa22bc16d056873b80c16c26d2c34db7e24ac8effd2c7",
+    "git_blob": "8188edc640d4dd896df0e64c4e08db4c78627e96",
+    "bytes": 1056971
+  },
+  "finalization": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01-finalization.json",
+    "sha256": "7c2839765c4ac7ac70193d839879d599a6ccb625a0b80b716614528fe66af018",
+    "git_blob": "1039ec250addcd6c847500b14746ee47921861f3",
+    "bytes": 263
+  },
+  "source_review": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-independent-source-review01.json",
+    "git_blob": "d75ce6691a9055069883b414ef16a7d7867b3502",
+    "sha256": "abfcd108cc5137aacba5adc1072aab5c2f861f06be3ccab90ec13f69fbedd0c3",
+    "bytes": 6185
+  },
+  "root_gate": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-root-gate01.json",
+    "bytes": 4302,
+    "sha256": "aa365b83a95bf2402b3c5ea90a5547465b952e23f9c0b0f31ed4401fa87ff08c",
+    "git_blob": "c6c86dda36d2265c80fc6f46ea25fe9400559c0f",
+    "mode": "100644"
+  },
+  "exact_report_and_finalization_bytes_sha256_and_git_blob_checked": true,
+  "all_five_inputs_compared": true,
+  "all_saved_surviving_support_records_compared": 5364,
+  "all_live_targets_compared": 84,
+  "all_triangle_vertices_three_edge_ids_origins_and_proposed_indices_compared": true,
+  "all_target_equalities_compared": true,
+  "distinct_support_triples": 5364,
+  "target_incidences": 5364,
+  "proposed_dimensions": {
+    "base_variables": 68934,
+    "new_boolean_variables": 5364,
+    "total_variables": 74298,
+    "base_rows": 257594,
+    "and_rows": 21456,
+    "target_equalities": 84,
+    "new_rows": 21540,
+    "total_rows": 279134,
+    "and_terms": 53640,
+    "target_equality_terms": 5448,
+    "new_terms": 59088
+  },
+  "elapsed_ms": 961,
+  "separate_literal_domain_reconstruction_performed_by_this_review": false,
+  "model_use_requires_complete_independent_literal_support_replay": true,
+  "native_models_built": 0,
+  "optimizer_calls": 0,
+  "graph_or_component_exclusion_claimed": false
+}

@@ -1,0 +1,51 @@
+{
+  "schema": "conway99.triangle-dual-word-bound-independent-review.v1",
+  "status": "PASS_SOURCE_MATHEMATICS_AND_INDEPENDENT_EXACT_ARITHMETIC",
+  "source": "experiments/workspace/triangle_incidence_binary_dual_word_bound.py",
+  "source_sha256": "2818ba7a3dc6b5bc01dd7a9744a3b1496ee18b53c5a02e9f3ddef359f790ccfe",
+  "note": "research/grids-and-triangles/triangle_incidence_binary_code.md",
+  "note_sha256": "44c529a10776c2eab237b604af92bcd058281510929f471390d2ce3dbec1d31a",
+  "checks": [
+    "Each triangle is a distinct weight-three word of im(B)=C-perp.",
+    "A pair of triangles meeting at c has four-point support inducing exactly 2K2 inside N(c)=7K2. Its two support edges and their unique common neighbor recover the pair and center, so all 2079 words are distinct.",
+    "Cross edges between two disjoint triangles form a matching. Their support has exactly the two original triangles, proving uniqueness for all 24486 weight-six words.",
+    "MacWilliams transforms give rows sum_w (L_j-K_j(w)) A_w <= binomial(99,j)-L_j, with L3=231,L4=2079,L6=24486.",
+    "Dividing the old nonnegative dual by 1+sum_j y_j L_j gives every strengthened column exactly one and upper bound U/(1+sum_j y_j L_j).",
+    "The checker pins the old result hash, checks all signs and all seven columns exactly, and makes no stronger-LP-optimum or graph-existence claim."
+  ],
+  "independent_arithmetic": {
+    "status": "PASS_INDEPENDENT_BIGINT_DUAL_RESCALING_ARITHMETIC",
+    "old_bound": "5834276864000/755087",
+    "rescaling_factor": "38999405/755087",
+    "new_bound": "1166855372800/7799881",
+    "old_column_values": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "strengthened_column_values": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "dimension_upper_bound": 17,
+    "rank_lower_bound": 82,
+    "optimizer_called": false
+  },
+  "scope": {
+    "full_source_read": true,
+    "full_updated_note_read": true,
+    "source_imported": false,
+    "rook_control_repeated": false,
+    "optimizer_called": false,
+    "old_or_new_LP_run_repeated": false
+  }
+}

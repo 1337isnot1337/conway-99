@@ -1,0 +1,139 @@
+{
+  "schema": "conway99.exact-query-adapter-substitutions.v1",
+  "scope": "Frozen 6854-row blossom overlay only; namespace, pool and search/acceptance policy unchanged.",
+  "files": [
+    {
+      "parent_path": "experiments/workspace/root_prism_free_f0_full_fourier_query.py",
+      "parent_sha256": "a8eff9c09fdd2a31482d23e3c83b11424fab32462e9b1431c3d899b6b8034955",
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_query.py",
+      "sha256": "67cd7853f00d5f99df7524046c30d72a1286106c2f5577a50d573cf1fa4a967b",
+      "replacements": [
+        {
+          "old": "58957",
+          "replacement": "65811",
+          "count": 6
+        },
+        {
+          "old": "58840",
+          "replacement": "65694",
+          "count": 7
+        },
+        {
+          "old": "No-LP external-row search on the complete Fourier and literal target.",
+          "replacement": "No-LP external-row search on the Fourier/literal target with 6,854 blossom rows.",
+          "count": 1
+        },
+        {
+          "old": "conway99.f0-full-Fourier-literal-no-lp-query.v1",
+          "replacement": "conway99.f0-core-blossom-no-lp-query.v1",
+          "count": 1
+        },
+        {
+          "old": "root_prism_free_f0_full_fourier_native_v2.py",
+          "replacement": "root_prism_free_f0_core_matching_blossom_native_overlay.py",
+          "count": 1
+        },
+        {
+          "old": "ce21cabaa26e28e69f84380736adb28b7e193037a67a83d0ec79df84230b77ad",
+          "replacement": "45ec9069c1091f8c118a299f1806897fb52694f55814b01961f220443ff150b6",
+          "count": 1
+        },
+        {
+          "old": "f0-full-fourier-literal-native02",
+          "replacement": "f0-core-matching-blossom-native-overlay02",
+          "count": 7
+        },
+        {
+          "old": "d2cc38f284420c461fd191ce4ebfb9dbc16cf6cfd03f8ca1d2e00842bb92e9c4",
+          "replacement": "ddd0eac97aac5741a60778276ac1798240089a547ffb43a77629fb8736114d4e",
+          "count": 1
+        },
+        {
+          "old": "5433cc1765e164f6c9df603cb0bfff6c62b5c6779c8f7e5391fff3c8e68a654c",
+          "replacement": "268a2d4f97f4436823f4d36271425c856ad770f5877667941b13e403f5b9166f",
+          "count": 1
+        },
+        {
+          "old": "4e7e66ad3a6b850388076bba218790f3a00f951a8d7a91d82c6a3c5f414ee8f7",
+          "replacement": "24c55ddb539e24234d44a09138fe4867da8701d5c7094e95e3285e4f02f12c3d",
+          "count": 1
+        },
+        {
+          "old": "e08ca2605d0eca0ee8adb12b4b31dabc2c14901b4360f482d4040e93588e162d",
+          "replacement": "74ba6be30bbbacbce70e9dc7d46d8ab511cb8672157b9f45f4ad07248448871a",
+          "count": 1
+        },
+        {
+          "old": "b7914f80201dc0803faecb5ec1b5e3a405daee6621e2a44021929571573576b9",
+          "replacement": "0aeb8cd5a53362f68dff836a9792c1ccea17bef349bf4389f92ed90479032502",
+          "count": 1
+        },
+        {
+          "old": "277449dc6d999207fbc77d452d1f351011791b1093cdda7875fc309d972381dd",
+          "replacement": "fe349215460dcf8e609d1381e357e14c6f5b7fb21ea896f59bddc91b707133a9",
+          "count": 1
+        },
+        {
+          "old": "3f8833a098695b058a70841757ffb7e20bcb86531027eeef3c55c586ecd5d6ac",
+          "replacement": "1f633c70a669badb8d151a7696d744c194b8ed649b4a6f90a0ea7b8142efb7ee",
+          "count": 1
+        },
+        {
+          "old": "4e0ec33cb363299a9e199ce33a30a937a85d2f96969965f54833ed38464a911b",
+          "replacement": "60de781b2b324c270bac9cec30c1adbc769631dc959c1a2e2414fbc5eef96ab6",
+          "count": 1
+        },
+        {
+          "old": "cf4c7cf7cb21087f443f5bdd6f2781a02e13091b7329d7f05fe78820182e179d",
+          "replacement": "940e34316ed30532aee8c192947a7d69e54ccd7e9ebf8d85a3c4ada912a7331a",
+          "count": 1
+        },
+        {
+          "old": "records[\"model_cold\"][\"preparation_sha256\"]",
+          "replacement": "records[\"model_cold\"][\"model_report_sha256\"]",
+          "count": 1
+        },
+        {
+          "old": "INPUTS = {'prior_no_lp_query_root_review':",
+          "replacement": "INPUTS = {'blossom_overlay_root_review': ('f0-core-matching-blossom-native-overlay-root-gate01.json',\n                                  '0bf104de680d172a50ca10d54a4b82e5025f9cb059f97be608e85ae26f45afd0'),\n 'prior_no_lp_query_root_review':",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "parent_path": "experiments/workspace/root_prism_free_f0_full_fourier_replay.py",
+      "parent_sha256": "9a072b04151e4a150d1627171c16c7dd33d87a49a6817157d1766aeddab062a1",
+      "path": "experiments/workspace/root_prism_free_f0_core_matching_blossom_replay.py",
+      "sha256": "baf3f134cf83c3a9f4410276ebbd570f89ec47a651dde96486c030043577e677",
+      "replacements": [
+        {
+          "old": "Owned cold preflight/terminal replay for the no-LP lightweight packing query.",
+          "replacement": "Owned cold preflight/terminal replay for the strengthened blossom count query.",
+          "count": 1
+        },
+        {
+          "old": "import root_prism_free_f0_full_fourier_query as query",
+          "replacement": "import root_prism_free_f0_core_matching_blossom_query as query",
+          "count": 1
+        },
+        {
+          "old": "a8eff9c09fdd2a31482d23e3c83b11424fab32462e9b1431c3d899b6b8034955",
+          "replacement": "67cd7853f00d5f99df7524046c30d72a1286106c2f5577a50d573cf1fa4a967b",
+          "count": 1
+        },
+        {
+          "old": "58957",
+          "replacement": "65811",
+          "count": 1
+        },
+        {
+          "old": "58840",
+          "replacement": "65694",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "optimizer_calls": 0,
+  "native_model_constructed": false
+}

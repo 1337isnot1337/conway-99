@@ -1,0 +1,16 @@
+{
+  "status": "PASS: metadata-only relative-path correction before any production stage",
+  "v2_source_sha256": "ee77b1924a113a9deb648385eab9159ca07d43645b7ea388edb167efed1ccba1",
+  "v3_source_sha256": "cd347553b9979567df5c981b689ca1dd30399068a0329dad4285586a6f6ca880",
+  "exact_text_substitution": [
+    "def record_ref(path):\n    return",
+    "def record_ref(path):\n    path = path.resolve()\n    return"
+  ],
+  "only_changed_function": [
+    "record_ref"
+  ],
+  "unchanged_function_count": 37,
+  "failed_preflight_log": "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight02.log",
+  "failure_phase": "record_ref while constructing final preflight report, after synthetic native and cached basis checks",
+  "production_case_scan_or_optimizer_calls": 0
+}

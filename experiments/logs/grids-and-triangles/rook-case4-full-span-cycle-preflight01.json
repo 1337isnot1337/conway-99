@@ -1,0 +1,1186 @@
+{
+  "status": "PASS: cached167115-row prefix plus four exact seed cuts",
+  "preparation": {
+    "path": "experiments/logs/grids-and-triangles/rook-case4-full-span-cycle-preparation01.json",
+    "sha256": "6be18862b4555fed0d78c404937e46512eab7d3fb3361e78cbde8af6f30c543a"
+  },
+  "bindings": {
+    "controller_sha256": "ddf52b6807e9759337e14c0baff94bbaa9be5c599eaa8bb287277330eab4ec15",
+    "sources": {
+      "previous": [
+        "experiments/workspace/rook_case4_parity_cycle_v4.py",
+        "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e"
+      ],
+      "separator": [
+        "experiments/workspace/rook_case4_full_span_parity_dynamic.py",
+        "ce200386980da082fef8370956f7a546b12e1c9e8979288b5d48a0843a924dd8"
+      ]
+    },
+    "inputs": {
+      "prior_terminal": [
+        "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-run02/result.json",
+        "fd0737a2c47664b52cf8cd48024a10e6936b3110f3cd2c8344b4081ff424adea"
+      ],
+      "prior_bindings": [
+        "experiments/logs/grids-and-triangles/rook-case4-parity-discovery-cycle-run02-bindings.json",
+        "164f8c09048b9c9502d45cff407b0a78102b87aa9524bcc46e0d92b3b28590ca"
+      ],
+      "new_cut": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01/cut.json",
+        "f9080c52f570d3a9eabf461eabd6ef4dde6ac2fc2454ecc75367fe658d9e3fd7"
+      ],
+      "new_cut_cold": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01-cold.json",
+        "28cc396064b7e6ae5e7ad0ac401de0929aa3ea25b20d88483a1020abc79d620c"
+      ],
+      "new_cut_terminal": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-query-run01/result.json",
+        "2e1db8a9aba8fd991bdfeaa050e9d4099a6c83cc8a78842fcc8c4567a573f395"
+      ],
+      "native_preflight": [
+        "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight04.json",
+        "d3827408d08dd443093cba2d0c19e250391c142c6e97a4f04f316567c04bf264"
+      ],
+      "containment": [
+        "experiments/logs/grids-and-triangles/rook-case4-full-span-cover-containment01.json",
+        "983e6c1d30c71476c817fdf0935a81e7f0286b590bc90ce633ab52c6386b8117"
+      ]
+    },
+    "reused_LP_bindings": {
+      "cycle_source_sha256": "345e091ef71dde96b3423773d5315b8733c275f0af142ab0f88ac03570ca263e",
+      "helpers": {
+        "exact": {
+          "path": "experiments/workspace/rook_case4_parity_cycle_exact.py",
+          "sha256": "2f10a42f546623cb1840d228101537e6f4f4bc584776407140ae0c36b08c99b7"
+        },
+        "weighted": {
+          "path": "experiments/workspace/rook_case4_face112_h3_weighted_parity.py",
+          "sha256": "c38a4ec1d95eca5382e34c7182af38c980bf61785585207dd314a1a6546b5756"
+        },
+        "basis": {
+          "path": "experiments/workspace/rook_case4_weighted_parity_basis.py",
+          "sha256": "bb507d8d97a064bd8c56aac763b44e026c50598048b213db9399662eaaec7415"
+        },
+        "parity": {
+          "path": "experiments/workspace/rook_case4_parity_polytope.py",
+          "sha256": "048df509b05601f15d6cb4230750b36d221276cce66e625b0cf9c720ecb89062"
+        },
+        "generation": {
+          "path": "experiments/workspace/rook_case4_face112_weighted_parity_generation.py",
+          "sha256": "fb4c4b853708740e1a1726cb4455a5c82a7ae3659439407f4a00a33c67c71ec7"
+        },
+        "finite_box": {
+          "path": "experiments/workspace/rook_case4_finite_box_certificates.py",
+          "sha256": "353db5bb5d2c6b3d11b18889a853af364ea3d6c4d04bb78c56f0c4ee89d86de7"
+        }
+      },
+      "input_bindings": {
+        "native": [
+          "experiments/logs/grids-and-triangles/complement-rook-35core-case0004-native-cpsat-model.json",
+          "a9004e97a2d166bf8b162609cfb538eae0dd4d26942b6df5119b6a88d65ec476"
+        ],
+        "old_basis": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-parity-preparation01/basis.json.gz",
+          "ad03018a2bb30dfb79fb126b76aa9863b16217eeb42f0b1e78fdaabde610c00d"
+        ],
+        "old_span_cold": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-h3-weighted-parity-run01-replay.json",
+          "1cc5086c7d1b5102c9df8825127e8dfd06317c03517402cb85fdf49678069544"
+        ],
+        "model": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/model.json",
+          "c6cd72c995ce1a47db90fe7263f643131bc555ed50e329c7734536f5cf870ac3"
+        ],
+        "arrays": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01/arrays.npz",
+          "59a06470793e6959a67ae30dfb29ecf0de4c8aa74661e1335d7676aa612c1e7e"
+        ],
+        "model_cold": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-model01-cold-replay.json",
+          "567185c755134fcf7c15bb7be762bb2a70a503254259b2eb44a92f91abb39156"
+        ],
+        "point": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-run01/candidate.json",
+          "3cd4d391e5b372f6ff0d2df11ebd16fccec1b7122527864fef76e33eae72312b"
+        ],
+        "point_cold": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-run01-replay.json",
+          "e6b8cacf16a38b4529f73d96aa7212ac6f71244846f8d0f38973cd865667c0d4"
+        ],
+        "known_numeric_control": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-generation-run01/iteration-00-numeric.json.gz",
+          "b024197a41afb7412b5010deafcf136cbf1bf3ca1b08aed2ffd1965e4cb9ee00"
+        ],
+        "known_basis_control": [
+          "experiments/logs/grids-and-triangles/rook-case4-face112-weighted-parity-basis-preparation01/proposal.json.gz",
+          "ddf80d0fc6c9061ce0b76fb92bdc6e0a7143a50e2f3c615145d8dc5d40177dcc"
+        ]
+      }
+    },
+    "separator_bindings": {
+      "dynamic_source_sha256": "ce200386980da082fef8370956f7a546b12e1c9e8979288b5d48a0843a924dd8",
+      "sources": {
+        "formulation": [
+          "experiments/workspace/rook_case4_full_span_parity_separation.py",
+          "893c7b0ba5d849daf29ed6a5668fb937efda854103d99812e84a68df66f27207"
+        ],
+        "fixed_query": [
+          "experiments/workspace/rook_case4_full_span_parity_query.py",
+          "3a66af1c2500eebdb36001a004628460f936efc60584d411a2dbdc37d4a928da"
+        ],
+        "exact": [
+          "experiments/workspace/rook_case4_parity_cycle_exact.py",
+          "2f10a42f546623cb1840d228101537e6f4f4bc584776407140ae0c36b08c99b7"
+        ],
+        "parity": [
+          "experiments/workspace/rook_case4_parity_polytope.py",
+          "048df509b05601f15d6cb4230750b36d221276cce66e625b0cf9c720ecb89062"
+        ]
+      },
+      "inputs": {
+        "span_preparation": [
+          "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-preparation01/preparation.json",
+          "0b2de700e4cd088ffb7a52726b0aef4cf8e3d0eeb4ade2d2dfacdf9dc7dbdd90"
+        ],
+        "span_audit": [
+          "experiments/logs/grids-and-triangles/rook-case4-full-span-parity-independent-audit01.json",
+          "d6d7cfef703c8e598cb52b7c3dce67aaf9f7a7b99028e83056fb95f7c31885f5"
+        ],
+        "lp_preflight": [
+          "experiments/logs/grids-and-triangles/rook-case4-parity-cycle-preflight04.json",
+          "d3827408d08dd443093cba2d0c19e250391c142c6e97a4f04f316567c04bf264"
+        ]
+      }
+    },
+    "unchanged_LP_functions": [
+      "numeric_stage",
+      "numeric_records",
+      "finite_bound",
+      "inspect_point",
+      "exact_stage",
+      "replay_numeric",
+      "exact_cold",
+      "load_matrix"
+    ]
+  },
+  "definition_sha256": "c47ec5daeca6dfba28627455fb8e2030034895281db23e2be7b4b9ccebb7f7d3",
+  "matrix_binding": {
+    "coefficients": {
+      "dtype": "int64",
+      "shape": [
+        10769728
+      ],
+      "sha256": "d47c4681e8bd7d4ffb854e4e7b6465c9855931318142cad883bcb8dac9d44708"
+    },
+    "column_indices": {
+      "dtype": "int32",
+      "shape": [
+        10769728
+      ],
+      "sha256": "4a21e8ea5f6cb7ba1ef54f1f176b2c3cd618b7cadac281b8e3b50a958b2a900f"
+    },
+    "original_column_ids": {
+      "dtype": "uint16",
+      "shape": [
+        1102
+      ],
+      "sha256": "31cdcac78e71aff4d6cbbf9c89bca245035c123525a2fb8e7435b7a637dc5e38"
+    },
+    "row_lower": {
+      "dtype": "int64",
+      "shape": [
+        167119
+      ],
+      "sha256": "50e5c7788e9436dfe4353536baef49e6812505e3c962ff93400e29ef1e491144"
+    },
+    "row_pointers": {
+      "dtype": "int64",
+      "shape": [
+        167120
+      ],
+      "sha256": "02eb87e36efc37c44a9ea2ec799b345b958e04dc5c09b73c77977c456b88ebba"
+    },
+    "row_upper": {
+      "dtype": "int64",
+      "shape": [
+        167119
+      ],
+      "sha256": "0915466a1fbbc2f99f848c7a6fdcfd2d8435f5b19d5ac422ea75b40f9ba505f4"
+    }
+  },
+  "rows": 167119,
+  "nonzeros": 10769728,
+  "appended_rows": [
+    {
+      "row": 167115,
+      "terms": [
+        [
+          187,
+          -1
+        ],
+        [
+          191,
+          -1
+        ],
+        [
+          196,
+          -1
+        ],
+        [
+          201,
+          -1
+        ],
+        [
+          288,
+          -1
+        ],
+        [
+          296,
+          -1
+        ],
+        [
+          300,
+          -1
+        ],
+        [
+          468,
+          -1
+        ],
+        [
+          469,
+          -1
+        ],
+        [
+          472,
+          -1
+        ],
+        [
+          476,
+          -1
+        ],
+        [
+          477,
+          -1
+        ],
+        [
+          479,
+          -1
+        ],
+        [
+          480,
+          -1
+        ],
+        [
+          481,
+          -1
+        ],
+        [
+          483,
+          -1
+        ],
+        [
+          484,
+          -1
+        ],
+        [
+          485,
+          -1
+        ],
+        [
+          487,
+          -1
+        ],
+        [
+          488,
+          -1
+        ],
+        [
+          489,
+          -1
+        ],
+        [
+          494,
+          -1
+        ],
+        [
+          495,
+          -1
+        ],
+        [
+          496,
+          -1
+        ],
+        [
+          497,
+          -1
+        ],
+        [
+          499,
+          -1
+        ],
+        [
+          500,
+          -1
+        ],
+        [
+          814,
+          -1
+        ],
+        [
+          827,
+          -1
+        ],
+        [
+          833,
+          -1
+        ],
+        [
+          840,
+          -1
+        ],
+        [
+          846,
+          -1
+        ],
+        [
+          853,
+          -1
+        ],
+        [
+          858,
+          -1
+        ],
+        [
+          867,
+          -1
+        ],
+        [
+          868,
+          -1
+        ],
+        [
+          879,
+          -1
+        ],
+        [
+          880,
+          -1
+        ],
+        [
+          881,
+          -1
+        ],
+        [
+          889,
+          -1
+        ],
+        [
+          890,
+          -1
+        ],
+        [
+          891,
+          -1
+        ],
+        [
+          892,
+          -1
+        ],
+        [
+          899,
+          -1
+        ],
+        [
+          900,
+          -1
+        ],
+        [
+          908,
+          -1
+        ],
+        [
+          909,
+          -1
+        ],
+        [
+          910,
+          -1
+        ],
+        [
+          911,
+          -1
+        ],
+        [
+          992,
+          -1
+        ],
+        [
+          1010,
+          -1
+        ],
+        [
+          1133,
+          -1
+        ],
+        [
+          1137,
+          -1
+        ],
+        [
+          1152,
+          -1
+        ],
+        [
+          1153,
+          -1
+        ],
+        [
+          1157,
+          -1
+        ],
+        [
+          1158,
+          -1
+        ],
+        [
+          1168,
+          -1
+        ],
+        [
+          1169,
+          -1
+        ],
+        [
+          1179,
+          -1
+        ],
+        [
+          1180,
+          -1
+        ],
+        [
+          1187,
+          -1
+        ],
+        [
+          1191,
+          -1
+        ],
+        [
+          1196,
+          -1
+        ],
+        [
+          1202,
+          -1
+        ],
+        [
+          1203,
+          -1
+        ],
+        [
+          1210,
+          -1
+        ]
+      ],
+      "lower": -67,
+      "upper": -1
+    },
+    {
+      "row": 167116,
+      "terms": [
+        [
+          236,
+          -1
+        ],
+        [
+          237,
+          -1
+        ],
+        [
+          238,
+          -1
+        ],
+        [
+          239,
+          -1
+        ],
+        [
+          246,
+          -1
+        ],
+        [
+          251,
+          -1
+        ],
+        [
+          257,
+          -1
+        ],
+        [
+          262,
+          -1
+        ],
+        [
+          357,
+          -1
+        ],
+        [
+          358,
+          -1
+        ],
+        [
+          360,
+          -1
+        ],
+        [
+          361,
+          -1
+        ],
+        [
+          362,
+          -1
+        ],
+        [
+          376,
+          -1
+        ],
+        [
+          382,
+          -1
+        ],
+        [
+          384,
+          -1
+        ],
+        [
+          393,
+          -1
+        ],
+        [
+          395,
+          -1
+        ],
+        [
+          405,
+          -1
+        ],
+        [
+          406,
+          -1
+        ],
+        [
+          433,
+          -1
+        ],
+        [
+          445,
+          -1
+        ],
+        [
+          455,
+          -1
+        ],
+        [
+          485,
+          -1
+        ],
+        [
+          496,
+          -1
+        ],
+        [
+          500,
+          -1
+        ],
+        [
+          561,
+          -1
+        ],
+        [
+          573,
+          -1
+        ],
+        [
+          582,
+          -1
+        ],
+        [
+          605,
+          -1
+        ],
+        [
+          634,
+          -1
+        ],
+        [
+          646,
+          -1
+        ],
+        [
+          655,
+          -1
+        ],
+        [
+          745,
+          -1
+        ],
+        [
+          750,
+          -1
+        ],
+        [
+          756,
+          -1
+        ],
+        [
+          760,
+          -1
+        ],
+        [
+          765,
+          -1
+        ],
+        [
+          810,
+          -1
+        ],
+        [
+          811,
+          -1
+        ],
+        [
+          812,
+          -1
+        ],
+        [
+          813,
+          -1
+        ],
+        [
+          814,
+          -1
+        ],
+        [
+          834,
+          -1
+        ],
+        [
+          847,
+          -1
+        ],
+        [
+          854,
+          -1
+        ],
+        [
+          895,
+          -1
+        ],
+        [
+          914,
+          -1
+        ],
+        [
+          927,
+          -1
+        ],
+        [
+          929,
+          -1
+        ],
+        [
+          930,
+          -1
+        ],
+        [
+          932,
+          -1
+        ],
+        [
+          933,
+          -1
+        ],
+        [
+          950,
+          -1
+        ],
+        [
+          965,
+          -1
+        ],
+        [
+          978,
+          -1
+        ],
+        [
+          980,
+          -1
+        ],
+        [
+          1092,
+          -1
+        ],
+        [
+          1099,
+          -1
+        ],
+        [
+          1113,
+          -1
+        ],
+        [
+          1123,
+          -1
+        ],
+        [
+          1149,
+          -1
+        ],
+        [
+          1154,
+          -1
+        ],
+        [
+          1160,
+          -1
+        ],
+        [
+          1171,
+          -1
+        ]
+      ],
+      "lower": -65,
+      "upper": -1
+    },
+    {
+      "row": 167117,
+      "terms": [
+        [
+          1,
+          -1
+        ],
+        [
+          11,
+          -1
+        ],
+        [
+          21,
+          -1
+        ],
+        [
+          26,
+          -1
+        ],
+        [
+          33,
+          -1
+        ],
+        [
+          42,
+          -1
+        ],
+        [
+          47,
+          -1
+        ],
+        [
+          203,
+          -1
+        ],
+        [
+          213,
+          -1
+        ],
+        [
+          224,
+          -1
+        ],
+        [
+          228,
+          -1
+        ],
+        [
+          236,
+          -1
+        ],
+        [
+          247,
+          -1
+        ],
+        [
+          265,
+          -1
+        ],
+        [
+          266,
+          -1
+        ],
+        [
+          267,
+          -1
+        ],
+        [
+          303,
+          -1
+        ],
+        [
+          310,
+          -1
+        ],
+        [
+          316,
+          -1
+        ],
+        [
+          322,
+          -1
+        ],
+        [
+          336,
+          -1
+        ],
+        [
+          343,
+          -1
+        ],
+        [
+          349,
+          -1
+        ],
+        [
+          357,
+          -1
+        ],
+        [
+          364,
+          -1
+        ],
+        [
+          378,
+          -1
+        ],
+        [
+          379,
+          -1
+        ],
+        [
+          382,
+          -1
+        ],
+        [
+          407,
+          -1
+        ],
+        [
+          409,
+          -1
+        ],
+        [
+          502,
+          -1
+        ],
+        [
+          509,
+          -1
+        ],
+        [
+          516,
+          -1
+        ],
+        [
+          536,
+          -1
+        ],
+        [
+          543,
+          -1
+        ],
+        [
+          549,
+          -1
+        ],
+        [
+          554,
+          -1
+        ],
+        [
+          557,
+          -1
+        ],
+        [
+          559,
+          -1
+        ],
+        [
+          563,
+          -1
+        ],
+        [
+          564,
+          -1
+        ],
+        [
+          565,
+          -1
+        ],
+        [
+          571,
+          -1
+        ],
+        [
+          590,
+          -1
+        ],
+        [
+          591,
+          -1
+        ],
+        [
+          594,
+          -1
+        ],
+        [
+          598,
+          -1
+        ],
+        [
+          600,
+          -1
+        ],
+        [
+          601,
+          -1
+        ],
+        [
+          602,
+          -1
+        ],
+        [
+          603,
+          -1
+        ],
+        [
+          605,
+          -1
+        ],
+        [
+          606,
+          -1
+        ],
+        [
+          734,
+          -1
+        ],
+        [
+          735,
+          -1
+        ],
+        [
+          736,
+          -1
+        ],
+        [
+          737,
+          -1
+        ],
+        [
+          738,
+          -1
+        ]
+      ],
+      "lower": -58,
+      "upper": -1
+    },
+    {
+      "row": 167118,
+      "terms": [
+        [
+          28,
+          -1
+        ],
+        [
+          47,
+          -1
+        ],
+        [
+          48,
+          -1
+        ],
+        [
+          50,
+          -1
+        ],
+        [
+          80,
+          -1
+        ],
+        [
+          127,
+          -1
+        ],
+        [
+          129,
+          -1
+        ],
+        [
+          130,
+          -1
+        ],
+        [
+          131,
+          -1
+        ],
+        [
+          179,
+          -1
+        ],
+        [
+          180,
+          -1
+        ],
+        [
+          182,
+          -1
+        ],
+        [
+          230,
+          -1
+        ],
+        [
+          266,
+          -1
+        ],
+        [
+          344,
+          -1
+        ],
+        [
+          407,
+          -1
+        ],
+        [
+          466,
+          -1
+        ],
+        [
+          545,
+          -1
+        ],
+        [
+          597,
+          -1
+        ],
+        [
+          598,
+          -1
+        ],
+        [
+          602,
+          -1
+        ],
+        [
+          605,
+          -1
+        ],
+        [
+          664,
+          -1
+        ],
+        [
+          665,
+          -1
+        ],
+        [
+          668,
+          -1
+        ],
+        [
+          669,
+          -1
+        ],
+        [
+          670,
+          -1
+        ],
+        [
+          736,
+          -1
+        ],
+        [
+          769,
+          -1
+        ],
+        [
+          807,
+          -1
+        ],
+        [
+          851,
+          -1
+        ],
+        [
+          918,
+          -1
+        ],
+        [
+          919,
+          -1
+        ],
+        [
+          967,
+          -1
+        ],
+        [
+          971,
+          -1
+        ],
+        [
+          972,
+          -1
+        ],
+        [
+          974,
+          -1
+        ],
+        [
+          976,
+          -1
+        ],
+        [
+          978,
+          -1
+        ],
+        [
+          980,
+          -1
+        ],
+        [
+          1016,
+          -1
+        ],
+        [
+          1017,
+          -1
+        ]
+      ],
+      "lower": -42,
+      "upper": -1
+    }
+  ],
+  "runtime_binding": {
+    "empty_existing_ray_check": true,
+    "python_version": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "numpy_version": "2.3.5",
+    "highspy_package_version": "1.16.0",
+    "native_HiGHS_version": "1.16.0",
+    "highspy_init_sha256": "38e439b7aba304fb9ee78c3c732bc0b16e79bb864c841a1f95471330cdb47865",
+    "highspy_native_binary_name": "_core.cpython-312-x86_64-linux-gnu.so",
+    "highspy_native_binary_sha256": "70da2435537fba263414987fa7289649e74551981edf5d57df1f727a110e27c3",
+    "scipy_version": "1.17.0"
+  },
+  "optimizer_calls": 0,
+  "native_model_transports": 0,
+  "original_cover_supports_reconstructed": false,
+  "seconds": 3.0711912600017968
+}

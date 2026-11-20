@@ -1,0 +1,48 @@
+{
+  "status": "coordinator mathematical and full source review PASS; one bounded scan authorized",
+  "files": [
+    {
+      "path": "experiments/workspace/grid_free_order10_clique_pair_domains.py",
+      "sha256": "0cde57ec1213c49b66f85c5a27a638883f7d0851bf9cb265632e3d82240de33c"
+    },
+    {
+      "path": "experiments/workspace/grid_free_order10_clique_pair_scan.py",
+      "sha256": "019c9ebcefa54b28776cd28e522bed678fe9b90a980a600d6920803fb9108a7b"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-clique-pair-domains.json.gz",
+      "sha256": "1812d7faa0dc865d21d970e7bff97e903693277804b341272145abc365bfcb51"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-clique-pair-scan01-preparation.json",
+      "sha256": "fa9c4ef4b63f1d6f2396fdcfb0b874bfecdea62fb0779c4db7396cc4d2c4d057"
+    },
+    {
+      "path": "experiments/logs/moments-and-counts/order10-clique-pair-independent-review.json",
+      "sha256": "01e4b6373da288fa137611f0145be3bf7e1541df242bf15d9f612d94c5356fab"
+    }
+  ],
+  "coverage": {
+    "root_types": 62,
+    "candidate_clique_pairs": 3283,
+    "representatives": 347,
+    "representative_union_rows": 3785,
+    "quotient_lower_entries": 118210
+  },
+  "review": [
+    "complete literal visible-incompatibility graph and two maximal-clique enumerations",
+    "intersection classes counted once and compatible cross-difference pairs counted once",
+    "single-selected and double-partner exact identities with all union-row cancellation maps",
+    "full root automorphism congruences impose no automorphism on the hypothetical host",
+    "full integer parent/single/double matrices; both mutual-edge children retained",
+    "all selected union rows checked exactly before quotient; all candidate domains retained",
+    "numeric directions require exact negative quadratic and induced form; independent literal product replay required before optimization"
+  ],
+  "authorized": {
+    "scans": 1,
+    "seconds": 60,
+    "threads": 1
+  },
+  "PSD_certificate_implied_by_no_separator": false,
+  "optimizer_calls_authorized": 0
+}
