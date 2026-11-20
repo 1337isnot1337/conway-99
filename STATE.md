@@ -130,6 +130,8 @@ The [shared-witness exclusion](research/grids-and-triangles/double-partner-witne
 
 The [three-root incidence and capacity bound](research/grids-and-triangles/104-grid-bound.md) gives **at most 104 grids** and **at least 2,286 percolating nonedges**. A prism pair cannot form grids at all three roots of a full triangle. Two ten-grid roots on that triangle force the third to lie on at most eight grids. Every vertex lies on a triangle of grid degree at most two, giving an initial cover bound of 33. The [near-minimal cover classification](research/grids-and-triangles/low-triangle-cover.md) raises this to **36 triangles**. At equality the nine points on two low triangles form a rook grid.
 
+The [zero-grid triangle capacity inequality](research/grids-and-triangles/zero-triangle-capacity.md) raises the lower bound to **39 triangles on at most two grids**. In any partition into 33 triangles on no grids, at least 149 pairs of its triangles have exactly one or two cross-edges.
+
 For any triangle, the spectrum of its induced 60-point exterior is determined by the 36-point cubic neighborhood. The [exterior spectrum and transitivity proof](research/grids-and-triangles/triangle-exterior.md) excludes vertex-transitivity of this induced graph, even for symmetries that need not extend to all 99 vertices. All 66,327 marked orbital unions fail. Replay with `make verify-triangle-exterior`.
 
 The same [exterior argument](research/grids-and-triangles/triangle-exterior.md) characterizes full triangles without computing any group. An exterior is walk-regular exactly when its triangle lies on six grids. At least 211 of the 231 triangles therefore have two exterior vertices with different return-walk counts at some length through eight.

@@ -1,6 +1,6 @@
 # At least 36 triangles on at most two grids
 
-Call a triangle low if its grid degree is at most two. The [ten-grid root bound](ten-grid-bound.md) ensures that every point lies on a low triangle. **There must be at least 36 low triangles. If there are exactly 36, the nine vertices on two low triangles form a rook grid.**
+Call a triangle low if its grid degree is at most two. The [ten-grid root bound](ten-grid-bound.md) ensures that every point lies on a low triangle. **There must be at least 36 low triangles. If there are exactly 36, the nine vertices on two low triangles form a rook grid.** The [zero-grid triangle capacity inequality](zero-triangle-capacity.md) subsequently excludes equality and gives at least 39.
 
 The [support enumeration](../../experiments/workspace/low_triangle_cover.py) starts from the seven-axis graphs in the [104-grid count](104-grid-bound.md) and requires at least five missing pairs disjoint from each present edge. Exactly two supports have just one low axis. Both have degrees $(0,3,3,3,3,3,3)$, nine grid edges, and witness capacity $C_p=0$. In the following, a point with one low axis is called ordinary.
 

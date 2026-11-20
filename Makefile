@@ -149,3 +149,7 @@ verify-104-grid-bound: verify-full-triangle-common-pair verify-full-triangle-ten
 .PHONY: verify-low-triangle-cover
 verify-low-triangle-cover:
 	cd $(WORKSPACE) && "$(PYTHON)" low_triangle_cover.py
+
+.PHONY: verify-zero-triangle-capacity
+verify-zero-triangle-capacity:
+	cd $(WORKSPACE) && "$(PYTHON)" zero_triangle_capacity.py
