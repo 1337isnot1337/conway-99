@@ -1,6 +1,6 @@
 # A triangle on four grids determines twelve columns of its exterior incidence
 
-Let $T$ be a triangle in exactly four grids of a putative Conway graph. Each of the [three fibers of twelve neighbors](triangle-exterior.md) of $T$ has four points outside these grids. Write $D$ for the graph on these twelve residual points. Up to permuting vertices and the three fibers, **at most fourteen choices for $D$ remain**. Each choice determines all incidences between these twelve points and the sixty vertices $W$ with no neighbor in $T$, up to labeling vertices of $W$. Every one of the [four remaining ten-grid root patterns](ten-grid-bound.md#four-patterns-at-the-upper-bound) has an axis in exactly four grids.
+Let $T$ be a triangle in exactly four grids of a putative Conway graph. Each of the [three fibers of twelve neighbors](triangle-exterior.md) of $T$ has four points outside these grids. Write $D$ for the graph on these twelve residual points. Up to permuting vertices and the three fibers, **at most fourteen choices for $D$ remain**. Each choice determines all incidences between these twelve points and the sixty vertices $W$ with no neighbor in $T$, up to labeling vertices of $W$. Three of the [four remaining ten-grid root patterns](ten-grid-bound.md#four-patterns-at-the-upper-bound) have an axis in exactly four grids. The remaining pattern has degrees $(1,1,3,3,3,3,6)$.
 
 ## The residual graph
 
