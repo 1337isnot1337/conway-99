@@ -1,15 +1,39 @@
-# Combined exterior query
+# Combined exterior query: unresolved after one bounded run
 
-## Accepted preflight
+[Run 44641648177](https://github.com/1337isnot1337/conway-99/actions/runs/44641648177), executing checkpoint 91, returned **UNKNOWN with no candidate vector**. The native call took 600.251 seconds, below its 610-second allowance. The query owner took 606.894 seconds, below its 720-second bound. The independent terminal checker passed. This is an unresolved search result, not a graph, component exclusion, or proof of infeasibility.
 
-[Run 44640850513](https://github.com/1337isnot1337/conway-99/actions/runs/44640850513) executed checkpoint 90 once. The frozen runner recovered the accepted 39,306,083-byte model with SHA-256 `2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6`, parsed all 80,730 variables and 297,470 rows, compared the complete native transport bytes, and obtained an empty validation result. The worker took 5.614 seconds and its owner 5.781 seconds, below their 60/75-second limits. The owner reaped the child and stopped its process group with zero overrun.
+The [root terminal acceptance](../experiments/logs/root-prism-free/f0-combined-extensions-query-root-acceptance01.json) binds the complete result, all owners, original response text, reconstructed response wire, empty native vector snapshot, source, configuration and actual accepted preflight. The [terminal map](../experiments/logs/root-prism-free/f0-combined-extensions-query-terminal-git-blobs01.json) preserves all 33 original small files, totaling 95,005 bytes. The duplicate 39,306,083-byte raw model is losslessly recoverable from the already committed accepted archive; its [restoration record](../experiments/logs/root-prism-free/f0-combined-extensions-query-model-restoration01.json) binds both the actual query transport and independent raw-byte check.
 
-The [root acceptance](../experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-root-acceptance01.json) binds the original report, owner, parameter text, parameter wire and schema, source, configuration, model receipt and workflow. All 12 original small files, totaling 23,617 bytes, are preserved in the [terminal map](../experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-terminal-git-blobs01.json). The large integer control token 18014398509481987 is retained exactly; parsed JavaScript numbers were not used to reserialize the original outputs. The duplicate raw model is recoverable losslessly from the already committed gzip archive and is described by the [restoration record](../experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-model-restoration01.json). No CpSolver was constructed and no optimization call occurred.
+## Exact model and execution
 
-## One bounded production query
+The queried model has 80,730 variables, 297,470 linear constraints and 3,310,380 coefficient occurrences. Its raw SHA-256 is `2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6`. Its complete native preparation and independent row replay were accepted at checkpoint 90. The query does not modify these bytes.
 
-Checkpoint 91 authorizes one run of the reviewed query and independent terminal checker. The actual configuration uses four search workers, seed zero, presolve enabled, probing level zero, linearization level zero and symmetry level zero. The solver clock is 600 seconds, the measured native allowance 610 seconds, the query owner 720 seconds and the reserved finalization budget 60 seconds. Separate independent control and terminal-replay owners have 15 and 135 seconds. The full CI driver has a 900-second acceptance bound inside a 20-minute job.
+The configuration sets four search workers, seed zero, presolve enabled, probing level zero, linearization level zero and symmetry level zero. The solver clock is 600 seconds; the query owner reserves 60 seconds for finalization. There is one native call and no automatic retry.
 
-The [production gate](../experiments/logs/root-prism-free/f0-combined-extensions-query-root-gate01.json) pins the exact model, sources, accepted preflight, runtime and parameters. The workflow permits only the first attempt on the exact expected parent and pushed commit. It verifies all 38 dependencies before execution. The query and independent replay preserve and inspect every returned vector with exact integer arithmetic, including all 11,796 new auxiliary variables and every model row. Original native text and integer arrays are retained before parsing; the separately reconstructed response protobuf is labeled as reconstructed.
+| Phase | Actual seconds | Bound seconds |
+| --- | ---: | ---: |
+| Native call | 600.251 | 610 |
+| Query owner | 606.894 | 720 |
+| Independent controls owner | 0.115 | 15 |
+| Independent terminal owner | 0.717 | 135 |
+| Complete CI driver | 607.794 | 900 |
 
-Production execution is pending at this checkpoint. UNKNOWN means unresolved. A native INFEASIBLE response requires a separate proof before a mathematical exclusion can be claimed. A satisfying vector establishes only this combined exterior relaxation: general original pair caps and a compatible second component still require validation. No graph, whole-component exclusion or unrestricted contradiction has been obtained.
+Every child was reaped and every owned process group stopped. All overrun fields are zero. The exact integer controls include the literal token 18014398509481987, which is preserved in original bytes; parsed JavaScript numbers were not used to reserialize the controls.
+
+The independent checker compares original native text with the separately reconstructed protobuf response and the saved primary/additional integer arrays. All are consistent with UNKNOWN and zero vectors. It also checks the complete actual runtime and parameter artifacts and the actual transported model. Root verifies every original output hash and 77 nested artifact references. The response wire is explicitly labeled as reconstructed from native text; it is not an original native binary export.
+
+## What the search log says
+
+Search began at 20.70 seconds. The final response records 249,617 conflicts, 653,311 branches, 1,377,059,285 Boolean propagations and 505,978,694 integer propagations. Peak query-process memory was 2,191,972 KiB. These counters describe this run; they do not certify coverage of the whole finite search space.
+
+The [complete search log](../experiments/logs/root-prism-free/f0-combined-extensions-query-run01/child.stdout.log) shows three full-problem subsolvers: `default_lp`, `max_lp` and `no_lp`. The top-level setting `linearization_level: 0` did not remove the portfolio's LP variants. Their reported LP iteration counts are 300,959 and 12,899. The final response's `lp_iterations: 0` therefore must not be read as saying no worker used LP. This is concrete evidence to inspect an explicit worker portfolio before the next differently formulated query; no replacement parameter set is frozen here.
+
+## Earlier accepted preflight
+
+[Run 44640850513](https://github.com/1337isnot1337/conway-99/actions/runs/44640850513) executed checkpoint 90 once. It recovered the full accepted model, passed public native parse/validation and complete-byte comparison, and checked exact integer/response controls. Its worker and owner took 5.614 and 5.781 seconds under 60/75-second bounds. It constructed no CpSolver and made no optimizer call. All twelve original outputs are preserved through the [preflight acceptance](../experiments/logs/root-prism-free/f0-combined-extensions-query-preflight-root-acceptance01.json).
+
+## Scope and continuation
+
+This formulation covers the fixed component-zero exterior relaxation in the globally prism-free, F-free split18+18 branch. General original exterior pair caps and a compatible second component are not certified by this query. The other component types and the unrestricted existence question remain open. Even a future accepted vector would still need those graph conditions checked; a future native INFEASIBLE response would need a separate proof before exclusion.
+
+The one-call gate is consumed. No unchanged retry is authorized. A new append is being prepared from independently verified recorded-triangle capacities and a separately checked target-edge total bound. Those rows were absent from this queried model.

@@ -1,0 +1,39 @@
+{
+  "schema": "conway99.f0.combined-query-duplicate-model-restoration.v1",
+  "status": "COMPLETE_RAW_MODEL_RESTORABLE_FROM_ACCEPTED_ARCHIVE",
+  "omitted_duplicate_path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/model.pb",
+  "archive": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-ci01/model.pb.gz",
+    "bytes": 5632144,
+    "sha256": "afeadb94ffa6fba0465a3dbe0094f4c7f7c156de8d7aa5f24a8fcfa38d275542",
+    "git_blob": "a2fce7642eb1d155b0e658e3a612d1007c0bf653",
+    "mode": "100644"
+  },
+  "model_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "bytes": 9294,
+    "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+    "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd"
+  },
+  "raw_bytes": 39306083,
+  "raw_sha256": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6",
+  "query_native_transport_complete_byte_comparison": true,
+  "query_result": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/result.json",
+    "bytes": 6667,
+    "sha256": "8ad90e69f71edef56bb1b285aa2d7b0d43ff60b1bfce31d5536d1f39aeab7bec",
+    "git_blob": "388f7a3fc4bcf79970748b4157fc57aebc1034d2",
+    "mode": "100644"
+  },
+  "independent_query_cold": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/report.json",
+    "bytes": 2800,
+    "sha256": "aff66d55363cc9d852102376e21400b556250bd733567d827e18f980980429c9",
+    "git_blob": "f072ac434cec07676f10af94d9feefd961acbe72",
+    "mode": "100644"
+  },
+  "independent_checker_reads_actual_query_model_and_compares_complete_raw_hash": true,
+  "restore_operation": "gzip decompression of the exact accepted archive produces the complete duplicate raw model byte for byte.",
+  "original_raw_model_uploaded_in_CI_artifact": true,
+  "graph_constructed": false
+}

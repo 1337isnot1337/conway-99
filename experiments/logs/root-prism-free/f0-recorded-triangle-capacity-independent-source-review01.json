@@ -1,0 +1,123 @@
+{
+  "schema": "conway99.f0.recorded-triangle-capacity-independent-source-review.v1",
+  "status": "PASS_COMPLETE_MATHEMATICAL_AND_FROZEN_EXTRACTOR_SOURCE_REVIEW_UNRUN",
+  "reviewer": "master_review",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_capacity_inventory_v8.js",
+    "sha256": "3357917e76a94f2c79fdc5a65e00a3413ad1e019c63e4d5ae3400f7978f12699",
+    "git_blob": "a68bba4532f1e4efa41d47cc38865ce8d3d780d5",
+    "bytes": 14882
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-configuration01.json",
+    "bytes": 3716,
+    "sha256": "bb11f3e22de3c601bd28c7add7317eea3b7552630c82bf0a13f567fcb5ede1f9",
+    "git_blob": "ab1f2f6e7daa6aea302a4d6b716f2cf68fb16ec6"
+  },
+  "theorem_note": {
+    "path": "research/root_prism_free_f0_recorded_triangle_capacities.md",
+    "bytes": 13608,
+    "sha256": "73f9cd10ce8eb234ba99abc6345345a9816437c9889386a90b729e3a29f3ce43",
+    "git_blob": "f38d58afead80a5b65ff19062bfd604d1a9e8087"
+  },
+  "total_bound_note": {
+    "path": "research/root_prism_free_f0_must_triangle_total_bound.md",
+    "bytes": 14455,
+    "sha256": "7db179dcb3836166ab0c1fb7908351ce7b6e9bd1f23f63657c3fd13e0305f260",
+    "git_blob": "3d2d7e2928ce44292bc4adcf87b6978f974de4de"
+  },
+  "total_bound_separate_independent_review": {
+    "path": "experiments/logs/root-prism-free/f0-must-triangle-total-independent-review01.json",
+    "bytes": 27211,
+    "sha256": "84572d32b842a905db9b08efe91be0fbf3fb8c1185ead6b782d9f6555f4eed3d",
+    "git_blob": "4fdaa03c481c57af8b55922be9b8f17d6658fd4c",
+    "mode": "100644"
+  },
+  "accepted_combined_model_root": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "bytes": 9294,
+    "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+    "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd"
+  },
+  "reviewed_complete_source_lines": 206,
+  "full_source_configuration_and_both_notes_read": true,
+  "frozen_seven_input_reference_comparison": {
+    "all_seven_frozen_inputs_match_accepted_combined_config": true,
+    "compared": 7,
+    "codec_matches_frozen_exact_codec": true
+  },
+  "mathematical_findings": [
+    {
+      "claim": "Every distinct recorded triangle family sharing edge e satisfies sum t<=y_e.",
+      "proof": "For y_e=0, every triangle AND is zero. For y_e=1, lambda=1 permits only one common neighbor in the entire graph, so at most one distinct exterior third vertex. Completeness of the recorded triangle family is unnecessary."
+    },
+    {
+      "claim": "The original mixed/degree equations imply overlap-zero incident edge mass(5+2*k0(a))*x_a.",
+      "proof": "Sum the mixed equations over the three sites of h_a. Their right sides sum to3-2*k0(a), and each eligible incident edge has signature overlap0 or1. Subtract from the degree8 equation. No assumption about the second component or its alignment enters."
+    },
+    {
+      "claim": "All edge capacities imply2*T_partial(a)<=(5+2*k0(a))*x_a.",
+      "proof": "Each recorded triangle is pairwise signature-disjoint and contributes twice among overlap-zero edges incident to a. Include target equalities, singleton AND upper bounds and nonnegative unused edges as appropriate."
+    },
+    {
+      "claim": "For Boolean selectors and integral indicators, T_partial(a)<=(2+k0(a))*x_a.",
+      "proof": "If x_a=0, nonnegativity forces zero. If x_a=1, round down half of5+2*k0(a). Equivalently add half of the unrounded inequality to half of x_a<=1; its integer left side is T_partial-(2+k0)*x_a and its right side is1/2, so the rank-one Chvatal-Gomory rounding gives upper0."
+    },
+    {
+      "claim": "Every complete pair-conflict clique proves its conditional side capacity for Boolean originals.",
+      "proof": "The saved Gram, motif, mixed and edge-clique witnesses forbid each indicator pair. Thus at most one indicator is1. AND activation supplies the y_e=0 case. Fractional conditional capacity is not inferred from pairwise conflicts."
+    },
+    {
+      "claim": "A fully covered installed cap-one forest extension proves the corresponding side capacity for Boolean originals.",
+      "proof": "The source matches every triangle third vertex to the exact existing wedge. Boolean side edges force each wedge AND, so t<=z. The saved aggregate equality and bounds give sum z<=1. The central y=0 case follows from triangle AND."
+    },
+    {
+      "claim": "The partial diamond is not a witness for the full parent.",
+      "proof": "It only demonstrates failure of a side capacity under AND/target definitions and stated local non-overdraw checks. It violates full degree/population/Gram equalities and actual full-graph pair requirements, as the note explicitly states."
+    }
+  ],
+  "complete_source_findings": [
+    "Input bytes, SHA256 and Git blob identities are checked; domain and overlay gzip raw SHA256 values are checked. Every one of the seven configured descriptors matches the accepted combined native configuration or that configuration itself.",
+    "The extractor scans only the existing5364 triangle records. It verifies lexicographic vertices, exact triangle indices, one target origin, disjoint signatures, consistent edge endpoints, distinct third vertices and complete target-incidence equality.",
+    "Each edge/vertex incidence list preserves increasing distinct indicator indices. Candidate side rows are sorted by original edge ID; local rows by selector ID. All proposals and unresolved pair records remain in the output.",
+    "Native edge variable540+e and indicator71382+t keep the accepted namespace. Side keys use lower-1,upper0; local keys use lower-(2+k0),upper0. Terms are sorted, distinct, small exact integers; both lower bounds follow automatically from existing variable domains.",
+    "Source computes the original Gram row map from the frozen21-core and saved signatures, with4440 start, population at4590 and motif start4591. Mixed, degree, target and forest offsets agree with the frozen accepted model source/configuration.",
+    "Forest witness translation uses exact standalone offsets7812 for auxiliary IDs and23988 for row IDs, and checks both saved aggregate bound row keys.",
+    "The expected6300-edge disposition,2904 side proposals,420 local proposals and6852 pair checks are hard assertions. This review does not claim their full generated terminal table has run or been independently accepted.",
+    "The source sets continuous_implication_claimed and full_model_independence_claimed false for sufficient Boolean reductions, preserves all proposals, and labels the partial diamond as partial and not graph-feasible."
+  ],
+  "expected_native_row_counts_and_terms": {
+    "side_rows": 2904,
+    "side_indicator_terms": 7416,
+    "side_total_terms": 10320,
+    "local_rows": 420,
+    "local_indicator_terms": 16092,
+    "local_total_terms": 16512,
+    "appended_rows": 3324,
+    "appended_terms": 26832,
+    "new_variables": 0
+  },
+  "execution_qualification": {
+    "source_run_not_invoked_in_review": true,
+    "source_derive_not_invoked_in_review": true,
+    "root_source_configuration_gate_required_for_any_actual_extraction": true,
+    "caller_must_bind_exact_codec_bytes_sha256_and_git_before_factory_evaluation": true,
+    "declared_total_milliseconds_including_input_bindings_report_hash_and_serialization": 10000,
+    "maximum_report_bytes": 16777216,
+    "require_finalization_status": "PASS_COMPLETE_SERIALIZATION_WITHIN_DECLARED_BOUND",
+    "preserve_both_returned_exact_texts_before_publication": true,
+    "overrun_is_unaccepted": true,
+    "automatic_retry_authorized": false,
+    "independent_complete_literal_native_row_replay_required_before_future_model_acceptance": true
+  },
+  "scope": {
+    "new_domain_or_triangle_census_calls": 0,
+    "extractor_calls": 0,
+    "native_model_builds": 0,
+    "optimizer_calls": 0,
+    "current_model_changed": false,
+    "graph_constructed": false,
+    "whole_component_excluded": false
+  },
+  "blockers": []
+}

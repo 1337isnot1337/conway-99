@@ -1,0 +1,555 @@
+{
+  "schema": "conway99.exact-publication-manifest.v1",
+  "checkpoint": 92,
+  "parent_commit": "8b15c3e403f3ca568c7913ffb6aaf721cce0fa26",
+  "base_tree": "9881abd87c6091f3b231bd7880bed9f94d2633e2",
+  "branch": "research/global-constraints-ab2f",
+  "scope": "Accept bounded combined-query UNKNOWN terminal and exact outputs; preserve metadata overrun; accept complete independent capacity rows and structural12-bound before a new native append.",
+  "payload_files": 73,
+  "payload_bytes": 3500716,
+  "files": [
+    {
+      "path": "CONTENTS.md",
+      "bytes": 68159,
+      "sha256": "9c4aee9d31aa0578869afde83543e471701e631dcd94f0faf15d0464bf43e882",
+      "git_blob": "459f77f8ca54ee2aad06ad96a57c4864833ca179",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-ci01-run-query.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-ci01-run-query.stdout.log",
+      "bytes": 1544,
+      "sha256": "5e6f2e5f07e097f0f34c4026609e03f1769e89a0e7e0515d03d854dd90387126",
+      "git_blob": "8e4af8dab509f28a903355f15f58464dae9f3482",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-ci01-run.json",
+      "bytes": 6014,
+      "sha256": "affc4e673b1161ab690f96a674d48ec01a41287d91d9a1a932232a423df26418",
+      "git_blob": "a55a27f544f0ac8903c6a79755a326f397a522e2",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-ci01-runtime-packages.txt",
+      "bytes": 163,
+      "sha256": "0ba86be5dfbdfb2dca363c81e6dc7161a3bf41a943fc19dc87a72a6415b4cd1c",
+      "git_blob": "80fe68bf4656ea86c8e54aa1e6850cff76a8f35f",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-model-restoration01.json",
+      "bytes": 1936,
+      "sha256": "6d9f85f40fe15c271e040bc2138f17b44be70870f1b2d97fa6f12dbfa4736c14",
+      "git_blob": "95fe924cb716bd8a0f95e679578f28ab97ee83b1",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-root-acceptance01.json",
+      "bytes": 9093,
+      "sha256": "eb25d06d68e1296a43d8b6c37698e87ec719435b4578796193916724707c19ef",
+      "git_blob": "6617aa1153c77cca62c80ab0a2267c8af5a8e119",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/controls.json",
+      "bytes": 459,
+      "sha256": "684528054a841aa08c9ca35a0421ad73743bea25f7c78e4f0d3e0054553f3d52",
+      "git_blob": "0f54ea7ab6f306c3b1a72b9008cc489d41349761",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/controls/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/controls/child.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/controls/owned-start.json",
+      "bytes": 1100,
+      "sha256": "99ac30b87a2a71ed67b20263aefd3036ce544e46f90aa1a5236d969734a5cd4c",
+      "git_blob": "28645a2c49ce6587a9e82f039f95237f700e4b67",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/controls/owned-supervision.json",
+      "bytes": 126,
+      "sha256": "0e8b54004984f744235edf804c329ae3cca75bcdf426ae33fba7ce07ed391dc7",
+      "git_blob": "137b96d5fa5137f419a3830c077c3f475e20614c",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/controls/owner.json",
+      "bytes": 1992,
+      "sha256": "11dbd869d1520c7cfa384cbfcea7c9deb58b766929751907bc3982a23efabf40",
+      "git_blob": "0e07737beb7cdc00e4dcf85c808a9a237baf47a9",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/controls/supervisor.json",
+      "bytes": 126,
+      "sha256": "0e8b54004984f744235edf804c329ae3cca75bcdf426ae33fba7ce07ed391dc7",
+      "git_blob": "137b96d5fa5137f419a3830c077c3f475e20614c",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/report.json",
+      "bytes": 2800,
+      "sha256": "aff66d55363cc9d852102376e21400b556250bd733567d827e18f980980429c9",
+      "git_blob": "f072ac434cec07676f10af94d9feefd961acbe72",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/run/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/run/child.stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/run/owned-start.json",
+      "bytes": 1096,
+      "sha256": "22f0484d3308821e40d4dcaf3bfb7943b01f2c2abe67398b37d6ee32f9a32a7a",
+      "git_blob": "4647bf08edd9dc447d800dd63d651fdd1111c2de",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/run/owned-supervision.json",
+      "bytes": 125,
+      "sha256": "f98c72bec75ad37125d36d3a4d41768adf64237ac9c6fb15e5cee0e3a766ab67",
+      "git_blob": "baa2c1505487d88bc7d192e369f8b24a2f330e3b",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/run/owner.json",
+      "bytes": 1960,
+      "sha256": "b5819a51b92fd6f3c71fcc2fafcd9b469ceafc85f46baa1ce3e0bf1fa0be7370",
+      "git_blob": "13ffa286402e176a0d312a01094eacb9308d1611",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01-cold/run/supervisor.json",
+      "bytes": 125,
+      "sha256": "f98c72bec75ad37125d36d3a4d41768adf64237ac9c6fb15e5cee0e3a766ab67",
+      "git_blob": "baa2c1505487d88bc7d192e369f8b24a2f330e3b",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/child.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/child.stdout.log",
+      "bytes": 17079,
+      "sha256": "dba8daf4d53b4bec04a90b0870e13dadbb135654b97a367edefc9ce353d06944",
+      "git_blob": "77c9c6132409bac5ad01d9db1700be3ce1c86384",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/native-vectors.json",
+      "bytes": 57,
+      "sha256": "605cdbebdeb0a3cfca2c80443ab3f8d601f13367f7ae53e72a3470fe77d52356",
+      "git_blob": "dbd069004ea16a22117b7e1a4701e02bb1799db5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/owned-start.json",
+      "bytes": 531,
+      "sha256": "aff97414edd9a1c7baf8016f0aac5126a667579c9995cfbde418616ac2ecf2fb",
+      "git_blob": "4e90adc40dae603d10694fe749ba34c529a96d25",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/owned-supervision.json",
+      "bytes": 120,
+      "sha256": "b1516b973f26f88899e2a1fa7d6315048fec293dd075cc427bcace71a3827c71",
+      "git_blob": "02503c2b649a0b8b9fe7c788cfc9e5c06dd51244",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/owner.json",
+      "bytes": 1475,
+      "sha256": "bbd57cd63ba1449bd53edc1e4f52b2fae8356b78bf9d5f2fe64bc57215dd1a3e",
+      "git_blob": "9b37eb0c52490b22ace2afe975ccd41751d7670e",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/parameter-schema.pb",
+      "bytes": 15472,
+      "sha256": "644354522af4202900329fc55844364cf1bfa77333b7ceb98e9de4aa49036c52",
+      "git_blob": "4c90e2fcaafc88fa2514ddae1fd0c72c992adcbe",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/parameters.pb",
+      "bytes": 37,
+      "sha256": "0b492b9b6a0536ee4a31e3186612b00037749b969da29d8ffb09d52782ea95c3",
+      "git_blob": "a7ee0aa16db8d583be5a796dd5e9e1b4d305055c",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/parameters.pbtxt",
+      "bytes": 220,
+      "sha256": "b0b0e2f35a92b95d8d70c51ef355921b317fdd170bae7970af22f8a7f95f1ec0",
+      "git_blob": "a74cf7216407235f8e9951fb0c270a24795c4a89",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/response-native.pbtxt",
+      "bytes": 18032,
+      "sha256": "050473ad2ed4eae84de2875a0dd7f9db5793856dff24bbe3e4c29c30d3bb9976",
+      "git_blob": "915e27c28319da1f6b56065ceffb9d971ce10455",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/response-reconstructed.pb",
+      "bytes": 17146,
+      "sha256": "c5f0ee8825f5ccee86a71cc8cada09336adb14a810bfc4bce700cb3b19bed711",
+      "git_blob": "b6964bf62419085f391062fea2ba364d8c6ecfff",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/response-stats.txt",
+      "bytes": 303,
+      "sha256": "00100f90623c4beafe09a05e824e044bcec431fef5ec7b14bdb5d134366ad42c",
+      "git_blob": "eb153b6a15237343a769a27cdef23ba878952b06",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/result.json",
+      "bytes": 6667,
+      "sha256": "8ad90e69f71edef56bb1b285aa2d7b0d43ff60b1bfce31d5536d1f39aeab7bec",
+      "git_blob": "388f7a3fc4bcf79970748b4157fc57aebc1034d2",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/stages.json",
+      "bytes": 116,
+      "sha256": "5a194a5a988e0fa1ead38ded3987b0466833564e6697153b51e351c0f4b01af6",
+      "git_blob": "05e2636455af8fcad205bb143873c98aa080d96f",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-run01/supervisor.json",
+      "bytes": 120,
+      "sha256": "b1516b973f26f88899e2a1fa7d6315048fec293dd075cc427bcace71a3827c71",
+      "git_blob": "02503c2b649a0b8b9fe7c788cfc9e5c06dd51244",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-terminal-git-blobs01.json",
+      "bytes": 11516,
+      "sha256": "57b8e9328412819aa436c4602f2902f83c37ded6e86b528f8f0ce62311a1d4a4",
+      "git_blob": "6bdaa175e4fb740e21dee974386f1c6921a9a11b",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-must-triangle-total-independent-review01.json",
+      "bytes": 27211,
+      "sha256": "84572d32b842a905db9b08efe91be0fbf3fb8c1185ead6b782d9f6555f4eed3d",
+      "git_blob": "4fdaa03c481c57af8b55922be9b8f17d6658fd4c",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-configuration01.json",
+      "bytes": 3716,
+      "sha256": "bb11f3e22de3c601bd28c7add7317eea3b7552630c82bf0a13f567fcb5ede1f9",
+      "git_blob": "ab1f2f6e7daa6aea302a4d6b716f2cf68fb16ec6",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-independent-source-review01.json",
+      "bytes": 8026,
+      "sha256": "ebc4e422b5283d3070425f70875fd59f49ed57ef50800fcc5a24f57d954cae1b",
+      "git_blob": "aeff91a3a8f7f23c3684a7f80e2fd6d1b1d332b7",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-finalization.json",
+      "bytes": 364,
+      "sha256": "aa3eb24fa0b711cc751b31f299ccaf5f50302b134486b15a7f1cde9fb0ecc27c",
+      "git_blob": "0efb7ed6e15f5cc153c0dbaa27b9e9575637f308",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01-owner.json",
+      "bytes": 2178,
+      "sha256": "958f6ac9c21c103bfa663be687bbfde492858e7b4a62532886ca6daeb0e663d3",
+      "git_blob": "647c89b1901188ecf2fa4ea609d2115f6a4553ae",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-inventory01.json",
+      "bytes": 2879184,
+      "sha256": "2f8eea3f1bb67c796ca8bc1deb06606d0e0c2f1948838128fbc30ed05b6eb09c",
+      "git_blob": "8201fa6b57efd6be545a4465fdf80aa8c69bf30c",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-configuration01.json",
+      "bytes": 5028,
+      "sha256": "3a0b1987b52465d123eb2f580e6b5f9ff186bc3ba90eccdab801b26012d4f353",
+      "git_blob": "1551646157c02d4b5beba4b0fe1b51cbe4f5d9d7",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-independent-source-review01.json",
+      "bytes": 5429,
+      "sha256": "cd25e4ed8e5be45d2c693dc39866a7c07e0b632d11b09bb51924cc42cd93ebcd",
+      "git_blob": "25ba9a9d214ad724fbb9812dfe626b752bdaf606",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01-finalization.json",
+      "bytes": 367,
+      "sha256": "b490ae30d852cd7dafed69659edf0caa2ff623706504ee3df6b8d3fc84da42c4",
+      "git_blob": "802d455e91572e08fbc1be19445e78ed3c8c783e",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01-owner.json",
+      "bytes": 2568,
+      "sha256": "ef85a1c0a72f33bf540403af6d46170ca02aa968aaef17f7a7241ce2bf07d522",
+      "git_blob": "7f0b4d85728535a70245e8b2654800cc29a02fbe",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-replay01.json",
+      "bytes": 5918,
+      "sha256": "1e5008561fd1a049c550913556856387ccde898073ff1fd46309735a4634c2bd",
+      "git_blob": "9741b71eb47ceb70396fec8e5b9c9c0152d0afba",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-root-acceptance01.json",
+      "bytes": 9201,
+      "sha256": "f5bfd2f0af981e9b8fd96931e78bda6d2648960e8d0ddd981e2777bae88afea0",
+      "git_blob": "70ff31624e04962edd436ba9b1a62d611390cff0",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-root-gate01.json",
+      "bytes": 6273,
+      "sha256": "a7a687b475ce6c55f9a4b795debbfa73b1bd734cd113d8868a431d6f225352ef",
+      "git_blob": "294c1677ca382f0f0cd1b6bb1346185aadd549b9",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-terminal-git-blobs01.json",
+      "bytes": 3248,
+      "sha256": "ec4197b5b48092e93bde4e0be18c57174d31a2cf84c078bbb706e894cc25b814",
+      "git_blob": "e1372877e3bcd823247e6e8e972a29e8721ba6f5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-row-keys01.json",
+      "bytes": 3723,
+      "sha256": "0599b49e238d17186ffc112cc8f8d581880a13c2c5407bd7a52ad566433368e1",
+      "git_blob": "91b8c95924a9936760136b93d39df89e2f2d1d8f",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-terminal-git-blobs01.json",
+      "bytes": 4195,
+      "sha256": "8a035bc1e5c2c41c095f88ddf0e940ca62098eb9148bafcce30b99029a380bae",
+      "git_blob": "7a991df44f5cb7fe0b18e50fc890a01577a067a8",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-finalization.json",
+      "bytes": 330,
+      "sha256": "965e521baa9818ee3bac1cfbf1bcc8b925b17d56e40ade86a78887c3234b51b8",
+      "git_blob": "b2422be8453e66a48c6e2e9c538b68e3bd455c73",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-owner.json",
+      "bytes": 2821,
+      "sha256": "aa40a994ccf753025412e0b9266fa778001ad62bdf4070e9d51552ae7bc894a0",
+      "git_blob": "a5ba96e4cf281b8d200e88b28b15ef2491d98d5b",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01.json",
+      "bytes": 28398,
+      "sha256": "ba987fe7ff39fe088bc66cb2fbd9f81c4e17a0b457af70642bc1f61d37d6d1e3",
+      "git_blob": "c418e402626e0a2d216422ac62bef6165d962191",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-configuration01.json",
+      "bytes": 3283,
+      "sha256": "d3067a6166a3c4b4a0f684df224afe5691182a780a267e6de828ca20d1b16ca2",
+      "git_blob": "9676d56ffaf8ae7be0094db062357e1be69ca0d5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-independent-source-review01.json",
+      "bytes": 6222,
+      "sha256": "9365c5c5278c09ed4f891879ebd42ec673b81f8afe7bc1ea67db5a93cdd63967",
+      "git_blob": "5f3382646abde6905bf7162f1ee97bbc83b02e8f",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-proof-scope-clarification01.json",
+      "bytes": 2702,
+      "sha256": "cd53d25320c8b0859fec36428364de5b01b17b9e007035c5aa49b939aec883a6",
+      "git_blob": "0a563436c20346f47f766c2ca6088671d62f4962",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-root-acceptance01.json",
+      "bytes": 14322,
+      "sha256": "10dd8fbfd42dc695bae9c83a3f61f7b9694d940a092e8e67e034781fd3eb0ebc",
+      "git_blob": "f71469c7a5b9ac380ba6159f15a4121628028461",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/logs/root-prism-free/f0-target-color-twelve-terminal-git-blobs01.json",
+      "bytes": 5154,
+      "sha256": "f5715405e02068cc19f3d6551d2d20ccb06ed4d3646a401175e23e1fd25d1205",
+      "git_blob": "7c4ddc64ac7ff525bf964fb8d56522235b7f3590",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_capacity_inventory_v8.js",
+      "bytes": 14882,
+      "sha256": "3357917e76a94f2c79fdc5a65e00a3413ad1e019c63e4d5ae3400f7978f12699",
+      "git_blob": "a68bba4532f1e4efa41d47cc38865ce8d3d780d5",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_capacity_literal_v8.js",
+      "bytes": 15720,
+      "sha256": "5cb224ef1a544eb23cc61d4d6a1a72e5266514c2483c26449945ab83abb9e615",
+      "git_blob": "4b04412df88f9e70565b4334eb6a5ea7d52a6f57",
+      "mode": "100644"
+    },
+    {
+      "path": "experiments/workspace/root_prism_free_f0_target_color_twelve_certificate_v8.js",
+      "bytes": 10514,
+      "sha256": "dfb0764a29e53db9ba59b5fd291a45a612af0f690699b1892c195487014a152e",
+      "git_blob": "54fa064c0211d3cfa07214bf2304d7b0122b9cc9",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_combined_extensions_query.md",
+      "bytes": 5213,
+      "sha256": "9e696d0a9535a54a5a19517ef2509d8c565797879cc90bbcf330ed28bec7d728",
+      "git_blob": "7bc0c66c49634ed0445b5a4c162189ab74531d34",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_must_triangle_total_bound.md",
+      "bytes": 14455,
+      "sha256": "7db179dcb3836166ab0c1fb7908351ce7b6e9bd1f23f63657c3fd13e0305f260",
+      "git_blob": "3d2d7e2928ce44292bc4adcf87b6978f974de4de",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_recorded_triangle_capacities.md",
+      "bytes": 13608,
+      "sha256": "73f9cd10ce8eb234ba99abc6345345a9816437c9889386a90b729e3a29f3ce43",
+      "git_blob": "f38d58afead80a5b65ff19062bfd604d1a9e8087",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_recorded_triangle_capacity_inventory_result.md",
+      "bytes": 4815,
+      "sha256": "50be6bcdf24d96a8af7413e2cae47c65f974bdc636419c8f103556eeaf187f3e",
+      "git_blob": "a738daf083f754135393959145f9be04b51ab301",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_recorded_triangle_capacity_literal_replay.md",
+      "bytes": 3114,
+      "sha256": "db7659f02f87939a8aa9b068ead3abb88689aa06d602decdbb95993bae2baeab",
+      "git_blob": "e386c239bb25f0d51e1a6ebf5e7581c50f9a70e6",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_target_color_twelve_bound_initial_scope.md",
+      "bytes": 9479,
+      "sha256": "6257e00119cb0d192adce59d42a7a8ed3199c7014fa6f3a5cec9be90b1eb454c",
+      "git_blob": "38f38fbecdb9e5414cd6a923affb139d4027226f",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_target_color_twelve_bound.md",
+      "bytes": 9695,
+      "sha256": "2e78b57ee726e7c301f3e73c4909c6547fdb2500eb0fc53f3d97be429436160c",
+      "git_blob": "2864e837f22a38f37baf0535ed45c34163bd9415",
+      "mode": "100644"
+    },
+    {
+      "path": "research/root_prism_free_f0_target_color_twelve_result.md",
+      "bytes": 6331,
+      "sha256": "9a0fe8204d27d5a26fb80ea4b79e0c40e376aa85a67cd07be2e3d9a23b95e7a8",
+      "git_blob": "8b3cfc5c4ec0003a63309188a4dad4a88690b12e",
+      "mode": "100644"
+    },
+    {
+      "path": "STATE.md",
+      "bytes": 177320,
+      "sha256": "3a04f1ebb25af4bc5c86492b1281ba6ef433948170e6419549cd4d310c24f9c6",
+      "git_blob": "8257e0ab8594725f292b2d34d28803443b3e1720",
+      "mode": "100644"
+    }
+  ],
+  "deletions": [],
+  "unselected_paths_must_preserve_mode_type_and_blob": true,
+  "actual_optimizer_calls": 1,
+  "actual_query_outcome": "UNKNOWN",
+  "returned_vectors": 0,
+  "query_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-query-root-acceptance01.json",
+    "bytes": 9093,
+    "sha256": "eb25d06d68e1296a43d8b6c37698e87ec719435b4578796193916724707c19ef",
+    "git_blob": "6617aa1153c77cca62c80ab0a2267c8af5a8e119",
+    "mode": "100644"
+  },
+  "capacity_literal_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-capacity-literal-root-acceptance01.json",
+    "bytes": 9201,
+    "sha256": "f5bfd2f0af981e9b8fd96931e78bda6d2648960e8d0ddd981e2777bae88afea0",
+    "git_blob": "70ff31624e04962edd436ba9b1a62d611390cff0",
+    "mode": "100644"
+  },
+  "target_twelve_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-root-acceptance01.json",
+    "bytes": 14322,
+    "sha256": "10dd8fbfd42dc695bae9c83a3f61f7b9694d940a092e8e67e034781fd3eb0ebc",
+    "git_blob": "f71469c7a5b9ac380ba6159f15a4121628028461",
+    "mode": "100644"
+  },
+  "original_capacity_extractor_execution_accepted": false,
+  "next_native_build_authorized": false,
+  "next_query_authorized": false,
+  "automatic_retries": 0,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

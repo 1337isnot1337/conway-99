@@ -1,0 +1,826 @@
+{
+  "schema": "conway99.f0.target-color-twelve-root-acceptance.v1",
+  "status": "ROOT_ACCEPTS_EXACT_BOOLEAN_TWELVE_TARGET_BOUND",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_target_color_twelve_certificate_v8.js",
+    "sha256": "dfb0764a29e53db9ba59b5fd291a45a612af0f690699b1892c195487014a152e",
+    "git_blob": "54fa064c0211d3cfa07214bf2304d7b0122b9cc9",
+    "bytes": 10514
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-configuration01.json",
+    "sha256": "d3067a6166a3c4b4a0f684df224afe5691182a780a267e6de828ca20d1b16ca2",
+    "git_blob": "9676d56ffaf8ae7be0094db062357e1be69ca0d5",
+    "bytes": 3283
+  },
+  "proof": {
+    "path": "research/root_prism_free_f0_target_color_twelve_bound.md",
+    "git_blob": "2864e837f22a38f37baf0535ed45c34163bd9415",
+    "sha256": "2e78b57ee726e7c301f3e73c4909c6547fdb2500eb0fc53f3d97be429436160c",
+    "bytes": 9695
+  },
+  "proof_scope_correction": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-proof-scope-clarification01.json",
+    "git_blob": "0a563436c20346f47f766c2ca6088671d62f4962",
+    "sha256": "cd53d25320c8b0859fec36428364de5b01b17b9e007035c5aa49b939aec883a6",
+    "bytes": 2702
+  },
+  "peer_review": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-independent-source-review01.json",
+    "bytes": 6222,
+    "sha256": "9365c5c5278c09ed4f891879ebd42ec673b81f8afe7bc1ea67db5a93cdd63967",
+    "git_blob": "5f3382646abde6905bf7162f1ee97bbc83b02e8f"
+  },
+  "report": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01.json",
+    "sha256": "ba987fe7ff39fe088bc66cb2fbd9f81c4e17a0b457af70642bc1f61d37d6d1e3",
+    "bytes": 28398,
+    "git_blob": "c418e402626e0a2d216422ac62bef6165d962191"
+  },
+  "finalization": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-finalization.json",
+    "sha256": "965e521baa9818ee3bac1cfbf1bcc8b925b17d56e40ade86a78887c3234b51b8",
+    "bytes": 330,
+    "git_blob": "b2422be8453e66a48c6e2e9c538b68e3bd455c73"
+  },
+  "owner": {
+    "path": "experiments/logs/root-prism-free/f0-target-color-twelve-certificate01-owner.json",
+    "bytes": 2821,
+    "sha256": "aa40a994ccf753025412e0b9266fa778001ad62bdf4070e9d51552ae7bc894a0",
+    "git_blob": "a5ba96e4cf281b8d200e88b28b15ef2491d98d5b",
+    "mode": "100644"
+  },
+  "model_root_acceptance": {
+    "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-root-acceptance01.json",
+    "bytes": 9294,
+    "sha256": "20fef49c4a6a1b190dfc2869d77152deb4afd53b4411e6ec92a0fad53cf209b1",
+    "git_blob": "23e084d4bee250a6f3783b41f948d5e8239393dd",
+    "mode": "100644"
+  },
+  "input_bindings": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64-gzip"
+    },
+    "indicator": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json",
+      "sha256": "8606d51ced038b40135fa22bc16d056873b80c16c26d2c34db7e24ac8effd2c7",
+      "git_blob": "8188edc640d4dd896df0e64c4e08db4c78627e96",
+      "bytes": 1056971,
+      "encoding": "utf-8"
+    },
+    "triangle_literal_root": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-independent-literal-root-acceptance01.json",
+      "bytes": 3019,
+      "sha256": "9d4e3a9b44a2140d95091425a346396ed84dd8d9d88f3a4e7fa3e67d47cd51d4",
+      "git_blob": "afb20e51c7fafb5719cb491af8037a3a4aeeacba",
+      "encoding": "utf-8"
+    },
+    "total_bound_review": {
+      "path": "experiments/logs/root-prism-free/f0-must-triangle-total-independent-review01.json",
+      "bytes": 27211,
+      "sha256": "84572d32b842a905db9b08efe91be0fbf3fb8c1185ead6b782d9f6555f4eed3d",
+      "git_blob": "4fdaa03c481c57af8b55922be9b8f17d6658fd4c",
+      "encoding": "utf-8"
+    },
+    "combined_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-combined-extensions-native-configuration01.json",
+      "sha256": "3fcf3a742a53cf200810aea92cfa594c2ef4623e54aa5679e8afbeda00409059",
+      "git_blob": "3935a87e1c2bf4d8ef8ce3ec2bd54a1325d29e19",
+      "bytes": 33063,
+      "encoding": "utf-8"
+    }
+  },
+  "parent_raw_sha256": "2961c95ce21c39f8ea8bda29ed3ac98c5075b921dedc96f71035f1b90f77ddb6",
+  "parent_variables": 80730,
+  "parent_rows": 297470,
+  "Boolean_bound": 12,
+  "proposed_native_row_key": [
+    0,
+    12,
+    [
+      [
+        570,
+        1
+      ],
+      [
+        733,
+        1
+      ],
+      [
+        903,
+        1
+      ],
+      [
+        1011,
+        1
+      ],
+      [
+        1781,
+        1
+      ],
+      [
+        1925,
+        1
+      ],
+      [
+        2104,
+        1
+      ],
+      [
+        2215,
+        1
+      ],
+      [
+        2949,
+        1
+      ],
+      [
+        3039,
+        1
+      ],
+      [
+        3357,
+        1
+      ],
+      [
+        3502,
+        1
+      ],
+      [
+        4190,
+        1
+      ],
+      [
+        4271,
+        1
+      ],
+      [
+        4582,
+        1
+      ],
+      [
+        4721,
+        1
+      ],
+      [
+        5457,
+        1
+      ],
+      [
+        5641,
+        1
+      ],
+      [
+        6398,
+        1
+      ],
+      [
+        6411,
+        1
+      ],
+      [
+        6695,
+        1
+      ],
+      [
+        6846,
+        1
+      ],
+      [
+        7624,
+        1
+      ],
+      [
+        7647,
+        1
+      ],
+      [
+        10525,
+        1
+      ],
+      [
+        10530,
+        1
+      ],
+      [
+        11063,
+        1
+      ],
+      [
+        11064,
+        1
+      ],
+      [
+        11094,
+        1
+      ],
+      [
+        11565,
+        1
+      ],
+      [
+        12931,
+        1
+      ],
+      [
+        12932,
+        1
+      ],
+      [
+        12989,
+        1
+      ],
+      [
+        16099,
+        1
+      ],
+      [
+        19103,
+        1
+      ],
+      [
+        19111,
+        1
+      ],
+      [
+        21190,
+        1
+      ],
+      [
+        22175,
+        1
+      ],
+      [
+        25093,
+        1
+      ],
+      [
+        25809,
+        1
+      ],
+      [
+        25891,
+        1
+      ],
+      [
+        26014,
+        1
+      ],
+      [
+        26735,
+        1
+      ],
+      [
+        26816,
+        1
+      ],
+      [
+        26929,
+        1
+      ],
+      [
+        27686,
+        1
+      ],
+      [
+        27789,
+        1
+      ],
+      [
+        27885,
+        1
+      ],
+      [
+        28637,
+        1
+      ],
+      [
+        28742,
+        1
+      ],
+      [
+        39221,
+        1
+      ],
+      [
+        39353,
+        1
+      ],
+      [
+        39404,
+        1
+      ],
+      [
+        39427,
+        1
+      ],
+      [
+        40056,
+        1
+      ],
+      [
+        40164,
+        1
+      ],
+      [
+        40234,
+        1
+      ],
+      [
+        40260,
+        1
+      ],
+      [
+        41342,
+        1
+      ],
+      [
+        43354,
+        1
+      ],
+      [
+        43371,
+        1
+      ],
+      [
+        43541,
+        1
+      ],
+      [
+        44049,
+        1
+      ],
+      [
+        45675,
+        1
+      ],
+      [
+        47351,
+        1
+      ],
+      [
+        47355,
+        1
+      ],
+      [
+        48088,
+        1
+      ],
+      [
+        48244,
+        1
+      ],
+      [
+        48345,
+        1
+      ],
+      [
+        48745,
+        1
+      ],
+      [
+        48898,
+        1
+      ],
+      [
+        48990,
+        1
+      ],
+      [
+        49478,
+        1
+      ],
+      [
+        49536,
+        1
+      ],
+      [
+        49616,
+        1
+      ],
+      [
+        50075,
+        1
+      ],
+      [
+        50151,
+        1
+      ],
+      [
+        50222,
+        1
+      ],
+      [
+        57444,
+        1
+      ],
+      [
+        58391,
+        1
+      ],
+      [
+        58409,
+        1
+      ],
+      [
+        59193,
+        1
+      ],
+      [
+        60413,
+        1
+      ],
+      [
+        60422,
+        1
+      ]
+    ]
+  ],
+  "proposed_native_row_key_sha256": "36c10df91bd844086786344beb942a2fd271e2cb9fafc6712f9168d215a7a446",
+  "new_variables": 0,
+  "additional_rows": 1,
+  "additional_terms": 84,
+  "root_independent_checks": {
+    "all84edges_and84node_records_independently_reconstructed": true,
+    "all18color_supports_and_native_Gram_indices_recomputed": true,
+    "all7structural_conditions_independently_checked": true,
+    "private_color_equations": 12,
+    "witness_selected_vertices": 16,
+    "witness_private_vertices": 12,
+    "witness_target_edges": 12,
+    "witness_scope": "at-most-one target-color quotas and endpoint activation only",
+    "fractional_color_only_edge_sum": 14,
+    "all_original_Gram_equalities_for_witness_claimed": false,
+    "proposed_native_row_key": [
+      0,
+      12,
+      [
+        [
+          570,
+          1
+        ],
+        [
+          733,
+          1
+        ],
+        [
+          903,
+          1
+        ],
+        [
+          1011,
+          1
+        ],
+        [
+          1781,
+          1
+        ],
+        [
+          1925,
+          1
+        ],
+        [
+          2104,
+          1
+        ],
+        [
+          2215,
+          1
+        ],
+        [
+          2949,
+          1
+        ],
+        [
+          3039,
+          1
+        ],
+        [
+          3357,
+          1
+        ],
+        [
+          3502,
+          1
+        ],
+        [
+          4190,
+          1
+        ],
+        [
+          4271,
+          1
+        ],
+        [
+          4582,
+          1
+        ],
+        [
+          4721,
+          1
+        ],
+        [
+          5457,
+          1
+        ],
+        [
+          5641,
+          1
+        ],
+        [
+          6398,
+          1
+        ],
+        [
+          6411,
+          1
+        ],
+        [
+          6695,
+          1
+        ],
+        [
+          6846,
+          1
+        ],
+        [
+          7624,
+          1
+        ],
+        [
+          7647,
+          1
+        ],
+        [
+          10525,
+          1
+        ],
+        [
+          10530,
+          1
+        ],
+        [
+          11063,
+          1
+        ],
+        [
+          11064,
+          1
+        ],
+        [
+          11094,
+          1
+        ],
+        [
+          11565,
+          1
+        ],
+        [
+          12931,
+          1
+        ],
+        [
+          12932,
+          1
+        ],
+        [
+          12989,
+          1
+        ],
+        [
+          16099,
+          1
+        ],
+        [
+          19103,
+          1
+        ],
+        [
+          19111,
+          1
+        ],
+        [
+          21190,
+          1
+        ],
+        [
+          22175,
+          1
+        ],
+        [
+          25093,
+          1
+        ],
+        [
+          25809,
+          1
+        ],
+        [
+          25891,
+          1
+        ],
+        [
+          26014,
+          1
+        ],
+        [
+          26735,
+          1
+        ],
+        [
+          26816,
+          1
+        ],
+        [
+          26929,
+          1
+        ],
+        [
+          27686,
+          1
+        ],
+        [
+          27789,
+          1
+        ],
+        [
+          27885,
+          1
+        ],
+        [
+          28637,
+          1
+        ],
+        [
+          28742,
+          1
+        ],
+        [
+          39221,
+          1
+        ],
+        [
+          39353,
+          1
+        ],
+        [
+          39404,
+          1
+        ],
+        [
+          39427,
+          1
+        ],
+        [
+          40056,
+          1
+        ],
+        [
+          40164,
+          1
+        ],
+        [
+          40234,
+          1
+        ],
+        [
+          40260,
+          1
+        ],
+        [
+          41342,
+          1
+        ],
+        [
+          43354,
+          1
+        ],
+        [
+          43371,
+          1
+        ],
+        [
+          43541,
+          1
+        ],
+        [
+          44049,
+          1
+        ],
+        [
+          45675,
+          1
+        ],
+        [
+          47351,
+          1
+        ],
+        [
+          47355,
+          1
+        ],
+        [
+          48088,
+          1
+        ],
+        [
+          48244,
+          1
+        ],
+        [
+          48345,
+          1
+        ],
+        [
+          48745,
+          1
+        ],
+        [
+          48898,
+          1
+        ],
+        [
+          48990,
+          1
+        ],
+        [
+          49478,
+          1
+        ],
+        [
+          49536,
+          1
+        ],
+        [
+          49616,
+          1
+        ],
+        [
+          50075,
+          1
+        ],
+        [
+          50151,
+          1
+        ],
+        [
+          50222,
+          1
+        ],
+        [
+          57444,
+          1
+        ],
+        [
+          58391,
+          1
+        ],
+        [
+          58409,
+          1
+        ],
+        [
+          59193,
+          1
+        ],
+        [
+          60413,
+          1
+        ],
+        [
+          60422,
+          1
+        ]
+      ]
+    ],
+    "proposed_native_row_key_sha256": "36c10df91bd844086786344beb942a2fd271e2cb9fafc6712f9168d215a7a446",
+    "Boolean_bound": 12,
+    "assignment_enumerations": 0,
+    "new_domain_census_calls": 0,
+    "native_calls": 0
+  },
+  "source_finalization_milliseconds": 2761,
+  "source_bound_milliseconds": 30000,
+  "outer_owner_milliseconds": 2851,
+  "outer_owner_bound_milliseconds": 45000,
+  "structural_checker_calls": 1,
+  "assignment_enumerations": 0,
+  "new_domain_or_triangle_census_calls": 0,
+  "optimizer_calls": 0,
+  "native_model_builds": 0,
+  "automatic_retries": 0,
+  "attainment_scope": "At-most-one inequalities for the eighteen target colors and target endpoint activations only.",
+  "full_model_feasible_witness_claimed": false,
+  "full_model_continuous_nonredundancy_claimed": false,
+  "all18_original_equality_quotas_saturated_by_witness_claimed": false,
+  "fractional_control_scope": "The restricted color/activation relaxation only; not the full current model.",
+  "native_append_authorized_by_this_receipt": false,
+  "independent_complete_native_replay_required": true,
+  "graph_constructed": false,
+  "whole_component_excluded": false
+}

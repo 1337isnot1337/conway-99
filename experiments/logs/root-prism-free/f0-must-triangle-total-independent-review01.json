@@ -1,0 +1,1363 @@
+{
+  "schema": "conway99.f0.must-triangle-total-independent-review.v1",
+  "status": "PASS_INDEPENDENT_CONTINUOUS_18_BOUND_CERTIFICATE",
+  "reviewer": "master_review",
+  "note": {
+    "path": "research/root_prism_free_f0_must_triangle_total_bound.md",
+    "bytes": 14455,
+    "sha256": "7db179dcb3836166ab0c1fb7908351ce7b6e9bd1f23f63657c3fd13e0305f260",
+    "git_blob": "3d2d7e2928ce44292bc4adcf87b6978f974de4de"
+  },
+  "source_bindings": {
+    "domain": {
+      "path": "experiments/logs/root-prism-free/f0-exterior-row-domains02.json.gz",
+      "bytes": 52094,
+      "sha256": "665563b75fa6fc23caa9a002621cc4047809af28543b52b5c2a7ffa592d05dd4",
+      "git_blob": "99d66387b71a752c39828c9a5f10b5103354db42",
+      "raw_sha256": "fa3bd2e5bb541d58cb647aa1d3df95a9d3c17e394836a657ad4f4bf6eb5f6bfe",
+      "encoding": "base64-gzip"
+    },
+    "indicator_inventory": {
+      "path": "experiments/logs/root-prism-free/f0-spectral-triangle-support-indicator-inventory01.json",
+      "sha256": "8606d51ced038b40135fa22bc16d056873b80c16c26d2c34db7e24ac8effd2c7",
+      "git_blob": "8188edc640d4dd896df0e64c4e08db4c78627e96",
+      "bytes": 1056971,
+      "encoding": "utf-8"
+    },
+    "original_selector_source": {
+      "path": "experiments/workspace/root_prism_free_f0_direct_literal_model.py",
+      "bytes": 33344,
+      "sha256": "b500336db29820777afb59076384a48382fa54453fce5b232a072719893cea40",
+      "git_blob": "3c5e9c810af89818a6da0417e1bdb9a878f896c3"
+    },
+    "endpoint_degree_mixed_source": {
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "bytes": 15210,
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2",
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70"
+    }
+  },
+  "complete_note_read": true,
+  "mathematical_proof": {
+    "core_identity": "Summing the18 quota-one original Gram equations gives sum k0(a)*x_a=18. The9 other component edges have zero quota and empty supports.",
+    "orientation": "The84 target edges are each assigned to one distinct incident tail; every tail has k0=1. Each original endpoint constraint gives y_e<=x_tail.",
+    "exact_slack_identity": "18-sum_target y = sum_oriented_target (x_tail-y_e) + sum_a_outside_tails k0(a)*x_a.",
+    "every_right_side_term_nonnegative_in_continuous_parent": true,
+    "no_integrality_needed": true,
+    "no_triangle_indicator_needed": true,
+    "sharpness_or_attainability_claimed": false,
+    "total_indicator_identity": "All5364 target-indicator incidences are distinct, so sum_recorded_triangle t = sum84target y.",
+    "graph_triangle_count_scope": "In an actual split18+18 completion, lambda=1 gives t_D(v)=1+k0(v)+k1(v). Global prism-freeness forces both shell components triangle-free, giving sum k_i=18 and T_D=32. A split without triangle-freeness instead gives T_D+T_C0+T_C1=32.",
+    "no_alignment_or_isomorphism_assumption": true,
+    "proposed_32_bound_redundant": true
+  },
+  "independent_saved_metadata_check": {
+    "status": "PASS_INDEPENDENT_SAVED_84_EDGE_ORIENTATION_AND_18_GRAM_CERTIFICATE",
+    "fixed_metadata_only": true,
+    "orientations_checked": 84,
+    "original_Gram_equations_checked": 18,
+    "full_coefficient_vector_entries_checked": 480,
+    "component_edge_quotas_checked": 27,
+    "zero_quota_empty_edges": 9,
+    "selected_Gram_rows": [
+      {
+        "sites": [
+          0,
+          6
+        ],
+        "original": 6,
+        "native": 4445,
+        "quota": 1,
+        "support": [
+          0,
+          8,
+          16,
+          24,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38
+        ]
+      },
+      {
+        "sites": [
+          0,
+          12
+        ],
+        "original": 12,
+        "native": 4450,
+        "quota": 1,
+        "support": [
+          4,
+          12,
+          20,
+          28,
+          42,
+          48,
+          54,
+          59,
+          64,
+          65,
+          66
+        ]
+      },
+      {
+        "sites": [
+          1,
+          7
+        ],
+        "original": 24,
+        "native": 4460,
+        "quota": 1,
+        "support": [
+          72,
+          80,
+          88,
+          96,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110
+        ]
+      },
+      {
+        "sites": [
+          1,
+          13
+        ],
+        "original": 30,
+        "native": 4465,
+        "quota": 1,
+        "support": [
+          76,
+          84,
+          92,
+          100,
+          114,
+          120,
+          126,
+          131,
+          136,
+          137,
+          138
+        ]
+      },
+      {
+        "sites": [
+          2,
+          8
+        ],
+        "original": 41,
+        "native": 4475,
+        "quota": 1,
+        "support": [
+          1,
+          73,
+          146,
+          154,
+          168,
+          175,
+          176,
+          177,
+          178,
+          179,
+          180
+        ]
+      },
+      {
+        "sites": [
+          2,
+          14
+        ],
+        "original": 47,
+        "native": 4480,
+        "quota": 1,
+        "support": [
+          5,
+          77,
+          150,
+          158,
+          165,
+          172,
+          184,
+          189,
+          195,
+          197,
+          198
+        ]
+      },
+      {
+        "sites": [
+          3,
+          9
+        ],
+        "original": 57,
+        "native": 4488,
+        "quota": 1,
+        "support": [
+          9,
+          81,
+          202,
+          210,
+          217,
+          225,
+          232,
+          233,
+          234,
+          235,
+          236
+        ]
+      },
+      {
+        "sites": [
+          3,
+          15
+        ],
+        "original": 63,
+        "native": 4493,
+        "quota": 1,
+        "support": [
+          13,
+          85,
+          206,
+          214,
+          222,
+          229,
+          240,
+          245,
+          249,
+          252,
+          254
+        ]
+      },
+      {
+        "sites": [
+          4,
+          10
+        ],
+        "original": 72,
+        "native": 4501,
+        "quota": 1,
+        "support": [
+          19,
+          91,
+          147,
+          203,
+          258,
+          272,
+          278,
+          284,
+          285,
+          286,
+          287
+        ]
+      },
+      {
+        "sites": [
+          4,
+          16
+        ],
+        "original": 78,
+        "native": 4506,
+        "quota": 1,
+        "support": [
+          23,
+          95,
+          151,
+          207,
+          263,
+          270,
+          277,
+          283,
+          290,
+          294,
+          295
+        ]
+      },
+      {
+        "sites": [
+          5,
+          11
+        ],
+        "original": 86,
+        "native": 4512,
+        "quota": 1,
+        "support": [
+          27,
+          99,
+          155,
+          211,
+          298,
+          306,
+          313,
+          324,
+          325,
+          326,
+          327
+        ]
+      },
+      {
+        "sites": [
+          5,
+          17
+        ],
+        "original": 92,
+        "native": 4517,
+        "quota": 1,
+        "support": [
+          31,
+          103,
+          159,
+          215,
+          303,
+          311,
+          318,
+          323,
+          330,
+          333,
+          335
+        ]
+      },
+      {
+        "sites": [
+          6,
+          13
+        ],
+        "original": 100,
+        "native": 4524,
+        "quota": 1,
+        "support": [
+          164,
+          221,
+          260,
+          300,
+          337,
+          343,
+          349,
+          355,
+          360,
+          364,
+          365,
+          366
+        ]
+      },
+      {
+        "sites": [
+          7,
+          12
+        ],
+        "original": 110,
+        "native": 4533,
+        "quota": 1,
+        "support": [
+          170,
+          227,
+          266,
+          307,
+          336,
+          372,
+          378,
+          384,
+          390,
+          391,
+          392,
+          393
+        ]
+      },
+      {
+        "sites": [
+          8,
+          15
+        ],
+        "original": 123,
+        "native": 4546,
+        "quota": 1,
+        "support": [
+          44,
+          116,
+          276,
+          317,
+          375,
+          405,
+          411,
+          417,
+          421,
+          425,
+          427,
+          430
+        ]
+      },
+      {
+        "sites": [
+          9,
+          14
+        ],
+        "original": 131,
+        "native": 4553,
+        "quota": 1,
+        "support": [
+          49,
+          121,
+          281,
+          321,
+          344,
+          380,
+          404,
+          434,
+          442,
+          445,
+          446,
+          447
+        ]
+      },
+      {
+        "sites": [
+          10,
+          17
+        ],
+        "original": 142,
+        "native": 4564,
+        "quota": 1,
+        "support": [
+          58,
+          130,
+          186,
+          242,
+          353,
+          413,
+          437,
+          455,
+          459,
+          462,
+          465,
+          467
+        ]
+      },
+      {
+        "sites": [
+          11,
+          16
+        ],
+        "original": 148,
+        "native": 4570,
+        "quota": 1,
+        "support": [
+          62,
+          134,
+          190,
+          246,
+          358,
+          388,
+          418,
+          454,
+          470,
+          476,
+          478,
+          479
+        ]
+      }
+    ],
+    "complete_orientations": [
+      {
+        "edge_id": 193,
+        "tail": 0,
+        "head": 390,
+        "native_endpoint_row": 17548,
+        "tail_core_edge": [
+          0,
+          6
+        ]
+      },
+      {
+        "edge_id": 471,
+        "tail": 1,
+        "head": 445,
+        "native_endpoint_row": 18104,
+        "tail_core_edge": [
+          2,
+          8
+        ]
+      },
+      {
+        "edge_id": 1385,
+        "tail": 4,
+        "head": 337,
+        "native_endpoint_row": 19932,
+        "tail_core_edge": [
+          0,
+          12
+        ]
+      },
+      {
+        "edge_id": 1675,
+        "tail": 5,
+        "head": 405,
+        "native_endpoint_row": 20512,
+        "tail_core_edge": [
+          2,
+          14
+        ]
+      },
+      {
+        "edge_id": 2409,
+        "tail": 8,
+        "head": 73,
+        "native_endpoint_row": 21980,
+        "tail_core_edge": [
+          0,
+          6
+        ]
+      },
+      {
+        "edge_id": 2817,
+        "tail": 9,
+        "head": 177,
+        "native_endpoint_row": 22796,
+        "tail_core_edge": [
+          3,
+          9
+        ]
+      },
+      {
+        "edge_id": 3650,
+        "tail": 12,
+        "head": 77,
+        "native_endpoint_row": 24462,
+        "tail_core_edge": [
+          0,
+          12
+        ]
+      },
+      {
+        "edge_id": 4042,
+        "tail": 13,
+        "head": 165,
+        "native_endpoint_row": 25246,
+        "tail_core_edge": [
+          3,
+          15
+        ]
+      },
+      {
+        "edge_id": 4917,
+        "tail": 16,
+        "head": 109,
+        "native_endpoint_row": 26996,
+        "tail_core_edge": [
+          0,
+          6
+        ]
+      },
+      {
+        "edge_id": 5858,
+        "tail": 19,
+        "head": 96,
+        "native_endpoint_row": 28878,
+        "tail_core_edge": [
+          4,
+          10
+        ]
+      },
+      {
+        "edge_id": 6155,
+        "tail": 20,
+        "head": 126,
+        "native_endpoint_row": 29472,
+        "tail_core_edge": [
+          0,
+          12
+        ]
+      },
+      {
+        "edge_id": 7084,
+        "tail": 23,
+        "head": 100,
+        "native_endpoint_row": 31330,
+        "tail_core_edge": [
+          4,
+          16
+        ]
+      },
+      {
+        "edge_id": 9990,
+        "tail": 33,
+        "head": 109,
+        "native_endpoint_row": 37142,
+        "tail_core_edge": [
+          0,
+          6
+        ]
+      },
+      {
+        "edge_id": 10554,
+        "tail": 35,
+        "head": 104,
+        "native_endpoint_row": 38270,
+        "tail_core_edge": [
+          0,
+          6
+        ]
+      },
+      {
+        "edge_id": 11025,
+        "tail": 37,
+        "head": 88,
+        "native_endpoint_row": 39212,
+        "tail_core_edge": [
+          0,
+          6
+        ]
+      },
+      {
+        "edge_id": 12449,
+        "tail": 42,
+        "head": 136,
+        "native_endpoint_row": 42060,
+        "tail_core_edge": [
+          0,
+          12
+        ]
+      },
+      {
+        "edge_id": 15559,
+        "tail": 54,
+        "head": 92,
+        "native_endpoint_row": 48280,
+        "tail_core_edge": [
+          0,
+          12
+        ]
+      },
+      {
+        "edge_id": 18563,
+        "tail": 65,
+        "head": 126,
+        "native_endpoint_row": 54288,
+        "tail_core_edge": [
+          0,
+          12
+        ]
+      },
+      {
+        "edge_id": 10523,
+        "tail": 72,
+        "head": 35,
+        "native_endpoint_row": 38209,
+        "tail_core_edge": [
+          1,
+          7
+        ]
+      },
+      {
+        "edge_id": 10524,
+        "tail": 73,
+        "head": 35,
+        "native_endpoint_row": 38211,
+        "tail_core_edge": [
+          2,
+          8
+        ]
+      },
+      {
+        "edge_id": 12391,
+        "tail": 76,
+        "head": 42,
+        "native_endpoint_row": 41945,
+        "tail_core_edge": [
+          1,
+          13
+        ]
+      },
+      {
+        "edge_id": 12392,
+        "tail": 77,
+        "head": 42,
+        "native_endpoint_row": 41947,
+        "tail_core_edge": [
+          2,
+          14
+        ]
+      },
+      {
+        "edge_id": 24553,
+        "tail": 88,
+        "head": 360,
+        "native_endpoint_row": 66268,
+        "tail_core_edge": [
+          1,
+          7
+        ]
+      },
+      {
+        "edge_id": 25351,
+        "tail": 91,
+        "head": 479,
+        "native_endpoint_row": 67864,
+        "tail_core_edge": [
+          4,
+          10
+        ]
+      },
+      {
+        "edge_id": 25474,
+        "tail": 92,
+        "head": 336,
+        "native_endpoint_row": 68110,
+        "tail_core_edge": [
+          1,
+          13
+        ]
+      },
+      {
+        "edge_id": 26276,
+        "tail": 95,
+        "head": 455,
+        "native_endpoint_row": 69714,
+        "tail_core_edge": [
+          4,
+          16
+        ]
+      },
+      {
+        "edge_id": 26389,
+        "tail": 96,
+        "head": 285,
+        "native_endpoint_row": 69940,
+        "tail_core_edge": [
+          1,
+          7
+        ]
+      },
+      {
+        "edge_id": 27146,
+        "tail": 99,
+        "head": 285,
+        "native_endpoint_row": 71454,
+        "tail_core_edge": [
+          5,
+          11
+        ]
+      },
+      {
+        "edge_id": 27345,
+        "tail": 100,
+        "head": 270,
+        "native_endpoint_row": 71852,
+        "tail_core_edge": [
+          1,
+          13
+        ]
+      },
+      {
+        "edge_id": 28097,
+        "tail": 103,
+        "head": 270,
+        "native_endpoint_row": 73356,
+        "tail_core_edge": [
+          5,
+          17
+        ]
+      },
+      {
+        "edge_id": 9985,
+        "tail": 104,
+        "head": 33,
+        "native_endpoint_row": 37133,
+        "tail_core_edge": [
+          1,
+          7
+        ]
+      },
+      {
+        "edge_id": 30,
+        "tail": 107,
+        "head": 0,
+        "native_endpoint_row": 17223,
+        "tail_core_edge": [
+          1,
+          7
+        ]
+      },
+      {
+        "edge_id": 5871,
+        "tail": 109,
+        "head": 19,
+        "native_endpoint_row": 28905,
+        "tail_core_edge": [
+          1,
+          7
+        ]
+      },
+      {
+        "edge_id": 1241,
+        "tail": 114,
+        "head": 4,
+        "native_endpoint_row": 19645,
+        "tail_core_edge": [
+          1,
+          13
+        ]
+      },
+      {
+        "edge_id": 7107,
+        "tail": 126,
+        "head": 23,
+        "native_endpoint_row": 31377,
+        "tail_core_edge": [
+          1,
+          13
+        ]
+      },
+      {
+        "edge_id": 18571,
+        "tail": 136,
+        "head": 65,
+        "native_endpoint_row": 54305,
+        "tail_core_edge": [
+          1,
+          13
+        ]
+      },
+      {
+        "edge_id": 38681,
+        "tail": 154,
+        "head": 236,
+        "native_endpoint_row": 94524,
+        "tail_core_edge": [
+          2,
+          8
+        ]
+      },
+      {
+        "edge_id": 38887,
+        "tail": 155,
+        "head": 236,
+        "native_endpoint_row": 94936,
+        "tail_core_edge": [
+          5,
+          11
+        ]
+      },
+      {
+        "edge_id": 39516,
+        "tail": 158,
+        "head": 245,
+        "native_endpoint_row": 96194,
+        "tail_core_edge": [
+          2,
+          14
+        ]
+      },
+      {
+        "edge_id": 39720,
+        "tail": 159,
+        "head": 245,
+        "native_endpoint_row": 96602,
+        "tail_core_edge": [
+          5,
+          17
+        ]
+      },
+      {
+        "edge_id": 3731,
+        "tail": 165,
+        "head": 12,
+        "native_endpoint_row": 24625,
+        "tail_core_edge": [
+          2,
+          14
+        ]
+      },
+      {
+        "edge_id": 42814,
+        "tail": 176,
+        "head": 217,
+        "native_endpoint_row": 102790,
+        "tail_core_edge": [
+          2,
+          8
+        ]
+      },
+      {
+        "edge_id": 2499,
+        "tail": 177,
+        "head": 8,
+        "native_endpoint_row": 22161,
+        "tail_core_edge": [
+          2,
+          8
+        ]
+      },
+      {
+        "edge_id": 43509,
+        "tail": 180,
+        "head": 210,
+        "native_endpoint_row": 104180,
+        "tail_core_edge": [
+          2,
+          8
+        ]
+      },
+      {
+        "edge_id": 45135,
+        "tail": 189,
+        "head": 214,
+        "native_endpoint_row": 107432,
+        "tail_core_edge": [
+          2,
+          14
+        ]
+      },
+      {
+        "edge_id": 46815,
+        "tail": 198,
+        "head": 249,
+        "native_endpoint_row": 110792,
+        "tail_core_edge": [
+          2,
+          14
+        ]
+      },
+      {
+        "edge_id": 38864,
+        "tail": 202,
+        "head": 155,
+        "native_endpoint_row": 94891,
+        "tail_core_edge": [
+          3,
+          9
+        ]
+      },
+      {
+        "edge_id": 47704,
+        "tail": 203,
+        "head": 327,
+        "native_endpoint_row": 112570,
+        "tail_core_edge": [
+          4,
+          10
+        ]
+      },
+      {
+        "edge_id": 39694,
+        "tail": 206,
+        "head": 159,
+        "native_endpoint_row": 96551,
+        "tail_core_edge": [
+          3,
+          15
+        ]
+      },
+      {
+        "edge_id": 48358,
+        "tail": 207,
+        "head": 323,
+        "native_endpoint_row": 113878,
+        "tail_core_edge": [
+          4,
+          16
+        ]
+      },
+      {
+        "edge_id": 48938,
+        "tail": 210,
+        "head": 427,
+        "native_endpoint_row": 115038,
+        "tail_core_edge": [
+          3,
+          9
+        ]
+      },
+      {
+        "edge_id": 49076,
+        "tail": 211,
+        "head": 467,
+        "native_endpoint_row": 115314,
+        "tail_core_edge": [
+          5,
+          11
+        ]
+      },
+      {
+        "edge_id": 49535,
+        "tail": 214,
+        "head": 404,
+        "native_endpoint_row": 116232,
+        "tail_core_edge": [
+          3,
+          15
+        ]
+      },
+      {
+        "edge_id": 49682,
+        "tail": 215,
+        "head": 454,
+        "native_endpoint_row": 116526,
+        "tail_core_edge": [
+          5,
+          17
+        ]
+      },
+      {
+        "edge_id": 43001,
+        "tail": 217,
+        "head": 177,
+        "native_endpoint_row": 103165,
+        "tail_core_edge": [
+          3,
+          9
+        ]
+      },
+      {
+        "edge_id": 1564,
+        "tail": 222,
+        "head": 5,
+        "native_endpoint_row": 20291,
+        "tail_core_edge": [
+          3,
+          15
+        ]
+      },
+      {
+        "edge_id": 363,
+        "tail": 233,
+        "head": 1,
+        "native_endpoint_row": 17889,
+        "tail_core_edge": [
+          3,
+          9
+        ]
+      },
+      {
+        "edge_id": 42831,
+        "tail": 236,
+        "head": 176,
+        "native_endpoint_row": 102825,
+        "tail_core_edge": [
+          3,
+          9
+        ]
+      },
+      {
+        "edge_id": 46811,
+        "tail": 245,
+        "head": 198,
+        "native_endpoint_row": 110785,
+        "tail_core_edge": [
+          3,
+          15
+        ]
+      },
+      {
+        "edge_id": 40802,
+        "tail": 249,
+        "head": 165,
+        "native_endpoint_row": 98767,
+        "tail_core_edge": [
+          3,
+          15
+        ]
+      },
+      {
+        "edge_id": 56904,
+        "tail": 270,
+        "head": 333,
+        "native_endpoint_row": 130970,
+        "tail_core_edge": [
+          4,
+          16
+        ]
+      },
+      {
+        "edge_id": 57869,
+        "tail": 278,
+        "head": 327,
+        "native_endpoint_row": 132900,
+        "tail_core_edge": [
+          4,
+          10
+        ]
+      },
+      {
+        "edge_id": 49611,
+        "tail": 283,
+        "head": 215,
+        "native_endpoint_row": 116385,
+        "tail_core_edge": [
+          4,
+          16
+        ]
+      },
+      {
+        "edge_id": 58653,
+        "tail": 285,
+        "head": 306,
+        "native_endpoint_row": 134468,
+        "tail_core_edge": [
+          4,
+          10
+        ]
+      },
+      {
+        "edge_id": 48996,
+        "tail": 287,
+        "head": 211,
+        "native_endpoint_row": 115155,
+        "tail_core_edge": [
+          4,
+          10
+        ]
+      },
+      {
+        "edge_id": 59873,
+        "tail": 295,
+        "head": 323,
+        "native_endpoint_row": 136908,
+        "tail_core_edge": [
+          4,
+          16
+        ]
+      },
+      {
+        "edge_id": 57851,
+        "tail": 306,
+        "head": 278,
+        "native_endpoint_row": 132865,
+        "tail_core_edge": [
+          5,
+          11
+        ]
+      },
+      {
+        "edge_id": 26195,
+        "tail": 311,
+        "head": 95,
+        "native_endpoint_row": 69553,
+        "tail_core_edge": [
+          5,
+          17
+        ]
+      },
+      {
+        "edge_id": 48205,
+        "tail": 323,
+        "head": 206,
+        "native_endpoint_row": 113573,
+        "tail_core_edge": [
+          5,
+          17
+        ]
+      },
+      {
+        "edge_id": 25269,
+        "tail": 325,
+        "head": 91,
+        "native_endpoint_row": 67701,
+        "tail_core_edge": [
+          5,
+          11
+        ]
+      },
+      {
+        "edge_id": 47548,
+        "tail": 327,
+        "head": 202,
+        "native_endpoint_row": 112259,
+        "tail_core_edge": [
+          5,
+          11
+        ]
+      },
+      {
+        "edge_id": 59882,
+        "tail": 333,
+        "head": 295,
+        "native_endpoint_row": 136927,
+        "tail_core_edge": [
+          5,
+          17
+        ]
+      },
+      {
+        "edge_id": 21635,
+        "tail": 336,
+        "head": 76,
+        "native_endpoint_row": 60433,
+        "tail_core_edge": [
+          7,
+          12
+        ]
+      },
+      {
+        "edge_id": 6306,
+        "tail": 337,
+        "head": 20,
+        "native_endpoint_row": 29775,
+        "tail_core_edge": [
+          6,
+          13
+        ]
+      },
+      {
+        "edge_id": 20650,
+        "tail": 360,
+        "head": 72,
+        "native_endpoint_row": 58463,
+        "tail_core_edge": [
+          6,
+          13
+        ]
+      },
+      {
+        "edge_id": 5101,
+        "tail": 390,
+        "head": 16,
+        "native_endpoint_row": 27365,
+        "tail_core_edge": [
+          7,
+          12
+        ]
+      },
+      {
+        "edge_id": 4181,
+        "tail": 404,
+        "head": 13,
+        "native_endpoint_row": 25525,
+        "tail_core_edge": [
+          9,
+          14
+        ]
+      },
+      {
+        "edge_id": 39624,
+        "tail": 405,
+        "head": 158,
+        "native_endpoint_row": 96411,
+        "tail_core_edge": [
+          8,
+          15
+        ]
+      },
+      {
+        "edge_id": 2962,
+        "tail": 427,
+        "head": 9,
+        "native_endpoint_row": 23087,
+        "tail_core_edge": [
+          8,
+          15
+        ]
+      },
+      {
+        "edge_id": 38813,
+        "tail": 445,
+        "head": 154,
+        "native_endpoint_row": 94789,
+        "tail_core_edge": [
+          9,
+          14
+        ]
+      },
+      {
+        "edge_id": 28202,
+        "tail": 454,
+        "head": 103,
+        "native_endpoint_row": 73567,
+        "tail_core_edge": [
+          11,
+          16
+        ]
+      },
+      {
+        "edge_id": 48450,
+        "tail": 455,
+        "head": 207,
+        "native_endpoint_row": 114063,
+        "tail_core_edge": [
+          10,
+          17
+        ]
+      },
+      {
+        "edge_id": 27249,
+        "tail": 467,
+        "head": 99,
+        "native_endpoint_row": 71661,
+        "tail_core_edge": [
+          10,
+          17
+        ]
+      },
+      {
+        "edge_id": 47805,
+        "tail": 479,
+        "head": 203,
+        "native_endpoint_row": 112773,
+        "tail_core_edge": [
+          11,
+          16
+        ]
+      }
+    ],
+    "orientation_value_sha256": "42efb9f4a1fbca4160c8c8fd8052d726356ef134386bcdd4f17c20095aef57df",
+    "k0_histogram": {
+      "0": 276,
+      "1": 204
+    },
+    "outside_nonzero_slack_selectors": 120,
+    "target_degree_histogram": {
+      "1": 12,
+      "2": 60,
+      "3": 12
+    },
+    "target_components": [
+      {
+        "vertices": 42,
+        "edges": 42
+      },
+      {
+        "vertices": 42,
+        "edges": 42
+      }
+    ],
+    "directed_cycle_lengths": [
+      18,
+      18
+    ],
+    "complete_indicator_sum_identity_checked": 5364,
+    "bound": 18,
+    "continuous_linear_implication": true,
+    "new_domain_or_triangle_census_calls": 0,
+    "producer_or_extractor_calls": 0,
+    "native_model_builds": 0,
+    "optimizer_calls": 0,
+    "milliseconds": 1147
+  },
+  "verification_method": [
+    "Parse the two complete printed tables in the immutable note.",
+    "Decode and hash-check the frozen domain archive and raw JSON; hash-check the saved indicator inventory.",
+    "Reconstruct the171 original Gram row metadata in lexicographic site-pair order from the fixed21-core adjacency and480 saved signatures, using the frozen selector source's4440 native start.",
+    "Compare every one of the18 claimed row supports, quotas, original IDs, native IDs and term counts; sum their entire480-entry coefficient vectors.",
+    "Compare every printed target edge to the accepted target inventory, frozen neighbor memberships, original endpoint row formula, unique tail and tail's core edge.",
+    "Check the complete orientation digest, slack coefficient equality, target component/cycle summaries and all5364 target-indicator incidence multiplicities."
+  ],
+  "scope": {
+    "saved_certificate_verification_only": true,
+    "original_native_messages_decoded": false,
+    "source_producers_or_extractors_imported_or_executed": false,
+    "new_eligible_edge_domain_or_triangle_census_calls": 0,
+    "support_family_reenumerations": 0,
+    "native_model_builds": 0,
+    "optimizer_calls": 0,
+    "graph_constructed": false,
+    "whole_component_excluded": false,
+    "current_model_changed": false
+  },
+  "blockers": []
+}
