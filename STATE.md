@@ -2,6 +2,8 @@
 
 The endpoint is an explicit graph satisfying srg(99,14,1,2), or a verified contradiction that applies to every such graph. Neither has been obtained. All computations here are local and unrefereed.
 
+The [doubled Hoffman–Singleton construction](research/doubled-hoffman-singleton.md) gives a 14-regular graph on 99 vertices with a verified CAISc score of 4,313/4,950. It has 588 residuals of $-1$ and 49 of $+12$ over unordered pairs. It is the unique maximizer among 14-regular 99-vertex graphs with 49 disjoint twin pairs. The same note gives a twin-free example scoring 4,272 and an asymmetric example scoring 4,238, both with maximum residual five. The graph6 artifacts and independent pair and matrix checks are included.
+
 ## Scope of the unrestricted computations
 
 - [`subgraph_counts.py`](experiments/workspace/subgraph_counts.py) enumerates all induced graph types through a specified order that avoid a diamond and a (non-induced) K₂,₃. Integer extension equations count outside vertices, neighbors of a marked vertex, and common neighbors of a marked pair. It found no contradiction modulo 2 through order ten (180,445 equations, rank 46,268). [`inspect_counts.py`](experiments/workspace/inspect_counts.py) checks the original equations on all subsets of the 3-by-3 rook graph. Its floating LP reported infeasibility on both 99 and the known 243 parameters. That solver status was spurious on 99.
@@ -20,6 +22,16 @@ The faces with odd holonomy are therefore both the binary coboundary of edge par
 **One fixed point of an involution.** Every swapped adjacent pair has a unique fixed common neighbor. For a unique fixed point it must lie in that point's neighborhood. If e is the number of such pairs, the trace of the adjacency on the 49-dimensional odd space gives e divisible by 7, and the involution's action on the seven matched edges at the root gives e odd. Hence e=7. The action swaps all seven signed axes and pairs all 84 outer points into opposite-root pairs. Each far pair has exactly one full interface to another far pair, since its two common neighbors form a swapped pair. In the even quotient the far matrix B has 42 vertices, one double edge and ten single edges per row. If U is the signless axis incidence (each pair of axes occurs twice), then UB=4J−2U and B²+B=12I+4J−UᵀU. The signed lift also has to be satisfied.
 
 We tested an order-seven rotation on the **quotient** taking the seven axes cyclically. There are six far orbits of size seven. The real symmetric row-sum matrix R satisfies R1=12·1 and R²+R=12I+24J. On a nontrivial rotation character the 7-dimensional near/far sector has only eigenvalues 3,−4. Its trace is 1−c, where each nonzero offset has the same total c of within-orbit edges, since a rational linear combination of seventh roots of unity has constant coefficients on the six nonzero offsets. No doubled edge can lie in its own orbit because its mates are a perfect matching and seven is odd. Thus 0≤c≤6, and 1−c divisible by seven gives c=1. Then tr(R)=6 with nonnegative even diagonal and diagonal less than 6 from the row-square equations. Both possible diagonal profiles were exhausted by [`quotient_rows.py`](experiments/workspace/quotient_rows.py) with no matrix. This does not exclude a general involution.
+
+The [Fano-plane square-pairing exclusion](research/involutions/fano-square-pairing.md) compresses the 42 far orbits to 21 squares. If the orbits pair by the three incident label pairs on each Fano line, the resulting 104 interface classes all fail an exact Gram-completion test. This excludes the pairing even without any symmetry of its interfaces.
+
+The [distinct-endpoint theorem](research/involutions/distinct-endpoint-squares.md) removes the Fano-plane assumption. If all 21 squares have one shared axis, at least one pair of endpoints must occur twice or more. The signed-root representation in rank seven violates an orbit degree bound, and the balanced representation violates a squared-norm congruence modulo 16.
+
+With repeated endpoint pairs allowed, the [endpoint graph must be disconnected](research/involutions/connected-endpoint-squares.md) whenever every square has one shared axis. A three-axis component would need three exceptional tip orbits to pair among themselves. Thus only component sizes $6+1$ remain.
+
+The [one-shared-axis exclusion](research/involutions/one-shared-axis.md) rules out the last component of size six. Any one-fixed-point involution therefore has two paired far orbits with disjoint or identical axis labels. Its final fifteen norm budgets have a standard-library exhaustive checker.
+
+For arbitrary mixtures of square types, [no endpoint component spans six axes](research/involutions/six-axis-frame.md). Its five tree differences would partition thirty directed pairs. The 26 potential arrays all violate one or two quotient rows.
 
 ## Sources and replay
 
@@ -79,3 +91,57 @@ The integral inequality for bᵀ(3I−A)b and the equivalence between a norm-14 
 Prior-art correction: ProofAtlas's August 2026 Conway research record already reports elimination of 28, 30, and 32 by different opposite-star methods. Our rank frontier is an independent confirmation. See [`level_seven.md`](research/eigenlattices/level_seven.md) for the source and distinction.
 
 The cube-class argument in [`cube_shells.md`](research/eigenlattices/cube_shells.md) gives joint bounds on the two shortest integral shells. The rank-34 through rank-40 averaged maximal-extension scalar tests in [`averaged_extensions.py`](experiments/workspace/averaged_extensions.py) remain rationally feasible. [`shell_profiles.py`](experiments/workspace/shell_profiles.py) and [`profile_refinement.py`](experiments/workspace/profile_refinement.py) test exact coordinate profiles against the common-neighbor equations; actual rook and ternary Golay eigenvectors pass the neighborhood identities.
+
+The [triangle witness bound](research/grids-and-triangles/triangle-witness-bound.md) strengthens the lower bound on disjoint triangle pairs with two cross-edges to 1,203. The [fifteen-grid root analysis](research/grids-and-triangles/fifteen-grid-root.md) leaves only the bipartite missing-axis pattern. The three eight-point sets still require simultaneous completion.
+
+The [two-full-axis proof](research/grids-and-triangles/two-full-axes.md) excludes any two intersecting triangles that each lie in six grids. The [complete replay](experiments/logs/grids-and-triangles/two-full-exhaustion.log) covers every even support size, using exact semidefinite and rank tests followed by common-neighbor quotas and a nonsquare determinant on the ordinary core. The [consequences](research/grids-and-triangles/disjoint-full-bounds.md) are 114 grids globally, 14 through a point, at least 2,106 percolating nonedges, and a triangle lying in at most two grids. Reproduce with `make verify-full-axes` and `make verify`.
+
+The [fourteen-grid root exclusion](research/grids-and-triangles/fourteen-grid-root.md) leaves at most thirteen grids through each point, giving at least 32 percolating partners there. The remaining seven-edge support has 41 cell populations, each inconsistent with its four-point eigenvector equations.
+
+The [thirteen-grid classification](research/grids-and-triangles/fourteen-grid-root.md#thirteen-grids) leaves two bipartite missing-axis graphs. Both have a full axis, so a vertex outside all full triangles has at most twelve grids.
+
+Among any eight grids through a root, [some disjoint matching fails to preserve opposite corners](research/grids-and-triangles/aligned-grid-subfamilies.md). This gives at most seven grids at the unique fixed point of an involution. The integer checker exhausts 97 supports and 22,216 signings.
+
+A [grid cannot have grids on all ten disjoint pairs](research/grids-and-triangles/central-grid-neighborhood.md). The $K_{2,4}$ thirteen-grid support is therefore impossible. Only $K_{3,3}$ minus an edge remains.
+
+Every rooted grid [has at least three nongrid pairs among its ten disjoint axis pairs](research/grids-and-triangles/twelve-grid-bound.md). This excludes the remaining thirteen-grid support: **at most twelve grids pass through any vertex**, and each vertex has at least 36 percolating nonneighbors.
+
+Each rooted grid [has at least four nongrid pairs disjoint from its axis pair](research/grids-and-triangles/eleven-grid-bound.md). All four three-edge configurations fail the exterior incidence tests. This excludes twelve grids through a vertex, giving **at most eleven** and at least **40 percolating nonneighbors** at every vertex.
+
+For any rooted grid, [at least five of the ten disjoint axis pairs must be nongrids](research/grids-and-triangles/four-missing-cones.md). The six four-edge shapes give 2,670 signed neighborhoods, all excluded by their exact exterior Grams. The four-cycle has 19 possible central-coordinate profiles and 120 signed neighborhoods, all with uniform coordinates.
+
+The [ten-grid bound](research/grids-and-triangles/ten-grid-bound.md) excludes the last eleven-grid support. Two missing pairs have the same defect vector; its squared norm and its signed-axis equations on three square cells are incompatible. Thus every vertex lies on **at most ten grids** and has at least **44 percolating nonneighbors**. At ten grids the cone, cell-sum and shared-block tests leave four possible rooted incidence patterns. Their axis degrees are $(1,1,2,3,3,4,6)$, $(0,2,2,4,4,4,4)$, $(1,1,3,3,3,3,6)$ and $(2,2,2,2,4,4,4)$.
+
+A [triangle on four grids](research/grids-and-triangles/four-grid-triangle.md) has fourteen possible residual cores up to isomorphism. Each determines the sixty-by-twelve incidence matrix of its exterior vertices with the residual neighbors and gives a rank-twelve Schur complement.
+
+The [parallel deficit inequality](research/grids-and-triangles/parallel-triangle-deficits.md) implies that two parallel full triangles force a partition into 33 triangles. There are 35 marked cores for the third parallel line.
+
+The [five-grid branching contradiction](research/grids-and-triangles/branching-full-triangles.md) gives at least three grids having exactly one full triangle per full triangle on average. The global bounds become 113 grids, 2,124 percolating nonedges, 1,206 two-edge triangle pairs, and five triangles on at most two grids.
+
+The [full-component census](research/grids-and-triangles/full-triangle-components.md) reduces 200 candidate components to 48. It gives 24 full triangles and 112 grids as upper bounds, and 2,142 percolating pairs and seven triangles of degree at most two as lower bounds.
+
+The [nine-triangle rook cover exclusion](research/grids-and-triangles/nine-triangle-cover.md) rules out the 27-point cover for every flat row and column transport. Of 1,296 normalizations, five cores admit exterior attachments. All 86 resulting adjacency CNFs have independently verified DRAT refutations.
+
+Applying that exclusion to the induced subgraphs of every forced component leaves 28 pencils, a four-cycle, and $K_{2,3}$. Counting the distinct forced saturated lines gives [at most 22 full triangles](research/grids-and-triangles/full-triangle-components.md#after-the-nine-triangle-cover-exclusion).
+
+The [eight-triangle neighborhood exclusion](research/grids-and-triangles/eight-triangle-cover.md) eliminates the four-cycle and $K_{2,3}$ by 268 checked refutations. Every full component is a pencil, and there are at most 21 full triangles. The pencil classification also gives at least 1,215 disjoint triangle pairs with two cross-edges.
+
+The [shared-witness exclusion](research/grids-and-triangles/double-partner-witness.md) checks all 919,143 locally admissible 38-point cores. A triangle of grid degree two can be charged at most 36 crossing witnesses. This gives at most 105 grids and 20 full triangles, at least 2,268 percolating nonedges, and at least 21 triangles on at most two grids. Replay with `make verify-double-partner`.
+
+The [three-root incidence and capacity bound](research/grids-and-triangles/104-grid-bound.md) gives **at most 104 grids** and **at least 2,286 percolating nonedges**. A prism pair cannot form grids at all three roots of a full triangle. Two ten-grid roots on that triangle force the third to lie on at most eight grids. Every vertex lies on a triangle of grid degree at most two, giving an initial cover bound of 33. The [near-minimal cover classification](research/grids-and-triangles/low-triangle-cover.md) raises this to **36 triangles**. At equality the nine points on two low triangles form a rook grid.
+
+The [zero-grid triangle capacity inequality](research/grids-and-triangles/zero-triangle-capacity.md) raises the lower bound to **39 triangles on at most two grids**. In any partition into 33 triangles on no grids, at least 149 pairs of its triangles have exactly one or two cross-edges.
+
+For any triangle, the spectrum of its induced 60-point exterior is determined by the 36-point cubic neighborhood. The [exterior spectrum and transitivity proof](research/grids-and-triangles/triangle-exterior.md) excludes vertex-transitivity of this induced graph, even for symmetries that need not extend to all 99 vertices. All 66,327 marked orbital unions fail. Replay with `make verify-triangle-exterior`.
+
+The same [exterior argument](research/grids-and-triangles/triangle-exterior.md) characterizes full triangles without computing any group. An exterior is walk-regular exactly when its triangle lies on six grids. At least 211 of the 231 triangles therefore have two exterior vertices with different return-walk counts at some length through eight.
+
+Any nonidentity automorphism of a triangle exterior moves at least 36 points. All prime divisors of the automorphism group lie in $\{2,3,5\}$, and an element of order five must move all sixty points. When the exterior splits into twenty triangles, its full automorphism group acts faithfully on these blocks even without transitivity. See the [fixed-point argument and its mod-five shell constraint](research/grids-and-triangles/triangle-exterior.md).
+
+The [incomplete eight-point grid](research/grids-and-triangles/incomplete_grid.md) has 661 marked profiles on fourteen points and their 85 exterior incidence rows. All eight larger 27-point cores admit explicit integral incidence allocations. Each supplied allocation fails an exterior adjacency quota.
+
+The [triangle-exterior spectral exclusion](research/grids-and-triangles/triangle-exterior.md) extends to every vertex-transitive simple graph with the same spectrum. Dropping the candidate nonedge common-neighbor bound leaves 314 possible orbital unions after the triangle and square tests; all fail at both primes.
+
+For [every induced square](research/grids-and-triangles/incomplete-corner-fibers.md), the automorphisms of its forty exterior corner neighbors preserving all four ten-point fibers are intransitive on each fiber. With a missing opposite-tip edge, vertex degrees separate points in each fiber. With both edges present, exact attachment tests exclude all 6,593 marked transitive cores in the incomplete and complete cases. Without symmetry, each opposite pair of fibers in the latter eight-point configuration induces a connected cubic graph and the full 40-point adjacency matrix $C$ satisfies $-\det(3I-C)=h^2$. Replay with `make verify-incomplete-corners`.
+
+The [unrestricted diagonal census](research/grids-and-triangles/grid-diagonal-halves.md) leaves 3,978 connected cubic types for opposite corner fibers when both opposite-tip edges are present. In a complete grid, subset counts in the seven remaining fibers exclude 41 types. Only three survivors admit an edge cut of size two. Replay with `make verify-grid-diagonals`.

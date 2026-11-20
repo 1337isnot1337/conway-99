@@ -1,0 +1,55 @@
+# Components of full triangles
+
+Join two full triangles when three edges run between them. The edges form a matching. The triangles are then parallel lines in a common grid, since the twelve three-edge partners of a full triangle are precisely the two other parallel lines in each of its six grids. Two full triangles cannot intersect or have two cross-edges.
+
+Within a connected component of this graph $H$, every nonadjacent pair is anticomplete in the original graph. To see this, take adjacent full triangles $T,U$ and their common grid. A third full triangle disjoint from the grid sends three edges into it. It cannot send exactly two to any row, by saturation. Its three row counts are therefore all one or a permutation of $(3,0,0)$. If the third full triangle meets the grid at one point, that point is on the remaining row. It sees one point in each of $T,U$, and its other vertices see only the intersection point in the grid. A full triangle contained in this grid and distinct from $T,U$ is its third parallel line. Thus $T,U$ have identical sets of full triangles to which they send exactly one edge. Equality propagates along paths, and a triangle has no singleton connection to itself.
+
+Let $W=3I-A+J/9$ and attach to each triangle $T$ the real vector $v_T=W^{1/2}\mathbf{1}_T$. These vectors have squared norm four. For distinct triangles the inner product is zero if they meet and $1-k$ if they are disjoint with $k$ cross-edges. On a component of full triangles their Gram matrix is therefore $3I-3H+J$, using $H$ also for its adjacency matrix.
+
+If $T$ is full, $S$ is saturated, and $v_T\cdot v_S=-2$, the triangles are disjoint and have three cross-edges. The full line $T$ puts them in a grid, whose third parallel line $R$ is saturated by the [parallel deficit inequality](parallel-triangle-deficits.md). The three pairwise inner products are $-2$, so $v_R=-v_T-v_S$. This rule generates further actual triangle vectors. Equal vectors refer to the same triangle, since distinct triangle vectors have inner product at most one. All vectors generated from one component are integral combinations of its full-triangle vectors, with coefficient sum congruent to one modulo three. Their pairwise products are all one modulo three. Distinct generated triangles are consequently disjoint, with either zero or three cross-edges.
+
+More generally, three disjoint triangles pairwise joined by three-edge matchings form a grid. The sum of their three vectors has squared norm zero. If $h$ is the indicator of their nine points, $Wh=0$ gives internal degree four at each point and exactly one neighbor there for each exterior point. Every adjacent pair in the union therefore has its unique common neighbor inside it. For a matched edge between the first two triangles this common neighbor must belong to the third triangle. The matchings line up in three transverse triangles, giving the rook grid.
+
+## The fifteen triangles indexed by the edges of a six-point set
+
+There cannot be fifteen disjoint triangles indexed by the edges $ab$ of $K_6$, matched by three edges for disjoint indices and anticomplete for indices with a common endpoint. Every perfect matching of $K_6$ would give a grid by the preceding observation. Each point outside the 45 vertices would therefore mark exactly one index in every perfect matching, where marking means having a neighbor on its triangle.
+
+There are fifteen perfect matchings and each edge belongs to three, so five indices are marked. They are pairwise intersecting as edges of $K_6$, since two disjoint edges belong to a perfect matching. Five pairwise intersecting edges must be a star: if three edges have no common endpoint they already form a triangle, to which no fourth edge can be added. Label an exterior point by the center $a$ of its star.
+
+For any exterior point $x$ let $n_b$ count its exterior neighbors of star type $b$. Sum the common-neighbor numbers of $x$ with the three vertices indexed by an edge $bc$. When $a\in\{b,c\}$ the sum is five. Two contributions come from the point of the triangle seen by $x$, and its other four marked triangles are anticomplete to this one. When $a\notin\{b,c\}$ the sum is six. Precisely three of its five marked indices are disjoint from $bc$, giving three contributions from the 45-point union. In both cases
+$$
+n_b+n_c=3
+$$
+for every distinct $b,c$. This would require six equal integers all equal to $3/2$. There are 54 exterior vertices, so the configuration is impossible.
+
+## At most 24 full triangles and 112 grids
+
+The [component checker](../../experiments/workspace/full_triangle_components.py) enumerates the following necessary graphs. An edge has at most one common neighbor: two full partners of a full triangle are anticomplete unless they lie in its same grid. If three form a triangle in $H$, they form a grid, and every other member of the component is adjacent to exactly one of the three. Let $d$ denote degree in $H$. The number of grids with at least two full lines incident to a vertex is $d$ minus its number of incident triangles of $H$.
+
+By the [branching exclusion](branching-full-triangles.md), either each vertex is incident to at most three such grids, or the component is a single family of four to six grids on a common triangle. For the first category start with one vertex and extend by a neighborhood consisting of at most three groups, each a single vertex or an adjacent pair. Check the common-neighbor and triangle conditions, the three-grid bound and positive semidefiniteness of $3I-3H+J$ after each extension. All these conditions hold on connected induced subsets of a valid component. A common grid that contributes just one neighbor in a subset still counts only once there. Canonical labeling identifies duplicates, and integer fraction-free elimination tests the Gram form, including zero pivots. For the second category choose which of the four to six grids contribute two other full triangles; the others contribute one each.
+
+This gives 200 candidates including the singleton. Apply the forced-triangle rule above until it stops. A distinct saturated vector must be disjoint from all previously generated triangles, and its inner product with each must be $-2$ or $1$. A saturated triangle has at most twelve three-edge partners. Every zero-sum triple of distinct generated vectors gives a grid. The initially marked full triangles can lie in at most six, and the other generated triangles in at most four: a triangle lying in five grids automatically lies in six, since the missing-axis vectors cannot have a nonisolated vertex of degree one. If a generated triangle were full, its matching connection to an original full triangle would put it in the same component and it would already be marked. There are 150 candidates after these tests. Removing those whose generated graph is the forbidden fifteen-triangle configuration leaves 48.
+
+Each component of size $m$ with $a$ edges belonging to no triangle of $H$ and $c$ triangles contributes $a$ grids with exactly two full triangles and $c$ grids with three. In particular it contributes $a+2c$ to $b_2+2b_3$. For a total of $t$ full triangles, maximize the sum of these contributions by the integer recurrence
+$$
+D(0)=0,\qquad D(t)=\max_{m\le t}\{D(t-m)+a+2c\}
+$$
+over the remaining component types. At $t=24,25,26,27,28$ the upper bounds are $36,36,37,38,40$. Since $g\ge 6t-b_2-2b_3$, the last four would require at least $114,119,124,128$ grids, respectively. The previous bounds $g\le113$ and $4t\le g$ imply **$t\le24$**.
+
+Finally suppose $g=113$. The inequality $21g\le2277+4t$ forces $t=24$ and equality at every preceding step. In particular every triangle of positive grid degree $d$ has $s_T=12-2d$: the [capacity bound](disjoint-full-bounds.md) replaces $s_T$ by this upper bound with strictly positive coefficient $\min(2,d)$. A grid with exactly two full lines would have a saturated third parallel line of degree one to four and deficit zero, contradicting equality. Thus $b_2=0$. Repeating the recurrence using only components with $a=0$ gives $2b_3\le28$ at $t=24$, requiring $g\ge144-28=116$. This excludes 113.
+
+Consequently there are at most **112 grids** and at least **2,142 percolating nonedges**. At least seven triangles have grid degree at most two, since the total degree is at most $672$, at least 21 short of $3\cdot231$.
+
+## After the nine-triangle cover exclusion
+
+Three disjoint triangles in a forced graph can be the three rows of the [forbidden nine-triangle cover](nine-triangle-cover.md). The checker enumerates triples of disjoint triangles and compares their induced graphs with the nine-vertex rook graph by canonical labeling. This leaves 30 of the 48 candidates. In 28, every block passes through a common full triangle (including the singleton). The other two are the complete bipartite graphs $K_{2,2}$ and $K_{2,3}$, with an additional saturated nonfull triangle forced by each edge. The checker verifies that each such extra triangle is matched to exactly two of the original full triangles.
+
+There are **at most 22 full triangles**. For $t=24$ the new maximum of $b_2+2b_3$ is 28, requiring at least 116 grids. For $t=23$ the maximum is 26, requiring $g=112$ and savings exactly 26. A pencil on $m$ full triangles saves $m-1$ grids, a four-cycle saves four, and $K_{2,3}$ saves six. Thus savings at least $t+3$ requires at least three components of type $K_{2,3}$.
+
+Retain the unused capacity in the [weighted witness inequality](disjoint-full-bounds.md). With $q_T=\min(2,d_T)$ it gives
+$$
+84g+\sum_T q_T(12-2d_T-s_T)\le 9108+16t.
+$$
+Indeed $2\sum_p C_p\le-3\sum_T q_T(12-2d_T-s_T)$, and the root enumeration gives $\sum_p C_p\ge126g-138\cdot99-24t$. All terms in the capacity sum are nonnegative. A forced saturated nonfull triangle has $s_T=0$ and $1\le d_T\le4$, so it contributes at least eight.
+
+The six extra triangles of each $K_{2,3}$ are distinct even from those forced in a different component. Each extra vector is the negative sum of the endpoints of its generating edge. Its inner product varies across the originals of its own component, since it is matched to exactly two. Any vector generated from a different component has constant inner product across those same originals, because the original cross-component products are constant. The three required components would therefore contribute at least $3\cdot6\cdot8=144$, exceeding the available $9108+16\cdot23-84\cdot112=68$.
