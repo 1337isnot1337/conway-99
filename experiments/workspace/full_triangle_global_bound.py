@@ -7,9 +7,8 @@ from ten_grid_supports import remaining
 from thirteen_grid_supports import bipartite_components, certificate, unlabelled_graphs
 
 
-def verify():
+def root_supports():
     ten = {certificate(7, missing) for missing in remaining()}
-    counts = [0,0]
     for present in unlabelled_graphs():
         e = len(present)
         if e > 10:
@@ -23,6 +22,14 @@ def verify():
         if any(bipartite_components(missing[:i]+missing[i+1:]) != rank_defect
                for i in range(len(missing))):
             continue
+        yield present, degrees
+
+
+def verify():
+    counts = [0,0]
+    for present,degrees in root_supports():
+        e = len(present)
+        f = degrees.count(6)
         assert min(degrees) <= 2
         m = sum(not set(a).intersection(b) for a,b in combinations(present,2))
         capacity = 2*m-sum(min(2,d)*(6-d) for d in degrees)+2*degrees.count(2)

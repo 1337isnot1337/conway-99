@@ -1,6 +1,6 @@
 # At most 104 grids
 
-A hypothetical Conway graph has at most **104** induced rook grids and at least **2,286** percolating nonedges. Every vertex lies on a triangle of grid degree at most two, so there are at least **33** such triangles.
+A hypothetical Conway graph has at most **104** induced rook grids and at least **2,286** percolating nonedges. Every vertex lies on a triangle of grid degree at most two, so there are at least **33** such triangles. The [near-minimal cover argument](low-triangle-cover.md) raises this number to 36.
 
 Write $D_p$ for the graph on the seven axes through $p$, with one edge per grid through $p$. Its edge count $e_p$ is [at most ten](ten-grid-bound.md). The sum of its seven degrees is at most 20, so at least one axis has degree at most two. This proves the covering assertion.
 

@@ -47,6 +47,7 @@ Every structural result below concerns a hypothetical strongly regular graph wit
 - [A triangle on exactly four grids](research/grids-and-triangles/four-grid-triangle.md) leaves fourteen residual cores, each of which fixes the incidences of all sixty exterior vertices with twelve neighbors.
 - [Grids at different points of a full triangle](research/grids-and-triangles/full-triangle-cross-grids.md) are disjoint when formed from its prism axes. Three ten-grid roots would force at least two index pairs common to all three.
 - [At most 104 grids](research/grids-and-triangles/104-grid-bound.md) combines the common prism-pair exclusion with the three-root table and integer witness count. Every vertex lies on a triangle of grid degree at most two.
+- [At least 36 triangles on at most two grids](research/grids-and-triangles/low-triangle-cover.md) excludes the possible 33-triangle partition and forces a nine-point grid at equality.
 
 - [Disconnected endpoint graph](research/involutions/connected-endpoint-squares.md) allows repeated endpoint pairs and forces component sizes six and one when all 21 squares have one shared axis.
 - [Distinct endpoint pairs](research/involutions/distinct-endpoint-squares.md) rules out every assignment of centers when all 21 squares have one shared axis and their endpoint pairs are distinct. The proof uses two exact norm counts.

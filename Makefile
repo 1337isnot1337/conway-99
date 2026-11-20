@@ -145,3 +145,7 @@ verify-full-triangle-common-pair:
 .PHONY: verify-104-grid-bound
 verify-104-grid-bound: verify-full-triangle-common-pair verify-full-triangle-ten-roots
 	cd $(WORKSPACE) && "$(PYTHON)" full_triangle_global_bound.py
+
+.PHONY: verify-low-triangle-cover
+verify-low-triangle-cover:
+	cd $(WORKSPACE) && "$(PYTHON)" low_triangle_cover.py
