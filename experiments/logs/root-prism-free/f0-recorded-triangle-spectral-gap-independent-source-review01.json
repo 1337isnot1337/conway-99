@@ -1,0 +1,85 @@
+{
+  "schema": "conway99.f0.recorded-triangle-spectral-gap-independent-source-review.v1",
+  "status": "PASS_COMPLETE_RECORDED_TRIANGLE_SPECTRAL_GAP_THEOREM_AND_SOURCE_REVIEW_UNRUN",
+  "reviewer": "master_review",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_recorded_triangle_spectral_gap_v8.js",
+    "git_blob_sha": "f0d0235ee1192f6024bd15eb7013c21a4e8ab8b0",
+    "sha256": "1e0de3478b8a7e70e1ab2997dbb25c8862502cd637a9192c2ddadff90d343f32",
+    "bytes": 18888
+  },
+  "configuration": {
+    "path": "experiments/logs/root-prism-free/f0-recorded-triangle-spectral-gap-configuration01.json",
+    "git_blob_sha": "09b64703fac261766bb519eda62d5746a2c8f667",
+    "sha256": "f4921fd6515c851f96769e784c1c660c1e841bdb23b31807c582714d9cc2fb8e",
+    "bytes": 6253
+  },
+  "method": {
+    "path": "research/root_prism_free_f0_recorded_triangle_spectral_gap.md",
+    "git_blob_sha": "f4e2821e25e3d46c27cd61603892660a0b34c54d",
+    "sha256": "6e892e3a544f0ff38932cbec6abfa8ff77e09b56cea46926dcc8121c95b16d11",
+    "bytes": 6731
+  },
+  "accepted_spectral_theorem": {
+    "path": "research/root_prism_free_f0_spectral_gap_pair_minor.md",
+    "bytes": 13581,
+    "sha256": "169a4b0c8ba1381302d0eeacb449599a5e4913cd6a55a24bb711e5d4126829ce",
+    "git_blob": "168ca05d66609a2ac7027d3958a4f22c63385e1c",
+    "encoding": "utf-8",
+    "format": "text"
+  },
+  "accepted_spectral_review": {
+    "path": "experiments/logs/root-prism-free/f0-spectral-gap-pair-minor-independent-review01.json",
+    "bytes": 6211,
+    "sha256": "9132b5b87497a608e40ea07361257c963731a5dc758f41ba1d9605726af18099",
+    "git_blob": "4358f7123e3459d78d0efc1670da8031c1fc989d",
+    "encoding": "utf-8"
+  },
+  "complete_source_lines_read": 298,
+  "complete_configuration_and_method_read": true,
+  "mathematical_checks": [
+    "Apply the accepted B=2N-180R+30 eta^T eta PSD theorem to one actual completion in the stated globally prism-free/F-free F0 split18+18 branch. The second component and alignment are free.",
+    "If a,b,c form an exterior triangle, lambda=1 makes c the unique common neighbor of a,b, and similarly for the other two edges. Thus all first and second component signature intersections are empty, each exterior codegree is one, and R[abc]=3I.",
+    "For selected triangle vertices, N has diagonal d_a and off-diagonal z_ab-540. Hence Baa=2d_a-540+30||eta_a||^2 and Bab=2z_ab-1080+30 eta_a dot eta_b. The source uses exactly these signs and integer scales.",
+    "Eta is reconstructed from the three central rows of the original 21-core, checked to be a partition into three six-site fibers, and compared with every saved kernel fiber/profile/deviation. No contiguous-fiber assumption is used.",
+    "All seven nonempty principal minors are necessary for this real symmetric PSD block. The six independent entries and every product/determinant are BigInt; decimal strings preserve exact output values.",
+    "A rejected actual triangle permits either t_abc=0 or the edge cover y_ab+y_ac+y_bc<=2. The existing exact AND definition makes these equivalent for Boolean edges, and three active edges already activate all vertices, so no extra selector guard is needed.",
+    "Proper-minor failures and determinant-only failures are distinguished. No particular proposed row is claimed new or independent, and passing all seven minors is not a graph-realization certificate."
+  ],
+  "implementation_checks": [
+    "The exact universe is all 5,364 accepted recorded triangles, with no old-zero pruning. This is not a new census of all eligible triples.",
+    "The ten input aliases, source/codec bytes, archive/raw identities and mathematical/native authority receipts are bound before traversal. Four small authority records were freshly fetched and hash-checked for actual schema and field compatibility.",
+    "All 480 saved neighbor lists are validated and reconstructed into the original 68,394-edge order/digest. The code does not claim to re-enumerate admissibility from arbitrary triples.",
+    "The complete 115,440-entry primitive plus-kernel ordering plus adjacency coefficient is hashed; denominator60, adjacency coefficient-540, primitive divisor1 and the full-core audit are checked.",
+    "Each recorded triple, original edge IDs, lexicographic index, original standalone indicator index, unique target origin and complete84 target incidence lists are checked. Actual native indicator index is71382+k.",
+    "The closed determinant formula is independently compared by source controls to permutation expansion of all seven minors on729 signed small matrices, plus six explicit positive/singular/negative/large-integer cases. Controls are prepared and have not been run by this review.",
+    "Every case retains entries, seven minors, negative-minor mask, classification and origin. All rejected cases retain both exact native row proposals.",
+    "The30-second source bound includes binding, controls, record generation, serialization and report hash, with8MiB output cap. A separate45-second elapsed V8 owner is required. A late finalization remains explicitly unaccepted; the source makes no OS preemption claim."
+  ],
+  "small_actual_receipt_checks": {
+    "freshly_hash_verified_small_receipts": 4,
+    "spectral_review_input_order_and_values_match": true,
+    "subject_binding_match": true,
+    "accepted_native_model_root_fields_match": true,
+    "accepted_literal_root_fields_match": true,
+    "full_core_audit_scale_hash_and_bound_match": true
+  },
+  "scope": {
+    "actual_case_enumeration_performed": false,
+    "controls_executed": false,
+    "source_or_factory_executed": false,
+    "native_imports": 0,
+    "native_model_decodes": 0,
+    "optimizer_calls": 0,
+    "independent_terminal_replay_completed": false,
+    "new_rows_installed": 0,
+    "automatic_retries": 0,
+    "native_model_change_authorized": false,
+    "whole_component_exclusion_claimed": false
+  },
+  "limitations": [
+    "Large raw domain/kernel/indicator artifacts were not re-enumerated or contracted in this source review. Their complete identities and frozen acceptance chain are part of the future gated run.",
+    "This record is a source/math gate, not a successful computation receipt. Any future proposed row remains subject to separate terminal acceptance."
+  ],
+  "blockers": []
+}

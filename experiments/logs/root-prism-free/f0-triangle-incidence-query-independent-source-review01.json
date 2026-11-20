@@ -1,0 +1,329 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-independent-source-review.v1",
+  "status": "PASS_COMPLETE_QUERY_RUNNER_SOURCE_AND_EXACT_ADAPTATION_REVIEW_UNRUN",
+  "reviewer": "master_review",
+  "source": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query.py",
+    "git_blob_sha": "fc4bedae06976c50d6efafaa80d3155aa397aee4",
+    "sha256": "d7e5307f0554cc308dbdf26dd3225b3cdb9d2628b9261b9896bbb9698ec83d0e",
+    "bytes": 39628
+  },
+  "parent": {
+    "path": "experiments/workspace/root_prism_free_f0_combined_extensions_query.py",
+    "git_blob_sha": "054d93e150fe010e78d5aef27208f6e0ab7eb79d",
+    "sha256": "bce8dba1891fec565764665673d126513699596b9a9ea73f784abbd48d6c676a",
+    "bytes": 38105
+  },
+  "adaptation": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-explicit-source-reuse01.json",
+    "git_blob_sha": "380d74e1ac592a213172a2ad3311222bdca62f30",
+    "sha256": "2ef29a2c3fa865f90c4f5ef23231af81d7f8730a99f9d3b351573862054363c0",
+    "bytes": 65913
+  },
+  "contract": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-query-source-preparation01.json",
+    "git_blob_sha": "08fbeef1253b00a5444bcf40bb60f535df0f4580",
+    "sha256": "9c20f84a30da094e3b4de0b0ba8707ea7eaec999fdbe2045eef8293ec8418202",
+    "bytes": 9232
+  },
+  "native_producer": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+    "git_blob_sha": "dcb63e7900ba4b588e8ed767ce60be2323797cde",
+    "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+    "bytes": 64900
+  },
+  "native_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+    "git_blob_sha": "a7c3cb08bd93b67caad943162fe9d8de73689119",
+    "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+    "bytes": 82846
+  },
+  "native_configuration": {
+    "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+    "git_blob_sha": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+    "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+    "bytes": 24503
+  },
+  "native_ci": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+    "git_blob_sha": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a",
+    "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+    "bytes": 17497
+  },
+  "independent_terminal_checker": {
+    "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_query_replay.py",
+    "git_blob_sha": "5191a03e92e6ab9f1039eeb791518baebdec4661",
+    "sha256": "303a8b8c7e032a6f4eaaeb5cc745fe087f55ce1d1e04ca56a32e1c3c041494e4",
+    "bytes": 37638,
+    "lines": 620
+  },
+  "complete_source_lines_read": 644,
+  "exact_adaptation": {
+    "complete_substitution_replay_matches": true,
+    "substitutions": [
+      {
+        "label": "header: accepted append identities, dimensions and explicit no-LP portfolio",
+        "occurrences": 1,
+        "old_length": 2027,
+        "new_length": 2186
+      },
+      {
+        "label": "function configuration",
+        "occurrences": 1,
+        "old_length": 1804,
+        "new_length": 1803
+      },
+      {
+        "label": "function accepted_model",
+        "occurrences": 1,
+        "old_length": 8708,
+        "new_length": 9985
+      },
+      {
+        "label": "function parameters",
+        "occurrences": 1,
+        "old_length": 1724,
+        "new_length": 1821
+      },
+      {
+        "label": "function check_time",
+        "occurrences": 1,
+        "old_length": 134,
+        "new_length": 133
+      },
+      {
+        "label": "function controls",
+        "occurrences": 1,
+        "old_length": 2911,
+        "new_length": 2910
+      },
+      {
+        "label": "function prepare",
+        "occurrences": 1,
+        "old_length": 955,
+        "new_length": 954
+      },
+      {
+        "label": "function query_authority",
+        "occurrences": 1,
+        "old_length": 2343,
+        "new_length": 2341
+      },
+      {
+        "label": "function classification",
+        "occurrences": 1,
+        "old_length": 849,
+        "new_length": 848
+      },
+      {
+        "label": "function worker",
+        "occurrences": 1,
+        "old_length": 1564,
+        "new_length": 1563
+      },
+      {
+        "label": "function owned",
+        "occurrences": 1,
+        "old_length": 4381,
+        "new_length": 4379
+      }
+    ],
+    "functions": [
+      {
+        "name": "canonical",
+        "unchanged": true,
+        "parent_sha256": "43cf15500ba5fb7bd96ac7f0426159b09fa880eb04a326cdfc77007265ef1bfe",
+        "successor_sha256": "43cf15500ba5fb7bd96ac7f0426159b09fa880eb04a326cdfc77007265ef1bfe"
+      },
+      {
+        "name": "sha",
+        "unchanged": true,
+        "parent_sha256": "d41609d967cf1415af635774d407295df5f352d32b53d6a926cd38dfdab7c74d",
+        "successor_sha256": "d41609d967cf1415af635774d407295df5f352d32b53d6a926cd38dfdab7c74d"
+      },
+      {
+        "name": "digest",
+        "unchanged": true,
+        "parent_sha256": "a62011dc9781bbe74e9ff723f5d78946021b40683dc6ae9b28a7eec1a0f01cfb",
+        "successor_sha256": "a62011dc9781bbe74e9ff723f5d78946021b40683dc6ae9b28a7eec1a0f01cfb"
+      },
+      {
+        "name": "binding",
+        "unchanged": true,
+        "parent_sha256": "259b22efafad62793c726c33be820ffe74670462be079129afa869e719b761eb",
+        "successor_sha256": "259b22efafad62793c726c33be820ffe74670462be079129afa869e719b761eb"
+      },
+      {
+        "name": "read_bytes",
+        "unchanged": true,
+        "parent_sha256": "57cd4feb618d065850d9ee5fb8a6d6fbb7373b6087ab9a32dc1d2fd9b2d30ff1",
+        "successor_sha256": "57cd4feb618d065850d9ee5fb8a6d6fbb7373b6087ab9a32dc1d2fd9b2d30ff1"
+      },
+      {
+        "name": "read_json",
+        "unchanged": true,
+        "parent_sha256": "650e895453d2995dc0dcfd1e50fb14c7ddca50f66149215af7ffa196c8640643",
+        "successor_sha256": "650e895453d2995dc0dcfd1e50fb14c7ddca50f66149215af7ffa196c8640643"
+      },
+      {
+        "name": "same_reference",
+        "unchanged": true,
+        "parent_sha256": "eaee674385eea4b98a8116625af43f7e429674865bb88400c02452da9aa59fbb",
+        "successor_sha256": "eaee674385eea4b98a8116625af43f7e429674865bb88400c02452da9aa59fbb"
+      },
+      {
+        "name": "save",
+        "unchanged": true,
+        "parent_sha256": "792adf3766bc243d496bb8db90af6211fb2ae1ef3b09eee0c9e809f7d8c81683",
+        "successor_sha256": "792adf3766bc243d496bb8db90af6211fb2ae1ef3b09eee0c9e809f7d8c81683"
+      },
+      {
+        "name": "check_time",
+        "unchanged": false,
+        "parent_sha256": "20751b33e30b75b6800f0909ca61fd536e9cd52eab40de1746fc6cb5cbedc044",
+        "successor_sha256": "a295bd9f04ecaf6a734c74b8a699ef3b135a513dbdbd3ed941ed99dec4f0f043"
+      },
+      {
+        "name": "bound_module",
+        "unchanged": true,
+        "parent_sha256": "a98cc3c5c6198bec29a948161ef8a60bee206271e61dc6d60090dd80f933e7ce",
+        "successor_sha256": "a98cc3c5c6198bec29a948161ef8a60bee206271e61dc6d60090dd80f933e7ce"
+      },
+      {
+        "name": "configuration",
+        "unchanged": false,
+        "parent_sha256": "e8aa7c6dd53a385fb09db1766224f978e911437ea96085840a411ebe90171b84",
+        "successor_sha256": "0777f39eb49f95a9ce9ab921ebefdbd7b96c7762e491ca58c06774ac3bad2276"
+      },
+      {
+        "name": "accepted_model",
+        "unchanged": false,
+        "parent_sha256": "16f9c86bdda9ee7325cd50a3c7a4eb293efee94b70f6840bc0ff8ae528122841",
+        "successor_sha256": "59947cf4a8316c4531e402404c53eac9473fb9d8aeb1f97aee250c52558c3e96"
+      },
+      {
+        "name": "parameters",
+        "unchanged": false,
+        "parent_sha256": "e2c7f56b32c898d00323eb60fe9ece8645f52e3f13784db5ccaed72315421915",
+        "successor_sha256": "7b55e0c284af6a057a8c7ad246e9fe6da85c0c87af142712568652fdff68241a"
+      },
+      {
+        "name": "inspect_vector",
+        "unchanged": true,
+        "parent_sha256": "a71a556fd6a6e1a55f36bac7f33fcfabbb303d06f1cf49be46e8d8e27ab7e053",
+        "successor_sha256": "a71a556fd6a6e1a55f36bac7f33fcfabbb303d06f1cf49be46e8d8e27ab7e053"
+      },
+      {
+        "name": "controls",
+        "unchanged": false,
+        "parent_sha256": "631ecacfa0908c1403a8f85721adb70a0cb0c4ad7a2d317c41359433bd63a09b",
+        "successor_sha256": "d400c58813de381464048a01a35be72ecc5af3452b7f732d5973cb6e2ce33ede"
+      },
+      {
+        "name": "prepare",
+        "unchanged": false,
+        "parent_sha256": "32a1ad797bdc29eb4c9d703fc9e4ac7f0d1a894d62c97434e01efd8d914bb1ef",
+        "successor_sha256": "3b8d26699c75aa4fd53252a29781a56b925b633654f60e547ddeb69b3e514565"
+      },
+      {
+        "name": "query_authority",
+        "unchanged": false,
+        "parent_sha256": "d65c2b8cccc53f6e1910d6a215a80c905b4507faf27abe81dbf7136b43e537e1",
+        "successor_sha256": "c52785e9788f52ed71bb6021d16029167f8b359f59ba4ab8d6076b6994e28270"
+      },
+      {
+        "name": "classification",
+        "unchanged": false,
+        "parent_sha256": "48a2194a3fbcf8305d86c117e6d72adf7af8265ea7b2da58b6f23f8aba0f2863",
+        "successor_sha256": "2b1be0701fc82f760ddbe11056daeabbadf7cca49956a19b4f9ab075a1cd8555"
+      },
+      {
+        "name": "run",
+        "unchanged": true,
+        "parent_sha256": "44e562a2f2f23b2f3d720eb5215b825e5ce5deb0a41c861a3cbfb2391a4f1c5d",
+        "successor_sha256": "44e562a2f2f23b2f3d720eb5215b825e5ce5deb0a41c861a3cbfb2391a4f1c5d"
+      },
+      {
+        "name": "worker",
+        "unchanged": false,
+        "parent_sha256": "a3735067304b3fa752c45ab7bdd0c572fb6d43262f2bc87c0bf7068458f63936",
+        "successor_sha256": "bc3b116e1d57da233d5ac476f7df742e6dd3d4fedb07790351540ec6255cd6e4"
+      },
+      {
+        "name": "owned",
+        "unchanged": false,
+        "parent_sha256": "17ced11505156f4285f85998195cef0137404fd5c186f5e4451e2c414618ad3a",
+        "successor_sha256": "49c2787f9aee217277404fd6b6b95ad2be755933c1d0383dafd51344b2af2e1f"
+      }
+    ],
+    "unchanged": [
+      "canonical",
+      "sha",
+      "digest",
+      "binding",
+      "read_bytes",
+      "read_json",
+      "same_reference",
+      "save",
+      "bound_module",
+      "inspect_vector",
+      "run"
+    ],
+    "changed": [
+      "check_time",
+      "configuration",
+      "accepted_model",
+      "parameters",
+      "controls",
+      "prepare",
+      "query_authority",
+      "classification",
+      "worker",
+      "owned"
+    ]
+  },
+  "accepted_model_interface": [
+    "All seven accepted-model input aliases and five source aliases agree with the configuration contract. The loader pins the actual native producer, complete native checker and corrected CI source, plus base transport and supervisor.",
+    "Preparation and independently replayed model receipts must have the new triangle-incidence schemas, exact PASS statuses, matching source/configuration/model identities, zero optimizer calls, and successfully reaped owners within 135 seconds.",
+    "The actual root receipt must bind native configuration, preparation, independent replay, both owners, native CI and archive; its native-query authorization flag remains false.",
+    "The loader checks the 80,730-variable, 300,795-row, 3,337,296-term model and the three appended families (2,904 side, 420 local, one total-target row), all seven incidence hashes and literal/target authorities.",
+    "The existing 80,730-variable, 297,470-row parent and its raw identity are preserved. The original failed extractor is still unaccepted, and its timing failure is not waived.",
+    "The original edge namespace is exactly variables[540:68934]. Newer auxiliary variables are checked through their actual domains, without assuming the complete tail is Boolean.",
+    "Archive and decoded raw protobuf bytes, native descriptor, original edge-name/order digest and selector domains are checked before transport. No source or configuration changes the accepted model."
+  ],
+  "parameter_and_execution_review": [
+    "The complete parameter descriptor explicitly includes ordered subsolvers no_lp, quick_restart_no_lp, portfolio_no_lp, num_full_subsolvers=3 and four search workers. Repeated subsolvers use extend rather than scalar setattr.",
+    "Both native text and reconstructed wire must equal the complete expected parameter message. The zero-solve preflight and production parameter files must match byte-for-byte.",
+    "This is a documented parameter-policy change from the default portfolio. It must not be described as a pure row-only comparison.",
+    "The source retains one 600-second solver clock, 610-second measured allowance, 720-second process-group owner and 60-second finalization reserve. Insufficient remaining owner budget produces a zero-call terminal.",
+    "The root gate and actual accepted preflight receipts are required before the sole native call. No retry, sweep, automatic reprepare or model reconstruction is present.",
+    "Native response text, all primary/additional native integer arrays and candidate files are saved before parsing. Reconstructed response wire and exact full-row activities are preserved.",
+    "The unchanged integer inspector checks every returned value, all variable domains and all 300,795 complete linear rows. The independent terminal checker remains mandatory before candidate acceptance.",
+    "UNKNOWN, native-budget overrun, errors, missing SAT vectors and contradictory status/vector combinations remain explicit. Native INFEASIBLE is labeled unproved; no component exclusion or completed graph follows."
+  ],
+  "official_portfolio_source": {
+    "repository": "google/or-tools",
+    "path": "ortools/sat/cp_model_search.cc",
+    "git_blob_sha": "a448c0a4d6d409ea702003518564cb5de959af5d",
+    "sha256": "6c64d54cbe1425a45fd9099bc529e831b8eef330f674045e57cc8b27fb61600e",
+    "bytes": 43772,
+    "review_scope": "Previously read exact v9.15 full-worker name/preset construction. All three declared names have level-zero LP presets. Actual runtime profile is still required to describe the worker roster of a future run."
+  },
+  "actual_runtime_or_output_claims": {
+    "actual_new_model_outputs_used_for_this_review": false,
+    "actual_query_configuration_frozen": false,
+    "preflight_executed": false,
+    "query_executed": false,
+    "source_imports": 0,
+    "compilation_calls": 0,
+    "controls_runs": 0,
+    "model_decodes": 0,
+    "optimizer_calls": 0
+  },
+  "limitations": [
+    "This is a complete source and contract review. Native CI is a separate root-owned execution and its actual receipts must be bound before preflight.",
+    "The exact-substitution and whole-function comparisons operate on source bytes; no Python import, AST parse, compilation or arithmetic control was executed.",
+    "Any feasible vector remains a witness to the bounded exterior relaxation until original pair caps and second-component completion are checked."
+  ],
+  "blockers": []
+}

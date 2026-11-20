@@ -1,0 +1,140 @@
+{
+  "schema": "conway99.f0.triangle-incidence-query-configuration.v1",
+  "source_sha256": "c4844d77eb0d2b682ef88ee001ff5f264e409dd78757257873be55834109fa34",
+  "variables": 80730,
+  "rows": 300795,
+  "limits": {
+    "solver_seconds": 600,
+    "native_allowance_seconds": 610,
+    "owner_seconds": 720,
+    "preparation_seconds": 60,
+    "preparation_owner_seconds": 75,
+    "finalization_reserve_seconds": 60
+  },
+  "parameters": {
+    "num_search_workers": 4,
+    "random_seed": 0,
+    "cp_model_presolve": true,
+    "cp_model_probing_level": 0,
+    "linearization_level": 0,
+    "symmetry_level": 0,
+    "subsolvers": [
+      "no_lp",
+      "quick_restart_no_lp",
+      "portfolio_no_lp"
+    ],
+    "num_full_subsolvers": 3,
+    "max_time_in_seconds": 600,
+    "log_search_progress": true,
+    "log_to_stdout": true,
+    "log_to_response": true
+  },
+  "runtime": {
+    "cp_model_sha256": "b5f2a3ae5c418d11af23cb77a766fa10103c8bb71703dafa1ecad74823603f25",
+    "model_schema_sha256": "266b68151ffd6c9f5db22553442abd777031663d39e1cea649a8737f811d2eff",
+    "native_helper_sha256": "5e82da893145e1eecc67bc87ec4120c7af38e1a7e4ed0eadfc39c713bb8ed735",
+    "ortools_version": "9.15.6755",
+    "parameter_schema_sha256": "644354522af4202900329fc55844364cf1bfa77333b7ceb98e9de4aa49036c52",
+    "protobuf_version": "6.33.6"
+  },
+  "sources": {
+    "base": {
+      "bytes": 15210,
+      "git_blob": "3a43d37f39ffe81bec2ab01db21f00a63eb96b70",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_boolean_shared_model.py",
+      "sha256": "5a1e8026683a7782fce6ec2a2947748356ac9cd5adf32dd2a0663b0dd60bfca2"
+    },
+    "supervisor": {
+      "bytes": 26760,
+      "git_blob": "cb0cdac36edca2c9808664876ed09778f0145e42",
+      "mode": "100644",
+      "path": "experiments/workspace/root_prism_free_f0_fixed_selection_exterior_query.py",
+      "sha256": "bbe476e5a7a13800c08265d4db541b7e8c7edf2277be03f6d06db134926891e3"
+    },
+    "model_producer": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_model.py",
+      "bytes": 64900,
+      "sha256": "29d289399089b5e56e94b7991cd0c29e2cc530e890f78f27583cb48652824199",
+      "git_blob": "dcb63e7900ba4b588e8ed767ce60be2323797cde"
+    },
+    "model_cold": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_replay.py",
+      "bytes": 82846,
+      "sha256": "1bf43879126625fccd62f1aa3bd628af9a53089ea7cfa048607be55d027090ec",
+      "git_blob": "a7c3cb08bd93b67caad943162fe9d8de73689119"
+    },
+    "model_ci": {
+      "path": "experiments/workspace/root_prism_free_f0_triangle_incidence_ci.py",
+      "bytes": 17497,
+      "sha256": "ab120aaa21b22e0e21e425eb1e8612399c5ab2aa87f5190253b42f7099b9e1a7",
+      "git_blob": "a5e4a69dcdba9e0f1782b198b11dec5b7094635a"
+    }
+  },
+  "maximum_native_calls": 1,
+  "automatic_retries": 0,
+  "native_query_authorized_by_configuration_alone": false,
+  "separate_query_cold_required": true,
+  "native_INFEASIBLE_is_unproved": true,
+  "model_byte_changes_in_query": false,
+  "all_original_pair_caps_present_in_model": false,
+  "second_component_completion_present_in_model": false,
+  "candidate_format": "Plain JSON array of all80730 exact integers in accepted model order. Original selectors0..479 and eligible edges540..68933 retain their IDs; all80730 variable domains and300795 complete linear rows are checked.",
+  "feasible_vector_scope": "Only a witness for the complete triangle-incidence exterior relaxation. General exterior pair caps and compatible second-component completion remain unchecked by this query.",
+  "native_response_transport": "Preserve original UTF-8 native text and native primary/additional integer arrays before parsing. CpSolverResponse has no public binary-export method in the bound native wrapper; separately saved protobuf wire is reconstructed from that text.",
+  "model_raw_sha256": "56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8",
+  "model_raw_bytes": 39512348,
+  "inputs": {
+    "model": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/model.pb.gz",
+      "bytes": 5690176,
+      "sha256": "3a84ccb555ebc28c5ba7cc0d2f2d5bacec9de48c9c8b8e6380278e1222cbe7f2",
+      "git_blob": "7a069862cfedca531b2f3acfd9da284b1e11f948",
+      "mode": "100644"
+    },
+    "model_configuration": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-configuration01.json",
+      "bytes": 24503,
+      "sha256": "79d98a25898bef1a9a3340546e0721949f79464f39756d881d8469af81ccc1fd",
+      "git_blob": "b7924c0cca510ce89035581bee5a1c0704b5f8d7",
+      "mode": "100644"
+    },
+    "model_preparation": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/report.json",
+      "bytes": 23939,
+      "sha256": "f7be6afd05ae3ac32fbf6c768e7c3cb4decd830be18bef548f16b7e142d3d00f",
+      "git_blob": "117b739356e011bd74503f92a41aaf3a0e4e48c5",
+      "mode": "100644"
+    },
+    "model_preparation_owner": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01/owner.json",
+      "bytes": 1311,
+      "sha256": "b5368c3ba810f06f56f4b8bb2c0e8db8b52c683d6d0cdbeee6aa5190185489ec",
+      "git_blob": "b4b2a776e096bc506744eb2fc466f8ec9b203082",
+      "mode": "100644"
+    },
+    "model_cold": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold/report.json",
+      "bytes": 16627,
+      "sha256": "a9e9f97f5e437ebb65091c7b693ae3af93e682573f3ca743d39ec74d6dd20953",
+      "git_blob": "90c26ca5b6def071a349a9482a6639f3c32d60d1",
+      "mode": "100644"
+    },
+    "model_cold_owner": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-ci01-cold-owner/owner.json",
+      "bytes": 1912,
+      "sha256": "e48634509d4246f20638fc500611d41ec0591fe65d0765a22bdf60c408f74607",
+      "git_blob": "05cbd3eb0eef1d72a12dc54a5e250ba110aa2dd3",
+      "mode": "100644"
+    },
+    "model_root_acceptance": {
+      "path": "experiments/logs/root-prism-free/f0-triangle-incidence-native-root-acceptance01.json",
+      "bytes": 14417,
+      "sha256": "bb744c426034992ddae1702cdb479e61d17d9a2fa5da2a614f4d6c15643908f0",
+      "git_blob": "c40bf305e72dedec3d42cdfc862ca436380ebf76",
+      "mode": "100644"
+    }
+  },
+  "total_terms": 3337296,
+  "portfolio_change_scope": "Explicit no_lp, quick_restart_no_lp, portfolio_no_lp order and num_full_subsolvers3, with four total workers. Both rows and portfolio differ from the consumed combined query; no controlled performance comparison is claimed."
+}

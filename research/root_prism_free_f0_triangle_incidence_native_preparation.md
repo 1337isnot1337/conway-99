@@ -1,6 +1,6 @@
 # Triangle-incidence native preparation
 
-Checkpoint 93 authorizes one native preparation followed by a separately owned complete protobuf replay. The model is a necessary relaxation for the fixed first 18-vertex F0 component. The build and replay are pending at publication.
+[Run 44645869533](https://github.com/1337isnot1337/conway-99/actions/runs/44645869533) completed checkpoint 93 once. Native preparation and the separately owned complete protobuf replay both passed. The [root acceptance](../experiments/logs/root-prism-free/f0-triangle-incidence-native-root-acceptance01.json) binds all 40 original output files, including the exact model archive. The model remains a necessary relaxation for the fixed first 18-vertex F0 component.
 
 ## Exact append
 
@@ -34,8 +34,16 @@ The checker independently decodes all native triangle AND meanings, reconstructs
 
 Original control JSON bytes must be retained because the controls include integers above the exact-integer range of JavaScript. Complete output and error files are retained on failure. Model archive chunks permit exact public retrieval independently of the report bundle.
 
+## Actual result
+
+The complete exported model has 39,512,348 raw bytes, SHA256 `56f6be31b4714825fb6d546ca79420e0ee0d25da05231a0eea322e514473bed8`. Its lossless archive has 5,690,176 bytes, SHA256 `3a84ccb555ebc28c5ba7cc0d2f2d5bacec9de48c9c8b8e6380278e1222cbe7f2`. The constraints-only suffix has 206,265 raw bytes and the exact original parent is preserved as a prefix.
+
+Preparation worker/owner times were 9.2209/9.4391 seconds; independent replay worker/owner times were 3.0546/3.1742 seconds. Both control workers and owners passed, and the complete driver took 13.0175 seconds. All four owners reaped and stopped their process groups. No optimizer was constructed or called.
+
+Root verified all original output byte hashes, 163 reference bindings, the complete compressed archive, the decompressed suffix, and every one of the 3,325 actual ledger keys against the accepted literal/global keys. The separate independent protobuf replay verifies the complete raw model and parent recovery; root did not perform a redundant second full-model decompression in JavaScript.
+
 ## What remains open
 
-The previous combined-model query returned UNKNOWN with no vector. That gate is consumed. This checkpoint authorizes preparation only. A later query requires actual model acceptance, a zero-solve preflight and a separate one-call gate.
+The previous combined-model query returned UNKNOWN with no vector. That gate is consumed. The prepared query configuration is unrun. A subsequent bounded spectral test rejects 3,156 recorded triangles; complete independent literal replay and a small unit-zero append take precedence before the next query. The separate query preflight and production gates have not been issued.
 
 General exterior pair caps, a compatible second component, the other component cases and unrestricted existence remain open. No graph, whole-component exclusion or unrestricted contradiction is obtained by a source review or model build.
